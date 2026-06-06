@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 mdblueprint.egg-info/
 .coverage
+
+# Local EconCSLib ablation fixture
+tests/fixtures/econcslib/

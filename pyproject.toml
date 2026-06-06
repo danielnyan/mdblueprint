@@ -27,6 +27,7 @@ mdblueprint-check = "tools.knowledge.check:main"
 mdblueprint-publish = "tools.knowledge.publish:main"
 mdblueprint-render-check = "tools.knowledge.render_check:main"
 mdblueprint-econcslib-gate = "tools.knowledge.econcslib_gate:main"
+mdblueprint-knowledge-refresh = "mdblueprint.knowledge_refresh:main"
 mdblueprint-lean-alignment = "tools.knowledge.lean_alignment:main"
 mdblueprint-lean-link-candidates = "tools.knowledge.lean_link_candidates:main"
 mdblueprint-lean-linking = "tools.knowledge.lean_linking:main"
@@ -36,7 +37,7 @@ mdblueprint-serve = "tools.knowledge.serve:main"
 mdblueprint-stats = "tools.knowledge.stats:main"
 
 [tool.setuptools.packages.find]
-include = ["tools*"]
+include = ["tools*", "mdblueprint*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
