@@ -20,7 +20,9 @@ ROOT = Path(__file__).resolve().parents[3]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from mdblueprint.knowledge_uses import inferred_uses
 from tools.knowledge.lean_index import LeanDeclaration, index_lean_project
+from tools.knowledge.parser import parse_file
 
 
 @dataclass(frozen=True)
@@ -91,27 +93,25 @@ def _status_from_decls(decls: list[LeanDeclaration]) -> str:
     return "staged" if any(d.has_sorry for d in decls) else ("proved" if any(d.kind in {"theorem", "lemma"} for d in decls) else "formalized")
 
 
-def _modules_from_decls(decls: list[LeanDeclaration], repo_name: str) -> list[str]:
+def _modules_from_decls(decls: list[LeanDeclaration]) -> list[str]:
     modules: list[str] = []
     for decl in decls:
-        if decl.module:
-            prefixed = f"{repo_name}.{decl.module}"
-            if prefixed not in modules:
-                modules.append(prefixed)
+        if decl.module and decl.module not in modules:
+            modules.append(decl.module)
     return modules
 
 
-def _render(node_id: str, decls: list[LeanDeclaration], repo_name: str) -> str:
+def _render(node_id: str, decls: list[LeanDeclaration], uses: list[str]) -> str:
     payload = {
         "id": node_id,
         "title": _title_from_decl(decls, node_id),
         "kind": _kind_from_decls(decls),
         "status": _status_from_decls(decls),
-        "uses": [],
+        "uses": uses,
         "primary_topic": node_id.split(".", 1)[0],
         "topics": _topic_chain(node_id),
         "lean": {
-            "modules": _modules_from_decls(decls, repo_name),
+            "modules": _modules_from_decls(decls),
             "declarations": [d.qualified_name for d in decls],
         },
     }
@@ -127,10 +127,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate representative Lean-derived node drafts")
     parser.add_argument("--lean-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--repo-name", default="EconCSLib")
+    parser.add_argument("--knowledge-root", type=Path, help="Existing docs/knowledge tree used only as a node/declaration index for uses inference")
     args = parser.parse_args()
 
     idx = index_lean_project(args.lean_root)
+    reference_nodes = []
+    if args.knowledge_root is not None:
+        for base in (args.knowledge_root / "nodes", args.knowledge_root / "staged"):
+            if base.is_dir():
+                reference_nodes.extend(parse_file(path) for path in sorted(base.rglob("*.md")) if path.name != "topics.md")
+
     if args.output.exists():
         shutil.rmtree(args.output)
     args.output.mkdir(parents=True, exist_ok=True)
@@ -143,8 +149,13 @@ def main() -> None:
                 decls.append(decl)
         if not decls:
             continue
+        uses: list[str] = []
+        if reference_nodes:
+            source = next((node for node in reference_nodes if node.id == case.node_id), None)
+            if source is not None:
+                uses = inferred_uses(source, reference_nodes, idx)
         path = args.output / f"{case.node_id.replace('.', '_')}.md"
-        path.write_text(_render(case.node_id, decls, args.repo_name), encoding="utf-8")
+        path.write_text(_render(case.node_id, decls, uses), encoding="utf-8")
         print(path)
 
 
