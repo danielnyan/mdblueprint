@@ -1,0 +1,97 @@
+{
+  "id": "social_choice.fair_division.indivisible.best_good",
+  "title": "Best-Good Selection",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_best_good.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.algorithms"
+  ],
+  "body_html": "<h1>Best-Good Selection</h1>\n<p>The <em>best-good</em> operation picks an agent's favourite available item from\na remaining finite set $R \\subseteq G$ under an additive valuation\n$w : N \\to G \\to \\mathbb{R}$\n([[social_choice.fair_division.indivisible.additive_valuation]]).</p>\n<p>Informally:\n$$\n\\mathrm{bestGood}(i, R) = \\arg\\max_{g \\in R} w(i, g),\n$$\nwith deterministic tie-breaking using the underlying decidable\nequality on $G$.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.bestGood</code>. Marked\n<code>noncomputable</code> because the <code>arg max</code> selection over a <code>Finset</code> uses\nclassical decidability.</p>\n<h2>Basic properties</h2>\n<p>Two small lemmas pin down the operation:</p>\n<ul>\n<li><code>bestGood_mem</code> : when $R$ is nonempty, $\\mathrm{bestGood}(i, R) \\in R$.</li>\n<li><code>bestGood_le</code> : $\\mathrm{bestGood}(i, R)$ achieves the maximum value:\n  $\\forall g \\in R,\\ w(i, g) \\le w(i, \\mathrm{bestGood}(i, R))$.</li>\n</ul>\n<p>These are exactly what the round-robin partition / correctness proofs\nneed to reason about: an agent always takes a <em>valid</em> item (not yet\nallocated) and always takes their <em>best-remaining</em> item.</p>\n<h2>Use in round-robin</h2>\n<p>The round-robin allocation\n([[social_choice.fair_division.indivisible.round_robin_alloc]]) calls\n<code>bestGood</code> at each step to give the current agent their favourite\nremaining item. The two properties above are the only facts about\n<code>bestGood</code> that the EF1 correctness proof\n([[social_choice.fair_division.indivisible.round_robin_ef1]]) uses —\nthe rest is bookkeeping about turn order.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Round-robin item selection.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.bestGood",
+      "display_name": "SocialChoice.FairDivision.Indivisible.bestGood",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.bestGood",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "kind": "def",
+      "signature": "noncomputable def bestGood [DecidableEq G]\n    (I : AdditiveInstance (Fin n) G) (i : Fin n)\n    (s : Finset G) (hs : s.Nonempty) : G",
+      "docstring": "`bestGood I i s hs` is a good in `s` maximizing agent `i`'s item weight.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L695",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.bestGood_mem",
+      "display_name": "SocialChoice.FairDivision.Indivisible.bestGood_mem",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.bestGood_mem",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "kind": "lemma",
+      "signature": "lemma bestGood_mem [DecidableEq G]\n    (I : AdditiveInstance (Fin n) G) (i : Fin n)\n    (s : Finset G) (hs : s.Nonempty) :\n    bestGood I i s hs ∈ s",
+      "docstring": "`bestGood` lies in the candidate set.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L702",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.bestGood_le",
+      "display_name": "SocialChoice.FairDivision.Indivisible.bestGood_le",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.bestGood_le",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "kind": "lemma",
+      "signature": "lemma bestGood_le [DecidableEq G]\n    (I : AdditiveInstance (Fin n) G) (i : Fin n)\n    (s : Finset G) (hs : s.Nonempty) {g : G} (hg : g ∈ s) :\n    I.weight i g ≤ I.weight i (bestGood I i s hs)",
+      "docstring": "Every candidate good has no larger weight than `bestGood`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L710",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+  "title": "PROP ⇒ α-MMS (Additive Valuations)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>PROP ⇒ α-MMS (Additive Valuations)</h1>\n<p><strong>Theorem.</strong> For an additive valuation\n([[social_choice.fair_division.indivisible.additive_valuation]]) with\nnonnegative weights, every proportional allocation\n([[social_choice.fair_division.indivisible.proportional]]) is\n<em>1-MMS</em> — i.e. it satisfies the α-MMS guarantee\n([[social_choice.fair_division.indivisible.is_alpha_mms]]) at the\nmaximum α.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsProportional.isAlphaMMS_additive</code>.</p>",
+  "proof_html": "<p>The MMS value is bounded above by the proportional share\n$v_i(\\mathrm{allGoods}) / n$ in the additive case\n([[social_choice.fair_division.indivisible.mms_value_bounds]]'s\n<code>mmsValue_le_proportional_share_additive</code>):\n$$\nn \\cdot \\mathrm{MMS}_i \\le v_i(\\mathrm{allGoods}).\n$$</p>\n<p>The PROP hypothesis gives\n$v_i(\\mathrm{allGoods}) \\le n \\cdot v_i(A(i))$. Combining:\n$$\nn \\cdot \\mathrm{MMS}_i \\le n \\cdot v_i(A(i)).\n$$</p>\n<p>Dividing by $n &gt; 0$ (or staying in integer form via the no-division\ntrick) gives $\\mathrm{MMS}_i \\le v_i(A(i))$, which is the 1-MMS\ncondition.</p>\n<h2>Relation to the exact-MMS implication</h2>\n<p>The exact <code>IsMaxminShare</code> implication\n([[social_choice.fair_division.indivisible.proportional_implies_mms_additive]])\nis the equivalent statement in the alternative formulation; the two\nagree by [[social_choice.fair_division.indivisible.mms_iff_alpha_one]].</p>\n<h2>Significance</h2>\n<p>This closes the implication chain for additive valuations:\n$$\n\\mathrm{EF} \\Rightarrow \\mathrm{PROP} \\Rightarrow \\mathrm{1\\text{-}MMS} \\;\\iff\\; \\mathrm{IsMaxminShare}.\n$$</p>\n<p>So <em>every</em> EF allocation in the additive setting is automatically\nMMS-fair — though the converse fails (PROP and MMS are strictly weaker\nthan EF).</p>\n<h2>References</h2>\n<ul>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. PROP-MMS implication.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsProportional.isAlphaMMS_additive",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsProportional.isAlphaMMS_additive",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsProportional.isAlphaMMS_additive",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "theorem",
+      "signature": "theorem IsProportional.isAlphaMMS_additive\n    [Nonempty N] [Fintype G]\n    (w : AdditiveValuation N G)\n    {allGoods : Finset G} {A : Allocation N G}\n    (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'})\n    (hProp : IsProportional (Fintype.card N) w.toValuation allGoods A)\n    (α : ℝ) (hα_le : α ≤ 1)\n    (hmms_nn : ∀ i, 0 ≤ mmsValue w.toValuation allGoods i) :\n    IsAlphaMMS α w.toValuation allGoods A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L344",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

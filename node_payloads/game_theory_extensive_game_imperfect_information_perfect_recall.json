@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.perfect_recall",
+  "title": "Perfect Recall",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_perfect_recall.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Perfect Recall</h1>\n<p>An extensive game has perfect recall for player $i$ if, whenever two nodes $x$ and\n$y$ lie in the same information set of player $i$, the earlier information sets of\nplayer $i$ encountered on histories leading to $x$ and $y$ match, and the player's\nown earlier actions also match as actions in the corresponding equivalence classes.</p>\n<p>Informally, player $i$ never forgets what they knew or which actions they\npreviously chose.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A player remembers what they knew and did in the past.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.symmetric_mixed_equilibrium",
+  "title": "Symmetric Mixed Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_symmetric_mixed_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Symmetric Mixed Equilibrium</h1>\n<p>If a finite strategic game has a symmetry $\\phi$, then it admits a mixed\nequilibrium $\\sigma$ with the same symmetry:\n$$\n  \\sigma=\\phi(\\sigma).\n$$</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Let $X$ be the closed convex subset of mixed profiles fixed by $\\phi$. The uniform\nmixed profile lies in $X$, so $X$ is nonempty. Nash's fixed-point map respects the\nsymmetry, hence maps $X$ to itself. Brouwer's fixed point theorem applied on $X$\ngives a symmetric fixed point, which is a mixed equilibrium by Nash's argument.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 4.6.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A finite game with symmetry admits a mixed equilibrium with that symmetry.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

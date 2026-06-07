@@ -1,0 +1,127 @@
+{
+  "id": "social_choice.fair_division.indivisible.additive_valuation",
+  "title": "Additive Valuation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Additive Valuation</h1>\n<p>An <em>additive valuation</em> is the standard special case of indivisible\nvaluations in which the value of a bundle is the sum of per-item weights:\n$$\nv_i(S) = \\sum_{g \\in S} w_i(g),\n$$\nwith weights $w_i : G \\to \\mathbb{R}$.</p>\n<p>In Lean: structure <code>SocialChoice.FairDivision.Indivisible.AdditiveValuation N G</code>\nwith one field <code>weight : N → G → ℝ</code>.</p>\n<h2>Lift to abstract valuation</h2>\n<p><code>AdditiveValuation.toValuation</code> lifts to a generic\n[[social_choice.fair_division.indivisible.valuation]]:\n$$\n(w.\\mathrm{toValuation}).\\mathrm{val}\\ i\\ S = \\sum_{g \\in S} w.\\mathrm{weight}\\ i\\ g.\n$$</p>\n<h2>Basic properties</h2>\n<p>Three structural lemmas at the additive layer:</p>\n<ul>\n<li>\n<p><strong><code>toValuation_empty</code></strong> (<code>@[simp]</code>):\n  $w.\\mathrm{toValuation}.\\mathrm{val}\\ i\\ \\emptyset = 0$.</p>\n</li>\n<li>\n<p><strong><code>toValuation_union</code></strong> for disjoint bundles\n  ($\\mathrm{Disjoint}\\ S\\ T$, $[\\mathrm{DecidableEq}\\ G]$):\n  $$\n  v(i, S \\cup T) = v(i, S) + v(i, T).\n  $$</p>\n</li>\n<li>\n<p><strong><code>toValuation_mono</code></strong> for nonnegative weights\n  ($\\forall i\\,g,\\ w(i, g) \\ge 0$, $[\\mathrm{DecidableEq}\\ G]$):\n  $$\n  T \\subseteq S \\;\\Rightarrow\\; v(i, T) \\le v(i, S).\n  $$</p>\n</li>\n</ul>\n<h2>Why additivity matters</h2>\n<p>The implication chain\n([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]],\n[[social_choice.fair_division.indivisible.proportional_implies_mms_additive]])\nneeds additivity to convert a per-bundle inequality\n$v_i(B_j) \\le v_i(A_i)$ into the total-value comparisons that\nproportionality and MMS demand. Monotone but non-additive valuations\nsupport <code>EF → EFX</code> but not <code>EF → PROP</code>. Additive valuations are the\nsweet spot for most positive results in the indivisible setting.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Additive valuations.</li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "structure",
+      "signature": "structure AdditiveValuation (N G : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L68",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "def",
+      "signature": "def toValuation (w : AdditiveValuation N G) : Valuation N G",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L79",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_empty",
+      "display_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_empty",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_empty",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma toValuation_empty (w : AdditiveValuation N G) (i : N) :\n    w.toValuation.val i ∅ = 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L84",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_union",
+      "display_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_union",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_union",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma toValuation_union [DecidableEq G]\n    (w : AdditiveValuation N G) (i : N) (S T : Finset G) (h : Disjoint S T) :\n    w.toValuation.val i (S ∪ T) = w.toValuation.val i S + w.toValuation.val i T",
+      "docstring": "Additive valuation of a union of disjoint bundles splits as a sum.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L89",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_mono",
+      "display_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_mono",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.AdditiveValuation.toValuation_mono",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma toValuation_mono [DecidableEq G]\n    (w : AdditiveValuation N G)\n    (hnn : ∀ (i : N) (g : G), 0 ≤ w.weight i g)\n    (i : N) {S T : Finset G} (h : T ⊆ S) :\n    w.toValuation.val i T ≤ w.toValuation.val i S",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L96",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

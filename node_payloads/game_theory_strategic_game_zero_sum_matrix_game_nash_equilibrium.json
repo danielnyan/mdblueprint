@@ -1,0 +1,129 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+  "title": "Mixed Nash Equilibrium of a Matrix Game",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Mixed Nash Equilibrium of a Matrix Game</h1>\n<p>For a finite matrix game $A : I \\times J \\to \\mathbb{R}$, there exist mixed\nstrategies $x^\\ast \\in \\Delta(I)$ and $y^\\ast \\in \\Delta(J)$ such that</p>\n<p>$$E_A(x, y^\\ast) \\le E_A(x^\\ast, y^\\ast) \\le E_A(x^\\ast, y)$$</p>\n<p>for every $x \\in \\Delta(I)$ and $y \\in \\Delta(J)$ — the standard\nsaddle-point form of mixed Nash equilibrium in a zero-sum two-player game.</p>\n<p>This is the strategy-level packaging of\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a> and is what is usually called \"the\nmatrix game has a (mixed) Nash equilibrium\".</p>\n<p>The Lean development records the equilibrium in two complementary ways and\nproves them equivalent in the embedded strategic game:</p>\n<ul>\n<li><code>MatrixGame.IsMixedNashEq xx yy</code> — the saddle-point predicate directly on\n  the matrix game, easy to reason about and the form used to prove existence\n  (<code>MatrixGame.exists_mixed_nash_equilibrium</code>).</li>\n<li><code>MatrixGame.toStrategicGame</code> — the explicit two-player zero-sum strategic\n  game (payoffs $A$ and $-A$) whose <code>StrategicGame.IsMixedNashEq</code> reduces to\n  the saddle-point form. The full bridge theorem\n  <code>MatrixGame.exists_strategic_game_nash_equilibrium</code> packages a Nash\n  equilibrium of the embedded strategic game built from the saddle-point pair,\n  using the lemmas <code>expectedPayoff_toStrategicGame_zero</code> /\n  <code>expectedPayoff_toStrategicGame_one</code> that compute the\n  <code>StrategicGame.expectedPayoff</code> as <code>±A.E (p 0) (p 1)</code>.</li>\n</ul>\n<p>The supporting <code>StrategicGame.MixedStrategy</code> / <code>MixedProfile</code> /\n<code>expectedPayoff</code> / <code>IsMixedNashEq</code> API is polymorphic in the payoff field\n<code>U</code> (any <code>Field U</code> with <code>LinearOrder</code> and <code>IsStrictOrderedRing</code>), so it\nspecialises to both $\\mathbb{Q}$ (for constructive <code>native_decide</code> examples\nsuch as Rock–Paper–Scissors) and $\\mathbb{R}$ (for the Loomis-based existence\ntheorem).</p>",
+  "proof_html": "<p>Apply <code>MatrixGame.minimax_optimal_strategies</code> (closed by the\nsimplified-Loomis induction) to obtain $x^\\ast$, $y^\\ast$, and a value $v$\nwith $E_A(x^\\ast, j) \\ge v$ for every pure column $j$ and\n$E_A(i, y^\\ast) \\le v$ for every pure row $i$. By\n<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a> this transfers to mixed responses:\n$E_A(x^\\ast, y') \\ge v$ for every $y' \\in \\Delta(J)$ and\n$E_A(x', y^\\ast) \\le v$ for every $x' \\in \\Delta(I)$. Taking $x' = x^\\ast$\nand $y' = y^\\ast$ shows $E_A(x^\\ast, y^\\ast) = v$, and the chain\n$E_A(x, y^\\ast) \\le v = E_A(x^\\ast, y^\\ast) \\le E_A(x^\\ast, y)$ holds for\nevery $x$ and $y$, which is exactly the saddle-point form.</p>\n<h2>Over ℚ and other ordered fields</h2>\n<p>The Loomis existence proof goes through the extreme value theorem on the\ncompact mixed-strategy simplex $\\Delta(I) \\subseteq \\mathbb{R}^{|I|}$. The\nrequired compactness is the standard Heine–Borel statement on $\\mathbb{R}^n$\nand is not available for $\\mathbb{Q}^n$, so <em>that</em> route intrinsically\nproduces real-valued strategies. Existence over $\\mathbb{Q}$ and every other\nlinearly ordered field is nonetheless available, sorry-free, through the\nsymmetrisation route <code>Minimax.minimax</code>\n(<a class=\"node-ref\" data-node-id=\"math.minimax.ordered_field_minimax\" href=\"../../math/minimax/math_minimax_ordered_field_minimax.html\">Ordered-Field Minimax Statement</a>): it embeds the game in a\nskew-symmetric matrix and extracts the saddle point as a pure feasibility\nfact (the Theorem of the Alternative), needing no compactness or\norder-completeness. <code>MatrixGame.exists_mixed_nash_equilibrium</code> is built on\nthat route and is itself field-generic.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 5, Thm. 5.11 / 5.13] Maschler, Solan, and Zamir, <em>Game Theory</em>. Existence of mixed Nash equilibrium in a finite matrix game via the saddle-point equivalence.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
+      "id": "math.minimax.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Games Have Value",
+      "href": "math/math_minimax_antisymmetric_matrix_game_value.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.exists_mixed_nash_equilibrium",
+      "display_name": "MatrixGame.exists_mixed_nash_equilibrium",
+      "qualified_name": "MatrixGame.exists_mixed_nash_equilibrium",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem exists_mixed_nash_equilibrium {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜] (A : MatrixGame I J 𝕜) :\n    ∃ (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J), A.IsMixedNashEq xx yy",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L458",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.expectedPayoff_toStrategicGame_zero",
+      "display_name": "MatrixGame.expectedPayoff_toStrategicGame_zero",
+      "qualified_name": "MatrixGame.expectedPayoff_toStrategicGame_zero",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem expectedPayoff_toStrategicGame_zero {𝕜 : Type}\n    [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (p : StrategicGame.MixedProfile A.toStrategicGame) :\n    StrategicGame.expectedPayoff A.toStrategicGame p 0\n      = A.E (p 0) (p 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L559",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.expectedPayoff_toStrategicGame_one",
+      "display_name": "MatrixGame.expectedPayoff_toStrategicGame_one",
+      "qualified_name": "MatrixGame.expectedPayoff_toStrategicGame_one",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem expectedPayoff_toStrategicGame_one {𝕜 : Type}\n    [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (p : StrategicGame.MixedProfile A.toStrategicGame) :\n    StrategicGame.expectedPayoff A.toStrategicGame p 1\n      = -(A.E (p 0) (p 1))",
+      "docstring": "Mirror: `expectedPayoff A.toStrategicGame p 1 = -(A.E (p 0) (p 1))`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L585",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.exists_strategic_game_nash_equilibrium",
+      "display_name": "MatrixGame.exists_strategic_game_nash_equilibrium",
+      "qualified_name": "MatrixGame.exists_strategic_game_nash_equilibrium",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem exists_strategic_game_nash_equilibrium :\n    ∃ p : StrategicGame.MixedProfile A.toStrategicGame,\n      StrategicGame.IsMixedNashEq A.toStrategicGame p",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L619",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

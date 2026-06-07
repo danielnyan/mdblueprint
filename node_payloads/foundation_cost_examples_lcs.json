@@ -1,0 +1,95 @@
+{
+  "id": "foundation.cost.examples.lcs",
+  "title": "Worked Example: Longest Common Subsequence DP Grid",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_lcs.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: Longest Common Subsequence DP Grid</h1>\n<p>Longest common subsequence in <code>CostM (Visited (ℕ × ℕ))</code>: the cost footprint is\nnow a set of <strong>2-D grid cells</strong> <code>(i, j)</code>, one per <code>(prefix of xs, prefix of\nys)</code> subproblem. The memoization footprint is contained in the full DP grid,\n$$\n  (\\operatorname{lcs}\\,xs\\,ys).\\mathrm{cost} \\;\\subseteq\\;\n    \\{0,\\dots,|xs|\\} \\times \\{0,\\dots,|ys|\\},\n$$\nwhich is <code>lcs_cost_subset</code>; taking cardinalities gives the polynomial-space\nbound\n$$\n  (\\operatorname{lcs}\\,xs\\,ys).\\mathrm{cost}.\\mathrm{toFinset}.\\mathrm{card}\n    \\;\\le\\; (|xs|+1)\\,(|ys|+1),\n$$\ni.e. <code>lcs_cost_card_le</code>. This is the canonical polynomial-space DP example —\nthe 2-D analogue of <a class=\"node-ref\" data-node-id=\"foundation.cost.examples.memo_fib\" href=\"cost/examples/foundation_cost_examples_memo_fib.html\">Worked Example: Memoized Fibonacci Footprint</a>.</p>\n<p><code>lcs</code> uses the bare <code>CostM.tick</code> form (rather than the <code>✓</code> macro) at its\nfootprint-recording points, since each tick records a specific grid cell\n<code>Visited.singleton (i, j)</code> rather than a unit cost.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>LCS.lcs : List α → List α → CostM (Visited (ℕ × ℕ)) ℕ</code>.</li>\n<li><code>LCS.lcs_cost_subset</code> — footprint <code>⊆</code> the DP grid (via a private\n  <code>range_prod_mono</code> monotonicity lemma).</li>\n<li><code>LCS.lcs_cost_card_le</code> — the <code>(|xs|+1)(|ys|+1)</code> cell-count bound.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. Footprint cost monoids\n  (<a class=\"node-ref\" data-node-id=\"foundation.cost.visited\" href=\"cost/foundation_cost_visited.html\">Memoization Footprint via the Visited Monoid</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    },
+    {
+      "id": "foundation.cost.visited",
+      "title": "Memoization Footprint via the Visited Monoid",
+      "href": "foundation/foundation_cost_visited.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "LCS.lcs",
+      "display_name": "LCS.lcs",
+      "qualified_name": "LCS.lcs",
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "kind": "def",
+      "signature": "def lcs : List A → List A → CostM (Visited (ℕ × ℕ)) ℕ\n  | [],      ys      => do\n    CostM.tick (Visited.singleton (0, ys.length))\n    pure 0\n  | x :: xs, []      => do\n    CostM.tick (Visited.singleton (xs.length + 1, 0))\n    pure 0\n  | x :: xs, y :: ys =>\n    if x = y then do\n      CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1))\n      let r ← lcs xs ys\n      pure (r + 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/LCS.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "LCS.lcs_cost_subset",
+      "display_name": "LCS.lcs_cost_subset",
+      "qualified_name": "LCS.lcs_cost_subset",
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "kind": "theorem",
+      "signature": "theorem lcs_cost_subset (xs : List A) : ∀ (ys : List A),\n    (lcs xs ys).cost.toFinset ⊆\n      Finset.range (xs.length + 1) ×ˢ Finset.range (ys.length + 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/LCS.lean#L90",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "LCS.lcs_cost_card_le",
+      "display_name": "LCS.lcs_cost_card_le",
+      "qualified_name": "LCS.lcs_cost_card_le",
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "kind": "theorem",
+      "signature": "theorem lcs_cost_card_le (xs ys : List A) :\n    (lcs xs ys).cost.toFinset.card ≤ (xs.length + 1) * (ys.length + 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/LCS.lean#L131",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.LCS",
+      "display_name": "EconCSLib.Examples.CostM.LCS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/LCS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

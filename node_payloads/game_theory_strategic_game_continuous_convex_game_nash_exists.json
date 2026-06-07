@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.convex_game_nash_exists",
+  "title": "Nash Existence In Convex Games",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game_nash_exists.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Nash Existence In Convex Games</h1>\n<p>Every convex game in the sense of MFoGT Exercise 4.12.7 has a Nash equilibrium.</p>\n<p>The exercise proves this by contradiction: if no $t$ satisfies the variational\ncharacterization, a finite open cover and a partition-of-unity construction produce\na continuous self-map of the compact convex strategy space. Brouwer's theorem\ngives a fixed point, contradicting the construction.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 7(2)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence of equilibrium in convex games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

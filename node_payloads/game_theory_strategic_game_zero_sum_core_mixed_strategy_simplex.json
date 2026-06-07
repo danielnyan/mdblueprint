@@ -1,0 +1,92 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+  "title": "Mixed Strategy Simplex",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Mixed Strategy Simplex</h1>\n<p>For a finite set $S$, the mixed strategy simplex $\\Delta(S)$ is the set of\nprobability vectors on $S$:\n$$\n  \\Delta(S)=\\{x \\in \\mathbb{R}^S : x_s \\ge 0 \\text{ for all } s,\\ \n  \\sum_{s \\in S} x_s = 1\\}.\n$$\nThe Lean library uses Mathlib's <code>stdSimplex ℝ S</code> for this set, with\n<code>stdSimplex.pure i</code> for the Dirac point mass at $i$ and <code>wsum x f</code> (a\ndefinitional abbreviation for the dot product <code>x ⬝ᵥ f</code>) for the weighted\nsum of a function $f \\colon S \\to \\mathbb{R}$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Delta(S) is the simplex of probabilities on a finite set S.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "title": "Positive Aggregates xB and By",
+      "href": "math/math_minimax_loomis_induction_proof_positive_aggregate.html"
+    },
+    {
+      "id": "math.simplex.continuity",
+      "title": "Continuity on the Real Standard Simplex",
+      "href": "math/math_simplex_continuity.html"
+    },
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "href": "math/math_simplex_mix.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "stdSimplex.pure",
+      "display_name": "stdSimplex.pure",
+      "qualified_name": "stdSimplex.pure",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "def",
+      "signature": "def stdSimplex.pure [DecidableEq I] (i₀ : I) : stdSimplex 𝕜 I where",
+      "docstring": "Point-mass simplex element at `i₀`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L308",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum",
+      "display_name": "wsum",
+      "qualified_name": "wsum",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "abbrev",
+      "signature": "abbrev wsum (x : stdSimplex 𝕜 I) (f : I → 𝕜) : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L87",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Simplex",
+      "display_name": "EconCSLib.Math.Simplex",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

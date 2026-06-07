@@ -1,0 +1,573 @@
+{
+  "topic": {
+    "id": "foundation",
+    "title": "Foundation",
+    "href": "foundation/index.html",
+    "parent": null,
+    "node_count": 19,
+    "descendant_node_count": 26
+  },
+  "counts": {
+    "internal_nodes": 19,
+    "inlined_nodes": 26,
+    "descendant_nodes": 26,
+    "child_topics": 0,
+    "inlined_child_topics": 5,
+    "non_proof_plan_nodes": 26,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 28,
+    "visible_nodes_with_selected_proof_plans": 28
+  },
+  "nodes": [
+    {
+      "id": "foundation.argmax.list_arg_max_on",
+      "title": "Argmax of a List under a Total Preorder",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_argmax_list_arg_max_on.html",
+      "payload": "node_payloads/foundation_argmax_list_arg_max_on.json"
+    },
+    {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_cells.html",
+      "payload": "node_payloads/foundation_cost_cells.json"
+    },
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_costm.html",
+      "payload": "node_payloads/foundation_cost_costm.json"
+    },
+    {
+      "id": "foundation.cost.examples.boyer_moore",
+      "title": "Worked Example: Constant-Space Boyer–Moore Majority",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_boyer_moore.html",
+      "payload": "node_payloads/foundation_cost_examples_boyer_moore.json"
+    },
+    {
+      "id": "foundation.cost.examples.gcd",
+      "title": "Worked Example: Euclidean GCD Step Count",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_gcd.html",
+      "payload": "node_payloads/foundation_cost_examples_gcd.json"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_lcs.html",
+      "payload": "node_payloads/foundation_cost_examples_lcs.json"
+    },
+    {
+      "id": "foundation.cost.examples.memo_fib",
+      "title": "Worked Example: Memoized Fibonacci Footprint",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_memo_fib.html",
+      "payload": "node_payloads/foundation_cost_examples_memo_fib.json"
+    },
+    {
+      "id": "foundation.cost.examples.par_all",
+      "title": "Worked Example: N-ary parList Depth Bound",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_par_all.html",
+      "payload": "node_payloads/foundation_cost_examples_par_all.json"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_par_sum.html",
+      "payload": "node_payloads/foundation_cost_examples_par_sum.json"
+    },
+    {
+      "id": "foundation.cost.examples.reverse_space",
+      "title": "Worked Example: Quadratic Naive List Reversal",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_reverse_space.html",
+      "payload": "node_payloads/foundation_cost_examples_reverse_space.json"
+    },
+    {
+      "id": "foundation.cost.parallel",
+      "title": "Parallel Composition in CostM",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_parallel.html",
+      "payload": "node_payloads/foundation_cost_parallel.json"
+    },
+    {
+      "id": "foundation.cost.visited",
+      "title": "Memoization Footprint via the Visited Monoid",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_visited.html",
+      "payload": "node_payloads/foundation_cost_visited.json"
+    },
+    {
+      "id": "foundation.preference.abstract_relation",
+      "title": "Abstract Preference-Relation Axioms",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_preference_abstract_relation.html",
+      "payload": "node_payloads/foundation_preference_abstract_relation.json"
+    },
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_preference_indifferent.html",
+      "payload": "node_payloads/foundation_preference_indifferent.json"
+    },
+    {
+      "id": "foundation.preference.relation",
+      "title": "Preference Relation (MSZ Ch.2 Narrative)",
+      "kind": "definition",
+      "status": "staged",
+      "href": "foundation/foundation_preference_relation.html",
+      "payload": "node_payloads/foundation_preference_relation.json"
+    },
+    {
+      "id": "foundation.preference.represents_preference",
+      "title": "Utility Representation of a Preference",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_preference_represents_preference.html",
+      "payload": "node_payloads/foundation_preference_represents_preference.json"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_preference_strictly_preferred.html",
+      "payload": "node_payloads/foundation_preference_strictly_preferred.json"
+    },
+    {
+      "id": "foundation.preference.total_preorder",
+      "title": "Total Preorder",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_preference_total_preorder.html",
+      "payload": "node_payloads/foundation_preference_total_preorder.json"
+    },
+    {
+      "id": "foundation.profile.deviate",
+      "title": "Standalone Profile and Unilateral Deviation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_profile_deviate.html",
+      "payload": "node_payloads/foundation_profile_deviate.json"
+    },
+    {
+      "id": "foundation.utility.expected_utility_representation",
+      "title": "Expected Utility Representation",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_expected_utility_representation.html",
+      "payload": "node_payloads/foundation_utility_expected_utility_representation.json"
+    },
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "kind": "definition",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_lottery.html",
+      "payload": "node_payloads/foundation_utility_lottery.json"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html",
+      "payload": "node_payloads/foundation_utility_positive_affine_uniqueness.json"
+    },
+    {
+      "id": "foundation.utility.risk_neutrality",
+      "title": "Risk Neutrality",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_risk_neutrality.html",
+      "payload": "node_payloads/foundation_utility_risk_neutrality.json"
+    },
+    {
+      "id": "foundation.utility.sure_thing_principle",
+      "title": "Sure Thing Principle",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_sure_thing_principle.html",
+      "payload": "node_payloads/foundation_utility_sure_thing_principle.json"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html",
+      "payload": "node_payloads/foundation_utility_vnm_axiom_independence.json"
+    },
+    {
+      "id": "foundation.utility.vnm_axioms",
+      "title": "Von Neumann Morgenstern Axioms",
+      "kind": "definition",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_vnm_axioms.html",
+      "payload": "node_payloads/foundation_utility_vnm_axioms.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "foundation.preference.total_preorder",
+      "to": "foundation.argmax.list_arg_max_on",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.cells",
+      "to": "foundation.cost.examples.boyer_moore",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.boyer_moore",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.gcd",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.visited",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.memo_fib",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.visited",
+      "to": "foundation.cost.examples.memo_fib",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_all",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.reverse_space",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.parallel",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.preference.abstract_relation",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "foundation.preference.indifferent",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.total_preorder",
+      "to": "foundation.preference.indifferent",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.preference.represents_preference",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.profile.deviate",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.profile.deviate",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.expected_utility_representation",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.represents_preference",
+      "to": "foundation.utility.positive_affine_uniqueness",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.expected_utility_representation",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.abstract_relation",
+      "to": "foundation.utility.vnm_axioms",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.lottery",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "affine",
+      "title": "affine",
+      "href": "keywords/affine.html",
+      "count": 1
+    },
+    {
+      "id": "argmax",
+      "title": "argmax",
+      "href": "keywords/argmax.html",
+      "count": 1
+    },
+    {
+      "id": "complexity",
+      "title": "complexity",
+      "href": "keywords/complexity.html",
+      "count": 2
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 7
+    },
+    {
+      "id": "cost",
+      "title": "cost",
+      "href": "keywords/cost.html",
+      "count": 11
+    },
+    {
+      "id": "deviation",
+      "title": "deviation",
+      "href": "keywords/deviation.html",
+      "count": 1
+    },
+    {
+      "id": "dynamic-programming",
+      "title": "dynamic-programming",
+      "href": "keywords/dynamic-programming.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 7
+    },
+    {
+      "id": "exercise",
+      "title": "exercise",
+      "href": "keywords/exercise.html",
+      "count": 1
+    },
+    {
+      "id": "expected-utility",
+      "title": "expected-utility",
+      "href": "keywords/expected-utility.html",
+      "count": 1
+    },
+    {
+      "id": "extensive-game",
+      "title": "extensive-game",
+      "href": "keywords/extensive-game.html",
+      "count": 1
+    },
+    {
+      "id": "idempotent",
+      "title": "idempotent",
+      "href": "keywords/idempotent.html",
+      "count": 1
+    },
+    {
+      "id": "independence",
+      "title": "independence",
+      "href": "keywords/independence.html",
+      "count": 1
+    },
+    {
+      "id": "indifference",
+      "title": "indifference",
+      "href": "keywords/indifference.html",
+      "count": 1
+    },
+    {
+      "id": "lottery",
+      "title": "lottery",
+      "href": "keywords/lottery.html",
+      "count": 2
+    },
+    {
+      "id": "memoization",
+      "title": "memoization",
+      "href": "keywords/memoization.html",
+      "count": 2
+    },
+    {
+      "id": "memory",
+      "title": "memory",
+      "href": "keywords/memory.html",
+      "count": 1
+    },
+    {
+      "id": "monad",
+      "title": "monad",
+      "href": "keywords/monad.html",
+      "count": 1
+    },
+    {
+      "id": "parallel",
+      "title": "parallel",
+      "href": "keywords/parallel.html",
+      "count": 3
+    },
+    {
+      "id": "peak-memory",
+      "title": "peak-memory",
+      "href": "keywords/peak-memory.html",
+      "count": 1
+    },
+    {
+      "id": "preference",
+      "title": "preference",
+      "href": "keywords/preference.html",
+      "count": 6
+    },
+    {
+      "id": "profile",
+      "title": "profile",
+      "href": "keywords/profile.html",
+      "count": 1
+    },
+    {
+      "id": "risk",
+      "title": "risk",
+      "href": "keywords/risk.html",
+      "count": 1
+    },
+    {
+      "id": "strict-preference",
+      "title": "strict-preference",
+      "href": "keywords/strict-preference.html",
+      "count": 1
+    },
+    {
+      "id": "time-complexity",
+      "title": "time-complexity",
+      "href": "keywords/time-complexity.html",
+      "count": 2
+    },
+    {
+      "id": "total-preorder",
+      "title": "total-preorder",
+      "href": "keywords/total-preorder.html",
+      "count": 1
+    },
+    {
+      "id": "tropical",
+      "title": "tropical",
+      "href": "keywords/tropical.html",
+      "count": 1
+    },
+    {
+      "id": "utility",
+      "title": "utility",
+      "href": "keywords/utility.html",
+      "count": 7
+    },
+    {
+      "id": "utility-representation",
+      "title": "utility-representation",
+      "href": "keywords/utility-representation.html",
+      "count": 1
+    },
+    {
+      "id": "vnm",
+      "title": "vnm",
+      "href": "keywords/vnm.html",
+      "count": 6
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "foundation.argmax",
+    "foundation.cost",
+    "foundation.preference",
+    "foundation.profile",
+    "foundation.utility"
+  ]
+}

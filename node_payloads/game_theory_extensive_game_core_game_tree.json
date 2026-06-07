@@ -1,0 +1,90 @@
+{
+  "id": "game_theory.extensive_game.core.game_tree",
+  "title": "Game Tree",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.core"
+  ],
+  "body_html": "<h1>Game Tree</h1>\n<p>The tree of a finite perfect-information extensive game is a finite connected\ndirected acyclic graph with a distinguished origin $\\theta$. Every non-origin node\nhas a unique predecessor, and iterating predecessors eventually reaches $\\theta$.</p>\n<p>Terminal nodes are those with no successors. Decision positions are nonterminal\nnodes. Each decision position has a nonempty successor set.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Tree of nodes, origin, predecessor map, terminal nodes, and successors.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GameTree",
+      "display_name": "GameTree",
+      "qualified_name": "GameTree",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "inductive",
+      "signature": "inductive GameTree (N : Type*) (U : Type*) : Type _\n  | Leaf (payoff : N → U) : GameTree N U\n  | Node (mover : N) (head : GameTree N U) (tail : List (GameTree N U)) :\n      GameTree N U\nnamespace GameTree\nvariable {N U : Type*}\n/-- The full child list at a `Node`, as a guaranteed non-empty list. -/\n@[simp]",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.children",
+      "display_name": "GameTree.children",
+      "qualified_name": "GameTree.children",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "def",
+      "signature": "def children : GameTree N U → List (GameTree N U)\n  | Leaf _ => []\n  | Node _ h t => h :: t\n/-- Children of a `Node` are never empty. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L64",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.size",
+      "display_name": "GameTree.size",
+      "qualified_name": "GameTree.size",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "def",
+      "signature": "def size : GameTree N U → ℕ\n  | Leaf _ => 1\n  | Node _ h t => 1 + h.size + (t.map size).sum\n/-- Size is always positive. -/",
+      "docstring": "Structural size, used for well-founded recursion.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L74",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

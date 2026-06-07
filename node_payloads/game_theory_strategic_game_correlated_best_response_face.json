@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.best_response_face",
+  "title": "Best Response Face",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_best_response_face.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Best Response Face</h1>\n<p>For a finite strategic game and a correlated opponent strategy\n$\\theta_{-i}\\in\\Delta(S_{-i})$, the best-response set\n$BR_i(\\theta_{-i})$ is a face of the simplex $\\Delta(S_i)$.</p>\n<p>The extreme points of this face are exactly the pure strategies of player $i$\nthat are best responses against $\\theta_{-i}$.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The expected payoff $m_i\\mapsto g_i(m_i,\\theta_{-i})$ is affine on\n$\\Delta(S_i)$. Maximizers of an affine function over a simplex form the convex\nhull of the maximizing vertices, hence a simplex face.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.3, before Def. 4.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. BR_i(theta_{-i}) is a simplex face whose extreme points are pure best responses.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

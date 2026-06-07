@@ -1,0 +1,343 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.continuous",
+    "title": "Game Theory.Strategic Game.Continuous",
+    "href": "game_theory/strategic_game/continuous/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 22,
+    "descendant_node_count": 22
+  },
+  "counts": {
+    "internal_nodes": 22,
+    "inlined_nodes": 0,
+    "descendant_nodes": 22,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 22,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 23,
+    "visible_nodes_with_selected_proof_plans": 23
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.continuous.compact_quasi_concave_nash_exists",
+      "title": "Nash Existence In Compact Quasi-Concave Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_compact_quasi_concave_nash_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_compact_quasi_concave_nash_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.convex_game",
+      "title": "Convex Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_convex_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.convex_game_nash_exists",
+      "title": "Nash Existence In Convex Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game_nash_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_convex_game_nash_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.convex_game_variational_characterization",
+      "title": "Convex Game Nash Variational Characterization",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game_variational_characterization.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_convex_game_variational_characterization.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.cournot_duopoly_supermodular_existence",
+      "title": "Cournot Duopoly Equilibrium From Supermodularity",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_cournot_duopoly_supermodular_existence.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_cournot_duopoly_supermodular_existence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.cournot_fishermen_equilibria",
+      "title": "Cournot Fishermen Equilibria",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_cournot_fishermen_equilibria.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_cournot_fishermen_equilibria.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.first_order_nash_condition",
+      "title": "First-Order Nash Condition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_first_order_nash_condition.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_first_order_nash_condition.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.minority_game_equilibrium_characterization",
+      "title": "Three-Player Minority Game Equilibria",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_minority_game_equilibrium_characterization.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_minority_game_equilibrium_characterization.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.mixed_equilibrium_compact_continuous",
+      "title": "Mixed Equilibrium In Compact Continuous Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_mixed_equilibrium_compact_continuous.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_mixed_equilibrium_compact_continuous.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.monotone_game",
+      "title": "Monotone Smooth Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_monotone_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_monotone_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.monotone_game_nash_uniqueness",
+      "title": "Nash Characterization And Uniqueness In Monotone Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_monotone_game_nash_uniqueness.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_monotone_game_nash_uniqueness.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.quasi_concave_game",
+      "title": "Quasi-Concave Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_quasi_concave_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_quasi_concave_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.smooth_game",
+      "title": "Smooth Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_smooth_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_smooth_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.supermodular_best_response_lattice",
+      "title": "Supermodular Best Responses Are Lattices",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_supermodular_best_response_lattice.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_supermodular_best_response_lattice.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.supermodular_game",
+      "title": "Supermodular Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_supermodular_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_supermodular_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.continuous.supermodular_game_nash_exists",
+      "title": "Nash Existence In Supermodular Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_supermodular_game_nash_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_continuous_supermodular_game_nash_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.payoff_geometry.feasible_payoffs",
+      "title": "Feasible And Individually Rational Payoffs",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_feasible_payoffs.html",
+      "payload": "node_payloads/game_theory_strategic_game_payoff_geometry_feasible_payoffs.json"
+    },
+    {
+      "id": "game_theory.strategic_game.payoff_geometry.focal_point",
+      "title": "Focal Point",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_focal_point.html",
+      "payload": "node_payloads/game_theory_strategic_game_payoff_geometry_focal_point.json"
+    },
+    {
+      "id": "game_theory.strategic_game.payoff_geometry.noncontractible_feasible_payoff_example",
+      "title": "Noncontractible Feasible Payoff Example",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_noncontractible_feasible_payoff_example.html",
+      "payload": "node_payloads/game_theory_strategic_game_payoff_geometry_noncontractible_feasible_payoff_example.json"
+    },
+    {
+      "id": "game_theory.strategic_game.payoff_geometry.prudent_strategy",
+      "title": "Prudent Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_prudent_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_payoff_geometry_prudent_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.payoff_geometry.threat_point",
+      "title": "Threat Point",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_threat_point.html",
+      "payload": "node_payloads/game_theory_strategic_game_payoff_geometry_threat_point.json"
+    },
+    {
+      "id": "game_theory.strategic_game.variational.evaluation_game_equilibrium",
+      "title": "Evaluation Game Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_variational_evaluation_game_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_variational_evaluation_game_equilibrium.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "best-response",
+      "title": "best-response",
+      "href": "keywords/best-response.html",
+      "count": 1
+    },
+    {
+      "id": "continuous-game",
+      "title": "continuous-game",
+      "href": "keywords/continuous-game.html",
+      "count": 3
+    },
+    {
+      "id": "convex-game",
+      "title": "convex-game",
+      "href": "keywords/convex-game.html",
+      "count": 3
+    },
+    {
+      "id": "cournot",
+      "title": "cournot",
+      "href": "keywords/cournot.html",
+      "count": 2
+    },
+    {
+      "id": "equilibrium-selection",
+      "title": "equilibrium-selection",
+      "href": "keywords/equilibrium-selection.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 4
+    },
+    {
+      "id": "feasible-payoff",
+      "title": "feasible-payoff",
+      "href": "keywords/feasible-payoff.html",
+      "count": 3
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "focal-point",
+      "title": "focal-point",
+      "href": "keywords/focal-point.html",
+      "count": 1
+    },
+    {
+      "id": "lattice",
+      "title": "lattice",
+      "href": "keywords/lattice.html",
+      "count": 1
+    },
+    {
+      "id": "minority-game",
+      "title": "minority-game",
+      "href": "keywords/minority-game.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "monotone-game",
+      "title": "monotone-game",
+      "href": "keywords/monotone-game.html",
+      "count": 2
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 7
+    },
+    {
+      "id": "prudence",
+      "title": "prudence",
+      "href": "keywords/prudence.html",
+      "count": 1
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 1
+    },
+    {
+      "id": "smooth-game",
+      "title": "smooth-game",
+      "href": "keywords/smooth-game.html",
+      "count": 2
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 22
+    },
+    {
+      "id": "supermodular-game",
+      "title": "supermodular-game",
+      "href": "keywords/supermodular-game.html",
+      "count": 4
+    },
+    {
+      "id": "topology",
+      "title": "topology",
+      "href": "keywords/topology.html",
+      "count": 1
+    },
+    {
+      "id": "variational-inequality",
+      "title": "variational-inequality",
+      "href": "keywords/variational-inequality.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+  "title": "Saddle Point",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Saddle Point</h1>\n<p>A pair of mixed strategies $(x^*,y^*)$ is a saddle point of a matrix game $A$\nif for all $x \\in \\Delta(I)$ and $y \\in \\Delta(J)$,\n$$\n  x A y^* \\le x^* A y^* \\le x^* A y.\n$$</p>\n<p>For a zero-sum two-player matrix game, the saddle point predicate is\nsynonymous with the mixed Nash equilibrium predicate\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html\">Mixed Nash Equilibrium of a Matrix Game</a> — the Lean development\ndefines <code>MatrixGame.IsSaddlePoint</code> as an <code>abbrev</code> for\n<code>MatrixGame.IsMixedNashEq</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(d)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Saddle point inequality for matrix games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.IsSaddlePoint",
+      "display_name": "MatrixGame.IsSaddlePoint",
+      "qualified_name": "MatrixGame.IsSaddlePoint",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "abbrev",
+      "signature": "abbrev IsSaddlePoint {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L74",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.IsMixedNashEq",
+      "display_name": "MatrixGame.IsMixedNashEq",
+      "qualified_name": "MatrixGame.IsMixedNashEq",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def IsMixedNashEq {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L64",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

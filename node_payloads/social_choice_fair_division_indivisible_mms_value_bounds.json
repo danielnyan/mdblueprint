@@ -1,0 +1,110 @@
+{
+  "id": "social_choice.fair_division.indivisible.mms_value_bounds",
+  "title": "MMS Value — Basic Bounds",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>MMS Value — Basic Bounds</h1>\n<p>Four foundational bounds on $\\mathrm{MMS}_i$\n([[social_choice.fair_division.indivisible.mms_value]]).</p>\n<h2>Lower bound from any partition</h2>\n<p><code>iInf_partition_le_mmsValue</code>: for every complete allocation $B$ of\n<code>allGoods</code>, the worst-bundle value provides a lower bound:\n$$\n\\min_{j} v_i(B(j)) \\le \\mathrm{MMS}_i.\n$$</p>\n<p>This is one direction of the max-of-mins definition: any specific $B$\nyields a min that the max-over-all-$B$ must dominate.</p>\n<h2>Upper bound from a uniform agent guarantee</h2>\n<p><code>mmsValue_le_of_forall</code>: if some value $c$ satisfies \"every complete\nallocation $B$ has some bundle $j$ with $v_i(B(j)) \\le c$\", then\n$\\mathrm{MMS}_i \\le c$.</p>\n<p>This is the dual direction: any uniform upper bound on the worst-piece\nacross all partitions provides an upper bound on the maximin value.</p>\n<h2>Nonnegativity</h2>\n<p><code>mmsValue_nonneg</code>: when values are nonnegative, $\\mathrm{MMS}_i \\ge 0$.\nThe empty allocation (<code>B(j) = ∅</code> for all $j$, valid only when\n$\\mathrm{allGoods} = \\emptyset$) trivially has all bundles of value $0$,\ngiving the nonnegativity bound.</p>\n<h2>MMS bounded by proportional share (additive valuations)</h2>\n<p><code>mmsValue_le_proportional_share_additive</code> (for an additive valuation\n[[social_choice.fair_division.indivisible.additive_valuation]] with\nnonnegative weights):\n$$\nn \\cdot \\mathrm{MMS}_i \\le v_i(\\mathrm{allGoods}).\n$$</p>\n<p>Equivalently, $\\mathrm{MMS}_i \\le v_i(\\mathrm{allGoods}) / n$. The\nargument: take any complete allocation $B$; the sum of $v_i(B(j))$\nover $j$ equals $v_i(\\mathrm{allGoods})$ by additivity; the worst\nbundle is at most the average, i.e. $\\le v_i(\\mathrm{allGoods}) / n$.\nTaking $\\sup_B$ preserves this bound.</p>\n<p>This is a <em>foundational</em> fact: it shows the MMS guarantee is at most\nthe proportional share, hence MMS is a <em>weaker</em> notion than PROP for\nadditive valuations.</p>\n<h2>References</h2>\n<ul>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. MMS value bounds.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.iInf_partition_le_mmsValue",
+      "display_name": "SocialChoice.FairDivision.Indivisible.iInf_partition_le_mmsValue",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.iInf_partition_le_mmsValue",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "lemma",
+      "signature": "lemma iInf_partition_le_mmsValue\n    (v : Valuation N G) (allGoods : Finset G) (i : N)\n    (B : Allocation N G) (hB : IsAllocation allGoods B)\n    (hbdd : BddAbove (Set.range fun X : {A : Allocation N G // IsAllocation allGoods A} =>\n        iInf fun j : N => v.val i (X.val j))) :\n    iInf (fun j : N => v.val i (B j)) ≤ mmsValue v allGoods i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L140",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_of_forall",
+      "display_name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_of_forall",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_of_forall",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "lemma",
+      "signature": "lemma mmsValue_le_of_forall\n    (v : Valuation N G) (allGoods : Finset G) (i : N)\n    (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A})\n    (ub : ℝ)\n    (h : ∀ B : Allocation N G, IsAllocation allGoods B →\n        iInf (fun j : N => v.val i (B j)) ≤ ub) :\n    mmsValue v allGoods i ≤ ub",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L154",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.mmsValue_nonneg",
+      "display_name": "SocialChoice.FairDivision.Indivisible.mmsValue_nonneg",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.mmsValue_nonneg",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "lemma",
+      "signature": "lemma mmsValue_nonneg [Fintype G]\n    (v : Valuation N G) (allGoods : Finset G) (i : N)\n    (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A})\n    (hnonneg : ∀ S : Finset G, 0 ≤ v.val i S) :\n    0 ≤ mmsValue v allGoods i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L168",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_proportional_share_additive",
+      "display_name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_proportional_share_additive",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.mmsValue_le_proportional_share_additive",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "lemma",
+      "signature": "lemma mmsValue_le_proportional_share_additive\n    (w : AdditiveValuation N G)\n    (allGoods : Finset G) (i : N)\n    (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A}) :\n    (Fintype.card N : ℝ) * mmsValue w.toValuation allGoods i ≤\n      w.toValuation.val i allGoods",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L198",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

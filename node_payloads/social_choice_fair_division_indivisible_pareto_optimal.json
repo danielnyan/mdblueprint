@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.pareto_optimal",
+  "title": "Indivisible Pareto Optimal",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_pareto_optimal.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Pareto Optimal</h1>\n<p>An indivisible allocation $A$ is <em>Pareto optimal</em> (PO) if no complete\nallocation weakly improves every agent's bundle value with at least one\nstrict improvement.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsParetoOptimal</code> — an\n<code>abbrev</code> for the generic [[social_choice.fair_division.pareto_optimal]]\nspecialised at <code>v.val</code> with the feasibility predicate $B \\mapsto\n\\mathrm{IsAllocation}\\ \\mathrm{allGoods}\\ B$.</p>\n<p>The class hypotheses <code>[Fintype N]</code> (for <code>IsAllocation</code>'s\n<code>Finset.univ.biUnion</code>) and <code>[DecidableEq G]</code> (for <code>Finset</code> operations)\nare required.</p>\n<h2>Significance</h2>\n<p>PO is the standard efficiency yardstick for indivisible allocations.\nThe headline existence result is that <em>EF1 + PO</em> always exists for\nadditive valuations, achievable by two distinct algorithms:</p>\n<ul>\n<li><strong>Maximum Nash welfare (MNW)</strong> — Caragiannis et al. (EC 2016) prove\n  the MNW allocation is simultaneously EF1 and PO. Not yet formalised\n  in EconCSLib.</li>\n<li><strong>Envy-cycle elimination</strong> — Lipton et al. (EC 2004) yield an EF1\n  allocation; with a slight refinement on tie-breaking, also PO.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Pareto optimality in indivisible fair division.</li>\n<li>Caragiannis, Kurokawa, Moulin, Procaccia, Shah, and Wang (2019). \"The Unreasonable Fairness of Maximum Nash Welfare\". <em>EC</em> 2016 / <em>ACM TEAC</em>.</li>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsParetoOptimal",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsParetoOptimal",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsParetoOptimal",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+      "kind": "abbrev",
+      "signature": "abbrev IsParetoOptimal [Fintype N] [DecidableEq G]\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Efficiency.lean#L47",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Efficiency.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

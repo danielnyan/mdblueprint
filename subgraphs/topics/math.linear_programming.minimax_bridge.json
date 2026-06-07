@@ -1,0 +1,115 @@
+{
+  "topic": {
+    "id": "math.linear_programming.minimax_bridge",
+    "title": "Math.Linear Programming.Minimax Bridge",
+    "href": "math/linear_programming/minimax_bridge/index.html",
+    "parent": "math.linear_programming",
+    "node_count": 4,
+    "descendant_node_count": 4
+  },
+  "counts": {
+    "internal_nodes": 4,
+    "inlined_nodes": 0,
+    "descendant_nodes": 4,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 3,
+    "proof_plan_nodes": 1,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 4,
+    "visible_nodes_with_selected_proof_plans": 4
+  },
+  "nodes": [
+    {
+      "id": "math.linear_programming.minimax_bridge.lp_optimal_iff_optimal_strategy",
+      "title": "LP Optimum ↔ Game-Theoretic Optimal Strategy",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "math/math_linear_programming_minimax_bridge_lp_optimal_iff_optimal_strategy.html",
+      "payload": "node_payloads/math_linear_programming_minimax_bridge_lp_optimal_iff_optimal_strategy.json"
+    },
+    {
+      "id": "math.linear_programming.minimax_bridge.player_1_lp",
+      "title": "Player-1 LP Formulation of a Matrix Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "math/math_linear_programming_minimax_bridge_player_1_lp.html",
+      "payload": "node_payloads/math_linear_programming_minimax_bridge_player_1_lp.json"
+    },
+    {
+      "id": "math.linear_programming.minimax_bridge.player_2_lp",
+      "title": "Player-2 LP Formulation of a Matrix Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "math/math_linear_programming_minimax_bridge_player_2_lp.html",
+      "payload": "node_payloads/math_linear_programming_minimax_bridge_player_2_lp.json"
+    },
+    {
+      "id": "math.linear_programming.minimax_bridge.zero_sum_lp_bridge",
+      "title": "Zero-Sum Linear Programming Bridge",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_linear_programming_minimax_bridge_zero_sum_lp_bridge.html",
+      "payload": "node_payloads/math_linear_programming_minimax_bridge_zero_sum_lp_bridge.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "bijection",
+      "title": "bijection",
+      "href": "keywords/bijection.html",
+      "count": 1
+    },
+    {
+      "id": "linear-programming",
+      "title": "linear-programming",
+      "href": "keywords/linear-programming.html",
+      "count": 4
+    },
+    {
+      "id": "lp-dual",
+      "title": "lp-dual",
+      "href": "keywords/lp-dual.html",
+      "count": 1
+    },
+    {
+      "id": "lp-primal",
+      "title": "lp-primal",
+      "href": "keywords/lp-primal.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "optimal-strategy",
+      "title": "optimal-strategy",
+      "href": "keywords/optimal-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "staged",
+      "title": "staged",
+      "href": "keywords/staged.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 4
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

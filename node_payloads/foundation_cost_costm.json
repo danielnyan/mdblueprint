@@ -1,0 +1,205 @@
+{
+  "id": "foundation.cost.costm",
+  "title": "The CostM Complexity Monad",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_costm.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost"
+  ],
+  "body_html": "<h1>The CostM Complexity Monad</h1>\n<p><code>CostM C α</code> is the <strong>writer monad over an arbitrary additive monoid</strong> <code>C</code>: a\nreturn value of type <code>α</code> paired with an accumulated cost in <code>C</code>,\n$$\n  \\mathrm{CostM}\\,C\\,\\alpha \\;=\\; \\alpha \\times C.\n$$\nSequential composition (<code>bind</code>, written <code>&gt;&gt;=</code>) adds the cost components,\n$$\n  \\mathrm{bind}(m, f).\\mathrm{cost}\n    \\;=\\; m.\\mathrm{cost} \\,+\\, (f\\,m.\\mathrm{ret}).\\mathrm{cost},\n  \\qquad\n  (\\mathrm{pure}\\,a).\\mathrm{cost} = 0,\n$$\nso a program's total cost is the monoid-sum of the costs charged along its\nexecution.</p>\n<p>The cost type <code>C</code> is deliberately abstract: <strong>choosing <code>C</code> is what selects the\nresource being measured</strong>, while the monad is identical for all of them.</p>\n<ul>\n<li><code>C := ℕ</code> (additive) — count comparisons, recursive calls, modulus\n  operations: the conventional \"time\" instance.</li>\n<li><code>C := A × B</code> — track two additive costs at once via <code>Prod.instAddMonoid</code>.</li>\n<li><code>C := Visited α</code> (idempotent, <code>s + s = s</code>) — the <strong>set</strong> of subproblems\n  touched; the algebraic shadow of memoization. See\n  <a class=\"node-ref\" data-node-id=\"foundation.cost.visited\" href=\"cost/foundation_cost_visited.html\">Memoization Footprint via the Visited Monoid</a>.</li>\n<li><code>C := Cells</code> (tropical peak/delta) — <strong>peak</strong> memory, the one resource shape\n  additive cost fundamentally cannot express. See <a class=\"node-ref\" data-node-id=\"foundation.cost.cells\" href=\"cost/foundation_cost_cells.html\">Peak-Memory Cost via the Cells Monoid</a>.</li>\n</ul>\n<h2>Discipline: cost annotations are trusted</h2>\n<p>The elaborator does <strong>not</strong> verify that <code>tick</code> calls correspond to real work.\nEach algorithm file documents its own cost model — what a unit is, what is\nfree, whether recursive calls are charged — and the author <code>tick</code>s\naccordingly. Proofs then separate cleanly along the two structure fields:</p>\n<ul>\n<li><strong>functional correctness</strong> lives on <code>m.ret</code> (alias <code>⟪m⟫</code>);</li>\n<li><strong>complexity bounds</strong> live on <code>m.cost</code>.</li>\n</ul>\n<p>The two are independent: changing the cost model never disturbs a correctness\nproof, and refactoring the algorithm preserves cost annotations by\nconstruction. The Boyer–Moore example (<a class=\"node-ref\" data-node-id=\"foundation.cost.examples.boyer_moore\" href=\"cost/examples/foundation_cost_examples_boyer_moore.html\">Worked Example: Constant-Space Boyer–Moore Majority</a>)\nproves a cost bound while deliberately <em>not</em> proving correctness, to exhibit\nthe decoupling.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>CostM</code> — the two-field structure (<code>ret</code>, <code>cost</code>).</li>\n<li><code>CostM.pure</code> <code>[Zero C]</code>, <code>CostM.bind</code> <code>[Add C]</code> — the monad primitives;\n  <code>CostM.instMonad</code> <code>[Zero C] [Add C]</code> and <code>CostM.instLawfulMonad</code>\n  <code>[AddMonoid C]</code> package them as a lawful monad.</li>\n<li><code>CostM.tick c : CostM C PUnit</code> charges cost <code>c</code>; the <code>✓[c] body</code> macro is\n  sugar for <code>do tick c; body</code>, and <code>✓ body</code> is <code>✓[1] body</code> (needs <code>[OfNat C 1]</code>).</li>\n<li><code>CostM.Bounded alg size bound</code> <code>[LE C]</code> says <code>∀ i, (alg i).cost ≤ bound (size i)</code>;\n  <code>CostM.IsPolyBounded</code> specializes to <code>C = ℕ</code> with <code>∃ c k, cost ≤ c · size^k</code>.</li>\n</ul>\n<p>Parallel composition (<code>par</code>, <code>parList</code>) is documented separately in\n<a class=\"node-ref\" data-node-id=\"foundation.cost.parallel\" href=\"cost/foundation_cost_parallel.html\">Parallel Composition in CostM</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, <em>Lightweight Semiformal Time\n  Complexity Analysis for Purely Functional Data Structures</em>, POPL 2008. The\n  writer-monad-over-a-monoid pattern for cost analysis.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>The monad core (<code>structure</code>, <code>Pure</code>/<code>Bind</code>/<code>Functor</code>/<code>Seq</code>, <code>Monad</code>/\n  <code>LawfulMonad</code>, <code>tick</code>, the <code>✓</code> notation) is <strong>adapted from <code>TimeM</code></strong> in\n  <a href=\"https://github.com/leanprover/cslib\">leanprover/cslib</a>,\n  <code>Cslib/Algorithms/Lean/TimeM.lean</code> (Apache 2.0), by Sorrachai\n  Yingchareonthawornhcai and Eric Wieser. EconCSLib generalizes \"time\" to a\n  general cost monoid <code>C</code> and adds <code>par</code>/<code>parList</code>, <code>Bounded</code>/<code>IsPolyBounded</code>,\n  and the <code>CoeHead</code> projection.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "foundation.cost.examples.boyer_moore",
+      "title": "Worked Example: Constant-Space Boyer–Moore Majority",
+      "href": "foundation/foundation_cost_examples_boyer_moore.html"
+    },
+    {
+      "id": "foundation.cost.examples.gcd",
+      "title": "Worked Example: Euclidean GCD Step Count",
+      "href": "foundation/foundation_cost_examples_gcd.html"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "href": "foundation/foundation_cost_examples_lcs.html"
+    },
+    {
+      "id": "foundation.cost.examples.memo_fib",
+      "title": "Worked Example: Memoized Fibonacci Footprint",
+      "href": "foundation/foundation_cost_examples_memo_fib.html"
+    },
+    {
+      "id": "foundation.cost.examples.reverse_space",
+      "title": "Worked Example: Quadratic Naive List Reversal",
+      "href": "foundation/foundation_cost_examples_reverse_space.html"
+    },
+    {
+      "id": "foundation.cost.parallel",
+      "title": "Parallel Composition in CostM",
+      "href": "foundation/foundation_cost_parallel.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CostM",
+      "display_name": "CostM",
+      "qualified_name": "CostM",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "structure",
+      "signature": "structure CostM (C : Type*) (A : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L136",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.pure",
+      "display_name": "CostM.pure",
+      "qualified_name": "CostM.pure",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "protected def pure [Zero C] (a : A) : CostM C A",
+      "docstring": "Lift a pure value at zero cost.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L148",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.bind",
+      "display_name": "CostM.bind",
+      "qualified_name": "CostM.bind",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "protected def bind [Add C] (m : CostM C A) (f : A → CostM C B) : CostM C B",
+      "docstring": "Sequential composition. The cost of `m >>= f` is `m.cost + (f m.ret).cost`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L153",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.tick",
+      "display_name": "CostM.tick",
+      "qualified_name": "CostM.tick",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "def tick (c : C) : CostM C PUnit",
+      "docstring": "Charge a cost of `c`, returning unit. Use inside a `do`-block.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L228",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.instMonad",
+      "display_name": "CostM.instMonad",
+      "qualified_name": "CostM.instMonad",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "instance",
+      "signature": "instance instMonad [Zero C] [Add C] : Monad (CostM C) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L171",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.instLawfulMonad",
+      "display_name": "CostM.instLawfulMonad",
+      "qualified_name": "CostM.instLawfulMonad",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "instance",
+      "signature": "instance instLawfulMonad [AddMonoid C] : LawfulMonad (CostM C)",
+      "docstring": "`CostM C` is a lawful monad whenever `C` is an additive monoid.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L218",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.Bounded",
+      "display_name": "CostM.Bounded",
+      "qualified_name": "CostM.Bounded",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "def Bounded {Input Output : Type*} [LE C]\n    (alg : Input → CostM C Output) (size : Input → ℕ) (bound : ℕ → C) : Prop",
+      "docstring": "The cost of `alg i` is bounded by `bound (size i)` for every input `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L316",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.IsPolyBounded",
+      "display_name": "CostM.IsPolyBounded",
+      "qualified_name": "CostM.IsPolyBounded",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "def IsPolyBounded {Input Output : Type*}\n    (alg : Input → CostM ℕ Output) (size : Input → ℕ) : Prop",
+      "docstring": "Specialization of `Bounded` for `C = ℕ`: cost is polynomial in input size.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L321",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.CostM",
+      "display_name": "EconCSLib.Foundation.CostM",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

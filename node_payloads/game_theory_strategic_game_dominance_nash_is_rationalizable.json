@@ -1,0 +1,77 @@
+{
+  "id": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+  "title": "Nash Equilibria Are Rationalizable",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_nash_is_rationalizable.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Nash Equilibria Are Rationalizable</h1>\n<p>If $s$ is a Nash equilibrium, then $s$ is rationalizable.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The singleton set $\\{s\\}$ satisfies\n$$\n  \\{s\\}\\subseteq BR(\\{s\\})\n$$\nbecause every component of $s$ is a best response to the other components. Since\n$S^\\infty$ is the largest set $L$ with $L\\subseteq BR(L)$, it contains $\\{s\\}$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 4.5.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every Nash equilibrium is rationalizable.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "title": "Rationalizable Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsNashEquilibrium.survives",
+      "display_name": "StrategicGame.IsNashEquilibrium.survives",
+      "qualified_name": "StrategicGame.IsNashEquilibrium.survives",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "theorem",
+      "signature": "theorem IsNashEquilibrium.survives {G : StrategicGame N U}\n    {σ : G.Profile} (hN : IsNashEquilibrium G σ) :\n    ∀ (n : ℕ) (i : N), G.Survives n i (σ i)",
+      "docstring": "Nash equilibrium strategies survive all rounds. [MSZ 4.31]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L65",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.IsNashEquilibrium.isRationalizable",
+      "display_name": "StrategicGame.IsNashEquilibrium.isRationalizable",
+      "qualified_name": "StrategicGame.IsNashEquilibrium.isRationalizable",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "theorem",
+      "signature": "theorem IsNashEquilibrium.isRationalizable {G : StrategicGame N U}\n    {σ : G.Profile} (hN : IsNashEquilibrium G σ) (i : N) :\n    G.IsRationalizable i (σ i)",
+      "docstring": "Nash strategies are rationalizable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L82",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_strategy_space",
+  "title": "General Mixed Strategy Space",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_strategy_space.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>General Mixed Strategy Space</h1>\n<p>For an arbitrary set $X$, $\\Delta_f(X)$ denotes the set of finitely supported\nprobability measures on $X$, regarded as the convex hull of $X$.</p>\n<p>If $X$ is a topological space, $\\Delta(X)$ denotes the regular Borel probability\nmeasures on $X$. When $X$ is compact Hausdorff, $\\Delta(X)$ carries the weak-star\ntopology, the weakest topology for which\n$$\n  \\mu\\mapsto \\int_X \\varphi\\,d\\mu\n$$\nis continuous for every real-valued continuous function $\\varphi$ on $X$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Delta_f(X), Delta(X), regular probabilities, and weak-star topology.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "game_theory.strategic_game.dominance.rationalizable_strategy",
+  "title": "Rationalizable Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_strategy.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Rationalizable Strategy</h1>\n<p>In a compact continuous game, define\n$$\n  S_i(1)=BR_i(S_{-i})\n$$\nand inductively\n$$\n  S_i(k+1)=BR_i(S_{-i}(k)).\n$$\nThe rationalizable strategy set of player $i$ is\n$$\n  S_i^\\infty=\\bigcap_{k\\ge 1}S_i(k).\n$$\nA profile $s$ is rationalizable if $s_i\\in S_i^\\infty$ for every player $i$.</p>\n<h2>Lean scope</h2>\n<p>Lean's <code>IsRationalizable</code> is defined as surviving iterated elimination of\n<strong>strictly dominated</strong> strategies (IESDS — see\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.dominance.iterated_elimination\" href=\"dominance/game_theory_strategic_game_dominance_iterated_elimination.html\">Iterated Elimination Of Strictly Dominated Strategies</a>), whereas the\nbest-response definition above (iterated elimination of strategies that are\nnever a best response) is the MFoGT formulation. The two coincide for finite\ntwo-player games (Pearce's lemma) but differ in general. The Lean port\ncurrently formalizes the IESDS version only, so this best-response node stays\n<code>pending</code> until the best-response characterization is linked or proved.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Rationalizability as iterated elimination of strategies that are not best responses.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "title": "Nash Equilibria Are Rationalizable",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_nash_is_rationalizable.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsRationalizable",
+      "display_name": "StrategicGame.IsRationalizable",
+      "qualified_name": "StrategicGame.IsRationalizable",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "def",
+      "signature": "def IsRationalizable (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop",
+      "docstring": "A strategy is rationalizable if it survives all rounds.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L61",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

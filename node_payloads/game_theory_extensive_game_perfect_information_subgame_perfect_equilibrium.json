@@ -1,0 +1,48 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+  "title": "Subgame-Perfect Equilibrium In Perfect-Information Games",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Subgame-Perfect Equilibrium In Perfect-Information Games</h1>\n<p>A strategy profile $\\sigma$ is subgame-perfect if for every position $p$, the\ncontinuation strategy profile $\\sigma[p]$ induced by $\\sigma$ is a Nash equilibrium\nof the subgame $G[p]$.</p>\n<p>This strengthens Nash equilibrium by requiring optimality after every possible\nhistory, including histories not reached by the equilibrium play.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.2.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A strategy profile is subgame-perfect if every continuation strategy is Nash in every subgame.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsSubgamePerfect",
+      "display_name": "GameTree.IsSubgamePerfect",
+      "qualified_name": "GameTree.IsSubgamePerfect",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "kind": "def",
+      "signature": "def IsSubgamePerfect (σ : Strategy N U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L129",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

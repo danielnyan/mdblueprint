@@ -1,0 +1,102 @@
+{
+  "id": "mechanism_design.vcg.truthfulness_and_ir",
+  "title": "VCG Truthfulness And Individual Rationality",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "mechanism_design/mechanism_design_vcg_truthfulness_and_ir.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.vcg"
+  ],
+  "body_html": "<h1>VCG Truthfulness And Individual Rationality</h1>\n<p>The VCG mechanism is dominant-strategy incentive compatible (DSIC)\nunconditionally for quasi-linear utilities, and — under the additional\nnonnegativity hypothesis on every valuation in the type space — gives every\nagent nonnegative truthful quasi-linear utility, which yields ex-post\nindividual rationality.</p>\n<p>That is: DSIC needs no sign assumption; IR and the nonnegative-utility bound\nrequire nonnegative valuations.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Thm. 9.17] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>. VCG\n  mechanisms are incentive compatible.</li>\n<li>[AGT, Chapter 9, Lem. 9.20] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>. Clarke\n  pivot payments and individual rationality under nonnegative valuations.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>thm:md_vcg_results</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "display_name": "MultipleParameterMechanism.VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "theorem",
+      "signature": "theorem VCGMechanism_truthful_quasiLinearUtility_nonneg\n    (v : ∀ _ : I, Valuation A ℝ)\n    (hnonneg : ∀ i : I, ∀ a : A, 0 ≤ v i a)\n    (i : I) (r : ∀ _ : I, Valuation A ℝ) :\n    0 ≤ MechanismWithTransfers.quasiLinearUtility\n      VCGTransferMechanism valueOfAllocation id id (Function.update r i (v i)) v i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L214",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+      "display_name": "MultipleParameterMechanism.VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "theorem",
+      "signature": "theorem VCGMechanism_truthful_profile_quasiLinearUtility_nonneg\n    (v : ∀ _ : I, Valuation A ℝ)\n    (hnonneg : ∀ i : I, ∀ a : A, 0 ≤ v i a)\n    (i : I) :\n    0 ≤ MechanismWithTransfers.quasiLinearUtility\n      VCGTransferMechanism valueOfAllocation id id v v i",
+      "docstring": "The same nonnegative-utility result for the fully truthful report profile.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L243",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VCGMechanism_isExPostIR_of_all_nonnegative",
+      "display_name": "MultipleParameterMechanism.VCGMechanism_isExPostIR_of_all_nonnegative",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism_isExPostIR_of_all_nonnegative",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "theorem",
+      "signature": "theorem VCGMechanism_isExPostIR_of_all_nonnegative\n    (hnonneg :\n      ∀ v : (∀ _ : I, Valuation A ℝ), ∀ i : I, ∀ a : A, 0 ≤ v i a) :\n    MechanismWithTransfers.isQuasiLinearExPostIR\n      (M",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L256",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VCGMechanism_isDSIC",
+      "display_name": "MultipleParameterMechanism.VCGMechanism_isDSIC",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism_isDSIC",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "theorem",
+      "signature": "theorem VCGMechanism_isDSIC :\n    MechanismWithTransfers.isQuasiLinearDSIC\n      (M",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L280",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "display_name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

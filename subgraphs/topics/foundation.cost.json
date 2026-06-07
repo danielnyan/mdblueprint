@@ -1,0 +1,253 @@
+{
+  "topic": {
+    "id": "foundation.cost",
+    "title": "Foundation.Cost",
+    "href": "foundation/cost/index.html",
+    "parent": "foundation",
+    "node_count": 4,
+    "descendant_node_count": 11
+  },
+  "counts": {
+    "internal_nodes": 4,
+    "inlined_nodes": 7,
+    "descendant_nodes": 11,
+    "child_topics": 0,
+    "inlined_child_topics": 1,
+    "non_proof_plan_nodes": 11,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
+  },
+  "nodes": [
+    {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_cells.html",
+      "payload": "node_payloads/foundation_cost_cells.json"
+    },
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_costm.html",
+      "payload": "node_payloads/foundation_cost_costm.json"
+    },
+    {
+      "id": "foundation.cost.examples.boyer_moore",
+      "title": "Worked Example: Constant-Space Boyer–Moore Majority",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_boyer_moore.html",
+      "payload": "node_payloads/foundation_cost_examples_boyer_moore.json"
+    },
+    {
+      "id": "foundation.cost.examples.gcd",
+      "title": "Worked Example: Euclidean GCD Step Count",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_gcd.html",
+      "payload": "node_payloads/foundation_cost_examples_gcd.json"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_lcs.html",
+      "payload": "node_payloads/foundation_cost_examples_lcs.json"
+    },
+    {
+      "id": "foundation.cost.examples.memo_fib",
+      "title": "Worked Example: Memoized Fibonacci Footprint",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_memo_fib.html",
+      "payload": "node_payloads/foundation_cost_examples_memo_fib.json"
+    },
+    {
+      "id": "foundation.cost.examples.par_all",
+      "title": "Worked Example: N-ary parList Depth Bound",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_par_all.html",
+      "payload": "node_payloads/foundation_cost_examples_par_all.json"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_par_sum.html",
+      "payload": "node_payloads/foundation_cost_examples_par_sum.json"
+    },
+    {
+      "id": "foundation.cost.examples.reverse_space",
+      "title": "Worked Example: Quadratic Naive List Reversal",
+      "kind": "example",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_examples_reverse_space.html",
+      "payload": "node_payloads/foundation_cost_examples_reverse_space.json"
+    },
+    {
+      "id": "foundation.cost.parallel",
+      "title": "Parallel Composition in CostM",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_parallel.html",
+      "payload": "node_payloads/foundation_cost_parallel.json"
+    },
+    {
+      "id": "foundation.cost.visited",
+      "title": "Memoization Footprint via the Visited Monoid",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "foundation/foundation_cost_visited.html",
+      "payload": "node_payloads/foundation_cost_visited.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "foundation.cost.cells",
+      "to": "foundation.cost.examples.boyer_moore",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.boyer_moore",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.gcd",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.visited",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.memo_fib",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.visited",
+      "to": "foundation.cost.examples.memo_fib",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_all",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.reverse_space",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.parallel",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "complexity",
+      "title": "complexity",
+      "href": "keywords/complexity.html",
+      "count": 2
+    },
+    {
+      "id": "cost",
+      "title": "cost",
+      "href": "keywords/cost.html",
+      "count": 11
+    },
+    {
+      "id": "dynamic-programming",
+      "title": "dynamic-programming",
+      "href": "keywords/dynamic-programming.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 7
+    },
+    {
+      "id": "idempotent",
+      "title": "idempotent",
+      "href": "keywords/idempotent.html",
+      "count": 1
+    },
+    {
+      "id": "memoization",
+      "title": "memoization",
+      "href": "keywords/memoization.html",
+      "count": 2
+    },
+    {
+      "id": "memory",
+      "title": "memory",
+      "href": "keywords/memory.html",
+      "count": 1
+    },
+    {
+      "id": "monad",
+      "title": "monad",
+      "href": "keywords/monad.html",
+      "count": 1
+    },
+    {
+      "id": "parallel",
+      "title": "parallel",
+      "href": "keywords/parallel.html",
+      "count": 3
+    },
+    {
+      "id": "peak-memory",
+      "title": "peak-memory",
+      "href": "keywords/peak-memory.html",
+      "count": 1
+    },
+    {
+      "id": "time-complexity",
+      "title": "time-complexity",
+      "href": "keywords/time-complexity.html",
+      "count": 2
+    },
+    {
+      "id": "tropical",
+      "title": "tropical",
+      "href": "keywords/tropical.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "foundation.cost.examples"
+  ]
+}

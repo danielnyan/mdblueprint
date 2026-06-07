@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_assignment",
+  "title": "Fair Assignment from a Common KKM Point",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Fair Assignment from a Common KKM Point</h1>\n<p><strong>Lemma (informal).</strong> Given a simplex point $x^* \\in \\bigcap_{i \\in \\mathrm{Fin}\\ n} U(i)$\n([[social_choice.fair_division.divisible.stromquist_U]]), there is an\nenvy-free assignment of pieces to agents.</p>\n<p>The construction: at $x^*$, each piece $i$ has at least one claimant\nagent $\\sigma(i) \\in \\mathrm{Fin}\\ n$ — some $j$ such that $x^* \\in B(i, j)$\n([[social_choice.fair_division.divisible.stromquist_unique_preference_sets]]).\nPick one (DecidableEq / choice).</p>\n<p>The map $\\sigma : \\mathrm{Fin}\\ n \\to \\mathrm{Fin}\\ n$ is <em>injective</em>:\nif $\\sigma(i_1) = \\sigma(i_2) = j$ then $x^* \\in B(i_1, j) \\cap B(i_2, j)$,\nwhich by <code>strom_B_disjoint_over_i</code> (disjointness across pieces at a fixed\nagent, [[social_choice.fair_division.divisible.stromquist_unique_preference_sets]])\nforces $i_1 = i_2$.</p>\n<p>An injection on a finite set of the same cardinality is a bijection, so\n$\\sigma$ is a permutation.</p>\n<p>Define the allocation $A : \\mathrm{Fin}\\ n \\to \\mathrm{Set}\\ \\mathbb{R}$ by\n$$\nA(j) \\;=\\; \\mathrm{piece}(x^*, \\sigma^{-1}(j)).\n$$</p>\n<p>This is a complete measurable partition by\n[[social_choice.fair_division.divisible.stromquist_pieces]], and it is\nenvy-free because $\\sigma^{-1}(j)$ is agent $j$'s value-maximizer at $x^*$:\nno other piece can be strictly preferred, so by the bundled EF predicate\n([[social_choice.fair_division.divisible.envy_free]]) the allocation is EF.</p>\n<h2>Role in the proof</h2>\n<p>This lemma is the <em>transducer</em> that converts the KKM common-point\nexistence into an actual fair allocation. The \"usual case\"\n([[social_choice.fair_division.divisible.stromquist_usual_case]]) is\nprecisely the regime where this lemma applies; the \"unusual case\"\n([[social_choice.fair_division.divisible.stromquist_unusual_case]])\narises when the $U(i)$ family does not cover $S$, and needs the\nshifted-cell trick to push the data into a configuration where this\nlemma can be applied.</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_U",
+      "title": "Stromquist Agent-Preference Union U(i)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_U.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_fair_assignment",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_fair_assignment",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_fair_assignment",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "private lemma strom_fair_assignment (x : Fin n → ℝ) (hU : ∀ i, x ∈ strom_U n μ i) :\n    ∃ assign : Fin n → Fin n, Function.Injective assign ∧\n      ∀ i, x ∈ strom_A n μ i (assign i) ∧\n           ∀ k ≠ i, strom_value n μ x (assign i) k < strom_value n μ x (assign i) i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L552",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

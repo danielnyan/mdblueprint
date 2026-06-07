@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.sion_boundary_counterexample",
+  "title": "Sion Boundary Counterexample",
+  "kind": "example",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_boundary_counterexample.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Sion Boundary Counterexample</h1>\n<p>Let $S=T=[0,1]$ and define $f:S\\times T\\to\\{0,-1\\}$ by\n$$\n  f(s,t)=\n  \\begin{cases}\n    -1, &amp; t=0\\text{ and }s&lt;1/2,\\\\\n    -1, &amp; t=1\\text{ and }s\\ge 1/2,\\\\\n    0, &amp; \\text{otherwise}.\n  \\end{cases}\n$$\nThis game has no value in pure strategies, while Sion's hypotheses fail only at\nthe boundary point $t=1$.</p>\n<p>The pure quantities are\n$$\n  \\sup_s\\inf_t f(s,t)=-1,\\qquad \\inf_t\\sup_s f(s,t)=0.\n$$\nNevertheless, the mixed extension does have a value, equal to $-1/2$. Player 1\ncan guarantee this by playing uniformly on $[0,1]$, or by mixing equally between\n$0$ and $1$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Counterexample satisfying Sion hypotheses except at one boundary point.</li>\n<li>[MFoGT, Section 9.3, Exercise 2 hints] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Computes the pure gap and mixed value.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

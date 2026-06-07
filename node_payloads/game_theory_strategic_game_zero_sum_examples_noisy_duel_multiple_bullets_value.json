@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_multiple_bullets_value",
+  "title": "Noisy Duel With Multiple Bullets",
+  "kind": "theorem",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_multiple_bullets_value.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.examples"
+  ],
+  "body_html": "<h1>Noisy Duel With Multiple Bullets</h1>\n<p>In the noisy duel with $m$ bullets for player 1 and $n$ bullets for player 2,\nassuming $p_1(t)=p_2(t)=t$, the game has value\n$$\n  \\frac{m-n}{m+n}.\n$$\nIt is optimal for the player with $\\max\\{m,n\\}$ bullets to shoot the first bullet\nat time\n$$\n  t_0=\\frac1{m+n}.\n$$</p>",
+  "proof_html": "<p>The proof is by induction on $m+n$. The one-bullet case is the noisy\none-bullet duel. Assume the statement known for all pairs with total bullet\ncount at most $K$, and consider $(m+1,n)$ with $m+n+1=K+1$.</p>\n<p>If player 1 has more bullets, player 1 shoots first at time\n$1/(m+n+1)$. If player 2 has not shot before then and player 1 misses, the\ncontinuation is the already solved $(m,n)$ game. If player 2 shoots first and\nmisses, the continuation is the already solved $(m+1,n-1)$ game. If both shoot\nat that time and miss, the continuation is the $(m,n-1)$ game. Substituting the\ninduction values of these continuation games gives the guarantee\n$$\n  \\frac{m+1-n}{m+n+1}.\n$$\nThe column player uses the dual strategy: randomize the first shot in a small\ninterval immediately after $1/(m+n+1)$ and then switch to the corresponding\noptimal continuation game. Letting the interval length tend to $0$ gives the\nmatching upper bound. The equal-bullet case is symmetric and gives value $0$;\nthe case where player 2 has more bullets is the same argument with the players\ninterchanged. Thus the induction proves the value formula and the stated first\nshot time.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 1(2)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Noisy duel with m bullets versus n bullets.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

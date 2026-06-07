@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.convex_game",
+  "title": "Convex Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Convex Game</h1>\n<p>A convex game has strategy sets $S_i$ and payoff functions $G_i$ satisfying:</p>\n<ol>\n<li>each $S_i$ is a compact convex subset of a Euclidean space;</li>\n<li>$G_i(\\cdot,s_{-i})$ is concave on $S_i$ for every $s_{-i}$;</li>\n<li>$\\sum_i G_i$ is continuous on $S=\\prod_i S_i$;</li>\n<li>$G_i(s_i,\\cdot)$ is continuous on $S_{-i}$ for every $s_i$.</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Convex games in the sense of the exercise.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

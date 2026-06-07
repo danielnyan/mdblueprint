@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+  "title": "EFX Existence — 2 Agents, 2 Goods",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_efx_two_agents_two_goods.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EFX Existence — 2 Agents, 2 Goods</h1>\n<p><strong>Theorem.</strong> For two agents and two distinct goods, an EFX allocation\nalways exists.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.efx_two_agents_two_goods</code>.\nHypotheses: <code>[DecidableEq G]</code>, two distinct goods $g_1, g_2 \\in G$, an\narbitrary valuation $v$.</p>",
+  "proof_html": "<p>Construct the obvious split: agent $0$ receives $\\{g_1\\}$ and agent $1$\nreceives $\\{g_2\\}$. The bundles partition $\\{g_1, g_2\\}$ (disjointness\nby $g_1 \\ne g_2$; cover by inspection).</p>\n<p>Each bundle has size 1, so the <em>singleton-bundle EFX</em> sufficient\ncondition\n([[social_choice.fair_division.indivisible.efx_singleton_bundle]])\napplies and gives EFX directly without needing any structure on $v$.</p>\n<h2>Significance</h2>\n<p>This is the trivial 2×2 case of the EFX existence question. The general\n2-agent case\n([[social_choice.fair_division.indivisible.efx_exists_two_agents]])\nstrengthens this to arbitrary good sets but still uses the\nsingleton-bundle device on a maximin-leximin sub-bundle.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Small EFX existence examples.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "title": "EFX from a Singleton-Bundle Sufficient Condition",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.efx_two_agents_two_goods",
+      "display_name": "SocialChoice.FairDivision.Indivisible.efx_two_agents_two_goods",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.efx_two_agents_two_goods",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "kind": "theorem",
+      "signature": "theorem efx_two_agents_two_goods [DecidableEq G]\n    (v : Valuation (Fin 2) G) {g₀ g₁ : G}\n    (h₀ : v.val 0 ∅ ≤ v.val 0 {g₀})\n    (h₁ : v.val 1 ∅ ≤ v.val 1 {g₁})\n    (A : Allocation (Fin 2) G) (hA0 : A 0 = {g₀}) (hA1 : A 1 = {g₁}) :\n    IsEFX v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L112",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

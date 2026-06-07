@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.ef1",
+  "title": "EF1 — Envy-Free Up to One Good",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_ef1.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EF1 — Envy-Free Up to One Good</h1>\n<p>An allocation $A$ is <em>envy-free up to one good</em> (EF1) if, for every\nenvied non-empty bundle $A(j)$ from agent $i$'s perspective, <strong>some</strong>\nsingle item $g \\in A(j)$ exists whose removal eliminates the envy:\n$$\n\\forall i \\ne j,\\ A(j) \\ne \\emptyset \\Rightarrow\n\\exists g \\in A(j),\\ v_i(A(j) \\setminus \\{g\\}) \\le v_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEF1</code>. Requires\n<code>[DecidableEq G]</code> for the <code>Finset</code> difference.</p>\n<p>The nonempty guard on $A(j)$ is necessary because an empty bundle has\nno item to remove; the existential is vacuously false in that case,\nwhich would make EF1 trivially fail. With the guard, an empty bundle\ntrivially satisfies the condition (no envy from agent $i$ toward an\nempty bundle is possible up to value-monotonicity assumptions; the\npredicate ignores empty bundles cleanly).</p>\n<h2>Existence</h2>\n<p>Unlike plain EF ([[social_choice.fair_division.indivisible.envy_free]]),\nEF1 <em>always exists</em> for arbitrary indivisible valuations:</p>\n<ul>\n<li><strong>Round-robin</strong> constructs an EF1 allocation for any additive\n  valuation\n  ([[social_choice.fair_division.indivisible.round_robin_ef1]]).</li>\n<li><strong>Envy-cycle elimination</strong> constructs an EF1 + Pareto-improving\n  allocation for arbitrary valuations\n  ([[social_choice.fair_division.indivisible.envy_cycle_ef1]]).</li>\n</ul>\n<h2>Relation to other notions</h2>\n<ul>\n<li><strong>EFX implies EF1</strong> unconditionally\n  ([[social_choice.fair_division.indivisible.efx]]):\n  if removing any single item eliminates the envy, then in particular\n  <em>some</em> item does.</li>\n<li><strong>EF implies EF1</strong> under monotone valuations: any EF allocation is\n  also EFX, which entails EF1.</li>\n<li><strong>EF1 does not imply PROP</strong>: counterexample with 2 agents and 3\n  equal-value goods (give 1 to A, 2 to B; A is EF1 but does not meet\n  the 1/2-threshold of PROP).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF1.</li>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEF1",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEF1",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEF1",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "def",
+      "signature": "def IsEF1 [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

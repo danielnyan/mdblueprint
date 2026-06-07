@@ -1,0 +1,126 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+  "title": "Optimal Pairs Are Exactly Saddle Points",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Optimal Pairs Are Exactly Saddle Points</h1>\n<p>For a finite matrix game $A$, the product $X(A)\\times Y(A)$ of\noptimal-strategy sets is exactly the set of saddle points of $A$.</p>",
+  "proof_html": "<p>Let $v=\\operatorname{val}(A)$. If $x\\in X(A)$ and $y\\in Y(A)$, then\n$xAy'\\ge v$ for every mixed column $y'$ and $x'Ay\\le v$ for every mixed row\n$x'$. Applying these inequalities to $y$ and $x$ gives $xAy=v$, so\n$$\n  x'Ay\\le xAy\\le xAy'\n$$\nfor all $x'$ and $y'$. Thus $(x,y)$ is a saddle point. Conversely, if\n$(x,y)$ is a saddle point, then taking $x'$ and $y'$ as pure strategies and\napplying the simplex-side order characterisations\n(<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>) gives\n$$\n  E_A(x,y)\\le \\operatorname{guarantee}_I(x), \\qquad\n  \\operatorname{guarantee}_{II}(y)\\le E_A(x,y).\n$$\nWeak duality <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.maximin_le_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html\">Maximin is Bounded by Minimax</a> sandwiches both quantities\nbetween $v$ on the appropriate side, forcing equality. Hence $x\\in X(A)$ and\n$y\\in Y(A)$.</p>\n<p>The Lean formalisation factors through two characterisation iff-theorems\n(<code>mem_optimalRowStrategies_iff_E_ge</code> and <code>mem_optimalColumnStrategies_iff_E_le</code>),\nwhich then combine into <code>MatrixGame.optimal_pairs_iff_saddle_point</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(d)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. X(A) x Y(A) is the set of saddle points.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "math.minimax.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Games Have Value",
+      "href": "math/math_minimax_antisymmetric_matrix_game_value.html"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "math/math_minimax_strong_complementarity.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.optimal_pairs_iff_saddle_point",
+      "display_name": "MatrixGame.optimal_pairs_iff_saddle_point",
+      "qualified_name": "MatrixGame.optimal_pairs_iff_saddle_point",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem optimal_pairs_iff_saddle_point\n    (xx : stdSimplex ℝ I) (yy : stdSimplex ℝ J) :\n    (xx ∈ A.optimalRowStrategies ∧ yy ∈ A.optimalColumnStrategies)\n      ↔ A.IsSaddlePoint xx yy",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L343",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.mem_optimalRowStrategies_iff_E_ge",
+      "display_name": "MatrixGame.mem_optimalRowStrategies_iff_E_ge",
+      "qualified_name": "MatrixGame.mem_optimalRowStrategies_iff_E_ge",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem mem_optimalRowStrategies_iff_E_ge (xx : stdSimplex ℝ I) :\n    xx ∈ A.optimalRowStrategies ↔ ∀ y' : stdSimplex ℝ J, A.value ≤ A.E xx y'",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L158",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.mem_optimalColumnStrategies_iff_E_le",
+      "display_name": "MatrixGame.mem_optimalColumnStrategies_iff_E_le",
+      "qualified_name": "MatrixGame.mem_optimalColumnStrategies_iff_E_le",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem mem_optimalColumnStrategies_iff_E_le (yy : stdSimplex ℝ J) :\n    yy ∈ A.optimalColumnStrategies ↔ ∀ x' : stdSimplex ℝ I, A.E x' yy ≤ A.value",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L200",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

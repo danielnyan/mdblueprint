@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.repeated_game",
+  "title": "Repeated Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_repeated_game.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Repeated Game</h1>\n<p>A <strong>repeated game</strong> is built from a fixed <em>stage game</em>\n$G = (N, (A_i)_{i \\in N}, (u_i)_{i \\in N})$ played at every stage\n$t = 0, 1, 2, \\dots$. Players observe past play (the <em>history</em>) and\ncondition their stage-$t$ action on it. The aggregated payoff over\nstages defines the game's value or equilibrium concept.</p>\n<p>Unlike a stochastic game ([[game_theory.stochastic_game.core.stochastic_game]]),\n<strong>no state evolves</strong> between stages — the same stage game $G$ is\nplayed every time. The interesting dynamics live entirely in players'\nstrategic use of history.</p>\n<h2>Three evaluation rules</h2>\n<p>Different aggregations of per-stage payoffs $u_i(a_t)$ give different\ngames:</p>\n<ul>\n<li><strong>T-stage average</strong>:\n  $\\Pi_T^i = \\tfrac{1}{T} \\sum_{t &lt; T} u_i(a_t)$.</li>\n<li><strong>$\\gamma$-discounted</strong>:\n  $\\Pi_\\gamma^i = (1 - \\gamma) \\sum_{t \\ge 0} \\gamma^t u_i(a_t)$,\n  with $\\gamma \\in (0, 1)$.</li>\n<li><strong>Undiscounted limit-of-means / uniform</strong>:\n  $\\Pi_\\infty^i = \\liminf_T \\tfrac{1}{T} \\sum_{t &lt; T} u_i(a_t)$ for\n  Cesàro convergence, or its uniform-in-$T$ refinement.</li>\n</ul>\n<p>See [[game_theory.repeated_game.core.payoff_aggregation]] for the formal\ndefinitions and relations.</p>\n<h2>Strategy spaces</h2>\n<p>A behavioural strategy for player $i$ is a function\n$\\sigma_i : \\bigcup_t H_t \\to \\Delta(A_i)$ where $H_t = A^t$ is the\nlength-$t$ history of action profiles played so far\n([[game_theory.repeated_game.core.history]]). Pure strategies map into $A_i$\ndirectly. Restricting to histories that depend only on the latest\nstage (or a fixed-length window) gives <em>automaton</em> or <em>Markovian</em>\nstrategies.</p>\n<h2>Two central branches</h2>\n<ul>\n<li>\n<p><strong>Folk theorems</strong> ([[game_theory.repeated_game.folk_theorem]]): every\n  individually rational feasible payoff vector is achievable as a Nash\n  (or subgame-perfect) equilibrium payoff under suitable discount /\n  patience conditions.</p>\n</li>\n<li>\n<p><strong>Repeated games with incomplete information</strong>\n  ([[game_theory.repeated_game.incomplete_info]]): players have private information\n  about a state drawn once at the start; the value of the long-run\n  game characterises information revelation incentives. The\n  Aumann-Maschler cav-u theorem\n  ([[game_theory.repeated_game.incomplete_info.cav_u_theorem]]) is the zero-sum\n  archetype.</p>\n</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>Aumann, R. J. and Shapley, L. S. (1976/1994). \"Long-Term Competition\n  — A Game-Theoretic Analysis\".</li>\n<li>Friedman, J. W. (1971). \"A Non-Cooperative Equilibrium for Supergames\".</li>\n<li>[MSZ Chapters 13–14] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>[MFoGT Chapter 8] Laraki, Renault, Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

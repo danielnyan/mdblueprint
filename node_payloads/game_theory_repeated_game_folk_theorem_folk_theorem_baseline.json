@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.folk_theorem.folk_theorem_baseline",
+  "title": "Folk Theorem (Baseline Statement)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_folk_theorem_baseline.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.folk_theorem"
+  ],
+  "body_html": "<h1>Folk Theorem (Baseline Statement)</h1>\n<p><strong>Theorem (Nash Folk Theorem; classical).</strong> Consider an $N$-player\nstage game $G$ with finite action sets, and the infinitely repeated\ngame with limit-of-means payoffs\n([[game_theory.repeated_game.core.payoff_aggregation]]). Every payoff vector\n$v \\in V^*$ — where $V^*$ is the set of feasible and <em>individually\nrational</em> payoff vectors of $G$ — is a Nash equilibrium payoff of the\ninfinitely repeated game.</p>\n<p><strong>Feasible</strong>: $v \\in \\operatorname{conv}\\{u(a) : a \\in A\\}$ (a convex\ncombination of stage-game payoff vectors).\n<strong>Individually rational</strong>: for each player $i$, $v_i$ is at least\nplayer $i$'s <strong>minmax value</strong> in $G$:\n$v_i \\ge \\min_{\\sigma_{-i}} \\max_{\\sigma_i} u_i(\\sigma_i, \\sigma_{-i})$.</p>",
+  "proof_html": "<p>intuition (grim trigger)</p>\n<p>For any feasible payoff $v$ achievable by a strategy profile $\\bar\\sigma$\n(possibly correlated through a public randomisation device), build the\nfollowing infinite-horizon strategy for each player:</p>\n<ol>\n<li><strong>Cooperative phase</strong>: play $\\bar\\sigma_i$ as long as no deviation\n   has been observed.</li>\n<li><strong>Punishment phase</strong>: if any player $j$ has deviated, switch\n   permanently to a strategy profile that minmaxes player $j$.</li>\n</ol>\n<p>The threat of permanent reversion to a minmax-yielding profile makes\nthe cooperative phase incentive-compatible (per-stage gain from\ndeviating is finite; per-stage loss from punishment is permanent).</p>\n<h2>Refinements</h2>\n<p>The Nash Folk Theorem above is \"easy\"; the much harder refinements\nstrengthen the equilibrium concept:</p>\n<ul>\n<li><strong>Aumann-Shapley / Rubinstein 1979–1994</strong> — Folk Theorem for\n  <em>subgame-perfect equilibrium</em> with limit-of-means payoffs.</li>\n<li><strong>Friedman 1971</strong> — Folk Theorem for <em>discounted</em> SPE with\n  $\\gamma$ close to $1$, under a slightly stronger feasibility condition\n  (\"Pareto-dominates a Nash payoff\").</li>\n<li><strong>Fudenberg-Maskin 1986</strong> — full-dimensionality conditions for\n  discounted SPE Folk Theorem in general.</li>\n<li><strong>Fudenberg-Levine-Maskin 1994</strong> — Folk Theorem under public\n  imperfect monitoring.</li>\n</ul>\n<h2>Status in this blueprint</h2>\n<p>This node states the baseline result and exists as a placeholder for\nthe full Folk-theorem subtree. Detailed refinements (Friedman, FLM,\nFLM-Tirole) and the Lean proof remain to be developed.</p>\n<h2>References</h2>\n<ul>\n<li>Aumann, R. J. and Shapley, L. S. (1976/1994). \"Long-Term Competition\n  — A Game-Theoretic Analysis\".</li>\n<li>Friedman, J. W. (1971). \"A Non-Cooperative Equilibrium for Supergames\".\n  <em>Rev. Econ. Stud.</em> 38: 1–12.</li>\n<li>Fudenberg, D. and Maskin, E. (1986). \"The Folk Theorem in Repeated\n  Games with Discounting or with Incomplete Information\".\n  <em>Econometrica</em> 54: 533–554.</li>\n<li>[MSZ Chapter 14] Maschler, Solan, and Zamir, <em>Game Theory</em>.</li>\n<li>Mailath, G. and Samuelson, L. (2006). <em>Repeated Games and Reputations.</em> Oxford.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.canonical_correlation_device",
+  "title": "Canonical Correlation Device",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_canonical_correlation_device.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Canonical Correlation Device</h1>\n<p>For a finite strategic game with action sets $(A_i)_{i\\in I}$, a canonical\ncorrelation device is a probability distribution $\\mu$ on the product\n$A=\\prod_i A_i$.</p>\n<p>Before play, the device draws an action profile $a\\in A$ according to $\\mu$ and\nprivately recommends $a_i$ to player $i$. The recommendation is not binding:\nafter observing only $a_i$, player $i$ may obey or replace the recommendation\nby another action.</p>\n<p>The device is canonical because its signals are the actions themselves. General\nprivate signals can be reduced to this canonical form by considering the\ndistribution of recommended actions and the incentive constraints for obeying\nthose recommendations.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Correlation devices for Aumann correlated equilibria.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

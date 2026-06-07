@@ -1,0 +1,62 @@
+{
+  "id": "social_choice.fair_division.indivisible.is_alpha_mms",
+  "title": "α-MMS Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>α-MMS Allocation</h1>\n<p>For a parameter $\\alpha \\in [0, 1]$, an allocation $A$ is <em>α-MMS</em> if\nevery agent's bundle value is at least an $\\alpha$-fraction of their\nmaximin share value ([[social_choice.fair_division.indivisible.mms_value]]):\n$$\n\\forall i \\in N,\\ \\alpha \\cdot \\mathrm{MMS}_i \\le v_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsAlphaMMS</code>, with\nhypotheses <code>[Fintype N] [DecidableEq G]</code>.</p>\n<h2>Special cases</h2>\n<ul>\n<li>$\\alpha = 1$: exact MMS, equivalent to\n  <code>IsMaxminShare</code> ([[social_choice.fair_division.indivisible.maximin_share]]).\n  The equivalence is proved in\n  [[social_choice.fair_division.indivisible.mms_iff_alpha_one]].</li>\n<li>$\\alpha = 0$: trivially satisfied by every allocation (the\n  hypothesis becomes $0 \\le v_i(A(i))$, which holds whenever values\n  are nonnegative; see\n  [[social_choice.fair_division.indivisible.alpha_mms_mono]]'s\n  <code>isAlphaMMS_zero</code>).</li>\n</ul>\n<h2>Why approximate</h2>\n<p>Exact MMS allocations <em>need not exist</em> — the Procaccia–Wang (2014)\ncounterexample shows that some additive instances admit no exact-MMS\nallocation. The α-MMS notion preserves the \"fraction of self-guaranteed\nworst piece\" intuition while always being achievable for some $\\alpha\n&lt; 1$:</p>\n<ul>\n<li>$\\alpha = \\frac{2}{3}$ — Procaccia–Wang (2014).</li>\n<li>$\\alpha = \\frac{3}{4}$ — Ghodsi–Hajiaghayi–Seddighin–Seddighin–Yami\n  (2018), independently improved by Garg–Taki (2020) and others.</li>\n<li>The current state-of-the-art (as of mid-2020s) sits slightly above\n  $\\frac{3}{4}$ for additive valuations and is an active research\n  area.</li>\n</ul>\n<h2>Monotonicity in α</h2>\n<p>Smaller α makes the predicate strictly weaker\n([[social_choice.fair_division.indivisible.alpha_mms_mono]]'s\n<code>isAlphaMMS_mono_alpha</code>): if $A$ is $\\alpha_1$-MMS and $\\alpha_2 \\le\n\\alpha_1$, then $A$ is also $\\alpha_2$-MMS.</p>\n<h2>References</h2>\n<ul>\n<li>Procaccia, A. D. and Wang, J. (2014). \"Fair Enough: Guaranteeing Approximate Maximin Shares\". <em>EC</em>.</li>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsAlphaMMS",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsAlphaMMS",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsAlphaMMS",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "def",
+      "signature": "def IsAlphaMMS [Fintype N] [DecidableEq G]\n    (α : ℝ) (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L121",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

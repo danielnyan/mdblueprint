@@ -1,0 +1,66 @@
+{
+  "id": "game_theory.strategic_game.potential.potential_maximizer_nash",
+  "title": "Potential Maximizer Is Nash",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_potential_potential_maximizer_nash.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Potential Maximizer Is Nash</h1>\n<p>In a finite exact potential game, every global maximizer of the potential is a\npure Nash equilibrium.</p>\n<p>The proof is local: if a unilateral deviation from a potential maximizer were\nprofitable, exactness would make the same deviation increase the potential,\ncontradicting maximality.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Section 5.6, Exercise 1(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Finite potential games have pure equilibria by maximizing the potential.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsExactPotential.maximizer_is_nash",
+      "display_name": "StrategicGame.IsExactPotential.maximizer_is_nash",
+      "qualified_name": "StrategicGame.IsExactPotential.maximizer_is_nash",
+      "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "kind": "theorem",
+      "signature": "theorem IsExactPotential.maximizer_is_nash {Φ : G.Profile → U}\n    (hΦ : IsExactPotential G Φ) {σ : G.Profile}\n    (hmax : ∀ τ : G.Profile, Φ σ ≥ Φ τ) :\n    IsNashEquilibrium G σ",
+      "docstring": "A profile maximizing an exact potential is a Nash equilibrium.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L64",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsOrdinalPotential.isNash_iff_localMax",
+      "display_name": "StrategicGame.IsOrdinalPotential.isNash_iff_localMax",
+      "qualified_name": "StrategicGame.IsOrdinalPotential.isNash_iff_localMax",
+      "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "kind": "theorem",
+      "signature": "theorem IsOrdinalPotential.isNash_iff_localMax {Φ : G.Profile → U}\n    (hΦ : IsOrdinalPotential G Φ) {σ : G.Profile} :\n    IsNashEquilibrium G σ ↔\n    ∀ i (s' : G.strategy i), Φ σ ≥ Φ (deviate σ i s')",
+      "docstring": "Nash ↔ local maximizer of ordinal potential.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L79",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

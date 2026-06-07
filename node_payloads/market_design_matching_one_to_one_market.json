@@ -1,0 +1,60 @@
+{
+  "id": "market_design.matching.one_to_one.market",
+  "title": "Matching Market (One-to-One)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "market_design/market_design_matching_one_to_one_market.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Matching Market (One-to-One)</h1>\n<p>A <strong>one-to-one matching market</strong> consists of:</p>\n<ul>\n<li>A finite nonempty set $M$ of <em>men</em> (proposers).</li>\n<li>A finite nonempty set $W$ of <em>women</em> (receivers).</li>\n<li>For each $i \\in M$, a strict linear order $\\succ_i$ over $W \\cup \\{\\bot_i\\}$,\n  where $\\bot_i$ represents staying unmatched.</li>\n<li>For each $j \\in W$, a strict linear order $\\succ_j$ over $M \\cup \\{\\bot_j\\}$.</li>\n</ul>\n<p>We say $j$ is <strong>acceptable</strong> to $i$ if $j \\succ_i \\bot_i$ (and symmetrically for\n$i$ acceptable to $j$). The market makes no use of cardinal utilities — only\nthe ordinal preferences matter.</p>\n<p>In Lean this is the <code>MatchingMarket</code> structure under\n<code>EconCSLib.MarketDesign.Matching.Basic</code>. The \"two-sided\" terminology refers to\nthe two disjoint participant sets $M$, $W$; \"one-to-one\" refers to each\nparticipant being matched to at most one partner.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Def 22.1] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "title": "Gale-Shapley Deferred Acceptance Algorithm",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_algorithm.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "href": "market_design/market_design_matching_one_to_one_stability.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatchingMarket",
+      "display_name": "MatchingMarket",
+      "qualified_name": "MatchingMarket",
+      "module": "EconCSLib.MarketDesign.Matching.Basic",
+      "kind": "structure",
+      "signature": "structure MatchingMarket (M W : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L45",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.Basic",
+      "display_name": "EconCSLib.MarketDesign.Matching.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

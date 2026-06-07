@@ -1,0 +1,64 @@
+{
+  "id": "math.minimax.loomis_induction_proof.row_drop",
+  "title": "Row-Drop Step of Loomis Induction",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_minimax_loomis_induction_proof_row_drop.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Row-Drop Step of Loomis Induction</h1>\n<p>Dual to <a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.column_drop\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_column_drop.html\">Column-Drop Step of Loomis Induction</a>: a\nstrict row inequality in the optimiser of $A$ forces a contradiction by\nmixing with the inductive optimiser of a row-restricted game.</p>\n<h2>Setup</h2>\n<p>Fix $A, B \\colon I \\times J \\to \\mathbb{R}$ with $B$ entrywise positive and\n$|I| + |J| \\ge 3$. Use $x_0, y_0, \\lambda_0, \\mu_0$ as in\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.value_existence\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_value_existence.html\">Existence of Loomis Optimisers</a>.</p>\n<p><strong>Induction hypothesis.</strong> Every pair $(A', B')$ on $(I', J)$ with\n$I' \\subsetneq I$ satisfies $\\lambda_0(A', B') = \\mu_0(A', B')$.</p>\n<h2>Statement</h2>\n<p>Suppose $\\lambda_0 &lt; \\mu_0$ and there exists $i_0 \\in I$ with\n$$\n  (A y_0)_{i_0} \\;&lt;\\; \\mu_0 \\,(B y_0)_{i_0}.\n$$\nThen a contradiction follows.</p>",
+  "proof_html": "<p>The argument is dual to\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.column_drop\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_column_drop.html\">Column-Drop Step of Loomis Induction</a>. We sketch the\ncorrespondences and record the sign flips:</p>\n<ul>\n<li>\n<p>$|I| \\ge 2$: if $|I| = 1$ then $i_0$ is the unique row and\n  $\\mu_\\mathrm{aux}(y_0) = (A y_0)_{i_0} / (B y_0)_{i_0} &lt; \\mu_0$,\n  contradicting $\\mu_\\mathrm{aux}(y_0) \\ge \\mu_0$. So $I' := I \\setminus\n  {i_0}$ is nonempty.</p>\n</li>\n<li>\n<p>Restricted game $(A', B')$ on $(I', J)$. $B'$ stays entrywise positive\n  and $|I'| + |J| &lt; |I| + |J|$, so the induction hypothesis applies:\n  $\\lambda_0' = \\mu_0'$.</p>\n</li>\n<li>\n<p>Extending $x' \\in \\Delta(I')$ by $0$ at $i_0$ yields $\\tilde x \\in\n  \\Delta(I)$ with\n  $$\n    (\\tilde x A)_j = (x' A')_j,\\qquad\n    (\\tilde x B)_j = (x' B')_j.\n  $$\n  So $\\lambda_\\mathrm{aux}(\\tilde x) = \\lambda_\\mathrm{aux}^{(A',B')}(x')$ and\n  $\\lambda_0' \\le \\lambda_0$.</p>\n</li>\n<li>\n<p>Combined with the inductive equality and the hypothesis,\n  $\\mu_0' = \\lambda_0' \\le \\lambda_0 &lt; \\mu_0$, so $\\mu_0' &lt; \\mu_0$.</p>\n</li>\n<li>\n<p>Let $y' \\in \\Delta(J)$ be the inductive optimiser of $(A', B')$, so\n  $(A' y')_i \\le \\mu_0' (B' y')_i$ for every $i \\in I'$. Set\n  $y_\\alpha = \\alpha y' + (1 - \\alpha) y_0 \\in \\Delta(J)$.</p>\n</li>\n</ul>\n<p><em>For $i \\in I'$:</em>\n  $$\n    (A y_\\alpha)_i\n    \\le \\alpha \\mu_0'(B y')_i + (1 - \\alpha)\\mu_0 (B y_0)_i\n    = \\mu_0 (B y_\\alpha)_i - \\alpha (\\mu_0 - \\mu_0')(B y')_i.\n  $$\n  The subtracted term is strictly positive when $\\alpha &gt; 0$ (using\n  $\\mu_0 &gt; \\mu_0'$ and $(By')_i &gt; 0$ by\n  <a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.positive_aggregate\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_positive_aggregate.html\">Positive Aggregates xB and By</a>), so\n  $(A y_\\alpha)_i &lt; \\mu_0 (B y_\\alpha)_i$.</p>\n<p><em>For $i = i_0$:</em> the affine function\n  $\\alpha \\mapsto (A y_\\alpha)_{i_0} - \\mu_0 (B y_\\alpha)_{i_0}$ is\n  continuous and strictly negative at $\\alpha = 0$, so it remains strictly\n  negative on a neighborhood $[0, \\alpha^*)$. Pick any\n  $\\alpha \\in (0, \\min(\\alpha^*, 1))$.</p>\n<ul>\n<li>For the chosen $\\alpha$, $(A y_\\alpha)_i &lt; \\mu_0 (B y_\\alpha)_i$ for every\n  $i \\in I$, giving $\\mu_\\mathrm{aux}(y_\\alpha) &lt; \\mu_0$ and contradicting\n  the definition of $\\mu_0$ as an infimum.</li>\n</ul>\n<p>$\\square$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 1] Laraki, Renault, and Sorin, <em>Mathematical\n  Foundations of Game Theory</em>.\n  Row-drop inductive step in the direct Loomis proof.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "math.minimax.loomis_induction_proof.base_case",
+      "title": "Base Case of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_base_case.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.weak_duality",
+      "title": "Weak Duality For Loomis Values",
+      "href": "math/math_minimax_loomis_induction_proof_weak_duality.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Loomis.loomis_value_eq_aux",
+      "display_name": "Loomis.loomis_value_eq_aux",
+      "qualified_name": "Loomis.loomis_value_eq_aux",
+      "module": "EconCSLib.Math.Minimax.Loomis",
+      "kind": "theorem",
+      "signature": "private theorem loomis_value_eq_aux :\n    ∀ (n : ℕ), 2 ≤ n →\n    ∀ {I J : Type*} [Fintype I] [Fintype J] [Nonempty I] [Nonempty J],\n      n = Fintype.card I + Fintype.card J →\n      ∀ (A B : I → J → ℝ), IsPositive B → lamB0 A B = muB0 A B",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L505",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Minimax.Loomis",
+      "display_name": "EconCSLib.Math.Minimax.Loomis",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

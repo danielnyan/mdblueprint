@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+  "title": "Normal Form Invariance Of Extensive Representations",
+  "kind": "proposition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_normal_form_invariance.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.normal_form"
+  ],
+  "body_html": "<h1>Normal Form Invariance Of Extensive Representations</h1>\n<p>Two extensive forms can have the same normal form even when their trees and\ninformation sets look different. MFoGT records that extensive forms with the same\nnormal form can be linked by chains of elementary transformations: interchange of\nsimultaneous moves, coalescing of consecutive moves, and addition of superfluous\nmoves.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The statement is structural rather than an equilibrium theorem. Each elementary\ntransformation preserves the pure strategy sets up to canonical identification and\npreserves the outcome induced by every strategy profile. Chains of these moves\ntherefore preserve the normal form.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Extensive forms with the same normal form are related by elementary transformations.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "title": "Normal Form Reduction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "GameTree.toStrategicGame_nash_iff_isNashAt",
+      "display_name": "GameTree.toStrategicGame_nash_iff_isNashAt",
+      "qualified_name": "GameTree.toStrategicGame_nash_iff_isNashAt",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "kind": "theorem",
+      "signature": "theorem toStrategicGame_nash_iff_isNashAt (g : GameTree N U)\n    (σ : (toStrategicGame g).Profile) :\n    _root_.IsNashEquilibrium (toStrategicGame g) σ ↔ IsNashAt (profileStrategy σ) g",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L76",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

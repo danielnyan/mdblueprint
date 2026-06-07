@@ -1,0 +1,72 @@
+{
+  "id": "math.simplex.bounded_by_value",
+  "title": "Pointwise Bounds Are Simplex Bounds",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_simplex_bounded_by_value.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.simplex"
+  ],
+  "body_html": "<h1>Pointwise Bounds Are Simplex Bounds</h1>\n<p>For a finite index <code>I</code>, strictly ordered field <code>𝕜</code>, value <code>v ∈ 𝕜</code>, and\nfunction <code>f : I → 𝕜</code>,\n$$\n  (\\forall i,\\; v \\le f(i)) \\;\\Longleftrightarrow\\;\n  (\\forall x \\in \\operatorname{stdSimplex} \\mathbb{K}\\, I,\\; v \\le \\operatorname{wsum} x\\, f).\n$$</p>\n<p>The symmetric <code>le_iff_simplex_le</code> gives the analogous statement for upper\nbounds. Both directions are short:</p>\n<ul>\n<li>pointwise $\\Rightarrow$ simplex uses <code>wsum_const</code> plus <code>wsum_le_wsum</code>;</li>\n<li>simplex $\\Rightarrow$ pointwise specializes to the point-mass simplex\n  element <code>stdSimplex.pure i</code> and applies <code>wsum_pure_apply</code>.</li>\n</ul>\n<p>These bridges are the workhorses of Loomis-style minimax arguments: they\nreduce a quantification over the entire mixed-strategy simplex to a\nquantification over pure strategies, where finiteness of <code>I</code> makes the\nremaining argument elementary.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Reduction of mixed-strategy quantifiers to\n  pure-strategy quantifiers in zero-sum analyses.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ge_iff_simplex_ge",
+      "display_name": "ge_iff_simplex_ge",
+      "qualified_name": "ge_iff_simplex_ge",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem ge_iff_simplex_ge {f : I → 𝕜} {v : 𝕜} :\n    (∀ i, v ≤ f i) ↔ ∀ x : stdSimplex 𝕜 I, v ≤ wsum x f",
+      "docstring": "`f ≥ v` pointwise iff every simplex weighted sum is `≥ v`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L341",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "le_iff_simplex_le",
+      "display_name": "le_iff_simplex_le",
+      "qualified_name": "le_iff_simplex_le",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem le_iff_simplex_le {f : I → 𝕜} {v : 𝕜} :\n    (∀ i, f i ≤ v) ↔ ∀ x : stdSimplex 𝕜 I, wsum x f ≤ v",
+      "docstring": "`f ≤ v` pointwise iff every simplex weighted sum is `≤ v`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L350",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Simplex",
+      "display_name": "EconCSLib.Math.Simplex",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

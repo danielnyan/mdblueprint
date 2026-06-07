@@ -1,0 +1,60 @@
+{
+  "id": "game_theory.cooperative_game.core",
+  "title": "Core Of A Coalitional Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_core.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.core"
+  ],
+  "body_html": "<h1>Core Of A Coalitional Game</h1>\n<p>The <strong>core</strong> is the set of payoff vectors that no coalition can block.\nFor a TU game $(N,v)$, a payoff vector $x$ is in the core if:\n$$\n  \\sum_{i \\in N} x_i = v(N)\n$$\nand, for every coalition $S \\subseteq N$,\n$$\n  \\sum_{i \\in S} x_i \\ge v(S).\n$$</p>\n<p>The first condition allocates the worth of the grand coalition. The second\ncondition is coalitional rationality: every coalition receives at least the\nworth it can secure on its own.</p>\n<h2>Lean Status</h2>\n<p>The Lean predicate <code>CoalitionalGame.Core</code> uses the efficient payoff\ncondition plus the coalition-by-coalition inequality above.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Def 17.2] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.cooperative_game.imputation",
+      "title": "Imputation",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.cooperative_game.core_subset_imputations",
+      "title": "Core Payoffs Are Imputations",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core_subset_imputations.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.Core",
+      "display_name": "CoalitionalGame.Core",
+      "qualified_name": "CoalitionalGame.Core",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "kind": "def",
+      "signature": "def Core : Set (PayoffVector N ℝ)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

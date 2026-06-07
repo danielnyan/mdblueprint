@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.extensive_game.core.nature_player",
+  "title": "Nature In Extensive Games",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_core_nature_player.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.core"
+  ],
+  "body_html": "<h1>Nature In Extensive Games</h1>\n<p>An extensive game with Nature has chance nodes at which no strategic player\nchooses an action. Instead, the game description specifies a probability\ndistribution over successors. A strategy profile of the strategic players then\ninduces a probability distribution over terminal outcomes.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Nature or hazard player chooses successors according to specified probability distributions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ExtensiveGame.isChanceState",
+      "display_name": "ExtensiveGame.isChanceState",
+      "qualified_name": "ExtensiveGame.isChanceState",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "kind": "def",
+      "signature": "def isChanceState (G : ExtensiveGame N U) (s : G.State) : Prop",
+      "docstring": "A state is a chance node.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L105",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

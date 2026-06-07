@@ -1,0 +1,48 @@
+{
+  "id": "game_theory.cooperative_game.balanced_collection",
+  "title": "Balanced Collection Of Coalitions",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_collection.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.core"
+  ],
+  "body_html": "<h1>Balanced Collection Of Coalitions</h1>\n<p>A finite collection of coalitions $\\mathcal{D}$ is <strong>balanced</strong> if its\ncoalitions can be assigned positive weights $\\delta_S&gt;0$ so that every\nplayer is covered with total weight one:\n$$\n  \\sum_{\\substack{S \\in \\mathcal{D}\\\\ i \\in S}} \\delta_S = 1\n  \\quad\\text{for every } i \\in N.\n$$</p>\n<p>The condition says that the weighted incidence vectors of the coalitions in\n$\\mathcal{D}$ add up to the incidence vector of the grand coalition.</p>\n<p>Balanced collections are the combinatorial input to the\nBondareva-Shapley theorem ([[game_theory.cooperative_game.bondareva_shapley]]).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Def 17.11] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.IsBalanced",
+      "display_name": "CoalitionalGame.IsBalanced",
+      "qualified_name": "CoalitionalGame.IsBalanced",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "kind": "def",
+      "signature": "def IsBalanced (𝒟 : Finset (Finset N)) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

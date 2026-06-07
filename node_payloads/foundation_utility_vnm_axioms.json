@@ -1,0 +1,128 @@
+{
+  "id": "foundation.utility.vnm_axioms",
+  "title": "Von Neumann Morgenstern Axioms",
+  "kind": "definition",
+  "status": "staged",
+  "href": "foundation/utility/foundation_utility_vnm_axioms.html",
+  "primary_topic": "foundation.utility",
+  "topics": [
+    "foundation.utility"
+  ],
+  "body_html": "<h1>Von Neumann Morgenstern Axioms</h1>\n<p>For preferences over lotteries, the vNM axioms require the ordinary preference\naxioms together with lottery-specific compatibility conditions.</p>\n<p>The central lottery-specific axioms are:</p>\n<ul>\n<li>independence: mixing both sides with the same third lottery preserves\n  preference;</li>\n<li>continuity: if $L_1$ is weakly preferred to $L_2$ and $L_2$ is weakly preferred\n  to $L_3$, then $L_2$ is indifferent to a mixture of $L_1$ and $L_3$.</li>\n</ul>\n<p>Together with completeness and transitivity, these axioms are the input for the\nexpected-utility representation theorem.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Axioms 2.12-2.17] Maschler, Solan, and Zamir, <em>Game Theory</em>. The vNM axioms for preferences over lotteries.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.preference.abstract_relation",
+      "title": "Abstract Preference-Relation Axioms",
+      "href": "foundation/foundation_preference_abstract_relation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.utility.sure_thing_principle",
+      "title": "Sure Thing Principle",
+      "href": "foundation/utility/foundation_utility_sure_thing_principle.html"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "VNM.Completeness",
+      "display_name": "VNM.Completeness",
+      "qualified_name": "VNM.Completeness",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def Completeness (pref : A → A → Prop) : Prop",
+      "docstring": "**Completeness**: every pair is comparable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L213",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VNM.Transitivity",
+      "display_name": "VNM.Transitivity",
+      "qualified_name": "VNM.Transitivity",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def Transitivity (pref : A → A → Prop) : Prop",
+      "docstring": "**Transitivity**: preference chains compose.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L217",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VNM.Independence",
+      "display_name": "VNM.Independence",
+      "qualified_name": "VNM.Independence",
+      "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+      "kind": "def",
+      "signature": "def Independence (pref : Lottery 𝕜 O → Lottery 𝕜 O → Prop) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/VNMAxioms.lean#L50",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VNM.Continuity",
+      "display_name": "VNM.Continuity",
+      "qualified_name": "VNM.Continuity",
+      "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+      "kind": "def",
+      "signature": "def Continuity (pref : Lottery 𝕜 O → Lottery 𝕜 O → Prop) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/VNMAxioms.lean#L57",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.Foundation.Utility.VNMAxioms",
+      "display_name": "EconCSLib.Foundation.Utility.VNMAxioms",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/VNMAxioms.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.muller_satterthwaite",
+  "title": "Muller–Satterthwaite Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_muller_satterthwaite.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.gibbard_satterthwaite"
+  ],
+  "body_html": "<h1>Muller–Satterthwaite Theorem</h1>\n<p><strong>Theorem.</strong> Let $N$ be a finite nonempty voter type and $A$ a finite\nalternative set with $|A| \\ge 3$. Every unanimous\n([[social_choice.voting.unanimity]]) and monotonic\n([[social_choice.voting.monotonic_scf]]) social choice function is\ndictatorial ([[social_choice.voting.dictatorial_scf]]).</p>\n<p>In Lean: <code>SocialChoice.Voting.muller_satterthwaite</code>. The statement is\npresent in <code>EconCSLib.SocialChoice.Voting.GibbardSatterthwaite</code>; the proof is\ncurrently a <code>sorry</code>, with the standard SCF-from-SWF reduction outlined below.</p>",
+  "proof_html": "<p>plan (Arrow-reduction route)</p>\n<p>Given $G : \\mathrm{PrefProfile}(N, A) \\to A$ unanimous and monotonic, construct\nan auxiliary social welfare function $F : \\mathrm{PrefProfile}(N, A) \\to\n\\mathrm{Pref}(A)$ defined pairwise as: for each pair ${a, b}$,\n$F(P)$ ranks $a \\succ b$ iff $G$ selects $a$ at the <em>pair-restricted</em>\nprofile $P|_{\\{a,b\\}}$ that pushes both $a$ and $b$ to the top above all\nother alternatives in everyone's ranking.</p>\n<ol>\n<li>\n<p><strong>Well-definedness.</strong> Pair restriction yields a profile where $\\{a,b\\}$\n   are everyone's top two; by unanimity (and finite case analysis on the\n   structure of $P|_{\\{a,b\\}}$) the outcome must be $a$ or $b$.</p>\n</li>\n<li>\n<p><strong>$F$ satisfies unanimity.</strong> If everyone strictly prefers $a$ to $b$ in\n   $P$, the pair-restricted profile has $a$ above $b$ at every voter; by\n   unanimity of $G$ the outcome is $a$, hence $F(P)$ strictly ranks\n   $a \\succ b$.</p>\n</li>\n<li>\n<p><strong>$F$ satisfies IIA.</strong> Society's $\\{a,b\\}$ ranking depends only on\n   $P|_{\\{a,b\\}}$, which depends only on each voter's $\\{a,b\\}$ pair\n   ranking. (Monotonicity of $G$ is what makes this construction\n   independent of how voters rank irrelevant alternatives.)</p>\n</li>\n<li>\n<p><strong>$F$ is a <code>Pref</code>.</strong> Transitivity of $F(P)$ uses monotonicity plus a\n   third-alternative case analysis; reflexivity and totality follow from\n   the unanimous outcome.</p>\n</li>\n<li>\n<p><strong>Apply Arrow</strong> ([[social_choice.voting.arrow_impossibility]]) to\n   conclude $F$ is dictatorial: some voter $i$'s strict preference\n   determines $F(P)$ for every pair.</p>\n</li>\n<li>\n<p><strong>Transfer back to $G$.</strong> A pairwise dictator over $F$ is also a\n   top-pick dictator over $G$: at any profile, $G(P)$ must lie above\n   every other alternative in $i$'s ranking (else the pair-restricted\n   profile witnessing the contradiction would yield a different\n   $F$-ranking).</p>\n</li>\n</ol>\n<p>The argument needs <code>Fintype N</code>, <code>Nonempty N</code>, <code>Fintype A</code>, and the\nhypothesis $|A| \\ge 3$ to invoke Arrow.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.27] Maschler, Solan, and Zamir, <em>Game Theory</em>. Muller–Satterthwaite theorem and the SWF reduction.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.muller_satterthwaite",
+      "display_name": "SocialChoice.Voting.muller_satterthwaite",
+      "qualified_name": "SocialChoice.Voting.muller_satterthwaite",
+      "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "kind": "theorem",
+      "signature": "theorem muller_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A]\n    (hA : Fintype.card A ≥ 3)\n    (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f)\n    (hU : Unanimity f) (hM : Monotonicity f) :\n    Dictatorial f",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L447",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "display_name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

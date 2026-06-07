@@ -1,0 +1,57 @@
+{
+  "topic": {
+    "id": "math.order",
+    "title": "Math.Order",
+    "href": "math/order/index.html",
+    "parent": "math",
+    "node_count": 1,
+    "descendant_node_count": 1
+  },
+  "counts": {
+    "internal_nodes": 1,
+    "inlined_nodes": 1,
+    "descendant_nodes": 1,
+    "child_topics": 0,
+    "inlined_child_topics": 1,
+    "non_proof_plan_nodes": 1,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 2,
+    "visible_nodes_with_selected_proof_plans": 2
+  },
+  "nodes": [
+    {
+      "id": "math.order.sup_inf_choice_function_identity",
+      "title": "Sup-Inf Choice Function Identity",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "math/order/math_order_sup_inf_choice_function_identity.html",
+      "payload": "node_payloads/math_order_sup_inf_choice_function_identity.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 1
+    },
+    {
+      "id": "order",
+      "title": "order",
+      "href": "keywords/order.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "math.order.sup_inf_choice_function_identity"
+  ]
+}

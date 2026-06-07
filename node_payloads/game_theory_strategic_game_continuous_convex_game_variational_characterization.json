@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.convex_game_variational_characterization",
+  "title": "Convex Game Nash Variational Characterization",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_convex_game_variational_characterization.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Convex Game Nash Variational Characterization</h1>\n<p>For a convex game, define\n$$\n  \\Phi(s,t)=\\sum_i G_i(s_i,t_{-i}).\n$$\nThen $t$ is a Nash equilibrium if and only if\n$$\n  \\Phi(s,t)\\le \\Phi(t,t)\n  \\quad\\text{for every }s\\in S.\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 7(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Nash equilibrium characterization using Phi(s,t).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.behavioral_equilibrium",
+  "title": "Behavioral Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_behavioral_equilibrium.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Behavioral Equilibrium</h1>\n<p>Let $\\Gamma$ be a finite extensive form game with perfect recall. A mixed\nequilibrium of $\\Gamma$ is a Nash equilibrium of its mixed normal-form extension.\nA behavioral equilibrium of $\\Gamma$ is a Nash equilibrium of the compact\ncontinuous game whose strategy sets are behavioral strategy spaces $B_i$ and whose\npayoffs are expected payoffs in $\\Gamma$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.3.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed and behavioral equilibria of a finite extensive game with perfect recall.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

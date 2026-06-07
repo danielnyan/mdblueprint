@@ -1,0 +1,261 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.divisible.stromquist",
+    "title": "Social Choice.Fair Division.Divisible.Stromquist",
+    "href": "social_choice/fair_division/divisible/stromquist/index.html",
+    "parent": "social_choice.fair_division.divisible",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 0,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 10,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 13,
+    "visible_nodes_with_selected_proof_plans": 13
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists",
+      "title": "Envy-Free Existence (Stromquist, n Agents)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ef_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_U",
+      "title": "Stromquist Agent-Preference Union U(i)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_U.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_U.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_assignment.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_pieces",
+      "title": "Stromquist Pieces from the Division Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_pieces.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_pieces.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "title": "Stromquist Preference Sets A(i, j)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_preference_sets.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_preference_sets.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_shifted_cells",
+      "title": "Stromquist Shifted-Cell Approximation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_shifted_cells.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_shifted_cells.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "title": "Stromquist Unique-Preference Sets B(i, j)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unique_preference_sets.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_unique_preference_sets.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_unusual_case.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_usual_case.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_value_continuous.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "to": "social_choice.fair_division.divisible.ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_U",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_U",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_pieces",
+      "to": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    },
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_pieces",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ef_exists",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 2
+    },
+    {
+      "id": "continuity",
+      "title": "continuity",
+      "href": "keywords/continuity.html",
+      "count": 1
+    },
+    {
+      "id": "divisible",
+      "title": "divisible",
+      "href": "keywords/divisible.html",
+      "count": 10
+    },
+    {
+      "id": "envy-free",
+      "title": "envy-free",
+      "href": "keywords/envy-free.html",
+      "count": 4
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 10
+    },
+    {
+      "id": "kkm",
+      "title": "kkm",
+      "href": "keywords/kkm.html",
+      "count": 5
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 1
+    },
+    {
+      "id": "stromquist",
+      "title": "stromquist",
+      "href": "keywords/stromquist.html",
+      "count": 10
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

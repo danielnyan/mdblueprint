@@ -1,0 +1,119 @@
+{
+  "id": "math.fixed_point.scarf_lemma",
+  "title": "Scarf Combinatorial Lemma (Colorful Room Existence)",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_fixed_point_scarf_lemma.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.fixed_point"
+  ],
+  "body_html": "<h1>Scarf Combinatorial Lemma (Colorful Room Existence)</h1>\n<p>For any finite coloring $c : T \\to I$ of the vertices of an indexed simplicial\ntriangulation (an <code>IndexedLOrder I T</code>), the set of <strong>colorful rooms</strong> is\nnonempty: there is a cell whose vertex colors realize the full index set\n$I$.</p>\n<p>This is the combinatorial heart of the Brouwer fixed-point proof\n([[math.fixed_point.brouwer_simplex]]). It plays the role classically filled by\nSperner's lemma, but is established here through a door-counting /\nroom-orientation parity argument rather than Sperner labeling.</p>",
+  "proof_html": "<p>An orientation (door-counting) argument:</p>\n<ol>\n<li><strong>Two rooms per internal door.</strong> Each internal door is a face of exactly two\n   rooms (<code>IndexedLOrder.internal_door_two_rooms</code>).</li>\n<li><strong>Parity.</strong> Fixing an index $i \\in I$, the number of typed nearly-colorful\n   rooms of type $i$ in the double-counting set is <strong>odd</strong>\n   (<code>IndexedLOrder.typed_colorful_room_odd</code>), by counting outside doors,\n   internal doors, and nearly-colorful rooms modulo two.</li>\n<li><strong>Existence.</strong> An odd count is positive, so a colorful room exists\n   (<code>IndexedLOrder.Scarf</code>: <code>(IST.colorful c).Nonempty</code>).</li>\n</ol>\n<p>The Lean development is axiom-clean:\n<code>#print axioms IndexedLOrder.Scarf</code> = <code>propext, choice, Quot.sound</code>.</p>\n<h2>Lean route note</h2>\n<p>The blueprint dependency <code>brouwer_simplex → scarf_lemma</code> reflects the <strong>actual\nLean proof route</strong>. MFoGT presents Brouwer for a simplex via Sperner's lemma;\nthe Lean port (adapted from <code>github.com/math-xmum/Brouwer</code>) instead uses\nScarf's room-based combinatorial lemma, which is equivalent for the\nfixed-point conclusion.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, §4.11] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game\n  Theory</em>. Combinatorial route to\n  Brouwer's fixed-point theorem (presented in the Sperner formulation; the Lean\n  port uses the equivalent Scarf room-counting formulation).</li>\n<li>Scarf, H. E. (1967). \"The Core of an N-Person Game\". <em>Econometrica</em> 35(1):\n  50–69. Origin of the constructive primitive-set / room-orientation\n  combinatorial argument.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.fixed_point.brouwer_simplex",
+      "title": "Brouwer Fixed Point Theorem For A Simplex",
+      "href": "math/math_fixed_point_brouwer_simplex.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IndexedLOrder.Scarf",
+      "display_name": "IndexedLOrder.Scarf",
+      "qualified_name": "IndexedLOrder.Scarf",
+      "module": "EconCSLib.Math.FixedPoint.Scarf",
+      "kind": "theorem",
+      "signature": "theorem Scarf : (IST.colorful c).Nonempty",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Scarf.lean#L2654",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IndexedLOrder.isColorful",
+      "display_name": "IndexedLOrder.isColorful",
+      "qualified_name": "IndexedLOrder.isColorful",
+      "module": "EconCSLib.Math.FixedPoint.Scarf",
+      "kind": "def",
+      "signature": "def isColorful : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Scarf.lean#L1237",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IndexedLOrder.internal_door_two_rooms",
+      "display_name": "IndexedLOrder.internal_door_two_rooms",
+      "qualified_name": "IndexedLOrder.internal_door_two_rooms",
+      "module": "EconCSLib.Math.FixedPoint.Scarf",
+      "kind": "theorem",
+      "signature": "theorem internal_door_two_rooms [Fintype T] (τ : Finset T) (D : Finset I)\n    (h_int_door : IST.isInternalDoor τ D) :\n    ∃ (σ₁ σ₂ : Finset T) (C₁ C₂ : Finset I),\n      (σ₁, C₁) ≠ (σ₂, C₂) ∧\n      IST.isRoom σ₁ C₁ ∧\n      IST.isRoom σ₂ C₂ ∧\n      isDoorof τ D σ₁ C₁ ∧\n      isDoorof τ D σ₂ C₂ ∧\n      (∀ σ C, IST.isRoom σ C → isDoorof τ D σ C →\n       (σ = σ₁ ∧ C = C₁) ∨ (σ = σ₂ ∧ C = C₂))",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Scarf.lean#L832",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IndexedLOrder.typed_colorful_room_odd",
+      "display_name": "IndexedLOrder.typed_colorful_room_odd",
+      "qualified_name": "IndexedLOrder.typed_colorful_room_odd",
+      "module": "EconCSLib.Math.FixedPoint.Scarf",
+      "kind": "lemma",
+      "signature": "lemma typed_colorful_room_odd  (i : I): Odd (Finset.filter (fun (x: (Finset T× Finset I) × Finset T × Finset I) =>  isColorful c x.2.1 x.2.2) (dbcountingset c i)).card",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Scarf.lean#L2638",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.FixedPoint.Scarf",
+      "display_name": "EconCSLib.Math.FixedPoint.Scarf",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Scarf.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

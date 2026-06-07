@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.recommendation_strategy",
+  "title": "Recommendation Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_recommendation_strategy.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Recommendation Strategy</h1>\n<p>In the mediated game, a recommendation strategy for player $i$ maps each\nrecommended action $s_i$ to the action that player will actually play.</p>\n<p>The obedient recommendation strategy is the identity strategy: after receiving\nrecommendation $s_i$, player $i$ plays $s_i$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Def. 8.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Recommendation strategies in the induced mediated game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

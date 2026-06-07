@@ -1,0 +1,103 @@
+{
+  "id": "math.linear_algebra.farkas_lemma",
+  "title": "Farkas Lemma",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "math/math_linear_algebra_farkas_lemma.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.linear_algebra",
+    "math.linear_algebra.alternatives"
+  ],
+  "body_html": "<h1>Farkas Lemma</h1>\n<h2>Setup</h2>\n<p>Fix a linearly ordered field $\\mathbb{K}$ and finite nonempty index types\n$I$ (rows) and $J$ (columns). Let $A \\colon I \\times J \\to \\mathbb{K}$,\n$b \\colon I \\to \\mathbb{K}$, $c \\colon J \\to \\mathbb{K}$, and\n$d \\in \\mathbb{K}$. Set\n$$\n  S(A, b) \\;=\\; \\{\\, x \\colon J \\to \\mathbb{K} \\mid A x \\ge b \\,\\}\n$$\n(componentwise weak inequality) and assume $S(A, b) \\ne \\emptyset$.</p>\n<h2>Statement</h2>\n<p>The following are equivalent:</p>\n<ol>\n<li>\n<p>(Primal bound.) For every $x \\in S(A, b)$, the objective $\\langle c, x\\rangle\n   \\ge d$.</p>\n</li>\n<li>\n<p>(Dual certificate.) There exists $u \\colon I \\to \\mathbb{K}$ with\n   $u \\ge 0$, $u^{\\mathsf T} A = c$, and $\\langle u, b\\rangle \\ge d$.</p>\n</li>\n</ol>",
+  "proof_html": "<p>The two directions:</p>\n<p><em>(2) $\\Rightarrow$ (1).</em> Let $x \\in S(A, b)$ and $u$ as in (2). Weighting\n$A x \\ge b$ by the nonnegative $u$ componentwise and summing,\n$\\langle u, A x\\rangle \\ge \\langle u, b\\rangle$. The left-hand side\nrearranges to $\\langle u^{\\mathsf T} A, x\\rangle = \\langle c, x\\rangle$ (by\n$u^{\\mathsf T} A = c$). The right-hand side is $\\ge d$. Therefore\n$\\langle c, x\\rangle \\ge d$.</p>\n<p><em>(1) $\\Rightarrow$ (2).</em> This is the substantive direction; the proof\nhomogenises the system and applies the Theorem of the Alternative\n(<a class=\"node-ref\" data-node-id=\"math.linear_algebra.theorem_of_alternative\" href=\"linear_algebra/math_linear_algebra_theorem_of_alternative.html\">Theorem Of The Alternative</a>).</p>\n<p>Consider the augmented system on $(x, t) \\in (J \\to \\mathbb{K})\n\\times \\mathbb{K}$ with row index $I \\sqcup { t_+, c_+ }$ (the original $I$\nplus two extra rows):</p>\n<ul>\n<li>For each $i \\in I$: $A_i x - b_i\\, t \\ge 0$.</li>\n<li>($t_+$) $t \\ge 0$.</li>\n<li>($c_+$) $-\\langle c, x\\rangle + d\\, t \\ge 1$.</li>\n</ul>\n<p><strong>Claim.</strong> This augmented system is infeasible.</p>\n<p><em>Proof of claim.</em> Suppose $(x, t)$ satisfies all three. Two cases on $t$:</p>\n<ul>\n<li>\n<p>$t = 0$. Then $A x \\ge 0$ and $-\\langle c, x\\rangle \\ge 1$, hence\n  $\\langle c, x\\rangle \\le -1$. Pick $y \\in S(A, b)$ (using the hypothesis\n  $S \\ne \\emptyset$). For every $\\lambda &gt; 0$ in $\\mathbb{K}$,\n  $A(y + \\lambda x) = A y + \\lambda A x \\ge b + 0 = b$, so\n  $y + \\lambda x \\in S(A, b)$. By (1),\n  $\\langle c, y + \\lambda x\\rangle = \\langle c, y\\rangle + \\lambda\n  \\langle c, x\\rangle \\ge d$. But $\\langle c, x\\rangle \\le -1$, so\n  $\\langle c, y\\rangle - \\lambda \\ge d$, i.e.,\n  $\\lambda \\le \\langle c, y\\rangle - d$. This bound is independent of\n  $\\lambda$ — taking any $\\lambda &gt; \\langle c, y\\rangle - d$ contradicts\n  the inequality. Hence the case $t = 0$ is impossible.</p>\n</li>\n<li>\n<p>$t &gt; 0$. Then $x' := x / t \\colon J \\to \\mathbb{K}$ satisfies\n  $A x' = A x / t \\ge b$ (divide $A x \\ge b\\, t$ by $t &gt; 0$), so\n  $x' \\in S(A, b)$. By (1), $\\langle c, x'\\rangle \\ge d$. But $(c_+)$ gives\n  $-\\langle c, x\\rangle + d\\, t \\ge 1$, so\n  $\\langle c, x'\\rangle = \\langle c, x\\rangle / t \\le d - 1/t &lt; d$ (since\n  $t &gt; 0$, so $1/t &gt; 0$). Contradiction.</p>\n</li>\n</ul>\n<p>Hence the augmented system is infeasible.</p>\n<p><strong>Apply ToA.</strong> By <a class=\"node-ref\" data-node-id=\"math.linear_algebra.theorem_of_alternative\" href=\"linear_algebra/math_linear_algebra_theorem_of_alternative.html\">Theorem Of The Alternative</a>, there is a\nFarkas-style certificate $u' \\colon I \\sqcup \\{t_+, c_+\\} \\to \\mathbb{K}$\nwith $u' \\ge 0$, $(u')^{\\mathsf T} (A_{\\mathrm{aug}}) = 0$ on every column\nof the augmented system, and $\\langle u', b_{\\mathrm{aug}}\\rangle &gt; 0$\n(where $b_{\\mathrm{aug}}$ has $0$ on the $I$ and $t_+$ rows and $1$ on the\n$c_+$ row).</p>\n<p>Decompose $u' = (u, \\alpha, \\beta)$ with $u \\colon I \\to \\mathbb{K}$,\n$\\alpha = u'(t_+)$, $\\beta = u'(c_+)$.</p>\n<p>Read off the column conditions:</p>\n<ul>\n<li>(column $j$ for $x_j$, $j \\in J$):\n  $\\sum_i u_i A_{i,j} + \\alpha \\cdot 0 + \\beta \\cdot (-c_j) = 0$, i.e.,\n  $u^{\\mathsf T} A = \\beta \\cdot c$.</li>\n<li>(column for $t$): $\\sum_i u_i (-b_i) + \\alpha \\cdot 1 + \\beta \\cdot d = 0$,\n  i.e., $\\langle u, b\\rangle = \\alpha + \\beta\\, d$.</li>\n</ul>\n<p>RHS positivity reads $\\beta &gt; 0$ (the $I$ and $t_+$ rows contribute $0$\nto the inner product, and the $c_+$ row contributes $\\beta \\cdot 1$).</p>\n<p>Since $\\beta &gt; 0$, divide: set $\\tilde u := u / \\beta$. Then</p>\n<ul>\n<li>$\\tilde u \\ge 0$ (from $u \\ge 0$ and $\\beta &gt; 0$),</li>\n<li>$\\tilde u^{\\mathsf T} A = c$ (from $u^{\\mathsf T} A = \\beta\\, c$),</li>\n<li>$\\langle \\tilde u, b\\rangle = \\langle u, b\\rangle / \\beta\n  = \\alpha / \\beta + d \\ge d$ (since $\\alpha \\ge 0$ and $\\beta &gt; 0$).</li>\n</ul>\n<p>So $\\tilde u$ witnesses (2). $\\square$</p>\n<h2>Remarks</h2>\n<ul>\n<li>The proof is purely algebraic and constructive: the Farkas certificate\n  $\\tilde u$ is built explicitly from the Theorem of the Alternative\n  witness produced by Fourier-Motzkin elimination.</li>\n<li>Works over any linearly ordered field, in particular over $\\mathbb{Q}$\n  (with rational matrix and objective, the certificate is rational).</li>\n<li>The hypothesis $S(A, b) \\ne \\emptyset$ is essential: if $S$ is empty, the\n  primal-bound condition (1) is vacuously true for any $d$, but the dual\n  certificate (2) need not exist (it would need to additionally certify\n  infeasibility of the primal). The non-emptiness hypothesis is the\n  standard Farkas \"feasibility precondition\".</li>\n</ul>\n<h2>Consequences</h2>\n<p>This is the gateway to:</p>\n<ul>\n<li>LP strong duality: the primal LP $\\min \\langle c, x\\rangle$ subject to\n  $A x \\ge b$ has the same optimal value as the dual LP\n  $\\max \\langle u, b\\rangle$ subject to $u \\ge 0$, $u^{\\mathsf T} A = c$.</li>\n<li>LP strong complementarity: existence of optimal primal-dual pairs with\n  strict complementary slackness.</li>\n<li>Matrix-game polytope structure: optimal strategy sets are polytopes\n  (intersections of the simplex with finitely many half-spaces, each of\n  which has a Farkas-style certificate).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 8] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>. Farkas lemma derived from\n  the theorem of the alternative.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "FarkasAugRow",
+      "display_name": "EconCSLib.LinearAlgebra.FarkasAugRow",
+      "qualified_name": "EconCSLib.LinearAlgebra.FarkasAugRow",
+      "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "kind": "abbrev",
+      "signature": "abbrev FarkasAugRow (I : Type*) : Type _",
+      "docstring": "Row index of the augmented Farkas system.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearAlgebra/Farkas.lean#L66",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "farkasAugA",
+      "display_name": "EconCSLib.LinearAlgebra.farkasAugA",
+      "qualified_name": "EconCSLib.LinearAlgebra.farkasAugA",
+      "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "kind": "def",
+      "signature": "def farkasAugA (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜) :\n    FarkasAugRow I → Fin (n+1) → 𝕜\n  | Sum.inl i, j => Fin.lastCases (-b i) (fun j' => A i j') j\n  | Sum.inr false, j => Fin.lastCases 1 (fun _ => (0 : 𝕜)) j\n  | Sum.inr true, j => Fin.lastCases d (fun j' => -c j') j\n/-- Augmented RHS `b_aug : FarkasAugRow I → 𝕜`. -/",
+      "docstring": "Augmented matrix `A_aug : FarkasAugRow I → Fin (n+1) → 𝕜`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearAlgebra/Farkas.lean#L69",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "farkasAugB",
+      "display_name": "EconCSLib.LinearAlgebra.farkasAugB",
+      "qualified_name": "EconCSLib.LinearAlgebra.farkasAugB",
+      "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "kind": "def",
+      "signature": "def farkasAugB (b : I → 𝕜) : FarkasAugRow I → 𝕜\n  | Sum.inl _ => 0\n  | Sum.inr false => 0\n  | Sum.inr true => 1\n/-! ### Simp lemmas for `farkasAugA` and `farkasAugB` -/\n@[simp] theorem farkasAugA_inl_castSucc (A : I → Fin n → 𝕜) (b : I → 𝕜)\n    (c : Fin n → 𝕜) (d : 𝕜) (i : I) (j' : Fin n) :\n    farkasAugA A b c d (Sum.inl i) j'.castSucc = A i j'",
+      "docstring": "Augmented RHS `b_aug : FarkasAugRow I → 𝕜`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearAlgebra/Farkas.lean#L76",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "farkas_lemma",
+      "display_name": "EconCSLib.LinearAlgebra.farkas_lemma",
+      "qualified_name": "EconCSLib.LinearAlgebra.farkas_lemma",
+      "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "kind": "theorem",
+      "signature": "theorem farkas_lemma (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜)\n    (hS : IsFeasible A b) :\n    (∀ x : Fin n → 𝕜, (∀ i, b i ≤ ∑ j, A i j * x j) → d ≤ ∑ j, c j * x j) ↔\n    (∃ u : I → 𝕜, (∀ i, 0 ≤ u i)\n      ∧ (∀ j, ∑ i, u i * A i j = c j)\n      ∧ d ≤ ∑ i, u i * b i)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearAlgebra/Farkas.lean#L164",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "display_name": "EconCSLib.Math.LinearAlgebra.Farkas",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearAlgebra/Farkas.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

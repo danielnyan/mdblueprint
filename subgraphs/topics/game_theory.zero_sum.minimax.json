@@ -1,0 +1,216 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.minimax",
+    "title": "Game Theory.Zero Sum.Minimax",
+    "href": "game_theory/zero_sum/minimax/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 0,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 3,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 9,
+    "visible_nodes_with_selected_proof_plans": 9
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_lam_mu_existence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_maximin_le_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_maximin_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_von_neumann_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "title": "Nash Payoff Uniqueness in Zero-Sum Games",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 105
+    },
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_proof_plan_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 5
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "equilibrium",
+      "title": "equilibrium",
+      "href": "keywords/equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 4
+    },
+    {
+      "id": "theorem",
+      "title": "theorem",
+      "href": "keywords/theorem.html",
+      "count": 1
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 4
+    },
+    {
+      "id": "weak-duality",
+      "title": "weak-duality",
+      "href": "keywords/weak-duality.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 5
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

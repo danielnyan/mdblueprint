@@ -1,0 +1,60 @@
+{
+  "id": "social_choice.fair_division.divisible.cdf_continuous",
+  "title": "CDF of a Non-Atomic Finite Measure on ℝ Is Continuous",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_cdf_continuous.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>CDF of a Non-Atomic Finite Measure on ℝ Is Continuous</h1>\n<p><strong>Lemma.</strong> Let $\\nu$ be a finite non-atomic measure on $\\mathbb{R}$. The\nreal-valued CDF\n$$\nF : \\mathbb{R} \\to \\mathbb{R}, \\qquad F(t) = \\nu\\bigl((-\\infty, t]\\bigr).\\mathrm{toReal}\n$$\nis continuous.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.cdfRealContinuous</code>. The\nargument shows continuity from the left and from the right separately\nusing the monotonicity of $F$.</p>",
+  "proof_html": "<p>sketch</p>\n<ul>\n<li><em>Monotonicity.</em> $F$ is monotone because $t \\le s$ implies\n  $(-\\infty, t] \\subseteq (-\\infty, s]$, and <code>measure_mono</code> plus\n  <code>ENNReal.toReal_le_toReal</code> give $F(t) \\le F(s)$ (both measures are\n  finite).</li>\n<li><em>Right-continuity.</em> Apply <code>tendsto_measure_biInter_gt</code> to the\n  decreasing family $\\{(-\\infty, r] : r &gt; a\\}$; its intersection is\n  $(-\\infty, a]$, and <code>ENNReal.continuousAt_toReal</code> finishes the\n  reduction back to the real CDF.</li>\n<li><em>Left-continuity.</em> This is where non-atomicity enters. Pick a strictly\n  increasing sequence $u_n \\uparrow a$ in $(-\\infty, a)$. Its union\n  satisfies $\\bigcup_n (-\\infty, u_n] = (-\\infty, a)$, and\n  <code>tendsto_measure_iUnion_atTop</code> plus <code>Iio_ae_eq_Iic</code> (which depends on\n  non-atomicity to identify $(-\\infty, a)$ and $(-\\infty, a]$ up to\n  $\\nu$-null sets) closes the left limit equality.</li>\n</ul>\n<p>The combination of left- and right-continuity yields continuity at every\n$a \\in \\mathbb{R}$, hence everywhere.</p>\n<h2>Where this is used</h2>\n<p>This is the IVT-input for cake-cutting: it lets <code>cut_exists</code>\n([[social_choice.fair_division.divisible.cut_exists]]) build a cut point\n$t$ with $\\nu((-\\infty, t]) = c$ for any prescribed $0 &lt; c &lt; \\nu(\\mathbb{R})$\non the unit interval — exactly what cut-and-choose, Dubins–Spanier, and\nStromquist all need.</p>\n<h2>References</h2>\n<ul>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>. Continuity of fair-cut-cumulative functions.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.cdfRealContinuous",
+      "display_name": "SocialChoice.FairDivision.Divisible.cdfRealContinuous",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.cdfRealContinuous",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "kind": "lemma",
+      "signature": "lemma cdfRealContinuous (ν : Measure ℝ) [IsFiniteMeasure ν] [NoAtoms ν] :\n    Continuous (fun t : ℝ => (ν (Set.Iic t)).toReal)",
+      "docstring": "The CDF `t ↦ (ν (Iic t)).toReal` is continuous for a non-atomic finite measure on `ℝ`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/UnitInterval.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/UnitInterval.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

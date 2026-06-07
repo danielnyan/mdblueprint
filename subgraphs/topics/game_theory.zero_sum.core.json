@@ -1,0 +1,495 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.core",
+    "title": "Game Theory.Zero Sum.Core",
+    "href": "game_theory/zero_sum/core/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 19,
+    "descendant_node_count": 19
+  },
+  "counts": {
+    "internal_nodes": 19,
+    "inlined_nodes": 0,
+    "descendant_nodes": 19,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 19,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 3,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 23,
+    "visible_nodes_with_selected_proof_plans": 23
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Game Has Value Zero",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_antisymmetric_matrix_game_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_antisymmetric_matrix_game_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.duality_gap",
+      "title": "Duality Gap In A Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_duality_gap.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_duality_gap.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "title": "Epsilon-Optimal Strategy",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_extension",
+      "title": "Mixed Extension Of A Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_extension.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_extension.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_support",
+      "title": "Support Of A Mixed Strategy",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_support.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_support.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "kind": "proposition",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "title": "Player Guarantee",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_player_guarantee.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_player_guarantee.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_saddle_point.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_strong_complementarity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_support_complementarity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.value",
+      "title": "Value Of A Zero-Sum Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_matrix_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "title": "Expected Payoff of a Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "title": "Zero-Sum Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "title": "Payoff Negation in Zero-Sum Games",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency",
+      "node_count": 105
+    },
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.core.duality_gap",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.core.value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 4
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 5
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "antisymmetric",
+      "title": "antisymmetric",
+      "href": "keywords/antisymmetric.html",
+      "count": 1
+    },
+    {
+      "id": "complementarity",
+      "title": "complementarity",
+      "href": "keywords/complementarity.html",
+      "count": 2
+    },
+    {
+      "id": "equilibrium",
+      "title": "equilibrium",
+      "href": "keywords/equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "expected-payoff",
+      "title": "expected-payoff",
+      "href": "keywords/expected-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "fictitious-play",
+      "title": "fictitious-play",
+      "href": "keywords/fictitious-play.html",
+      "count": 1
+    },
+    {
+      "id": "finite-game",
+      "title": "finite-game",
+      "href": "keywords/finite-game.html",
+      "count": 1
+    },
+    {
+      "id": "foundational",
+      "title": "foundational",
+      "href": "keywords/foundational.html",
+      "count": 1
+    },
+    {
+      "id": "guarantee",
+      "title": "guarantee",
+      "href": "keywords/guarantee.html",
+      "count": 1
+    },
+    {
+      "id": "matrix-game",
+      "title": "matrix-game",
+      "href": "keywords/matrix-game.html",
+      "count": 4
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 5
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "optimal-strategy",
+      "title": "optimal-strategy",
+      "href": "keywords/optimal-strategy.html",
+      "count": 6
+    },
+    {
+      "id": "payoff",
+      "title": "payoff",
+      "href": "keywords/payoff.html",
+      "count": 1
+    },
+    {
+      "id": "polytope",
+      "title": "polytope",
+      "href": "keywords/polytope.html",
+      "count": 1
+    },
+    {
+      "id": "saddle-point",
+      "title": "saddle-point",
+      "href": "keywords/saddle-point.html",
+      "count": 3
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 1
+    },
+    {
+      "id": "support",
+      "title": "support",
+      "href": "keywords/support.html",
+      "count": 1
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 5
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 19
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,277 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.refinements",
+    "title": "Game Theory.Strategic Game.Refinements",
+    "href": "game_theory/strategic_game/refinements/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 19,
+    "descendant_node_count": 19
+  },
+  "counts": {
+    "internal_nodes": 19,
+    "inlined_nodes": 0,
+    "descendant_nodes": 19,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 19,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 20,
+    "visible_nodes_with_selected_proof_plans": 20
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.manifold.equilibrium_manifold",
+      "title": "Equilibrium Manifold",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_equilibrium_manifold.html",
+      "payload": "node_payloads/game_theory_strategic_game_manifold_equilibrium_manifold.json"
+    },
+    {
+      "id": "game_theory.strategic_game.manifold.essential_component",
+      "title": "Essential Equilibrium Component",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_essential_component.html",
+      "payload": "node_payloads/game_theory_strategic_game_manifold_essential_component.json"
+    },
+    {
+      "id": "game_theory.strategic_game.manifold.generic_finite_odd_equilibria",
+      "title": "Generic Finite Odd Equilibria",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_generic_finite_odd_equilibria.html",
+      "payload": "node_payloads/game_theory_strategic_game_manifold_generic_finite_odd_equilibria.json"
+    },
+    {
+      "id": "game_theory.strategic_game.manifold.kohlberg_mertens_structure_theorem",
+      "title": "Kohlberg Mertens Structure Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_kohlberg_mertens_structure_theorem.html",
+      "payload": "node_payloads/game_theory_strategic_game_manifold_kohlberg_mertens_structure_theorem.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.approximate_solution",
+      "title": "Approximate Solution",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_approximate_solution.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_approximate_solution.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.approximate_solution_is_reny",
+      "title": "Approximate Solutions Are Reny Solutions",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_approximate_solution_is_reny.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_approximate_solution_is_reny.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.better_reply_secure_game",
+      "title": "Better Reply Secure Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_better_reply_secure_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_better_reply_secure_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.discontinuous_nash_existence",
+      "title": "Nash Existence In Better Reply Secure Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_discontinuous_nash_existence.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_discontinuous_nash_existence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.epsilon_perfect_equilibrium",
+      "title": "Epsilon Perfect Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_epsilon_perfect_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_epsilon_perfect_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.epsilon_proper_equilibrium",
+      "title": "Epsilon Proper Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_epsilon_proper_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_epsilon_proper_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.perfect_equilibrium",
+      "title": "Perfect Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_perfect_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_perfect_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.perfect_equilibrium_exists",
+      "title": "Existence Of Perfect Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_perfect_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_perfect_equilibrium_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.perfect_equilibrium_undominated_two_player",
+      "title": "Perfect Equilibrium And Undominated Equilibrium",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_perfect_equilibrium_undominated_two_player.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_perfect_equilibrium_undominated_two_player.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.proper_equilibrium",
+      "title": "Proper Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_proper_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_proper_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.proper_equilibrium_exists",
+      "title": "Existence Of Proper Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_proper_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_proper_equilibrium_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.proper_vs_perfect_equilibrium_examples",
+      "title": "Proper And Perfect Equilibrium Examples",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_proper_vs_perfect_equilibrium_examples.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_proper_vs_perfect_equilibrium_examples.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.reny_solution",
+      "title": "Reny Solution",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_reny_solution.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_reny_solution.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.reny_solution_exists",
+      "title": "Existence Of Reny Solutions",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_reny_solution_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_reny_solution_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.refinements.strict_equilibrium_is_proper",
+      "title": "Strict Equilibrium Is Proper",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_strict_equilibrium_is_proper.html",
+      "payload": "node_payloads/game_theory_strategic_game_refinements_strict_equilibrium_is_proper.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "approximate-equilibrium",
+      "title": "approximate-equilibrium",
+      "href": "keywords/approximate-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "discontinuous-game",
+      "title": "discontinuous-game",
+      "href": "keywords/discontinuous-game.html",
+      "count": 5
+    },
+    {
+      "id": "dominance",
+      "title": "dominance",
+      "href": "keywords/dominance.html",
+      "count": 1
+    },
+    {
+      "id": "equilibrium-manifold",
+      "title": "equilibrium-manifold",
+      "href": "keywords/equilibrium-manifold.html",
+      "count": 4
+    },
+    {
+      "id": "equilibrium-refinement",
+      "title": "equilibrium-refinement",
+      "href": "keywords/equilibrium-refinement.html",
+      "count": 9
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 4
+    },
+    {
+      "id": "genericity",
+      "title": "genericity",
+      "href": "keywords/genericity.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "perfection",
+      "title": "perfection",
+      "href": "keywords/perfection.html",
+      "count": 2
+    },
+    {
+      "id": "proper-equilibrium",
+      "title": "proper-equilibrium",
+      "href": "keywords/proper-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "robustness",
+      "title": "robustness",
+      "href": "keywords/robustness.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 19
+    },
+    {
+      "id": "strict-equilibrium",
+      "title": "strict-equilibrium",
+      "href": "keywords/strict-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "topology",
+      "title": "topology",
+      "href": "keywords/topology.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

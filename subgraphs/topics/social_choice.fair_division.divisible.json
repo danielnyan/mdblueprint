@@ -1,0 +1,705 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.divisible",
+    "title": "Social Choice.Fair Division.Divisible",
+    "href": "social_choice/fair_division/divisible/index.html",
+    "parent": "social_choice.fair_division",
+    "node_count": 36,
+    "descendant_node_count": 36
+  },
+  "counts": {
+    "internal_nodes": 36,
+    "inlined_nodes": 21,
+    "descendant_nodes": 36,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 36,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 38,
+    "visible_nodes_with_selected_proof_plans": 38
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_allocation.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cake_valuation",
+      "title": "Cake Valuation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_cake_valuation.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cake_valuation.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cardinal_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cdf_continuous",
+      "title": "CDF of a Non-Atomic Finite Measure on ℝ Is Continuous",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cdf_continuous.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cdf_continuous.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.chooser_envy_free",
+      "title": "Chooser Is Always Envy-Free",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_chooser_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_alloc.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_ef_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "title": "Cut-and-Choose Output Is a Complete Partition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_partition.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_partition.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "title": "Cutter Does Not Envy at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cutter_envy_free_of_fair.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cutter_envy_free_of_fair.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ds_step.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_dubins_spanier_proportional.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "title": "Dubins–Spanier as a Rule on Measure Instances",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_rule.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_dubins_spanier_rule.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists",
+      "title": "Envy-Free Existence (Stromquist, n Agents)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ef_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "title": "EF + Proportional Existence (Stromquist Corollary)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists_and_proportional.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ef_exists_and_proportional.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "title": "EF ⇒ Proportional (Measure Valuations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_implies_proportional.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ef_implies_proportional.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.fair_cut_exists",
+      "title": "Fair Cut Point Exists",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_fair_cut_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_fair_cut_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_measure_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+      "title": "Measure-Instance EF ↔ Real-Valued Cardinal EF",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_ef_iff_real.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_measure_instance_ef_iff_real.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_existence",
+      "title": "Measure-Instance Existence Wrappers",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_existence.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_measure_instance_existence.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_measure_valuation.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.no_atoms_map_subtype",
+      "title": "Non-Atomicity Is Preserved by Subtype.val Pushforward",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_no_atoms_map_subtype.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_no_atoms_map_subtype.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.normalized_iff_probability",
+      "title": "Normalized Measure Valuation ↔ Probability Measure",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_normalized_iff_probability.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_normalized_iff_probability.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ordinal_instance",
+      "title": "Divisible Ordinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_ordinal_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ordinal_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.proportional_exists",
+      "title": "Proportional Existence on [0,1] (n Agents)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_proportional_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_proportional_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_U",
+      "title": "Stromquist Agent-Preference Union U(i)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_U.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_U.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_assignment.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_pieces",
+      "title": "Stromquist Pieces from the Division Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_pieces.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_pieces.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "title": "Stromquist Preference Sets A(i, j)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_preference_sets.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_preference_sets.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_shifted_cells",
+      "title": "Stromquist Shifted-Cell Approximation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_shifted_cells.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_shifted_cells.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "title": "Stromquist Unique-Preference Sets B(i, j)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unique_preference_sets.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_unique_preference_sets.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_unusual_case.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_usual_case.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_stromquist_value_continuous.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.chooser_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_valuation",
+      "to": "social_choice.fair_division.divisible.chooser_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.allocation",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.fair_cut_exists",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.chooser_envy_free",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cdf_continuous",
+      "to": "social_choice.fair_division.divisible.cut_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.no_atoms_map_subtype",
+      "to": "social_choice.fair_division.divisible.cut_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_valuation",
+      "to": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "social_choice.fair_division.divisible.ds_step",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ds_step",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "to": "social_choice.fair_division.divisible.ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ef_exists",
+      "to": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.fair_cut_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "social_choice.fair_division.divisible.fair_cut_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "to": "social_choice.fair_division.divisible.measure_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.envy_free",
+      "to": "social_choice.fair_division.divisible.measure_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_valuation",
+      "to": "social_choice.fair_division.divisible.measure_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "to": "social_choice.fair_division.divisible.measure_instance_existence",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.allocation",
+      "to": "social_choice.fair_division.divisible.measure_valuation",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cake_valuation",
+      "to": "social_choice.fair_division.divisible.measure_valuation",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_valuation",
+      "to": "social_choice.fair_division.divisible.normalized_iff_probability",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cardinal_instance",
+      "to": "social_choice.fair_division.divisible.ordinal_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_instance",
+      "to": "social_choice.fair_division.divisible.ordinal_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ds_step",
+      "to": "social_choice.fair_division.divisible.proportional_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "to": "social_choice.fair_division.divisible.proportional_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.measure_instance_existence",
+      "to": "social_choice.fair_division.divisible.proportional_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_U",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_U",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.allocation",
+      "to": "social_choice.fair_division.divisible.stromquist_pieces",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cdf_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_pieces",
+      "to": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "allocation",
+      "title": "allocation",
+      "href": "keywords/allocation.html",
+      "count": 1
+    },
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 2
+    },
+    {
+      "id": "cake-cutting",
+      "title": "cake-cutting",
+      "href": "keywords/cake-cutting.html",
+      "count": 7
+    },
+    {
+      "id": "cardinal",
+      "title": "cardinal",
+      "href": "keywords/cardinal.html",
+      "count": 1
+    },
+    {
+      "id": "continuity",
+      "title": "continuity",
+      "href": "keywords/continuity.html",
+      "count": 1
+    },
+    {
+      "id": "cut-and-choose",
+      "title": "cut-and-choose",
+      "href": "keywords/cut-and-choose.html",
+      "count": 7
+    },
+    {
+      "id": "divisible",
+      "title": "divisible",
+      "href": "keywords/divisible.html",
+      "count": 36
+    },
+    {
+      "id": "dubins-spanier",
+      "title": "dubins-spanier",
+      "href": "keywords/dubins-spanier.html",
+      "count": 3
+    },
+    {
+      "id": "envy-free",
+      "title": "envy-free",
+      "href": "keywords/envy-free.html",
+      "count": 13
+    },
+    {
+      "id": "equitable",
+      "title": "equitable",
+      "href": "keywords/equitable.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 7
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 36
+    },
+    {
+      "id": "instance",
+      "title": "instance",
+      "href": "keywords/instance.html",
+      "count": 3
+    },
+    {
+      "id": "intermediate-value-theorem",
+      "title": "intermediate-value-theorem",
+      "href": "keywords/intermediate-value-theorem.html",
+      "count": 1
+    },
+    {
+      "id": "kkm",
+      "title": "kkm",
+      "href": "keywords/kkm.html",
+      "count": 5
+    },
+    {
+      "id": "measure",
+      "title": "measure",
+      "href": "keywords/measure.html",
+      "count": 8
+    },
+    {
+      "id": "moving-knife",
+      "title": "moving-knife",
+      "href": "keywords/moving-knife.html",
+      "count": 1
+    },
+    {
+      "id": "ordinal",
+      "title": "ordinal",
+      "href": "keywords/ordinal.html",
+      "count": 1
+    },
+    {
+      "id": "probability",
+      "title": "probability",
+      "href": "keywords/probability.html",
+      "count": 1
+    },
+    {
+      "id": "proportional",
+      "title": "proportional",
+      "href": "keywords/proportional.html",
+      "count": 8
+    },
+    {
+      "id": "rule",
+      "title": "rule",
+      "href": "keywords/rule.html",
+      "count": 1
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 1
+    },
+    {
+      "id": "stromquist",
+      "title": "stromquist",
+      "href": "keywords/stromquist.html",
+      "count": 11
+    },
+    {
+      "id": "valuation",
+      "title": "valuation",
+      "href": "keywords/valuation.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "social_choice.fair_division.divisible.cut_and_choose",
+    "social_choice.fair_division.divisible.dubins_spanier",
+    "social_choice.fair_division.divisible.stromquist"
+  ]
+}

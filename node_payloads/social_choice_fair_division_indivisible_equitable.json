@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.equitable",
+  "title": "Indivisible Equitable",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_equitable.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Equitable</h1>\n<p>For a valuation $v$ ([[social_choice.fair_division.indivisible.valuation]])\nand an allocation $A$, $A$ is <em>equitable</em> (EQ) if every agent assigns\nthe same numeric value to their own bundle:\n$$\n\\forall i, j \\in N,\\ v_i(A(i)) = v_j(A(j)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEquitable</code> — an\n<code>abbrev</code> for the generic [[social_choice.fair_division.equitable]]\nspecialised at <code>v.val</code>.</p>\n<p>EQ is meaningful only when valuations are <em>interpersonally comparable</em>,\ntypically when each $v_i$ is normalised so the whole good set has the\nsame total (often $1$). Without normalisation, equating\n\"$v_i(A(i)) = v_j(A(j))$\" mixes agents' value scales.</p>\n<h2>Relation to EF</h2>\n<p>EQ is <em>incomparable</em> with EF\n([[social_choice.fair_division.indivisible.envy_free]]):</p>\n<ul>\n<li><em>EF does not imply EQ.</em> Two agents may both be envy-free yet derive\n  very different self-utilities — e.g. agent 0 gets a good worth 10 to\n  them, agent 1 gets a good worth 7 to them; if neither envies the\n  other, EF holds but EQ fails.</li>\n<li><em>EQ does not imply EF.</em> Equal numeric utilities don't prevent an\n  agent from preferring the other's bundle by their own measure — if\n  agent 0 values both bundles at 5, they may still strictly prefer\n  agent 1's bundle.</li>\n</ul>\n<h2>Existence</h2>\n<p>For divisible goods with normalized valuations, equitable + EF\nallocations always exist (Alon 1987, $n^2 - n$ cuts suffice). For\n<em>indivisible</em> goods, equitable allocations may not exist at all.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapters 11, 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Equitability.</li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEquitable",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEquitable",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEquitable",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "abbrev",
+      "signature": "abbrev IsEquitable (v : Valuation N G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L149",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "foundation.preference.strictly_preferred",
+  "title": "Strict Preference Relation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_preference_strictly_preferred.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Strict Preference Relation</h1>\n<p>On any <code>Preorder α</code>, strict preference is the strict part of the preorder:\n$$\n  a \\succ b \\quad\\Longleftrightarrow\\quad a &lt; b\n  \\quad\\Longleftrightarrow\\quad a \\le b \\;\\text{ and }\\; \\neg(b \\le a).\n$$</p>\n<p>Strict preference is asymmetric, transitive, and irreflexive. These three\nproperties — asymmetry from <code>lt_asymm</code>, transitivity from <code>lt_trans</code>,\nirreflexivity from <code>lt_irrefl</code> — are inherited directly from the Mathlib\n<code>Preorder</code> API.</p>\n<p>In Lean this is <code>abbrev StrictlyPreferred (a b : α) : Prop := a &lt; b</code>. The\nabbreviation exists for readability in game-theory contexts; downstream code\nmay also use the bare <code>&lt;</code> notation interchangeably.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Def. 2.5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Strict preference derived from weak preference.</li>\n<li>[MSZ, Exercise 2.1(a)] Asymmetry, transitivity, and irreflexivity of strict\n  preference.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.profile.deviate",
+      "title": "Standalone Profile and Unilateral Deviation",
+      "href": "foundation/foundation_profile_deviate.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrictlyPreferred",
+      "display_name": "StrictlyPreferred",
+      "qualified_name": "StrictlyPreferred",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "abbrev",
+      "signature": "abbrev StrictlyPreferred (a b : A) : Prop",
+      "docstring": "Strict preference is just `<` from the preorder. [MSZ 2.5]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L90",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrictlyPreferred.asymm",
+      "display_name": "StrictlyPreferred.asymm",
+      "qualified_name": "StrictlyPreferred.asymm",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem StrictlyPreferred.asymm {a b : A} (h : StrictlyPreferred a b) :\n    ¬ StrictlyPreferred b a",
+      "docstring": "Strict preference is asymmetric: `a ≻ b → ¬(b ≻ a)`. [MSZ Ex 2.1(a)]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L93",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrictlyPreferred.trans",
+      "display_name": "StrictlyPreferred.trans",
+      "qualified_name": "StrictlyPreferred.trans",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem StrictlyPreferred.trans {a b c : A}\n    (h₁ : StrictlyPreferred a b) (h₂ : StrictlyPreferred b c) :\n    StrictlyPreferred a c",
+      "docstring": "Strict preference is transitive. [MSZ Ex 2.1(a)]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L98",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrictlyPreferred.irrefl",
+      "display_name": "StrictlyPreferred.irrefl",
+      "qualified_name": "StrictlyPreferred.irrefl",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem StrictlyPreferred.irrefl (a : A) : ¬ StrictlyPreferred a a",
+      "docstring": "Strict preference is irreflexive. [MSZ Ex 2.1(a)]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L104",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

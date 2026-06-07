@@ -1,0 +1,85 @@
+{
+  "id": "social_choice.fair_division.cardinal_instance",
+  "title": "Cardinal Fair-Division Instance",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_cardinal_instance.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Cardinal Fair-Division Instance</h1>\n<p>A <em>cardinal fair-division instance</em> is the standard real-valued\nno-externality model: each agent assigns a real <em>utility</em> to every\ncandidate share.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.CardinalInstance N R S</code> with fields\n<code>resource : R</code>, <code>feasible : Allocation N S → Prop</code>, and\n<code>utility : N → S → ℝ</code>.</p>\n<h2>Induced share preference</h2>\n<p>The natural ordinal preference associated with $u_i$ ranks shares by\nutility — <em>higher utility is weakly preferred</em>:\n$$\ns \\preceq_i t \\iff u_i(s) \\le u_i(t).\n$$</p>\n<p>In Lean: <code>CardinalInstance.inducedSharePref</code> — bundled as a <code>Pref S</code> whose\nreflexivity, transitivity, and totality come from the linear order on\n$\\mathbb{R}$.</p>\n<h2>Bridge to the ordinal share instance</h2>\n<p><code>CardinalInstance.toShareInstance</code> lifts the cardinal data into a\nno-externality share instance ([[social_choice.fair_division.share_instance]])\nwhose share preference is <code>inducedSharePref</code>. This is the canonical way to\nview a real-valued utility problem inside the ordinal share-instance API.</p>\n<p>The compatibility condition between an <em>external</em> ordinal share instance\n$I_1$ and a cardinal instance $I_2$ is captured by\n<code>UtilityRepresentsSharePref</code>:\n$$\nI_1.\\mathrm{sharePref}(i)\\ s\\ t \\iff I_2.\\mathrm{utility}(i)\\ t \\le I_2.\\mathrm{utility}(i)\\ s,\n$$\nasserting that $I_2$'s utility represents $I_1$'s ordinal preference.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Cardinal valuation in fair division.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.CardinalInstance",
+      "display_name": "SocialChoice.FairDivision.CardinalInstance",
+      "qualified_name": "SocialChoice.FairDivision.CardinalInstance",
+      "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "kind": "structure",
+      "signature": "structure CardinalInstance (N R S : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L25",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.CardinalInstance.inducedSharePref",
+      "display_name": "SocialChoice.FairDivision.CardinalInstance.inducedSharePref",
+      "qualified_name": "SocialChoice.FairDivision.CardinalInstance.inducedSharePref",
+      "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "kind": "def",
+      "signature": "def inducedSharePref {N R S : Type*}\n    (I : CardinalInstance N R S) : N → Pref S",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L37",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.CardinalInstance.toShareInstance",
+      "display_name": "SocialChoice.FairDivision.CardinalInstance.toShareInstance",
+      "qualified_name": "SocialChoice.FairDivision.CardinalInstance.toShareInstance",
+      "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "kind": "def",
+      "signature": "def toShareInstance {N R S : Type*}\n    (I : CardinalInstance N R S) : ShareInstance N R S where",
+      "docstring": "Convert a cardinal instance to the induced ordinal no-externality instance.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L51",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

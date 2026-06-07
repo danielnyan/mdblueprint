@@ -1,0 +1,130 @@
+{
+  "topic": {
+    "id": "mechanism_design.transfer",
+    "title": "Mechanism Design.Transfer",
+    "href": "mechanism_design/transfer/index.html",
+    "parent": "mechanism_design",
+    "node_count": 3,
+    "descendant_node_count": 3
+  },
+  "counts": {
+    "internal_nodes": 3,
+    "inlined_nodes": 0,
+    "descendant_nodes": 3,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 3,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 5,
+    "visible_nodes_with_selected_proof_plans": 5
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html",
+      "payload": "node_payloads/mechanism_design_transfer_mechanisms_with_transfers.json"
+    },
+    {
+      "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+      "title": "Multiple-Parameter Transfer Layer",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_transfer_multiple_parameter_transfer_layer.html",
+      "payload": "node_payloads/mechanism_design_transfer_multiple_parameter_transfer_layer.json"
+    },
+    {
+      "id": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "title": "Single-Parameter Transfer Layer",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_transfer_single_parameter_transfer_layer.html",
+      "payload": "node_payloads/mechanism_design_transfer_single_parameter_transfer_layer.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mechanism_design.transfer.mechanisms_with_transfers",
+      "to": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.transfer.mechanisms_with_transfers",
+      "to": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.transfer.mechanisms_with_transfers",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 6
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 3
+    },
+    {
+      "id": "multiple-parameter",
+      "title": "multiple-parameter",
+      "href": "keywords/multiple-parameter.html",
+      "count": 1
+    },
+    {
+      "id": "quasi-linear-utility",
+      "title": "quasi-linear-utility",
+      "href": "keywords/quasi-linear-utility.html",
+      "count": 1
+    },
+    {
+      "id": "single-parameter",
+      "title": "single-parameter",
+      "href": "keywords/single-parameter.html",
+      "count": 1
+    },
+    {
+      "id": "transfers",
+      "title": "transfers",
+      "href": "keywords/transfers.html",
+      "count": 3
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

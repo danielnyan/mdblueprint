@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.voting.condorcet_winner",
+  "title": "Condorcet Winner",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_condorcet_winner.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.rules"
+  ],
+  "body_html": "<h1>Condorcet Winner</h1>\n<p>An alternative $a \\in A$ is a <em>Condorcet winner</em> for a preference profile\n$P$ if it beats every other alternative in pairwise strict-majority\ncomparison ([[social_choice.voting.majority_prefers]]):\n$$\n\\forall b \\in A,\\ b \\ne a,\\ \\mathrm{MajorityPrefers}(P, a, b).\n$$</p>\n<p>A profile <em>has a Condorcet winner</em> if some such $a$ exists.</p>\n<p>In Lean: <code>SocialChoice.Voting.CondorcetWinner</code> and <code>HasCondorcetWinner</code>.</p>\n<p>A Condorcet winner — when one exists — is the canonical \"majority-acceptable\"\nchoice. But Condorcet winners <em>need not exist</em>: cyclic pairwise majorities\n(\"Condorcet paradox\", [[social_choice.voting.condorcet_paradox]]) are\npossible already with 3 voters and 3 alternatives.</p>\n<p>Concrete rules that always elect the Condorcet winner when it exists are\ncalled <em>Condorcet methods</em> (Copeland, Schulze, Ranked Pairs, …). Borda\n([[social_choice.voting.borda_score]]) and plurality\n([[social_choice.voting.plurality_score]]) are <em>not</em> Condorcet methods.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Condorcet winner; see the <code>source</code> block\n  above for the precise locator.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.CondorcetWinner",
+      "display_name": "SocialChoice.Voting.CondorcetWinner",
+      "qualified_name": "SocialChoice.Voting.CondorcetWinner",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "def",
+      "signature": "def CondorcetWinner [Fintype N] [Fintype A] (P : Profile N A) (a : A) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L157",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.HasCondorcetWinner",
+      "display_name": "SocialChoice.Voting.HasCondorcetWinner",
+      "qualified_name": "SocialChoice.Voting.HasCondorcetWinner",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "def",
+      "signature": "def HasCondorcetWinner [Fintype N] [Fintype A] (P : Profile N A) : Prop",
+      "docstring": "A profile has at least one Condorcet winner.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L161",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "display_name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.core.br_invariance",
+  "title": "Best-Response Invariance",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_core_br_invariance.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Best-Response Invariance</h1>\n<p>A solution or selection concept is best-response invariant if two games with the\nsame best-response correspondence have the same solution set.</p>\n<p>The set of Nash equilibria and the set of rationalizable strategies are\nbest-response invariant.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.10.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. BR-invariance for equilibrium selection.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

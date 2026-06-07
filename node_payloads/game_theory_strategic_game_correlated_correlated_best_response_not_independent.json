@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.correlated_best_response_not_independent",
+  "title": "Correlated Best Response Need Not Be Independent",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_best_response_not_independent.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Correlated Best Response Need Not Be Independent</h1>\n<p>In two-player games, being a best response to an opponent mixed strategy and\nbeing a best response to an opponent correlated strategy coincide. MFoGT Rem.\n4.3.3 shows that this fails with three or more players.</p>\n<p>Let players 1 and 2 have pure strategies $T,B$ and $L,R$, and let player 3 have\npure strategies $M_1,M_2,M_3,M_4$. Player 3's payoffs are:</p>\n<ul>\n<li>$M_1$ gives payoff $8$ at $(T,L)$ and $0$ otherwise.</li>\n<li>$M_2$ gives payoff $4$ at $(T,L)$ and $(B,R)$ and $0$ otherwise.</li>\n<li>$M_3$ gives payoff $8$ at $(B,R)$ and $0$ otherwise.</li>\n<li>$M_4$ gives payoff $3$ at every profile of players 1 and 2.</li>\n</ul>\n<p>Then $M_2$ is a best response to the correlated distribution\n$$\n  \\frac12(T,L)+\\frac12(B,R),\n$$\nbut $M_2$ is never a best response to any independent mixed profile of players 1\nand 2.</p>\n<p>Indeed, if player 1 plays $T$ with probability $x$ and player 2 plays $L$ with\nprobability $y$, then $M_2$ can tie both $M_1$ and $M_3$ only when\n$xy=(1-x)(1-y)$, equivalently $x+y=1$. In that case its payoff is at most $2$,\nwhile $M_4$ gives payoff $3$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Rem. 4.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Three-player example where M_2 is a best response to a correlated opponent strategy but never to an independent mixed profile.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

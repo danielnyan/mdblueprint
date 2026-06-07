@@ -1,0 +1,29 @@
+{
+  "id": "foundation.preference.relation",
+  "title": "Preference Relation (MSZ Ch.2 Narrative)",
+  "kind": "definition",
+  "status": "staged",
+  "href": "foundation/foundation_preference_relation.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Preference Relation (MSZ Ch.2 Narrative)</h1>\n<p>A weak preference relation compares alternatives by the statement that one\nalternative is at least as good as another. From weak preference one derives:</p>\n<ul>\n<li><em>strict preference</em>, when one alternative is weakly preferred and the\n  reverse weak preference fails;</li>\n<li><em>indifference</em>, when each alternative is weakly preferred to the other.</li>\n</ul>\n<p>For utility theory the natural abstract structure is a total preorder:\npreference is reflexive, transitive, and complete, but it need not be\nantisymmetric because distinct alternatives can be indifferent.</p>\n<h2>Lean substrate</h2>\n<p>The Lean-level vocabulary lives in the <code>foundation.preference</code> topic; this node\nis the MSZ Ch.2 domain narrative, and it cross-links into the four foundation\ndefinitions that realize it:</p>\n<ul>\n<li>weak preference and indifference: [[foundation.preference.indifferent]]</li>\n<li>strict preference: [[foundation.preference.strictly_preferred]]</li>\n<li>total preorder (no antisymmetry required): [[foundation.preference.total_preorder]]</li>\n<li>relation-style axioms used by vNM: [[foundation.preference.abstract_relation]]</li>\n</ul>\n<p>The <code>EconCSLib.Foundation.Preference</code> module is the single source of truth in\nLean; this node is the MSZ Ch.2 narrative wrapper and introduces no Lean\ndefinitions of its own beyond what the <code>foundation.preference</code> topic already\nprovides.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Definitions 2.1-2.7] Maschler, Solan, and Zamir,\n  <em>Game Theory</em>. Preference, strict preference,\n  indifference, and total preorder vocabulary.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

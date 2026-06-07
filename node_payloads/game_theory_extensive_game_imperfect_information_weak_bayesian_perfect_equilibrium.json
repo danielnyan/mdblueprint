@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.weak_bayesian_perfect_equilibrium",
+  "title": "Weak Bayesian Perfect Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_weak_bayesian_perfect_equilibrium.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Weak Bayesian Perfect Equilibrium</h1>\n<p>A pair $(\\beta,\\mu)$ of a behavioral strategy profile and a belief system is weak\nBayesian perfect if:</p>\n<ol>\n<li>at every information set $Q_i$, $\\beta_i(Q_i)$ is a best response in the\n   continuation game starting at $Q_i$ under belief $\\mu(Q_i)$ and continuation\n   play $\\beta$;</li>\n<li>on every reached information set $Q\\in Rch(\\beta)$, beliefs are Bayes-compatible:\n   $$\n     \\mu(Q)=\\nu_\\beta(Q).\n   $$</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.4.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Weak Bayesian perfect equilibrium as sequential rationality plus Bayes compatibility on path.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

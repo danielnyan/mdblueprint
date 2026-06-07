@@ -1,0 +1,66 @@
+{
+  "id": "game_theory.strategic_game.potential.potential_game",
+  "title": "Potential Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_potential_potential_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Potential Game</h1>\n<p>For a finite game, a function $P$ on mixed profiles is a potential if every pure\nunilateral deviation has the same payoff difference and potential difference:\n$$\n  g_i(s_i,u_{-i})-g_i(t_i,u_{-i})\n  =\n  P(s_i,u_{-i})-P(t_i,u_{-i}).\n$$</p>\n<p>MFoGT also gives an evaluation-game version: a $C^1$ function $W$ is a\npotential for $\\Phi$ if, along each player's tangent space, the gradient of $W$\nis a positive scalar multiple of the player's evaluation vector.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Definitions 5.2.7 and 5.2.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Finite and evaluation-game potential functions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsExactPotential",
+      "display_name": "StrategicGame.IsExactPotential",
+      "qualified_name": "StrategicGame.IsExactPotential",
+      "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "kind": "def",
+      "signature": "def IsExactPotential (G : StrategicGame N U) (Φ : G.Profile → U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L43",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsOrdinalPotential",
+      "display_name": "StrategicGame.IsOrdinalPotential",
+      "qualified_name": "StrategicGame.IsOrdinalPotential",
+      "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "kind": "def",
+      "signature": "def IsOrdinalPotential (G : StrategicGame N U) (Φ : G.Profile → U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L50",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

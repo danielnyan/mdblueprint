@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.finite_nash_computation_examples",
+  "title": "Finite Nash Equilibrium Computation Examples",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_finite_nash_computation_examples.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Finite Nash Equilibrium Computation Examples</h1>\n<p>MFoGT Exercise 4.12.1 asks for all pure and mixed Nash equilibria in several\nfinite games: four two-player matrix games and one three-player game where the\nthird player chooses which matrix is used.</p>\n<p>This node records the exercise as a source of finite Nash computation examples.\nThe individual equilibrium computations can be split into separate example nodes\nif needed.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Exercise asking to compute pure and mixed Nash equilibria in several finite games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

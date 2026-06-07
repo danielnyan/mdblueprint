@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.evolution.ess_uniform_invasion_barrier",
+  "title": "ESS Uniform Invasion Barrier",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_evolution_ess_uniform_invasion_barrier.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>ESS Uniform Invasion Barrier</h1>\n<p>For an evolutionarily stable strategy $p$, the invasion threshold can be chosen\nuniformly over all mutants: there is $\\epsilon_0&gt;0$ such that every\n$q\\ne p$ is beaten for every $\\epsilon\\in(0,\\epsilon_0)$.</p>\n<p>Equivalently, there is a neighborhood $V(p)$ such that\n$$\n  pAq&gt;qAq\n  \\quad\\text{for every }q\\in V(p),\\ q\\ne p.\n$$</p>\n<p>This local form is the bridge from the static ESS condition to stability under\nthe replicator dynamics.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Prop. 5.5.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Uniform threshold and local neighborhood characterizations of ESS.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,138 @@
+{
+  "id": "mechanism_design.auction.basic.formats",
+  "title": "Basic Auction Formats",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_auction_basic_formats.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.auction",
+    "mechanism_design.auction.basic"
+  ],
+  "body_html": "<h1>Basic Auction Formats</h1>\n<p>The basic auction layer specialises the\ngeneric <code>MechanismWithTransfers</code>\n([[mechanism_design.transfer.mechanisms_with_transfers]]) interface to two\nclassical auction shapes: single-item auctions and multi-item auctions.</p>\n<h2>Single-item auction</h2>\n<p><code>SingleItemAuction I V P</code> extends\n<code>MechanismWithTransfers I (fun _ =&gt; V) (Option I) P</code> with no extra data.\nThe components are:</p>\n<ul>\n<li><strong>Bidders</strong>: a finite (typically) index type <code>I</code>.</li>\n<li><strong>Bids</strong>: each bidder reports a scalar value in <code>V</code>.</li>\n<li><strong>Allocation</strong>: the outcome type is <code>Option I</code> —</li>\n<li><code>some i</code> means bidder <code>i</code> receives the single item;</li>\n<li><code>none</code> means the item is withheld (e.g. the reserve price was not met).</li>\n<li><strong>Payments</strong>: per-bidder transfers in <code>P</code>.</li>\n</ul>\n<p>Importantly, the structure does not commit to <em>which</em> bidder wins. The\nspecific allocation rule (highest bidder, weighted scoring, randomised\nallocation, …) is supplied by each concrete instantiation\n— see [[mechanism_design.auction.basic.second_price_mechanism]] and\n[[mechanism_design.auction.basic.first_price_mechanism]].</p>\n<h2>Multi-item auction</h2>\n<p><code>CombinatorialAuction I k V P</code> extends\n<code>MultipleParameterMechanism I (CombinatorialAllocation I k) V P</code>:</p>\n<ul>\n<li><strong>Bids</strong>: each bidder submits a valuation function on full allocation\n  profiles.</li>\n<li><strong>Allocation</strong>: a function $a : I \\to \\mathrm{Finset}\\,(\\mathrm{Fin}\\,k)$\n  assigning a bundle of items to each bidder.</li>\n</ul>\n<p>The structure imposes no feasibility constraint by default; the\ncompanion predicate <code>CombinatorialAuction.IsFeasible</code> records the\nno-double-allocation requirement:\n$$\n\\forall i \\ne j.\\; \\mathrm{allocationRule}(b, i) \\cap \\mathrm{allocationRule}(b, j) = \\emptyset.\n$$\nEquivalently, the allocation defines a (possibly partial) assignment of\ndistinct items to distinct bidders.</p>\n<h2>Position in the library</h2>\n<p>These formats provide the <em>outcome geometry</em>: what bids look like and how\nallocations are encoded. They sit above the generic transfer-mechanism\ninterface and below concrete mechanisms (Vickrey, first-price, VCG,\nMyerson, …) that fix allocation and payment rules. The single-parameter\nlayer ([[mechanism_design.transfer.single_parameter_transfer_layer]]) is\nthe scalar-allocation cousin used for Myerson-style theory; multi-item\nauctions naturally feed into the multi-parameter VCG analysis\n([[mechanism_design.vcg.welfare_and_payments]]).</p>\n<h2>References</h2>\n<ul>\n<li>[Krishna, Chapters 2-3] Vijay Krishna, <em>Auction Theory</em>, 2nd ed.. Standard sealed-bid auction formats and\n  private-value auction models.</li>\n<li>[Krishna, Chapter 11] Vijay Krishna, <em>Auction Theory</em>, 2nd ed.. Multi-object auctions and bundle\n  allocation.</li>\n<li>[AGT, Chapter 1, Section 1.3.2] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  First-price and second-price sealed-bid auctions as basic algorithmic\n  game theory examples.</li>\n<li>[AGT, Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Combinatorial auctions and feasibility constraints.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:auction_basic_formats</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+      "title": "Multiple-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_multiple_parameter_transfer_layer.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.fixed_point.scarf_lemma",
+      "title": "Scarf Combinatorial Lemma (Colorful Room Existence)",
+      "href": "math/math_fixed_point_scarf_lemma.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SingleItemAuction",
+      "display_name": "SingleItemAuction",
+      "qualified_name": "SingleItemAuction",
+      "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "kind": "structure",
+      "signature": "structure SingleItemAuction (I : Type*) (V : Type*) (P : Type*)\n    extends MechanismWithTransfers I (fun _ => V) (Option I) P\n/-- A multi-item auction with `k` distinct items.\n  An agent bundle is a finite subset of the `k` items, represented as\n  `Finset (Fin k)`. A full allocation assigns one bundle to each agent. Agents\n  report valuation functions over full allocation profiles, so this is the\n  specialization of `MultipleParameterMechanism` to bundle allocations.\n  Feasibility (no item sold twice) is a separate predicate; see `IsFeasible`. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L89",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MultiItemBundle",
+      "display_name": "MultiItemBundle",
+      "qualified_name": "MultiItemBundle",
+      "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "kind": "def",
+      "signature": "def MultiItemBundle (k : ℕ)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L100",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CombinatorialAllocation",
+      "display_name": "CombinatorialAllocation",
+      "qualified_name": "CombinatorialAllocation",
+      "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "kind": "def",
+      "signature": "def CombinatorialAllocation (I : Type*) (k : ℕ)",
+      "docstring": "A multi-item allocation assigns each agent a bundle of items.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L111",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CombinatorialAuction",
+      "display_name": "CombinatorialAuction",
+      "qualified_name": "CombinatorialAuction",
+      "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "kind": "structure",
+      "signature": "structure CombinatorialAuction (I : Type*) (k : ℕ) (V : Type*) (P : Type*)\n    extends MultipleParameterMechanism I (CombinatorialAllocation I k) V P\nnamespace CombinatorialAuction\n/-- Feasibility: each item is allocated to at most one agent. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L118",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CombinatorialAuction.IsFeasible",
+      "display_name": "CombinatorialAuction.IsFeasible",
+      "qualified_name": "CombinatorialAuction.IsFeasible",
+      "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "kind": "def",
+      "signature": "def IsFeasible {I : Type*} {k : ℕ} {V P : Type*}\n    (M : CombinatorialAuction I k V P) : Prop",
+      "docstring": "Feasibility: each item is allocated to at most one agent.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L124",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "display_name": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

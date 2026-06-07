@@ -1,0 +1,186 @@
+{
+  "topic": {
+    "id": "math.fixed_point",
+    "title": "Math.Fixed Point",
+    "href": "math/fixed_point/index.html",
+    "parent": "math",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 3,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 4,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "math.fixed_point.brouwer_compact_convex",
+      "title": "Brouwer Fixed Point Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "math/fixed_point/math_fixed_point_brouwer_compact_convex.html",
+      "payload": "node_payloads/math_fixed_point_brouwer_compact_convex.json"
+    },
+    {
+      "id": "math.fixed_point.brouwer_simplex",
+      "title": "Brouwer Fixed Point Theorem For A Simplex",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_fixed_point_brouwer_simplex.html",
+      "payload": "node_payloads/math_fixed_point_brouwer_simplex.json"
+    },
+    {
+      "id": "math.fixed_point.kakutani_fixed_point",
+      "title": "Kakutani Fixed Point Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "math/fixed_point/math_fixed_point_kakutani_fixed_point.html",
+      "payload": "node_payloads/math_fixed_point_kakutani_fixed_point.json"
+    },
+    {
+      "id": "math.fixed_point.retract_fixed_point",
+      "title": "Fixed Point Theorem For Retracts Of A Simplex",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "math/fixed_point/math_fixed_point_retract_fixed_point.html",
+      "payload": "node_payloads/math_fixed_point_retract_fixed_point.json"
+    },
+    {
+      "id": "math.fixed_point.scarf_lemma",
+      "title": "Scarf Combinatorial Lemma (Colorful Room Existence)",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_fixed_point_scarf_lemma.html",
+      "payload": "node_payloads/math_fixed_point_scarf_lemma.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "math.fixed_point.scarf_lemma",
+      "to": "math.fixed_point.brouwer_simplex",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "href": "game_theory/extensive_game/index.html",
+      "role": "dependency",
+      "node_count": 57
+    },
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 105
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency",
+      "node_count": 49
+    },
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependent",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.fixed_point.scarf_lemma",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "math.fixed_point.brouwer_simplex",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.fixed_point.scarf_lemma",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "math.fixed_point.brouwer_simplex",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "math.fixed_point.brouwer_simplex",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "brouwer",
+      "title": "brouwer",
+      "href": "keywords/brouwer.html",
+      "count": 2
+    },
+    {
+      "id": "combinatorics",
+      "title": "combinatorics",
+      "href": "keywords/combinatorics.html",
+      "count": 1
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 5
+    },
+    {
+      "id": "kakutani",
+      "title": "kakutani",
+      "href": "keywords/kakutani.html",
+      "count": 1
+    },
+    {
+      "id": "retract",
+      "title": "retract",
+      "href": "keywords/retract.html",
+      "count": 1
+    },
+    {
+      "id": "scarf",
+      "title": "scarf",
+      "href": "keywords/scarf.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "math.fixed_point.brouwer_compact_convex",
+    "math.fixed_point.kakutani_fixed_point",
+    "math.fixed_point.retract_fixed_point"
+  ]
+}

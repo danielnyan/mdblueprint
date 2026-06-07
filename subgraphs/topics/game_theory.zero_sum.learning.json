@@ -1,0 +1,279 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.learning",
+    "title": "Game Theory.Zero Sum.Learning",
+    "href": "game_theory/zero_sum/learning/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 17,
+    "descendant_node_count": 17
+  },
+  "counts": {
+    "internal_nodes": 17,
+    "inlined_nodes": 0,
+    "descendant_nodes": 17,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 17,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 19,
+    "visible_nodes_with_selected_proof_plans": 19
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy",
+      "title": "Calibrated Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_calibrated_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy_exists",
+      "title": "Calibrated Strategy Exists",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_calibrated_strategy_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+      "title": "Cesàro Payoff Convergence From Robinson Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.continuous_fictitious_play_gap",
+      "title": "Continuous Fictitious Play Closes The Duality Gap",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_continuous_fictitious_play_gap.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_continuous_fictitious_play_gap.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+      "title": "Empirical Frequency Of Play",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_empirical_frequency.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_empirical_frequency.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.external_regret",
+      "title": "External Regret",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_external_regret.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_external_regret.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "title": "Fictitious Play",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_fictitious_play.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play_convergence",
+      "title": "Fictitious Play Convergence",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_fictitious_play_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.hannan_set",
+      "title": "Hannan Set",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_hannan_set.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_hannan_set.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.internal_regret",
+      "title": "Internal Regret",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_internal_regret.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_internal_regret.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.no_external_regret_hannan_convergence",
+      "title": "No External Regret Converges To Hannan Set",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_external_regret_hannan_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_no_external_regret_hannan_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.no_internal_regret_correlated_convergence",
+      "title": "No Internal Regret Converges To Correlated Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_internal_regret_correlated_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_no_internal_regret_correlated_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma",
+      "title": "Robinson Admissible Sequence Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.bracket_invariant",
+      "title": "Bracket Invariant For Admissible Sequences",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_bracket_invariant.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_bracket_invariant.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.induction_step",
+      "title": "Euclidean Division Pasting In Robinson Induction",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_induction_step.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_induction_step.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.subgame_reduction",
+      "title": "Subgame Reduction For Non-Useful Indices",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_subgame_reduction.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_subgame_reduction.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.useful_window",
+      "title": "Useful Window Bound For Admissible Sequences",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_useful_window.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_useful_window.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+      "to": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency",
+      "node_count": 75
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "calibration",
+      "title": "calibration",
+      "href": "keywords/calibration.html",
+      "count": 2
+    },
+    {
+      "id": "cesaro",
+      "title": "cesaro",
+      "href": "keywords/cesaro.html",
+      "count": 1
+    },
+    {
+      "id": "convergence",
+      "title": "convergence",
+      "href": "keywords/convergence.html",
+      "count": 2
+    },
+    {
+      "id": "correlated-equilibrium",
+      "title": "correlated-equilibrium",
+      "href": "keywords/correlated-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "fictitious-play",
+      "title": "fictitious-play",
+      "href": "keywords/fictitious-play.html",
+      "count": 10
+    },
+    {
+      "id": "invariant",
+      "title": "invariant",
+      "href": "keywords/invariant.html",
+      "count": 1
+    },
+    {
+      "id": "learning",
+      "title": "learning",
+      "href": "keywords/learning.html",
+      "count": 11
+    },
+    {
+      "id": "regret",
+      "title": "regret",
+      "href": "keywords/regret.html",
+      "count": 5
+    },
+    {
+      "id": "robinson",
+      "title": "robinson",
+      "href": "keywords/robinson.html",
+      "count": 6
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 7
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 10
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "market_design.matching.one_to_one.proposing_optimal",
+  "title": "Proposing-Side Optimal Stable Matching",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "market_design/market_design_matching_one_to_one_proposing_optimal.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Proposing-Side Optimal Stable Matching</h1>\n<p><strong>Theorem.</strong> Let $\\mu^M$ denote the matching produced by the men-proposing\nGale-Shapley algorithm on $(M, W, \\succ)$. Then:</p>\n<ol>\n<li><strong>Men-optimal.</strong> For every man $i \\in M$ and every stable matching $\\mu$:</li>\n</ol>\n<p>$$\\mu^M(i) \\succeq_i \\mu(i)$$</p>\n<p>I.e., every man weakly prefers his match in $\\mu^M$ to his match in any\n   other stable matching.</p>\n<ol>\n<li><strong>Women-pessimal.</strong> For every woman $j \\in W$ and every stable matching $\\mu$:</li>\n</ol>\n<p>$$\\mu(j) \\succeq_j \\mu^M(j)$$</p>\n<p>I.e., every woman weakly prefers her match in any other stable matching\n   to her match in $\\mu^M$.</p>\n<p>A symmetric pair of statements holds for the women-proposing algorithm with\nroles swapped.</p>\n<h2>Conventions</h2>\n<ul>\n<li>Write $\\mu(a)$ for the partner of agent $a$ under matching $\\mu$, in either\n  direction; the matching bijection gives $\\mu(i) = j \\iff \\mu(j) = i$.</li>\n<li>Preferences are <strong>strict</strong>: each agent's preference list is a full ranking\n  with no ties (the standard marriage-market setting). Strictness is used in\n  the women-pessimal part.</li>\n<li>The men-proposing algorithm has each man propose down his list in\n  <strong>decreasing order of preference</strong>, advancing past any woman who rejects\n  him or who later displaces him.</li>\n<li>The market is <strong>balanced</strong> ($|M| = |W|$) with full preference lists, so the\n  men-proposing algorithm terminates with a <strong>perfect matching</strong> — every agent\n  is matched. This is the termination half of the [[gale_shapley_stable]]\n  existence result this node builds on, and is what lets the conclusion below\n  speak of <em>the</em> partner $\\mu^M(i)$ of each man.</li>\n</ul>",
+  "proof_html": "<p>Call a man-woman pair $(i, j)$ <strong>achievable</strong> if some stable matching matches\n$i$ to $j$.</p>\n<h3>Men-optimal</h3>\n<p>We prove the invariant: <strong>throughout the men-proposing algorithm, no man is\never rejected by an achievable partner</strong>, where \"rejected\" covers both a fresh\nproposal turned away and a tentatively-held man later displaced.</p>\n<p><em>Base case.</em> Before any proposals are made no rejection has occurred, so the\ninvariant holds vacuously.</p>\n<p><em>Inductive step.</em> Assume the invariant holds up to the current round, and for\ncontradiction suppose man $i$ is rejected by an achievable partner $j$ in this\nround. Pick a stable matching $\\mu$ with $\\mu(i) = j$. When $j$ rejects $i$ she\nis holding some man $i'$ with $i' \\succ_j i$.</p>\n<p>We show $i'$ strictly prefers $j$ to his $\\mu$-partner $\\mu(i')$:</p>\n<ul>\n<li>$(i', \\mu(i'))$ is achievable (witnessed by $\\mu$), so by the inductive\n  hypothesis $i'$ has <strong>not</strong> been rejected by $\\mu(i')$ up to this round.</li>\n<li>$j \\neq \\mu(i')$: otherwise $\\mu$ would match both $i$ and $i'$ to $j$, which\n  is impossible for a one-to-one matching (note $i' \\neq i$ since\n  $i' \\succ_j i$).</li>\n<li>Hence $i'$ has not yet <strong>proposed</strong> to $\\mu(i')$. For if he had proposed and\n  (by the IH) not been rejected, the invariant would force $i'$ to be holding\n  $\\mu(i')$ right now — but he is holding $j \\neq \\mu(i')$.</li>\n<li>Yet $i'$ <em>has</em> proposed to $j$ (he is holding her). Since men propose in\n  decreasing order of preference, every woman $i'$ has not yet proposed to —\n  in particular $\\mu(i')$ — is strictly below $j$ in his ranking:\n  $j \\succ_{i'} \\mu(i')$.</li>\n</ul>\n<p>So $(i', j)$ is a blocking pair for $\\mu$: $i' \\succ_j i = \\mu(j)$ on the woman\nside, and $j \\succ_{i'} \\mu(i')$ on the man side. This contradicts the\nstability of $\\mu$. Therefore $j$ is not achievable for $i$, establishing the\ninvariant.</p>\n<p><em>Conclusion.</em> At termination man $i$ is held by some woman $\\mu^M(i)$ (his last\nand most recent successful proposal). Let $j$ be any achievable partner of\n$i$. By the invariant $i$ was not rejected by $j$, so either $j = \\mu^M(i)$, or\n$i$ never proposed to $j$. In the latter case $j$ lies strictly below\n$\\mu^M(i)$ in $i$'s ranking (he proposed exactly to the prefix of his list up\nto $\\mu^M(i)$), so $\\mu^M(i) \\succ_i j$. Either way $\\mu^M(i) \\succeq_i j$.\nTaking $j = \\mu(i)$ for an arbitrary stable matching $\\mu$ — achievable by\ndefinition — yields the men-optimal statement.</p>\n<h3>Women-pessimal</h3>\n<p>Fix a stable matching $\\mu$ and a woman $j$; set $i = \\mu^M(j)$ and\n$i' = \\mu(j)$. Suppose for contradiction that $j$ is strictly better off under\n$\\mu^M$, i.e. $i \\succ_j i'$.</p>\n<p>Applying the men-optimal statement to man $i$ (whose $\\mu^M$-partner is $j$) gives\n$j = \\mu^M(i) \\succeq_i \\mu(i)$. Moreover $\\mu(i) \\neq j$ — otherwise\n$\\mu(j) = i = i'$ would make $i \\succ_j i'$ read $i \\succ_j i$, false — so by\nstrictness of preferences the comparison is strict: $j \\succ_i \\mu(i)$.</p>\n<p>Then $(i, j)$ blocks $\\mu$: $i \\succ_j i' = \\mu(j)$ on the woman side and\n$j \\succ_i \\mu(i)$ on the man side, contradicting stability. Hence no woman is\nstrictly better off under $\\mu^M$; that is, $\\mu(j) \\succeq_j \\mu^M(j)$.</p>\n<h2>Consequences</h2>\n<p>The set of stable matchings has a <strong>distinguished extremal element</strong> on each\nside. Combined with the [[lattice]] structure, this gives an explicit\ncharacterization of the boundary of the stable set.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Thm 22.11] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Gale &amp; Shapley (1962), original optimality observation.</li>\n<li>Roth &amp; Sotomayor (1990), <em>Two-Sided Matching</em>, Ch. 2.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "title": "Gale-Shapley Deferred Acceptance Algorithm",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_algorithm.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "href": "market_design/market_design_matching_one_to_one_stability.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.lattice",
+      "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+      "href": "market_design/market_design_matching_one_to_one_lattice.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GS.galeShapley_isProposingOptimal",
+      "display_name": "GS.galeShapley_isProposingOptimal",
+      "qualified_name": "GS.galeShapley_isProposingOptimal",
+      "module": "EconCSLib.MarketDesign.Matching.Optimal",
+      "kind": "theorem",
+      "signature": "theorem galeShapley_isProposingOptimal\n    (μ : Matching (Fin n) (Fin n))\n    (hμ : Matching.IsStable (MatchingMarket.ofEquivData w m) μ) :\n    ∀ (j wj : Fin n), μ.matchW j = some wj →\n      (m.prefs j).idxOf ((Equiv.ofBijective (gs w m) (gs_bijective w m)).symm j) ≤\n        (m.prefs j).idxOf wj",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Optimal.lean#L318",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.Optimal",
+      "display_name": "EconCSLib.MarketDesign.Matching.Optimal",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Optimal.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

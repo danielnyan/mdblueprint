@@ -1,0 +1,210 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.divisible.cut_and_choose",
+    "title": "Social Choice.Fair Division.Divisible.Cut And Choose",
+    "href": "social_choice/fair_division/divisible/cut_and_choose/index.html",
+    "parent": "social_choice.fair_division.divisible",
+    "node_count": 7,
+    "descendant_node_count": 7
+  },
+  "counts": {
+    "internal_nodes": 7,
+    "inlined_nodes": 0,
+    "descendant_nodes": 7,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 7,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 9,
+    "visible_nodes_with_selected_proof_plans": 9
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.divisible.chooser_envy_free",
+      "title": "Chooser Is Always Envy-Free",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_chooser_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_alloc.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_ef_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "title": "Cut-and-Choose Output Is a Complete Partition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_partition.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_and_choose_partition.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "title": "Cutter Does Not Envy at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cutter_envy_free_of_fair.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cutter_envy_free_of_fair.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.fair_cut_exists",
+      "title": "Fair Cut Point Exists",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_fair_cut_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_fair_cut_exists.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.chooser_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.fair_cut_exists",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.chooser_envy_free",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.fair_cut_exists",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependency",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.chooser_envy_free",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.fair_cut_exists",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "cake-cutting",
+      "title": "cake-cutting",
+      "href": "keywords/cake-cutting.html",
+      "count": 1
+    },
+    {
+      "id": "cut-and-choose",
+      "title": "cut-and-choose",
+      "href": "keywords/cut-and-choose.html",
+      "count": 7
+    },
+    {
+      "id": "divisible",
+      "title": "divisible",
+      "href": "keywords/divisible.html",
+      "count": 7
+    },
+    {
+      "id": "envy-free",
+      "title": "envy-free",
+      "href": "keywords/envy-free.html",
+      "count": 4
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 2
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 7
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

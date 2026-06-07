@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.decisive_spread",
+  "title": "Field Expansion — Decisive on One Pair Implies Decisive Everywhere",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_decisive_spread.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Field Expansion — Decisive on One Pair Implies Decisive Everywhere</h1>\n<p><strong>Theorem.</strong> Let $F$ be a social welfare function satisfying unanimity\n([[social_choice.voting.unanimity]]) and IIA ([[social_choice.voting.iia]]).\nIf a nonempty coalition $C$ is <em>weakly decisive</em> for some ordered pair\n$(x, y)$ with three distinct alternatives $x, y, z$\n([[social_choice.voting.is_weakly_decisive_for]]), then $C$ is <em>decisive</em>\nfor every ordered pair of alternatives ([[social_choice.voting.is_decisive]]).</p>\n<p>In Lean: <code>SocialChoice.Voting.decisive_spread</code> (a public lemma of the Arrow\ndevelopment in <code>Decisive.lean</code>), depending on the third-alternative witness\n<code>x ≠ y ≠ z ≠ x</code>.</p>",
+  "proof_html": "<p>sketch</p>\n<p>The argument splits into directional \"spread\" lemmas that each construct an\nauxiliary profile and apply [[social_choice.voting.iia_strict]] plus\nunanimity:</p>\n<ol>\n<li>\n<p><strong>Forward spread</strong> $x \\succ_C y \\Rightarrow x \\succ_C z$.\n   Build a profile where members of $C$ rank $x \\succ y \\succ z$ and members\n   outside $C$ rank $y \\succ x$ but everyone ranks $y \\succ z$. Weak\n   decisiveness gives $x \\succ_{F(P')} y$; unanimity gives\n   $y \\succ_{F(P')} z$; transitivity of $F(P')$ yields $x \\succ_{F(P')} z$.\n   Then IIA (<code>iia_strict</code>) carries the conclusion back to an arbitrary\n   $C$-unanimous profile on $(x,z)$.</p>\n</li>\n<li>\n<p><strong>Backward spread</strong> $x \\succ_C y \\Rightarrow z \\succ_C y$. Symmetric.</p>\n</li>\n<li>\n<p><strong>Symmetric spread</strong> $x \\succ_C y \\Rightarrow y \\succ_C x$. Compose\n   two forward / backward steps through a third alternative.</p>\n</li>\n<li>\n<p><strong>Strengthening</strong> $x \\succ_C y$ from weak to full decisiveness.</p>\n</li>\n<li>\n<p>Combining these with case analysis on overlap between $(s, t)$ and\n   $(x, y, z)$ (the helper <code>isDecisive_spread</code> in the source) extends\n   $(s, t)$-decisiveness to <em>all</em> ordered pairs.</p>\n</li>\n</ol>\n<p>The proof requires $|A| \\ge 3$ only through the third-alternative witness\n$z$, hence the hypothesis $x \\ne y \\ne z \\ne x$ in the Lean signature.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Field expansion lemma in the decisive-coalitions proof.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.decisive_spread",
+      "display_name": "SocialChoice.Voting.decisive_spread",
+      "qualified_name": "SocialChoice.Voting.decisive_spread",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "theorem",
+      "signature": "theorem decisive_spread [Fintype N] [Fintype A]\n    {F : SWF N A} (hU : SWF.Unanimity F) (hIIA : SWF.IIA F)\n    {C : Set N} {x y z : A} (hxy : x ≠ y) (hxz : x ≠ z) (hyz : y ≠ z)\n    (hC : Set.Nonempty C) (h : IsWeaklyDecisiveFor F C x y) :\n    IsDecisive F C",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L474",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "display_name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

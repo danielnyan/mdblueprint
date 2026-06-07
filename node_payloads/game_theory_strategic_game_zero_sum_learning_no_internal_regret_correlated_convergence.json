@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.no_internal_regret_correlated_convergence",
+  "title": "No Internal Regret Converges To Correlated Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_internal_regret_correlated_convergence.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>No Internal Regret Converges To Correlated Equilibrium</h1>\n<p>In repeated play of a finite strategic game, suppose every player follows a\nprocedure with no internal regret. Then the empirical distribution of realized\naction profiles approaches the set of correlated-equilibrium distributions.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>For each player $i$ and each replacement pair $a_i\\mapsto b_i$, the corresponding\ninternal-regret inequality can be written as\n$$\n  \\sum_{a_{-i}} q(a_i,a_{-i})\n  (g_i(b_i,a_{-i})-g_i(a_i,a_{-i}))\\le 0,\n$$\nwhere $q$ is the empirical distribution. These are exactly the obedience\ninequalities for a correlated equilibrium. Since there are finitely many such\nlinear inequalities, vanishing positive internal regret for all players forces\nthe empirical distributions toward their common feasible set.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. If each player has no internal regret, empirical distributions converge to the correlated-equilibrium set.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_minimax_theorem",
+  "title": "General Mixed Minimax Theorem",
+  "kind": "theorem",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_minimax_theorem.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>General Mixed Minimax Theorem</h1>\n<p>Let $G=(S,T,g)$ be a zero-sum game such that:</p>\n<ol>\n<li>$S$ and $T$ are compact Hausdorff topological spaces;</li>\n<li>for each $t\\in T$, $g(\\cdot,t)$ is upper semicontinuous, and for each $s\\in S$,\n   $g(s,\\cdot)$ is lower semicontinuous;</li>\n<li>$g$ is bounded and measurable for the product Borel sigma-algebra.</li>\n</ol>\n<p>Then the mixed extension\n$$\n  (\\Delta(S),\\Delta(T),g)\n$$\nhas a value. Each player has a mixed optimal strategy, and for every\n$\\epsilon&gt;0$ each player has an $\\epsilon$-optimal strategy with finite support.</p>",
+  "proof_html": "<p>Apply the compact mixed-versus-finite-support minimax proposition twice: once to\n$(\\Delta(S),\\Delta_f(T),g)$ and once dually to $(\\Delta_f(S),\\Delta(T),g)$. Let\n$v^+$ and $v^-$ be the resulting values. Optimal strategies $\\sigma$ and $\\tau$\nfor the two one-sided games satisfy inequalities against all pure opponent\nstrategies. Fubini's theorem gives\n$$\n  v^+\\le \\int g\\,d(\\sigma\\otimes\\tau)\\le v^-.\n$$\nSince always $v^-\\le v^+$, equality follows.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 3.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed minimax theorem for compact Hausdorff strategy spaces.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

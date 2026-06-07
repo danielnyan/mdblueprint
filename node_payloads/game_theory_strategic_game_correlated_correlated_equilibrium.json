@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.correlated_equilibrium",
+  "title": "Correlated Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Correlated Equilibrium</h1>\n<p>A correlated equilibrium of a finite strategic-form game is a probability\ndistribution $\\mu$ over pure strategy profiles such that the obedient\nrecommendation strategy is an equilibrium of the mediated game.</p>\n<p>Equivalently, $\\mu$ satisfies the obedience inequalities for every player, every\nrecommended action, and every unilateral replacement action.</p>\n<p>This is different from an independent mixed profile: the distribution $\\mu$ may\ncorrelate the players' recommendations.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Def. 8.6] Maschler, Solan, and Zamir, <em>Game Theory</em>. Correlated equilibrium as a distribution satisfying all obedience inequalities.</li>\n<li>[MFoGT, Chapter 7, Section 7.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Aumann correlated equilibrium in the chapter on correlated equilibria, learning, and Bayesian equilibria.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

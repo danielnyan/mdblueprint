@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.egal_le_util",
+  "title": "Egalitarian Welfare Lower-Bounds Utilitarian Welfare",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_egal_le_util.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Egalitarian Welfare Lower-Bounds Utilitarian Welfare</h1>\n<p><strong>Lemma.</strong> For a finite nonempty population $N$, a utility profile $u$,\nand an allocation $A$, if every agent's utility is bounded below by the\negalitarian welfare\n([[social_choice.fair_division.egalitarian_welfare]]) — for instance, by\nthe lemma <code>egalitarianWelfare_le</code> from\n[[social_choice.fair_division.welfare_monotone]] — then\n$$\n|N| \\cdot W_{\\mathrm{egal}}(u, A) \\;\\le\\; W_{\\mathrm{util}}(u, A).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.nsmul_egalitarianWelfare_le_utilitarianWelfare</code>,\nstated as <code>Fintype.card N • egalitarianWelfare u A ≤ utilitarianWelfare u A</code>\nto avoid division.</p>",
+  "proof_html": "<p>Summing the agentwise lower bound $W_{\\mathrm{egal}} \\le u_i(A(i))$\nover all $i$ gives the constant sum $|N| \\cdot W_{\\mathrm{egal}}$ on the\nleft and the utilitarian welfare on the right. $\\square$</p>\n<p>This is the standard <em>minimum ≤ average</em> inequality for finitely many\nreal numbers, packaged so that it relates the two welfare aggregations\nwithout scaling. It quantifies the slack between \"every agent at least\n$W_{\\mathrm{egal}}$\" (egalitarian) and \"agents together at least\n$W_{\\mathrm{util}}$\" (utilitarian).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Comparing welfare aggregations.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "display_name": "SocialChoice.FairDivision.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "qualified_name": "SocialChoice.FairDivision.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "lemma",
+      "signature": "lemma nsmul_egalitarianWelfare_le_utilitarianWelfare\n    [Nonempty N]\n    (u : N → S → ℝ) (A : Allocation N S)\n    (hle : ∀ i : N, egalitarianWelfare u A ≤ u i (A i)) :\n    Fintype.card N • egalitarianWelfare u A ≤ utilitarianWelfare u A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L73",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

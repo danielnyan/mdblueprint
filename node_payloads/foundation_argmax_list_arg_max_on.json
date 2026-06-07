@@ -1,0 +1,126 @@
+{
+  "id": "foundation.argmax.list_arg_max_on",
+  "title": "Argmax of a List under a Total Preorder",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_argmax_list_arg_max_on.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.argmax"
+  ],
+  "body_html": "<h1>Argmax of a List under a Total Preorder</h1>\n<p>For a function <code>f : α → β</code> valued in a <code>TotalPreorder β</code> and a non-empty\nlist <code>head :: tail : List α</code>, some element of the list maximizes <code>f</code>:\n$$\n  \\exists m \\in \\operatorname{head} :: \\operatorname{tail},\\;\n  \\forall x \\in \\operatorname{head} :: \\operatorname{tail},\\; f(x) \\le f(m).\n$$</p>\n<p>The proof is by induction on <code>tail</code>, comparing the current maximum against\nthe new head via <code>TotalPreorder.le_total</code>.</p>\n<p>From the existence statement a noncomputable choice\n<code>List.argMaxOn f head tail</code> picks a witnessing maximizer. Its API:</p>\n<ul>\n<li><code>argMaxOn_mem</code> -- the chosen element lies in the list.</li>\n<li><code>argMaxOn_ge</code> -- the chosen element is <code>≥</code> every list element in <code>f</code>-value.</li>\n<li><code>le_argMaxOn_head</code> -- specialization: the head's value is <code>≤</code> the chosen\n  element's value.</li>\n</ul>\n<p>The variant exists because Mathlib's <code>List.argmax</code> is computable but requires\n<code>[LinearOrder]</code>, which is too strong for ranking outcomes that may be\nindifferent (the typical situation when a player's payoffs are equal across\ndistinct continuations). The intended consumer is\n<code>ExtensiveGame.BackwardInduction</code>, where finite game trees are evaluated by\nrecursively picking an argmax of children.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 3] Maschler, Solan, and Zamir, <em>Game Theory</em>. Backward induction on finite extensive games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.preference.total_preorder",
+      "title": "Total Preorder",
+      "href": "foundation/foundation_preference_total_preorder.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "List.exists_argMax_on",
+      "display_name": "List.exists_argMax_on",
+      "qualified_name": "List.exists_argMax_on",
+      "module": "EconCSLib.Foundation.Argmax",
+      "kind": "theorem",
+      "signature": "theorem exists_argMax_on [TotalPreorder Y] (f : X → Y)\n    (head : X) (tail : List X) :\n    ∃ m, m ∈ head :: tail ∧ ∀ x ∈ head :: tail, f x ≤ f m",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L40",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "List.argMaxOn",
+      "display_name": "List.argMaxOn",
+      "qualified_name": "List.argMaxOn",
+      "module": "EconCSLib.Foundation.Argmax",
+      "kind": "def",
+      "signature": "def argMaxOn [TotalPreorder Y] [DecidableLE Y] (f : X → Y)\n    (head : X) (tail : List X) : X",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L119",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "List.argMaxOn_mem",
+      "display_name": "List.argMaxOn_mem",
+      "qualified_name": "List.argMaxOn_mem",
+      "module": "EconCSLib.Foundation.Argmax",
+      "kind": "theorem",
+      "signature": "theorem argMaxOn_mem [TotalPreorder Y] [DecidableLE Y] (f : X → Y)\n    (head : X) (tail : List X) :\n    argMaxOn f head tail ∈ head :: tail",
+      "docstring": "The chosen maximizer is a member of the list.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L124",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "List.argMaxOn_ge",
+      "display_name": "List.argMaxOn_ge",
+      "qualified_name": "List.argMaxOn_ge",
+      "module": "EconCSLib.Foundation.Argmax",
+      "kind": "theorem",
+      "signature": "theorem argMaxOn_ge [TotalPreorder Y] [DecidableLE Y] (f : X → Y)\n    (head : X) (tail : List X) :\n    ∀ x ∈ head :: tail, f x ≤ f (argMaxOn f head tail)",
+      "docstring": "Soundness: every element's `f`-image is `≤` the chosen maximizer's.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L130",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "List.le_argMaxOn_head",
+      "display_name": "List.le_argMaxOn_head",
+      "qualified_name": "List.le_argMaxOn_head",
+      "module": "EconCSLib.Foundation.Argmax",
+      "kind": "theorem",
+      "signature": "theorem le_argMaxOn_head [TotalPreorder Y] [DecidableLE Y] (f : X → Y)\n    (head : X) (tail : List X) :\n    f head ≤ f (argMaxOn f head tail)",
+      "docstring": "The argmax achieves at least the head's value.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L136",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Argmax",
+      "display_name": "EconCSLib.Foundation.Argmax",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Argmax.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

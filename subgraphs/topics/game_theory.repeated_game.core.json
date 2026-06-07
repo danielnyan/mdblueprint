@@ -1,0 +1,175 @@
+{
+  "topic": {
+    "id": "game_theory.repeated_game.core",
+    "title": "Game Theory.Repeated Game.Core",
+    "href": "game_theory/repeated_game/core/index.html",
+    "parent": "game_theory.repeated_game",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 0,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 10,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 11,
+    "visible_nodes_with_selected_proof_plans": 11
+  },
+  "nodes": [
+    {
+      "id": "game_theory.repeated_game.core.discounted_game",
+      "title": "Discounted Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_discounted_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_discounted_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.feasible_individually_rational_payoffs",
+      "title": "Repeated Feasible Individually Rational Payoffs",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_feasible_individually_rational_payoffs.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_feasible_individually_rational_payoffs.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.finitely_repeated_game",
+      "title": "Finitely Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_finitely_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_finitely_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.history",
+      "title": "Repeated Game History",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_history.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_history.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.payoff_aggregation",
+      "title": "Repeated Game Payoff Aggregation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_payoff_aggregation.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_payoff_aggregation.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.repeated_game",
+      "title": "Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.signals",
+      "title": "Repeated Game With Signals",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_signals.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_signals.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.standard_repeated_game",
+      "title": "Standard Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_standard_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_standard_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.strategy",
+      "title": "Repeated Game Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_strategy.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_strategy.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.uniform_equilibrium",
+      "title": "Uniform Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_uniform_equilibrium.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_uniform_equilibrium.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "discounting",
+      "title": "discounting",
+      "href": "keywords/discounting.html",
+      "count": 1
+    },
+    {
+      "id": "feasible-payoff",
+      "title": "feasible-payoff",
+      "href": "keywords/feasible-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "history",
+      "title": "history",
+      "href": "keywords/history.html",
+      "count": 1
+    },
+    {
+      "id": "imperfect-monitoring",
+      "title": "imperfect-monitoring",
+      "href": "keywords/imperfect-monitoring.html",
+      "count": 1
+    },
+    {
+      "id": "payoff-aggregation",
+      "title": "payoff-aggregation",
+      "href": "keywords/payoff-aggregation.html",
+      "count": 1
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 10
+    },
+    {
+      "id": "signals",
+      "title": "signals",
+      "href": "keywords/signals.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 7
+    },
+    {
+      "id": "strategy",
+      "title": "strategy",
+      "href": "keywords/strategy.html",
+      "count": 1
+    },
+    {
+      "id": "uniform-equilibrium",
+      "title": "uniform-equilibrium",
+      "href": "keywords/uniform-equilibrium.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

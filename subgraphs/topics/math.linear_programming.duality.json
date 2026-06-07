@@ -1,0 +1,106 @@
+{
+  "topic": {
+    "id": "math.linear_programming.duality",
+    "title": "Math.Linear Programming.Duality",
+    "href": "math/linear_programming/duality/index.html",
+    "parent": "math.linear_programming",
+    "node_count": 2,
+    "descendant_node_count": 2
+  },
+  "counts": {
+    "internal_nodes": 2,
+    "inlined_nodes": 0,
+    "descendant_nodes": 2,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 2,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 5,
+    "visible_nodes_with_selected_proof_plans": 5
+  },
+  "nodes": [
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_linear_programming_strong_complementarity.html",
+      "payload": "node_payloads/math_linear_programming_strong_complementarity.json"
+    },
+    {
+      "id": "math.linear_programming.strong_duality",
+      "title": "Strong Duality For Linear Programming",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_linear_programming_strong_duality.html",
+      "payload": "node_payloads/math_linear_programming_strong_duality.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.linear_programming.strong_duality",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "complementarity",
+      "title": "complementarity",
+      "href": "keywords/complementarity.html",
+      "count": 1
+    },
+    {
+      "id": "duality",
+      "title": "duality",
+      "href": "keywords/duality.html",
+      "count": 2
+    },
+    {
+      "id": "linear-programming",
+      "title": "linear-programming",
+      "href": "keywords/linear-programming.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

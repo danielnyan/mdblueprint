@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.condorcet_paradox",
+  "title": "Condorcet Paradox",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_condorcet_paradox.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.rules"
+  ],
+  "body_html": "<h1>Condorcet Paradox</h1>\n<p><strong>Theorem.</strong> There exists a preference profile on three voters and three\nalternatives that has <em>no</em> Condorcet winner\n([[social_choice.voting.condorcet_winner]]).</p>\n<p>In Lean: <code>SocialChoice.Voting.condorcet_paradox_possible</code>. The explicit\nwitness is the cyclic <em>Condorcet cycle profile</em> over $\\mathrm{Fin}\\ 3$:</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">voter</th>\n<th style=\"text-align: center;\">first</th>\n<th style=\"text-align: center;\">second</th>\n<th style=\"text-align: center;\">third</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">0</td>\n<td style=\"text-align: center;\">0</td>\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: center;\">2</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: center;\">0</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: center;\">0</td>\n<td style=\"text-align: center;\">1</td>\n</tr>\n</tbody>\n</table>\n<p>Pairwise majority is cyclic ($0 \\succ_{\\text{maj}} 1$,\n$1 \\succ_{\\text{maj}} 2$, $2 \\succ_{\\text{maj}} 0$), so no alternative\nbeats both of the others.</p>\n<p>The Lean proof builds this profile via a small rank function on\n$\\mathrm{Fin}\\ 3$ and case-analyses the three would-be Condorcet winners\n$a \\in \\{0, 1, 2\\}$, using <code>fin_cases</code> and explicit\n$\\mathrm{MajorityPrefers}$ counts.</p>\n<h2>Interpretation</h2>\n<p>Aggregating individual preferences by pairwise majority does not always\nproduce a transitive social ranking. The Condorcet paradox is the canonical\ndemonstration that majority rule alone is not enough to escape Arrow-style\nimpossibilities; it motivates positional rules (Borda\n[[social_choice.voting.borda_score]], plurality\n[[social_choice.voting.plurality_score]]) and tournament solutions\n(Copeland, Slater) that always select <em>some</em> alternative.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Condorcet's voting paradox; see the\n  <code>source</code> block above for the precise locator.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.condorcet_paradox_possible",
+      "display_name": "SocialChoice.Voting.condorcet_paradox_possible",
+      "qualified_name": "SocialChoice.Voting.condorcet_paradox_possible",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "theorem",
+      "signature": "theorem condorcet_paradox_possible :\n    ∃ P : Profile (Fin 3) (Fin 3), ¬ HasCondorcetWinner P",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L340",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "display_name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

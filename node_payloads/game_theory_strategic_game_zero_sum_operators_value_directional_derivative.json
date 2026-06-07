@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.operators.value_directional_derivative",
+  "title": "Directional Derivative Of The Value",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_directional_derivative.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.operators"
+  ],
+  "body_html": "<h1>Directional Derivative Of The Value</h1>\n<p>Let $S$ and $T$ be compact sets and let $f,g:S\\times T\\to\\mathbb R$. Assume that,\nfor every $\\alpha\\ge 0$, the functions $g$ and $f+\\alpha g$ are upper\nsemicontinuous in $s$ and lower semicontinuous in $t$, and that each game\n$(S,T,f+\\alpha g)$ has a value. Then\n$$\n  \\lim_{\\alpha\\to0^+}\n  \\frac{\\operatorname{val}_{S\\times T}(f+\\alpha g)\n        -\\operatorname{val}_{S\\times T}(f)}{\\alpha}\n$$\nexists and equals\n$$\n  \\operatorname{val}_{S(f)\\times T(f)}(g),\n$$\nthe value of the derived game.</p>",
+  "proof_html": "<p>Let $s_\\alpha$ be optimal for player 1 in $f+\\alpha g$ and let $t\\in T(f)$.\nComparing $(f+\\alpha g)(s_\\alpha,t)$ with the two values gives a lower bound on\nthe difference quotient by $\\inf_{T(f)}g(s_\\alpha,t)$. Taking limit points of\n$s_\\alpha$ and using semicontinuity places the limit in $S(f)$, giving the lower\nbound by the value of the derived game. The dual argument with optimal strategies\nfor player 2 gives the reverse inequality.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 3.4.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Directional derivative of the value equals the value of the derived game.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

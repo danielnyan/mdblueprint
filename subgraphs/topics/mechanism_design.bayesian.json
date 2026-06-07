@@ -1,0 +1,167 @@
+{
+  "topic": {
+    "id": "mechanism_design.bayesian",
+    "title": "Mechanism Design.Bayesian",
+    "href": "mechanism_design/bayesian/index.html",
+    "parent": "mechanism_design",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 0,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 7,
+    "visible_nodes_with_selected_proof_plans": 7
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html",
+      "payload": "node_payloads/mechanism_design_bayesian_bayesian_mechanisms.json"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "title": "Ex-Ante Equilibrium Predicates",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html",
+      "payload": "node_payloads/mechanism_design_bayesian_ex_ante_equilibrium_predicates.json"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "title": "Ex-Ante Expected Utility (Bayesian Mechanisms)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_expected_utility.html",
+      "payload": "node_payloads/mechanism_design_bayesian_ex_ante_expected_utility.json"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "title": "Ex-Ante Revelation Principle Interface",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html",
+      "payload": "node_payloads/mechanism_design_bayesian_ex_ante_revelation_principle.json"
+    },
+    {
+      "id": "mechanism_design.bayesian.selling_problem",
+      "title": "Bayesian Selling Problem (IPV)",
+      "kind": "definition",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_bayesian_selling_problem.html",
+      "payload": "node_payloads/mechanism_design_bayesian_selling_problem.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "to": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.bayesian_mechanisms",
+      "to": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "to": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependent",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "mechanism_design.bayesian.bayesian_mechanisms",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "bayesian",
+      "title": "bayesian",
+      "href": "keywords/bayesian.html",
+      "count": 2
+    },
+    {
+      "id": "bayesian-mechanism",
+      "title": "bayesian-mechanism",
+      "href": "keywords/bayesian-mechanism.html",
+      "count": 2
+    },
+    {
+      "id": "bayesian-nash-equilibrium",
+      "title": "bayesian-nash-equilibrium",
+      "href": "keywords/bayesian-nash-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "ex-ante",
+      "title": "ex-ante",
+      "href": "keywords/ex-ante.html",
+      "count": 1
+    },
+    {
+      "id": "expected-utility",
+      "title": "expected-utility",
+      "href": "keywords/expected-utility.html",
+      "count": 1
+    },
+    {
+      "id": "incomplete-information",
+      "title": "incomplete-information",
+      "href": "keywords/incomplete-information.html",
+      "count": 1
+    },
+    {
+      "id": "ipv",
+      "title": "ipv",
+      "href": "keywords/ipv.html",
+      "count": 1
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 5
+    },
+    {
+      "id": "revelation-principle",
+      "title": "revelation-principle",
+      "href": "keywords/revelation-principle.html",
+      "count": 1
+    },
+    {
+      "id": "selling-problem",
+      "title": "selling-problem",
+      "href": "keywords/selling-problem.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

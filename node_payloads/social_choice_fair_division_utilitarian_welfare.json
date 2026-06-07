@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.fair_division.utilitarian_welfare",
+  "title": "Utilitarian Welfare and Utilitarian Optimality",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_utilitarian_welfare.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Utilitarian Welfare and Utilitarian Optimality</h1>\n<p>For a finite population $N$, a utility profile $u : N \\to S \\to \\mathbb{R}$,\nand an allocation $A : N \\to S$ ([[social_choice.fair_division.allocation]]),\nthe <em>utilitarian (social) welfare</em> is the sum of agents' utilities from\ntheir own shares:\n$$\nW_{\\mathrm{util}}(u, A) = \\sum_{i \\in N} u_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.utilitarianWelfare</code> (noncomputable, uses\n<code>∑ i : N</code> on <code>Fintype N</code>).</p>\n<p>An allocation $A$ is <em>utilitarian-optimal</em> w.r.t. a feasibility predicate\n$F$ if no feasible allocation has strictly larger utilitarian welfare:\n$$\n\\forall B,\\ F(B) \\Rightarrow W_{\\mathrm{util}}(u, B) \\le W_{\\mathrm{util}}(u, A).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.IsUtilitarianOptimal</code>.</p>\n<p>The accompanying basic lemmas in <code>Welfare.lean</code> say:</p>\n<ul>\n<li>$W_{\\mathrm{util}}$ is monotone in the per-agent utility:\n  $\\forall i,\\ u_i(A_i) \\le u_i(B_i) \\Rightarrow W_{\\mathrm{util}}(u, A) \\le W_{\\mathrm{util}}(u, B)$.</li>\n<li>For a unique-agent population it collapses to the single agent's\n  utility.</li>\n</ul>\n<p>Utilitarian-optimal allocations are Pareto optimal\n([[social_choice.fair_division.pareto_optimal]]) but the converse fails:\nPO is a much weaker condition.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Utilitarian social welfare.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.utilitarianWelfare",
+      "display_name": "SocialChoice.FairDivision.utilitarianWelfare",
+      "qualified_name": "SocialChoice.FairDivision.utilitarianWelfare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "def",
+      "signature": "noncomputable def utilitarianWelfare [Fintype N]\n    (u : N → S → ℝ) (A : Allocation N S) : ℝ",
+      "docstring": "Utilitarian welfare: the sum of agents' utilities from their own shares.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L24",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.IsUtilitarianOptimal",
+      "display_name": "SocialChoice.FairDivision.IsUtilitarianOptimal",
+      "qualified_name": "SocialChoice.FairDivision.IsUtilitarianOptimal",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "def",
+      "signature": "def IsUtilitarianOptimal [Fintype N]\n    (feasible : Allocation N S → Prop)\n    (u : N → S → ℝ) (A : Allocation N S) : Prop",
+      "docstring": "Utilitarian optimality: no feasible allocation has larger utilitarian welfare.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L34",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

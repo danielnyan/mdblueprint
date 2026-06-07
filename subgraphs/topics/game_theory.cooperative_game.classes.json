@@ -1,0 +1,145 @@
+{
+  "topic": {
+    "id": "game_theory.cooperative_game.classes",
+    "title": "Game Theory.Cooperative Game.Classes",
+    "href": "game_theory/cooperative_game/classes/index.html",
+    "parent": "game_theory.cooperative_game",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 0,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 7,
+    "visible_nodes_with_selected_proof_plans": 7
+  },
+  "nodes": [
+    {
+      "id": "game_theory.cooperative_game.convex_game",
+      "title": "Convex Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_convex_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.convex_game_core_nonempty",
+      "title": "Convex Games Have Nonempty Core",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game_core_nonempty.html",
+      "payload": "node_payloads/game_theory_cooperative_game_convex_game_core_nonempty.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.monotonic_game",
+      "title": "Monotonic Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_monotonic_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_monotonic_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.simple_game",
+      "title": "Simple Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_simple_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_simple_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.superadditive_game",
+      "title": "Superadditive Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_superadditive_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_superadditive_game.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.cooperative_game.superadditive_game",
+      "to": "game_theory.cooperative_game.convex_game",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.cooperative_game",
+      "title": "Game Theory.Cooperative Game",
+      "href": "game_theory/cooperative_game/index.html",
+      "role": "dependency",
+      "node_count": 19
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.cooperative_game",
+      "to": "game_theory.cooperative_game.convex_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.cooperative_game",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "coalitional-game",
+      "title": "coalitional-game",
+      "href": "keywords/coalitional-game.html",
+      "count": 5
+    },
+    {
+      "id": "convex-game",
+      "title": "convex-game",
+      "href": "keywords/convex-game.html",
+      "count": 2
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 1
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 1
+    },
+    {
+      "id": "simple-game",
+      "title": "simple-game",
+      "href": "keywords/simple-game.html",
+      "count": 1
+    },
+    {
+      "id": "superadditivity",
+      "title": "superadditivity",
+      "href": "keywords/superadditivity.html",
+      "count": 1
+    },
+    {
+      "id": "supermodularity",
+      "title": "supermodularity",
+      "href": "keywords/supermodularity.html",
+      "count": 1
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

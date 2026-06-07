@@ -1,0 +1,47 @@
+{
+  "id": "social_choice.preference_profile",
+  "title": "Preference Profile",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_preference_profile.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice"
+  ],
+  "body_html": "<h1>Preference Profile</h1>\n<p>Given a (finite or arbitrary) population $N$ of agents and an alternative\nset $A$, a <em>preference profile</em> assigns each agent $i \\in N$ a weak\npreference $P_i$ on $A$:</p>\n<p>$$\nP : N \\to \\mathrm{Pref}(A), \\qquad i \\mapsto P_i.\n$$</p>\n<p>In Lean: <code>PrefProfile N A := N → Pref A</code>. Each entry <code>P i</code> is a bundled\npreference ([[social_choice.preference]]), so unanimity, dictatorship, and IIA can all be stated\nuniformly in terms of how the entries <code>P i</code> rank pairs of alternatives.</p>\n<p>This is the generic weak-preference profile shape. The voting layer uses a\nstrict finite specialization whose ballots are <code>LinearOrder A</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Preference profiles as inputs to social choice rules.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "PrefProfile",
+      "display_name": "PrefProfile",
+      "qualified_name": "PrefProfile",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def PrefProfile (N A : Type*)",
+      "docstring": "A preference profile assigns each agent a bundled preference.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L180",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

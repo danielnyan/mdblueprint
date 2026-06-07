@@ -1,0 +1,83 @@
+{
+  "id": "social_choice.solution_concept",
+  "title": "Solution Concept, Rule, and Correspondence",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_solution_concept.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice"
+  ],
+  "body_html": "<h1>Solution Concept, Rule, and Correspondence</h1>\n<p>For a fixed population $N$ and alternative space $A$, three closely related\nshapes describe ways of selecting alternatives from a social choice\ninstance $I = (F, P)$ ([[social_choice.instance]]).</p>\n<ul>\n<li>\n<p>A <em>solution concept</em> is a predicate\n  $\\sigma : \\mathrm{Instance}\\, N\\, A \\to A \\to \\mathrm{Prop}$\n  marking the alternatives that the concept deems acceptable in $I$.\n  In Lean: <code>SolutionConcept N A := Instance N A → A → Prop</code>.</p>\n</li>\n<li>\n<p>A <em>rule</em> is a deterministic single-valued choice that, for each instance,\n  returns a <em>feasible</em> alternative:\n  $\\rho(I) \\in \\{a \\in A \\mid I.\\mathrm{feasible}\\,a\\}.$\n  In Lean: <code>Rule N A := (I : Instance N A) → {a : A // I.feasible a}</code> —\n  the subtype carries the feasibility witness.</p>\n</li>\n<li>\n<p>A <em>correspondence</em> is a set-valued choice:\n  $\\Phi : \\mathrm{Instance}\\, N\\, A \\to \\mathcal{P}(A).$\n  In Lean: <code>Correspondence N A := Instance N A → Set A</code>.</p>\n</li>\n</ul>\n<p>These three shapes cover the standard styles of social choice output: a\n<em>predicate</em> (e.g. \"is a stable outcome\"), a <em>function</em> (a deterministic\nrule with a feasibility guarantee), and a <em>set-valued map</em> (a Pareto\ncorrespondence, a choice correspondence, and so on).</p>\n<p>Specializations appear at later layers: the voting layer instantiates\nsolution concepts and rules into social welfare functions and social\nchoice functions ([[social_choice.voting.swf]],\n[[social_choice.voting.scf]]); fair division supplies rules returning a\nfeasible allocation.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Choice rules and correspondences.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.SolutionConcept",
+      "display_name": "SocialChoice.SolutionConcept",
+      "qualified_name": "SocialChoice.SolutionConcept",
+      "module": "EconCSLib.SocialChoice.Basic",
+      "kind": "def",
+      "signature": "def SolutionConcept (N A : Type*)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Rule",
+      "display_name": "SocialChoice.Rule",
+      "qualified_name": "SocialChoice.Rule",
+      "module": "EconCSLib.SocialChoice.Basic",
+      "kind": "def",
+      "signature": "def Rule (N A : Type*)",
+      "docstring": "A rule returns a feasible alternative for every instance.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L50",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Correspondence",
+      "display_name": "SocialChoice.Correspondence",
+      "qualified_name": "SocialChoice.Correspondence",
+      "module": "EconCSLib.SocialChoice.Basic",
+      "kind": "def",
+      "signature": "def Correspondence (N A : Type*)",
+      "docstring": "A correspondence is a set-valued choice rule on instances.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L54",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Basic",
+      "display_name": "EconCSLib.SocialChoice.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

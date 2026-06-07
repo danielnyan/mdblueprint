@@ -1,0 +1,495 @@
+{
+  "topic": {
+    "id": "social_choice",
+    "title": "Social Choice",
+    "href": "social_choice/index.html",
+    "parent": null,
+    "node_count": 125,
+    "descendant_node_count": 125
+  },
+  "counts": {
+    "internal_nodes": 125,
+    "inlined_nodes": 26,
+    "descendant_nodes": 125,
+    "child_topics": 1,
+    "inlined_child_topics": 1,
+    "non_proof_plan_nodes": 31,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 33,
+    "visible_nodes_with_selected_proof_plans": 33
+  },
+  "nodes": [
+    {
+      "id": "social_choice.instance",
+      "title": "Social Choice Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_instance.html",
+      "payload": "node_payloads/social_choice_instance.json"
+    },
+    {
+      "id": "social_choice.preference",
+      "title": "Preference Relation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_preference.html",
+      "payload": "node_payloads/social_choice_preference.json"
+    },
+    {
+      "id": "social_choice.preference_profile",
+      "title": "Preference Profile",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_preference_profile.html",
+      "payload": "node_payloads/social_choice_preference_profile.json"
+    },
+    {
+      "id": "social_choice.solution_concept",
+      "title": "Solution Concept, Rule, and Correspondence",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_solution_concept.html",
+      "payload": "node_payloads/social_choice_solution_concept.json"
+    },
+    {
+      "id": "social_choice.strict_preference",
+      "title": "Strict Preference",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_strict_preference.html",
+      "payload": "node_payloads/social_choice_strict_preference.json"
+    },
+    {
+      "id": "social_choice.voting.arrow_impossibility",
+      "title": "Arrow's Impossibility Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_arrow_impossibility.html",
+      "payload": "node_payloads/social_choice_voting_arrow_impossibility.json"
+    },
+    {
+      "id": "social_choice.voting.arrow_of_unanimity_iia",
+      "title": "Arrow's Theorem via Decisive Coalitions",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_arrow_of_unanimity_iia.html",
+      "payload": "node_payloads/social_choice_voting_arrow_of_unanimity_iia.json"
+    },
+    {
+      "id": "social_choice.voting.borda_score",
+      "title": "Borda Score and Borda Rule",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_borda_score.html",
+      "payload": "node_payloads/social_choice_voting_borda_score.json"
+    },
+    {
+      "id": "social_choice.voting.condorcet_paradox",
+      "title": "Condorcet Paradox",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_condorcet_paradox.html",
+      "payload": "node_payloads/social_choice_voting_condorcet_paradox.json"
+    },
+    {
+      "id": "social_choice.voting.condorcet_winner",
+      "title": "Condorcet Winner",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_condorcet_winner.html",
+      "payload": "node_payloads/social_choice_voting_condorcet_winner.json"
+    },
+    {
+      "id": "social_choice.voting.decisive_contraction",
+      "title": "Coalition Contraction — Splitting a Decisive Coalition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_decisive_contraction.html",
+      "payload": "node_payloads/social_choice_voting_decisive_contraction.json"
+    },
+    {
+      "id": "social_choice.voting.decisive_spread",
+      "title": "Field Expansion — Decisive on One Pair Implies Decisive Everywhere",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_decisive_spread.html",
+      "payload": "node_payloads/social_choice_voting_decisive_spread.json"
+    },
+    {
+      "id": "social_choice.voting.dictatorial_scf",
+      "title": "Dictatorial Social Choice Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_dictatorial_scf.html",
+      "payload": "node_payloads/social_choice_voting_dictatorial_scf.json"
+    },
+    {
+      "id": "social_choice.voting.dictatorial_swf",
+      "title": "Dictatorial Social Welfare Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_dictatorial_swf.html",
+      "payload": "node_payloads/social_choice_voting_dictatorial_swf.json"
+    },
+    {
+      "id": "social_choice.voting.gibbard_satterthwaite",
+      "title": "Gibbard–Satterthwaite Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_gibbard_satterthwaite.html",
+      "payload": "node_payloads/social_choice_voting_gibbard_satterthwaite.json"
+    },
+    {
+      "id": "social_choice.voting.iia",
+      "title": "Independence of Irrelevant Alternatives",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_iia.html",
+      "payload": "node_payloads/social_choice_voting_iia.json"
+    },
+    {
+      "id": "social_choice.voting.iia_strict",
+      "title": "IIA on Strict Preference",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_iia_strict.html",
+      "payload": "node_payloads/social_choice_voting_iia_strict.json"
+    },
+    {
+      "id": "social_choice.voting.is_decisive",
+      "title": "Decisive Coalition and Dictator",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_decisive.html",
+      "payload": "node_payloads/social_choice_voting_is_decisive.json"
+    },
+    {
+      "id": "social_choice.voting.is_decisive_for",
+      "title": "Decisive Coalition for an Ordered Pair",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_decisive_for.html",
+      "payload": "node_payloads/social_choice_voting_is_decisive_for.json"
+    },
+    {
+      "id": "social_choice.voting.is_weakly_decisive_for",
+      "title": "Weakly Decisive Coalition",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_weakly_decisive_for.html",
+      "payload": "node_payloads/social_choice_voting_is_weakly_decisive_for.json"
+    },
+    {
+      "id": "social_choice.voting.majority_prefers",
+      "title": "Pairwise Majority Comparison",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_majority_prefers.html",
+      "payload": "node_payloads/social_choice_voting_majority_prefers.json"
+    },
+    {
+      "id": "social_choice.voting.minimal_decisive_card_one",
+      "title": "Minimal Decisive Coalition Has Size One",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_minimal_decisive_card_one.html",
+      "payload": "node_payloads/social_choice_voting_minimal_decisive_card_one.json"
+    },
+    {
+      "id": "social_choice.voting.monotonic_scf",
+      "title": "Monotonic Social Choice Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_monotonic_scf.html",
+      "payload": "node_payloads/social_choice_voting_monotonic_scf.json"
+    },
+    {
+      "id": "social_choice.voting.muller_satterthwaite",
+      "title": "Muller–Satterthwaite Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_muller_satterthwaite.html",
+      "payload": "node_payloads/social_choice_voting_muller_satterthwaite.json"
+    },
+    {
+      "id": "social_choice.voting.plurality_score",
+      "title": "Plurality Score and Plurality Rule",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_plurality_score.html",
+      "payload": "node_payloads/social_choice_voting_plurality_score.json"
+    },
+    {
+      "id": "social_choice.voting.scf",
+      "title": "Social Choice Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_scf.html",
+      "payload": "node_payloads/social_choice_voting_scf.json"
+    },
+    {
+      "id": "social_choice.voting.strategyproof",
+      "title": "Strategy-Proof Social Choice Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_strategyproof.html",
+      "payload": "node_payloads/social_choice_voting_strategyproof.json"
+    },
+    {
+      "id": "social_choice.voting.strategyproof_implies_monotonic",
+      "title": "Strategy-Proof ⇒ Monotonic",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_strategyproof_implies_monotonic.html",
+      "payload": "node_payloads/social_choice_voting_strategyproof_implies_monotonic.json"
+    },
+    {
+      "id": "social_choice.voting.swf",
+      "title": "Social Welfare Function",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_swf.html",
+      "payload": "node_payloads/social_choice_voting_swf.json"
+    },
+    {
+      "id": "social_choice.voting.unanimity",
+      "title": "Unanimity (Pareto Axiom)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_unanimity.html",
+      "payload": "node_payloads/social_choice_voting_unanimity.json"
+    },
+    {
+      "id": "social_choice.voting.unanimity_univ_decisive",
+      "title": "Grand Coalition Is Decisive under Unanimity",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_unanimity_univ_decisive.html",
+      "payload": "node_payloads/social_choice_voting_unanimity_univ_decisive.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "topic:social_choice.fair_division",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    }
+  ],
+  "keywords": [
+    {
+      "id": "aggregation",
+      "title": "aggregation",
+      "href": "keywords/aggregation.html",
+      "count": 2
+    },
+    {
+      "id": "arrow",
+      "title": "arrow",
+      "href": "keywords/arrow.html",
+      "count": 10
+    },
+    {
+      "id": "axiom",
+      "title": "axiom",
+      "href": "keywords/axiom.html",
+      "count": 4
+    },
+    {
+      "id": "borda",
+      "title": "borda",
+      "href": "keywords/borda.html",
+      "count": 1
+    },
+    {
+      "id": "condorcet",
+      "title": "condorcet",
+      "href": "keywords/condorcet.html",
+      "count": 2
+    },
+    {
+      "id": "contraction",
+      "title": "contraction",
+      "href": "keywords/contraction.html",
+      "count": 1
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 1
+    },
+    {
+      "id": "decisive-coalition",
+      "title": "decisive-coalition",
+      "href": "keywords/decisive-coalition.html",
+      "count": 8
+    },
+    {
+      "id": "dictator",
+      "title": "dictator",
+      "href": "keywords/dictator.html",
+      "count": 3
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "field-expansion",
+      "title": "field-expansion",
+      "href": "keywords/field-expansion.html",
+      "count": 1
+    },
+    {
+      "id": "gibbard-satterthwaite",
+      "title": "gibbard-satterthwaite",
+      "href": "keywords/gibbard-satterthwaite.html",
+      "count": 3
+    },
+    {
+      "id": "iia",
+      "title": "iia",
+      "href": "keywords/iia.html",
+      "count": 2
+    },
+    {
+      "id": "impossibility",
+      "title": "impossibility",
+      "href": "keywords/impossibility.html",
+      "count": 2
+    },
+    {
+      "id": "instance",
+      "title": "instance",
+      "href": "keywords/instance.html",
+      "count": 1
+    },
+    {
+      "id": "majority",
+      "title": "majority",
+      "href": "keywords/majority.html",
+      "count": 1
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 1
+    },
+    {
+      "id": "monotonic",
+      "title": "monotonic",
+      "href": "keywords/monotonic.html",
+      "count": 2
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 1
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller-satterthwaite",
+      "href": "keywords/muller-satterthwaite.html",
+      "count": 1
+    },
+    {
+      "id": "pareto",
+      "title": "pareto",
+      "href": "keywords/pareto.html",
+      "count": 1
+    },
+    {
+      "id": "plurality",
+      "title": "plurality",
+      "href": "keywords/plurality.html",
+      "count": 1
+    },
+    {
+      "id": "preference",
+      "title": "preference",
+      "href": "keywords/preference.html",
+      "count": 3
+    },
+    {
+      "id": "profile",
+      "title": "profile",
+      "href": "keywords/profile.html",
+      "count": 1
+    },
+    {
+      "id": "social-choice",
+      "title": "social-choice",
+      "href": "keywords/social-choice.html",
+      "count": 31
+    },
+    {
+      "id": "solution-concept",
+      "title": "solution-concept",
+      "href": "keywords/solution-concept.html",
+      "count": 1
+    },
+    {
+      "id": "strategyproof",
+      "title": "strategyproof",
+      "href": "keywords/strategyproof.html",
+      "count": 3
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 26
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [
+    "social_choice.fair_division"
+  ],
+  "child_topic_nodes": [
+    {
+      "id": "social_choice.fair_division",
+      "title": "Social Choice.Fair Division",
+      "depth": 2,
+      "parent": "social_choice",
+      "node_count": 94,
+      "direct_node_count": 94,
+      "kind_counts": {
+        "definition": 51,
+        "lemma": 11,
+        "theorem": 32
+      },
+      "status_counts": {
+        "formalized": 50,
+        "staged": 44
+      },
+      "href": "social_choice/fair_division/index.html",
+      "children": [
+        "social_choice.fair_division.core",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.indivisible"
+      ]
+    }
+  ],
+  "inlined_child_topics": [
+    "social_choice.voting"
+  ]
+}

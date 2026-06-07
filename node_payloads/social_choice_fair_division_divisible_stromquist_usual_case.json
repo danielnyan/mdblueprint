@@ -1,0 +1,66 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+  "title": "Stromquist — Usual Case (U Covers the Simplex)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Stromquist — Usual Case (U Covers the Simplex)</h1>\n<p><strong>Theorem (usual case).</strong> If the agent-preference unions\n$\\{U(i) : i \\in \\mathrm{Fin}\\ n\\}$\n([[social_choice.fair_division.divisible.stromquist_U]]) cover the\ndivision simplex $S$, then there exists a complete measurable\nenvy-free allocation\n([[social_choice.fair_division.divisible.envy_free]]).</p>",
+  "proof_html": "<ol>\n<li>\n<p><strong>KKM input.</strong> Each $U(i)$ is open, and $U(i)$ does not meet the face\n   opposite vertex $i$. With the assumption that $\\{U(i)\\}_i$ covers $S$,\n   the <em>KKM lemma in open form</em> (<code>EconCSLib.Topology.KKM.kkm_open_cover</code>)\n   applies and yields a point $x^* \\in \\bigcap_i U(i)$.</p>\n</li>\n<li>\n<p><strong>Assignment.</strong> Apply the fair-assignment lemma\n   ([[social_choice.fair_division.divisible.stromquist_assignment]]) at\n   $x^*$ to produce an envy-free allocation\n   $A : \\mathrm{Fin}\\ n \\to \\mathrm{Set}\\ \\mathbb{R}$.</p>\n</li>\n</ol>\n<p>The construction goes through <em>contiguous</em> pieces (intervals), so the\nresulting EF allocation also satisfies the contiguous-allocation\npredicate. This is sharper than what the general EF existence theorem\nrequires.</p>\n<h2>Role in the overall proof</h2>\n<p>This is one of two cases in Stromquist's proof. The \"unusual case\"\narises when $\\{U(i)\\}_i$ does <em>not</em> cover $S$ — there exist divisions\n$x$ where some agent is indifferent between two or more pieces. The\nshifted-cell refinement\n([[social_choice.fair_division.divisible.stromquist_shifted_cells]],\n[[social_choice.fair_division.divisible.stromquist_unusual_case]])\nhandles that case by approximation and limit-passing.</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n<li>Su, F. E. (1999). \"Rental Harmony: Sperner's Lemma in Fair Division\". <em>Amer. Math. Monthly</em> 106.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "math.fixed_point.brouwer_simplex",
+      "title": "Brouwer Fixed Point Theorem For A Simplex",
+      "href": "math/math_fixed_point_brouwer_simplex.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_usual_case",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_usual_case",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_usual_case",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "private lemma strom_usual_case\n    (hn : 0 < n)\n    (hcover : stdSimplex ℝ (Fin n) ⊆ ⋃ i, strom_U n μ i)\n    (hpos : ∀ j : Fin n, 0 < μ j (Set.Ico 0 1))\n    (hsupp : ∀ j : Fin n, μ j = (μ j).restrict (Set.Ico 0 1)) :\n    ∃ A : Allocation (Fin n) ℝ,\n      IsAllocation A ∧ IsEnvyFree (MeasureValuation μ) A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L588",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

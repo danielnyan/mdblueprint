@@ -1,0 +1,66 @@
+{
+  "id": "social_choice.voting.dictatorial_swf",
+  "title": "Dictatorial Social Welfare Function",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_dictatorial_swf.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting"
+  ],
+  "body_html": "<h1>Dictatorial Social Welfare Function</h1>\n<p>A social welfare function $F$ is <em>dictatorial</em> if there exists a voter\n$i \\in N$ whose strict preference always determines society's strict\npreference:\n$$\n\\exists i \\in N,\\ \\forall P,\\ \\forall a, b,\\\na \\succ_{P_i} b \\Rightarrow a \\succ_{F(P)} b.\n$$</p>\n<p>A SWF is <em>non-dictatorial</em> iff no such voter exists. In Lean these are\n<code>SocialChoice.Voting.SWF.Dictatorial</code> and\n<code>SocialChoice.Voting.SWF.NonDictatorial</code>, the latter being the literal\nnegation of the former.</p>\n<p>The dictator only needs to fix the <em>strict</em> ranking; under reasonable\nauxiliary conditions (e.g. totality of the social order) this forces\nagreement on the weak ranking as well.</p>\n<p>Arrow's impossibility theorem ([[social_choice.voting.arrow_impossibility]])\nstates that, with at least three alternatives, the conjunction of unanimity\n([[social_choice.voting.unanimity]]) and IIA ([[social_choice.voting.iia]])\nforces $F$ to be dictatorial in this sense.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.7, 21.11] Maschler, Solan, and Zamir, <em>Game Theory</em>. Dictatorial SWF and non-dictatorship.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.SWF.Dictatorial",
+      "display_name": "SocialChoice.Voting.SWF.Dictatorial",
+      "qualified_name": "SocialChoice.Voting.SWF.Dictatorial",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "def",
+      "signature": "def Dictatorial (F : SWF N A) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L241",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.SWF.NonDictatorial",
+      "display_name": "SocialChoice.Voting.SWF.NonDictatorial",
+      "qualified_name": "SocialChoice.Voting.SWF.NonDictatorial",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "def",
+      "signature": "def NonDictatorial (F : SWF N A) : Prop",
+      "docstring": "A SWF is non-dictatorial.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L246",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Basic",
+      "display_name": "EconCSLib.SocialChoice.Voting.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

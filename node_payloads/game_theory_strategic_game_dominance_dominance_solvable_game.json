@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.strategic_game.dominance.dominance_solvable_game",
+  "title": "Solvable Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominance_solvable_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Solvable Game</h1>\n<p>A game is solvable if the set $S^\\infty$ of rationalizable outcomes is reduced to\na singleton:\n$$\n  S^\\infty=\\{s^*\\}.\n$$\nThis captures games whose common-rationality elimination process predicts a\nunique profile.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 4.4.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A game is solvable if the rationalizable outcome set is a singleton.</li>\n<li>[MFoGT, Section 1.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Earlier use of solvability for iterated elimination.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsDominanceSolvable",
+      "display_name": "StrategicGame.IsDominanceSolvable",
+      "qualified_name": "StrategicGame.IsDominanceSolvable",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "def",
+      "signature": "def IsDominanceSolvable (G : StrategicGame N U) : Prop",
+      "docstring": "A game is dominance-solvable if IESDS yields a unique surviving profile.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L88",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

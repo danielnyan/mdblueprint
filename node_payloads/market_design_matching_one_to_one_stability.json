@@ -1,0 +1,94 @@
+{
+  "id": "market_design.matching.one_to_one.stability",
+  "title": "Stability (Individual Rationality + No Blocking Pair)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "market_design/market_design_matching_one_to_one_stability.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Stability of a Matching</h1>\n<p>Let $\\mu$ be a matching in a one-to-one matching market $(M, W, \\succ)$.</p>\n<h2>Individual Rationality</h2>\n<p>$\\mu$ is <strong>individually rational</strong> if no participant is matched to an\nunacceptable partner:</p>\n<ul>\n<li>For every $i \\in M$: $\\mu(i) = \\bot$ or $\\mu(i) \\succ_i \\bot_i$.</li>\n<li>For every $j \\in W$: $\\mu^{-1}(j) = \\bot$ or $\\mu^{-1}(j) \\succ_j \\bot_j$.</li>\n</ul>\n<h2>Blocking Pair</h2>\n<p>A pair $(i, j) \\in M \\times W$ <strong>blocks</strong> $\\mu$ if both members strictly\nprefer each other to their current $\\mu$-partner (treating $\\bot$ as the\nlowest-ranked alternative):</p>\n<ul>\n<li>$j \\succ_i \\mu(i)$ (man $i$ prefers $j$ to his current match), AND</li>\n<li>$i \\succ_j \\mu^{-1}(j)$ (woman $j$ prefers $i$ to her current match).</li>\n</ul>\n<h2>Stability</h2>\n<p>$\\mu$ is <strong>stable</strong> if it is individually rational and admits no blocking pair.</p>\n<p>Equivalently, $\\mu$ is stable iff no pair $(i, j)$ would defect by mutually\nbreaking their current commitments and matching with each other.</p>\n<p>In Lean, the three predicates live in <code>EconCSLib.MarketDesign.Matching.Basic</code>\nas <code>Matching.IsIndividuallyRational</code>, <code>Matching.IsBlocking</code>, and\n<code>Matching.IsStable</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Defs 22.3–22.5] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.market",
+      "title": "Matching Market (One-to-One)",
+      "href": "market_design/market_design_matching_one_to_one_market.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.matching",
+      "title": "Matching (Partial Bijection)",
+      "href": "market_design/market_design_matching_one_to_one_matching.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_stable",
+      "title": "Gale-Shapley Theorem (Existence of Stable Matching)",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_stable.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.proposing_optimal",
+      "title": "Proposing-Side Optimal Stable Matching",
+      "href": "market_design/market_design_matching_one_to_one_proposing_optimal.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.rural_hospitals",
+      "title": "Rural Hospitals Theorem",
+      "href": "market_design/market_design_matching_one_to_one_rural_hospitals.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Matching.IsBlocking",
+      "display_name": "Matching.IsBlocking",
+      "qualified_name": "Matching.IsBlocking",
+      "module": "EconCSLib.MarketDesign.Matching.Basic",
+      "kind": "def",
+      "signature": "def IsBlocking (market : MatchingMarket M W) (μ : Matching M W)\n    (m : M) (w : W) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L73",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Matching.IsStable",
+      "display_name": "Matching.IsStable",
+      "qualified_name": "Matching.IsStable",
+      "module": "EconCSLib.MarketDesign.Matching.Basic",
+      "kind": "def",
+      "signature": "def IsStable (market : MatchingMarket M W) (μ : Matching M W) : Prop",
+      "docstring": "A matching is stable if it has no blocking pair. [MSZ 22.5]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L79",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.Basic",
+      "display_name": "EconCSLib.MarketDesign.Matching.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_U",
+  "title": "Stromquist Agent-Preference Union U(i)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_U.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Stromquist Agent-Preference Union U(i)</h1>\n<p>For each piece index $i$, the <em>agent-preference union</em> aggregates the\ndivisions where <em>some</em> agent uniquely prefers piece $i$:\n$$\nU(i) \\;=\\; \\bigcup_{j \\in \\mathrm{Fin}\\ n} B(i, j),\n$$\nwith $B(i, j)$ as in\n[[social_choice.fair_division.divisible.stromquist_unique_preference_sets]].</p>\n<p>In Lean: <code>strom_U i</code>.</p>\n<h2>Properties</h2>\n<ul>\n<li><strong>Openness.</strong> $U(i)$ is open as a finite union of open sets.</li>\n<li><strong>Avoids the empty-piece face.</strong> $U(i) \\cap \\mathrm{simplexFaceOpp}(i) = \\emptyset$:\n  on the face $\\{x \\in S \\mid x_i = 0\\}$ the piece $i$ is empty\n  ([[social_choice.fair_division.divisible.stromquist_pieces]]), so no\n  agent values it strictly above the others; in particular nobody\n  uniquely prefers it, so $U(i)$ does not meet the face.</li>\n</ul>\n<p>The combination (openness + avoids face $i$) is the KKM input for the\n\"usual case\" of Stromquist's proof\n([[social_choice.fair_division.divisible.stromquist_usual_case]]): the\nKKM lemma applied to the family $\\{U(i) : i \\in \\mathrm{Fin}\\ n\\}$\nproduces a common point in $\\bigcap_i U(i)$, at which every piece has a\nunique claimant.</p>\n<p>The \"unusual case\" arises precisely when $\\{U(i)\\}_i$ does <em>not</em> cover\nthe simplex\n([[social_choice.fair_division.divisible.stromquist_unusual_case]]). The\nshifted-cell refinement handles this case.</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n<li>Su, F. E. (1999). \"Rental Harmony: Sperner's Lemma in Fair Division\". <em>Amer. Math. Monthly</em> 106.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "title": "Stromquist Unique-Preference Sets B(i, j)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unique_preference_sets.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_U",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_U",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_U",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "def",
+      "signature": "private def strom_U (i : Fin n) : Set (Fin n → ℝ)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L518",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

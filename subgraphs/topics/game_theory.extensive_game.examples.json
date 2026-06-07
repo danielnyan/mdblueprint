@@ -1,0 +1,149 @@
+{
+  "topic": {
+    "id": "game_theory.extensive_game.examples",
+    "title": "Game Theory.Extensive Game.Examples",
+    "href": "game_theory/extensive_game/examples/index.html",
+    "parent": "game_theory.extensive_game",
+    "node_count": 6,
+    "descendant_node_count": 6
+  },
+  "counts": {
+    "internal_nodes": 6,
+    "inlined_nodes": 0,
+    "descendant_nodes": 6,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 6,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 7,
+    "visible_nodes_with_selected_proof_plans": 7
+  },
+  "nodes": [
+    {
+      "id": "game_theory.extensive_game.examples.backward_forward_induction_incompatibility",
+      "title": "Backward And Forward Induction Can Conflict",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_backward_forward_induction_incompatibility.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_backward_forward_induction_incompatibility.json"
+    },
+    {
+      "id": "game_theory.extensive_game.examples.chomp_strategy_stealing",
+      "title": "Chomp Strategy Stealing",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_chomp_strategy_stealing.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_chomp_strategy_stealing.json"
+    },
+    {
+      "id": "game_theory.extensive_game.examples.entrant_incomplete_information_value_example",
+      "title": "Entrant Incomplete Information Value Example",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_entrant_incomplete_information_value_example.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_entrant_incomplete_information_value_example.json"
+    },
+    {
+      "id": "game_theory.extensive_game.examples.normal_vs_extensive_perfection_difference",
+      "title": "Normal And Extensive Perfection Can Differ",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_normal_vs_extensive_perfection_difference.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_normal_vs_extensive_perfection_difference.json"
+    },
+    {
+      "id": "game_theory.extensive_game.examples.poker_game_value_example",
+      "title": "Poker Game Value Example",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_poker_game_value_example.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_poker_game_value_example.json"
+    },
+    {
+      "id": "game_theory.extensive_game.examples.rubinstein_bargaining_spe",
+      "title": "Rubinstein Bargaining Subgame Perfect Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_examples_rubinstein_bargaining_spe.html",
+      "payload": "node_payloads/game_theory_extensive_game_examples_rubinstein_bargaining_spe.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "bargaining",
+      "title": "bargaining",
+      "href": "keywords/bargaining.html",
+      "count": 1
+    },
+    {
+      "id": "equilibrium-refinement",
+      "title": "equilibrium-refinement",
+      "href": "keywords/equilibrium-refinement.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 2
+    },
+    {
+      "id": "exercise",
+      "title": "exercise",
+      "href": "keywords/exercise.html",
+      "count": 4
+    },
+    {
+      "id": "extensive-game",
+      "title": "extensive-game",
+      "href": "keywords/extensive-game.html",
+      "count": 6
+    },
+    {
+      "id": "forward-induction",
+      "title": "forward-induction",
+      "href": "keywords/forward-induction.html",
+      "count": 1
+    },
+    {
+      "id": "imperfect-information",
+      "title": "imperfect-information",
+      "href": "keywords/imperfect-information.html",
+      "count": 2
+    },
+    {
+      "id": "perfect-information",
+      "title": "perfect-information",
+      "href": "keywords/perfect-information.html",
+      "count": 1
+    },
+    {
+      "id": "subgame-perfect-equilibrium",
+      "title": "subgame-perfect-equilibrium",
+      "href": "keywords/subgame-perfect-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+  "title": "EFX from a Singleton-Bundle Sufficient Condition",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EFX from a Singleton-Bundle Sufficient Condition</h1>\n<p><strong>Lemma.</strong> In a 2-agent ($\\mathrm{Fin}\\ 2$) allocation where agent $i$'s\nbundle is <em>exactly</em> a singleton $\\{g\\}$, the EFX-style \"remove any item\"\ninequality for agent $j$ against $A(i)$ reduces to the empty-bundle\ncomparison: assuming $v_j(\\emptyset) \\le v_j(A(j))$,\n$$\n\\forall h \\in A(i),\\ v_j(A(i) \\setminus \\{h\\}) \\le v_j(A(j)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.isEFX_of_singleton_bundle</code>.\nThe signature is pair-specific:\n$\\mathrm{Fin}\\ 2$, fixed agents $i, j$, and the hypothesis $A(i) = \\{g\\}$\nas data.</p>",
+  "proof_html": "<p>The only element of $A(i)$ is $g$, so the universal becomes\n\"$v_j(A(i) \\setminus \\{g\\}) \\le v_j(A(j))$\", which simplifies to\n$v_j(\\emptyset) \\le v_j(A(j))$ — exactly the supplied hypothesis. The\nlemma takes the relevant nonnegativity hypothesis as a parameter rather\nthan baking it into a typeclass.</p>\n<h2>Significance</h2>\n<p>This is a small <em>pair-helper</em> used inside the 2-agent EFX existence\nconstruction\n([[social_choice.fair_division.indivisible.efx_exists_two_agents]]) to\ndischarge one side of the EFX inequality when one agent's bundle has\ncollapsed to a singleton. It is <strong>not</strong> a stand-alone \"singleton\nbundles automatically give EFX\" theorem.</p>\n<p>A generic \"every bundle has cardinality $\\le 1 \\Rightarrow$ EFX\"\nstatement is not formalised in the library; if needed, it would be a\nshort corollary using one application of this lemma per envy direction.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EFX special cases.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+      "title": "EFX Existence — 2 Agents, 2 Goods",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_two_agents_two_goods.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isEFX_of_singleton_bundle",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isEFX_of_singleton_bundle",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isEFX_of_singleton_bundle",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "kind": "lemma",
+      "signature": "lemma isEFX_of_singleton_bundle [DecidableEq G]\n    (v : Valuation (Fin 2) G) (A : Allocation (Fin 2) G)\n    (i j : Fin 2) {g : G}\n    (hAi : A i = {g})\n    (h_empty_le : v.val j ∅ ≤ v.val j (A j)) :\n    ∀ h ∈ A i, v.val j (A i \\ {h}) ≤ v.val j (A j)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L90",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

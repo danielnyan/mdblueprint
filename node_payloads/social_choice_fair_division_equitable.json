@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.equitable",
+  "title": "Equitable Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_equitable.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Equitable Allocation</h1>\n<p>An allocation $A : N \\to S$ ([[social_choice.fair_division.allocation]])\nis <em>equitable</em> (EQ) under a utility profile $u$ if every agent assigns the\nsame numeric value to their own share:\n$$\n\\forall i, j \\in N,\\ u_i(A(i)) = u_j(A(j)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.IsEquitable</code>.</p>\n<p>Equitability is meaningful only when utilities are interpersonally\ncomparable — typically when each agent's $u_i$ is <em>normalized</em> so the\nwhole resource is valued at the same total (often $1$). Without\nnormalization, equating \"$u_i(A_i) = u_j(A_j)$\" mixes apples and oranges.</p>\n<p>EQ is incomparable with EF ([[social_choice.fair_division.envy_free]]):</p>\n<ul>\n<li><em>EF does not imply EQ.</em> Two agents with disjoint goods can both be\n  envy-free yet derive very different self-utilities.</li>\n<li><em>EQ does not imply EF.</em> Two agents may both value their own share at\n  the same number while one of them strictly prefers the other's share\n  by their own measure.</li>\n</ul>\n<p>For divisible goods with normalized valuations, equitable + EF allocations\nalways exist (Alon 1987, $n^2 - n$ cuts suffice). For indivisible goods,\nequitable allocations may fail to exist outright.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapters 11, 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Equitability.</li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.IsEquitable",
+      "display_name": "SocialChoice.FairDivision.IsEquitable",
+      "qualified_name": "SocialChoice.FairDivision.IsEquitable",
+      "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "kind": "def",
+      "signature": "def IsEquitable (u : N → S → ℝ) (A : Allocation N S) : Prop",
+      "docstring": "Equitable: all agents obtain the same utility from their own shares.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L37",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

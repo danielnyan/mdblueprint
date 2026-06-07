@@ -1,0 +1,179 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+  "title": "Maximin and Minimax Values",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.minimax"
+  ],
+  "body_html": "<h1>Maximin and Minimax Values</h1>\n<p>For a mixed row strategy $x$, player I's guarantee is the worst expected payoff\nagainst a pure column:</p>\n<p>$$\\gamma_I(x) = \\min_{j \\in J} E_A(x,j).$$</p>\n<p>For a mixed column strategy $y$, player II's guarantee against player I is the\nlargest payoff player I can obtain from a pure row:</p>\n<p>$$\\gamma_{II}(y) = \\max_{i \\in I} E_A(i,y).$$</p>\n<p>The maximin value is \\(\\sup_x \\gamma_I(x)\\), and the minimax value is\n\\(\\inf_y \\gamma_{II}(y)\\).</p>\n<h2>Abstract pure-strategy form</h2>\n<p>The same definition applies on arbitrary nonempty strategy sets $I, J$ and a\npayoff $g : I \\times J \\to \\mathbb{R}$, with the inner extremum ranging over\n<strong>pure</strong> strategies (no mixing). Then the maxmin is</p>\n<p>$$\n  \\underline v = \\sup_{i \\in I} \\inf_{j \\in J} g(i,j),\n$$</p>\n<p>and the minmax is</p>\n<p>$$\n  \\overline v = \\inf_{j \\in J} \\sup_{i \\in I} g(i,j).\n$$</p>\n<p>The maxmin is the best amount player 1 can guarantee, and the minmax is the\nleast amount player 2 can guarantee as an upper bound on player 1's payoff.\nThe Lean library currently formalises the finite mixed-strategy instantiation\nabove; the abstract form is the common conceptual ancestor and the form used\nwhen reasoning over general (e.g. infinite) strategy spaces.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Definitions 2.2.2-2.2.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Guarantees, maxmin, minmax, and game value.</li>\n<li>[MFoGT, Def. 2.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Abstract pure-strategy maxmin and minmax (merged from <code>zero_sum.core.maxmin_minmax</code>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.duality_gap",
+      "title": "Duality Gap In A Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_duality_gap.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "title": "Epsilon-Optimal Strategy",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.value",
+      "title": "Value Of A Zero-Sum Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_value.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.guarantee_I",
+      "display_name": "MatrixGame.guarantee_I",
+      "qualified_name": "MatrixGame.guarantee_I",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "noncomputable def guarantee_I (x : stdSimplex 𝕜 I) : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L107",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.guarantee_II",
+      "display_name": "MatrixGame.guarantee_II",
+      "qualified_name": "MatrixGame.guarantee_II",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "noncomputable def guarantee_II (y : stdSimplex 𝕜 J) : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L112",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.maximin",
+      "display_name": "MatrixGame.maximin",
+      "qualified_name": "MatrixGame.maximin",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "noncomputable def maximin : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L168",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.minimax",
+      "display_name": "MatrixGame.minimax",
+      "qualified_name": "MatrixGame.minimax",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "noncomputable def minimax : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L173",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.value_eq_maximin",
+      "display_name": "MatrixGame.value_eq_maximin",
+      "qualified_name": "MatrixGame.value_eq_maximin",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem value_eq_maximin {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) : A.value = A.maximin",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L96",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.value_eq_minimax",
+      "display_name": "MatrixGame.value_eq_minimax",
+      "qualified_name": "MatrixGame.value_eq_minimax",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem value_eq_minimax : A.value = A.minimax",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L100",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

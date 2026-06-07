@@ -1,0 +1,17 @@
+{
+  "id": "math.lattice.tarski_fixed_point",
+  "title": "Tarski Fixed Point Theorem For Compact Euclidean Lattices",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "math/lattice/math_lattice_tarski_fixed_point.html",
+  "primary_topic": "math.lattice",
+  "topics": [
+    "math.lattice"
+  ],
+  "body_html": "<h1>Tarski Fixed Point Theorem For Compact Euclidean Lattices</h1>\n<p>Let $L$ be a compact nonempty lattice in $\\mathbb R^n$ with the coordinatewise\npartial order. If\n$$\n  f:L\\to L\n$$\nis monotone, then $f$ has a fixed point.</p>\n<p>Moreover, every nonempty subset of $L$ has a supremum and an infimum in $L$, so\n$L$ has a greatest and a smallest element.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 4(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Tarski fixed point theorem for compact nonempty lattices in Euclidean space.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

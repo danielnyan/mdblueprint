@@ -1,0 +1,217 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.dynamics",
+    "title": "Game Theory.Strategic Game.Dynamics",
+    "href": "game_theory/strategic_game/dynamics/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 13,
+    "descendant_node_count": 13
+  },
+  "counts": {
+    "internal_nodes": 13,
+    "inlined_nodes": 0,
+    "descendant_nodes": 13,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 13,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 14,
+    "visible_nodes_with_selected_proof_plans": 14
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.dynamics.nash_field",
+      "title": "Nash Field",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_nash_field.html",
+      "payload": "node_payloads/game_theory_strategic_game_dynamics_nash_field.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dynamics.positive_correlation",
+      "title": "Positive Correlation Dynamics",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_positive_correlation.html",
+      "payload": "node_payloads/game_theory_strategic_game_dynamics_positive_correlation.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dynamics.potential_replicator_lyapunov",
+      "title": "Potential Is Lyapunov For Replicator Dynamics",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_potential_replicator_lyapunov.html",
+      "payload": "node_payloads/game_theory_strategic_game_dynamics_potential_replicator_lyapunov.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dynamics.replicator_dynamics",
+      "title": "Replicator Dynamics",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_replicator_dynamics.html",
+      "payload": "node_payloads/game_theory_strategic_game_dynamics_replicator_dynamics.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dynamics.stable_game_framework",
+      "title": "Stable Game Framework (Hofbauer–Sandholm)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_stable_game_framework.html",
+      "payload": "node_payloads/game_theory_strategic_game_dynamics_stable_game_framework.json"
+    },
+    {
+      "id": "game_theory.strategic_game.evolution.ess_replicator_lyapunov",
+      "title": "ESS Replicator Lyapunov Function",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_evolution_ess_replicator_lyapunov.html",
+      "payload": "node_payloads/game_theory_strategic_game_evolution_ess_replicator_lyapunov.json"
+    },
+    {
+      "id": "game_theory.strategic_game.evolution.ess_uniform_invasion_barrier",
+      "title": "ESS Uniform Invasion Barrier",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_evolution_ess_uniform_invasion_barrier.html",
+      "payload": "node_payloads/game_theory_strategic_game_evolution_ess_uniform_invasion_barrier.json"
+    },
+    {
+      "id": "game_theory.strategic_game.evolution.evolutionarily_stable_strategy",
+      "title": "Evolutionarily Stable Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_evolution_evolutionarily_stable_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_evolution_evolutionarily_stable_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.population.population_game",
+      "title": "Population Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_population_population_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_population_population_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.population.wardrop_equilibrium",
+      "title": "Nash Wardrop Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_population_wardrop_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_population_wardrop_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.population.wardrop_variational_characterization",
+      "title": "Wardrop Variational Characterization",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_population_wardrop_variational_characterization.html",
+      "payload": "node_payloads/game_theory_strategic_game_population_wardrop_variational_characterization.json"
+    },
+    {
+      "id": "game_theory.strategic_game.potential.potential_game",
+      "title": "Potential Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_potential_potential_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_potential_potential_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.potential.potential_maximizer_nash",
+      "title": "Potential Maximizer Is Nash",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_potential_potential_maximizer_nash.html",
+      "payload": "node_payloads/game_theory_strategic_game_potential_potential_maximizer_nash.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "deferred",
+      "title": "deferred",
+      "href": "keywords/deferred.html",
+      "count": 1
+    },
+    {
+      "id": "dynamics",
+      "title": "dynamics",
+      "href": "keywords/dynamics.html",
+      "count": 5
+    },
+    {
+      "id": "ess",
+      "title": "ess",
+      "href": "keywords/ess.html",
+      "count": 2
+    },
+    {
+      "id": "evolution",
+      "title": "evolution",
+      "href": "keywords/evolution.html",
+      "count": 4
+    },
+    {
+      "id": "lyapunov",
+      "title": "lyapunov",
+      "href": "keywords/lyapunov.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "population-game",
+      "title": "population-game",
+      "href": "keywords/population-game.html",
+      "count": 3
+    },
+    {
+      "id": "potential-game",
+      "title": "potential-game",
+      "href": "keywords/potential-game.html",
+      "count": 5
+    },
+    {
+      "id": "replicator-dynamics",
+      "title": "replicator-dynamics",
+      "href": "keywords/replicator-dynamics.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 13
+    },
+    {
+      "id": "variational-inequality",
+      "title": "variational-inequality",
+      "href": "keywords/variational-inequality.html",
+      "count": 1
+    },
+    {
+      "id": "wardrop-equilibrium",
+      "title": "wardrop-equilibrium",
+      "href": "keywords/wardrop-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

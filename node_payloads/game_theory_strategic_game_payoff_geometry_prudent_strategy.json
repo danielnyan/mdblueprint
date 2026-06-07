@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.payoff_geometry.prudent_strategy",
+  "title": "Prudent Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_prudent_strategy.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Prudent Strategy</h1>\n<p>A mixed strategy $\\sigma_i\\in\\Delta(S_i)$ is prudent for player $i$ if, for every\npure opponent profile $s_{-i}\\in S_{-i}$,\n$$\n  g_i(\\sigma_i,s_{-i})\\ge\n  \\max_{\\tau_i\\in\\Delta(S_i)}\n  \\min_{t_{-i}\\in S_{-i}} g_i(\\tau_i,t_{-i}).\n$$\nThus a prudent strategy guarantees player $i$ at least the player's maxmin\nsecurity payoff.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.10.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Prudent strategy and prudent payoff in a finite game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

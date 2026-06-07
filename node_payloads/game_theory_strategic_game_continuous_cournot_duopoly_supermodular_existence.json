@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.cournot_duopoly_supermodular_existence",
+  "title": "Cournot Duopoly Equilibrium From Supermodularity",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_cournot_duopoly_supermodular_existence.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Cournot Duopoly Equilibrium From Supermodularity</h1>\n<p>Consider two firms choosing quantities $q_i\\in[0,Q_i]$ with payoff\n$$\n  g_i(q_i,q_j)=q_iP_i(q_i+q_j)-C_i(q_i).\n$$\nAssume $P_i$ and $C_i$ are $C^1$, and the marginal revenue\n$$\n  P_i+q_i\\frac{\\partial P_i}{\\partial q_i}\n$$\nis decreasing in $q_j$. Then the Cournot duopoly has a Cournot-Nash equilibrium.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 4(3)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Cournot duopoly application of supermodular game existence.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
+  "title": "EFX ⇒ EF1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EFX ⇒ EF1</h1>\n<p><strong>Theorem.</strong> Every EFX allocation\n([[social_choice.fair_division.indivisible.efx]]) is EF1\n([[social_choice.fair_division.indivisible.ef1]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEFX.isEF1</code>.</p>",
+  "proof_html": "<p>For agents $i \\ne j$ with non-empty $A(j)$, EFX gives the universal\nstatement $\\forall g \\in A(j),\\ v_i(A(j) \\setminus \\{g\\}) \\le v_i(A(i))$.\nPicking <em>any</em> element $g \\in A(j)$ (nonemptiness witnesses the existence)\ngives an existential witness for EF1. $\\square$</p>\n<p>The Lean proof is the obvious one-liner: take the EFX witness for the\nfirst element of the nonempty bundle.</p>\n<h2>Significance</h2>\n<p>This is the easy direction of the EF / EF1 / EFX hierarchy\n([[social_choice.fair_division.indivisible.implications]]). The\n<em>non-trivial</em> direction (EF ⇒ EFX) requires <em>monotonicity</em> of the\nvaluation\n([[social_choice.fair_division.indivisible.ef_implies_efx_mono]]).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EFX-EF1 implication.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.checker",
+      "title": "Decidable Fairness Checkers",
+      "href": "social_choice/social_choice_fair_division_indivisible_checker.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEFX.isEF1",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEFX.isEF1",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEFX.isEF1",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "theorem",
+      "signature": "theorem IsEFX.isEF1 (v : Valuation N G) (A : Allocation N G)\n    (h : IsEFX v A) : IsEF1 v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L109",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

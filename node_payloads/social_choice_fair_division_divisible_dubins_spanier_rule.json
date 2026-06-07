@@ -1,0 +1,79 @@
+{
+  "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+  "title": "Dubins–Spanier as a Rule on Measure Instances",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_rule.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.dubins_spanier"
+  ],
+  "body_html": "<h1>Dubins–Spanier as a Rule on Measure Instances</h1>\n<p>Two bundled-instance reformulations of\n[[social_choice.fair_division.divisible.dubins_spanier_proportional]]:</p>\n<h2>Existence at the instance level</h2>\n<p><code>dubinsSpanier_exists_proportional_allocation</code> repackages the bare\ntheorem as a <code>Divisible.MeasureInstance</code>-keyed existence statement:\n$$\n\\forall n \\ge 1,\\ \\forall I : \\mathrm{MeasureInstance}\\ (\\mathrm{Fin}\\ n)\\ \\mathrm{[0,1]}\\ \\text{(non-atomic finite)},\\\n\\exists A,\\ I.\\mathrm{feasible}\\ A \\wedge I.\\mathrm{IsProportional}\\ n\\ A.\n$$</p>\n<p>The translation is mechanical: an <code>Instance</code> exposes the measure\nfamily $I.\\mathrm{measure}$, and the underlying theorem applies to that\nfamily.</p>\n<h2>Rule form</h2>\n<p><code>dubinsSpanierRule_isProportional</code> exhibits Dubins–Spanier as a <em>rule</em> in\nthe sense of [[social_choice.fair_division.solution_concept]] — a\nfunction that takes a measure instance and returns a feasible allocation\ntogether with a proof that the returned allocation is proportional.</p>\n<p>The rule is <em>non-canonical</em>: the construction depends on choosing one of\nthe proportional witnesses (selecting which agent to assign first at the\nmoving-knife step). Different selection rules give different outputs;\nall are proportional.</p>\n<h2>Why both</h2>\n<p>The proof of existence is the same theorem in all three forms, but\nexposing it as</p>\n<ul>\n<li>a bare existential (<code>dubinsSpanierProportional</code>),</li>\n<li>an instance-level existential (<code>dubinsSpanier_exists_proportional_allocation</code>),</li>\n<li>a deterministic rule (<code>dubinsSpanierRule_isProportional</code>),</li>\n</ul>\n<p>lets downstream callers pick whichever fits their needs (proof\nergonomics, instance polymorphism, or computability).</p>\n<h2>References</h2>\n<ul>\n<li>Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 68: 1–17.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.dubinsSpanier_exists_proportional_allocation",
+      "display_name": "SocialChoice.FairDivision.Divisible.dubinsSpanier_exists_proportional_allocation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.dubinsSpanier_exists_proportional_allocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "kind": "theorem",
+      "signature": "theorem dubinsSpanier_exists_proportional_allocation (n : ℕ) (hn : 0 < n)\n    (M : MeasureInstance (Fin n) I)\n    [∀ i, IsFiniteMeasure (M.measure i)] [∀ i, NoAtoms (M.measure i)] :\n    ∃ A : Allocation (Fin n) I,\n      IsAllocation A ∧ M.IsProportional n A",
+      "docstring": "Bundled-instance form of Dubins-Spanier proportional existence.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L430",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.dubinsSpanierRule_isProportional",
+      "display_name": "SocialChoice.FairDivision.Divisible.dubinsSpanierRule_isProportional",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.dubinsSpanierRule_isProportional",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "kind": "theorem",
+      "signature": "theorem dubinsSpanierRule_isProportional (n : ℕ) (hn : 0 < n)\n    (M : MeasureInstance (Fin n) I)\n    [∀ i, IsFiniteMeasure (M.measure i)] [∀ i, NoAtoms (M.measure i)] :\n    M.IsProportional n (dubinsSpanierRule n hn M).1",
+      "docstring": "The bundled Dubins-Spanier rule is proportional.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L447",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

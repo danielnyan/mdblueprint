@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.proper_equilibrium_exists",
+  "title": "Existence Of Proper Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_proper_equilibrium_exists.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Existence Of Proper Equilibrium</h1>\n<p>Every finite normal-form game has at least one proper equilibrium. Every proper\nequilibrium is perfect, and hence every proper equilibrium is a Nash equilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>For a fixed $\\epsilon\\in(0,1)$, restrict each player's mixed simplex to strategies\nthat put at least a small lower bound $\\eta_i$ on each pure strategy. Define a\ncorrespondence $F$ that keeps only mixed strategies whose probabilities respect\nthe $\\epsilon$-proper ordering condition.</p>\n<p>The exercise constructs a nonempty, convex-valued, closed-graph correspondence\non a compact convex product of truncated simplices. Kakutani gives a fixed point,\nwhich is an $\\epsilon$-proper profile. Compactness then gives a limit as\n$\\epsilon\\to 0$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.5.7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every finite normal-form game has a proper equilibrium.</li>\n<li>[MFoGT, Exercise 6.8.3 and Hints for Chapter 6, Exercise 3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Kakutani construction of epsilon-proper equilibria.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

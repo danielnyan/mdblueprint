@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.obedience_condition",
+  "title": "Obedience Condition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_obedience_condition.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Obedience Condition</h1>\n<p>Let $\\mu$ be the mediator's distribution on pure strategy profiles. Obedience is\noptimal when, after every recommendation $s_i$, player $i$ cannot improve by\nswitching to another action $t_i$:\n$$\n  \\sum_{s_{-i}} \\mu(s_i,s_{-i})\\,g_i(s_i,s_{-i})\n  \\ge\n  \\sum_{s_{-i}} \\mu(s_i,s_{-i})\\,g_i(t_i,s_{-i}).\n$$</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Condition on a received recommendation. If the inequality holds for every\npossible replacement action, obedience is a best response in the induced\nmediated game. Conversely, if obedience is a best response, comparing it with\nthe recommendation strategy that changes only $s_i$ to $t_i$ gives the\ninequality.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Thm. 8.5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Obedience inequalities characterize equilibrium in the mediated game.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

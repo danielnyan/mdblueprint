@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.core.stochastic_game",
+  "title": "Stochastic Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_core_stochastic_game.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.core"
+  ],
+  "body_html": "<h1>Stochastic Game</h1>\n<p>A <strong>stochastic game</strong> carries a state variable, and each state is associated\nwith its own stage game. At every stage the current state and action profile\njointly determine both</p>\n<ul>\n<li>the current payoff vector, and</li>\n<li>the probability distribution of the next state.</li>\n</ul>\n<p>Thus an action affects both the <em>current payoff</em> and the <em>future strategic\nopportunities</em> (through the state transition kernel).</p>\n<p>Formally, a stochastic game is a tuple\n$\\Gamma = (S, (A_i)_{i \\in N}, q, (r_i)_{i \\in N}, s_0)$\nwhere $S$ is the (finite or measurable) state space, $A_i$ is player\n$i$'s action set, $q : S \\times A \\to \\Delta(S)$ is the transition\nkernel, $r_i : S \\times A \\to \\mathbb{R}$ is the stage payoff for player\n$i$, and $s_0 \\in S$ is the initial state (or a distribution over it).</p>\n<h2>Two historical branches</h2>\n<p>The mathematical theory splits cleanly by the number of players and the\nzero-sum assumption:</p>\n<ul>\n<li>\n<p><strong>Zero-sum two-player stochastic games</strong> (Shapley 1953): the discounted\n  value $v_\\gamma$ is the unique fixed point of the Shapley operator\n  $T$, a $\\gamma$-contraction on bounded functions of the state. Pure\n  matrix-game theory at each state, glued by dynamic programming. See\n  [[game_theory.stochastic_game.value.discounted_value]] and\n  [[game_theory.stochastic_game.value.shapley_operator]].</p>\n</li>\n<li>\n<p><strong>General-sum N-player stochastic games</strong> (Fink 1964): Nash equilibrium\n  in Markovian strategies exists under analogous assumptions. See\n  [[game_theory.stochastic_game.equilibrium.fink_nash_existence]].</p>\n</li>\n</ul>\n<p>The undiscounted / asymptotic / uniform value theory\n([[game_theory.stochastic_game.asymptotic.bewley_kohlberg_asymptotic_value]],\n[[game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value]]) lives in\nthe zero-sum branch.</p>\n<h2>Distinguishing from repeated games</h2>\n<p>Repeated games ([[game_theory.repeated_game.core.repeated_game]]) play the <em>same</em>\nstage game in every period — no state evolution. Stochastic games are\nthe natural state-dependent generalisation. A repeated game is the\nsingle-state special case of a stochastic game.</p>\n<h2>References</h2>\n<ul>\n<li>Shapley, L. S. (1953). \"Stochastic Games\". <em>PNAS</em> 39: 1095–1100.</li>\n<li>Fink, A. M. (1964). \"Equilibrium in a Stochastic n-Person Game\". <em>J. Sci. Hiroshima Univ.</em> 28: 89–93.</li>\n<li>[MFoGT Chapter 8, §8.6.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

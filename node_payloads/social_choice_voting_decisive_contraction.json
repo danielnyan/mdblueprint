@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.decisive_contraction",
+  "title": "Coalition Contraction — Splitting a Decisive Coalition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_decisive_contraction.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Coalition Contraction — Splitting a Decisive Coalition</h1>\n<p><strong>Theorem.</strong> Let $F$ be a social welfare function satisfying unanimity\n([[social_choice.voting.unanimity]]) and IIA ([[social_choice.voting.iia]]),\non a finite voter type with $|A| \\ge 3$. If a decisive coalition\n$C$ ([[social_choice.voting.is_decisive]]) has at least two members, then\nthere exists a strictly smaller nonempty decisive coalition $D \\subsetneq C$.</p>\n<p>In Lean: <code>SocialChoice.Voting.decisive_contraction</code> (a public lemma of the Arrow\ndevelopment in <code>Decisive.lean</code>).</p>",
+  "proof_html": "<p>sketch</p>\n<p>Pick two distinct elements $i, j \\in C$ and split $C = C_1 \\cup C_2$ with\n$C_1 = \\{i\\}$ and $C_2 = C \\setminus \\{i\\}$.</p>\n<p>By the three-alternative hypothesis, fix distinct $x, y, z \\in A$ and\nbuild a <em>Condorcet-style profile</em> $P_0$ over the tripartition\n$(C_1, C^c, C_2)$:</p>\n<ul>\n<li>$C_1$ ranks $x \\succ y \\succ z$;</li>\n<li>$C^c$ ranks $y \\succ z \\succ x$;</li>\n<li>$C_2$ ranks $z \\succ x \\succ y$.</li>\n</ul>\n<p>Such a profile exists by an explicit construction\n(<code>exists_condorcet_profile'</code> in the source).</p>\n<p>Now branch on the social ranking of $x$ versus $z$ at $P_0$:</p>\n<ul>\n<li>\n<p><strong>Case $x \\succ_{F(P_0)} z$.</strong> Every voter in $C$ has\n  $x \\succ z$ in $P_0$, while every voter outside $C$ has the opposite.\n  Applying the field-expansion lemma\n  ([[social_choice.voting.decisive_spread]]) to the witness pair\n  $(x, z)$ shows $C_1$ is weakly decisive for $(x, z)$, hence decisive.\n  But $|C_1| = 1 &lt; |C|$, so $C_1$ is the smaller decisive coalition.</p>\n</li>\n<li>\n<p><strong>Case $\\neg (x \\succ_{F(P_0)} z)$.</strong> Use unanimity on the $C$-shared\n  preference $x \\succ y$ to obtain $x \\succ_{F(P_0)} y$. Combined with\n  the case hypothesis and totality of $F(P_0)$ we get\n  $z \\succ_{F(P_0)} y$. Then $C_2$ is the smaller decisive coalition by the\n  same field-expansion argument applied at the witness $(z, y)$.</p>\n</li>\n</ul>\n<p>Either way, we exhibit a nonempty decisive coalition strictly inside $C$.\nThe argument needs IIA to carry the conclusion from $P_0$ to arbitrary\n$C$-unanimous profiles and unanimity to derive the auxiliary social\nrankings used in the case split.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Contraction step in the decisive-coalitions proof.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.decisive_contraction",
+      "display_name": "SocialChoice.Voting.decisive_contraction",
+      "qualified_name": "SocialChoice.Voting.decisive_contraction",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "theorem",
+      "signature": "theorem decisive_contraction [Fintype N] [Fintype A]\n    {F : SWF N A} (h0 : ∃ x y z : A, x ≠ y ∧ x ≠ z ∧ y ≠ z)\n    {C : Set N} (hCdec : IsDecisive F C) (hCcard : 2 ≤ C.ncard)\n    (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) :\n    ∃ S : Set N, S.Nonempty ∧ S < C ∧ IsDecisive F S",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L555",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "display_name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

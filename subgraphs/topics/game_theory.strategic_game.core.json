@@ -1,0 +1,255 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.core",
+    "title": "Game Theory.Strategic Game.Core",
+    "href": "game_theory/strategic_game/core/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 0,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 10,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 13,
+    "visible_nodes_with_selected_proof_plans": 13
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.best_response",
+      "title": "Best Response",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_best_response.html",
+      "payload": "node_payloads/game_theory_strategic_game_best_response.json"
+    },
+    {
+      "id": "game_theory.strategic_game.core.br_invariance",
+      "title": "Best-Response Invariance",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_br_invariance.html",
+      "payload": "node_payloads/game_theory_strategic_game_core_br_invariance.json"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_extension",
+      "title": "Mixed Extension Of A Strategic Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_extension.html",
+      "payload": "node_payloads/game_theory_strategic_game_core_mixed_extension.json"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_strategy",
+      "title": "Mixed Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_core_mixed_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.core.symmetric_game",
+      "title": "Symmetric Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_symmetric_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_core_symmetric_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.finite_game_catalog",
+      "title": "Finite Game Catalog",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_finite_game_catalog.html",
+      "payload": "node_payloads/game_theory_strategic_game_finite_game_catalog.json"
+    },
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html",
+      "payload": "node_payloads/game_theory_strategic_game_prisoners_dilemma.json"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_strategic_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html",
+      "payload": "node_payloads/game_theory_strategic_game_strategy_profile.json"
+    },
+    {
+      "id": "game_theory.strategic_game.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html",
+      "payload": "node_payloads/game_theory_strategic_game_unilateral_deviation.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "game_theory.strategic_game.best_response",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.core.mixed_strategy",
+      "to": "game_theory.strategic_game.core.mixed_extension",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.strategy_profile",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 105
+    },
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependent",
+      "node_count": 75
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.best_response",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 3
+    },
+    {
+      "from": "game_theory.strategic_game.core.mixed_extension",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "catalog",
+      "title": "catalog",
+      "href": "keywords/catalog.html",
+      "count": 1
+    },
+    {
+      "id": "classic",
+      "title": "classic",
+      "href": "keywords/classic.html",
+      "count": 1
+    },
+    {
+      "id": "equilibrium-selection",
+      "title": "equilibrium-selection",
+      "href": "keywords/equilibrium-selection.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "finite-game",
+      "title": "finite-game",
+      "href": "keywords/finite-game.html",
+      "count": 1
+    },
+    {
+      "id": "foundational",
+      "title": "foundational",
+      "href": "keywords/foundational.html",
+      "count": 3
+    },
+    {
+      "id": "index",
+      "title": "index",
+      "href": "keywords/index.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 2
+    },
+    {
+      "id": "solution-concept",
+      "title": "solution-concept",
+      "href": "keywords/solution-concept.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 9
+    },
+    {
+      "id": "symmetry",
+      "title": "symmetry",
+      "href": "keywords/symmetry.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

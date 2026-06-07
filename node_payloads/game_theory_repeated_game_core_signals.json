@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.signals",
+  "title": "Repeated Game With Signals",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_signals.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Repeated Game With Signals</h1>\n<p>In a repeated game with signals, players do not necessarily observe the full\naction profile after each stage. Instead, each player receives a private signal\nwhose distribution depends on the action profile.</p>\n<p>Strategies are conditioned on each player's observed history of own actions and\nsignals. MFoGT stresses that imperfect monitoring can make the usual folk\ntheorem fail and that computing equilibrium payoff sets is difficult in general.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 8, Section 8.6.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Repeated games with imperfect observation or imperfect monitoring.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

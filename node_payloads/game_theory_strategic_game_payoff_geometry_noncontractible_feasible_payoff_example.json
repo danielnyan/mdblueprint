@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.payoff_geometry.noncontractible_feasible_payoff_example",
+  "title": "Noncontractible Feasible Payoff Example",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_noncontractible_feasible_payoff_example.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Noncontractible Feasible Payoff Example</h1>\n<p>MFoGT Exercise 4.12.3 defines a three-player finite game using the complex cube\nroots of unity. Player 1's payoff is the real part of $abc$, player 2's payoff is the\nimaginary part of $abc$, and player 3's payoff is identically zero.</p>\n<p>The exercise asks to compute the payoff function of the mixed extension and deduce\nthat the feasible payoff set of the game is not contractible.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Three-player finite game whose feasible payoff set is not contractible.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

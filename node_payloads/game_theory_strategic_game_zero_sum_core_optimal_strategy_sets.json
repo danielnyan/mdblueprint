@@ -1,0 +1,78 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+  "title": "Optimal Strategy Sets",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Optimal Strategy Sets</h1>\n<p>For a finite matrix game $A$, the <strong>optimal row strategy set</strong>\n$X(A) \\subseteq \\Delta(I)$ contains the mixed row strategies that achieve the\nmaximin value, i.e.\n$$\n  X(A) = \\{ x \\in \\Delta(I) : \\min_{j \\in J} E_A(x,j) = \\operatorname{val}(A) \\}.\n$$\nThe <strong>optimal column strategy set</strong> $Y(A) \\subseteq \\Delta(J)$ is defined\nsymmetrically with the maximum over pure rows equal to the value.</p>\n<p>By the minimax theorem (<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>) both sets are\nnonempty.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Definition of X(A) and Y(A), the optimal strategy sets.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.optimalRowStrategies",
+      "display_name": "MatrixGame.optimalRowStrategies",
+      "qualified_name": "MatrixGame.optimalRowStrategies",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def optimalRowStrategies {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) : Set (stdSimplex 𝕜 I)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L113",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.optimalColumnStrategies",
+      "display_name": "MatrixGame.optimalColumnStrategies",
+      "qualified_name": "MatrixGame.optimalColumnStrategies",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def optimalColumnStrategies {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) : Set (stdSimplex 𝕜 J)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L120",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

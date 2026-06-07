@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.fair_division.egalitarian_welfare",
+  "title": "Egalitarian (Maximin) Welfare",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_egalitarian_welfare.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Egalitarian (Maximin) Welfare</h1>\n<p>For a finite nonempty population $N$, a utility profile $u : N \\to S \\to\n\\mathbb{R}$, and an allocation $A : N \\to S$\n([[social_choice.fair_division.allocation]]), the <em>egalitarian welfare</em>\nis the minimum agent utility:\n$$\nW_{\\mathrm{egal}}(u, A) = \\min_{i \\in N} u_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.egalitarianWelfare</code>, defined via\n<code>Finset.univ.inf'</code> to handle the minimum over a finite nonempty type.</p>\n<p>An allocation $A$ is <em>maximin</em> w.r.t. a feasibility predicate $F$ if no\nfeasible allocation has a strictly larger minimum utility:\n$$\n\\forall B,\\ F(B) \\Rightarrow W_{\\mathrm{egal}}(u, B) \\le W_{\\mathrm{egal}}(u, A).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.IsMaxmin</code>.</p>\n<p>Basic facts (<code>Welfare.lean</code>):</p>\n<ul>\n<li>$W_{\\mathrm{egal}}(u, A) \\le u_i(A(i))$ for every agent $i$.</li>\n<li><em>Egalitarian ≤ utilitarian / n:</em> if every agent's utility is bounded\n  below by $W_{\\mathrm{egal}}$, then $|N| \\cdot W_{\\mathrm{egal}}(u, A) \\le\n  W_{\\mathrm{util}}(u, A)$\n  ([[social_choice.fair_division.utilitarian_welfare]]). This is the\n  Lean lemma <code>nsmul_egalitarianWelfare_le_utilitarianWelfare</code> and matches\n  the AM-min inequality.</li>\n</ul>\n<p>Egalitarian welfare prioritizes the worst-off agent; utilitarian welfare\nmaximizes the aggregate. They generally trade off, and a single\nallocation rarely maximizes both.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Egalitarian (Rawlsian) welfare.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.egalitarianWelfare",
+      "display_name": "SocialChoice.FairDivision.egalitarianWelfare",
+      "qualified_name": "SocialChoice.FairDivision.egalitarianWelfare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "def",
+      "signature": "noncomputable def egalitarianWelfare [Fintype N] [Nonempty N]\n    (u : N → S → ℝ) (A : Allocation N S) : ℝ",
+      "docstring": "Egalitarian welfare: the minimum utility among agents.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L29",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.IsMaxmin",
+      "display_name": "SocialChoice.FairDivision.IsMaxmin",
+      "qualified_name": "SocialChoice.FairDivision.IsMaxmin",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "def",
+      "signature": "def IsMaxmin [Fintype N] [Nonempty N]\n    (feasible : Allocation N S → Prop)\n    (u : N → S → ℝ) (A : Allocation N S) : Prop",
+      "docstring": "Maximin optimality: no feasible allocation has larger egalitarian welfare.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L41",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

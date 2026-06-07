@@ -1,0 +1,62 @@
+{
+  "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+  "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>IsMaxminShare ↔ IsAlphaMMS 1</h1>\n<p><strong>Theorem.</strong> An allocation $A$ satisfies the exact MMS guarantee\n([[social_choice.fair_division.indivisible.maximin_share]]) if and only\nif it is 1-MMS in the α-MMS sense\n([[social_choice.fair_division.indivisible.is_alpha_mms]]):\n$$\n\\mathrm{IsMaxminShare}\\ v\\ \\mathrm{allGoods}\\ A \\;\\iff\\; \\mathrm{IsAlphaMMS}\\ 1\\ v\\ \\mathrm{allGoods}\\ A.\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.isMaxminShare_iff_isAlphaMMS_one</code>.</p>",
+  "proof_html": "<p>Unfold both predicates against the MMS value\n([[social_choice.fair_division.indivisible.mms_value]]):</p>\n<ul>\n<li><em>IsAlphaMMS 1</em> states $1 \\cdot \\mathrm{MMS}_i \\le v_i(A(i))$, i.e.\\\n  $\\mathrm{MMS}_i \\le v_i(A(i))$, i.e.\\ agent $i$'s bundle value beats\n  the maximin threshold.</li>\n<li><em>IsMaxminShare</em> states the worst-bundle-of-any-partition $B$ is\n  bounded by $v_i(A(i))$:\n  $\\forall B,\\ \\exists j,\\ v_i(B(j)) \\le v_i(A(i))$.</li>\n</ul>\n<p>The bridge: $\\forall B,\\ \\exists j,\\ v_i(B(j)) \\le v_i(A(i))$ is\nexactly the statement that the maximin value $\\max_B \\min_j v_i(B(j))$\nis bounded by $v_i(A(i))$, which is $\\mathrm{MMS}_i \\le v_i(A(i))$.</p>\n<p>Both directions follow from the <code>mmsValue_le_of_forall</code> and\n<code>iInf_partition_le_mmsValue</code> building blocks\n([[social_choice.fair_division.indivisible.mms_value_bounds]]).</p>\n<h2>Why both predicates exist</h2>\n<p>The two formulations are complementary:</p>\n<ul>\n<li><em>IsMaxminShare</em> avoids <code>Finset.sup'</code> / <code>Finset.inf'</code> — a slick\n  definition for <em>exact</em> MMS that doesn't require the auxiliary\n  <code>mmsValue</code> function. Useful for stating theorems compactly.</li>\n<li><em>IsAlphaMMS</em> parameterises smoothly over the approximation\n  parameter — needed for $\\alpha &lt; 1$ approximation results.</li>\n</ul>\n<p>This equivalence theorem lets call sites switch freely between the\ntwo.</p>\n<h2>References</h2>\n<ul>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. MMS vs α-MMS equivalence at α = 1.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "title": "α-MMS Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isMaxminShare_iff_isAlphaMMS_one",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isMaxminShare_iff_isAlphaMMS_one",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isMaxminShare_iff_isAlphaMMS_one",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "kind": "theorem",
+      "signature": "theorem isMaxminShare_iff_isAlphaMMS_one\n    [Nonempty N] [Fintype G]\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G)\n    (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) :\n    IsMaxminShare v allGoods A ↔ IsAlphaMMS 1 v allGoods A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L247",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

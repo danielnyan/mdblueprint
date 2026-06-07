@@ -1,0 +1,65 @@
+{
+  "id": "social_choice.preference",
+  "title": "Preference Relation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_preference.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice"
+  ],
+  "body_html": "<h1>Preference Relation</h1>\n<p>A <em>weak preference</em> on a set $A$ of alternatives is a binary relation\n$R \\subseteq A \\times A$ that is reflexive, transitive, and total, i.e.</p>\n<p>$$\n\\forall a \\in A,\\ R(a,a), \\qquad\nR(a,b) \\wedge R(b,c) \\Rightarrow R(a,c), \\qquad\nR(a,b) \\vee R(b,a).\n$$</p>\n<p>A <em>preference</em> on $A$ is a relation $R$ together with a proof that the three\naxioms above hold; equivalently, $R$ is a complete preorder on $A$. We write\n$R(a,b)$ to mean \"$a$ is weakly preferred to $b$\".</p>\n<p>In Lean this is the typeclass <code>IsPreference</code> together with the bundled\nstructure <code>Pref A</code>, providing the relation field <code>rel</code> and a <code>CoeFun</code> so\n<code>p a b</code> reads as $p(a,b)$.</p>\n<p>This foundation-level <code>Pref</code> interface is the canonical single source of truth\nfor an agent's ordinal taste over outcomes. Social choice, fair division, and\nmatching all build on it.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Bundled preference vocabulary for social choice.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsPreference",
+      "display_name": "IsPreference",
+      "qualified_name": "IsPreference",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "class",
+      "signature": "class IsPreference {A : Type*} (R : A → A → Prop) : Prop where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L134",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Pref",
+      "display_name": "Pref",
+      "qualified_name": "Pref",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "structure",
+      "signature": "structure Pref (A : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L144",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

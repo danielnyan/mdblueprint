@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.examples.normal_vs_extensive_perfection_difference",
+  "title": "Normal And Extensive Perfection Can Differ",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_examples_normal_vs_extensive_perfection_difference.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.examples"
+  ],
+  "body_html": "<h1>Normal And Extensive Perfection Can Differ</h1>\n<p>MFoGT Section 6.6 gives examples showing that normal-form perfection and\nextensive-form perfection are distinct refinements.</p>\n<ul>\n<li>In the game of Figure 6.18, the indicated profile is extensive-form perfect but\n  not perfect in the associated normal form.</li>\n<li>In the game of Figure 6.19, the indicated profile is perfect in the normal form\n  but not perfect in the extensive form.</li>\n</ul>\n<p>The text also notes that some games have empty intersection between the two sets\nof refinements.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.6, Figures 6.18 and 6.19] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Examples where extensive-form perfection and normal-form perfection disagree.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

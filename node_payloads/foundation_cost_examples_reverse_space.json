@@ -1,0 +1,72 @@
+{
+  "id": "foundation.cost.examples.reverse_space",
+  "title": "Worked Example: Quadratic Naive List Reversal",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_reverse_space.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: Quadratic Naive List Reversal</h1>\n<p>The append-at-the-end naive list reversal, instrumented in <code>CostM ℕ</code> to\nexhibit a <strong>quadratic</strong> cost. Each of the <code>length</code> recursive steps performs an\nappend whose cost is proportional to the accumulated length, giving\n$$\n  (\\operatorname{naiveReverse}\\,l).\\mathrm{cost} \\;\\le\\; |l|^2,\n$$\nproved as <code>naiveReverse_cost_le</code>. This is the counterpoint to the linear and\nlogarithmic <code>CostM ℕ</code> examples (<a class=\"node-ref\" data-node-id=\"foundation.cost.examples.gcd\" href=\"cost/examples/foundation_cost_examples_gcd.html\">Worked Example: Euclidean GCD Step Count</a>): a\nworse algorithm shows up directly as a worse bound on <code>.cost</code>, with no change\nto the monad or to the correctness of the reversed result on <code>.ret</code>.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>ReverseSpace.naiveReverse : List α → CostM ℕ (List α)</code>.</li>\n<li><code>ReverseSpace.naiveReverse_cost_le</code> — the <code>|l|²</code> cost bound.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost-annotated\n  functional algorithms (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ReverseSpace.naiveReverse",
+      "display_name": "ReverseSpace.naiveReverse",
+      "qualified_name": "ReverseSpace.naiveReverse",
+      "module": "EconCSLib.Examples.CostM.ReverseSpace",
+      "kind": "def",
+      "signature": "def naiveReverse {A : Type} : List A → CostM ℕ (List A)\n  | []      => pure []\n  | a :: as => do\n    ✓[as.length + 1] do\n      let rest ← naiveReverse as\n      pure (rest ++ [a])\n/-- Cumulative `++` allocation is quadratic in input length. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ReverseSpace.lean#L42",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ReverseSpace.naiveReverse_cost_le",
+      "display_name": "ReverseSpace.naiveReverse_cost_le",
+      "qualified_name": "ReverseSpace.naiveReverse_cost_le",
+      "module": "EconCSLib.Examples.CostM.ReverseSpace",
+      "kind": "theorem",
+      "signature": "theorem naiveReverse_cost_le {A : Type} (l : List A) :\n    (naiveReverse l).cost ≤ l.length * l.length",
+      "docstring": "Cumulative `++` allocation is quadratic in input length.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ReverseSpace.lean#L50",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.ReverseSpace",
+      "display_name": "EconCSLib.Examples.CostM.ReverseSpace",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ReverseSpace.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

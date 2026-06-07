@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.monotone_family_assumption_counterexamples",
+  "title": "Monotone Family Assumption Counterexamples",
+  "kind": "example",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_family_assumption_counterexamples.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Monotone Family Assumption Counterexamples</h1>\n<p>MFoGT Exercise 3.5.3(2) gives two one-player examples showing why the hypotheses\nin the monotone-family value theorem are not cosmetic.</p>\n<p>In the first example,\n$$\n  S=[0,+\\infty),\\qquad f_n(s)=\\mathbf 1_{s\\ge n}.\n$$\nFor each $n$, the value is $v_n=1$, but the pointwise infimum has value $0$.\nThe failure is that $S$ is not compact.</p>\n<p>In the second example, $S=[0,1]$ is compact and $f_n$ is continuous and\npiecewise linear with\n$$\n  f_n(0)=f_n(2/n)=f_n(1)=0,\\qquad f_n(1/n)=1.\n$$\nAgain $v_n=1$ for each $n$, while the limiting value is $0$. The failure is that\nthe sequence $(f_n)$ is not monotone decreasing.</p>\n<p>These examples explain the role of compactness of $S$ and monotone decrease of\nthe payoff sequence in <code>zero_sum.continuous.monotone_decreasing_values_limit</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 3(2)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Examples showing why compactness and monotonicity assumptions matter in the monotone-family value theorem.</li>\n<li>[MFoGT, Section 9.3, Exercise 3 hints] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Both examples have v_n=1 and limiting value 0.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

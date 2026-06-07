@@ -1,0 +1,84 @@
+{
+  "id": "mechanism_design.myerson.payment_formula",
+  "title": "Myerson Payment Formula",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_myerson_payment_formula.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson"
+  ],
+  "body_html": "<h1>Myerson Payment Formula</h1>\n<p>For single-parameter mechanisms over real values, the Myerson module defines\nthe canonical payment formula associated to an allocation rule and records the\nzero-normalized payment condition.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.5.4, Thm. 9.36] Nisan, Roughgarden, Tardos,\n  and Vazirani, <em>Algorithmic Game Theory</em>. Payment formulae for monotone\n  single-parameter allocation rules.</li>\n<li>[Myerson 1981, Section 2] Myerson, R. B. \"Optimal auction design.\"\n  <em>Mathematics of Operations Research</em> 6(1):58-73. Canonical\n  single-parameter payment identities in auction-design notation.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_myerson_payment_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "myersonPayment",
+      "display_name": "SingleParameterMechanism.myersonPayment",
+      "qualified_name": "SingleParameterMechanism.myersonPayment",
+      "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "kind": "def",
+      "signature": "noncomputable def myersonPayment\n    [DecidableEq I]\n    (x : (I → ℝ) → I → ℝ) (b : I → ℝ) (i : I) : ℝ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ZeroNormalized",
+      "display_name": "SingleParameterMechanism.ZeroNormalized",
+      "qualified_name": "SingleParameterMechanism.ZeroNormalized",
+      "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "kind": "def",
+      "signature": "def ZeroNormalized [DecidableEq I] (p : (I → ℝ) → I → ℝ) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "myersonPayment_zeroNormalized",
+      "display_name": "SingleParameterMechanism.myersonPayment_zeroNormalized",
+      "qualified_name": "SingleParameterMechanism.myersonPayment_zeroNormalized",
+      "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "kind": "theorem",
+      "signature": "theorem myersonPayment_zeroNormalized [DecidableEq I] (x : (I → ℝ) → I → ℝ) :\n    ZeroNormalized (myersonPayment x)",
+      "docstring": "The canonical Myerson payment rule is zero-normalized.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L75",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "display_name": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

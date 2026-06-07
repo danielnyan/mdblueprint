@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.perfect_equilibrium_exists",
+  "title": "Existence Of Perfect Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_perfect_equilibrium_exists.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Existence Of Perfect Equilibrium</h1>\n<p>Every finite normal-form game has at least one perfect equilibrium. Moreover,\nevery perfect equilibrium is a Nash equilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Fix a fully mixed profile $\\tau$ and $\\epsilon\\in(0,1)$. Define a perturbed game\nwith payoff\n$$\n  \\sigma\\mapsto g((1-\\epsilon)\\sigma+\\epsilon\\tau).\n$$\nBy Nash's theorem, this perturbed game has a Nash equilibrium $\\nu^\\epsilon$.\nThen\n$$\n  \\sigma^\\epsilon=(1-\\epsilon)\\nu^\\epsilon+\\epsilon\\tau\n$$\nis completely mixed and $\\epsilon$-perfect. Compactness gives a convergent\nsubsequence as $\\epsilon\\to 0$, and continuity implies that every limit is Nash.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.5.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every finite normal-form game has a perfect equilibrium and every perfect equilibrium is Nash.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

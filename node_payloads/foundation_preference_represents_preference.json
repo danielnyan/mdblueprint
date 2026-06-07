@@ -1,0 +1,96 @@
+{
+  "id": "foundation.preference.represents_preference",
+  "title": "Utility Representation of a Preference",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_preference_represents_preference.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Utility Representation of a Preference</h1>\n<p>Given preorders on <code>α</code> and <code>β</code>, a function <code>u : α → β</code> <em>represents</em> the\npreference <code>≤</code> on <code>α</code> when it preserves and reflects weak preference:\n$$\n  \\forall a,\\,b,\\quad a \\le b \\;\\Longleftrightarrow\\; u(a) \\le u(b).\n$$</p>\n<p>A representation automatically preserves the derived strict preference and\nindifference relations, witnessed by <code>RepresentsPreference.lt_iff</code> and\n<code>RepresentsPreference.indifferent_iff</code>. This is the abstract scaffolding used\nby ordinal-utility statements in utility theory (the <code>foundation.preference</code> topic)\nand by vNM-style expected-utility theorems.</p>\n<p>In Lean this is <code>structure RepresentsPreference (u : α → β) : Prop</code> carrying\nthe single field <code>le_iff</code>. The two derived <code>iff</code> lemmas are stated and proved\ndirectly from <code>le_iff</code> using the Mathlib <code>Preorder</code> API.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Def. 2.7] Maschler, Solan, and Zamir,\n  <em>Game Theory</em>. Utility representation of a\n  preference relation.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "RepresentsPreference",
+      "display_name": "RepresentsPreference",
+      "qualified_name": "RepresentsPreference",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "structure",
+      "signature": "structure RepresentsPreference [Preorder A] [Preorder V] (u : A → V) : Prop where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L186",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "RepresentsPreference.lt_iff",
+      "display_name": "RepresentsPreference.lt_iff",
+      "qualified_name": "RepresentsPreference.lt_iff",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem RepresentsPreference.lt_iff [Preorder A] [Preorder V] {u : A → V}\n    (h : RepresentsPreference u) (a b : A) :\n    a < b ↔ u a < u b",
+      "docstring": "A utility representation preserves strict preference.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L191",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "RepresentsPreference.indifferent_iff",
+      "display_name": "RepresentsPreference.indifferent_iff",
+      "qualified_name": "RepresentsPreference.indifferent_iff",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem RepresentsPreference.indifferent_iff [Preorder A] [Preorder V] {u : A → V}\n    (h : RepresentsPreference u) (a b : A) :\n    Indifferent a b ↔ Indifferent (u a) (u b)",
+      "docstring": "A utility representation preserves indifference.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L197",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

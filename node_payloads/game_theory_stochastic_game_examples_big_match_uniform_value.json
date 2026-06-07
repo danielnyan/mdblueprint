@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.examples.big_match_uniform_value",
+  "title": "Big Match Uniform Value",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_examples_big_match_uniform_value.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.core"
+  ],
+  "body_html": "<h1>Big Match Uniform Value</h1>\n<p>The <strong>Big Match</strong> (Gillette 1957; rigorous uniform-value analysis by\nBlackwell-Ferguson 1968) is a two-player zero-sum stochastic game with one\nnonabsorbing state and two absorbing outcomes. It is the canonical hard\ncase showing that the <em>uniform value</em> can exist even when stationary\noptimal strategies for the maximizer do not.</p>\n<p>The game has uniform value\n$$\n  \\tfrac{1}{2}.\n$$</p>\n<h2>Structure</h2>\n<ul>\n<li>One nonabsorbing state $s^*$ and two absorbing states $s^+$ (payoff 1\n  forever) and $s^-$ (payoff 0 forever).</li>\n<li>The minimizer chooses a column $j \\in \\{1, 2\\}$ each stage; the\n  maximizer chooses a row $i \\in \\{1, 2\\}$.</li>\n<li>If $i = 1$ the game <em>absorbs</em>: enter $s^+$ if $j = 1$, $s^-$ if $j = 2$.</li>\n<li>If $i = 2$ the game stays at $s^*$ and the stage payoff is $1$ if\n  $j = 1$, $0$ if $j = 2$.</li>\n</ul>\n<h2>Why it is hard</h2>\n<ul>\n<li>\n<p>The minimizer can guarantee $\\tfrac12$ by mixing uniformly at every\n  stage (regardless of the maximizer's play). This direction is\n  immediate.</p>\n</li>\n<li>\n<p>The maximizer's guarantee of $\\tfrac12$ is subtle: no Markovian\n  (state-only-dependent) strategy achieves it. The Blackwell-Ferguson\n  ε-optimal strategy uses the <em>entire history</em> of the minimizer's plays\n  via a delicate count-and-threshold rule, and it works only in the\n  uniform / undiscounted limit, not for any fixed discount factor.</p>\n</li>\n</ul>\n<h2>Where it sits in the literature</h2>\n<ul>\n<li>It is the canonical example that <em>discounted optimal strategies need\n  not converge to uniform optimal strategies</em> in stochastic games.</li>\n<li>It motivates the Mertens-Neyman 1981 uniform value theorem\n  ([[game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value]]), which\n  establishes uniform-value existence in much greater generality.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>Gillette, D. (1957). \"Stochastic Games with Zero Stop Probabilities\".\n  <em>Contributions to the Theory of Games</em> III.</li>\n<li>Blackwell, D. and Ferguson, T. S. (1968). \"The Big Match\".\n  <em>Annals of Math. Stat.</em> 39: 159–163.</li>\n<li>[MFoGT Chapter 8, Thm. 8.6.1] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

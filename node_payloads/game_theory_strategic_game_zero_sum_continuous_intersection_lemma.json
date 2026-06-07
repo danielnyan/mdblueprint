@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.intersection_lemma",
+  "title": "Intersection Lemma",
+  "kind": "lemma",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_intersection_lemma.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Intersection Lemma</h1>\n<p>Let $C_1,\\ldots,C_n$ be nonempty convex compact subsets of a Euclidean space.\nAssume that $\\bigcup_{i=1}^n C_i$ is convex and that every intersection of\n$n-1$ of the sets is nonempty:\n$$\n  \\bigcap_{i\\ne j} C_i\\ne\\emptyset\n  \\quad\\text{for every }j=1,\\ldots,n.\n$$\nThen\n$$\n  \\bigcap_{i=1}^n C_i\\ne\\emptyset.\n$$</p>",
+  "proof_html": "<p>The proof is by induction on $n$. The case $n=2$ uses strict separation of two\ndisjoint compact convex sets: if $C_1$ and $C_2$ were disjoint, their convex union\nwould have to cross the separating hyperplane, contradiction. For the induction\nstep, separate $C_n$ from $\\bigcap_{i&lt;n}C_i$ and intersect the other sets with the\nseparating hyperplane. The induction hypothesis applied in the hyperplane gives a\npoint that contradicts strict separation.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Lem. 3.2.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Convex compact intersection lemma used in Sion's theorem.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,132 @@
+{
+  "id": "foundation.profile.deviate",
+  "title": "Standalone Profile and Unilateral Deviation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_profile_deviate.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.profile"
+  ],
+  "body_html": "<h1>Standalone Profile and Unilateral Deviation</h1>\n<p>For an arbitrary index type <code>N</code> and family of strategy types <code>S : N → Type*</code>,\na <em>strategy profile</em> is a dependent function\n$$\n  \\sigma : \\prod_{i : \\iota} S(i).\n$$</p>\n<p>A <em>unilateral deviation</em> by player $i$ to $s' \\in S(i)$ is the profile that\nagrees with $\\sigma$ off $i$ and equals $s'$ at $i$. This is exactly\n<code>Function.update</code>, exposed under the game-theoretic alias\n<code>deviate σ i s'</code> and the dedicated notation $\\sigma[i \\mapsto s']$.</p>\n<p>The three governing simp lemmas:</p>\n<ul>\n<li><code>deviate_self</code> -- deviating to the current value is the identity:\n  $\\sigma[i \\mapsto \\sigma_i] = \\sigma$.</li>\n<li><code>deviate_same</code> -- at the deviated index, the new profile returns the new\n  value: $\\sigma[i \\mapsto s']_i = s'$.</li>\n<li><code>deviate_of_ne</code> -- at any other index, the new profile is unchanged:\n  $\\sigma[i \\mapsto s']_j = \\sigma_j$ when $j \\ne i$.</li>\n</ul>\n<h2>Status: long-term compatibility layer</h2>\n<p>This node is the <strong>standalone</strong> profile vocabulary. The canonical\nstrategic-game version, <code>G.Profile</code> together with <code>StrategicGame.deviate</code>\nin <code>StrategicGame.Basic</code>, is the preferred interface for game-bound code.\nThe standalone version is preserved indefinitely for two reasons:</p>\n<ol>\n<li>lemmas about profiles can be stated without committing to a specific\n   <code>StrategicGame</code> instance (the proofs reduce to <code>Function.update</code> facts);</li>\n<li>legacy student-project code and non-strategic-game profile uses\n   (extensive games, social-choice ballots) continue to depend on it.</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Strategy profiles and unilateral deviations.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "href": "foundation/utility/foundation_utility_lottery.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Profile",
+      "display_name": "Profile",
+      "qualified_name": "Profile",
+      "module": "EconCSLib.Foundation.Profile",
+      "kind": "abbrev",
+      "signature": "abbrev Profile (N : Type*) (S : N → Type*)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L23",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "deviate",
+      "display_name": "deviate",
+      "qualified_name": "deviate",
+      "module": "EconCSLib.Foundation.Profile",
+      "kind": "abbrev",
+      "signature": "abbrev deviate {N : Type*} {S : N → Type*} [DecidableEq N]\n    (σ : Profile N S) (i : N) (s' : S i) : Profile N S",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L27",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Profile.deviate_self",
+      "display_name": "Profile.deviate_self",
+      "qualified_name": "Profile.deviate_self",
+      "module": "EconCSLib.Foundation.Profile",
+      "kind": "theorem",
+      "signature": "theorem deviate_self (σ : Profile N S) (i : N) :\n    deviate σ i (σ i) = σ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L40",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Profile.deviate_same",
+      "display_name": "Profile.deviate_same",
+      "qualified_name": "Profile.deviate_same",
+      "module": "EconCSLib.Foundation.Profile",
+      "kind": "theorem",
+      "signature": "theorem deviate_same (σ : Profile N S) (i : N) (s' : S i) :\n    deviate σ i s' i = s'",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Profile.deviate_of_ne",
+      "display_name": "Profile.deviate_of_ne",
+      "qualified_name": "Profile.deviate_of_ne",
+      "module": "EconCSLib.Foundation.Profile",
+      "kind": "theorem",
+      "signature": "theorem deviate_of_ne (σ : Profile N S) (i : N) (s' : S i) {j : N} (h : j ≠ i) :\n    deviate σ i s' j = σ j",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L52",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Profile",
+      "display_name": "EconCSLib.Foundation.Profile",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Profile.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

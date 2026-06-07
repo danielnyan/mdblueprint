@@ -1,0 +1,56 @@
+{
+  "id": "social_choice.fair_division.indivisible.maximin_share",
+  "title": "Maximin Share (MMS) Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_maximin_share.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>Maximin Share (MMS) Allocation</h1>\n<p>The <em>maximin share</em> (MMS) guarantee asks that each agent's bundle be at\nleast as valuable as the best worst-piece they could guarantee by\nself-partitioning.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsMaxminShare</code>. The\nformulation used in the library, which avoids <code>iSup</code> / <code>iInf</code>, says:\n$$\n\\forall i \\in N,\\ \\forall B,\\ \\mathrm{IsAllocation}\\ \\mathrm{allGoods}\\ B \\Rightarrow\n\\exists j,\\ v_i(B(j)) \\le v_i(A(i)).\n$$</p>\n<p>That is: for every alternative complete allocation $B$ of <code>allGoods</code>,\n<em>some</em> bundle in $B$ has value $\\le v_i(A(i))$ from agent $i$'s\nperspective.</p>\n<h2>Equivalence to the standard MMS definition</h2>\n<p>The standard textbook MMS definition is\n$$\nv_i(A(i)) \\;\\ge\\; \\mathrm{MMS}_i \\;=\\;\n\\max_{B \\text{ complete}}\\ \\min_{j} v_i(B(j)),\n$$\ni.e. agent $i$'s bundle weakly exceeds the maximum, over $i$'s own\nself-partitions, of the worst bundle value. The library's definition is\nequivalent: $\\forall B,\\ \\exists j,\\ v_i(B(j)) \\le v_i(A(i))$ is the\nsame as $\\forall B,\\ \\min_j v_i(B(j)) \\le v_i(A(i))$, which rearranges\nto $v_i(A(i)) \\ge \\max_B \\min_j v_i(B(j))$.</p>\n<p>The library makes this equivalence explicit:\n[[social_choice.fair_division.indivisible.mms_value]] introduces the\nextremal $\\mathrm{MMS}_i$ value, and the bidirectional bridge\n[[social_choice.fair_division.indivisible.is_alpha_mms_one]] shows\n<code>IsMaxminShare</code> is exactly the $\\alpha = 1$ case of α-MMS.</p>\n<h2>Position in the hierarchy</h2>\n<p>For additive valuations on complete allocations, the chain\n$$\n\\mathrm{EF} \\Rightarrow \\mathrm{EFX} \\Rightarrow \\mathrm{EF1} \\Rightarrow \\mathrm{PROP} \\Rightarrow \\mathrm{MMS}\n$$\nholds via the implication theorems\n([[social_choice.fair_division.indivisible.efx_implies_ef1]],\n[[social_choice.fair_division.indivisible.ef_implies_efx_mono]],\n[[social_choice.fair_division.indivisible.ef_implies_proportional_additive]],\n[[social_choice.fair_division.indivisible.proportional_implies_mms_additive]]).</p>\n<h2>Existence</h2>\n<ul>\n<li>MMS allocations exist <em>almost always</em> for additive valuations\n  (Bouveret–Lemaître 2014).</li>\n<li>Procaccia–Wang (2014) construct a counterexample showing MMS need\n  not always exist.</li>\n<li>A $\\frac{3}{4}$-MMS allocation is always achievable for additive preferences;\n  see the α-MMS definition\n  ([[social_choice.fair_division.indivisible.is_alpha_mms]]).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Maximin share guarantee.</li>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsMaxminShare",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsMaxminShare",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsMaxminShare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "def",
+      "signature": "def IsMaxminShare [Fintype N] [DecidableEq G]\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L179",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

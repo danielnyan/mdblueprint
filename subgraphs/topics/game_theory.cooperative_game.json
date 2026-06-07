@@ -1,0 +1,363 @@
+{
+  "topic": {
+    "id": "game_theory.cooperative_game",
+    "title": "Game Theory.Cooperative Game",
+    "href": "game_theory/cooperative_game/index.html",
+    "parent": "game_theory",
+    "node_count": 19,
+    "descendant_node_count": 19
+  },
+  "counts": {
+    "internal_nodes": 19,
+    "inlined_nodes": 19,
+    "descendant_nodes": 19,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 19,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 20,
+    "visible_nodes_with_selected_proof_plans": 20
+  },
+  "nodes": [
+    {
+      "id": "game_theory.cooperative_game.balanced_collection",
+      "title": "Balanced Collection Of Coalitions",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_collection.html",
+      "payload": "node_payloads/game_theory_cooperative_game_balanced_collection.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.balanced_game",
+      "title": "Balanced Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_balanced_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.bondareva_shapley",
+      "title": "Bondareva-Shapley Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_bondareva_shapley.html",
+      "payload": "node_payloads/game_theory_cooperative_game_bondareva_shapley.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.convex_game",
+      "title": "Convex Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_convex_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.convex_game_core_nonempty",
+      "title": "Convex Games Have Nonempty Core",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game_core_nonempty.html",
+      "payload": "node_payloads/game_theory_cooperative_game_convex_game_core_nonempty.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.core",
+      "title": "Core Of A Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core.html",
+      "payload": "node_payloads/game_theory_cooperative_game_core.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.core_subset_imputations",
+      "title": "Core Payoffs Are Imputations",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core_subset_imputations.html",
+      "payload": "node_payloads/game_theory_cooperative_game_core_subset_imputations.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.imputation",
+      "title": "Imputation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html",
+      "payload": "node_payloads/game_theory_cooperative_game_imputation.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.marginal_contribution",
+      "title": "Marginal Contribution",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_marginal_contribution.html",
+      "payload": "node_payloads/game_theory_cooperative_game_marginal_contribution.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.monotonic_game",
+      "title": "Monotonic Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_monotonic_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_monotonic_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.payoff_vector",
+      "title": "Payoff Vector",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_payoff_vector.html",
+      "payload": "node_payloads/game_theory_cooperative_game_payoff_vector.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_axioms",
+      "title": "Shapley Axioms",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_axioms.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_axioms.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_in_core_convex",
+      "title": "Shapley Value Lies In The Core Of A Convex Game",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_in_core_convex.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_in_core_convex.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_uniqueness",
+      "title": "Shapley Uniqueness Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_uniqueness.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_uniqueness.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_value",
+      "title": "Shapley Value",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_value.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_value.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_value_efficient",
+      "title": "Shapley Value Is Efficient",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_value_efficient.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_value_efficient.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.simple_game",
+      "title": "Simple Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_simple_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_simple_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.superadditive_game",
+      "title": "Superadditive Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_superadditive_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_superadditive_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.tu_game",
+      "title": "Transferable-Utility Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_tu_game.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.balanced_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.superadditive_game",
+      "to": "game_theory.cooperative_game.convex_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.convex_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.imputation",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.core",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.imputation",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.shapley_axioms",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.marginal_contribution",
+      "to": "game_theory.cooperative_game.shapley_value",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.tu_game",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "axioms",
+      "title": "axioms",
+      "href": "keywords/axioms.html",
+      "count": 1
+    },
+    {
+      "id": "balancedness",
+      "title": "balancedness",
+      "href": "keywords/balancedness.html",
+      "count": 3
+    },
+    {
+      "id": "bondareva-shapley",
+      "title": "bondareva-shapley",
+      "href": "keywords/bondareva-shapley.html",
+      "count": 2
+    },
+    {
+      "id": "characteristic-function",
+      "title": "characteristic-function",
+      "href": "keywords/characteristic-function.html",
+      "count": 1
+    },
+    {
+      "id": "coalitional-game",
+      "title": "coalitional-game",
+      "href": "keywords/coalitional-game.html",
+      "count": 19
+    },
+    {
+      "id": "convex-game",
+      "title": "convex-game",
+      "href": "keywords/convex-game.html",
+      "count": 3
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 5
+    },
+    {
+      "id": "efficiency",
+      "title": "efficiency",
+      "href": "keywords/efficiency.html",
+      "count": 2
+    },
+    {
+      "id": "imputation",
+      "title": "imputation",
+      "href": "keywords/imputation.html",
+      "count": 3
+    },
+    {
+      "id": "individual-rationality",
+      "title": "individual-rationality",
+      "href": "keywords/individual-rationality.html",
+      "count": 1
+    },
+    {
+      "id": "marginal-contribution",
+      "title": "marginal-contribution",
+      "href": "keywords/marginal-contribution.html",
+      "count": 1
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 1
+    },
+    {
+      "id": "payoff-vector",
+      "title": "payoff-vector",
+      "href": "keywords/payoff-vector.html",
+      "count": 1
+    },
+    {
+      "id": "shapley-value",
+      "title": "shapley-value",
+      "href": "keywords/shapley-value.html",
+      "count": 6
+    },
+    {
+      "id": "simple-game",
+      "title": "simple-game",
+      "href": "keywords/simple-game.html",
+      "count": 1
+    },
+    {
+      "id": "stability",
+      "title": "stability",
+      "href": "keywords/stability.html",
+      "count": 1
+    },
+    {
+      "id": "superadditivity",
+      "title": "superadditivity",
+      "href": "keywords/superadditivity.html",
+      "count": 1
+    },
+    {
+      "id": "supermodularity",
+      "title": "supermodularity",
+      "href": "keywords/supermodularity.html",
+      "count": 1
+    },
+    {
+      "id": "transferable-utility",
+      "title": "transferable-utility",
+      "href": "keywords/transferable-utility.html",
+      "count": 1
+    },
+    {
+      "id": "uniqueness",
+      "title": "uniqueness",
+      "href": "keywords/uniqueness.html",
+      "count": 1
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "game_theory.cooperative_game.classes",
+    "game_theory.cooperative_game.core",
+    "game_theory.cooperative_game.shapley_value"
+  ]
+}

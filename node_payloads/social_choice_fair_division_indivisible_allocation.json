@@ -1,0 +1,98 @@
+{
+  "id": "social_choice.fair_division.indivisible.allocation",
+  "title": "Indivisible Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_allocation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Allocation</h1>\n<p>For a population $N$ and a finite type of goods $G$ (with\n<code>[DecidableEq G]</code>), an <em>indivisible allocation</em> assigns each agent a\nbundle (a finite subset of $G$):\n$$\nA : N \\to \\mathrm{Finset}\\ G.\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.Allocation N G := N → Finset G</code>,\na plain type alias.</p>\n<h2>Partition predicate</h2>\n<p>A <em>complete</em> indivisible allocation partitions an outer good set\n<code>allGoods : Finset G</code>. In Lean: <code>IsAllocation</code> is a structure with two\nfields:</p>\n<ul>\n<li><code>disjoint : ∀ i ≠ j, Disjoint (A i) (A j)</code> — agents receive disjoint\n  bundles;</li>\n<li><code>complete : allGoods = Finset.univ.biUnion A</code> — every good in\n  <code>allGoods</code> is allocated to some agent.</li>\n</ul>\n<p>The class hypotheses <code>[Fintype N]</code> and <code>[DecidableEq G]</code> are required\nby the <code>Finset.univ.biUnion</code> and <code>Disjoint</code> operators.</p>\n<p>A small derived fact <code>IsAllocation.mem_biUnion</code> says every good in\n<code>allGoods</code> belongs to some agent's bundle.</p>\n<h2>Why feasibility is a separate predicate</h2>\n<p>Algorithms like round-robin\n([[social_choice.fair_division.indivisible.round_robin_alloc]]) and\nenvy-cycle elimination\n([[social_choice.fair_division.indivisible.envy_cycle_algorithm]])\nmanipulate raw allocations (function values, not partition witnesses) in\nintermediate states. Keeping <code>Allocation</code> as a plain function type and\n<code>IsAllocation</code> as a separate hypothesis lets these algorithms be\nwritten without prematurely committing to partition invariants at\nevery step.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Indivisible goods allocations.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.best_good",
+      "title": "Best-Good Selection",
+      "href": "social_choice/social_choice_fair_division_indivisible_best_good.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "title": "EFX from a Singleton-Bundle Sufficient Condition",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_partition",
+      "title": "Round-Robin Output Is a Complete Partition",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_partition.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "title": "Indivisible Utilitarian Welfare",
+      "href": "social_choice/social_choice_fair_division_indivisible_utilitarian_welfare.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.Allocation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.Allocation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.Allocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+      "kind": "def",
+      "signature": "def Allocation (N G : Type*)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Basic.lean#L42",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsAllocation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+      "kind": "structure",
+      "signature": "structure IsAllocation {N G : Type*} [Fintype N] [DecidableEq G]\n    (allGoods : Finset G) (A : Allocation N G) : Prop where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Basic.lean#L55",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

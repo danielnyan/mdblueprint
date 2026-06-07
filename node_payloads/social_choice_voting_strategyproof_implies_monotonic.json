@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.strategyproof_implies_monotonic",
+  "title": "Strategy-Proof ⇒ Monotonic",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_strategyproof_implies_monotonic.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.gibbard_satterthwaite"
+  ],
+  "body_html": "<h1>Strategy-Proof ⇒ Monotonic</h1>\n<p><strong>Theorem.</strong> Every strategy-proof social choice function on a finite voter\ntype is monotonic.</p>\n<p>That is, ([[social_choice.voting.strategyproof]]) implies\n([[social_choice.voting.monotonic_scf]]).</p>\n<p>In Lean this is <code>SocialChoice.Voting.strategyproof_monotonic</code>. The statement is\npresent in <code>EconCSLib.SocialChoice.Voting.GibbardSatterthwaite</code>; the proof is\ncurrently a <code>sorry</code>, with the standard finite-replacement argument outlined\nbelow.</p>",
+  "proof_html": "<p>plan</p>\n<p>We argue the contrapositive: if monotonicity fails between profiles $P$ and\n$Q$ at a winner $a = G(P)$, then strategy-proofness fails too.</p>\n<ol>\n<li>\n<p><strong>Setup.</strong> Fix profiles $P, Q$ and $a$ with $G(P) = a$ and the\n   monotonicity hypothesis ($\\forall i,\\ \\forall c \\ne a,\\\n   a \\succ_{P_i} c \\Rightarrow a \\succ_{Q_i} c$), but\n   $G(Q) \\ne a$.</p>\n</li>\n<li>\n<p><strong>Finite path.</strong> Enumerate $N = \\{i_1, \\dots, i_n\\}$ and form the chain\n   of profiles $R_0 = P$, $R_k$ obtained from $R_{k-1}$ by replacing voter\n   $i_k$'s report from $P_{i_k}$ to $Q_{i_k}$. Then $R_n = Q$. The outcome\n   $G(R_k)$ varies along this chain, starting at $a$ and ending at\n   $G(Q) \\ne a$.</p>\n</li>\n<li>\n<p><strong>First defection.</strong> Let $k$ be the smallest index where the outcome\n   <em>first</em> changes off $a$: $G(R_{k-1}) = a$ and $G(R_k) \\ne a$. Write\n   $a' = G(R_k)$.</p>\n</li>\n<li>\n<p><strong>Profitable manipulation.</strong> Inspect the two consecutive profiles. By\n   the monotonicity hypothesis, voter $i_k$'s true ranking $P_{i_k}$ has\n   $a$ strictly above $a'$ (otherwise the hypothesis would fail). At the\n   profile $R_{k-1}$ truthful $i_k$ obtains $a$; at $R_k$ — obtained from\n   $R_{k-1}$ by $i_k$ reporting $Q_{i_k}$ instead of $P_{i_k}$ — they\n   obtain $a' \\prec_{P_{i_k}} a$, contradicting strategy-proofness\n   ([[social_choice.voting.strategyproof]]) applied to the deviation\n   $Q_{i_k}$.</p>\n</li>\n</ol>\n<p>The argument needs <code>Fintype N</code> (to enumerate the chain) and <code>DecidableEq N</code>\n(to substitute one voter's report).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.35] Maschler, Solan, and Zamir, <em>Game Theory</em>. Strategy-proofness implies monotonicity.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.strategyproof_monotonic",
+      "display_name": "SocialChoice.Voting.strategyproof_monotonic",
+      "qualified_name": "SocialChoice.Voting.strategyproof_monotonic",
+      "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "kind": "theorem",
+      "signature": "theorem strategyproof_monotonic [Fintype N] [Fintype A]\n    (f : VotingRule N A) (hf_res : Resolute f)\n    (hSP : ResoluteStrategyproofness f hf_res) :\n    Monotonicity f",
+      "docstring": "Strategy-proofness implies monotonicity for finite voter sets. [MSZ 21.35]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L476",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "display_name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

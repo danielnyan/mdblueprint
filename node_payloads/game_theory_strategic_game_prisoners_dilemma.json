@@ -1,0 +1,126 @@
+{
+  "id": "game_theory.strategic_game.prisoners_dilemma",
+  "title": "Prisoner's Dilemma",
+  "kind": "example",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Prisoner's Dilemma</h1>\n<p>The Prisoner's Dilemma is a two-player strategic game where each player can\nCooperate ($C$) or Defect ($D$). The Lean example uses this normalized payoff\nmatrix:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>$C$</th>\n<th>$D$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>$C$</td>\n<td>(3, 3)</td>\n<td>(0, 5)</td>\n</tr>\n<tr>\n<td>$D$</td>\n<td>(5, 0)</td>\n<td>(1, 1)</td>\n</tr>\n</tbody>\n</table>\n<p>Defecting is a weakly dominant strategy for each player. The unique Nash\nequilibrium is $(D, D)$ with payoff $(1, 1)$, which is Pareto-dominated by\n$(C, C)$ with payoff $(3, 3)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Prisoner's Dilemma in utility units.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominant_implies_nash",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "PrisonersDilemma.PD",
+      "display_name": "PrisonersDilemma.PD",
+      "qualified_name": "PrisonersDilemma.PD",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "kind": "def",
+      "signature": "def PD : StrategicGame (Fin 2) ℕ where",
+      "docstring": "The Prisoner's Dilemma as a strategic game with natural number payoffs.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L60",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_defect_weakly_dominant",
+      "display_name": "PrisonersDilemma.pd_defect_weakly_dominant",
+      "qualified_name": "PrisonersDilemma.pd_defect_weakly_dominant",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "kind": "theorem",
+      "signature": "theorem pd_defect_weakly_dominant : ∀ i : Fin 2, IsWeaklyDominant PD i Defect",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_defect_nash",
+      "display_name": "PrisonersDilemma.pd_defect_nash",
+      "qualified_name": "PrisonersDilemma.pd_defect_nash",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "kind": "theorem",
+      "signature": "theorem pd_defect_nash : IsNashEquilibrium PD (fun _ => Defect)",
+      "docstring": "T4b: (Defect, Defect) is a Nash equilibrium, by T3 (dominant profile → Nash).",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L77",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_nash_unique",
+      "display_name": "PrisonersDilemma.pd_nash_unique",
+      "qualified_name": "PrisonersDilemma.pd_nash_unique",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "kind": "theorem",
+      "signature": "theorem pd_nash_unique : ∀ σ : PD.Profile,\n    IsNashEquilibrium PD σ → σ = fun _ => Defect",
+      "docstring": "T4c: (Defect, Defect) is the *unique* pure Nash equilibrium.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L81",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_pareto_suboptimal",
+      "display_name": "PrisonersDilemma.pd_pareto_suboptimal",
+      "qualified_name": "PrisonersDilemma.pd_pareto_suboptimal",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "kind": "theorem",
+      "signature": "theorem pd_pareto_suboptimal :\n    PD.payoff (fun _ => Cooperate) 0 > PD.payoff (fun _ => Defect) 0",
+      "docstring": "The social optimum (Cooperate, Cooperate) is Pareto-superior to the Nash outcome.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L89",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.PrisonersDilemma",
+      "display_name": "EconCSLib.Examples.PrisonersDilemma",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/PrisonersDilemma.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

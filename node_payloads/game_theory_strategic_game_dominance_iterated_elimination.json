@@ -1,0 +1,106 @@
+{
+  "id": "game_theory.strategic_game.dominance.iterated_elimination",
+  "title": "Iterated Elimination Of Strictly Dominated Strategies",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Iterated Elimination Of Strictly Dominated Strategies</h1>\n<p>Starting from a strategic game, remove all strictly dominated strategies. The\nremaining strategy sets define a restricted game, in which new strategies may\nbecome strictly dominated. Repeating this operation gives an iterated elimination\nprocess.</p>\n<p>A strategy survives to round $k$ if it has not been eliminated in the first $k$\nrounds. The limiting survivor set is the set of strategies that survive all finite\nrounds.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 1.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Iterated elimination of strictly dominated strategies.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "title": "Solvable Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominance_solvable_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "title": "Rationalizable Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_strategy.html"
+    },
+    {
+      "id": "math.fixed_point.brouwer_simplex",
+      "title": "Brouwer Fixed Point Theorem For A Simplex",
+      "href": "math/math_fixed_point_brouwer_simplex.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.Survives",
+      "display_name": "StrategicGame.Survives",
+      "qualified_name": "StrategicGame.Survives",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "def",
+      "signature": "def Survives (G : StrategicGame N U) : ℕ → (i : N) → G.strategy i → Prop\n  | 0 => fun _ _ => True\n  | n + 1 => fun i s =>\n      G.Survives n i s ∧\n      ¬ ∃ t : G.strategy i, G.Survives n i t ∧\n        ∀ σ : G.Profile, (∀ j, G.Survives n j (σ j)) →\n          G.payoff (deviate σ i s) i < G.payoff (deviate σ i t) i\n/-- Survival at round n+1 implies survival at round n. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L40",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.Survives.mono",
+      "display_name": "StrategicGame.Survives.mono",
+      "qualified_name": "StrategicGame.Survives.mono",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "theorem",
+      "signature": "theorem Survives.mono {G : StrategicGame N U} {m n : ℕ} (hmn : m ≤ n)\n    {i : N} {s : G.strategy i} (h : G.Survives n i s) : G.Survives m i s",
+      "docstring": "Survival is monotone: later rounds ⊆ earlier rounds.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L54",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.Survives.prev",
+      "display_name": "StrategicGame.Survives.prev",
+      "qualified_name": "StrategicGame.Survives.prev",
+      "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "kind": "theorem",
+      "signature": "theorem Survives.prev {G : StrategicGame N U} {n : ℕ} {i : N} {s : G.strategy i}\n    (h : G.Survives (n + 1) i s) : G.Survives n i s",
+      "docstring": "Survival at round n+1 implies survival at round n.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L49",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.IESDS",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/IESDS.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

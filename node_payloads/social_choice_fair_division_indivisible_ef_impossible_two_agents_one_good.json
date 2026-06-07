@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good",
+  "title": "EF Impossibility — Two Agents, One Good",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_ef_impossible_two_agents_one_good.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EF Impossibility — Two Agents, One Good</h1>\n<p><strong>Theorem.</strong> Let $G$ be a type of goods with <code>[DecidableEq G]</code>, let\n$g \\in G$ be a distinguished good, and let $v : \\mathrm{Valuation}\\ (\\mathrm{Fin}\\ 2)\\ G$\nbe a valuation such that <em>both</em> agents strictly prefer the singleton\n$\\{g\\}$ to the empty bundle:\n$$\nv_0(\\emptyset) &lt; v_0(\\{g\\}), \\qquad v_1(\\emptyset) &lt; v_1(\\{g\\}).\n$$</p>\n<p>For every complete allocation $A$ of <code>allGoods = {g}</code>, $A$ is <strong>not</strong>\nenvy-free.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.ef_impossible_two_agents_one_good</code>.</p>",
+  "proof_html": "<p>By completeness, $g$ must lie in some agent's bundle. By disjointness,\nthe other agent gets $\\emptyset$ (and the lucky one gets exactly\n$\\{g\\}$). Without loss of generality say agent $0$ holds $\\{g\\}$ and\nagent $1$ holds $\\emptyset$. Envy-freeness from agent 1's perspective\ndemands $v_1(A(0)) \\le v_1(A(1))$, i.e.\\ $v_1(\\{g\\}) \\le v_1(\\emptyset)$.\nBut the hypothesis $v_1(\\emptyset) &lt; v_1(\\{g\\})$ contradicts this.</p>\n<p>The proof uses <code>Finset.disjoint_left</code> to deduce $A(1) = \\emptyset$ from\nthe partition / completeness facts, and <code>fin_cases</code> to split on whether\nagent 0 or agent 1 holds $g$.</p>\n<h2>Significance</h2>\n<p>This is the canonical impossibility result for indivisible fair\ndivision: even for the simplest instance — two agents, one item, both\nwanting it — there is no envy-free complete allocation. By contrast,\nEF for divisible goods is always achievable\n([[social_choice.fair_division.divisible.cut_and_choose_ef_exists]]).</p>\n<p>It motivates the standard relaxations:</p>\n<ul>\n<li><strong>EF1</strong> ([[social_choice.fair_division.indivisible.ef1]]): allow\n  envy that vanishes after removing some single item. Trivially\n  satisfied here (removing $g$ from $\\{g\\}$ yields $\\emptyset$, which\n  agent 1 weakly prefers to their own empty share).</li>\n<li><strong>EFX</strong> ([[social_choice.fair_division.indivisible.efx]]): the\n  stronger \"any-item\" relaxation.</li>\n<li><strong>MMS</strong> ([[social_choice.fair_division.indivisible.maximin_share]]):\n  approximate-fairness in expected-self-partition terms.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF impossibility for indivisible goods.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.ef_impossible_two_agents_one_good",
+      "display_name": "SocialChoice.FairDivision.Indivisible.ef_impossible_two_agents_one_good",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.ef_impossible_two_agents_one_good",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+      "kind": "theorem",
+      "signature": "theorem ef_impossible_two_agents_one_good {G : Type*}\n    [DecidableEq G]\n    {g : G}\n    (v : Valuation (Fin 2) G)\n    (h0 : v.val 0 ∅ < v.val 0 {g})\n    (h1 : v.val 1 ∅ < v.val 1 {g})\n    {A : Allocation (Fin 2) G} (hA : IsAllocation {g} A) :\n    ¬ IsEnvyFree v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/ImpossibilityEF.lean#L54",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/ImpossibilityEF.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

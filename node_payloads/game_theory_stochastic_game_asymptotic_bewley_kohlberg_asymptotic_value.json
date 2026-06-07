@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.asymptotic.bewley_kohlberg_asymptotic_value",
+  "title": "Bewley-Kohlberg Asymptotic Value",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_asymptotic_bewley_kohlberg_asymptotic_value.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.asymptotic"
+  ],
+  "body_html": "<h1>Bewley-Kohlberg Asymptotic Value</h1>\n<p><strong>Theorem (Bewley-Kohlberg 1976).</strong> For every finite-state, finite-action\ntwo-player zero-sum stochastic game, the discounted-value function\n$v_\\gamma$ ([[game_theory.stochastic_game.value.discounted_value]]) converges as\n$\\gamma \\to 1^-$ to a limit function $v_\\infty : S \\to \\mathbb{R}$, the\n<strong>asymptotic value</strong>:\n$$\nv_\\infty(s) = \\lim_{\\gamma \\to 1^-} v_\\gamma(s).\n$$</p>\n<p>Equivalently, the average-reward value of the $T$-stage games\n$v_T = \\frac{1}{T} \\sum_{t=0}^{T-1} \\mathbb{E}[r(s_t, a_t)]$\nconverges to the same limit:\n$\\lim_T v_T(s) = v_\\infty(s)$.</p>",
+  "proof_html": "<p>idea (semialgebraic geometry)</p>\n<p>The discounted-value map $\\gamma \\mapsto v_\\gamma$ is <strong>semialgebraic</strong>:\nthe fixed-point equation $v_\\gamma = T_\\gamma(v_\\gamma)$\n([[game_theory.stochastic_game.value.discounted_value_fixed_point]]) writes\n$v_\\gamma$ as the solution of a polynomial system in $\\gamma$ and the\ndata of the game. By Tarski-Seidenberg (or basic semialgebraic\ngeometry over $\\mathbb{R}$), $v_\\gamma(s)$ is a <em>rational function</em> of\n$\\gamma$ in a punctured neighbourhood of $1$.</p>\n<p>A rational function has a limit as $\\gamma \\to 1$, completing the\nproof. The argument also gives a <strong>Puiseux expansion</strong>\n$v_\\gamma(s) = \\sum_{k \\ge 0} c_k(s) (1 - \\gamma)^{k / d}$ valid in a\nright-neighbourhood of $\\gamma = 1$.</p>\n<h2>Significance</h2>\n<ul>\n<li>This is the <em>first</em> theorem establishing existence of an\n  undiscounted (long-run-average) value for general finite zero-sum\n  stochastic games. Earlier work handled only special cases\n  (irreducible chains, perfect information).</li>\n<li>The semialgebraic-geometry technique inspired the much harder uniform\n  value theorem\n  ([[game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value]]).</li>\n<li>The Puiseux expansion is sharp: there exist games (Big Match\n  [[game_theory.stochastic_game.examples.big_match_uniform_value]] is the\n  canonical one) where the leading exponent is not an integer.</li>\n</ul>\n<h2>What is <em>not</em> claimed</h2>\n<p>Bewley-Kohlberg gives <strong>convergence of the value functions</strong> but not\nthat there are uniformly $\\varepsilon$-optimal strategies. The\nuniform-value question — whether players have strategies guaranteeing\n$v_\\infty$ up to $\\varepsilon$ <em>uniformly over all sufficiently large\nhorizons</em> — is the much harder Mertens-Neyman 1981 theorem.</p>\n<h2>References</h2>\n<ul>\n<li>Bewley, T. and Kohlberg, E. (1976). \"The Asymptotic Theory of\n  Stochastic Games\". <em>Math. Oper. Res.</em> 1: 197–208.</li>\n<li>Mertens, J.-F. and Neyman, A. (1981). \"Stochastic Games\".\n  <em>Int. J. Game Theory</em> 10: 53–66.</li>\n<li>[MFoGT Chapter 8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

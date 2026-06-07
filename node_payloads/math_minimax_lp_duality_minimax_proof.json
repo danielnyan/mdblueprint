@@ -1,0 +1,18 @@
+{
+  "id": "math.minimax.lp_duality_minimax_proof",
+  "title": "LP Duality Proof Of Minimax",
+  "kind": "proof-plan",
+  "status": "admitted",
+  "href": "math/math_minimax_lp_duality_minimax_proof.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>LP Duality Proof Of Minimax</h1>",
+  "proof_html": "<p>Shift the matrix by adding a positive constant to every entry, so all entries\nare positive.  Apply finite-dimensional linear-programming duality\n(<a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_duality\" href=\"linear_programming/math_linear_programming_strong_duality.html\">Strong Duality For Linear Programming</a>) to the dual programs\n$$\n  XA \\ge \\mathbf{1}, \\quad X \\ge 0\n$$\nand\n$$\n  AY \\le \\mathbf{1}, \\quad Y \\ge 0.\n$$\nThe dual optimal solutions have a common objective value $w&gt;0$.  Normalizing\nthe vectors by $w$ gives mixed strategies $x^*$ and $y^*$, and the inequalities\nbecome the minimax optimality inequalities with value $1/w$ via the simplex\nbound transfer <a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>.  Weak duality\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.maximin_le_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html\">Maximin is Bounded by Minimax</a> closes the sandwich, and undoing the\nconstant shift gives the original game.</p>\n<p>This proof route is recorded as a <code>candidate</code> rather than <code>selected</code>: the\nlibrary's chosen formalisation route for <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>\nis the simplified-Loomis induction\n(<a class=\"node-ref\" data-node-id=\"math.minimax.minimax_from_loomis\" href=\"minimax/math_minimax_minimax_from_loomis.html\">Minimax via the All-Ones Specialization of Loomis</a>). The LP-duality route is now\nviable in EconCSLib via the strong-duality node (Farkas → LP strong duality)\nlanded in #71, but has not been carried through to a Lean proof.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 2.3.2 and proof after Thm. 2.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. LP duality proof of von Neumann minimax.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

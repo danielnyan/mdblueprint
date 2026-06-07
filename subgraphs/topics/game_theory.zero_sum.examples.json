@@ -1,0 +1,218 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.examples",
+    "title": "Game Theory.Zero Sum.Examples",
+    "href": "game_theory/zero_sum/examples/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 9,
+    "descendant_node_count": 9
+  },
+  "counts": {
+    "internal_nodes": 9,
+    "inlined_nodes": 0,
+    "descendant_nodes": 9,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 9,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.asymmetric_silent_noisy_duel_value",
+      "title": "Silent Versus Noisy One-Bullet Duel Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_asymmetric_silent_noisy_duel_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_asymmetric_silent_noisy_duel_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "title": "Three-By-Two Matrix Game Computation",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "title": "Diagonal Matrix Game Value",
+      "kind": "proposition",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_diagonal_matrix_game_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_diagonal_matrix_game_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "title": "Matching Pennies",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_matching_pennies.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_multiple_bullets_value",
+      "title": "Noisy Duel With Multiple Bullets",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_multiple_bullets_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_noisy_duel_multiple_bullets_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_one_bullet_value",
+      "title": "Noisy One-Bullet Duel Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_one_bullet_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_noisy_duel_one_bullet_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.silent_duel_no_pure_value",
+      "title": "Silent One-Bullet Duel Has No Pure Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_silent_duel_no_pure_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_silent_duel_no_pure_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.three_player_minimax_failure",
+      "title": "Three-Player Minimax Failure",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_three_player_minimax_failure.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_three_player_minimax_failure.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "title": "Two-By-Two Value Formula",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "computation",
+      "title": "computation",
+      "href": "keywords/computation.html",
+      "count": 1
+    },
+    {
+      "id": "continuous-game",
+      "title": "continuous-game",
+      "href": "keywords/continuous-game.html",
+      "count": 4
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 1
+    },
+    {
+      "id": "duel",
+      "title": "duel",
+      "href": "keywords/duel.html",
+      "count": 4
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 5
+    },
+    {
+      "id": "matrix-game",
+      "title": "matrix-game",
+      "href": "keywords/matrix-game.html",
+      "count": 3
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 2
+    },
+    {
+      "id": "two-by-two",
+      "title": "two-by-two",
+      "href": "keywords/two-by-two.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 9
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

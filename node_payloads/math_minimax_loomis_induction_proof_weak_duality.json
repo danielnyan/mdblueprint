@@ -1,0 +1,60 @@
+{
+  "id": "math.minimax.loomis_induction_proof.weak_duality",
+  "title": "Weak Duality For Loomis Values",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_minimax_loomis_induction_proof_weak_duality.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Weak Duality For Loomis Values</h1>\n<p>The \"easy\" direction of the Loomis theorem: any maxmin Loomis ratio is\nbounded by any minmax Loomis ratio. Used by the direct Loomis induction\nproof to set up the sandwich $\\lambda_0 \\le \\mu_0$.</p>\n<h2>Statement</h2>\n<p>Fix $A, B \\colon I \\times J \\to \\mathbb{R}$ with $B$ entrywise positive.\nWith $\\lambda_0$ and $\\mu_0$ defined in\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.value_existence\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_value_existence.html\">Existence of Loomis Optimisers</a>,\n$$\n  \\lambda_0 \\;\\le\\; \\mu_0.\n$$</p>",
+  "proof_html": "<p>Let $x_0 \\in \\Delta(I)$ and $y_0 \\in \\Delta(J)$ be the optimisers supplied\nby <a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.value_existence\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_value_existence.html\">Existence of Loomis Optimisers</a>, so that\nfor every $j \\in J$ and every $i \\in I$\n$$\n  (x_0 A)_j \\ge \\lambda_0\\,(x_0 B)_j,\n  \\qquad\n  (A y_0)_i \\le \\mu_0\\,(B y_0)_i.\n$$\nWeight the first family by $y_{0,j} \\ge 0$ and sum over $j$:\n$$\n  \\sum_j y_{0,j} (x_0 A)_j \\;\\ge\\; \\lambda_0 \\sum_j y_{0,j} (x_0 B)_j,\n$$\ni.e. $x_0 A y_0 \\ge \\lambda_0 \\cdot (x_0 B y_0)$. Symmetrically, weight the\nsecond family by $x_{0,i} \\ge 0$ and sum over $i$:\n$$\n  x_0 A y_0 \\;\\le\\; \\mu_0 \\cdot (x_0 B y_0).\n$$\nCombining,\n$$\n  \\lambda_0 \\cdot (x_0 B y_0) \\;\\le\\; x_0 A y_0 \\;\\le\\; \\mu_0 \\cdot (x_0 B y_0).\n$$\nBy <a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.positive_aggregate\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_positive_aggregate.html\">Positive Aggregates xB and By</a> the\nquantity $x_0 B y_0$ is strictly positive, so dividing gives $\\lambda_0 \\le\n\\mu_0$. $\\square$</p>\n<h2>Use</h2>\n<p>This is the first half of the Loomis sandwich. The reverse direction\n$\\mu_0 \\le \\lambda_0$ is established by ruling out the strict inequality\n$\\lambda_0 &lt; \\mu_0$ via the column-drop and row-drop steps of the direct\nLoomis induction.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations\n  of Game Theory</em>. Weak duality\n  for the Loomis ratios.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Loomis.lamB0_le_muB0",
+      "display_name": "Loomis.lamB0_le_muB0",
+      "qualified_name": "Loomis.lamB0_le_muB0",
+      "module": "EconCSLib.Math.Minimax.Loomis",
+      "kind": "theorem",
+      "signature": "theorem lamB0_le_muB0 (A B : I → J → ℝ) (hB : IsPositive B) :\n    lamB0 A B ≤ muB0 A B",
+      "docstring": "**Weak duality** for the Loomis scalars: `lamB0 ≤ muB0`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L264",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Minimax.Loomis",
+      "display_name": "EconCSLib.Math.Minimax.Loomis",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

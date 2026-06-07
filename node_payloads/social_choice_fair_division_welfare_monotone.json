@@ -1,0 +1,85 @@
+{
+  "id": "social_choice.fair_division.welfare_monotone",
+  "title": "Basic Welfare Lemmas",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_welfare_monotone.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Basic Welfare Lemmas</h1>\n<p>Three small lemmas keep the welfare layer self-contained.</p>\n<p><strong>Monotonicity of utilitarian welfare.</strong> If $A$ is pointwise weakly\nimproved by $B$,\n$$\n\\bigl(\\forall i,\\ u_i(A(i)) \\le u_i(B(i))\\bigr) \\Rightarrow\nW_{\\mathrm{util}}(u, A) \\le W_{\\mathrm{util}}(u, B).\n$$\nIn Lean: <code>utilitarianWelfare_mono</code> (immediate from <code>Finset.sum_le_sum</code>).</p>\n<p><strong>Unique-agent collapse.</strong> If $N$ has exactly one element (the canonical\n<code>default : N</code>), then $W_{\\mathrm{util}}(u, A) = u_{\\mathrm{default}}(A(\\mathrm{default}))$.\nIn Lean: <code>utilitarianWelfare_unique</code> (<code>@[simp]</code>-tagged).</p>\n<p><strong>Egalitarian lower bound on each agent.</strong> Every agent obtains at least\nthe egalitarian welfare from their share:\n$$\n\\forall i,\\ W_{\\mathrm{egal}}(u, A) \\le u_i(A(i)).\n$$\nIn Lean: <code>egalitarianWelfare_le</code> (immediate from <code>Finset.inf'_le</code>).</p>\n<p>These are the basic algebraic facts used downstream when comparing\nutilitarian and egalitarian objectives (see\n[[social_choice.fair_division.egal_le_util]]).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Welfare aggregations.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.utilitarianWelfare_mono",
+      "display_name": "SocialChoice.FairDivision.utilitarianWelfare_mono",
+      "qualified_name": "SocialChoice.FairDivision.utilitarianWelfare_mono",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "lemma",
+      "signature": "lemma utilitarianWelfare_mono\n    (u : N → S → ℝ) (A B : Allocation N S)\n    (h : ∀ i : N, u i (A i) ≤ u i (B i)) :\n    utilitarianWelfare u A ≤ utilitarianWelfare u B",
+      "docstring": "Utilitarian welfare is monotone: pointwise improvement implies welfare improvement.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L52",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.utilitarianWelfare_unique",
+      "display_name": "SocialChoice.FairDivision.utilitarianWelfare_unique",
+      "qualified_name": "SocialChoice.FairDivision.utilitarianWelfare_unique",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "lemma",
+      "signature": "lemma utilitarianWelfare_unique [Unique N]\n    (u : N → S → ℝ) (A : Allocation N S) :\n    utilitarianWelfare u A = u default (A default)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L60",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.egalitarianWelfare_le",
+      "display_name": "SocialChoice.FairDivision.egalitarianWelfare_le",
+      "qualified_name": "SocialChoice.FairDivision.egalitarianWelfare_le",
+      "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "kind": "lemma",
+      "signature": "lemma egalitarianWelfare_le [Nonempty N]\n    (u : N → S → ℝ) (A : Allocation N S) (i : N) :\n    egalitarianWelfare u A ≤ u i (A i)",
+      "docstring": "Egalitarian welfare is bounded above by each agent's utility.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L66",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Welfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Welfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

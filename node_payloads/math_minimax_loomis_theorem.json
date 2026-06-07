@@ -1,0 +1,72 @@
+{
+  "id": "math.minimax.loomis_theorem",
+  "title": "Loomis Theorem (Positive B)",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "math/math_minimax_loomis_theorem.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Loomis Theorem (Positive B)</h1>\n<h2>Setup</h2>\n<p>Fix finite nonempty index types $I$ and $J$. Let $A, B \\colon I \\times J \\to\n\\mathbb{R}$ be two real matrices, and assume $B$ is <strong>entrywise positive</strong>:\n$B_{ij} &gt; 0$ for every $(i, j) \\in I \\times J$.</p>\n<p>For $x \\in \\Delta(I)$ and $y \\in \\Delta(J)$ define the row- and column-vector\nproducts\n$$\n  (xA)_j = \\sum_i x_i A_{ij}, \\qquad (Ay)_i = \\sum_j A_{ij}\\, y_j,\n$$\nand similarly $(xB)_j$, $(By)_i$. Positivity of $B$ implies $(xB)_j &gt; 0$ for\nevery $x \\in \\Delta(I)$ and every $j$, and $(By)_i &gt; 0$ for every\n$y \\in \\Delta(J)$ and every $i$ — recorded as\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.positive_aggregate\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_positive_aggregate.html\">Positive Aggregates xB and By</a>.</p>\n<h2>Statement</h2>\n<p><strong>Theorem (Loomis).</strong> There exist $x \\in \\Delta(I)$, $y \\in \\Delta(J)$, and\n$v \\in \\mathbb{R}$ such that\n$$\n  xA \\ge v \\cdot xB, \\qquad Ay \\le v \\cdot By,\n$$\nwhere the inequalities are componentwise. Equivalently, for every $j \\in J$\nand every $i \\in I$,\n$$\n  \\sum_i x_i A_{ij} \\ge v \\sum_i x_i B_{ij}, \\qquad\n  \\sum_j A_{ij}\\, y_j \\le v \\sum_j B_{ij}\\, y_j.\n$$</p>\n<p>The common ratio level $v$ is the <strong>Loomis value</strong> of the pair $(A, B)$. The\nscalar form of the same statement is\n$$\n  \\lambda_0 \\;=\\; \\mu_0 \\;=\\; v,\n$$\nwhere\n$$\n  \\lambda_0\n  \\;=\\; \\sup_{x \\in \\Delta(I)} \\inf_{j \\in J} \\frac{(xA)_j}{(xB)_j},\n  \\qquad\n  \\mu_0\n  \\;=\\; \\inf_{y \\in \\Delta(J)} \\sup_{i \\in I} \\frac{(Ay)_i}{(By)_i}.\n$$\nThe denominators are strictly positive by positivity of $B$, so both\nexpressions are well-defined.</p>\n<h2>Discussion</h2>\n<p>MFoGT presents Loomis as an extension of von Neumann's minimax theorem. The\ncanonical blueprint route in this library is the opposite: Loomis is proved\ndirectly by induction on $|I| + |J|$ (see the proof-plan\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof\" href=\"minimax/math_minimax_loomis_induction_proof.html\">Direct Induction Proof Of Loomis Theorem</a>). Finite minimax is then the\n$B = \\mathbf{1}$ specialisation\n(<a class=\"node-ref\" data-node-id=\"math.minimax.minimax_from_loomis\" href=\"minimax/math_minimax_minimax_from_loomis.html\">Minimax via the All-Ones Specialization of Loomis</a>): for any probability vectors\n$x, y$ and the all-ones matrix $B = \\mathbf{1}$, both $xB$ and $By$ are\nidentically $1$, so the Loomis inequalities collapse to\n$\\min_j (xA)_j \\ge v \\ge \\max_i (Ay)_i$.</p>\n<p>The library's Lean development formalises the general positive-$B$ Loomis\ntheorem in <code>EconCSLib.StrategicGame.Loomis</code>, and re-derives the\n$B = \\mathbf{1}$ specialisation (the finite von Neumann minimax) as the\ncorollary <code>Loomis.minmax_from_general</code>. The original inlined\ninduction at $B = \\mathbf{1}$ in <code>EconCSLib.StrategicGame.MinimaxLoomis</code>\nis retained as an independent witness.</p>",
+  "proof_html": "<p>See the induction-on-$|I|+|J|$ proof-plan\n<em>Direct Induction Proof Of Loomis Theorem</em>, which decomposes the argument\ninto:</p>\n<ol>\n<li>positivity of the aggregates $xB$ and $By$\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.positive_aggregate\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_positive_aggregate.html\">Positive Aggregates xB and By</a>);</li>\n<li>existence of optimisers attaining $\\lambda_0$ and $\\mu_0$\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.value_existence\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_value_existence.html\">Existence of Loomis Optimisers</a>);</li>\n<li>weak duality $\\lambda_0 \\le \\mu_0$\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.weak_duality\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_weak_duality.html\">Weak Duality For Loomis Values</a>);</li>\n<li>the base case $|I| + |J| = 2$\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.base_case\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_base_case.html\">Base Case of Loomis Induction</a>);</li>\n<li>the column-drop induction step\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.column_drop\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_column_drop.html\">Column-Drop Step of Loomis Induction</a>);</li>\n<li>the row-drop induction step\n   (<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.row_drop\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_row_drop.html\">Row-Drop Step of Loomis Induction</a>).</li>\n</ol>\n<p>Steps 1–3 give $\\lambda_0 \\le \\mu_0$ and existence of attaining strategies\n$x_0, y_0$. Step 4 closes the base case. Steps 5–6 rule out the strict\ninequality $\\lambda_0 &lt; \\mu_0$ by induction on $|I| + |J|$, leaving the\nequality $\\lambda_0 = \\mu_0 = v$, witnessed by $(x_0, y_0)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 2.5.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations\n  of Game Theory</em>. Loomis\n  theorem for matrices $A$ and positive $B$.</li>\n<li>[MFoGT, Section 2.8, Exercise 1] Same. Direct induction proof of Loomis,\n  independent of von Neumann minimax.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "math.minimax.minimax_from_loomis",
+      "title": "Minimax via the All-Ones Specialization of Loomis",
+      "href": "math/math_minimax_minimax_from_loomis.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Loomis.loomis_value_eq",
+      "display_name": "Loomis.loomis_value_eq",
+      "qualified_name": "Loomis.loomis_value_eq",
+      "module": "EconCSLib.Math.Minimax.Loomis",
+      "kind": "theorem",
+      "signature": "theorem loomis_value_eq (A B : I → J → ℝ) (hB : IsPositive B) :\n    lamB0 A B = muB0 A B",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L806",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Loomis.loomis_theorem",
+      "display_name": "Loomis.loomis_theorem",
+      "qualified_name": "Loomis.loomis_theorem",
+      "module": "EconCSLib.Math.Minimax.Loomis",
+      "kind": "theorem",
+      "signature": "theorem loomis_theorem (A B : I → J → ℝ) (hB : IsPositive B) :\n    ∃ (x : stdSimplex ℝ I) (y : stdSimplex ℝ J) (v : ℝ),\n      (∀ j, v * xB B x j ≤ xA A x j) ∧\n      (∀ i, Ay A y i ≤ v * By B y i)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L826",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Minimax.Loomis",
+      "display_name": "EconCSLib.Math.Minimax.Loomis",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

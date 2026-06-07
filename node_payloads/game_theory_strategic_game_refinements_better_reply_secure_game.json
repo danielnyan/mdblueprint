@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.better_reply_secure_game",
+  "title": "Better Reply Secure Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_better_reply_secure_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Better Reply Secure Game</h1>\n<p>A game $G$ is better reply secure if for every Reny solution $(s,v)$, the profile\n$s$ is a Nash equilibrium.</p>\n<p>In this condition, Nash profiles and the strategy-profile components of Reny\nsolutions coincide.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 4.8.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Better reply security for discontinuous games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

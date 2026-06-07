@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.discontinuous_nash_existence",
+  "title": "Nash Existence In Better Reply Secure Games",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_discontinuous_nash_existence.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Nash Existence In Better Reply Secure Games</h1>\n<p>If a game is compact, quasi-concave, and better reply secure, then its Nash\nequilibrium set is nonempty and compact.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The set of Reny solutions is nonempty and compact. Better reply security turns\nevery Reny solution profile into a Nash equilibrium. Therefore Nash equilibria\nexist, and compactness follows from compactness of the Reny solution set together\nwith the graph-closure formulation.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 4.8.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Compact quasi-concave better reply secure games have nonempty compact Nash set.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

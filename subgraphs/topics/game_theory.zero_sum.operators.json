@@ -1,0 +1,105 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.operators",
+    "title": "Game Theory.Zero Sum.Operators",
+    "href": "game_theory/zero_sum/operators/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 0,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 6,
+    "visible_nodes_with_selected_proof_plans": 6
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.derived_game",
+      "title": "Derived Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_derived_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_derived_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_directional_derivative",
+      "title": "Directional Derivative Of The Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_directional_derivative.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_directional_derivative.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_general",
+      "title": "General Value Operator",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_general.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_general.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_nonexpansive_general",
+      "title": "General Value Operator Is Nonexpansive",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_nonexpansive_general.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_nonexpansive_general.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_properties",
+      "title": "Value Operator Properties",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_properties.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_properties.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "continuity",
+      "title": "continuity",
+      "href": "keywords/continuity.html",
+      "count": 1
+    },
+    {
+      "id": "derived-game",
+      "title": "derived-game",
+      "href": "keywords/derived-game.html",
+      "count": 2
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 1
+    },
+    {
+      "id": "value-operator",
+      "title": "value-operator",
+      "href": "keywords/value-operator.html",
+      "count": 4
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 5
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "math.minimax.loomis_induction_proof.base_case",
+  "title": "Base Case of Loomis Induction",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_minimax_loomis_induction_proof_base_case.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Base Case of Loomis Induction</h1>\n<p>The base case of the induction in\n<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof\" href=\"minimax/math_minimax_loomis_induction_proof.html\">Direct Induction Proof Of Loomis Theorem</a>: when $|I| + |J| = 2$ the\nmatrices are $1 \\times 1$ and the Loomis values reduce to a single ratio.</p>\n<h2>Statement</h2>\n<p>Let $I$ and $J$ be finite nonempty index types with $|I| + |J| = 2$, so\n$|I| = |J| = 1$ with single elements $i_0 \\in I$ and $j_0 \\in J$. Let\n$A, B \\colon I \\times J \\to \\mathbb{R}$ with $B_{i_0, j_0} &gt; 0$. Then\n$$\n  \\lambda_0 \\;=\\; \\mu_0 \\;=\\; \\frac{A_{i_0, j_0}}{B_{i_0, j_0}}.\n$$</p>",
+  "proof_html": "<p>Both simplices are singletons: $\\Delta(I) = \\{e_{i_0}\\}$ and\n$\\Delta(J) = \\{e_{j_0}\\}$, where $e_{i_0}$, $e_{j_0}$ are the unique unit\nmass strategies. For the unique $x = e_{i_0}$ and $j = j_0$ we have\n$(xA)_{j_0} = A_{i_0, j_0}$ and $(xB)_{j_0} = B_{i_0, j_0}$, so\n$$\n  \\lambda_\\mathrm{aux}(e_{i_0}) = \\frac{A_{i_0, j_0}}{B_{i_0, j_0}}.\n$$\nTaking the supremum over the singleton $\\Delta(I)$ gives $\\lambda_0 = A_{i_0,\nj_0} / B_{i_0, j_0}$. The argument for $\\mu_0$ is identical. $\\square$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 1] Laraki, Renault, and Sorin, <em>Mathematical\n  Foundations of Game Theory</em>.\n  Base case of the Loomis induction.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "math.minimax.minimax_from_loomis",
+      "title": "Minimax via the All-Ones Specialization of Loomis",
+      "href": "math/math_minimax_minimax_from_loomis.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Loomis.loomis_value_IJ_2",
+      "display_name": "Loomis.loomis_value_IJ_2",
+      "qualified_name": "Loomis.loomis_value_IJ_2",
+      "module": "EconCSLib.Math.Minimax.Loomis",
+      "kind": "theorem",
+      "signature": "theorem loomis_value_IJ_2 (Hn : 2 = Fintype.card I + Fintype.card J)\n    {A B : I → J → ℝ} (_hB : IsPositive B) :\n    lamB0 A B = muB0 A B",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L303",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Minimax.Loomis",
+      "display_name": "EconCSLib.Math.Minimax.Loomis",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/Loomis.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

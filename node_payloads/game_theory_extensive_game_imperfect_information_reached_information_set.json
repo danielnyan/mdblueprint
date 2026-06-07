@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.reached_information_set",
+  "title": "Reached Information Set",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_reached_information_set.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Reached Information Set</h1>\n<p>An information set $Q$ is reached by a behavioral strategy profile $\\beta$ if the\nprobability of reaching $Q$ under $\\beta$ is positive. The set of reached\ninformation sets is denoted $Rch(\\beta)$.</p>\n<p>When $Q\\in Rch(\\beta)$, Bayes' rule defines a conditional probability\n$\\nu_\\beta(Q)$ on the nodes of $Q$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.3.7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. An information set is reached by a behavioral strategy profile if it has positive probability.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

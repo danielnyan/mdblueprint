@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+  "title": "EF ⇒ EFX (Monotone Valuations)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_efx_mono.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EF ⇒ EFX (Monotone Valuations)</h1>\n<p><strong>Theorem.</strong> Let $v$ be a <em>monotone</em> indivisible valuation —\ni.e. $T \\subseteq S \\Rightarrow v_i(T) \\le v_i(S)$ for every $i$ — and\nlet $A$ be envy-free\n([[social_choice.fair_division.indivisible.envy_free]]). Then $A$ is\nEFX ([[social_choice.fair_division.indivisible.efx]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEnvyFree.isEFX_of_mono</code>.</p>",
+  "proof_html": "<p>For agents $i \\ne j$ and any $g \\in A(j)$:\n$$\nv_i(A(j) \\setminus \\{g\\}) \\;\\le\\; v_i(A(j)) \\;\\le\\; v_i(A(i)).\n$$\nThe first inequality is the monotonicity hypothesis applied to the\nsub-bundle inclusion $A(j) \\setminus \\{g\\} \\subseteq A(j)$. The second\nis envy-freeness at the pair $(i, j)$. Combined they give the EFX\ninequality at the element $g$. Quantifying over $g$ gives EFX. $\\square$</p>\n<h2>Monotonicity as an explicit hypothesis</h2>\n<p>The Lean signature takes the monotonicity hypothesis as a plain function\nhypothesis <code>(hmono : ∀ i S T, T ⊆ S → v.val i T ≤ v.val i S)</code> rather\nthan as a typeclass, because the abstract <code>Valuation</code> interface\n([[social_choice.fair_division.indivisible.valuation]]) deliberately\ndoes not bake in monotonicity. Additive valuations with nonnegative\nweights are monotone (lemma\n[[social_choice.fair_division.indivisible.additive_valuation]]'s\n<code>toValuation_mono</code>), so the implication automatically applies in the\nadditive setting.</p>\n<h2>Significance</h2>\n<p>Combined with the unconditional EFX ⇒ EF1\n([[social_choice.fair_division.indivisible.efx_implies_ef1]]), this\ngives the full chain EF ⇒ EFX ⇒ EF1 for monotone valuations.</p>\n<p>For non-monotone valuations the implication may fail: an envy-free\nallocation can become un-EFX after item removal if removing a low-value\nitem <em>increases</em> the recipient bundle's value (which only happens for\nnon-monotone valuations).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF-EFX implication for monotone valuations.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+      "title": "EFX from No-Envy + Monotonicity",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_of_no_envy_mono.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isEFX_of_mono",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isEFX_of_mono",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isEFX_of_mono",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "theorem",
+      "signature": "theorem IsEnvyFree.isEFX_of_mono (v : Valuation N G) (A : Allocation N G)\n    (hmono : ∀ i S T, T ⊆ S → v.val i T ≤ v.val i S)\n    (hef : IsEnvyFree v A) : IsEFX v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L118",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

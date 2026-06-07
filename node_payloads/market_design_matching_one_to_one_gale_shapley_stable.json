@@ -1,0 +1,66 @@
+{
+  "id": "market_design.matching.one_to_one.gale_shapley_stable",
+  "title": "Gale-Shapley Theorem (Existence of Stable Matching)",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "market_design/market_design_matching_one_to_one_gale_shapley_stable.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Gale-Shapley Theorem</h1>\n<p><strong>Theorem.</strong> Every finite one-to-one matching market $(M, W, \\succ)$ admits\na stable matching. Specifically, the matching output by the men-proposing\ndeferred-acceptance algorithm ([[gale_shapley_algorithm]]) is stable.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Run the men-proposing algorithm to completion (termination is guaranteed by\nthe proposal-count argument).</p>\n<p>Let $\\mu$ be the output matching. We verify the two stability conditions:</p>\n<p><strong>Individual rationality.</strong> A man $i$ only ever proposes to women he finds\nacceptable (the algorithm consults his preference list). A woman $j$ only\never holds offers from men she finds acceptable (she rejects unacceptable\nproposers). Hence every matched pair is mutually acceptable.</p>\n<p><strong>No blocking pair.</strong> Suppose toward contradiction that $(i, j)$ blocks\n$\\mu$, i.e., $j \\succ_i \\mu(i)$ and $i \\succ_j \\mu^{-1}(j)$.</p>\n<p>Since $j \\succ_i \\mu(i)$, woman $j$ ranks higher than $\\mu(i)$ on man $i$'s\nlist, so $i$ must have proposed to $j$ at some round (before settling for\n$\\mu(i)$ or staying unmatched). At the round $i$ proposed to $j$:</p>\n<ul>\n<li>Either $j$ rejected $i$, in which case $j$ was holding (or later switched\n  to) some man $i'$ with $i' \\succ_j i$, OR</li>\n<li>$j$ accepted $i$ but was later replaced by some $i' \\succ_j i$.</li>\n</ul>\n<p>In either case, once $j$ has held an offer she never reverts to unmatched\nand her holding partner only ever improves (the algorithm has \"no-going-back\"\nmonotonicity on the receiving side). So her final partner satisfies\n$\\mu^{-1}(j) \\succeq_j i'$ for the rejecting/replacing $i'$, and since\n$i' \\succ_j i$ we get $\\mu^{-1}(j) \\succ_j i$ — contradicting\n$i \\succ_j \\mu^{-1}(j)$.</p>\n<h2>Lean Status</h2>\n<p><strong>Proved</strong> (no <code>sorry</code>) at\n<code>EconCSLib.MarketDesign.Matching.GaleShapley.galeShapley_isStable</code>; axiom scan\nshows only <code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>. Closed under MT-L1\n(#203). The two structural ingredients are now in place:</p>\n<ol>\n<li>The \"monotone holding\" invariant <code>holding_rank_mono_run</code> (+ the\n   stay-matched companion <code>held_preserved_run</code>): a woman's holding partner\n   can only improve over time and she never reverts to unmatched.</li>\n<li>The \"no free men at termination\" property <code>finalState_no_free_men</code>,\n   from the cursor-sum growth bound versus the <code>n*n</code> proposal ceiling.</li>\n</ol>\n<p>The blocking-pair argument is assembled in the <code>RSInv</code> (Roth–Sotomayor)\nrun-state invariant and discharged by <code>rsinv_stability</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Thm 22.7] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Gale &amp; Shapley (1962).</li>\n</ul>",
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "title": "Gale-Shapley Deferred Acceptance Algorithm",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_algorithm.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "href": "market_design/market_design_matching_one_to_one_stability.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.lattice",
+      "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+      "href": "market_design/market_design_matching_one_to_one_lattice.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "galeShapley_isStable",
+      "display_name": "galeShapley_isStable",
+      "qualified_name": "galeShapley_isStable",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "kind": "theorem",
+      "signature": "theorem galeShapley_isStable :\n    Matching.IsStable (MatchingMarket.ofEquivData w m)\n                      (Matching.ofGS (gs w m) (gs_bijective w m))",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L1072",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "display_name": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

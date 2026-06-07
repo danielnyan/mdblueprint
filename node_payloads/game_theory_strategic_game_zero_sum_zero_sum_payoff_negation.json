@@ -1,0 +1,108 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+  "title": "Payoff Negation in Zero-Sum Games",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Payoff Negation in Zero-Sum Games</h1>\n<p>If $G$ is zero-sum, then at every profile $\\sigma$ the payoff of either player\ndetermines the other:</p>\n<p>$$u_1(\\sigma) = -u_0(\\sigma), \\qquad u_0(\\sigma) = -u_1(\\sigma).$$</p>\n<p>This is the algebraic reduction that lets later value and optimality statements\ntrack only the row player's payoff.</p>",
+  "proof_html": "<p>The zero-sum hypothesis says\n$$\n  u_0(\\sigma)+u_1(\\sigma)=0\n$$\nat every profile $\\sigma$. Rearranging in the underlying additive group gives\n$u_1(\\sigma)=-u_0(\\sigma)$, and applying the same rearrangement with the players\ninterchanged gives $u_0(\\sigma)=-u_1(\\sigma)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4, Section 4.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Immediate algebraic consequence of zero-sum payoffs.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "title": "Zero-Sum Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsZeroSum.neg",
+      "display_name": "StrategicGame.IsZeroSum.neg",
+      "qualified_name": "StrategicGame.IsZeroSum.neg",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.neg [AddGroup U]\n    {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (σ : G.Profile) :\n    G.payoff σ 1 = - G.payoff σ 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L115",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.IsZeroSum.neg'",
+      "display_name": "StrategicGame.IsZeroSum.neg'",
+      "qualified_name": "StrategicGame.IsZeroSum.neg'",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.neg' [AddGroup U]\n    {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (σ : G.Profile) :\n    G.payoff σ 0 = - G.payoff σ 1",
+      "docstring": "In a zero-sum game, player 0's payoff is the negation of player 1's.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L121",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.IsZeroSum.expectedPayoff_neg",
+      "display_name": "StrategicGame.IsZeroSum.expectedPayoff_neg",
+      "qualified_name": "StrategicGame.IsZeroSum.expectedPayoff_neg",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.expectedPayoff_neg\n    (hzs : IsZeroSum G) (p : StrategicGame.MixedProfile G) :\n    StrategicGame.expectedPayoff G p 1\n      = -(StrategicGame.expectedPayoff G p 0)",
+      "docstring": "In a zero-sum game, player 1's expected payoff is the negation of player 0's.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L280",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.IsZeroSum.expectedPayoff_neg'",
+      "display_name": "StrategicGame.IsZeroSum.expectedPayoff_neg'",
+      "qualified_name": "StrategicGame.IsZeroSum.expectedPayoff_neg'",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.expectedPayoff_neg'\n    (hzs : IsZeroSum G) (p : StrategicGame.MixedProfile G) :\n    StrategicGame.expectedPayoff G p 0\n      = -(StrategicGame.expectedPayoff G p 1)",
+      "docstring": "In a zero-sum game, player 0's expected payoff is the negation of player 1's.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L292",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

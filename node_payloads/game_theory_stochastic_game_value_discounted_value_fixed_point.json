@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.value.discounted_value_fixed_point",
+  "title": "Discounted Value Is the Unique Shapley Fixed Point",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_discounted_value_fixed_point.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.value"
+  ],
+  "body_html": "<h1>Discounted Value Is the Unique Shapley Fixed Point</h1>\n<p><strong>Theorem (Shapley 1953).</strong> For a finite-state, finite-action zero-sum\nstochastic game with discount factor $\\gamma \\in (0, 1)$, the\ndiscounted value function $v_\\gamma : S \\to \\mathbb{R}$\n([[game_theory.stochastic_game.value.discounted_value]]) is the <strong>unique fixed\npoint</strong> of the Shapley operator $T_\\gamma$\n([[game_theory.stochastic_game.value.shapley_operator]]):\n$$\nv_\\gamma = T_\\gamma(v_\\gamma).\n$$</p>\n<p>Both players have stationary $\\varepsilon$-optimal strategies, given at\neach state $s$ by an $\\varepsilon$-optimal pair of the one-shot matrix\ngame whose payoff entries are the operator's argument inside\n$\\operatorname{val}$.</p>",
+  "proof_html": "<p>The Banach fixed-point theorem applied to $T_\\gamma$ as a\n$\\gamma$-contraction\n([[game_theory.stochastic_game.value.shapley_operator_contraction]]) on\n$L^\\infty(S) = \\mathbb{R}^S$ (with $S$ finite) gives unique existence of\na fixed point $w^* = T_\\gamma(w^*)$.</p>\n<p>To identify $w^* = v_\\gamma$:</p>\n<ol>\n<li>\n<p><strong>Upper bound</strong> $w^*(s) \\ge v_\\gamma(s)$. Define a stationary\n   strategy for player 1 by playing, at each state $s'$, a maximin\n   strategy of the matrix game inside the $\\operatorname{val}$ that\n   defines $T_\\gamma w^*(s') = w^*(s')$. Standard backward-induction\n   estimates (using $w^*$ as the certifying continuation) give\n   $\\mathbb{E}_{\\sigma_1, \\sigma_2}[\\Pi_\\gamma | s_0 = s] \\ge w^*(s)$\n   for every player-2 strategy $\\sigma_2$. Hence\n   $\\sup \\inf \\ge w^*(s)$, i.e. $v_\\gamma(s) \\ge w^*(s)$.</p>\n</li>\n<li>\n<p><strong>Lower bound</strong> $w^*(s) \\le v_\\gamma(s)$ is the symmetric argument\n   from player 2's side using the inner $\\operatorname{val}$'s minimax\n   strategy.</p>\n</li>\n</ol>\n<p>Together $v_\\gamma = w^*$, the unique fixed point. $\\square$</p>\n<h2>Computational consequence</h2>\n<p>The iteration $f_{n+1} = T_\\gamma(f_n)$ converges to $v_\\gamma$\ngeometrically at rate $\\gamma$. This is <strong>Shapley iteration</strong> (a.k.a.\nvalue iteration for zero-sum stochastic games), the analogue of MDP\nvalue iteration.</p>\n<h2>Refinement: stationary optimal strategies</h2>\n<p>The argument above gives stationary $\\varepsilon$-optimal strategies.\nFor <em>exactly optimal</em> stationary strategies, use the matrix-game inner\n$\\operatorname{val}$ at each state and pick optimal strategies (not\njust $\\varepsilon$-optimal). Existence then drops to the optimal\nstrategy sets of finite matrix games, which are nonempty polytopes\n([[math.minimax.optimal_strategy_sets_are_polytopes]]).</p>\n<h2>References</h2>\n<ul>\n<li>Shapley, L. S. (1953). \"Stochastic Games\". <em>PNAS</em> 39: 1095–1100. The original theorem.</li>\n<li>Filar, J. and Vrieze, K. (1997). <em>Competitive Markov Decision Processes.</em> Ch. 4. Modern presentation.</li>\n<li>[MFoGT Chapter 8, Thm. 8.6.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

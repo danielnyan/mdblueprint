@@ -1,0 +1,78 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.backward_induction_value",
+  "title": "Backward Induction Value",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_backward_induction_value.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Backward Induction Value</h1>\n<p>For a finite perfect-information game tree, the <strong>backward-induction value</strong> is\nthe payoff vector $\\operatorname{value} : \\texttt{GameTree} \\to (\\iota \\to U)$\ncomputed bottom-up:</p>\n<ul>\n<li>at a leaf, the value is its payoff vector;</li>\n<li>at a decision node with mover $m$, the value is that of the child the mover\n  prefers, i.e. the child maximizing coordinate $m$.</li>\n</ul>\n<p>The only structural requirement on the payoff type $U$ is a total preorder\n(reflexivity, transitivity, totality); neither antisymmetry nor decidability is\nused. The mover's own coordinate dominates every child's value\n(<code>value_Node_ge</code>), and the chosen value is realized by some child\n(<code>value_Node_eq_some_child_value</code>). This value function and its optimality\nlemmas are the machinery behind Zermelo determinacy\n(<a class=\"node-ref\" data-node-id=\"game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium\" href=\"perfect_information/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium.html\">Subgame-Perfect Equilibrium In Perfect-Information Games</a>)\nand Kuhn's subgame-perfect existence theorem.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 3] Maschler, Solan, and Zamir, <em>Game Theory</em>. Backward induction on finite perfect-information games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GameTree.value",
+      "display_name": "GameTree.value",
+      "qualified_name": "GameTree.value",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+      "kind": "def",
+      "signature": "def value : GameTree N U → (N → U)\n    | Leaf p => p\n    | Node m h t =>\n        let hv",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean#L45",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.valueList",
+      "display_name": "GameTree.valueList",
+      "qualified_name": "GameTree.valueList",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+      "kind": "def",
+      "signature": "def valueList : List (GameTree N U) → List (N → U)\n    | [] => []\n    | x :: xs => value x :: valueList xs\nend\n@[simp]",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

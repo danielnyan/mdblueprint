@@ -1,0 +1,90 @@
+{
+  "id": "math.minimax.value_predicates",
+  "title": "Field-Generic Value Predicates",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "math/math_minimax_value_predicates.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Field-Generic Value Predicates</h1>\n<p>For a finite matrix game $A : I \\times J \\to \\mathbb{K}$ with payoff in any\nlinearly ordered field $\\mathbb{K}$, the maxmin / minmax / saddle-value\nnotions admit the following predicate characterisations that do <strong>not</strong>\ninvoke any <code>sSup</code> / <code>sInf</code>:</p>\n<p><strong>Maximin (predicate form).</strong> $v$ is a <em>maximin value</em> of $A$ when</p>\n<p>$$\n  \\bigl(\\exists x \\in \\Delta(I),\\ \\forall j \\in J,\\ v \\le \\sum_i x_i\\, A(i,j)\\bigr)\n  \\quad\\text{and}\\quad\n  \\bigl(\\forall w,\\ (\\exists x \\in \\Delta(I),\\ \\forall j,\\ w \\le \\sum_i x_i\\, A(i,j)) \\Rightarrow w \\le v\\bigr).\n$$</p>\n<p>That is: some row strategy guarantees at least $v$ against every column\n(existence), and no strictly larger value is achievable (maximality).</p>\n<p><strong>Minimax (predicate form).</strong> Dual: $v$ is a <em>minimax value</em> when some\ncolumn strategy caps player I's payoff at $v$, and no strictly smaller\ncap is achievable.</p>\n<p><strong>Value (saddle-point form).</strong> $v$ is <em>the value</em> of $A$ when there are\nrow and column strategies $x, y$ with</p>\n<p>$$\n  \\forall j,\\ v \\le \\sum_i x_i\\, A(i,j)\n  \\qquad\\text{and}\\qquad\n  \\forall i,\\ \\sum_j y_j\\, A(i,j) \\le v.\n$$</p>\n<p>The saddle-point form is the existential combination of the two one-sided\nguarantee statements; it is equivalent to \"value exists and equals $v$\"\nwithout invoking $\\sup$ / $\\inf$.</p>\n<h2>Relationship to <code>sSup</code>-based definitions</h2>\n<p>When $\\mathbb{K}$ admits order completeness (e.g. $\\mathbb{K} = \\mathbb{R}$\nvia <code>Real.instConditionallyCompleteLinearOrder</code>), the <code>sSup</code>-based\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.maximin_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html\">Maximin and Minimax Values</a> definitions are available, and:</p>\n<ul>\n<li><code>IsMaximin A v ↔ v = A.maximin</code> (assuming the supremum is attained),</li>\n<li><code>IsMinimax A v ↔ v = A.minimax</code>,</li>\n<li><code>IsValue A v</code> is equivalent to the conjunction of the above when the\n  minimax theorem (<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>) holds.</li>\n</ul>\n<p>The Lean library realises <code>IsMaximin</code>, <code>IsMinimax</code>, <code>IsValue</code> in\n<code>EconCSLib.StrategicGame.Minimax</code>. The bridge lemmas between the\npredicate and <code>sSup</code> forms are tracked as Phase 2 follow-up of #54.</p>\n<h2>Why this matters</h2>\n<p>An ordered-field-generic value route constructs the value as a witness over\nany linearly ordered field, not as a supremum, so it is naturally phrased via\n<code>IsValue</code> rather than via <code>value</code>. The symmetrisation route <code>Minimax.minimax</code>\n(<a class=\"node-ref\" data-node-id=\"math.minimax.ordered_field_minimax\" href=\"minimax/math_minimax_ordered_field_minimax.html\">Ordered-Field Minimax Statement</a>) is exactly this: it delivers the\noptimal value and strategies over any\n<code>[Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]</code> without requiring order\ncompleteness, so the predicate forms are the natural interface for it.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Saddle-point characterisation of value.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.IsMaximin",
+      "display_name": "MatrixGame.IsMaximin",
+      "qualified_name": "MatrixGame.IsMaximin",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "def IsMaximin (A : MatrixGame I J 𝕜) (v : 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L127",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.IsMinimax",
+      "display_name": "MatrixGame.IsMinimax",
+      "qualified_name": "MatrixGame.IsMinimax",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "def IsMinimax (A : MatrixGame I J 𝕜) (v : 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L134",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.IsValue",
+      "display_name": "MatrixGame.IsValue",
+      "qualified_name": "MatrixGame.IsValue",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "def",
+      "signature": "def IsValue (A : MatrixGame I J 𝕜) (v : 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.bayesian.bayesian_equilibrium",
+  "title": "Bayesian Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_bayesian_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Bayesian Equilibrium</h1>\n<p>A Bayesian strategy profile $\\sigma$ is a Bayesian equilibrium if no player can\nimprove expected payoff by replacing their type-contingent strategy while the\nother players keep theirs fixed.</p>\n<p>In ex-ante form, for every player $i$ and every alternative type-contingent\nstrategy $\\tau_i:T_i\\to\\Delta(A_i)$,\n$$\n  \\mathbb E_p[g_i(\\sigma_i(t_i),\\sigma_{-i}(t_{-i}),t)]\n  \\ge\n  \\mathbb E_p[g_i(\\tau_i(t_i),\\sigma_{-i}(t_{-i}),t)].\n$$</p>\n<p>When every type has positive prior probability, this is equivalent to the\ninterim condition that after each observed type $t_i$, the prescribed mixed\naction is optimal against the conditional distribution of other players' types\nand actions.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Bayesian equilibrium as the Nash-style equilibrium concept for Bayesian games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

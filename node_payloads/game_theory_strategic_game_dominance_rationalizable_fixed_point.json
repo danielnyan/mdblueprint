@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.dominance.rationalizable_fixed_point",
+  "title": "Rationalizable Set As Largest Best-Response Fixed Set",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_fixed_point.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Rationalizable Set As Largest Best-Response Fixed Set</h1>\n<p>Let $G$ be a compact continuous game. The rationalizable set\n$S^\\infty=\\prod_i S_i^\\infty$ is nonempty and compact. It is a fixed set of the\nbest-response correspondence and is the largest subset $L\\subseteq S$ satisfying\n$$\n  L\\subseteq BR(L).\n$$</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Compactness and continuity imply upper semicontinuity of the best-response\ncorrespondence. By induction, every $S(k)$ is nonempty compact and the sequence is\ndecreasing, so the intersection is nonempty compact. Upper semicontinuity gives\n$S^\\infty\\subseteq BR(S^\\infty)$, while monotonicity of the construction gives\n$BR(S^\\infty)\\subseteq S^\\infty$. Any set $L$ satisfying $L\\subseteq BR(L)$ is\ncontained in every $S(k)$, hence in $S^\\infty$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 4.4.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. S_infty is nonempty compact and the largest L satisfying L subset BR(L).</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

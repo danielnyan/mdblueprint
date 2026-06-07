@@ -1,0 +1,265 @@
+{
+  "topic": {
+    "id": "game_theory.repeated_game",
+    "title": "Game Theory.Repeated Game",
+    "href": "game_theory/repeated_game/index.html",
+    "parent": "game_theory",
+    "node_count": 17,
+    "descendant_node_count": 17
+  },
+  "counts": {
+    "internal_nodes": 17,
+    "inlined_nodes": 17,
+    "descendant_nodes": 17,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 17,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 18,
+    "visible_nodes_with_selected_proof_plans": 18
+  },
+  "nodes": [
+    {
+      "id": "game_theory.repeated_game.core.discounted_game",
+      "title": "Discounted Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_discounted_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_discounted_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.feasible_individually_rational_payoffs",
+      "title": "Repeated Feasible Individually Rational Payoffs",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_feasible_individually_rational_payoffs.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_feasible_individually_rational_payoffs.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.finitely_repeated_game",
+      "title": "Finitely Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_finitely_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_finitely_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.history",
+      "title": "Repeated Game History",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_history.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_history.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.payoff_aggregation",
+      "title": "Repeated Game Payoff Aggregation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_payoff_aggregation.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_payoff_aggregation.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.repeated_game",
+      "title": "Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.signals",
+      "title": "Repeated Game With Signals",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_signals.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_signals.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.standard_repeated_game",
+      "title": "Standard Repeated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_standard_repeated_game.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_standard_repeated_game.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.strategy",
+      "title": "Repeated Game Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_strategy.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_strategy.json"
+    },
+    {
+      "id": "game_theory.repeated_game.core.uniform_equilibrium",
+      "title": "Uniform Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_core_uniform_equilibrium.html",
+      "payload": "node_payloads/game_theory_repeated_game_core_uniform_equilibrium.json"
+    },
+    {
+      "id": "game_theory.repeated_game.folk_theorem.discounted_folk_theorem",
+      "title": "Discounted Folk Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_discounted_folk_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_folk_theorem_discounted_folk_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.folk_theorem.finitely_repeated_folk_theorem",
+      "title": "Finitely Repeated Folk Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_finitely_repeated_folk_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_folk_theorem_finitely_repeated_folk_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.folk_theorem.folk_theorem_baseline",
+      "title": "Folk Theorem (Baseline Statement)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_folk_theorem_baseline.html",
+      "payload": "node_payloads/game_theory_repeated_game_folk_theorem_folk_theorem_baseline.json"
+    },
+    {
+      "id": "game_theory.repeated_game.folk_theorem.subgame_perfect_uniform_folk_theorem",
+      "title": "Subgame Perfect Uniform Folk Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_subgame_perfect_uniform_folk_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_folk_theorem_subgame_perfect_uniform_folk_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.folk_theorem.uniform_folk_theorem",
+      "title": "Uniform Folk Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_folk_theorem_uniform_folk_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_folk_theorem_uniform_folk_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.incomplete_info.cav_u_theorem",
+      "title": "Aumann-Maschler Cav-u Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_incomplete_info_cav_u_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_incomplete_info_cav_u_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.incomplete_info.repeated_game_incomplete_information",
+      "title": "Repeated Game With Incomplete Information",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_incomplete_info_repeated_game_incomplete_information.html",
+      "payload": "node_payloads/game_theory_repeated_game_incomplete_info_repeated_game_incomplete_information.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "aumann-maschler",
+      "title": "aumann-maschler",
+      "href": "keywords/aumann-maschler.html",
+      "count": 1
+    },
+    {
+      "id": "discounting",
+      "title": "discounting",
+      "href": "keywords/discounting.html",
+      "count": 2
+    },
+    {
+      "id": "feasible-payoff",
+      "title": "feasible-payoff",
+      "href": "keywords/feasible-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "folk-theorem",
+      "title": "folk-theorem",
+      "href": "keywords/folk-theorem.html",
+      "count": 5
+    },
+    {
+      "id": "history",
+      "title": "history",
+      "href": "keywords/history.html",
+      "count": 1
+    },
+    {
+      "id": "imperfect-monitoring",
+      "title": "imperfect-monitoring",
+      "href": "keywords/imperfect-monitoring.html",
+      "count": 1
+    },
+    {
+      "id": "incomplete-information",
+      "title": "incomplete-information",
+      "href": "keywords/incomplete-information.html",
+      "count": 2
+    },
+    {
+      "id": "payoff-aggregation",
+      "title": "payoff-aggregation",
+      "href": "keywords/payoff-aggregation.html",
+      "count": 1
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 17
+    },
+    {
+      "id": "signals",
+      "title": "signals",
+      "href": "keywords/signals.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 12
+    },
+    {
+      "id": "strategy",
+      "title": "strategy",
+      "href": "keywords/strategy.html",
+      "count": 1
+    },
+    {
+      "id": "subgame-perfect-equilibrium",
+      "title": "subgame-perfect-equilibrium",
+      "href": "keywords/subgame-perfect-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "uniform-equilibrium",
+      "title": "uniform-equilibrium",
+      "href": "keywords/uniform-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "game_theory.repeated_game.core",
+    "game_theory.repeated_game.folk_theorem",
+    "game_theory.repeated_game.incomplete_info"
+  ]
+}

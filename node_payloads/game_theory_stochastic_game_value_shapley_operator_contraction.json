@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.value.shapley_operator_contraction",
+  "title": "Shapley Operator Is a γ-Contraction",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator_contraction.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.value"
+  ],
+  "body_html": "<h1>Shapley Operator Is a γ-Contraction</h1>\n<p><strong>Theorem.</strong> For any discount factor $\\gamma \\in (0, 1)$, the Shapley\noperator $T_\\gamma$ ([[game_theory.stochastic_game.value.shapley_operator]]) is a\n$\\gamma$-contraction on $L^\\infty(S)$ in the supremum norm:\n$$\n\\|T_\\gamma f - T_\\gamma g\\|_\\infty \\;\\le\\; \\gamma\\, \\|f - g\\|_\\infty.\n$$</p>",
+  "proof_html": "<p>Pin a state $s$ and a pair of functions $f, g$. The defining\n$\\operatorname{val}$ at $s$ uses matrix-game entries\n$$\nM_f(a_1, a_2) = (1 - \\gamma) r(s, a_1, a_2) + \\gamma\\, (q f)(s, a_1, a_2),\n$$\nwhere $(qf)(s, a_1, a_2) = \\sum_{s'} q(s'|s, a_1, a_2)\\, f(s')$ is the\nlinear continuation operator applied to $f$.</p>\n<p>Subtracting:\n$$\nM_f(a_1, a_2) - M_g(a_1, a_2) = \\gamma\\, (q (f - g))(s, a_1, a_2).\n$$</p>\n<p>Because $q$ is a probability kernel (row sums to 1, non-negative\nentries), $|q(f-g)| \\le \\|f - g\\|_\\infty$ pointwise. Hence\n$|M_f - M_g| \\le \\gamma \\|f - g\\|_\\infty$ entry-wise.</p>\n<p>The value operator $\\operatorname{val}$ on matrix games is\n1-Lipschitz in the supremum norm of the matrix entries (a standard\nconsequence of zero-sum saddle-point characterisation; see\n[[game_theory.strategic_game.zero_sum.operators.value_operator_nonexpansive_general]] for the\nabstract version). Therefore\n$$\n|(T_\\gamma f)(s) - (T_\\gamma g)(s)|\n  = |\\operatorname{val}(M_f) - \\operatorname{val}(M_g)|\n  \\le \\|M_f - M_g\\|_\\infty\n  \\le \\gamma\\, \\|f - g\\|_\\infty.\n$$</p>\n<p>Taking the supremum over $s \\in S$ gives the claim. $\\square$</p>\n<h2>Consequence</h2>\n<p>By Banach's fixed-point theorem (any complete metric space, here\n$L^\\infty(S)$ with sup norm and $S$ finite, $L^\\infty(S) = \\mathbb{R}^S$):</p>\n<ul>\n<li>$T_\\gamma$ has a <strong>unique fixed point</strong> $v_\\gamma$.</li>\n<li>For any starting $f_0$, the iterates $f_{n+1} = T_\\gamma(f_n)$\n  converge to $v_\\gamma$ geometrically at rate $\\gamma$.</li>\n</ul>\n<p>This is the foundation of <strong>value iteration</strong> for zero-sum stochastic\ngames, and identifies $v_\\gamma$ as the discounted value\n([[game_theory.stochastic_game.value.discounted_value]],\n[[game_theory.stochastic_game.value.discounted_value_fixed_point]]).</p>\n<h2>References</h2>\n<ul>\n<li>Shapley, L. S. (1953). \"Stochastic Games\". <em>PNAS</em> 39: 1095–1100.</li>\n<li>[MFoGT Chapter 8, §8.6.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

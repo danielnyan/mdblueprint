@@ -1,0 +1,77 @@
+{
+  "id": "game_theory.strategic_game.strategic_game",
+  "title": "Strategic Game",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Strategic Game</h1>\n<p>A strategic game (or normal-form game) is a tuple\n\\((I, (S_i)_{i \\in I}, (u_i)_{i \\in I})\\)\nwhere \\(I\\) is a set of players, \\(S_i\\) is the strategy set of player \\(i\\), and\n\\(u_i \\colon \\prod_{j \\in I} S_j \\to U\\) is the payoff function of player \\(i\\).</p>\n<p>In the Lean formalization, this is a structure with fields <code>strategy : N → Type*</code> and\n<code>payoff : Profile → N → U</code>, where <code>Profile = ∀ i, strategy i</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Definition of strategic-form game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame",
+      "display_name": "StrategicGame",
+      "qualified_name": "StrategicGame",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "kind": "structure",
+      "signature": "structure StrategicGame (N : Type*) (U : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L33",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.welfare",
+      "display_name": "StrategicGame.welfare",
+      "qualified_name": "StrategicGame.welfare",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "kind": "def",
+      "signature": "noncomputable def welfare [Fintype N] [AddCommMonoid U]\n    (G : StrategicGame N U) (σ : G.Profile) : U",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L88",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

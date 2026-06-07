@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.epsilon_proper_equilibrium",
+  "title": "Epsilon Proper Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_epsilon_proper_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Epsilon Proper Equilibrium</h1>\n<p>Let $G$ be a finite normal-form game. For $\\epsilon&gt;0$, a completely mixed\nprofile $\\sigma^\\epsilon\\in\\operatorname{int}\\Sigma$ is $\\epsilon$-proper if, for\nevery player $i$ and pure strategies $s_i,t_i\\in S_i$,\n$$\n  g_i(s_i,\\sigma^\\epsilon_{-i})\n  &lt;\n  g_i(t_i,\\sigma^\\epsilon_{-i})\n  \\quad\\Rightarrow\\quad\n  \\sigma^\\epsilon_i(s_i)\\le\n  \\epsilon\\,\\sigma^\\epsilon_i(t_i).\n$$</p>\n<p>More costly mistakes must be played with probabilities that are smaller by a\nfactor of at least $\\epsilon$. Every $\\epsilon$-proper profile is\n$\\epsilon$-perfect.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.5.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Completely mixed epsilon-proper profiles in finite normal-form games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

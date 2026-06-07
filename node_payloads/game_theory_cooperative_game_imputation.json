@@ -1,0 +1,96 @@
+{
+  "id": "game_theory.cooperative_game.imputation",
+  "title": "Imputation",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.core"
+  ],
+  "body_html": "<h1>Imputation</h1>\n<p>An <strong>imputation</strong> is a payoff vector that distributes all worth of the grand\ncoalition and gives every player at least their singleton worth.</p>\n<p>For a TU game $(N,v)$, a payoff vector $x : N \\to \\mathbb{R}$ is an\nimputation when:\n$$\n  \\sum_{i \\in N} x_i = v(N)\n$$\nand, for every player $i \\in N$,\n$$\n  x_i \\ge v(\\{i\\}).\n$$</p>\n<p>The first condition is <strong>efficiency</strong>; the second is <strong>individual\nrationality</strong>.</p>\n<h2>Lean Status</h2>\n<p>Lean separates the two predicates as <code>CoalitionalGame.IsEfficient</code> and\n<code>CoalitionalGame.IsIndividuallyRational</code>, then combines them in\n<code>CoalitionalGame.IsImputation</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Def 17.1] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.cooperative_game.tu_game",
+      "title": "Transferable-Utility Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.cooperative_game.core",
+      "title": "Core Of A Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.IsEfficient",
+      "display_name": "CoalitionalGame.IsEfficient",
+      "qualified_name": "CoalitionalGame.IsEfficient",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def IsEfficient [Fintype N] [AddCommMonoid U] (x : PayoffVector N U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L75",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CoalitionalGame.IsIndividuallyRational",
+      "display_name": "CoalitionalGame.IsIndividuallyRational",
+      "qualified_name": "CoalitionalGame.IsIndividuallyRational",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def IsIndividuallyRational [LE U] (x : PayoffVector N U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L80",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CoalitionalGame.IsImputation",
+      "display_name": "CoalitionalGame.IsImputation",
+      "qualified_name": "CoalitionalGame.IsImputation",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def IsImputation [Fintype N] [AddCommMonoid U] [LE U] (x : PayoffVector N U) : Prop",
+      "docstring": "An imputation is an efficient and individually rational payoff vector. [MSZ 17.1]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L84",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "social_choice.fair_division.divisible.cake_valuation",
+  "title": "Cake Valuation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_cake_valuation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>Cake Valuation</h1>\n<p>A <em>cake valuation</em> assigns a value in some ordered value type $V$ to each\nagent–piece pair $(i, S)$ with $S \\subseteq \\Omega$:\n$$\n\\mathrm{val} : N \\to \\mathrm{Set}\\ \\Omega \\to V.\n$$</p>\n<p>In Lean: structure <code>SocialChoice.FairDivision.Divisible.CakeValuation N Ω V</code>\ncarrying a single field <code>val</code>.</p>\n<p>The value type $V$ stays polymorphic because the canonical instance —\nmeasure-based valuations\n([[social_choice.fair_division.divisible.measure_valuation]]) — takes values\nin <code>ENNReal</code>, while real-valued bundled interfaces use $\\mathbb{R}$.</p>\n<h2>Normalization</h2>\n<p>A cake valuation is <em>normalized</em> if every agent values the whole cake at\n$1$:\n$$\n\\forall i \\in N,\\ \\mathrm{val}(i, \\Omega) = 1.\n$$</p>\n<p>In Lean: <code>IsNormalized</code>, requiring <code>[One V]</code>.</p>\n<p>For a measure-valuation $\\mu_i$, normalization is equivalent to each\n$\\mu_i$ being a probability measure\n([[social_choice.fair_division.divisible.normalized_iff_probability]]).</p>\n<p>Normalized cake valuations are the standard setting for comparing\nproportionality bounds, MMS values, and welfare aggregates across\nagents.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Valuations on cake pieces.</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.CakeValuation",
+      "display_name": "SocialChoice.FairDivision.Divisible.CakeValuation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.CakeValuation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "structure",
+      "signature": "structure CakeValuation (N Ω V : Type*) where",
+      "docstring": "An abstract cake valuation assigns a value in `V` to each agent-piece pair.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L25",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.IsNormalized",
+      "display_name": "SocialChoice.FairDivision.Divisible.IsNormalized",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.IsNormalized",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "def",
+      "signature": "def IsNormalized {N Ω V : Type*} [One V] (cv : CakeValuation N Ω V) : Prop",
+      "docstring": "A normalized cake valuation: each agent values the whole cake at exactly `1`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

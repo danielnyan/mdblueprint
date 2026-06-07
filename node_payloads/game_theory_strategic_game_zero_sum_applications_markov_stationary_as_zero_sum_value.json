@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.applications.markov_stationary_as_zero_sum_value",
+  "title": "Markov Stationary Distribution as Zero-Sum Game Value",
+  "kind": "lemma",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_markov_stationary_as_zero_sum_value.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.applications"
+  ],
+  "body_html": "<h1>Markov Stationary Distribution as Zero-Sum Game Value</h1>\n<p><strong>Lemma.</strong> Let $A : I \\times I \\to \\mathbb{R}$ be a row-stochastic\nmatrix (entries $\\ge 0$, every row sums to 1), and consider the\n<em>displacement game</em> with payoff matrix $B := A - \\operatorname{Id}$.\nThen:</p>\n<ol>\n<li>The displacement game has value $\\operatorname{val}(B) = 0$.</li>\n<li>Every row-optimal mixed strategy $x^* \\in X(B)$ for player 1 is a\n   <strong>stationary distribution</strong> of $A$:\n   $x^* A = x^*$.</li>\n</ol>\n<p>This is the proof structure underlying\n[[game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution]] —\nthe classical von Neumann construction translating\n\"Markov stationary distribution exists\" into \"an optimal mixed\nstrategy in a particular zero-sum game\".</p>\n<h2>Why this is a useful framing</h2>\n<p>The standard textbook proof of Markov stationary-distribution existence\nuses Brouwer's fixed-point theorem on $\\Delta(I)$. The\nzero-sum-game-theoretic proof bypasses Brouwer entirely:</p>\n<ul>\n<li>Apply the minimax theorem\n  ([[game_theory.strategic_game.zero_sum.von_neumann_minimax]]) to the displacement game\n  $B = A - \\operatorname{Id}$ — this gives existence of optimal\n  strategies for free.</li>\n<li>Reduce stationarity to the <em>saddle-point characterisation</em> of those\n  optimal strategies (player 1's guarantee inequality, summed across\n  columns, forces equality on every column).</li>\n</ul>\n<p>The whole argument is purely algebraic / combinatorial once minimax is\nin hand, which is itself proved by Loomis induction\n([[math.minimax.loomis_induction_proof]]) — no topology required.\nThis is a satisfying application of zero-sum theory to elementary\nMarkov-chain theory.</p>\n<h2>Bridge to the main theorem</h2>\n<p>The detailed argument lives in\n[[game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution]]\n(MFoGT Cor. 2.5.2): the three-step proof there is</p>\n<ol>\n<li>Show $\\operatorname{val}(B) = 0$ (this lemma's statement 1) by\n   exhibiting matching upper and lower bounds.</li>\n<li>Take any $x^* \\in X(B)$; saddle-point inequality gives\n   $x^* A \\ge x^*$ componentwise.</li>\n<li>Sum across $j$ and use row-stochasticity: total mass forces\n   $x^* A = x^*$ pointwise.</li>\n</ol>\n<p>This node is the <em>conceptual restatement</em> of that argument — the\nunderlying meta-pattern is \"minimax theorem + saddle-point\ncharacterisation + a counting / mass-balance step ⇒ existence of a\nmatrix-algebraic object\".</p>\n<h2>References</h2>\n<ul>\n<li>von Neumann's original 1928 paper already contains this technique.</li>\n<li>[MFoGT Cor. 2.5.2] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>.</li>\n<li>Owen, G. (1995). <em>Game Theory</em>. Ch. 3.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.generic_unique_spe",
+  "title": "Generic Uniqueness Of Subgame-Perfect Equilibrium",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_generic_unique_spe.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Generic Uniqueness Of Subgame-Perfect Equilibrium</h1>\n<p>A finite perfect-information game, with or without Nature, with $K$ terminal nodes\nand $I$ players has generically a unique subgame-perfect equilibrium with respect\nto Lebesgue measure on the terminal payoff space.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>After excluding payoff parameters that create indifference during backward\ninduction, every decision point has a unique optimal continuation. The excluded\nparameters lie in lower-dimensional equality sets. Therefore, for generic terminal\npayoffs, backward induction selects a unique continuation at every node and hence\na unique subgame-perfect equilibrium.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 6.2.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Finite perfect-information games generically have a unique SPE.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

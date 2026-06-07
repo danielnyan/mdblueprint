@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.mixed_extension_pathology",
+  "title": "Mixed Extension Pathology",
+  "kind": "example",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_mixed_extension_pathology.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Mixed Extension Pathology</h1>\n<p>Let $S=T=(0,1]$ and define\n$$\n  f(s,t)=\n  \\begin{cases}\n    0, &amp; s=t,\\\\\n    -1/s^2, &amp; s&gt;t,\\\\\n    1/t^2, &amp; s&lt;t.\n  \\end{cases}\n$$\nMFoGT's exercise asks to show that $\\int_S f(s,t)\\,ds=1$ for each $t$, but that\nthe one-sided mixed extensions satisfy\n$$\n  \\sup_{\\sigma\\in\\Delta(S)}\\inf_{t\\in T} f(\\sigma,t)\n  &gt;\n  \\inf_{\\tau\\in\\Delta(T)}\\sup_{s\\in S} f(s,\\tau).\n$$\nThis exhibits a pathology in treating the mixed extension without adequate\nmeasurability and integrability hypotheses.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Pathology for mixed extensions defined by one-sided integration.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

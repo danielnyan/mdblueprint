@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.voting.is_weakly_decisive_for",
+  "title": "Weakly Decisive Coalition",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_is_weakly_decisive_for.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Weakly Decisive Coalition</h1>\n<p>A coalition $C \\subseteq N$ is <em>weakly decisive for the ordered pair</em>\n$(a, b)$ under a social welfare function $F$ ([[social_choice.voting.swf]])\nif unanimous $a \\succ b$ inside $C$, <em>combined with</em> unanimous\n$b \\succ a$ outside $C$, forces society to rank $a \\succ b$:\n$$\n\\forall P,\\\n\\bigl(\\forall i \\in C,\\ a \\succ_{P_i} b\\bigr) \\wedge\n\\bigl(\\forall i \\notin C,\\ b \\succ_{P_i} a\\bigr)\n\\Rightarrow a \\succ_{F(P)} b.\n$$</p>\n<p>In Lean: <code>SocialChoice.Voting.IsWeaklyDecisiveFor F C a b</code>.</p>\n<p>Weak decisiveness is <em>implied</em> by decisiveness ([[social_choice.voting.is_decisive_for]])\n— a witness profile satisfying the stronger constraint of total opposition\nis in particular a witness for plain decisiveness:\n<code>SocialChoice.Voting.isWeaklyDecisiveFor_of_isDecisiveFor</code>.</p>\n<p>The opposite-direction-strengthening — turning weak decisiveness into full\ndecisiveness — is the substantive content of the <em>field expansion</em> lemma\n[[social_choice.voting.decisive_spread]]. The split into \"weak\" vs full\ndecisiveness lets the Arrow proof use only the simpler hypothesis when\nbuilding witnesses.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.14ff] Maschler, Solan, and Zamir, <em>Game Theory</em>. Weak decisiveness in the field-expansion argument.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.IsWeaklyDecisiveFor",
+      "display_name": "SocialChoice.Voting.IsWeaklyDecisiveFor",
+      "qualified_name": "SocialChoice.Voting.IsWeaklyDecisiveFor",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "def",
+      "signature": "def IsWeaklyDecisiveFor [Fintype N] [Fintype A]\n    (F : SWF N A) (C : Set N) (a b : A) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L77",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.isWeaklyDecisiveFor_of_isDecisiveFor",
+      "display_name": "SocialChoice.Voting.isWeaklyDecisiveFor_of_isDecisiveFor",
+      "qualified_name": "SocialChoice.Voting.isWeaklyDecisiveFor_of_isDecisiveFor",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "theorem",
+      "signature": "theorem isWeaklyDecisiveFor_of_isDecisiveFor [Fintype N] [Fintype A]\n    {F : SWF N A} {C : Set N} {a b : A}\n    (h : IsDecisiveFor F C a b) : IsWeaklyDecisiveFor F C a b",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L83",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "display_name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

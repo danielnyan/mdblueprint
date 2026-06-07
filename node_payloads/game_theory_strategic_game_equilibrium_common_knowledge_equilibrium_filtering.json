@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.common_knowledge_equilibrium_filtering",
+  "title": "Common Knowledge Can Filter Nash Equilibria",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_common_knowledge_equilibrium_filtering.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Common Knowledge Can Filter Nash Equilibria</h1>\n<p>MFoGT gives finite-game examples showing that Nash stability alone does not\nrequire players to know opponents' payoff functions. When payoffs and rationality\nare common knowledge, some Nash equilibria may be ruled out because a player can\nanticipate another player's best-response behavior.</p>\n<p>The same section also gives an example where common knowledge and pre-play\ncommunication still do not remove an inefficient equilibrium without an additional\nprinciple such as Pareto dominance.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.10.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Examples showing how common knowledge of the game and rationality can refine predictions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

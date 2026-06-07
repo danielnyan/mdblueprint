@@ -1,0 +1,221 @@
+{
+  "topic": {
+    "id": "game_theory.stochastic_game",
+    "title": "Game Theory.Stochastic Game",
+    "href": "game_theory/stochastic_game/index.html",
+    "parent": "game_theory",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 10,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 10,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 11,
+    "visible_nodes_with_selected_proof_plans": 11
+  },
+  "nodes": [
+    {
+      "id": "game_theory.stochastic_game.asymptotic.bewley_kohlberg_asymptotic_value",
+      "title": "Bewley-Kohlberg Asymptotic Value",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_asymptotic_bewley_kohlberg_asymptotic_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_asymptotic_bewley_kohlberg_asymptotic_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value",
+      "title": "Mertens-Neyman Uniform Value",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_asymptotic_mertens_neyman_uniform_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_asymptotic_mertens_neyman_uniform_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.core.history",
+      "title": "Stochastic Game History",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_core_history.html",
+      "payload": "node_payloads/game_theory_stochastic_game_core_history.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.core.stochastic_game",
+      "title": "Stochastic Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_core_stochastic_game.html",
+      "payload": "node_payloads/game_theory_stochastic_game_core_stochastic_game.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.equilibrium.fink_nash_existence",
+      "title": "Fink Nash Existence in Stochastic Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_equilibrium_fink_nash_existence.html",
+      "payload": "node_payloads/game_theory_stochastic_game_equilibrium_fink_nash_existence.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.examples.big_match_uniform_value",
+      "title": "Big Match Uniform Value",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_examples_big_match_uniform_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_examples_big_match_uniform_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.discounted_value",
+      "title": "Discounted Value of a Zero-Sum Stochastic Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_discounted_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_discounted_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.discounted_value_fixed_point",
+      "title": "Discounted Value Is the Unique Shapley Fixed Point",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_discounted_value_fixed_point.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_discounted_value_fixed_point.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.shapley_operator",
+      "title": "Shapley Operator",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_shapley_operator.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.shapley_operator_contraction",
+      "title": "Shapley Operator Is a γ-Contraction",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator_contraction.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_shapley_operator_contraction.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "asymptotic-value",
+      "title": "asymptotic-value",
+      "href": "keywords/asymptotic-value.html",
+      "count": 1
+    },
+    {
+      "id": "bewley-kohlberg",
+      "title": "bewley-kohlberg",
+      "href": "keywords/bewley-kohlberg.html",
+      "count": 1
+    },
+    {
+      "id": "big-match",
+      "title": "big-match",
+      "href": "keywords/big-match.html",
+      "count": 1
+    },
+    {
+      "id": "contraction",
+      "title": "contraction",
+      "href": "keywords/contraction.html",
+      "count": 1
+    },
+    {
+      "id": "discounted-value",
+      "title": "discounted-value",
+      "href": "keywords/discounted-value.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "general-sum",
+      "title": "general-sum",
+      "href": "keywords/general-sum.html",
+      "count": 1
+    },
+    {
+      "id": "history",
+      "title": "history",
+      "href": "keywords/history.html",
+      "count": 1
+    },
+    {
+      "id": "mertens-neyman",
+      "title": "mertens-neyman",
+      "href": "keywords/mertens-neyman.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "shapley-operator",
+      "title": "shapley-operator",
+      "href": "keywords/shapley-operator.html",
+      "count": 3
+    },
+    {
+      "id": "state-dynamics",
+      "title": "state-dynamics",
+      "href": "keywords/state-dynamics.html",
+      "count": 1
+    },
+    {
+      "id": "stochastic-game",
+      "title": "stochastic-game",
+      "href": "keywords/stochastic-game.html",
+      "count": 10
+    },
+    {
+      "id": "uniform-value",
+      "title": "uniform-value",
+      "href": "keywords/uniform-value.html",
+      "count": 2
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 7
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "game_theory.stochastic_game.asymptotic",
+    "game_theory.stochastic_game.core",
+    "game_theory.stochastic_game.value"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+  "title": "Envy-Cycle Elimination Algorithm",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.algorithms"
+  ],
+  "body_html": "<h1>Envy-Cycle Elimination Algorithm</h1>\n<p>The full envy-cycle elimination algorithm (Lipton et al. 2004):</p>\n<p><code>state := (remaining = allGoods, A = empty bundles)\nwhile remaining is nonempty:\n  A := eliminateAllCycles(v, allGoods, A)   -- clear all envy cycles\n  i := findSource(v, A)                     -- pick a source agent\n  g := pickItem(remaining)                  -- pick any remaining item\n  A[i] := A[i] ∪ {g}\n  remaining := remaining \\ {g}\nreturn A</code></p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.envyCycleAllocation</code>\n(top-level worker) and\n<code>SocialChoice.FairDivision.Indivisible.envyCycleRule</code> (bundled rule\nform).</p>\n<h2>Why each step is needed</h2>\n<ul>\n<li>\n<p><strong>Eliminate cycles first.</strong> Each call to <code>eliminateAllCycles</code>\n  ([[social_choice.fair_division.indivisible.eliminate_all_cycles]])\n  ensures the envy graph is acyclic, which (by\n  [[social_choice.fair_division.indivisible.acyclic_has_source]])\n  guarantees that some agent is a source.</p>\n</li>\n<li>\n<p><strong>Assign to a source.</strong> Giving the fresh item to a source means no\n  one envies the recipient <em>before</em> the item is added. The\n  new envy created by the item is bounded by the value of <em>that one\n  item</em>, so the resulting allocation remains EF1.</p>\n</li>\n<li>\n<p><strong>Loop.</strong> The outer loop runs <code>|allGoods|</code> times. Each iteration may\n  do many <code>rotateBundles</code> calls inside <code>eliminateAllCycles</code>, but each\n  rotation strictly decreases the Pareto-domination count\n  ([[social_choice.fair_division.indivisible.pareto_dom_count]]),\n  giving overall termination.</p>\n</li>\n</ul>\n<h2>Termination</h2>\n<p>The outer loop has a fixed number of iterations (the number of items).\nThe inner <code>eliminateAllCycles</code> terminates by the well-founded\nPareto-domination measure. Overall termination is polynomial in\n$|N|, |G|$ on standard random-access models.</p>\n<h2>Correctness</h2>\n<p>Two top-level correctness theorems:</p>\n<ul>\n<li><code>envyCycleAllocation_isAllocation</code>\n  ([[social_choice.fair_division.indivisible.envy_cycle_ef1]]'s\n  companion): the output is a valid complete partition.</li>\n<li><code>envyCycleAllocation_isEF1</code> / <code>envyCycleRule_isEF1</code>: the output\n  is EF1.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>. The original envy-cycle algorithm.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF1 from envy-cycle elimination.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.envyCycleAllocation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.envyCycleAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.envyCycleAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "def",
+      "signature": "noncomputable def envyCycleAllocation\n    [Fintype N] [Fintype G] [Nonempty N] [DecidableEq N] [DecidableEq G]\n    (I : AdditiveInstance N G) : Allocation N G",
+      "docstring": "The complete envy-cycle-elimination allocation for a bundled additive instance.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L926",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.envyCycleRule",
+      "display_name": "SocialChoice.FairDivision.Indivisible.envyCycleRule",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.envyCycleRule",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "def",
+      "signature": "noncomputable def envyCycleRule\n    [Fintype N] [Fintype G] [Nonempty N] [DecidableEq N] [DecidableEq G]\n    (I : AdditiveInstance N G) :\n    {A : Allocation N G // I.feasible A}",
+      "docstring": "Envy-cycle elimination as a feasible-allocation rule on bundled additive instances.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L932",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

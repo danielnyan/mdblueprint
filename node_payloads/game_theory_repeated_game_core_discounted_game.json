@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.discounted_game",
+  "title": "Discounted Repeated Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_discounted_game.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Discounted Repeated Game</h1>\n<p>For discount rate $\\lambda\\in(0,1]$, the discounted repeated game $G^\\lambda$\nevaluates player $i$ by\n$$\n  \\gamma_\\lambda^i(\\sigma)\n  =\n  \\mathbb E_\\sigma\\left[\n    \\lambda\\sum_{t=1}^\\infty (1-\\lambda)^{t-1}g_i(a_t)\n  \\right].\n$$</p>\n<p>Small $\\lambda$ corresponds to patient players. MFoGT uses normalized discounted\npayoffs, so a constant stream $c$ has value $c$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 8, Def. 8.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Infinite repeated game with normalized discount rate.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

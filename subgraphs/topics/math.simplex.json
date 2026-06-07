@@ -1,0 +1,304 @@
+{
+  "topic": {
+    "id": "math.simplex",
+    "title": "Math.Simplex",
+    "href": "math/simplex/index.html",
+    "parent": "math",
+    "node_count": 6,
+    "descendant_node_count": 6
+  },
+  "counts": {
+    "internal_nodes": 6,
+    "inlined_nodes": 0,
+    "descendant_nodes": 6,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 6,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 5,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
+  },
+  "nodes": [
+    {
+      "id": "math.simplex.bounded_by_value",
+      "title": "Pointwise Bounds Are Simplex Bounds",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_simplex_bounded_by_value.html",
+      "payload": "node_payloads/math_simplex_bounded_by_value.json"
+    },
+    {
+      "id": "math.simplex.continuity",
+      "title": "Continuity on the Real Standard Simplex",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_simplex_continuity.html",
+      "payload": "node_payloads/math_simplex_continuity.json"
+    },
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "math/math_simplex_mix.html",
+      "payload": "node_payloads/math_simplex_mix.json"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "math/math_simplex_pure.html",
+      "payload": "node_payloads/math_simplex_pure.json"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "math/math_simplex_wsum.html",
+      "payload": "node_payloads/math_simplex_wsum.json"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_simplex_wsum_comm.html",
+      "payload": "node_payloads/math_simplex_wsum_comm.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "math.simplex.pure",
+      "to": "math.simplex.bounded_by_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.simplex.continuity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.simplex.mix",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.simplex.pure",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.simplex.wsum_comm",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "foundation.utility",
+      "title": "Foundation.Utility",
+      "href": "foundation/utility/index.html",
+      "role": "dependent",
+      "node_count": 7
+    },
+    {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "href": "game_theory/extensive_game/index.html",
+      "role": "dependency",
+      "node_count": 57
+    },
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependent",
+      "node_count": 105
+    },
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.simplex.wsum",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.continuity",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.mix",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.pure",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.wsum_comm",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.continuity",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.wsum_comm",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.wsum_comm",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "continuity",
+      "title": "continuity",
+      "href": "keywords/continuity.html",
+      "count": 1
+    },
+    {
+      "id": "convex-combination",
+      "title": "convex-combination",
+      "href": "keywords/convex-combination.html",
+      "count": 1
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 6
+    },
+    {
+      "id": "dirac",
+      "title": "dirac",
+      "href": "keywords/dirac.html",
+      "count": 1
+    },
+    {
+      "id": "fubini",
+      "title": "fubini",
+      "href": "keywords/fubini.html",
+      "count": 1
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 6
+    },
+    {
+      "id": "topology",
+      "title": "topology",
+      "href": "keywords/topology.html",
+      "count": 1
+    },
+    {
+      "id": "weighted-sum",
+      "title": "weighted-sum",
+      "href": "keywords/weighted-sum.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

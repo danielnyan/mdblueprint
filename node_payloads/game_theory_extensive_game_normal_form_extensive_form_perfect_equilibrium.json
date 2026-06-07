@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.normal_form.extensive_form_perfect_equilibrium",
+  "title": "Extensive Form Perfect Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_form_perfect_equilibrium.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.normal_form"
+  ],
+  "body_html": "<h1>Extensive Form Perfect Equilibrium</h1>\n<p>An extensive form perfect equilibrium of a perfect-recall extensive form game\n$\\Gamma$ is a perfect equilibrium of its agent normal form $\\Gamma^a$.</p>\n<p>This refinement applies normal-form perfection at the level of information-set\nagents rather than only to the original players' reduced normal form.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.6.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Extensive form perfect equilibrium is perfection in the agent normal form.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.strict_equilibrium_is_proper",
+  "title": "Strict Equilibrium Is Proper",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_strict_equilibrium_is_proper.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Strict Equilibrium Is Proper</h1>\n<p>Every strict equilibrium of a finite normal-form game is a proper equilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>If $s$ is strict, then for small perturbations of the opponents, each $s_i$\nremains the unique best response of player $i$. Using proper equilibria of the\nrestricted game where each player is prevented from playing $s_i$, the profiles\n$\\sigma^\\epsilon=(1-\\epsilon)s+\\epsilon\\tau^\\epsilon$ are $\\epsilon$-proper and\nconverge to $s$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Rem. 6.5.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every strict equilibrium is proper.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

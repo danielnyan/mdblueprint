@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.forward_induction",
+  "title": "Forward Induction",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_forward_induction.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Forward Induction</h1>\n<p>Forward induction is a refinement principle for extensive form games. Unlike\nbackward induction, which evaluates future optimality at each information set,\nforward induction also uses past play to restrict beliefs: when possible, a\ndeviation from the equilibrium path should be interpreted as a rational signal\nrather than as a mere mistake.</p>\n<p>In the battle-of-the-sexes game with outside option in MFoGT Figure 6.20, player\n1 can stop and receive payoff $2$. If player 1 instead enters, player 2 should\ninfer, when possible, that player 1 expects more than $2$. Since one continuation\nchoice of player 1 is strictly dominated by stopping, the forward-induction\noutcome selects the continuation equilibrium $(T,L)$ with payoff $(3,1)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.7 and Figure 6.20] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Forward induction restricts off-path beliefs by interpreting deviations as rational when possible.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

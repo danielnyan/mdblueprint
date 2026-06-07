@@ -1,0 +1,48 @@
+{
+  "id": "mechanism_design.vcg.payment_identity",
+  "title": "VCG Payment Identity",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "mechanism_design/mechanism_design_vcg_payment_identity.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.vcg"
+  ],
+  "body_html": "<h1>VCG Payment Identity</h1>\n<p><strong>Theorem.</strong> Under the VCG mechanism with valuation profile $v$ and\nallocation $a^* = \\mathrm{efficientAllocation}\\ v$, every agent $i$'s\nquasi-linear utility under truthful reporting equals\n$$\nu_i \\;=\\; W(v, a^*) \\;-\\; \\max_{a \\in A} W_{-i}(v, a).\n$$</p>\n<p>Equivalently: <strong>agent $i$'s utility is their marginal contribution to\nsocial welfare.</strong></p>\n<p>In Lean: <code>VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout</code>.</p>\n<h2>Why this is the soul of VCG</h2>\n<p>The two headline VCG properties fall out of this identity almost\nimmediately:</p>\n<ul>\n<li>\n<p><strong>Truthfulness</strong> ([[mechanism_design.vcg_truthfulness_and_ir]]):\n  $u_i$ depends on $i$'s reported valuation only through $a^*$ (the\n  $W_{-i}$ term is <em>report-independent</em>, see\n  [[mechanism_design.vcg.welfare_without]] <code>_update_self</code> lemmas).\n  Hence maximising $u_i$ over $i$'s report is equivalent to\n  maximising $v_i(a^*)$ given the other agents' reports — which truthful\n  reporting achieves by definition of $a^*$.</p>\n</li>\n<li>\n<p><strong>Individual rationality</strong> (under non-negative valuations): $u_i \\ge 0$\n  iff $W(v, a^*) \\ge \\max_a W_{-i}(v, a)$, i.e. agent $i$'s presence\n  weakly increases the achievable social welfare. This is automatic\n  when $v_i \\ge 0$ pointwise — adding agent $i$'s valuation can only\n  raise the max.</p>\n</li>\n</ul>",
+  "proof_html": "<p>sketch</p>\n<p>Substitute the Clarke-pivot payment\n$p_i = \\max_a W_{-i}(v, a) - W_{-i}(v, a^*)$ into the quasi-linear\nutility $u_i = v_i(a^*) - p_i$:\n$$\nu_i \\;=\\; v_i(a^*) + W_{-i}(v, a^*) - \\max_a W_{-i}(v, a)\n   \\;=\\; W(v, a^*) - \\max_a W_{-i}(v, a),\n$$\nusing <code>socialWelfare_eq_value_add_welfareWithout</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 9, §9.3.4] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  VCG mechanism and the payment identity.</li>\n<li>Vickrey, W. (1961); Clarke, E. H. (1971); Groves, T. (1973). Original\n  VCG papers.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+      "display_name": "MultipleParameterMechanism.VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "lemma",
+      "signature": "lemma VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout\n    (reports trueTypes : ∀ _ : I, Valuation A ℝ) (i : I) :\n    MechanismWithTransfers.quasiLinearUtility\n        VCGTransferMechanism valueOfAllocation id id reports trueTypes i =\n      socialWelfare (Function.update reports i (trueTypes i)) (efficientAllocation reports) -\n        maxWelfareWithout reports i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L193",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "display_name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

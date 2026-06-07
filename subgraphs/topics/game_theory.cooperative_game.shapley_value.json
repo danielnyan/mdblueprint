@@ -1,0 +1,160 @@
+{
+  "topic": {
+    "id": "game_theory.cooperative_game.shapley_value",
+    "title": "Game Theory.Cooperative Game.Shapley Value",
+    "href": "game_theory/cooperative_game/shapley_value/index.html",
+    "parent": "game_theory.cooperative_game",
+    "node_count": 6,
+    "descendant_node_count": 6
+  },
+  "counts": {
+    "internal_nodes": 6,
+    "inlined_nodes": 0,
+    "descendant_nodes": 6,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 6,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 8,
+    "visible_nodes_with_selected_proof_plans": 8
+  },
+  "nodes": [
+    {
+      "id": "game_theory.cooperative_game.bondareva_shapley",
+      "title": "Bondareva-Shapley Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_bondareva_shapley.html",
+      "payload": "node_payloads/game_theory_cooperative_game_bondareva_shapley.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_axioms",
+      "title": "Shapley Axioms",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_axioms.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_axioms.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_in_core_convex",
+      "title": "Shapley Value Lies In The Core Of A Convex Game",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_in_core_convex.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_in_core_convex.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_uniqueness",
+      "title": "Shapley Uniqueness Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_uniqueness.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_uniqueness.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_value",
+      "title": "Shapley Value",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_value.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_value.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_value_efficient",
+      "title": "Shapley Value Is Efficient",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_value_efficient.html",
+      "payload": "node_payloads/game_theory_cooperative_game_shapley_value_efficient.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.cooperative_game",
+      "title": "Game Theory.Cooperative Game",
+      "href": "game_theory/cooperative_game/index.html",
+      "role": "dependency",
+      "node_count": 19
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.cooperative_game",
+      "to": "game_theory.cooperative_game.shapley_axioms",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.cooperative_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.cooperative_game",
+      "to": "game_theory.cooperative_game.shapley_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.cooperative_game",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "axioms",
+      "title": "axioms",
+      "href": "keywords/axioms.html",
+      "count": 1
+    },
+    {
+      "id": "balancedness",
+      "title": "balancedness",
+      "href": "keywords/balancedness.html",
+      "count": 1
+    },
+    {
+      "id": "bondareva-shapley",
+      "title": "bondareva-shapley",
+      "href": "keywords/bondareva-shapley.html",
+      "count": 1
+    },
+    {
+      "id": "coalitional-game",
+      "title": "coalitional-game",
+      "href": "keywords/coalitional-game.html",
+      "count": 6
+    },
+    {
+      "id": "convex-game",
+      "title": "convex-game",
+      "href": "keywords/convex-game.html",
+      "count": 1
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 2
+    },
+    {
+      "id": "efficiency",
+      "title": "efficiency",
+      "href": "keywords/efficiency.html",
+      "count": 1
+    },
+    {
+      "id": "shapley-value",
+      "title": "shapley-value",
+      "href": "keywords/shapley-value.html",
+      "count": 5
+    },
+    {
+      "id": "uniqueness",
+      "title": "uniqueness",
+      "href": "keywords/uniqueness.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

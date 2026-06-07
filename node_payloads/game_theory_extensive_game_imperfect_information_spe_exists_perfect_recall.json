@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.spe_exists_perfect_recall",
+  "title": "Existence Of Subgame-Perfect Equilibrium With Perfect Recall",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_spe_exists_perfect_recall.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Existence Of Subgame-Perfect Equilibrium With Perfect Recall</h1>\n<p>Every finite extensive form game with perfect recall admits a subgame-perfect\nequilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Induct on the number of subgames. If there is no proper subgame, behavioral\nequilibrium existence gives the result. Otherwise, solve all proper subgames by\nthe induction hypothesis, replace each subgame root by its equilibrium payoff, and\nsolve the reduced game by behavioral equilibrium existence. Concatenating the\nreduced-game equilibrium with the equilibria of the proper subgames gives a\nsubgame-perfect equilibrium.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.4.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every finite extensive form game with perfect recall admits an SPE.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

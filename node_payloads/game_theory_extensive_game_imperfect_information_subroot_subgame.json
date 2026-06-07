@@ -1,0 +1,154 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+  "title": "Subroot And Subgame In Imperfect-Information Games",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Subroot And Subgame In Imperfect-Information Games</h1>\n<p>In a perfect-recall extensive game, a node $x$ is a subroot if:</p>\n<ol>\n<li>$x$ is the unique node in its information set;</li>\n<li>for every information set $Q$, either every node of $Q$ follows $x$, or no node\n   of $Q$ follows $x$.</li>\n</ol>\n<p>The followers of a subroot, together with inherited information sets and payoffs,\ndefine a subgame.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.4.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Subroot definition for subgames in perfect-recall extensive games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    },
+    {
+      "id": "math.fixed_point.scarf_lemma",
+      "title": "Scarf Combinatorial Lemma (Colorful Room Existence)",
+      "href": "math/math_fixed_point_scarf_lemma.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GameTree.Subtree",
+      "display_name": "GameTree.Subtree",
+      "qualified_name": "GameTree.Subtree",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "inductive",
+      "signature": "inductive Subtree : GameTree N U → GameTree N U → Prop\n  | refl (g : GameTree N U) : Subtree g g\n  | inHead (s : GameTree N U) (m : N) (h : GameTree N U) (t : List (GameTree N U))\n      (hs : Subtree s h) : Subtree s (Node m h t)\n  | inTail (s : GameTree N U) (m : N) (h : GameTree N U) (t : List (GameTree N U))\n      {c : GameTree N U} (hmem : c ∈ t) (hs : Subtree s c) :\n      Subtree s (Node m h t)\n/-- Every tree is a subtree of itself. -/",
+      "docstring": "`Subtree s g` — `s` occurs as a subtree of `g`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L124",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Subtree.self",
+      "display_name": "GameTree.Subtree.self",
+      "qualified_name": "GameTree.Subtree.self",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "theorem",
+      "signature": "theorem Subtree.self (g : GameTree N U) : Subtree g g",
+      "docstring": "Every tree is a subtree of itself.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L133",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Subtree.head",
+      "display_name": "GameTree.Subtree.head",
+      "qualified_name": "GameTree.Subtree.head",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "theorem",
+      "signature": "theorem Subtree.head (m : N) (h : GameTree N U) (t : List (GameTree N U)) :\n    Subtree h (Node m h t)",
+      "docstring": "The head of a `Node` is a subtree of the node.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L136",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Subtree.tail_mem",
+      "display_name": "GameTree.Subtree.tail_mem",
+      "qualified_name": "GameTree.Subtree.tail_mem",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "theorem",
+      "signature": "theorem Subtree.tail_mem (m : N) (h : GameTree N U) (t : List (GameTree N U))\n    {c : GameTree N U} (hmem : c ∈ t) : Subtree c (Node m h t)",
+      "docstring": "Any tail member of a `Node` is a subtree of the node.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L141",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Subtree.child_mem",
+      "display_name": "GameTree.Subtree.child_mem",
+      "qualified_name": "GameTree.Subtree.child_mem",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "theorem",
+      "signature": "theorem Subtree.child_mem (m : N) (h : GameTree N U) (t : List (GameTree N U))\n    {c : GameTree N U} (hmem : c ∈ h :: t) : Subtree c (Node m h t)",
+      "docstring": "Any child (head or tail) is a subtree.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L146",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Subtree.trans",
+      "display_name": "GameTree.Subtree.trans",
+      "qualified_name": "GameTree.Subtree.trans",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "kind": "theorem",
+      "signature": "theorem Subtree.trans {r s g : GameTree N U} (hrs : Subtree r s) (hsg : Subtree s g) :\n    Subtree r g",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L154",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

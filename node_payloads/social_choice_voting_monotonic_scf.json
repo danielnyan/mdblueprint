@@ -1,0 +1,48 @@
+{
+  "id": "social_choice.voting.monotonic_scf",
+  "title": "Monotonic Social Choice Function",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_monotonic_scf.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting"
+  ],
+  "body_html": "<h1>Monotonic Social Choice Function</h1>\n<p>A voting rule $f$ is <em>monotonic</em> if a selected winner stays selected whenever\nit is weakly pushed up in everyone's ranking. Writing $Q$ for a profile\nobtained from $P$ by a <em>simple lift</em> of $a$,\n$$\na \\in f(P) \\;\\wedge\\; \\mathrm{SimpleLift}(Q, P, a)\n\\;\\Rightarrow\\; a \\in f(Q).\n$$\nHere $\\mathrm{SimpleLift}(Q, P, a)$ requires, for every voter $i$ and\nalternative $x$: if $a \\succ_{P_i} x$ then $a \\succ_{Q_i} x$, and if\n$x \\succ_{Q_i} a$ then $x \\succ_{P_i} a$ — i.e. $a$ only moves up, never down.</p>\n<p>In Lean: <code>SocialChoice.Voting.Monotonicity</code>, using the lift relation\n<code>SocialChoice.Voting.SimpleLift</code>.</p>\n<p>The condition only constrains strict comparisons involving the winner $a$;\nvoters may rearrange their rankings among the other alternatives freely.</p>\n<p>Monotonicity is the bridge from strategy-proofness\n([[social_choice.voting.strategyproof]]) to dictatorship in the Gibbard\n–Satterthwaite chain: resolute strategy-proof rules are monotonic\n([[social_choice.voting.strategyproof_implies_monotonic]]), and monotonic\nunanimous resolute rules with $|A| \\ge 3$ are dictatorial\n([[social_choice.voting.muller_satterthwaite]]).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.22] Maschler, Solan, and Zamir, <em>Game Theory</em>. Monotonicity for SCFs.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.Monotonicity",
+      "display_name": "SocialChoice.Voting.Monotonicity",
+      "qualified_name": "SocialChoice.Voting.Monotonicity",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "def",
+      "signature": "def Monotonicity (f : VotingRule N A) : Prop",
+      "docstring": "Monotonicity: raising a selected alternative cannot make it unselected.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L306",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Basic",
+      "display_name": "EconCSLib.SocialChoice.Voting.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.envy_free",
+  "title": "Envy-Free Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_envy_free.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Envy-Free Allocation</h1>\n<p>For a real-valued utility profile $u : N \\to S \\to \\mathbb{R}$ and an\nallocation $A : N \\to S$ ([[social_choice.fair_division.allocation]]),\n$A$ is <em>envy-free</em> (EF) if every agent weakly prefers their own share to\nevery other agent's share:\n$$\n\\forall i, j \\in N,\\ u_i(A(j)) \\le u_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.IsEnvyFree</code>. The signature takes\n$u$ and $A$ as plain functions, so the predicate applies uniformly to the\ndivisible and indivisible specializations\n([[social_choice.fair_division.divisible.envy_free]],\n[[social_choice.fair_division.indivisible.envy_free]]).</p>\n<h2>Existence</h2>\n<ul>\n<li><em>Divisible</em> (cake cutting with non-atomic finite measures): EF\n  allocations always exist (Stromquist,\n  [[social_choice.fair_division.divisible.ef_exists]]).</li>\n<li><em>Indivisible</em> (additive valuations over a finite set of items): EF\n  <em>need not</em> exist, even with 2 agents and 1 item\n  ([[social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good]]).\n  This motivates the relaxations EF1 / EFX\n  ([[social_choice.fair_division.indivisible.ef1]],\n  [[social_choice.fair_division.indivisible.efx]]).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Envy-freeness in fair division.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.IsEnvyFree",
+      "display_name": "SocialChoice.FairDivision.IsEnvyFree",
+      "qualified_name": "SocialChoice.FairDivision.IsEnvyFree",
+      "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "kind": "def",
+      "signature": "def IsEnvyFree\n    (u : N → S → ℝ) (A : Allocation N S) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L26",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

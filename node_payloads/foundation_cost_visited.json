@@ -1,0 +1,113 @@
+{
+  "id": "foundation.cost.visited",
+  "title": "Memoization Footprint via the Visited Monoid",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_visited.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost"
+  ],
+  "body_html": "<h1>Memoization Footprint via the Visited Monoid</h1>\n<p><code>Visited α</code> is the cost monoid that records the <strong>set of subproblems touched</strong>\nby a recursive algorithm. It is <code>Finset α</code> with union as addition and the\nempty set as zero:\n$$\n  s + t = s \\cup t, \\qquad 0 = \\varnothing.\n$$\nThe defining feature is <strong>idempotence</strong>, <code>s + s = s</code>: revisiting a subproblem\nadds nothing. This is the algebraic shadow of memoization — under a memo table\nthe second visit is free, so the cost (the footprint) is exactly the set of\n<em>distinct</em> subproblems, not the number of calls. A memoized algorithm's\n<code>.cost</code> is therefore the set of table entries it fills.</p>\n<p><code>Visited α</code> is a <strong>type synonym</strong> for <code>Finset α</code> (<code>def Visited α := Finset α</code>),\nintroduced specifically to firewall Mathlib's scoped pointwise <code>Zero (Finset α)</code>\ninstance: the cost-monoid <code>0 = ∅</code> and <code>+ = ∪</code> must not collide with pointwise\narithmetic on finsets. <code>toFinset</code>/<code>ofFinset</code> move across the synonym boundary.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>Visited</code> — the <code>Finset</code> type synonym; <code>Visited.toFinset</code>/<code>Visited.ofFinset</code>\n  the round-trip maps and <code>Visited.singleton a</code> the one-point footprint.</li>\n<li><code>Zero</code>/<code>Add [DecidableEq α]</code>/<code>AddMonoid</code> instances are anonymous.</li>\n<li><code>Visited.ext</code> plus the <code>simp</code> lemmas <code>toFinset_zero</code>, <code>toFinset_singleton</code>,\n  <code>toFinset_add</code> reduce footprint reasoning to ordinary <code>Finset</code> set algebra.</li>\n</ul>\n<p>Worked examples: the 1-D memoization footprint of Fibonacci\n(<a class=\"node-ref\" data-node-id=\"foundation.cost.examples.memo_fib\" href=\"cost/examples/foundation_cost_examples_memo_fib.html\">Worked Example: Memoized Fibonacci Footprint</a>, cost <code>= range (n+1)</code>) and the 2-D\nDP-grid footprint of longest common subsequence\n(<a class=\"node-ref\" data-node-id=\"foundation.cost.examples.lcs\" href=\"cost/examples/foundation_cost_examples_lcs.html\">Worked Example: Longest Common Subsequence DP Grid</a>).</p>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, <em>Lightweight Semiformal Time\n  Complexity Analysis for Purely Functional Data Structures</em>, POPL 2008. Cost\n  monoids for resource analysis (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li><code>Visited</code> is an EconCSLib addition (no <code>TimeM</code> counterpart upstream), built on\n  the <a href=\"https://github.com/leanprover/cslib\">leanprover/cslib</a>-derived monad\n  core (Apache 2.0).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "href": "foundation/foundation_cost_examples_lcs.html"
+    },
+    {
+      "id": "foundation.cost.examples.memo_fib",
+      "title": "Worked Example: Memoized Fibonacci Footprint",
+      "href": "foundation/foundation_cost_examples_memo_fib.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Visited",
+      "display_name": "Visited",
+      "qualified_name": "Visited",
+      "module": "EconCSLib.Foundation.CostM.Visited",
+      "kind": "def",
+      "signature": "def Visited (A : Type*) : Type _",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM/Visited.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Visited.toFinset",
+      "display_name": "Visited.toFinset",
+      "qualified_name": "Visited.toFinset",
+      "module": "EconCSLib.Foundation.CostM.Visited",
+      "kind": "def",
+      "signature": "def toFinset (v : Visited A) : Finset A",
+      "docstring": "View a `Visited A` as the underlying `Finset A`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM/Visited.lean#L60",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Visited.ofFinset",
+      "display_name": "Visited.ofFinset",
+      "qualified_name": "Visited.ofFinset",
+      "module": "EconCSLib.Foundation.CostM.Visited",
+      "kind": "def",
+      "signature": "def ofFinset (s : Finset A) : Visited A",
+      "docstring": "View a `Finset A` as a `Visited A`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM/Visited.lean#L63",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Visited.singleton",
+      "display_name": "Visited.singleton",
+      "qualified_name": "Visited.singleton",
+      "module": "EconCSLib.Foundation.CostM.Visited",
+      "kind": "def",
+      "signature": "def singleton (a : A) : Visited A",
+      "docstring": "Mark a single sub-problem `a` as visited.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM/Visited.lean#L75",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.CostM.Visited",
+      "display_name": "EconCSLib.Foundation.CostM.Visited",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM/Visited.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

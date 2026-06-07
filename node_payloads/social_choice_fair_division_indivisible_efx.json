@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.efx",
+  "title": "EFX — Envy-Free Up to Any Good",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_efx.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EFX — Envy-Free Up to Any Good</h1>\n<p>An allocation $A$ is <em>envy-free up to any good</em> (EFX) if, for every\nenvied bundle $A(j)$ from agent $i$'s perspective, removing <strong>any</strong>\nsingle item eliminates the envy:\n$$\n\\forall i \\ne j,\\ \\forall g \\in A(j),\\ v_i(A(j) \\setminus \\{g\\}) \\le v_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEFX</code>. Requires\n<code>[DecidableEq G]</code> for the <code>Finset</code> difference.</p>\n<h2>Strength</h2>\n<p>EFX is <em>strictly stronger</em> than EF1\n([[social_choice.fair_division.indivisible.ef1]]): EFX demands the\n\"removing one item eliminates envy\" property for <strong>every</strong> witness, EF1\nfor <strong>some</strong>. The implication EFX ⇒ EF1\n([[social_choice.fair_division.indivisible.implications]]) is\nunconditional.</p>\n<h2>Existence</h2>\n<p>EFX existence is partially open:</p>\n<ul>\n<li><em>2 agents.</em> EFX always exists, by a small explicit construction\n  ([[social_choice.fair_division.indivisible.efx_exists_two_agents]]).</li>\n<li><em>3 agents.</em> Chaudhury–Garg–Mehlhorn (EC 2020) prove existence for\n  any 3-agent additive valuation; this proof is <em>not yet formalised</em>\n  in EconCSLib (<code>SocialChoice/FairDivision/Indivisible/EFX.lean</code> only\n  covers the 2-agent case in the library).</li>\n<li><em>$n \\ge 4$ agents.</em> <strong>Open problem in fair division.</strong> Existence is\n  not known and is the most prominent open question in algorithmic\n  fair division.</li>\n</ul>\n<h2>Implications</h2>\n<ul>\n<li><em>EF + monotone valuation</em> ⇒ EFX\n  ([[social_choice.fair_division.indivisible.implications]]):\n  removing an item from $A(j)$ only decreases its value, so the EF\n  inequality $v_i(A(j)) \\le v_i(A(i))$ propagates to subsets.\n  Additive valuations with nonnegative weights are monotone, so\n  EF-on-additive directly gives EFX.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EFX.</li>\n<li>Caragiannis, Kurokawa, Moulin, Procaccia, Shah, and Wang (2019). \"The Unreasonable Fairness of Maximum Nash Welfare\". <em>EC</em> 2016 / <em>ACM TEAC</em> 2019.</li>\n<li>Chaudhury, B. R., Garg, J., and Mehlhorn, K. (2020). \"EFX Allocations for Three Agents\". <em>EC</em>. arXiv:2005.06878.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEFX",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEFX",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEFX",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "def",
+      "signature": "def IsEFX [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

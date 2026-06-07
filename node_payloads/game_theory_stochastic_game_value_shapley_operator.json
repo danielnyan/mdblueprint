@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.value.shapley_operator",
+  "title": "Shapley Operator",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.value"
+  ],
+  "body_html": "<h1>Shapley Operator</h1>\n<p>For a finite-state, finite-action two-player zero-sum stochastic game\n$\\Gamma = (S, A_1, A_2, q, r)$ with discount factor $\\gamma \\in (0, 1)$,\nthe <strong>Shapley operator</strong> acts on bounded functions\n$f : S \\to \\mathbb{R}$ by playing a one-shot zero-sum matrix game at\neach state, with payoff entries that combine the current stage payoff\nwith a discounted continuation value:\n$$\n(T_\\gamma f)(s) = \\operatorname{val}_{A_1 \\times A_2}\\,\n   \\Bigl[(1 - \\gamma)\\, r(s, a_1, a_2)\n   \\; + \\;\\gamma\\, \\sum_{s'} q(s' \\mid s, a_1, a_2)\\, f(s')\\Bigr].\n$$</p>\n<p>In words: at state $s$, the Shapley operator solves a matrix game whose\n$(a_1, a_2)$-entry is the convex combination of (i) the stage payoff\nweighted by $1-\\gamma$, and (ii) the expected continuation value\n$f(s')$ weighted by $\\gamma$.</p>\n<p>In Lean (when formalised): `Shapley.operator γ Γ f : S → ℝ`.</p>\n<h2>Why it matters</h2>\n<ul>\n<li><strong>Discounted value</strong> $v_\\gamma$ is the unique fixed point\n  $v_\\gamma = T_\\gamma(v_\\gamma)$\n  ([[game_theory.stochastic_game.value.discounted_value_fixed_point]]).</li>\n<li>$T_\\gamma$ is a <strong>$\\gamma$-contraction</strong> in the supremum norm\n  ([[game_theory.stochastic_game.value.shapley_operator_contraction]]), so Banach\n  fixed-point theorem gives existence, uniqueness, and the iteration\n  scheme $f_{n+1} = T_\\gamma(f_n) \\to v_\\gamma$ at geometric rate.</li>\n<li>The argmin / argmax at each state yields <strong>stationary optimal\n  strategies</strong> for both players.</li>\n</ul>\n<h2>Generalises the Bellman operator</h2>\n<p>For a single-player game (MDP) the inner $\\operatorname{val}$ collapses\nto a single $\\sup_{a_1}$ (or $\\inf_{a_2}$), and $T_\\gamma$ becomes the\nfamiliar Bellman operator from reinforcement learning. The Shapley\noperator is the <em>minimax</em> Bellman operator.</p>\n<h2>Abstract value-operator framework</h2>\n<p>The general value-operator framework\n([[game_theory.strategic_game.zero_sum.operators.value_operator_general]]) abstracts the Shapley\noperator into \"any nonexpansive value-style operator on bounded\nfunctions\". Nonexpansiveness lemmas\n([[game_theory.strategic_game.zero_sum.operators.value_operator_nonexpansive_general]]) and\nmonotone-limit results\n([[game_theory.strategic_game.zero_sum.continuous.monotone_decreasing_values_limit]]) all apply\nto $T_\\gamma$ as a special case.</p>\n<h2>References</h2>\n<ul>\n<li>Shapley, L. S. (1953). \"Stochastic Games\". <em>PNAS</em> 39: 1095–1100.</li>\n<li>Filar, J. and Vrieze, K. (1997). <em>Competitive Markov Decision Processes.</em> Ch. 4.</li>\n<li>[MFoGT Chapter 8, §8.6.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

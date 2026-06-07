@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_one_bullet_value",
+  "title": "Noisy One-Bullet Duel Value",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_one_bullet_value.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.examples"
+  ],
+  "body_html": "<h1>Noisy One-Bullet Duel Value</h1>\n<p>In the noisy duel where each player has one bullet and the kill probabilities\n$p_1,p_2:[0,1]\\to[0,1]$ are strictly increasing continuous functions with\n$p_1(0)=p_2(0)=0$ and $p_1(1)=p_2(1)=1$, the game has a value in pure strategies.</p>\n<p>The optimal pure strategy of each player is to shoot at the unique time $t_0$\nsatisfying\n$$\n  p_1(t_0)+p_2(t_0)=1.\n$$</p>",
+  "proof_html": "<p>Continuity and monotonicity of $p_1+p_2$ give a unique\n$t_0\\in[0,1]$ with $p_1(t_0)+p_2(t_0)=1$. If player $1$ shoots before $t_0$,\nthen player $2$ can wait until $t_0$; the early shot has hit probability below\n$p_1(t_0)$, while player $2$'s later shot has hit probability $p_2(t_0)$, so\nplayer $1$ cannot improve past the payoff at $t_0$. If player $1$ waits past\n$t_0$, player $2$ shoots at $t_0$ and again player $1$ cannot improve. The same\nargument with the players interchanged shows that shooting at $t_0$ is optimal\nfor player $2$. Thus $(t_0,t_0)$ is a pure saddle point, so the game has a\npure-strategy value.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 1(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Noisy duel with one bullet for each player.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

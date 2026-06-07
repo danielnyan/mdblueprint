@@ -1,0 +1,72 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+  "title": "Epsilon-Optimal Strategy",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Epsilon-Optimal Strategy</h1>\n<p>Given $\\varepsilon&gt;0$, a row strategy $x \\in \\Delta(I)$ is <strong>maxmin\n$\\varepsilon$-optimal</strong> if its guarantee meets at least\n$\\operatorname{val}(A) - \\varepsilon$:\n$$\n  \\min_{j \\in J} E_A(x, j) \\ge \\operatorname{val}(A) - \\varepsilon.\n$$\nA $0$-optimal strategy is an optimal strategy. The dual definition (a column\nstrategy $y$ is $\\varepsilon$-optimal when\n$\\max_{i \\in I} E_A(i, y) \\le \\operatorname{val}(A) + \\varepsilon$) applies to\nplayer 2.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 2.2.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Epsilon-optimal and optimal strategies.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.IsEpsilonOptimalRow",
+      "display_name": "MatrixGame.IsEpsilonOptimalRow",
+      "qualified_name": "MatrixGame.IsEpsilonOptimalRow",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def IsEpsilonOptimalRow {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (ε : 𝕜) (xx : stdSimplex 𝕜 I) : Prop",
+      "docstring": "An **ε-optimal row strategy** guarantees at least `value - ε`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L126",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.IsEpsilonOptimalColumn",
+      "display_name": "MatrixGame.IsEpsilonOptimalColumn",
+      "qualified_name": "MatrixGame.IsEpsilonOptimalColumn",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def IsEpsilonOptimalColumn {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (ε : 𝕜) (yy : stdSimplex 𝕜 J) : Prop",
+      "docstring": "An **ε-optimal column strategy** caps player I's payoff at `value + ε`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L132",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.isbell_behavioral_to_mixed",
+  "title": "Isbell Behavioral-To-Mixed Equivalence",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_isbell_behavioral_to_mixed.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Isbell Behavioral-To-Mixed Equivalence</h1>\n<p>If an extensive game is linear for player $i$, then for every behavioral strategy\n$\\beta_i$ of player $i$ there exists a mixed strategy $\\sigma_i$ such that, against\nevery general strategy of the other players, the induced probability distributions\non terminal nodes coincide.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Given $\\beta_i$, define a product distribution on pure strategies by multiplying\nthe probabilities assigned by $\\beta_i$ at all information sets. Since each\ninformation set can occur at most once along a play, the probability of any terminal\nhistory factors through exactly the behavioral probabilities used on that history;\nall unused information-set probabilities sum to one. Hence the mixed strategy and\nbehavioral strategy induce the same outcome distribution.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. In a game linear for player i, every behavioral strategy is outcome equivalent to a mixed strategy.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mechanism_design.myerson.revenue_equivalence",
+  "title": "Revenue Equivalence Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "mechanism_design/mechanism_design_myerson_revenue_equivalence.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson"
+  ],
+  "body_html": "<h1>Revenue Equivalence Theorem</h1>\n<p><strong>Theorem (Myerson 1981; MSZ Thm 12.21).</strong> Let $M$ and $M'$ be two\nBayesian Incentive Compatible (BIC) selling mechanisms over the same\nIPV selling problem ([[mechanism_design.bayesian.selling_problem]]).\nIf</p>\n<ol>\n<li>\n<p>$M$ and $M'$ share the same <strong>interim allocation rule</strong> for every\n   bidder $i$:\n   $$\n   \\bar{x}_i(t_i) \\;=\\; \\mathbb{E}_{t_{-i}}\\big[x_i(t_i, t_{-i})\\big]\n   \\;=\\; \\mathbb{E}_{t_{-i}}\\big[x'_i(t_i, t_{-i})\\big]\n   \\qquad \\forall i, t_i;\n   $$</p>\n</li>\n<li>\n<p>they assign each bidder's lowest type the same expected payoff\n   ($U_i^{M}(\\underline t_i) = U_i^{M'}(\\underline t_i)$),</p>\n</li>\n</ol>\n<p>then $M$ and $M'$ generate the <strong>same expected revenue</strong> for the seller.</p>",
+  "proof_html": "<p>route</p>\n<p>Expected revenue is the negative of total expected bidder surplus\n(seller's payment intake equals bidders' payment outflow). By the\nMyerson payment formula ([[mechanism_design.myerson.payment_formula]]),\neach BIC mechanism's expected payment from bidder $i$ at type $t_i$ is\ndetermined entirely by:</p>\n<ul>\n<li>the interim allocation rule $\\bar{x}_i$, and</li>\n<li>the boundary value $U_i(\\underline t_i)$.</li>\n</ul>\n<p>Specifically: $p_i(t_i) = t_i \\cdot \\bar{x}_i(t_i) - \\int_{\\underline t_i}^{t_i} \\bar{x}_i(z)\\, dz - U_i(\\underline t_i)$.</p>\n<p>Taking expectations over $t_i$ and summing over $i$ gives the seller's\nexpected revenue as a functional of $(\\bar{x}_i, U_i(\\underline t_i))_i$\nalone — so any two mechanisms agreeing on these quantities have equal\nexpected revenue.</p>\n<h2>Why it matters</h2>\n<p>Revenue equivalence is the structural insight that <strong>only the allocation\nrule and the lowest-type boundary affect revenue</strong> under BIC + IPV.\nThis dramatically simplifies optimal-auction design: maximising revenue\nreduces to maximising over interim allocation rules, leading directly to\nthe virtual-valuation framework\n([[mechanism_design.myerson.optimal_auction]]).</p>\n<h2>Lean port (deferred — see #174)</h2>\n<p>Planned declarations in <code>EconCSLib/MechanismDesign/Auction/Myerson.lean</code>:</p>\n<ul>\n<li><code>expectedRevenue</code> (functional)</li>\n<li><code>revenue_equivalence</code> (main theorem)</li>\n<li>Supporting integration lemmas for the BIC payment formula.</li>\n</ul>\n<p>Dependencies on yet-to-formalise pieces: <code>BayesianSellingProblem</code>\n([[mechanism_design.bayesian.selling_problem]]), the BIC interim\ncharacterisation. The single-parameter Myerson envelope is already in\n<code>EconCSLib/MechanismDesign/Auction/Myerson.lean</code> and provides the per-bidder\nidentity used in the proof.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Thm 12.21] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Krishna, V. (2010). <em>Auction Theory</em>, Thm 3.3..</li>\n<li>Myerson, R. B. (1981). \"Optimal Auction Design\". <em>Math. Oper. Res.</em>\n  6: 58–73.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

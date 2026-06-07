@@ -1,0 +1,60 @@
+{
+  "id": "mechanism_design.bayesian.ex_ante_expected_utility",
+  "title": "Ex-Ante Expected Utility (Bayesian Mechanisms)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_bayesian_ex_ante_expected_utility.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.bayesian"
+  ],
+  "body_html": "<h1>Ex-Ante Expected Utility (Bayesian Mechanisms)</h1>\n<p>For a Bayesian mechanism with transfers\n$M : \\mathrm{BayesianMechanismWithTransfers}\\ I\\ T\\ M\\ A$, a strategy\nprofile $\\sigma : \\forall i, (T_i \\to M_i)$, and a prior measure $p$ on\nthe type space $T = \\prod_i T_i$, the <strong>ex-ante expected utility</strong> of\nagent $i$ is the integral\n$$\nU_i^{\\mathrm{ea}}(\\sigma) \\;=\\; \\int_T u_i^{\\mathrm{ql}}(t, \\sigma(t)) \\; dp(t),\n$$\nwhere $u_i^{\\mathrm{ql}}$ is the quasi-linear stage utility at type\nprofile $t$ under the message profile $\\sigma(t)$.</p>\n<p>In Lean: <code>BayesianMechanismWithTransfers.exAnteExpectedUtility</code>.</p>\n<h2>Two related notions kept separate</h2>\n<ul>\n<li><em>This node</em> — the ex-ante utility itself (an integral / random\n  variable's expectation).</li>\n<li><em>Integrability hypothesis</em>\n  ([[mechanism_design.ex_ante_equilibrium_predicates]]'s\n  <code>IntegrableExAnteUtility</code>) — a hypothesis on the strategy / prior that\n  makes the integral well-defined.</li>\n<li><em>Equilibrium predicate</em>\n  ([[mechanism_design.ex_ante_equilibrium_predicates]]'s\n  <code>IsExAnteBayesianNashEquilibrium</code>) — the no-profitable-deviation\n  condition stated in terms of this utility.</li>\n</ul>\n<p>Separating the <em>utility definition</em> from the <em>integrability hypothesis</em>\nand the <em>equilibrium predicate</em> keeps each concern in one place — the\nutility itself is just an integral, the integrability is a measurability\nside condition, and the equilibrium is the strategic best-response\ncondition built on top.</p>\n<h2>Bridge to interim utility</h2>\n<p>The interim expected utility (conditioned on agent $i$'s own type\n$t_i$) is recovered by partial integration over $t_{-i}$. The Bayesian\nrevelation principle\n([[mechanism_design.ex_ante_revelation_principle]]) works at the\nex-ante level for the existence statement and at the interim level for\nthe truthful-strategy characterisation.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapter 12, §12.4] Maschler, Solan, Zamir, <em>Game Theory</em>.\n  Bayesian mechanism utility levels.</li>\n<li>[Krishna 2010 §3.1] Krishna, V. <em>Auction Theory</em>, 2nd ed.\n  Ex-ante vs. interim vs. ex-post utility distinctions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "title": "Ex-Ante Revelation Principle Interface",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BayesianMechanismWithTransfers.exAnteExpectedUtility",
+      "display_name": "BayesianMechanismWithTransfers.exAnteExpectedUtility",
+      "qualified_name": "BayesianMechanismWithTransfers.exAnteExpectedUtility",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "kind": "def",
+      "signature": "noncomputable def exAnteExpectedUtility\n    (B : BayesianMechanismWithTransfers I T M A P)\n    (u : A → (I → P) → (∀ i, T i) → I → ℝ)\n    (σ : StrategyProfile T M) (i : I) : ℝ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L192",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

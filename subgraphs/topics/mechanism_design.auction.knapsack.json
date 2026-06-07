@@ -1,0 +1,145 @@
+{
+  "topic": {
+    "id": "mechanism_design.auction.knapsack",
+    "title": "Mechanism Design.Auction.Knapsack",
+    "href": "mechanism_design/auction/knapsack/index.html",
+    "parent": "mechanism_design.auction",
+    "node_count": 4,
+    "descendant_node_count": 4
+  },
+  "counts": {
+    "internal_nodes": 4,
+    "inlined_nodes": 0,
+    "descendant_nodes": 4,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 4,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 7,
+    "visible_nodes_with_selected_proof_plans": 7
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.auction.knapsack.binary_allocations",
+      "title": "Binary Knapsack Allocations",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_binary_allocations.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_binary_allocations.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_environment.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.relaxations_dynamic_programming",
+      "title": "Knapsack Relaxations And Dynamic Programming",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_relaxations_dynamic_programming.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_relaxations_dynamic_programming.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.welfare_maximizing_mechanism",
+      "title": "Welfare-Maximizing Knapsack Mechanism",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_welfare_maximizing_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_welfare_maximizing_mechanism.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 1
+    },
+    {
+      "id": "auction",
+      "title": "auction",
+      "href": "keywords/auction.html",
+      "count": 4
+    },
+    {
+      "id": "binary-allocation",
+      "title": "binary-allocation",
+      "href": "keywords/binary-allocation.html",
+      "count": 1
+    },
+    {
+      "id": "dsic",
+      "title": "dsic",
+      "href": "keywords/dsic.html",
+      "count": 1
+    },
+    {
+      "id": "dynamic-programming",
+      "title": "dynamic-programming",
+      "href": "keywords/dynamic-programming.html",
+      "count": 1
+    },
+    {
+      "id": "knapsack",
+      "title": "knapsack",
+      "href": "keywords/knapsack.html",
+      "count": 4
+    },
+    {
+      "id": "myerson",
+      "title": "myerson",
+      "href": "keywords/myerson.html",
+      "count": 1
+    },
+    {
+      "id": "single-parameter",
+      "title": "single-parameter",
+      "href": "keywords/single-parameter.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.applications.strict_dominance_never_best_response",
+  "title": "Strict Domination And Never Best Response (via auxiliary zero-sum game)",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_strict_dominance_never_best_response.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.applications"
+  ],
+  "body_html": "<h1>Strict Domination And Never Best Response</h1>\n<p>In a finite strategic game, a mixed strategy $m_i\\in\\Delta(S_i)$ is strictly\ndominated if and only if it is never a best response against any correlated\nstrategy of the opponents.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>If $m_i$ is strictly dominated by $\\sigma_i$, linearity of expected payoff extends\nthe strict inequality to every correlated strategy of the opponents, so $m_i$\ncannot be a best response.</p>\n<p>Conversely, form the two-player zero-sum game in which player $i$ compares the\npayoff of a pure action $t_i$ with the payoff of the fixed mixed strategy $m_i$.\nThe hypothesis that $m_i$ is never a best response implies that the auxiliary\nzero-sum game has strictly positive value. An optimal strategy in that game then\nstrictly dominates $m_i$ in the original game.</p>\n<h2>Why this lives under <code>zero_sum.applications</code></h2>\n<p>This proposition is a strategic-game result, but the MFoGT proof route\nis structural in <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>: the\n\"$m_i$ is never a best response $\\Rightarrow$ strictly dominated\"\ndirection is established by constructing an auxiliary two-player\nzero-sum game and extracting a dominating strategy from its\nminimax-optimal strategy. Filing the node under <code>zero_sum.applications</code>\nreflects the proof technique and keeps the top-level <code>strategic_games</code>\ntopic from depending back on <code>zero_sum</code>. A separation-theorem proof à\nla Pearce 1984 is available as an alternative and would substitute a\nTheorem-of-the-Alternative citation in <code>math.linear_algebra</code>; the\nMFoGT route is chosen here for alignment with the rest of the library's\nzero-sum infrastructure.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 4.3.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Strict domination is equivalent to never being a best response against a correlated strategy.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

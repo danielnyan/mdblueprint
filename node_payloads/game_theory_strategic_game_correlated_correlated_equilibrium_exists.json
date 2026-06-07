@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.correlated_equilibrium_exists",
+  "title": "Correlated Equilibrium Exists In Finite Games",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium_exists.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Correlated Equilibrium Exists In Finite Games</h1>\n<p>Every finite strategic-form game has at least one correlated equilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>By Nash's theorem, every finite strategic-form game has a mixed Nash\nequilibrium. Thm. 8.7 turns that mixed Nash equilibrium into a correlated\nequilibrium by using the induced product distribution on pure strategy profiles.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Cor. 8.8] Maschler, Solan, and Zamir, <em>Game Theory</em>. Every finite strategic-form game has a correlated equilibrium.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

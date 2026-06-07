@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.perfect_recall_mixed_to_behavioral",
+  "title": "Kuhn Mixed-To-Behavioral Equivalence",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_perfect_recall_mixed_to_behavioral.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Kuhn Mixed-To-Behavioral Equivalence</h1>\n<p>If an extensive game has perfect recall for player $i$, then for every mixed\nstrategy $\\sigma_i$ there exists a behavioral strategy $\\beta_i$ such that, against\nevery general strategy of the other players, the induced probability distributions\non terminal nodes coincide.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>For each information set reached with positive probability under $\\sigma_i$, define\nthe behavioral probability of an action by conditioning $\\sigma_i$ on pure\nstrategies that reach the information set and choose that action. Perfect recall\nmakes the probabilities along a reached history telescope: reaching the next\ninformation set is determined by the previous remembered action. Thus the\nbehavioral strategy reproduces the same terminal probabilities as the original\nmixed strategy.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.3.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. With perfect recall, every mixed strategy is outcome equivalent to a behavioral strategy.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

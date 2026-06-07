@@ -1,0 +1,120 @@
+{
+  "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+  "title": "Gale-Shapley Deferred Acceptance Algorithm",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "market_design/market_design_matching_one_to_one_gale_shapley_algorithm.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Gale-Shapley Deferred Acceptance Algorithm</h1>\n<p>Men-proposing version on a one-to-one matching market $(M, W, \\succ)$.</p>\n<h2>Algorithm</h2>\n<p>Initialize: every man is free; every woman holds no offer.</p>\n<p>Repeat until no free man has any acceptable woman remaining on his list:</p>\n<ol>\n<li><strong>Propose.</strong> Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).</li>\n<li><strong>Decide.</strong></li>\n<li>If $j$ currently holds no offer, $j$ tentatively accepts $i$.</li>\n<li>If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).</li>\n<li>Else $j$ rejects $i$.</li>\n</ol>\n<p>The algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.</p>\n<p>The output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.</p>\n<h2>Variant: Women-Proposing</h2>\n<p>Swap the roles of $M$ and $W$. The output is generally a <em>different</em> stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).</p>\n<p>In Lean, the men-proposing algorithm is implemented in\n<code>EconCSLib.MarketDesign.Matching.GaleShapley</code> over <code>Fin n</code> indices: one\nround is <code>GS.daStep</code> (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by <code>GS.daRun</code> with fuel\n<code>n*n + 1</code> to <code>GS.finalState</code>, and <code>GS.gs</code> reads off each woman's final\nholding as the output matching.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Gale &amp; Shapley (1962). <em>College Admissions and the Stability of Marriage</em>. AMM 69, 9–15.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.market",
+      "title": "Matching Market (One-to-One)",
+      "href": "market_design/market_design_matching_one_to_one_market.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_stable",
+      "title": "Gale-Shapley Theorem (Existence of Stable Matching)",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_stable.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.proposing_optimal",
+      "title": "Proposing-Side Optimal Stable Matching",
+      "href": "market_design/market_design_matching_one_to_one_proposing_optimal.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GS.daStep",
+      "display_name": "GS.daStep",
+      "qualified_name": "GS.daStep",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "kind": "def",
+      "signature": "noncomputable def daStep {n : ℕ} (w m : Preferences n) (s : DAState n) : DAState n",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L166",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.daRun",
+      "display_name": "GS.daRun",
+      "qualified_name": "GS.daRun",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "kind": "def",
+      "signature": "noncomputable def daRun {n : ℕ} (w m : Preferences n) : ℕ → DAState n → DAState n\n  | 0,        s => s\n  | fuel + 1, s => if (freeMenSet s).Nonempty then daRun w m fuel (daStep w m s) else s\n/-- `finalState`: run `daRun` with fuel `n*n + 1` from `initState`. -/",
+      "docstring": "Run DA for at most `fuel` steps, stopping early if no free men remain.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L230",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.finalState",
+      "display_name": "GS.finalState",
+      "qualified_name": "GS.finalState",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "kind": "def",
+      "signature": "noncomputable def finalState {n : ℕ} (w m : Preferences n) : DAState n",
+      "docstring": "`finalState`: run `daRun` with fuel `n*n + 1` from `initState`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L235",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.gs",
+      "display_name": "GS.gs",
+      "qualified_name": "GS.gs",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "kind": "def",
+      "signature": "noncomputable def gs {n : ℕ} [NeZero n] (w m : Preferences n) : Fin n → Fin n",
+      "docstring": "The Gale-Shapley function: woman `j`'s partner at termination.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L239",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "display_name": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/GaleShapley.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

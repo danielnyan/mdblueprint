@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.correlated_strategy",
+  "title": "Correlated Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_strategy.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Correlated Strategy</h1>\n<p>In a finite strategic game, a correlated strategy of the opponents of player $i$\nis a probability distribution\n$$\n  \\theta_{-i}\\in \\Delta(S_{-i})\n$$\non the joint pure strategy set $S_{-i}=\\prod_{j\\ne i}S_j$.</p>\n<p>This is more general than an independent mixed profile\n$$\n  \\tau_{-i}\\in \\prod_{j\\ne i}\\Delta(S_j),\n$$\nbecause the latter induces only product distributions on $S_{-i}$.</p>\n<p>A completely correlated strategy of the opponents is an interior point of\n$\\Delta(S_{-i})$, namely a distribution $\\theta_{-i}$ with\n$\\theta_{-i}(s_{-i})&gt;0$ for every $s_{-i}\\in S_{-i}$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.3, before Def. 4.3.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Opponent correlated strategies are distributions on the joint pure strategy set S_{-i}.</li>\n<li>[MFoGT, Def. 4.3.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Completely correlated strategies are interior distributions on Delta(S_{-i}).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

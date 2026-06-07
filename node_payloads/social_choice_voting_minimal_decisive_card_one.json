@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.voting.minimal_decisive_card_one",
+  "title": "Minimal Decisive Coalition Has Size One",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_minimal_decisive_card_one.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Minimal Decisive Coalition Has Size One</h1>\n<p><strong>Theorem.</strong> Let $F$ be a social welfare function on a finite nonempty voter\ntype with $|A| \\ge 3$, satisfying unanimity ([[social_choice.voting.unanimity]])\nand IIA ([[social_choice.voting.iia]]). Then $F$ admits a decisive coalition of\nsize exactly one.</p>\n<p>Formally: the cardinality predicate $n \\mapsto \\exists C\\ \\mathrm{decisive\\ of\\ size}\\ n$\nis well-founded on $\\mathbb{N}$, and its minimum equals $1$.</p>\n<p>In Lean: <code>SocialChoice.Voting.decisive_minimal</code> (proves\n<code>Minimal (exists_nonempty_decisive_of_size F) 1</code>), with the existence half\n<code>SocialChoice.Voting.exists_minimal_decisive_coalition</code>. Both are public lemmas\nof the Arrow development in <code>Decisive.lean</code>, over the predicate\n<code>SocialChoice.Voting.exists_nonempty_decisive_of_size</code>.</p>",
+  "proof_html": "<p>sketch</p>\n<ol>\n<li>\n<p>The grand coalition is decisive of size $|N|$\n   ([[social_choice.voting.unanimity_univ_decisive]]), so the cardinality\n   predicate is nonempty. Take any minimal $n$.</p>\n</li>\n<li>\n<p>$n \\ne 0$: a decisive coalition is nonempty by definition.</p>\n</li>\n<li>\n<p>$n &lt; 2$: if $n \\ge 2$, the contraction lemma\n   ([[social_choice.voting.decisive_contraction]]) produces a strictly\n   smaller decisive coalition, contradicting minimality.</p>\n</li>\n</ol>\n<p>Combining $n \\ne 0$ and $n &lt; 2$ forces $n = 1$. $\\square$</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Minimality step in the decisive-coalitions proof.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.decisive_minimal",
+      "display_name": "SocialChoice.Voting.decisive_minimal",
+      "qualified_name": "SocialChoice.Voting.decisive_minimal",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "theorem",
+      "signature": "theorem decisive_minimal [Fintype N] [Nonempty N] [Fintype A]\n    (h0 : ∃ x y z : A, x ≠ y ∧ x ≠ z ∧ y ≠ z)\n    {F : SWF N A} (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) :\n    Minimal (exists_nonempty_decisive_of_size F) 1",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L665",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.exists_minimal_decisive_coalition",
+      "display_name": "SocialChoice.Voting.exists_minimal_decisive_coalition",
+      "qualified_name": "SocialChoice.Voting.exists_minimal_decisive_coalition",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "theorem",
+      "signature": "theorem exists_minimal_decisive_coalition [Fintype N] [Nonempty N] [Fintype A]\n    {F : SWF N A} (hU : SWF.Unanimity F) :\n    ∃ n, Minimal (exists_nonempty_decisive_of_size F) n",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L507",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "display_name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

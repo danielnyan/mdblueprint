@@ -1,0 +1,218 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.applications",
+    "title": "Game Theory.Zero Sum.Applications",
+    "href": "game_theory/zero_sum/applications/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 7,
+    "descendant_node_count": 7
+  },
+  "counts": {
+    "internal_nodes": 7,
+    "inlined_nodes": 0,
+    "descendant_nodes": 7,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 7,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.markov_stationary_as_zero_sum_value",
+      "title": "Markov Stationary Distribution as Zero-Sum Game Value",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_markov_stationary_as_zero_sum_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_markov_stationary_as_zero_sum_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "title": "Perron-Frobenius For Positive Matrices",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_perron_frobenius_positive_matrix.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_perron_frobenius_positive_matrix.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.strict_dominance_never_best_response",
+      "title": "Strict Domination And Never Best Response (via auxiliary zero-sum game)",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_strict_dominance_never_best_response.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_strict_dominance_never_best_response.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.weak_dominance_never_best_response",
+      "title": "Weak Domination And Completely Mixed Tests (via auxiliary zero-sum game)",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_weak_dominance_never_best_response.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_weak_dominance_never_best_response.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.approachability.blackwell_b_set_approachability",
+      "title": "Blackwell B-Set Approachability",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_approachability_blackwell_b_set_approachability.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_approachability_blackwell_b_set_approachability.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.approachability.deterministic_blackwell_sequence",
+      "title": "Deterministic Blackwell Sequence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_approachability_deterministic_blackwell_sequence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_approachability_deterministic_blackwell_sequence.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "applications",
+      "title": "applications",
+      "href": "keywords/applications.html",
+      "count": 1
+    },
+    {
+      "id": "approachability",
+      "title": "approachability",
+      "href": "keywords/approachability.html",
+      "count": 2
+    },
+    {
+      "id": "best-response",
+      "title": "best-response",
+      "href": "keywords/best-response.html",
+      "count": 2
+    },
+    {
+      "id": "convexity",
+      "title": "convexity",
+      "href": "keywords/convexity.html",
+      "count": 1
+    },
+    {
+      "id": "dominance",
+      "title": "dominance",
+      "href": "keywords/dominance.html",
+      "count": 2
+    },
+    {
+      "id": "invariant-distribution",
+      "title": "invariant-distribution",
+      "href": "keywords/invariant-distribution.html",
+      "count": 1
+    },
+    {
+      "id": "linear-algebra",
+      "title": "linear-algebra",
+      "href": "keywords/linear-algebra.html",
+      "count": 1
+    },
+    {
+      "id": "markov",
+      "title": "markov",
+      "href": "keywords/markov.html",
+      "count": 1
+    },
+    {
+      "id": "perron-frobenius",
+      "title": "perron-frobenius",
+      "href": "keywords/perron-frobenius.html",
+      "count": 1
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 1
+    },
+    {
+      "id": "stationary-distribution",
+      "title": "stationary-distribution",
+      "href": "keywords/stationary-distribution.html",
+      "count": 1
+    },
+    {
+      "id": "stochastic-matrix",
+      "title": "stochastic-matrix",
+      "href": "keywords/stochastic-matrix.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 2
+    },
+    {
+      "id": "vector-payoff",
+      "title": "vector-payoff",
+      "href": "keywords/vector-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 3
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

@@ -1,0 +1,271 @@
+{
+  "topic": {
+    "id": "mechanism_design.auction.basic",
+    "title": "Mechanism Design.Auction.Basic",
+    "href": "mechanism_design/auction/basic/index.html",
+    "parent": "mechanism_design.auction",
+    "node_count": 9,
+    "descendant_node_count": 9
+  },
+  "counts": {
+    "internal_nodes": 9,
+    "inlined_nodes": 0,
+    "descendant_nodes": 9,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 9,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.auction.basic.bid_profile_supports",
+      "title": "Bid-Profile Supports",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_bid_profile_supports.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_bid_profile_supports.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_first_price_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_no_dsic",
+      "title": "First-Price Fails DSIC",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_no_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_first_price_no_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_formats.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_ordered_bid_utilities.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_reserve_second_price_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_reserve_second_price_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_second_price_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_second_price_mechanism.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mechanism_design.auction.basic.second_price_dsic",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.formats",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "argmax",
+      "title": "argmax",
+      "href": "keywords/argmax.html",
+      "count": 1
+    },
+    {
+      "id": "auction",
+      "title": "auction",
+      "href": "keywords/auction.html",
+      "count": 9
+    },
+    {
+      "id": "bid-profile",
+      "title": "bid-profile",
+      "href": "keywords/bid-profile.html",
+      "count": 1
+    },
+    {
+      "id": "bids",
+      "title": "bids",
+      "href": "keywords/bids.html",
+      "count": 1
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 1
+    },
+    {
+      "id": "dsic",
+      "title": "dsic",
+      "href": "keywords/dsic.html",
+      "count": 3
+    },
+    {
+      "id": "first-price",
+      "title": "first-price",
+      "href": "keywords/first-price.html",
+      "count": 2
+    },
+    {
+      "id": "mechanism",
+      "title": "mechanism",
+      "href": "keywords/mechanism.html",
+      "count": 3
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 1
+    },
+    {
+      "id": "reserve-price",
+      "title": "reserve-price",
+      "href": "keywords/reserve-price.html",
+      "count": 2
+    },
+    {
+      "id": "second-price",
+      "title": "second-price",
+      "href": "keywords/second-price.html",
+      "count": 2
+    },
+    {
+      "id": "support",
+      "title": "support",
+      "href": "keywords/support.html",
+      "count": 1
+    },
+    {
+      "id": "transfers",
+      "title": "transfers",
+      "href": "keywords/transfers.html",
+      "count": 1
+    },
+    {
+      "id": "vickrey",
+      "title": "vickrey",
+      "href": "keywords/vickrey.html",
+      "count": 4
+    },
+    {
+      "id": "weakly-dominant",
+      "title": "weakly-dominant",
+      "href": "keywords/weakly-dominant.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

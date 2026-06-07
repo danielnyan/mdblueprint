@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.fair_division.divisible.chooser_envy_free",
+  "title": "Chooser Is Always Envy-Free",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.cut_and_choose"
+  ],
+  "body_html": "<h1>Chooser Is Always Envy-Free</h1>\n<p><strong>Theorem.</strong> For any cut point $t \\in I$ and any two-agent measure family\n$\\mu : \\mathrm{Fin}\\ 2 \\to \\mathrm{Measure}\\ I$, the chooser (agent 1) in\nthe cut-and-choose allocation\n([[social_choice.fair_division.divisible.cut_and_choose_alloc]]) does not\nenvy the cutter:\n$$\n\\mu_1\\bigl(A_{\\mathrm{cutter}}\\bigr) \\;\\le\\; \\mu_1\\bigl(A_{\\mathrm{chooser}}\\bigr).\n$$</p>\n<p>In Lean: <code>chooser_isEnvyFree</code>. The statement <em>does not depend</em> on the cut\nbeing fair — the chooser's guarantee holds for <strong>every</strong> cut.</p>",
+  "proof_html": "<p>By construction of the protocol, the chooser receives whichever of the two\nsides $L = [0, t]$ and $R = (t, 1]$ they value at least as much (with the\ntie broken to the left). Concretely:</p>\n<ul>\n<li>If $\\mu_1(L) \\ge \\mu_1(R)$ the chooser takes $L$ and the cutter is left\n  with $R$, giving $\\mu_1(R) \\le \\mu_1(L)$.</li>\n<li>Otherwise the chooser takes $R$ and the cutter takes $L$, giving\n  $\\mu_1(L) &lt; \\mu_1(R) \\le \\mu_1(R)$.</li>\n</ul>\n<p>In both branches the chooser's value for their own piece weakly dominates\ntheir value for the cutter's piece, which is the envy-freeness statement.</p>\n<h2>Significance</h2>\n<p>The chooser is structurally protected: they get the optimal choice between\nthe two halves by construction. The interesting half of cut-and-choose is\nthat the <em>cutter</em> can also be made envy-free\n([[social_choice.fair_division.divisible.cutter_envy_free_of_fair]]) by\ncutting at the right point — namely a fair cut.</p>\n<h2>References</h2>\n<ul>\n<li>Steinhaus, H. (1948). \"The Problem of Fair Division\". <em>Econometrica</em>.</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>, Ch. 1.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.chooser_isEnvyFree",
+      "display_name": "SocialChoice.FairDivision.Divisible.chooser_isEnvyFree",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.chooser_isEnvyFree",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "kind": "theorem",
+      "signature": "theorem chooser_isEnvyFree (μ : Fin 2 → Measure I) (t : I) :\n    (MeasureValuation μ).val 1 (cutAndChooseAlloc μ t 0) ≤\n    (MeasureValuation μ).val 1 (cutAndChooseAlloc μ t 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean#L159",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

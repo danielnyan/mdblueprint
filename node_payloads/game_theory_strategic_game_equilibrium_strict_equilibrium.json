@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.strict_equilibrium",
+  "title": "Strict Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_strict_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Strict Equilibrium</h1>\n<p>A profile $s\\in S$ is a strict equilibrium if\n$$\n  \\{s\\}=BR(s).\n$$\nEquivalently, every player's prescribed strategy is the unique best response to\nthe other players' prescribed strategies.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 4.5.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Strict equilibrium as singleton best-response image.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

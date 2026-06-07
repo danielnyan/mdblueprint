@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.is_decisive_for",
+  "title": "Decisive Coalition for an Ordered Pair",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_is_decisive_for.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Decisive Coalition for an Ordered Pair</h1>\n<p>Fix a social welfare function $F$ ([[social_choice.voting.swf]]). A coalition\n$C \\subseteq N$ is <em>decisive for the ordered pair</em> $(a, b)$ if unanimous\nstrict $a \\succ b$ inside $C$ forces society to rank $a \\succ b$:\n$$\n\\forall P,\\ \\bigl(\\forall i \\in C,\\ a \\succ_{P_i} b\\bigr)\n\\Rightarrow a \\succ_{F(P)} b.\n$$</p>\n<p>In Lean: <code>SocialChoice.Voting.IsDecisiveFor F C a b</code>.</p>\n<p>The pair $(a,b)$ is ordered: decisiveness for $(a,b)$ does <em>not</em> imply\ndecisiveness for $(b,a)$. Lifting from a single decisive pair to all pairs is\nthe content of the <em>field expansion</em> lemma\n[[social_choice.voting.decisive_spread]].</p>\n<p>Decisiveness is the structural device behind the Arrow proof\n([[social_choice.voting.arrow_of_unanimity_iia]]): one shows the grand\ncoalition is decisive (under unanimity), that decisive coalitions can be\nshrunk in cardinality (under unanimity + IIA), and that a singleton\ndecisive coalition is a dictator.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.14] Maschler, Solan, and Zamir, <em>Game Theory</em>. Decisive coalitions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.IsDecisiveFor",
+      "display_name": "SocialChoice.Voting.IsDecisiveFor",
+      "qualified_name": "SocialChoice.Voting.IsDecisiveFor",
+      "module": "EconCSLib.SocialChoice.Voting.Decisive",
+      "kind": "def",
+      "signature": "def IsDecisiveFor [Fintype N] [Fintype A]\n    (F : SWF N A) (C : Set N) (a b : A) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L37",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "display_name": "EconCSLib.SocialChoice.Voting.Decisive",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Decisive.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

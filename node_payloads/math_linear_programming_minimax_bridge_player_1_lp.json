@@ -1,0 +1,19 @@
+{
+  "id": "math.linear_programming.minimax_bridge.player_1_lp",
+  "title": "Player-1 LP Formulation of a Matrix Game",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "math/math_linear_programming_minimax_bridge_player_1_lp.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.linear_programming",
+    "math.linear_programming.minimax_bridge"
+  ],
+  "body_html": "<h1>Player-1 LP Formulation of a Matrix Game</h1>\n<p>For a matrix game $A : I \\times J \\to \\mathbb{R}$ played row-by-column,\nthe <strong>player-1 (maxmin) linear program</strong> seeks a mixed strategy\n$x \\in \\Delta(I)$ ([[game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex]]) and a\nscalar $v$ such that every pure column response of player 2 yields at\nleast $v$:</p>\n<p>$$\n\\boxed{\\begin{aligned}\n\\text{maximise} \\quad &amp; v \\\\\n\\text{subject to} \\quad &amp; \\sum_{i \\in I} x_i \\, A_{ij} \\;\\ge\\; v &amp;&amp;\\text{for every } j \\in J, \\\\\n                &amp; \\sum_{i \\in I} x_i = 1, \\\\\n                &amp; x_i \\ge 0 &amp;&amp;\\text{for every } i \\in I.\n\\end{aligned}}\n$$</p>\n<p>The decision variables are $(x, v) \\in \\mathbb{R}^{I} \\times \\mathbb{R}$;\nthe constraints encode \"$x A \\ge v \\cdot \\mathbf{1}_J$\" plus probability\nnormalisation.</p>\n<h2>Standard reformulations</h2>\n<ul>\n<li>Eliminate $v$ via $v = \\min_j (x A)_j$; the LP becomes\n  $\\max_{x \\in \\Delta(I)} \\min_{j \\in J} (x A)_j$, which is the\n  matrix-game <strong>maxmin</strong> definition.</li>\n<li>Add slack variables $s_j \\ge 0$ with $\\sum_i x_i A_{ij} - s_j = v$ to\n  put the LP in standard form for the simplex algorithm.</li>\n</ul>\n<h2>Solution interpretation</h2>\n<p>At any feasible $(x, v)$, $v$ is a <em>guaranteed</em> lower bound on player\n1's expected payoff against any pure column. At an optimal $(x^*, v^*)$:</p>\n<ul>\n<li>$v^* = \\operatorname{val}(A)$ ([[game_theory.strategic_game.zero_sum.core.value]]).</li>\n<li>$x^*$ is a maxmin (Nash) strategy for player 1\n  ([[game_theory.strategic_game.zero_sum.core.optimal_strategy_sets]]).</li>\n</ul>\n<p>The dual LP corresponds to player 2's minmax LP\n([[math.linear_programming.minimax_bridge.player_2_lp]]); strong duality\n([[math.linear_programming.strong_duality]]) gives the minimax theorem\n([[game_theory.strategic_game.zero_sum.von_neumann_minimax]]).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Section 1.4.2] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>. LP formulation of matrix games.</li>\n<li>[MFoGT Section 2.5] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>.</li>\n<li>Owen, G. (1995). <em>Game Theory</em>. Ch. 3 on LP and matrix games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

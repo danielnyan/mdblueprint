@@ -1,0 +1,297 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.bayesian_correlated",
+    "title": "Game Theory.Strategic Game.Bayesian Correlated",
+    "href": "game_theory/strategic_game/bayesian_correlated/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 18,
+    "descendant_node_count": 18
+  },
+  "counts": {
+    "internal_nodes": 18,
+    "inlined_nodes": 0,
+    "descendant_nodes": 18,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 18,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 20,
+    "visible_nodes_with_selected_proof_plans": 20
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.bayesian.agent_normal_form",
+      "title": "Agent Normal Form Of A Bayesian Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_agent_normal_form.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_agent_normal_form.json"
+    },
+    {
+      "id": "game_theory.strategic_game.bayesian.bayesian_equilibrium",
+      "title": "Bayesian Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_bayesian_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_bayesian_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.bayesian.bayesian_equilibrium_as_nash",
+      "title": "Bayesian Equilibrium As Nash Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_bayesian_equilibrium_as_nash.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_bayesian_equilibrium_as_nash.json"
+    },
+    {
+      "id": "game_theory.strategic_game.bayesian.bayesian_game",
+      "title": "Bayesian Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_bayesian_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_bayesian_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.bayesian.bayesian_strategy",
+      "title": "Bayesian Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_bayesian_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_bayesian_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.bayesian.finite_bayesian_equilibrium_exists",
+      "title": "Finite Bayesian Equilibrium Exists",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_finite_bayesian_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_bayesian_finite_bayesian_equilibrium_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.best_response_face",
+      "title": "Best Response Face",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_best_response_face.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_best_response_face.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.canonical_correlation_device",
+      "title": "Canonical Correlation Device",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_canonical_correlation_device.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_canonical_correlation_device.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.correlated_best_response_not_independent",
+      "title": "Correlated Best Response Need Not Be Independent",
+      "kind": "example",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_best_response_not_independent.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_correlated_best_response_not_independent.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.correlated_equilibrium",
+      "title": "Correlated Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_correlated_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.correlated_equilibrium_convex_compact",
+      "title": "Correlated Equilibrium Set Is Convex And Compact",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium_convex_compact.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_correlated_equilibrium_convex_compact.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.correlated_equilibrium_exists",
+      "title": "Correlated Equilibrium Exists In Finite Games",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_correlated_equilibrium_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.correlated_strategy",
+      "title": "Correlated Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_correlated_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+      "title": "Degenerate Correlated Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_degenerate_correlated_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_degenerate_correlated_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.mediated_game",
+      "title": "Mediated Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_mediated_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_mediated_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.nash_induces_correlated_equilibrium",
+      "title": "Nash Equilibrium Induces Correlated Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_nash_induces_correlated_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_nash_induces_correlated_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.obedience_condition",
+      "title": "Obedience Condition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_obedience_condition.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_obedience_condition.json"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.recommendation_strategy",
+      "title": "Recommendation Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_recommendation_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_correlated_recommendation_strategy.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency",
+      "node_count": 105
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "bayesian-equilibrium",
+      "title": "bayesian-equilibrium",
+      "href": "keywords/bayesian-equilibrium.html",
+      "count": 3
+    },
+    {
+      "id": "bayesian-game",
+      "title": "bayesian-game",
+      "href": "keywords/bayesian-game.html",
+      "count": 6
+    },
+    {
+      "id": "best-response",
+      "title": "best-response",
+      "href": "keywords/best-response.html",
+      "count": 2
+    },
+    {
+      "id": "compactness",
+      "title": "compactness",
+      "href": "keywords/compactness.html",
+      "count": 1
+    },
+    {
+      "id": "convexity",
+      "title": "convexity",
+      "href": "keywords/convexity.html",
+      "count": 1
+    },
+    {
+      "id": "correlated-equilibrium",
+      "title": "correlated-equilibrium",
+      "href": "keywords/correlated-equilibrium.html",
+      "count": 9
+    },
+    {
+      "id": "correlation",
+      "title": "correlation",
+      "href": "keywords/correlation.html",
+      "count": 3
+    },
+    {
+      "id": "correlation-device",
+      "title": "correlation-device",
+      "href": "keywords/correlation-device.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 2
+    },
+    {
+      "id": "incomplete-information",
+      "title": "incomplete-information",
+      "href": "keywords/incomplete-information.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 3
+    },
+    {
+      "id": "normal-form",
+      "title": "normal-form",
+      "href": "keywords/normal-form.html",
+      "count": 1
+    },
+    {
+      "id": "obedience",
+      "title": "obedience",
+      "href": "keywords/obedience.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 18
+    },
+    {
+      "id": "strategy",
+      "title": "strategy",
+      "href": "keywords/strategy.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

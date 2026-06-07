@@ -1,0 +1,96 @@
+{
+  "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+  "title": "Multiple-Parameter Transfer Layer",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_transfer_multiple_parameter_transfer_layer.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.transfer"
+  ],
+  "body_html": "<h1>Multiple-Parameter Transfer Layer</h1>\n<p>In a multiple-parameter mechanism, each agent reports a valuation function over\nthe allocation space. This is the abstract transfer-mechanism layer used by\nVCG-style constructions.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Sections 9.3.2-9.3.3] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Multi-parameter valuation functions, outcomes, and transfer mechanisms.</li>\n<li>[AGT, Chapter 12, Section 12.3] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Multidimensional mechanism-design domains in combinatorial-auction settings.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_multiple_parameter_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MultipleParameterMechanism",
+      "display_name": "MultipleParameterMechanism",
+      "qualified_name": "MultipleParameterMechanism",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "structure",
+      "signature": "structure MultipleParameterMechanism\n    (I : Type*) (A : Type*) (V : Type*) (P : Type*)\n    extends MechanismWithTransfers I (fun _ => A → V) A P\nnamespace MultipleParameterMechanism\nvariable {I A V : Type*}\n/-- The valuation/type space of an agent in a multiple-parameter mechanism. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L252",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MultipleParameterMechanism.Valuation",
+      "display_name": "MultipleParameterMechanism.Valuation",
+      "qualified_name": "MultipleParameterMechanism.Valuation",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "abbrev",
+      "signature": "abbrev Valuation (A : Type*) (V : Type*)",
+      "docstring": "The valuation/type space of an agent in a multiple-parameter mechanism.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L261",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MultipleParameterMechanism.valueOfAllocation",
+      "display_name": "MultipleParameterMechanism.valueOfAllocation",
+      "qualified_name": "MultipleParameterMechanism.valueOfAllocation",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def valueOfAllocation\n    (a : A) (types : ∀ _ : I, Valuation A V) (i : I) : V",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L265",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "display_name": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

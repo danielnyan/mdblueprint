@@ -1,0 +1,55 @@
+{
+  "id": "market_design.matching.one_to_one.matching",
+  "title": "Matching (Partial Bijection)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "market_design/market_design_matching_one_to_one_matching.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Matching (Partial Bijection)</h1>\n<p>Given a one-to-one matching market $(M, W, \\succ)$, a <strong>matching</strong> is a\npartial function $\\mu : M \\to W \\cup \\{\\bot\\}$ together with the dual\n$\\mu^{-1} : W \\to M \\cup \\{\\bot\\}$ such that:</p>\n<ul>\n<li>$\\mu$ is injective on its matched domain (a man is matched to at most one woman).</li>\n<li>$\\mu(i) = j \\iff \\mu^{-1}(j) = i$ for $i \\in M$, $j \\in W$ (consistency).</li>\n<li>If $\\mu(i) = \\bot$ we say $i$ is <strong>unmatched</strong>; symmetric for $j$.</li>\n</ul>\n<p>Equivalently, $\\mu$ is a set $\\{(i, j) : \\mu(i) = j\\} \\subseteq M \\times W$ in\nwhich each element of $M$ appears at most once and each element of $W$ appears\nat most once.</p>\n<p>In Lean this corresponds to the <code>Matching M W</code> structure in\n<code>EconCSLib.MarketDesign.Matching.Basic</code> carrying both sides of the partial\nbijection plus the consistency invariant.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Def 22.2] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "href": "market_design/market_design_matching_one_to_one_stability.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Matching",
+      "display_name": "Matching",
+      "qualified_name": "Matching",
+      "module": "EconCSLib.MarketDesign.Matching.Basic",
+      "kind": "structure",
+      "signature": "structure Matching (M W : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L57",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.Basic",
+      "display_name": "EconCSLib.MarketDesign.Matching.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

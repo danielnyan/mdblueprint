@@ -1,0 +1,60 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+  "title": "Mixed Nash Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Mixed Nash Equilibrium</h1>\n<p>A mixed equilibrium of a finite strategic game $G$ is a Nash equilibrium of its\nmixed extension $\\widetilde G$.</p>\n<p>Equivalently, a mixed profile $\\sigma$ is a mixed Nash equilibrium if for every\nplayer $i$ and every pure deviation $t_i\\in S_i$,\n$$\n  \\widetilde g_i(t_i,\\sigma_{-i})\n  \\le\n  \\widetilde g_i(\\sigma_i,\\sigma_{-i}).\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 4.6.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed equilibrium of a finite game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsMixedNashEq",
+      "display_name": "StrategicGame.IsMixedNashEq",
+      "qualified_name": "StrategicGame.IsMixedNashEq",
+      "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+      "kind": "def",
+      "signature": "def IsMixedNashEq\n    (G : StrategicGame N U)\n    [Fintype N] [DecidableEq N]\n    [∀ i, Fintype (G.strategy i)] [∀ i, DecidableEq (G.strategy i)]\n    (p : MixedProfile G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean#L186",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

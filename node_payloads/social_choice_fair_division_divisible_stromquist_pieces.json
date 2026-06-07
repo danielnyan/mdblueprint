@@ -1,0 +1,98 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_pieces",
+  "title": "Stromquist Pieces from the Division Simplex",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_pieces.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Stromquist Pieces from the Division Simplex</h1>\n<p>Stromquist's proof parametrizes contiguous $n$-piece partitions of the\nreal line $\\mathbb{R}$ by points in the standard simplex\n$$\nS = \\mathrm{stdSimplex}\\ \\mathbb{R}\\ (\\mathrm{Fin}\\ n) \\;=\\;\n\\{x : \\mathrm{Fin}\\ n \\to \\mathbb{R} \\mid x_i \\ge 0,\\ \\sum_i x_i = 1\\}.\n$$</p>\n<p>A point $x \\in S$ encodes the <em>fractional lengths</em> of $n$ consecutive\npieces; the actual cut points in $\\mathbb{R}$ are recovered via a fixed\nhomeomorphism $\\varphi : (0, 1) \\to \\mathbb{R}$ (a homeomorphism).</p>\n<h2>The $i$-th piece at division $x$</h2>\n<p>In Lean: <code>strom_piece (x : Fin n → ℝ) (i : Fin n) : Set ℝ</code>. Informally:\n$$\n\\mathrm{piece}(x, i) \\;=\\; \\varphi\\bigl(\\bigl(\\sum_{j &lt; i} x_j,\\ \\sum_{j \\le i} x_j\\bigr]\\bigr).\n$$</p>\n<p>The piece collapses to the empty set exactly when its fractional length\nis zero — <code>strom_piece_empty_iff</code>:\n$$\n\\mathrm{piece}(x, i) = \\emptyset \\;\\iff\\; x_i = 0.\n$$</p>\n<h2>Partition property</h2>\n<p>For every $x \\in S$, the pieces $\\{\\mathrm{piece}(x, i) : i \\in \\mathrm{Fin}\\ n\\}$\nform a complete measurable partition of $\\mathbb{R}$:</p>\n<ul>\n<li>measurability of each piece (from the half-open interval form);</li>\n<li>pairwise disjointness (by the ordering of the partial sums $\\sum_{j &lt; i} x_j$);</li>\n<li>cover of $\\mathbb{R}$ (the union of all half-open intervals over a partition\n  of $(0, 1)$, transported by $\\varphi$).</li>\n</ul>\n<p>In Lean: <code>strom_piece_partition</code>. This is the building block that turns a\nKKM-found simplex point into a divisible allocation in\n[[social_choice.fair_division.divisible.stromquist_assignment]].</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_piece",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_piece",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_piece",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "def",
+      "signature": "noncomputable def strom_piece (x : Fin n → ℝ) (i : Fin n) : Set ℝ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L244",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_piece_partition",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_piece_partition",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_piece_partition",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "lemma strom_piece_partition (x : Fin n → ℝ) (hx : x ∈ stdSimplex ℝ (Fin n)) :\n    (∀ i, MeasurableSet (strom_piece n x i)) ∧\n    (∀ i j : Fin n, i ≠ j → Disjoint (strom_piece n x i) (strom_piece n x j)) ∧\n    (⋃ i, strom_piece n x i = Set.Ico 0 1)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L250",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_piece_empty_iff",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_piece_empty_iff",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_piece_empty_iff",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "lemma strom_piece_empty_iff (x : Fin n → ℝ) (hx : x ∈ stdSimplex ℝ (Fin n)) (i : Fin n) :\n    strom_piece n x i = ∅ ↔ x i = 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L341",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

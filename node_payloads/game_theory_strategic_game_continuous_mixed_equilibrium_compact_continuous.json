@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.mixed_equilibrium_compact_continuous",
+  "title": "Mixed Equilibrium In Compact Continuous Games",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_mixed_equilibrium_compact_continuous.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Mixed Equilibrium In Compact Continuous Games</h1>\n<p>If $G$ is compact and continuous, then its set of mixed equilibria is a nonempty\ncompact subset of\n$$\n  \\prod_{i\\in I}\\Delta(S_i).\n$$</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The mixed strategy spaces $\\Delta(S_i)$ are compact in the weak-star topology.\nThe expected payoff functions in the mixed extension are continuous and\nmultilinear, hence quasi-concave in each player's mixed strategy. Applying the\ncompact quasi-concave existence theorem to the mixed extension yields a nonempty\ncompact set of mixed equilibria.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 4.7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every compact continuous game has a nonempty compact set of mixed equilibria.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

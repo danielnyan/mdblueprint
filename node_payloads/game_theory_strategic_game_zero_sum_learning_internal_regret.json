@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.internal_regret",
+  "title": "Internal Regret",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_internal_regret.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Internal Regret</h1>\n<p>Internal regret compares realized play with a counterfactual rule that replaces\none action by another whenever the first action was played.</p>\n<p>For player $i$ and actions $a_i,b_i\\in A_i$, the internal regret from replacing\n$a_i$ by $b_i$ along a realized history is\n$$\n  \\frac1n\\sum_{t:a_i^t=a_i}\n  (g_i(b_i,a_{-i}^t)-g_i(a_i,a_{-i}^t)).\n$$\nA procedure has no internal regret if the positive part of this quantity\nconverges to $0$ for every ordered pair $(a_i,b_i)$.</p>\n<p>Internal regret is the learning analogue of correlated-equilibrium obedience:\nthe counterfactual deviation is allowed to depend on the action actually\nrecommended or played.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. No-internal-regret procedures and their connection to correlated equilibria.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

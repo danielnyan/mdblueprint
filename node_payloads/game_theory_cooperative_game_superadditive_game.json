@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.cooperative_game.superadditive_game",
+  "title": "Superadditive Coalitional Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_superadditive_game.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.classes"
+  ],
+  "body_html": "<h1>Superadditive Coalitional Game</h1>\n<p>A coalitional game is <strong>superadditive</strong> if disjoint coalitions can do at\nleast as well by merging. Formally, for disjoint coalitions\n$S,T \\subseteq N$,\n$$\n  v(S \\cup T) \\ge v(S) + v(T).\n$$</p>\n<p>Superadditivity is a basic economic compatibility condition: it says there\nis no loss of worth merely from allowing two non-overlapping coalitions to\ncoordinate as one larger coalition.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.16, Def 16.8] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.cooperative_game.convex_game",
+      "title": "Convex Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.IsSuperadditive",
+      "display_name": "CoalitionalGame.IsSuperadditive",
+      "qualified_name": "CoalitionalGame.IsSuperadditive",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def IsSuperadditive [LE U] : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L92",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

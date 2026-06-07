@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.proportional",
+  "title": "Proportional Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_proportional.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Proportional Allocation</h1>\n<p>Fix a population size $n$, a distinguished <em>whole</em> share <code>whole : S</code>\n(typically \"the entire resource\"), a utility profile $u : N \\to S \\to\n\\mathbb{R}$, and an allocation $A : N \\to S$\n([[social_choice.fair_division.allocation]]).</p>\n<p>The allocation $A$ is <em>proportional</em> (PROP) if every agent values their own\nshare at least a $1/n$ fraction of the whole:\n$$\n\\forall i \\in N,\\ u_i(\\mathrm{whole}) \\le n \\cdot u_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.IsProportional</code>. The \"$1/n$\"\nintuition is stated without division (multiply through by $n$) so the\ndefinition works over arbitrary <code>Semiring V</code>.</p>\n<p>PROP and EF ([[social_choice.fair_division.envy_free]]) are related but\nincomparable in general:</p>\n<ul>\n<li>For divisible goods (non-atomic measures), EF implies PROP\n  ([[social_choice.fair_division.divisible.ef_implies_proportional]]).</li>\n<li>For indivisible goods (additive valuations) on complete allocations,\n  EF still implies PROP\n  ([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]]),\n  but PROP does not imply EF in general.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Proportional allocations.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.IsProportional",
+      "display_name": "SocialChoice.FairDivision.IsProportional",
+      "qualified_name": "SocialChoice.FairDivision.IsProportional",
+      "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "kind": "def",
+      "signature": "def IsProportional (n : ℕ)\n    (whole : S) (u : N → S → ℝ) (A : Allocation N S) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L32",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

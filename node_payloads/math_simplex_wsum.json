@@ -1,0 +1,206 @@
+{
+  "id": "math.simplex.wsum",
+  "title": "Weighted Sum over the Standard Simplex",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "math/math_simplex_wsum.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.simplex"
+  ],
+  "body_html": "<h1>Weighted Sum over the Standard Simplex</h1>\n<p>For a finite index <code>I</code>, a strictly ordered field <code>𝕜</code>, an element\n<code>x ∈ stdSimplex 𝕜 I</code>, and a function <code>f : I → 𝕜</code>, the <em>weighted sum</em> is\n$$\n  \\operatorname{wsum} x \\, f \\;=\\; \\sum_{i \\in I} x_i \\cdot f(i).\n$$</p>\n<p>This is the operator that turns a mixed strategy into an expected payoff and\na lottery into an expected utility. It is definitionally equal to Mathlib's\nfinite dot product <code>x ⬝ᵥ f</code>, but receives a dedicated name because the\nsimplex-specific algebraic lemmas below depend on the constraints\n$\\sum_i x_i = 1$ and $x_i \\ge 0$ and have no generic <code>dotProduct</code>\nanalogue.</p>\n<p>The core algebra:</p>\n<ul>\n<li><code>wsum_const</code>  -- <code>wsum x (fun _ =&gt; c) = c</code></li>\n<li><code>wsum_le_wsum</code>  -- pointwise <code>f ≤ g</code> implies <code>wsum x f ≤ wsum x g</code></li>\n<li><code>wsum_nonneg</code>  -- pointwise <code>0 ≤ f</code> implies <code>0 ≤ wsum x f</code></li>\n<li><code>wsum_ge_wsum</code>  -- the symmetric <code>≥</code> version of monotonicity</li>\n<li><code>wsum_add</code>  -- <code>wsum x (f + g) = wsum x f + wsum x g</code></li>\n<li><code>wsum_smul</code>  -- <code>wsum x (c • f) = c · wsum x f</code></li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of\n  Game Theory</em>. Mixed-strategy\n  weighted sums.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Adapted from <code>GameTheory/Simplex.lean</code> in\n  <a href=\"https://github.com/math-xmum/gametheory\">math-xmum/gametheory</a>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "title": "Positive Aggregates xB and By",
+      "href": "math/math_minimax_loomis_induction_proof_positive_aggregate.html"
+    },
+    {
+      "id": "math.simplex.continuity",
+      "title": "Continuity on the Real Standard Simplex",
+      "href": "math/math_simplex_continuity.html"
+    },
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "href": "math/math_simplex_mix.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "wsum",
+      "display_name": "wsum",
+      "qualified_name": "wsum",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "abbrev",
+      "signature": "abbrev wsum (x : stdSimplex 𝕜 I) (f : I → 𝕜) : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L87",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_const",
+      "display_name": "wsum_const",
+      "qualified_name": "wsum_const",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_const (x : stdSimplex 𝕜 I) (c : 𝕜) :\n    wsum x (fun _ => c) = c",
+      "docstring": "Weighted sum of a constant equals the constant.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L91",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_le_wsum",
+      "display_name": "wsum_le_wsum",
+      "qualified_name": "wsum_le_wsum",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_le_wsum (x : stdSimplex 𝕜 I) {f g : I → 𝕜}\n    (h : ∀ i, f i ≤ g i) : wsum x f ≤ wsum x g",
+      "docstring": "Weighted sum is monotone: pointwise `≤` implies `wsum ≤`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L96",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_nonneg",
+      "display_name": "wsum_nonneg",
+      "qualified_name": "wsum_nonneg",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_nonneg (x : stdSimplex 𝕜 I) {f : I → 𝕜}\n    (h : ∀ i, 0 ≤ f i) : 0 ≤ wsum x f",
+      "docstring": "Weighted sum of non-negative values is non-negative.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L103",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_pos",
+      "display_name": "wsum_pos",
+      "qualified_name": "wsum_pos",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_pos (x : stdSimplex 𝕜 I) {f : I → 𝕜}\n    (hf : ∀ i, 0 < f i) : 0 < wsum x f",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L113",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_ge_wsum",
+      "display_name": "wsum_ge_wsum",
+      "qualified_name": "wsum_ge_wsum",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_ge_wsum (x : stdSimplex 𝕜 I) {f g : I → 𝕜}\n    (h : ∀ i, f i ≥ g i) : wsum x f ≥ wsum x g",
+      "docstring": "Weighted sum respects `≥`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L133",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_add",
+      "display_name": "wsum_add",
+      "qualified_name": "wsum_add",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_add (x : stdSimplex 𝕜 I) (f g : I → 𝕜) :\n    wsum x (f + g) = wsum x f + wsum x g",
+      "docstring": "Weighted sum is linear over addition.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L138",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "wsum_smul",
+      "display_name": "wsum_smul",
+      "qualified_name": "wsum_smul",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_smul (x : stdSimplex 𝕜 I) (c : 𝕜) (f : I → 𝕜) :\n    wsum x (c • f) = c * wsum x f",
+      "docstring": "Weighted sum commutes with scalar multiplication.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Simplex",
+      "display_name": "EconCSLib.Math.Simplex",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "social_choice.fair_division.indivisible.round_robin_partition",
+  "title": "Round-Robin Output Is a Complete Partition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_round_robin_partition.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.algorithms"
+  ],
+  "body_html": "<h1>Round-Robin Output Is a Complete Partition</h1>\n<p><strong>Theorem.</strong> For any additive valuation $w$ and any finite good set\n<code>allGoods : Finset G</code>, the round-robin allocation\n([[social_choice.fair_division.indivisible.round_robin_alloc]]) satisfies\n<code>IsAllocation allGoods (roundRobinAllocation ...)</code>\n([[social_choice.fair_division.indivisible.allocation]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.roundRobinAllocation_isAllocation</code>.</p>",
+  "proof_html": "<p>outline</p>\n<p>Two invariants tracked through the recursion:</p>\n<ul>\n<li>\n<p><strong>Disjointness.</strong> Each step assigns one good to one agent and removes\n  it from the <code>remaining</code> set. The invariant \"the bundles <code>bundles[i]</code>\n  and <code>bundles[j]</code> are disjoint, and both are disjoint from\n  <code>remaining</code>\" is preserved at each step.</p>\n</li>\n<li>\n<p><strong>Cover.</strong> The invariant \"<code>(⋃_i bundles[i]) ∪ remaining = allGoods</code>\"\n  is preserved at each step (the freshly-allocated good moves from\n  <code>remaining</code> into <code>bundles[i]</code>).</p>\n</li>\n</ul>\n<p>When <code>remaining = ∅</code> at termination, the cover invariant collapses to\n$\\bigcup_i \\mathrm{bundles}[i] = \\mathrm{allGoods}$, which together with\ndisjointness gives a partition.</p>\n<h2>Significance</h2>\n<p>This is the <em>feasibility</em> theorem for round-robin. The next-step EF1\ncorrectness proof\n([[social_choice.fair_division.indivisible.round_robin_ef1]]) needs\nthis feasibility as a prerequisite — the EF1 statement compares values\nof agents' bundles in a complete allocation.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Round-robin partition correctness.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "title": "Round-Robin Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_alloc.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.roundRobinAllocation_isAllocation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.roundRobinAllocation_isAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.roundRobinAllocation_isAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "kind": "theorem",
+      "signature": "theorem roundRobinAllocation_isAllocation [DecidableEq G]\n    (I : AdditiveInstance (Fin n) G) :\n    IsAllocation I.allGoods (roundRobinAllocation I)",
+      "docstring": "`roundRobinAllocation` produces a complete partition of the instance goods.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L737",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

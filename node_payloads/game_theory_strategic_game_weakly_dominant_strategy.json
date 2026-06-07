@@ -1,0 +1,93 @@
+{
+  "id": "game_theory.strategic_game.weakly_dominant_strategy",
+  "title": "Weakly Dominant Strategy",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Weakly Dominant Strategy</h1>\n<p>A strategy $s_i$ is weakly dominant for player $i$ if it weakly dominates every\nother strategy available to $i$:</p>\n<p>$$\\forall s'_i \\in S_i, \\quad s_i \\text{ weakly dominates } s'_i.$$</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Section 2.3] Maschler, Solan, and Zamir, <em>Game Theory</em>. Definition of weakly dominant strategy.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.best_response",
+      "title": "Best Response",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_best_response.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominates",
+      "title": "Weak Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.dominant_implies_nash",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsWeaklyDominant",
+      "display_name": "IsWeaklyDominant",
+      "qualified_name": "IsWeaklyDominant",
+      "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "kind": "def",
+      "signature": "def IsWeaklyDominant (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop",
+      "docstring": "Strategy `s` is weakly dominant for player `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L37",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsWeaklyDominant.isBestResponse",
+      "display_name": "IsWeaklyDominant.isBestResponse",
+      "qualified_name": "IsWeaklyDominant.isBestResponse",
+      "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "kind": "theorem",
+      "signature": "theorem IsWeaklyDominant.isBestResponse {G : StrategicGame N U} {i : N} {s : G.strategy i}\n    (hdom : IsWeaklyDominant G i s) (σ : G.Profile) (hσ : σ i = s) :\n    IsBestResponse G σ i",
+      "docstring": "T2: A weakly dominant strategy is a best response to any profile where player `i` plays it.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L59",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

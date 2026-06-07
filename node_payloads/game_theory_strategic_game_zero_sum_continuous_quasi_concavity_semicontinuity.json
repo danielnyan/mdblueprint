@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.quasi_concavity_semicontinuity",
+  "title": "Quasi-Concavity And Semicontinuity",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_quasi_concavity_semicontinuity.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Quasi-Concavity And Semicontinuity</h1>\n<p>Let $E$ be a convex subset of a vector space. A function $f:E\\to\\mathbb R$ is\nquasi-concave if every upper section\n$$\n  \\{x\\in E:f(x)\\ge\\lambda\\}\n$$\nis convex. It is quasi-convex if $-f$ is quasi-concave.</p>\n<p>If $E$ is a topological space, $f$ is upper semicontinuous if every upper section is\nclosed. It is lower semicontinuous if $-f$ is upper semicontinuous.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 3.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Quasi-concavity, quasi-convexity, upper semicontinuity, and lower semicontinuity.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

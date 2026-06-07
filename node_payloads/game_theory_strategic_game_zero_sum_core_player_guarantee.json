@@ -1,0 +1,72 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+  "title": "Player Guarantee",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_player_guarantee.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Player Guarantee</h1>\n<p>In the finite mixed-strategy version, $w$ is a <strong>guarantee for player I</strong>\nwhen some $x \\in \\Delta(I)$ achieves $E_A(x, j) \\ge w$ for every pure\n$j \\in J$. Symmetrically, $w$ is a <strong>guarantee for player II</strong> when some\n$y \\in \\Delta(J)$ achieves $E_A(i, y) \\le w$ for every pure $i \\in I$.\nEquivalently, $w$ is a player I guarantee iff $w \\le \\operatorname{val}(A)$\n(the maximin), and dually for player II with $\\operatorname{val}(A) \\le w$\n(the minimax).</p>\n<p>The abstract pure-strategy version ($\\exists i, \\forall j, g(i, j) \\ge w$)\ncollapses on finite mixed extensions to the same scalar bound via the\nsimplex-side order characterisation\n(<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 2.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Guarantees for both players in a zero-sum game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.IsPlayerIGuarantee",
+      "display_name": "MatrixGame.IsPlayerIGuarantee",
+      "qualified_name": "MatrixGame.IsPlayerIGuarantee",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def IsPlayerIGuarantee {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (w : 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L139",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MatrixGame.IsPlayerIIGuarantee",
+      "display_name": "MatrixGame.IsPlayerIIGuarantee",
+      "qualified_name": "MatrixGame.IsPlayerIIGuarantee",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "def IsPlayerIIGuarantee {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (w : 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L145",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

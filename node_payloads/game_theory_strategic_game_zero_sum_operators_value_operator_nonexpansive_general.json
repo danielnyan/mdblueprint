@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.operators.value_operator_nonexpansive_general",
+  "title": "General Value Operator Is Nonexpansive",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_nonexpansive_general.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.operators"
+  ],
+  "body_html": "<h1>General Value Operator Is Nonexpansive</h1>\n<p>For payoff functions $f,g\\in F$,\n$$\n  |\\operatorname{val}(f)-\\operatorname{val}(g)|\n  \\le\n  \\|f-g\\|_\\infty.\n$$</p>",
+  "proof_html": "<p>Since $f\\le g+\\|f-g\\|_\\infty$, monotonicity and translation of constants give\n$$\n  \\operatorname{val}(f)\n  \\le\n  \\operatorname{val}(g)+\\|f-g\\|_\\infty.\n$$\nThe reverse inequality follows by exchanging $f$ and $g$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 3.4.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Nonexpansiveness of the value operator for the sup norm.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

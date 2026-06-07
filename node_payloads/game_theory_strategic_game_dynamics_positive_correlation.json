@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.dynamics.positive_correlation",
+  "title": "Positive Correlation Dynamics",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_positive_correlation.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Positive Correlation Dynamics</h1>\n<p>A dynamics $\\dot\\sigma=B_\\Phi(\\sigma)$ satisfies positive correlation if, for each\nplayer $i$ and configuration $\\sigma$, whenever player $i$'s component of the\nvector field is nonzero,\n$$\n  \\langle B_\\Phi^i(\\sigma),\\Phi_i(\\sigma)\\rangle&gt;0\n$$</p>\n<p>This formalizes myopic adjustment: moving along the dynamics locally improves\nthe current evaluation. In a potential game, positive correlation implies that the\npotential is a strict Lyapunov function for the dynamics.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Def. 5.5.5 and Prop. 5.5.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Positive correlation and Lyapunov property for potential games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

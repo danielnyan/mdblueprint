@@ -1,0 +1,77 @@
+{
+  "id": "game_theory.cooperative_game.convex_game",
+  "title": "Convex Coalitional Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.classes"
+  ],
+  "body_html": "<h1>Convex Coalitional Game</h1>\n<p>A coalitional game is <strong>convex</strong> when its characteristic function is\nsupermodular:\n$$\n  v(S \\cup T) + v(S \\cap T) \\ge v(S) + v(T)\n$$\nfor all coalitions $S,T \\subseteq N$.</p>\n<p>Equivalently, a player's marginal contribution weakly increases as the\ncoalition they join becomes larger. Convexity is a strong regularity\ncondition: convex games have nonempty core, and their Shapley value lies in\nthe core.</p>\n<h2>Lean Status</h2>\n<p>Lean defines convexity as <code>CoalitionalGame.IsConvex</code> and proves the basic\nfact <code>CoalitionalGame.IsConvex.isSuperadditive</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Def 17.51 and Thm 17.54] Maschler, Solan, Zamir,\n  <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.cooperative_game.superadditive_game",
+      "title": "Superadditive Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_superadditive_game.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.tu_game",
+      "title": "Transferable-Utility Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.IsConvex",
+      "display_name": "CoalitionalGame.IsConvex",
+      "qualified_name": "CoalitionalGame.IsConvex",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def IsConvex [LE U] : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L102",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CoalitionalGame.IsConvex.isSuperadditive",
+      "display_name": "CoalitionalGame.IsConvex.isSuperadditive",
+      "qualified_name": "CoalitionalGame.IsConvex.isSuperadditive",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsConvex.isSuperadditive [LE U] (hconv : G.IsConvex) : G.IsSuperadditive",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L124",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

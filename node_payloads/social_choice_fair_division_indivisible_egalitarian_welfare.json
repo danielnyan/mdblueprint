@@ -1,0 +1,91 @@
+{
+  "id": "social_choice.fair_division.indivisible.egalitarian_welfare",
+  "title": "Indivisible Egalitarian (Maximin) Welfare",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_egalitarian_welfare.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Egalitarian (Maximin) Welfare</h1>\n<p>Specialisation of the generic egalitarian welfare\n([[social_choice.fair_division.egalitarian_welfare]]) to the\nindivisible setting: for a valuation $v$ and allocation $A$ on a finite\nnonempty agent type,\n$$\nW_{\\mathrm{egal}}(v, A) = \\min_{i \\in N} v_i(A(i)).\n$$</p>\n<p>The same definition <code>egalitarianWelfare</code> (under\n<code>SocialChoice.FairDivision</code>) applies, taking <code>v.val</code> for the per-agent\nutility function and the indivisible allocation\n([[social_choice.fair_division.indivisible.allocation]]) for the share\nassignment.</p>\n<p>The instance-keyed <em>optimality</em> predicate is wrapped here:</p>\n<ul>\n<li><code>IsMaxmin</code> (abbrev): no complete allocation\n  (<code>IsAllocation allGoods B</code>) has strictly larger egalitarian welfare.</li>\n</ul>\n<h2>Basic lemmas</h2>\n<p>Re-exported from the generic layer with the indivisible-friendly\nhypotheses:</p>\n<ul>\n<li><code>egalitarianWelfare_le</code>: $W_{\\mathrm{egal}}(v, A) \\le v_i(A(i))$ for\n  every agent $i$.</li>\n<li><code>nsmul_egalitarianWelfare_le_utilitarianWelfare</code>: combined with\n  [[social_choice.fair_division.indivisible.utilitarian_welfare]],\n  $|N| \\cdot W_{\\mathrm{egal}} \\le W_{\\mathrm{util}}$.</li>\n</ul>\n<h2>Relation to MMS</h2>\n<p>Egalitarian welfare is a <em>global</em> maximin (over all $i$, take the\nworst-off), while MMS\n([[social_choice.fair_division.indivisible.maximin_share]]) is a\n<em>per-agent</em> maximin (over self-partitions). They are conceptually\nrelated but distinct: $W_{\\mathrm{egal}}$ depends only on the bundle\nvalues, while MMS additionally depends on each agent's full valuation\nstructure.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Egalitarian welfare for indivisible goods.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsMaxmin",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsMaxmin",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsMaxmin",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "abbrev",
+      "signature": "abbrev IsMaxmin [Fintype N] [Nonempty N] [DecidableEq G]\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L106",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.egalitarianWelfare_le",
+      "display_name": "SocialChoice.FairDivision.Indivisible.egalitarianWelfare_le",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.egalitarianWelfare_le",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "lemma",
+      "signature": "lemma egalitarianWelfare_le [Nonempty N]\n    (v : Valuation N G) (A : Allocation N G) (i : N) :\n    egalitarianWelfare v A ≤ v.val i (A i)",
+      "docstring": "Egalitarian welfare is bounded above by any agent's bundle value.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L133",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "display_name": "SocialChoice.FairDivision.Indivisible.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "lemma",
+      "signature": "lemma nsmul_egalitarianWelfare_le_utilitarianWelfare\n    [Nonempty N]\n    (v : Valuation N G) (A : Allocation N G)\n    (hle : ∀ i : N, egalitarianWelfare v A ≤ v.val i (A i)) :\n    Fintype.card N • egalitarianWelfare v A ≤ utilitarianWelfare v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

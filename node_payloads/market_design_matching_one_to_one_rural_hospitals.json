@@ -1,0 +1,61 @@
+{
+  "id": "market_design.matching.one_to_one.rural_hospitals",
+  "title": "Rural Hospitals Theorem",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "market_design/market_design_matching_one_to_one_rural_hospitals.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Rural Hospitals Theorem</h1>\n<p><strong>Theorem (Roth 1986; McVitie–Wilson 1970 for one-to-one).</strong> In a finite\none-to-one matching market $(M, W, \\succ)$, the set of <strong>matched participants</strong>\nis invariant across all stable matchings:</p>\n<p>$$\\{ i \\in M : \\mu(i) \\ne \\bot \\} = \\{ i \\in M : \\mu'(i) \\ne \\bot \\}$$</p>\n<p>for any two stable matchings $\\mu, \\mu'$ (and symmetrically for $W$). In\nparticular the man-optimal $\\mu^M$ and woman-optimal $\\mu^W$ match exactly the\nsame individuals.</p>\n<h2>Formalized specialization: balanced full-preference markets</h2>\n<p>The Lean model (<code>Preferences n</code> via <code>MatchingMarket.ofEquivData</code>) is the\n<strong>balanced full-preference</strong> case: $|M| = |W| = n$ and every agent ranks every\nagent on the other side (no $\\bot$). There the theorem sharpens to:</p>\n<blockquote>\n<p><strong>Every stable matching is perfect</strong> — all $n$ men and all $n$ women are\nmatched.</p>\n</blockquote>\n<p>So the matched set is all of $\\mathrm{Fin}\\,n$ in <em>every</em> stable matching and\ninvariance is immediate. This is <code>GS.stable_matching_perfect</code>.</p>\n<h3>Proof (balanced case)</h3>\n<p>Suppose a woman $i_0$ is unmatched in a stable $\\mu$. If <em>every</em> man were\nmatched, then $\\mathrm{matchW} : \\text{men} \\to \\text{women}$ would be a total\ninjection on the finite equal-size set $\\mathrm{Fin}\\,n$, hence a bijection,\nmaking $i_0$ some man's partner — contradiction. So some man $j_0$ is also\nunmatched. But then $(i_0, j_0)$ blocks $\\mu$: each strictly prefers <em>any</em>\npartner to staying single (since $\\bot$ is least-preferred), contradicting\nstability. The men side is symmetric, using totality of $\\mathrm{matchM}$.</p>\n<p>No lattice machinery is needed in the balanced case — the argument is a direct\nfiniteness-plus-blocking-pair contradiction.</p>\n<h2>General case (⊥ and unequal sets)</h2>\n<p>With unacceptable partners or $|M| \\ne |W|$, stable matchings genuinely <em>can</em>\nleave agents unmatched, and the theorem becomes the non-trivial invariance\nstatement above. The standard proof routes through the [[lattice]] structure\n(WLOG compare $\\mu^M$ and $\\mu^W$). Formalizing this general version requires\nthe $\\bot$/acceptability extension of the Lean model and is tracked as future\nwork (#231 item D).</p>\n<h2>Why \"Rural Hospitals\"?</h2>\n<p>The name comes from the many-to-one (residency matching) version: any hospital\nthat fills fewer positions than its quota under one stable assignment fills\nexactly the same set of positions — with the same residents — under every\nstable assignment. Rural hospitals that struggle to fill positions still\nstruggle; no stable mechanism can rescue them within the stable-matching\nframework. The one-to-one statement above is the simplest specialization.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Thm 22.14] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>McVitie &amp; Wilson (1970), <em>Stable Marriage Assignment for Unequal Sets</em>.</li>\n<li>Roth (1986), <em>On the Allocation of Residents to Rural Hospitals</em>. Econometrica 54.</li>\n<li>Roth &amp; Sotomayor (1990), Ch. 2 §2.4.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "href": "market_design/market_design_matching_one_to_one_stability.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "market_design.matching.one_to_one.lattice",
+      "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+      "href": "market_design/market_design_matching_one_to_one_lattice.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GS.stable_matching_perfect",
+      "display_name": "GS.stable_matching_perfect",
+      "qualified_name": "GS.stable_matching_perfect",
+      "module": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+      "kind": "theorem",
+      "signature": "theorem stable_matching_perfect\n    (μ : Matching (Fin n) (Fin n))\n    (hμ : Matching.IsStable (MatchingMarket.ofEquivData w m) μ) :\n    (∀ i : Fin n, (μ.matchM i).isSome) ∧ (∀ j : Fin n, (μ.matchW j).isSome)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/RuralHospitals.lean#L51",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+      "display_name": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/RuralHospitals.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.behavioral_equilibrium_exists",
+  "title": "Existence Of Behavioral Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_behavioral_equilibrium_exists.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Existence Of Behavioral Equilibrium</h1>\n<p>For every finite extensive form game with perfect recall, any mixed equilibrium is\noutcome equivalent to a behavioral equilibrium and conversely. In particular,\nbehavioral equilibria always exist.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Nash's theorem gives a mixed equilibrium of the associated finite normal form.\nKuhn's perfect-recall theorem converts each player's mixed strategy to an\noutcome-equivalent behavioral strategy. If the behavioral profile admitted a\nprofitable behavioral deviation, Isbell's theorem would convert that deviation into\nan outcome-equivalent mixed deviation, contradicting mixed equilibrium. The reverse\ndirection is analogous.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.3.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. In every finite perfect-recall extensive game, mixed and behavioral equilibria are outcome-equivalent and behavioral equilibria exist.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

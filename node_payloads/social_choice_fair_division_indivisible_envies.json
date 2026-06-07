@@ -1,0 +1,128 @@
+{
+  "id": "social_choice.fair_division.indivisible.envies",
+  "title": "Envy Relation and Sources",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_envies.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.algorithms"
+  ],
+  "body_html": "<h1>Envy Relation and Sources</h1>\n<p>For an indivisible valuation $v$\n([[social_choice.fair_division.indivisible.valuation]]) and allocation\n$A$, the <em>envy relation</em> points from the envier to the envied:\n$$\ni \\to_{\\text{envy}} j \\iff v_i(A(j)) &gt; v_i(A(i)).\n$$</p>\n<p>In Lean: <code>envies v A i j</code>.</p>\n<h2>Basic structural lemmas</h2>\n<ul>\n<li><strong>Irreflexivity.</strong> <code>envies_irrefl</code>: no agent envies themselves\n  ($v_i(A(i)) &gt; v_i(A(i))$ is false).</li>\n<li><strong>Distinct.</strong> <code>envies_ne</code>: $i \\to_{\\text{envy}} j \\Rightarrow i \\ne j$\n  (immediate from irreflexivity).</li>\n</ul>\n<h2>Sources</h2>\n<p>An agent $i$ is an <em>envy-graph source</em> if no other agent envies them:\n$$\n\\mathrm{isSource}(v, A, i) \\iff \\forall j,\\ \\neg (j \\to_{\\text{envy}} i).\n$$</p>\n<p>In Lean: <code>isSource v A i</code>.</p>\n<p>The relation between sources and envy-freeness:\n- <code>IsEnvyFree.isSource_all</code>: if $A$ is envy-free\n  ([[social_choice.fair_division.indivisible.envy_free]]) then <em>every</em>\n  agent is a source.</p>\n<p>Sources play a central role in the envy-cycle elimination algorithm\n([[social_choice.fair_division.indivisible.envy_cycle_algorithm]]):\nfresh items are always given to a source agent, ensuring that the\nrecipient does not generate new envy against themselves.</p>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Envy graph and elimination.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.envies",
+      "display_name": "SocialChoice.FairDivision.Indivisible.envies",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.envies",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "def",
+      "signature": "def envies (v : Valuation N G) (A : Allocation N G) (i j : N) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L108",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.envies_irrefl",
+      "display_name": "SocialChoice.FairDivision.Indivisible.envies_irrefl",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.envies_irrefl",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma envies_irrefl (v : Valuation N G) (A : Allocation N G) (i : N) :\n    ¬ envies v A i i",
+      "docstring": "An agent cannot envy themselves: `envies v A i i` is always false.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L112",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.envies_ne",
+      "display_name": "SocialChoice.FairDivision.Indivisible.envies_ne",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.envies_ne",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma envies_ne (v : Valuation N G) (A : Allocation N G)\n    {i j : N} (h : envies v A i j) : i ≠ j",
+      "docstring": "Envy implies distinct agents: if `i` envies `j` then `i ≠ j`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L117",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isSource",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isSource",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isSource",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "def",
+      "signature": "def isSource (v : Valuation N G) (A : Allocation N G) (i : N) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L129",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isSource_all",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isSource_all",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree.isSource_all",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma IsEnvyFree.isSource_all (v : Valuation N G) (A : Allocation N G)\n    (hef : IsEnvyFree v A) (i : N) : isSource v A i",
+      "docstring": "In an envy-free allocation, every agent is a source.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L133",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

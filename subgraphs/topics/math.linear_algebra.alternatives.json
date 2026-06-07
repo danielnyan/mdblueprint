@@ -1,0 +1,111 @@
+{
+  "topic": {
+    "id": "math.linear_algebra.alternatives",
+    "title": "Math.Linear Algebra.Alternatives",
+    "href": "math/linear_algebra/alternatives/index.html",
+    "parent": "math.linear_algebra",
+    "node_count": 3,
+    "descendant_node_count": 3
+  },
+  "counts": {
+    "internal_nodes": 3,
+    "inlined_nodes": 0,
+    "descendant_nodes": 3,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 3,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 5,
+    "visible_nodes_with_selected_proof_plans": 5
+  },
+  "nodes": [
+    {
+      "id": "math.linear_algebra.farkas_lemma",
+      "title": "Farkas Lemma",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_linear_algebra_farkas_lemma.html",
+      "payload": "node_payloads/math_linear_algebra_farkas_lemma.json"
+    },
+    {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html",
+      "payload": "node_payloads/math_linear_algebra_theorem_of_alternative.json"
+    },
+    {
+      "id": "math.linear_algebra.theorem_of_alternative.fourier_motzkin",
+      "title": "Fourier-Motzkin Elimination Step",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_linear_algebra_theorem_of_alternative_fourier_motzkin.html",
+      "payload": "node_payloads/math_linear_algebra_theorem_of_alternative_fourier_motzkin.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependent",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "alternatives",
+      "title": "alternatives",
+      "href": "keywords/alternatives.html",
+      "count": 2
+    },
+    {
+      "id": "convexity",
+      "title": "convexity",
+      "href": "keywords/convexity.html",
+      "count": 2
+    },
+    {
+      "id": "elimination",
+      "title": "elimination",
+      "href": "keywords/elimination.html",
+      "count": 1
+    },
+    {
+      "id": "farkas",
+      "title": "farkas",
+      "href": "keywords/farkas.html",
+      "count": 1
+    },
+    {
+      "id": "fourier-motzkin",
+      "title": "fourier-motzkin",
+      "href": "keywords/fourier-motzkin.html",
+      "count": 2
+    },
+    {
+      "id": "linear-algebra",
+      "title": "linear-algebra",
+      "href": "keywords/linear-algebra.html",
+      "count": 3
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

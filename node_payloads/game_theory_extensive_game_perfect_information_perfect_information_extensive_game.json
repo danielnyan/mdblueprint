@@ -1,0 +1,119 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+  "title": "Finite Extensive Game With Perfect Information",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Finite Extensive Game With Perfect Information</h1>\n<p>A finite extensive form game with perfect information consists of:</p>\n<ol>\n<li>a finite nonempty player set $I$;</li>\n<li>a finite tree of nodes $Z$ with origin $\\theta$ and predecessor map;</li>\n<li>terminal nodes $R$ and decision positions $P=Z\\setminus R$;</li>\n<li>a successor set $S(p)$ for each decision position $p$;</li>\n<li>a partition $(P_i)_{i\\in I}$ of decision positions by the player who moves;</li>\n<li>payoff functions $g_i:R\\to\\mathbb R$.</li>\n</ol>\n<p>Play starts at $\\theta$, follows successor choices at decision positions, stops at a\nterminal node $r\\in R$, and gives player $i$ payoff $g_i(r)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Description of a finite extensive form game with perfect information.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "title": "Reached Subgame Nash Restriction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.core.nature_player",
+      "title": "Nature In Extensive Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_nature_player.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "title": "Extensive Game With Imperfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_extensive_game.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Arena",
+      "display_name": "Arena",
+      "qualified_name": "Arena",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "kind": "structure",
+      "signature": "structure Arena where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L44",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ExtensiveGame",
+      "display_name": "ExtensiveGame",
+      "qualified_name": "ExtensiveGame",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "kind": "structure",
+      "signature": "structure ExtensiveGame (N : Type*) (U : Type*) extends Arena where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L78",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ExtensiveGame.isPlayerState",
+      "display_name": "ExtensiveGame.isPlayerState",
+      "qualified_name": "ExtensiveGame.isPlayerState",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "kind": "def",
+      "signature": "def isPlayerState (G : ExtensiveGame N U) (s : G.State) (i : N) : Prop",
+      "docstring": "A state is controlled by player `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L101",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ExtensiveGame.isTerminal",
+      "display_name": "ExtensiveGame.isTerminal",
+      "qualified_name": "ExtensiveGame.isTerminal",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "kind": "abbrev",
+      "signature": "abbrev isTerminal (G : ExtensiveGame N U) (s : G.State)",
+      "docstring": "A state is terminal.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L98",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

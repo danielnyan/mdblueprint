@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.finite_opponent_separation_minimax",
+  "title": "Finite-Opponent Separation Minimax",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_finite_opponent_separation_minimax.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Finite-Opponent Separation Minimax</h1>\n<p>Assume:</p>\n<ol>\n<li>$S$ is a measurable space and $X$ is a nonempty convex set of probability\n   measures over $S$;</li>\n<li>$T$ is a finite nonempty set;</li>\n<li>$g:S\\times T\\to\\mathbb R$ is measurable and bounded.</li>\n</ol>\n<p>Then the game $(X,\\Delta(T),g)$ has a value, and player 2 has an optimal strategy.</p>",
+  "proof_html": "<p>Let $v=\\sup_X\\inf_T g(x,t)$. Consider the convex payoff-vector set\n$$\n  D=\\{(g(x,t))_{t\\in T}:x\\in X\\}\\subseteq\\mathbb R^T\n$$\nand the upper orthant $C=\\{a:a_t\\ge v+\\epsilon\\text{ for all }t\\}$. These two\nconvex sets are disjoint. A separating hyperplane gives nonnegative weights on\n$T$, normalized to a mixed strategy $y\\in\\Delta(T)$, such that\n$g(x,y)\\le v+\\epsilon$ for all $x\\in X$. Letting $\\epsilon\\downarrow0$ gives the\nvalue, and compactness of $\\Delta(T)$ gives an optimal strategy for player 2.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 3.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Separation proof of minimax when the minimizing player's pure strategy set is finite.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

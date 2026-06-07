@@ -1,0 +1,90 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+  "title": "Strictly Competitive Perfect-Information Determinacy",
+  "kind": "theorem",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Strictly Competitive Perfect-Information Determinacy</h1>\n<p>Every finite strictly competitive game with perfect information is determined.</p>\n<p>Equivalently, when terminal outcomes are interpreted as player 1 payoffs and\nplayer 2 has the opposite preference order, the game has a pure-strategy value.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Order outcomes by player 1's preference. Let $R_k$ be the smallest initial segment\nof outcomes that player 1 can guarantee. Player 1 can guarantee $R_k$, while by\nZermelo determinacy player 2 can guarantee the complement of $R_{k-1}$. This\nidentifies the threshold outcome and gives determinacy.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 6.2.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every finite strictly competitive perfect-information game is determined.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "title": "Simple Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_simple_perfect_information_game.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GameTree.zermelo_determinacy",
+      "display_name": "GameTree.zermelo_determinacy",
+      "qualified_name": "GameTree.zermelo_determinacy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem zermelo_determinacy (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (1 : Fin 2) optStrategy σ' →\n        value₀ g ≤ outcome σ' g 0) ∧\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (0 : Fin 2) optStrategy σ' →\n        outcome σ' g 0 ≤ value₀ g)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L319",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.value_zero_sum",
+      "display_name": "GameTree.value_zero_sum",
+      "qualified_name": "GameTree.value_zero_sum",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem value_zero_sum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    (value g) 0 + (value g) 1 = 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "display_name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "qualified_name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem value₀_eq_outcome_and_zeroSum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    value₀ g = outcome (optStrategy : Strategy (Fin 2) ℚ) g 0 ∧\n      (value g) 1 = -value₀ g",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L269",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

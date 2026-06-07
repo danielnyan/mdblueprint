@@ -1,0 +1,82 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+  "title": "Strategy In A Perfect-Information Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Strategy In A Perfect-Information Game</h1>\n<p>For a player $i$, a pure strategy is a function on $P_i$ that assigns to each\nposition $p\\in P_i$ a successor in $S(p)$. Thus a strategy specifies what the\nplayer would do at every position where that player might move, including\npositions that are not reached by the realized play.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A strategy selects a successor at each position controlled by the player.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "ExtensiveGame.Strategy",
+      "display_name": "ExtensiveGame.Strategy",
+      "qualified_name": "ExtensiveGame.Strategy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "kind": "def",
+      "signature": "def Strategy (G : ExtensiveGame N U) (i : N)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean#L26",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.Strategy",
+      "display_name": "GameTree.Strategy",
+      "qualified_name": "GameTree.Strategy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "kind": "def",
+      "signature": "def Strategy (N U : Type*) : Type _",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L66",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

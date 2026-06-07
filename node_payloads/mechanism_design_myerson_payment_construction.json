@@ -1,0 +1,66 @@
+{
+  "id": "mechanism_design.myerson.payment_construction",
+  "title": "Myerson Payment Construction (withMyersonPayment)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_myerson_payment_construction.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson"
+  ],
+  "body_html": "<h1>Myerson Payment Construction</h1>\n<p><code>withMyersonPayment</code> is the <em>constructive operator</em> that takes a\nsingle-parameter allocation rule $x : (I \\to \\mathbb{R}) \\to (I \\to \\mathbb{R})$\nand returns the mechanism with Myerson payments\n([[mechanism_design.myerson.payment_formula]]) attached.</p>\n<p>If the input allocation rule is monotone, the resulting mechanism is\nDSIC — this is the implementability half of the Myerson characterisation\n([[mechanism_design.myerson.monotonicity_characterization]]).</p>\n<h2>Quasi-linear utility after attachment</h2>\n<p>The companion lemma <code>withMyersonPayment_quasiLinearUtility_eq</code> gives the\nexplicit utility expression after Myerson payments are attached:\n$$\nu_i(b_i; b_{-i}) \\;=\\; v_i \\cdot x_i(b_i, b_{-i})\n                 \\;-\\; \\int_0^{b_i} x_i(z, b_{-i})\\, dz.\n$$</p>\n<p>When $b_i = v_i$ (truthful reporting), this collapses to\n$\\int_0^{v_i} (x_i(v_i, b_{-i}) - x_i(z, b_{-i}))\\, dz \\ge 0$ whenever\n$x_i$ is monotone in its first argument — yielding both DSIC (truthful\nreporting is best) and ex-post IR (utility is non-negative).</p>\n<h2>Where this sits</h2>\n<ul>\n<li><em>Definition layer</em>: this node. <code>withMyersonPayment</code> is the operator\n  itself, and the utility-equality lemma is its definitional\n  unfolding.</li>\n<li><em>Characterisation layer</em>:\n  [[mechanism_design.myerson.monotonicity_characterization]] proves\n  monotone $\\Leftrightarrow$ implementable using this operator.</li>\n<li><em>Formula layer</em>: [[mechanism_design.myerson.payment_formula]] gives\n  the Myerson payment integral itself.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 9, §9.5.4] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>. Single-parameter Myerson payment\n  attachment.</li>\n<li>Myerson, R. B. (1981). \"Optimal Auction Design\".\n  <em>Math. Oper. Res.</em> 6: 58–73.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "withMyersonPayment",
+      "display_name": "SingleParameterMechanism.withMyersonPayment",
+      "qualified_name": "SingleParameterMechanism.withMyersonPayment",
+      "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "kind": "def",
+      "signature": "noncomputable def withMyersonPayment\n    [DecidableEq I]\n    (x : (I → ℝ) → I → ℝ) : SingleParameterMechanism I ℝ where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "withMyersonPayment_quasiLinearUtility_eq",
+      "display_name": "SingleParameterMechanism.withMyersonPayment_quasiLinearUtility_eq",
+      "qualified_name": "SingleParameterMechanism.withMyersonPayment_quasiLinearUtility_eq",
+      "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "kind": "lemma",
+      "signature": "lemma withMyersonPayment_quasiLinearUtility_eq [DecidableEq I]\n    (x : (I → ℝ) → I → ℝ) (v b : I → ℝ) (i : I) :\n    (withMyersonPayment x).quasiLinearUtility b v i =\n      (v i - b i) * x b i + ∫ z in 0..b i, x (Function.update b i z) i",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L61",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "display_name": "EconCSLib.MechanismDesign.Auction.Myerson",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Myerson.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

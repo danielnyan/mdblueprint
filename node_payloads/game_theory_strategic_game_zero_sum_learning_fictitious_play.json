@@ -1,0 +1,59 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+  "title": "Fictitious Play",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Fictitious Play</h1>\n<p>A sequence $(i_n,j_n)_{n\\ge1}$ in $I\\times J$ is a realization of fictitious\nplay for a matrix game $A$ if, at each stage $n+1$, both players best respond to\nthe empirical frequencies of the opponent's past actions.</p>\n<p>Write\n$$\n  x_n=\\frac1n\\sum_{t=1}^n e_{i_t}\\in\\Delta(I),\n  \\qquad\n  y_n=\\frac1n\\sum_{t=1}^n e_{j_t}\\in\\Delta(J).\n$$\nThen fictitious play requires\n$$\n  i_{n+1}\\in BR_1(y_n)\n  =\\{i\\in I: e_iAy_n\\ge e_kAy_n\\ \\text{for all }k\\in I\\},\n$$\nand, dually,\n$$\n  j_{n+1}\\in BR_2(x_n)\n  =\\{j\\in J: x_nAe_j\\le x_nAe_\\ell\\ \\text{for all }\\ell\\in J\\}.\n$$\nThus each player behaves as if the opponent's empirical distribution were the\nopponent's stationary mixed strategy.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 2.7.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Realization of fictitious play for a matrix game.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+      "title": "Empirical Frequency Of Play",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_empirical_frequency.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.IsFictitiousPlay",
+      "display_name": "MatrixGame.IsFictitiousPlay",
+      "qualified_name": "MatrixGame.IsFictitiousPlay",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "kind": "def",
+      "signature": "def IsFictitiousPlay (A : MatrixGame I J ℝ) (iSeq : ℕ → I) (jSeq : ℕ → J) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/FictitiousPlay.lean#L93",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/FictitiousPlay.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

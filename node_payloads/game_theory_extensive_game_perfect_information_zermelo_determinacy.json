@@ -1,0 +1,48 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.zermelo_determinacy",
+  "title": "Zermelo Determinacy For Finite Perfect-Information Games",
+  "kind": "theorem",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zermelo_determinacy.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Zermelo Determinacy For Finite Perfect-Information Games</h1>\n<p>Every simple finite game with perfect information is determined.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The proof is by induction on the length of the tree. Each successor of the origin\ndefines a shorter subgame. By the induction hypothesis, each such subgame is\ndetermined and has value $+1$ or $-1$ according to which player can force a win.\nThe player who moves at the origin chooses a successor with the best value; if that\nvalue is favorable, that player wins, otherwise the opponent's winning strategy in\neach successor subgame wins.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every simple finite game with perfect information is determined.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "zermelo_determinacy",
+      "display_name": "GameTree.zermelo_determinacy",
+      "qualified_name": "GameTree.zermelo_determinacy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem zermelo_determinacy (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (1 : Fin 2) optStrategy σ' →\n        value₀ g ≤ outcome σ' g 0) ∧\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (0 : Fin 2) optStrategy σ' →\n        outcome σ' g 0 ≤ value₀ g)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L319",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

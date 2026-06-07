@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.correlated_equilibrium_convex_compact",
+  "title": "Correlated Equilibrium Set Is Convex And Compact",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_correlated_equilibrium_convex_compact.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Correlated Equilibrium Set Is Convex And Compact</h1>\n<p>In a finite strategic-form game, the set of correlated equilibria is a convex\nand compact subset of the simplex of probability distributions over pure\nstrategy profiles.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The simplex of all distributions over pure profiles is compact and convex. The\nobedience constraints are finitely many weak linear inequalities in the\nprobabilities $\\mu(s)$. Therefore the correlated-equilibrium set is the\nintersection of the simplex with finitely many closed halfspaces, hence is\nclosed, compact, and convex.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Thm. 8.9] Maschler, Solan, and Zamir, <em>Game Theory</em>. The set of correlated equilibria is convex and compact.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

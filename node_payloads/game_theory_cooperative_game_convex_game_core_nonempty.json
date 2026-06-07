@@ -1,0 +1,29 @@
+{
+  "id": "game_theory.cooperative_game.convex_game_core_nonempty",
+  "title": "Convex Games Have Nonempty Core",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game_core_nonempty.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.classes"
+  ],
+  "body_html": "<h1>Convex Games Have Nonempty Core</h1>\n<p><strong>Theorem.</strong> If a finite TU game is convex, then its core is nonempty.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Convexity implies the balancedness inequalities required by\nBondareva-Shapley. Applying\n[[game_theory.cooperative_game.bondareva_shapley]] then gives\nnonemptiness of the core.</p>\n<h2>Lean Status</h2>\n<p>The Lean module defines the relevant core and convex-game predicates. This\ntheorem remains a blueprint target depending on the Bondareva-Shapley route.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Thm 17.55] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

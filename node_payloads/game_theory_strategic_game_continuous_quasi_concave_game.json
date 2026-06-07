@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.quasi_concave_game",
+  "title": "Quasi-Concave Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_quasi_concave_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Quasi-Concave Game</h1>\n<p>Assume each strategy set $S_i$ is a convex subset of a topological vector space. A\nstrategic game is quasi-concave if, for every player $i$ and every fixed\n$s_{-i}$, the function\n$$\n  s_i\\mapsto g_i(s_i,s_{-i})\n$$\nis quasi-concave on $S_i$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 4.7.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Quasi-concavity in each player's own strategy variable.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

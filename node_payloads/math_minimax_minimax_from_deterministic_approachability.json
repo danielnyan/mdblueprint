@@ -1,0 +1,18 @@
+{
+  "id": "math.minimax.minimax_from_deterministic_approachability",
+  "title": "Minimax From Deterministic Approachability",
+  "kind": "proof-plan",
+  "status": "admitted",
+  "href": "math/math_minimax_minimax_from_deterministic_approachability.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Minimax From Deterministic Approachability</h1>",
+  "proof_html": "<p>Let $A$ be a finite matrix game and assume its minmax is $0$:\n$$\n  \\bar v=\\min_{t\\in\\Delta(J)}\\max_{i\\in I} e_iAt=0.\n$$\nConstruct a sequence of rows $x_n$ of $A$ so that its Cesaro averages form a\nBlackwell sequence for the cone\n$$\n  C=\\{x\\in\\mathbb R^J:x\\ge 0\\}.\n$$\nThe deterministic Blackwell sequence theorem then gives a limit mixed strategy\n$s\\in\\Delta(I)$ with\n$$\n  sAt\\ge 0\\quad\\text{for all }t\\in\\Delta(J),\n$$\nso player 1 can guarantee $0$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 4(2)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Derives finite minimax theorem from deterministic approachability.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

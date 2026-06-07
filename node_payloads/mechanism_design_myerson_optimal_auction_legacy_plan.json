@@ -1,0 +1,18 @@
+{
+  "id": "mechanism_design.myerson.optimal_auction_legacy_plan",
+  "title": "Myerson Optimal Auction Legacy Plan",
+  "kind": "proof-plan",
+  "status": "staged",
+  "href": "mechanism_design/mechanism_design_myerson_optimal_auction_legacy_plan.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson"
+  ],
+  "body_html": "<h1>Myerson Optimal Auction Legacy Plan</h1>\n<p>This staged file previously carried the deferred plan for the regular Myerson\noptimal-auction theorem.  The regular single-item version is now represented by\nthe admitted node [[mechanism_design.myerson.optimal_auction]], backed by the\nLean module <code>EconCSLib.MechanismDesign.Auction.OptimalSingleItem</code>.</p>\n<h2>Current status</h2>\n<p>The regular case is no longer a blueprint gap.  Remaining future work belongs\nto more specific follow-up nodes, especially the non-regular ironing theorem\nand the full symmetric reserve-price equivalence.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 12, Section 12.10] Maschler, Solan, and Zamir, <em>Game Theory</em>.</li>\n<li>[Myerson 1981] Roger Myerson, \"Optimal Auction Design\", <em>Mathematics of\n  Operations Research</em> 6(1):58-73.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

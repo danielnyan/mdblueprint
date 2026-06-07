@@ -1,0 +1,93 @@
+{
+  "id": "game_theory.cooperative_game.tu_game",
+  "title": "Transferable-Utility Coalitional Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.core"
+  ],
+  "body_html": "<h1>Transferable-Utility Coalitional Game</h1>\n<p>A <strong>transferable-utility coalitional game</strong> consists of a finite player set\n$N$ and a characteristic function\n$$\n  v : 2^N \\to \\mathbb{R}\n$$\nwith $v(\\varnothing)=0$. For each coalition $S \\subseteq N$, the number\n$v(S)$ is the total payoff that members of $S$ can secure by coordinating\namong themselves.</p>\n<p>For a payoff vector $x : N \\to \\mathbb{R}$, the payoff assigned to a\ncoalition is\n$$\n  x(S) = \\sum_{i \\in S} x_i.\n$$\nThis derived coalition payoff is the quantity compared with $v(S)$ in\nimputation, core, and balancedness conditions.</p>\n<h2>Lean Status</h2>\n<p>The Lean structure <code>CoalitionalGame N U</code> is intentionally parameterized by\nthe utility type <code>U</code>; real-valued assumptions are introduced only for\ntheorems such as Bondareva-Shapley and Shapley-value results. The declaration\n<code>CoalitionalGame.coalitionPayoff</code> supplies the finite sum\n$\\sum_{i \\in S} x_i$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.16, Def 16.1] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.cooperative_game.payoff_vector",
+      "title": "Payoff Vector",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_payoff_vector.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.cooperative_game.balanced_game",
+      "title": "Balanced Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_game.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.convex_game",
+      "title": "Convex Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_convex_game.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.imputation",
+      "title": "Imputation",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.shapley_axioms",
+      "title": "Shapley Axioms",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_axioms.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame",
+      "display_name": "CoalitionalGame",
+      "qualified_name": "CoalitionalGame",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "structure",
+      "signature": "structure CoalitionalGame (N : Type*) (U : Type*) [DecidableEq N] [AddZeroClass U] where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L48",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CoalitionalGame.coalitionPayoff",
+      "display_name": "CoalitionalGame.coalitionPayoff",
+      "qualified_name": "CoalitionalGame.coalitionPayoff",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "kind": "def",
+      "signature": "def coalitionPayoff [AddCommMonoid U] (x : PayoffVector N U) (S : Finset N) : U",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L68",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

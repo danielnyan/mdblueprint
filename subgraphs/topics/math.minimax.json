@@ -1,0 +1,550 @@
+{
+  "topic": {
+    "id": "math.minimax",
+    "title": "Math.Minimax",
+    "href": "math/minimax/index.html",
+    "parent": "math",
+    "node_count": 21,
+    "descendant_node_count": 21
+  },
+  "counts": {
+    "internal_nodes": 21,
+    "inlined_nodes": 0,
+    "descendant_nodes": 21,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 14,
+    "proof_plan_nodes": 7,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 4,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 19,
+    "visible_nodes_with_selected_proof_plans": 19
+  },
+  "nodes": [
+    {
+      "id": "math.minimax.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Games Have Value",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_minimax_antisymmetric_matrix_game_value.html",
+      "payload": "node_payloads/math_minimax_antisymmetric_matrix_game_value.json"
+    },
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_common_guarantee_value.html",
+      "payload": "node_payloads/math_minimax_common_guarantee_value.json"
+    },
+    {
+      "id": "math.minimax.kakutani_minimax_proof",
+      "title": "Kakutani Fixed-Point Proof of the Minimax Theorem",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_minimax_kakutani_minimax_proof.html",
+      "payload": "node_payloads/math_minimax_kakutani_minimax_proof.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof",
+      "title": "Direct Induction Proof Of Loomis Theorem",
+      "kind": "proof-plan",
+      "status": "formalized",
+      "href": "math/math_minimax_loomis_induction_proof.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.base_case",
+      "title": "Base Case of Loomis Induction",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_base_case.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_base_case.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_column_drop.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "title": "Positive Aggregates xB and By",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_positive_aggregate.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_positive_aggregate.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_row_drop.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_value_existence.json"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.weak_duality",
+      "title": "Weak Duality For Loomis Values",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_induction_proof_weak_duality.html",
+      "payload": "node_payloads/math_minimax_loomis_induction_proof_weak_duality.json"
+    },
+    {
+      "id": "math.minimax.loomis_theorem",
+      "title": "Loomis Theorem (Positive B)",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_minimax_loomis_theorem.html",
+      "payload": "node_payloads/math_minimax_loomis_theorem.json"
+    },
+    {
+      "id": "math.minimax.lp_duality_minimax_proof",
+      "title": "LP Duality Proof Of Minimax",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_minimax_lp_duality_minimax_proof.html",
+      "payload": "node_payloads/math_minimax_lp_duality_minimax_proof.json"
+    },
+    {
+      "id": "math.minimax.minimax_from_antisymmetric_games",
+      "title": "Minimax From Antisymmetric Games",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_minimax_minimax_from_antisymmetric_games.html",
+      "payload": "node_payloads/math_minimax_minimax_from_antisymmetric_games.json"
+    },
+    {
+      "id": "math.minimax.minimax_from_deterministic_approachability",
+      "title": "Minimax From Deterministic Approachability",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_minimax_minimax_from_deterministic_approachability.html",
+      "payload": "node_payloads/math_minimax_minimax_from_deterministic_approachability.json"
+    },
+    {
+      "id": "math.minimax.minimax_from_loomis",
+      "title": "Minimax via the All-Ones Specialization of Loomis",
+      "kind": "proof-plan",
+      "status": "formalized",
+      "href": "math/math_minimax_minimax_from_loomis.html",
+      "payload": "node_payloads/math_minimax_minimax_from_loomis.json"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "kind": "theorem",
+      "status": "formalized",
+      "href": "math/math_minimax_ordered_field_minimax.html",
+      "payload": "node_payloads/math_minimax_ordered_field_minimax.json"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "kind": "proposition",
+      "status": "proved",
+      "href": "math/math_minimax_strong_complementarity.html",
+      "payload": "node_payloads/math_minimax_strong_complementarity.json"
+    },
+    {
+      "id": "math.minimax.value_predicates",
+      "title": "Field-Generic Value Predicates",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "math/math_minimax_value_predicates.html",
+      "payload": "node_payloads/math_minimax_value_predicates.json"
+    },
+    {
+      "id": "math.minimax.ville_discretization_proof",
+      "title": "Ville Theorem By Discretization",
+      "kind": "proof-plan",
+      "status": "admitted",
+      "href": "math/math_minimax_ville_discretization_proof.html",
+      "payload": "node_payloads/math_minimax_ville_discretization_proof.json"
+    },
+    {
+      "id": "math.minimax.ville_theorem",
+      "title": "Ville Theorem",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "math/math_minimax_ville_theorem.html",
+      "payload": "node_payloads/math_minimax_ville_theorem.json"
+    },
+    {
+      "id": "math.minimax.zero_sum_nash_saddle",
+      "title": "Zero-Sum Nash Equilibria As Saddle Points",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "math/math_minimax_zero_sum_nash_saddle.html",
+      "payload": "node_payloads/math_minimax_zero_sum_nash_saddle.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "math.minimax.loomis_induction_proof.column_drop",
+      "to": "math.minimax.loomis_induction_proof",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.minimax.minimax_from_loomis",
+      "to": "math.minimax.loomis_induction_proof.base_case",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.base_case",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.weak_duality",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof",
+      "to": "math.minimax.minimax_from_loomis",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.minimax.loomis_theorem",
+      "to": "math.minimax.minimax_from_loomis",
+      "kind": "proof_plan_uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "foundation.utility",
+      "title": "Foundation.Utility",
+      "href": "foundation/utility/index.html",
+      "role": "dependent",
+      "node_count": 7
+    },
+    {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "href": "game_theory/zero_sum/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 75
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    },
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependent",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.antisymmetric_matrix_game_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.ordered_field_minimax",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.value_predicates",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.common_guarantee_value",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 4
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.ordered_field_minimax",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.strong_complementarity",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "math.minimax.minimax_from_loomis",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_proof_plan_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "antisymmetric",
+      "title": "antisymmetric",
+      "href": "keywords/antisymmetric.html",
+      "count": 2
+    },
+    {
+      "id": "approachability",
+      "title": "approachability",
+      "href": "keywords/approachability.html",
+      "count": 1
+    },
+    {
+      "id": "base-case",
+      "title": "base-case",
+      "href": "keywords/base-case.html",
+      "count": 1
+    },
+    {
+      "id": "compactness",
+      "title": "compactness",
+      "href": "keywords/compactness.html",
+      "count": 1
+    },
+    {
+      "id": "complementarity",
+      "title": "complementarity",
+      "href": "keywords/complementarity.html",
+      "count": 1
+    },
+    {
+      "id": "continuous-game",
+      "title": "continuous-game",
+      "href": "keywords/continuous-game.html",
+      "count": 2
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "field-generic",
+      "title": "field-generic",
+      "href": "keywords/field-generic.html",
+      "count": 1
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "induction",
+      "title": "induction",
+      "href": "keywords/induction.html",
+      "count": 2
+    },
+    {
+      "id": "kakutani",
+      "title": "kakutani",
+      "href": "keywords/kakutani.html",
+      "count": 1
+    },
+    {
+      "id": "linear-programming",
+      "title": "linear-programming",
+      "href": "keywords/linear-programming.html",
+      "count": 2
+    },
+    {
+      "id": "loomis",
+      "title": "loomis",
+      "href": "keywords/loomis.html",
+      "count": 9
+    },
+    {
+      "id": "matrix-game",
+      "title": "matrix-game",
+      "href": "keywords/matrix-game.html",
+      "count": 1
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 8
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "optimal-strategy",
+      "title": "optimal-strategy",
+      "href": "keywords/optimal-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "ordered-field",
+      "title": "ordered-field",
+      "href": "keywords/ordered-field.html",
+      "count": 1
+    },
+    {
+      "id": "positivity",
+      "title": "positivity",
+      "href": "keywords/positivity.html",
+      "count": 1
+    },
+    {
+      "id": "predicate",
+      "title": "predicate",
+      "href": "keywords/predicate.html",
+      "count": 1
+    },
+    {
+      "id": "proof-plan",
+      "title": "proof-plan",
+      "href": "keywords/proof-plan.html",
+      "count": 7
+    },
+    {
+      "id": "saddle-point",
+      "title": "saddle-point",
+      "href": "keywords/saddle-point.html",
+      "count": 1
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 1
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 2
+    },
+    {
+      "id": "ville",
+      "title": "ville",
+      "href": "keywords/ville.html",
+      "count": 1
+    },
+    {
+      "id": "weak-duality",
+      "title": "weak-duality",
+      "href": "keywords/weak-duality.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 21
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

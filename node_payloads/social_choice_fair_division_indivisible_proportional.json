@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.proportional",
+  "title": "Indivisible Proportional",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_proportional.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Proportional</h1>\n<p>For a valuation $v$ ([[social_choice.fair_division.indivisible.valuation]])\nand an allocation $A$ over an outer good set <code>allGoods : Finset G</code>,\n$A$ is <em>proportional</em> (PROP) if every agent's bundle is worth at least\na $1/n$ fraction of the total value:\n$$\n\\forall i \\in N,\\ v_i(\\mathrm{allGoods}) \\le n \\cdot v_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsProportional</code> — an\n<code>abbrev</code> for the generic [[social_choice.fair_division.proportional]]\nspecialised at <code>v.val</code> and the whole-set <code>allGoods</code>.</p>\n<h2>Existence</h2>\n<p>PROP allocations <strong>need not exist</strong> for indivisible goods. The same\ncounterexample that defeats EF\n([[social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good]])\nalso defeats PROP: with 2 agents and 1 unit-value good, the agent who\ngets nothing receives value $0 &lt; 1/2$.</p>\n<p>For additive valuations on complete allocations, however, EF (when it\nholds) implies PROP\n([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]]).</p>\n<h2>Implications</h2>\n<p>In the indivisible-additive setting:\n- <strong>EF ⇒ PROP</strong>\n  ([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]]):\n  envy-freeness combined with additivity forces every agent to receive\n  at least $1/n$ of the total value.\n- <strong>PROP ⇒ MMS</strong>\n  ([[social_choice.fair_division.indivisible.proportional_implies_mms_additive]]):\n  the proportional bound implies the maximin-share guarantee.\n- <strong>EF1 does <em>not</em> imply PROP</strong> in general.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Indivisible proportionality.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsProportional",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsProportional",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsProportional",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "abbrev",
+      "signature": "abbrev IsProportional (n : ℕ)\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L97",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

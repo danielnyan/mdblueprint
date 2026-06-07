@@ -1,0 +1,616 @@
+{
+  "topic": {
+    "id": "mechanism_design.auction",
+    "title": "Mechanism Design.Auction",
+    "href": "mechanism_design/auction/index.html",
+    "parent": "mechanism_design",
+    "node_count": 24,
+    "descendant_node_count": 24
+  },
+  "counts": {
+    "internal_nodes": 24,
+    "inlined_nodes": 24,
+    "descendant_nodes": 24,
+    "child_topics": 0,
+    "inlined_child_topics": 3,
+    "non_proof_plan_nodes": 24,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 27,
+    "visible_nodes_with_selected_proof_plans": 27
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.auction.basic.bid_profile_supports",
+      "title": "Bid-Profile Supports",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_bid_profile_supports.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_bid_profile_supports.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_first_price_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_no_dsic",
+      "title": "First-Price Fails DSIC",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_no_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_first_price_no_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_formats.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_ordered_bid_utilities.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_reserve_second_price_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_reserve_second_price_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_second_price_dsic.json"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_basic_second_price_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.all_pay_equilibrium",
+      "title": "All-Pay Auction Symmetric Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_all_pay_equilibrium.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_all_pay_equilibrium.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.dutch_first_price_equivalence",
+      "title": "Dutch ≡ First-Price Strategic Equivalence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_dutch_first_price_equivalence.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_dutch_first_price_equivalence.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.english_second_price_equivalence",
+      "title": "English ≡ Second-Price IPV Equivalence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_english_second_price_equivalence.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_english_second_price_equivalence.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.entry_fee_and_reserve_price",
+      "title": "Entry Fees And Reserve Prices In IPV Auctions",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_entry_fee_and_reserve_price.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_entry_fee_and_reserve_price.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.interim_and_ic",
+      "title": "Bayesian Single-Item Auction Interim Quantities And IC",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_interim_and_ic.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_interim_and_ic.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.risk_aversion_comparison",
+      "title": "Auction Comparisons Under Risk Aversion",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_risk_aversion_comparison.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_risk_aversion_comparison.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_single_item_framework.json"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.symmetric_first_price_equilibrium",
+      "title": "Symmetric IPV First-Price Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_symmetric_first_price_equilibrium.html",
+      "payload": "node_payloads/mechanism_design_auction_bayesian_symmetric_first_price_equilibrium.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.binary_allocations",
+      "title": "Binary Knapsack Allocations",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_binary_allocations.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_binary_allocations.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_environment.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.relaxations_dynamic_programming",
+      "title": "Knapsack Relaxations And Dynamic Programming",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_relaxations_dynamic_programming.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_relaxations_dynamic_programming.json"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.welfare_maximizing_mechanism",
+      "title": "Welfare-Maximizing Knapsack Mechanism",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_welfare_maximizing_mechanism.html",
+      "payload": "node_payloads/mechanism_design_auction_knapsack_welfare_maximizing_mechanism.json"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html",
+      "payload": "node_payloads/mechanism_design_myerson_optimal_auction.json"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "title": "Virtual-Surplus-Maximizing Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html",
+      "payload": "node_payloads/mechanism_design_myerson_virtual_surplus_maximizing_allocation.json"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_value_regularity",
+      "title": "Virtual Values and Regularity",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_value_regularity.html",
+      "payload": "node_payloads/mechanism_design_myerson_virtual_value_regularity.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mechanism_design.auction.basic.second_price_dsic",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.auction.bayesian.interim_and_ic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.interim_and_ic",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_value_regularity",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.myerson.virtual_value_regularity",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:math",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.formats",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "all-pay",
+      "title": "all-pay",
+      "href": "keywords/all-pay.html",
+      "count": 1
+    },
+    {
+      "id": "allocation-rule",
+      "title": "allocation-rule",
+      "href": "keywords/allocation-rule.html",
+      "count": 1
+    },
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 1
+    },
+    {
+      "id": "argmax",
+      "title": "argmax",
+      "href": "keywords/argmax.html",
+      "count": 1
+    },
+    {
+      "id": "auction",
+      "title": "auction",
+      "href": "keywords/auction.html",
+      "count": 21
+    },
+    {
+      "id": "bayes-nash",
+      "title": "bayes-nash",
+      "href": "keywords/bayes-nash.html",
+      "count": 2
+    },
+    {
+      "id": "bayesian",
+      "title": "bayesian",
+      "href": "keywords/bayesian.html",
+      "count": 3
+    },
+    {
+      "id": "bid-profile",
+      "title": "bid-profile",
+      "href": "keywords/bid-profile.html",
+      "count": 1
+    },
+    {
+      "id": "bids",
+      "title": "bids",
+      "href": "keywords/bids.html",
+      "count": 1
+    },
+    {
+      "id": "binary-allocation",
+      "title": "binary-allocation",
+      "href": "keywords/binary-allocation.html",
+      "count": 1
+    },
+    {
+      "id": "bnic",
+      "title": "bnic",
+      "href": "keywords/bnic.html",
+      "count": 1
+    },
+    {
+      "id": "cara",
+      "title": "cara",
+      "href": "keywords/cara.html",
+      "count": 1
+    },
+    {
+      "id": "cdf",
+      "title": "cdf",
+      "href": "keywords/cdf.html",
+      "count": 1
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 1
+    },
+    {
+      "id": "dsic",
+      "title": "dsic",
+      "href": "keywords/dsic.html",
+      "count": 4
+    },
+    {
+      "id": "dutch-auction",
+      "title": "dutch-auction",
+      "href": "keywords/dutch-auction.html",
+      "count": 1
+    },
+    {
+      "id": "dynamic-programming",
+      "title": "dynamic-programming",
+      "href": "keywords/dynamic-programming.html",
+      "count": 1
+    },
+    {
+      "id": "english-auction",
+      "title": "english-auction",
+      "href": "keywords/english-auction.html",
+      "count": 1
+    },
+    {
+      "id": "entry-fee",
+      "title": "entry-fee",
+      "href": "keywords/entry-fee.html",
+      "count": 1
+    },
+    {
+      "id": "first-price",
+      "title": "first-price",
+      "href": "keywords/first-price.html",
+      "count": 4
+    },
+    {
+      "id": "incentive-compatibility",
+      "title": "incentive-compatibility",
+      "href": "keywords/incentive-compatibility.html",
+      "count": 1
+    },
+    {
+      "id": "interim",
+      "title": "interim",
+      "href": "keywords/interim.html",
+      "count": 1
+    },
+    {
+      "id": "ipv",
+      "title": "ipv",
+      "href": "keywords/ipv.html",
+      "count": 6
+    },
+    {
+      "id": "japanese-auction",
+      "title": "japanese-auction",
+      "href": "keywords/japanese-auction.html",
+      "count": 1
+    },
+    {
+      "id": "knapsack",
+      "title": "knapsack",
+      "href": "keywords/knapsack.html",
+      "count": 4
+    },
+    {
+      "id": "mechanism",
+      "title": "mechanism",
+      "href": "keywords/mechanism.html",
+      "count": 3
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 4
+    },
+    {
+      "id": "myerson",
+      "title": "myerson",
+      "href": "keywords/myerson.html",
+      "count": 4
+    },
+    {
+      "id": "optimal-auction",
+      "title": "optimal-auction",
+      "href": "keywords/optimal-auction.html",
+      "count": 1
+    },
+    {
+      "id": "regularity",
+      "title": "regularity",
+      "href": "keywords/regularity.html",
+      "count": 1
+    },
+    {
+      "id": "reserve-price",
+      "title": "reserve-price",
+      "href": "keywords/reserve-price.html",
+      "count": 4
+    },
+    {
+      "id": "revenue-comparison",
+      "title": "revenue-comparison",
+      "href": "keywords/revenue-comparison.html",
+      "count": 1
+    },
+    {
+      "id": "revenue-equivalence",
+      "title": "revenue-equivalence",
+      "href": "keywords/revenue-equivalence.html",
+      "count": 1
+    },
+    {
+      "id": "revenue-improvement",
+      "title": "revenue-improvement",
+      "href": "keywords/revenue-improvement.html",
+      "count": 1
+    },
+    {
+      "id": "risk-aversion",
+      "title": "risk-aversion",
+      "href": "keywords/risk-aversion.html",
+      "count": 1
+    },
+    {
+      "id": "second-price",
+      "title": "second-price",
+      "href": "keywords/second-price.html",
+      "count": 3
+    },
+    {
+      "id": "single-item",
+      "title": "single-item",
+      "href": "keywords/single-item.html",
+      "count": 3
+    },
+    {
+      "id": "single-parameter",
+      "title": "single-parameter",
+      "href": "keywords/single-parameter.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-equivalence",
+      "title": "strategic-equivalence",
+      "href": "keywords/strategic-equivalence.html",
+      "count": 2
+    },
+    {
+      "id": "support",
+      "title": "support",
+      "href": "keywords/support.html",
+      "count": 1
+    },
+    {
+      "id": "symmetric-equilibrium",
+      "title": "symmetric-equilibrium",
+      "href": "keywords/symmetric-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "transfers",
+      "title": "transfers",
+      "href": "keywords/transfers.html",
+      "count": 1
+    },
+    {
+      "id": "vickrey",
+      "title": "vickrey",
+      "href": "keywords/vickrey.html",
+      "count": 4
+    },
+    {
+      "id": "virtual-surplus",
+      "title": "virtual-surplus",
+      "href": "keywords/virtual-surplus.html",
+      "count": 1
+    },
+    {
+      "id": "virtual-valuation",
+      "title": "virtual-valuation",
+      "href": "keywords/virtual-valuation.html",
+      "count": 2
+    },
+    {
+      "id": "weakly-dominant",
+      "title": "weakly-dominant",
+      "href": "keywords/weakly-dominant.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "mechanism_design.auction.basic",
+    "mechanism_design.auction.bayesian",
+    "mechanism_design.auction.knapsack"
+  ]
+}

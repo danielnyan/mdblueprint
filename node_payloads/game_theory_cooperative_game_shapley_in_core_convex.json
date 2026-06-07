@@ -1,0 +1,29 @@
+{
+  "id": "game_theory.cooperative_game.shapley_in_core_convex",
+  "title": "Shapley Value Lies In The Core Of A Convex Game",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_in_core_convex.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.shapley_value"
+  ],
+  "body_html": "<h1>Shapley Value Lies In The Core Of A Convex Game</h1>\n<p><strong>Theorem.</strong> If a TU game is convex, then its Shapley value belongs to the\ncore.</p>\n<p>Convexity means marginal contributions are increasing with coalition size.\nThis increasing-marginal-returns property makes the Shapley average satisfy\nevery coalitional rationality inequality:\n$$\n  \\sum_{i \\in S}\\operatorname{Sh}_i(v) \\ge v(S)\n  \\quad\\text{for every } S \\subseteq N.\n$$\nTogether with Shapley efficiency, this places the Shapley payoff vector in\nthe core.</p>\n<h2>Lean Status</h2>\n<p>The Lean module defines the Shapley value and core predicates. This theorem\nremains a blueprint target.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.18, Thm 18.32] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.mixed_extension",
+  "title": "Mixed Extension Of A Matrix Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_extension.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Mixed Extension Of A Matrix Game</h1>\n<p>For a finite matrix game $A : I \\times J \\to \\mathbb{R}$, the mixed extension\nhas strategy spaces $\\Delta(I)$ and $\\Delta(J)$.  Its payoff is the bilinear\nextension\n$$\n  g(x,y)=\\sum_{i \\in I}\\sum_{j \\in J} x_i y_j A_{ij}.\n$$\nPure strategies are identified with Dirac measures in the corresponding\nsimplex.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed extension and multilinear payoff.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedPayoffMatrix",
+      "display_name": "expectedPayoffMatrix",
+      "qualified_name": "expectedPayoffMatrix",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "def",
+      "signature": "def expectedPayoffMatrix (A : I → J → 𝕜) [Fintype J]\n    (x : stdSimplex 𝕜 I) (y : stdSimplex 𝕜 J) : 𝕜",
+      "docstring": "Expected payoff in a matrix game `A : I → J → 𝕜` under mixed strategies.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L392",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Simplex",
+      "display_name": "EconCSLib.Math.Simplex",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

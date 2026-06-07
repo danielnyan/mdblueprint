@@ -1,0 +1,72 @@
+{
+  "id": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+  "title": "Degenerate Correlated Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_degenerate_correlated_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Degenerate Correlated Equilibrium</h1>\n<p>A degenerate correlated equilibrium is a correlated device that puts probability\none on a single pure strategy profile.</p>\n<p>For such a point-mass device, obedience is exactly the Nash condition for that\npure profile: no player can improve by deviating from the recommended action,\nbecause the recommendation fully determines the profile.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>If the point-mass profile is Nash, every recommended action is already a best\nresponse to the other components, so obedience holds. Conversely, obedience of\nthe point-mass device tests exactly the unilateral deviations from that profile,\nwhich is the Nash condition.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Def. 8.6 and Thm. 8.7] Maschler, Solan, and Zamir, <em>Game Theory</em>. Point-mass correlated equilibria correspond to pure Nash equilibria.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsDegenerateCorrelatedEq",
+      "display_name": "StrategicGame.IsDegenerateCorrelatedEq",
+      "qualified_name": "StrategicGame.IsDegenerateCorrelatedEq",
+      "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+      "kind": "def",
+      "signature": "def IsDegenerateCorrelatedEq (G : StrategicGame N U) (σ : G.Profile) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/CorrelatedEq.lean#L41",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.nash_iff_degenerate_ce",
+      "display_name": "StrategicGame.nash_iff_degenerate_ce",
+      "qualified_name": "StrategicGame.nash_iff_degenerate_ce",
+      "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+      "kind": "theorem",
+      "signature": "theorem nash_iff_degenerate_ce (G : StrategicGame N U) (σ : G.Profile) :\n    IsNashEquilibrium G σ ↔ IsDegenerateCorrelatedEq G σ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/CorrelatedEq.lean#L46",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/CorrelatedEq.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

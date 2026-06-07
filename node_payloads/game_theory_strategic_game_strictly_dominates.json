@@ -1,0 +1,95 @@
+{
+  "id": "game_theory.strategic_game.strictly_dominates",
+  "title": "Strict Dominance",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dominance"
+  ],
+  "body_html": "<h1>Strict Dominance</h1>\n<p>A strategy $s_i$ strictly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields strictly higher\npayoff:</p>\n<p>$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) &lt; u_i(\\sigma[i \\mapsto s_i]).$$</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Section 2.3] Maschler, Solan, and Zamir, <em>Game Theory</em>. Definition of strict dominance.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strictly_dominant_strategy",
+      "title": "Strictly Dominant Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominant_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrictlyDominates",
+      "display_name": "StrictlyDominates",
+      "qualified_name": "StrictlyDominates",
+      "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "kind": "def",
+      "signature": "def StrictlyDominates (G : StrategicGame N U) (i : N) (s s' : G.strategy i) : Prop",
+      "docstring": "Strategy `s` strictly dominates strategy `s'` for player `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L33",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrictlyDominates.weakly",
+      "display_name": "StrictlyDominates.weakly",
+      "qualified_name": "StrictlyDominates.weakly",
+      "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "kind": "theorem",
+      "signature": "theorem StrictlyDominates.weakly {G : StrategicGame N U} {i : N} {s s' : G.strategy i}\n    (h : StrictlyDominates G i s s') : WeaklyDominates G i s s'",
+      "docstring": "Strict dominance implies weak dominance.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L45",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsStrictlyDominant.isWeaklyDominant",
+      "display_name": "IsStrictlyDominant.isWeaklyDominant",
+      "qualified_name": "IsStrictlyDominant.isWeaklyDominant",
+      "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "kind": "theorem",
+      "signature": "theorem IsStrictlyDominant.isWeaklyDominant {G : StrategicGame N U} {i : N} {s : G.strategy i}\n    [DecidableEq (G.strategy i)]\n    (h : IsStrictlyDominant G i s) : IsWeaklyDominant G i s",
+      "docstring": "A strictly dominant strategy is weakly dominant.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L50",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.Dominance",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Dominance.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

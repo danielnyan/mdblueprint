@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy",
+  "title": "Calibrated Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Calibrated Strategy</h1>\n<p>A calibrated strategy is a forecasting or learning procedure whose announced\nprobabilities are asymptotically consistent with the empirical frequencies that\nfollow those announcements.</p>\n<p>In a finite prediction problem, if the procedure repeatedly announces forecasts\nin a finite grid of probability vectors, calibration requires that for each\nforecast $p$ used infinitely often, the empirical distribution of outcomes on\nthe dates where $p$ was announced converges to $p$.</p>\n<p>Calibration is stronger than merely having small average prediction error: it\nrequires conditional accuracy on the subsequences selected by the forecasts\nthemselves.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Calibrated strategies in the learning framework.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

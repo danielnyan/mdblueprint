@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.normal_form.sequential_equilibrium_exists",
+  "title": "Existence Of Sequential Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_sequential_equilibrium_exists.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.normal_form"
+  ],
+  "body_html": "<h1>Existence Of Sequential Equilibrium</h1>\n<p>Every finite extensive form game with perfect recall has at least one sequential\nequilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>MFoGT defers the proof to the following normal-form refinement section. The\nstrategy is to use fully mixed perturbations and compactness: perturbed games have\nequilibria, limits of perturbed behavioral profiles give sequentially rational\nstrategies, and the limiting beliefs are obtained as limits of Bayes-rule beliefs\nfrom the fully mixed profiles.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.4.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. The set of sequential equilibria of a finite perfect-recall extensive game is nonempty.</li>\n<li>[MFoGT, Thm. 6.6.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence proof via Selten perturbations of the agent normal form.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

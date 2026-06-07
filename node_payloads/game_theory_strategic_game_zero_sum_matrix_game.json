@@ -1,0 +1,84 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.matrix_game",
+  "title": "Matrix Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Matrix Game</h1>\n<p>A finite two-player zero-sum matrix game is specified by finite row and column\nsets $I,J$ and a payoff matrix valued in a scalar field $\\mathbb{K}$</p>\n<p>$$A : I \\times J \\to \\mathbb{K}.$$</p>\n<p>Player I chooses a row, player II chooses a column, player I receives\n$A(i,j)$, and player II receives $-A(i,j)$. The default scalar in\nthe Lean structure is $\\mathbb{Q}$ (no order completeness assumed); the\ncanonical instantiations are $\\mathbb{Q}$ (where the value still lies in\nthe field by LP but the <code>sSup</code>-based <code>maximin/minimax</code>\ndefinitions are unavailable) and $\\mathbb{R}$ (where order completeness\ngives the full Loomis / minimax theorem).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Def. 2.2.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Finite two-player zero-sum games in matrix form.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "title": "Player Guarantee",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_player_guarantee.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+      "title": "Cesàro Payoff Convergence From Robinson Lemma",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "title": "Fictitious Play",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma",
+      "title": "Robinson Admissible Sequence Lemma",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.value_predicates",
+      "title": "Field-Generic Value Predicates",
+      "href": "math/math_minimax_value_predicates.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame",
+      "display_name": "MatrixGame",
+      "qualified_name": "MatrixGame",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "structure",
+      "signature": "structure MatrixGame (I J : Type*) (𝕜 : Type",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L58",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

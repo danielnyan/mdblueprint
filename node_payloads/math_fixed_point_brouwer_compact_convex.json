@@ -1,0 +1,17 @@
+{
+  "id": "math.fixed_point.brouwer_compact_convex",
+  "title": "Brouwer Fixed Point Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "math/fixed_point/math_fixed_point_brouwer_compact_convex.html",
+  "primary_topic": "math.fixed_point",
+  "topics": [
+    "math.fixed_point"
+  ],
+  "body_html": "<h1>Brouwer Fixed Point Theorem</h1>\n<p>Let $C$ be a nonempty convex compact subset of a finite-dimensional Euclidean\nspace. Every continuous function\n$$\n  f:C\\to C\n$$\nhas a fixed point.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 4.11.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Brouwer fixed point theorem for compact convex subsets of finite-dimensional Euclidean space.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

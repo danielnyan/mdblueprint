@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.manifold.equilibrium_manifold",
+  "title": "Equilibrium Manifold",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_equilibrium_manifold.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Equilibrium Manifold</h1>\n<p>Fix finite player and action sets. The space of games is the Euclidean space of\npayoff tensors. The equilibrium manifold is the graph of the mixed Nash\nequilibrium correspondence:\n$$\n  E=\\{(g,\\sigma):\\sigma\\text{ is a Nash equilibrium of }g\\}.\n$$</p>\n<p>MFoGT studies the projection from this graph to the payoff space in order to\nunderstand robustness, index, and generic structure of equilibrium components.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Section 5.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Graph of the Nash equilibrium correspondence as payoffs vary.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

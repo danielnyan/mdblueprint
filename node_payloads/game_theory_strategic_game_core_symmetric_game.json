@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.core.symmetric_game",
+  "title": "Symmetric Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_core_symmetric_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Symmetric Game</h1>\n<p>A strategic game has a symmetry $\\phi$ if $\\phi$ is a permutation of the player\nset, induces bijections $S_i\\to S_{\\phi(i)}$, and preserves payoffs:\n$$\n  g_{\\phi(i)}(\\phi(s))=g_i(s)\n  \\quad\\text{for all } i\\in I,\\ s\\in S.\n$$\nThe same permutation acts on mixed profiles by transporting probability mass along\nthe induced bijections of strategy sets.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 4.6.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Definition of a game symmetry used before the symmetric equilibrium theorem.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

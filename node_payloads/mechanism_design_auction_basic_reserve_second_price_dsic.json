@@ -1,0 +1,133 @@
+{
+  "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+  "title": "Reserve Second-Price Truth-Telling Is Dominant",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.auction",
+    "mechanism_design.auction.basic"
+  ],
+  "body_html": "<h1>Reserve Second-Price Truth-Telling Is Dominant</h1>\n<p>For every reserve price, truthful bidding is a weakly dominant strategy in the\nreserve second-price auction\n([[mechanism_design.auction.basic.reserve_second_price_mechanism]]).</p>\n<p>Formally, for valuation profile \\(v : I \\to U\\), bidder \\(i\\), and bid profile\n\\(b\\), replacing bidder \\(i\\)'s bid by \\(v_i\\) weakly increases bidder \\(i\\)'s\nutility:\n\\[\nu_i(v,b) \\le u_i(v,b[i \\mapsto v_i]).\n\\]</p>\n<h2>Lean form</h2>\n<ul>\n<li><code>utility_nonneg</code> proves that truthful bidding gives nonnegative payoff.</li>\n<li><code>valuation_is_dominant</code> proves the direct utility inequality.</li>\n<li><code>truthful_weakly_dominant</code> packages the same result as <code>IsWeaklyDominant</code> in\n  the induced strategic game.</li>\n<li><code>mechanism_isDSIC</code> lifts the theorem to the\n  <code>MechanismWithTransfers.isDSIC</code> predicate.</li>\n</ul>",
+  "proof_html": "<p>idea</p>\n<p>The proof is the Vickrey dominance argument with one extra threshold.  Bidder\n<code>i</code>'s own bid does not change the highest bid among opponents, so the critical\nprice faced by <code>i</code> is the maximum of the reserve and the highest opposing bid.\nTruthful bidding wins exactly when \\(v_i\\) clears that threshold; in the winning\ncase the payoff is nonnegative, and in the losing case the payoff is zero.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.3] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.</li>\n<li>[Krishna, Chapter 2] Vijay Krishna, <em>Auction Theory</em>, 2nd ed..</li>\n<li>[Vickrey 1961] William Vickrey, \"Counterspeculation, Auctions, and\n  Competitive Sealed Tenders\", <em>Journal of Finance</em> 16(1):8-37.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Auction.ReserveSecondPrice.utility_nonneg",
+      "display_name": "Auction.ReserveSecondPrice.utility_nonneg",
+      "qualified_name": "Auction.ReserveSecondPrice.utility_nonneg",
+      "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "kind": "lemma",
+      "signature": "lemma utility_nonneg {b : I → U} {i : I} (htruth : b i = v i) :\n    0 ≤ utility reserve v b i",
+      "docstring": "Truthful bidding yields nonnegative utility.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L227",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Auction.ReserveSecondPrice.valuation_is_dominant",
+      "display_name": "Auction.ReserveSecondPrice.valuation_is_dominant",
+      "qualified_name": "Auction.ReserveSecondPrice.valuation_is_dominant",
+      "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "kind": "theorem",
+      "signature": "theorem valuation_is_dominant (reserve : U) (v : I → U) (i : I) (b : I → U) :\n    utility reserve v b i ≤ utility reserve v (Function.update b i (v i)) i",
+      "docstring": "Truthful bidding dominates any other bid in the reserve second-price auction.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L235",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Auction.ReserveSecondPrice.truthful_weakly_dominant",
+      "display_name": "Auction.ReserveSecondPrice.truthful_weakly_dominant",
+      "qualified_name": "Auction.ReserveSecondPrice.truthful_weakly_dominant",
+      "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "kind": "theorem",
+      "signature": "theorem truthful_weakly_dominant (reserve : U) (v : I → U) (i : I) :\n    IsWeaklyDominant (game reserve v) i (v i)",
+      "docstring": "Truthful bidding is a weakly dominant strategy in the reserve second-price auction.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L276",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Auction.ReserveSecondPrice.game_eq_toStrategicGame",
+      "display_name": "Auction.ReserveSecondPrice.game_eq_toStrategicGame",
+      "qualified_name": "Auction.ReserveSecondPrice.game_eq_toStrategicGame",
+      "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "kind": "lemma",
+      "signature": "lemma game_eq_toStrategicGame (reserve : U) (v : I → U) :\n    game reserve v =\n      (mechanism reserve).toStrategicGame\n        (fun (w : Option I) (pay : I → U) (vals : I → U) (i : I) =>\n          if w = some i then vals i - pay i else 0)\n        v",
+      "docstring": "`game reserve v` equals the strategic game induced by `mechanism reserve`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L335",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Auction.ReserveSecondPrice.mechanism_isDSIC",
+      "display_name": "Auction.ReserveSecondPrice.mechanism_isDSIC",
+      "qualified_name": "Auction.ReserveSecondPrice.mechanism_isDSIC",
+      "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "kind": "theorem",
+      "signature": "theorem mechanism_isDSIC (reserve : U) :\n    (mechanism reserve).isDSIC\n      (fun (w : Option I) (pay : I → U) (vals : I → U) (i : I) =>\n        if w = some i then vals i - pay i else 0)",
+      "docstring": "The reserve second-price auction satisfies dominant-strategy incentive compatibility.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L348",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "display_name": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

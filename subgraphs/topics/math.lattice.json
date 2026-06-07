@@ -1,0 +1,63 @@
+{
+  "topic": {
+    "id": "math.lattice",
+    "title": "Math.Lattice",
+    "href": "math/lattice/index.html",
+    "parent": "math",
+    "node_count": 1,
+    "descendant_node_count": 1
+  },
+  "counts": {
+    "internal_nodes": 1,
+    "inlined_nodes": 1,
+    "descendant_nodes": 1,
+    "child_topics": 0,
+    "inlined_child_topics": 1,
+    "non_proof_plan_nodes": 1,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 2,
+    "visible_nodes_with_selected_proof_plans": 2
+  },
+  "nodes": [
+    {
+      "id": "math.lattice.tarski_fixed_point",
+      "title": "Tarski Fixed Point Theorem For Compact Euclidean Lattices",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "math/lattice/math_lattice_tarski_fixed_point.html",
+      "payload": "node_payloads/math_lattice_tarski_fixed_point.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "lattice",
+      "title": "lattice",
+      "href": "keywords/lattice.html",
+      "count": 1
+    },
+    {
+      "id": "tarski",
+      "title": "tarski",
+      "href": "keywords/tarski.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "math.lattice.tarski_fixed_point"
+  ]
+}

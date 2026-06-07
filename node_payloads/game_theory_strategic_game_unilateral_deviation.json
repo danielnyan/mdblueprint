@@ -1,0 +1,69 @@
+{
+  "id": "game_theory.strategic_game.unilateral_deviation",
+  "title": "Unilateral Deviation",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Unilateral Deviation</h1>\n<p>Given a strategy profile \\(\\sigma\\) and a player \\(i\\), the unilateral deviation\n\\((\\sigma_{-i}, s'_i)\\) is the profile where player \\(i\\) plays \\(s'_i\\) and all other\nplayers play according to \\(\\sigma\\). We write \\(\\sigma[i \\mapsto s']\\).</p>\n<p>In Lean, this is <code>Function.update σ i s'</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Notation for unilateral deviation.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.best_response",
+      "title": "Best Response",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_best_response.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominates",
+      "title": "Weak Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.deviate",
+      "display_name": "StrategicGame.deviate",
+      "qualified_name": "StrategicGame.deviate",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "kind": "abbrev",
+      "signature": "abbrev deviate {G : StrategicGame N U} [DecidableEq N]\n    (σ : G.Profile) (i : N) (s' : G.strategy i) : G.Profile",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

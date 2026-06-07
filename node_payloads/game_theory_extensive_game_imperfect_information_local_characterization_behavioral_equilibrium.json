@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.local_characterization_behavioral_equilibrium",
+  "title": "Local Characterization Of Behavioral Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_local_characterization_behavioral_equilibrium.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Local Characterization Of Behavioral Equilibrium</h1>\n<p>For a finite extensive form game with perfect recall, a behavioral profile $\\beta$\nis a behavioral equilibrium if and only if, for every player $i$ and every reached\ninformation set $Q_i\\in Rch(\\beta)$, the behavioral action $\\beta_i(Q_i)$ is a best\nresponse in the local continuation game starting at $Q_i$, with Nature choosing a\nnode of $Q_i$ according to $\\nu_\\beta(Q_i)$ and future play following $\\beta$.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>If a behavioral profile is not an equilibrium, then some profitable deviation can be\nlocalized to a reached information set, because changing off-path behavior alone\ndoes not affect payoffs. Conversely, a profitable local deviation at a reached\ninformation set can be inserted into the full behavioral strategy to obtain a\nprofitable global deviation.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.3.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Behavioral equilibrium iff prescribed actions are best responses at reached information sets.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

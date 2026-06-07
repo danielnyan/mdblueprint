@@ -1,0 +1,261 @@
+{
+  "topic": {
+    "id": "market_design.matching",
+    "title": "Market Design.Matching",
+    "href": "market_design/matching/index.html",
+    "parent": "market_design",
+    "node_count": 9,
+    "descendant_node_count": 9
+  },
+  "counts": {
+    "internal_nodes": 9,
+    "inlined_nodes": 9,
+    "descendant_nodes": 9,
+    "child_topics": 0,
+    "inlined_child_topics": 1,
+    "non_proof_plan_nodes": 9,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "title": "Gale-Shapley Deferred Acceptance Algorithm",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_algorithm.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_gale_shapley_algorithm.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_stable",
+      "title": "Gale-Shapley Theorem (Existence of Stable Matching)",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_stable.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_gale_shapley_stable.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.lattice",
+      "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "market_design/market_design_matching_one_to_one_lattice.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_lattice.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.market",
+      "title": "Matching Market (One-to-One)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "market_design/market_design_matching_one_to_one_market.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_market.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.matching",
+      "title": "Matching (Partial Bijection)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "market_design/market_design_matching_one_to_one_matching.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_matching.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.proposing_optimal",
+      "title": "Proposing-Side Optimal Stable Matching",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "market_design/market_design_matching_one_to_one_proposing_optimal.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_proposing_optimal.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.rural_hospitals",
+      "title": "Rural Hospitals Theorem",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "market_design/market_design_matching_one_to_one_rural_hospitals.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_rural_hospitals.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.stability",
+      "title": "Stability (Individual Rationality + No Blocking Pair)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "market_design/market_design_matching_one_to_one_stability.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_stability.json"
+    },
+    {
+      "id": "market_design.matching.one_to_one.strategy_proofness_proposing",
+      "title": "Strategy-Proofness of Gale-Shapley for the Proposing Side (Roth 1982)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "market_design/market_design_matching_one_to_one_strategy_proofness_proposing.html",
+      "payload": "node_payloads/market_design_matching_one_to_one_strategy_proofness_proposing.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "market_design.matching.one_to_one.market",
+      "to": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "to": "market_design.matching.one_to_one.gale_shapley_stable",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.stability",
+      "to": "market_design.matching.one_to_one.gale_shapley_stable",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.gale_shapley_stable",
+      "to": "market_design.matching.one_to_one.lattice",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.proposing_optimal",
+      "to": "market_design.matching.one_to_one.lattice",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.rural_hospitals",
+      "to": "market_design.matching.one_to_one.lattice",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.gale_shapley_algorithm",
+      "to": "market_design.matching.one_to_one.proposing_optimal",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.stability",
+      "to": "market_design.matching.one_to_one.proposing_optimal",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.stability",
+      "to": "market_design.matching.one_to_one.rural_hospitals",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.market",
+      "to": "market_design.matching.one_to_one.stability",
+      "kind": "uses"
+    },
+    {
+      "from": "market_design.matching.one_to_one.matching",
+      "to": "market_design.matching.one_to_one.stability",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "algorithm",
+      "title": "algorithm",
+      "href": "keywords/algorithm.html",
+      "count": 1
+    },
+    {
+      "id": "blocking-pair",
+      "title": "blocking-pair",
+      "href": "keywords/blocking-pair.html",
+      "count": 1
+    },
+    {
+      "id": "deferred-acceptance",
+      "title": "deferred-acceptance",
+      "href": "keywords/deferred-acceptance.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "gale-shapley",
+      "title": "gale-shapley",
+      "href": "keywords/gale-shapley.html",
+      "count": 4
+    },
+    {
+      "id": "invariance",
+      "title": "invariance",
+      "href": "keywords/invariance.html",
+      "count": 1
+    },
+    {
+      "id": "lattice",
+      "title": "lattice",
+      "href": "keywords/lattice.html",
+      "count": 1
+    },
+    {
+      "id": "market-design",
+      "title": "market-design",
+      "href": "keywords/market-design.html",
+      "count": 2
+    },
+    {
+      "id": "matching",
+      "title": "matching",
+      "href": "keywords/matching.html",
+      "count": 9
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 1
+    },
+    {
+      "id": "one-to-one",
+      "title": "one-to-one",
+      "href": "keywords/one-to-one.html",
+      "count": 1
+    },
+    {
+      "id": "optimality",
+      "title": "optimality",
+      "href": "keywords/optimality.html",
+      "count": 1
+    },
+    {
+      "id": "rural-hospitals",
+      "title": "rural-hospitals",
+      "href": "keywords/rural-hospitals.html",
+      "count": 1
+    },
+    {
+      "id": "stability",
+      "title": "stability",
+      "href": "keywords/stability.html",
+      "count": 2
+    },
+    {
+      "id": "stable-set",
+      "title": "stable-set",
+      "href": "keywords/stable-set.html",
+      "count": 1
+    },
+    {
+      "id": "strategy-proofness",
+      "title": "strategy-proofness",
+      "href": "keywords/strategy-proofness.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "market_design.matching.one_to_one"
+  ]
+}

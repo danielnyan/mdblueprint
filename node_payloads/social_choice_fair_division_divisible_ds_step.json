@@ -1,0 +1,67 @@
+{
+  "id": "social_choice.fair_division.divisible.ds_step",
+  "title": "Dubins–Spanier Inductive Step",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_ds_step.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.dubins_spanier"
+  ],
+  "body_html": "<h1>Dubins–Spanier Inductive Step</h1>\n<p>The Dubins–Spanier moving-knife algorithm builds a proportional allocation\non $n$ agents by induction. The key construction is an inductive\nproposition</p>\n<p>$$\nP(n) \\;\\;\\text{is}\\;\\;\n\\bigl(\\forall\\ \\mu : \\mathrm{Fin}\\ n \\to \\mathrm{Measure}\\ I,\\\n\\text{prop-conditions}\\bigr)\n\\;\\Rightarrow\\;\n\\exists A : \\mathrm{Allocation}\\ (\\mathrm{Fin}\\ n)\\ I,\\\n\\mathrm{IsAllocation}\\ A \\wedge \\mathrm{IsProportional}\\ n\\ \\mu\\ A,\n$$</p>\n<p>proved by induction on $n$ in\n<code>SocialChoice.FairDivision.Divisible.dubinsSpanierProportional</code>. The\nproof uses three concrete pieces:</p>\n<h2>Algorithm shape</h2>\n<ol>\n<li>\n<p><strong>Threshold step.</strong> For each remaining agent $i$, find $t_i \\in I$ with\n   $\\mu_i([0, t_i]) = \\mu_i(I)/n$ via the IVT lemma\n   ([[social_choice.fair_division.divisible.cut_exists]]).</p>\n</li>\n<li>\n<p><strong>Argmin selection.</strong> Let $i^* = \\arg\\min_i t_i$ and $t^* = t_{i^*}$.\n   Assign agent $i^*$ the piece $[0, t^*]$.</p>\n</li>\n<li>\n<p><strong>Recurse.</strong> Restrict the remaining agents $j \\ne i^*$ to\n   $(t^*, 1]$ and apply the algorithm recursively with $n - 1$ agents.</p>\n</li>\n</ol>\n<h2>Why proportionality is preserved</h2>\n<ul>\n<li>\n<p><strong>The selected agent.</strong> $\\mu_{i^*}([0, t^*]) = \\mu_{i^*}(I) / n$ by\n  the threshold construction. ✓</p>\n</li>\n<li>\n<p><strong>Each remaining agent $j$.</strong> $t^* \\le t_j$ by argmin, so\n  $\\mu_j([0, t^*]) \\le \\mu_j(I)/n$ by monotonicity of the CDF.\n  Hence\n  $$\n  \\mu_j((t^*, 1]) \\;=\\; \\mu_j(I) - \\mu_j([0, t^*]) \\;\\ge\\; \\frac{n-1}{n}\\,\\mu_j(I).\n  $$\n  Inductively, the recursive call on $n - 1$ agents on the remaining\n  interval yields each $j$ a piece worth at least $1/(n-1)$ of their\n  <em>remaining</em> value, which (combined with the bound above) is at least\n  $\\mu_j(I)/n$. ✓</p>\n</li>\n</ul>\n<h2>Lean implementation notes</h2>\n<p>The Lean proof uses <code>Fin.insertNth</code> to fold the recursively-produced\nsub-allocation back into a full allocation over <code>Fin n</code>. Partition\nvalidity (measurability, disjointness, cover) and proportionality are\nestablished by <code>ennreal_prop_step</code> — a packaged induction-step lemma\nthat combines the moving-knife construction with monotonicity bounds in\n<code>ENNReal</code>.</p>\n<p>All sorries are closed; the resulting public theorem is\n[[social_choice.fair_division.divisible.dubins_spanier_proportional]].</p>\n<h2>References</h2>\n<ul>\n<li>Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 68: 1–17.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Moving-knife procedures.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "title": "Dubins–Spanier as a Rule on Measure Instances",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_rule.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.proportional_exists",
+      "title": "Proportional Existence on [0,1] (n Agents)",
+      "href": "social_choice/social_choice_fair_division_divisible_proportional_exists.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.dubinsSpanierProportional",
+      "display_name": "SocialChoice.FairDivision.Divisible.dubinsSpanierProportional",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.dubinsSpanierProportional",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "kind": "theorem",
+      "signature": "theorem dubinsSpanierProportional (n : ℕ) (hn : 0 < n)\n    (μ : Fin n → Measure I) [∀ i, IsFiniteMeasure (μ i)] [∀ i, NoAtoms (μ i)] :\n    ∃ A : Allocation (Fin n) I,\n      IsAllocation A ∧ IsProportional n (MeasureValuation μ) A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L423",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.monotone_decreasing_values_limit",
+  "title": "Monotone Decreasing Values Limit",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_decreasing_values_limit.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Monotone Decreasing Values Limit</h1>\n<p>Let $G_n=(S,T,f_n)$ be a family of zero-sum games such that:</p>\n<ol>\n<li>$(f_n)$ is a weakly decreasing sequence of uniformly bounded functions\n   $S\\times T\\to\\mathbb R$;</li>\n<li>each $f_n$ is upper semicontinuous in the first variable;</li>\n<li>each $G_n$ has a value $v_n$;</li>\n<li>$S$ is compact.</li>\n</ol>\n<p>Let $f=\\inf_n f_n$. Then the game $G=(S,T,f)$ has value\n$$\n  v=\\inf_n v_n,\n$$\nand player 1 has an optimal strategy in $G$.</p>",
+  "proof_html": "<p>The values $v_n$ form a decreasing bounded sequence, so\n$v=\\inf_n v_n$ exists. For each $n$, let $S_n(\\varepsilon)$ be the closed set of\nstrategies in $S$ that guarantee at least $v_n-\\varepsilon$ in game $G_n$.\nUpper semicontinuity in the first variable and compactness of $S$ make these\nsets compact, and monotonicity of the payoffs makes them nested after replacing\n$\\varepsilon$ by a summable sequence. Compactness gives a common limit strategy\n$s^*$. Since $f=\\inf_n f_n$, this strategy guarantees at least $v$ in the limit\ngame. Conversely, every strategy's guarantee in $f$ is bounded above by its\nguarantee in each $f_n$, hence by $v_n$; taking the infimum over $n$ gives an\nupper bound $v$. Thus $G$ has value $v$ and $s^*$ is optimal for player $1$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Limit of values for a decreasing family of upper-semicontinuous zero-sum games.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

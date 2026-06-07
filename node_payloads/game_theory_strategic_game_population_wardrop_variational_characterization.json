@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.population.wardrop_variational_characterization",
+  "title": "Wardrop Variational Characterization",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_population_wardrop_variational_characterization.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Wardrop Variational Characterization</h1>\n<p>For a population game, $x\\in X$ is a Nash/Wardrop equilibrium if and only if\n$$\n  \\langle K(x),x-y\\rangle\\ge 0\n  \\quad\\text{for every }y\\in X,\n$$\nwhere\n$$\n  \\langle K(x),x-y\\rangle\n  =\n  \\sum_i\\sum_{s_i\\in S_i}K_i(s_i,x)(x_i(s_i)-y_i(s_i)).\n$$</p>\n<p>This expresses the equilibrium condition as a variational inequality over the\nproduct of population simplexes.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Prop. 5.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Variational inequality form of Nash/Wardrop equilibrium.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

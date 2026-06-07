@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.belief_system",
+  "title": "Belief System",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_belief_system.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Belief System</h1>\n<p>A belief system assigns to each information set $Q_i$ a probability distribution\n$\\mu(Q_i)$ over the nodes of $Q_i$. Given beliefs and a behavioral profile, a\nplayer can evaluate expected continuation payoff for each action available at the\ninformation set.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.4.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A belief system assigns a probability distribution to each information set.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "market_design.matching.one_to_one.strategy_proofness_proposing",
+  "title": "Strategy-Proofness of Gale-Shapley for the Proposing Side (Roth 1982)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "market_design/market_design_matching_one_to_one_strategy_proofness_proposing.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Roth 1982: Strategy-Proofness for the Proposing Side</h1>\n<p><strong>Theorem (Roth 1982).</strong> The men-proposing Gale-Shapley mechanism is\n<strong>dominant-strategy incentive-compatible (DSIC) for the men</strong>: for every\nman $i$, truthfully reporting his preference list $\\succ_i$ weakly\ndominates every misreport $\\succ_i'$, regardless of what the other men and\nwomen report.</p>\n<p>Formally: let $\\mathrm{GS}^M : \\succ \\mapsto \\mu^M(\\succ)$ denote the\nmen-proposing matching function. For every $i \\in M$, every $\\succ_i'$, and\nevery fixed report profile $\\succ_{-i}$:</p>\n<p>$$\\mathrm{GS}^M(\\succ_i, \\succ_{-i})(i) \\succeq_i \\mathrm{GS}^M(\\succ_i', \\succ_{-i})(i)$$</p>\n<p>where the LHS uses $i$'s <em>true</em> preferences $\\succ_i$ for comparison.</p>\n<h2>Asymmetry: Not Strategy-Proof for Women</h2>\n<p>The women-proposing analogue holds for women, but in the men-proposing\nmechanism the <em>women</em> have profitable misreports (they can sometimes get a\nstrictly preferred match by truncating their preference list). This\nasymmetry is fundamental: Roth showed that <strong>no stable matching mechanism\nis DSIC for both sides simultaneously</strong> (Roth 1982 impossibility).</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The key tool is the <em>blocking lemma</em> (Gale-Sotomayor 1985): if a man $i$\nmisreports and gets a strictly better partner under the mechanism, then in\nthe resulting matching there must be a blocking pair involving $i$ and his\n<em>true</em> preferred achievable partner — contradicting stability.</p>\n<p>More concretely, suppose $i$ misreports $\\succ_i'$ and ends up with\n$j' = \\mathrm{GS}^M(\\succ_i', \\succ_{-i})(i)$ such that $j' \\succ_i \\mathrm{GS}^M(\\succ)(i)$.\nTruth-telling gives $i$ his best achievable partner under the true\npreferences (men-optimal property). So $j'$ must be <em>unachievable</em> under\nthe true profile — meaning there is no stable matching in which $i$ gets\n$j'$ when truth is told. Combining with $j'$'s acceptance of $i$ under the\nmisreport gives the contradiction.</p>\n<h2>Cross-Reference</h2>\n<p>Connects matching theory to mechanism design's general DSIC framework\n([[mechanism_design.basic.dsic_predicate]]).</p>\n<h2>Lean Status</h2>\n<p>Tracked by MT-L3 (#205). Depends on:\n- [[gale_shapley_stable]] (stability of GS output),\n- [[proposing_optimal]] (men-optimality), and\n- the blocking lemma (Gale-Sotomayor 1985) which will need its own helper\n  lemma in Lean.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Thm 22.16] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Roth (1982). <em>The Economics of Matching: Stability and Incentives</em>. Math. Oper. Res. 7, 617–628.</li>\n<li>Dubins &amp; Freedman (1981). <em>Machiavelli and the Gale-Shapley Algorithm</em>. AMM 88.</li>\n<li>Gale &amp; Sotomayor (1985). <em>Some Remarks on the Stable Matching Problem</em>. Discrete Applied Math 11.</li>\n<li>Roth &amp; Sotomayor (1990), Ch. 4.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

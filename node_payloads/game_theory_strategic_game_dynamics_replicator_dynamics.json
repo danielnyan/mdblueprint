@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.dynamics.replicator_dynamics",
+  "title": "Replicator Dynamics",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_replicator_dynamics.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Replicator Dynamics</h1>\n<p>For a symmetric two-player game with payoff matrix $A$, a population\n$p\\in\\Delta(K)$ is stationary if every type used with positive mass has average\nfitness:\n$$\n  p_k&gt;0\\quad\\text{implies}\\quad e_kAp=pAp.\n$$</p>\n<p>The one-population replicator dynamics is\n$$\n  \\dot p_k=p_k(e_kAp-pAp).\n$$\nIt preserves the simplex because the total derivative of $\\sum_k p_k$ is zero.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Definitions 5.5.1 and 5.5.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Stationary populations and one-population replicator dynamics.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

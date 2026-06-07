@@ -1,0 +1,19 @@
+{
+  "id": "math.linear_programming.minimax_bridge.zero_sum_lp_bridge",
+  "title": "Zero-Sum Linear Programming Bridge",
+  "kind": "proof-plan",
+  "status": "admitted",
+  "href": "math/math_linear_programming_minimax_bridge_zero_sum_lp_bridge.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.linear_programming",
+    "math.linear_programming.minimax_bridge"
+  ],
+  "body_html": "<h1>Zero-Sum Linear Programming Bridge</h1>\n<p>The row player's maximum safe-value linear program and the column player's\nminimum safe-value dual linear program should be connected to the matrix-game\nguarantee definitions.  Once optimal row and column safe strategies are\navailable, they form a mixed Nash equilibrium of the zero-sum game.</p>\n<p>This bridge is the natural entry point for algorithmic game theory treatments\nof zero-sum computation.</p>",
+  "proof_html": "<p>The row LP maximizes a scalar $v$ subject to the inequalities saying\nthat the chosen mixed row strategy guarantees at least $v$ against every pure\ncolumn. The dual column LP minimizes a scalar $w$ subject to the inequalities\nsaying that the chosen mixed column strategy holds every pure row payoff to at\nmost $w$. Strong duality gives optimal solutions with $v=w$. These two sets of\ninequalities are exactly the saddle-point inequalities for the matrix payoff, so\nthe resulting mixed strategies form a zero-sum Nash equilibrium and realize the\nmatrix-game value.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Section 1.4.2, Thm. 1.11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Optimal zero-sum LP solutions form a Nash equilibrium.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

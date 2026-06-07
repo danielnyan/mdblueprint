@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.cournot_fishermen_equilibria",
+  "title": "Cournot Fishermen Equilibria",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_cournot_fishermen_equilibria.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Cournot Fishermen Equilibria</h1>\n<p>In the $n$-fishermen Cournot game, player $i$ chooses $x_i\\ge 0$, total output is\n$X=\\sum_i x_i$, unit price is\n$$\n  p=\\max\\{1-X,0\\},\n$$\nand player $i$ maximizes revenue $x_i p$.</p>\n<p>The pure Nash equilibria are exactly:</p>\n<ol>\n<li>the symmetric Cournot profile\n   $$\n     x_i=\\frac1{n+1}\\quad\\text{for every }i;\n   $$</li>\n<li>the overproduction profiles satisfying\n   $$\n     \\sum_{j\\ne i}x_j\\ge 1\\quad\\text{for every }i.\n   $$</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Cournot competition among n fishermen with zero production cost.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_with_chance",
+  "title": "Kuhn Existence Of Pure Subgame-Perfect Equilibrium (With Chance)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_kuhn_spe_existence_with_chance.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Kuhn Existence Of Pure Subgame-Perfect Equilibrium (With Chance)</h1>\n<p>Every finite perfect-information game <strong>with Nature / chance moves</strong> has a\nsubgame-perfect equilibrium in pure strategies. At a chance node the value is\nthe probability-weighted average of the successor subgame values under any\nfixed strategy profile.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Same backward-induction skeleton as [[kuhn_spe_existence_no_chance]], extended\nto handle Nature nodes: at a chance position the player payoffs at that node\nare defined as the probability-weighted expectation of the successor payoffs,\nand the induction step is unchanged.</p>\n<p>The expectation step requires von Neumann–Morgenstern utility theory so that\n\"expected payoff\" is meaningful for a general preference relation. With cash /\nℝ-valued payoffs the expectation is well-defined directly.</p>\n<h2>Lean status</h2>\n<p>Not yet implemented. Tracked by <a href=\"https://github.com/gametheoryinlean/EconCSLib/issues/181\">EG-L3\n(#181)</a>, which is\nitself blocked on the vNM theorem in <code>EconCSLib/Utility/Lottery.lean</code>. The\ntarget Lean module is <code>EconCSLib.ExtensiveGame.StochasticGameTree</code>; current\nstate is a type definition + <code>fairCoinGame</code> example, no general theorem.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.2.7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Original \"with or without Nature\" form.</li>\n<li>[MSZ, Thm. 3.13] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

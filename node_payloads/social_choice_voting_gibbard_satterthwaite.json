@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.gibbard_satterthwaite",
+  "title": "Gibbard–Satterthwaite Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_gibbard_satterthwaite.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.gibbard_satterthwaite"
+  ],
+  "body_html": "<h1>Gibbard–Satterthwaite Theorem</h1>\n<p><strong>Theorem (Gibbard 1973, Satterthwaite 1975).</strong> Let $N$ be a finite nonempty\nvoter type and $A$ a finite alternative set with $|A| \\ge 3$. Every\nunanimous ([[social_choice.voting.unanimity]]) and strategy-proof\n([[social_choice.voting.strategyproof]]) social choice function is\ndictatorial ([[social_choice.voting.dictatorial_scf]]).</p>\n<p>In Lean: <code>SocialChoice.Voting.gibbard_satterthwaite</code>, with signature\n<code>[Fintype N] [Nonempty N] [DecidableEq N] [Fintype A] (hA : Fintype.card A ≥ 3)</code>.</p>",
+  "proof_html": "<p>The Lean term composes two lemmas:</p>\n<ol>\n<li>\n<p><code>strategyproof_monotonic</code> ([[social_choice.voting.strategyproof_implies_monotonic]])\n   turns strategy-proofness into monotonicity\n   ([[social_choice.voting.monotonic_scf]]).</p>\n</li>\n<li>\n<p><code>muller_satterthwaite</code> ([[social_choice.voting.muller_satterthwaite]])\n   turns monotonicity plus unanimity (with $|A| \\ge 3$) into dictatorship.</p>\n</li>\n</ol>\n<p>Both intermediate theorems are themselves admitted with proof plans; once\nthey are filled, the composition in <code>gibbard_satterthwaite</code> closes on its\nown (no further sorries in this file).</p>\n<h2>Interpretation</h2>\n<p>For ordinal voting rules on three or more alternatives, <em>honesty cannot be a\ndominant strategy without a dictator</em>. This is the SCF analogue of Arrow\n([[social_choice.voting.arrow_impossibility]]), and the central motivating\nimpossibility for the field of <em>strategy-proof mechanism design</em> — including\nrandomized escapes (Gibbard 1977), domain restrictions (Moulin's median\nvoter on single-peaked domains), and money-augmented mechanisms (VCG, where\ntransfers restore incentive compatibility).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.39] Maschler, Solan, and Zamir, <em>Game Theory</em>. Gibbard–Satterthwaite theorem.</li>\n<li>Gibbard, A. (1973). \"Manipulation of voting schemes\". <em>Econometrica</em>.</li>\n<li>Satterthwaite, M. A. (1975). \"Strategy-proofness and Arrow's conditions\". <em>J. Econ. Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.gibbard_satterthwaite",
+      "display_name": "SocialChoice.Voting.gibbard_satterthwaite",
+      "qualified_name": "SocialChoice.Voting.gibbard_satterthwaite",
+      "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "kind": "theorem",
+      "signature": "theorem gibbard_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A]\n    (hA : Fintype.card A ≥ 3)\n    (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f)\n    (hU : Unanimity f) (hSP : ResoluteStrategyproofness f hf_res) :\n    Dictatorial f",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L496",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "display_name": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

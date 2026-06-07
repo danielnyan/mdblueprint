@@ -1,0 +1,54 @@
+{
+  "id": "foundation.cost.examples.par_all",
+  "title": "Worked Example: N-ary parList Depth Bound",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_par_all.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: N-ary parList Depth Bound</h1>\n<p>The n-ary <code>parList</code> combinator (<a class=\"node-ref\" data-node-id=\"foundation.cost.parallel\" href=\"cost/foundation_cost_parallel.html\">Parallel Composition in CostM</a>) applied to a\nlist of independent unit-cost operations. Because the costs are folded with\n<code>⊔</code> from <code>⊥</code>, running <code>n</code> operations that each charge one unit in parallel has\ndepth-1 cost:\n$$\n  (\\operatorname{parList}\\,ms).\\mathrm{cost}\n    \\;=\\; \\bigsqcup_i (m_i).\\mathrm{cost} \\;\\le\\; 1,\n$$\nproved as <code>parMap_unit_cost_le</code>. This is the flat fan-out / fan-in schedule:\narbitrarily many independent unit tasks cost the same as one, the defining\nproperty distinguishing the parallel <code>⊔</code> cost from the sequential <code>+</code> cost\n(<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>). The empty-list base case (<code>parList []</code>has\ncost <code>⊥ = 0</code>) is exercised by the accompanying examples in the source file.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>ParAll.parMap_unit_cost_le</code> — the <code>parList</code>-of-unit-tasks depth bound <code>≤ 1</code>,\n  alongside two <code>example</code>s pinning the empty and singleton cases.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. The underlying cost\n  monad (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.parallel",
+      "title": "Parallel Composition in CostM",
+      "href": "foundation/foundation_cost_parallel.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ParAll.parMap_unit_cost_le",
+      "display_name": "ParAll.parMap_unit_cost_le",
+      "qualified_name": "ParAll.parMap_unit_cost_le",
+      "module": "EconCSLib.Examples.CostM.ParAll",
+      "kind": "theorem",
+      "signature": "theorem parMap_unit_cost_le (xs : List ℕ) :\n    (parList (xs.map (fun _ => (do ✓ pure 0 : CostM ℕ ℕ)))).cost ≤ 1",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParAll.lean#L51",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.ParAll",
+      "display_name": "EconCSLib.Examples.CostM.ParAll",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParAll.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

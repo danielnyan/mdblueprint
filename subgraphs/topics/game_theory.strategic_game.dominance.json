@@ -1,0 +1,266 @@
+{
+  "topic": {
+    "id": "game_theory.strategic_game.dominance",
+    "title": "Game Theory.Strategic Game.Dominance",
+    "href": "game_theory/strategic_game/dominance/index.html",
+    "parent": "game_theory.strategic_game",
+    "node_count": 11,
+    "descendant_node_count": 11
+  },
+  "counts": {
+    "internal_nodes": 11,
+    "inlined_nodes": 0,
+    "descendant_nodes": 11,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 11,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 14,
+    "visible_nodes_with_selected_proof_plans": 14
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "title": "Solvable Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominance_solvable_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_dominance_solvable_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_dominated_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_iterated_elimination.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "title": "Nash Equilibria Are Rationalizable",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_nash_is_rationalizable.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_nash_is_rationalizable.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.rationalizable_fixed_point",
+      "title": "Rationalizable Set As Largest Best-Response Fixed Set",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_fixed_point.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_rationalizable_fixed_point.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "title": "Rationalizable Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_rationalizable_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.solvable_unique_nash",
+      "title": "Solvable Games Have A Unique Nash Equilibrium",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_solvable_unique_nash.html",
+      "payload": "node_payloads/game_theory_strategic_game_dominance_solvable_unique_nash.json"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominant_strategy",
+      "title": "Strictly Dominant Strategy",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominant_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_strictly_dominant_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html",
+      "payload": "node_payloads/game_theory_strategic_game_strictly_dominates.json"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_weakly_dominant_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominates",
+      "title": "Weak Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html",
+      "payload": "node_payloads/game_theory_strategic_game_weakly_dominates.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strictly_dominant_strategy",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominant_strategy",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.dominated_strategy",
+      "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominates",
+      "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 105
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.dominance.dominated_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.dominance.iterated_elimination",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.weakly_dominates",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominant_strategy",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "best-response",
+      "title": "best-response",
+      "href": "keywords/best-response.html",
+      "count": 1
+    },
+    {
+      "id": "dominance",
+      "title": "dominance",
+      "href": "keywords/dominance.html",
+      "count": 6
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "rationality",
+      "title": "rationality",
+      "href": "keywords/rationality.html",
+      "count": 1
+    },
+    {
+      "id": "rationalizability",
+      "title": "rationalizability",
+      "href": "keywords/rationalizability.html",
+      "count": 5
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 11
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

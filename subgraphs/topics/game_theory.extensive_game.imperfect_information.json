@@ -1,0 +1,456 @@
+{
+  "topic": {
+    "id": "game_theory.extensive_game.imperfect_information",
+    "title": "Game Theory.Extensive Game.Imperfect Information",
+    "href": "game_theory/extensive_game/imperfect_information/index.html",
+    "parent": "game_theory.extensive_game",
+    "node_count": 26,
+    "descendant_node_count": 26
+  },
+  "counts": {
+    "internal_nodes": 26,
+    "inlined_nodes": 0,
+    "descendant_nodes": 26,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 26,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 29,
+    "visible_nodes_with_selected_proof_plans": 29
+  },
+  "nodes": [
+    {
+      "id": "game_theory.extensive_game.equilibrium.completely_mixed_nash_is_subgame_perfect",
+      "title": "Completely Mixed Nash Is Subgame Perfect",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_completely_mixed_nash_is_subgame_perfect.html",
+      "payload": "node_payloads/game_theory_extensive_game_equilibrium_completely_mixed_nash_is_subgame_perfect.json"
+    },
+    {
+      "id": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "title": "Reached Subgame Nash Restriction",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.html",
+      "payload": "node_payloads/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "title": "Action At An Information Set",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_action_at_information_set.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_action_at_information_set.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.behavioral_equilibrium",
+      "title": "Behavioral Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_behavioral_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_behavioral_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.behavioral_equilibrium_exists",
+      "title": "Existence Of Behavioral Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_behavioral_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_behavioral_equilibrium_exists.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.belief_system",
+      "title": "Belief System",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_belief_system.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_belief_system.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.forward_induction",
+      "title": "Forward Induction",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_forward_induction.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_forward_induction.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "title": "Extensive Game With Imperfect Information",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_extensive_game.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_imperfect_information_extensive_game.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
+      "title": "Pure Strategy With Imperfect Information",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.information_set",
+      "title": "Information Set",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_information_set.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_information_set.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.information_set_refinement_equilibrium",
+      "title": "Information Set Refinement And Equilibrium",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_information_set_refinement_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_information_set_refinement_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.isbell_behavioral_to_mixed",
+      "title": "Isbell Behavioral-To-Mixed Equivalence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_isbell_behavioral_to_mixed.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_isbell_behavioral_to_mixed.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.linear_extensive_game",
+      "title": "Linear Extensive Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_linear_extensive_game.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_linear_extensive_game.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.local_characterization_behavioral_equilibrium",
+      "title": "Local Characterization Of Behavioral Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_local_characterization_behavioral_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_local_characterization_behavioral_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.mertens_stable_sets",
+      "title": "Mertens Stable Sets",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_mertens_stable_sets.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_mertens_stable_sets.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.mixed_behavioral_general_strategies",
+      "title": "Mixed Behavioral And General Strategies",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_mixed_behavioral_general_strategies.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_mixed_behavioral_general_strategies.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.perfect_recall",
+      "title": "Perfect Recall",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_perfect_recall.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_perfect_recall.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.perfect_recall_mixed_to_behavioral",
+      "title": "Kuhn Mixed-To-Behavioral Equivalence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_perfect_recall_mixed_to_behavioral.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_perfect_recall_mixed_to_behavioral.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.proper_equilibrium_induces_sequential",
+      "title": "Proper Equilibrium Induces Sequential Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_proper_equilibrium_induces_sequential.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_proper_equilibrium_induces_sequential.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.reached_information_set",
+      "title": "Reached Information Set",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_reached_information_set.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_reached_information_set.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.sequential_equilibrium",
+      "title": "Sequential Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_sequential_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_sequential_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.spe_exists_perfect_recall",
+      "title": "Existence Of Subgame-Perfect Equilibrium With Perfect Recall",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_spe_exists_perfect_recall.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_spe_exists_perfect_recall.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.spe_imperfect_information",
+      "title": "Subgame-Perfect Equilibrium In Imperfect-Information Games",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_spe_imperfect_information.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_spe_imperfect_information.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.strategic_stability",
+      "title": "Strategic Stability",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_strategic_stability.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_strategic_stability.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_subroot_subgame.json"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.weak_bayesian_perfect_equilibrium",
+      "title": "Weak Bayesian Perfect Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_weak_bayesian_perfect_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_imperfect_information_weak_bayesian_perfect_equilibrium.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "to": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
+      "to": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "href": "game_theory/extensive_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 57
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "action",
+      "title": "action",
+      "href": "keywords/action.html",
+      "count": 1
+    },
+    {
+      "id": "behavioral-strategy",
+      "title": "behavioral-strategy",
+      "href": "keywords/behavioral-strategy.html",
+      "count": 10
+    },
+    {
+      "id": "belief",
+      "title": "belief",
+      "href": "keywords/belief.html",
+      "count": 2
+    },
+    {
+      "id": "completely-mixed",
+      "title": "completely-mixed",
+      "href": "keywords/completely-mixed.html",
+      "count": 1
+    },
+    {
+      "id": "equilibrium-refinement",
+      "title": "equilibrium-refinement",
+      "href": "keywords/equilibrium-refinement.html",
+      "count": 1
+    },
+    {
+      "id": "exercise",
+      "title": "exercise",
+      "href": "keywords/exercise.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 2
+    },
+    {
+      "id": "extensive-game",
+      "title": "extensive-game",
+      "href": "keywords/extensive-game.html",
+      "count": 26
+    },
+    {
+      "id": "forward-induction",
+      "title": "forward-induction",
+      "href": "keywords/forward-induction.html",
+      "count": 1
+    },
+    {
+      "id": "imperfect-information",
+      "title": "imperfect-information",
+      "href": "keywords/imperfect-information.html",
+      "count": 5
+    },
+    {
+      "id": "information-set",
+      "title": "information-set",
+      "href": "keywords/information-set.html",
+      "count": 4
+    },
+    {
+      "id": "kuhn-theorem",
+      "title": "kuhn-theorem",
+      "href": "keywords/kuhn-theorem.html",
+      "count": 1
+    },
+    {
+      "id": "mertens",
+      "title": "mertens",
+      "href": "keywords/mertens.html",
+      "count": 1
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 5
+    },
+    {
+      "id": "perfect-recall",
+      "title": "perfect-recall",
+      "href": "keywords/perfect-recall.html",
+      "count": 4
+    },
+    {
+      "id": "proper-equilibrium",
+      "title": "proper-equilibrium",
+      "href": "keywords/proper-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "randomized-strategy",
+      "title": "randomized-strategy",
+      "href": "keywords/randomized-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "refinement",
+      "title": "refinement",
+      "href": "keywords/refinement.html",
+      "count": 4
+    },
+    {
+      "id": "sequential-equilibrium",
+      "title": "sequential-equilibrium",
+      "href": "keywords/sequential-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "strategic-stability",
+      "title": "strategic-stability",
+      "href": "keywords/strategic-stability.html",
+      "count": 2
+    },
+    {
+      "id": "strategy",
+      "title": "strategy",
+      "href": "keywords/strategy.html",
+      "count": 1
+    },
+    {
+      "id": "subgame",
+      "title": "subgame",
+      "href": "keywords/subgame.html",
+      "count": 1
+    },
+    {
+      "id": "subgame-perfect-equilibrium",
+      "title": "subgame-perfect-equilibrium",
+      "href": "keywords/subgame-perfect-equilibrium.html",
+      "count": 4
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

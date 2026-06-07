@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.history",
+  "title": "Repeated Game History",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_history.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Repeated Game History</h1>\n<p>For a repeated game with stage action profile space $A = \\prod_i A_i$\n([[game_theory.repeated_game.core.repeated_game]]), a <strong>length-$t$ history</strong> is a\nsequence of $t$ past action profiles:\n$$\nh_t = (a_0, a_1, \\dots, a_{t-1}) \\in A^t.\n$$</p>\n<p>The empty history $h_0 = \\emptyset$ corresponds to stage 0 before any\nplay occurs.</p>\n<h2>Strategy spaces over histories</h2>\n<ul>\n<li>A <strong>pure strategy</strong> for player $i$ is a function\n  $\\sigma_i : \\bigcup_t A^t \\to A_i$ that picks an action for every\n  possible history.</li>\n<li>A <strong>behavioural strategy</strong> is\n  $\\sigma_i : \\bigcup_t A^t \\to \\Delta(A_i)$.</li>\n</ul>\n<p>The set of all possible histories $\\bigcup_t A^t$ is countably infinite\neven for finite $A$, so the strategy space is enormous. Equilibrium\narguments typically restrict to:</p>\n<ul>\n<li><strong>Automaton strategies</strong>: strategies implementable by a finite-state\n  automaton reading $h_t$ — the standard tool for folk-theorem\n  constructions (grim trigger, tit-for-tat, etc.).</li>\n<li><strong>Markovian / Markov-1 strategies</strong>: depend only on the last action\n  profile $a_{t-1}$ (or short-memory variants).</li>\n</ul>\n<h2>Observability variants</h2>\n<p>The \"public history\" assumption above gives every player the entire\n$h_t$. Other observability structures yield different games:</p>\n<ul>\n<li><em>Private monitoring</em>: each player observes only their own action and\n  a private signal correlated with the action profile.</li>\n<li><em>Public-imperfect monitoring</em>: all players observe the same public\n  signal, but not the underlying action profile.</li>\n</ul>\n<p>These are central to dynamic mechanism design and reputation theory; the\nfolk theorem changes form in the imperfect-monitoring setting\n(Fudenberg-Levine-Maskin 1994).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapter 13] Maschler, Solan, and Zamir, <em>Game Theory</em>.</li>\n<li>Mailath, G. and Samuelson, L. (2006). <em>Repeated Games and Reputations.</em> Oxford.</li>\n<li>[MFoGT Chapter 8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

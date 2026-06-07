@@ -1,0 +1,1261 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum",
+    "title": "Game Theory.Zero Sum",
+    "href": "game_theory/zero_sum/index.html",
+    "parent": "game_theory",
+    "node_count": 75,
+    "descendant_node_count": 75
+  },
+  "counts": {
+    "internal_nodes": 75,
+    "inlined_nodes": 75,
+    "descendant_nodes": 75,
+    "child_topics": 0,
+    "inlined_child_topics": 7,
+    "non_proof_plan_nodes": 75,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 78,
+    "visible_nodes_with_selected_proof_plans": 78
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Game Has Value Zero",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_antisymmetric_matrix_game_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_antisymmetric_matrix_game_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.markov_stationary_as_zero_sum_value",
+      "title": "Markov Stationary Distribution as Zero-Sum Game Value",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_markov_stationary_as_zero_sum_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_markov_stationary_as_zero_sum_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "title": "Perron-Frobenius For Positive Matrices",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_perron_frobenius_positive_matrix.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_perron_frobenius_positive_matrix.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.strict_dominance_never_best_response",
+      "title": "Strict Domination And Never Best Response (via auxiliary zero-sum game)",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_strict_dominance_never_best_response.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_strict_dominance_never_best_response.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.weak_dominance_never_best_response",
+      "title": "Weak Domination And Completely Mixed Tests (via auxiliary zero-sum game)",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_weak_dominance_never_best_response.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_applications_weak_dominance_never_best_response.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.approachability.blackwell_b_set_approachability",
+      "title": "Blackwell B-Set Approachability",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_approachability_blackwell_b_set_approachability.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_approachability_blackwell_b_set_approachability.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.approachability.deterministic_blackwell_sequence",
+      "title": "Deterministic Blackwell Sequence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_approachability_deterministic_blackwell_sequence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_approachability_deterministic_blackwell_sequence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.compact_mixed_vs_finite_support_minimax",
+      "title": "Compact Mixed Versus Finite-Support Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_compact_mixed_vs_finite_support_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_compact_mixed_vs_finite_support_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.finite_opponent_separation_minimax",
+      "title": "Finite-Opponent Separation Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_finite_opponent_separation_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_finite_opponent_separation_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_minimax_theorem",
+      "title": "General Mixed Minimax Theorem",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_minimax_theorem.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_general_mixed_minimax_theorem.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_strategy_space",
+      "title": "General Mixed Strategy Space",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_strategy_space.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_general_mixed_strategy_space.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.intersection_lemma",
+      "title": "Intersection Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_intersection_lemma.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_intersection_lemma.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.mixed_extension_pathology",
+      "title": "Mixed Extension Pathology",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_mixed_extension_pathology.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_mixed_extension_pathology.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.monotone_decreasing_values_limit",
+      "title": "Monotone Decreasing Values Limit",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_decreasing_values_limit.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_monotone_decreasing_values_limit.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.monotone_family_assumption_counterexamples",
+      "title": "Monotone Family Assumption Counterexamples",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_family_assumption_counterexamples.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_monotone_family_assumption_counterexamples.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.pure_minimax_compact_convex_one_sided",
+      "title": "One-Sided Compact Convex Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_pure_minimax_compact_convex_one_sided.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_pure_minimax_compact_convex_one_sided.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.quasi_concavity_semicontinuity",
+      "title": "Quasi-Concavity And Semicontinuity",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_quasi_concavity_semicontinuity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_quasi_concavity_semicontinuity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_boundary_counterexample",
+      "title": "Sion Boundary Counterexample",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_boundary_counterexample.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_boundary_counterexample.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_minimax_theorem",
+      "title": "Sion Minimax Theorem",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_minimax_theorem.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_minimax_theorem.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_wolfe_no_mixed_value",
+      "title": "Sion-Wolfe Game Has No Mixed Value",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_wolfe_no_mixed_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_wolfe_no_mixed_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.duality_gap",
+      "title": "Duality Gap In A Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_duality_gap.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_duality_gap.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "title": "Epsilon-Optimal Strategy",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_extension",
+      "title": "Mixed Extension Of A Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_extension.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_extension.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_support",
+      "title": "Support Of A Mixed Strategy",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_support.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_mixed_support.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "kind": "proposition",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "title": "Player Guarantee",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_player_guarantee.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_player_guarantee.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_saddle_point.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_strong_complementarity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_support_complementarity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.value",
+      "title": "Value Of A Zero-Sum Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_core_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.asymmetric_silent_noisy_duel_value",
+      "title": "Silent Versus Noisy One-Bullet Duel Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_asymmetric_silent_noisy_duel_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_asymmetric_silent_noisy_duel_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "title": "Three-By-Two Matrix Game Computation",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "title": "Diagonal Matrix Game Value",
+      "kind": "proposition",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_diagonal_matrix_game_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_diagonal_matrix_game_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "title": "Matching Pennies",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_matching_pennies.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_multiple_bullets_value",
+      "title": "Noisy Duel With Multiple Bullets",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_multiple_bullets_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_noisy_duel_multiple_bullets_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.noisy_duel_one_bullet_value",
+      "title": "Noisy One-Bullet Duel Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_noisy_duel_one_bullet_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_noisy_duel_one_bullet_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.silent_duel_no_pure_value",
+      "title": "Silent One-Bullet Duel Has No Pure Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_silent_duel_no_pure_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_silent_duel_no_pure_value.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.three_player_minimax_failure",
+      "title": "Three-Player Minimax Failure",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_three_player_minimax_failure.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_three_player_minimax_failure.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "title": "Two-By-Two Value Formula",
+      "kind": "example",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_lam_mu_existence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy",
+      "title": "Calibrated Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_calibrated_strategy.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy_exists",
+      "title": "Calibrated Strategy Exists",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy_exists.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_calibrated_strategy_exists.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+      "title": "Cesàro Payoff Convergence From Robinson Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.continuous_fictitious_play_gap",
+      "title": "Continuous Fictitious Play Closes The Duality Gap",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_continuous_fictitious_play_gap.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_continuous_fictitious_play_gap.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+      "title": "Empirical Frequency Of Play",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_empirical_frequency.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_empirical_frequency.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.external_regret",
+      "title": "External Regret",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_external_regret.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_external_regret.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "title": "Fictitious Play",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_fictitious_play.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play_convergence",
+      "title": "Fictitious Play Convergence",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_fictitious_play_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.hannan_set",
+      "title": "Hannan Set",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_hannan_set.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_hannan_set.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.internal_regret",
+      "title": "Internal Regret",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_internal_regret.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_internal_regret.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.no_external_regret_hannan_convergence",
+      "title": "No External Regret Converges To Hannan Set",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_external_regret_hannan_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_no_external_regret_hannan_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.no_internal_regret_correlated_convergence",
+      "title": "No Internal Regret Converges To Correlated Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_internal_regret_correlated_convergence.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_no_internal_regret_correlated_convergence.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma",
+      "title": "Robinson Admissible Sequence Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.bracket_invariant",
+      "title": "Bracket Invariant For Admissible Sequences",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_bracket_invariant.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_bracket_invariant.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.induction_step",
+      "title": "Euclidean Division Pasting In Robinson Induction",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_induction_step.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_induction_step.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.subgame_reduction",
+      "title": "Subgame Reduction For Non-Useful Indices",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_subgame_reduction.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_subgame_reduction.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.useful_window",
+      "title": "Useful Window Bound For Admissible Sequences",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_useful_window.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_learning_robinson_admissible_lemma_useful_window.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_matrix_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_maximin_le_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_maximin_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "title": "Expected Payoff of a Matrix Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.derived_game",
+      "title": "Derived Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_derived_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_derived_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_directional_derivative",
+      "title": "Directional Derivative Of The Value",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_directional_derivative.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_directional_derivative.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_general",
+      "title": "General Value Operator",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_general.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_general.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_nonexpansive_general",
+      "title": "General Value Operator Is Nonexpansive",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_nonexpansive_general.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_nonexpansive_general.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.operators.value_operator_properties",
+      "title": "Value Operator Properties",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_properties.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_operators_value_operator_properties.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_von_neumann_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "title": "Zero-Sum Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_game.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "title": "Nash Payoff Uniqueness in Zero-Sum Games",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "title": "Payoff Negation in Zero-Sum Games",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.duality_gap",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.value",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+      "to": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 105
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_proof_plan_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 5
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "antisymmetric",
+      "title": "antisymmetric",
+      "href": "keywords/antisymmetric.html",
+      "count": 1
+    },
+    {
+      "id": "applications",
+      "title": "applications",
+      "href": "keywords/applications.html",
+      "count": 1
+    },
+    {
+      "id": "approachability",
+      "title": "approachability",
+      "href": "keywords/approachability.html",
+      "count": 2
+    },
+    {
+      "id": "best-response",
+      "title": "best-response",
+      "href": "keywords/best-response.html",
+      "count": 2
+    },
+    {
+      "id": "calibration",
+      "title": "calibration",
+      "href": "keywords/calibration.html",
+      "count": 2
+    },
+    {
+      "id": "cesaro",
+      "title": "cesaro",
+      "href": "keywords/cesaro.html",
+      "count": 1
+    },
+    {
+      "id": "complementarity",
+      "title": "complementarity",
+      "href": "keywords/complementarity.html",
+      "count": 2
+    },
+    {
+      "id": "computation",
+      "title": "computation",
+      "href": "keywords/computation.html",
+      "count": 1
+    },
+    {
+      "id": "continuity",
+      "title": "continuity",
+      "href": "keywords/continuity.html",
+      "count": 1
+    },
+    {
+      "id": "continuous-game",
+      "title": "continuous-game",
+      "href": "keywords/continuous-game.html",
+      "count": 7
+    },
+    {
+      "id": "convergence",
+      "title": "convergence",
+      "href": "keywords/convergence.html",
+      "count": 2
+    },
+    {
+      "id": "convexity",
+      "title": "convexity",
+      "href": "keywords/convexity.html",
+      "count": 3
+    },
+    {
+      "id": "correlated-equilibrium",
+      "title": "correlated-equilibrium",
+      "href": "keywords/correlated-equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 5
+    },
+    {
+      "id": "derived-game",
+      "title": "derived-game",
+      "href": "keywords/derived-game.html",
+      "count": 2
+    },
+    {
+      "id": "dominance",
+      "title": "dominance",
+      "href": "keywords/dominance.html",
+      "count": 2
+    },
+    {
+      "id": "duel",
+      "title": "duel",
+      "href": "keywords/duel.html",
+      "count": 4
+    },
+    {
+      "id": "equilibrium",
+      "title": "equilibrium",
+      "href": "keywords/equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 5
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 2
+    },
+    {
+      "id": "expected-payoff",
+      "title": "expected-payoff",
+      "href": "keywords/expected-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "fictitious-play",
+      "title": "fictitious-play",
+      "href": "keywords/fictitious-play.html",
+      "count": 11
+    },
+    {
+      "id": "finite-game",
+      "title": "finite-game",
+      "href": "keywords/finite-game.html",
+      "count": 1
+    },
+    {
+      "id": "foundational",
+      "title": "foundational",
+      "href": "keywords/foundational.html",
+      "count": 1
+    },
+    {
+      "id": "guarantee",
+      "title": "guarantee",
+      "href": "keywords/guarantee.html",
+      "count": 1
+    },
+    {
+      "id": "invariant",
+      "title": "invariant",
+      "href": "keywords/invariant.html",
+      "count": 1
+    },
+    {
+      "id": "invariant-distribution",
+      "title": "invariant-distribution",
+      "href": "keywords/invariant-distribution.html",
+      "count": 1
+    },
+    {
+      "id": "learning",
+      "title": "learning",
+      "href": "keywords/learning.html",
+      "count": 11
+    },
+    {
+      "id": "limit",
+      "title": "limit",
+      "href": "keywords/limit.html",
+      "count": 2
+    },
+    {
+      "id": "linear-algebra",
+      "title": "linear-algebra",
+      "href": "keywords/linear-algebra.html",
+      "count": 1
+    },
+    {
+      "id": "markov",
+      "title": "markov",
+      "href": "keywords/markov.html",
+      "count": 1
+    },
+    {
+      "id": "matrix-game",
+      "title": "matrix-game",
+      "href": "keywords/matrix-game.html",
+      "count": 7
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 10
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 13
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "optimal-strategy",
+      "title": "optimal-strategy",
+      "href": "keywords/optimal-strategy.html",
+      "count": 6
+    },
+    {
+      "id": "payoff",
+      "title": "payoff",
+      "href": "keywords/payoff.html",
+      "count": 1
+    },
+    {
+      "id": "perron-frobenius",
+      "title": "perron-frobenius",
+      "href": "keywords/perron-frobenius.html",
+      "count": 1
+    },
+    {
+      "id": "polytope",
+      "title": "polytope",
+      "href": "keywords/polytope.html",
+      "count": 1
+    },
+    {
+      "id": "regret",
+      "title": "regret",
+      "href": "keywords/regret.html",
+      "count": 5
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 1
+    },
+    {
+      "id": "robinson",
+      "title": "robinson",
+      "href": "keywords/robinson.html",
+      "count": 6
+    },
+    {
+      "id": "saddle-point",
+      "title": "saddle-point",
+      "href": "keywords/saddle-point.html",
+      "count": 3
+    },
+    {
+      "id": "separation",
+      "title": "separation",
+      "href": "keywords/separation.html",
+      "count": 2
+    },
+    {
+      "id": "simplex",
+      "title": "simplex",
+      "href": "keywords/simplex.html",
+      "count": 1
+    },
+    {
+      "id": "sion",
+      "title": "sion",
+      "href": "keywords/sion.html",
+      "count": 1
+    },
+    {
+      "id": "stationary-distribution",
+      "title": "stationary-distribution",
+      "href": "keywords/stationary-distribution.html",
+      "count": 1
+    },
+    {
+      "id": "stochastic-matrix",
+      "title": "stochastic-matrix",
+      "href": "keywords/stochastic-matrix.html",
+      "count": 1
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 10
+    },
+    {
+      "id": "support",
+      "title": "support",
+      "href": "keywords/support.html",
+      "count": 1
+    },
+    {
+      "id": "theorem",
+      "title": "theorem",
+      "href": "keywords/theorem.html",
+      "count": 1
+    },
+    {
+      "id": "topology",
+      "title": "topology",
+      "href": "keywords/topology.html",
+      "count": 2
+    },
+    {
+      "id": "two-by-two",
+      "title": "two-by-two",
+      "href": "keywords/two-by-two.html",
+      "count": 1
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 12
+    },
+    {
+      "id": "value-operator",
+      "title": "value-operator",
+      "href": "keywords/value-operator.html",
+      "count": 4
+    },
+    {
+      "id": "vector-payoff",
+      "title": "vector-payoff",
+      "href": "keywords/vector-payoff.html",
+      "count": 1
+    },
+    {
+      "id": "weak-duality",
+      "title": "weak-duality",
+      "href": "keywords/weak-duality.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 64
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "game_theory.zero_sum.applications",
+    "game_theory.zero_sum.continuous",
+    "game_theory.zero_sum.core",
+    "game_theory.zero_sum.examples",
+    "game_theory.zero_sum.learning",
+    "game_theory.zero_sum.minimax",
+    "game_theory.zero_sum.operators"
+  ]
+}

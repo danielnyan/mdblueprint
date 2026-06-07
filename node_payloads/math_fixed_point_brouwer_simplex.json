@@ -1,0 +1,70 @@
+{
+  "id": "math.fixed_point.brouwer_simplex",
+  "title": "Brouwer Fixed Point Theorem For A Simplex",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "math/math_fixed_point_brouwer_simplex.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.fixed_point"
+  ],
+  "body_html": "<h1>Brouwer Fixed Point Theorem For A Simplex</h1>\n<p>Every continuous map\n$$\n  f:\\Delta\\to\\Delta\n$$\nfrom a simplex to itself has a fixed point.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 4.11.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Continuous self-map of a simplex has a fixed point.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    },
+    {
+      "id": "math.fixed_point.scarf_lemma",
+      "title": "Scarf Combinatorial Lemma (Colorful Room Existence)",
+      "href": "math/math_fixed_point_scarf_lemma.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "title": "Nash Existence For Finite Games",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Brouwer",
+      "display_name": "Brouwer",
+      "qualified_name": "Brouwer",
+      "module": "EconCSLib.Math.FixedPoint.Brouwer",
+      "kind": "theorem",
+      "signature": "theorem Brouwer (hf : Continuous f): ∃ x , f x = x",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Brouwer.lean#L780",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.FixedPoint.Brouwer",
+      "display_name": "EconCSLib.Math.FixedPoint.Brouwer",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/FixedPoint/Brouwer.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+  "title": "Matching Pennies",
+  "kind": "example",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.examples"
+  ],
+  "body_html": "<h1>Matching Pennies</h1>\n<p>Matching Pennies is the matrix game\n$$\n  \\begin{pmatrix}\n  1 &amp; -1\\\\\n  -1 &amp; 1\n  \\end{pmatrix}.\n$$\nIts pure maxmin is $-1$ and its pure minmax is $1$, so it has no value in pure\nstrategies.  Its mixed extension has value $0$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Matching Pennies matrix and pure duality gap.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "EconCSLib.StrategicGame.Examples.matchingPennies",
+      "display_name": "EconCSLib.StrategicGame.Examples.matchingPennies",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.matchingPennies",
+      "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "kind": "def",
+      "signature": "def matchingPennies : MatrixGame (Fin 2) (Fin 2) ℝ where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/MatchingPennies.lean#L32",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.matchingPennies_value",
+      "display_name": "EconCSLib.StrategicGame.Examples.matchingPennies_value",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.matchingPennies_value",
+      "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "kind": "theorem",
+      "signature": "theorem matchingPennies_value : matchingPennies.value = 0",
+      "docstring": "**Matching Pennies has mixed value `0`** [MFoGT §2.2].",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/MatchingPennies.lean#L61",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_row_optimal",
+      "display_name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_row_optimal",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_row_optimal",
+      "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "kind": "theorem",
+      "signature": "theorem matchingPennies_uniform_row_optimal :\n    matchingPenniesUniform ∈ matchingPennies.optimalRowStrategies",
+      "docstring": "Player 1's uniform strategy is row-optimal.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/MatchingPennies.lean#L68",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_column_optimal",
+      "display_name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_column_optimal",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.matchingPennies_uniform_column_optimal",
+      "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "kind": "theorem",
+      "signature": "theorem matchingPennies_uniform_column_optimal :\n    matchingPenniesUniform ∈ matchingPennies.optimalColumnStrategies",
+      "docstring": "Player 2's uniform strategy is column-optimal.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/MatchingPennies.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "display_name": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/MatchingPennies.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

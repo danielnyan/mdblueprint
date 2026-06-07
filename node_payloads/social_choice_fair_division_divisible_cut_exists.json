@@ -1,0 +1,77 @@
+{
+  "id": "social_choice.fair_division.divisible.cut_exists",
+  "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.dubins_spanier"
+  ],
+  "body_html": "<h1>IVT — Cut Point Exists for Non-Atomic Measures on [0,1]</h1>\n<p><strong>Lemma.</strong> Let $\\mu$ be a finite non-atomic measure on the unit interval\n$I = [0, 1]$. For every target value $0 &lt; c &lt; (\\mu(I)).\\mathrm{toReal}$,\nthere exists a cut point $t \\in I$ such that\n$$\n\\bigl(\\mu([0, t])\\bigr).\\mathrm{toReal} = c.\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.cut_exists</code>.</p>",
+  "proof_html": "<p>sketch</p>\n<p>This is the <em>intermediate value theorem applied to the real-valued CDF</em>\n$$\nF(t) = \\bigl(\\mu([0, t])\\bigr).\\mathrm{toReal}.\n$$</p>\n<p>The required ingredients:</p>\n<ol>\n<li>\n<p><strong>Continuity.</strong> $F$ is continuous on $\\mathbb{R}$ for finite\n   non-atomic measures\n   ([[social_choice.fair_division.divisible.cdf_continuous]]). Restricted\n   to $I = [0, 1]$ it stays continuous.</p>\n</li>\n<li>\n<p><strong>Boundary values.</strong> $F(0) = (\\mu(\\{0\\})).\\mathrm{toReal} = 0$ by\n   non-atomicity, and $F(1) = (\\mu(I)).\\mathrm{toReal}$.</p>\n</li>\n<li>\n<p><strong>IVT.</strong> The standard real IVT on $[0, 1]$ yields a $t$ in $I$ with\n   $F(t) = c$ for any prescribed $0 &lt; c &lt; F(1)$.</p>\n</li>\n</ol>\n<p>The non-atomic-pushforward instance\n[[social_choice.fair_division.divisible.no_atoms_map_subtype]] handles the\ntype-level conversion between <code>Measure I</code> and the real-valued\n$\\mu.\\mathrm{map}\\ \\mathrm{Subtype.val}$ on $\\mathbb{R}$ so that the IVT\napplies cleanly.</p>\n<h2>Where this is used</h2>\n<p>This is the <em>single</em> measure-theoretic input to the cake-cutting\nalgorithms in the library:</p>\n<ul>\n<li>Cut-and-choose specializes it at $c = \\mu_0(I)/2$ to obtain a fair\n  cut ([[social_choice.fair_division.divisible.fair_cut_exists]]).</li>\n<li>Dubins–Spanier specializes it at $c = \\mu_i(I)/n$ at each agent in\n  the moving-knife step.</li>\n<li>Stromquist uses it implicitly inside the value-continuity argument.</li>\n</ul>\n<p>Keeping it as a self-contained lemma means downstream proofs reduce\n<em>directly</em> to set-existence statements without ever opening\n<code>MeasureTheory.tendsto_*</code> from inside an algorithm proof.</p>\n<h2>References</h2>\n<ul>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>. IVT-on-measures device.</li>\n<li>Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 68: 1–17.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.cdf_continuous",
+      "title": "CDF of a Non-Atomic Finite Measure on ℝ Is Continuous",
+      "href": "social_choice/social_choice_fair_division_divisible_cdf_continuous.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.no_atoms_map_subtype",
+      "title": "Non-Atomicity Is Preserved by Subtype.val Pushforward",
+      "href": "social_choice/social_choice_fair_division_divisible_no_atoms_map_subtype.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.fair_cut_exists",
+      "title": "Fair Cut Point Exists",
+      "href": "social_choice/social_choice_fair_division_divisible_fair_cut_exists.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.cut_exists",
+      "display_name": "SocialChoice.FairDivision.Divisible.cut_exists",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.cut_exists",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "kind": "lemma",
+      "signature": "lemma cut_exists (μ : Measure I) [IsFiniteMeasure μ] [NoAtoms μ]\n    (c : ℝ) (hc_pos : 0 < c) (hc_lt : c < (μ Set.univ).toReal) :\n    ∃ t : I, (μ (Set.Iic t)).toReal = c",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L124",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.population.wardrop_equilibrium",
+  "title": "Nash Wardrop Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_population_wardrop_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Nash Wardrop Equilibrium</h1>\n<p>In a population game, a configuration $x\\in X$ is a Nash/Wardrop equilibrium if\nevery strategy used with positive mass is payoff-maximizing for its population:\n$$\n  x_i(s_i)&gt;0\n  \\quad\\text{implies}\\quad\n  K_i(s_i,x)\\ge K_i(t_i,x)\n  \\quad\\text{for every }t_i\\in S_i.\n$$</p>\n<p>The nonatomic interpretation is essential: a single agent may change strategy\nwithout changing the aggregate configuration $x$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Def. 5.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Nash/Wardrop equilibrium for population games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

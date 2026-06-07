@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.mixed_behavioral_general_strategies",
+  "title": "Mixed Behavioral And General Strategies",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_mixed_behavioral_general_strategies.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Mixed Behavioral And General Strategies</h1>\n<p>In an extensive game, player $i$ has three common randomized strategy spaces:</p>\n<ol>\n<li>a mixed strategy is a probability distribution on pure strategies, denoted\n   $\\Sigma_i=\\Delta(S_i)$;</li>\n<li>a behavioral strategy chooses independently at each information set, assigning\n   $\\beta^i_k\\in\\Delta(A_i(P^i_k))$;</li>\n<li>a general strategy is a probability distribution over behavioral strategies,\n   denoted $G_i=\\Delta(B_i)$.</li>\n</ol>\n<p>These three randomization models need not induce the same distributions over\nterminal outcomes unless additional recall conditions hold.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Three kinds of randomized strategies in extensive form games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

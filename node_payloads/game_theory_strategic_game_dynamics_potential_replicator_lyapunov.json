@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.dynamics.potential_replicator_lyapunov",
+  "title": "Potential Is Lyapunov For Replicator Dynamics",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dynamics_potential_replicator_lyapunov.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>Potential Is Lyapunov For Replicator Dynamics</h1>\n<p>In a finite potential game, the potential is a strict Lyapunov function for the\nreplicator dynamics and its stationary set.</p>\n<p>Along a replicator trajectory $\\sigma_t$, the derivative of the potential can be\nwritten as a sum of squares\n$$\n  \\sum_i\\sum_{s\\in S_i}\\sigma_i(s)\n  (P(s,\\sigma_{-i})-P(\\sigma))^2,\n$$\nso it is nonnegative and vanishes exactly at rest points.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Prop. 5.5.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Potential is a strict Lyapunov function for replicator dynamics in potential games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

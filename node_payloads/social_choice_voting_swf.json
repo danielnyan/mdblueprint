@@ -1,0 +1,48 @@
+{
+  "id": "social_choice.voting.swf",
+  "title": "Social Welfare Function",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_swf.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting"
+  ],
+  "body_html": "<h1>Social Welfare Function</h1>\n<p>A <em>social welfare function</em> (SWF) on a population $N$ and alternative set\n$A$ is a map\n$$\nF : \\mathrm{PrefProfile}(N, A) \\to \\mathrm{Pref}(A)\n$$\nthat aggregates a profile of individual preferences into a single bundled\nsocial preference on $A$.</p>\n<p>In Lean this is the structure <code>SocialChoice.Voting.SWF N A</code> with one field\n<code>f : PrefProfile N A → Pref A</code>. A <code>CoeFun</code> instance lets us write <code>F P</code>\nfor the aggregated society-wide preference at profile $P$.</p>\n<p>The SWF output is itself a <code>Pref A</code>, so the standard axioms — unanimity\n([[social_choice.voting.unanimity]]), independence of irrelevant alternatives\n([[social_choice.voting.iia]]), and (non-)dictatorship\n([[social_choice.voting.dictatorial_swf]]) — apply to the strict and weak\nrelations derived from $F(P)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Social welfare function.</li>\n<li>Arrow, K. J. (1951). <em>Social Choice and Individual Values</em>. Original SWF definition.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.SWF",
+      "display_name": "SocialChoice.Voting.SWF",
+      "qualified_name": "SocialChoice.Voting.SWF",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "abbrev",
+      "signature": "abbrev SWF (N A : Type*) [Fintype N] [Fintype A]",
+      "docstring": "A social welfare function maps strict profiles to a weak social preference.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L220",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Basic",
+      "display_name": "EconCSLib.SocialChoice.Voting.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

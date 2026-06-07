@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.stochastic_game.core.history",
+  "title": "Stochastic Game History",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/stochastic_game/game_theory_stochastic_game_core_history.html",
+  "primary_topic": "game_theory.stochastic_game",
+  "topics": [
+    "game_theory.stochastic_game",
+    "game_theory.stochastic_game.core"
+  ],
+  "body_html": "<h1>Stochastic Game History</h1>\n<p>For a stochastic game $\\Gamma = (S, A, q, r, s_0)$\n([[game_theory.stochastic_game.core.stochastic_game]]), a <strong>history of length $t$</strong>\nis a sequence\n$$\nh_t = (s_0, a_0, s_1, a_1, \\dots, s_{t-1}, a_{t-1}, s_t) \\in (S \\times A)^t \\times S,\n$$\nrecording the visited states and the chosen action profiles up to (and\nincluding) the current state at stage $t$.</p>\n<p>The set of length-$t$ histories is denoted $H_t$, and the <strong>infinite\nhistory space</strong> is $H_\\infty = (S \\times A)^{\\mathbb{N}} \\times S$ with\nthe product $\\sigma$-algebra.</p>\n<h2>Two key sub-shapes</h2>\n<ul>\n<li>A <strong>terminal history</strong> $h_t$ ends at the current observed state\n  $s_t$; players' next actions are about to be chosen.</li>\n<li>A <strong>public history</strong> records actions that all players observe (the\n  standard assumption); games of <em>incomplete information</em> impose\n  observation filters that hide some of $h_t$ from specific players.</li>\n</ul>\n<h2>Strategy spaces over histories</h2>\n<ul>\n<li>A <strong>pure strategy</strong> for player $i$ is a function\n  $\\sigma_i : \\bigcup_t H_t \\to A_i$.</li>\n<li>A <strong>behavioural / mixed strategy</strong> is a function\n  $\\sigma_i : \\bigcup_t H_t \\to \\Delta(A_i)$.</li>\n<li>A <strong>Markovian strategy</strong> factors through the current state alone:\n  $\\sigma_i(h_t) = \\sigma_i(s_t)$ depends only on the last component\n  of $h_t$.</li>\n<li>A <strong>stationary strategy</strong> is Markovian <em>and</em> independent of the stage\n  $t$.</li>\n</ul>\n<p>The Shapley operator analysis\n([[game_theory.stochastic_game.value.shapley_operator]]) shows that in zero-sum\ndiscounted stochastic games, <strong>stationary</strong> optimal strategies always\nexist; this dramatically reduces the strategic complexity from\n$|H_\\infty|$ to $|S|$.</p>\n<h2>References</h2>\n<ul>\n<li>Shapley, L. S. (1953). \"Stochastic Games\". <em>PNAS</em>.</li>\n<li>Filar, J. and Vrieze, K. (1997). <em>Competitive Markov Decision Processes.</em> Springer.</li>\n<li>[MFoGT Chapter 8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_shifted_cells",
+  "title": "Stromquist Shifted-Cell Approximation",
+  "kind": "definition",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_shifted_cells.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Stromquist Shifted-Cell Approximation</h1>\n<p>The \"unusual case\" of Stromquist's proof arises when the preference\nunions $\\{U(i)\\}_i$ do not cover the simplex\n([[social_choice.fair_division.divisible.stromquist_U]]); concretely,\nsome divisions $x$ have every agent indifferent between two or more\npieces, so no agent <em>uniquely</em> prefers any piece at $x$.</p>\n<p>The fix is <em>perturbation by an irrational shift</em>. The Lean source\nfollows the original Stromquist construction:</p>\n<h2>Open cell decomposition</h2>\n<p>Pick a positive integer $M$ (the <em>grid scale</em>) and a tuple of shifts\n$\\alpha = (\\alpha_0, \\dots, \\alpha_{n-1}) \\in \\mathbb{R}^n$. For each\nagent $j$ and each integer-coordinate $p \\in \\mathbb{Z}^{n}$, define the\n<em>open shifted cell</em>\n$$\nC_M(\\alpha, p, j) \\;=\\; \\{x \\in S \\mid \\forall k,\\ x_k \\in [\\,p_k/M + \\alpha_j,\\ (p_k+1)/M + \\alpha_j\\,)\\}.\n$$</p>\n<p>The cell <em>hits</em> piece $i$ for agent $j$ if its intersection with the\nsimplex meets the preference set $A(i, j)$\n([[social_choice.fair_division.divisible.stromquist_preference_sets]]).\nThe <em>owner</em> of a cell is the smallest piece index $i$ whose preference\nset $A(i, j)$ meets the cell.</p>\n<h2>Approximate preference and union sets</h2>\n<ul>\n<li><code>strom_A' M α i j</code> — approximate preference set: assign each open cell\n  to its owner for agent $j$, then collect cells owned by piece $i$.</li>\n<li><code>strom_U' M α i</code> — approximate agent-preference union for piece $i$.</li>\n</ul>\n<h2>Why this fixes the unusual case</h2>\n<p>Two technical ingredients:</p>\n<ol>\n<li>\n<p><strong>Cover lemma.</strong> If the shifts $\\alpha_0, \\dots, \\alpha_{n-1}$ have\n   pairwise irrational differences (a generic condition), the shifted\n   cells' boundaries avoid the agent-$j$ indifference hyperplanes for\n   every agent simultaneously. The resulting $\\{U'(i)\\}_i$ then <em>does</em>\n   cover the simplex.</p>\n</li>\n<li>\n<p><strong>Existence of suitable shifts.</strong> Such irrational-difference shifts\n   exist (a Baire-category / cardinality argument on $\\mathbb{R}^n$).</p>\n</li>\n</ol>\n<p>With the perturbed $U'$ covering $S$, the usual-case KKM argument\n([[social_choice.fair_division.divisible.stromquist_usual_case]])\nproduces a fair division for the <em>approximate</em> preferences.</p>\n<h2>Limit passage</h2>\n<p>Two simplex points in the same shifted cell are uniformly close\n(diameter $\\le \\sqrt{n}/M$). Letting $M \\to \\infty$, the sequence of\napproximate fair divisions has a convergent subsequence by compactness\nof the simplex, and the limit is a fair division for the <em>original</em>\npreferences. This is closed in\n[[social_choice.fair_division.divisible.stromquist_unusual_case]].</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "social_choice.instance",
+  "title": "Social Choice Instance",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_instance.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice"
+  ],
+  "body_html": "<h1>Social Choice Instance</h1>\n<p>A <em>social choice instance</em> over a population $N$ and alternative space $A$\npackages two pieces of data:</p>\n<ul>\n<li>a feasibility predicate $F : A \\to \\mathrm{Prop}$ singling out the feasible\n  alternatives for this instance;</li>\n<li>for each agent $i \\in N$, a preference $P_i \\in \\mathrm{Pref}(A)$.</li>\n</ul>\n<p>In Lean: <code>SocialChoice.Instance N A</code> with fields <code>feasible : A → Prop</code> and\n<code>pref : N → Pref A</code>.</p>\n<p>The motivation for keeping feasibility as a per-instance predicate (rather\nthan restricting $A$ once and for all) is that it lets several specialized\nproblems share the same alternative space:</p>\n<ul>\n<li>Voting instances typically take $F$ to be <code>fun _ =&gt; True</code> and use the\n  whole alternative set.</li>\n<li>Fair-division instances over a fixed allocation type can vary feasibility\n  per resource; <code>ShareInstance</code> carries a <code>feasible : (N → S) → Prop</code>\n  predicate on allocations rather than on individual outcomes.</li>\n</ul>\n<p>The pair $(F, P)$ is the canonical input for any <em>solution concept</em> on the\ninstance ([[social_choice.solution_concept]]).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Generic social-choice setup.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Instance",
+      "display_name": "SocialChoice.Instance",
+      "qualified_name": "SocialChoice.Instance",
+      "module": "EconCSLib.SocialChoice.Basic",
+      "kind": "structure",
+      "signature": "structure Instance (N A : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L38",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Basic",
+      "display_name": "EconCSLib.SocialChoice.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

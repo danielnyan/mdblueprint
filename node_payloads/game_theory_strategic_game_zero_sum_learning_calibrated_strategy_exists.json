@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.calibrated_strategy_exists",
+  "title": "Calibrated Strategy Exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_calibrated_strategy_exists.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Calibrated Strategy Exists</h1>\n<p>In a finite prediction problem, there exists a calibrated strategy.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The standard route encodes calibration errors as vector payoffs and applies an\napproachability argument to the closed convex set where every conditional\nforecasting error is nonpositive. The resulting strategy drives the average\ncalibration-error vector to that set, which is exactly the calibration property.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence of calibrated strategies via the learning framework.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "foundation.preference.total_preorder",
+  "title": "Total Preorder",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_preference_total_preorder.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Total Preorder</h1>\n<p>A <em>total preorder</em> on <code>α</code> is a <code>Preorder</code> for which <code>≤</code> is total:\n$$\n  \\forall a,\\, b \\in \\alpha,\\quad a \\le b \\;\\text{ or }\\; b \\le a.\n$$</p>\n<p>Unlike <code>LinearOrder</code>, a total preorder is <strong>not</strong> required to be antisymmetric\nor to have decidable order. Distinct elements may be indifferent, which is\nthe typical situation in utility theory (multiple alternatives can yield the\nsame utility) and in matching theory (a doctor can rank two hospitals equally).</p>\n<p><code>TotalPreorder</code> is the appropriate weakening of <code>LinearOrder</code> whenever a\nresult needs comparability of any two elements but does not need to identify\nindifferent alternatives. Every <code>LinearOrder</code> is a <code>TotalPreorder</code> via the\nauto-derived <code>LinearOrder.toTotalPreorder</code> instance.</p>\n<p>In Lean this is <code>class TotalPreorder (α : Type*) extends Preorder α</code>\ntogether with the totality field <code>le_total</code> and the reusable lemma\n<code>TotalPreorder.comparable</code>. The bridge from <code>LinearOrder</code> is supplied by\nthe auto-derived instance <code>LinearOrder.toTotalPreorder</code> in the same module\n(declared with <code>instance</code>, not enumerated in the declaration list above).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Definitions 2.1-2.4] Maschler, Solan, and Zamir,\n  <em>Game Theory</em>. Reflexivity, transitivity,\n  and completeness of weak preference.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "foundation.argmax.list_arg_max_on",
+      "title": "Argmax of a List under a Total Preorder",
+      "href": "foundation/foundation_argmax_list_arg_max_on.html"
+    },
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "TotalPreorder",
+      "display_name": "TotalPreorder",
+      "qualified_name": "TotalPreorder",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "class",
+      "signature": "class TotalPreorder (A : Type*) extends Preorder A where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L117",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "TotalPreorder.comparable",
+      "display_name": "TotalPreorder.comparable",
+      "qualified_name": "TotalPreorder.comparable",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem TotalPreorder.comparable [TotalPreorder A] (a b : A) :\n    a ≤ b ∨ b ≤ a",
+      "docstring": "In a total preorder, any two elements are comparable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L122",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

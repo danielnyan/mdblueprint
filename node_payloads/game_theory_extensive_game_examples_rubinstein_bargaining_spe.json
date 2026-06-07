@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.examples.rubinstein_bargaining_spe",
+  "title": "Rubinstein Bargaining Subgame Perfect Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_examples_rubinstein_bargaining_spe.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.examples"
+  ],
+  "body_html": "<h1>Rubinstein Bargaining Subgame Perfect Equilibrium</h1>\n<p>In the ultimatum game with amount $M&gt;0$, the unique subgame-perfect equilibrium\nhas player 1 offer $0$ to player 2 and player 2 accept every positive offer.</p>\n<p>In the finite alternating-offer game with discount factor $\\delta\\in(0,1)$, let\n$a_n$ be the fraction of the current surplus kept by the current proposer when\nthere are $n$ rounds remaining. Then\n$$\n  a_1=1,\n  \\qquad\n  a_n=1-\\delta a_{n-1}.\n$$\nThus\n$$\n  a_n=\\frac{1-(-\\delta)^n}{1+\\delta}.\n$$</p>\n<p>In the infinite discounted alternating-offer game, the unique subgame-perfect\nequilibrium has each proposer offer the other player the fraction\n$$\n  \\frac{\\delta}{1+\\delta}\n$$\nof the current surplus, and the offer is accepted. The proposer keeps\n$1/(1+\\delta)$ of the current surplus.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Exercise 6.8.4 and Hints for Chapter 6, Exercise 4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Ultimatum, finite alternating-offer, and infinite discounted bargaining SPE formulas.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

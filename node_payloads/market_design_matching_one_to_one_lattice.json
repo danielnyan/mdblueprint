@@ -1,0 +1,137 @@
+{
+  "id": "market_design.matching.one_to_one.lattice",
+  "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "market_design/market_design_matching_one_to_one_lattice.html",
+  "primary_topic": "market_design",
+  "topics": [
+    "market_design",
+    "market_design.matching",
+    "market_design.matching.one_to_one"
+  ],
+  "body_html": "<h1>Lattice of Stable Matchings</h1>\n<p><strong>Theorem (Conway, reported by Knuth 1976).</strong> The set of stable matchings\nof any finite one-to-one matching market forms a <strong>complete distributive\nlattice</strong> under the partial order</p>\n<p>$$\\mu \\le_M \\mu' \\quad \\iff \\quad \\mu(i) \\preceq_i \\mu'(i) \\text{ for all } i \\in M$$</p>\n<p>(\"men weakly prefer $\\mu'$ to $\\mu$\"). The join $\\mu \\vee \\mu'$ matches each\nman to his preferred of the two partners; the meet $\\mu \\wedge \\mu'$ matches\neach man to his less-preferred. Both are stable matchings.</p>\n<p>Equivalently, under $\\le_W$ defined dually (women's preference), the lattice\nis the order-dual.</p>\n<h2>Extrema</h2>\n<ul>\n<li>Top under $\\le_M$: the <strong>men-optimal</strong> matching $\\mu^M$ (output of\n  men-proposing GS — see [[proposing_optimal]]).</li>\n<li>Bottom under $\\le_M$: the <strong>women-optimal</strong> matching $\\mu^W$ (output of\n  women-proposing GS).</li>\n</ul>\n<p>These two are also the bottom and top respectively under $\\le_W$ — the men's\nand women's interests are exactly opposed across the stable set.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The non-trivial part is showing $\\mu \\vee \\mu'$ (each man picks his preferred\npartner from $\\mu$ and $\\mu'$) is itself a matching (not just a function) and\nis stable.</p>\n<p><em>Matching</em>: We must show no woman is \"picked\" by two different men. If man\n$i_1$'s preferred partner is $j$, and $i_2$'s preferred is also $j$, then $j$\nis matched to $i_1$ in one of $\\mu, \\mu'$ and to $i_2$ in the other. By the\nopposed-preferences phenomenon (a corollary of stability), $j$ also prefers\nexactly the opposite — contradiction.</p>\n<p><em>Stability</em>: If $(i, k)$ blocks $\\mu \\vee \\mu'$, then $k$ ranks higher on\n$i$'s list than his max of $\\mu(i), \\mu'(i)$, so $(i, k)$ blocks both $\\mu$\nand $\\mu'$ — contradicting stability of either.</p>\n<p>Distributivity follows from the same opposed-preferences structure.</p>\n<h2>Formalization</h2>\n<p>In the balanced full-preference Lean model (<code>Preferences n</code> via\n<code>MatchingMarket.ofEquivData</code>, every stable matching perfect), the lattice\nstructure is formalized as a <code>Lattice</code> instance on\n<code>GS.StableMatching w m</code> (<code>EconCSLib.MarketDesign.Matching.Lattice</code>):</p>\n<ul>\n<li><code>GS.opposed_preferences</code> (+ <code>opposed_preferences_women</code>) — the\n  opposed-preferences lemma, proved by a direct pairwise blocking argument.</li>\n<li><code>GS.stableJoin</code> / <code>GS.stableMeet</code> — the join and meet as <code>Matching</code>s, each\n  built from an injective-hence-bijective partner map (<code>joinWoman</code> /\n  <code>meetMan</code>); the injectivity is the \"no woman picked twice\" step and uses\n  <code>opposed_preferences</code>.</li>\n<li><code>GS.stableJoin_isStable</code> / <code>GS.stableMeet_isStable</code> — both operations are\n  closed within the stable set.</li>\n<li>The <code>Lattice (GS.StableMatching w m)</code> instance — the men-preference order\n  (<code>σ ≤ τ</code> iff every man weakly prefers <code>τ</code>) with <code>⊔ = stableJoin</code>,\n  <code>⊓ = stableMeet</code>, all lattice axioms discharged.</li>\n<li><code>GS.StableMatching.gsStable_isGreatest</code> — the <strong>men-proposing GS output is\n  the greatest element</strong> ($\\top$) of this lattice: every man weakly prefers\n  it to his partner in any other stable matching. This is\n  [[proposing_optimal]] (<code>galeShapley_isProposingOptimal</code>) packaged as the\n  lattice maximum, identifying the men-optimal extremum $\\mu^M$ with the GS\n  output.</li>\n</ul>\n<p>All sorry-free (axioms: <code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>).</p>\n<p><strong>Not yet formalized</strong> (classical, future refinements): <em>distributivity</em> of\nthe lattice, <em>completeness</em>, and the <em>women-proposing</em> bottom extremum\n$\\mu^W$ (no women-proposing GS is formalized yet). The general\n$\\bot$/unequal-cardinality version is also out of scope of the balanced model.</p>\n<h2>Consequences</h2>\n<ul>\n<li>The number of stable matchings is bounded by combinatorial counts on the\n  lattice (e.g., chain lengths, antichains).</li>\n<li>The Conway-Knuth lattice is the foundation for the [[rural_hospitals]]\n  invariant (\"same set of matched participants across all stable matchings\").</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.22, Thm 22.12] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Knuth (1976), <em>Marriages Stables</em>. Université de Montréal.</li>\n<li>Roth &amp; Sotomayor (1990), Ch. 2 §2.3.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "market_design.matching.one_to_one.gale_shapley_stable",
+      "title": "Gale-Shapley Theorem (Existence of Stable Matching)",
+      "href": "market_design/market_design_matching_one_to_one_gale_shapley_stable.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.proposing_optimal",
+      "title": "Proposing-Side Optimal Stable Matching",
+      "href": "market_design/market_design_matching_one_to_one_proposing_optimal.html"
+    },
+    {
+      "id": "market_design.matching.one_to_one.rural_hospitals",
+      "title": "Rural Hospitals Theorem",
+      "href": "market_design/market_design_matching_one_to_one_rural_hospitals.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "GS.opposed_preferences",
+      "display_name": "GS.opposed_preferences",
+      "qualified_name": "GS.opposed_preferences",
+      "module": "EconCSLib.MarketDesign.Matching.Lattice",
+      "kind": "theorem",
+      "signature": "theorem opposed_preferences\n    (μ : Matching (Fin n) (Fin n))\n    (hμ : Matching.IsStable (MatchingMarket.ofEquivData w m) μ)\n    {j wj wj' m' : Fin n}\n    (hμ_j : μ.matchW j = some wj')\n    (hpref : (m.prefs j).idxOf wj < (m.prefs j).idxOf wj')\n    (hμ_w : μ.matchM wj = some m') :\n    (w.prefs wj).idxOf m' < (w.prefs wj).idxOf j",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L47",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.stableJoin_isStable",
+      "display_name": "GS.stableJoin_isStable",
+      "qualified_name": "GS.stableJoin_isStable",
+      "module": "EconCSLib.MarketDesign.Matching.Lattice",
+      "kind": "theorem",
+      "signature": "theorem stableJoin_isStable :\n    Matching.IsStable (MatchingMarket.ofEquivData w m) (stableJoin μ ν hμ hν)",
+      "docstring": "The join of two stable matchings is stable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L274",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.stableMeet_isStable",
+      "display_name": "GS.stableMeet_isStable",
+      "qualified_name": "GS.stableMeet_isStable",
+      "module": "EconCSLib.MarketDesign.Matching.Lattice",
+      "kind": "theorem",
+      "signature": "theorem stableMeet_isStable :\n    Matching.IsStable (MatchingMarket.ofEquivData w m) (stableMeet μ ν hμ hν)",
+      "docstring": "The meet of two stable matchings is stable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L443",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.StableMatching",
+      "display_name": "GS.StableMatching",
+      "qualified_name": "GS.StableMatching",
+      "module": "EconCSLib.MarketDesign.Matching.Lattice",
+      "kind": "def",
+      "signature": "def StableMatching (w' m' : Preferences n) : Type",
+      "docstring": "The type of stable matchings of a one-to-one market.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L504",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GS.StableMatching.gsStable_isGreatest",
+      "display_name": "GS.StableMatching.gsStable_isGreatest",
+      "qualified_name": "GS.StableMatching.gsStable_isGreatest",
+      "module": "EconCSLib.MarketDesign.Matching.Lattice",
+      "kind": "theorem",
+      "signature": "theorem gsStable_isGreatest [NeZero n] :\n    IsGreatest (Set.univ : Set (StableMatching w m)) (gsStable w m)",
+      "docstring": "`gsStable` is the greatest element of the stable-matching lattice.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L577",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MarketDesign.Matching.Lattice",
+      "display_name": "EconCSLib.MarketDesign.Matching.Lattice",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MarketDesign/Matching/Lattice.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

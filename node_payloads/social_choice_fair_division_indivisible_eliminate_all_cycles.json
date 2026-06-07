@@ -1,0 +1,152 @@
+{
+  "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+  "title": "Eliminate All Envy Cycles",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.algorithms"
+  ],
+  "body_html": "<h1>Eliminate All Envy Cycles</h1>\n<p>The recursive procedure that, given an allocation with an envy cycle,\nrotates the cycle and recurses; terminates when the envy graph is\nacyclic.</p>\n<p>In Lean: <code>eliminateAllCycles v allGoods A : Allocation N G</code>, defined by\nwell-founded recursion on the Pareto-domination count\n([[social_choice.fair_division.indivisible.pareto_dom_count]]).</p>\n<h2>Structural lemmas</h2>\n<ul>\n<li>\n<p><code>eliminateAllCycles_unfold</code>: the standard fixed-point unfolding. If\n  $A$ has no envy cycle, return $A$; otherwise pick a cycle, rotate,\n  and recurse.</p>\n</li>\n<li>\n<p><code>eliminateAllCycles_acyclic</code>: the output never has an envy cycle —\n  the recursion stops only when acyclic.</p>\n</li>\n<li>\n<p><code>eliminateAllCycles_isAllocation</code> (with <code>[DecidableEq G]</code>):\n  termination preserves the partition property\n  ([[social_choice.fair_division.indivisible.allocation]]). The\n  intermediate rotation step preserves allocations\n  ([[social_choice.fair_division.indivisible.rotate_bundles]]'s\n  <code>rotateBundles_isAllocation</code>), and <code>eliminateAllCycles_isAllocation</code>\n  lifts that through the recursion.</p>\n</li>\n<li>\n<p><code>eliminateAllCycles_nondecreasing</code>: every agent's utility weakly\n  improves across the whole recursion. Each cycle-rotation step is\n  nondecreasing, so the composition is too.</p>\n</li>\n<li>\n<p><code>eliminateAllCycles_eq_of_acyclic</code>: if the input is already acyclic,\n  the output equals the input (fixed-point base case).</p>\n</li>\n</ul>\n<h2>Significance</h2>\n<p>This is the <em>engine</em> of envy-cycle elimination — a procedure that, given\nan arbitrary allocation, produces an acyclic-envy-graph allocation that\nweakly Pareto-dominates the input. The full algorithm\n([[social_choice.fair_division.indivisible.envy_cycle_algorithm]])\nsandwiches <code>eliminateAllCycles</code> between item-assignment steps to\nproduce EF1 + (weak) Pareto-improving allocations.</p>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Envy-cycle elimination subroutine.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "title": "Pareto-Domination Count Termination Measure",
+      "href": "social_choice/social_choice_fair_division_indivisible_pareto_dom_count.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "def",
+      "signature": "noncomputable def eliminateAllCycles [Fintype N] [Fintype G] [DecidableEq N]\n    (v : Valuation N G) (A : Allocation N G) : Allocation N G",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L479",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_unfold",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_unfold",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_unfold",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma eliminateAllCycles_unfold [Fintype N] [Fintype G] [DecidableEq N]\n    (v : Valuation N G) (A : Allocation N G) :\n    eliminateAllCycles v A =\n      if h : hasEnvyCycle v A then\n        eliminateAllCycles v (rotateBundles A (Classical.choose h))\n      else A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L493",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_acyclic",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_acyclic",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_acyclic",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma eliminateAllCycles_acyclic\n    (v : Valuation N G) (A : Allocation N G) :\n    ¬ hasEnvyCycle v (eliminateAllCycles v A)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L512",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_isAllocation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_isAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_isAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma eliminateAllCycles_isAllocation [DecidableEq G]\n    (v : Valuation N G) {allGoods : Finset G} {A : Allocation N G}\n    (hA : IsAllocation allGoods A) :\n    IsAllocation allGoods (eliminateAllCycles v A)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L528",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_nondecreasing",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_nondecreasing",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_nondecreasing",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma eliminateAllCycles_nondecreasing\n    [DecidableEq G]\n    (v : Valuation N G) (A : Allocation N G) (i : N) :\n    v.val i (A i) ≤ v.val i (eliminateAllCycles v A i)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L550",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_eq_of_acyclic",
+      "display_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_eq_of_acyclic",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.eliminateAllCycles_eq_of_acyclic",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "kind": "lemma",
+      "signature": "lemma eliminateAllCycles_eq_of_acyclic\n    (v : Valuation N G) (A : Allocation N G)\n    (h : ¬ hasEnvyCycle v A) :\n    eliminateAllCycles v A = A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L569",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

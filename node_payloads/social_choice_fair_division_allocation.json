@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.allocation",
+  "title": "Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_allocation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Allocation</h1>\n<p>For a population $N$ and a share type $S$, an <em>allocation</em> is a function\n$A : N \\to S$ assigning each agent the share they receive.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Allocation N S := N → S</code>, a plain type\nalias. Structural feasibility (partitioning a cake into disjoint pieces, or\nsplitting items into disjoint bundles) is <em>not</em> baked into this type — it\nis stated separately by predicates such as the divisible\n<code>IsAllocation</code> ([[social_choice.fair_division.divisible.allocation]]) or\nthe indivisible <code>IsAllocation</code>\n([[social_choice.fair_division.indivisible.allocation]]).</p>\n<p>The separation is deliberate: many algorithms manipulate raw allocations\n(round-robin steps, cycle rotations) before establishing that the result\nis a valid partition.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Allocation as a function from agents to shares.</li>\n<li>[AGT Chapter 13] Nisan et al., <em>Algorithmic Game Theory</em>. Allocations for cake-cutting.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Allocation",
+      "display_name": "SocialChoice.FairDivision.Allocation",
+      "qualified_name": "SocialChoice.FairDivision.Allocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+      "kind": "abbrev",
+      "signature": "abbrev Allocation (N S : Type*)",
+      "docstring": "A fair-division allocation assigns each agent a share.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Basic.lean#L34",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Basic",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

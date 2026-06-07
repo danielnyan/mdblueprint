@@ -1,0 +1,169 @@
+{
+  "topic": {
+    "id": "social_choice.voting.arrow",
+    "title": "Social Choice.Voting.Arrow",
+    "href": "social_choice/voting/arrow/index.html",
+    "parent": "social_choice.voting",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 0,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 10,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 11,
+    "visible_nodes_with_selected_proof_plans": 11
+  },
+  "nodes": [
+    {
+      "id": "social_choice.voting.arrow_impossibility",
+      "title": "Arrow's Impossibility Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_arrow_impossibility.html",
+      "payload": "node_payloads/social_choice_voting_arrow_impossibility.json"
+    },
+    {
+      "id": "social_choice.voting.arrow_of_unanimity_iia",
+      "title": "Arrow's Theorem via Decisive Coalitions",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_arrow_of_unanimity_iia.html",
+      "payload": "node_payloads/social_choice_voting_arrow_of_unanimity_iia.json"
+    },
+    {
+      "id": "social_choice.voting.decisive_contraction",
+      "title": "Coalition Contraction — Splitting a Decisive Coalition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_decisive_contraction.html",
+      "payload": "node_payloads/social_choice_voting_decisive_contraction.json"
+    },
+    {
+      "id": "social_choice.voting.decisive_spread",
+      "title": "Field Expansion — Decisive on One Pair Implies Decisive Everywhere",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_decisive_spread.html",
+      "payload": "node_payloads/social_choice_voting_decisive_spread.json"
+    },
+    {
+      "id": "social_choice.voting.iia_strict",
+      "title": "IIA on Strict Preference",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_iia_strict.html",
+      "payload": "node_payloads/social_choice_voting_iia_strict.json"
+    },
+    {
+      "id": "social_choice.voting.is_decisive",
+      "title": "Decisive Coalition and Dictator",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_decisive.html",
+      "payload": "node_payloads/social_choice_voting_is_decisive.json"
+    },
+    {
+      "id": "social_choice.voting.is_decisive_for",
+      "title": "Decisive Coalition for an Ordered Pair",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_decisive_for.html",
+      "payload": "node_payloads/social_choice_voting_is_decisive_for.json"
+    },
+    {
+      "id": "social_choice.voting.is_weakly_decisive_for",
+      "title": "Weakly Decisive Coalition",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_is_weakly_decisive_for.html",
+      "payload": "node_payloads/social_choice_voting_is_weakly_decisive_for.json"
+    },
+    {
+      "id": "social_choice.voting.minimal_decisive_card_one",
+      "title": "Minimal Decisive Coalition Has Size One",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_minimal_decisive_card_one.html",
+      "payload": "node_payloads/social_choice_voting_minimal_decisive_card_one.json"
+    },
+    {
+      "id": "social_choice.voting.unanimity_univ_decisive",
+      "title": "Grand Coalition Is Decisive under Unanimity",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_unanimity_univ_decisive.html",
+      "payload": "node_payloads/social_choice_voting_unanimity_univ_decisive.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "arrow",
+      "title": "arrow",
+      "href": "keywords/arrow.html",
+      "count": 10
+    },
+    {
+      "id": "contraction",
+      "title": "contraction",
+      "href": "keywords/contraction.html",
+      "count": 1
+    },
+    {
+      "id": "decisive-coalition",
+      "title": "decisive-coalition",
+      "href": "keywords/decisive-coalition.html",
+      "count": 8
+    },
+    {
+      "id": "dictator",
+      "title": "dictator",
+      "href": "keywords/dictator.html",
+      "count": 1
+    },
+    {
+      "id": "field-expansion",
+      "title": "field-expansion",
+      "href": "keywords/field-expansion.html",
+      "count": 1
+    },
+    {
+      "id": "iia",
+      "title": "iia",
+      "href": "keywords/iia.html",
+      "count": 1
+    },
+    {
+      "id": "impossibility",
+      "title": "impossibility",
+      "href": "keywords/impossibility.html",
+      "count": 1
+    },
+    {
+      "id": "social-choice",
+      "title": "social-choice",
+      "href": "keywords/social-choice.html",
+      "count": 10
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 10
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

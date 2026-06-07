@@ -1,0 +1,90 @@
+{
+  "id": "foundation.cost.examples.gcd",
+  "title": "Worked Example: Euclidean GCD Step Count",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_gcd.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: Euclidean GCD Step Count</h1>\n<p>The simplest <code>CostM</code> instance: <code>gcd</code> in <code>CostM ℕ</code>, charging one unit per\nmodulus operation. Two bounds are proved:</p>\n<ul>\n<li><code>gcd_cost_le</code>  —  <code>(gcd a b).cost ≤ b</code> (a trivial linear bound), and</li>\n<li><code>gcd_cost_log_le</code>  —  <code>(gcd a b).cost ≤ 2 · \\log_2 b + 1</code>, the textbook\n  logarithmic bound following from the fact that two consecutive remainders\n  at least halve the modulus.</li>\n</ul>\n<p>This is the canonical \"<code>C = ℕ</code>, additive, counts one resource\" use of the\nmonad (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>): the cost field accumulates the number\nof <code>mod</code> steps, and the bound lives purely on <code>.cost</code> while the returned gcd\nvalue lives on <code>.ret</code>.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>GCD.gcd : ℕ → ℕ → CostM ℕ ℕ</code> — the instrumented algorithm.</li>\n<li><code>GCD.gcd_cost_le</code>, <code>GCD.gcd_cost_log_le</code> — the linear and logarithmic step\n  bounds (the latter via a private <code>mod_halves</code> halving lemma).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost-annotated\n  functional algorithms (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "GCD.gcd",
+      "display_name": "GCD.gcd",
+      "qualified_name": "GCD.gcd",
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "kind": "def",
+      "signature": "def gcd : ℕ → ℕ → CostM ℕ ℕ\n  | a, 0     => pure a\n  | a, b + 1 => do\n    ✓ gcd (b + 1) (a % (b + 1))\ntermination_by _ b => b\ndecreasing_by exact Nat.mod_lt _ (Nat.succ_pos _)\n/-- Linear cost bound: `gcd a b` performs at most `b` `mod` operations. -/",
+      "docstring": "Euclidean GCD, instrumented with `CostM ℕ` to count `mod` calls.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/GCD.lean#L39",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GCD.gcd_cost_le",
+      "display_name": "GCD.gcd_cost_le",
+      "qualified_name": "GCD.gcd_cost_le",
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "kind": "theorem",
+      "signature": "theorem gcd_cost_le (a b : ℕ) : (gcd a b).cost ≤ b",
+      "docstring": "Linear cost bound: `gcd a b` performs at most `b` `mod` operations.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/GCD.lean#L47",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GCD.gcd_cost_log_le",
+      "display_name": "GCD.gcd_cost_log_le",
+      "qualified_name": "GCD.gcd_cost_log_le",
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "kind": "theorem",
+      "signature": "theorem gcd_cost_log_le (a b : ℕ) :\n    (gcd a b).cost ≤ 2 * Nat.log 2 b + 1",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/GCD.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.GCD",
+      "display_name": "EconCSLib.Examples.CostM.GCD",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/GCD.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

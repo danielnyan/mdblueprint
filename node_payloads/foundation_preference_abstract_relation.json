@@ -1,0 +1,114 @@
+{
+  "id": "foundation.preference.abstract_relation",
+  "title": "Abstract Preference-Relation Axioms",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_preference_abstract_relation.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Abstract Preference-Relation Axioms</h1>\n<p>For arguments that quantify over an arbitrary binary relation\n<code>pref : α → α → Prop</code> (rather than the bundled <code>Preorder</code> instance), the\nfoundation layer exposes a relation-style vocabulary:</p>\n<ul>\n<li><strong>Strict preference</strong> <code>strict pref a b := pref a b ∧ ¬ pref b a</code></li>\n<li><strong>Indifference</strong> <code>indiff pref a b := pref a b ∧ pref b a</code></li>\n<li><strong>Completeness</strong> <code>Completeness pref := ∀ a b, pref a b ∨ pref b a</code></li>\n<li><strong>Transitivity</strong> <code>Transitivity pref := ∀ a b c, pref a b → pref b c → pref a c</code></li>\n</ul>\n<p>This vocabulary is what preference-based statements and the vNM axiom suite use\nto formulate axioms about a free-standing relation argument, without\ncommitting to the <code>Preorder</code> typeclass on <code>α</code>. Lottery-specific axioms\n(Independence, Continuity, Archimedean property) are stated on top of\n<code>Completeness</code> and <code>Transitivity</code> in <code>Utility.VNMAxioms</code>.</p>\n<p>In Lean, <code>strict</code> and <code>indiff</code> are library-wide definitions.\n<code>Completeness</code> and <code>Transitivity</code> remain inside <code>namespace VNM</code> because they\nname axioms in the vNM suite.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Preference-relation axioms in their\n  relation-style formulation.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "href": "foundation/utility/foundation_utility_lottery.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.utility.vnm_axioms",
+      "title": "Von Neumann Morgenstern Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axioms.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "strict",
+      "display_name": "strict",
+      "qualified_name": "strict",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def strict {A : Type*} (R : A → A → Prop) (a b : A) : Prop",
+      "docstring": "Strict preference derived from a weak preference relation.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L51",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "indiff",
+      "display_name": "indiff",
+      "qualified_name": "indiff",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def indiff {A : Type*} (R : A → A → Prop) (a b : A) : Prop",
+      "docstring": "Indifference derived from a weak preference relation.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L55",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VNM.Completeness",
+      "display_name": "VNM.Completeness",
+      "qualified_name": "VNM.Completeness",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def Completeness (pref : A → A → Prop) : Prop",
+      "docstring": "**Completeness**: every pair is comparable.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L213",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VNM.Transitivity",
+      "display_name": "VNM.Transitivity",
+      "qualified_name": "VNM.Transitivity",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def Transitivity (pref : A → A → Prop) : Prop",
+      "docstring": "**Transitivity**: preference chains compose.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L217",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

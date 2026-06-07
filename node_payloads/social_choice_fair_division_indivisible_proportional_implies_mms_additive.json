@@ -1,0 +1,56 @@
+{
+  "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+  "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible",
+    "social_choice.fair_division.indivisible.mms"
+  ],
+  "body_html": "<h1>PROP ⇒ MMS (Additive Valuations, Complete Allocations)</h1>\n<p><strong>Theorem.</strong> Let $w$ be an additive valuation, <code>allGoods</code> the outer\ngood set, and $A$ a proportional allocation\n([[social_choice.fair_division.indivisible.proportional]]) under\n$w.\\mathrm{toValuation}$. Then $A$ satisfies the maximin-share guarantee\n([[social_choice.fair_division.indivisible.maximin_share]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsProportional.isMaxminShare</code>.</p>",
+  "proof_html": "<p>(by contradiction)</p>\n<p>Fix an agent $i$ and an alternative complete allocation $B$. Suppose for\ncontradiction that no bundle of $B$ has value $\\le v_i(A(i))$ from\nagent $i$'s perspective. By linear ordering on $\\mathbb{R}$,\n$\\forall j,\\ v_i(A(i)) &lt; v_i(B(j))$.</p>\n<p>By <code>Finset.sum_lt_sum</code> (using the strict inequality at least once for\nthe nonempty population), the constant sum strictly beats the\n$B$-sum:\n$$\n|N| \\cdot v_i(A(i)) = \\sum_{j} v_i(A(i)) &lt; \\sum_{j} v_i(B(j)).\n$$</p>\n<p>By additivity of $w$ and the cover property of $B$:\n$$\n\\sum_{j} v_i(B(j)) = v_i(\\mathrm{allGoods}).\n$$</p>\n<p>Combining with proportionality of $A$\n([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]]\nor equivalently the hypothesis here):\n$$\nv_i(\\mathrm{allGoods}) \\le |N| \\cdot v_i(A(i)).\n$$</p>\n<p>Chaining gives $|N| \\cdot v_i(A(i)) &lt; |N| \\cdot v_i(A(i))$, a\ncontradiction. Hence some bundle of $B$ does satisfy the MMS\ninequality. $\\square$</p>\n<h2>Significance</h2>\n<p>This is the last link in the additive-valuations chain\n$\\mathrm{EF} \\Rightarrow \\mathrm{PROP} \\Rightarrow \\mathrm{MMS}$. Combined\nwith [[social_choice.fair_division.indivisible.efx_implies_ef1]] and\n[[social_choice.fair_division.indivisible.ef_implies_efx_mono]], it\ngives the full chain\n$\\mathrm{EF} \\Rightarrow \\mathrm{EFX} \\Rightarrow \\mathrm{EF1} \\Rightarrow \\mathrm{PROP} \\Rightarrow \\mathrm{MMS}$\nfor additive valuations on complete allocations.</p>\n<p>Note the converse $\\mathrm{MMS} \\Rightarrow \\mathrm{PROP}$ does not\nhold in general (MMS is strictly weaker than PROP).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. PROP–MMS implication.</li>\n<li>Budish, E. (2011). \"The Combinatorial Assignment Problem\". <em>J. Pol. Econ.</em></li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsProportional.isMaxminShare",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsProportional.isMaxminShare",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsProportional.isMaxminShare",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+      "kind": "theorem",
+      "signature": "theorem IsProportional.isMaxminShare\n    [Fintype N] [Nonempty N] [DecidableEq G]\n    (w : AdditiveValuation N G)\n    {allGoods : Finset G} {A : Allocation N G}\n    (hProp : IsProportional (Fintype.card N) w.toValuation allGoods A) :\n    IsMaxminShare w.toValuation allGoods A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Implications.lean#L107",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Implications.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

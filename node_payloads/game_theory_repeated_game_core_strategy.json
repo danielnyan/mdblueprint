@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.strategy",
+  "title": "Repeated Game Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_strategy.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Repeated Game Strategy</h1>\n<p>In a standard repeated game, a strategy of player $i$ is a map\n$$\n  \\sigma_i:H\\to\\Delta(A_i),\n$$\nwhere $H=\\bigcup_{t\\ge 0}H_t$ is the set of finite public histories.</p>\n<p>After history $h\\in H_t$, the mixed action $\\sigma_i(h)$ is used at stage\n$t+1$. A strategy profile induces a probability distribution on finite histories\nand, by extension, on infinite plays.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 8, Def. 8.3.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Behavior strategies in standard repeated games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

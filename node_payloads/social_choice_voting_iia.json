@@ -1,0 +1,48 @@
+{
+  "id": "social_choice.voting.iia",
+  "title": "Independence of Irrelevant Alternatives",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_iia.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting"
+  ],
+  "body_html": "<h1>Independence of Irrelevant Alternatives</h1>\n<p>A social welfare function $F$ satisfies <em>Independence of Irrelevant\nAlternatives</em> (IIA) if society's ranking of any pair $\\{a,b\\}$ depends only\non how the voters rank $a$ versus $b$, not on how they rank either of these\nagainst any third alternative:\n$$\n\\forall P, Q,\\ \\forall a, b,\\\n\\bigl(\\forall i,\\ P_i(a,b) \\iff Q_i(a,b)\\bigr)\n\\Rightarrow \\bigl(F(P)(a,b) \\iff F(Q)(a,b)\\bigr).\n$$</p>\n<p>In Lean: <code>SocialChoice.Voting.SWF.IIA</code>. The statement is in terms of the\nweak preference $P_i(a,b)$ (the raw bundled relation), which is the standard\nformulation.</p>\n<p>A useful corollary: under IIA the <em>strict</em> social preference between $a$ and\n$b$ also depends only on the pair-restricted profiles\n([[social_choice.voting.iia_strict]] in the decisive-coalition proof).</p>\n<p>IIA, together with unanimity ([[social_choice.voting.unanimity]]), is the\nArrow hypothesis: every SWF satisfying both must be dictatorial when there\nare at least three alternatives\n([[social_choice.voting.arrow_impossibility]]).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.9] Maschler, Solan, and Zamir, <em>Game Theory</em>. Independence of irrelevant alternatives.</li>\n<li>Arrow, K. J. (1951). <em>Social Choice and Individual Values</em>. Original IIA axiom.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.SWF.IIA",
+      "display_name": "SocialChoice.Voting.SWF.IIA",
+      "qualified_name": "SocialChoice.Voting.SWF.IIA",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "def",
+      "signature": "def IIA (F : SWF N A) : Prop",
+      "docstring": "Independence of irrelevant alternatives for SWFs.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L234",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Basic",
+      "display_name": "EconCSLib.SocialChoice.Voting.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

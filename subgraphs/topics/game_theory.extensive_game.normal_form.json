@@ -1,0 +1,142 @@
+{
+  "topic": {
+    "id": "game_theory.extensive_game.normal_form",
+    "title": "Game Theory.Extensive Game.Normal Form",
+    "href": "game_theory/extensive_game/normal_form/index.html",
+    "parent": "game_theory.extensive_game",
+    "node_count": 6,
+    "descendant_node_count": 6
+  },
+  "counts": {
+    "internal_nodes": 6,
+    "inlined_nodes": 0,
+    "descendant_nodes": 6,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 6,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 7,
+    "visible_nodes_with_selected_proof_plans": 7
+  },
+  "nodes": [
+    {
+      "id": "game_theory.extensive_game.normal_form.agent_normal_form",
+      "title": "Agent Normal Form",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_agent_normal_form.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_agent_normal_form.json"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.extensive_form_perfect_equilibrium",
+      "title": "Extensive Form Perfect Equilibrium",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_form_perfect_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_extensive_form_perfect_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "title": "Normal Form Invariance Of Extensive Representations",
+      "kind": "proposition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_normal_form_invariance.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_extensive_normal_form_invariance.json"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "title": "Normal Form Reduction",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_normal_form_reduction.json"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "title": "Semi-Reduced Normal Form",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_semi_reduced_normal_form.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_semi_reduced_normal_form.json"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.sequential_equilibrium_exists",
+      "title": "Existence Of Sequential Equilibrium",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_sequential_equilibrium_exists.html",
+      "payload": "node_payloads/game_theory_extensive_game_normal_form_sequential_equilibrium_exists.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "to": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "to": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "equilibrium-refinement",
+      "title": "equilibrium-refinement",
+      "href": "keywords/equilibrium-refinement.html",
+      "count": 1
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "extensive-game",
+      "title": "extensive-game",
+      "href": "keywords/extensive-game.html",
+      "count": 6
+    },
+    {
+      "id": "invariance",
+      "title": "invariance",
+      "href": "keywords/invariance.html",
+      "count": 1
+    },
+    {
+      "id": "normal-form",
+      "title": "normal-form",
+      "href": "keywords/normal-form.html",
+      "count": 4
+    },
+    {
+      "id": "perfection",
+      "title": "perfection",
+      "href": "keywords/perfection.html",
+      "count": 1
+    },
+    {
+      "id": "refinement",
+      "title": "refinement",
+      "href": "keywords/refinement.html",
+      "count": 1
+    },
+    {
+      "id": "sequential-equilibrium",
+      "title": "sequential-equilibrium",
+      "href": "keywords/sequential-equilibrium.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

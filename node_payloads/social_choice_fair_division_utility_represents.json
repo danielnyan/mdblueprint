@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.utility_represents",
+  "title": "Utility Represents Share Preference",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_utility_represents.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.core"
+  ],
+  "body_html": "<h1>Utility Represents Share Preference</h1>\n<p>Let $I_1$ be a no-externality share instance\n([[social_choice.fair_division.share_instance]]) and $I_2$ a cardinal\ninstance ([[social_choice.fair_division.cardinal_instance]]) on the same\npopulation $N$ and share type $S$. We say $I_2$'s utility <em>represents</em>\n$I_1$'s share preference if for every agent $i$ and every pair of\nshares $s, t$,\n$$\nI_1.\\mathrm{sharePref}(i)\\,s\\,t \\iff I_2.\\mathrm{utility}(i)\\,t \\le I_2.\\mathrm{utility}(i)\\,s.\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.CardinalInstance.UtilityRepresentsSharePref</code>.</p>\n<p>This is the bridging predicate that lets a cardinal instance <em>play the\nrole of</em> an ordinal share instance: whenever the predicate holds, theorems\nstated against $I_1$'s ordinal preferences automatically apply with $I_2$'s\nutilities.</p>\n<p>Two design notes:</p>\n<ul>\n<li>The direction of the inequality reflects \"higher utility is weakly\n  preferred\"; the LHS uses the bundled weak preference $\\preceq$ in the\n  $s \\preceq_i t$ convention.</li>\n<li>The predicate does not require the utility to be <em>unique</em> — many cardinal\n  instances can represent the same ordinal share instance, differing by\n  monotone transformations.</li>\n</ul>\n<p>The canonical <em>induced</em> cardinal instance for a given share instance\n($I_2 = I_1.\\mathrm{induced}$ via\n<code>CardinalInstance.inducedSharePref</code> ↔ <code>toShareInstance</code>) automatically\nsatisfies the representation predicate.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Cardinal representation of ordinal preferences.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.CardinalInstance.UtilityRepresentsSharePref",
+      "display_name": "SocialChoice.FairDivision.CardinalInstance.UtilityRepresentsSharePref",
+      "qualified_name": "SocialChoice.FairDivision.CardinalInstance.UtilityRepresentsSharePref",
+      "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "kind": "def",
+      "signature": "def UtilityRepresentsSharePref {N R S : Type*}\n    (I₁ : ShareInstance N R S) (I₂ : CardinalInstance N R S) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L59",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Cardinal.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

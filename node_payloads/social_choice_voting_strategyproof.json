@@ -1,0 +1,48 @@
+{
+  "id": "social_choice.voting.strategyproof",
+  "title": "Strategy-Proof Social Choice Function",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_strategyproof.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting"
+  ],
+  "body_html": "<h1>Strategy-Proof Social Choice Function</h1>\n<p>A resolute voting rule $f$ (one that returns a single winner) is\n<em>strategy-proof</em> (non-manipulable) if no voter can obtain a strictly better\nwinner by misreporting. If $f(P) = \\{a\\}$ and voter $i$ unilaterally switches\ntheir ballot to a ranking $r$, producing $f(P[i \\mapsto r]) = \\{b\\}$, then\n$$\n\\neg\\,(\\, b \\succ_{P_i} a \\,),\n$$\ni.e. the new winner $b$ is never strictly preferred to the honest winner $a$\nunder $i$'s <em>true</em> preference $P_i$.</p>\n<p>In Lean: <code>SocialChoice.Voting.ResoluteStrategyproofness</code>, stated for a rule\ntogether with a <code>Resolute</code> witness, using <code>updateProfile P i r</code> for the\nprofile with voter $i$'s ballot replaced by ranking $r$.</p>\n<p>Strategy-proofness is the central incentive-compatibility axiom for ordinal\nvoting rules; it is the natural ordinal counterpart of dominant-strategy\nincentive compatibility (DSIC) in mechanism design.</p>\n<p>Two classical implications closed the field:</p>\n<ul>\n<li>Resolute strategy-proof rules are monotonic\n  ([[social_choice.voting.strategyproof_implies_monotonic]]).</li>\n<li>Combined with unanimity ([[social_choice.voting.unanimity]]) and\n  $|A| \\ge 3$, strategy-proofness forces dictatorship — the\n  Gibbard–Satterthwaite theorem\n  ([[social_choice.voting.gibbard_satterthwaite]]).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.36] Maschler, Solan, and Zamir, <em>Game Theory</em>. Strategy-proof / nonmanipulable SCF.</li>\n<li>Gibbard, A. (1973). \"Manipulation of voting schemes\". <em>Econometrica</em>.</li>\n<li>Satterthwaite, M. A. (1975). \"Strategy-proofness and Arrow's conditions\". <em>J. Econ. Theory</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.ResoluteStrategyproofness",
+      "display_name": "SocialChoice.Voting.ResoluteStrategyproofness",
+      "qualified_name": "SocialChoice.Voting.ResoluteStrategyproofness",
+      "module": "EconCSLib.SocialChoice.Voting.Basic",
+      "kind": "def",
+      "signature": "def ResoluteStrategyproofness (f : VotingRule N A) (_hf : Resolute f) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L311",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Basic",
+      "display_name": "EconCSLib.SocialChoice.Voting.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

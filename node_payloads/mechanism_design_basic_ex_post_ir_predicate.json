@@ -1,0 +1,48 @@
+{
+  "id": "mechanism_design.basic.ex_post_ir_predicate",
+  "title": "Ex-Post Individual Rationality Predicate",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_basic_ex_post_ir_predicate.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.basic"
+  ],
+  "body_html": "<h1>Ex-Post Individual Rationality Predicate</h1>\n<p>A direct mechanism is ex-post individually rational when truthful reporting gives\neach agent nonnegative utility for every true type profile and every profile of\nthe other agents' reports.</p>\n<p>The predicate is ex-post because it is stated pointwise over realized types and\nreports rather than in expectation over a prior.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Lem. 9.20] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Individual rationality for Clarke-pivot VCG mechanisms with nonnegative\n  valuations.</li>\n<li>[AGT, Chapter 9, Section 9.5.5] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Individual-rationality constraints in mechanism-design applications.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_basic_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Mechanism.IsExPostIR",
+      "display_name": "Mechanism.IsExPostIR",
+      "qualified_name": "Mechanism.IsExPostIR",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "kind": "def",
+      "signature": "def IsExPostIR [Preorder U] [Zero U] : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L101",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

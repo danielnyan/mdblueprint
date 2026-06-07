@@ -1,0 +1,185 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.divisible.dubins_spanier",
+    "title": "Social Choice.Fair Division.Divisible.Dubins Spanier",
+    "href": "social_choice/fair_division/divisible/dubins_spanier/index.html",
+    "parent": "social_choice.fair_division.divisible",
+    "node_count": 4,
+    "descendant_node_count": 4
+  },
+  "counts": {
+    "internal_nodes": 4,
+    "inlined_nodes": 0,
+    "descendant_nodes": 4,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 4,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 6,
+    "visible_nodes_with_selected_proof_plans": 6
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_cut_exists.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_ds_step.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_dubins_spanier_proportional.json"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "title": "Dubins–Spanier as a Rule on Measure Instances",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_rule.html",
+      "payload": "node_payloads/social_choice_fair_division_divisible_dubins_spanier_rule.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "social_choice.fair_division.divisible.ds_step",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ds_step",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cut_exists",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_exists",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "social_choice.fair_division.divisible.ds_step",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "cake-cutting",
+      "title": "cake-cutting",
+      "href": "keywords/cake-cutting.html",
+      "count": 1
+    },
+    {
+      "id": "divisible",
+      "title": "divisible",
+      "href": "keywords/divisible.html",
+      "count": 4
+    },
+    {
+      "id": "dubins-spanier",
+      "title": "dubins-spanier",
+      "href": "keywords/dubins-spanier.html",
+      "count": 3
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 1
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 4
+    },
+    {
+      "id": "intermediate-value-theorem",
+      "title": "intermediate-value-theorem",
+      "href": "keywords/intermediate-value-theorem.html",
+      "count": 1
+    },
+    {
+      "id": "measure",
+      "title": "measure",
+      "href": "keywords/measure.html",
+      "count": 1
+    },
+    {
+      "id": "moving-knife",
+      "title": "moving-knife",
+      "href": "keywords/moving-knife.html",
+      "count": 1
+    },
+    {
+      "id": "proportional",
+      "title": "proportional",
+      "href": "keywords/proportional.html",
+      "count": 3
+    },
+    {
+      "id": "rule",
+      "title": "rule",
+      "href": "keywords/rule.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

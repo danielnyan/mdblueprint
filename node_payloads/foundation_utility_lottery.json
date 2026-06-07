@@ -1,0 +1,110 @@
+{
+  "id": "foundation.utility.lottery",
+  "title": "Lottery",
+  "kind": "definition",
+  "status": "staged",
+  "href": "foundation/utility/foundation_utility_lottery.html",
+  "primary_topic": "foundation.utility",
+  "topics": [
+    "foundation.utility"
+  ],
+  "body_html": "<h1>Lottery</h1>\n<p>For a finite set of outcomes $O$, a lottery is a probability distribution on\n$O$. The degenerate lottery at $o\\in O$ assigns probability one to $o$.</p>\n<p>Given lotteries $L_1,L_2$ and a scalar $\\alpha\\in[0,1]$, the compound lottery\n$$\n  [\\alpha L_1,(1-\\alpha)L_2]\n$$\nis the lottery assigning each outcome the probability\n$$\n  \\alpha L_1(o)+(1-\\alpha)L_2(o).\n$$</p>\n<h2>Implementation note</h2>\n<p><code>Lottery 𝕜 O</code> is a domain-flavored <code>abbrev</code> for <code>stdSimplex 𝕜 O</code>. The\nconstructors <code>Lottery.pure</code> and <code>Lottery.mix</code> are definitional aliases for\n<code>stdSimplex.pure</code> and <code>stdSimplex.mix</code> from <code>Core.Simplex</code>; the canonical\nalgebra (<code>Lottery.expectedValue_pure</code>, <code>Lottery.expectedValue_mix</code>,\n<code>Lottery.expectedValue_mono</code>, <code>Lottery.expectedValue_const</code>) is one-line\nwrappers over <code>wsum_pure_apply</code>, <code>wsum_mix</code>, <code>wsum_le_wsum</code>, <code>wsum_const</code>.\nSee [[math.simplex.mix]] for the underlying convex-combination vocabulary.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Definitions 2.9-2.11] Maschler, Solan, and Zamir, <em>Game Theory</em>. Lotteries, degenerate lotteries, and compound lotteries.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "href": "math/math_simplex_mix.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.preference.abstract_relation",
+      "title": "Abstract Preference-Relation Axioms",
+      "href": "foundation/foundation_preference_abstract_relation.html"
+    },
+    {
+      "id": "foundation.profile.deviate",
+      "title": "Standalone Profile and Unilateral Deviation",
+      "href": "foundation/foundation_profile_deviate.html"
+    },
+    {
+      "id": "foundation.utility.expected_utility_representation",
+      "title": "Expected Utility Representation",
+      "href": "foundation/utility/foundation_utility_expected_utility_representation.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Lottery",
+      "display_name": "Lottery",
+      "qualified_name": "Lottery",
+      "module": "EconCSLib.Foundation.Utility.Lottery",
+      "kind": "abbrev",
+      "signature": "abbrev Lottery (𝕜 : Type*) (O : Type*) [Semiring 𝕜] [PartialOrder 𝕜] [Fintype O]",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/Lottery.lean#L48",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Lottery.pure",
+      "display_name": "Lottery.pure",
+      "qualified_name": "Lottery.pure",
+      "module": "EconCSLib.Foundation.Utility.Lottery",
+      "kind": "abbrev",
+      "signature": "abbrev Lottery.pure {O : Type*} [Fintype O] [DecidableEq O] (o₀ : O) :\n    Lottery 𝕜 O",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/Lottery.lean#L63",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Lottery.mix",
+      "display_name": "Lottery.mix",
+      "qualified_name": "Lottery.mix",
+      "module": "EconCSLib.Foundation.Utility.Lottery",
+      "kind": "abbrev",
+      "signature": "abbrev Lottery.mix {O : Type*} [Fintype O]\n    (α : 𝕜) (hα₀ : 0 ≤ α) (hα₁ : α ≤ 1)\n    (L₁ L₂ : Lottery 𝕜 O) : Lottery 𝕜 O",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/Lottery.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Utility.Lottery",
+      "display_name": "EconCSLib.Foundation.Utility.Lottery",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/Lottery.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "math.fixed_point.kakutani_from_two_player_nash",
+  "title": "Kakutani From Two-Player Nash Existence",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/equilibrium/math_fixed_point_kakutani_from_two_player_nash.html",
+  "primary_topic": "game_theory.strategic_game.equilibrium",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Kakutani From Two-Player Nash Existence</h1>\n<p>The existence of Nash equilibria for all finite two-player games implies\nKakutani's fixed point theorem for upper semicontinuous compact-convex-valued\ncorrespondences on compact convex subsets of Euclidean space.</p>\n<p>MFoGT Exercise 4.12.6 constructs finite two-player games from finite families of\npoints $(x_i)$ and $(y_i)$, uses their Nash equilibria to generate approximate fixed\npoints, and then takes an accumulation point to obtain a fixed point of the\ncorrespondence.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. McLennan-Tourki derivation of Kakutani from finite two-player Nash equilibrium existence.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

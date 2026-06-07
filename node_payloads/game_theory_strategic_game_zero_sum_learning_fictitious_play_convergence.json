@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play_convergence",
+  "title": "Fictitious Play Convergence",
+  "kind": "theorem",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play_convergence.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Fictitious Play Convergence</h1>\n<p>Let $(i_n,j_n)_{n\\ge1}$ be a fictitious-play realization in a finite matrix game\n$A$, and let $(x_n,y_n)$ be the empirical frequencies of play.</p>\n<p>MFoGT Thm. 2.7.2 has two conclusions.</p>\n<p>First, the empirical frequencies approach the optimal-strategy sets\n$X(A)\\times Y(A)$. Explicitly, for every $\\varepsilon&gt;0$ there is $N$ such that,\nfor every $n\\ge N$,\n$$\n  x_nAy\\ge \\operatorname{val}(A)-\\varepsilon\n  \\quad\\text{for all }y\\in\\Delta(J),\n$$\nand\n$$\n  xAy_n\\le \\operatorname{val}(A)+\\varepsilon\n  \\quad\\text{for all }x\\in\\Delta(I).\n$$</p>\n<p>Second, the Cesaro average of realized payoffs converges to the value:\n$$\n  \\frac1n\\sum_{t=1}^n A_{i_tj_t}\n  \\longrightarrow \\operatorname{val}(A).\n$$</p>",
+  "proof_html": "<p>The two conclusions decouple along independent technical chains.</p>\n<p><strong>Frequency convergence to optimal strategies.</strong> By\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma]] the cumulative duality\ngap $\\mu(n) := \\max_i \\beta^i(n) - \\min_j \\alpha^j(n)$ is $o(n)$. Dividing by\n$n$ and using $\\alpha(n)/n = x_n A + O(1/n)$ and $\\beta(n)/n = A y_n + O(1/n)$,\nthe two eventual optimality inequalities follow, so the empirical frequencies\napproach $X(A) \\times Y(A)$.</p>\n<p><strong>Cesàro payoff convergence.</strong> This is a separate elementary telescoping\nargument; see [[game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson]] for the\nself-contained derivation $R_n / n \\to \\operatorname{val}(A)$ from the\n$o(n)$ gap bound.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 2.7.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Convergence of fictitious play in finite zero-sum games.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

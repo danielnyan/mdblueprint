@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.finitely_repeated_game",
+  "title": "Finitely Repeated Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_finitely_repeated_game.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Finitely Repeated Game</h1>\n<p>For $T\\ge 1$, the $T$-stage repeated game $G^T$ evaluates a strategy profile by\nthe expected average payoff\n$$\n  \\gamma_T^i(\\sigma)\n  =\n  \\mathbb E_\\sigma\\left[\n    \\frac1T\\sum_{t=1}^T g_i(a_t)\n  \\right].\n$$</p>\n<p>Because only the first $T$ stages matter, $G^T$ may be treated as a finite\nextensive-form game.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 8, Def. 8.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. T-stage repeated game with average payoff.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

@@ -1,0 +1,107 @@
+{
+  "id": "foundation.utility.positive_affine_uniqueness",
+  "title": "Positive Affine Uniqueness Of Utility",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html",
+  "primary_topic": "foundation.utility",
+  "topics": [
+    "foundation.utility"
+  ],
+  "body_html": "<h1>Positive Affine Uniqueness Of Utility</h1>\n<p>If two expected-utility functions represent the same preference over lotteries,\nthen they differ by a positive affine transformation:\n$$\n  v(L)=a u(L)+b\n  \\quad\\text{with}\\quad a&gt;0.\n$$</p>\n<p>Conversely, a positive affine transformation of a representing utility function\nrepresents the same preference relation.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The order-preserving direction is immediate from $a&gt;0$. For uniqueness, compare\nthe two representations on degenerate lotteries and use linearity over lotteries\nto extend the affine relation from outcomes to all lotteries.</p>\n<p>The Lean library has the positive-affine relation and its order-preservation and\ninverse lemmas. The full uniqueness theorem for linear utility functionals is\nstill an open theorem target in <code>EconCSLib/Utility/Lottery.lean</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Thm. 2.22] Maschler, Solan, and Zamir, <em>Game Theory</em>. Uniqueness of expected utility up to positive affine transformation.</li>\n<li>[MSZ, Chapter 2, Exercise 2.19] Maschler, Solan, and Zamir, <em>Game Theory</em>. Inverse of a positive affine transformation.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "foundation.preference.represents_preference",
+      "title": "Utility Representation of a Preference",
+      "href": "foundation/foundation_preference_represents_preference.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsPositiveAffineOf",
+      "display_name": "IsPositiveAffineOf",
+      "qualified_name": "IsPositiveAffineOf",
+      "module": "EconCSLib.Foundation.Utility.AffineTransform",
+      "kind": "def",
+      "signature": "def IsPositiveAffineOf (u v : X → 𝕜) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/AffineTransform.lean#L39",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsPositiveAffineOf.preserves_le",
+      "display_name": "IsPositiveAffineOf.preserves_le",
+      "qualified_name": "IsPositiveAffineOf.preserves_le",
+      "module": "EconCSLib.Foundation.Utility.AffineTransform",
+      "kind": "theorem",
+      "signature": "theorem IsPositiveAffineOf.preserves_le {u v : X → 𝕜}\n    (h : IsPositiveAffineOf u v) (x y : X) :\n    u x ≤ u y ↔ v x ≤ v y",
+      "docstring": "A positive affine transform preserves the order: `u x ≤ u y ↔ v x ≤ v y`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/AffineTransform.lean#L55",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsPositiveAffineOf.preserves_representation",
+      "display_name": "IsPositiveAffineOf.preserves_representation",
+      "qualified_name": "IsPositiveAffineOf.preserves_representation",
+      "module": "EconCSLib.Foundation.Utility.AffineTransform",
+      "kind": "theorem",
+      "signature": "theorem IsPositiveAffineOf.preserves_representation [Preorder X] {u v : X → 𝕜}\n    (h : IsPositiveAffineOf u v) (hrep : RepresentsPreference u) :\n    RepresentsPreference v where",
+      "docstring": "If `u` represents a preference, so does any positive affine transform. [MSZ 2.22]",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/AffineTransform.lean#L70",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "IsPositiveAffineOf.symm",
+      "display_name": "IsPositiveAffineOf.symm",
+      "qualified_name": "IsPositiveAffineOf.symm",
+      "module": "EconCSLib.Foundation.Utility.AffineTransform",
+      "kind": "theorem",
+      "signature": "theorem IsPositiveAffineOf.symm {u v : X → 𝕜}\n    (h : IsPositiveAffineOf u v) : IsPositiveAffineOf v u",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/AffineTransform.lean#L79",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Utility.AffineTransform",
+      "display_name": "EconCSLib.Foundation.Utility.AffineTransform",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Utility/AffineTransform.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

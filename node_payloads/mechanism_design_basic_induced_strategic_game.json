@@ -1,0 +1,54 @@
+{
+  "id": "mechanism_design.basic.induced_strategic_game",
+  "title": "Induced Strategic Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.basic"
+  ],
+  "body_html": "<h1>Induced Strategic Game</h1>\n<p>Given a direct mechanism \\(M\\), a utility function, and a true type profile, the\ninduced strategic game takes each agent's report space as the agent's strategy\nspace. The payoff of a report profile is the utility of the outcome selected by\nthe mechanism under the true type profile.</p>\n<p>The induced game is the bridge that lets mechanism-design predicates reuse\nnormal-form equilibrium and dominance notions instead of duplicating them.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.4.1, Def. 9.24] Nisan, Roughgarden,\n  Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Mechanisms induced as strategic\n  games.</li>\n<li>[AGT, Chapter 9, Prop. 9.25] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  The revelation-principle argument connecting induced games and direct\n  mechanisms.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_basic_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Mechanism.toStrategicGame",
+      "display_name": "Mechanism.toStrategicGame",
+      "qualified_name": "Mechanism.toStrategicGame",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "kind": "def",
+      "signature": "def toStrategicGame (v : ∀ i, T i) : StrategicGame I U where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.nash_induces_correlated_equilibrium",
+  "title": "Nash Equilibrium Induces Correlated Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_nash_induces_correlated_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Nash Equilibrium Induces Correlated Equilibrium</h1>\n<p>Every mixed Nash equilibrium induces a correlated equilibrium by taking the\nproduct distribution over pure strategy profiles.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Under the product distribution induced by a mixed Nash equilibrium, a player's\nconditional belief after a recommendation is consistent with the opponents'\nmixed strategies. Since the player's mixed strategy is a best response, every\npure action used with positive probability is optimal against that conditional\ndistribution. Therefore obeying each recommendation satisfies the obedience\ninequalities.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, Thm. 8.7] Maschler, Solan, and Zamir, <em>Game Theory</em>. Every Nash equilibrium induces a correlated equilibrium.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

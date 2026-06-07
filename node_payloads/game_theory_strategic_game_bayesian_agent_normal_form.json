@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.bayesian.agent_normal_form",
+  "title": "Agent Normal Form Of A Bayesian Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_bayesian_agent_normal_form.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Agent Normal Form Of A Bayesian Game</h1>\n<p>The agent normal form of a finite Bayesian game replaces each player-type pair\n$(i,t_i)$ by a separate agent. The action set of agent $(i,t_i)$ is $A_i$.</p>\n<p>The payoff of agent $(i,t_i)$ is the conditional expected payoff of the original\nplayer $i$, conditional on observing type $t_i$, when the other type agents use\ntheir prescribed actions.</p>\n<p>This construction turns the interim incentive constraints of a Bayesian\nequilibrium into ordinary Nash best-response constraints in a finite\nstrategic-form game.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Reduction of Bayesian games to strategic-form games by type agents.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

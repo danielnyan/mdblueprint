@@ -1,0 +1,263 @@
+{
+  "topic": {
+    "id": "mechanism_design.myerson",
+    "title": "Mechanism Design.Myerson",
+    "href": "mechanism_design/myerson/index.html",
+    "parent": "mechanism_design",
+    "node_count": 10,
+    "descendant_node_count": 10
+  },
+  "counts": {
+    "internal_nodes": 10,
+    "inlined_nodes": 0,
+    "descendant_nodes": 10,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 9,
+    "proof_plan_nodes": 1,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 11,
+    "visible_nodes_with_selected_proof_plans": 11
+  },
+  "nodes": [
+    {
+      "id": "mechanism_design.myerson.monotonicity_characterization",
+      "title": "Myerson Monotonicity Characterization",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_myerson_monotonicity_characterization.html",
+      "payload": "node_payloads/mechanism_design_myerson_monotonicity_characterization.json"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "kind": "theorem",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html",
+      "payload": "node_payloads/mechanism_design_myerson_optimal_auction.json"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction_legacy_plan",
+      "title": "Myerson Optimal Auction Legacy Plan",
+      "kind": "proof-plan",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction_legacy_plan.html",
+      "payload": "node_payloads/mechanism_design_myerson_optimal_auction_legacy_plan.json"
+    },
+    {
+      "id": "mechanism_design.myerson.payment_construction",
+      "title": "Myerson Payment Construction (withMyersonPayment)",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_payment_construction.html",
+      "payload": "node_payloads/mechanism_design_myerson_payment_construction.json"
+    },
+    {
+      "id": "mechanism_design.myerson.payment_envelope",
+      "title": "Myerson Payment Envelope Lemmas",
+      "kind": "lemma",
+      "status": "proved",
+      "href": "mechanism_design/mechanism_design_myerson_payment_envelope.html",
+      "payload": "node_payloads/mechanism_design_myerson_payment_envelope.json"
+    },
+    {
+      "id": "mechanism_design.myerson.payment_formula",
+      "title": "Myerson Payment Formula",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_payment_formula.html",
+      "payload": "node_payloads/mechanism_design_myerson_payment_formula.json"
+    },
+    {
+      "id": "mechanism_design.myerson.reserve_price",
+      "title": "Myerson Reserve-Price Characterisation",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_myerson_reserve_price.html",
+      "payload": "node_payloads/mechanism_design_myerson_reserve_price.json"
+    },
+    {
+      "id": "mechanism_design.myerson.revenue_equivalence",
+      "title": "Revenue Equivalence Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "mechanism_design/mechanism_design_myerson_revenue_equivalence.html",
+      "payload": "node_payloads/mechanism_design_myerson_revenue_equivalence.json"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "title": "Virtual-Surplus-Maximizing Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html",
+      "payload": "node_payloads/mechanism_design_myerson_virtual_surplus_maximizing_allocation.json"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_value_regularity",
+      "title": "Virtual Values and Regularity",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_value_regularity.html",
+      "payload": "node_payloads/mechanism_design_myerson_virtual_value_regularity.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_value_regularity",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency",
+      "node_count": 49
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.virtual_value_regularity",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "id": "allocation-rule",
+      "title": "allocation-rule",
+      "href": "keywords/allocation-rule.html",
+      "count": 1
+    },
+    {
+      "id": "bayesian",
+      "title": "bayesian",
+      "href": "keywords/bayesian.html",
+      "count": 2
+    },
+    {
+      "id": "dsic",
+      "title": "dsic",
+      "href": "keywords/dsic.html",
+      "count": 1
+    },
+    {
+      "id": "envelope",
+      "title": "envelope",
+      "href": "keywords/envelope.html",
+      "count": 1
+    },
+    {
+      "id": "mechanism-design",
+      "title": "mechanism-design",
+      "href": "keywords/mechanism-design.html",
+      "count": 10
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 1
+    },
+    {
+      "id": "myerson",
+      "title": "myerson",
+      "href": "keywords/myerson.html",
+      "count": 10
+    },
+    {
+      "id": "optimal-auction",
+      "title": "optimal-auction",
+      "href": "keywords/optimal-auction.html",
+      "count": 2
+    },
+    {
+      "id": "payment-construction",
+      "title": "payment-construction",
+      "href": "keywords/payment-construction.html",
+      "count": 1
+    },
+    {
+      "id": "provenance",
+      "title": "provenance",
+      "href": "keywords/provenance.html",
+      "count": 1
+    },
+    {
+      "id": "regularity",
+      "title": "regularity",
+      "href": "keywords/regularity.html",
+      "count": 1
+    },
+    {
+      "id": "reserve-price",
+      "title": "reserve-price",
+      "href": "keywords/reserve-price.html",
+      "count": 2
+    },
+    {
+      "id": "revenue-equivalence",
+      "title": "revenue-equivalence",
+      "href": "keywords/revenue-equivalence.html",
+      "count": 1
+    },
+    {
+      "id": "second-price-auction",
+      "title": "second-price-auction",
+      "href": "keywords/second-price-auction.html",
+      "count": 1
+    },
+    {
+      "id": "single-item",
+      "title": "single-item",
+      "href": "keywords/single-item.html",
+      "count": 2
+    },
+    {
+      "id": "single-parameter",
+      "title": "single-parameter",
+      "href": "keywords/single-parameter.html",
+      "count": 3
+    },
+    {
+      "id": "symmetric-ipv",
+      "title": "symmetric-ipv",
+      "href": "keywords/symmetric-ipv.html",
+      "count": 1
+    },
+    {
+      "id": "virtual-surplus",
+      "title": "virtual-surplus",
+      "href": "keywords/virtual-surplus.html",
+      "count": 1
+    },
+    {
+      "id": "virtual-valuation",
+      "title": "virtual-valuation",
+      "href": "keywords/virtual-valuation.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

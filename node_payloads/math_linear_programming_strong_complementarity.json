@@ -1,0 +1,132 @@
+{
+  "id": "math.linear_programming.strong_complementarity",
+  "title": "Strong Complementarity For Linear Programming",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "math/math_linear_programming_strong_complementarity.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.linear_programming",
+    "math.linear_programming.duality"
+  ],
+  "body_html": "<h1>Strong Complementarity For Linear Programming</h1>\n<h2>Setup</h2>\n<p>For the standard-form primal/dual pair over a linearly ordered field\n$\\mathbb{K}$:</p>\n<ul>\n<li><strong>Primal</strong> $\\mathrm{P}$: $\\min \\langle c, x\\rangle$ subject to $Ax \\ge b$ and $x \\ge 0$.</li>\n<li><strong>Dual</strong> $\\mathrm{D}$: $\\max \\langle u, b\\rangle$ subject to $u^{\\mathsf T} A \\le c$ and $u \\ge 0$.</li>\n</ul>\n<h2>Statements</h2>\n<h3>Weak complementary slackness</h3>\n<p>For <strong>every</strong> optimal primal–dual pair $(x, u)$ (i.e. $x$ primal-feasible,\n$u$ dual-feasible, $\\langle c, x\\rangle = \\langle u, b\\rangle$), the\ncomponentwise products vanish:</p>\n<ul>\n<li>for every row $i$: $u_i \\cdot (A_i x - b_i) = 0$;</li>\n<li>for every column $j$: $x_j \\cdot (c_j - u^{\\mathsf T} A_j) = 0$.</li>\n</ul>\n<p>Equivalently, strict primal slack at row $i$ forces $u_i = 0$, and strict\ndual slack at column $j$ forces $x_j = 0$.</p>\n<h3>Strong complementary slackness</h3>\n<p>If both $\\mathrm{P}$ and $\\mathrm{D}$ are feasible (so that strong duality\ngives a matching optimal pair), then there <strong>exist</strong> optimal $(x^*, u^*)$\nsatisfying the strict biconditional:</p>\n<ul>\n<li>for every row $i$: $(A_i x^* - b_i) &gt; 0 \\iff u^*_i = 0$;</li>\n<li>for every column $j$: $(c_j - (u^*)^{\\mathsf T} A_j) &gt; 0 \\iff x^*_j = 0$.</li>\n</ul>\n<p>Equivalently, <strong>exactly one</strong> of each complementary pair is strictly\npositive in the strong pair. Combined with weak CS, this is the same as\nthe \"strict sum\" form</p>\n<p>$$\n  (A_i x^* - b_i) + u^*_i &gt; 0\n  \\quad \\text{and} \\quad\n  x^*_j + (c_j - (u^*)^{\\mathsf T} A_j) &gt; 0\n  \\quad \\text{for every } i, j,\n$$</p>\n<p>which is the shape stated in the Lean theorem\n<code>EconCSLib.LinearProgramming.exists_strong_complementary_pair</code>. The Lean\ntheorem is parametrized by an explicit optimal pair $(x_0, u_0)$ with\nmatching value $v$ (rather than \"P and D feasible\") to keep the lemma\nreusable; the \"feasibility\" hypothesis form follows by composing with\n<a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_duality\" href=\"linear_programming/math_linear_programming_strong_duality.html\">Strong Duality For Linear Programming</a>.</p>",
+  "proof_html": "<h3>Weak CS</h3>\n<p>Take any optimal pair $(x, u)$. Compute\n$$\n  \\sum_i u_i\\,(A_i x - b_i) + \\sum_j x_j\\,(c_j - u^{\\mathsf T} A_j)\n   = \\langle u, Ax\\rangle - \\langle u, b\\rangle\n     + \\langle c, x\\rangle - \\langle u^{\\mathsf T} A, x\\rangle\n   = \\langle c, x\\rangle - \\langle u, b\\rangle = 0,\n$$\nusing bilinearity (the cross terms cancel) and primal/dual optimality.\nEach summand on the left is $\\ge 0$ (a nonneg variable times a nonneg\nslack), so each is exactly $0$.</p>\n<h3>Strong CS</h3>\n<p>The proof has two parts: a <strong>per-index dichotomy</strong> (one optimal pair\nstrictly positive on the chosen complementary pair) and an <strong>averaging\nstep</strong> that combines $|I| + n$ per-index pairs.</p>\n<p><strong>Per-row dichotomy.</strong> Fix $i_0 \\in I$. Consider the sub-LP</p>\n<p>$$\n  \\alpha_{i_0} \\;:=\\; \\sup\\{\\,(Ax - b)_{i_0} \\;:\\; Ax \\ge b,\\; x \\ge 0,\\; \\langle c, x\\rangle \\le v^*\\,\\}\n$$</p>\n<p>where $v^*$ is the common primal–dual optimum. Either:</p>\n<ul>\n<li><strong>Case A</strong>: $\\alpha_{i_0} &gt; 0$. Then there is a primal-optimal $x^*$\n  with $(A x^* - b)_{i_0} &gt; 0$. Pair $(x^*, u^0)$ with any dual-optimal\n  $u^0$.</li>\n<li><strong>Case B</strong>: $\\alpha_{i_0} = 0$. Then $(Ax-b)_{i_0} \\le 0$ on every\n  primal-optimal $x$. Apply\n  <a class=\"node-ref\" data-node-id=\"math.linear_algebra.farkas_lemma\" href=\"linear_algebra/math_linear_algebra_farkas_lemma.html\">Farkas Lemma</a> to the system ${Ax \\ge b,\n  x \\ge 0, -\\langle c, x\\rangle \\ge -v^*}$ with the implied bound\n  $(Ax - b)_{i_0} \\le 0$. The Farkas certificate produces multipliers\n  $(\\mu, \\nu, \\lambda) \\ge 0$ with\n  $$\n    (\\mu + e_{i_0})^{\\mathsf T} A \\le \\lambda \\cdot c, \\quad\n    \\langle \\mu, b\\rangle + b_{i_0} \\ge \\lambda \\cdot v^*.\n  $$\n  If $\\lambda &gt; 0$, set $u'' := (\\mu + e_{i_0})/\\lambda$: dual-feasible\n  with $u''_{i_0} \\ge 1/\\lambda &gt; 0$ and $\\langle u'', b\\rangle \\ge v^*$.\n  If $\\lambda = 0$, set $u' := u^0 + (\\mu + e_{i_0})$ for any\n  dual-optimal $u^0$: dual-feasible with $u'_{i_0} \\ge 1 &gt; 0$ and\n  $\\langle u', b\\rangle = v^* + \\langle \\mu, b\\rangle + b_{i_0} \\ge v^*$.\n  In each case, combined with weak duality the new $u$ is dual-optimal,\n  and pair $(x^0, u)$ with any primal-optimal $x^0$ is the desired pair.</li>\n</ul>\n<p><strong>Per-column dichotomy.</strong> Symmetric, exchanging roles of $x$ and $u$.</p>\n<p><strong>Averaging.</strong> Take the witness pairs $(x^{(i)}, u^{(i)})$ for each\n$i \\in I$ and $(x^{(j)}, u^{(j)})$ for each $j \\in \\mathrm{Fin}\\,n$ — a\ntotal of $|I| + n$ optimal pairs. Define</p>\n<p>$$\n  x^* := \\frac{1}{|I| + n} \\sum_{\\text{indices}} x^{(\\cdot)}, \\qquad\n  u^* := \\frac{1}{|I| + n} \\sum_{\\text{indices}} u^{(\\cdot)}.\n$$</p>\n<p>Each set of optimal primal (resp. dual) solutions is convex (a polytope\nin the standard-form LP), so $x^*, u^*$ are optimal. For any fixed row\n$k$, at index $i_0 = k$ we picked a pair with\n$(Ax^{(k)} - b)_k + u^{(k)}_k &gt; 0$. Hence</p>\n<p>$$\n  (A x^* - b)_k + u^*_k \\;=\\; \\frac{1}{|I|+n} \\sum (A x^{(\\cdot)} - b)_k + u^{(\\cdot)}_k\n  \\;\\ge\\; \\frac{1}{|I|+n} \\cdot \\big((A x^{(k)} - b)_k + u^{(k)}_k\\big) &gt; 0,\n$$</p>\n<p>with the other terms nonneg. Symmetric for columns. So $(x^*, u^*)$ is\nstrictly complementary on every row and column pair. By weak CS, exactly\none side of each complementary pair is positive — the desired\nbiconditional. $\\square$</p>\n<h2>Remarks</h2>\n<ul>\n<li>The proof is purely algebraic and constructive. The dual certificates\n  in the per-index step come from\n  <a class=\"node-ref\" data-node-id=\"math.linear_algebra.farkas_lemma\" href=\"linear_algebra/math_linear_algebra_farkas_lemma.html\">Farkas Lemma</a> (which in turn rests on\n  Fourier–Motzkin elimination, in <code>EconCSLib.LinearAlgebra</code>).</li>\n<li>Works over any linearly ordered field — same generality as\n  <a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_duality\" href=\"linear_programming/math_linear_programming_strong_duality.html\">Strong Duality For Linear Programming</a>.</li>\n<li>The weak-CS direction (<code>exactly one of each pair is positive</code>) is\n  immediate; the strong content is the <em>existence of a pair where\n  every complementary pair has at least one strict side</em>.</li>\n</ul>\n<h2>Consequences</h2>\n<ul>\n<li><strong>Matrix-game strong complementarity</strong> (downstream node\n  <code>zero_sum.minimax.strong_complementarity</code>, [MFoGT Prop. 2.4.1(c)]): in a\n  finite zero-sum matrix game, there is an optimal pair $(x^*, y^*)$\n  with the strict biconditional <code>x*_i &gt; 0 ↔ row i is a best response to y*</code>\n  and dually. Obtained by applying this theorem to the matrix-game LP\n  (after shifting payoffs to be positive and rescaling).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 11] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>. Strong complementarity\n  for feasible primal-dual linear programs.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "math/math_minimax_strong_complementarity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "EconCSLib.LinearProgramming.lp_weak_complementarity_row",
+      "display_name": "EconCSLib.LinearProgramming.lp_weak_complementarity_row",
+      "qualified_name": "EconCSLib.LinearProgramming.lp_weak_complementarity_row",
+      "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem lp_weak_complementarity_row\n    (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜)\n    {x : Fin n → 𝕜} (hxA : ∀ i, b i ≤ ∑ j, A i j * x j) (hxnn : ∀ j, 0 ≤ x j)\n    {u : I → 𝕜} (hu_du : DualFeasible A c u)\n    (h_match : ∑ j, c j * x j = ∑ i, u i * b i) :\n    ∀ i, (∑ j, A i j * x j - b i) * u i = 0",
+      "docstring": "**Weak complementary slackness**, row form.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L70",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.LinearProgramming.lp_weak_complementarity_col",
+      "display_name": "EconCSLib.LinearProgramming.lp_weak_complementarity_col",
+      "qualified_name": "EconCSLib.LinearProgramming.lp_weak_complementarity_col",
+      "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem lp_weak_complementarity_col\n    (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜)\n    {x : Fin n → 𝕜} (hxA : ∀ i, b i ≤ ∑ j, A i j * x j) (hxnn : ∀ j, 0 ≤ x j)\n    {u : I → 𝕜} (hu_du : DualFeasible A c u)\n    (h_match : ∑ j, c j * x j = ∑ i, u i * b i) :\n    ∀ j, (c j - ∑ i, u i * A i j) * x j = 0",
+      "docstring": "**Weak complementary slackness**, column form.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L119",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.LinearProgramming.exists_row_strict_pair",
+      "display_name": "EconCSLib.LinearProgramming.exists_row_strict_pair",
+      "qualified_name": "EconCSLib.LinearProgramming.exists_row_strict_pair",
+      "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem exists_row_strict_pair\n    (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (v : 𝕜)\n    {x₀ : Fin n → 𝕜}\n    (hx₀A : ∀ i, b i ≤ ∑ j, A i j * x₀ j)\n    (hx₀nn : ∀ j, 0 ≤ x₀ j) (hx₀_val : ∑ j, c j * x₀ j = v)\n    {u₀ : I → 𝕜} (hu₀ : DualFeasible A c u₀) (hu₀_val : ∑ i, u₀ i * b i = v)\n    (i₀ : I) :\n    ∃ (x : Fin n → 𝕜) (u : I → 𝕜),\n      (∀ i, b i ≤ ∑ j, A i j * x j) ∧ (∀ j, 0 ≤ x j) ∧\n      DualFeasible A c u ∧\n      (∑ j, c j * x j = v) ∧ (∑ i, u i * b i = v) ∧\n      0 < (∑ j, A i₀ j * x j - b i₀) + u i₀",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L271",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.LinearProgramming.exists_col_strict_pair",
+      "display_name": "EconCSLib.LinearProgramming.exists_col_strict_pair",
+      "qualified_name": "EconCSLib.LinearProgramming.exists_col_strict_pair",
+      "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem exists_col_strict_pair\n    (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (v : 𝕜)\n    {x₀ : Fin n → 𝕜}\n    (hx₀A : ∀ i, b i ≤ ∑ j, A i j * x₀ j)\n    (hx₀nn : ∀ j, 0 ≤ x₀ j) (hx₀_val : ∑ j, c j * x₀ j = v)\n    {u₀ : I → 𝕜} (hu₀ : DualFeasible A c u₀) (hu₀_val : ∑ i, u₀ i * b i = v)\n    (j₀ : Fin n) :\n    ∃ (x : Fin n → 𝕜) (u : I → 𝕜),\n      (∀ i, b i ≤ ∑ j, A i j * x j) ∧ (∀ j, 0 ≤ x j) ∧\n      DualFeasible A c u ∧\n      (∑ j, c j * x j = v) ∧ (∑ i, u i * b i = v) ∧\n      0 < x j₀ + (c j₀ - ∑ i, u i * A i j₀)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L538",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.LinearProgramming.exists_strong_complementary_pair",
+      "display_name": "EconCSLib.LinearProgramming.exists_strong_complementary_pair",
+      "qualified_name": "EconCSLib.LinearProgramming.exists_strong_complementary_pair",
+      "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem exists_strong_complementary_pair\n    (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (v : 𝕜)\n    (hN_pos : (0 : 𝕜) < ((Fintype.card I + n : ℕ) : 𝕜))\n    {x₀ : Fin n → 𝕜}\n    (hx₀A : ∀ i, b i ≤ ∑ j, A i j * x₀ j)\n    (hx₀nn : ∀ j, 0 ≤ x₀ j) (hx₀_val : ∑ j, c j * x₀ j = v)\n    {u₀ : I → 𝕜} (hu₀ : DualFeasible A c u₀) (hu₀_val : ∑ i, u₀ i * b i = v) :\n    ∃ (x : Fin n → 𝕜) (u : I → 𝕜),\n      (∀ i, b i ≤ ∑ j, A i j * x j) ∧ (∀ j, 0 ≤ x j) ∧\n      DualFeasible A c u ∧\n      (∑ j, c j * x j = v) ∧ (∑ i, u i * b i = v) ∧\n      (∀ i, 0 < (∑ j, A i j * x j - b i) + u i) ∧",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L753",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "display_name": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

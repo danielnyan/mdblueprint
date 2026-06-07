@@ -1,0 +1,219 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+  "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.minimax"
+  ],
+  "body_html": "<h1>Existence of Optimal Mixed Strategies (Loomis Foundations)</h1>\n<p>For a finite matrix game $A : I \\times J \\to \\mathbb{R}$, the row player's\nguarantee function is\n$$\\lambda_{\\mathrm{aux}}(x) = \\min_{j \\in J} \\sum_{i \\in I} x_i A(i,j),$$\nand the column player's loss-cap function is\n$$\\mu_{\\mathrm{aux}}(y) = \\max_{i \\in I} \\sum_{j \\in J} y_j A(i,j).$$\nThe two scalar values\n$$\\lambda_0 = \\sup_{x \\in \\Delta(I)} \\lambda_{\\mathrm{aux}}(x) \\quad \\text{and} \\quad\n  \\mu_0 = \\inf_{y \\in \\Delta(J)} \\mu_{\\mathrm{aux}}(y)$$\nare the maxmin and minmax values of the game.</p>\n<p>This node packages four facts that hold <em>before</em> the inductive minimax\nidentity is established:</p>\n<ol>\n<li><strong>Continuity.</strong> Both $\\lambda_{\\mathrm{aux}}$ and $\\mu_{\\mathrm{aux}}$ are\n   continuous on the (compact) mixed-strategy simplices.</li>\n<li><strong>Boundedness.</strong> $\\lambda_{\\mathrm{aux}}$ is bounded above and\n   $\\mu_{\\mathrm{aux}}$ is bounded below by the obvious extremes of $A$.</li>\n<li><strong>Achievement.</strong> There exist mixed strategies $x^\\ast$ and $y^\\ast$ such\n   that $\\sum_i x^\\ast_i A(i,j) \\ge \\lambda_0$ for every column $j$ and\n   $\\sum_j y^\\ast_j A(i,j) \\le \\mu_0$ for every row $i$.</li>\n<li><strong>Weak duality.</strong> $\\lambda_0 \\le \\mu_0$.</li>\n</ol>",
+  "proof_html": "<p>Continuity of $\\lambda_{\\mathrm{aux}}$ is the finite infimum of\ncontinuous weighted sums (<code>Continuous.finset_inf'_apply</code>); the proof for\n$\\mu_{\\mathrm{aux}}$ is dual. Boundedness follows because each weighted sum\nis bounded by the extreme matrix entry. The supremum\n$\\lambda_0$ is achieved by the extreme-value theorem applied to the compact\nmixed-strategy simplex (<code>IsCompact.exists_isMaxOn</code>), and the optimiser\nrealises $\\lambda_0$ on every pure column by the infimum definition; the\n$\\mu_0$ side is symmetric. Weak duality combines the two optimisers in the\nbilinear payoff:\n$$\\lambda_0 \\le \\sum_{i,j} x^\\ast_i y^\\ast_j A(i,j) \\le \\mu_0,$$\nusing the pointwise-to-weighted bound transfer from\n<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence of mixed optimisers and weak duality, prior to the inductive minimax theorem.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.simplex.continuity",
+      "title": "Continuity on the Real Standard Simplex",
+      "href": "math/math_simplex_continuity.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "title": "Nash Existence For Finite Games",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MinimaxLoomis.lam.aux.continuous",
+      "display_name": "MinimaxLoomis.lam.aux.continuous",
+      "qualified_name": "MinimaxLoomis.lam.aux.continuous",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem lam.aux.continuous (A : I → J → ℝ) :\n    Continuous (lam.aux A)",
+      "docstring": "`lam.aux A` is continuous as a function of the simplex point.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L73",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.mu.aux.continuous",
+      "display_name": "MinimaxLoomis.mu.aux.continuous",
+      "qualified_name": "MinimaxLoomis.mu.aux.continuous",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem mu.aux.continuous (A : I → J → ℝ) :\n    Continuous (mu.aux A)",
+      "docstring": "`mu.aux A` is continuous as a function of the simplex point.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L142",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.lam.aux.bddAbove",
+      "display_name": "MinimaxLoomis.lam.aux.bddAbove",
+      "qualified_name": "MinimaxLoomis.lam.aux.bddAbove",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem lam.aux.bddAbove (A : I → J → ℝ) :\n    ∃ C, ∀ x, lam.aux A x ≤ C",
+      "docstring": "`lam.aux A` is uniformly bounded above on the simplex.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L80",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.mu.aux.bddBelow",
+      "display_name": "MinimaxLoomis.mu.aux.bddBelow",
+      "qualified_name": "MinimaxLoomis.mu.aux.bddBelow",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem mu.aux.bddBelow (A : I → J → ℝ) :\n    ∃ C, ∀ y, C ≤ mu.aux A y",
+      "docstring": "`mu.aux A` is uniformly bounded below on the simplex.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L149",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.lam.aux.le_lam0",
+      "display_name": "MinimaxLoomis.lam.aux.le_lam0",
+      "qualified_name": "MinimaxLoomis.lam.aux.le_lam0",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem lam.aux.le_lam0 (A : I → J → ℝ) (x : stdSimplex ℝ I) :\n    lam.aux A x ≤ lam0 A",
+      "docstring": "The supremum `lam0` dominates every `lam.aux` value.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L105",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.mu.aux.ge_mu0",
+      "display_name": "MinimaxLoomis.mu.aux.ge_mu0",
+      "qualified_name": "MinimaxLoomis.mu.aux.ge_mu0",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem mu.aux.ge_mu0 (A : I → J → ℝ) (y : stdSimplex ℝ J) :\n    mu0 A ≤ mu.aux A y",
+      "docstring": "The infimum `mu0` is dominated by every `mu.aux` value.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L170",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.exists_xx_lam0",
+      "display_name": "MinimaxLoomis.exists_xx_lam0",
+      "qualified_name": "MinimaxLoomis.exists_xx_lam0",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem exists_xx_lam0 (A : I → J → ℝ) :\n    ∃ xx : stdSimplex ℝ I, ∀ j, lam0 A ≤ wsum xx (fun i => A i j)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L114",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.exists_yy_mu0",
+      "display_name": "MinimaxLoomis.exists_yy_mu0",
+      "qualified_name": "MinimaxLoomis.exists_yy_mu0",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem exists_yy_mu0 (A : I → J → ℝ) :\n    ∃ yy : stdSimplex ℝ J, ∀ i, wsum yy (fun j => A i j) ≤ mu0 A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L178",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MinimaxLoomis.lam0_le_mu0",
+      "display_name": "MinimaxLoomis.lam0_le_mu0",
+      "qualified_name": "MinimaxLoomis.lam0_le_mu0",
+      "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "kind": "theorem",
+      "signature": "theorem lam0_le_mu0 (A : I → J → ℝ) : lam0 A ≤ mu0 A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L194",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "display_name": "EconCSLib.Math.Minimax.MinimaxLoomis",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Minimax/MinimaxLoomis.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

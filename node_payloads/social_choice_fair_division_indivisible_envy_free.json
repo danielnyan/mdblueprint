@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.envy_free",
+  "title": "Indivisible Envy-Free",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_envy_free.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Envy-Free</h1>\n<p>For an indivisible valuation $v$\n([[social_choice.fair_division.indivisible.valuation]]) and an\nallocation $A$ ([[social_choice.fair_division.indivisible.allocation]]),\n$A$ is <em>envy-free</em> (EF) if every agent weakly prefers their own bundle:\n$$\n\\forall i, j \\in N,\\ v_i(A(j)) \\le v_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEnvyFree</code> — an\n<code>abbrev</code> for the generic [[social_choice.fair_division.envy_free]]\nspecialised at <code>v.val</code>.</p>\n<h2>Non-existence</h2>\n<p>In the indivisible setting EF allocations <em>need not exist</em>: the simplest\ncounterexample is two agents and one good (the\n\"give it to one agent\" allocation makes the other agent envy the\nrecipient). This is captured precisely in\n[[social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good]].</p>\n<p>The standard relaxations EF1 and EFX\n([[social_choice.fair_division.indivisible.ef1]],\n[[social_choice.fair_division.indivisible.efx]]) recover existence by\nweakening the strict comparison: envy is allowed if it vanishes after\nremoving some / any single item from the envied bundle.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Indivisible envy-freeness.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEnvyFree",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "kind": "abbrev",
+      "signature": "abbrev IsEnvyFree (v : Valuation N G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L58",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

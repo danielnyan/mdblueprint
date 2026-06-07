@@ -1,0 +1,133 @@
+{
+  "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+  "title": "Strategy Profile And Induced Outcome",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.core"
+  ],
+  "body_html": "<h1>Strategy Profile And Induced Outcome</h1>\n<p>A strategy profile $\\sigma=(\\sigma_i)_{i\\in I}$ specifies one successor at every\ndecision position. Starting from the origin and following the successor prescribed\nby the player who controls the current position gives a unique terminal outcome\n$$\n  F(\\sigma)\\in R.\n$$\nPayoffs under the strategy profile are then $g_i(F(\\sigma))$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A strategy profile induces a unique terminal outcome.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
+      "title": "Pure Strategy With Imperfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "ExtensiveGame.StrategyProfile",
+      "display_name": "ExtensiveGame.StrategyProfile",
+      "qualified_name": "ExtensiveGame.StrategyProfile",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "kind": "def",
+      "signature": "def StrategyProfile (G : ExtensiveGame N U)",
+      "docstring": "A strategy profile: a strategy for each player.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean#L30",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ExtensiveGame.StrategyProfile.actionAt",
+      "display_name": "ExtensiveGame.StrategyProfile.actionAt",
+      "qualified_name": "ExtensiveGame.StrategyProfile.actionAt",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "kind": "def",
+      "signature": "def StrategyProfile.actionAt [DecidableEq N] {G : ExtensiveGame N U}\n    (σ : StrategyProfile G) (s : G.State) :\n    Option (Σ i : N, G.Action s)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean#L35",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ExtensiveGame.finalPayoff",
+      "display_name": "ExtensiveGame.finalPayoff",
+      "qualified_name": "ExtensiveGame.finalPayoff",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+      "kind": "def",
+      "signature": "def finalPayoff (choose : (s : G.State) → G.Action s) (fuel : ℕ) (i : N) : U",
+      "docstring": "Payoff at the final state for player `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Play.lean#L63",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.outcome",
+      "display_name": "GameTree.outcome",
+      "qualified_name": "GameTree.outcome",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "kind": "def",
+      "signature": "noncomputable def outcome (σ : Strategy N U) : GameTree N U → (N → U)\n  | Leaf p => p\n  | Node m h t => outcome σ (σ m h t).val\ntermination_by g => g.size\ndecreasing_by\n  have hmem",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L73",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Play",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Play",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Play.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

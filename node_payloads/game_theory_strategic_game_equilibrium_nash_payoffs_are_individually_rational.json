@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.nash_payoffs_are_individually_rational",
+  "title": "Nash Payoffs Are Individually Rational",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_payoffs_are_individually_rational.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Nash Payoffs Are Individually Rational</h1>\n<p>In a finite strategic game, the payoff vector of any Nash equilibrium belongs to\n$R_1$, the set of feasible and individually rational payoffs.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.10.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Any Nash equilibrium belongs to R_1.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

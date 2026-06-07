@@ -1,0 +1,108 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+  "title": "Three-By-Two Matrix Game Computation",
+  "kind": "example",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.examples"
+  ],
+  "body_html": "<h1>Three-By-Two Matrix Game Computation</h1>\n<p>MFoGT Exercise 2.8.5 asks for the value and optimal strategies of\n$$\n  A=\n  \\begin{pmatrix}\n    3 &amp; -1\\\\\n    0 &amp; 0\\\\\n    -2 &amp; 1\n  \\end{pmatrix}.\n$$</p>\n<p>The middle row is strictly dominated by the mixed row\n$0.49\\,a_1+0.51\\,a_3$, so the computation reduces to the two-row game using\nrows $a_1$ and $a_3$:\n$$\n  \\begin{pmatrix}\n    3 &amp; -1\\\\\n    -2 &amp; 1\n  \\end{pmatrix}.\n$$</p>\n<p>The value is\n$$\n  \\operatorname{val}(A)=\\frac17.\n$$\nAn optimal strategy for player 1 plays rows $(a_1,a_2,a_3)$ with probabilities\n$$\n  \\left(\\frac37,0,\\frac47\\right),\n$$\nand an optimal strategy for player 2 plays columns $(b_1,b_2)$ with\nprobabilities\n$$\n  \\left(\\frac27,\\frac57\\right).\n$$</p>\n<p>This example is a useful small test case for dominance elimination,\nequalizing-strategy computations, and matrix-game value formulas.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Compute the value and optimal strategies of a displayed 3 by 2 matrix game.</li>\n<li>[MFoGT, Section 9.2, Exercise 5 hints] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Gives the reduced game and the optimal strategies.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "EconCSLib.StrategicGame.Examples.threeByTwoExample",
+      "display_name": "EconCSLib.StrategicGame.Examples.threeByTwoExample",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.threeByTwoExample",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "kind": "def",
+      "signature": "def threeByTwoExample : MatrixGame (Fin 3) (Fin 2) ℝ where",
+      "docstring": "The 3×2 worked example matrix.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean#L32",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.threeByTwoRowOpt",
+      "display_name": "EconCSLib.StrategicGame.Examples.threeByTwoRowOpt",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.threeByTwoRowOpt",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "kind": "def",
+      "signature": "noncomputable def threeByTwoRowOpt : stdSimplex ℝ (Fin 3)",
+      "docstring": "Row player's optimal strategy `(3/7, 0, 4/7)`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean#L49",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.threeByTwoColOpt",
+      "display_name": "EconCSLib.StrategicGame.Examples.threeByTwoColOpt",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.threeByTwoColOpt",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "kind": "def",
+      "signature": "noncomputable def threeByTwoColOpt : stdSimplex ℝ (Fin 2)",
+      "docstring": "Column player's optimal strategy `(2/7, 5/7)`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.threeByTwoExample_value",
+      "display_name": "EconCSLib.StrategicGame.Examples.threeByTwoExample_value",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.threeByTwoExample_value",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "kind": "theorem",
+      "signature": "theorem threeByTwoExample_value : threeByTwoExample.value = 1 / 7",
+      "docstring": "**Three-by-two example value** [MFoGT §2.8, Exercise 5].",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean#L106",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "display_name": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

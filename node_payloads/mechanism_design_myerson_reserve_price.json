@@ -1,0 +1,18 @@
+{
+  "id": "mechanism_design.myerson.reserve_price",
+  "title": "Myerson Reserve-Price Characterisation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "mechanism_design/mechanism_design_myerson_reserve_price.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson"
+  ],
+  "body_html": "<h1>Myerson Reserve-Price Characterisation</h1>\n<p><strong>Corollary (MSZ Cor 12.37).</strong> In the <strong>symmetric IPV</strong> selling\nenvironment — all bidders draw their types from the same regular prior\n$F$, with identical value functions — the optimal auction\n([[mechanism_design.myerson.optimal_auction]]) is the <strong>second-price\nauction with reserve price</strong> $r^* = \\psi^{-1}(0)$:</p>\n<ol>\n<li>Solicit sealed bids $b = (b_1, \\dots, b_n)$ from all bidders.</li>\n<li>If $\\max_i b_i &lt; r^*$: no sale.</li>\n<li>Otherwise: the highest bidder wins and pays\n   $\\max\\big(r^*, \\; \\text{second-highest bid}\\big)$.</li>\n</ol>\n<h2>Two notable corollaries</h2>\n<ul>\n<li>\n<p><strong>Reserve price depends only on the prior</strong>, <em>not</em> on the number of\n  bidders. The same $r^* = \\psi^{-1}(0)$ is optimal whether there are\n  2 or 200 bidders, as long as the distribution is unchanged.</p>\n</li>\n<li>\n<p><strong>No-sale is sometimes optimal</strong>: when all bids fall below the\n  reserve, the seller intentionally keeps the object. This trades\n  realised revenue against incentivising future-period high bids — a\n  static one-shot reflection of monopoly pricing.</p>\n</li>\n</ul>",
+  "proof_html": "<p>outline</p>\n<p>Specialise the Myerson optimal auction\n([[mechanism_design.myerson.optimal_auction]]) to symmetric $F_i = F$:</p>\n<ol>\n<li>By symmetry of $\\psi$, $\\arg\\max_i \\psi_i(t_i) = \\arg\\max_i t_i$\n   (same monotone $\\psi$ across bidders, so argmax is preserved).</li>\n<li>Hence the optimal allocation gives to the highest bidder, subject to\n   $\\psi(\\text{winner}) \\ge 0 \\iff \\text{winner's bid} \\ge r^*$.</li>\n<li>The Myerson payment formula computes the winner's payment as\n   $\\max(r^*, \\text{second-highest bid})$, matching the second-price\n   structure with reserve.</li>\n</ol>\n<h2>Lean port (deferred — see #176)</h2>\n<p>Planned additions to\n<code>EconCSLib/MechanismDesign/Auction/MyersonOptimalAuction.lean</code>:</p>\n<ul>\n<li><code>optimalReservePrice</code> (def: $\\psi^{-1}(0)$ via implicit-function /\n  monotone-inverse)</li>\n<li><code>optimalReservePrice_independent_of_n</code> (the n-independence\n  corollary)</li>\n<li><code>myersonOptimalAuction_symmetric_eq_secondPriceWithReserve</code>\n  (the structural equivalence)</li>\n</ul>\n<p>Depends on the underlying optimal-auction port (#175).</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Cor 12.37] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n<li>Myerson, R. B. (1981). \"Optimal Auction Design\".\n  <em>Math. Oper. Res.</em> 6, §6.</li>\n<li>Krishna, V. (2010). <em>Auction Theory</em>, §5.2..</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

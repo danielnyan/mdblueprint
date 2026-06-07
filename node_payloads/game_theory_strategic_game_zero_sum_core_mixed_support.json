@@ -1,0 +1,48 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.mixed_support",
+  "title": "Support Of A Mixed Strategy",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_support.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Support Of A Mixed Strategy</h1>\n<p>The support of a mixed strategy $x \\in \\Delta(I)$ is the set\n$$\n  \\operatorname{supp}(x)=\\{i \\in I : x_i&gt;0\\}.\n$$\nIn Lean, <code>MatrixGame.support</code> returns this as a <code>Finset I</code> via\n<code>Finset.univ.filter (0 &lt; x.val ·)</code>. Marked <code>noncomputable</code> because strict\ninequality on <code>ℝ</code> is not decidable.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Support of a mixed strategy.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.support",
+      "display_name": "MatrixGame.support",
+      "qualified_name": "MatrixGame.support",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "noncomputable def support {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    [DecidableEq I] (xx : stdSimplex 𝕜 I) : Finset I",
+      "docstring": "**Support** of a mixed strategy: the indices with positive probability.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L150",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

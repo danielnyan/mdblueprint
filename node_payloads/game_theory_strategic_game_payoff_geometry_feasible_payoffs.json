@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.payoff_geometry.feasible_payoffs",
+  "title": "Feasible And Individually Rational Payoffs",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_payoff_geometry_feasible_payoffs.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Feasible And Individually Rational Payoffs</h1>\n<p>For a finite game, the one-shot feasible payoff set is\n$$\n  P_1=\\{x\\in\\mathbb R^I:\\exists\\sigma\\in\\prod_{i\\in I}\\Delta(S_i),\\ G(\\sigma)=x\\}.\n$$\nThe set of feasible and individually rational one-shot payoffs is\n$$\n  R_1=\\{x\\in P_1:x_i\\ge V_i\\text{ for every }i\\in I\\},\n$$\nwhere $V_i$ is player $i$'s threat point.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.10.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Feasible payoff set and individually rational payoffs in one-shot finite games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

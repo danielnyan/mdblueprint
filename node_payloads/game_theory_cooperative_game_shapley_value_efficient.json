@@ -1,0 +1,29 @@
+{
+  "id": "game_theory.cooperative_game.shapley_value_efficient",
+  "title": "Shapley Value Is Efficient",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_shapley_value_efficient.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.shapley_value"
+  ],
+  "body_html": "<h1>Shapley Value Is Efficient</h1>\n<p><strong>Theorem.</strong> The Shapley value distributes the worth of the grand coalition:\n$$\n  \\sum_{i \\in N} \\operatorname{Sh}_i(v)=v(N).\n$$</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Expand the Shapley formula and exchange the sums over players and predecessor\ncoalitions. Each coalition marginal contribution appears with the number of\norders in which it is the relevant predecessor set. The resulting telescoping\nover permutations leaves exactly $v(N)-v(\\varnothing)=v(N)$.</p>\n<h2>Lean Status</h2>\n<p>The Lean module defines the Shapley value. Efficiency remains a blueprint\ntarget with a combinatorial proof route.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.18, Thm 18.18] Maschler, Solan, Zamir, <em>Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

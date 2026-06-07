@@ -1,0 +1,108 @@
+{
+  "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+  "title": "Ex-Ante Equilibrium Predicates",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.bayesian"
+  ],
+  "body_html": "<h1>Ex-Ante Equilibrium Predicates</h1>\n<p>Bayesian mechanisms with transfers include integrability assumptions for\nex-ante expected utility and an ex-ante Bayesian Nash equilibrium predicate.</p>\n<p>The direct Bayesian transfer mechanism interface also provides the truthful\nstrategy profile used in revelation-principle statements.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.6, Defs. 9.41-9.43] Nisan, Roughgarden,\n  Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Ex-ante equilibrium predicates for\n  Bayesian mechanisms.</li>\n<li>[MFoGT, Chapter 7, Section 7.4.1] Maschler, Solan, and Zamir, <em>Game\n  Theory</em>. Strategies, interim expectations, and\n  Bayesian Nash equilibrium.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_ex_ante_equilibrium</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "title": "Ex-Ante Revelation Principle Interface",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "BayesianMechanismWithTransfers.IntegrableExAnteUtility",
+      "display_name": "BayesianMechanismWithTransfers.IntegrableExAnteUtility",
+      "qualified_name": "BayesianMechanismWithTransfers.IntegrableExAnteUtility",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "kind": "def",
+      "signature": "def IntegrableExAnteUtility\n    (B : BayesianMechanismWithTransfers I T M A P)\n    (u : A → (I → P) → (∀ i, T i) → I → ℝ)\n    (σ : StrategyProfile T M) (i : I) : Prop",
+      "docstring": "Integrability of ex-ante utilities for agent `i` under a strategy profile.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L199",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BayesianMechanismWithTransfers.IsExAnteBayesianNashEquilibrium",
+      "display_name": "BayesianMechanismWithTransfers.IsExAnteBayesianNashEquilibrium",
+      "qualified_name": "BayesianMechanismWithTransfers.IsExAnteBayesianNashEquilibrium",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "kind": "def",
+      "signature": "def IsExAnteBayesianNashEquilibrium\n    [DecidableEq I]\n    [∀ i, MeasurableSpace (M i)]\n    (B : BayesianMechanismWithTransfers I T M A P)\n    (u : A → (I → P) → (∀ i, T i) → I → ℝ)\n    (σ : StrategyProfile T M) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L213",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "DirectBayesianMechanismWithTransfers",
+      "display_name": "DirectBayesianMechanismWithTransfers",
+      "qualified_name": "DirectBayesianMechanismWithTransfers",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "kind": "abbrev",
+      "signature": "abbrev DirectBayesianMechanismWithTransfers\n    (I : Type*) (T : I → Type*) [∀ i, MeasurableSpace (T i)] (A : Type*) (P : Type*)",
+      "docstring": "A direct-revelation Bayesian transfer mechanism.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L227",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "DirectBayesianMechanismWithTransfers.truthfulStrategy",
+      "display_name": "DirectBayesianMechanismWithTransfers.truthfulStrategy",
+      "qualified_name": "DirectBayesianMechanismWithTransfers.truthfulStrategy",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "kind": "def",
+      "signature": "def truthfulStrategy :\n    BayesianMechanismWithTransfers.StrategyProfile T T",
+      "docstring": "Truthful reporting in a direct Bayesian mechanism with transfers.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L236",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBayesian.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

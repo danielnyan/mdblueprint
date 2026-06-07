@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.first_order_nash_condition",
+  "title": "First-Order Nash Condition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_first_order_nash_condition.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>First-Order Nash Condition</h1>\n<p>Let $G$ be a smooth Hilbert game. If $s$ is a Nash equilibrium, then\n$$\n  \\sum_{i\\in I}\n  \\langle \\nabla_i g_i(s),\\, s_i-t_i\\rangle\n  \\ge 0\n  \\quad\\text{for all }t\\in S.\n$$\nIf the game is concave, this condition is also sufficient for $s$ to be a Nash\nequilibrium.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>For each player, Nash optimality means $s_i$ locally maximizes\n$g_i(\\cdot,s_{-i})$ on a convex set. The first-order necessary condition gives the\ncorresponding inner-product inequality. Summing over players yields the displayed\nvariational inequality. If each payoff is concave in the player's own variable, the\nsame first-order condition is sufficient for global optimality, hence for Nash\nequilibrium.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 4.7.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. First-order variational inequality characterization in smooth games.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

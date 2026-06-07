@@ -1,0 +1,94 @@
+{
+  "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+  "title": "Two-Agent EF Existence via Cut-and-Choose",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.cut_and_choose"
+  ],
+  "body_html": "<h1>Two-Agent EF Existence via Cut-and-Choose</h1>\n<p><strong>Theorem.</strong> For two agents with measures $\\mu_0, \\mu_1$ on the unit\ninterval $I = [0, 1]$ where $\\mu_0, \\mu_1$ are finite and $\\mu_0$ is\nnon-atomic, there exists a complete measurable partition of $I$ that is\nenvy-free under the measure valuation\n$\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.envy_free]]).</p>\n<p>Formally:\n$$\n\\exists A : \\mathrm{Allocation}\\ (\\mathrm{Fin}\\ 2)\\ I,\\;\n\\mathrm{IsAllocation}\\ A \\;\\wedge\\;\n\\mathrm{IsEnvyFree}\\ (\\mathrm{MeasureValuation}\\ \\mu)\\ A.\n$$</p>\n<p>In Lean this appears as two equivalent statements: <code>cutAndChoose_ef_exists</code>\n(in <code>CutAndChoose.lean</code>) and the alias <code>ef_exists_two_agents</code> (in\n<code>EnvyFree.lean</code>).</p>",
+  "proof_html": "<p>Constructively: pick a fair cut point $t$ via\n[[social_choice.fair_division.divisible.fair_cut_exists]], use it in the\ncut-and-choose protocol to produce\n$A = \\mathrm{cutAndChooseAlloc}\\ \\mu\\ t$, and verify EF via\n[[social_choice.fair_division.divisible.cut_and_choose_envy_free]].</p>\n<p>The result is a <em>contiguous</em> EF allocation — each agent receives a single\ninterval, not a fragmented set. This stronger conclusion sets the stage\nfor Stromquist's $n$-agent generalization\n([[social_choice.fair_division.divisible.ef_exists]]), which also\nproduces contiguous EF allocations.</p>\n<h2>References</h2>\n<ul>\n<li>Steinhaus, H. (1948). \"The Problem of Fair Division\". <em>Econometrica</em>.</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>, Ch. 1.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "title": "Cut-and-Choose Output Is a Complete Partition",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_partition.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.fair_cut_exists",
+      "title": "Fair Cut Point Exists",
+      "href": "social_choice/social_choice_fair_division_divisible_fair_cut_exists.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.cutAndChoose_ef_exists",
+      "display_name": "SocialChoice.FairDivision.Divisible.cutAndChoose_ef_exists",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.cutAndChoose_ef_exists",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "kind": "theorem",
+      "signature": "theorem cutAndChoose_ef_exists\n    (μ : Fin 2 → Measure I)\n    [IsFiniteMeasure (μ 0)] [NoAtoms (μ 0)] :\n    ∃ A : Allocation (Fin 2) I,\n      IsAllocation A ∧ IsEnvyFree (MeasureValuation μ) A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean#L264",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.ef_exists_two_agents",
+      "display_name": "SocialChoice.FairDivision.Divisible.ef_exists_two_agents",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.ef_exists_two_agents",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+      "kind": "theorem",
+      "signature": "theorem ef_exists_two_agents\n    (μ : Fin 2 → Measure I)\n    [IsFiniteMeasure (μ 0)] [IsFiniteMeasure (μ 1)]\n    [NoAtoms (μ 0)] :\n    ∃ A : Allocation (Fin 2) I,\n      IsAllocation A ∧ IsEnvyFree (MeasureValuation μ) A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/EnvyFree.lean#L49",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/EnvyFree.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

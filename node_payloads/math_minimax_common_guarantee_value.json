@@ -1,0 +1,69 @@
+{
+  "id": "math.minimax.common_guarantee_value",
+  "title": "Common Guarantee Gives The Value",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_minimax_common_guarantee_value.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Common Guarantee Gives The Value</h1>\n<p>If player I and player II both guarantee the same number $w$, then $w$ is\nthe unique value of the game, and the strategies witnessing the two\nguarantees are optimal.</p>",
+  "proof_html": "<p>The two guarantees and weak duality give the chain\n$$\n  w \\le \\underline v \\le \\overline v \\le w.\n$$\nThus $\\underline v=\\overline v=w$, and the witnessing strategies attain the\nvalue. The minimax theorem (<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>) closes the\ninner two inequalities, the player-guarantee bound is the outer pair\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.player_guarantee\" href=\"../game_theory/strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_player_guarantee.html\">Player Guarantee</a>).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Lem. 2.2.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A common guarantee is unique and equal to the value.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "title": "Three-By-Two Matrix Game Computation",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_computation_three_by_two_example.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "title": "Diagonal Matrix Game Value",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_diagonal_matrix_game_value.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "title": "Matching Pennies",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "title": "Two-By-Two Value Formula",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.common_guarantee_eq_value",
+      "display_name": "MatrixGame.common_guarantee_eq_value",
+      "qualified_name": "MatrixGame.common_guarantee_eq_value",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem common_guarantee_eq_value (w : ℝ)\n    (h1 : A.IsPlayerIGuarantee w) (h2 : A.IsPlayerIIGuarantee w) :\n    w = A.value",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L318",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

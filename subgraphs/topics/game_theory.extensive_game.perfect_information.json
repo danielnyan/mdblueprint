@@ -1,0 +1,290 @@
+{
+  "topic": {
+    "id": "game_theory.extensive_game.perfect_information",
+    "title": "Game Theory.Extensive Game.Perfect Information",
+    "href": "game_theory/extensive_game/perfect_information/index.html",
+    "parent": "game_theory.extensive_game",
+    "node_count": 15,
+    "descendant_node_count": 15
+  },
+  "counts": {
+    "internal_nodes": 15,
+    "inlined_nodes": 0,
+    "descendant_nodes": 15,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 15,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 17,
+    "visible_nodes_with_selected_proof_plans": 17
+  },
+  "nodes": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "title": "Backward Induction Value",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_backward_induction_value.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_backward_induction_value.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_determined_game.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.generic_unique_spe",
+      "title": "Generic Uniqueness Of Subgame-Perfect Equilibrium",
+      "kind": "proposition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_generic_unique_spe.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_generic_unique_spe.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_no_chance",
+      "title": "Kuhn Existence Of Pure Subgame-Perfect Equilibrium (No-Chance)",
+      "kind": "theorem",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_kuhn_spe_existence_no_chance.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_kuhn_spe_existence_no_chance.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_with_chance",
+      "title": "Kuhn Existence Of Pure Subgame-Perfect Equilibrium (With Chance)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_kuhn_spe_existence_with_chance.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_kuhn_spe_existence_with_chance.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_perfect_information_strategy.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "title": "Simple Perfect-Information Game",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_simple_perfect_information_game.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_simple_perfect_information_game.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.spe_implies_nash",
+      "title": "Subgame-Perfect Equilibrium Implies Nash Equilibrium",
+      "kind": "proposition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_spe_implies_nash.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_spe_implies_nash.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "title": "Strictly Competitive Perfect-Information Determinacy",
+      "kind": "theorem",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+      "title": "Subgame-Perfect Equilibrium In Perfect-Information Games",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zermelo_determinacy",
+      "title": "Zermelo Determinacy For Finite Perfect-Information Games",
+      "kind": "theorem",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zermelo_determinacy.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_zermelo_determinacy.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (No-Chance)",
+      "kind": "theorem",
+      "status": "formalized",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance.json"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html",
+      "payload": "node_payloads/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.json"
+    },
+    {
+      "id": "game_theory.extensive_game.theorems_catalog",
+      "title": "Extensive-Game Theorems Catalog",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_theorems_catalog.html",
+      "payload": "node_payloads/game_theory_extensive_game_theorems_catalog.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "to": "game_theory.extensive_game.perfect_information.determined_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "href": "game_theory/extensive_game/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 57
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "backward-induction",
+      "title": "backward-induction",
+      "href": "keywords/backward-induction.html",
+      "count": 4
+    },
+    {
+      "id": "catalog",
+      "title": "catalog",
+      "href": "keywords/catalog.html",
+      "count": 1
+    },
+    {
+      "id": "chance",
+      "title": "chance",
+      "href": "keywords/chance.html",
+      "count": 2
+    },
+    {
+      "id": "determinacy",
+      "title": "determinacy",
+      "href": "keywords/determinacy.html",
+      "count": 4
+    },
+    {
+      "id": "extensive-game",
+      "title": "extensive-game",
+      "href": "keywords/extensive-game.html",
+      "count": 15
+    },
+    {
+      "id": "genericity",
+      "title": "genericity",
+      "href": "keywords/genericity.html",
+      "count": 1
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "nash-equilibrium",
+      "href": "keywords/nash-equilibrium.html",
+      "count": 1
+    },
+    {
+      "id": "normal-form-reduction",
+      "title": "normal-form-reduction",
+      "href": "keywords/normal-form-reduction.html",
+      "count": 1
+    },
+    {
+      "id": "perfect-information",
+      "title": "perfect-information",
+      "href": "keywords/perfect-information.html",
+      "count": 2
+    },
+    {
+      "id": "strategy",
+      "title": "strategy",
+      "href": "keywords/strategy.html",
+      "count": 1
+    },
+    {
+      "id": "subgame-perfect-equilibrium",
+      "title": "subgame-perfect-equilibrium",
+      "href": "keywords/subgame-perfect-equilibrium.html",
+      "count": 6
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 2
+    },
+    {
+      "id": "zermelo",
+      "title": "zermelo",
+      "href": "keywords/zermelo.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 3
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

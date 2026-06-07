@@ -1,0 +1,48 @@
+{
+  "id": "mechanism_design.basic.truthfulness_from_dsic",
+  "title": "Truthfulness From DSIC",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "mechanism_design/mechanism_design_basic_truthfulness_from_dsic.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.basic"
+  ],
+  "body_html": "<h1>Truthfulness From DSIC</h1>\n<p>In a direct mechanism, if truthful reporting is dominant-strategy incentive\ncompatible, then the truthful reporting profile is a Nash equilibrium of the\ninduced strategic game.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Def. 9.15] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Truthfulness as dominant-strategy incentive compatibility.</li>\n<li>[AGT, Chapter 9, Prop. 9.25] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Truthful direct mechanisms obtained from equilibrium behavior in induced\n  mechanisms.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>thm:md_basic_truthful</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Mechanism.IsDSIC.truthful_isNash",
+      "display_name": "Mechanism.IsDSIC.truthful_isNash",
+      "qualified_name": "Mechanism.IsDSIC.truthful_isNash",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "kind": "theorem",
+      "signature": "theorem IsDSIC.truthful_isNash [Preorder U]\n    (hdsic : M.IsDSIC u) (v : ∀ i, T i) :\n    IsNashEquilibrium (M.toStrategicGame u v) v",
+      "docstring": "If a mechanism is DSIC, then truthful reporting is a Nash equilibrium.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L106",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

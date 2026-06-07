@@ -1,0 +1,48 @@
+{
+  "id": "math.minimax.zero_sum_nash_saddle",
+  "title": "Zero-Sum Nash Equilibria As Saddle Points",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "math/math_minimax_zero_sum_nash_saddle.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Zero-Sum Nash Equilibria As Saddle Points</h1>\n<p>In a zero-sum game, a pair of mixed strategies is a Nash equilibrium exactly\nwhen it is a saddle point of the matrix payoff.</p>",
+  "proof_html": "<p>Write $u(x,y)=xAy$ for player I's payoff and $-u(x,y)$ for player\nII's payoff. A mixed pair $(x^*,y^*)$ is a Nash equilibrium exactly when\n$$\n  u(x,y^*)\\le u(x^*,y^*)\\quad\\text{for all }x\n$$\nand\n$$\n  -u(x^*,y)\\le -u(x^*,y^*)\\quad\\text{for all }y.\n$$\nThe second inequality is equivalent to $u(x^*,y^*)\\le u(x^*,y)$ for all\n$y$. Together these are precisely the saddle-point inequalities.</p>\n<p>In the Lean formalisation this equivalence is <em>definitional</em>: the predicate\n<code>MatrixGame.IsSaddlePoint</code> is an <code>abbrev</code> for <code>MatrixGame.IsMixedNashEq</code>, so\n<code>isMixedNashEq_iff_isSaddlePoint</code> is closed by <code>Iff.rfl</code>.  The\nstrategic-game-level form (<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html\">Mixed Nash Equilibrium of a Matrix Game</a>)\nfollows from the same definitional identity combined with the profile\nexpansion lemmas.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(d), proof paragraph] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Saddle points express the identity between optimal strategies and Nash equilibria.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.isMixedNashEq_iff_isSaddlePoint",
+      "display_name": "MatrixGame.isMixedNashEq_iff_isSaddlePoint",
+      "qualified_name": "MatrixGame.isMixedNashEq_iff_isSaddlePoint",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "theorem",
+      "signature": "theorem isMixedNashEq_iff_isSaddlePoint\n    {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J) :\n    A.IsMixedNashEq xx yy ↔ A.IsSaddlePoint xx yy",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L81",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+  "title": "EF ⇒ Proportional (Measure Valuations)",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_ef_implies_proportional.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>EF ⇒ Proportional (Measure Valuations)</h1>\n<p><strong>Theorem.</strong> Let $\\mu : N \\to \\mathrm{Measure}\\ \\Omega$ on a measurable\ncake $\\Omega$ and a finite agent type $N$, and let $A$ be an envy-free\ncomplete divisible allocation under the measure valuation\n$\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.measure_valuation]],\n[[social_choice.fair_division.divisible.envy_free]],\n[[social_choice.fair_division.divisible.allocation]]). Then $A$ is\nproportional with respect to $|N|$.</p>\n<p>That is, for every agent $i$,\n$$\n\\mu_i(\\Omega) \\;\\le\\; |N| \\cdot \\mu_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional</code>.</p>",
+  "proof_html": "<p>Use the partition / additivity properties of the measure valuation. For\neach agent $i$:</p>\n<p>$$\n\\begin{aligned}\n\\mu_i(\\Omega)\n  &amp;= \\mu_i\\bigl(\\bigcup_j A(j)\\bigr) &amp;&amp; \\text{cover of $A$} \\\\\n  &amp;= \\sum_{j} \\mu_i(A(j)) &amp;&amp; \\text{disjoint, measurable pieces} \\\\\n  &amp;\\le \\sum_{j} \\mu_i(A(i)) &amp;&amp; \\text{envy-freeness: $\\mu_i(A_j) \\le \\mu_i(A_i)$} \\\\\n  &amp;= |N| \\cdot \\mu_i(A(i)). &amp;&amp; \\text{constant sum}\n\\end{aligned}\n$$</p>\n<p>The countable-additivity step uses <code>MeasureTheory.measure_iUnion</code> on the\ndisjoint measurable family $A : N \\to \\mathrm{Set}\\ \\Omega$; for a finite\nagent type this collapses to a <code>Finset</code> sum via <code>tsum_fintype</code>.</p>\n<h2>Interpretation</h2>\n<p>Envy-freeness is a <em>strictly stronger</em> fairness notion than\nproportionality for divisible goods. The theorem above is the precise\nform: an EF measure-valued allocation automatically guarantees every\nagent at least their $1/n$ share of the whole.</p>\n<p>The same statement at the bundled <code>MeasureInstance</code> level — including the\nreal-valued (<code>toReal</code>) variant — appears in\n[[social_choice.fair_division.divisible.measure_instance_existence]].</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF implies proportional for divisible goods.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional",
+      "display_name": "SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsEnvyFree.isProportional\n    {N Ω : Type*} [MeasurableSpace Ω] [Fintype N]\n    (μ : N → Measure Ω)\n    (A : Allocation N Ω)\n    (ha : IsAllocation A)\n    (hef : IsEnvyFree (MeasureValuation μ) A) :\n    IsProportional (Fintype.card N) (MeasureValuation μ) A",
+      "docstring": "**EF implies proportional** for `MeasureValuation` partitions.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean#L87",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

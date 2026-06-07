@@ -1,0 +1,108 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.determined_game",
+  "title": "Determined Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Determined Game</h1>\n<p>A simple two-player game is determined if one of the two players has a winning\nstrategy.</p>\n<p>Because the winning sets $R_1$ and $R_2$ are disjoint, both players cannot have\nwinning strategies simultaneously.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A game is determined if one player has a winning strategy.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "title": "Backward Induction Value",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_backward_induction_value.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "GameTree.IsZeroSum",
+      "display_name": "GameTree.IsZeroSum",
+      "qualified_name": "GameTree.IsZeroSum",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "def",
+      "signature": "def IsZeroSum : GameTree (Fin 2) ℚ → Prop\n  | Leaf p => p 0 + p 1 = 0\n  | Node _ h t => IsZeroSum h ∧ ∀ c ∈ t, IsZeroSum c\n/-- The head child of a zero-sum node is zero-sum. -/",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L65",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.value_zero_sum",
+      "display_name": "GameTree.value_zero_sum",
+      "qualified_name": "GameTree.value_zero_sum",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem value_zero_sum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    (value g) 0 + (value g) 1 = 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.zermelo_determinacy",
+      "display_name": "GameTree.zermelo_determinacy",
+      "qualified_name": "GameTree.zermelo_determinacy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem zermelo_determinacy (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (1 : Fin 2) optStrategy σ' →\n        value₀ g ≤ outcome σ' g 0) ∧\n    (∀ σ' : Strategy (Fin 2) ℚ, IVariant (0 : Fin 2) optStrategy σ' →\n        outcome σ' g 0 ≤ value₀ g)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L319",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "display_name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "qualified_name": "GameTree.value₀_eq_outcome_and_zeroSum",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "kind": "theorem",
+      "signature": "theorem value₀_eq_outcome_and_zeroSum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) :\n    value₀ g = outcome (optStrategy : Strategy (Fin 2) ℚ) g 0 ∧\n      (value g) 1 = -value₀ g",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L269",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

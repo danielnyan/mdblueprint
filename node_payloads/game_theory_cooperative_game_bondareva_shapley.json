@@ -1,0 +1,29 @@
+{
+  "id": "game_theory.cooperative_game.bondareva_shapley",
+  "title": "Bondareva-Shapley Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_bondareva_shapley.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.shapley_value"
+  ],
+  "body_html": "<h1>Bondareva-Shapley Theorem</h1>\n<p><strong>Theorem.</strong> A finite transferable-utility coalitional game has nonempty\ncore if and only if it is balanced:\n$$\n  \\operatorname{Core}(v) \\ne \\varnothing\n  \\quad\\Longleftrightarrow\\quad\n  v \\text{ is balanced}.\n$$</p>",
+  "proof_html": "<p>Route</p>\n<p>The standard proof is a theorem-of-the-alternative or linear-programming\nduality argument. Core nonemptiness is feasibility of the linear system\nconsisting of efficiency and the coalition inequalities\n$$\n  \\sum_{i \\in S} x_i \\ge v(S).\n$$\nThe dual certificates for infeasibility are exactly balanced collections\nwhose weighted worth exceeds $v(N)$. Therefore no such certificate exists\nprecisely when all balanced collections satisfy the balanced-game\ninequality.</p>\n<h2>Lean Status</h2>\n<p>The Lean module defines the core and balanced-game predicates. This theorem\nremains a blueprint target with an LP-duality proof route.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Thm 17.14 and Thm 17.19] Maschler, Solan, Zamir,\n  <em>Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

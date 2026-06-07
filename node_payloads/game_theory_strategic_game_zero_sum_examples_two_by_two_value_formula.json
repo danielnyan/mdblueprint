@@ -1,0 +1,126 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+  "title": "Two-By-Two Value Formula",
+  "kind": "example",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_two_by_two_value_formula.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.examples"
+  ],
+  "body_html": "<h2>Lean formalisation note</h2>\n<p>The Lean file formalises the <strong>mixed case</strong> of the value formula: under\nhypotheses\n<code>0 &lt; a + d - b - c</code>, <code>b ≤ a</code>, <code>c ≤ a</code>, <code>b ≤ d</code>, <code>c ≤ d</code>\n(which guarantee that the mixed strategies are valid probability vectors),\nthe game value is <code>(a*d - b*c) / (a + d - b - c)</code>. The pure-optimal case\ndisjunction described in the blueprint body falls out of dominance\narguments on the matrix entries and is not separately formalised — when\nthe mixed-case hypotheses fail, one of the rows/columns is dominated and\nthe pure pair shows up via <code>MatrixGame.optimal_pairs_iff_saddle_point</code>.</p>\n<h1>Two-By-Two Value Formula</h1>\n<p>For a two-by-two matrix\n$$\n  \\begin{pmatrix}\n  a &amp; b\\\\\n  c &amp; d\n  \\end{pmatrix},\n$$\neither there is a pair of pure optimal strategies, or the optimal strategies\nare completely mixed and the value is\n$$\n  \\frac{ad-bc}{a+d-b-c}.\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Ex. 2.6.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Value formula for two-by-two matrix games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "EconCSLib.StrategicGame.Examples.twoByTwo",
+      "display_name": "EconCSLib.StrategicGame.Examples.twoByTwo",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.twoByTwo",
+      "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "kind": "def",
+      "signature": "def twoByTwo (a b c d : ℝ) : MatrixGame (Fin 2) (Fin 2) ℝ where",
+      "docstring": "2×2 matrix game payoff.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L44",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.twoByTwoRowMixed",
+      "display_name": "EconCSLib.StrategicGame.Examples.twoByTwoRowMixed",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.twoByTwoRowMixed",
+      "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "kind": "def",
+      "signature": "noncomputable def twoByTwoRowMixed\n    (a b c d : ℝ) (hdenom : 0 < a + d - b - c)\n    (hab : b ≤ a) (hdc : c ≤ d) : stdSimplex ℝ (Fin 2)",
+      "docstring": "Row player's completely-mixed strategy `((d-c)/denom, (a-b)/denom)`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L57",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.twoByTwoColumnMixed",
+      "display_name": "EconCSLib.StrategicGame.Examples.twoByTwoColumnMixed",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.twoByTwoColumnMixed",
+      "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "kind": "def",
+      "signature": "noncomputable def twoByTwoColumnMixed\n    (a b c d : ℝ) (hdenom : 0 < a + d - b - c)\n    (hac : c ≤ a) (hdb : b ≤ d) : stdSimplex ℝ (Fin 2)",
+      "docstring": "Column player's completely-mixed strategy `((d-b)/denom, (a-c)/denom)`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L74",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.twoByTwoMixedValue",
+      "display_name": "EconCSLib.StrategicGame.Examples.twoByTwoMixedValue",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.twoByTwoMixedValue",
+      "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "kind": "def",
+      "signature": "noncomputable def twoByTwoMixedValue (a b c d : ℝ) : ℝ",
+      "docstring": "Mixed-case value `(a*d - b*c) / (a + d - b - c)`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L91",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "EconCSLib.StrategicGame.Examples.twoByTwo_value",
+      "display_name": "EconCSLib.StrategicGame.Examples.twoByTwo_value",
+      "qualified_name": "EconCSLib.StrategicGame.Examples.twoByTwo_value",
+      "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "kind": "theorem",
+      "signature": "theorem twoByTwo_value\n    (a b c d : ℝ) (hdenom : 0 < a + d - b - c)\n    (hab : b ≤ a) (hac : c ≤ a) (hdb : b ≤ d) (hdc : c ≤ d) :\n    (twoByTwo a b c d).value = twoByTwoMixedValue a b c d",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L157",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "display_name": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/StrategicGame/TwoByTwo.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

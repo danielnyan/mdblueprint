@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.supermodular_best_response_lattice",
+  "title": "Supermodular Best Responses Are Lattices",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_supermodular_best_response_lattice.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Supermodular Best Responses Are Lattices</h1>\n<p>In a supermodular game, for every player $i$ and opponent profile $s_{-i}$, the\nbest-response set $BR_i(s_{-i})$ is a nonempty compact lattice.</p>\n<p>Moreover, best responses are monotone in the following sense: if\n$s_{-i}\\ge s'_{-i}$ and $t'_i\\in BR_i(s'_{-i})$, then there exists\n$t_i\\in BR_i(s_{-i})$ such that\n$$\n  t_i\\ge t'_i.\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 4(2a-b)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Best-response lattice and monotonicity properties in supermodular games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

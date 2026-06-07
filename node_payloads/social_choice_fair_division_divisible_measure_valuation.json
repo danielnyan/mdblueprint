@@ -1,0 +1,135 @@
+{
+  "id": "social_choice.fair_division.divisible.measure_valuation",
+  "title": "Measure Valuation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>Measure Valuation</h1>\n<p>The canonical example of a cake valuation\n([[social_choice.fair_division.divisible.cake_valuation]]): each agent's\nvalue for a piece $S \\subseteq \\Omega$ is given by their personal measure:\n$$\n\\mathrm{val}(i, S) = \\mu_i(S).\n$$</p>\n<p>In Lean: <code>MeasureValuation μ</code> constructs a <code>CakeValuation N Ω ENNReal</code>\nfrom a family $\\mu : N \\to \\mathrm{Measure}\\ \\Omega$ on a measurable\ncake $\\Omega$.</p>\n<h2>Basic properties</h2>\n<ul>\n<li>\n<p><strong>Empty piece is null.</strong> <code>val_empty</code> :\n  $(\\mathrm{MeasureValuation}\\ \\mu).val\\ i\\ \\emptyset = 0$.</p>\n</li>\n<li>\n<p><strong>Finite additivity.</strong> For disjoint $S, T$ with $T$ measurable,\n  $$\n  \\mathrm{val}(i, S \\cup T) = \\mathrm{val}(i, S) + \\mathrm{val}(i, T).\n  $$\n  (<code>val_union</code>, via <code>MeasureTheory.measure_union</code>.)</p>\n</li>\n<li>\n<p><strong>Countable additivity.</strong> For a countable index $N$ and a pairwise\n  disjoint measurable family $A : N \\to \\mathrm{Set}\\ \\Omega$,\n  $$\n  \\mathrm{val}\\bigl(i, \\bigcup_{j} A(j)\\bigr) = \\sum_{j} \\mathrm{val}(i, A(j)).\n  $$\n  (<code>val_iUnion</code>, via <code>MeasureTheory.measure_iUnion</code>.)</p>\n</li>\n</ul>\n<p>These are exactly the measure-theoretic axioms wrapped at the\n<code>CakeValuation</code> API level so that downstream proofs (EF-implies-PROP,\nDubins–Spanier, Stromquist) can chain through value-side identities\nwithout dropping into <code>Measure</code> lemmas every time.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Measure-based cake valuations.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cake_valuation",
+      "title": "Cake Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_cake_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.chooser_envy_free",
+      "title": "Chooser Is Always Envy-Free",
+      "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "title": "Cutter Does Not Envy at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cutter_envy_free_of_fair.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.normalized_iff_probability",
+      "title": "Normalized Measure Valuation ↔ Probability Measure",
+      "href": "social_choice/social_choice_fair_division_divisible_normalized_iff_probability.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.MeasureValuation",
+      "display_name": "SocialChoice.FairDivision.Divisible.MeasureValuation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.MeasureValuation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "def",
+      "signature": "def MeasureValuation {N Ω : Type*} [MeasurableSpace Ω]\n    (μ : N → MeasureTheory.Measure Ω) : CakeValuation N Ω ENNReal",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L31",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_empty",
+      "display_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_empty",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_empty",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma val_empty (i : N) : (MeasureValuation μ).val i ∅ = 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L41",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_union",
+      "display_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_union",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_union",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma val_union (i : N) (S T : Set Ω)\n    (hdisj : Disjoint S T) (ht : MeasurableSet T) :\n    (MeasureValuation μ).val i (S ∪ T) =\n      (MeasureValuation μ).val i S + (MeasureValuation μ).val i T",
+      "docstring": "For disjoint measurable sets, `MeasureValuation` is additive.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L45",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_iUnion",
+      "display_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_iUnion",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.MeasureValuation.val_iUnion",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "kind": "lemma",
+      "signature": "lemma val_iUnion [Countable N] (i : N) (A : Allocation N Ω)\n    (hdisj : ∀ j k : N, j ≠ k → Disjoint (A j) (A k))\n    (hmeas : ∀ j, MeasurableSet (A j)) :\n    (MeasureValuation μ).val i (⋃ j, A j) = ∑' j, (MeasureValuation μ).val i (A j)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

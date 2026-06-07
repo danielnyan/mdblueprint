@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.no_external_regret_hannan_convergence",
+  "title": "No External Regret Converges To Hannan Set",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_no_external_regret_hannan_convergence.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>No External Regret Converges To Hannan Set</h1>\n<p>In repeated play of a finite game, if player $i$ follows a procedure with no\nexternal regret, then the empirical distribution of realized action profiles\napproaches player $i$'s Hannan set almost surely.</p>\n<p>Equivalently, every limit point of the empirical distributions satisfies the\nfixed-action hindsight inequalities defining the Hannan set for player $i$.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The empirical distribution rewrites each fixed-action external regret as a\nlinear functional of the empirical distribution. No external regret says that\nthe positive part of each of these finitely many linear violations vanishes.\nTherefore the distance to the intersection of the corresponding closed\nhalfspaces, namely the Hannan set, tends to zero.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 7, Section 7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Empirical distributions under no-external-regret procedures converge almost surely to the corresponding Hannan set.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

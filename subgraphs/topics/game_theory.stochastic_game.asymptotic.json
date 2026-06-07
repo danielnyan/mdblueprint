@@ -1,0 +1,87 @@
+{
+  "topic": {
+    "id": "game_theory.stochastic_game.asymptotic",
+    "title": "Game Theory.Stochastic Game.Asymptotic",
+    "href": "game_theory/stochastic_game/asymptotic/index.html",
+    "parent": "game_theory.stochastic_game",
+    "node_count": 2,
+    "descendant_node_count": 2
+  },
+  "counts": {
+    "internal_nodes": 2,
+    "inlined_nodes": 0,
+    "descendant_nodes": 2,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 2,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 3,
+    "visible_nodes_with_selected_proof_plans": 3
+  },
+  "nodes": [
+    {
+      "id": "game_theory.stochastic_game.asymptotic.bewley_kohlberg_asymptotic_value",
+      "title": "Bewley-Kohlberg Asymptotic Value",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_asymptotic_bewley_kohlberg_asymptotic_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_asymptotic_bewley_kohlberg_asymptotic_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value",
+      "title": "Mertens-Neyman Uniform Value",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_asymptotic_mertens_neyman_uniform_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_asymptotic_mertens_neyman_uniform_value.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "asymptotic-value",
+      "title": "asymptotic-value",
+      "href": "keywords/asymptotic-value.html",
+      "count": 1
+    },
+    {
+      "id": "bewley-kohlberg",
+      "title": "bewley-kohlberg",
+      "href": "keywords/bewley-kohlberg.html",
+      "count": 1
+    },
+    {
+      "id": "mertens-neyman",
+      "title": "mertens-neyman",
+      "href": "keywords/mertens-neyman.html",
+      "count": 1
+    },
+    {
+      "id": "stochastic-game",
+      "title": "stochastic-game",
+      "href": "keywords/stochastic-game.html",
+      "count": 2
+    },
+    {
+      "id": "uniform-value",
+      "title": "uniform-value",
+      "href": "keywords/uniform-value.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

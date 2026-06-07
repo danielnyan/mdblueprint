@@ -1,0 +1,126 @@
+{
+  "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+  "title": "Simple Perfect-Information Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_simple_perfect_information_game.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.perfect_information"
+  ],
+  "body_html": "<h1>Simple Perfect-Information Game</h1>\n<p>A two-player perfect-information game is simple if its terminal outcomes are\npartitioned into winning sets $(R_1,R_2)$, where reaching a terminal node in $R_i$\nmeans player $i$ wins and the other player loses.</p>\n<p>A winning strategy for player $i$ is a strategy $\\sigma_i$ such that, for every\nopponent strategy $\\sigma_{-i}$,\n$$\n  F(\\sigma_i,\\sigma_{-i})\\in R_i.\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Two-player simple game with terminal outcomes partitioned into winners.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "title": "Strictly Competitive Perfect-Information Determinacy",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Examples.SimpleGameTree.sample",
+      "display_name": "Examples.SimpleGameTree.sample",
+      "qualified_name": "Examples.SimpleGameTree.sample",
+      "module": "EconCSLib.Examples.SimpleGameTree",
+      "kind": "def",
+      "signature": "def sample : GameTree Player ℚ",
+      "docstring": "The sample game tree (see module docstring).",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Examples.SimpleGameTree.sample_zero_sum",
+      "display_name": "Examples.SimpleGameTree.sample_zero_sum",
+      "qualified_name": "Examples.SimpleGameTree.sample_zero_sum",
+      "module": "EconCSLib.Examples.SimpleGameTree",
+      "kind": "theorem",
+      "signature": "theorem sample_zero_sum : IsZeroSum sample",
+      "docstring": "The zero-sum predicate holds on the sample game.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L73",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Examples.SimpleGameTree.sample_zermelo_spe",
+      "display_name": "Examples.SimpleGameTree.sample_zermelo_spe",
+      "qualified_name": "Examples.SimpleGameTree.sample_zermelo_spe",
+      "module": "EconCSLib.Examples.SimpleGameTree",
+      "kind": "theorem",
+      "signature": "theorem sample_zermelo_spe : ∃ σ : Strategy Player ℚ, IsSubgamePerfectOn σ sample",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L81",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Examples.SimpleGameTree.sample_zermelo_ne",
+      "display_name": "Examples.SimpleGameTree.sample_zermelo_ne",
+      "qualified_name": "Examples.SimpleGameTree.sample_zermelo_ne",
+      "module": "EconCSLib.Examples.SimpleGameTree",
+      "kind": "theorem",
+      "signature": "theorem sample_zermelo_ne :\n    ∃ σ : Strategy Player ℚ, GameTree.IsNashEquilibrium σ sample",
+      "docstring": "Pure root Nash existence for the sample (Kuhn's theorem).",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Examples.SimpleGameTree.sample_value_zero_sum",
+      "display_name": "Examples.SimpleGameTree.sample_value_zero_sum",
+      "qualified_name": "Examples.SimpleGameTree.sample_value_zero_sum",
+      "module": "EconCSLib.Examples.SimpleGameTree",
+      "kind": "theorem",
+      "signature": "theorem sample_value_zero_sum : (value sample) 0 + (value sample) 1 = 0",
+      "docstring": "The backward-induction value of the sample remains zero-sum.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L115",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.SimpleGameTree",
+      "display_name": "EconCSLib.Examples.SimpleGameTree",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/SimpleGameTree.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

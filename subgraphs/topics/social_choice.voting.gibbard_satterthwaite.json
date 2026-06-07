@@ -1,0 +1,101 @@
+{
+  "topic": {
+    "id": "social_choice.voting.gibbard_satterthwaite",
+    "title": "Social Choice.Voting.Gibbard Satterthwaite",
+    "href": "social_choice/voting/gibbard_satterthwaite/index.html",
+    "parent": "social_choice.voting",
+    "node_count": 3,
+    "descendant_node_count": 3
+  },
+  "counts": {
+    "internal_nodes": 3,
+    "inlined_nodes": 0,
+    "descendant_nodes": 3,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 3,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 4,
+    "visible_nodes_with_selected_proof_plans": 4
+  },
+  "nodes": [
+    {
+      "id": "social_choice.voting.gibbard_satterthwaite",
+      "title": "Gibbard–Satterthwaite Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_gibbard_satterthwaite.html",
+      "payload": "node_payloads/social_choice_voting_gibbard_satterthwaite.json"
+    },
+    {
+      "id": "social_choice.voting.muller_satterthwaite",
+      "title": "Muller–Satterthwaite Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_muller_satterthwaite.html",
+      "payload": "node_payloads/social_choice_voting_muller_satterthwaite.json"
+    },
+    {
+      "id": "social_choice.voting.strategyproof_implies_monotonic",
+      "title": "Strategy-Proof ⇒ Monotonic",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_strategyproof_implies_monotonic.html",
+      "payload": "node_payloads/social_choice_voting_strategyproof_implies_monotonic.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "gibbard-satterthwaite",
+      "title": "gibbard-satterthwaite",
+      "href": "keywords/gibbard-satterthwaite.html",
+      "count": 3
+    },
+    {
+      "id": "impossibility",
+      "title": "impossibility",
+      "href": "keywords/impossibility.html",
+      "count": 1
+    },
+    {
+      "id": "monotonic",
+      "title": "monotonic",
+      "href": "keywords/monotonic.html",
+      "count": 2
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller-satterthwaite",
+      "href": "keywords/muller-satterthwaite.html",
+      "count": 1
+    },
+    {
+      "id": "social-choice",
+      "title": "social-choice",
+      "href": "keywords/social-choice.html",
+      "count": 3
+    },
+    {
+      "id": "strategyproof",
+      "title": "strategyproof",
+      "href": "keywords/strategyproof.html",
+      "count": 2
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 3
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

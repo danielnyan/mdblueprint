@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+  "title": "Maximin is Bounded by Minimax",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.minimax"
+  ],
+  "body_html": "<h1>Maximin is Bounded by Minimax</h1>\n<p>For every finite matrix game,</p>\n<p>$$\\max_x \\min_j E_A(x,j) \\le \\min_y \\max_i E_A(i,y).$$</p>\n<p>This is the weak-duality inequality: player I's best guaranteed payoff cannot\nexceed player II's best upper bound on player I's payoff.</p>",
+  "proof_html": "<p>For every mixed row $x$ and mixed column $y$,\n$$\n  \\min_j E_A(x,j) \\le E_A(x,y) \\le \\max_i E_A(i,y).\n$$\nTaking the supremum over $x$ on the left preserves the first inequality against\nthe fixed upper bound $\\max_i E_A(i,y)$, so\n$$\n  \\max_x \\min_j E_A(x,j) \\le \\max_i E_A(i,y)\n$$\nfor every $y$. Taking the infimum over $y$ gives\n$$\n  \\max_x \\min_j E_A(x,j) \\le \\min_y \\max_i E_A(i,y).\n$$</p>\n<h2>Abstract pure-strategy form</h2>\n<p>On arbitrary nonempty strategy sets $I, J$ with payoff $g : I \\times J \\to\n\\mathbb{R}$ and pure-strategy extrema (no mixing), the same argument gives\nweak duality</p>\n<p>$$\n  \\underline v = \\sup_{i \\in I} \\inf_{j \\in J} g(i,j)\n              \\;\\le\\; \\inf_{j \\in J} \\sup_{i \\in I} g(i,j) = \\overline v.\n$$</p>\n<p><em>Proof.</em> For every pair $(i,j)$,\n$$\n  \\inf_{j' \\in J} g(i,j') \\le g(i,j) \\le \\sup_{i' \\in I} g(i',j).\n$$\nTaking the supremum over $i$ on the left and the infimum over $j$ on the right\ngives $\\underline v \\le \\overline v$. $\\square$</p>\n<p>This abstract form is what nodes outside the finite-mixed setting cite. The\nLean formalisation lives in the finite-mixed instantiation above.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Lemmas 2.2.4 and 2.2.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. The lower value never exceeds the upper value.</li>\n<li>[MFoGT, Lem. 2.2.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Abstract pure-strategy weak duality (merged from <code>zero_sum.core.maxmin_le_minmax</code>).</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.maximin_le_minimax",
+      "display_name": "MatrixGame.maximin_le_minimax",
+      "qualified_name": "MatrixGame.maximin_le_minimax",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "kind": "theorem",
+      "signature": "theorem maximin_le_minimax : A.maximin ≤ A.minimax",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L192",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

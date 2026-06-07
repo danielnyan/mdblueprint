@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.reny_solution",
+  "title": "Reny Solution",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_reny_solution.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Reny Solution</h1>\n<p>For a compact game $G$, let\n$$\n  \\Gamma=\\{(s,v)\\in S\\times\\mathbb R^I:v=g(s)\\}\n$$\nand let $\\overline\\Gamma$ be its closure. A pair\n$(s,v)\\in\\overline\\Gamma$ is a Reny solution if, for every player $i$,\n$$\n  \\sup_{t_i\\in S_i} \\underline g_i(t_i,s_{-i})\\le v_i,\n$$\nwhere $\\underline g_i$ is the lower semicontinuous regularization of $g_i$ with\nrespect to the opponents' variables.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Definitions 4.8.1 and 4.8.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Graph closure and Reny solution for discontinuous games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

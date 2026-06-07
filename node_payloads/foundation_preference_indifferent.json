@@ -1,0 +1,119 @@
+{
+  "id": "foundation.preference.indifferent",
+  "title": "Indifference Relation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_preference_indifferent.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.preference"
+  ],
+  "body_html": "<h1>Indifference Relation</h1>\n<p>On any <code>Preorder α</code>, two elements are <em>indifferent</em> when each is weakly\npreferred to the other:\n$$\n  \\operatorname{Indifferent}(a, b) \\quad\\Longleftrightarrow\\quad\n  a \\le b \\;\\text{ and }\\; b \\le a.\n$$</p>\n<p>Indifference is reflexive, symmetric, and transitive. It is therefore an\nequivalence relation on every preorder. On a <code>PartialOrder</code> antisymmetry\ncollapses it to equality; on a general preorder (or total preorder) it can\nrelate genuinely distinct elements, which is the typical situation in utility\ntheory.</p>\n<p>In Lean this is <code>Indifferent : α → α → Prop</code> together with\n<code>Indifferent.refl / symm / trans</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Def. 2.5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Indifference as the symmetric part of weak\n  preference.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.preference.total_preorder",
+      "title": "Total Preorder",
+      "href": "foundation/foundation_preference_total_preorder.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.preference.represents_preference",
+      "title": "Utility Representation of a Preference",
+      "href": "foundation/foundation_preference_represents_preference.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Indifferent",
+      "display_name": "Indifferent",
+      "qualified_name": "Indifferent",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def Indifferent (a b : A) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L76",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Indifferent.refl",
+      "display_name": "Indifferent.refl",
+      "qualified_name": "Indifferent.refl",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem Indifferent.refl (a : A) : Indifferent a a",
+      "docstring": "Indifference is reflexive.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L79",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Indifferent.symm",
+      "display_name": "Indifferent.symm",
+      "qualified_name": "Indifferent.symm",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem Indifferent.symm {a b : A} (h : Indifferent a b) : Indifferent b a",
+      "docstring": "Indifference is symmetric.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L82",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Indifferent.trans",
+      "display_name": "Indifferent.trans",
+      "qualified_name": "Indifferent.trans",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem Indifferent.trans {a b c : A} (h₁ : Indifferent a b) (h₂ : Indifferent b c) :\n    Indifferent a c",
+      "docstring": "Indifference is transitive.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L85",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

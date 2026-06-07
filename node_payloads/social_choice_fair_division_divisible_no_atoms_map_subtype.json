@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.divisible.no_atoms_map_subtype",
+  "title": "Non-Atomicity Is Preserved by Subtype.val Pushforward",
+  "kind": "lemma",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_no_atoms_map_subtype.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>Non-Atomicity Is Preserved by Subtype.val Pushforward</h1>\n<p><strong>Instance.</strong> Let $\\mu$ be a measure on the unit interval $I = [0, 1]$\n(viewed as a subtype of $\\mathbb{R}$) with no atoms (<code>[NoAtoms μ]</code>). Then\nthe pushforward $\\mu.map\\ \\mathrm{Subtype.val}$ on $\\mathbb{R}$ also has\nno atoms.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.noAtomsMapSubtypeVal</code> —\nprovided as an <code>instance</code> so that downstream lemmas requiring\n<code>[NoAtoms (μ.map Subtype.val)]</code> resolve automatically.</p>",
+  "proof_html": "<p>A single point $\\{x\\} \\subseteq \\mathbb{R}$ has pushforward measure\n$\\mu(\\mathrm{Subtype.val}^{-1}(\\{x\\}))$. The preimage is either empty (if\n$x \\notin I$) or a singleton in $I$; in both cases it is a subsingleton.\nSubsingletons have measure $0$ by <code>Set.Subsingleton.measure_zero</code>. Thus\nevery singleton in $\\mathbb{R}$ has zero pushforward measure, which is\nthe definition of <code>NoAtoms</code>.</p>\n<h2>Where this is used</h2>\n<p>The cake-cutting machinery often models the cake as $I = [0, 1]$ but\nstates IVT lemmas at the $\\mathbb{R}$ level\n([[social_choice.fair_division.divisible.cdf_continuous]],\n[[social_choice.fair_division.divisible.cut_exists]]). This instance is\nthe bridge that lets <code>cut_exists</code> invoke <code>cdfRealContinuous</code> on\n$\\mu.map\\ \\mathrm{Subtype.val}$ without manually carrying the\n<code>NoAtoms</code> hypothesis through every call site.</p>\n<h2>References</h2>\n<ul>\n<li>Folland, G. B. (1999). <em>Real Analysis</em>, §1.5. Pushforward and atomicity.</li>\n</ul>",
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.noAtomsMapSubtypeVal",
+      "display_name": "SocialChoice.FairDivision.Divisible.noAtomsMapSubtypeVal",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.noAtomsMapSubtypeVal",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "kind": "instance",
+      "signature": "instance noAtomsMapSubtypeVal (μ : Measure I) [NoAtoms μ] :\n    NoAtoms (μ.map Subtype.val) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/UnitInterval.lean#L35",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/UnitInterval.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

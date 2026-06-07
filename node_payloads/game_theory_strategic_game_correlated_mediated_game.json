@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.correlated.mediated_game",
+  "title": "Mediated Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_mediated_game.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.bayesian_correlated"
+  ],
+  "body_html": "<h1>Mediated Game</h1>\n<p>Given a finite strategic-form game, a mediated game augments play with a\ncorrelating device. The device samples a pure strategy profile\n$s\\in\\prod_i S_i$ according to a probability distribution and privately\nrecommends $s_i$ to player $i$.</p>\n<p>Players observe only their own recommendations and then choose whether to obey\nor deviate.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 8, before Def. 8.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. A mediator samples a strategy profile and privately recommends each component.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

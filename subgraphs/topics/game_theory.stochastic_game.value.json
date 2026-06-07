@@ -1,0 +1,103 @@
+{
+  "topic": {
+    "id": "game_theory.stochastic_game.value",
+    "title": "Game Theory.Stochastic Game.Value",
+    "href": "game_theory/stochastic_game/value/index.html",
+    "parent": "game_theory.stochastic_game",
+    "node_count": 4,
+    "descendant_node_count": 4
+  },
+  "counts": {
+    "internal_nodes": 4,
+    "inlined_nodes": 0,
+    "descendant_nodes": 4,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 4,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 5,
+    "visible_nodes_with_selected_proof_plans": 5
+  },
+  "nodes": [
+    {
+      "id": "game_theory.stochastic_game.value.discounted_value",
+      "title": "Discounted Value of a Zero-Sum Stochastic Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_discounted_value.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_discounted_value.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.discounted_value_fixed_point",
+      "title": "Discounted Value Is the Unique Shapley Fixed Point",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_discounted_value_fixed_point.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_discounted_value_fixed_point.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.shapley_operator",
+      "title": "Shapley Operator",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_shapley_operator.json"
+    },
+    {
+      "id": "game_theory.stochastic_game.value.shapley_operator_contraction",
+      "title": "Shapley Operator Is a γ-Contraction",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/stochastic_game/game_theory_stochastic_game_value_shapley_operator_contraction.html",
+      "payload": "node_payloads/game_theory_stochastic_game_value_shapley_operator_contraction.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "contraction",
+      "title": "contraction",
+      "href": "keywords/contraction.html",
+      "count": 1
+    },
+    {
+      "id": "discounted-value",
+      "title": "discounted-value",
+      "href": "keywords/discounted-value.html",
+      "count": 1
+    },
+    {
+      "id": "fixed-point",
+      "title": "fixed-point",
+      "href": "keywords/fixed-point.html",
+      "count": 1
+    },
+    {
+      "id": "shapley-operator",
+      "title": "shapley-operator",
+      "href": "keywords/shapley-operator.html",
+      "count": 3
+    },
+    {
+      "id": "stochastic-game",
+      "title": "stochastic-game",
+      "href": "keywords/stochastic-game.html",
+      "count": 4
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 4
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

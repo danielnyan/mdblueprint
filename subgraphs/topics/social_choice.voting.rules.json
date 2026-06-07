@@ -1,0 +1,123 @@
+{
+  "topic": {
+    "id": "social_choice.voting.rules",
+    "title": "Social Choice.Voting.Rules",
+    "href": "social_choice/voting/rules/index.html",
+    "parent": "social_choice.voting",
+    "node_count": 5,
+    "descendant_node_count": 5
+  },
+  "counts": {
+    "internal_nodes": 5,
+    "inlined_nodes": 0,
+    "descendant_nodes": 5,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 5,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 6,
+    "visible_nodes_with_selected_proof_plans": 6
+  },
+  "nodes": [
+    {
+      "id": "social_choice.voting.borda_score",
+      "title": "Borda Score and Borda Rule",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_borda_score.html",
+      "payload": "node_payloads/social_choice_voting_borda_score.json"
+    },
+    {
+      "id": "social_choice.voting.condorcet_paradox",
+      "title": "Condorcet Paradox",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_voting_condorcet_paradox.html",
+      "payload": "node_payloads/social_choice_voting_condorcet_paradox.json"
+    },
+    {
+      "id": "social_choice.voting.condorcet_winner",
+      "title": "Condorcet Winner",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_condorcet_winner.html",
+      "payload": "node_payloads/social_choice_voting_condorcet_winner.json"
+    },
+    {
+      "id": "social_choice.voting.majority_prefers",
+      "title": "Pairwise Majority Comparison",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_majority_prefers.html",
+      "payload": "node_payloads/social_choice_voting_majority_prefers.json"
+    },
+    {
+      "id": "social_choice.voting.plurality_score",
+      "title": "Plurality Score and Plurality Rule",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_voting_plurality_score.html",
+      "payload": "node_payloads/social_choice_voting_plurality_score.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "borda",
+      "title": "borda",
+      "href": "keywords/borda.html",
+      "count": 1
+    },
+    {
+      "id": "condorcet",
+      "title": "condorcet",
+      "href": "keywords/condorcet.html",
+      "count": 2
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "majority",
+      "title": "majority",
+      "href": "keywords/majority.html",
+      "count": 1
+    },
+    {
+      "id": "plurality",
+      "title": "plurality",
+      "href": "keywords/plurality.html",
+      "count": 1
+    },
+    {
+      "id": "social-choice",
+      "title": "social-choice",
+      "href": "keywords/social-choice.html",
+      "count": 5
+    },
+    {
+      "id": "voting",
+      "title": "voting",
+      "href": "keywords/voting.html",
+      "count": 5
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

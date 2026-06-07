@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.equilibrium.mixed_nash_semialgebraic",
+  "title": "Semi-Algebraic Mixed Nash Set",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_semialgebraic.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Semi-Algebraic Mixed Nash Set</h1>\n<p>For a finite strategic game, the set of mixed Nash equilibria is defined by\nfinitely many polynomial weak inequalities. Consequently, the Nash equilibrium\nset has finitely many connected components, each a closed semi-algebraic set.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>The simplex constraints are polynomial equalities and inequalities. Because\nexpected payoffs are multilinear in mixed strategy coordinates, the condition that\nno pure deviation improves player $i$'s payoff is a finite family of polynomial\nweak inequalities. This realizes the mixed Nash set as semi-algebraic. The finite\nconnected-component statement follows from the general theorem that closed\nsemi-algebraic subsets of Euclidean space have finitely many connected components.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 4.9.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed Nash equilibria of a finite game are defined by finitely many polynomial weak inequalities.</li>\n<li>[MFoGT, Cor. 4.9.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Finite games have finitely many semi-algebraic Nash components.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

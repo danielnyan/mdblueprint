@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.voting.arrow_impossibility",
+  "title": "Arrow's Impossibility Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_voting_arrow_impossibility.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.arrow"
+  ],
+  "body_html": "<h1>Arrow's Impossibility Theorem</h1>\n<p><strong>Theorem (Arrow 1951).</strong> Let $N$ be a finite nonempty population and $A$ a\nfinite alternative set with $|A| \\ge 3$. Every social welfare function\n$F$ ([[social_choice.voting.swf]]) satisfying</p>\n<ul>\n<li>unanimity ([[social_choice.voting.unanimity]]) and</li>\n<li>independence of irrelevant alternatives ([[social_choice.voting.iia]])</li>\n</ul>\n<p>is dictatorial ([[social_choice.voting.dictatorial_swf]]).</p>\n<p>In Lean: <code>SocialChoice.Voting.arrow_impossibility</code>, with signature\n<code>[Fintype A] [Fintype N] [Nonempty N] (hA : Fintype.card A ≥ 3)</code>.</p>",
+  "proof_html": "<p>The public theorem packages the cardinality hypothesis: a finite alternative\nset with at least three elements contains three distinct alternatives\n$x, y, z$ (via <code>Fintype.equivFin</code>), which is the witness shape consumed by\nthe decisive-coalitions form\n[[social_choice.voting.arrow_of_unanimity_iia]]. Apply that theorem to\nconclude. $\\square$</p>\n<h2>Interpretation</h2>\n<p>If one insists on aggregating individual rankings into a single social\nranking that (i) respects unanimity and (ii) does not let society's\n$\\{a,b\\}$ ranking depend on irrelevant alternatives, then the <em>only</em>\nadmissible rules with three or more alternatives are dictatorships — one\nagent fully determines society's strict preference. Three classical escapes\nare: weaken to a social choice function (Gibbard–Satterthwaite is the SCF\nanalogue, [[social_choice.voting.gibbard_satterthwaite]]); restrict the\npreference domain (e.g. single-peaked); or move from ordinal to cardinal /\nprobabilistic aggregation.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ 21.10] Maschler, Solan, and Zamir, <em>Game Theory</em>. Arrow's impossibility theorem.</li>\n<li>Arrow, K. J. (1951). <em>Social Choice and Individual Values</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.arrow_impossibility",
+      "display_name": "SocialChoice.Voting.arrow_impossibility",
+      "qualified_name": "SocialChoice.Voting.arrow_impossibility",
+      "module": "EconCSLib.SocialChoice.Voting.Arrow",
+      "kind": "theorem",
+      "signature": "theorem arrow_impossibility [Fintype A] [Fintype N] [Nonempty N]\n    (hA : Fintype.card A ≥ 3)\n    (F : SWF N A) (hU : F.Unanimity) (hIIA : F.IIA) :\n    F.Dictatorial",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Arrow.lean#L67",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.Arrow",
+      "display_name": "EconCSLib.SocialChoice.Voting.Arrow",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/Arrow.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

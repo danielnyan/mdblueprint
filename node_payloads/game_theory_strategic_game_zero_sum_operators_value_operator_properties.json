@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.operators.value_operator_properties",
+  "title": "Value Operator Properties",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_operators_value_operator_properties.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.operators"
+  ],
+  "body_html": "<h1>Value Operator Properties</h1>\n<p>For finite real matrix games, the value operator $A \\mapsto \\operatorname{val}(A)$\nis continuous, monotone increasing, and non-expansive for the sup norm:\n$$\n  |\\operatorname{val}(A)-\\operatorname{val}(B)| \\le \\|A-B\\|_\\infty.\n$$</p>",
+  "proof_html": "<p>If $A\\le B$ entrywise, then for every mixed row $x$ and mixed column\n$y$ one has $xAy\\le xBy$. Taking maxmin values gives\n$\\operatorname{val}(A)\\le\\operatorname{val}(B)$, so the value operator is\nmonotone. Let $\\delta=\\|A-B\\|_\\infty$. Then\n$$\n  A\\le B+\\delta\\mathbf 1\n  \\quad\\text{and}\\quad\n  B\\le A+\\delta\\mathbf 1.\n$$\nAdding the constant matrix $\\delta\\mathbf 1$ raises every mixed payoff, and\ntherefore the value, by $\\delta$. Monotonicity gives\n$$\n  \\operatorname{val}(A)\\le\\operatorname{val}(B)+\\delta\n  \\quad\\text{and}\\quad\n  \\operatorname{val}(B)\\le\\operatorname{val}(A)+\\delta,\n$$\nwhich is the non-expansive estimate. Non-expansiveness implies continuity.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3, after Thm. 2.3.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Continuity, monotonicity, and non-expansiveness of val.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

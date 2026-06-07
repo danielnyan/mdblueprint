@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.incomplete_info.cav_u_theorem",
+  "title": "Aumann-Maschler Cav-u Theorem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_incomplete_info_cav_u_theorem.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.incomplete_info"
+  ],
+  "body_html": "<h1>Aumann-Maschler Cav-u Theorem</h1>\n<p>For a finite zero-sum repeated game with <strong>lack of information on one\nside</strong> — only player 1 knows the realised state $k \\in K$, drawn once\nfrom a prior $p \\in \\Delta(K)$ — let $u(p)$ denote the value of the\n<em>nonrevealing</em> one-shot game at prior $p$.</p>\n<p>The Aumann-Maschler theorem (1968, published 1995) says that the values\nof the $T$-stage games converge to the concavification of $u$:\n$$\nv_T(p) \\longrightarrow (\\operatorname{cav} u)(p) \\quad \\text{as } T \\to \\infty.\n$$</p>\n<p>The same limit is obtained by the discounted-value sequence $v_\\gamma$\nas $\\gamma \\to 1$, and equals the uniform value when it exists. In\neach case the limit is the smallest concave function dominating $u$ on\n$\\Delta(K)$.</p>\n<h2>Strategic interpretation</h2>\n<p>The informed player faces a fundamental tradeoff:</p>\n<ul>\n<li><strong>Pool</strong>: ignore the private information and play a nonrevealing\n  strategy; obtain $u(p)$ per stage.</li>\n<li><strong>Reveal</strong>: split the prior $p$ as a convex combination\n  $p = \\sum_k \\lambda_k p_k$ and play strategy adapted to which\n  posterior the play has signalled; this delivers\n  $\\sum_k \\lambda_k u(p_k)$ to the long-run average. Optimisation over\n  such splittings gives exactly $\\operatorname{cav} u$.</li>\n</ul>\n<p>The opponent (uninformed player 2) can prevent doing strictly better\nthan $\\operatorname{cav} u$ by an approachability argument (Blackwell\napproachability of a vector-payoff set, see\n[[game_theory.strategic_game.zero_sum.approachability.blackwell_b_set_approachability]]).</p>\n<h2>Generalizations</h2>\n<ul>\n<li><em>Lack of information on both sides</em> (Mertens-Zamir): the limit value\n  is characterized as the unique solution to a system of fixed-point\n  equations rather than a single concavification. The cav-u theorem\n  here is the one-sided special case.</li>\n<li><em>Stochastic games with incomplete information</em>: combines this\n  framework with state evolution and is much more delicate.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>Aumann, R. J. and Maschler, M. B. (with the collaboration of Stearns).\n  <em>Repeated Games with Incomplete Information.</em> MIT Press, 1995.\n  (Compiled from 1966-1968 ST reports.)</li>\n<li>Mertens, J.-F. and Zamir, S. (1971). \"The Value of Two-Person Zero-Sum\n  Repeated Games with Lack of Information on Both Sides\".\n  <em>Int. J. Game Theory</em> 1: 39–64.</li>\n<li>[MFoGT Chapter 8, Thm. 8.6.6] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>. Aumann-Maschler cav-u theorem for one-sided incomplete information.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

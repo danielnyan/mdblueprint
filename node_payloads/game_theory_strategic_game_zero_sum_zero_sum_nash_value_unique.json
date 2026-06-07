@@ -1,0 +1,92 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+  "title": "Nash Payoff Uniqueness in Zero-Sum Games",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.minimax"
+  ],
+  "body_html": "<h1>Nash Payoff Uniqueness in Zero-Sum Games</h1>\n<p>In a zero-sum game, any two Nash equilibria give the same payoff to player 0\nand the same payoff to player 1.  Thus the equilibrium payoff is a value of the\ngame, independent of which Nash equilibrium is chosen.</p>\n<p>The proof compares two equilibria through cross profiles.  One player's best\nresponse inequality is converted into the other player's inequality using\nzero-sum payoff negation.</p>",
+  "proof_html": "<p>Let $\\sigma=(\\sigma_0,\\sigma_1)$ and\n$\\tau=(\\tau_0,\\tau_1)$ be two Nash equilibria, and write $u$ for player $0$'s\npayoff. Since $\\sigma_0$ is a best response to $\\sigma_1$ and $\\tau_0$ is an\navailable deviation,\n$$\n  u(\\sigma_0,\\sigma_1)\\ge u(\\tau_0,\\sigma_1).\n$$\nSince $\\tau_1$ is a best response to $\\tau_0$ for player $1$, payoff negation\nturns player $1$'s best-response inequality into\n$$\n  u(\\tau_0,\\sigma_1)\\ge u(\\tau_0,\\tau_1).\n$$\nThus $u(\\sigma)\\ge u(\\tau)$. Reversing the roles of $\\sigma$ and $\\tau$ gives\n$u(\\tau)\\ge u(\\sigma)$, so player $0$'s equilibrium payoff is unique. Player\n$1$'s payoff is its negative, hence is unique as well.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4, Theorems 4.44-4.45] Maschler, Solan, and Zamir, <em>Game Theory</em>. All Nash equilibria of a zero-sum game have the same payoff value.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "title": "Zero-Sum Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsZeroSum.nash_payoff_eq",
+      "display_name": "StrategicGame.IsZeroSum.nash_payoff_eq",
+      "qualified_name": "StrategicGame.IsZeroSum.nash_payoff_eq",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.nash_payoff_eq\n    (hzs : IsZeroSum G) {σ τ : G.Profile}\n    (hσ : IsNashEquilibrium G σ) (hτ : IsNashEquilibrium G τ) :\n    G.payoff σ 0 = G.payoff τ 0",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L157",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "StrategicGame.IsZeroSum.nash_payoff_eq_p1",
+      "display_name": "StrategicGame.IsZeroSum.nash_payoff_eq_p1",
+      "qualified_name": "StrategicGame.IsZeroSum.nash_payoff_eq_p1",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "kind": "theorem",
+      "signature": "theorem IsZeroSum.nash_payoff_eq_p1\n    (hzs : IsZeroSum G) {σ τ : G.Profile}\n    (hσ : IsNashEquilibrium G σ) (hτ : IsNashEquilibrium G τ) :\n    G.payoff σ 1 = G.payoff τ 1",
+      "docstring": "In a zero-sum game, all Nash equilibria yield the same payoff for player 1.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L208",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    },
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

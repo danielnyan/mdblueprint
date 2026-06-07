@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.approximate_solution_is_reny",
+  "title": "Approximate Solutions Are Reny Solutions",
+  "kind": "proposition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_approximate_solution_is_reny.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Approximate Solutions Are Reny Solutions</h1>\n<p>Every approximate solution is a Reny solution.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Let $(s^n)$ be $\\epsilon_n$-equilibria with $\\epsilon_n\\to 0$ and\n$(s^n,g(s^n))\\to(s,v)$. For every player $i$ and deviation $t_i$,\n$$\n  g_i(t_i,s^n_{-i})\\le g_i(s^n)+\\epsilon_n.\n$$\nTaking lower limits along $n$ gives the Reny inequality\n$\\underline g_i(t_i,s_{-i})\\le v_i$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 4.8.10] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every approximate solution is a Reny solution.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

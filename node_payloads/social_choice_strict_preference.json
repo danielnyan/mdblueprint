@@ -1,0 +1,83 @@
+{
+  "id": "social_choice.strict_preference",
+  "title": "Strict Preference",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_strict_preference.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice"
+  ],
+  "body_html": "<h1>Strict Preference</h1>\n<p>Given a weak preference relation $R$ on a set $A$ of alternatives, the\ninduced <em>strict preference</em> is the relation</p>\n<p>$$\na \\succ_R b \\iff R(a,b) \\wedge \\neg R(b,a).\n$$</p>\n<p>In Lean this is <code>strict R a b := R a b ∧ ¬ R b a</code>, with the notation-friendly\nalias <code>Pref.lt p a b</code>.</p>\n<h2>Transitivity</h2>\n<p>If $R$ is transitive then $\\succ_R$ is transitive. Suppose $a \\succ_R b$ and\n$b \\succ_R c$, so in particular $R(a,b)$ and $R(b,c)$, hence $R(a,c)$ by\ntransitivity of $R$. If we also had $R(c,a)$, transitivity would give\n$R(b,a)$, contradicting $a \\succ_R b$. Hence $a \\succ_R c$. This is\n<code>strict_transitive</code> in Lean.</p>\n<p>The symmetry / antisymmetry-style properties of $\\succ_R$ rely on totality of\n$R$ and are used implicitly when arguing about ties in voting axioms.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 21] Maschler, Solan, and Zamir, <em>Game Theory</em>. Strict preference derived from a weak preference relation.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "strict",
+      "display_name": "strict",
+      "qualified_name": "strict",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def strict {A : Type*} (R : A → A → Prop) (a b : A) : Prop",
+      "docstring": "Strict preference derived from a weak preference relation.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L51",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "strict_transitive",
+      "display_name": "strict_transitive",
+      "qualified_name": "strict_transitive",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "theorem",
+      "signature": "theorem strict_transitive {A : Type*} {R : A → A → Prop}\n    (h : Transitive R) : Transitive (strict R)",
+      "docstring": "Derived strict preference is transitive when the weak relation is transitive.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L59",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "Pref.lt",
+      "display_name": "Pref.lt",
+      "qualified_name": "Pref.lt",
+      "module": "EconCSLib.Foundation.Preference",
+      "kind": "def",
+      "signature": "def lt {A : Type*} (p : Pref A) (a b : A) : Prop",
+      "docstring": "`p.lt a b`: outcome `a` is strictly preferred to `b` under preference `p`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L154",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.Preference",
+      "display_name": "EconCSLib.Foundation.Preference",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/Preference.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

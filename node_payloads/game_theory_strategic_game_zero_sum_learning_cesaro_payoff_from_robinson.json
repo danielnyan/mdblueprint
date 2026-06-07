@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.cesaro_payoff_from_robinson",
+  "title": "Cesàro Payoff Convergence From Robinson Lemma",
+  "kind": "lemma",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_cesaro_payoff_from_robinson.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Cesàro Payoff Convergence From Robinson Lemma</h1>\n<p>The average realised payoff along a fictitious-play trajectory converges to the\nvalue of the game. The proof is an elementary telescoping identity that uses\nthe Robinson admissible-sequence lemma\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma]] only as a black box.</p>\n<h2>Setup</h2>\n<p>Let $A \\in \\mathbb{R}^{m \\times n}$ be a matrix game with value $v := v(A)$\nestablished by [[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma]]\n(equivalently, by the minimax theorem). Let $(i_n, j_n)_{n \\ge 1}$ be a\nfictitious-play realisation\n([[game_theory.strategic_game.zero_sum.learning.fictitious_play]]).</p>\n<p>Define the <strong>realised cumulative payoff</strong> $R_n$ and the <strong>counterfactual\ncumulative payoffs</strong> $U_m^i$ for each pure row $i$:\n$$\n  R_n := \\sum_{p=1}^n A_{i_p, j_p},\n  \\qquad\n  U_m^i := \\sum_{k=1}^m A_{i, j_k}.\n$$\n$U_m^i$ is the payoff player I would have accrued by always playing pure $i$\nagainst player II's actual sequence $j_1, \\ldots, j_m$.</p>\n<h2>Statement</h2>\n<p>$$\n  \\frac{1}{n} R_n \\;\\longrightarrow\\; v \\quad \\text{as } n \\to \\infty.\n$$</p>",
+  "proof_html": "<p><strong>Telescoping identity.</strong> For every $n \\ge 1$,\n$$\n  R_n \\;=\\; U_n^{i_n} \\;+\\; \\sum_{p=1}^{n-1} (U_p^{i_p} - U_p^{i_{p+1}}).\n$$\n<em>Verification.</em> Note $U_n^{i_n} = \\sum_{k=1}^n A_{i_n, j_k}$. Then\n$$\n  R_n - U_n^{i_n}\n   = \\sum_{k=1}^n (A_{i_k, j_k} - A_{i_n, j_k})\n   = \\sum_{p=1}^{n-1} (U_p^{i_p} - U_p^{i_{p+1}})\n$$\nby reindexing — each term on the right corresponds to the \"switch\" from row\n$i_p$ to $i_{p+1}$ at step $p+1$, which redefines what the counterfactual\ncumulative would have been.</p>\n<p><strong>Sign of the telescoping increments.</strong> By the fictitious-play best-response\ncondition, $i_{p+1} \\in \\operatorname{argmax}_i (Ay_p)^i = \\operatorname{argmax}_i \\frac{1}{p} U_p^i$,\nhence $U_p^{i_{p+1}} \\ge U_p^{i_p}$. Therefore\n$$\n  U_p^{i_p} - U_p^{i_{p+1}} \\;\\le\\; 0, \\quad p = 1, \\ldots, n-1.\n$$</p>\n<p><strong>Upper bound on $R_n / n$.</strong> The telescoping identity together with the sign\ngives\n$$\n  R_n \\;\\le\\; U_n^{i_n}.\n$$\nSince $i_n \\in \\operatorname{argmax}_i U_n^i / n$ (with $U_n^i / n = (A y_n)^i$ where $y_n$\nis player II's empirical frequency), we have\n$U_n^{i_n} / n = \\max_i (A y_n)^i$. The minimax bracket together with\n$\\mu(n)/n \\to 0$ from\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma]] yields\n$\\max_i (A y_n)^i \\to v$. Hence\n$$\n  \\limsup_{n \\to \\infty} \\frac{R_n}{n} \\;\\le\\; v.\n$$</p>\n<p><strong>Lower bound on $R_n / n$.</strong> Apply the dual telescoping identity (player II's\nperspective):\n$$\n  R_n = V_n^{j_n} + \\sum_{p=1}^{n-1} (V_p^{j_p} - V_p^{j_{p+1}}),\n$$\nwhere $V_m^j := \\sum_{k=1}^m A_{i_k, j}$. The best-response condition for II\nmakes the telescoping increments $\\ge 0$, giving $R_n \\ge V_n^{j_n}$. By the\nanalogous limit, $V_n^{j_n} / n = \\min_j (x_n A)^j \\to v$, hence\n$\\liminf R_n / n \\ge v$.</p>\n<p>Combining, $R_n / n \\to v$. $\\square$</p>\n<h2>Note</h2>\n<p>This proof is <strong>independent</strong> of the internal combinatorial structure of\nRobinson's induction\n([[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.bracket_invariant]],\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.useful_window]],\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.subgame_reduction]],\n[[game_theory.strategic_game.zero_sum.learning.robinson_admissible_lemma.induction_step]]). It uses\nthe parent lemma only via its conclusion $\\mu(n)/n \\to 0$.</p>\n<p>Practically, this makes it the <strong>shortest formalisable item</strong> in the Robinson\nchain — a natural first Lean target.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.7] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>. Cesàro average-payoff\n  convergence along fictitious play; see the <code>source</code> block above for\n  the precise locator.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.realisedCumPayoff",
+      "display_name": "MatrixGame.realisedCumPayoff",
+      "qualified_name": "MatrixGame.realisedCumPayoff",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.Cesaro",
+      "kind": "def",
+      "signature": "noncomputable def realisedCumPayoff (A : MatrixGame I J ℝ) (iSeq : ℕ → I)\n    (jSeq : ℕ → J) (n : ℕ) : ℝ",
+      "docstring": "**Realised cumulative payoff** along a play sequence on `A`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/Cesaro.lean#L25",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.Cesaro",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.Cesaro",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/Cesaro.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

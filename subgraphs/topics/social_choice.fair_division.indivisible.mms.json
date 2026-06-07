@@ -1,0 +1,225 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.indivisible.mms",
+    "title": "Social Choice.Fair Division.Indivisible.Mms",
+    "href": "social_choice/fair_division/indivisible/mms/index.html",
+    "parent": "social_choice.fair_division.indivisible",
+    "node_count": 8,
+    "descendant_node_count": 8
+  },
+  "counts": {
+    "internal_nodes": 8,
+    "inlined_nodes": 0,
+    "descendant_nodes": 8,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 8,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_alpha_mms_mono.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "title": "α-MMS Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_is_alpha_mms.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.maximin_share",
+      "title": "Maximin Share (MMS) Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_maximin_share.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_maximin_share.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_iff_alpha_one.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_value.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "title": "MMS Value — Basic Bounds",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_value_bounds.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_proportional_implies_mms_additive.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "to": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependency",
+      "node_count": 125
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.maximin_share",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.mms_value",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "additive",
+      "title": "additive",
+      "href": "keywords/additive.html",
+      "count": 2
+    },
+    {
+      "id": "alpha-mms",
+      "title": "alpha-mms",
+      "href": "keywords/alpha-mms.html",
+      "count": 4
+    },
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 1
+    },
+    {
+      "id": "bounds",
+      "title": "bounds",
+      "href": "keywords/bounds.html",
+      "count": 1
+    },
+    {
+      "id": "equivalence",
+      "title": "equivalence",
+      "href": "keywords/equivalence.html",
+      "count": 1
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 8
+    },
+    {
+      "id": "fairness",
+      "title": "fairness",
+      "href": "keywords/fairness.html",
+      "count": 1
+    },
+    {
+      "id": "indivisible",
+      "title": "indivisible",
+      "href": "keywords/indivisible.html",
+      "count": 8
+    },
+    {
+      "id": "maximin-share",
+      "title": "maximin-share",
+      "href": "keywords/maximin-share.html",
+      "count": 2
+    },
+    {
+      "id": "mms",
+      "title": "mms",
+      "href": "keywords/mms.html",
+      "count": 7
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 1
+    },
+    {
+      "id": "proportional",
+      "title": "proportional",
+      "href": "keywords/proportional.html",
+      "count": 2
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

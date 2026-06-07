@@ -1,0 +1,101 @@
+{
+  "id": "social_choice.fair_division.divisible.allocation",
+  "title": "Divisible Allocation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_allocation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>Divisible Allocation</h1>\n<p>A <em>divisible allocation</em> on a measurable cake $\\Omega$ assigns each agent\n$i \\in N$ a <em>piece</em> $A(i) \\subseteq \\Omega$. Concretely the type is a\nspecialization of the generic allocation alias\n([[social_choice.fair_division.allocation]]):\n$$\n\\mathrm{Allocation}\\ N\\ \\Omega \\;=\\;\n\\mathrm{FairDivision.Allocation}\\ N\\ (\\mathrm{Set}\\ \\Omega) \\;=\\; N \\to \\mathrm{Set}\\ \\Omega.\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.Allocation N Ω</code>.</p>\n<h2>Partition predicate</h2>\n<p>A <em>complete</em> divisible allocation is a measurable partition of the cake. In\nLean: <code>IsAllocation</code> is a structure with three fields:</p>\n<ul>\n<li><code>measurable : ∀ i, MeasurableSet (A i)</code> — each piece is measurable;</li>\n<li><code>disjoint  : ∀ i ≠ j, Disjoint (A i) (A j)</code> — distinct agents get\n  disjoint pieces;</li>\n<li><code>cover     : ⋃ i, A i = Set.univ</code> — every cake-point belongs to some\n  agent's piece.</li>\n</ul>\n<p>The class hypotheses <code>[MeasurableSpace Ω]</code> and <code>[Fintype N]</code> are needed for\nthe union/disjointness conditions to make sense.</p>\n<p>A small derived fact <code>IsAllocation.mem_iUnion</code> says every $x \\in \\Omega$\nbelongs to some $A(i)$.</p>\n<h2>Contiguous allocations on $\\mathbb{R}$</h2>\n<p>A specialised predicate <code>IsContiguousAllocation A</code> (on $A : N \\to\n\\mathrm{Set}\\ \\mathbb{R}$) asserts that every piece is <em>order-connected</em>\n(an interval). This is the natural restriction for Stromquist's EF\nexistence theorem: the EF allocation constructed by KKM is contiguous.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Allocations in cake-cutting.</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_pieces",
+      "title": "Stromquist Pieces from the Division Simplex",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_pieces.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.Allocation",
+      "display_name": "SocialChoice.FairDivision.Divisible.Allocation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.Allocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+      "kind": "abbrev",
+      "signature": "abbrev Allocation (N Ω : Type*)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean#L27",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.IsAllocation",
+      "display_name": "SocialChoice.FairDivision.Divisible.IsAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.IsAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+      "kind": "structure",
+      "signature": "structure IsAllocation {N Ω : Type*} [MeasurableSpace Ω] [Fintype N]\n    (A : Allocation N Ω) : Prop where",
+      "docstring": "A complete divisible allocation is a measurable partition of the cake.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean#L30",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.IsContiguousAllocation",
+      "display_name": "SocialChoice.FairDivision.Divisible.IsContiguousAllocation",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.IsContiguousAllocation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+      "kind": "def",
+      "signature": "def IsContiguousAllocation {N : Type*} (A : Allocation N ℝ) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

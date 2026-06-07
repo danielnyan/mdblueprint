@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.continuous.sion_wolfe_no_mixed_value",
+  "title": "Sion-Wolfe Game Has No Mixed Value",
+  "kind": "example",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_wolfe_no_mixed_value.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.continuous"
+  ],
+  "body_html": "<h1>Sion-Wolfe Game Has No Mixed Value</h1>\n<p>Let $S=T=[0,1]$ with the Borel sigma-algebra and define\n$$\n  f(s,t)=\n  \\begin{cases}\n    -1, &amp; s&lt;t&lt;s+1/2,\\\\\n    0, &amp; t=s\\text{ or }t=s+1/2,\\\\\n    1, &amp; \\text{otherwise}.\n  \\end{cases}\n$$\nFor the mixed extension over $\\Delta(S)$ and $\\Delta(T)$, MFoGT's exercise states\nthat\n$$\n  \\sup_{\\sigma\\in\\Delta(S)}\\inf_{t\\in T} f(\\sigma,t)=\\frac13,\n$$\nand asks to prove that the mixed game has no value.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 3.5, Exercise 7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Sion-Wolfe example with no mixed value.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

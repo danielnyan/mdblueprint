@@ -1,0 +1,219 @@
+{
+  "topic": {
+    "id": "foundation.utility",
+    "title": "Foundation.Utility",
+    "href": "foundation/utility/index.html",
+    "parent": "foundation",
+    "node_count": 7,
+    "descendant_node_count": 7
+  },
+  "counts": {
+    "internal_nodes": 7,
+    "inlined_nodes": 7,
+    "descendant_nodes": 7,
+    "child_topics": 0,
+    "inlined_child_topics": 7,
+    "non_proof_plan_nodes": 7,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 2,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "foundation.utility.expected_utility_representation",
+      "title": "Expected Utility Representation",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_expected_utility_representation.html",
+      "payload": "node_payloads/foundation_utility_expected_utility_representation.json"
+    },
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "kind": "definition",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_lottery.html",
+      "payload": "node_payloads/foundation_utility_lottery.json"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html",
+      "payload": "node_payloads/foundation_utility_positive_affine_uniqueness.json"
+    },
+    {
+      "id": "foundation.utility.risk_neutrality",
+      "title": "Risk Neutrality",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_risk_neutrality.html",
+      "payload": "node_payloads/foundation_utility_risk_neutrality.json"
+    },
+    {
+      "id": "foundation.utility.sure_thing_principle",
+      "title": "Sure Thing Principle",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_sure_thing_principle.html",
+      "payload": "node_payloads/foundation_utility_sure_thing_principle.json"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html",
+      "payload": "node_payloads/foundation_utility_vnm_axiom_independence.json"
+    },
+    {
+      "id": "foundation.utility.vnm_axioms",
+      "title": "Von Neumann Morgenstern Axioms",
+      "kind": "definition",
+      "status": "staged",
+      "href": "foundation/utility/foundation_utility_vnm_axioms.html",
+      "payload": "node_payloads/foundation_utility_vnm_axioms.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.expected_utility_representation",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.expected_utility_representation",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "foundation",
+      "title": "Foundation",
+      "href": "foundation/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 26
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:foundation",
+      "to": "foundation.utility.positive_affine_uniqueness",
+      "kind": "boundary_dependency",
+      "topic": "foundation",
+      "count": 1
+    },
+    {
+      "from": "topic:foundation",
+      "to": "foundation.utility.vnm_axioms",
+      "kind": "boundary_dependency",
+      "topic": "foundation",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.lottery",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "topic:foundation",
+      "kind": "boundary_dependent",
+      "topic": "foundation",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "affine",
+      "title": "affine",
+      "href": "keywords/affine.html",
+      "count": 1
+    },
+    {
+      "id": "exercise",
+      "title": "exercise",
+      "href": "keywords/exercise.html",
+      "count": 1
+    },
+    {
+      "id": "expected-utility",
+      "title": "expected-utility",
+      "href": "keywords/expected-utility.html",
+      "count": 1
+    },
+    {
+      "id": "independence",
+      "title": "independence",
+      "href": "keywords/independence.html",
+      "count": 1
+    },
+    {
+      "id": "lottery",
+      "title": "lottery",
+      "href": "keywords/lottery.html",
+      "count": 2
+    },
+    {
+      "id": "risk",
+      "title": "risk",
+      "href": "keywords/risk.html",
+      "count": 1
+    },
+    {
+      "id": "utility",
+      "title": "utility",
+      "href": "keywords/utility.html",
+      "count": 7
+    },
+    {
+      "id": "vnm",
+      "title": "vnm",
+      "href": "keywords/vnm.html",
+      "count": 5
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "foundation.utility.expected_utility_representation",
+    "foundation.utility.lottery",
+    "foundation.utility.positive_affine_uniqueness",
+    "foundation.utility.risk_neutrality",
+    "foundation.utility.sure_thing_principle",
+    "foundation.utility.vnm_axiom_independence",
+    "foundation.utility.vnm_axioms"
+  ]
+}

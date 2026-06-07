@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.perfect_equilibrium",
+  "title": "Perfect Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_perfect_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Perfect Equilibrium</h1>\n<p>A mixed profile $\\sigma\\in\\Sigma$ is a perfect equilibrium of a finite normal-form\ngame if there are completely mixed profiles $\\sigma^n\\in\\operatorname{int}\\Sigma$\nand numbers $\\epsilon_n\\to 0$ such that:</p>\n<ul>\n<li>each $\\sigma^n$ is $\\epsilon_n$-perfect;</li>\n<li>$\\sigma^n\\to\\sigma$.</li>\n</ul>\n<p>Thus a perfect equilibrium is a limit of equilibria of games in which every pure\nstrategy has positive tremble probability and non-best responses vanish in the\nlimit.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.5.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Selten perfect equilibrium as a limit of epsilon-perfect completely mixed profiles.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

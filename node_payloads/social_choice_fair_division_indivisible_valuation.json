@@ -1,0 +1,70 @@
+{
+  "id": "social_choice.fair_division.indivisible.valuation",
+  "title": "Indivisible Valuation",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_valuation.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Valuation</h1>\n<p>An <em>indivisible valuation</em> assigns a real value to each\nagent-bundle pair:\n$$\n\\mathrm{val} : N \\to \\mathrm{Finset}\\ G \\to \\mathbb{R}.\n$$</p>\n<p>In Lean: structure <code>SocialChoice.FairDivision.Indivisible.Valuation N G</code>\nwith one field <code>val</code>.</p>\n<h2>Design</h2>\n<p>Three deliberate choices in the abstract valuation:</p>\n<ul>\n<li>\n<p><em>Real-valued.</em> Keeps the public API aligned with the bundled cardinal\n  fair-division interface\n  ([[social_choice.fair_division.cardinal_instance]]) and avoids\n  carrying ordered-algebra typeclasses through every theorem statement.</p>\n</li>\n<li>\n<p><em>No monotonicity or normalization baked in.</em> Monotonicity (bundles\n  grow ⇒ value weakly grows) appears only where it's actually needed,\n  e.g. as an explicit hypothesis in\n  [[social_choice.fair_division.indivisible.efx]]'s implication\n  <code>EF ⇒ EFX for monotone valuations</code>. Additive valuations\n  ([[social_choice.fair_division.indivisible.additive_valuation]])\n  give monotonicity for free under the nonnegativity-of-weights\n  assumption.</p>\n</li>\n<li>\n<p><em>No coupling to ring-theoretic <code>Valuation</code>.</em> The structure lives in\n  namespace <code>SocialChoice.FairDivision.Indivisible</code> so it never clashes\n  with <code>Mathlib.RingTheory.Valuation.Basic</code> (ring → ordered monoid),\n  nor with the <em>coalitional game</em> characteristic function (<code>v : Set N\n  → ℝ</code>, valuing coalitions of <em>agents</em>).</p>\n</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Valuations on bundles of indivisible goods.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "title": "EFX from a Singleton-Bundle Sufficient Condition",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "title": "Indivisible Utilitarian Welfare",
+      "href": "social_choice/social_choice_fair_division_indivisible_utilitarian_welfare.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.Valuation",
+      "display_name": "SocialChoice.FairDivision.Indivisible.Valuation",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.Valuation",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "kind": "structure",
+      "signature": "structure Valuation (N G : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L58",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

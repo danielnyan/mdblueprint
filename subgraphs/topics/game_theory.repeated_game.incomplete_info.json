@@ -1,0 +1,81 @@
+{
+  "topic": {
+    "id": "game_theory.repeated_game.incomplete_info",
+    "title": "Game Theory.Repeated Game.Incomplete Info",
+    "href": "game_theory/repeated_game/incomplete_info/index.html",
+    "parent": "game_theory.repeated_game",
+    "node_count": 2,
+    "descendant_node_count": 2
+  },
+  "counts": {
+    "internal_nodes": 2,
+    "inlined_nodes": 0,
+    "descendant_nodes": 2,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 2,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 3,
+    "visible_nodes_with_selected_proof_plans": 3
+  },
+  "nodes": [
+    {
+      "id": "game_theory.repeated_game.incomplete_info.cav_u_theorem",
+      "title": "Aumann-Maschler Cav-u Theorem",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_incomplete_info_cav_u_theorem.html",
+      "payload": "node_payloads/game_theory_repeated_game_incomplete_info_cav_u_theorem.json"
+    },
+    {
+      "id": "game_theory.repeated_game.incomplete_info.repeated_game_incomplete_information",
+      "title": "Repeated Game With Incomplete Information",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/repeated_game/game_theory_repeated_game_incomplete_info_repeated_game_incomplete_information.html",
+      "payload": "node_payloads/game_theory_repeated_game_incomplete_info_repeated_game_incomplete_information.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "aumann-maschler",
+      "title": "aumann-maschler",
+      "href": "keywords/aumann-maschler.html",
+      "count": 1
+    },
+    {
+      "id": "incomplete-information",
+      "title": "incomplete-information",
+      "href": "keywords/incomplete-information.html",
+      "count": 2
+    },
+    {
+      "id": "repeated-game",
+      "title": "repeated-game",
+      "href": "keywords/repeated-game.html",
+      "count": 2
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 1
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

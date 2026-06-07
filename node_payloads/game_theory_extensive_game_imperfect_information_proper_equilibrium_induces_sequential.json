@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.proper_equilibrium_induces_sequential",
+  "title": "Proper Equilibrium Induces Sequential Equilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_proper_equilibrium_induces_sequential.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Proper Equilibrium Induces Sequential Equilibrium</h1>\n<p>Let $G$ be a finite normal-form game and let $\\Gamma$ be any perfect-recall\nextensive form game whose normal form is $G$. If $\\sigma$ is a proper equilibrium\nof $G$, then $\\sigma$ induces a sequential equilibrium $(\\beta,\\mu)$ of $\\Gamma$.</p>",
+  "proof_html": "<p>Sketch</p>\n<p>Write $\\sigma$ as the limit of completely mixed $\\epsilon_n$-proper profiles\n$\\sigma^n$. By Kuhn's theorem, each $\\sigma^n$ generates an equivalent interior\nbehavioral strategy $\\beta^n$. Since every information set is reached with positive\nprobability under $\\beta^n$, Bayes' rule gives beliefs $\\mu^n$.</p>\n<p>After passing to a convergent subsequence, $(\\beta^n,\\mu^n)\\to(\\beta,\\mu)$. If an\naction in the support of $\\beta$ were not optimal at some information set, the\n$\\epsilon_n$-proper inequalities would force its probability to vanish, a\ncontradiction. Hence $(\\beta,\\mu)$ is sequential.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Thm. 6.6.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A proper equilibrium of a finite normal form induces a sequential equilibrium in every perfect-recall extensive form with that normal form.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

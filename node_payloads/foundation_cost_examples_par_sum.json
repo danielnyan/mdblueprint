@@ -1,0 +1,90 @@
+{
+  "id": "foundation.cost.examples.par_sum",
+  "title": "Worked Example: Balanced Parallel Sum Depth",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_par_sum.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: Balanced Parallel Sum Depth</h1>\n<p>A divide-and-conquer list sum built from <code>par</code> (<a class=\"node-ref\" data-node-id=\"foundation.cost.parallel\" href=\"cost/foundation_cost_parallel.html\">Parallel Composition in CostM</a>),\nwhere cost is combined by <code>⊔</code> so that <code>.cost</code> measures parallel <strong>depth</strong>, not\ntotal work. Splitting the list in half and summing the halves in parallel\ngives a logarithmic depth,\n$$\n  (\\operatorname{parSum}\\,xs).\\mathrm{cost} \\;\\le\\; \\lceil \\log_2 |xs| \\rceil,\n$$\ni.e. <code>parSum_cost_le_clog</code> (<code>Nat.clog 2 xs.length</code>). The coarser linear bound\n<code>parSum_cost_le_length</code> is also provided. This is the depth-side counterpart of\nthe additive-work examples: the same algorithm under <code>+</code> would cost <code>O(n)</code>, but\nunder <code>⊔</code> the independent branches overlap and only the tree height counts.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>ParSum.parSum : List ℕ → CostM ℕ ℕ</code> — the balanced parallel sum.</li>\n<li><code>ParSum.parSum_cost_le_clog</code> — the <code>⌈log₂ n⌉</code> depth bound.</li>\n<li><code>ParSum.parSum_cost_le_length</code> — the coarser linear bound.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. The underlying cost\n  monad (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.parallel",
+      "title": "Parallel Composition in CostM",
+      "href": "foundation/foundation_cost_parallel.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ParSum.parSum",
+      "display_name": "ParSum.parSum",
+      "qualified_name": "ParSum.parSum",
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "kind": "def",
+      "signature": "def parSum (xs : List ℕ) : CostM ℕ ℕ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParSum.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ParSum.parSum_cost_le_clog",
+      "display_name": "ParSum.parSum_cost_le_clog",
+      "qualified_name": "ParSum.parSum_cost_le_clog",
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "kind": "theorem",
+      "signature": "theorem parSum_cost_le_clog (xs : List ℕ) :\n    (parSum xs).cost ≤ Nat.clog 2 xs.length",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParSum.lean#L80",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "ParSum.parSum_cost_le_length",
+      "display_name": "ParSum.parSum_cost_le_length",
+      "qualified_name": "ParSum.parSum_cost_le_length",
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "kind": "theorem",
+      "signature": "theorem parSum_cost_le_length (xs : List ℕ) :\n    (parSum xs).cost ≤ xs.length",
+      "docstring": "Loose linear upper bound on parallel-sum depth.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParSum.lean#L122",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.ParSum",
+      "display_name": "EconCSLib.Examples.CostM.ParSum",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/ParSum.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

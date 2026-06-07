@@ -1,0 +1,83 @@
+{
+  "id": "foundation.cost.parallel",
+  "title": "Parallel Composition in CostM",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_parallel.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost"
+  ],
+  "body_html": "<h1>Parallel Composition in CostM</h1>\n<p>Sequential <code>&gt;&gt;=</code> combines cost additively; <strong>parallel</strong> composition combines it\nby the semilattice join <code>⊔</code> instead, modelling the <em>depth</em> (branch-worst-case)\nview in which independent branches run concurrently and the joint cost is the\nworse of the two:\n$$\n  (\\operatorname{par} m_1\\, m_2).\\mathrm{cost}\n    \\;=\\; m_1.\\mathrm{cost} \\,\\sqcup\\, m_2.\\mathrm{cost}.\n$$\n<code>par</code> is <strong>not</strong> a monadic operation: neither operand's value feeds the other,\nso it is only sound when the two sides are genuinely data-independent. It\nrequires <code>[SemilatticeSup C]</code>.</p>\n<p>The n-ary <code>parList ms</code> extends <code>par</code> to a <code>List</code> of independent operands:\nreturns are collected in order, and costs are folded with <code>⊔</code> from the\nidentity <code>⊥</code> (so the empty list costs <code>⊥</code>, which is <code>0</code> for <code>C = ℕ</code>):\n$$\n  (\\operatorname{parList}\\,[m_1,\\dots,m_n]).\\mathrm{cost}\n    \\;=\\; m_1.\\mathrm{cost} \\sqcup \\cdots \\sqcup m_n.\\mathrm{cost}.\n$$\n<code>parList</code> additionally needs <code>[OrderBot C]</code> for that identity. This is the\nflat fan-out / fan-in, depth-1 schedule with <code>n</code> workers.</p>\n<p>For combined work-and-depth tracking one would use <code>C := ℕ × ℕ</code> with <code>+</code> on\nthe work component and <code>⊔</code> on the depth component; that per-component\ncombinator is not provided here.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>CostM.par</code> <code>[SemilatticeSup C]</code> with projection lemmas <code>ret_par</code>, <code>cost_par</code>.</li>\n<li><code>CostM.parList</code> <code>[SemilatticeSup C] [OrderBot C]</code> with <code>ret_parList</code>,\n  <code>cost_parList</code>, the base case <code>parList_nil</code>, and the cons recurrence\n  <code>cost_parList_cons</code>.</li>\n</ul>\n<p>Worked examples: balanced-tree depth in <a class=\"node-ref\" data-node-id=\"foundation.cost.examples.par_sum\" href=\"cost/examples/foundation_cost_examples_par_sum.html\">Worked Example: Balanced Parallel Sum Depth</a>\nand the n-ary <code>parList</code> bound in <a class=\"node-ref\" data-node-id=\"foundation.cost.examples.par_all\" href=\"cost/examples/foundation_cost_examples_par_all.html\">Worked Example: N-ary parList Depth Bound</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, <em>Lightweight Semiformal Time\n  Complexity Analysis for Purely Functional Data Structures</em>, POPL 2008. The\n  underlying writer-monad cost discipline (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li><code>par</code> and <code>parList</code> are EconCSLib additions on top of the <code>TimeM</code>-derived\n  monad core from <a href=\"https://github.com/leanprover/cslib\">leanprover/cslib</a>\n  (Apache 2.0); they have no upstream counterpart at the pinned revision.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "foundation.cost.examples.par_all",
+      "title": "Worked Example: N-ary parList Depth Bound",
+      "href": "foundation/foundation_cost_examples_par_all.html"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "href": "foundation/foundation_cost_examples_par_sum.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "CostM.par",
+      "display_name": "CostM.par",
+      "qualified_name": "CostM.par",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "def par [SemilatticeSup C] (m₁ : CostM C A) (m₂ : CostM C B) : CostM C (A × B)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L260",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "CostM.parList",
+      "display_name": "CostM.parList",
+      "qualified_name": "CostM.parList",
+      "module": "EconCSLib.Foundation.CostM",
+      "kind": "def",
+      "signature": "def parList [SemilatticeSup C] [OrderBot C] (ms : List (CostM C A)) :\n    CostM C (List A)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L286",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Foundation.CostM",
+      "display_name": "EconCSLib.Foundation.CostM",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Foundation/CostM.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

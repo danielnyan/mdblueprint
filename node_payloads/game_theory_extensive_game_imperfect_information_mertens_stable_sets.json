@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.mertens_stable_sets",
+  "title": "Mertens Stable Sets",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_mertens_stable_sets.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Mertens Stable Sets</h1>\n<p>MFoGT describes Mertens stable sets as essential components obtained using a\nSelten-style topology of strategy perturbations. For each $\\epsilon&gt;0$ and fully\nmixed $\\sigma\\in\\operatorname{int}\\Sigma$, one considers the perturbed game\n$G(\\sigma;\\epsilon)$ in which every player is restricted to a perturbed simplex\nclose to the original mixed simplex.</p>\n<p>Mertens proved that the resulting stable sets are connected, BR-invariant,\nadmissible, and compatible with backward-induction and forward-induction\nrequirements.</p>\n<p>The text notes that a complete uniqueness characterization of Mertens stable sets\nfrom these desirable properties remains open in general.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.7] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mertens stable sets from Selten-style strategy perturbation topology.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

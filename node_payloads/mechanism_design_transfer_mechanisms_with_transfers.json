@@ -1,0 +1,234 @@
+{
+  "id": "mechanism_design.transfer.mechanisms_with_transfers",
+  "title": "Mechanisms With Transfers",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.transfer"
+  ],
+  "body_html": "<h1>Mechanisms With Transfers</h1>\n<p>A mechanism with transfers separates the allocation rule from the payment rule.\nQuasi-linear utility is supplied by combining the value of the selected\nallocation with the agent's payment.</p>\n<p>The transfer interface can be viewed as a direct mechanism, as an induced\nstrategic game, and as a source of DSIC and ex-post IR predicates specialized to\nquasi-linear utilities.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.3.2, Def. 9.14] Nisan, Roughgarden,\n  Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Direct mechanisms with allocation\n  and payment rules.</li>\n<li>[AGT, Chapter 9, Sections 9.3.3-9.3.4] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Quasi-linear utilities and VCG-style transfer mechanisms.</li>\n</ul>\n<h2>Used by auctions</h2>\n<p>[[mechanism_design.auction.basic.formats]] (basic auction formats use the\ntransfer interface), [[mechanism_design.auction.basic.first_price_mechanism]]\n(first-price mechanism as a transfer mechanism),\n[[mechanism_design.auction.basic.second_price_mechanism]] (second-price\nmechanism as a transfer mechanism).</p>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_transfer_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.basic.direct_mechanism_interface",
+      "title": "Direct Mechanism Interface",
+      "href": "mechanism_design/mechanism_design_basic_direct_mechanism_interface.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
+      "title": "Multiple-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_multiple_parameter_transfer_layer.html"
+    },
+    {
+      "id": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "title": "Single-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_single_parameter_transfer_layer.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MechanismWithTransfers",
+      "display_name": "MechanismWithTransfers",
+      "qualified_name": "MechanismWithTransfers",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "structure",
+      "signature": "structure MechanismWithTransfers\n    (I : Type*) (T : I → Type*) (A : Type*) (P : Type*) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L66",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.quasiLinearUtility",
+      "display_name": "MechanismWithTransfers.quasiLinearUtility",
+      "qualified_name": "MechanismWithTransfers.quasiLinearUtility",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def quasiLinearUtility [Sub U]\n    (val : A → (∀ i, T i) → I → V)\n    (valueToUtility : V → U) (paymentToUtility : P → U)\n    (r : ∀ i, T i) (trueTypes : ∀ i, T i) (i : I) : U",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L86",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.toMechanism",
+      "display_name": "MechanismWithTransfers.toMechanism",
+      "qualified_name": "MechanismWithTransfers.toMechanism",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def toMechanism :\n    Mechanism I T (A × (I → P)) where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L96",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.toStrategicGame",
+      "display_name": "MechanismWithTransfers.toStrategicGame",
+      "qualified_name": "MechanismWithTransfers.toStrategicGame",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def toStrategicGame\n    (u : A → (I → P) → (∀ i, T i) → I → U)\n    (trueTypes : ∀ i, T i) : StrategicGame I U where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L107",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.isDSIC",
+      "display_name": "MechanismWithTransfers.isDSIC",
+      "qualified_name": "MechanismWithTransfers.isDSIC",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def isDSIC [Preorder U]\n    (u : A → (I → P) → (∀ i, T i) → I → U) : Prop",
+      "docstring": "DSIC for a mechanism with transfers, relative to an externally supplied utility rule.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L114",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.isExPostIR",
+      "display_name": "MechanismWithTransfers.isExPostIR",
+      "qualified_name": "MechanismWithTransfers.isExPostIR",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def isExPostIR [Preorder U] [Zero U]\n    (u : A → (I → P) → (∀ i, T i) → I → U) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L121",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.toQuasiLinearGame",
+      "display_name": "MechanismWithTransfers.toQuasiLinearGame",
+      "qualified_name": "MechanismWithTransfers.toQuasiLinearGame",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def toQuasiLinearGame [Sub U]\n    (val : A → (∀ i, T i) → I → V)\n    (valueToUtility : V → U) (paymentToUtility : P → U)\n    (trueTypes : ∀ i, T i) : StrategicGame I U",
+      "docstring": "The standard quasi-linear specialization of `toStrategicGame`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L128",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.isQuasiLinearDSIC",
+      "display_name": "MechanismWithTransfers.isQuasiLinearDSIC",
+      "qualified_name": "MechanismWithTransfers.isQuasiLinearDSIC",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def isQuasiLinearDSIC [Sub U] [Preorder U]\n    (val : A → (∀ i, T i) → I → V)\n    (valueToUtility : V → U) (paymentToUtility : P → U) : Prop",
+      "docstring": "DSIC for quasi-linear utility, as a specialization of `isDSIC`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L137",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "MechanismWithTransfers.isQuasiLinearExPostIR",
+      "display_name": "MechanismWithTransfers.isQuasiLinearExPostIR",
+      "qualified_name": "MechanismWithTransfers.isQuasiLinearExPostIR",
+      "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "kind": "def",
+      "signature": "def isQuasiLinearExPostIR [Sub U] [Preorder U] [Zero U]\n    (val : A → (∀ i, T i) → I → V)\n    (valueToUtility : V → U) (paymentToUtility : P → U) : Prop",
+      "docstring": "Ex-post IR for quasi-linear utility, as a specialization of `isExPostIR`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L143",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "display_name": "EconCSLib.MechanismDesign.Auction.Transfer",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/Transfer.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

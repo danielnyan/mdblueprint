@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.repeated_game.core.payoff_aggregation",
+  "title": "Repeated Game Payoff Aggregation",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/repeated_game/game_theory_repeated_game_core_payoff_aggregation.html",
+  "primary_topic": "game_theory.repeated_game",
+  "topics": [
+    "game_theory.repeated_game",
+    "game_theory.repeated_game.core"
+  ],
+  "body_html": "<h1>Repeated Game Payoff Aggregation</h1>\n<p>Repeated games come with several <strong>payoff aggregation rules</strong> that\ncollapse the per-stage payoff sequence\n$(u_i(a_0), u_i(a_1), \\dots)$ into a single number for player $i$.</p>\n<h2>T-stage average</h2>\n<p>For finite horizon $T$:\n$$\n\\Pi_T^i(a_0, a_1, \\dots) = \\frac{1}{T} \\sum_{t = 0}^{T - 1} u_i(a_t).\n$$</p>\n<p>The $T$-stage Nash equilibrium of the finitely repeated game often\ncollapses to a one-shot equilibrium by backward induction (e.g.\\\nfinitely repeated prisoner's dilemma).</p>\n<h2>$\\gamma$-discounted</h2>\n<p>For discount factor $\\gamma \\in (0, 1)$:\n$$\n\\Pi_\\gamma^i = (1 - \\gamma) \\sum_{t = 0}^{\\infty} \\gamma^t \\, u_i(a_t).\n$$</p>\n<p>The leading $(1 - \\gamma)$ normalizes constant per-stage payoffs to\naverage to themselves, putting $\\Pi_\\gamma$ on the scale of $u_i$.</p>\n<h2>Undiscounted (limit-of-means)</h2>\n<p>$$\n\\Pi_\\infty^i = \\liminf_{T \\to \\infty} \\Pi_T^i.\n$$</p>\n<p>The $\\liminf$ form is the cautious convention; symmetric variants use\n$\\limsup$ or require the limit to exist. Both players' aggregation\nchoices must be compatible for the resulting game to have a well-defined\nvalue.</p>\n<h2>Uniform evaluation</h2>\n<p>A payoff is <em>uniformly</em> guaranteed if it is guaranteed simultaneously\nfor all sufficiently large $T$ (or for $\\gamma$ in a neighbourhood of\n$1$). Uniform values are the strongest notion and the technically\nhardest to establish — see Mertens-Neyman 1981\n([[game_theory.stochastic_game.asymptotic.mertens_neyman_uniform_value]]) for the\nstochastic-game version; the analog in pure repeated games is much\neasier (no state dynamics).</p>\n<h2>Relations</h2>\n<ul>\n<li>For the <strong>zero-sum</strong> case, the discounted value $v_\\gamma$ converges\n  to the limit-of-means value as $\\gamma \\to 1$ whenever the latter is\n  well-defined. Even when uniform value fails, $v_\\gamma$ may still\n  have a limit (Hardy-Littlewood-style Abelian / Tauberian theorems).</li>\n<li>For the <strong>general-sum</strong> case, the Folk Theorem (e.g.\\ Friedman 1971\n  for discounted) characterises which payoff vectors arise in Nash\n  equilibrium under each aggregation.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MSZ Chapters 13–14] Maschler, Solan, and Zamir, <em>Game Theory</em>.</li>\n<li>Aumann, R. J. and Shapley, L. S. (1976/1994). \"Long-Term Competition\".</li>\n<li>Mailath, G. and Samuelson, L. (2006). <em>Repeated Games and Reputations.</em> Oxford.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

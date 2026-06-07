@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.value",
+  "title": "Value Of A Zero-Sum Game",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_value.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Value Of A Zero-Sum Game</h1>\n<p>When the maxmin and minmax of a zero-sum game coincide, the common\nscalar is the <strong>value</strong> of the game:\n$$\n  \\operatorname{val}(A) = \\underline v = \\overline v.\n$$</p>\n<p>The Lean development defines <code>MatrixGame.value := A.maximin</code> and provides\n<code>value_eq_maximin</code> (definitional) and <code>value_eq_minimax</code> (via the minimax\ntheorem).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 2.2.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A zero-sum game has a value when maxmin equals minmax.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.value",
+      "display_name": "MatrixGame.value",
+      "qualified_name": "MatrixGame.value",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+      "kind": "def",
+      "signature": "noncomputable def value {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜]\n    [IsStrictOrderedRing 𝕜]\n    (A : MatrixGame I J 𝕜) : 𝕜",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean#L92",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

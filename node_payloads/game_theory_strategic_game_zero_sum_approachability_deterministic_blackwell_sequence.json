@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.approachability.deterministic_blackwell_sequence",
+  "title": "Deterministic Blackwell Sequence",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_approachability_deterministic_blackwell_sequence.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.applications"
+  ],
+  "body_html": "<h1>Deterministic Blackwell Sequence</h1>\n<p>Let $C$ be a nonempty closed convex subset of $\\mathbb R^k$, and let\n$(x_n)$ be a bounded sequence in $\\mathbb R^k$. Let\n$$\n  \\bar x_n=\\frac1n\\sum_{i=1}^n x_i\n$$\nand let $\\Pi_C(x)$ be the projection of $x$ onto $C$. If\n$$\n  \\langle x_{n+1}-\\Pi_C(\\bar x_n),\\,\n          \\bar x_n-\\Pi_C(\\bar x_n)\\rangle\\le 0\n  \\quad\\text{for all }n,\n$$\nthen\n$$\n  d(\\bar x_n,C)\\to 0.\n$$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 4(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Deterministic approachability criterion for Cesaro averages.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

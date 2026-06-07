@@ -1,0 +1,54 @@
+{
+  "id": "mechanism_design.basic.dsic_predicate",
+  "title": "DSIC Predicate",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_basic_dsic_predicate.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.basic"
+  ],
+  "body_html": "<h1>DSIC Predicate</h1>\n<p>A direct mechanism is dominant-strategy incentive compatible when, for every true\ntype profile and every agent, truthful reporting is weakly dominant in the\nstrategic game induced by that type profile.</p>\n<p>This definition treats DSIC as an instance of the library's strategic-game\ndominance API. The mechanism layer supplies reports, outcomes, and utilities;\nthe strategic-game layer supplies the dominance comparison.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Def. 9.15] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Incentive compatibility, strategy-proofness, and truthfulness for direct\n  mechanisms.</li>\n<li>[AGT, Chapter 9, Section 9.4] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Dominant-strategy implementation of mechanism-design objectives.</li>\n</ul>\n<h2>Used by auctions</h2>\n<p>[[mechanism_design.auction.basic.first_price_no_dsic]] (first-price mechanism\nis not DSIC), [[mechanism_design.auction.basic.second_price_dsic]]\n(second-price mechanism is DSIC).</p>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_basic_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "title": "Single-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_single_parameter_transfer_layer.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Mechanism.IsDSIC",
+      "display_name": "Mechanism.IsDSIC",
+      "qualified_name": "Mechanism.IsDSIC",
+      "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "kind": "def",
+      "signature": "def IsDSIC [Preorder U] : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L96",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "display_name": "EconCSLib.MechanismDesign.Auction.MechBasic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/MechBasic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

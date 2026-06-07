@@ -1,0 +1,65 @@
+{
+  "id": "game_theory.strategic_game.dominant_implies_nash",
+  "title": "Dominant Strategy Profile is a Nash Equilibrium",
+  "kind": "theorem",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.equilibrium"
+  ],
+  "body_html": "<h1>Dominant Strategy Profile is a Nash Equilibrium</h1>\n<p>If every player \\(i\\) plays a weakly dominant strategy \\(s_i\\), then the resulting\nprofile \\(\\sigma = (s_i)_{i \\in I}\\) is a Nash equilibrium.</p>",
+  "proof_html": "<p>A weakly dominant strategy weakly dominates every alternative. In particular,\nfor any player \\(i\\) and any deviation \\(s'_i\\), we have\n\\(u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma)\\). This means each player is best\nresponding, so \\(\\sigma\\) is a Nash equilibrium. \\(\\square\\)</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Relationship between dominant strategies and Nash equilibrium.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsNashEquilibrium.of_dominant",
+      "display_name": "IsNashEquilibrium.of_dominant",
+      "qualified_name": "IsNashEquilibrium.of_dominant",
+      "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "kind": "theorem",
+      "signature": "theorem of_dominant {G : StrategicGame N U} {σ : G.Profile}\n    (h : ∀ i : N, IsWeaklyDominant G i (σ i)) : IsNashEquilibrium G σ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean#L35",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

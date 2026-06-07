@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.continuous_fictitious_play_gap",
+  "title": "Continuous Fictitious Play Closes The Duality Gap",
+  "kind": "proposition",
+  "status": "admitted",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_continuous_fictitious_play_gap.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Continuous Fictitious Play Closes The Duality Gap</h1>\n<p>Continuous fictitious play is the continuous-time analogue of the empirical\nfrequency recursion. In logarithmic time it is the best-response differential\ninclusion\n$$\n  \\dot x(t)\\in BR_1(y(t))-x(t),\n  \\qquad\n  \\dot y(t)\\in BR_2(x(t))-y(t).\n$$\nEquivalently, for some\n$$\n  \\alpha(t)=x(t)+\\dot x(t)\\in BR_1(y(t)),\n  \\qquad\n  \\beta(t)=y(t)+\\dot y(t)\\in BR_2(x(t)).\n$$</p>\n<p>For continuous fictitious play in a finite matrix game, the duality gap\n$$\n  W(x,y)=L(y)-M(x)\n$$\nconverges to $0$ at speed $O(1/t)$ in the original time scale.</p>",
+  "proof_html": "<p>MFoGT's proof differentiates the duality gap along the time-changed\ntrajectory. Using the envelope theorem and bilinearity of $g(x,y)=xAy$,\n$$\n  \\dot W(t)\n  =g(\\alpha(t),\\dot y(t))-g(\\dot x(t),\\beta(t))\n  =M(x(t))-L(y(t))\n  =-W(t).\n$$\nThus $W(t)=W(0)e^{-t}$ after the logarithmic time change, which gives the\n$O(1/t)$ rate in the original continuous fictitious-play process. Since the\noptimal-strategy set is exactly the zero set of $W$, convergence of the gap\nimplies convergence toward $X(A)\\times Y(A)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.7.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Continuous fictitious play duality gap convergence.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

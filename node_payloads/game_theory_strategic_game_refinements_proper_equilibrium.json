@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.refinements.proper_equilibrium",
+  "title": "Proper Equilibrium",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_refinements_proper_equilibrium.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Proper Equilibrium</h1>\n<p>A mixed profile $\\sigma\\in\\Sigma$ is a proper equilibrium of a finite normal-form\ngame if there are completely mixed profiles $\\sigma^n\\in\\operatorname{int}\\Sigma$\nand numbers $\\epsilon_n\\to 0$ such that:</p>\n<ul>\n<li>each $\\sigma^n$ is $\\epsilon_n$-proper;</li>\n<li>$\\sigma^n\\to\\sigma$.</li>\n</ul>\n<p>Proper equilibrium refines perfect equilibrium by ranking mistakes: worse\ndeviations must become infinitely less likely than better deviations.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Def. 6.5.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Myerson proper equilibrium as a limit of epsilon-proper completely mixed profiles.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

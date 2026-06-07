@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.examples.backward_forward_induction_incompatibility",
+  "title": "Backward And Forward Induction Can Conflict",
+  "kind": "example",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_examples_backward_forward_induction_incompatibility.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.examples"
+  ],
+  "body_html": "<h1>Backward And Forward Induction Can Conflict</h1>\n<p>MFoGT Figure 6.21 adds an initial stage before the battle-of-the-sexes game with\noutside option. The continuation subgame has the forward-induction outcome\n$(T,L)$ with payoff $(3,1)$.</p>\n<p>Backward induction then says player 2 should stop at the first stage and obtain\npayoff $2$. But if player 2 continues, forward-induction reasoning interprets the\ncontinuation as evidence that player 2 expects more than $2$, which changes the\nbeliefs used in the later subgame.</p>\n<p>This illustrates why forward-induction refinements are usually applied only when\nthe rationality interpretation is coherent.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.7 and Figure 6.21] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Example where backward-induction and forward-induction reasoning are incompatible.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

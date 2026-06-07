@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.learning.empirical_frequency",
+  "title": "Empirical Frequency Of Play",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_empirical_frequency.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.learning"
+  ],
+  "body_html": "<h1>Empirical Frequency Of Play</h1>\n<p>Let $(i_t)_{t\\ge1}$ be a sequence of pure actions in a finite action set $I$.\nAfter $n$ stages, its empirical frequency is the mixed strategy\n$$\n  x_n=\\frac1n\\sum_{t=1}^n e_{i_t}\\in\\Delta(I),\n$$\nwhere $e_i$ is the Dirac mass on action $i$.</p>\n<p>For a two-player matrix game with realized pure actions $(i_t,j_t)$, write\n$$\n  x_n=\\frac1n\\sum_{t=1}^n e_{i_t}\\in\\Delta(I),\n  \\qquad\n  y_n=\\frac1n\\sum_{t=1}^n e_{j_t}\\in\\Delta(J).\n$$\nFictitious play is defined by requiring each player's next action to be a best\nresponse to the opponent's current empirical frequency.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.7, before Def. 2.7.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Empirical distributions x_n and y_n of previously played pure actions.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.learning.fictitious_play",
+      "title": "Fictitious Play",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_learning_fictitious_play.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.empiricalFrequency",
+      "display_name": "MatrixGame.empiricalFrequency",
+      "qualified_name": "MatrixGame.empiricalFrequency",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "kind": "def",
+      "signature": "noncomputable def empiricalFrequency (a : ℕ → I) (n : ℕ) : stdSimplex ℝ I",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/FictitiousPlay.lean#L53",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/FictitiousPlay.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

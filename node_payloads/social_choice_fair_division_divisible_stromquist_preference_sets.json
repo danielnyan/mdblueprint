@@ -1,0 +1,98 @@
+{
+  "id": "social_choice.fair_division.divisible.stromquist_preference_sets",
+  "title": "Stromquist Preference Sets A(i, j)",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_divisible_stromquist_preference_sets.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible",
+    "social_choice.fair_division.divisible.stromquist"
+  ],
+  "body_html": "<h1>Stromquist Preference Sets A(i, j)</h1>\n<p>For each agent $j \\in \\mathrm{Fin}\\ n$ and piece index $i \\in \\mathrm{Fin}\\ n$,\nthe <em>preference set</em> $A(i, j)$ is the set of simplex points where piece $i$\nis a value-maximizer for agent $j$:\n$$\nA(i, j) \\;=\\; \\{x \\in S \\mid \\forall k \\in \\mathrm{Fin}\\ n,\\ v(x, j, k) \\le v(x, j, i)\\}.\n$$</p>\n<p>In Lean: <code>strom_A i j</code>.</p>\n<h2>Closedness</h2>\n<p><code>strom_A_closed</code>: $A(i, j)$ is closed in $\\mathrm{Fin}\\ n \\to \\mathbb{R}$.</p>",
+  "proof_html": "<p>The defining condition is a conjunction of $n$ inequalities of\nthe form $v(x, j, k) \\le v(x, j, i)$. Each inequality cuts out a closed\nhalf-space because both sides are continuous in $x$\n([[social_choice.fair_division.divisible.stromquist_value_continuous]]).\nThe intersection of finitely many closed sets is closed.</p>\n<h2>Cover property</h2>\n<p><code>strom_A_covers</code>: for each fixed $j$, the family $\\{A(i, j) : i \\in \\mathrm{Fin}\\ n\\}$\ncovers the simplex $S$.</p>\n<p><em>Proof.</em> For any $x \\in S$, agent $j$'s values $v(x, j, k)$ over $k$ form\na finite collection of reals; some $i$ achieves the maximum. That $i$\nwitnesses $x \\in A(i, j)$.</p>\n<h2>Why this matters for KKM</h2>\n<p>The pair (closed $A(i, j)$, family that covers the simplex) is exactly\nthe input shape for a KKM-type argument: combined with the \"facets-don't-\ntouch\" property of <code>strom_A</code> (<code>strom_A</code> does not intersect the face\nopposite vertex $i$), this lets the KKM lemma find a common point in\n$\\bigcap_i \\bigcup_j A(i, j)$ — which yields a fair division.</p>\n<p>The <em>unique</em>-preference refinement\n([[social_choice.fair_division.divisible.stromquist_unique_preference_sets]])\nstrengthens the cover to one with pairwise-disjoint witnesses, giving the\nfinal EF assignment.</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n<li>Su, F. E. (1999). \"Rental Harmony: Sperner's Lemma in Fair Division\". <em>Amer. Math. Monthly</em> 106.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "title": "Stromquist Unique-Preference Sets B(i, j)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unique_preference_sets.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_A",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_A",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_A",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "def",
+      "signature": "private def strom_A (i j : Fin n) : Set (Fin n → ℝ)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L399",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_A_closed",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_A_closed",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_A_closed",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "private lemma strom_A_closed (i j : Fin n) : IsClosed (strom_A n μ i j)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L406",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Divisible.strom_A_covers",
+      "display_name": "SocialChoice.FairDivision.Divisible.strom_A_covers",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.strom_A_covers",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "kind": "lemma",
+      "signature": "private lemma strom_A_covers (j : Fin n) :\n    stdSimplex ℝ (Fin n) ⊆ ⋃ i, strom_A n μ i j",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L416",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

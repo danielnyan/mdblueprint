@@ -1,0 +1,18 @@
+{
+  "id": "math.minimax.minimax_from_antisymmetric_games",
+  "title": "Minimax From Antisymmetric Games",
+  "kind": "proof-plan",
+  "status": "admitted",
+  "href": "math/math_minimax_minimax_from_antisymmetric_games.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.minimax"
+  ],
+  "body_html": "<h1>Minimax From Antisymmetric Games</h1>",
+  "proof_html": "<p>To prove minimax for an arbitrary matrix $A$, first shift $A$ so that all entries\nare positive. Introduce an antisymmetric matrix built from $A$, for example\n$$\n  B=\n  \\begin{pmatrix}\n    0 &amp; A &amp; -1\\\\\n    -A^T &amp; 0 &amp; 1\\\\\n    1 &amp; -1 &amp; 0\n  \\end{pmatrix}.\n$$\nAn optimal strategy in the antisymmetric game $B$ yields optimal mixed strategies\nfor both players in the original game $A$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 10(2)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Deduce finite minimax from values of antisymmetric games.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

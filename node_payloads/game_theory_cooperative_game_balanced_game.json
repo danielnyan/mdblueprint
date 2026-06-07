@@ -1,0 +1,54 @@
+{
+  "id": "game_theory.cooperative_game.balanced_game",
+  "title": "Balanced Coalitional Game",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_game.html",
+  "primary_topic": "game_theory.cooperative_game",
+  "topics": [
+    "game_theory.cooperative_game",
+    "game_theory.cooperative_game.core"
+  ],
+  "body_html": "<h1>Balanced Coalitional Game</h1>\n<p>A coalitional game is <strong>balanced</strong> if every balanced collection of\ncoalitions satisfies the weighted worth inequality\n$$\n  \\sum_{S \\in \\mathcal{D}} \\delta_S v(S) \\le v(N),\n$$\nwhenever the positive weights $\\delta_S$ cover each player with total\nweight one.</p>\n<p>Intuitively, if a fractional schedule of coalitions uses each player once\nin total, then the weighted value of that schedule cannot exceed the worth\nof the grand coalition.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ Ch.17, Thm 17.14] Maschler, Solan, Zamir, <em>Game Theory</em>. Balancedness condition in the\n  Bondareva-Shapley theorem.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.cooperative_game.tu_game",
+      "title": "Transferable-Utility Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "CoalitionalGame.IsBalancedGame",
+      "display_name": "CoalitionalGame.IsBalancedGame",
+      "qualified_name": "CoalitionalGame.IsBalancedGame",
+      "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "kind": "def",
+      "signature": "def IsBalancedGame : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L69",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "display_name": "EconCSLib.GameTheory.CoalitionalGame.Core",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/CoalitionalGame/Core.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

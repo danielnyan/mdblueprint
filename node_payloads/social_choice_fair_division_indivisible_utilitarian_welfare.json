@@ -1,0 +1,106 @@
+{
+  "id": "social_choice.fair_division.indivisible.utilitarian_welfare",
+  "title": "Indivisible Utilitarian Welfare",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_fair_division_indivisible_utilitarian_welfare.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Indivisible Utilitarian Welfare</h1>\n<p>Specialisation of the generic utilitarian welfare\n([[social_choice.fair_division.utilitarian_welfare]]) to the\nindivisible setting: for a valuation $v$ and allocation $A$,\n$$\nW_{\\mathrm{util}}(v, A) = \\sum_{i \\in N} v_i(A(i)).\n$$</p>\n<p>The same definition <code>utilitarianWelfare</code> (under\n<code>SocialChoice.FairDivision</code>) applies, taking <code>v.val</code> for the per-agent\nutility function and the indivisible allocation\n([[social_choice.fair_division.indivisible.allocation]]) for the share\nassignment.</p>\n<p>The instance-keyed <em>optimality</em> predicate is wrapped here:</p>\n<ul>\n<li><code>IsUtilitarianOptimal</code> (abbrev): no complete allocation\n  (<code>IsAllocation allGoods B</code>) has strictly larger utilitarian welfare.</li>\n</ul>\n<h2>Basic lemmas</h2>\n<p>Re-exported from the generic layer with the indivisible-friendly\nhypotheses:</p>\n<ul>\n<li><code>utilitarianWelfare_mono</code>: pointwise improvement implies welfare\n  improvement.</li>\n<li><code>utilitarianWelfare_unique</code> (<code>@[simp]</code>): for <code>Unique N</code>, welfare\n  equals the single agent's utility.</li>\n</ul>\n<h2>Relation to fairness</h2>\n<p>Utilitarian welfare optimization can conflict with fairness:\nmaximizing total welfare may produce highly unequal allocations\n(give everything to the agent with highest per-item values). The\n<em>Nash welfare</em> (geometric mean instead of arithmetic mean) is the\nstandard mediator — its maximizer is known to be EF1 + PO under\nadditive valuations (Caragiannis et al. 2019). EconCSLib does not yet\nformalize Nash welfare; this welfare module is the additive-mean\ncounterpart.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Utilitarian welfare for indivisible goods.</li>\n<li>Caragiannis, Kurokawa, Moulin, Procaccia, Shah, and Wang (2019). \"The Unreasonable Fairness of Maximum Nash Welfare\". <em>EC</em>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsUtilitarianOptimal",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsUtilitarianOptimal",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsUtilitarianOptimal",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "abbrev",
+      "signature": "abbrev IsUtilitarianOptimal [Fintype N] [DecidableEq G]\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L91",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_mono",
+      "display_name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_mono",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_mono",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "lemma",
+      "signature": "lemma utilitarianWelfare_mono\n    (v : Valuation N G) (A B : Allocation N G)\n    (h : ∀ i : N, v.val i (A i) ≤ v.val i (B i)) :\n    utilitarianWelfare v A ≤ utilitarianWelfare v B",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L119",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_unique",
+      "display_name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_unique",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.utilitarianWelfare_unique",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "kind": "lemma",
+      "signature": "lemma utilitarianWelfare_unique [Unique N]\n    (v : Valuation N G) (A : Allocation N G) :\n    utilitarianWelfare v A = v.val default (A default)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L127",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

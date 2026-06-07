@@ -1,0 +1,60 @@
+{
+  "id": "game_theory.strategic_game.strategy_profile",
+  "title": "Strategy Profile",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.core"
+  ],
+  "body_html": "<h1>Strategy Profile</h1>\n<p>Given a strategic game \\((I, (S_i), (u_i))\\), a strategy profile is a tuple\n\\(\\sigma = (\\sigma_i)_{i \\in I}\\) where \\(\\sigma_i \\in S_i\\) for each player \\(i\\).</p>\n<p>In Lean, a profile is <code>∀ i, G.strategy i</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Definition of strategy profile.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "title": "Nash Payoff Uniqueness in Zero-Sum Games",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.Profile",
+      "display_name": "StrategicGame.Profile",
+      "qualified_name": "StrategicGame.Profile",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "kind": "abbrev",
+      "signature": "abbrev Profile (G : StrategicGame N U)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L49",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/Basic.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

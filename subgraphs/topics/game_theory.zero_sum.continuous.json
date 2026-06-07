@@ -1,0 +1,205 @@
+{
+  "topic": {
+    "id": "game_theory.zero_sum.continuous",
+    "title": "Game Theory.Zero Sum.Continuous",
+    "href": "game_theory/zero_sum/continuous/index.html",
+    "parent": "game_theory.zero_sum",
+    "node_count": 13,
+    "descendant_node_count": 13
+  },
+  "counts": {
+    "internal_nodes": 13,
+    "inlined_nodes": 0,
+    "descendant_nodes": 13,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 13,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 14,
+    "visible_nodes_with_selected_proof_plans": 14
+  },
+  "nodes": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.compact_mixed_vs_finite_support_minimax",
+      "title": "Compact Mixed Versus Finite-Support Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_compact_mixed_vs_finite_support_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_compact_mixed_vs_finite_support_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.finite_opponent_separation_minimax",
+      "title": "Finite-Opponent Separation Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_finite_opponent_separation_minimax.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_finite_opponent_separation_minimax.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_minimax_theorem",
+      "title": "General Mixed Minimax Theorem",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_minimax_theorem.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_general_mixed_minimax_theorem.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.general_mixed_strategy_space",
+      "title": "General Mixed Strategy Space",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_general_mixed_strategy_space.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_general_mixed_strategy_space.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.intersection_lemma",
+      "title": "Intersection Lemma",
+      "kind": "lemma",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_intersection_lemma.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_intersection_lemma.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.mixed_extension_pathology",
+      "title": "Mixed Extension Pathology",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_mixed_extension_pathology.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_mixed_extension_pathology.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.monotone_decreasing_values_limit",
+      "title": "Monotone Decreasing Values Limit",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_decreasing_values_limit.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_monotone_decreasing_values_limit.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.monotone_family_assumption_counterexamples",
+      "title": "Monotone Family Assumption Counterexamples",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_monotone_family_assumption_counterexamples.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_monotone_family_assumption_counterexamples.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.pure_minimax_compact_convex_one_sided",
+      "title": "One-Sided Compact Convex Minimax",
+      "kind": "proposition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_pure_minimax_compact_convex_one_sided.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_pure_minimax_compact_convex_one_sided.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.quasi_concavity_semicontinuity",
+      "title": "Quasi-Concavity And Semicontinuity",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_quasi_concavity_semicontinuity.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_quasi_concavity_semicontinuity.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_boundary_counterexample",
+      "title": "Sion Boundary Counterexample",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_boundary_counterexample.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_boundary_counterexample.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_minimax_theorem",
+      "title": "Sion Minimax Theorem",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_minimax_theorem.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_minimax_theorem.json"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.continuous.sion_wolfe_no_mixed_value",
+      "title": "Sion-Wolfe Game Has No Mixed Value",
+      "kind": "example",
+      "status": "admitted",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_continuous_sion_wolfe_no_mixed_value.html",
+      "payload": "node_payloads/game_theory_strategic_game_zero_sum_continuous_sion_wolfe_no_mixed_value.json"
+    }
+  ],
+  "edges": [],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "continuous-game",
+      "title": "continuous-game",
+      "href": "keywords/continuous-game.html",
+      "count": 3
+    },
+    {
+      "id": "convexity",
+      "title": "convexity",
+      "href": "keywords/convexity.html",
+      "count": 2
+    },
+    {
+      "id": "counterexample",
+      "title": "counterexample",
+      "href": "keywords/counterexample.html",
+      "count": 4
+    },
+    {
+      "id": "limit",
+      "title": "limit",
+      "href": "keywords/limit.html",
+      "count": 2
+    },
+    {
+      "id": "minimax",
+      "title": "minimax",
+      "href": "keywords/minimax.html",
+      "count": 5
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 6
+    },
+    {
+      "id": "separation",
+      "title": "separation",
+      "href": "keywords/separation.html",
+      "count": 2
+    },
+    {
+      "id": "sion",
+      "title": "sion",
+      "href": "keywords/sion.html",
+      "count": 1
+    },
+    {
+      "id": "topology",
+      "title": "topology",
+      "href": "keywords/topology.html",
+      "count": 2
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "href": "keywords/value.html",
+      "count": 2
+    },
+    {
+      "id": "zero-sum",
+      "title": "zero-sum",
+      "href": "keywords/zero-sum.html",
+      "count": 13
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

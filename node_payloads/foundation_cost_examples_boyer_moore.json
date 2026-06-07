@@ -1,0 +1,95 @@
+{
+  "id": "foundation.cost.examples.boyer_moore",
+  "title": "Worked Example: Constant-Space Boyer–Moore Majority",
+  "kind": "example",
+  "status": "formalized",
+  "href": "foundation/foundation_cost_examples_boyer_moore.html",
+  "primary_topic": "foundation",
+  "topics": [
+    "foundation",
+    "foundation.cost.examples"
+  ],
+  "body_html": "<h1>Worked Example: Constant-Space Boyer–Moore Majority</h1>\n<p>The Boyer–Moore majority vote in <code>CostM Cells</code> (<a class=\"node-ref\" data-node-id=\"foundation.cost.cells\" href=\"cost/foundation_cost_cells.html\">Peak-Memory Cost via the Cells Monoid</a>),\nproving a <strong>constant</strong> peak-memory bound: regardless of input length, the peak\nworking set is two cells — one candidate and one counter,\n$$\n  (\\operatorname{majority}\\,xs).\\mathrm{cost}.\\mathrm{peak} \\;\\le\\; 2,\n$$\nwhich is <code>majority_peak_le</code>. The mechanism is that the single-pass <code>loop</code>\nallocates nothing — <code>loop_cost : (majority.loop \\ldots).cost = 0</code> — so the only\ncontributions to the peak come from one <code>alloc 2</code> / <code>free 2</code> pair bracketing\nthe pass. Because peak (not sum) is the resource, the tropical <code>Cells</code> monoid\nis essential here; an additive <code>ℕ</code> cost cannot state this bound.</p>\n<p>This example deliberately <strong>does not</strong> prove functional correctness (that\n<code>majority</code> returns the true majority when one exists). That omission is the\npoint: in <code>CostM</code> the complexity bound lives on <code>.cost</code> and is provable in\ncomplete isolation from the <code>.ret</code> value, demonstrating the\ncorrectness/complexity decoupling described in <a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>.</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>BoyerMoore.majority : List α → CostM Cells (Option α)</code> with its single-pass\n  <code>where loop</code> carrying the candidate and counter.</li>\n<li><code>BoyerMoore.loop_cost</code> — the loop contributes zero cost.</li>\n<li><code>BoyerMoore.majority_peak_le</code> — the constant <code>peak ≤ 2</code> bound.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost monoids for\n  resource analysis (<a class=\"node-ref\" data-node-id=\"foundation.cost.cells\" href=\"cost/foundation_cost_cells.html\">Peak-Memory Cost via the Cells Monoid</a>).</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "href": "foundation/foundation_cost_cells.html"
+    },
+    {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "BoyerMoore.majority",
+      "display_name": "BoyerMoore.majority",
+      "qualified_name": "BoyerMoore.majority",
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "kind": "def",
+      "signature": "def majority : List A → CostM Cells (Option A)\n  | []      => pure none\n  | x :: xs => do\n    ✓[Cells.alloc 2] do\n      let result ← loop x 1 xs\n      ✓[Cells.free 2] pure result\nwhere",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/BoyerMoore.lean#L54",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BoyerMoore.loop_cost",
+      "display_name": "BoyerMoore.loop_cost",
+      "qualified_name": "BoyerMoore.loop_cost",
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "kind": "theorem",
+      "signature": "theorem loop_cost (cand : A) (cnt : ℕ) (xs : List A) :\n    (majority.loop cand cnt xs).cost = 0",
+      "docstring": "The loop has zero cost: it overwrites the two slots without allocating.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/BoyerMoore.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BoyerMoore.majority_peak_le",
+      "display_name": "BoyerMoore.majority_peak_le",
+      "qualified_name": "BoyerMoore.majority_peak_le",
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "kind": "theorem",
+      "signature": "theorem majority_peak_le (xs : List A) : (majority xs).cost.peak ≤ 2",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/BoyerMoore.lean#L84",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Examples.CostM.BoyerMoore",
+      "display_name": "EconCSLib.Examples.CostM.BoyerMoore",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Examples/CostM/BoyerMoore.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

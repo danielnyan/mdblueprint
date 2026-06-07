@@ -1,0 +1,84 @@
+{
+  "id": "mechanism_design.vcg.welfare_and_payments",
+  "title": "VCG Welfare And Payments",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_vcg_welfare_and_payments.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.vcg"
+  ],
+  "body_html": "<h1>VCG Welfare And Payments</h1>\n<p>The VCG interface defines social welfare for reported valuation profiles,\nefficient allocations, welfare without a given agent, Clarke-pivot payments,\nand the induced direct and transfer mechanisms.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.3.3, Def. 9.16] Nisan, Roughgarden,\n  Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. VCG mechanisms and welfare-maximizing\n  allocation rules.</li>\n<li>[AGT, Chapter 9, Section 9.3.4, Def. 9.19] Nisan, Roughgarden,\n  Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Clarke-pivot payments.</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_vcg_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "vcgPayment",
+      "display_name": "MultipleParameterMechanism.vcgPayment",
+      "qualified_name": "MultipleParameterMechanism.vcgPayment",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "def",
+      "signature": "noncomputable def vcgPayment (v : ∀ _ : I, Valuation A ℝ) (i : I) : ℝ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L172",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VCGMechanism",
+      "display_name": "MultipleParameterMechanism.VCGMechanism",
+      "qualified_name": "MultipleParameterMechanism.VCGMechanism",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "def",
+      "signature": "noncomputable def VCGMechanism : MultipleParameterMechanism I A ℝ ℝ where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L177",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "VCGTransferMechanism",
+      "display_name": "MultipleParameterMechanism.VCGTransferMechanism",
+      "qualified_name": "MultipleParameterMechanism.VCGTransferMechanism",
+      "module": "EconCSLib.MechanismDesign.Auction.VCG",
+      "kind": "def",
+      "signature": "noncomputable def VCGTransferMechanism :\n    MechanismWithTransfers I (fun _ => Valuation A ℝ) A ℝ where",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L185",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "display_name": "EconCSLib.MechanismDesign.Auction.VCG",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/VCG.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

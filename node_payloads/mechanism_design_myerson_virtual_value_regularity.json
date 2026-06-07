@@ -1,0 +1,134 @@
+{
+  "id": "mechanism_design.myerson.virtual_value_regularity",
+  "title": "Virtual Values and Regularity",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "mechanism_design/mechanism_design_myerson_virtual_value_regularity.html",
+  "primary_topic": "mechanism_design",
+  "topics": [
+    "mechanism_design",
+    "mechanism_design.myerson",
+    "mechanism_design.auction",
+    "mechanism_design.auction.bayesian"
+  ],
+  "body_html": "<h1>Virtual Values and Regularity</h1>\n<p>For a Bayesian single-item auction\n([[mechanism_design.auction.bayesian.single_item_framework]]), the Myerson\nvirtual value of bidder \\(i\\) at type \\(v\\) is\n\\[\n\\psi_i(v) = v - \\frac{1 - F_i(v)}{f_i(v)}.\n\\]</p>\n<p>In Lean this is <code>virtualValue A i v</code>, using the CDF stored in <code>A.typeData</code> and\nthe density <code>A.typeDensity i</code>.</p>\n<h2>Regularity</h2>\n<p><code>IsRegular A</code> states that each function \\(v \\mapsto \\psi_i(v)\\) is monotone.\nRegularity is the condition that makes the virtual-surplus-maximizing\nallocation rule monotone in each bidder's own report, which is the bridge to\nDSIC via the Myerson monotonicity characterization\n([[mechanism_design.myerson.monotonicity_characterization]]).</p>\n<h2>Reserve thresholds</h2>\n<p><code>IsReserveThreshold A i rho</code> records that <code>rho</code> separates nonpositive and\nnonnegative virtual values for bidder \\(i\\).  If the virtual value is regular\nand \\(\\psi_i(\\rho)=0\\), then <code>rho</code> is a reserve threshold.  These threshold\nlemmas are used to interpret the optimal allocation rule as selling only above\nreserve values, and support the reserve-price node\n[[mechanism_design.myerson.reserve_price]].</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 12, Section 12.10] Maschler, Solan, and Zamir, <em>Game Theory</em>.</li>\n<li>[Myerson 1981] Roger Myerson, \"Optimal Auction Design\", <em>Mathematics of\n  Operations Research</em> 6(1):58-73.</li>\n<li>[Krishna, Chapter 5] Vijay Krishna, <em>Auction Theory</em>, 2nd ed..</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "title": "Virtual-Surplus-Maximizing Allocation",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BayesianSingleItemAuction.virtualValue",
+      "display_name": "BayesianSingleItemAuction.virtualValue",
+      "qualified_name": "BayesianSingleItemAuction.virtualValue",
+      "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "kind": "def",
+      "signature": "noncomputable def virtualValue (A : BayesianSingleItemAuction I) (i : I) (v : ℝ) : ℝ",
+      "docstring": "Myerson virtual value `v - (1 - F_i(v)) / f_i(v)` for bidder `i`.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L72",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BayesianSingleItemAuction.IsRegular",
+      "display_name": "BayesianSingleItemAuction.IsRegular",
+      "qualified_name": "BayesianSingleItemAuction.IsRegular",
+      "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "kind": "def",
+      "signature": "def IsRegular (A : BayesianSingleItemAuction I) : Prop",
+      "docstring": "Regularity: every bidder's virtual value is monotone.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L76",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BayesianSingleItemAuction.IsReserveThreshold",
+      "display_name": "BayesianSingleItemAuction.IsReserveThreshold",
+      "qualified_name": "BayesianSingleItemAuction.IsReserveThreshold",
+      "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "kind": "def",
+      "signature": "def IsReserveThreshold (A : BayesianSingleItemAuction I) (i : I) (reserve : ℝ) : Prop",
+      "docstring": "A reserve threshold separating nonpositive and nonnegative virtual values.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L87",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BayesianSingleItemAuction.measurable_virtualValue_of_isRegular",
+      "display_name": "BayesianSingleItemAuction.measurable_virtualValue_of_isRegular",
+      "qualified_name": "BayesianSingleItemAuction.measurable_virtualValue_of_isRegular",
+      "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "kind": "theorem",
+      "signature": "theorem measurable_virtualValue_of_isRegular\n    (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (i : I) :\n    Measurable (A.virtualValue i)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L81",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "BayesianSingleItemAuction.isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+      "display_name": "BayesianSingleItemAuction.isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+      "qualified_name": "BayesianSingleItemAuction.isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+      "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "kind": "theorem",
+      "signature": "theorem isReserveThreshold_of_isRegular_of_virtualValue_eq_zero\n    (A : BayesianSingleItemAuction I) (hA : A.IsRegular) {i : I} {reserve : ℝ}\n    (hzero : A.virtualValue i reserve = 0) :\n    A.IsReserveThreshold i reserve",
+      "docstring": "A zero of a regular virtual value is a reserve threshold.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L106",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "display_name": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

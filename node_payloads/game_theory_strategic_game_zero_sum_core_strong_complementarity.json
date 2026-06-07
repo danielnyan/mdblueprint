@@ -1,0 +1,65 @@
+{
+  "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+  "title": "Strong Complementarity",
+  "kind": "theorem",
+  "status": "proved",
+  "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html",
+  "primary_topic": "game_theory.zero_sum",
+  "topics": [
+    "game_theory.zero_sum",
+    "game_theory.zero_sum.core"
+  ],
+  "body_html": "<h1>Strong Complementarity</h1>\n<p>For a finite zero-sum matrix game $A : I \\times J \\to \\mathbb{R}$ there exists an\noptimal pair $(x^\\ast, y^\\ast) \\in X(A) \\times Y(A)$ that is <strong>strongly\ncomplementary</strong>:</p>\n<p>$$\n  x^\\ast_i &gt; 0 \\iff e_i A y^\\ast = \\operatorname{val}(A),\n  \\qquad\n  y^\\ast_j &gt; 0 \\iff x^\\ast A e_j = \\operatorname{val}(A).\n$$</p>\n<p>The forward implications ($\\Rightarrow$) hold for <em>every</em> optimal pair and are\nexactly <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.support_complementarity\" href=\"../strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_support_complementarity.html\">Support Complementarity</a>.\nThe strengthening here is the existence of a pair for which the reverse\nimplications ($\\Leftarrow$) also hold simultaneously.</p>",
+  "proof_html": "<p>Shift the payoffs by a constant $K$ so the value becomes positive, and\nread off the row/column linear programs of the shifted game. LP strong\ncomplementary slackness supplies an optimal LP pair satisfying strict\ncomplementarity; rescaling back by the shifted value yields an optimal\nmatrix-game pair satisfying the biconditional above.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(c)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Strong complementarity of optimal strategies via LP strong complementary slackness.</li>\n</ul>",
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "href": "math/math_linear_programming_strong_complementarity.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.exists_strong_complementary_pair",
+      "display_name": "MatrixGame.exists_strong_complementary_pair",
+      "qualified_name": "MatrixGame.exists_strong_complementary_pair",
+      "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+      "kind": "theorem",
+      "signature": "theorem exists_strong_complementary_pair :\n    ∃ (xx : stdSimplex ℝ I) (yy : stdSimplex ℝ J),\n      xx ∈ A.optimalRowStrategies ∧ yy ∈ A.optimalColumnStrategies ∧\n      (∀ i, 0 < xx.val i ↔ A.Ei i yy = A.value) ∧\n      (∀ j, 0 < yy.val j ↔ A.Ej xx j = A.value)",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean#L74",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+      "display_name": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

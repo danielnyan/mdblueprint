@@ -1,0 +1,109 @@
+{
+  "id": "social_choice.fair_division.indivisible.checker",
+  "title": "Decidable Fairness Checkers",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_checker.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>Decidable Fairness Checkers</h1>\n<p>For finite agent types and decidable equality on goods, each of the\nindivisible fairness predicates has a decidable <code>Bool</code> checker\ntogether with a soundness <code>iff</code>-theorem matching the corresponding\nabstract predicate.</p>\n<p>In Lean:</p>\n<table>\n<thead>\n<tr>\n<th>Checker</th>\n<th>Iff-theorem</th>\n<th>Predicate</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>isEnvyFree v A</code></td>\n<td><code>isEnvyFree_iff</code></td>\n<td>[[social_choice.fair_division.indivisible.envy_free]]</td>\n</tr>\n<tr>\n<td><code>isEF1 v A</code></td>\n<td><code>isEF1_iff</code></td>\n<td>[[social_choice.fair_division.indivisible.ef1]]</td>\n</tr>\n<tr>\n<td><code>isEFX v A</code></td>\n<td><code>isEFX_iff</code></td>\n<td>[[social_choice.fair_division.indivisible.efx]]</td>\n</tr>\n<tr>\n<td><code>isProportional n v allGoods A</code></td>\n<td><code>isProportional_iff</code></td>\n<td>[[social_choice.fair_division.indivisible.proportional]]</td>\n</tr>\n</tbody>\n</table>\n<p>The class hypotheses (per checker) are some subset of\n<code>[Fintype N]</code>, <code>[DecidableEq N]</code>, <code>[DecidableEq G]</code>.</p>\n<h2>Pattern: two-layer design</h2>\n<p>This follows the EconCSLib \"two-layer\" pattern (CLAUDE.md §Key Design\nPrinciples): for every <code>Prop</code>-valued predicate <code>IsX</code>, provide a\ndecidable <code>Bool</code> checker <code>isX</code> with a soundness theorem\n<code>isX_iff : isX = true ↔ IsX</code>. The checker lets <code>native_decide</code> /\n<code>decide</code> verify concrete instances at compile time; the soundness\ntheorem ports any decidable computation result back to the abstract\npredicate API.</p>\n<p>For example, given a concrete additive instance on <code>Fin 3 → Fin 4 →\nℝ</code>, one can write\n```lean</p>\n<h1>eval isEF1 v A   -- evaluates the checker</h1>\n<p>-- or\nexample : IsEF1 v A := by\n  rw [← isEF1_iff]; native_decide\n```</p>\n<h2>Why these four checkers</h2>\n<p>These are the predicates whose definition is <em>quantifier-bounded</em> (i.e.\nfinite-conjunction / finite-disjunction over <code>N</code> and <code>G</code>) and hence\ndecidably checkable when both types are finite. MMS / α-MMS are\nomitted from this layer because their definition quantifies over all\n<em>complete partitions</em> of <code>allGoods</code>, which is a large but finite set;\nin principle a decidable checker is constructible but more expensive\nthan the basic EF / EF1 / EFX / PROP family.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Algorithmic checking of fairness.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
+      "title": "EFX ⇒ EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isEnvyFree_iff",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isEnvyFree_iff",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isEnvyFree_iff",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "kind": "theorem",
+      "signature": "theorem isEnvyFree_iff [Fintype N]\n    (v : Valuation N G) (A : Allocation N G) :\n    isEnvyFree v A = true ↔ IsEnvyFree v A",
+      "docstring": "The envy-free checker is sound and complete.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean#L56",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isEF1_iff",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isEF1_iff",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isEF1_iff",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "kind": "theorem",
+      "signature": "theorem isEF1_iff [Fintype N] [DecidableEq N] [DecidableEq G]\n    (v : Valuation N G) (A : Allocation N G) :\n    isEF1 v A = true ↔ IsEF1 v A",
+      "docstring": "The EF1 checker is sound and complete.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean#L71",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isEFX_iff",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isEFX_iff",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isEFX_iff",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "kind": "theorem",
+      "signature": "theorem isEFX_iff [Fintype N] [DecidableEq N] [DecidableEq G]\n    (v : Valuation N G) (A : Allocation N G) :\n    isEFX v A = true ↔ IsEFX v A",
+      "docstring": "The EFX checker is sound and complete.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean#L86",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.isProportional_iff",
+      "display_name": "SocialChoice.FairDivision.Indivisible.isProportional_iff",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.isProportional_iff",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "kind": "theorem",
+      "signature": "theorem isProportional_iff [Fintype N] (n : ℕ)\n    (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) :\n    isProportional n v allGoods A = true ↔ IsProportional n v allGoods A",
+      "docstring": "The proportionality checker is sound and complete.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean#L102",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

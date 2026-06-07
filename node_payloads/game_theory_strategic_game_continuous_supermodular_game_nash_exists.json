@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.continuous.supermodular_game_nash_exists",
+  "title": "Nash Existence In Supermodular Games",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_continuous_supermodular_game_nash_exists.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.continuous"
+  ],
+  "body_html": "<h1>Nash Existence In Supermodular Games</h1>\n<p>Every supermodular game, in the sense of MFoGT Exercise 4.12.4, has a Nash\nequilibrium.</p>\n<p>The intended proof applies Tarski's fixed point theorem to a monotone selection\nfrom the players' best-response correspondences.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 4.12, Exercise 4(2c)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence of Nash equilibrium in supermodular games.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

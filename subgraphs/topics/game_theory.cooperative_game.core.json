@@ -1,0 +1,226 @@
+{
+  "topic": {
+    "id": "game_theory.cooperative_game.core",
+    "title": "Game Theory.Cooperative Game.Core",
+    "href": "game_theory/cooperative_game/core/index.html",
+    "parent": "game_theory.cooperative_game",
+    "node_count": 8,
+    "descendant_node_count": 8
+  },
+  "counts": {
+    "internal_nodes": 8,
+    "inlined_nodes": 0,
+    "descendant_nodes": 8,
+    "child_topics": 0,
+    "inlined_child_topics": 0,
+    "non_proof_plan_nodes": 8,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 1,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
+  },
+  "nodes": [
+    {
+      "id": "game_theory.cooperative_game.balanced_collection",
+      "title": "Balanced Collection Of Coalitions",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_collection.html",
+      "payload": "node_payloads/game_theory_cooperative_game_balanced_collection.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.balanced_game",
+      "title": "Balanced Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_balanced_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_balanced_game.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.core",
+      "title": "Core Of A Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core.html",
+      "payload": "node_payloads/game_theory_cooperative_game_core.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.core_subset_imputations",
+      "title": "Core Payoffs Are Imputations",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core_subset_imputations.html",
+      "payload": "node_payloads/game_theory_cooperative_game_core_subset_imputations.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.imputation",
+      "title": "Imputation",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html",
+      "payload": "node_payloads/game_theory_cooperative_game_imputation.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.marginal_contribution",
+      "title": "Marginal Contribution",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_marginal_contribution.html",
+      "payload": "node_payloads/game_theory_cooperative_game_marginal_contribution.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.payoff_vector",
+      "title": "Payoff Vector",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_payoff_vector.html",
+      "payload": "node_payloads/game_theory_cooperative_game_payoff_vector.json"
+    },
+    {
+      "id": "game_theory.cooperative_game.tu_game",
+      "title": "Transferable-Utility Coalitional Game",
+      "kind": "definition",
+      "status": "staged",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html",
+      "payload": "node_payloads/game_theory_cooperative_game_tu_game.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.balanced_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.imputation",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.core",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.imputation",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.tu_game",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [
+    {
+      "id": "game_theory.cooperative_game",
+      "title": "Game Theory.Cooperative Game",
+      "href": "game_theory/cooperative_game/index.html",
+      "role": "dependent",
+      "node_count": 19
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "game_theory.cooperative_game.marginal_contribution",
+      "to": "topic:game_theory.cooperative_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.cooperative_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "topic:game_theory.cooperative_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.cooperative_game",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "id": "balancedness",
+      "title": "balancedness",
+      "href": "keywords/balancedness.html",
+      "count": 2
+    },
+    {
+      "id": "bondareva-shapley",
+      "title": "bondareva-shapley",
+      "href": "keywords/bondareva-shapley.html",
+      "count": 1
+    },
+    {
+      "id": "characteristic-function",
+      "title": "characteristic-function",
+      "href": "keywords/characteristic-function.html",
+      "count": 1
+    },
+    {
+      "id": "coalitional-game",
+      "title": "coalitional-game",
+      "href": "keywords/coalitional-game.html",
+      "count": 8
+    },
+    {
+      "id": "core",
+      "title": "core",
+      "href": "keywords/core.html",
+      "count": 2
+    },
+    {
+      "id": "efficiency",
+      "title": "efficiency",
+      "href": "keywords/efficiency.html",
+      "count": 1
+    },
+    {
+      "id": "imputation",
+      "title": "imputation",
+      "href": "keywords/imputation.html",
+      "count": 3
+    },
+    {
+      "id": "individual-rationality",
+      "title": "individual-rationality",
+      "href": "keywords/individual-rationality.html",
+      "count": 1
+    },
+    {
+      "id": "marginal-contribution",
+      "title": "marginal-contribution",
+      "href": "keywords/marginal-contribution.html",
+      "count": 1
+    },
+    {
+      "id": "payoff-vector",
+      "title": "payoff-vector",
+      "href": "keywords/payoff-vector.html",
+      "count": 1
+    },
+    {
+      "id": "shapley-value",
+      "title": "shapley-value",
+      "href": "keywords/shapley-value.html",
+      "count": 1
+    },
+    {
+      "id": "stability",
+      "title": "stability",
+      "href": "keywords/stability.html",
+      "count": 1
+    },
+    {
+      "id": "transferable-utility",
+      "title": "transferable-utility",
+      "href": "keywords/transferable-utility.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": []
+}

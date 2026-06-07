@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.extensive_game.imperfect_information.information_set",
+  "title": "Information Set",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_information_set.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.imperfect_information"
+  ],
+  "body_html": "<h1>Information Set</h1>\n<p>For player $i$, information is represented by a partition\n$$\n  \\{P^i_k\\}_{k\\in K_i}\n$$\nof player $i$'s decision nodes. A part $P^i_k$ is an information set. Nodes in the\nsame information set cannot be distinguished by player $i$ and must have the same\navailable physical actions.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.3.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Information of player i is a partition of that player's decision nodes.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

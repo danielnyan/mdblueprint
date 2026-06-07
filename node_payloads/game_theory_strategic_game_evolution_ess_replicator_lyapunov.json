@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.evolution.ess_replicator_lyapunov",
+  "title": "ESS Replicator Lyapunov Function",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_evolution_ess_replicator_lyapunov.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.dynamics"
+  ],
+  "body_html": "<h1>ESS Replicator Lyapunov Function</h1>\n<p>A mixed type $p$ is an evolutionarily stable strategy if and only if\n$$\n  V(x)=\\prod_i x_i^{p_i}\n$$\nis locally a strict Lyapunov function for the replicator dynamics.</p>\n<p>MFoGT proves this by differentiating the logarithm of $V(x_t)$ along a\nreplicator trajectory: the derivative is $pAx_t-x_tAx_t$, which is positive\nnear $p$ precisely by the local ESS characterization.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Prop. 5.5.9] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. ESS characterized by a local strict Lyapunov function for replicator dynamics.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

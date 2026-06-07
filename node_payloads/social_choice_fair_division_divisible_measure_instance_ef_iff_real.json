@@ -1,0 +1,49 @@
+{
+  "id": "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+  "title": "Measure-Instance EF ↔ Real-Valued Cardinal EF",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_divisible_measure_instance_ef_iff_real.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.divisible"
+  ],
+  "body_html": "<h1>Measure-Instance EF ↔ Real-Valued Cardinal EF</h1>\n<p><strong>Theorem.</strong> For a divisible measure instance\n$I : \\mathrm{MeasureInstance}\\ N\\ \\Omega$\n([[social_choice.fair_division.divisible.measure_instance]]) with every\n$I.\\mathrm{measure}\\ i$ finite, and any allocation $A$, the\n$\\mathrm{ENNReal}$-valued envy-freeness predicate agrees with the\nreal-valued cardinal envy-freeness obtained from $.toCardinalInstance$:\n$$\nI.\\mathrm{IsEnvyFree}\\ A \\;\\iff\\; (I.\\mathrm{toCardinalInstance}).\\mathrm{IsEnvyFree}\\ A.\n$$</p>\n<p>In Lean:\n<code>SocialChoice.FairDivision.Divisible.MeasureInstance.isEnvyFree_iff_toCardinalInstance_isEnvyFree</code>.</p>",
+  "proof_html": "<p>The two predicates compare values of the form $\\mu_i(A(j))$ vs\n$\\mu_i(A(i))$:</p>\n<ul>\n<li>The $\\mathrm{ENNReal}$ form compares directly:\n  $\\mu_i(A(j)) \\le \\mu_i(A(i))$ in $\\mathrm{ENNReal}$.</li>\n<li>The real form compares after <code>.toReal</code>:\n  $(\\mu_i(A(j))).\\mathrm{toReal} \\le (\\mu_i(A(i))).\\mathrm{toReal}$.</li>\n</ul>\n<p>Both quantities are finite (<code>[IsFiniteMeasure (I.measure i)]</code>) so\n<code>measure_ne_top</code> lets <code>ENNReal.toReal_le_toReal</code> translate between the\ntwo forms. Each direction of the iff is a short calculation.</p>\n<h2>Why this matters</h2>\n<p><code>MeasureInstance</code> is the natural input for measure-theoretic algorithms\n(cut-and-choose, Dubins–Spanier, Stromquist), which all reason with\n$\\mathrm{ENNReal}$-valued measures. But the bundled real-valued cardinal\ninterface\n([[social_choice.fair_division.divisible.cardinal_instance]]) is what\ndownstream call sites prefer (algebra over $\\mathbb{R}$ is much easier\nthan over $\\mathrm{ENNReal}$).</p>\n<p>This equivalence lets a single theorem stated against either form\ndischarge both — pick the convenient one when authoring, then convert\nat the boundary.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Divisible.MeasureInstance.isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "display_name": "SocialChoice.FairDivision.Divisible.MeasureInstance.isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "qualified_name": "SocialChoice.FairDivision.Divisible.MeasureInstance.isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+      "kind": "theorem",
+      "signature": "theorem isEnvyFree_iff_toCardinalInstance_isEnvyFree\n    {N Ω : Type*} [MeasurableSpace Ω] [Fintype N]\n    (I : MeasureInstance N Ω) [∀ i, IsFiniteMeasure (I.measure i)]\n    (A : Allocation N Ω) :\n    I.IsEnvyFree A ↔ I.toCardinalInstance.IsEnvyFree A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean#L173",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

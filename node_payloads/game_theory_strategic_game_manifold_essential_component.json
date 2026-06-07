@@ -1,0 +1,18 @@
+{
+  "id": "game_theory.strategic_game.manifold.essential_component",
+  "title": "Essential Equilibrium Component",
+  "kind": "definition",
+  "status": "staged",
+  "href": "game_theory/strategic_game/game_theory_strategic_game_manifold_essential_component.html",
+  "primary_topic": "game_theory.strategic_game",
+  "topics": [
+    "game_theory.strategic_game",
+    "game_theory.strategic_game.refinements"
+  ],
+  "body_html": "<h1>Essential Equilibrium Component</h1>\n<p>Let $C$ be a connected component of the Nash equilibrium set of a finite game\n$g$. The component $C$ is essential if every neighborhood $V$ of $C$ contains an\nequilibrium of every game in some sufficiently small neighborhood of $g$.</p>\n<p>Equivalently, the component cannot be removed by arbitrarily small payoff\nperturbations.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 5, Def. 5.3.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Essential component of Nash equilibria.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [],
+  "lean_modules": []
+}

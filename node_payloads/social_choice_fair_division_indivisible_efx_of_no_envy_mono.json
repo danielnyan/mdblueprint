@@ -1,0 +1,55 @@
+{
+  "id": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+  "title": "EFX from No-Envy + Monotonicity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "social_choice/social_choice_fair_division_indivisible_efx_of_no_envy_mono.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.fair_division",
+    "social_choice.fair_division.indivisible"
+  ],
+  "body_html": "<h1>EFX from No-Envy + Monotonicity</h1>\n<p><strong>Theorem.</strong> For a monotone valuation $v$ on indivisible goods,\nenvy-freeness ([[social_choice.fair_division.indivisible.envy_free]])\nimplies EFX ([[social_choice.fair_division.indivisible.efx]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.IsEFX.of_noEnvy_mono</code>.</p>\n<h2>Statement and proof</h2>\n<p>This is the same content as\n[[social_choice.fair_division.indivisible.ef_implies_efx_mono]], stated\ninside <code>EFX.lean</code> as a local sufficiency lemma for the EFX existence\nproofs in the same file. The Lean signatures differ only in how the\nhypothesis is bundled:</p>\n<ul>\n<li><code>IsEnvyFree.isEFX_of_mono</code> in <code>Fairness.lean</code> — phrased as a method\n  on the EF predicate.</li>\n<li><code>IsEFX.of_noEnvy_mono</code> in <code>EFX.lean</code> — phrased as a constructor of\n  the EFX predicate.</li>\n</ul>\n<p>Both prove $T \\subseteq S \\Rightarrow v_i(T) \\le v_i(S)$, combined with\nEF, yields EFX, by the same calculation: removing an item from the\nenvied bundle (a subset operation) only decreases its value, so the EF\ninequality $v_i(A(j)) \\le v_i(A(i))$ propagates to bundles missing one\nitem.</p>\n<h2>Why duplicate</h2>\n<p>Having both forms lets <code>EFX.lean</code> use the constructor directly without\nimporting the symmetric <code>Fairness</code>-side lemma. It is purely an\norganisational convenience; the proof is the same.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF-EFX implication.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+      "title": "EF ⇒ EFX (Monotone Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_efx_mono.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.FairDivision.Indivisible.IsEFX.of_noEnvy_mono",
+      "display_name": "SocialChoice.FairDivision.Indivisible.IsEFX.of_noEnvy_mono",
+      "qualified_name": "SocialChoice.FairDivision.Indivisible.IsEFX.of_noEnvy_mono",
+      "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "kind": "theorem",
+      "signature": "theorem IsEFX.of_noEnvy_mono [DecidableEq G]\n    (v : Valuation (Fin 2) G)\n    (hmono : ∀ i S T, T ⊆ S → v.val i T ≤ v.val i S)\n    (A : Allocation (Fin 2) G)\n    (h : IsEnvyFree v A) : IsEFX v A",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L74",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "display_name": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

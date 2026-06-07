@@ -1,0 +1,845 @@
+{
+  "topic": {
+    "id": "social_choice.fair_division.indivisible",
+    "title": "Social Choice.Fair Division.Indivisible",
+    "href": "social_choice/fair_division/indivisible/index.html",
+    "parent": "social_choice.fair_division",
+    "node_count": 43,
+    "descendant_node_count": 43
+  },
+  "counts": {
+    "internal_nodes": 43,
+    "inlined_nodes": 20,
+    "descendant_nodes": 43,
+    "child_topics": 0,
+    "inlined_child_topics": 2,
+    "non_proof_plan_nodes": 43,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 44,
+    "visible_nodes_with_selected_proof_plans": 44
+  },
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_acyclic_has_source.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_additive_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_additive_valuation.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_allocation.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_alpha_mms_mono.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.best_good",
+      "title": "Best-Good Selection",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_best_good.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_best_good.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_cardinal_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.checker",
+      "title": "Decidable Fairness Checkers",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_checker.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_checker.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef1",
+      "title": "EF1 — Envy-Free Up to One Good",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef1.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_ef1.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+      "title": "EF ⇒ EFX (Monotone Valuations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_efx_mono.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_ef_implies_efx_mono.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_proportional_additive",
+      "title": "EF ⇒ PROP (Additive Valuations, Complete Allocations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_proportional_additive.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_ef_implies_proportional_additive.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good",
+      "title": "EF Impossibility — Two Agents, One Good",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_impossible_two_agents_one_good.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_ef_impossible_two_agents_one_good.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx",
+      "title": "EFX — Envy-Free Up to Any Good",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_exists_two_agents",
+      "title": "EFX Existence — Two Agents, Any Finite Good Set",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_exists_two_agents.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx_exists_two_agents.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
+      "title": "EFX ⇒ EF1",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx_implies_ef1.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+      "title": "EFX from No-Envy + Monotonicity",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_of_no_envy_mono.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx_of_no_envy_mono.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "title": "EFX from a Singleton-Bundle Sufficient Condition",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx_singleton_bundle.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+      "title": "EFX Existence — 2 Agents, 2 Goods",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_two_agents_two_goods.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_efx_two_agents_two_goods.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.egalitarian_welfare",
+      "title": "Indivisible Egalitarian (Maximin) Welfare",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_egalitarian_welfare.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_egalitarian_welfare.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "title": "Eliminate All Envy Cycles",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_eliminate_all_cycles.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envies",
+      "title": "Envy Relation and Sources",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_envies.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_envies.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_envy_cycle.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "title": "Envy-Cycle Elimination Algorithm",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_envy_cycle_algorithm.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_envy_cycle_ef1.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_free",
+      "title": "Indivisible Envy-Free",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_free.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_envy_free.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.equitable",
+      "title": "Indivisible Equitable",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_equitable.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_equitable.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "title": "α-MMS Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_is_alpha_mms.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.maximin_share",
+      "title": "Maximin Share (MMS) Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_maximin_share.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_maximin_share.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_iff_alpha_one.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_value.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "title": "MMS Value — Basic Bounds",
+      "kind": "lemma",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_mms_value_bounds.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ordinal_instance",
+      "title": "Indivisible Ordinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_ordinal_instance.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_ordinal_instance.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "title": "Pareto-Domination Count Termination Measure",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_pareto_dom_count.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_pareto_dom_count.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.pareto_optimal",
+      "title": "Indivisible Pareto Optimal",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_pareto_optimal.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_pareto_optimal.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional",
+      "title": "Indivisible Proportional",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_proportional.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_proportional_implies_mms_additive.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.rotate_bundles",
+      "title": "Bundle Rotation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_rotate_bundles.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_rotate_bundles.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "title": "Round-Robin Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_alloc.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_round_robin_alloc.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_ef1",
+      "title": "Round-Robin Is EF1",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_ef1.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_round_robin_ef1.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_partition",
+      "title": "Round-Robin Output Is a Complete Partition",
+      "kind": "theorem",
+      "status": "staged",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_partition.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_round_robin_partition.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "title": "Indivisible Utilitarian Welfare",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_utilitarian_welfare.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_utilitarian_welfare.json"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "kind": "definition",
+      "status": "formalized",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html",
+      "payload": "node_payloads/social_choice_fair_division_indivisible_valuation.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "to": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.additive_instance",
+      "to": "social_choice.fair_division.indivisible.best_good",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.best_good",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.additive_valuation",
+      "to": "social_choice.fair_division.indivisible.cardinal_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.efx_implies_ef1",
+      "to": "social_choice.fair_division.indivisible.checker",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.efx",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+      "to": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.valuation",
+      "to": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.efx_singleton_bundle",
+      "to": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.egalitarian_welfare",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "to": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.envy_cycle",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envies",
+      "to": "social_choice.fair_division.indivisible.envy_cycle",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.valuation",
+      "to": "social_choice.fair_division.indivisible.envy_cycle",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.equitable",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.maximin_share",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "to": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.mms_value",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.valuation",
+      "to": "social_choice.fair_division.indivisible.mms_value",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.ordinal_instance",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.rotate_bundles",
+      "to": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.pareto_optimal",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.proportional",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle",
+      "to": "social_choice.fair_division.indivisible.rotate_bundles",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "to": "social_choice.fair_division.indivisible.round_robin_ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.additive_instance",
+      "to": "social_choice.fair_division.indivisible.round_robin_partition",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.round_robin_partition",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "to": "social_choice.fair_division.indivisible.round_robin_partition",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.additive_instance",
+      "to": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.allocation",
+      "to": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.cardinal_instance",
+      "to": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.valuation",
+      "to": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "acyclic",
+      "title": "acyclic",
+      "href": "keywords/acyclic.html",
+      "count": 1
+    },
+    {
+      "id": "additive",
+      "title": "additive",
+      "href": "keywords/additive.html",
+      "count": 5
+    },
+    {
+      "id": "algorithms",
+      "title": "algorithms",
+      "href": "keywords/algorithms.html",
+      "count": 7
+    },
+    {
+      "id": "allocation",
+      "title": "allocation",
+      "href": "keywords/allocation.html",
+      "count": 1
+    },
+    {
+      "id": "alpha-mms",
+      "title": "alpha-mms",
+      "href": "keywords/alpha-mms.html",
+      "count": 4
+    },
+    {
+      "id": "approximation",
+      "title": "approximation",
+      "href": "keywords/approximation.html",
+      "count": 1
+    },
+    {
+      "id": "bounds",
+      "title": "bounds",
+      "href": "keywords/bounds.html",
+      "count": 1
+    },
+    {
+      "id": "cardinal",
+      "title": "cardinal",
+      "href": "keywords/cardinal.html",
+      "count": 1
+    },
+    {
+      "id": "checker",
+      "title": "checker",
+      "href": "keywords/checker.html",
+      "count": 1
+    },
+    {
+      "id": "decidable",
+      "title": "decidable",
+      "href": "keywords/decidable.html",
+      "count": 1
+    },
+    {
+      "id": "ef1",
+      "title": "ef1",
+      "href": "keywords/ef1.html",
+      "count": 4
+    },
+    {
+      "id": "efficiency",
+      "title": "efficiency",
+      "href": "keywords/efficiency.html",
+      "count": 1
+    },
+    {
+      "id": "efx",
+      "title": "efx",
+      "href": "keywords/efx.html",
+      "count": 7
+    },
+    {
+      "id": "egalitarian",
+      "title": "egalitarian",
+      "href": "keywords/egalitarian.html",
+      "count": 1
+    },
+    {
+      "id": "envy-cycle",
+      "title": "envy-cycle",
+      "href": "keywords/envy-cycle.html",
+      "count": 8
+    },
+    {
+      "id": "envy-free",
+      "title": "envy-free",
+      "href": "keywords/envy-free.html",
+      "count": 4
+    },
+    {
+      "id": "equitable",
+      "title": "equitable",
+      "href": "keywords/equitable.html",
+      "count": 1
+    },
+    {
+      "id": "equivalence",
+      "title": "equivalence",
+      "href": "keywords/equivalence.html",
+      "count": 1
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 2
+    },
+    {
+      "id": "existence",
+      "title": "existence",
+      "href": "keywords/existence.html",
+      "count": 4
+    },
+    {
+      "id": "fair-division",
+      "title": "fair-division",
+      "href": "keywords/fair-division.html",
+      "count": 43
+    },
+    {
+      "id": "fairness",
+      "title": "fairness",
+      "href": "keywords/fairness.html",
+      "count": 6
+    },
+    {
+      "id": "impossibility",
+      "title": "impossibility",
+      "href": "keywords/impossibility.html",
+      "count": 1
+    },
+    {
+      "id": "indivisible",
+      "title": "indivisible",
+      "href": "keywords/indivisible.html",
+      "count": 43
+    },
+    {
+      "id": "instance",
+      "title": "instance",
+      "href": "keywords/instance.html",
+      "count": 3
+    },
+    {
+      "id": "maximin",
+      "title": "maximin",
+      "href": "keywords/maximin.html",
+      "count": 1
+    },
+    {
+      "id": "maximin-share",
+      "title": "maximin-share",
+      "href": "keywords/maximin-share.html",
+      "count": 2
+    },
+    {
+      "id": "mms",
+      "title": "mms",
+      "href": "keywords/mms.html",
+      "count": 7
+    },
+    {
+      "id": "monotonicity",
+      "title": "monotonicity",
+      "href": "keywords/monotonicity.html",
+      "count": 3
+    },
+    {
+      "id": "ordinal",
+      "title": "ordinal",
+      "href": "keywords/ordinal.html",
+      "count": 1
+    },
+    {
+      "id": "pareto",
+      "title": "pareto",
+      "href": "keywords/pareto.html",
+      "count": 1
+    },
+    {
+      "id": "partition",
+      "title": "partition",
+      "href": "keywords/partition.html",
+      "count": 1
+    },
+    {
+      "id": "proportional",
+      "title": "proportional",
+      "href": "keywords/proportional.html",
+      "count": 4
+    },
+    {
+      "id": "rotation",
+      "title": "rotation",
+      "href": "keywords/rotation.html",
+      "count": 1
+    },
+    {
+      "id": "round-robin",
+      "title": "round-robin",
+      "href": "keywords/round-robin.html",
+      "count": 4
+    },
+    {
+      "id": "singleton",
+      "title": "singleton",
+      "href": "keywords/singleton.html",
+      "count": 1
+    },
+    {
+      "id": "source",
+      "title": "source",
+      "href": "keywords/source.html",
+      "count": 1
+    },
+    {
+      "id": "termination",
+      "title": "termination",
+      "href": "keywords/termination.html",
+      "count": 1
+    },
+    {
+      "id": "utilitarian",
+      "title": "utilitarian",
+      "href": "keywords/utilitarian.html",
+      "count": 1
+    },
+    {
+      "id": "valuation",
+      "title": "valuation",
+      "href": "keywords/valuation.html",
+      "count": 2
+    },
+    {
+      "id": "welfare",
+      "title": "welfare",
+      "href": "keywords/welfare.html",
+      "count": 2
+    },
+    {
+      "id": "well-founded",
+      "title": "well-founded",
+      "href": "keywords/well-founded.html",
+      "count": 1
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "social_choice.fair_division.indivisible.algorithms",
+    "social_choice.fair_division.indivisible.mms"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "math.simplex.wsum_comm",
+  "title": "Iterated Weighted Sums Commute",
+  "kind": "lemma",
+  "status": "proved",
+  "href": "math/math_simplex_wsum_comm.html",
+  "primary_topic": "math",
+  "topics": [
+    "math",
+    "math.simplex"
+  ],
+  "body_html": "<h1>Iterated Weighted Sums Commute</h1>\n<p>For finite indices <code>I</code> and <code>J</code>, simplex elements <code>x ∈ stdSimplex 𝕜 I</code> and\n<code>y ∈ stdSimplex 𝕜 J</code>, and a payoff matrix <code>A : I → J → 𝕜</code>,\n$$\n  \\sum_{i \\in I} x_i \\!\\left( \\sum_{j \\in J} y_j \\, A_{ij} \\right)\n  \\;=\\;\n  \\sum_{j \\in J} y_j \\!\\left( \\sum_{i \\in I} x_i \\, A_{ij} \\right).\n$$</p>\n<p>In <code>wsum</code>-notation:\n$$\n  \\operatorname{wsum} x \\, (\\lambda i.\\; \\operatorname{wsum} y\\, A_{i\\,\\cdot})\n  \\;=\\;\n  \\operatorname{wsum} y \\, (\\lambda j.\\; \\operatorname{wsum} x\\, A_{\\cdot\\, j}).\n$$</p>\n<p>This is the finite-sum Fubini fact that lets matrix-game expected payoffs be\ncomputed in either order. It is the algebraic backbone of the minimax-style\nmanipulations (Loomis) on the value of a mixed extension.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 5] Maschler, Solan, and Zamir, <em>Game Theory</em>. Expected payoff of a matrix game evaluated as a\n  bilinear form in the two players' mixed strategies.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.weak_duality",
+      "title": "Weak Duality For Loomis Values",
+      "href": "math/math_minimax_loomis_induction_proof_weak_duality.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "wsum_wsum_comm",
+      "display_name": "wsum_wsum_comm",
+      "qualified_name": "wsum_wsum_comm",
+      "module": "EconCSLib.Math.Simplex",
+      "kind": "theorem",
+      "signature": "theorem wsum_wsum_comm {J : Type*} [Fintype J]\n    (x : stdSimplex 𝕜 I) (y : stdSimplex 𝕜 J)\n    (A : I → J → 𝕜) :\n    wsum x (fun i => wsum y (A i)) = wsum y (fun j => wsum x (fun i => A i j))",
+      "docstring": "Exchange order of double weighted sums.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L295",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.Math.Simplex",
+      "display_name": "EconCSLib.Math.Simplex",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/Math/Simplex.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

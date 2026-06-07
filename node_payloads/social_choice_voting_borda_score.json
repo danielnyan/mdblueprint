@@ -1,0 +1,85 @@
+{
+  "id": "social_choice.voting.borda_score",
+  "title": "Borda Score and Borda Rule",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "social_choice/social_choice_voting_borda_score.html",
+  "primary_topic": "social_choice",
+  "topics": [
+    "social_choice",
+    "social_choice.voting",
+    "social_choice.voting.rules"
+  ],
+  "body_html": "<h1>Borda Score and Borda Rule</h1>\n<p>The <em>Borda score</em> is the positional scoring vector that awards $m - 1$ points\nto a voter's top alternative and one fewer for each rank down. As a\nrank-indexed vector (rank $0$ is the top, $m = |A|$),\n$$\n\\mathrm{bordaScore}(m, r) = m - 1 - r,\n$$\nso under preference $P_i$ an alternative $a$ earns the count of alternatives\nranked strictly below it, $\\#\\{c \\in A \\mid a \\succ_{P_i} c\\}$.</p>\n<p>The <em>total Borda score</em> of $a$ across the profile sums the per-voter scores,\n$B(P, a) = \\sum_{i \\in N} \\mathrm{bordaScore}$ — in Lean this is the generic\n<code>scoreCandidate P</code> aggregator applied to the Borda vector.</p>\n<p>The <em>Borda rule</em> selects the alternatives maximising total Borda score, with\nties kept:\n$$\n\\mathrm{borda}(P) = \\arg\\max_{a \\in A}\\ B(P, a).\n$$</p>\n<p>In Lean: <code>SocialChoice.Voting.bordaScore</code> (the score vector),\n<code>SocialChoice.Voting.scoreCandidate</code> (the total-score aggregator), and\n<code>SocialChoice.Voting.borda</code> (the rule, <code>scoringRule bordaScore</code>, a set-valued\n<code>VotingRule</code>). These are <code>noncomputable</code> because aggregating a bare-<code>Prop</code>\nstrict preference uses classical decidability, and ties are kept in the\nwinner set.</p>\n<h2>Properties (informal)</h2>\n<ul>\n<li>Borda is monotonic, anonymous, and neutral.</li>\n<li>Borda is <em>not</em> a Condorcet method\n  ([[social_choice.voting.condorcet_winner]]): the Borda winner may differ\n  from the Condorcet winner when both exist.</li>\n<li>Borda is strategy-manipulable\n  ([[social_choice.voting.strategyproof]] fails) — already follows from\n  Gibbard–Satterthwaite for $|A| \\ge 3$.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 10] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Positional scoring rules.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SocialChoice.Voting.bordaScore",
+      "display_name": "SocialChoice.Voting.bordaScore",
+      "qualified_name": "SocialChoice.Voting.bordaScore",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "def",
+      "signature": "def bordaScore (m r : Nat) : Int",
+      "docstring": "Borda score vector, with top rank receiving `m - 1` points.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L217",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.scoreCandidate",
+      "display_name": "SocialChoice.Voting.scoreCandidate",
+      "qualified_name": "SocialChoice.Voting.scoreCandidate",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "def",
+      "signature": "noncomputable def scoreCandidate [Fintype N] [Fintype A]\n    (P : Profile N A) (score : Nat → Int) (a : A) : Int",
+      "docstring": "Total score for a candidate under a positional score vector.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L172",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "SocialChoice.Voting.borda",
+      "display_name": "SocialChoice.Voting.borda",
+      "qualified_name": "SocialChoice.Voting.borda",
+      "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "kind": "def",
+      "signature": "noncomputable def borda [Fintype N] [Fintype A] : VotingRule N A",
+      "docstring": "Borda rule.",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L229",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "display_name": "EconCSLib.SocialChoice.Voting.VotingRules",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/SocialChoice/Voting/VotingRules.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}

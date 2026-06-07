@@ -1,0 +1,108 @@
+{
+  "id": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+  "title": "Semi-Reduced Normal Form",
+  "kind": "definition",
+  "status": "formalized",
+  "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_semi_reduced_normal_form.html",
+  "primary_topic": "game_theory.extensive_game",
+  "topics": [
+    "game_theory.extensive_game",
+    "game_theory.extensive_game.normal_form"
+  ],
+  "body_html": "<h1>Semi-Reduced Normal Form</h1>\n<p>Two strategies $s_i,t_i$ of player $i$ are payoff-equivalent if for every\n$s_{-i}$ and every player $j$,\n$$\n  g_j(s_i,s_{-i})=g_j(t_i,s_{-i}).\n$$\nThe semi-reduced normal form identifies payoff-equivalent strategies. This removes\ndifferences that occur only at positions excluded by the strategy itself.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Semi-reduced normal form identifies payoff-equivalent strategies.</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "title": "Normal Form Reduction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "GameTree.PlayerStrategy",
+      "display_name": "GameTree.PlayerStrategy",
+      "qualified_name": "GameTree.PlayerStrategy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "kind": "def",
+      "signature": "def PlayerStrategy (N U : Type*) : Type _",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L38",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.profileStrategy",
+      "display_name": "GameTree.profileStrategy",
+      "qualified_name": "GameTree.profileStrategy",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "kind": "def",
+      "signature": "def profileStrategy (σ : N → PlayerStrategy N U) : Strategy N U",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L44",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.profileStrategy_deviate_variant",
+      "display_name": "GameTree.profileStrategy_deviate_variant",
+      "qualified_name": "GameTree.profileStrategy_deviate_variant",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "kind": "theorem",
+      "signature": "theorem profileStrategy_deviate_variant (σ : N → PlayerStrategy N U)\n    (i : N) (s' : PlayerStrategy N U) :\n    IVariant i (profileStrategy σ) (profileStrategy (Function.update σ i s'))",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L54",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "GameTree.profileStrategy_deviate_eq_of_variant",
+      "display_name": "GameTree.profileStrategy_deviate_eq_of_variant",
+      "qualified_name": "GameTree.profileStrategy_deviate_eq_of_variant",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "kind": "theorem",
+      "signature": "theorem profileStrategy_deviate_eq_of_variant (σ : N → PlayerStrategy N U)\n    (i : N) (τ : Strategy N U) (hτ : IVariant i (profileStrategy σ) τ) :\n    profileStrategy (Function.update σ i (τ : PlayerStrategy N U)) = τ",
+      "docstring": null,
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L62",
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "resolved",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "display_name": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+      "repository_title": "EconCSLib",
+      "revision": "7c9a1688acedefe48ec89a442571f12d87a380db",
+      "short_revision": "7c9a168",
+      "source_url": "https://github.com/gametheoryinlean/EconCSLib/blob/7c9a1688acedefe48ec89a442571f12d87a380db/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean#L1",
+      "status": "resolved",
+      "reason": null
+    }
+  ]
+}
