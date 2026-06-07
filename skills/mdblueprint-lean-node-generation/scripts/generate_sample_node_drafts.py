@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[3]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from mdblueprint.knowledge_uses import inferred_uses
+from mdblueprint.knowledge_uses import infer_and_prune_uses_for_nodes
 from tools.knowledge.lean_index import LeanDeclaration, index_lean_project
 from tools.knowledge.parser import parse_file
 
@@ -132,10 +132,15 @@ def main() -> None:
 
     idx = index_lean_project(args.lean_root)
     reference_nodes = []
+    uses_by_node: dict[str, list[str]] = {}
     if args.knowledge_root is not None:
         for base in (args.knowledge_root / "nodes", args.knowledge_root / "staged"):
             if base.is_dir():
                 reference_nodes.extend(parse_file(path) for path in sorted(base.rglob("*.md")) if path.name != "topics.md")
+        uses_by_node = {
+            node_id: [item.target_node_id for item in items]
+            for node_id, items in infer_and_prune_uses_for_nodes(reference_nodes, idx).items()
+        }
 
     if args.output.exists():
         shutil.rmtree(args.output)
@@ -149,11 +154,7 @@ def main() -> None:
                 decls.append(decl)
         if not decls:
             continue
-        uses: list[str] = []
-        if reference_nodes:
-            source = next((node for node in reference_nodes if node.id == case.node_id), None)
-            if source is not None:
-                uses = inferred_uses(source, reference_nodes, idx)
+        uses = uses_by_node.get(case.node_id, [])
         path = args.output / f"{case.node_id.replace('.', '_')}.md"
         path.write_text(_render(case.node_id, decls, uses), encoding="utf-8")
         print(path)
