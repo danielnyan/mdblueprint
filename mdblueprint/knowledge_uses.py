@@ -4,6 +4,11 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
+from mdblueprint.theorem_renaming import (
+    IdentityTheoremRenamer,
+    TheoremRenamer,
+    renaming_aliases_for_declaration,
+)
 from tools.knowledge.lean_index import LeanDeclaration, LeanIndex
 from tools.knowledge.models import Node
 from tools.knowledge.node_refs import NODE_REF_RE, THEOREM_KINDS, _split_body_proof, _strip_see_also_sections
@@ -24,6 +29,7 @@ class UsesInferenceContext:
     decls_by_node: dict[str, list[str]]
     reference_index: dict[str, list[str]]
     decl_graph: dict[str, list[str]]
+    theorem_renamer: TheoremRenamer
 
 
 def _unique_preserve_order(items: list[str]) -> list[str]:
@@ -72,13 +78,20 @@ _COMMON_LEAN_LEAF_NAMES = frozenset({
 _LEAN_NAME_RE = re.compile(r"[A-Za-z][A-Za-z0-9_]*(?:\.[A-Za-z][A-Za-z0-9_]*)*")
 
 
-def _reference_index(declarations: dict[str, LeanDeclaration]) -> dict[str, list[str]]:
+def _reference_index(
+    declarations: dict[str, LeanDeclaration],
+    theorem_renamer: TheoremRenamer | None = None,
+) -> dict[str, list[str]]:
+    renamer = theorem_renamer or IdentityTheoremRenamer()
     index: dict[str, list[str]] = {}
     for name, decl in declarations.items():
         index.setdefault(name, []).append(name)
         leaf = decl.qualified_name.rsplit(".", 1)[-1]
         if len(leaf) >= 4 and leaf not in _COMMON_LEAN_LEAF_NAMES:
             index.setdefault(leaf, []).append(name)
+        for alias in renaming_aliases_for_declaration(decl, renamer):
+            if alias not in _COMMON_LEAN_LEAF_NAMES:
+                index.setdefault(alias, []).append(name)
     return index
 
 
@@ -119,16 +132,23 @@ def _build_node_decl_map(nodes: list[Node]) -> dict[str, list[str]]:
     return mapping
 
 
-def build_uses_inference_context(nodes: list[Node], idx: LeanIndex) -> UsesInferenceContext:
+def build_uses_inference_context(
+    nodes: list[Node],
+    idx: LeanIndex,
+    *,
+    theorem_renamer: TheoremRenamer | None = None,
+) -> UsesInferenceContext:
     """Build the cached structures needed to infer and prune uses edges."""
+    renamer = theorem_renamer or IdentityTheoremRenamer()
     decls_by_node = _build_node_decl_map(nodes)
-    reference_index = _reference_index(idx.declarations)
+    reference_index = _reference_index(idx.declarations, renamer)
     return UsesInferenceContext(
         idx=idx,
         nodes_by_id={node.id: node for node in nodes},
         decls_by_node=decls_by_node,
         reference_index=reference_index,
         decl_graph=_build_decl_graph(idx, reference_index),
+        theorem_renamer=renamer,
     )
 
 
@@ -399,9 +419,10 @@ def infer_and_prune_uses_for_nodes(
     *,
     max_depth: int = 3,
     include_body_refs: bool = True,
+    theorem_renamer: TheoremRenamer | None = None,
 ) -> dict[str, list[InferredUse]]:
     """Infer uses for every node, then prune transitive duplicates and cycles."""
-    context = build_uses_inference_context(nodes, idx)
+    context = build_uses_inference_context(nodes, idx, theorem_renamer=theorem_renamer)
     proposed: dict[str, list[InferredUse]] = {}
     for node in nodes:
         proposed[node.id] = infer_uses_for_node(

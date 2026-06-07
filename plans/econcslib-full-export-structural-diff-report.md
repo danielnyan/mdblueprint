@@ -76,6 +76,85 @@ Interpretation:
 - some authored edges are replaced by finer-grained Lean-backed dependencies
 - some source edges are not recoverable from Lean alone because they encode pedagogical or conceptual prerequisites rather than exact theorem references
 
+### 1a. Authored graph vs Lean-derived graph shape
+
+The Lean-derived graph is substantially sparser than the authored graph.
+
+| graph | nodes | edges | nodes with `uses` | isolated nodes | average out-degree |
+|---|---:|---:|---:|---:|---:|
+| authored source | `535` | `840` | `503` | `3` | `1.57` |
+| Lean-derived export | `535` | `270` | `181` | `298` | `0.50` |
+
+At the top-level topic boundary:
+
+| graph | cross-topic edges | top-level topic pairs |
+|---|---:|---:|
+| authored source | `49` | `4` |
+| Lean-derived export | `35` | `6` |
+
+The authored graph is denser overall and keeps almost every node attached to the dependency graph. Its cross-topic edges are concentrated in a few high-level flows, especially between `math` and `game_theory`.
+
+The Lean-derived graph is more tree-like because it keeps only edges that survive Lean-backed inference, transitive pruning, and cycle breaking. That makes it better as a minimal formal dependency skeleton, but worse as a human-readable proof roadmap.
+
+The two graphs therefore represent different structures:
+
+- authored source graph: blueprint, pedagogy, and proof narrative
+- Lean-derived export graph: conservative formal dependency skeleton
+
+Neither graph should be treated as automatically superior. The authored graph may contain non-mechanical or redundant edges. The Lean-derived graph may drop proof-stage continuation edges that are mathematically important for exposition.
+
+### 1b. Loomis weak-duality failure case
+
+The clearest observed failure is the relationship between:
+
+- `math.minimax.loomis_induction_proof.value_existence`
+- `math.minimax.loomis_induction_proof.weak_duality`
+
+In the authored source tree, `weak_duality` correctly uses `value_existence`:
+
+```yaml
+uses:
+  - math.minimax.loomis_induction_proof.positive_aggregate
+  - math.minimax.loomis_induction_proof.value_existence
+```
+
+The node body also explicitly depends on value existence:
+
+- the statement defines `lambda_0` and `mu_0` through `value_existence`
+- the proof chooses optimizers supplied by `value_existence`
+
+The Lean source supports this relationship. In `Loomis.lamB0_le_muB0`, the proof directly obtains the optimizers:
+
+```lean
+obtain ⟨xx, Hxx⟩ := exists_xx_lamB0 A B hB
+obtain ⟨yy, Hyy⟩ := exists_yy_muB0 A B hB
+```
+
+Those declarations are part of the `value_existence` node.
+
+However, the generated export currently records:
+
+```yaml
+uses:
+  - math.simplex.wsum_comm
+```
+
+This is the wrong abstraction level for the blueprint graph. It keeps a low-level Lean implementation lemma while dropping the proof-stage continuation edge to `value_existence`.
+
+The raw inference pass did find the authored body references:
+
+- `weak_duality -> value_existence` with evidence `body_node_ref`
+- `weak_duality -> positive_aggregate` with evidence `body_node_ref`
+
+The final pruning pass then dropped all `body_node_ref` edges from final `uses`, keeping only Lean declaration references. As a result, the generated graph overprivileged `wsum_wsum_comm` and lost the proof narrative.
+
+This exposes two failure modes:
+
+- body-explicit proof references are too aggressively excluded from final `uses`
+- Lean leaf-name matching can be noisy and may surface low-level or unrelated declarations such as generic `trans` lemmas
+
+For this case, the authored edge `weak_duality -> value_existence` should survive because it is both body-explicit and Lean-supported through `exists_xx_lamB0` and `exists_yy_muB0`.
+
 ### 2. `mdblueprint.yml` differs
 
 The source and generated configs are not identical.
@@ -168,19 +247,38 @@ Interpretation:
 
 ## Main Failure Modes
 
-The differences cluster into three failure modes:
+The differences cluster into seven failure modes:
 
 1. **Curated `uses` vs Lean-derived `uses`**
    - authored source uses pedagogy and exposition
    - the export uses Lean-backed theorem references and then prunes redundancies
 
-2. **Proof-plan handling**
+2. **Narrative proof-stage edges removed**
+   - body-explicit `[[node:...]]` proof references are currently collected but excluded from final `uses`
+   - this can remove real proof continuations, as in `weak_duality -> value_existence`
+
+3. **Low-level Lean implementation edges retained**
+   - declaration matching may retain helper lemmas such as `wsum_wsum_comm`
+   - these are formally relevant but often too low-level for the blueprint graph
+   - leaf-name matching can also surface unrelated generic declarations when names are too broad
+
+4. **Proof-plan handling**
    - the exporter includes proof-plan-like nodes from the source tree
    - the checker requires proof-plan targets to be explicit and prohibits some role-mismatched dependencies
 
-3. **Config normalization**
+5. **Config normalization**
    - the exporter synthesizes a more complete `mdblueprint.yml`
    - this introduces config differences even when the source tree is otherwise copied verbatim
+
+6. **Theorem-name dependence**
+   - the current Lean reference matcher benefits from well-named declarations
+   - if theorem names become opaque, abbreviated, or mechanically generated, low-level NLP and leaf-name rules become less reliable
+   - a future theorem-renamer should be treated as an upstream semantic signal, not as a replacement for Lean-backed evidence
+
+7. **Multiple proof routes**
+   - some theorems have more than one legitimate proof route
+   - a flat `uses` DAG can express one selected route, but it cannot faithfully represent candidate, alternative, or parallel proofs without edge or route annotations
+   - collapsing all routes into one `uses` list risks creating a graph that is formally true but misleading about the library's chosen proof architecture
 
 ## Proof-Plan Contract
 
@@ -212,6 +310,221 @@ So the next step is a policy decision:
    - treat proof plans as an auxiliary review artifact instead of part of the comparison tree
 
 For the current ablation study, option 1 is the stronger test because it preserves more of the source structure while exposing how much of the mismatch is due to proof-plan semantics rather than theorem dependency inference.
+
+## Proposed Remediation Plan
+
+This section lists implementation choices to approve, revise, or veto before the next round.
+
+### Prompt and skill changes
+
+1. **Require a two-layer interpretation of `uses`**
+   - Prompt agents to distinguish formal proof dependencies from blueprint proof-stage dependencies.
+   - Formal proof dependencies come from Lean declaration references.
+   - Blueprint proof-stage dependencies come from node-body references, proof-plan structure, and same-proof-family continuation.
+   - The generated node should record the strongest explanation available for each edge, not just the final target list.
+
+2. **Tell agents not to overvalue low-level helper lemmas**
+   - Add prompt examples where `wsum_wsum_comm`, `wsum`, `trans`, or similar implementation lemmas are valid Lean evidence but poor blueprint-level `uses` targets.
+   - Require promotion from low-level Lean declarations to the nearest meaningful node when such a node exists.
+
+3. **Add positive and negative examples**
+   - Positive example: `math.minimax.loomis_induction_proof.weak_duality -> math.minimax.loomis_induction_proof.value_existence`, because the proof text names it and the Lean proof obtains `exists_xx_lamB0` and `exists_yy_muB0`.
+   - Positive example: a theorem using a prior theorem declaration directly should usually keep that prior theorem node.
+   - Negative example: a theorem should not prefer `math.simplex.wsum_comm` over a same-proof-family optimizer-existence node when the latter explains the proof step.
+   - Negative example: generic declarations reached by leaf-name matching, such as unrelated `trans` lemmas, should not create edges without stronger namespace or file evidence.
+
+### Python and tool changes
+
+0. **Add a theorem-renamer extension point**
+   - The scaffolding now lives in [`mdblueprint/theorem_renaming.py`](/home/azureuser/mdblueprint/mdblueprint/theorem_renaming.py).
+   - `TheoremRenamer.rename(declaration)` can return a canonical semantic name and aliases with confidence scores.
+   - `build_uses_inference_context(..., theorem_renamer=...)` threads those aliases into the Lean reference index.
+   - The default `IdentityTheoremRenamer` is a no-op, so current behavior is deterministic and unchanged unless a contributor explicitly supplies a renamer.
+   - Future contributors should plug the colleague's theorem-renamer into this interface rather than editing the core `uses` pruning code first.
+
+1. **Preserve body references when they are evidence-backed**
+   - Change `prune_redundant_inferred_uses` so it does not blindly drop every `body_node_ref`.
+   - Keep a `body_node_ref` edge when one of these holds:
+     - the target has a Lean declaration reached from the source Lean declaration graph;
+     - the source and target share a proof-family prefix, such as `math.minimax.loomis_induction_proof.*`;
+     - the target is referenced in the proof section and is not made redundant by another retained blueprint-level path.
+
+2. **Add edge evidence ranking**
+   - Replace the current coarse evidence handling with explicit scores.
+   - Proposed ranking from strongest to weakest:
+     - `body_ref_and_lean_direct`
+     - `body_ref_and_lean_transitive`
+     - `same_family_body_ref`
+     - `lean_direct_decl_to_node`
+     - `lean_transitive_decl_to_node`
+     - `low_level_helper_decl`
+   - Use this ranking for cycle breaking and transitive pruning.
+
+3. **Classify low-level helper declarations**
+   - Add a helper-declaration filter for common infrastructure names and broad leaves.
+   - Initial candidates: `wsum`, `wsum_wsum_comm`, generic `trans`, generic `map`, generic `mem`, and similarly common leaves.
+   - Do not discard them entirely; demote them unless no stronger node-level explanation exists.
+
+4. **Tighten Lean declaration matching**
+   - Stop treating every sufficiently long leaf name as globally meaningful.
+   - Require at least one of:
+     - exact qualified-name match;
+     - same module or imported module family;
+     - compatible namespace prefix;
+     - explicit body reference to the target node.
+   - This should reduce unrelated edges such as `GameTree.Subtree.trans` appearing in a minimax proof.
+
+5. **Use theorem-renamer output as a controlled matching signal**
+   - Allow semantic aliases from the renamer to supplement exact Lean declaration names.
+   - Do not let aliases create final `uses` edges by themselves unless they are supported by Lean reachability, body references, same-proof-family evidence, or manual review.
+   - Emit alias provenance in the evidence report so reviewers can distinguish exact-name matches from renamer-assisted matches.
+
+6. **Emit an edge evidence report**
+   - Extend the export tool to write a machine-readable artifact, for example `uses_evidence.json`.
+   - Each proposed edge should include:
+     - source node;
+     - target node;
+     - final action: kept, pruned, demoted, or rejected;
+     - evidence type;
+     - Lean declaration path if present;
+     - theorem-renamer alias used, if any;
+     - body reference locations if present;
+     - pruning reason if removed.
+   - This would make future graph disagreements auditable instead of purely visual.
+
+7. **Add a structural comparison command**
+   - Add a CLI command that compares an authored tree and a generated tree.
+   - It should report:
+     - direct edge precision and recall;
+     - transitive-closure overlap;
+     - isolated-node counts;
+     - per-topic edge deltas;
+     - examples of lost proof-stage edges;
+     - examples of low-level helper edges introduced by inference.
+
+8. **Normalize proof-plan nodes before publishing**
+   - Implement a proof-plan normalization pass in the exporter.
+   - It should either:
+     - repair `target` metadata and route theorem dependencies through proof-plan targets; or
+     - exclude proof-plan nodes from the generated comparison tree.
+   - The report currently recommends repair over exclusion for the ablation study, but this is a policy choice.
+
+9. **Represent proof routes separately from ordinary theorem dependencies**
+   - Preserve `plan_status: selected` vs `candidate`.
+   - Avoid flattening candidate routes into the selected theorem's ordinary `uses`.
+   - Add route-level artifacts, for example `routes.json` or `uses_evidence.json` route groups, so the UI can show alternatives without changing the selected proof DAG.
+
+## Multiple Proof Routes Observed In EconCSLib
+
+This issue does appear in the main EconCSLib knowledge tree.
+
+Representative cases:
+
+- `game_theory.strategic_game.zero_sum.von_neumann_minimax`
+  - selected route: `math.minimax.minimax_from_loomis`
+  - additional proved route mentioned in the theorem body: `math.minimax.ordered_field_minimax`
+- `math.minimax.minimax_from_loomis`
+  - `plan_status: selected`
+  - records the library's chosen route through the all-ones specialization of Loomis
+  - explicitly mentions an alternative ordered-field-generic route
+- `math.minimax.lp_duality_minimax_proof`
+  - `plan_status: candidate`
+  - viable via LP strong duality, but not the selected Lean proof of von Neumann minimax
+- `math.minimax.kakutani_minimax_proof`
+  - `plan_status: candidate`
+  - records a different mathematical route to the same target
+- `math.minimax.minimax_from_antisymmetric_games`
+  - `plan_status: candidate`
+  - records another route to the same target
+- `math.minimax.minimax_from_deterministic_approachability`
+  - `plan_status: candidate`
+  - records another route to the same target
+- `math.fixed_point.scarf_lemma`
+  - records a Lean-route note indicating that the formal route differs from the source exposition route
+
+Implication:
+
+- the public theorem graph needs a selected proof route for normal dependency navigation
+- the ablation tooling should keep candidate routes as reviewable alternatives
+- graph-distance metrics should not automatically penalize a generated graph for discovering a valid alternative route, but they should distinguish "selected route mismatch" from "formal dependency error"
+
+### Proposed tests
+
+1. **Loomis regression test**
+   - Assert that `weak_duality -> value_existence` survives final inference.
+   - Assert that `weak_duality -> math.simplex.wsum_comm` is not preferred over the same-proof-family edge.
+
+2. **Generic leaf-name noise test**
+   - Construct declarations with unrelated `trans` lemmas in different namespaces.
+   - Assert that a source theorem does not infer unrelated `trans` nodes without namespace or body evidence.
+
+3. **Body-reference retention test**
+   - A theorem body references a prior node in the proof section.
+   - The prior node has reachable Lean declarations.
+   - Assert the final DAG keeps that edge unless it is truly redundant through another kept blueprint-level path.
+
+4. **Proof-plan normalization test**
+   - A proof-plan node without `target` should be repaired or excluded according to the approved policy.
+   - A theorem depending on a proof-plan node should be rewritten to the plan target or rejected with a clear diagnostic.
+
+5. **Theorem-renamer integration test**
+   - A declaration with an opaque Lean name receives a semantic alias from a fake renamer.
+   - The alias appears in the reference index.
+   - Low-confidence aliases are ignored.
+   - The final edge still requires Lean or node-level evidence before being admitted.
+
+6. **Multiple-route preservation test**
+   - A theorem has one selected proof-plan and one candidate proof-plan.
+   - The selected route is used for the default graph.
+   - The candidate route remains available as an alternative route artifact and is not flattened into ordinary `uses`.
+
+## Open Project Questions
+
+These decisions affect the next implementation round.
+
+1. **Should final `uses` optimize for proof auditability or blueprint readability?**
+   - Auditability favors a smaller Lean-backed graph.
+   - Readability favors preserving proof-stage body references and curated proof narrative.
+
+2. **Should body references be allowed as final `uses` if they are not Lean-backed?**
+   - Strict option: no, every final edge must have Lean evidence.
+   - Hybrid option: yes, but mark such edges as `body_only` in an evidence report.
+
+3. **Should low-level helper nodes appear in the public graph?**
+   - Strict Lean option: yes, if they are real formal dependencies.
+   - Blueprint option: no, demote them unless no higher-level node explains the proof step.
+
+4. **How should proof-plan nodes be handled in the generated tree?**
+   - Repair and preserve them.
+   - Exclude them from the comparison export.
+   - Keep them as auxiliary artifacts but not as ordinary `uses` nodes.
+
+5. **Should generated `uses` replace authored `uses`, or should they be stored separately?**
+   - Replacement is useful for ablation but can destroy editorial structure.
+   - Separate storage, such as `inferred_uses` or `uses_evidence.json`, lets us compare without overwriting the authored blueprint graph.
+
+6. **Should the graph comparison metric compare direct edges or transitive closure?**
+   - Direct-edge comparison penalizes transitive pruning heavily.
+   - Closure comparison better captures whether two graphs imply similar reachability.
+   - Both may be needed: direct edges for editorial structure, closure for dependency semantics.
+
+7. **What contract should the theorem-renamer provide?**
+   - Minimal option: declaration-to-alias candidates with confidence.
+   - Stronger option: declaration-to-node candidates with confidence and rationale.
+   - Strongest option: theorem statement normalization plus semantic clustering across declarations and node bodies.
+
+8. **Should theorem-renamer output ever create an edge without Lean reachability?**
+   - Conservative option: no; aliases only help match Lean references to node-level targets.
+   - Hybrid option: yes, but only as `renamer_only` evidence requiring manual review.
+
+9. **How should multiple proof routes be represented in generated output?**
+   - Keep one selected route in `uses`.
+   - Store candidate routes separately as proof-plan nodes or route artifacts.
+   - Annotate edges with route ids and let the UI decide which route to render.
+
+10. **Should graph-distance metrics treat alternative proof routes as errors?**
+   - Strict authored-graph comparison would count them as differences.
+   - Proof-aware comparison should separate selected-route mismatch, candidate-route discovery, and outright unsupported dependency.
 
 ## Bottom Line
 
