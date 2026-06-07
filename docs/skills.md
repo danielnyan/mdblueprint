@@ -15,6 +15,7 @@ The maintained mdblueprint skills live in [`skills/`](../skills/). Each skill ha
 | Create or edit a Markdown knowledge node by hand | `mdblueprint-node-author` | node file |
 | Review staged content before admission | `mdblueprint-node-review` | statement/definition review, proof review, admission report |
 | Generate Lean code from admitted Markdown nodes | `mdblueprint-lean-generation` | Lean proposal, missing-node requests |
+| Export a Lean-backed node set into a runnable docs/knowledge blueprint tree | `mdblueprint-lean-blueprint-export` | generated `mdblueprint.yml`, node files, verification report |
 | Choose existing Lean declarations for a Markdown node from a bounded candidate bundle | `mdblueprint-lean-linking` | mechanical Lean link proposal |
 | Check semantic alignment between Markdown and Lean | `mdblueprint-alignment-review` | alignment report |
 | Publish or inspect the static site and dependency graph | `mdblueprint-publish` | generated site, `graph.json`, QA notes |
