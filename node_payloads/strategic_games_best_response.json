@@ -1,0 +1,59 @@
+{
+  "id": "strategic_games.best_response",
+  "title": "Best Response",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "strategic_games/strategic_games_best_response.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Best Response</h1>\n<p>A strategy $\\sigma_i$ is a best response for player $i$ to the profile $\\sigma$ if\nno unilateral deviation can improve $i$'s payoff:</p>\n<p>$$\\forall s'_i \\in S_i, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma).$$</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "strategic_games/strategic_games_unilateral_deviation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "strategic_games.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "strategic_games/strategic_games_nash_equilibrium.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.IsBestResponse",
+      "display_name": "StrategicGame.IsBestResponse",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.BestResponse",
+      "display_name": "GameTheoryLib.StrategicGame.BestResponse",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}

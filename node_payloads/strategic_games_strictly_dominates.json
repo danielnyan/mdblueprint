@@ -1,0 +1,53 @@
+{
+  "id": "strategic_games.strictly_dominates",
+  "title": "Strict Dominance",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "strategic_games/strategic_games_strictly_dominates.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Strict Dominance</h1>\n<p>A strategy $s_i$ strictly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields strictly higher\npayoff:</p>\n<p>$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) &lt; u_i(\\sigma[i \\mapsto s_i]).$$</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "strategic_games/strategic_games_unilateral_deviation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.StrictlyDominates",
+      "display_name": "StrategicGame.StrictlyDominates",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.Dominance",
+      "display_name": "GameTheoryLib.StrategicGame.Dominance",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}

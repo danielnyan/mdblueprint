@@ -1,193 +1,24 @@
 {
   "topics": [
     {
-      "id": "foundation",
-      "title": "Foundation",
+      "id": "strategic_games",
+      "title": "Strategic Games",
       "depth": 1,
       "parent": null,
-      "node_count": 26,
-      "direct_node_count": 19,
+      "node_count": 11,
+      "direct_node_count": 11,
       "kind_counts": {
-        "definition": 14,
-        "example": 7,
-        "theorem": 5
-      },
-      "status_counts": {
-        "formalized": 18,
-        "staged": 8
-      },
-      "href": "foundation/index.html",
-      "children": [
-        "foundation.argmax",
-        "foundation.cost",
-        "foundation.preference",
-        "foundation.profile",
-        "foundation.utility"
-      ]
-    },
-    {
-      "id": "game_theory",
-      "title": "Game Theory",
-      "depth": 1,
-      "parent": null,
-      "node_count": 283,
-      "direct_node_count": 0,
-      "kind_counts": {
-        "definition": 139,
-        "example": 18,
-        "lemma": 10,
-        "proposition": 35,
-        "theorem": 81
-      },
-      "status_counts": {
-        "admitted": 44,
-        "formalized": 41,
-        "proved": 15,
-        "staged": 183
-      },
-      "href": "game_theory/index.html",
-      "children": [
-        "game_theory.cooperative_game",
-        "game_theory.extensive_game",
-        "game_theory.repeated_game",
-        "game_theory.stochastic_game",
-        "game_theory.strategic_game",
-        "game_theory.zero_sum"
-      ]
-    },
-    {
-      "id": "market_design",
-      "title": "Market Design",
-      "depth": 1,
-      "parent": null,
-      "node_count": 9,
-      "direct_node_count": 9,
-      "kind_counts": {
-        "definition": 4,
-        "theorem": 5
-      },
-      "status_counts": {
-        "formalized": 4,
-        "proved": 4,
-        "staged": 1
-      },
-      "href": "market_design/index.html",
-      "children": [
-        "market_design.matching"
-      ]
-    },
-    {
-      "id": "math",
-      "title": "Math",
-      "depth": 1,
-      "parent": null,
-      "node_count": 43,
-      "direct_node_count": 38,
-      "kind_counts": {
-        "definition": 6,
-        "lemma": 14,
-        "proof-plan": 8,
-        "proposition": 1,
-        "theorem": 14
+        "definition": 9,
+        "example": 1,
+        "theorem": 1
       },
       "status_counts": {
         "admitted": 10,
-        "formalized": 7,
-        "proved": 21,
-        "staged": 5
+        "staged": 1
       },
-      "href": "math/index.html",
-      "children": [
-        "math.fixed_point",
-        "math.lattice",
-        "math.linear_algebra",
-        "math.linear_programming",
-        "math.minimax",
-        "math.order",
-        "math.simplex"
-      ]
-    },
-    {
-      "id": "mechanism_design",
-      "title": "Mechanism Design",
-      "depth": 1,
-      "parent": null,
-      "node_count": 49,
-      "direct_node_count": 49,
-      "kind_counts": {
-        "definition": 28,
-        "lemma": 1,
-        "proof-plan": 1,
-        "theorem": 19
-      },
-      "status_counts": {
-        "formalized": 27,
-        "proved": 12,
-        "staged": 10
-      },
-      "href": "mechanism_design/index.html",
-      "children": [
-        "mechanism_design.auction",
-        "mechanism_design.basic",
-        "mechanism_design.bayesian",
-        "mechanism_design.myerson",
-        "mechanism_design.transfer",
-        "mechanism_design.vcg"
-      ]
-    },
-    {
-      "id": "social_choice",
-      "title": "Social Choice",
-      "depth": 1,
-      "parent": null,
-      "node_count": 125,
-      "direct_node_count": 125,
-      "kind_counts": {
-        "definition": 71,
-        "lemma": 12,
-        "theorem": 42
-      },
-      "status_counts": {
-        "formalized": 70,
-        "staged": 55
-      },
-      "href": "social_choice/index.html",
-      "children": [
-        "social_choice.fair_division",
-        "social_choice.voting"
-      ]
+      "href": "strategic_games/index.html",
+      "children": []
     }
   ],
-  "edges": [
-    {
-      "from": "game_theory",
-      "to": "math",
-      "count": 14
-    },
-    {
-      "from": "math",
-      "to": "foundation",
-      "count": 3
-    },
-    {
-      "from": "math",
-      "to": "game_theory",
-      "count": 12
-    },
-    {
-      "from": "math",
-      "to": "mechanism_design",
-      "count": 1
-    },
-    {
-      "from": "math",
-      "to": "social_choice",
-      "count": 3
-    },
-    {
-      "from": "mechanism_design",
-      "to": "math",
-      "count": 1
-    }
-  ]
+  "edges": []
 }

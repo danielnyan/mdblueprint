@@ -1,0 +1,59 @@
+{
+  "id": "strategic_games.weakly_dominates",
+  "title": "Weak Dominance",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "strategic_games/strategic_games_weakly_dominates.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Weak Dominance</h1>\n<p>A strategy $s_i$ weakly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields at least as high\na payoff as playing $s'_i$:</p>\n<p>$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma[i \\mapsto s_i]).$$</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "strategic_games/strategic_games_unilateral_deviation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "strategic_games.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "href": "strategic_games/strategic_games_weakly_dominant_strategy.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.WeaklyDominates",
+      "display_name": "StrategicGame.WeaklyDominates",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.Dominance",
+      "display_name": "GameTheoryLib.StrategicGame.Dominance",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}

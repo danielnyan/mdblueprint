@@ -1,0 +1,244 @@
+{
+  "topic": {
+    "id": "strategic_games",
+    "title": "Strategic Games",
+    "href": "strategic_games/index.html",
+    "parent": null,
+    "node_count": 11,
+    "descendant_node_count": 11
+  },
+  "counts": {
+    "internal_nodes": 11,
+    "inlined_nodes": 11,
+    "descendant_nodes": 11,
+    "child_topics": 0,
+    "inlined_child_topics": 11,
+    "non_proof_plan_nodes": 11,
+    "proof_plan_nodes": 0,
+    "selected_proof_plan_nodes": 0,
+    "boundary_topics": 0,
+    "proof_plan_attachments": 0,
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
+  },
+  "nodes": [
+    {
+      "id": "strategic_games.best_response",
+      "title": "Best Response",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_best_response.html",
+      "payload": "node_payloads/strategic_games_best_response.json"
+    },
+    {
+      "id": "strategic_games.dominant_implies_nash",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "kind": "theorem",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_dominant_implies_nash.html",
+      "payload": "node_payloads/strategic_games_dominant_implies_nash.json"
+    },
+    {
+      "id": "strategic_games.mixed_strategy",
+      "title": "Mixed Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "href": "strategic_games/strategic_games_mixed_strategy.html",
+      "payload": "node_payloads/strategic_games_mixed_strategy.json"
+    },
+    {
+      "id": "strategic_games.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_nash_equilibrium.html",
+      "payload": "node_payloads/strategic_games_nash_equilibrium.json"
+    },
+    {
+      "id": "strategic_games.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "kind": "example",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_prisoners_dilemma.html",
+      "payload": "node_payloads/strategic_games_prisoners_dilemma.json"
+    },
+    {
+      "id": "strategic_games.strategic_game",
+      "title": "Strategic Game",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_strategic_game.html",
+      "payload": "node_payloads/strategic_games_strategic_game.json"
+    },
+    {
+      "id": "strategic_games.strategy_profile",
+      "title": "Strategy Profile",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_strategy_profile.html",
+      "payload": "node_payloads/strategic_games_strategy_profile.json"
+    },
+    {
+      "id": "strategic_games.strictly_dominates",
+      "title": "Strict Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_strictly_dominates.html",
+      "payload": "node_payloads/strategic_games_strictly_dominates.json"
+    },
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_unilateral_deviation.html",
+      "payload": "node_payloads/strategic_games_unilateral_deviation.json"
+    },
+    {
+      "id": "strategic_games.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_weakly_dominant_strategy.html",
+      "payload": "node_payloads/strategic_games_weakly_dominant_strategy.json"
+    },
+    {
+      "id": "strategic_games.weakly_dominates",
+      "title": "Weak Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "href": "strategic_games/strategic_games_weakly_dominates.html",
+      "payload": "node_payloads/strategic_games_weakly_dominates.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "strategic_games.unilateral_deviation",
+      "to": "strategic_games.best_response",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.nash_equilibrium",
+      "to": "strategic_games.dominant_implies_nash",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.weakly_dominant_strategy",
+      "to": "strategic_games.dominant_implies_nash",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.strategic_game",
+      "to": "strategic_games.mixed_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.best_response",
+      "to": "strategic_games.nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.nash_equilibrium",
+      "to": "strategic_games.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.weakly_dominant_strategy",
+      "to": "strategic_games.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.strategic_game",
+      "to": "strategic_games.strategy_profile",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.unilateral_deviation",
+      "to": "strategic_games.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.strategy_profile",
+      "to": "strategic_games.unilateral_deviation",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.weakly_dominates",
+      "to": "strategic_games.weakly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "strategic_games.unilateral_deviation",
+      "to": "strategic_games.weakly_dominates",
+      "kind": "uses"
+    }
+  ],
+  "boundary_topics": [],
+  "boundary_edges": [],
+  "keywords": [
+    {
+      "id": "classic",
+      "title": "classic",
+      "href": "keywords/classic.html",
+      "count": 1
+    },
+    {
+      "id": "dominance",
+      "title": "dominance",
+      "href": "keywords/dominance.html",
+      "count": 4
+    },
+    {
+      "id": "equilibrium",
+      "title": "equilibrium",
+      "href": "keywords/equilibrium.html",
+      "count": 2
+    },
+    {
+      "id": "example",
+      "title": "example",
+      "href": "keywords/example.html",
+      "count": 1
+    },
+    {
+      "id": "foundational",
+      "title": "foundational",
+      "href": "keywords/foundational.html",
+      "count": 3
+    },
+    {
+      "id": "mixed-strategy",
+      "title": "mixed-strategy",
+      "href": "keywords/mixed-strategy.html",
+      "count": 1
+    },
+    {
+      "id": "solution-concept",
+      "title": "solution-concept",
+      "href": "keywords/solution-concept.html",
+      "count": 2
+    },
+    {
+      "id": "strategic-game",
+      "title": "strategic-game",
+      "href": "keywords/strategic-game.html",
+      "count": 11
+    }
+  ],
+  "proof_plan_attachments": [],
+  "child_topics": [],
+  "child_topic_nodes": [],
+  "inlined_child_topics": [
+    "strategic_games.best_response",
+    "strategic_games.dominant_implies_nash",
+    "strategic_games.mixed_strategy",
+    "strategic_games.nash_equilibrium",
+    "strategic_games.prisoners_dilemma",
+    "strategic_games.strategic_game",
+    "strategic_games.strategy_profile",
+    "strategic_games.strictly_dominates",
+    "strategic_games.unilateral_deviation",
+    "strategic_games.weakly_dominant_strategy",
+    "strategic_games.weakly_dominates"
+  ]
+}

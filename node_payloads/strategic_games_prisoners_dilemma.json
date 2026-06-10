@@ -1,0 +1,94 @@
+{
+  "id": "strategic_games.prisoners_dilemma",
+  "title": "Prisoner's Dilemma",
+  "kind": "example",
+  "status": "admitted",
+  "href": "strategic_games/strategic_games_prisoners_dilemma.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Prisoner's Dilemma</h1>\n<p>The Prisoner's Dilemma is a two-player strategic game where each player can\nCooperate ($C$) or Defect ($D$). The payoff matrix is:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>$C$</th>\n<th>$D$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>$C$</td>\n<td>(2, 2)</td>\n<td>(0, 3)</td>\n</tr>\n<tr>\n<td>$D$</td>\n<td>(3, 0)</td>\n<td>(1, 1)</td>\n</tr>\n</tbody>\n</table>\n<p>Defecting is a weakly dominant strategy for each player. The unique Nash\nequilibrium is $(D, D)$ with payoff $(1, 1)$, which is Pareto-dominated by\n$(C, C)$ with payoff $(2, 2)$.</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "strategic_games/strategic_games_nash_equilibrium.html"
+    },
+    {
+      "id": "strategic_games.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "href": "strategic_games/strategic_games_weakly_dominant_strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "PrisonersDilemma.PD",
+      "display_name": "PrisonersDilemma.PD",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_defect_weakly_dominant",
+      "display_name": "PrisonersDilemma.pd_defect_weakly_dominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    },
+    {
+      "name": "PrisonersDilemma.pd_defect_nash",
+      "display_name": "PrisonersDilemma.pd_defect_nash",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.Examples",
+      "display_name": "GameTheoryLib.StrategicGame.Examples",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}

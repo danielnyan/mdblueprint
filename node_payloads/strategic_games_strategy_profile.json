@@ -1,0 +1,59 @@
+{
+  "id": "strategic_games.strategy_profile",
+  "title": "Strategy Profile",
+  "kind": "definition",
+  "status": "admitted",
+  "href": "strategic_games/strategic_games_strategy_profile.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Strategy Profile</h1>\n<p>Given a strategic game $(I, (S_i), (u_i))$, a strategy profile is a tuple\n$\\sigma = (\\sigma_i)_{i \\in I}$ where $\\sigma_i \\in S_i$ for each player $i$.</p>\n<p>In Lean, a profile is <code>∀ i, G.strategy i</code>.</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.strategic_game",
+      "title": "Strategic Game",
+      "href": "strategic_games/strategic_games_strategic_game.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "strategic_games/strategic_games_unilateral_deviation.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.Profile",
+      "display_name": "StrategicGame.Profile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.Basic",
+      "display_name": "GameTheoryLib.StrategicGame.Basic",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}

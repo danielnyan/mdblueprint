@@ -1,0 +1,53 @@
+{
+  "id": "strategic_games.mixed_strategy",
+  "title": "Mixed Strategy",
+  "kind": "definition",
+  "status": "staged",
+  "href": "strategic_games/strategic_games_mixed_strategy.html",
+  "primary_topic": "strategic_games",
+  "topics": [
+    "strategic_games"
+  ],
+  "body_html": "<h1>Mixed Strategy</h1>\n<p>A mixed strategy for player $i$ is a probability distribution over the strategy\nset $S_i$. When $S_i$ is finite, a mixed strategy is a vector\n$x_i \\in \\Delta(S_i)$ in the standard simplex.</p>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "strategic_games.strategic_game",
+      "title": "Strategic Game",
+      "href": "strategic_games/strategic_games_strategic_game.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategicGame.MixedStrategy",
+      "display_name": "StrategicGame.MixedStrategy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": [
+    {
+      "name": "GameTheoryLib.StrategicGame.MixedStrategy",
+      "display_name": "GameTheoryLib.StrategicGame.MixedStrategy",
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "status": "raw",
+      "reason": null
+    }
+  ]
+}
