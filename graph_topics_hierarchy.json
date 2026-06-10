@@ -1,43 +1,1723 @@
 {
   "roots": [
     {
-      "id": "strategic_games",
-      "title": "Strategic Games",
+      "id": "foundation",
+      "title": "Foundation",
       "depth": 1,
       "parent": null,
-      "node_count": 11,
-      "direct_node_count": 11,
+      "node_count": 26,
+      "direct_node_count": 19,
       "kind_counts": {
-        "definition": 9,
-        "example": 1,
-        "theorem": 1
+        "definition": 14,
+        "example": 7,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 18,
+        "staged": 8
+      },
+      "href": "foundation/index.html",
+      "children": [
+        "foundation.argmax",
+        "foundation.cost",
+        "foundation.preference",
+        "foundation.profile",
+        "foundation.utility"
+      ]
+    },
+    {
+      "id": "game_theory",
+      "title": "Game Theory",
+      "depth": 1,
+      "parent": null,
+      "node_count": 283,
+      "direct_node_count": 0,
+      "kind_counts": {
+        "definition": 139,
+        "example": 18,
+        "lemma": 10,
+        "proposition": 35,
+        "theorem": 81
+      },
+      "status_counts": {
+        "admitted": 44,
+        "formalized": 41,
+        "proved": 15,
+        "staged": 183
+      },
+      "href": "game_theory/index.html",
+      "children": [
+        "game_theory.cooperative_game",
+        "game_theory.extensive_game",
+        "game_theory.repeated_game",
+        "game_theory.stochastic_game",
+        "game_theory.strategic_game",
+        "game_theory.zero_sum"
+      ]
+    },
+    {
+      "id": "market_design",
+      "title": "Market Design",
+      "depth": 1,
+      "parent": null,
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 4,
+        "staged": 1
+      },
+      "href": "market_design/index.html",
+      "children": [
+        "market_design.matching"
+      ]
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "depth": 1,
+      "parent": null,
+      "node_count": 43,
+      "direct_node_count": 38,
+      "kind_counts": {
+        "definition": 6,
+        "lemma": 14,
+        "proof-plan": 8,
+        "proposition": 1,
+        "theorem": 14
       },
       "status_counts": {
         "admitted": 10,
-        "staged": 1
+        "formalized": 7,
+        "proved": 21,
+        "staged": 5
       },
-      "href": "strategic_games/index.html",
-      "children": []
+      "href": "math/index.html",
+      "children": [
+        "math.fixed_point",
+        "math.lattice",
+        "math.linear_algebra",
+        "math.linear_programming",
+        "math.minimax",
+        "math.order",
+        "math.simplex"
+      ]
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "depth": 1,
+      "parent": null,
+      "node_count": 49,
+      "direct_node_count": 49,
+      "kind_counts": {
+        "definition": 28,
+        "lemma": 1,
+        "proof-plan": 1,
+        "theorem": 19
+      },
+      "status_counts": {
+        "formalized": 27,
+        "proved": 12,
+        "staged": 10
+      },
+      "href": "mechanism_design/index.html",
+      "children": [
+        "mechanism_design.auction",
+        "mechanism_design.basic",
+        "mechanism_design.bayesian",
+        "mechanism_design.myerson",
+        "mechanism_design.transfer",
+        "mechanism_design.vcg"
+      ]
+    },
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "depth": 1,
+      "parent": null,
+      "node_count": 125,
+      "direct_node_count": 125,
+      "kind_counts": {
+        "definition": 71,
+        "lemma": 12,
+        "theorem": 42
+      },
+      "status_counts": {
+        "formalized": 70,
+        "staged": 55
+      },
+      "href": "social_choice/index.html",
+      "children": [
+        "social_choice.fair_division",
+        "social_choice.voting"
+      ]
     }
   ],
   "topics": {
-    "strategic_games": {
-      "id": "strategic_games",
-      "title": "Strategic Games",
+    "foundation": {
+      "id": "foundation",
+      "title": "Foundation",
       "depth": 1,
       "parent": null,
-      "node_count": 11,
-      "direct_node_count": 11,
+      "node_count": 26,
+      "direct_node_count": 19,
       "kind_counts": {
-        "definition": 9,
-        "example": 1,
+        "definition": 14,
+        "example": 7,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 18,
+        "staged": 8
+      },
+      "href": "foundation/index.html",
+      "children": [
+        "foundation.argmax",
+        "foundation.cost",
+        "foundation.preference",
+        "foundation.profile",
+        "foundation.utility"
+      ]
+    },
+    "foundation.argmax": {
+      "id": "foundation.argmax",
+      "title": "Foundation.Argmax",
+      "depth": 2,
+      "parent": "foundation",
+      "node_count": 1,
+      "direct_node_count": 1,
+      "kind_counts": {
+        "definition": 1
+      },
+      "status_counts": {
+        "formalized": 1
+      },
+      "href": "foundation/argmax/index.html",
+      "children": []
+    },
+    "foundation.cost": {
+      "id": "foundation.cost",
+      "title": "Foundation.Cost",
+      "depth": 2,
+      "parent": "foundation",
+      "node_count": 11,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 4,
+        "example": 7
+      },
+      "status_counts": {
+        "formalized": 11
+      },
+      "href": "foundation/cost/index.html",
+      "children": [
+        "foundation.cost.examples"
+      ]
+    },
+    "foundation.cost.examples": {
+      "id": "foundation.cost.examples",
+      "title": "Foundation.Cost.Examples",
+      "depth": 3,
+      "parent": "foundation.cost",
+      "node_count": 7,
+      "direct_node_count": 7,
+      "kind_counts": {
+        "example": 7
+      },
+      "status_counts": {
+        "formalized": 7
+      },
+      "href": "foundation/cost/examples/index.html",
+      "children": []
+    },
+    "foundation.preference": {
+      "id": "foundation.preference",
+      "title": "Foundation.Preference",
+      "depth": 2,
+      "parent": "foundation",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "definition": 6
+      },
+      "status_counts": {
+        "formalized": 5,
+        "staged": 1
+      },
+      "href": "foundation/preference/index.html",
+      "children": []
+    },
+    "foundation.profile": {
+      "id": "foundation.profile",
+      "title": "Foundation.Profile",
+      "depth": 2,
+      "parent": "foundation",
+      "node_count": 1,
+      "direct_node_count": 1,
+      "kind_counts": {
+        "definition": 1
+      },
+      "status_counts": {
+        "formalized": 1
+      },
+      "href": "foundation/profile/index.html",
+      "children": []
+    },
+    "foundation.utility": {
+      "id": "foundation.utility",
+      "title": "Foundation.Utility",
+      "depth": 2,
+      "parent": "foundation",
+      "node_count": 7,
+      "direct_node_count": 7,
+      "kind_counts": {
+        "definition": 2,
+        "theorem": 5
+      },
+      "status_counts": {
+        "staged": 7
+      },
+      "href": "foundation/utility/index.html",
+      "children": []
+    },
+    "game_theory": {
+      "id": "game_theory",
+      "title": "Game Theory",
+      "depth": 1,
+      "parent": null,
+      "node_count": 283,
+      "direct_node_count": 0,
+      "kind_counts": {
+        "definition": 139,
+        "example": 18,
+        "lemma": 10,
+        "proposition": 35,
+        "theorem": 81
+      },
+      "status_counts": {
+        "admitted": 44,
+        "formalized": 41,
+        "proved": 15,
+        "staged": 183
+      },
+      "href": "game_theory/index.html",
+      "children": [
+        "game_theory.cooperative_game",
+        "game_theory.extensive_game",
+        "game_theory.repeated_game",
+        "game_theory.stochastic_game",
+        "game_theory.strategic_game",
+        "game_theory.zero_sum"
+      ]
+    },
+    "game_theory.cooperative_game": {
+      "id": "game_theory.cooperative_game",
+      "title": "Game Theory.Cooperative Game",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 19,
+      "direct_node_count": 19,
+      "kind_counts": {
+        "definition": 13,
+        "theorem": 6
+      },
+      "status_counts": {
+        "staged": 19
+      },
+      "href": "game_theory/cooperative_game/index.html",
+      "children": [
+        "game_theory.cooperative_game.classes",
+        "game_theory.cooperative_game.core",
+        "game_theory.cooperative_game.shapley_value"
+      ]
+    },
+    "game_theory.cooperative_game.classes": {
+      "id": "game_theory.cooperative_game.classes",
+      "title": "Game Theory.Cooperative Game.Classes",
+      "depth": 3,
+      "parent": "game_theory.cooperative_game",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 4,
         "theorem": 1
       },
       "status_counts": {
-        "admitted": 10,
+        "staged": 5
+      },
+      "href": "game_theory/cooperative_game/classes/index.html",
+      "children": []
+    },
+    "game_theory.cooperative_game.core": {
+      "id": "game_theory.cooperative_game.core",
+      "title": "Game Theory.Cooperative Game.Core",
+      "depth": 3,
+      "parent": "game_theory.cooperative_game",
+      "node_count": 8,
+      "direct_node_count": 8,
+      "kind_counts": {
+        "definition": 7,
+        "theorem": 1
+      },
+      "status_counts": {
+        "staged": 8
+      },
+      "href": "game_theory/cooperative_game/core/index.html",
+      "children": []
+    },
+    "game_theory.cooperative_game.shapley_value": {
+      "id": "game_theory.cooperative_game.shapley_value",
+      "title": "Game Theory.Cooperative Game.Shapley Value",
+      "depth": 3,
+      "parent": "game_theory.cooperative_game",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "definition": 2,
+        "theorem": 4
+      },
+      "status_counts": {
+        "staged": 6
+      },
+      "href": "game_theory/cooperative_game/shapley_value/index.html",
+      "children": []
+    },
+    "game_theory.extensive_game": {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 57,
+      "direct_node_count": 57,
+      "kind_counts": {
+        "definition": 32,
+        "example": 4,
+        "proposition": 4,
+        "theorem": 17
+      },
+      "status_counts": {
+        "formalized": 22,
+        "staged": 35
+      },
+      "href": "game_theory/extensive_game/index.html",
+      "children": [
+        "game_theory.extensive_game.core",
+        "game_theory.extensive_game.examples",
+        "game_theory.extensive_game.imperfect_information",
+        "game_theory.extensive_game.normal_form",
+        "game_theory.extensive_game.perfect_information"
+      ]
+    },
+    "game_theory.extensive_game.core": {
+      "id": "game_theory.extensive_game.core",
+      "title": "Game Theory.Extensive Game.Core",
+      "depth": 3,
+      "parent": "game_theory.extensive_game",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 4
+      },
+      "status_counts": {
+        "formalized": 4
+      },
+      "href": "game_theory/extensive_game/core/index.html",
+      "children": []
+    },
+    "game_theory.extensive_game.examples": {
+      "id": "game_theory.extensive_game.examples",
+      "title": "Game Theory.Extensive Game.Examples",
+      "depth": 3,
+      "parent": "game_theory.extensive_game",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "example": 4,
+        "theorem": 2
+      },
+      "status_counts": {
+        "staged": 6
+      },
+      "href": "game_theory/extensive_game/examples/index.html",
+      "children": []
+    },
+    "game_theory.extensive_game.imperfect_information": {
+      "id": "game_theory.extensive_game.imperfect_information",
+      "title": "Game Theory.Extensive Game.Imperfect Information",
+      "depth": 3,
+      "parent": "game_theory.extensive_game",
+      "node_count": 26,
+      "direct_node_count": 26,
+      "kind_counts": {
+        "definition": 17,
+        "proposition": 1,
+        "theorem": 8
+      },
+      "status_counts": {
+        "formalized": 4,
+        "staged": 22
+      },
+      "href": "game_theory/extensive_game/imperfect_information/index.html",
+      "children": []
+    },
+    "game_theory.extensive_game.normal_form": {
+      "id": "game_theory.extensive_game.normal_form",
+      "title": "Game Theory.Extensive Game.Normal Form",
+      "depth": 3,
+      "parent": "game_theory.extensive_game",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "definition": 4,
+        "proposition": 1,
+        "theorem": 1
+      },
+      "status_counts": {
+        "formalized": 3,
+        "staged": 3
+      },
+      "href": "game_theory/extensive_game/normal_form/index.html",
+      "children": []
+    },
+    "game_theory.extensive_game.perfect_information": {
+      "id": "game_theory.extensive_game.perfect_information",
+      "title": "Game Theory.Extensive Game.Perfect Information",
+      "depth": 3,
+      "parent": "game_theory.extensive_game",
+      "node_count": 15,
+      "direct_node_count": 15,
+      "kind_counts": {
+        "definition": 7,
+        "proposition": 2,
+        "theorem": 6
+      },
+      "status_counts": {
+        "formalized": 11,
+        "staged": 4
+      },
+      "href": "game_theory/extensive_game/perfect_information/index.html",
+      "children": []
+    },
+    "game_theory.repeated_game": {
+      "id": "game_theory.repeated_game",
+      "title": "Game Theory.Repeated Game",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 17,
+      "direct_node_count": 17,
+      "kind_counts": {
+        "definition": 11,
+        "theorem": 6
+      },
+      "status_counts": {
+        "staged": 17
+      },
+      "href": "game_theory/repeated_game/index.html",
+      "children": [
+        "game_theory.repeated_game.core",
+        "game_theory.repeated_game.folk_theorem",
+        "game_theory.repeated_game.incomplete_info"
+      ]
+    },
+    "game_theory.repeated_game.core": {
+      "id": "game_theory.repeated_game.core",
+      "title": "Game Theory.Repeated Game.Core",
+      "depth": 3,
+      "parent": "game_theory.repeated_game",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 10
+      },
+      "status_counts": {
+        "staged": 10
+      },
+      "href": "game_theory/repeated_game/core/index.html",
+      "children": []
+    },
+    "game_theory.repeated_game.folk_theorem": {
+      "id": "game_theory.repeated_game.folk_theorem",
+      "title": "Game Theory.Repeated Game.Folk Theorem",
+      "depth": 3,
+      "parent": "game_theory.repeated_game",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "theorem": 5
+      },
+      "status_counts": {
+        "staged": 5
+      },
+      "href": "game_theory/repeated_game/folk_theorem/index.html",
+      "children": []
+    },
+    "game_theory.repeated_game.incomplete_info": {
+      "id": "game_theory.repeated_game.incomplete_info",
+      "title": "Game Theory.Repeated Game.Incomplete Info",
+      "depth": 3,
+      "parent": "game_theory.repeated_game",
+      "node_count": 2,
+      "direct_node_count": 2,
+      "kind_counts": {
+        "definition": 1,
+        "theorem": 1
+      },
+      "status_counts": {
+        "staged": 2
+      },
+      "href": "game_theory/repeated_game/incomplete_info/index.html",
+      "children": []
+    },
+    "game_theory.stochastic_game": {
+      "id": "game_theory.stochastic_game",
+      "title": "Game Theory.Stochastic Game",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 6
+      },
+      "status_counts": {
+        "staged": 10
+      },
+      "href": "game_theory/stochastic_game/index.html",
+      "children": [
+        "game_theory.stochastic_game.asymptotic",
+        "game_theory.stochastic_game.core",
+        "game_theory.stochastic_game.value"
+      ]
+    },
+    "game_theory.stochastic_game.asymptotic": {
+      "id": "game_theory.stochastic_game.asymptotic",
+      "title": "Game Theory.Stochastic Game.Asymptotic",
+      "depth": 3,
+      "parent": "game_theory.stochastic_game",
+      "node_count": 2,
+      "direct_node_count": 2,
+      "kind_counts": {
+        "theorem": 2
+      },
+      "status_counts": {
+        "staged": 2
+      },
+      "href": "game_theory/stochastic_game/asymptotic/index.html",
+      "children": []
+    },
+    "game_theory.stochastic_game.core": {
+      "id": "game_theory.stochastic_game.core",
+      "title": "Game Theory.Stochastic Game.Core",
+      "depth": 3,
+      "parent": "game_theory.stochastic_game",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 2,
+        "theorem": 2
+      },
+      "status_counts": {
+        "staged": 4
+      },
+      "href": "game_theory/stochastic_game/core/index.html",
+      "children": []
+    },
+    "game_theory.stochastic_game.value": {
+      "id": "game_theory.stochastic_game.value",
+      "title": "Game Theory.Stochastic Game.Value",
+      "depth": 3,
+      "parent": "game_theory.stochastic_game",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 2,
+        "theorem": 2
+      },
+      "status_counts": {
+        "staged": 4
+      },
+      "href": "game_theory/stochastic_game/value/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game": {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 105,
+      "direct_node_count": 105,
+      "kind_counts": {
+        "definition": 56,
+        "example": 6,
+        "proposition": 16,
+        "theorem": 27
+      },
+      "status_counts": {
+        "admitted": 11,
+        "proved": 1,
+        "staged": 93
+      },
+      "href": "game_theory/strategic_game/index.html",
+      "children": [
+        "game_theory.strategic_game.bayesian_correlated",
+        "game_theory.strategic_game.continuous",
+        "game_theory.strategic_game.core",
+        "game_theory.strategic_game.dominance",
+        "game_theory.strategic_game.dynamics",
+        "game_theory.strategic_game.equilibrium",
+        "game_theory.strategic_game.refinements"
+      ]
+    },
+    "game_theory.strategic_game.bayesian_correlated": {
+      "id": "game_theory.strategic_game.bayesian_correlated",
+      "title": "Game Theory.Strategic Game.Bayesian Correlated",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 18,
+      "direct_node_count": 18,
+      "kind_counts": {
+        "definition": 9,
+        "example": 1,
+        "proposition": 1,
+        "theorem": 7
+      },
+      "status_counts": {
+        "staged": 18
+      },
+      "href": "game_theory/strategic_game/bayesian_correlated/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.continuous": {
+      "id": "game_theory.strategic_game.continuous",
+      "title": "Game Theory.Strategic Game.Continuous",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 22,
+      "direct_node_count": 22,
+      "kind_counts": {
+        "definition": 10,
+        "example": 1,
+        "proposition": 5,
+        "theorem": 6
+      },
+      "status_counts": {
+        "staged": 22
+      },
+      "href": "game_theory/strategic_game/continuous/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.core": {
+      "id": "game_theory.strategic_game.core",
+      "title": "Game Theory.Strategic Game.Core",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 9,
+        "example": 1
+      },
+      "status_counts": {
+        "admitted": 5,
+        "staged": 5
+      },
+      "href": "game_theory/strategic_game/core/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.dominance": {
+      "id": "game_theory.strategic_game.dominance",
+      "title": "Game Theory.Strategic Game.Dominance",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 11,
+      "direct_node_count": 11,
+      "kind_counts": {
+        "definition": 8,
+        "proposition": 3
+      },
+      "status_counts": {
+        "admitted": 4,
+        "staged": 7
+      },
+      "href": "game_theory/strategic_game/dominance/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.dynamics": {
+      "id": "game_theory.strategic_game.dynamics",
+      "title": "Game Theory.Strategic Game.Dynamics",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 13,
+      "direct_node_count": 13,
+      "kind_counts": {
+        "definition": 7,
+        "proposition": 2,
+        "theorem": 4
+      },
+      "status_counts": {
+        "staged": 13
+      },
+      "href": "game_theory/strategic_game/dynamics/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.equilibrium": {
+      "id": "game_theory.strategic_game.equilibrium",
+      "title": "Game Theory.Strategic Game.Equilibrium",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 12,
+      "direct_node_count": 12,
+      "kind_counts": {
+        "definition": 4,
+        "example": 2,
+        "proposition": 2,
+        "theorem": 4
+      },
+      "status_counts": {
+        "admitted": 2,
+        "proved": 1,
+        "staged": 9
+      },
+      "href": "game_theory/strategic_game/equilibrium/index.html",
+      "children": []
+    },
+    "game_theory.strategic_game.refinements": {
+      "id": "game_theory.strategic_game.refinements",
+      "title": "Game Theory.Strategic Game.Refinements",
+      "depth": 3,
+      "parent": "game_theory.strategic_game",
+      "node_count": 19,
+      "direct_node_count": 19,
+      "kind_counts": {
+        "definition": 9,
+        "example": 1,
+        "proposition": 3,
+        "theorem": 6
+      },
+      "status_counts": {
+        "staged": 19
+      },
+      "href": "game_theory/strategic_game/refinements/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum": {
+      "id": "game_theory.zero_sum",
+      "title": "Game Theory.Zero Sum",
+      "depth": 2,
+      "parent": "game_theory",
+      "node_count": 75,
+      "direct_node_count": 75,
+      "kind_counts": {
+        "definition": 23,
+        "example": 8,
+        "lemma": 10,
+        "proposition": 15,
+        "theorem": 19
+      },
+      "status_counts": {
+        "admitted": 33,
+        "formalized": 19,
+        "proved": 14,
+        "staged": 9
+      },
+      "href": "game_theory/zero_sum/index.html",
+      "children": [
+        "game_theory.zero_sum.applications",
+        "game_theory.zero_sum.continuous",
+        "game_theory.zero_sum.core",
+        "game_theory.zero_sum.examples",
+        "game_theory.zero_sum.learning",
+        "game_theory.zero_sum.minimax",
+        "game_theory.zero_sum.operators"
+      ]
+    },
+    "game_theory.zero_sum.applications": {
+      "id": "game_theory.zero_sum.applications",
+      "title": "Game Theory.Zero Sum.Applications",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 7,
+      "direct_node_count": 7,
+      "kind_counts": {
+        "lemma": 1,
+        "proposition": 2,
+        "theorem": 4
+      },
+      "status_counts": {
+        "admitted": 3,
+        "proved": 2,
+        "staged": 2
+      },
+      "href": "game_theory/zero_sum/applications/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.continuous": {
+      "id": "game_theory.zero_sum.continuous",
+      "title": "Game Theory.Zero Sum.Continuous",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 13,
+      "direct_node_count": 13,
+      "kind_counts": {
+        "definition": 2,
+        "example": 4,
+        "lemma": 1,
+        "proposition": 4,
+        "theorem": 2
+      },
+      "status_counts": {
+        "admitted": 13
+      },
+      "href": "game_theory/zero_sum/continuous/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.core": {
+      "id": "game_theory.zero_sum.core",
+      "title": "Game Theory.Zero Sum.Core",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 19,
+      "direct_node_count": 19,
+      "kind_counts": {
+        "definition": 12,
+        "lemma": 1,
+        "proposition": 1,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 12,
+        "proved": 7
+      },
+      "href": "game_theory/zero_sum/core/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.examples": {
+      "id": "game_theory.zero_sum.examples",
+      "title": "Game Theory.Zero Sum.Examples",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "example": 4,
+        "proposition": 4,
+        "theorem": 1
+      },
+      "status_counts": {
+        "admitted": 4,
+        "formalized": 4,
+        "proved": 1
+      },
+      "href": "game_theory/zero_sum/examples/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.learning": {
+      "id": "game_theory.zero_sum.learning",
+      "title": "Game Theory.Zero Sum.Learning",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 17,
+      "direct_node_count": 17,
+      "kind_counts": {
+        "definition": 6,
+        "lemma": 6,
+        "proposition": 1,
+        "theorem": 4
+      },
+      "status_counts": {
+        "admitted": 8,
+        "formalized": 2,
+        "staged": 7
+      },
+      "href": "game_theory/zero_sum/learning/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.minimax": {
+      "id": "game_theory.zero_sum.minimax",
+      "title": "Game Theory.Zero Sum.Minimax",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 1,
+        "lemma": 1,
+        "theorem": 3
+      },
+      "status_counts": {
+        "formalized": 1,
+        "proved": 4
+      },
+      "href": "game_theory/zero_sum/minimax/index.html",
+      "children": []
+    },
+    "game_theory.zero_sum.operators": {
+      "id": "game_theory.zero_sum.operators",
+      "title": "Game Theory.Zero Sum.Operators",
+      "depth": 3,
+      "parent": "game_theory.zero_sum",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 2,
+        "proposition": 3
+      },
+      "status_counts": {
+        "admitted": 5
+      },
+      "href": "game_theory/zero_sum/operators/index.html",
+      "children": []
+    },
+    "market_design": {
+      "id": "market_design",
+      "title": "Market Design",
+      "depth": 1,
+      "parent": null,
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 4,
         "staged": 1
       },
-      "href": "strategic_games/index.html",
+      "href": "market_design/index.html",
+      "children": [
+        "market_design.matching"
+      ]
+    },
+    "market_design.matching": {
+      "id": "market_design.matching",
+      "title": "Market Design.Matching",
+      "depth": 2,
+      "parent": "market_design",
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 4,
+        "staged": 1
+      },
+      "href": "market_design/matching/index.html",
+      "children": [
+        "market_design.matching.one_to_one"
+      ]
+    },
+    "market_design.matching.one_to_one": {
+      "id": "market_design.matching.one_to_one",
+      "title": "Market Design.Matching.One To One",
+      "depth": 3,
+      "parent": "market_design.matching",
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 5
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 4,
+        "staged": 1
+      },
+      "href": "market_design/matching/one_to_one/index.html",
+      "children": []
+    },
+    "math": {
+      "id": "math",
+      "title": "Math",
+      "depth": 1,
+      "parent": null,
+      "node_count": 43,
+      "direct_node_count": 38,
+      "kind_counts": {
+        "definition": 6,
+        "lemma": 14,
+        "proof-plan": 8,
+        "proposition": 1,
+        "theorem": 14
+      },
+      "status_counts": {
+        "admitted": 10,
+        "formalized": 7,
+        "proved": 21,
+        "staged": 5
+      },
+      "href": "math/index.html",
+      "children": [
+        "math.fixed_point",
+        "math.lattice",
+        "math.linear_algebra",
+        "math.linear_programming",
+        "math.minimax",
+        "math.order",
+        "math.simplex"
+      ]
+    },
+    "math.fixed_point": {
+      "id": "math.fixed_point",
+      "title": "Math.Fixed Point",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "lemma": 2,
+        "theorem": 3
+      },
+      "status_counts": {
+        "proved": 2,
+        "staged": 3
+      },
+      "href": "math/fixed_point/index.html",
+      "children": []
+    },
+    "math.lattice": {
+      "id": "math.lattice",
+      "title": "Math.Lattice",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 1,
+      "direct_node_count": 1,
+      "kind_counts": {
+        "theorem": 1
+      },
+      "status_counts": {
+        "staged": 1
+      },
+      "href": "math/lattice/index.html",
+      "children": []
+    },
+    "math.linear_algebra": {
+      "id": "math.linear_algebra",
+      "title": "Math.Linear Algebra",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 3,
+      "direct_node_count": 3,
+      "kind_counts": {
+        "lemma": 1,
+        "theorem": 2
+      },
+      "status_counts": {
+        "proved": 3
+      },
+      "href": "math/linear_algebra/index.html",
+      "children": [
+        "math.linear_algebra.alternatives"
+      ]
+    },
+    "math.linear_algebra.alternatives": {
+      "id": "math.linear_algebra.alternatives",
+      "title": "Math.Linear Algebra.Alternatives",
+      "depth": 3,
+      "parent": "math.linear_algebra",
+      "node_count": 3,
+      "direct_node_count": 3,
+      "kind_counts": {
+        "lemma": 1,
+        "theorem": 2
+      },
+      "status_counts": {
+        "proved": 3
+      },
+      "href": "math/linear_algebra/alternatives/index.html",
+      "children": []
+    },
+    "math.linear_programming": {
+      "id": "math.linear_programming",
+      "title": "Math.Linear Programming",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "definition": 2,
+        "proof-plan": 1,
+        "theorem": 3
+      },
+      "status_counts": {
+        "admitted": 4,
+        "proved": 2
+      },
+      "href": "math/linear_programming/index.html",
+      "children": [
+        "math.linear_programming.duality",
+        "math.linear_programming.minimax_bridge"
+      ]
+    },
+    "math.linear_programming.duality": {
+      "id": "math.linear_programming.duality",
+      "title": "Math.Linear Programming.Duality",
+      "depth": 3,
+      "parent": "math.linear_programming",
+      "node_count": 2,
+      "direct_node_count": 2,
+      "kind_counts": {
+        "theorem": 2
+      },
+      "status_counts": {
+        "proved": 2
+      },
+      "href": "math/linear_programming/duality/index.html",
+      "children": []
+    },
+    "math.linear_programming.minimax_bridge": {
+      "id": "math.linear_programming.minimax_bridge",
+      "title": "Math.Linear Programming.Minimax Bridge",
+      "depth": 3,
+      "parent": "math.linear_programming",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 2,
+        "proof-plan": 1,
+        "theorem": 1
+      },
+      "status_counts": {
+        "admitted": 4
+      },
+      "href": "math/linear_programming/minimax_bridge/index.html",
+      "children": []
+    },
+    "math.minimax": {
+      "id": "math.minimax",
+      "title": "Math.Minimax",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 21,
+      "direct_node_count": 21,
+      "kind_counts": {
+        "definition": 1,
+        "lemma": 7,
+        "proof-plan": 7,
+        "proposition": 1,
+        "theorem": 5
+      },
+      "status_counts": {
+        "admitted": 6,
+        "formalized": 4,
+        "proved": 11
+      },
+      "href": "math/minimax/index.html",
+      "children": []
+    },
+    "math.order": {
+      "id": "math.order",
+      "title": "Math.Order",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 1,
+      "direct_node_count": 1,
+      "kind_counts": {
+        "lemma": 1
+      },
+      "status_counts": {
+        "staged": 1
+      },
+      "href": "math/order/index.html",
+      "children": []
+    },
+    "math.simplex": {
+      "id": "math.simplex",
+      "title": "Math.Simplex",
+      "depth": 2,
+      "parent": "math",
+      "node_count": 6,
+      "direct_node_count": 6,
+      "kind_counts": {
+        "definition": 3,
+        "lemma": 3
+      },
+      "status_counts": {
+        "formalized": 3,
+        "proved": 3
+      },
+      "href": "math/simplex/index.html",
+      "children": []
+    },
+    "mechanism_design": {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "depth": 1,
+      "parent": null,
+      "node_count": 49,
+      "direct_node_count": 49,
+      "kind_counts": {
+        "definition": 28,
+        "lemma": 1,
+        "proof-plan": 1,
+        "theorem": 19
+      },
+      "status_counts": {
+        "formalized": 27,
+        "proved": 12,
+        "staged": 10
+      },
+      "href": "mechanism_design/index.html",
+      "children": [
+        "mechanism_design.auction",
+        "mechanism_design.basic",
+        "mechanism_design.bayesian",
+        "mechanism_design.myerson",
+        "mechanism_design.transfer",
+        "mechanism_design.vcg"
+      ]
+    },
+    "mechanism_design.auction": {
+      "id": "mechanism_design.auction",
+      "title": "Mechanism Design.Auction",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 24,
+      "direct_node_count": 24,
+      "kind_counts": {
+        "definition": 12,
+        "theorem": 12
+      },
+      "status_counts": {
+        "formalized": 12,
+        "proved": 6,
+        "staged": 6
+      },
+      "href": "mechanism_design/auction/index.html",
+      "children": [
+        "mechanism_design.auction.basic",
+        "mechanism_design.auction.bayesian",
+        "mechanism_design.auction.knapsack"
+      ]
+    },
+    "mechanism_design.auction.basic": {
+      "id": "mechanism_design.auction.basic",
+      "title": "Mechanism Design.Auction.Basic",
+      "depth": 3,
+      "parent": "mechanism_design.auction",
+      "node_count": 9,
+      "direct_node_count": 9,
+      "kind_counts": {
+        "definition": 6,
+        "theorem": 3
+      },
+      "status_counts": {
+        "formalized": 6,
+        "proved": 3
+      },
+      "href": "mechanism_design/auction/basic/index.html",
+      "children": []
+    },
+    "mechanism_design.auction.bayesian": {
+      "id": "mechanism_design.auction.bayesian",
+      "title": "Mechanism Design.Auction.Bayesian",
+      "depth": 3,
+      "parent": "mechanism_design.auction",
+      "node_count": 11,
+      "direct_node_count": 11,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 7
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 1,
+        "staged": 6
+      },
+      "href": "mechanism_design/auction/bayesian/index.html",
+      "children": []
+    },
+    "mechanism_design.auction.knapsack": {
+      "id": "mechanism_design.auction.knapsack",
+      "title": "Mechanism Design.Auction.Knapsack",
+      "depth": 3,
+      "parent": "mechanism_design.auction",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "definition": 2,
+        "theorem": 2
+      },
+      "status_counts": {
+        "formalized": 2,
+        "proved": 2
+      },
+      "href": "mechanism_design/auction/knapsack/index.html",
+      "children": []
+    },
+    "mechanism_design.basic": {
+      "id": "mechanism_design.basic",
+      "title": "Mechanism Design.Basic",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 1
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 1
+      },
+      "href": "mechanism_design/basic/index.html",
+      "children": []
+    },
+    "mechanism_design.bayesian": {
+      "id": "mechanism_design.bayesian",
+      "title": "Mechanism Design.Bayesian",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 1
+      },
+      "status_counts": {
+        "formalized": 3,
+        "proved": 1,
+        "staged": 1
+      },
+      "href": "mechanism_design/bayesian/index.html",
+      "children": []
+    },
+    "mechanism_design.myerson": {
+      "id": "mechanism_design.myerson",
+      "title": "Mechanism Design.Myerson",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 4,
+        "lemma": 1,
+        "proof-plan": 1,
+        "theorem": 4
+      },
+      "status_counts": {
+        "formalized": 4,
+        "proved": 3,
+        "staged": 3
+      },
+      "href": "mechanism_design/myerson/index.html",
+      "children": []
+    },
+    "mechanism_design.transfer": {
+      "id": "mechanism_design.transfer",
+      "title": "Mechanism Design.Transfer",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 3,
+      "direct_node_count": 3,
+      "kind_counts": {
+        "definition": 3
+      },
+      "status_counts": {
+        "formalized": 3
+      },
+      "href": "mechanism_design/transfer/index.html",
+      "children": []
+    },
+    "mechanism_design.vcg": {
+      "id": "mechanism_design.vcg",
+      "title": "Mechanism Design.Vcg",
+      "depth": 2,
+      "parent": "mechanism_design",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 3,
+        "theorem": 2
+      },
+      "status_counts": {
+        "formalized": 3,
+        "proved": 2
+      },
+      "href": "mechanism_design/vcg/index.html",
+      "children": []
+    },
+    "social_choice": {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "depth": 1,
+      "parent": null,
+      "node_count": 125,
+      "direct_node_count": 125,
+      "kind_counts": {
+        "definition": 71,
+        "lemma": 12,
+        "theorem": 42
+      },
+      "status_counts": {
+        "formalized": 70,
+        "staged": 55
+      },
+      "href": "social_choice/index.html",
+      "children": [
+        "social_choice.fair_division",
+        "social_choice.voting"
+      ]
+    },
+    "social_choice.fair_division": {
+      "id": "social_choice.fair_division",
+      "title": "Social Choice.Fair Division",
+      "depth": 2,
+      "parent": "social_choice",
+      "node_count": 94,
+      "direct_node_count": 94,
+      "kind_counts": {
+        "definition": 51,
+        "lemma": 11,
+        "theorem": 32
+      },
+      "status_counts": {
+        "formalized": 50,
+        "staged": 44
+      },
+      "href": "social_choice/fair_division/index.html",
+      "children": [
+        "social_choice.fair_division.core",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.indivisible"
+      ]
+    },
+    "social_choice.fair_division.core": {
+      "id": "social_choice.fair_division.core",
+      "title": "Social Choice.Fair Division.Core",
+      "depth": 3,
+      "parent": "social_choice.fair_division",
+      "node_count": 15,
+      "direct_node_count": 15,
+      "kind_counts": {
+        "definition": 13,
+        "lemma": 2
+      },
+      "status_counts": {
+        "formalized": 13,
+        "staged": 2
+      },
+      "href": "social_choice/fair_division/core/index.html",
+      "children": []
+    },
+    "social_choice.fair_division.divisible": {
+      "id": "social_choice.fair_division.divisible",
+      "title": "Social Choice.Fair Division.Divisible",
+      "depth": 3,
+      "parent": "social_choice.fair_division",
+      "node_count": 36,
+      "direct_node_count": 36,
+      "kind_counts": {
+        "definition": 13,
+        "lemma": 7,
+        "theorem": 16
+      },
+      "status_counts": {
+        "formalized": 12,
+        "staged": 24
+      },
+      "href": "social_choice/fair_division/divisible/index.html",
+      "children": [
+        "social_choice.fair_division.divisible.cut_and_choose",
+        "social_choice.fair_division.divisible.dubins_spanier",
+        "social_choice.fair_division.divisible.stromquist"
+      ]
+    },
+    "social_choice.fair_division.divisible.cut_and_choose": {
+      "id": "social_choice.fair_division.divisible.cut_and_choose",
+      "title": "Social Choice.Fair Division.Divisible.Cut And Choose",
+      "depth": 4,
+      "parent": "social_choice.fair_division.divisible",
+      "node_count": 7,
+      "direct_node_count": 7,
+      "kind_counts": {
+        "definition": 1,
+        "theorem": 6
+      },
+      "status_counts": {
+        "formalized": 1,
+        "staged": 6
+      },
+      "href": "social_choice/fair_division/divisible/cut_and_choose/index.html",
+      "children": []
+    },
+    "social_choice.fair_division.divisible.dubins_spanier": {
+      "id": "social_choice.fair_division.divisible.dubins_spanier",
+      "title": "Social Choice.Fair Division.Divisible.Dubins Spanier",
+      "depth": 4,
+      "parent": "social_choice.fair_division.divisible",
+      "node_count": 4,
+      "direct_node_count": 4,
+      "kind_counts": {
+        "lemma": 2,
+        "theorem": 2
+      },
+      "status_counts": {
+        "staged": 4
+      },
+      "href": "social_choice/fair_division/divisible/dubins_spanier/index.html",
+      "children": []
+    },
+    "social_choice.fair_division.divisible.stromquist": {
+      "id": "social_choice.fair_division.divisible.stromquist",
+      "title": "Social Choice.Fair Division.Divisible.Stromquist",
+      "depth": 4,
+      "parent": "social_choice.fair_division.divisible",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 5,
+        "lemma": 2,
+        "theorem": 3
+      },
+      "status_counts": {
+        "formalized": 4,
+        "staged": 6
+      },
+      "href": "social_choice/fair_division/divisible/stromquist/index.html",
+      "children": []
+    },
+    "social_choice.fair_division.indivisible": {
+      "id": "social_choice.fair_division.indivisible",
+      "title": "Social Choice.Fair Division.Indivisible",
+      "depth": 3,
+      "parent": "social_choice.fair_division",
+      "node_count": 43,
+      "direct_node_count": 43,
+      "kind_counts": {
+        "definition": 25,
+        "lemma": 2,
+        "theorem": 16
+      },
+      "status_counts": {
+        "formalized": 25,
+        "staged": 18
+      },
+      "href": "social_choice/fair_division/indivisible/index.html",
+      "children": [
+        "social_choice.fair_division.indivisible.algorithms",
+        "social_choice.fair_division.indivisible.mms"
+      ]
+    },
+    "social_choice.fair_division.indivisible.algorithms": {
+      "id": "social_choice.fair_division.indivisible.algorithms",
+      "title": "Social Choice.Fair Division.Indivisible.Algorithms",
+      "depth": 4,
+      "parent": "social_choice.fair_division.indivisible",
+      "node_count": 12,
+      "direct_node_count": 12,
+      "kind_counts": {
+        "definition": 8,
+        "theorem": 4
+      },
+      "status_counts": {
+        "formalized": 8,
+        "staged": 4
+      },
+      "href": "social_choice/fair_division/indivisible/algorithms/index.html",
+      "children": []
+    },
+    "social_choice.fair_division.indivisible.mms": {
+      "id": "social_choice.fair_division.indivisible.mms",
+      "title": "Social Choice.Fair Division.Indivisible.Mms",
+      "depth": 4,
+      "parent": "social_choice.fair_division.indivisible",
+      "node_count": 8,
+      "direct_node_count": 8,
+      "kind_counts": {
+        "definition": 3,
+        "lemma": 1,
+        "theorem": 4
+      },
+      "status_counts": {
+        "formalized": 3,
+        "staged": 5
+      },
+      "href": "social_choice/fair_division/indivisible/mms/index.html",
+      "children": []
+    },
+    "social_choice.voting": {
+      "id": "social_choice.voting",
+      "title": "Social Choice.Voting",
+      "depth": 2,
+      "parent": "social_choice",
+      "node_count": 26,
+      "direct_node_count": 26,
+      "kind_counts": {
+        "definition": 15,
+        "lemma": 1,
+        "theorem": 10
+      },
+      "status_counts": {
+        "formalized": 15,
+        "staged": 11
+      },
+      "href": "social_choice/voting/index.html",
+      "children": [
+        "social_choice.voting.arrow",
+        "social_choice.voting.gibbard_satterthwaite",
+        "social_choice.voting.rules"
+      ]
+    },
+    "social_choice.voting.arrow": {
+      "id": "social_choice.voting.arrow",
+      "title": "Social Choice.Voting.Arrow",
+      "depth": 3,
+      "parent": "social_choice.voting",
+      "node_count": 10,
+      "direct_node_count": 10,
+      "kind_counts": {
+        "definition": 3,
+        "lemma": 1,
+        "theorem": 6
+      },
+      "status_counts": {
+        "formalized": 3,
+        "staged": 7
+      },
+      "href": "social_choice/voting/arrow/index.html",
+      "children": []
+    },
+    "social_choice.voting.gibbard_satterthwaite": {
+      "id": "social_choice.voting.gibbard_satterthwaite",
+      "title": "Social Choice.Voting.Gibbard Satterthwaite",
+      "depth": 3,
+      "parent": "social_choice.voting",
+      "node_count": 3,
+      "direct_node_count": 3,
+      "kind_counts": {
+        "theorem": 3
+      },
+      "status_counts": {
+        "staged": 3
+      },
+      "href": "social_choice/voting/gibbard_satterthwaite/index.html",
+      "children": []
+    },
+    "social_choice.voting.rules": {
+      "id": "social_choice.voting.rules",
+      "title": "Social Choice.Voting.Rules",
+      "depth": 3,
+      "parent": "social_choice.voting",
+      "node_count": 5,
+      "direct_node_count": 5,
+      "kind_counts": {
+        "definition": 4,
+        "theorem": 1
+      },
+      "status_counts": {
+        "formalized": 4,
+        "staged": 1
+      },
+      "href": "social_choice/voting/rules/index.html",
       "children": []
     }
   }
