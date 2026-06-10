@@ -625,8 +625,63 @@
   ],
   "edges": [
     {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "game_theory.strategic_game.zero_sum.antisymmetric_matrix_game_value",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "game_theory.strategic_game.zero_sum.applications.strict_dominance_never_best_response",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "to": "game_theory.strategic_game.zero_sum.applications.weak_dominance_never_best_response",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.duality_gap",
       "kind": "uses"
     },
     {
@@ -635,8 +690,18 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "game_theory.strategic_game.zero_sum.core.epsilon_optimal_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "kind": "uses"
     },
     {
@@ -650,8 +715,33 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
       "kind": "uses"
     },
     {
@@ -660,7 +750,32 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
       "kind": "uses"
     },
@@ -675,7 +790,27 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
       "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
       "kind": "uses"
     },
@@ -685,8 +820,23 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.core.value",
       "kind": "uses"
     },
     {
@@ -695,8 +845,48 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
       "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "kind": "uses"
     },
     {
@@ -720,8 +910,53 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "kind": "uses"
     },
     {
@@ -735,8 +970,18 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.zero_sum_game",
       "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
       "kind": "uses"
     },
     {
@@ -764,10 +1009,24 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.zero_sum.core.saddle_point",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
       "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
@@ -778,24 +1037,66 @@
     },
     {
       "from": "topic:game_theory.strategic_game",
-      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_game",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
       "count": 2
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 4
     },
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 4
     },
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 1
+      "count": 6
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 5
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 5
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
     },
     {
       "from": "topic:math",
@@ -816,7 +1117,7 @@
       "to": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:math",
@@ -830,11 +1131,25 @@
       "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 3
+      "count": 6
     },
     {
       "from": "topic:math",
-      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 4
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "kind": "boundary_dependency",
       "topic": "math",
       "count": 1
@@ -842,8 +1157,29 @@
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "kind": "boundary_proof_plan_dependency",
       "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
       "count": 1
     },
     {
@@ -854,11 +1190,18 @@
       "count": 1
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 2
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 5
+      "count": 13
     },
     {
       "from": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
@@ -868,6 +1211,27 @@
       "count": 2
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
       "to": "topic:math",
       "kind": "boundary_dependent",
@@ -875,23 +1239,51 @@
       "count": 1
     },
     {
-      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "from": "game_theory.strategic_game.zero_sum.core.support_complementarity",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
       "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.matrix_game",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
     },
     {
       "from": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 1
+      "count": 3
     },
     {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "topic:math",
       "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "to": "topic:math",
+      "kind": "boundary_proof_plan_dependent",
       "topic": "math",
       "count": 1
     }

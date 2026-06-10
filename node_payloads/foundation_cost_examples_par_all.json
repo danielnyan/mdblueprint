@@ -13,6 +13,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    },
+    {
       "id": "foundation.cost.parallel",
       "title": "Parallel Composition in CostM",
       "href": "foundation/foundation_cost_parallel.html"

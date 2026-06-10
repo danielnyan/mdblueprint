@@ -18,6 +18,36 @@
       "id": "social_choice.fair_division.indivisible.acyclic_has_source",
       "title": "Acyclic Envy Graph Has a Source",
       "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "title": "Eliminate All Envy Cycles",
+      "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ordinal_instance",
+      "title": "Indivisible Ordinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_ordinal_instance.html"
     }
   ],
   "dependents": [

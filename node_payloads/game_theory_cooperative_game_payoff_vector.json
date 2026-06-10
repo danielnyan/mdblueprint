@@ -14,6 +14,21 @@
   "deps": [],
   "dependents": [
     {
+      "id": "game_theory.cooperative_game.core",
+      "title": "Core Of A Coalitional Game",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.core_subset_imputations",
+      "title": "Core Payoffs Are Imputations",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_core_subset_imputations.html"
+    },
+    {
+      "id": "game_theory.cooperative_game.imputation",
+      "title": "Imputation",
+      "href": "game_theory/cooperative_game/game_theory_cooperative_game_imputation.html"
+    },
+    {
       "id": "game_theory.cooperative_game.tu_game",
       "title": "Transferable-Utility Coalitional Game",
       "href": "game_theory/cooperative_game/game_theory_cooperative_game_tu_game.html"

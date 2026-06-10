@@ -13,14 +13,34 @@
   "proof_html": "<p>Continuity of $\\lambda_{\\mathrm{aux}}$ is the finite infimum of\ncontinuous weighted sums (<code>Continuous.finset_inf'_apply</code>); the proof for\n$\\mu_{\\mathrm{aux}}$ is dual. Boundedness follows because each weighted sum\nis bounded by the extreme matrix entry. The supremum\n$\\lambda_0$ is achieved by the extreme-value theorem applied to the compact\nmixed-strategy simplex (<code>IsCompact.exists_isMaxOn</code>), and the optimiser\nrealises $\\lambda_0$ on every pure column by the infimum definition; the\n$\\mu_0$ side is symmetric. Weak duality combines the two optimisers in the\nbilinear payoff:\n$$\\lambda_0 \\le \\sum_{i,j} x^\\ast_i y^\\ast_j A(i,j) \\le \\mu_0,$$\nusing the pointwise-to-weighted bound transfer from\n<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Existence of mixed optimisers and weak duality, prior to the inductive minimax theorem.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.value_existence",
       "title": "Existence of Loomis Optimisers",
       "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
     },
     {
+      "id": "math.simplex.bounded_by_value",
+      "title": "Pointwise Bounds Are Simplex Bounds",
+      "href": "math/math_simplex_bounded_by_value.html"
+    },
+    {
       "id": "math.simplex.continuity",
       "title": "Continuity on the Real Standard Simplex",
       "href": "math/math_simplex_continuity.html"
+    },
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "href": "math/math_simplex_mix.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
     },
     {
       "id": "math.simplex.wsum_comm",
@@ -35,9 +55,39 @@
       "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "title": "Von Neumann Minimax Theorem",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
     }
   ],
   "lean_refs": [

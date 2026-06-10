@@ -14,12 +14,53 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.cardinal_instance",
       "title": "Indivisible Cardinal Instance",
       "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.checker",
+      "title": "Decidable Fairness Checkers",
+      "href": "social_choice/social_choice_fair_division_indivisible_checker.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_proportional_additive",
+      "title": "EF ⇒ PROP (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_proportional_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "SocialChoice.FairDivision.Indivisible.IsProportional",

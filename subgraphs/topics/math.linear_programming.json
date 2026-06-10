@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 5,
     "proof_plan_nodes": 1,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 2,
+    "boundary_topics": 3,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 8,
-    "visible_nodes_with_selected_proof_plans": 8
+    "visible_nodes_without_proof_plans": 9,
+    "visible_nodes_with_selected_proof_plans": 9
   },
   "nodes": [
     {
@@ -71,13 +71,19 @@
       "payload": "node_payloads/math_linear_programming_strong_duality.json"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "math.linear_programming.strong_duality",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "uses"
+    }
+  ],
   "boundary_topics": [
     {
       "id": "game_theory.zero_sum",
       "title": "Game Theory.Zero Sum",
       "href": "game_theory/zero_sum/index.html",
-      "role": "dependency",
+      "role": "dependency_and_dependent",
       "node_count": 75
     },
     {
@@ -86,6 +92,13 @@
       "href": "math/index.html",
       "role": "dependency_and_dependent",
       "node_count": 43
+    },
+    {
+      "id": "mechanism_design",
+      "title": "Mechanism Design",
+      "href": "mechanism_design/index.html",
+      "role": "dependency",
+      "node_count": 49
     }
   ],
   "boundary_edges": [
@@ -100,6 +113,48 @@
       "from": "topic:math",
       "to": "math.linear_programming.strong_complementarity",
       "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    },
+    {
+      "from": "topic:math",
+      "to": "math.linear_programming.strong_duality",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_programming.strong_duality",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "math.linear_programming.strong_complementarity",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.linear_programming.strong_duality",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.linear_programming.strong_complementarity",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
       "topic": "math",
       "count": 1
     },

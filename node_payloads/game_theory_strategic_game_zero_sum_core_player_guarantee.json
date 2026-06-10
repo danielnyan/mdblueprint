@@ -18,7 +18,13 @@
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "MatrixGame.IsPlayerIGuarantee",

@@ -12,7 +12,33 @@
   ],
   "body_html": "<h1>EFX Existence — Two Agents, Any Finite Good Set</h1>\n<p><strong>Theorem.</strong> For any two agents and any finite good set $G$, with an\n<em>additive</em> valuation $w : \\mathrm{Fin}\\ 2 \\to G \\to \\mathbb{R}$\n([[social_choice.fair_division.indivisible.additive_valuation]]) whose\nweights are nonnegative for each agent, there exists an EFX allocation\n([[social_choice.fair_division.indivisible.efx]]).</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.efx_exists_two_agents</code>.\nHypotheses: <code>[Fintype G]</code>, <code>[DecidableEq G]</code>, <code>AdditiveValuation (Fin 2) G</code>,\nand per-agent nonnegativity (<code>∀ g, 0 ≤ w.weight i g</code> for $i \\in \\{0, 1\\}$).</p>",
   "proof_html": "<p>outline</p>\n<p>A cut-and-choose-style construction:</p>\n<ol>\n<li>\n<p><strong>Enumerate allocations.</strong> Range over $2^{|G|}$ candidate splits of\n   <code>allGoods</code> into two bundles via the helper <code>mkAlloc</code>. The feasible\n   set is nonempty (<code>feasible_nonempty</code>).</p>\n</li>\n<li>\n<p><strong>Pick an optimal split.</strong> Choose a split that maximises agent $0$'s\n   value of their own bundle, subject to agent $1$ choosing the larger-\n   for-them side (<code>optimal_exists</code>). Additivity + nonneg weights make\n   this maximin choice well-defined on a finite set.</p>\n</li>\n<li>\n<p><strong>EFX verification.</strong> Closed by the two pair-specific lemmas:</p>\n</li>\n<li><em>Agent 0 is EFX</em> (<code>agent0_efx</code>): removing any item from agent 1's\n     bundle, the maximin choice ensures agent 0's value of the\n     residual cannot exceed agent 0's own bundle value.</li>\n<li><em>Agent 1 is EFX</em> (<code>agent1_efx</code>): they took the better half by\n     construction; removing any item from agent 0's bundle only\n     decreases its value (by additivity + nonneg weights), so agent 1\n     still prefers their own.</li>\n</ol>\n<p>The Lean proof factors out <code>mkAlloc_isAllocation</code>, <code>feasible_nonempty</code>,\n<code>optimal_exists</code> for the partition-enumeration argument, then\n<code>agent0_efx</code> and <code>agent1_efx</code> close the two EFX directions\nseparately.</p>\n<h2>Status of the wider EFX problem</h2>\n<table>\n<thead>\n<tr>\n<th>Agent count</th>\n<th>EFX existence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>$n = 2$</td>\n<td>✅ (this theorem)</td>\n</tr>\n<tr>\n<td>$n = 3$</td>\n<td>✅ (Chaudhury–Garg–Mehlhorn 2020, <strong>not formalised</strong> here)</td>\n</tr>\n<tr>\n<td>$n \\ge 4$</td>\n<td>🔓 <strong>open</strong></td>\n</tr>\n</tbody>\n</table>\n<p>The 2-agent existence is the only case the library proves in full\ngenerality; the 3-agent case is on the porting roadmap but not yet\nformalised.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EFX existence for two agents.</li>\n<li>Plaut, B. and Roughgarden, T. (2018). \"Almost Envy-Freeness with General Valuations\". <em>SODA</em>. arXiv:1707.04769.</li>\n<li>Chaudhury, B. R., Garg, J., and Mehlhorn, K. (2020). \"EFX Allocations for Three Agents\". <em>EC</em>. arXiv:2005.06878.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx",
+      "title": "EFX — Envy-Free Up to Any Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [
     {

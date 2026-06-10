@@ -11,7 +11,43 @@
   ],
   "body_html": "<h1>Strictly Competitive Perfect-Information Determinacy</h1>\n<p>Every finite strictly competitive game with perfect information is determined.</p>\n<p>Equivalently, when terminal outcomes are interpreted as player 1 payoffs and\nplayer 2 has the opposite preference order, the game has a pure-strategy value.</p>",
   "proof_html": "<p>Sketch</p>\n<p>Order outcomes by player 1's preference. Let $R_k$ be the smallest initial segment\nof outcomes that player 1 can guarantee. Player 1 can guarantee $R_k$, while by\nZermelo determinacy player 2 can guarantee the complement of $R_{k-1}$. This\nidentifies the threshold outcome and gives determinacy.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 6.2.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every finite strictly competitive perfect-information game is determined.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "title": "Backward Induction Value",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_backward_induction_value.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",

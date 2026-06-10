@@ -13,7 +13,28 @@
   ],
   "body_html": "<h1>Round-Robin Allocation</h1>\n<p>The <em>round-robin algorithm</em> under an additive valuation\n([[social_choice.fair_division.indivisible.additive_valuation]]) cycles\nthrough agents in a fixed turn order. Each agent, on their turn, picks\ntheir favourite remaining good\n([[social_choice.fair_division.indivisible.best_good]]) and adds it to\ntheir bundle. The procedure terminates when the good set is exhausted.</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Indivisible.roundRobinAllocation</code>\n(plus the recursive worker <code>roundRobinAux</code> and the bundled rule form\n<code>roundRobinRule</code>). All are <code>noncomputable</code> because they call <code>bestGood</code>\non an <code>arg max</code>.</p>\n<h2>Algorithm shape</h2>\n<p><code>state := (remaining = allGoods, bundles = empty for each agent)\nfor k in 0, 1, 2, ...:\n  if remaining is empty: stop\n  let i := agentTurn(k)        -- cyclically: 0, 1, ..., n-1, 0, 1, ...\n  let g := bestGood(i, remaining)\n  bundles[i] := bundles[i] ∪ {g}\n  remaining := remaining \\ {g}\nreturn bundles</code></p>\n<p>The Lean implementation closely follows this shape, using\n<code>Fin (Finset.card allGoods)</code> to index rounds and <code>Fin.foldr</code> /\n<code>List.foldr</code> to thread the state.</p>\n<h2>Three layers</h2>\n<ul>\n<li><code>roundRobinAux</code> — the recursive worker on the state tuple.</li>\n<li><code>roundRobinAllocation</code> — top-level call: takes the full agent type,\n  the additive valuation, and <code>allGoods</code>, and returns an\n  <code>Allocation N G</code>.</li>\n<li><code>roundRobinRule</code> — bundled-additive-instance form returning a\n  feasibility-paired allocation\n  ([[social_choice.fair_division.solution_concept]]).</li>\n</ul>\n<h2>Correctness theorems</h2>\n<p>Two key correctness theorems for <code>roundRobinAllocation</code>:</p>\n<ul>\n<li><code>roundRobinAllocation_isAllocation</code>: the output is a complete\n  measurable partition of <code>allGoods</code>\n  ([[social_choice.fair_division.indivisible.round_robin_partition]]).</li>\n<li><code>roundRobinAllocation_isEF1</code>: the output is EF1\n  ([[social_choice.fair_division.indivisible.round_robin_ef1]]).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Round-robin algorithm.</li>\n<li>Caragiannis, Kurokawa, Moulin, Procaccia, Shah, and Wang (2019). \"The Unreasonable Fairness of Maximum Nash Welfare\". <em>EC</em>.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ordinal_instance",
+      "title": "Indivisible Ordinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_ordinal_instance.html"
+    }
+  ],
   "dependents": [
     {
       "id": "social_choice.fair_division.indivisible.round_robin_ef1",

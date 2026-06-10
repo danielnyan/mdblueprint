@@ -374,12 +374,72 @@
       "kind": "uses"
     },
     {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "math.linear_algebra.farkas_lemma",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative.fourier_motzkin",
+      "to": "math.linear_algebra.theorem_of_alternative",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_algebra.farkas_lemma",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_programming.strong_duality",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "uses"
+    },
+    {
       "from": "math.minimax.strong_complementarity",
       "to": "math.linear_programming.strong_complementarity",
       "kind": "uses"
     },
     {
+      "from": "math.linear_algebra.farkas_lemma",
+      "to": "math.linear_programming.strong_duality",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "math.linear_programming.strong_duality",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "math.minimax.antisymmetric_matrix_game_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.antisymmetric_matrix_game_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "math.minimax.common_guarantee_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.ordered_field_minimax",
+      "to": "math.minimax.common_guarantee_value",
+      "kind": "uses"
+    },
+    {
       "from": "math.minimax.loomis_induction_proof.column_drop",
+      "to": "math.minimax.loomis_induction_proof",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.row_drop",
       "to": "math.minimax.loomis_induction_proof",
       "kind": "proof_plan_uses"
     },
@@ -390,11 +450,66 @@
     },
     {
       "from": "math.simplex.wsum",
+      "to": "math.minimax.loomis_induction_proof.base_case",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.base_case",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.weak_duality",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.minimax_from_loomis",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum_comm",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
       "to": "math.minimax.loomis_induction_proof.positive_aggregate",
       "kind": "uses"
     },
     {
       "from": "math.minimax.loomis_induction_proof.base_case",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.column_drop",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
       "to": "math.minimax.loomis_induction_proof.row_drop",
       "kind": "uses"
     },
@@ -409,13 +524,98 @@
       "kind": "uses"
     },
     {
+      "from": "math.minimax.minimax_from_loomis",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum_comm",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.bounded_by_value",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.continuity",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "uses"
+    },
+    {
       "from": "math.simplex.mix",
       "to": "math.minimax.loomis_induction_proof.value_existence",
       "kind": "uses"
     },
     {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "uses"
+    },
+    {
       "from": "math.simplex.wsum_comm",
       "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.base_case",
+      "to": "math.minimax.loomis_theorem",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.column_drop",
+      "to": "math.minimax.loomis_theorem",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "to": "math.minimax.loomis_theorem",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.row_drop",
+      "to": "math.minimax.loomis_theorem",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "math.minimax.loomis_theorem",
+      "kind": "uses"
+    },
+    {
+      "from": "math.minimax.loomis_induction_proof.weak_duality",
+      "to": "math.minimax.loomis_theorem",
       "kind": "uses"
     },
     {
@@ -429,12 +629,47 @@
       "kind": "proof_plan_uses"
     },
     {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.minimax_from_loomis",
+      "kind": "proof_plan_uses"
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "math.minimax.ordered_field_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_programming.strong_complementarity",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "uses"
+    },
+    {
       "from": "math.linear_programming.strong_duality",
       "to": "math.minimax.strong_complementarity",
       "kind": "uses"
     },
     {
       "from": "math.simplex.pure",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum_comm",
+      "to": "math.minimax.strong_complementarity",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "math.simplex.bounded_by_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
       "to": "math.simplex.bounded_by_value",
       "kind": "uses"
     },
@@ -506,21 +741,63 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.extensive_game",
-      "to": "math.fixed_point.scarf_lemma",
+      "to": "math.fixed_point.brouwer_simplex",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
       "count": 1
     },
     {
       "from": "topic:game_theory.extensive_game",
+      "to": "math.fixed_point.scarf_lemma",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.minimax.ordered_field_minimax",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
       "to": "math.simplex.wsum",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
-      "count": 1
+      "count": 2
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "math.fixed_point.brouwer_simplex",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "math.minimax.antisymmetric_matrix_game_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "math.minimax.zero_sum_nash_saddle",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
       "count": 1
@@ -537,7 +814,28 @@
       "to": "math.minimax.antisymmetric_matrix_game_value",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
-      "count": 2
+      "count": 5
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.common_guarantee_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 4
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.loomis_induction_proof.base_case",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.loomis_induction_proof.column_drop",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
     },
     {
       "from": "topic:game_theory.zero_sum",
@@ -548,21 +846,56 @@
     },
     {
       "from": "topic:game_theory.zero_sum",
-      "to": "math.minimax.ordered_field_minimax",
+      "to": "math.minimax.loomis_induction_proof.row_drop",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
       "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.loomis_induction_proof.value_existence",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.loomis_induction_proof.weak_duality",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.ordered_field_minimax",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "math.minimax.strong_complementarity",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 6
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "math.minimax.value_predicates",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.zero_sum_nash_saddle",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.bounded_by_value",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
       "count": 1
@@ -603,6 +936,48 @@
       "count": 1
     },
     {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_algebra.theorem_of_alternative",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_programming.strong_complementarity",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_programming.strong_duality",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.minimax.antisymmetric_matrix_game_value",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "math.minimax.ordered_field_minimax",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.minimax.minimax_from_loomis",
+      "kind": "boundary_proof_plan_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
       "from": "math.minimax.loomis_induction_proof.value_existence",
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
@@ -614,14 +989,21 @@
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",
-      "count": 1
+      "count": 3
     },
     {
       "from": "math.simplex.pure",
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",
-      "count": 1
+      "count": 2
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 2
     },
     {
       "from": "math.fixed_point.brouwer_simplex",
@@ -631,10 +1013,38 @@
       "count": 1
     },
     {
+      "from": "math.minimax.loomis_induction_proof.value_existence",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
       "from": "math.simplex.pure",
       "to": "topic:game_theory.strategic_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "math.linear_programming.strong_complementarity",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.linear_programming.strong_duality",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
       "count": 1
     },
     {
@@ -656,6 +1066,13 @@
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
+      "count": 4
+    },
+    {
+      "from": "math.minimax.loomis_theorem",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
       "count": 1
     },
     {
@@ -663,10 +1080,24 @@
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 7
+    },
+    {
+      "from": "math.simplex.bounded_by_value",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
     },
     {
       "from": "math.simplex.continuity",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.mix",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
@@ -677,21 +1108,28 @@
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 5
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 10
     },
     {
       "from": "math.simplex.wsum_comm",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 7
     },
     {
       "from": "math.linear_algebra.theorem_of_alternative",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 4
     },
     {
       "from": "math.fixed_point.brouwer_simplex",
@@ -706,6 +1144,13 @@
       "kind": "boundary_dependent",
       "topic": "social_choice",
       "count": 2
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
     },
     {
       "from": "math.minimax.minimax_from_loomis",

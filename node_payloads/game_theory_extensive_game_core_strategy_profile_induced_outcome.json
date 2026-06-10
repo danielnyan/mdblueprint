@@ -11,12 +11,73 @@
   ],
   "body_html": "<h1>Strategy Profile And Induced Outcome</h1>\n<p>A strategy profile $\\sigma=(\\sigma_i)_{i\\in I}$ specifies one successor at every\ndecision position. Starting from the origin and following the successor prescribed\nby the player who controls the current position gives a unique terminal outcome\n$$\n  F(\\sigma)\\in R.\n$$\nPayoffs under the strategy profile are then $g_i(F(\\sigma))$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A strategy profile induces a unique terminal outcome.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
-  "dependents": [
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "title": "Action At An Information Set",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_action_at_information_set.html"
+    },
     {
       "id": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
       "title": "Pure Strategy With Imperfect Information",
       "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "title": "Action At An Information Set",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_action_at_information_set.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
+      "title": "Pure Strategy With Imperfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "title": "Normal Form Reduction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "title": "Simple Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_simple_perfect_information_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "title": "Strictly Competitive Perfect-Information Determinacy",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (No-Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance.html"
     },
     {
       "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",

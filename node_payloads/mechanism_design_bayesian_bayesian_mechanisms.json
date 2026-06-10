@@ -11,12 +11,53 @@
   ],
   "body_html": "<h1>Bayesian Mechanisms</h1>\n<p>Bayesian mechanisms record type spaces, message spaces, a common prior, and\ntype-contingent strategies. They induce messages from strategy profiles and can\nbe converted to direct or transfer mechanisms.</p>\n<p>For mechanisms with transfers, the interface also records induced allocations,\ninduced payments, deviations, and the associated Bayesian mechanism obtained by\nforgetting the allocation/payment decomposition.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.6, Def. 9.41] Nisan, Roughgarden, Tardos,\n  and Vazirani, <em>Algorithmic Game Theory</em>. Bayesian mechanisms, type spaces,\n  strategies, and expected utilities.</li>\n<li>[MFoGT, Chapter 7, Section 7.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Bayesian games and Bayesian equilibrium\n  background.</li>\n</ul>\n<h2>Used by auctions</h2>\n<p>[[mechanism_design.auction.bayesian.single_item_framework]] (single-item\nBayesian auction framework).</p>\n<h2>Provenance</h2>\n<ul>\n<li>Migrated from EconCSLib pull request 27, old blueprint label\n  <code>def:md_bayesian_interface</code> in <code>blueprint/src/content.tex</code>.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "mechanism_design.basic.direct_mechanism_interface",
+      "title": "Direct Mechanism Interface",
+      "href": "mechanism_design/mechanism_design_basic_direct_mechanism_interface.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "title": "Ex-Ante Equilibrium Predicates",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.basic.truthfulness_from_dsic",
+      "title": "Truthfulness From DSIC",
+      "href": "mechanism_design/mechanism_design_basic_truthfulness_from_dsic.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "title": "Ex-Ante Equilibrium Predicates",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html"
+    },
     {
       "id": "mechanism_design.bayesian.ex_ante_expected_utility",
       "title": "Ex-Ante Expected Utility (Bayesian Mechanisms)",
       "href": "mechanism_design/mechanism_design_bayesian_ex_ante_expected_utility.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "title": "Ex-Ante Revelation Principle Interface",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"
     },
     {
       "id": "mechanism_design.transfer.mechanisms_with_transfers",

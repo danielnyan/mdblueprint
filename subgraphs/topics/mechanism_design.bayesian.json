@@ -65,6 +65,21 @@
   ],
   "edges": [
     {
+      "from": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "to": "mechanism_design.bayesian.bayesian_mechanisms",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.bayesian_mechanisms",
+      "to": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "to": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.bayesian.ex_ante_revelation_principle",
       "to": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
       "kind": "uses"
@@ -72,6 +87,16 @@
     {
       "from": "mechanism_design.bayesian.bayesian_mechanisms",
       "to": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.bayesian_mechanisms",
+      "to": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "to": "mechanism_design.bayesian.ex_ante_revelation_principle",
       "kind": "uses"
     },
     {
@@ -85,17 +110,31 @@
       "id": "mechanism_design",
       "title": "Mechanism Design",
       "href": "mechanism_design/index.html",
-      "role": "dependent",
+      "role": "dependency_and_dependent",
       "node_count": 49
     }
   ],
   "boundary_edges": [
     {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.bayesian.bayesian_mechanisms",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
       "from": "mechanism_design.bayesian.bayesian_mechanisms",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 4
+    },
+    {
+      "from": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 2
     }
   ],
   "keywords": [

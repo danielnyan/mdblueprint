@@ -25,14 +25,49 @@
   ],
   "dependents": [
     {
+      "id": "foundation.utility.expected_utility_representation",
+      "title": "Expected Utility Representation",
+      "href": "foundation/utility/foundation_utility_expected_utility_representation.html"
+    },
+    {
       "id": "foundation.utility.lottery",
       "title": "Lottery",
       "href": "foundation/utility/foundation_utility_lottery.html"
     },
     {
+      "id": "foundation.utility.sure_thing_principle",
+      "title": "Sure Thing Principle",
+      "href": "foundation/utility/foundation_utility_sure_thing_principle.html"
+    },
+    {
+      "id": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "title": "Nash Existence For Finite Games",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.value_existence",
       "title": "Existence of Loomis Optimisers",
       "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
     }
   ],
   "lean_refs": [

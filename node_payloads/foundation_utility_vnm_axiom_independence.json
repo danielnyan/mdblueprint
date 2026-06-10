@@ -12,6 +12,31 @@
   "proof_html": "<p>Sketch</p>\n<p>Construct separate finite lottery preference relations. For completeness, use a\npreference that compares only identical lotteries. For transitivity, create a\ncycle. For continuity, use a lexicographic-style preference. For independence,\nuse a preference rule whose ranking changes under common mixing. Each example\nkeeps the remaining axioms valid.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Exercise 2.5] Maschler, Solan, and Zamir, <em>Game Theory</em>. The vNM axioms are independent.</li>\n</ul>",
   "deps": [
     {
+      "id": "foundation.preference.abstract_relation",
+      "title": "Abstract Preference-Relation Axioms",
+      "href": "foundation/foundation_preference_abstract_relation.html"
+    },
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "href": "foundation/utility/foundation_utility_lottery.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
+    },
+    {
       "id": "foundation.utility.vnm_axioms",
       "title": "Von Neumann Morgenstern Axioms",
       "href": "foundation/utility/foundation_utility_vnm_axioms.html"

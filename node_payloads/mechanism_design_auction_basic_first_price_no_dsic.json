@@ -12,7 +12,38 @@
   ],
   "body_html": "<h1>First-Price Fails DSIC</h1>\n<p><strong>Theorem.</strong> The first-price auction\n([[mechanism_design.auction.basic.first_price_mechanism]]) is <em>not</em> dominant-strategy\nincentive compatible: for every bidder $i$ and every bid $b_i$, there\nexists an opposing bid profile that makes $b_i$ strictly worse than some\nother bid for $i$.</p>\n<p>Formally: assuming the bid space <code>U</code> contains a positive element\n($\\exists a : U.\\; 0 &lt; a$), no constant bid is weakly dominant in the\nstrategic-game <code>game v</code> for any valuation profile $v$.</p>",
   "proof_html": "<p>sketch</p>\n<p>Given a candidate bid $b_i$ for bidder $i$, choose a positive $a &gt; 0$ and\nconstruct opponents' bids at the level $b_i - 2a$. Then:</p>\n<ul>\n<li>Bidding $b_i$, bidder $i$ wins and pays $b_i$, yielding payoff\n  $v_i - b_i$.</li>\n<li>Bidding $b_i - a$, bidder $i$ still wins (since $b_i - a &gt; b_i - 2a$)\n  but pays $b_i - a$, yielding payoff $v_i - (b_i - a) = v_i - b_i + a$.</li>\n</ul>\n<p>The deviation $b_i \\mapsto b_i - a$ raises payoff by exactly $a &gt; 0$, so\n$b_i$ cannot be weakly dominant.</p>\n<h2>Lean form</h2>\n<ul>\n<li><code>no_dominant_strategy v i bi ha : ¬ IsWeaklyDominant (game v) i bi</code>\n  states that no bid $b_i \\in U$ is a weakly dominant strategy for $i$ in\n  the first-price game, under the bid-space-has-positives hypothesis <code>ha</code>.</li>\n<li><code>mechanism_not_isDSIC</code> lifts this to the mechanism-level negation\n  <code>¬ Auction.FirstPrice.mechanism.isDSIC Auction.FirstPrice.utility</code>.</li>\n</ul>\n<h2>Why it matters</h2>\n<p>The first-price auction is the canonical example of a <em>non-truthful</em>\nsingle-item mechanism. Equilibrium analysis in first-price requires moving\nto the Bayesian setting and computing a symmetric strictly-increasing\nBayes–Nash equilibrium of the form $b^*(t) = E[Y_1 \\mid Y_1 &lt; t]$, where\n$Y_1$ is the maximum opponent valuation\n([[mechanism_design.auction.bayesian.symmetric_first_price_equilibrium]]). This contrasts\nsharply with the second-price auction\n([[mechanism_design.auction.basic.second_price_dsic]]), where truthful bidding is dominant\nwithout any distributional assumption.</p>\n<p>The first-price/second-price contrast is the simplest concrete instance of\nthe dominant-strategy vs. Bayes–Nash gap that motivates much of\nmechanism-design theory.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.3.1] Nisan, Roughgarden, Tardos, and\n  Vazirani, <em>Algorithmic Game Theory</em>.\n  Non-truthfulness of first-price as motivation for VCG.</li>\n<li>[Krishna, Chapter 2, Section 2.3] Vijay Krishna, <em>Auction Theory</em>, 2nd\n  ed.. Strategic analysis of first-price\n  auctions.</li>\n<li>[MFoGT, Chapter 12] Maschler, Solan, and Zamir, <em>Game Theory</em>. First-price auction discussion in the\n  private-values chapter.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [
     {

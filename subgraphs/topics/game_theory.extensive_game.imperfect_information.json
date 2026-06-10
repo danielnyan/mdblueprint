@@ -233,6 +233,26 @@
   ],
   "edges": [
     {
+      "from": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "to": "game_theory.extensive_game.equilibrium.completely_mixed_nash_is_subgame_perfect",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "to": "game_theory.extensive_game.equilibrium.completely_mixed_nash_is_subgame_perfect",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "to": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "to": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
       "to": "game_theory.extensive_game.imperfect_information.action_at_information_set",
       "kind": "uses"
@@ -240,6 +260,11 @@
     {
       "from": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
       "to": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "to": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
       "kind": "uses"
     }
   ],
@@ -262,7 +287,21 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.equilibrium.completely_mixed_nash_is_subgame_perfect",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
       "to": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.imperfect_information.action_at_information_set",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
       "count": 1
@@ -282,7 +321,35 @@
       "count": 1
     },
     {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 5
+    },
+    {
       "from": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 4
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.action_at_information_set",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "game_theory.extensive_game.imperfect_information.imperfect_information_pure_strategy",
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
@@ -293,14 +360,14 @@
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
-      "count": 1
+      "count": 5
     },
     {
       "from": "game_theory.extensive_game.imperfect_information.subroot_subgame",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 2
+      "count": 6
     }
   ],
   "keywords": [

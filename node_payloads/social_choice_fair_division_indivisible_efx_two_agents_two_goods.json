@@ -14,9 +14,34 @@
   "proof_html": "<p>Construct the obvious split: agent $0$ receives $\\{g_1\\}$ and agent $1$\nreceives $\\{g_2\\}$. The bundles partition $\\{g_1, g_2\\}$ (disjointness\nby $g_1 \\ne g_2$; cover by inspection).</p>\n<p>Each bundle has size 1, so the <em>singleton-bundle EFX</em> sufficient\ncondition\n([[social_choice.fair_division.indivisible.efx_singleton_bundle]])\napplies and gives EFX directly without needing any structure on $v$.</p>\n<h2>Significance</h2>\n<p>This is the trivial 2×2 case of the EFX existence question. The general\n2-agent case\n([[social_choice.fair_division.indivisible.efx_exists_two_agents]])\nstrengthens this to arbitrary good sets but still uses the\nsingleton-bundle device on a maximin-leximin sub-bundle.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Small EFX existence examples.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx",
+      "title": "EFX — Envy-Free Up to Any Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.efx_singleton_bundle",
       "title": "EFX from a Singleton-Bundle Sufficient Condition",
       "href": "social_choice/social_choice_fair_division_indivisible_efx_singleton_bundle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
   "dependents": [],

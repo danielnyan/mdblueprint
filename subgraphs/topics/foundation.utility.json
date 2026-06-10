@@ -91,13 +91,43 @@
       "kind": "uses"
     },
     {
-      "from": "foundation.utility.vnm_axioms",
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
       "to": "foundation.utility.sure_thing_principle",
       "kind": "uses"
     },
     {
       "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
       "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.vnm_axioms",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.vnm_axioms",
       "kind": "uses"
     }
   ],
@@ -123,7 +153,28 @@
       "to": "foundation.utility.positive_affine_uniqueness",
       "kind": "boundary_dependency",
       "topic": "foundation",
+      "count": 2
+    },
+    {
+      "from": "topic:foundation",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "boundary_dependency",
+      "topic": "foundation",
       "count": 1
+    },
+    {
+      "from": "topic:foundation",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "boundary_dependency",
+      "topic": "foundation",
+      "count": 1
+    },
+    {
+      "from": "topic:foundation",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "boundary_dependency",
+      "topic": "foundation",
+      "count": 3
     },
     {
       "from": "topic:foundation",
@@ -134,10 +185,31 @@
     },
     {
       "from": "topic:math",
+      "to": "foundation.utility.expected_utility_representation",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    },
+    {
+      "from": "topic:math",
       "to": "foundation.utility.lottery",
       "kind": "boundary_dependency",
       "topic": "math",
       "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
     },
     {
       "from": "topic:math",
@@ -151,7 +223,14 @@
       "to": "topic:foundation",
       "kind": "boundary_dependent",
       "topic": "foundation",
-      "count": 2
+      "count": 3
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "topic:foundation",
+      "kind": "boundary_dependent",
+      "topic": "foundation",
+      "count": 5
     }
   ],
   "keywords": [

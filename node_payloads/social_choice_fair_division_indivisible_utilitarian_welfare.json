@@ -34,7 +34,13 @@
       "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "SocialChoice.FairDivision.Indivisible.IsUtilitarianOptimal",

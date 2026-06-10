@@ -27,6 +27,16 @@
       "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html"
     },
     {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cut_and_choose_partition",
       "title": "Cut-and-Choose Output Is a Complete Partition",
       "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_partition.html"

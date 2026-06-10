@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 6,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 0,
+    "boundary_topics": 1,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 7,
-    "visible_nodes_with_selected_proof_plans": 7
+    "visible_nodes_without_proof_plans": 8,
+    "visible_nodes_with_selected_proof_plans": 8
   },
   "nodes": [
     {
@@ -79,12 +79,47 @@
     },
     {
       "from": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "to": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
       "to": "game_theory.extensive_game.normal_form.normal_form_reduction",
       "kind": "uses"
     }
   ],
-  "boundary_topics": [],
-  "boundary_edges": [],
+  "boundary_topics": [
+    {
+      "id": "game_theory.extensive_game",
+      "title": "Game Theory.Extensive Game",
+      "href": "game_theory/extensive_game/index.html",
+      "role": "dependency",
+      "node_count": 57
+    }
+  ],
+  "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 5
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 5
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    }
+  ],
   "keywords": [
     {
       "id": "equilibrium-refinement",

@@ -11,8 +11,84 @@
   ],
   "body_html": "<h1>Strategy In A Perfect-Information Game</h1>\n<p>For a player $i$, a pure strategy is a function on $P_i$ that assigns to each\nposition $p\\in P_i$ a successor in $S(p)$. Thus a strategy specifies what the\nplayer would do at every position where that player might move, including\npositions that are not reached by the realized play.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A strategy selects a successor at each position controlled by the player.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "game_theory.extensive_game.core.history_and_subgame",
+      "title": "History And Subgame",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_history_and_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    },
+    {
+      "id": "game_theory.extensive_game.equilibrium.completely_mixed_nash_is_subgame_perfect",
+      "title": "Completely Mixed Nash Is Subgame Perfect",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_completely_mixed_nash_is_subgame_perfect.html"
+    },
+    {
+      "id": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "title": "Reached Subgame Nash Restriction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "title": "Normal Form Invariance Of Extensive Representations",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_normal_form_invariance.html"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
+      "title": "Normal Form Reduction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "title": "Semi-Reduced Normal Form",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_semi_reduced_normal_form.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "title": "Simple Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_simple_perfect_information_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "title": "Strictly Competitive Perfect-Information Determinacy",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_strictly_competitive_perfect_information_determined.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (No-Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance.html"
+    },
     {
       "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
       "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",

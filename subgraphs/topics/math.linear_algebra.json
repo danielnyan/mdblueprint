@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 3,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 1,
+    "boundary_topics": 2,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 5,
-    "visible_nodes_with_selected_proof_plans": 5
+    "visible_nodes_without_proof_plans": 6,
+    "visible_nodes_with_selected_proof_plans": 6
   },
   "nodes": [
     {
@@ -47,23 +47,62 @@
       "payload": "node_payloads/math_linear_algebra_theorem_of_alternative_fourier_motzkin.json"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "math.linear_algebra.farkas_lemma",
+      "kind": "uses"
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative.fourier_motzkin",
+      "to": "math.linear_algebra.theorem_of_alternative",
+      "kind": "uses"
+    }
+  ],
   "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
+    },
     {
       "id": "mechanism_design",
       "title": "Mechanism Design",
       "href": "mechanism_design/index.html",
-      "role": "dependent",
+      "role": "dependency_and_dependent",
       "node_count": 49
     }
   ],
   "boundary_edges": [
     {
+      "from": "topic:mechanism_design",
+      "to": "math.linear_algebra.theorem_of_alternative",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "math.linear_algebra.farkas_lemma",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
+    },
+    {
+      "from": "math.linear_algebra.theorem_of_alternative",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 3
+    },
+    {
       "from": "math.linear_algebra.theorem_of_alternative",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 4
     }
   ],
   "keywords": [

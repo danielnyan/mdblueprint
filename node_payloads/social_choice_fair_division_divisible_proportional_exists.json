@@ -14,6 +14,16 @@
   "proof_html": "<p>A direct delegation to the Dubins–Spanier moving-knife construction\n([[social_choice.fair_division.divisible.dubins_spanier_proportional]]).</p>\n<h2>Where this sits</h2>\n<p>In the Stromquist program ([[social_choice.fair_division.divisible.ef_exists]]),\nproportionality is the <em>easier</em> sister result. EF existence sits a layer\nabove it and uses a fundamentally different (KKM / shifted-cell)\nargument. The two are combined in\n[[social_choice.fair_division.divisible.ef_exists_and_proportional]],\nwhich observes that the EF allocation produced by Stromquist is in\nparticular proportional (via <code>IsEnvyFree.isProportional</code> on measure\nvaluations, [[social_choice.fair_division.divisible.ef_implies_proportional]]).</p>\n<h2>References</h2>\n<ul>\n<li>Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 68: 1–17.</li>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.ds_step",
       "title": "Dubins–Spanier Inductive Step",
       "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
@@ -24,12 +34,33 @@
       "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
     },
     {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_existence",
+      "title": "Measure-Instance Existence Wrappers",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_existence.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
       "id": "social_choice.fair_division.divisible.measure_instance_existence",
       "title": "Measure-Instance Existence Wrappers",
       "href": "social_choice/social_choice_fair_division_divisible_measure_instance_existence.html"
     }
   ],
-  "dependents": [],
   "lean_refs": [
     {
       "name": "SocialChoice.FairDivision.Divisible.proportional_exists",

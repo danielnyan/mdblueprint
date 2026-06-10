@@ -145,7 +145,7 @@
       "id": "math",
       "title": "Math",
       "href": "math/index.html",
-      "role": "dependency",
+      "role": "dependency_and_dependent",
       "node_count": 43
     }
   ],
@@ -155,35 +155,49 @@
       "to": "game_theory.strategic_game.dominant_implies_nash",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 2
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.nash_equilibrium",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 4
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 2
     },
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 2
+      "count": 4
     },
     {
       "from": "game_theory.strategic_game.dominant_implies_nash",
@@ -197,20 +211,27 @@
       "to": "topic:game_theory.strategic_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.strategic_game",
-      "count": 2
+      "count": 3
     },
     {
       "from": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.nash_equilibrium",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
       "count": 1
     }
   ],

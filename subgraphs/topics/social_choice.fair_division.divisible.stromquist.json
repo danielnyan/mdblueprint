@@ -120,6 +120,21 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
       "to": "social_choice.fair_division.divisible.stromquist_preference_sets",
       "kind": "uses"
@@ -130,12 +145,67 @@
       "kind": "uses"
     },
     {
-      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_U",
       "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
       "kind": "uses"
     },
     {
       "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_pieces",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_U",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_assignment",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_pieces",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.stromquist_value_continuous",
       "to": "social_choice.fair_division.divisible.stromquist_usual_case",
       "kind": "uses"
     },
@@ -174,7 +244,21 @@
       "to": "social_choice.fair_division.divisible.stromquist_usual_case",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 2
+      "count": 3
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.ef_exists",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_assignment",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
     },
     {
       "from": "topic:social_choice",
@@ -182,6 +266,27 @@
       "kind": "boundary_dependency",
       "topic": "social_choice",
       "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
     },
     {
       "from": "topic:social_choice",
@@ -195,7 +300,7 @@
       "to": "topic:social_choice",
       "kind": "boundary_dependent",
       "topic": "social_choice",
-      "count": 1
+      "count": 2
     }
   ],
   "keywords": [

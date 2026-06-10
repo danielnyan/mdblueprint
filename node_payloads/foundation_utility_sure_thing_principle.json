@@ -12,9 +12,24 @@
   "proof_html": "<p>Sketch</p>\n<p>When $\\alpha=0$, both sides compare a lottery with itself and strict preference\nis impossible. When $\\alpha&gt;0$, apply independence once to remove $L_3$ and once\nto insert $L_4$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Exercise 2.12] Maschler, Solan, and Zamir, <em>Game Theory</em>. The sure-thing principle follows from independence.</li>\n</ul>",
   "deps": [
     {
+      "id": "foundation.preference.abstract_relation",
+      "title": "Abstract Preference-Relation Axioms",
+      "href": "foundation/foundation_preference_abstract_relation.html"
+    },
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "href": "foundation/utility/foundation_utility_lottery.html"
+    },
+    {
       "id": "foundation.utility.vnm_axioms",
       "title": "Von Neumann Morgenstern Axioms",
       "href": "foundation/utility/foundation_utility_vnm_axioms.html"
+    },
+    {
+      "id": "math.simplex.mix",
+      "title": "Convex Combination of Simplex Points",
+      "href": "math/math_simplex_mix.html"
     }
   ],
   "dependents": [],

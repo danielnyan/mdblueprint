@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 6,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 5,
+    "boundary_topics": 6,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 12,
-    "visible_nodes_with_selected_proof_plans": 12
+    "visible_nodes_without_proof_plans": 13,
+    "visible_nodes_with_selected_proof_plans": 13
   },
   "nodes": [
     {
@@ -79,6 +79,11 @@
     },
     {
       "from": "math.simplex.wsum",
+      "to": "math.simplex.bounded_by_value",
+      "kind": "uses"
+    },
+    {
+      "from": "math.simplex.wsum",
       "to": "math.simplex.continuity",
       "kind": "uses"
     },
@@ -133,6 +138,13 @@
       "href": "math/index.html",
       "role": "dependent",
       "node_count": 43
+    },
+    {
+      "id": "social_choice",
+      "title": "Social Choice",
+      "href": "social_choice/index.html",
+      "role": "dependent",
+      "node_count": 125
     }
   ],
   "boundary_edges": [
@@ -141,6 +153,13 @@
       "to": "math.simplex.wsum",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "math.simplex.bounded_by_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
       "count": 1
     },
     {
@@ -176,13 +195,27 @@
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",
-      "count": 1
+      "count": 3
     },
     {
       "from": "math.simplex.pure",
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",
+      "count": 2
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 2
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:game_theory.strategic_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.strategic_game",
       "count": 1
     },
     {
@@ -193,7 +226,21 @@
       "count": 1
     },
     {
+      "from": "math.simplex.bounded_by_value",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
       "from": "math.simplex.continuity",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.mix",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
@@ -204,13 +251,34 @@
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 5
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 10
     },
     {
       "from": "math.simplex.wsum_comm",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
+      "count": 7
+    },
+    {
+      "from": "math.simplex.bounded_by_value",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.continuity",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
       "count": 1
     },
     {
@@ -218,19 +286,40 @@
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "math.simplex.pure",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
     },
     {
       "from": "math.simplex.wsum",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 1
+      "count": 8
     },
     {
       "from": "math.simplex.wsum_comm",
       "to": "topic:math",
       "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
+    },
+    {
+      "from": "math.simplex.mix",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "math.simplex.wsum",
+      "to": "topic:math",
+      "kind": "boundary_proof_plan_dependent",
       "topic": "math",
       "count": 1
     }

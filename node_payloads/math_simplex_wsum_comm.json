@@ -25,14 +25,59 @@
   ],
   "dependents": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "title": "Matching Pennies",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.weak_duality",
       "title": "Weak Duality For Loomis Values",
       "href": "math/math_minimax_loomis_induction_proof_weak_duality.html"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "math/math_minimax_strong_complementarity.html"
     }
   ],
   "lean_refs": [

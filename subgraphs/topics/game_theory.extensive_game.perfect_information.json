@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 15,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 1,
+    "boundary_topics": 2,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 17,
-    "visible_nodes_with_selected_proof_plans": 17
+    "visible_nodes_without_proof_plans": 18,
+    "visible_nodes_with_selected_proof_plans": 18
   },
   "nodes": [
     {
@@ -155,8 +155,88 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "game_theory.extensive_game.perfect_information.determined_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.determined_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.determined_game",
+      "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
       "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "to": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.determined_game",
+      "to": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.determined_game",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
       "kind": "uses"
     },
     {
@@ -172,9 +252,30 @@
       "href": "game_theory/extensive_game/index.html",
       "role": "dependency_and_dependent",
       "node_count": 57
+    },
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependent",
+      "node_count": 43
     }
   ],
   "boundary_edges": [
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.determined_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
     {
       "from": "topic:game_theory.extensive_game",
       "to": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
@@ -184,17 +285,73 @@
     },
     {
       "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 4
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.strictly_competitive_perfect_information_determined",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
       "to": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
       "count": 3
     },
     {
-      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "from": "game_theory.extensive_game.perfect_information.determined_game",
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
       "count": 2
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 8
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 8
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "to": "topic:game_theory.extensive_game",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.extensive_game",
+      "count": 7
+    },
+    {
+      "from": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 5
     }
   ],
   "keywords": [

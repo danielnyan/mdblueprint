@@ -13,6 +13,31 @@
   "proof_html": "<p>The zero-sum hypothesis says\n$$\n  u_0(\\sigma)+u_1(\\sigma)=0\n$$\nat every profile $\\sigma$. Rearranging in the underlying additive group gives\n$u_1(\\sigma)=-u_0(\\sigma)$, and applying the same rearrangement with the players\ninterchanged gives $u_0(\\sigma)=-u_1(\\sigma)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4, Section 4.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Immediate algebraic consequence of zero-sum payoffs.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.core.mixed_extension",
+      "title": "Mixed Extension Of A Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_extension.html"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_strategy",
+      "title": "Mixed Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "title": "Expected Payoff of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
       "title": "Zero-Sum Game",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html"

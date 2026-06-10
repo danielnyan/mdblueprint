@@ -11,7 +11,18 @@
   ],
   "body_html": "<h1>Unilateral Deviation</h1>\n<p>Given a strategy profile \\(\\sigma\\) and a player \\(i\\), the unilateral deviation\n\\((\\sigma_{-i}, s'_i)\\) is the profile where player \\(i\\) plays \\(s'_i\\) and all other\nplayers play according to \\(\\sigma\\). We write \\(\\sigma[i \\mapsto s']\\).</p>\n<p>In Lean, this is <code>Function.update σ i s'</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2] Maschler, Solan, and Zamir, <em>Game Theory</em>. Notation for unilateral deviation.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.strategic_game.best_response",
@@ -29,9 +40,29 @@
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
     },
     {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html"
+    },
+    {
       "id": "game_theory.strategic_game.weakly_dominates",
       "title": "Weak Dominance",
       "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
+      "title": "Nash Payoff Uniqueness in Zero-Sum Games",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html"
     }
   ],
   "lean_refs": [

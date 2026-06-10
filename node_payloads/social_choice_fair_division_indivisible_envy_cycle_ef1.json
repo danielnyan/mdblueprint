@@ -15,6 +15,46 @@
   "proof_html": "<p>intuition</p>\n<p>The EF1 invariant — \"for every $(i, j)$ with non-empty $A(j)$, some\nitem $g \\in A(j)$ exists whose removal eliminates envy\" — is\nmaintained throughout the loop:</p>\n<ul>\n<li>\n<p><strong>Cycle elimination is innocent.</strong> Bundle rotations along envy cycles\n  ([[social_choice.fair_division.indivisible.rotate_bundles]]) only\n  <em>improve</em> per-agent utility. If the pre-rotation allocation was EF1,\n  the post-rotation allocation is too (the EF1 witness item for each\n  $(i, j)$ pair can be re-mapped through the rotation).</p>\n</li>\n<li>\n<p><strong>Item assignment to a source is innocent.</strong> Adding an item $g$ to\n  a source agent $s$ creates new envy at most against $s$. For any\n  envier $i \\ne s$, removing $g$ from $A(s) \\cup \\{g\\}$ recovers\n  $A(s)$; since $s$ was a source pre-assignment, no one envied $s$\n  before, so $v_i(A(s)) \\le v_i(A(i))$, giving the EF1 witness.</p>\n</li>\n</ul>\n<h2>Strength compared to round-robin</h2>\n<p>Both round-robin\n([[social_choice.fair_division.indivisible.round_robin_ef1]]) and\nenvy-cycle elimination produce EF1 allocations from an\n<code>AdditiveInstance</code> with nonneg weights. The differences:</p>\n<ul>\n<li><em>Round-robin</em> is non-adaptive: turn order is fixed in advance,\n  every agent picks their favourite remaining item on their turn.</li>\n<li><em>Envy-cycle elimination</em> is adaptive: it gives the next item to a\n  \"source\" agent in the current envy graph, after rotating bundles\n  along any envy cycles. The adaptive choice carries the additional\n  guarantee that no agent's utility ever decreases\n  ([[social_choice.fair_division.indivisible.rotate_bundles]]'s\n  <code>rotateBundles_nondecreasing</code> lifted through\n  [[social_choice.fair_division.indivisible.eliminate_all_cycles]]'s\n  <code>eliminateAllCycles_nondecreasing</code>).</li>\n</ul>\n<p>The original Lipton-Markakis-Mossel-Saberi (2004) theorem applies to\narbitrary (not necessarily additive) valuations; the current Lean\nformalisation specialises to additive instances, mirroring round-robin\nand matching the bundled <code>AdditiveInstance</code> API. Lifting to general\n<code>Valuation</code> is a planned future refinement.</p>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>. Original EF1 + Pareto-improvement theorem.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef1",
+      "title": "EF1 — Envy-Free Up to One Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "title": "Eliminate All Envy Cycles",
+      "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
       "title": "Envy-Cycle Elimination Algorithm",
       "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html"

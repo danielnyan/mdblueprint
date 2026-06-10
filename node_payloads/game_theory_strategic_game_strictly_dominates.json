@@ -13,17 +13,48 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
       "id": "game_theory.strategic_game.strictly_dominant_strategy",
       "title": "Strictly Dominant Strategy",
       "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominant_strategy.html"
     },
     {
+      "id": "game_theory.strategic_game.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
+    },
+    {
       "id": "game_theory.strategic_game.weakly_dominant_strategy",
       "title": "Weakly Dominant Strategy",
       "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominates",
+      "title": "Weak Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.strictly_dominant_strategy",
+      "title": "Strictly Dominant Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominant_strategy.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "StrictlyDominates",

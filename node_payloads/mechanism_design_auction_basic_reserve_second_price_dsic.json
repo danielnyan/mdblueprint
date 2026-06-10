@@ -14,12 +14,57 @@
   "proof_html": "<p>idea</p>\n<p>The proof is the Vickrey dominance argument with one extra threshold.  Bidder\n<code>i</code>'s own bid does not change the highest bid among opponents, so the critical\nprice faced by <code>i</code> is the maximum of the reserve and the highest opposing bid.\nTruthful bidding wins exactly when \\(v_i\\) clears that threshold; in the winning\ncase the payoff is nonnegative, and in the losing case the payoff is zero.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT, Chapter 9, Section 9.3] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.</li>\n<li>[Krishna, Chapter 2] Vijay Krishna, <em>Auction Theory</em>, 2nd ed..</li>\n<li>[Vickrey 1961] William Vickrey, \"Counterspeculation, Auctions, and\n  Competitive Sealed Tenders\", <em>Journal of Finance</em> 16(1):8-37.</li>\n</ul>",
   "deps": [
     {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
       "id": "mechanism_design.auction.basic.second_price_dsic",
       "title": "Vickrey Truth-Telling Is Dominant",
       "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
     }
   ],
   "dependents": [
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
     {
       "id": "mechanism_design.auction.basic.second_price_mechanism",
       "title": "Second-Price (Vickrey) Mechanism",

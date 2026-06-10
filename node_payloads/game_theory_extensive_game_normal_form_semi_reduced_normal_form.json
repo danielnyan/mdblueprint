@@ -11,8 +11,29 @@
   ],
   "body_html": "<h1>Semi-Reduced Normal Form</h1>\n<p>Two strategies $s_i,t_i$ of player $i$ are payoff-equivalent if for every\n$s_{-i}$ and every player $j$,\n$$\n  g_j(s_i,s_{-i})=g_j(t_i,s_{-i}).\n$$\nThe semi-reduced normal form identifies payoff-equivalent strategies. This removes\ndifferences that occur only at positions excluded by the strategy itself.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Semi-reduced normal form identifies payoff-equivalent strategies.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "game_theory.extensive_game.normal_form.extensive_normal_form_invariance",
+      "title": "Normal Form Invariance Of Extensive Representations",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_extensive_normal_form_invariance.html"
+    },
     {
       "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
       "title": "Normal Form Reduction",

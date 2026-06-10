@@ -11,7 +11,33 @@
   ],
   "body_html": "<h1>Completely Mixed Nash Is Subgame Perfect</h1>\n<p>Let $\\Gamma$ be an extensive-form game. Every Nash equilibrium in completely\nmixed strategies, whether behavior strategies or mixed strategies in the\ntextbook statement, is a subgame-perfect equilibrium.</p>\n<h2>Lean Scope</h2>\n<p>The current Lean theorem\n<code>ExtensiveGame.IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed</code>\nformalizes the behavior-strategy side in the same finite-fuel, Arena-based\ninterface used for [MSZ, Theorem 7.5]. Complete mixing is represented by\n<code>ExtensiveGame.BehaviorProfile.IsCompletelyMixed</code>, and the bridge from complete\nmixing to positive reach of every subgame root is packaged as\n<code>ExtensiveGame.BehaviorProfile.IsCompletelyMixedWithPositiveReach</code>.</p>\n<p>Under that positive-reach interface and the existing affine\n<code>ExtensiveGame.ReachedSubgamePayoffTransfer</code> hypothesis for every subgame root,\nthe proof is a direct universal application of\n<code>ExtensiveGame.IsBehaviorNashEq.restrictSubgame_of_reachProb_pos</code>.</p>\n<p>The mixed-strategy version and a concrete derivation of positive reach from\nfinite histories with explicit chance probabilities remain future\nstrengthenings.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Cor. 7.7] Maschler, Solan, and Zamir, <em>Game Theory</em>. A completely mixed Nash equilibrium is subgame-perfect.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.history_and_subgame",
+      "title": "History And Subgame",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_history_and_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "title": "Reached Subgame Nash Restriction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.html"
+    },
+    {
+      "id": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
+      "title": "Extensive Game With Imperfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [
     {

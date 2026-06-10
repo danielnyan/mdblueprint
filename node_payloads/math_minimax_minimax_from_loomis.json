@@ -13,6 +13,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof",
       "title": "Direct Induction Proof Of Loomis Theorem",
       "href": "math/math_minimax_loomis_induction_proof.html"
@@ -21,6 +26,11 @@
       "id": "math.minimax.loomis_theorem",
       "title": "Loomis Theorem (Positive B)",
       "href": "math/math_minimax_loomis_theorem.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
     }
   ],
   "dependents": [
@@ -33,6 +43,16 @@
       "id": "math.minimax.loomis_induction_proof.base_case",
       "title": "Base Case of Loomis Induction",
       "href": "math/math_minimax_loomis_induction_proof_base_case.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
     }
   ],
   "lean_refs": [

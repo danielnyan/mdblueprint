@@ -16,6 +16,21 @@
       "id": "game_theory.strategic_game.best_response",
       "title": "Best Response",
       "href": "game_theory/strategic_game/game_theory_strategic_game_best_response.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
+      "id": "game_theory.strategic_game.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
     }
   ],
   "dependents": [
@@ -33,6 +48,11 @@
       "id": "game_theory.strategic_game.dominant_implies_nash",
       "title": "Dominant Strategy Profile is a Nash Equilibrium",
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html"
+    },
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html"
     },
     {
       "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",

@@ -13,9 +13,24 @@
   "proof_html": "<p>Apply the general-$B$ Loomis theorem\n(<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_theorem\" href=\"../../math/minimax/math_minimax_loomis_theorem.html\">Loomis Theorem (Positive B)</a>) with $A := I$ (the $n \\times n$\nidentity matrix) and $B := M$. Since $M_{ij} &gt; 0$, the hypothesis\n<code>IsPositive M</code> is satisfied. Loomis produces\n$x \\in \\Delta(\\mathrm{Fin}\\,n)$, $y \\in \\Delta(\\mathrm{Fin}\\,n)$, and\n$v \\in \\mathbb{R}$ such that</p>\n<ul>\n<li>$(1)\\quad \\forall j,\\quad v \\cdot (xM)_j \\le x_j$  (from $xI \\ge v \\cdot xM$,\n  using $xI = x$);</li>\n<li>$(2)\\quad \\forall i,\\quad y_i \\le v \\cdot (My)_i$  (from $Iy \\le v \\cdot My$,\n  using $Iy = y$).</li>\n</ul>\n<p><strong>Step 1: $v &gt; 0$.</strong> Pick $i_0$ with $y_{i_0} &gt; 0$ (which exists because\n$\\sum y_i = 1$). Inequality (2) at $i_0$ gives\n$y_{i_0} \\le v \\cdot (My)_{i_0}$. Since $M &gt; 0$ entrywise and $y \\ge 0$ has\n$y_{i_0} &gt; 0$ (hence $\\sum y_j M_{i_0, j} &gt; 0$), $(My)_{i_0} &gt; 0$.\nTherefore $0 &lt; y_{i_0} \\le v \\cdot (My)_{i_0}$ forces $v &gt; 0$.</p>\n<p><strong>Step 2: $x$ and $y$ are strictly positive.</strong> For every $j$,\n$(xM)_j = \\sum_i x_i M_{ij} &gt; 0$ because $x \\in \\Delta$ has at least one\npositive entry and $M &gt; 0$ entrywise. Combined with (1), $x_j \\ge v \\cdot\n(xM)_j &gt; 0$. So $x_j &gt; 0$ for all $j$. By the same argument applied to (2)\nand $y$, $(My)_i &gt; 0$ and $y_i &gt; 0$ for all $i$.</p>\n<p><strong>Step 3: Tight inner-product sandwich.</strong> Compute\n$$\n  \\langle x, y\\rangle - v\\cdot \\langle xM, y\\rangle\n  = \\sum_j (x_j - v \\cdot (xM)_j) \\cdot y_j \\ge 0\n$$\n(each summand is nonneg by (1) and $y_j \\ge 0$). And by\n$\\langle xM, y\\rangle = \\sum_j \\sum_i x_i M_{ij} y_j = \\langle x, My\\rangle$,\n$$\n  v \\cdot \\langle x, My\\rangle - \\langle x, y\\rangle\n  = v \\cdot \\langle x, My\\rangle - \\langle x, y\\rangle.\n$$\nWeighting (2) by $x \\ge 0$ and summing,\n$\\langle x, y\\rangle \\le v \\cdot \\langle x, My\\rangle$. Therefore\n$$\n  \\langle x, y\\rangle \\;\\ge\\; v \\cdot \\langle xM, y\\rangle \\;=\\; v \\cdot \\langle x, My\\rangle \\;\\ge\\; \\langle x, y\\rangle,\n$$\nso both inequalities are tight.</p>\n<p><strong>Step 4: Componentwise equality.</strong> From Step 3,\n$\\sum_j (x_j - v \\cdot (xM)_j) \\cdot y_j = 0$. Each summand is nonneg (by\n(1)) and $y_j &gt; 0$ strict (by Step 2). For the nonneg sum to vanish, each\nsummand must vanish, so $x_j - v \\cdot (xM)_j = 0$, i.e., $x_j = v \\cdot\n(xM)_j$ for every $j$. As a row-vector identity, $xM = (1/v) \\cdot x$.</p>\n<p>Dually, $\\sum_i (v \\cdot (My)_i - y_i) \\cdot x_i = 0$ with each summand\nnonneg and $x_i &gt; 0$ strict, so $y_i = v \\cdot (My)_i$, i.e.,\n$My = (1/v) \\cdot y$.</p>\n<p>Setting $\\lambda := 1/v &gt; 0$, we have $xM = \\lambda \\cdot x$ (left\neigenvector) and $My = \\lambda \\cdot y$ (right eigenvector), both with\n$x, y$ strictly positive. $\\square$</p>\n<h2>Remarks</h2>\n<ul>\n<li>The argument is purely algebraic and works over $\\mathbb{R}$ (where\n  general-$B$ Loomis is formalised in <code>EconCSLib.StrategicGame.Loomis</code>).</li>\n<li>Strict positivity of $x$ and $y$ is automatic given strict positivity of\n  $M$, <strong>without</strong> needing a separate \"irreducibility\" argument.</li>\n<li>The same Loomis instance simultaneously produces the <strong>left</strong> eigenvector\n  $x$ and the <strong>right</strong> eigenvector $y$ at the same eigenvalue $\\lambda\n  = 1/v$. This eigenvalue is the **Perron-Frobenius eigenvalue** of $M$.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 1(2)] Laraki, Renault, and Sorin,\n  <em>Mathematical Foundations of Game Theory</em>. Application of Loomis theorem\n  to positive matrices.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.positive_aggregate",
       "title": "Positive Aggregates xB and By",
       "href": "math/math_minimax_loomis_induction_proof_positive_aggregate.html"
+    },
+    {
+      "id": "math.minimax.loomis_theorem",
+      "title": "Loomis Theorem (Positive B)",
+      "href": "math/math_minimax_loomis_theorem.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
     }
   ],
   "dependents": [],

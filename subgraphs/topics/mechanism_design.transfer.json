@@ -49,6 +49,11 @@
   ],
   "edges": [
     {
+      "from": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "to": "mechanism_design.transfer.mechanisms_with_transfers",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.transfer.mechanisms_with_transfers",
       "to": "mechanism_design.transfer.multiple_parameter_transfer_layer",
       "kind": "uses"
@@ -84,11 +89,25 @@
       "count": 1
     },
     {
+      "from": "mechanism_design.transfer.mechanisms_with_transfers",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 11
+    },
+    {
       "from": "mechanism_design.transfer.multiple_parameter_transfer_layer",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
       "count": 1
+    },
+    {
+      "from": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 5
     }
   ],
   "keywords": [

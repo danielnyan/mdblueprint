@@ -14,12 +14,33 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
       "id": "social_choice.fair_division.indivisible.cardinal_instance",
       "title": "Indivisible Cardinal Instance",
       "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
     }
   ],
-  "dependents": [],
   "lean_refs": [
     {
       "name": "SocialChoice.FairDivision.Indivisible.IsEquitable",

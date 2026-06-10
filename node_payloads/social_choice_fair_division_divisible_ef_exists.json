@@ -15,6 +15,31 @@
   "proof_html": "<p>Case split on whether the agent-preference unions\n$\\{U(i)\\}_i$ cover the division simplex\n([[social_choice.fair_division.divisible.stromquist_U]]):</p>\n<ul>\n<li>\n<p><strong>Usual case.</strong> $\\{U(i)\\}_i$ covers $S$. Apply\n  [[social_choice.fair_division.divisible.stromquist_usual_case]] —\n  KKM yields a common point with a unique-preference bijection, and\n  [[social_choice.fair_division.divisible.stromquist_assignment]]\n  converts the bijection into an EF allocation.</p>\n</li>\n<li>\n<p><strong>Unusual case.</strong> $\\{U(i)\\}_i$ does not cover $S$. Apply\n  [[social_choice.fair_division.divisible.stromquist_unusual_case]] —\n  the shifted-cell refinement\n  ([[social_choice.fair_division.divisible.stromquist_shifted_cells]])\n  produces approximate fair divisions whose limit is fair for the\n  original measures.</p>\n</li>\n</ul>\n<p>In both cases the output is a <em>contiguous</em> EF allocation (each agent\nreceives a single interval).</p>\n<h2>Significance</h2>\n<p>This is the high point of the divisible-fair-division formalization:</p>\n<ul>\n<li>Compared to cut-and-choose\n  ([[social_choice.fair_division.divisible.cut_and_choose_ef_exists]])\n  it works for <em>any</em> number of agents, not just two.</li>\n<li>Compared to Dubins–Spanier\n  ([[social_choice.fair_division.divisible.dubins_spanier_proportional]])\n  it gives EF, not merely PROP.</li>\n<li>The proof is <em>non-constructive</em>: KKM (and Brouwer / Sperner) are not\n  algorithmic, so the EF allocation is shown to exist without an\n  explicit construction.</li>\n</ul>\n<p>The combined EF + PROP existence statement is\n[[social_choice.fair_division.divisible.ef_exists_and_proportional]].</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n<li>Su, F. E. (1999). \"Rental Harmony: Sperner's Lemma in Fair Division\". <em>Amer. Math. Monthly</em> 106.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
       "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
       "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
@@ -25,6 +50,11 @@
       "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
       "title": "EF + Proportional Existence (Stromquist Corollary)",
       "href": "social_choice/social_choice_fair_division_divisible_ef_exists_and_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_existence",
+      "title": "Measure-Instance Existence Wrappers",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_existence.html"
     }
   ],
   "lean_refs": [

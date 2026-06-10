@@ -15,6 +15,11 @@
   "proof_html": "<p>outline</p>\n<p>By case analysis on whether the chooser picks left or right:</p>\n<ul>\n<li>\n<p>If $\\mu_1(L) \\ge \\mu_1(R)$, agent 0 receives $R = (t, 1]$ and agent 1\n  receives $L = [0, t]$. Both are measurable; $L \\cap R = \\emptyset$;\n  $L \\cup R = I$.</p>\n</li>\n<li>\n<p>Otherwise (the other branch of the protocol), the assignment is the\n  same partition with pieces swapped between agents. The same three\n  facts hold.</p>\n</li>\n</ul>\n<p>In either branch, the disjointness and cover conditions are immediate\nproperties of $[0, t]$ and $(t, 1]$ on the unit interval, and\nmeasurability comes from the standard half-open / closed interval\nconstructors.</p>\n<h2>Significance</h2>\n<p>This is the <em>feasibility</em> lemma for cut-and-choose: regardless of whether\nthe cut is \"fair\" for the cutter\n([[social_choice.fair_division.divisible.cut_and_choose_alloc]]) or\narbitrary, the protocol always produces a valid measurable partition.\nFairness only enters when we ask whether the cutter is envy-free\n([[social_choice.fair_division.divisible.cutter_envy_free_of_fair]]).</p>\n<h2>References</h2>\n<ul>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>, Ch. 1.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
       "title": "Cut-and-Choose Allocation and Fair Cut Point",
       "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html"

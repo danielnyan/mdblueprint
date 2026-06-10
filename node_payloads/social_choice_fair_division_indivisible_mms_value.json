@@ -27,14 +27,29 @@
   ],
   "dependents": [
     {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.is_alpha_mms",
       "title": "α-MMS Allocation",
       "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html"
     },
     {
+      "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.mms_value_bounds",
       "title": "MMS Value — Basic Bounds",
       "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html"
     }
   ],
   "lean_refs": [

@@ -23,7 +23,38 @@
       "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    },
+    {
+      "id": "mechanism_design.basic.dsic_predicate",
+      "title": "DSIC Predicate",
+      "href": "mechanism_design/mechanism_design_basic_dsic_predicate.html"
+    },
+    {
+      "id": "mechanism_design.basic.truthfulness_from_dsic",
+      "title": "Truthfulness From DSIC",
+      "href": "mechanism_design/mechanism_design_basic_truthfulness_from_dsic.html"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "SingleParameterMechanism",

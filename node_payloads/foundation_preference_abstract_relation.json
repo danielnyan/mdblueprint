@@ -20,6 +20,16 @@
   ],
   "dependents": [
     {
+      "id": "foundation.utility.sure_thing_principle",
+      "title": "Sure Thing Principle",
+      "href": "foundation/utility/foundation_utility_sure_thing_principle.html"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
+    },
+    {
       "id": "foundation.utility.vnm_axioms",
       "title": "Von Neumann Morgenstern Axioms",
       "href": "foundation/utility/foundation_utility_vnm_axioms.html"

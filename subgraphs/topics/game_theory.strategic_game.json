@@ -537,6 +537,16 @@
   ],
   "edges": [
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.best_response",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.best_response",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.unilateral_deviation",
       "to": "game_theory.strategic_game.best_response",
       "kind": "uses"
@@ -547,7 +557,37 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.core.mixed_extension",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.core.mixed_extension",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.core.mixed_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.core.mixed_strategy",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.nash_equilibrium",
+      "to": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
       "to": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
       "kind": "uses"
     },
@@ -557,13 +597,48 @@
       "kind": "uses"
     },
     {
-      "from": "game_theory.strategic_game.unilateral_deviation",
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.dominance.dominated_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
       "to": "game_theory.strategic_game.dominance.dominated_strategy",
       "kind": "uses"
     },
     {
       "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "game_theory.strategic_game.dominance.dominated_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
       "to": "game_theory.strategic_game.dominance.iterated_elimination",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.dominance.iterated_elimination",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "game_theory.strategic_game.dominance.iterated_elimination",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
       "kind": "uses"
     },
     {
@@ -577,7 +652,22 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
       "to": "game_theory.strategic_game.dominance.rationalizable_strategy",
       "kind": "uses"
     },
@@ -587,8 +677,28 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.dominant_implies_nash",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.dominant_implies_nash",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.weakly_dominant_strategy",
       "to": "game_theory.strategic_game.dominant_implies_nash",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.core.mixed_extension",
+      "to": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.core.mixed_strategy",
+      "to": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
       "kind": "uses"
     },
     {
@@ -597,7 +707,32 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.best_response",
+      "to": "game_theory.strategic_game.nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.nash_equilibrium",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
       "to": "game_theory.strategic_game.nash_equilibrium",
       "kind": "uses"
     },
@@ -607,8 +742,68 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.nash_equilibrium",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominant_strategy",
+      "to": "game_theory.strategic_game.prisoners_dilemma",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.strategic_game",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.strategic_game",
       "to": "game_theory.strategic_game.strategy_profile",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.dominated_strategy",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strictly_dominates",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.dominated_strategy",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.strictly_dominates",
       "kind": "uses"
     },
     {
@@ -617,8 +812,28 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.unilateral_deviation",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.weakly_dominant_strategy",
       "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominates",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.unilateral_deviation",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.unilateral_deviation",
       "kind": "uses"
     },
     {
@@ -632,8 +847,28 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.weakly_dominates",
       "to": "game_theory.strategic_game.weakly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "game_theory.strategic_game.weakly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strategy_profile",
+      "to": "game_theory.strategic_game.weakly_dominates",
       "kind": "uses"
     },
     {
@@ -661,31 +896,52 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.zero_sum",
-      "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "to": "game_theory.strategic_game.core.mixed_extension",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
       "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 2
     },
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 2
+      "count": 4
     },
     {
       "from": "game_theory.strategic_game.core.mixed_extension",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "game_theory.strategic_game.core.mixed_strategy",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.nash_equilibrium",
@@ -695,7 +951,21 @@
       "count": 1
     },
     {
+      "from": "game_theory.strategic_game.strategic_game",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
       "from": "game_theory.strategic_game.strategy_profile",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
+      "from": "game_theory.strategic_game.unilateral_deviation",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
@@ -703,6 +973,20 @@
     },
     {
       "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "game_theory.strategic_game.strategic_game",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",

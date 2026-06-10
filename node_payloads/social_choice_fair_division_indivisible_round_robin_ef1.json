@@ -15,6 +15,26 @@
   "proof_html": "<p>intuition</p>\n<p>Fix two agents $i \\ne j$ with $A(j) \\ne \\emptyset$. Two cases:</p>\n<ul>\n<li>\n<p><strong>Agent $i$ moves before agent $j$ in the turn order.</strong> At every\n  round where both agents pick, $i$ picks first and $i$'s\n  best-remaining value at that round is at least $j$'s next pick (each\n  agent picks their own favourite among the remaining items, and the\n  set has only shrunk between $i$'s and $j$'s pick within the same\n  round). So $v_i(A(i)) \\ge v_i(A(j))$ pointwise, i.e. EF (a\n  <em>strictly stronger</em> condition than EF1).</p>\n</li>\n<li>\n<p><strong>Agent $i$ moves after agent $j$.</strong> In the first round, $j$ picks\n  before $i$ — the only round where $j$ has a strict positional\n  advantage over $i$. After removing the first item $j$ takes\n  (call it $g_1 = $ <code>bestGood(j, allGoods)</code>), agent $i$ has a\n  first-pick situation for the remaining items, then both alternate\n  fairly. So $v_i(A(j) \\setminus \\{g_1\\}) \\le v_i(A(i))$, giving\n  the EF1 witness $g = g_1$.</p>\n</li>\n</ul>\n<p>Combining both cases gives EF1 for every $(i, j)$ pair.</p>\n<p>The Lean proof is much more detailed — the recursive structure of\n<code>roundRobinAux</code> forces an induction on the number of rounds, with the\ncase split appearing inside the inductive step. The file\n<code>RoundRobin.lean</code> carries ~600 lines of partition/value/turn-order\nbookkeeping closing all sorries.</p>\n<h2>Significance</h2>\n<p>This is the <em>headline existence theorem</em> for EF1: round-robin gives a\ndeterministic polynomial-time construction of an EF1 allocation for\nany additive valuation. Combined with envy-cycle elimination\n([[social_choice.fair_division.indivisible.envy_cycle_ef1]]) it\nestablishes that EF1 is <em>unconditionally achievable</em> in the\nindivisible setting (in stark contrast to EF, which fails\n[[social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good]]).</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Round-robin EF1 correctness.</li>\n<li>Caragiannis, Kurokawa, Moulin, Procaccia, Shah, and Wang (2019). \"The Unreasonable Fairness of Maximum Nash Welfare\". <em>EC</em>.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef1",
+      "title": "EF1 — Envy-Free Up to One Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef1.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.round_robin_alloc",
       "title": "Round-Robin Allocation",
       "href": "social_choice/social_choice_fair_division_indivisible_round_robin_alloc.html"

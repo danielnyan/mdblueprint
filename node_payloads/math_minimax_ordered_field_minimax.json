@@ -13,16 +13,86 @@
   "proof_html": "<p>Use an algebraic proof route for finite minimax, such as the\nlinear-programming route, whose steps are finite systems of weak\nlinear inequalities, pivot operations, and normalisations by positive\nelements. These operations make sense over any ordered field. The terminal\ninequalities are precisely the two minimax optimality systems, so the\nextracted mixed strategies and value lie in the same ordered field as the\nmatrix entries.</p>\n<p>The Lean theorem is <code>Minimax.minimax</code>, polymorphic in\n<code>[Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]</code>, proved <strong>sorry-free</strong>\n(axioms: <code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>). The route is von\nNeumann symmetrisation: shift the game positive, embed it in the\nskew-symmetric matrix on <code>I ⊕ J ⊕ Unit</code>, and read the optimal <code>(x, y, v)</code>\noff the value-0 optimal strategy of that skew game — which exists by the\nTheorem of the Alternative (<code>SkewSymmetric.optimal</code>), a pure feasibility\nstatement needing no LP optimum / order-completeness. The ℝ-specialisation\nalso follows from the Loomis route\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Section 2.3, paragraph after the proof of Thm. 2.3.1] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Ordered-field generalization via finite weak linear inequalities.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "title": "Maximin and Minimax Values",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
-    }
-  ],
-  "dependents": [
+    },
     {
       "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "title": "Von Neumann Minimax Theorem",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
     }
   ],
   "lean_refs": [

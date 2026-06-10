@@ -13,6 +13,11 @@
   "proof_html": "<p>Let\n$$\n  c=\\left(\\sum_{k=1}^n a_k^{-1}\\right)^{-1}\n  \\quad\\text{and}\\quad\n  p_i=ca_i^{-1}.\n$$\nThen $p$ is a probability vector. Against any pure column $j$, the row player's\npayoff from $p$ is $p_ja_j=c$, so $p$ guarantees $c$. Against any pure row $i$,\nthe column player's mixed strategy $p$ gives payoff $a_ip_i=c$, so $p$ holds the\nrow player to $c$. By weak duality, the value is $c$ and $p$ is optimal for both\nplayers.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Compute value and optimal strategies for a positive diagonal matrix game.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
       "id": "math.minimax.common_guarantee_value",
       "title": "Common Guarantee Gives The Value",
       "href": "math/math_minimax_common_guarantee_value.html"

@@ -13,12 +13,43 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_expected_utility",
+      "title": "Ex-Ante Expected Utility (Bayesian Mechanisms)",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_expected_utility.html"
+    },
+    {
       "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
       "title": "Ex-Ante Revelation Principle Interface",
       "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
+      "title": "Ex-Ante Revelation Principle Interface",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "BayesianMechanismWithTransfers.IntegrableExAnteUtility",

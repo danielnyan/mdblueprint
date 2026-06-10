@@ -63,23 +63,65 @@
       "payload": "node_payloads/mechanism_design_basic_truthfulness_from_dsic.json"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "mechanism_design.basic.induced_strategic_game",
+      "to": "mechanism_design.basic.dsic_predicate",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.basic.direct_mechanism_interface",
+      "to": "mechanism_design.basic.truthfulness_from_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.basic.dsic_predicate",
+      "to": "mechanism_design.basic.truthfulness_from_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.basic.induced_strategic_game",
+      "to": "mechanism_design.basic.truthfulness_from_dsic",
+      "kind": "uses"
+    }
+  ],
   "boundary_topics": [
     {
       "id": "mechanism_design",
       "title": "Mechanism Design",
       "href": "mechanism_design/index.html",
-      "role": "dependent",
+      "role": "dependency_and_dependent",
       "node_count": 49
     }
   ],
   "boundary_edges": [
     {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.basic.dsic_predicate",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.basic.induced_strategic_game",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 4
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.basic.truthfulness_from_dsic",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
       "from": "mechanism_design.basic.direct_mechanism_interface",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 2
     },
     {
       "from": "mechanism_design.basic.dsic_predicate",
@@ -93,7 +135,7 @@
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 5
     }
   ],
   "keywords": [

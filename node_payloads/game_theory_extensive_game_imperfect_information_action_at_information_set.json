@@ -13,6 +13,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    },
+    {
       "id": "game_theory.extensive_game.imperfect_information.imperfect_information_extensive_game",
       "title": "Extensive Game With Imperfect Information",
       "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_extensive_game.html"
@@ -23,7 +28,13 @@
       "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_imperfect_information_pure_strategy.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "FiniteImperfectGame.PureStrategy.actionAt",

@@ -217,8 +217,118 @@
   ],
   "edges": [
     {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.first_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "to": "mechanism_design.auction.basic.first_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "mechanism_design.auction.basic.first_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "mechanism_design.auction.basic.first_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "mechanism_design.auction.basic.first_price_no_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.first_price_no_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "mechanism_design.auction.basic.first_price_no_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "mechanism_design.auction.basic.first_price_no_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.auction.basic.formats",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
+      "to": "mechanism_design.auction.basic.formats",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.auction.basic.second_price_dsic",
       "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
       "kind": "uses"
     },
     {
@@ -232,8 +342,23 @@
       "kind": "uses"
     },
     {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.auction.bayesian.single_item_framework",
       "to": "mechanism_design.auction.bayesian.interim_and_ic",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
       "kind": "uses"
     },
     {
@@ -247,13 +372,43 @@
       "kind": "uses"
     },
     {
+      "from": "mechanism_design.auction.basic.formats",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.auction.bayesian.interim_and_ic",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
       "to": "mechanism_design.myerson.optimal_auction",
       "kind": "uses"
     },
     {
       "from": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_value_regularity",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "kind": "uses"
     },
     {
@@ -286,16 +441,107 @@
   "boundary_edges": [
     {
       "from": "topic:math",
+      "to": "mechanism_design.auction.basic.formats",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
       "to": "mechanism_design.auction.knapsack.environment",
       "kind": "boundary_dependency",
       "topic": "math",
       "count": 1
     },
     {
+      "from": "topic:math",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.first_price_mechanism",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.first_price_no_dsic",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
       "from": "topic:mechanism_design",
       "to": "mechanism_design.auction.basic.formats",
       "kind": "boundary_dependency",
       "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 3
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.second_price_dsic",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.basic.second_price_mechanism",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.knapsack.environment",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
+    },
+    {
+      "from": "mechanism_design.auction.basic.first_price_mechanism",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
       "count": 1
     },
     {
@@ -303,28 +549,56 @@
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
+      "count": 5
+    },
+    {
+      "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
       "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.basic.second_price_mechanism",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
     },
     {
       "from": "mechanism_design.auction.basic.first_price_mechanism",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 2
     },
     {
       "from": "mechanism_design.auction.basic.reserve_second_price_mechanism",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 2
     },
     {
       "from": "mechanism_design.auction.basic.second_price_mechanism",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 2
     }
   ],
   "keywords": [

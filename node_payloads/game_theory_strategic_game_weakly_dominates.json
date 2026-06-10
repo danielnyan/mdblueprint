@@ -13,12 +13,27 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
       "id": "game_theory.strategic_game.unilateral_deviation",
       "title": "Unilateral Deviation",
       "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
     }
   ],
   "dependents": [
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html"
+    },
     {
       "id": "game_theory.strategic_game.weakly_dominant_strategy",
       "title": "Weakly Dominant Strategy",

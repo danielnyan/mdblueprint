@@ -15,9 +15,34 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cut_exists",
       "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
       "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
     }
   ],
   "dependents": [

@@ -14,9 +14,49 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef1",
+      "title": "EF1 — Envy-Free Up to One Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx",
+      "title": "EFX — Envy-Free Up to Any Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
       "title": "EFX ⇒ EF1",
       "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_free",
+      "title": "Indivisible Envy-Free",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional",
+      "title": "Indivisible Proportional",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
   "dependents": [],

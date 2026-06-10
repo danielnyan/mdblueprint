@@ -11,7 +11,18 @@
   ],
   "body_html": "<h1>Zero-Sum Game</h1>\n<p>A two-player strategic game is zero-sum if, at every strategy profile $\\sigma$,\nthe two players' payoffs add to zero:</p>\n<p>$$u_0(\\sigma) + u_1(\\sigma) = 0.$$</p>\n<p>A constant-sum game fixes the same sum to a constant $c$ instead of zero.  In a\nzero-sum game, player 1's payoff is the negative of player 0's payoff, so the\ngame can be studied through a single payoff function.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 4, Section 4.4] Maschler, Solan, and Zamir, <em>Game Theory</em>. Zero-sum and constant-sum two-player games.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",

@@ -13,6 +13,16 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
       "id": "game_theory.strategic_game.unilateral_deviation",
       "title": "Unilateral Deviation",
       "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
@@ -23,6 +33,11 @@
       "id": "game_theory.strategic_game.dominance.dominance_solvable_game",
       "title": "Solvable Game",
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominance_solvable_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "title": "Nash Equilibria Are Rationalizable",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_nash_is_rationalizable.html"
     },
     {
       "id": "game_theory.strategic_game.dominance.rationalizable_strategy",

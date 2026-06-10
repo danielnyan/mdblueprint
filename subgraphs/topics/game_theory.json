@@ -413,8 +413,38 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.cooperative_game.core",
       "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.imputation",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.imputation",
       "kind": "uses"
     },
     {
@@ -441,13 +471,13 @@
       "from": "topic:game_theory.strategic_game",
       "to": "topic:game_theory.zero_sum",
       "kind": "topic_dependency",
-      "count": 4
+      "count": 15
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "topic:game_theory.strategic_game",
       "kind": "topic_dependency",
-      "count": 1
+      "count": 5
     }
   ],
   "boundary_topics": [
@@ -465,14 +495,14 @@
       "to": "topic:game_theory.strategic_game",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 2
+      "count": 4
     },
     {
       "from": "topic:math",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 10
+      "count": 46
     },
     {
       "from": "topic:math",
@@ -486,21 +516,28 @@
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 2
+      "count": 11
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 11
+      "count": 34
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "topic:math",
+      "kind": "boundary_proof_plan_dependent",
+      "topic": "math",
+      "count": 1
     }
   ],
   "keywords": [

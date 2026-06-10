@@ -89,7 +89,22 @@
   ],
   "edges": [
     {
+      "from": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.maximin_share",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
       "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
       "kind": "uses"
     },
@@ -104,6 +119,16 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.indivisible.maximin_share",
+      "to": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.indivisible.mms_value",
       "to": "social_choice.fair_division.indivisible.mms_value_bounds",
       "kind": "uses"
@@ -114,8 +139,23 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.mms_value",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
       "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.maximin_share",
+      "to": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
       "kind": "uses"
     }
   ],
@@ -124,17 +164,38 @@
       "id": "social_choice",
       "title": "Social Choice",
       "href": "social_choice/index.html",
-      "role": "dependency",
+      "role": "dependency_and_dependent",
       "node_count": 125
     }
   ],
   "boundary_edges": [
     {
       "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
       "to": "social_choice.fair_division.indivisible.maximin_share",
       "kind": "boundary_dependency",
       "topic": "social_choice",
-      "count": 1
+      "count": 4
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
     },
     {
       "from": "topic:social_choice",
@@ -142,6 +203,34 @@
       "kind": "boundary_dependency",
       "topic": "social_choice",
       "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.maximin_share",
+      "to": "topic:social_choice",
+      "kind": "boundary_dependent",
+      "topic": "social_choice",
+      "count": 1
     }
   ],
   "keywords": [

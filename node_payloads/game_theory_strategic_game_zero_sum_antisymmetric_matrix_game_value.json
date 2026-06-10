@@ -11,7 +11,13 @@
   ],
   "body_html": "<h1>Antisymmetric Matrix Game Has Value Zero</h1>\n<p>A square matrix $B : I \\times I \\to \\mathbb{R}$ is <strong>antisymmetric</strong> if\n$B = -B^{\\mathsf{T}}$, i.e. $B_{ij} = -B_{ji}$ for all $i,j$ (so in particular\n$B_{ii} = 0$). The matrix game $B$ then has value $0$, and there exists\n$x \\in \\Delta(I)$ such that $(Bx)_i \\le 0$ for every row $i$.</p>",
   "proof_html": "<p>By the minimax theorem\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>) the game has a\nvalue $v$. Antisymmetry gives $z^{\\mathsf{T}} B z = 0$ for every mixed $z$, since\n$z^{\\mathsf{T}} B z = -z^{\\mathsf{T}} B^{\\mathsf{T}} z = -(z^{\\mathsf{T}} B z)$.\nApplying this to an optimal $x^\\ast$ for player I,\n$0 = \\sum_j x^\\ast_j (e_j B x^\\ast)$ while each $e_j B x^\\ast \\ge v$, forcing\n$v \\le 0$; the symmetric argument gives $v \\ge 0$, so $v = 0$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 10(1)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Antisymmetric matrix games have value zero.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [
     {

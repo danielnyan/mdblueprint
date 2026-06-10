@@ -162,32 +162,32 @@
     {
       "from": "game_theory",
       "to": "math",
-      "count": 14
+      "count": 48
     },
     {
       "from": "math",
       "to": "foundation",
-      "count": 3
+      "count": 8
     },
     {
       "from": "math",
       "to": "game_theory",
-      "count": 12
+      "count": 50
     },
     {
       "from": "math",
       "to": "mechanism_design",
-      "count": 1
+      "count": 4
     },
     {
       "from": "math",
       "to": "social_choice",
-      "count": 3
+      "count": 4
     },
     {
       "from": "mechanism_design",
       "to": "math",
-      "count": 1
+      "count": 16
     }
   ]
 }

@@ -13,14 +13,59 @@
   "proof_html": "<p><em>The forward direction</em> of each biconditional is\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.support_complementarity\" href=\"../game_theory/strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_support_complementarity.html\">Support Complementarity</a> (Prop. 2.4.1(b)) and\nholds for every optimal pair: if $x^*_i &gt; 0$, then row $i$ obtains the\nvalue against $y^*$; dually for columns.</p>\n<p><em>The reverse direction — existence of an optimal pair where every\nbest-response row has positive probability</em> — comes from\n<a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_complementarity\" href=\"linear_programming/math_linear_programming_strong_complementarity.html\">Strong Complementarity For Linear Programming</a> applied to the\nmatrix-game LP. The Lean implementation\n(<code>MatrixGame.exists_strong_complementary_pair</code>) carries out:</p>\n<h3>Step 1 — Shift to make payoffs strictly positive</h3>\n<p>Choose $K := 1 + |A.\\mathrm{value}| + \\max_{i,j} |A_{ij}|$. Then\n$A'_{ij} := A_{ij} + K &gt; 0$ for every $i, j$, and the shifted value\n$v' := A.\\mathrm{value} + K &gt; 0$. The shift is required because the\nstandard-form LP we apply expects nonneg variables and finite\noptimum; with positive payoffs the value-LP has a clean primal form.</p>\n<h3>Step 2 — Encode the row LP in standard form</h3>\n<p>The shifted row LP is</p>\n<p>$$\n  \\min \\sum_i x'_i \\quad\n  \\text{s.t.} \\quad (A'^{\\mathsf T} x')_j \\ge 1\\ (\\forall j \\in J),\n  \\quad x'_i \\ge 0\\ (\\forall i \\in I).\n$$</p>\n<p>Optimal $x'$ rescales to a mixed strategy via $x_i = x'_i \\cdot v'$\n(since $\\sum_i x'_i = 1/v'$ at optimum).</p>\n<h3>Step 3 — Build LP-feasible primal and dual from a matrix-game optimal pair</h3>\n<p>From an existing matrix-game optimal pair $(x^0, y^0)$ (via\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html\">Mixed Nash Equilibrium of a Matrix Game</a>), define\n$x'^0 := x^0 / v'$ and $u'^0 := y^0 / v'$. Both have LP objective\n$1/v'$, hence are LP-optimal by weak duality.</p>\n<h3>Step 4 — Apply LP strong complementarity</h3>\n<p>Invoke <a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_complementarity\" href=\"linear_programming/math_linear_programming_strong_complementarity.html\">Strong Complementarity For Linear Programming</a> to obtain a\nstrong-CS optimal LP pair $(x'^*, u'^*)$.</p>\n<h3>Step 5 — Rescale back and translate the biconditional</h3>\n<p>Set $x^*_i := x'^*(e\\,i) \\cdot v'$ and $y^*_j := u'^*_j \\cdot v'$\n(where $e : I \\simeq \\mathrm{Fin}\\,(\\#I)$ is the standard equivalence\nused so the LP variables fit <code>Fin n → \\mathbb{R}</code>). Verify:</p>\n<ul>\n<li>$(A^{\\mathsf T} x^*)_j = A.\\mathrm{Ej}\\,x^*\\,j$ and\n  $(A^{\\mathsf T} x^<em> + K)_j = (A'^{\\mathsf T} x^</em>)_j = (A'^{\\mathsf T} x'^*)_j \\cdot v'\n  \\ge 1 \\cdot v' = v'$,\n  so $A.\\mathrm{Ej}\\,x^*\\,j \\ge A.\\mathrm{value}$ — i.e. $x^*$ is\n  row-optimal. Symmetrically $y^*$ is column-optimal.</li>\n</ul>\n<p>The LP strict complementarity at the column index $i$ (in the strong\npair) is the assertion\n$x'^*(e\\,i) + (1 - \\sum_j u'^*_j \\cdot A'_{i,j}) &gt; 0$. Multiplying\nthrough by $v'$ and using $v' = A.\\mathrm{value} + K$, this becomes</p>\n<p>$$\n  x^*_i + (A.\\mathrm{value} - A.\\mathrm{Ei}\\,i\\,y^*) &gt; 0.\n$$</p>\n<p>Both summands are non-negative (by primal/dual feasibility), so at\nleast one is strictly positive: $x^*_i &gt; 0$ <strong>or</strong>\n$A.\\mathrm{Ei}\\,i\\,y^* &lt; A.\\mathrm{value}$. The contrapositive is\nexactly the missing direction: if $A.\\mathrm{Ei}\\,i\\,y^* = A.\\mathrm{value}$\nthen $x^*_i &gt; 0$. Symmetric argument for columns. $\\square$</p>\n<h2>Remarks</h2>\n<ul>\n<li>The shift in Step 1 is essential for the standard-form LP reduction;\n  without it the value LP \"max $v$\" has $v$ free, which doesn't fit\n  the <code>min ⟨c, x⟩ s.t. Ax ≥ b, x ≥ 0</code> form of\n  <a class=\"node-ref\" data-node-id=\"math.linear_programming.strong_complementarity\" href=\"linear_programming/math_linear_programming_strong_complementarity.html\">Strong Complementarity For Linear Programming</a>.</li>\n<li>The Lean implementation restricts <code>I J : Type</code> (= <code>Type 0</code>) so the\n  <code>Fintype.sum_equiv</code> adapter that bridges <code>I</code> and <code>Fin (#I)</code> lines up\n  with the LP theorem's universe ($\\mathbb{R} : \\mathrm{Type}\\,0$).</li>\n<li>Combined with <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.support_complementarity\" href=\"../game_theory/strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_support_complementarity.html\">Support Complementarity</a> this\n  produces a <em>fully two-sided</em> biconditional in the strong pair: every\n  best-response row has positive probability and every positive-probability\n  row is a best response.</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(c)] Laraki, Renault, and Sorin, <em>Mathematical\n  Foundations of Game Theory</em>.\n  Existence of a strongly complementary optimal pair.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "title": "Optimal Pairs Are Exactly Saddle Points",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "href": "math/math_linear_programming_strong_complementarity.html"
+    },
+    {
       "id": "math.linear_programming.strong_duality",
       "title": "Strong Duality For Linear Programming",
       "href": "math/math_linear_programming_strong_duality.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
     }
   ],
   "dependents": [

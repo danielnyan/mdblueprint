@@ -13,6 +13,11 @@
   "proof_html": "<p>Let $v=\\operatorname{val}(A)$. If $x\\in X(A)$ and $y\\in Y(A)$, then\n$xAy'\\ge v$ for every mixed column $y'$ and $x'Ay\\le v$ for every mixed row\n$x'$. Applying these inequalities to $y$ and $x$ gives $xAy=v$, so\n$$\n  x'Ay\\le xAy\\le xAy'\n$$\nfor all $x'$ and $y'$. Thus $(x,y)$ is a saddle point. Conversely, if\n$(x,y)$ is a saddle point, then taking $x'$ and $y'$ as pure strategies and\napplying the simplex-side order characterisations\n(<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>) gives\n$$\n  E_A(x,y)\\le \\operatorname{guarantee}_I(x), \\qquad\n  \\operatorname{guarantee}_{II}(y)\\le E_A(x,y).\n$$\nWeak duality <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.maximin_le_minimax\" href=\"../strategic_game/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html\">Maximin is Bounded by Minimax</a> sandwiches both quantities\nbetween $v$ on the appropriate side, forcing equality. Hence $x\\in X(A)$ and\n$y\\in Y(A)$.</p>\n<p>The Lean formalisation factors through two characterisation iff-theorems\n(<code>mem_optimalRowStrategies_iff_E_ge</code> and <code>mem_optimalColumnStrategies_iff_E_le</code>),\nwhich then combine into <code>MatrixGame.optimal_pairs_iff_saddle_point</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(d)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. X(A) x Y(A) is the set of saddle points.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
       "title": "Optimal Strategy Sets",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
@@ -23,9 +28,49 @@
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    },
+    {
+      "id": "math.simplex.bounded_by_value",
+      "title": "Pointwise Bounds Are Simplex Bounds",
+      "href": "math/math_simplex_bounded_by_value.html"
+    },
+    {
       "id": "math.simplex.pure",
       "title": "Point Mass on the Standard Simplex",
       "href": "math/math_simplex_pure.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
     }
   ],
   "dependents": [
@@ -40,9 +85,19 @@
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
       "title": "Support Complementarity",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+      "title": "Matching Pennies",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_examples_matching_pennies.html"
     },
     {
       "id": "math.minimax.antisymmetric_matrix_game_value",

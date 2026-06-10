@@ -13,9 +13,29 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "foundation.cost.costm",
+      "title": "The CostM Complexity Monad",
+      "href": "foundation/foundation_cost_costm.html"
+    },
+    {
       "id": "foundation.cost.parallel",
       "title": "Parallel Composition in CostM",
       "href": "foundation/foundation_cost_parallel.html"
+    },
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
     }
   ],
   "dependents": [],

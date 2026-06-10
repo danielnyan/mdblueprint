@@ -25,6 +25,11 @@
   ],
   "dependents": [
     {
+      "id": "foundation.utility.expected_utility_representation",
+      "title": "Expected Utility Representation",
+      "href": "foundation/utility/foundation_utility_expected_utility_representation.html"
+    },
+    {
       "id": "foundation.utility.lottery",
       "title": "Lottery",
       "href": "foundation/utility/foundation_utility_lottery.html"
@@ -35,9 +40,39 @@
       "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "title": "Optimal Pairs Are Exactly Saddle Points",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    },
+    {
+      "id": "math.minimax.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Games Have Value",
+      "href": "math/math_minimax_antisymmetric_matrix_game_value.html"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "math/math_minimax_strong_complementarity.html"
     },
     {
       "id": "math.simplex.bounded_by_value",

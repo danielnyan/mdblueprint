@@ -103,10 +103,17 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.extensive_game",
-      "to": "math.fixed_point.scarf_lemma",
+      "to": "math.fixed_point.brouwer_simplex",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
       "count": 1
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "math.fixed_point.scarf_lemma",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 2
     },
     {
       "from": "topic:game_theory.strategic_game",

@@ -66,6 +66,26 @@
   "edges": [
     {
       "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "kind": "uses"
     }
@@ -99,14 +119,28 @@
       "to": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 2
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
     },
     {
       "from": "topic:game_theory.zero_sum",
       "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 2
     },
     {
       "from": "topic:game_theory.zero_sum",
@@ -120,14 +154,28 @@
       "to": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 3
+      "count": 6
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
     },
     {
       "from": "topic:math",
       "to": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 1
+      "count": 2
     },
     {
       "from": "topic:math",
@@ -144,25 +192,53 @@
       "count": 1
     },
     {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
       "from": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 1
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "topic:game_theory.zero_sum",
       "kind": "boundary_dependent",
       "topic": "game_theory.zero_sum",
-      "count": 5
+      "count": 8
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "topic:game_theory.zero_sum",
+      "kind": "boundary_dependent",
+      "topic": "game_theory.zero_sum",
+      "count": 3
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "to": "topic:math",
       "kind": "boundary_dependent",
       "topic": "math",
-      "count": 1
+      "count": 2
+    },
+    {
+      "from": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 2
     }
   ],
   "keywords": [

@@ -11,7 +11,38 @@
   ],
   "body_html": "<h1>Common Guarantee Gives The Value</h1>\n<p>If player I and player II both guarantee the same number $w$, then $w$ is\nthe unique value of the game, and the strategies witnessing the two\nguarantees are optimal.</p>",
   "proof_html": "<p>The two guarantees and weak duality give the chain\n$$\n  w \\le \\underline v \\le \\overline v \\le w.\n$$\nThus $\\underline v=\\overline v=w$, and the witnessing strategies attain the\nvalue. The minimax theorem (<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.von_neumann_minimax\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html\">Von Neumann Minimax Theorem</a>) closes the\ninner two inequalities, the player-guarantee bound is the outer pair\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.player_guarantee\" href=\"../game_theory/strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_player_guarantee.html\">Player Guarantee</a>).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Lem. 2.2.8] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. A common guarantee is unique and equal to the value.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.player_guarantee",
+      "title": "Player Guarantee",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_player_guarantee.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",

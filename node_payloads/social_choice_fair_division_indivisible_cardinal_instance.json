@@ -14,12 +14,20 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.additive_valuation",
       "title": "Additive Valuation",
       "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
-    }
-  ],
-  "dependents": [
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
     {
       "id": "social_choice.fair_division.indivisible.ef1",
       "title": "EF1 — Envy-Free Up to One Good",
@@ -64,6 +72,163 @@
       "id": "social_choice.fair_division.indivisible.proportional",
       "title": "Indivisible Proportional",
       "href": "social_choice/social_choice_fair_division_indivisible_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.utilitarian_welfare",
+      "title": "Indivisible Utilitarian Welfare",
+      "href": "social_choice/social_choice_fair_division_indivisible_utilitarian_welfare.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.additive_valuation",
+      "title": "Additive Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.alpha_mms_mono",
+      "title": "α-MMS — Monotonicity and Endpoint Lemmas",
+      "href": "social_choice/social_choice_fair_division_indivisible_alpha_mms_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.checker",
+      "title": "Decidable Fairness Checkers",
+      "href": "social_choice/social_choice_fair_division_indivisible_checker.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef1",
+      "title": "EF1 — Envy-Free Up to One Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+      "title": "EF ⇒ EFX (Monotone Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_efx_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_proportional_additive",
+      "title": "EF ⇒ PROP (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_proportional_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good",
+      "title": "EF Impossibility — Two Agents, One Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_impossible_two_agents_one_good.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx",
+      "title": "EFX — Envy-Free Up to Any Good",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_exists_two_agents",
+      "title": "EFX Existence — Two Agents, Any Finite Good Set",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_exists_two_agents.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
+      "title": "EFX ⇒ EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+      "title": "EFX from No-Envy + Monotonicity",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_of_no_envy_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+      "title": "EFX Existence — 2 Agents, 2 Goods",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_two_agents_two_goods.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.egalitarian_welfare",
+      "title": "Indivisible Egalitarian (Maximin) Welfare",
+      "href": "social_choice/social_choice_fair_division_indivisible_egalitarian_welfare.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envies",
+      "title": "Envy Relation and Sources",
+      "href": "social_choice/social_choice_fair_division_indivisible_envies.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "title": "Envy-Cycle Elimination Algorithm",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_free",
+      "title": "Indivisible Envy-Free",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.equitable",
+      "title": "Indivisible Equitable",
+      "href": "social_choice/social_choice_fair_division_indivisible_equitable.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.maximin_share",
+      "title": "Maximin Share (MMS) Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_maximin_share.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
+      "title": "IsMaxminShare ↔ IsAlphaMMS 1",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "title": "MMS Value — Basic Bounds",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ordinal_instance",
+      "title": "Indivisible Ordinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_ordinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.pareto_optimal",
+      "title": "Indivisible Pareto Optimal",
+      "href": "social_choice/social_choice_fair_division_indivisible_pareto_optimal.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional",
+      "title": "Indivisible Proportional",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "title": "Round-Robin Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_alloc.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_ef1",
+      "title": "Round-Robin Is EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_ef1.html"
     },
     {
       "id": "social_choice.fair_division.indivisible.utilitarian_welfare",

@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 11,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 1,
+    "boundary_topics": 2,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 13,
-    "visible_nodes_with_selected_proof_plans": 13
+    "visible_nodes_without_proof_plans": 14,
+    "visible_nodes_with_selected_proof_plans": 14
   },
   "nodes": [
     {
@@ -123,8 +123,23 @@
       "kind": "uses"
     },
     {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
       "from": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_value_regularity",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "kind": "uses"
     },
     {
@@ -140,20 +155,69 @@
   ],
   "boundary_topics": [
     {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency_and_dependent",
+      "node_count": 43
+    },
+    {
       "id": "mechanism_design",
       "title": "Mechanism Design",
       "href": "mechanism_design/index.html",
-      "role": "dependent",
+      "role": "dependency_and_dependent",
       "node_count": 49
     }
   ],
   "boundary_edges": [
     {
+      "from": "topic:math",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.auction.bayesian.single_item_framework",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 4
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 4
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 1
+    },
+    {
+      "from": "mechanism_design.auction.bayesian.single_item_framework",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
+    },
+    {
       "from": "mechanism_design.auction.bayesian.single_item_framework",
       "to": "topic:mechanism_design",
       "kind": "boundary_dependent",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 2
     }
   ],
   "keywords": [

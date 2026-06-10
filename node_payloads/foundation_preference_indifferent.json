@@ -21,13 +21,53 @@
       "id": "foundation.preference.total_preorder",
       "title": "Total Preorder",
       "href": "foundation/foundation_preference_total_preorder.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
     }
   ],
   "dependents": [
     {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "href": "foundation/foundation_cost_cells.html"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "href": "foundation/foundation_cost_examples_lcs.html"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "href": "foundation/foundation_cost_examples_par_sum.html"
+    },
+    {
       "id": "foundation.preference.represents_preference",
       "title": "Utility Representation of a Preference",
       "href": "foundation/foundation_preference_represents_preference.html"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
+    },
+    {
+      "id": "foundation.utility.risk_neutrality",
+      "title": "Risk Neutrality",
+      "href": "foundation/utility/foundation_utility_risk_neutrality.html"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
     }
   ],
   "lean_refs": [

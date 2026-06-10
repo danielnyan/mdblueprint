@@ -25,9 +25,24 @@
   ],
   "dependents": [
     {
+      "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "title": "Optimal Pairs Are Exactly Saddle Points",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "math.minimax.zero_sum_nash_saddle",
+      "title": "Zero-Sum Nash Equilibria As Saddle Points",
+      "href": "math/math_minimax_zero_sum_nash_saddle.html"
     }
   ],
   "lean_refs": [

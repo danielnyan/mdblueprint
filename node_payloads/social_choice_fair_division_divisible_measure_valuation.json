@@ -31,9 +31,44 @@
       "href": "social_choice/social_choice_fair_division_divisible_chooser_envy_free.html"
     },
     {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
       "title": "Cutter Does Not Envy at a Fair Cut",
       "href": "social_choice/social_choice_fair_division_divisible_cutter_envy_free_of_fair.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists",
+      "title": "Envy-Free Existence (Stromquist, n Agents)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "title": "EF + Proportional Existence (Stromquist Corollary)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists_and_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "title": "EF ⇒ Proportional (Measure Valuations)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_implies_proportional.html"
     },
     {
       "id": "social_choice.fair_division.divisible.measure_instance",
@@ -44,6 +79,21 @@
       "id": "social_choice.fair_division.divisible.normalized_iff_probability",
       "title": "Normalized Measure Valuation ↔ Probability Measure",
       "href": "social_choice/social_choice_fair_division_divisible_normalized_iff_probability.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.proportional_exists",
+      "title": "Proportional Existence on [0,1] (n Agents)",
+      "href": "social_choice/social_choice_fair_division_divisible_proportional_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
     }
   ],
   "lean_refs": [

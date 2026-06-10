@@ -238,6 +238,21 @@
       "kind": "uses"
     },
     {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.cost.cells",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "foundation.cost.cells",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.cost.cells",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.cost.cells",
       "to": "foundation.cost.examples.boyer_moore",
       "kind": "uses"
@@ -263,6 +278,21 @@
       "kind": "uses"
     },
     {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.cost.costm",
       "to": "foundation.cost.examples.memo_fib",
       "kind": "uses"
@@ -273,12 +303,37 @@
       "kind": "uses"
     },
     {
-      "from": "foundation.cost.parallel",
+      "from": "foundation.cost.costm",
       "to": "foundation.cost.examples.par_all",
       "kind": "uses"
     },
     {
       "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_all",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.costm",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.cost.parallel",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
       "to": "foundation.cost.examples.par_sum",
       "kind": "uses"
     },
@@ -308,12 +363,32 @@
       "kind": "uses"
     },
     {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.preference.indifferent",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.preference.indifferent",
       "to": "foundation.preference.represents_preference",
       "kind": "uses"
     },
     {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.profile.deviate",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
       "to": "foundation.preference.strictly_preferred",
       "kind": "uses"
     },
@@ -328,8 +403,18 @@
       "kind": "uses"
     },
     {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.utility.positive_affine_uniqueness",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.preference.represents_preference",
       "to": "foundation.utility.positive_affine_uniqueness",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.utility.risk_neutrality",
       "kind": "uses"
     },
     {
@@ -338,8 +423,53 @@
       "kind": "uses"
     },
     {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.abstract_relation",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
       "from": "foundation.utility.vnm_axioms",
       "to": "foundation.utility.sure_thing_principle",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.abstract_relation",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
+      "to": "foundation.utility.vnm_axiom_independence",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.positive_affine_uniqueness",
+      "to": "foundation.utility.vnm_axiom_independence",
       "kind": "uses"
     },
     {
@@ -349,6 +479,11 @@
     },
     {
       "from": "foundation.preference.abstract_relation",
+      "to": "foundation.utility.vnm_axioms",
+      "kind": "uses"
+    },
+    {
+      "from": "foundation.utility.lottery",
       "to": "foundation.utility.vnm_axioms",
       "kind": "uses"
     }
@@ -365,10 +500,31 @@
   "boundary_edges": [
     {
       "from": "topic:math",
+      "to": "foundation.utility.expected_utility_representation",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 3
+    },
+    {
+      "from": "topic:math",
       "to": "foundation.utility.lottery",
       "kind": "boundary_dependency",
       "topic": "math",
       "count": 2
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.risk_neutrality",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
+      "from": "topic:math",
+      "to": "foundation.utility.sure_thing_principle",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
     },
     {
       "from": "topic:math",

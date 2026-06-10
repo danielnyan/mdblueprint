@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 7,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 2,
+    "boundary_topics": 3,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 10,
-    "visible_nodes_with_selected_proof_plans": 10
+    "visible_nodes_without_proof_plans": 11,
+    "visible_nodes_with_selected_proof_plans": 11
   },
   "nodes": [
     {
@@ -82,6 +82,13 @@
   "edges": [],
   "boundary_topics": [
     {
+      "id": "game_theory.strategic_game",
+      "title": "Game Theory.Strategic Game",
+      "href": "game_theory/strategic_game/index.html",
+      "role": "dependency",
+      "node_count": 105
+    },
+    {
       "id": "game_theory.zero_sum",
       "title": "Game Theory.Zero Sum",
       "href": "game_theory/zero_sum/index.html",
@@ -98,8 +105,36 @@
   ],
   "boundary_edges": [
     {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
       "from": "topic:game_theory.zero_sum",
       "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 7
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.applications.strict_dominance_never_best_response",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.zero_sum",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.zero_sum",
+      "to": "game_theory.strategic_game.zero_sum.applications.weak_dominance_never_best_response",
       "kind": "boundary_dependency",
       "topic": "game_theory.zero_sum",
       "count": 1
@@ -109,7 +144,14 @@
       "to": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
       "kind": "boundary_dependency",
       "topic": "math",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "topic:math",
+      "to": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 4
     },
     {
       "from": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",

@@ -12,12 +12,73 @@
   ],
   "body_html": "<h1>Additive Valuation</h1>\n<p>An <em>additive valuation</em> is the standard special case of indivisible\nvaluations in which the value of a bundle is the sum of per-item weights:\n$$\nv_i(S) = \\sum_{g \\in S} w_i(g),\n$$\nwith weights $w_i : G \\to \\mathbb{R}$.</p>\n<p>In Lean: structure <code>SocialChoice.FairDivision.Indivisible.AdditiveValuation N G</code>\nwith one field <code>weight : N → G → ℝ</code>.</p>\n<h2>Lift to abstract valuation</h2>\n<p><code>AdditiveValuation.toValuation</code> lifts to a generic\n[[social_choice.fair_division.indivisible.valuation]]:\n$$\n(w.\\mathrm{toValuation}).\\mathrm{val}\\ i\\ S = \\sum_{g \\in S} w.\\mathrm{weight}\\ i\\ g.\n$$</p>\n<h2>Basic properties</h2>\n<p>Three structural lemmas at the additive layer:</p>\n<ul>\n<li>\n<p><strong><code>toValuation_empty</code></strong> (<code>@[simp]</code>):\n  $w.\\mathrm{toValuation}.\\mathrm{val}\\ i\\ \\emptyset = 0$.</p>\n</li>\n<li>\n<p><strong><code>toValuation_union</code></strong> for disjoint bundles\n  ($\\mathrm{Disjoint}\\ S\\ T$, $[\\mathrm{DecidableEq}\\ G]$):\n  $$\n  v(i, S \\cup T) = v(i, S) + v(i, T).\n  $$</p>\n</li>\n<li>\n<p><strong><code>toValuation_mono</code></strong> for nonnegative weights\n  ($\\forall i\\,g,\\ w(i, g) \\ge 0$, $[\\mathrm{DecidableEq}\\ G]$):\n  $$\n  T \\subseteq S \\;\\Rightarrow\\; v(i, T) \\le v(i, S).\n  $$</p>\n</li>\n</ul>\n<h2>Why additivity matters</h2>\n<p>The implication chain\n([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]],\n[[social_choice.fair_division.indivisible.proportional_implies_mms_additive]])\nneeds additivity to convert a per-bundle inequality\n$v_i(B_j) \\le v_i(A_i)$ into the total-value comparisons that\nproportionality and MMS demand. Monotone but non-additive valuations\nsupport <code>EF → EFX</code> but not <code>EF → PROP</code>. Additive valuations are the\nsweet spot for most positive results in the indivisible setting.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Additive valuations.</li>\n<li>Bouveret, Chevaleyre, and Maudet (2016). \"Fair Allocation of Indivisible Goods\", COMSOC Handbook Ch. 12.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
-  "dependents": [
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
     {
       "id": "social_choice.fair_division.indivisible.cardinal_instance",
       "title": "Indivisible Cardinal Instance",
       "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_proportional_additive",
+      "title": "EF ⇒ PROP (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_proportional_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_exists_two_agents",
+      "title": "EFX Existence — Two Agents, Any Finite Good Set",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_exists_two_agents.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "title": "Envy-Cycle Elimination Algorithm",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value_bounds",
+      "title": "MMS Value — Basic Bounds",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value_bounds.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_alpha_mms_additive",
+      "title": "PROP ⇒ α-MMS (Additive Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_alpha_mms_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.proportional_implies_mms_additive",
+      "title": "PROP ⇒ MMS (Additive Valuations, Complete Allocations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_proportional_implies_mms_additive.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.round_robin_ef1",
+      "title": "Round-Robin Is EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_round_robin_ef1.html"
     }
   ],
   "lean_refs": [

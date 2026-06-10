@@ -99,8 +99,38 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.core",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.cooperative_game.core",
       "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.imputation",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.tu_game",
+      "to": "game_theory.cooperative_game.core_subset_imputations",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.cooperative_game.payoff_vector",
+      "to": "game_theory.cooperative_game.imputation",
       "kind": "uses"
     },
     {

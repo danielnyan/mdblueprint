@@ -13,8 +13,39 @@
   ],
   "body_html": "<h1>Envy Relation and Sources</h1>\n<p>For an indivisible valuation $v$\n([[social_choice.fair_division.indivisible.valuation]]) and allocation\n$A$, the <em>envy relation</em> points from the envier to the envied:\n$$\ni \\to_{\\text{envy}} j \\iff v_i(A(j)) &gt; v_i(A(i)).\n$$</p>\n<p>In Lean: <code>envies v A i j</code>.</p>\n<h2>Basic structural lemmas</h2>\n<ul>\n<li><strong>Irreflexivity.</strong> <code>envies_irrefl</code>: no agent envies themselves\n  ($v_i(A(i)) &gt; v_i(A(i))$ is false).</li>\n<li><strong>Distinct.</strong> <code>envies_ne</code>: $i \\to_{\\text{envy}} j \\Rightarrow i \\ne j$\n  (immediate from irreflexivity).</li>\n</ul>\n<h2>Sources</h2>\n<p>An agent $i$ is an <em>envy-graph source</em> if no other agent envies them:\n$$\n\\mathrm{isSource}(v, A, i) \\iff \\forall j,\\ \\neg (j \\to_{\\text{envy}} i).\n$$</p>\n<p>In Lean: <code>isSource v A i</code>.</p>\n<p>The relation between sources and envy-freeness:\n- <code>IsEnvyFree.isSource_all</code>: if $A$ is envy-free\n  ([[social_choice.fair_division.indivisible.envy_free]]) then <em>every</em>\n  agent is a source.</p>\n<p>Sources play a central role in the envy-cycle elimination algorithm\n([[social_choice.fair_division.indivisible.envy_cycle_algorithm]]):\nfresh items are always given to a source agent, ensuring that the\nrecipient does not generate new envy against themselves.</p>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Envy graph and elimination.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_free",
+      "title": "Indivisible Envy-Free",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    },
     {
       "id": "social_choice.fair_division.indivisible.envy_cycle",
       "title": "Envy Cycle",

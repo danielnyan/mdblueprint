@@ -20,6 +20,11 @@
   ],
   "dependents": [
     {
+      "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "title": "Ex-Ante Equilibrium Predicates",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html"
+    },
+    {
       "id": "mechanism_design.bayesian.ex_ante_revelation_principle",
       "title": "Ex-Ante Revelation Principle Interface",
       "href": "mechanism_design/mechanism_design_bayesian_ex_ante_revelation_principle.html"

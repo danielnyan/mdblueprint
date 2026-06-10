@@ -20,9 +20,104 @@
   ],
   "dependents": [
     {
+      "id": "game_theory.strategic_game.best_response",
+      "title": "Best Response",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_best_response.html"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_extension",
+      "title": "Mixed Extension Of A Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_extension.html"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_strategy",
+      "title": "Mixed Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.correlated.degenerate_correlated_equilibrium",
+      "title": "Degenerate Correlated Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_correlated_degenerate_correlated_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "title": "Solvable Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominance_solvable_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "title": "Nash Equilibria Are Rationalizable",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_nash_is_rationalizable.html"
+    },
+    {
+      "id": "game_theory.strategic_game.dominant_implies_nash",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html"
+    },
+    {
+      "id": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "title": "Nash Existence For Finite Games",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
+    },
+    {
+      "id": "game_theory.strategic_game.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html"
+    },
+    {
+      "id": "game_theory.strategic_game.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_unilateral_deviation.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominant_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.weakly_dominates",
+      "title": "Weak Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_game",
+      "title": "Zero-Sum Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_game.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.zero_sum_nash_value_unique",
       "title": "Nash Payoff Uniqueness in Zero-Sum Games",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_nash_value_unique.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "title": "Payoff Negation in Zero-Sum Games",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.html"
     }
   ],
   "lean_refs": [

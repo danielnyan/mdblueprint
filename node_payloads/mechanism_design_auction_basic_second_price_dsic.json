@@ -12,7 +12,43 @@
   ],
   "body_html": "<h1>Vickrey Truth-Telling Is Dominant</h1>\n<p><strong>Theorem (Vickrey 1961).</strong> In the second-price auction\n([[mechanism_design.auction.basic.second_price_mechanism]]), truthful bidding $b_i = v_i$ is\na weakly dominant strategy for every bidder $i$.</p>\n<p>Formally: for every valuation profile $v : I \\to U$, every bidder $i \\in I$,\nand every opposing bid profile $b : I \\to U$,\n$$\nu_i\\bigl(v,\\; b\\bigr) \\;\\le\\; u_i\\bigl(v,\\; b[i \\mapsto v_i]\\bigr).\n$$</p>",
   "proof_html": "<p>sketch</p>\n<p>The key observation is that $\\mathrm{maxBidExcluding}(b, i)$ is invariant\nunder replacing $b_i$ — the second-highest-bid computation ignores bidder\n$i$'s own bid. Split on whether $i$ is the original winner:</p>\n<ul>\n<li>If $i$ wins under $b$: replacing $b_i$ with $v_i$ either keeps $i$ as the\n  winner (if $v_i \\ge $ all other bids) with the same price, or makes $i$\n  lose with payoff $0$. Either way, payoff does not decrease, because under\n  $b$ the payoff was $v_i - p$ for $p = \\mathrm{maxBidExcluding}(b,i) \\ge 0$\n  in the unfavourable case.</li>\n<li>If $i$ loses under $b$: payoff is $0$. After truthful bidding, $i$ either\n  still loses (payoff $0$) or wins at price $\\mathrm{maxBidExcluding}(b,i)\n  \\le v_i$, giving payoff $\\ge 0$.</li>\n</ul>\n<p>In both cases the truthful payoff weakly dominates.</p>\n<h2>Lean form</h2>\n<ul>\n<li><code>valuation_is_dominant v i b : utility v b i ≤ utility v (Function.update b i (v i)) i</code>\n  states the inequality directly at the utility-function level.</li>\n<li><code>truthful_weakly_dominant v i</code> packages the same fact as\n  <code>IsWeaklyDominant</code> in the strategic game <code>game v</code>\n  ([[game_theory.strategic_game.weakly_dominant_strategy]]).</li>\n<li><code>mechanism_isDSIC</code> lifts the result to the\n  <code>MechanismWithTransfers</code>-level DSIC predicate\n  ([[mechanism_design.basic.dsic_predicate]]):\n  <code>Auction.SecondPrice.mechanism.isDSIC Auction.SecondPrice.utility</code>.</li>\n</ul>\n<h2>Why it matters</h2>\n<p>The Vickrey auction is the canonical example of a non-trivial DSIC\nmechanism. It is the single-item specialisation of VCG\n([[mechanism_design.vcg.truthfulness_and_ir]]): when there is only one\nitem, the Clarke pivot payment equals the second-highest bid, and the\nallocation rule chooses the bidder with the highest reported value.</p>\n<p>The contrast with first-price auctions\n([[mechanism_design.auction.basic.first_price_no_dsic]]) — where truthful bidding is\n<em>not</em> dominant — motivates the broader truthful-mechanism design programme.</p>\n<h2>References</h2>\n<ul>\n<li>[Vickrey 1961] William Vickrey, \"Counterspeculation, Auctions, and\n  Competitive Sealed Tenders\", <em>Journal of Finance</em> 16(1):8–37. Original\n  proof of weak dominance.</li>\n<li>[AGT, Chapter 9, Section 9.3.2, Prop 9.13] Nisan, Roughgarden, Tardos,\n  and Vazirani, <em>Algorithmic Game Theory</em>. Truthfulness of the second-price\n  auction.</li>\n<li>[MFoGT, Chapter 1, Section 1.2.4] Maschler, Solan, and Zamir, <em>Game\n  Theory</em>. Vickrey weak-dominance discussion.</li>\n<li>[Krishna, Chapter 2, Section 2.2] Vijay Krishna, <em>Auction Theory</em>, 2nd\n  ed.. Second-price auction equilibrium\n  analysis.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    }
+  ],
   "dependents": [
     {
       "id": "mechanism_design.auction.basic.reserve_second_price_dsic",

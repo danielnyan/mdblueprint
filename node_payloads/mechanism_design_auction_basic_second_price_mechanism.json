@@ -14,6 +14,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
       "id": "mechanism_design.auction.basic.ordered_bid_utilities",
       "title": "Ordered-Bid Utilities",
       "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html"
@@ -22,9 +27,59 @@
       "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
       "title": "Reserve Second-Price Truth-Telling Is Dominant",
       "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
     }
   ],
   "dependents": [
+    {
+      "id": "math.minimax.antisymmetric_matrix_game_value",
+      "title": "Antisymmetric Matrix Games Have Value",
+      "href": "math/math_minimax_antisymmetric_matrix_game_value.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_no_dsic",
+      "title": "First-Price Fails DSIC",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_no_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
     {
       "id": "mechanism_design.transfer.mechanisms_with_transfers",
       "title": "Mechanisms With Transfers",

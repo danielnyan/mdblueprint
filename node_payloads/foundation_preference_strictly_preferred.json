@@ -13,16 +13,51 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
       "id": "foundation.profile.deviate",
       "title": "Standalone Profile and Unilateral Deviation",
       "href": "foundation/foundation_profile_deviate.html"
+    },
+    {
+      "id": "foundation.utility.lottery",
+      "title": "Lottery",
+      "href": "foundation/utility/foundation_utility_lottery.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
     }
   ],
   "dependents": [
     {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "href": "foundation/foundation_cost_cells.html"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "href": "foundation/foundation_cost_examples_lcs.html"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "href": "foundation/foundation_cost_examples_par_sum.html"
+    },
+    {
       "id": "foundation.preference.indifferent",
       "title": "Indifference Relation",
       "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
     }
   ],
   "lean_refs": [

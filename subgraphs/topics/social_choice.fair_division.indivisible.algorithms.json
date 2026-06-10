@@ -126,7 +126,27 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.indivisible.envies",
+      "to": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle",
+      "to": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle",
+      "to": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "to": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.rotate_bundles",
       "to": "social_choice.fair_division.indivisible.eliminate_all_cycles",
       "kind": "uses"
     },
@@ -141,8 +161,33 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
       "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.indivisible.envy_cycle",
+      "to": "social_choice.fair_division.indivisible.pareto_dom_count",
       "kind": "uses"
     },
     {
@@ -178,6 +223,13 @@
   "boundary_edges": [
     {
       "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
       "to": "social_choice.fair_division.indivisible.best_good",
       "kind": "boundary_dependency",
       "topic": "social_choice",
@@ -185,10 +237,66 @@
     },
     {
       "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.envies",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
       "to": "social_choice.fair_division.indivisible.envy_cycle",
       "kind": "boundary_dependency",
       "topic": "social_choice",
       "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.rotate_bundles",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 2
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.round_robin_alloc",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.indivisible.round_robin_ef1",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
     },
     {
       "from": "topic:social_choice",

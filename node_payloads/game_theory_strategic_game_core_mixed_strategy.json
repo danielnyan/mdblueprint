@@ -11,12 +11,38 @@
   ],
   "body_html": "<h1>Mixed Strategy</h1>\n<p>A mixed strategy for player $i$ is a probability distribution over the strategy\nset \\(S_i\\). When \\(S_i\\) is finite, a mixed strategy is a vector\n\\(x_i \\in \\Delta(S_i)\\) in the standard simplex. Pure strategies are identified\nwith the Dirac measures (point masses) in the corresponding simplex.</p>\n<p>A mixed profile is an element $\\sigma=(\\sigma_i)_{i\\in I}\\in\\prod_{i\\in I}\\Delta(S_i)$.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 3] Maschler, Solan, and Zamir, <em>Game Theory</em>. Mixed strategies and mixed extensions.</li>\n<li>[MFoGT, Section 1.3.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed extensions and pure strategies as Dirac masses.</li>\n<li>[MFoGT, Section 4.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Mixed strategy profile in $\\Delta(S_i)$.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.strategic_game.core.mixed_extension",
       "title": "Mixed Extension Of A Strategic Game",
       "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_extension.html"
+    },
+    {
+      "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.zero_sum_payoff_negation",
+      "title": "Payoff Negation in Zero-Sum Games",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_zero_sum_payoff_negation.html"
     }
   ],
   "lean_refs": [

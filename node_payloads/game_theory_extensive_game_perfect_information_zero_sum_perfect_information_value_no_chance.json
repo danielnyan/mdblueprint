@@ -11,7 +11,38 @@
   ],
   "body_html": "<h1>Value In Finite Zero-Sum Perfect-Information Games (No-Chance)</h1>\n<p>Every finite zero-sum perfect-information game <strong>without chance moves</strong> has a\nvalue, and both players have pure optimal strategies. On <code>GameTree (Fin 2) ℚ</code>\nsatisfying <code>IsZeroSum</code>, the player-0 root value (obtained via backward\ninduction) coincides with the max-min / min-max value, and player-1's value is\nits negation.</p>",
   "proof_html": "<p>Sketch</p>\n<p>Backward induction over the tree. If player 1 moves at a node, the value there\nis the maximum over successor values; if player 2 moves, the minimum. Leaves\ncontribute their payoff directly. Optimal pure strategies are obtained by\nchoosing an optimal successor at each own-move node and then following optimal\nstrategies in the selected subgame.</p>\n<p>The Lean theorem <code>zermelo_determinacy</code> makes the value/optimality precise:\nplaying <code>optStrategy</code>, player 0 secures at least <code>value₀ g</code> and player 1 holds\nplayer 0 to at most <code>value₀ g</code>, so <code>value₀ g</code> is the (max-min = min-max) value\nattained by a pure strategy on both sides. The packaging lemma\n<code>value₀_eq_outcome_and_zeroSum</code> records that <code>optStrategy</code> realizes <code>value₀ g</code>\nand that the value vector is zero-sum (<code>value g 1 = -value₀ g</code>).</p>\n<h2>Scope</h2>\n<p>This is the no-chance specialization of the MFoGT proposition cited below\n(stated there in \"with or without Nature\" form). The variant with chance /\nNature nodes lives at [[zero_sum_perfect_information_value_with_chance]] and is\ngated on <a href=\"https://github.com/gametheoryinlean/EconCSLib/issues/181\">EG-L3 / #181</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 6.2.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Stated in the more general with-or-without-Nature form.</li>\n<li>[Zermelo 1913] <em>Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels</em>.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.backward_induction_value",
+      "title": "Backward Induction Value",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_backward_induction_value.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.determined_game",
+      "title": "Determined Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_determined_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [
     {

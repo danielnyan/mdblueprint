@@ -55,7 +55,18 @@
       "payload": "node_payloads/game_theory_extensive_game_core_strategy_profile_induced_outcome.json"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "game_theory.extensive_game.core.game_tree",
+      "to": "game_theory.extensive_game.core.history_and_subgame",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.extensive_game.core.game_tree",
+      "to": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "kind": "uses"
+    }
+  ],
   "boundary_topics": [
     {
       "id": "game_theory.extensive_game",
@@ -68,31 +79,52 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.core.game_tree",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.core.history_and_subgame",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 5
+    },
+    {
+      "from": "topic:game_theory.extensive_game",
       "to": "game_theory.extensive_game.core.nature_player",
       "kind": "boundary_dependency",
       "topic": "game_theory.extensive_game",
       "count": 1
     },
     {
+      "from": "topic:game_theory.extensive_game",
+      "to": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.extensive_game",
+      "count": 5
+    },
+    {
       "from": "game_theory.extensive_game.core.game_tree",
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
-      "count": 1
+      "count": 11
     },
     {
       "from": "game_theory.extensive_game.core.history_and_subgame",
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
       "to": "topic:game_theory.extensive_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.extensive_game",
-      "count": 2
+      "count": 8
     }
   ],
   "keywords": [

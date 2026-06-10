@@ -14,6 +14,26 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    },
+    {
+      "id": "mechanism_design.transfer.mechanisms_with_transfers",
+      "title": "Mechanisms With Transfers",
+      "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"
+    },
+    {
       "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
       "title": "Multiple-Parameter Transfer Layer",
       "href": "mechanism_design/mechanism_design_transfer_multiple_parameter_transfer_layer.html"
@@ -26,9 +46,39 @@
       "href": "math/math_fixed_point_scarf_lemma.html"
     },
     {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "href": "math/math_linear_programming_strong_complementarity.html"
+    },
+    {
+      "id": "math.linear_programming.strong_duality",
+      "title": "Strong Duality For Linear Programming",
+      "href": "math/math_linear_programming_strong_duality.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
       "id": "mechanism_design.auction.knapsack.environment",
       "title": "Knapsack Auction Environment",
       "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html"
     }
   ],
   "lean_refs": [

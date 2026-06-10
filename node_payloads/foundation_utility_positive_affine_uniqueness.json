@@ -12,12 +12,53 @@
   "proof_html": "<p>Sketch</p>\n<p>The order-preserving direction is immediate from $a&gt;0$. For uniqueness, compare\nthe two representations on degenerate lotteries and use linearity over lotteries\nto extend the affine relation from outcomes to all lotteries.</p>\n<p>The Lean library has the positive-affine relation and its order-preservation and\ninverse lemmas. The full uniqueness theorem for linear utility functionals is\nstill an open theorem target in <code>EconCSLib/Utility/Lottery.lean</code>.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 2, Thm. 2.22] Maschler, Solan, and Zamir, <em>Game Theory</em>. Uniqueness of expected utility up to positive affine transformation.</li>\n<li>[MSZ, Chapter 2, Exercise 2.19] Maschler, Solan, and Zamir, <em>Game Theory</em>. Inverse of a positive affine transformation.</li>\n</ul>",
   "deps": [
     {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
       "id": "foundation.preference.represents_preference",
       "title": "Utility Representation of a Preference",
       "href": "foundation/foundation_preference_represents_preference.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "foundation.cost.cells",
+      "title": "Peak-Memory Cost via the Cells Monoid",
+      "href": "foundation/foundation_cost_cells.html"
+    },
+    {
+      "id": "foundation.cost.examples.lcs",
+      "title": "Worked Example: Longest Common Subsequence DP Grid",
+      "href": "foundation/foundation_cost_examples_lcs.html"
+    },
+    {
+      "id": "foundation.cost.examples.par_sum",
+      "title": "Worked Example: Balanced Parallel Sum Depth",
+      "href": "foundation/foundation_cost_examples_par_sum.html"
+    },
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.utility.risk_neutrality",
+      "title": "Risk Neutrality",
+      "href": "foundation/utility/foundation_utility_risk_neutrality.html"
+    },
+    {
+      "id": "foundation.utility.vnm_axiom_independence",
+      "title": "Independence Of The VNM Axioms",
+      "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "IsPositiveAffineOf",

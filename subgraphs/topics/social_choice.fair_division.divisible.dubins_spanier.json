@@ -95,6 +95,27 @@
       "count": 2
     },
     {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.ds_step",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
+    },
+    {
       "from": "social_choice.fair_division.divisible.cut_exists",
       "to": "topic:social_choice",
       "kind": "boundary_dependent",

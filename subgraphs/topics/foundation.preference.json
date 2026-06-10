@@ -86,6 +86,11 @@
       "from": "foundation.preference.indifferent",
       "to": "foundation.preference.represents_preference",
       "kind": "uses"
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "uses"
     }
   ],
   "boundary_topics": [
@@ -120,6 +125,34 @@
       "count": 1
     },
     {
+      "from": "topic:foundation.utility",
+      "to": "foundation.preference.indifferent",
+      "kind": "boundary_dependency",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "topic:foundation.utility",
+      "to": "foundation.preference.strictly_preferred",
+      "kind": "boundary_dependency",
+      "topic": "foundation.utility",
+      "count": 2
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "topic:foundation",
+      "kind": "boundary_dependent",
+      "topic": "foundation",
+      "count": 3
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
+      "to": "topic:foundation",
+      "kind": "boundary_dependent",
+      "topic": "foundation",
+      "count": 3
+    },
+    {
       "from": "foundation.preference.total_preorder",
       "to": "topic:foundation",
       "kind": "boundary_dependent",
@@ -131,10 +164,24 @@
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",
-      "count": 1
+      "count": 3
+    },
+    {
+      "from": "foundation.preference.indifferent",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 3
     },
     {
       "from": "foundation.preference.represents_preference",
+      "to": "topic:foundation.utility",
+      "kind": "boundary_dependent",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "foundation.preference.strictly_preferred",
       "to": "topic:foundation.utility",
       "kind": "boundary_dependent",
       "topic": "foundation.utility",

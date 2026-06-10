@@ -28,6 +28,31 @@
       "id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
       "title": "Perron-Frobenius For Positive Matrices",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_perron_frobenius_positive_matrix.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.row_drop",
+      "title": "Row-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.weak_duality",
+      "title": "Weak Duality For Loomis Values",
+      "href": "math/math_minimax_loomis_induction_proof_weak_duality.html"
+    },
+    {
+      "id": "math.minimax.loomis_theorem",
+      "title": "Loomis Theorem (Positive B)",
+      "href": "math/math_minimax_loomis_theorem.html"
     }
   ],
   "lean_refs": [

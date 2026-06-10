@@ -27,9 +27,29 @@
   ],
   "dependents": [
     {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.stromquist_preference_sets",
       "title": "Stromquist Preference Sets A(i, j)",
       "href": "social_choice/social_choice_fair_division_divisible_stromquist_preference_sets.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unique_preference_sets",
+      "title": "Stromquist Unique-Preference Sets B(i, j)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unique_preference_sets.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
     }
   ],
   "lean_refs": [

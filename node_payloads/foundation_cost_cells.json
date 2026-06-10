@@ -11,7 +11,23 @@
   ],
   "body_html": "<h1>Peak-Memory Cost via the Cells Monoid</h1>\n<p>Additive cost (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>) cannot express <strong>peak</strong> memory,\nbecause the high-water mark of a sequence of allocations and frees is not the\nsum of the per-step changes. <code>Cells</code> is the cost monoid that fixes this: an\nelement carries a non-negative <code>peak</code> and a signed net <code>delta</code> with the\ninvariant <code>delta ≤ peak</code> (and <code>0 ≤ peak</code>).</p>\n<p>Composition is the <strong>tropical / (max,+)</strong> law that tracks the worst high-water\nmark across a sequence — the peak of the second block is reached <em>after</em> the\nfirst block's net allocation:\n$$\n  (p_1, d_1) \\star (p_2, d_2)\n    \\;=\\; \\bigl(\\max(p_1,\\; d_1 + p_2),\\; d_1 + d_2\\bigr),\n  \\qquad 0 = (0,0).\n$$\nThis is an additive monoid (the EconCSLib <code>CostM</code> framework requires <code>C</code> to be\nan additive monoid), but a <em>non-cancellative</em> one — the <code>⋆</code> above is its <code>+</code>.</p>\n<p>The two generators model allocation and release of <code>n</code> cells:\n$$\n  \\operatorname{alloc} n = (n, n),\n  \\qquad\n  \\operatorname{free} n = (0, -n).\n$$\nAn <code>alloc n</code> raises both the current footprint and the peak by <code>n</code>; a\n<code>free n</code> lowers the net footprint by <code>n</code> while leaving the peak untouched\n(the cells were live at some point).</p>\n<h2>Lean declarations</h2>\n<ul>\n<li><code>Cells</code> — the structure (<code>peak</code>, <code>delta</code>, <code>zero_le_peak</code>, <code>delta_le_peak</code>);\n  its <code>Zero</code>/<code>Add</code>/<code>AddMonoid</code> instances are anonymous.</li>\n<li><code>Cells.alloc</code>, <code>Cells.free</code> — the generators.</li>\n<li>Projection lemmas <code>peak_zero</code>/<code>delta_zero</code>, <code>peak_add</code>/<code>delta_add</code>,\n  <code>peak_alloc</code>/<code>delta_alloc</code>, <code>peak_free</code>/<code>delta_free</code> drive the <code>simp</code>\n  normal form for peak computations.</li>\n</ul>\n<p>The canonical use is the constant-space Boyer–Moore majority vote,\n<a class=\"node-ref\" data-node-id=\"foundation.cost.examples.boyer_moore\" href=\"cost/examples/foundation_cost_examples_boyer_moore.html\">Worked Example: Constant-Space Boyer–Moore Majority</a>, which proves <code>peak ≤ 2</code>\nindependent of input length.</p>\n<h2>References</h2>\n<ul>\n<li>[Danielsson 2008] Nils Anders Danielsson, <em>Lightweight Semiformal Time\n  Complexity Analysis for Purely Functional Data Structures</em>, POPL 2008. Cost\n  monoids for resource analysis (<a class=\"node-ref\" data-node-id=\"foundation.cost.costm\" href=\"cost/foundation_cost_costm.html\">The CostM Complexity Monad</a>).</li>\n</ul>\n<h2>Provenance</h2>\n<ul>\n<li><code>Cells</code> is an EconCSLib addition (no <code>TimeM</code> counterpart upstream), built on\n  the <a href=\"https://github.com/leanprover/cslib\">leanprover/cslib</a>-derived monad\n  core (Apache 2.0).</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "foundation.preference.indifferent",
+      "title": "Indifference Relation",
+      "href": "foundation/foundation_preference_indifferent.html"
+    },
+    {
+      "id": "foundation.preference.strictly_preferred",
+      "title": "Strict Preference Relation",
+      "href": "foundation/foundation_preference_strictly_preferred.html"
+    },
+    {
+      "id": "foundation.utility.positive_affine_uniqueness",
+      "title": "Positive Affine Uniqueness Of Utility",
+      "href": "foundation/utility/foundation_utility_positive_affine_uniqueness.html"
+    }
+  ],
   "dependents": [
     {
       "id": "foundation.cost.examples.boyer_moore",

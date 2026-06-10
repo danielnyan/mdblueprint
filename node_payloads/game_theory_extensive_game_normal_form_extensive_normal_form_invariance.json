@@ -13,9 +13,39 @@
   "proof_html": "<p>Sketch</p>\n<p>The statement is structural rather than an equilibrium theorem. Each elementary\ntransformation preserves the pure strategy sets up to canonical identification and\npreserves the outcome induced by every strategy profile. Chains of these moves\ntherefore preserve the normal form.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 6.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Extensive forms with the same normal form are related by elementary transformations.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.extensive_game.core.game_tree",
+      "title": "Game Tree",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_game_tree.html"
+    },
+    {
+      "id": "game_theory.extensive_game.equilibrium.reached_subgame_nash_restriction",
+      "title": "Reached Subgame Nash Restriction",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_equilibrium_reached_subgame_nash_restriction.html"
+    },
+    {
       "id": "game_theory.extensive_game.normal_form.normal_form_reduction",
       "title": "Normal Form Reduction",
       "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_normal_form_reduction.html"
+    },
+    {
+      "id": "game_theory.extensive_game.normal_form.semi_reduced_normal_form",
+      "title": "Semi-Reduced Normal Form",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_normal_form_semi_reduced_normal_form.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_strategy",
+      "title": "Strategy In A Perfect-Information Game",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_strategy.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "title": "Value In Finite Zero-Sum Perfect-Information Games (With Chance)",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.html"
     }
   ],
   "dependents": [],

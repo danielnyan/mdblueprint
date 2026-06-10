@@ -14,6 +14,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "market_design.matching.one_to_one.matching",
+      "title": "Matching (Partial Bijection)",
+      "href": "market_design/market_design_matching_one_to_one_matching.html"
+    },
+    {
       "id": "market_design.matching.one_to_one.stability",
       "title": "Stability (Individual Rationality + No Blocking Pair)",
       "href": "market_design/market_design_matching_one_to_one_stability.html"

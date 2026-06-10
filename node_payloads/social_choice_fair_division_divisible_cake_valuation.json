@@ -15,9 +15,24 @@
   "deps": [],
   "dependents": [
     {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.measure_valuation",
       "title": "Measure Valuation",
       "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.normalized_iff_probability",
+      "title": "Normalized Measure Valuation ↔ Probability Measure",
+      "href": "social_choice/social_choice_fair_division_divisible_normalized_iff_probability.html"
     }
   ],
   "lean_refs": [

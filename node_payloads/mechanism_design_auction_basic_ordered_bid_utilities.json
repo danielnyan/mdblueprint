@@ -15,9 +15,34 @@
   "deps": [],
   "dependents": [
     {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_no_dsic",
+      "title": "First-Price Fails DSIC",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_no_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
+    {
       "id": "mechanism_design.auction.basic.second_price_mechanism",
       "title": "Second-Price (Vickrey) Mechanism",
       "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "title": "Virtual-Surplus-Maximizing Allocation",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html"
     }
   ],
   "lean_refs": [

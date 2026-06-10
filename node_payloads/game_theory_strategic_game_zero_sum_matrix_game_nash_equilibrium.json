@@ -13,12 +13,72 @@
   "proof_html": "<p>Apply <code>MatrixGame.minimax_optimal_strategies</code> (closed by the\nsimplified-Loomis induction) to obtain $x^\\ast$, $y^\\ast$, and a value $v$\nwith $E_A(x^\\ast, j) \\ge v$ for every pure column $j$ and\n$E_A(i, y^\\ast) \\le v$ for every pure row $i$. By\n<a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"../../math/simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a> this transfers to mixed responses:\n$E_A(x^\\ast, y') \\ge v$ for every $y' \\in \\Delta(J)$ and\n$E_A(x', y^\\ast) \\le v$ for every $x' \\in \\Delta(I)$. Taking $x' = x^\\ast$\nand $y' = y^\\ast$ shows $E_A(x^\\ast, y^\\ast) = v$, and the chain\n$E_A(x, y^\\ast) \\le v = E_A(x^\\ast, y^\\ast) \\le E_A(x^\\ast, y)$ holds for\nevery $x$ and $y$, which is exactly the saddle-point form.</p>\n<h2>Over ℚ and other ordered fields</h2>\n<p>The Loomis existence proof goes through the extreme value theorem on the\ncompact mixed-strategy simplex $\\Delta(I) \\subseteq \\mathbb{R}^{|I|}$. The\nrequired compactness is the standard Heine–Borel statement on $\\mathbb{R}^n$\nand is not available for $\\mathbb{Q}^n$, so <em>that</em> route intrinsically\nproduces real-valued strategies. Existence over $\\mathbb{Q}$ and every other\nlinearly ordered field is nonetheless available, sorry-free, through the\nsymmetrisation route <code>Minimax.minimax</code>\n(<a class=\"node-ref\" data-node-id=\"math.minimax.ordered_field_minimax\" href=\"../../math/minimax/math_minimax_ordered_field_minimax.html\">Ordered-Field Minimax Statement</a>): it embeds the game in a\nskew-symmetric matrix and extracts the saddle point as a pure feasibility\nfact (the Theorem of the Alternative), needing no compactness or\norder-completeness. <code>MatrixGame.exists_mixed_nash_equilibrium</code> is built on\nthat route and is itself field-generic.</p>\n<h2>References</h2>\n<ul>\n<li>[MSZ, Chapter 5, Thm. 5.11 / 5.13] Maschler, Solan, and Zamir, <em>Game Theory</em>. Existence of mixed Nash equilibrium in a finite matrix game via the saddle-point equivalence.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.core.mixed_extension",
+      "title": "Mixed Extension Of A Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_extension.html"
+    },
+    {
+      "id": "game_theory.strategic_game.core.mixed_strategy",
+      "title": "Mixed Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_core_mixed_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.equilibrium.mixed_nash_equilibrium",
+      "title": "Mixed Nash Equilibrium",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_mixed_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.saddle_point",
+      "title": "Saddle Point",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_saddle_point.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "title": "Maximin and Minimax Values",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.mixed_matrix_payoff",
+      "title": "Expected Payoff of a Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_mixed_matrix_payoff.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    },
+    {
+      "id": "math.simplex.bounded_by_value",
+      "title": "Pointwise Bounds Are Simplex Bounds",
+      "href": "math/math_simplex_bounded_by_value.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
     }
   ],
   "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
     {
       "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
       "title": "Strong Complementarity",
@@ -28,6 +88,16 @@
       "id": "math.minimax.antisymmetric_matrix_game_value",
       "title": "Antisymmetric Matrix Games Have Value",
       "href": "math/math_minimax_antisymmetric_matrix_game_value.html"
+    },
+    {
+      "id": "math.minimax.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "math/math_minimax_strong_complementarity.html"
+    },
+    {
+      "id": "math.minimax.zero_sum_nash_saddle",
+      "title": "Zero-Sum Nash Equilibria As Saddle Points",
+      "href": "math/math_minimax_zero_sum_nash_saddle.html"
     }
   ],
   "lean_refs": [

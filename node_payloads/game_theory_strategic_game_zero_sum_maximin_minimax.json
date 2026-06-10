@@ -11,8 +11,29 @@
   ],
   "body_html": "<h1>Maximin and Minimax Values</h1>\n<p>For a mixed row strategy $x$, player I's guarantee is the worst expected payoff\nagainst a pure column:</p>\n<p>$$\\gamma_I(x) = \\min_{j \\in J} E_A(x,j).$$</p>\n<p>For a mixed column strategy $y$, player II's guarantee against player I is the\nlargest payoff player I can obtain from a pure row:</p>\n<p>$$\\gamma_{II}(y) = \\max_{i \\in I} E_A(i,y).$$</p>\n<p>The maximin value is \\(\\sup_x \\gamma_I(x)\\), and the minimax value is\n\\(\\inf_y \\gamma_{II}(y)\\).</p>\n<h2>Abstract pure-strategy form</h2>\n<p>The same definition applies on arbitrary nonempty strategy sets $I, J$ and a\npayoff $g : I \\times J \\to \\mathbb{R}$, with the inner extremum ranging over\n<strong>pure</strong> strategies (no mixing). Then the maxmin is</p>\n<p>$$\n  \\underline v = \\sup_{i \\in I} \\inf_{j \\in J} g(i,j),\n$$</p>\n<p>and the minmax is</p>\n<p>$$\n  \\overline v = \\inf_{j \\in J} \\sup_{i \\in I} g(i,j).\n$$</p>\n<p>The maxmin is the best amount player 1 can guarantee, and the minmax is the\nleast amount player 2 can guarantee as an upper bound on player 1's payoff.\nThe Lean library currently formalises the finite mixed-strategy instantiation\nabove; the abstract form is the common conceptual ancestor and the form used\nwhen reasoning over general (e.g. infinite) strategy spaces.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 2, Definitions 2.2.2-2.2.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Guarantees, maxmin, minmax, and game value.</li>\n<li>[MFoGT, Def. 2.2.3] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Abstract pure-strategy maxmin and minmax (merged from <code>zero_sum.core.maxmin_minmax</code>).</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
     {
       "id": "game_theory.strategic_game.zero_sum.core.duality_gap",
       "title": "Duality Gap In A Matrix Game",
@@ -24,9 +45,19 @@
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_epsilon_optimal_strategy.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
       "title": "Optimal Strategy Sets",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
     },
     {
       "id": "game_theory.strategic_game.zero_sum.core.value",
@@ -37,6 +68,21 @@
       "id": "game_theory.strategic_game.zero_sum.matrix_game_nash_equilibrium",
       "title": "Mixed Nash Equilibrium of a Matrix Game",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "title": "Maximin is Bounded by Minimax",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
     },
     {
       "id": "math.minimax.ordered_field_minimax",

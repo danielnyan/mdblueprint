@@ -14,6 +14,16 @@
   "deps": [],
   "dependents": [
     {
+      "id": "mechanism_design.basic.truthfulness_from_dsic",
+      "title": "Truthfulness From DSIC",
+      "href": "mechanism_design/mechanism_design_basic_truthfulness_from_dsic.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
       "id": "mechanism_design.transfer.mechanisms_with_transfers",
       "title": "Mechanisms With Transfers",
       "href": "mechanism_design/mechanism_design_transfer_mechanisms_with_transfers.html"

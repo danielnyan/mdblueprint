@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 9,
     "proof_plan_nodes": 1,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 1,
+    "boundary_topics": 2,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 11,
-    "visible_nodes_with_selected_proof_plans": 11
+    "visible_nodes_without_proof_plans": 12,
+    "visible_nodes_with_selected_proof_plans": 12
   },
   "nodes": [
     {
@@ -111,11 +111,23 @@
     },
     {
       "from": "mechanism_design.myerson.virtual_value_regularity",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "uses"
+    },
+    {
+      "from": "mechanism_design.myerson.virtual_value_regularity",
       "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "kind": "uses"
     }
   ],
   "boundary_topics": [
+    {
+      "id": "math",
+      "title": "Math",
+      "href": "math/index.html",
+      "role": "dependency",
+      "node_count": 43
+    },
     {
       "id": "mechanism_design",
       "title": "Mechanism Design",
@@ -126,11 +138,25 @@
   ],
   "boundary_edges": [
     {
+      "from": "topic:math",
+      "to": "mechanism_design.myerson.optimal_auction",
+      "kind": "boundary_dependency",
+      "topic": "math",
+      "count": 1
+    },
+    {
       "from": "topic:mechanism_design",
       "to": "mechanism_design.myerson.optimal_auction",
       "kind": "boundary_dependency",
       "topic": "mechanism_design",
-      "count": 1
+      "count": 6
+    },
+    {
+      "from": "topic:mechanism_design",
+      "to": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "kind": "boundary_dependency",
+      "topic": "mechanism_design",
+      "count": 2
     },
     {
       "from": "topic:mechanism_design",

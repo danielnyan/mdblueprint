@@ -13,6 +13,11 @@
   "proof_html": "<p>Sketch</p>\n<p>The singleton set $\\{s\\}$ satisfies\n$$\n  \\{s\\}\\subseteq BR(\\{s\\})\n$$\nbecause every component of $s$ is a best response to the other components. Since\n$S^\\infty$ is the largest set $L$ with $L\\subseteq BR(L)$, it contains $\\{s\\}$.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Cor. 4.5.4] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Every Nash equilibrium is rationalizable.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.dominance.iterated_elimination",
+      "title": "Iterated Elimination Of Strictly Dominated Strategies",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_iterated_elimination.html"
+    },
+    {
       "id": "game_theory.strategic_game.dominance.rationalizable_strategy",
       "title": "Rationalizable Strategy",
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_rationalizable_strategy.html"
@@ -21,6 +26,16 @@
       "id": "game_theory.strategic_game.nash_equilibrium",
       "title": "Nash Equilibrium",
       "href": "game_theory/strategic_game/game_theory_strategic_game_nash_equilibrium.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
     }
   ],
   "dependents": [],

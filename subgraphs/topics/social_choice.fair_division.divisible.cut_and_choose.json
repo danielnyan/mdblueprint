@@ -86,6 +86,11 @@
       "kind": "uses"
     },
     {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "uses"
+    },
+    {
       "from": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
       "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
       "kind": "uses"
@@ -102,6 +107,11 @@
     },
     {
       "from": "social_choice.fair_division.divisible.chooser_envy_free",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "uses"
+    },
+    {
+      "from": "social_choice.fair_division.divisible.cut_and_choose_alloc",
       "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
       "kind": "uses"
     },
@@ -146,6 +156,27 @@
     {
       "from": "topic:social_choice",
       "to": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 1
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 5
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "kind": "boundary_dependency",
+      "topic": "social_choice",
+      "count": 4
+    },
+    {
+      "from": "topic:social_choice",
+      "to": "social_choice.fair_division.divisible.cut_and_choose_partition",
       "kind": "boundary_dependency",
       "topic": "social_choice",
       "count": 1

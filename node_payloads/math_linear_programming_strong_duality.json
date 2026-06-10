@@ -12,8 +12,44 @@
   ],
   "body_html": "<h1>Strong Duality For Linear Programming</h1>\n<h2>Setup</h2>\n<p>Fix a linearly ordered field $\\mathbb{K}$, a finite nonempty index type $I$,\nand $n \\in \\mathbb{N}$. Let $A \\colon I \\times \\mathrm{Fin}\\,n \\to \\mathbb{K}$,\n$b \\colon I \\to \\mathbb{K}$, $c \\colon \\mathrm{Fin}\\,n \\to \\mathbb{K}$.\nConsider the <strong>standard-form linear programming pair</strong>:</p>\n<ul>\n<li><strong>Primal</strong> $\\mathrm{P}$:  $\\min \\langle c, x\\rangle$ subject to\n  $A x \\ge b$ and $x \\ge 0$ (i.e. $x_j \\ge 0$ for every $j \\in \\mathrm{Fin}\\,n$).</li>\n<li><strong>Dual</strong> $\\mathrm{D}$:  $\\max \\langle u, b\\rangle$ subject to\n  $u^{\\mathsf T} A \\le c$ (componentwise, i.e. $\\sum_i u_i A_{ij} \\le c_j$ for\n  every $j$) and $u \\ge 0$.</li>\n</ul>\n<h2>Statements</h2>\n<p><strong>Weak duality.</strong> For every primal-feasible $x$ and dual-feasible $u$,\n$\\langle c, x\\rangle \\ge \\langle u, b\\rangle$.</p>\n<p><strong>Strong duality.</strong> If the primal is feasible and bounded below by\n$d \\in \\mathbb{K}$ (i.e. $\\langle c, x\\rangle \\ge d$ for every primal-feasible\n$x$), then there exists a dual-feasible $u$ with $\\langle u, b\\rangle \\ge d$.</p>\n<p>Combining the two yields that the optimal primal and dual values coincide when\neither exists.</p>",
   "proof_html": "<h3>Weak duality</h3>\n<p>Let $x$ be primal-feasible and $u$ dual-feasible. Weighting the primal\nconstraints by $u \\ge 0$:\n$$\n  \\langle u, A x\\rangle = \\langle u^{\\mathsf T} A, x\\rangle \\le \\langle c, x\\rangle\n$$\n(using $u^{\\mathsf T} A \\le c$ and $x \\ge 0$, so weighting term by term\npreserves $\\le$). And $\\langle u, A x\\rangle \\ge \\langle u, b\\rangle$ from\n$A x \\ge b$ and $u \\ge 0$. Hence $\\langle c, x\\rangle \\ge \\langle u, b\\rangle$.</p>\n<h3>Strong duality</h3>\n<p>Apply the Farkas lemma (<a class=\"node-ref\" data-node-id=\"math.linear_algebra.farkas_lemma\" href=\"linear_algebra/math_linear_algebra_farkas_lemma.html\">Farkas Lemma</a>) to the\n<strong>augmented system</strong> that combines $A x \\ge b$ and $x \\ge 0$. Concretely,\ndefine $A_{\\mathrm{aug}} \\colon (I \\sqcup \\mathrm{Fin}\\,n) \\times \\mathrm{Fin}\\,n\n\\to \\mathbb{K}$ and $b_{\\mathrm{aug}} \\colon I \\sqcup \\mathrm{Fin}\\,n \\to \\mathbb{K}$\nby</p>\n<ul>\n<li>$A_{\\mathrm{aug}}(\\mathrm{inl}\\,i,\\, j) = A_{i,j}$,\n  $b_{\\mathrm{aug}}(\\mathrm{inl}\\,i) = b_i$ for $i \\in I$ (the original rows);</li>\n<li>$A_{\\mathrm{aug}}(\\mathrm{inr}\\,j',\\, j) = [j = j']$\n  (Kronecker delta) and $b_{\\mathrm{aug}}(\\mathrm{inr}\\,j') = 0$ for\n  $j' \\in \\mathrm{Fin}\\,n$ (the unit rows $x_{j'} \\ge 0$).</li>\n</ul>\n<p>Primal feasibility coincides with feasibility of $A_{\\mathrm{aug}}\\,x \\ge\nb_{\\mathrm{aug}}$. By hypothesis, the primal is feasible and bounded below by\n$d$. Farkas yields $u_{\\mathrm{aug}} \\colon I \\sqcup \\mathrm{Fin}\\,n \\to \\mathbb{K}$\nwith $u_{\\mathrm{aug}} \\ge 0$, $u_{\\mathrm{aug}}^{\\mathsf T} A_{\\mathrm{aug}} = c$,\nand $\\langle u_{\\mathrm{aug}}, b_{\\mathrm{aug}}\\rangle \\ge d$.</p>\n<p>Decompose $u_{\\mathrm{aug}} = (u, v)$ with $u \\colon I \\to \\mathbb{K}$ and\n$v \\colon \\mathrm{Fin}\\,n \\to \\mathbb{K}$. The column conditions read</p>\n<ul>\n<li>For each $j \\in \\mathrm{Fin}\\,n$:\n  $\\sum_i u_i A_{i,j} + \\sum_{j'} v_{j'} [j = j'] = c_j$, i.e.\n  $u^{\\mathsf T} A\\, j + v_j = c_j$, i.e. $u^{\\mathsf T} A = c - v$. Since\n  $v \\ge 0$, $u^{\\mathsf T} A \\le c$.</li>\n</ul>\n<p>The RHS condition reads\n$$\n  \\langle u_{\\mathrm{aug}}, b_{\\mathrm{aug}}\\rangle\n    = \\langle u, b\\rangle + \\langle v, 0\\rangle = \\langle u, b\\rangle \\ge d.\n$$</p>\n<p>So $u \\ge 0$, $u^{\\mathsf T} A \\le c$ (dual feasibility), and\n$\\langle u, b\\rangle \\ge d$. This is the required dual-feasible point with\ndual objective at least $d$.</p>\n<h2>Remarks</h2>\n<ul>\n<li>The proof is purely algebraic and constructive: the dual certificate $u$ is\n  built explicitly from the Farkas certificate of the augmented system.</li>\n<li>Works over any linearly ordered field (in particular $\\mathbb{Q}$).</li>\n<li>\"Optimal value\" is not used as a primitive; instead, the theorem is phrased\n  for any lower bound $d$. The primal optimum is recovered by combining strong\n  duality with weak duality:\n  $$\n    \\sup_{u \\text{ dual-feasible}} \\langle u, b\\rangle\n      \\;\\ge\\; d \\quad\\text{whenever}\\quad d \\le \\inf_{x \\text{ primal-feasible}}\\langle c, x\\rangle,\n  $$\n  and weak duality gives the converse inequality.</li>\n</ul>\n<h2>Consequences</h2>\n<ul>\n<li><strong>Complementary slackness</strong>: optimal primal-dual pairs satisfy strict slack\n  conditions on every variable (downstream from this theorem).</li>\n<li><strong>Matrix-game value</strong>: zero-sum value computed via row and column LPs\n  (downstream from this theorem).</li>\n</ul>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 9] Laraki, Renault, and Sorin, <em>Mathematical\n  Foundations of Game Theory</em>.\n  Primal-dual strong duality for linear programming.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "math.linear_algebra.farkas_lemma",
+      "title": "Farkas Lemma",
+      "href": "math/math_linear_algebra_farkas_lemma.html"
+    },
+    {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "title": "Strong Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_strong_complementarity.html"
+    },
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "href": "math/math_linear_programming_strong_complementarity.html"
+    },
     {
       "id": "math.minimax.strong_complementarity",
       "title": "Strong Complementarity",

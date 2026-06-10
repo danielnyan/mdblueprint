@@ -12,8 +12,59 @@
   ],
   "body_html": "<h1>Bayesian Single-Item Auction Framework</h1>\n<p>This node bundles the data definitions used to model a sealed-bid\nsingle-item auction in an incomplete-information environment as a direct\nBayesian mechanism with transfers\n([[mechanism_design.bayesian.bayesian_mechanisms]]).</p>\n<h2>Continuous private-value data</h2>\n<ul>\n<li><code>TypeCDF (ω : ℝ)</code> records a one-dimensional scalar type distribution on\n  the support interval <code>[0, ω]</code>: a CDF <code>F : ℝ → ℝ</code> that is monotone on the\n  support and continuously differentiable on the open interval <code>(0, ω)</code>,\n  with normalisation <code>F(0) = 0</code> and <code>F(ω) = 1</code>.</li>\n<li><code>ContinuousTypeProfile I</code> records a per-agent upper bound <code>ωᵢ</code> and CDF\n  <code>Fᵢ : TypeCDF (ωᵢ)</code>. This is the data structure used to attach\n  Myerson-style regularity assumptions to a Bayesian auction without\n  forcing them into the abstract mechanism layer.</li>\n</ul>\n<h2>Opponent profiles</h2>\n<ul>\n<li><code>OpponentTypeProfile I i</code> is the function space <code>{j // j ≠ i} → ℝ</code> of\n  type reports for everyone except agent <code>i</code>.</li>\n<li><code>profileInsert i z_i</code> glues an opponent profile <code>t₋ᵢ</code> together\n  with agent <code>i</code>'s report <code>z_i</code> to recover a full report profile\n  <code>(∀ _ : I, ℝ)</code>.</li>\n</ul>\n<p>These objects support the <em>interim</em> viewpoint: fixing agent <code>i</code>'s report\nand integrating over opponents' types.</p>\n<h2>Auction structure</h2>\n<p>A <code>BayesianSingleItemAuction I</code> extends <code>SingleParameterMechanism I ℝ</code>\n([[mechanism_design.transfer.single_parameter_transfer_layer]]) with\nBayesian environment data:</p>\n<ul>\n<li><code>prior : Measure (∀ _ : I, ℝ)</code> — the common-knowledge prior on full\n  type profiles, registered as a probability measure.</li>\n<li><code>opponentPrior : (i : I) → Measure (OpponentTypeProfile I i)</code> — explicit\n  per-agent opponent marginals, used to define interim expectations\n  without committing to an independence assumption at the level of\n  measures.</li>\n<li><code>typeData : ContinuousTypeProfile I</code> — the per-agent CDFs and supports\n  for Myerson-style analysis.</li>\n</ul>\n<p>The reuse pattern is:</p>\n<ul>\n<li><code>allocationRule t i : ℝ</code> — agent <code>i</code>'s winning probability at report\n  profile <code>t</code>, inherited from the single-parameter mechanism.</li>\n<li><code>paymentRule t i : ℝ</code> — agent <code>i</code>'s payment at report profile <code>t</code>.</li>\n<li><code>toDirectBayesianMechanismWithTransfers</code> exposes the auction as a\n  <code>DirectBayesianMechanismWithTransfers I (fun _ =&gt; ℝ) (I → ℝ) ℝ</code>, so\n  Bayesian ex-ante / interim machinery from\n  ([[mechanism_design.bayesian.bayesian_mechanisms]]) applies.</li>\n</ul>\n<h2>Feasibility</h2>\n<p>For probabilistic single-item allocation, two constraints matter:</p>\n<ul>\n<li><code>IsAllocFeasible</code> (inherited): every <code>allocationRule t i</code> lies in\n  <code>[0, 1]</code>.</li>\n<li><code>RespectsSingleItemCapacity</code>: for every report profile,\n  $\\sum_i x_i(t) \\le 1$ — at most one item is allocated in expectation.</li>\n<li><code>IsFeasible</code> is the conjunction.</li>\n</ul>\n<h2>Density layer (assuming independence)</h2>\n<p>When the prior is independent across agents, <code>typeDensity i</code> returns the\nderivative of <code>Fᵢ</code>, and <code>jointDensity t = ∏ᵢ fᵢ(tᵢ)</code> is the product\ndensity. These are convenience helpers for density-based analysis; the\ncore mechanism layer does not require independence.</p>\n<h2>Product priors</h2>\n<p><code>productPrior</code> and <code>opponentProductPrior</code> build the full type prior and\nopponent priors from the one-dimensional density-induced measures. The\npredicate <code>HasIndependentTypePriors</code> records when the auction's stored priors\nare exactly these product priors.</p>\n<h2>Position in the library</h2>\n<p>The single-parameter Myerson payment identity\n([[mechanism_design.myerson.payment_formula]]) and the ex-ante revelation\nprinciple ([[mechanism_design.bayesian.ex_ante_revelation_principle]])\nboth apply to instances of this framework. Concrete IPV models such as\nthe symmetric first-price equilibrium and Myerson's optimal auction are\ntracked separately ([[mechanism_design.auction.bayesian.symmetric_first_price_equilibrium]],\n[[mechanism_design.myerson.optimal_auction]]).</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Chapter 12, Section 12.1] Maschler, Solan, and Zamir, <em>Game\n  Theory</em>. IPV setting for single-object\n  auctions.</li>\n<li>[Krishna, Chapters 2–3] Vijay Krishna, <em>Auction Theory</em>, 2nd ed.. Continuous-type private-value model\n  with CDFs and densities.</li>\n<li>[AGT, Chapter 9, Section 9.5] Nisan, Roughgarden, Tardos, and Vazirani,\n  <em>Algorithmic Game Theory</em>.\n  Single-parameter Bayesian mechanism design.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    },
+    {
+      "id": "mechanism_design.auction.knapsack.environment",
+      "title": "Knapsack Auction Environment",
+      "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.ex_ante_equilibrium_predicates",
+      "title": "Ex-Ante Equilibrium Predicates",
+      "href": "mechanism_design/mechanism_design_bayesian_ex_ante_equilibrium_predicates.html"
+    },
+    {
+      "id": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "title": "Single-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_single_parameter_transfer_layer.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "math.linear_algebra.theorem_of_alternative",
+      "title": "Theorem Of The Alternative",
+      "href": "math/math_linear_algebra_theorem_of_alternative.html"
+    },
+    {
+      "id": "math.linear_programming.strong_complementarity",
+      "title": "Strong Complementarity For Linear Programming",
+      "href": "math/math_linear_programming_strong_complementarity.html"
+    },
+    {
+      "id": "math.linear_programming.strong_duality",
+      "title": "Strong Duality For Linear Programming",
+      "href": "math/math_linear_programming_strong_duality.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    },
     {
       "id": "mechanism_design.auction.bayesian.interim_and_ic",
       "title": "Bayesian Single-Item Auction Interim Quantities And IC",
@@ -23,6 +74,16 @@
       "id": "mechanism_design.auction.knapsack.environment",
       "title": "Knapsack Auction Environment",
       "href": "mechanism_design/mechanism_design_auction_knapsack_environment.html"
+    },
+    {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html"
+    },
+    {
+      "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
+      "title": "Virtual-Surplus-Maximizing Allocation",
+      "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html"
     },
     {
       "id": "mechanism_design.myerson.virtual_value_regularity",

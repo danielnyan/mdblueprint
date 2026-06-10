@@ -118,6 +118,11 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.dominance.iterated_elimination",
+      "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.dominance.rationalizable_strategy",
       "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
       "kind": "uses"
@@ -128,12 +133,32 @@
       "kind": "uses"
     },
     {
+      "from": "game_theory.strategic_game.dominance.dominated_strategy",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.strictly_dominates",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.dominance.dominated_strategy",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
       "from": "game_theory.strategic_game.strictly_dominant_strategy",
       "to": "game_theory.strategic_game.strictly_dominates",
       "kind": "uses"
     },
     {
       "from": "game_theory.strategic_game.weakly_dominant_strategy",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "uses"
+    },
+    {
+      "from": "game_theory.strategic_game.weakly_dominates",
       "to": "game_theory.strategic_game.strictly_dominates",
       "kind": "uses"
     },
@@ -167,45 +192,73 @@
   "boundary_edges": [
     {
       "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.dominance.dominance_solvable_game",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 2
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.dominance.dominated_strategy",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.dominance.iterated_elimination",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.dominance.nash_is_rationalizable",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
+      "count": 3
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.dominance.rationalizable_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
       "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.strictly_dominant_strategy",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 1
+    },
+    {
+      "from": "topic:game_theory.strategic_game",
+      "to": "game_theory.strategic_game.strictly_dominates",
+      "kind": "boundary_dependency",
+      "topic": "game_theory.strategic_game",
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.weakly_dominant_strategy",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "topic:game_theory.strategic_game",
       "to": "game_theory.strategic_game.weakly_dominates",
       "kind": "boundary_dependency",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 3
     },
     {
       "from": "game_theory.strategic_game.weakly_dominant_strategy",
       "to": "topic:game_theory.strategic_game",
       "kind": "boundary_dependent",
       "topic": "game_theory.strategic_game",
-      "count": 1
+      "count": 2
     },
     {
       "from": "game_theory.strategic_game.dominance.iterated_elimination",

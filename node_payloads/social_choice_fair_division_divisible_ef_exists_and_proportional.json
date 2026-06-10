@@ -14,9 +14,39 @@
   "proof_html": "<p>A two-step composition:</p>\n<ol>\n<li>\n<p>Stromquist's EF existence\n   ([[social_choice.fair_division.divisible.ef_exists]]) yields an EF\n   allocation $A$.</p>\n</li>\n<li>\n<p>EF implies proportional for measure valuations\n   ([[social_choice.fair_division.divisible.ef_implies_proportional]])\n   gives the proportionality bound on the same $A$.</p>\n</li>\n</ol>\n<h2>Why list this as a separate node</h2>\n<p>Two reasons:</p>\n<ul>\n<li>Many downstream contexts want a single statement asserting both\n  fairness notions hold together (typical for textbook statements of\n  \"fair division exists for cake-cutting\").</li>\n<li>It exposes the <em>strength gap</em> between EF and PROP in the divisible\n  setting: PROP is implied by EF here for free, whereas in the\n  indivisible setting the implication only holds for additive\n  valuations on complete allocations\n  ([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]])\n  and EF itself need not exist.</li>\n</ul>\n<p>The bundled-instance form sits in\n[[social_choice.fair_division.divisible.measure_instance_existence]].</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.ef_exists",
       "title": "Envy-Free Existence (Stromquist, n Agents)",
       "href": "social_choice/social_choice_fair_division_divisible_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "title": "EF ⇒ Proportional (Measure Valuations)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_implies_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
     }
   ],
   "dependents": [

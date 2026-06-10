@@ -15,6 +15,16 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "mechanism_design.auction.basic.ordered_bid_utilities",
+      "title": "Ordered-Bid Utilities",
+      "href": "mechanism_design/mechanism_design_auction_basic_ordered_bid_utilities.html"
+    },
+    {
+      "id": "mechanism_design.auction.bayesian.single_item_framework",
+      "title": "Bayesian Single-Item Auction Framework",
+      "href": "mechanism_design/mechanism_design_auction_bayesian_single_item_framework.html"
+    },
+    {
       "id": "mechanism_design.myerson.virtual_value_regularity",
       "title": "Virtual Values and Regularity",
       "href": "mechanism_design/mechanism_design_myerson_virtual_value_regularity.html"

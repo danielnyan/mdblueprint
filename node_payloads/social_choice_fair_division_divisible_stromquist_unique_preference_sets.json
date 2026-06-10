@@ -15,9 +15,19 @@
   "proof_html": "<p>The defining condition is a conjunction of $n - 1$ strict\ninequalities, each of which cuts out an open half-space because both\nsides are continuous\n([[social_choice.fair_division.divisible.stromquist_value_continuous]]).\nA finite intersection of open sets is open.</p>\n<h2>Pairwise disjoint across pieces at a fixed agent</h2>\n<p><code>strom_B_disjoint_over_i</code>: for fixed $j$, the family\n$\\{B(i, j) : i \\in \\mathrm{Fin}\\ n\\}$ is pairwise disjoint.</p>\n<p><em>Proof.</em> If $x \\in B(i_1, j) \\cap B(i_2, j)$ with $i_1 \\ne i_2$, then\nagent $j$ has piece $i_1$ as their unique value-maximizer (the $B(i_1, j)$\nmembership) <em>and</em> piece $i_2$ as their unique value-maximizer (the\n$B(i_2, j)$ membership). Two distinct pieces cannot both be a unique\nmaximizer, contradiction.</p>\n<p>The intuitive content: each agent uniquely prefers at most one piece at\nany given division.</p>\n<h2>Role in the proof</h2>\n<p>The KKM-style argument in Stromquist's proof needs <em>open</em> covers (for\ncompactness) and a way to extract a <em>bijection</em> between pieces and\nagents (for the EF assignment). The pair\n$(\\text{open } B(i, j),\\ \\text{disjoint across } j)$ is exactly this\ndata:</p>\n<ul>\n<li><em>Openness</em> feeds the KKM lemma.</li>\n<li><em>Disjointness</em> across pieces at a fixed agent makes the assignment\n  function $\\text{piece} \\to \\text{agent}$ injective: if two pieces had\n  the same claimant agent, that agent would uniquely prefer both, a\n  contradiction. Injectivity plus counting then forces the assignment to\n  be a bijection.</li>\n</ul>\n<p>The aggregated <em>agent-preference union</em>\n([[social_choice.fair_division.divisible.stromquist_U]]) takes\n$U(i) = \\bigcup_j B(i, j)$, which inherits openness from each $B(i, j)$.</p>\n<h2>References</h2>\n<ul>\n<li>Stromquist, W. (1980). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 87: 640–644.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.stromquist_preference_sets",
       "title": "Stromquist Preference Sets A(i, j)",
       "href": "social_choice/social_choice_fair_division_divisible_stromquist_preference_sets.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_value_continuous",
+      "title": "Piece-Value Function Is Continuous on the Division Simplex",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_value_continuous.html"
     }
   ],
   "dependents": [
@@ -25,6 +35,21 @@
       "id": "social_choice.fair_division.divisible.stromquist_U",
       "title": "Stromquist Agent-Preference Union U(i)",
       "href": "social_choice/social_choice_fair_division_divisible_stromquist_U.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_assignment",
+      "title": "Fair Assignment from a Common KKM Point",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_assignment.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
     }
   ],
   "lean_refs": [

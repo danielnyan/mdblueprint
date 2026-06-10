@@ -15,6 +15,21 @@
   "proof_html": "<p>Constructively: pick a fair cut point $t$ via\n[[social_choice.fair_division.divisible.fair_cut_exists]], use it in the\ncut-and-choose protocol to produce\n$A = \\mathrm{cutAndChooseAlloc}\\ \\mu\\ t$, and verify EF via\n[[social_choice.fair_division.divisible.cut_and_choose_envy_free]].</p>\n<p>The result is a <em>contiguous</em> EF allocation — each agent receives a single\ninterval, not a fragmented set. This stronger conclusion sets the stage\nfor Stromquist's $n$-agent generalization\n([[social_choice.fair_division.divisible.ef_exists]]), which also\nproduces contiguous EF allocations.</p>\n<h2>References</h2>\n<ul>\n<li>Steinhaus, H. (1948). \"The Problem of Fair Division\". <em>Econometrica</em>.</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>, Ch. 1.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_alloc.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
       "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
       "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
@@ -25,9 +40,24 @@
       "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_partition.html"
     },
     {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.fair_cut_exists",
       "title": "Fair Cut Point Exists",
       "href": "social_choice/social_choice_fair_division_divisible_fair_cut_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
     }
   ],
   "dependents": [],

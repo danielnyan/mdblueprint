@@ -32,6 +32,26 @@
   ],
   "dependents": [
     {
+      "id": "social_choice.fair_division.indivisible.acyclic_has_source",
+      "title": "Acyclic Envy Graph Has a Source",
+      "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
+      "title": "Eliminate All Envy Cycles",
+      "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.pareto_dom_count",
+      "title": "Pareto-Domination Count Termination Measure",
+      "href": "social_choice/social_choice_fair_division_indivisible_pareto_dom_count.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.rotate_bundles",
       "title": "Bundle Rotation",
       "href": "social_choice/social_choice_fair_division_indivisible_rotate_bundles.html"

@@ -15,9 +15,29 @@
   "proof_html": "<p>sketch</p>\n<p>Standard finite-DAG argument: an irreflexive relation on a finite\nnonempty set with no cycles must have a minimal element. The Lean proof\nshows the contrapositive — if no agent is a source, follow envy edges\nbackwards from any starting agent; by finiteness and the pigeonhole\nprinciple, eventually the path revisits an agent, producing a cycle.</p>\n<h2>Computable witness</h2>\n<p><code>findSource</code> (noncomputable) — a deterministic procedure that returns\nan agent guaranteed to be a source whenever one exists. The companion\ncorrectness lemma <code>findSource_isSource</code> shows that the returned agent\nsatisfies <code>isSource</code>.</p>\n<h2>Use in the algorithm</h2>\n<p>After <code>eliminateAllCycles</code>\n([[social_choice.fair_division.indivisible.eliminate_all_cycles]])\nremoves all envy cycles, this theorem guarantees that some agent is a\nsource. That agent receives the next item to assign, ensuring no fresh\nenvy is created against them. This is the key invariant used in\nproving EF1 of the envy-cycle algorithm\n([[social_choice.fair_division.indivisible.envy_cycle_ef1]]).</p>\n<h2>References</h2>\n<ul>\n<li>Lipton, Markakis, Mossel, and Saberi (2004). \"On Approximately Fair Allocations of Indivisible Goods\". <em>EC</em>. Source existence in acyclic envy graphs.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.eliminate_all_cycles",
       "title": "Eliminate All Envy Cycles",
       "href": "social_choice/social_choice_fair_division_indivisible_eliminate_all_cycles.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envies",
+      "title": "Envy Relation and Sources",
+      "href": "social_choice/social_choice_fair_division_indivisible_envies.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
   "dependents": [
@@ -25,6 +45,11 @@
       "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
       "title": "Envy-Cycle Elimination Algorithm",
       "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
     }
   ],
   "lean_refs": [

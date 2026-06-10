@@ -23,6 +23,16 @@
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
     },
     {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategy_profile",
+      "title": "Strategy Profile",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategy_profile.html"
+    },
+    {
       "id": "game_theory.strategic_game.weakly_dominates",
       "title": "Weak Dominance",
       "href": "game_theory/strategic_game/game_theory_strategic_game_weakly_dominates.html"
@@ -33,6 +43,11 @@
       "id": "game_theory.strategic_game.dominant_implies_nash",
       "title": "Dominant Strategy Profile is a Nash Equilibrium",
       "href": "game_theory/strategic_game/game_theory_strategic_game_dominant_implies_nash.html"
+    },
+    {
+      "id": "game_theory.strategic_game.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_prisoners_dilemma.html"
     },
     {
       "id": "game_theory.strategic_game.strictly_dominates",

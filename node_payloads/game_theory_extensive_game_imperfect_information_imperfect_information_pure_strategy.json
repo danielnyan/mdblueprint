@@ -20,6 +20,11 @@
   ],
   "dependents": [
     {
+      "id": "game_theory.extensive_game.core.strategy_profile_induced_outcome",
+      "title": "Strategy Profile And Induced Outcome",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_core_strategy_profile_induced_outcome.html"
+    },
+    {
       "id": "game_theory.extensive_game.imperfect_information.action_at_information_set",
       "title": "Action At An Information Set",
       "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_action_at_information_set.html"

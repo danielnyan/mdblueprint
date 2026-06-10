@@ -11,7 +11,23 @@
   ],
   "body_html": "<h1>Strictly Dominant Strategy</h1>\n<p>A strategy $s_i$ is strictly dominant for player $i$ if it strictly dominates\nevery other strategy available to $i$:</p>\n<p>$$\\forall s'_i \\neq s_i, \\quad s_i \\text{ strictly dominates } s'_i.$$</p>\n<p>A strictly dominant strategy is in particular weakly dominant\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.weakly_dominant_strategy\" href=\"game_theory_strategic_game_weakly_dominant_strategy.html\">Weakly Dominant Strategy</a>); the Lean\ncompanion lemma <code>IsStrictlyDominant.isWeaklyDominant</code> records this and lives with\n<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.strictly_dominates\" href=\"game_theory_strategic_game_strictly_dominates.html\">Strict Dominance</a>.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 1.3.2] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Strictly dominant and dominant strategies.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.dominance.dominated_strategy",
+      "title": "Dominated Strategy",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_dominance_dominated_strategy.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strategic_game",
+      "title": "Strategic Game",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strategic_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.strictly_dominates",
+      "title": "Strict Dominance",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_strictly_dominates.html"
+    }
+  ],
   "dependents": [
     {
       "id": "game_theory.strategic_game.strictly_dominates",

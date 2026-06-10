@@ -28,6 +28,11 @@
       "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
     }
   ],
   "lean_refs": [

@@ -13,14 +13,69 @@
   "proof_html": "<p>By the minimax theorem, at least one mixed row $x$ and one mixed column\n$y$ attain the common value $v=\\operatorname{val}(A)$, so $X(A)$ and $Y(A)$ are\nnonempty. The row player's optimal set is\n$$\n  X(A)=\\{x\\in\\Delta(I): xAe_j\\ge v\\text{ for every }j\\in J\\}.\n$$\nThis is the intersection of the simplex $\\Delta(I)$ with finitely many closed\nhalf-spaces, hence a polytope. Similarly,\n$$\n  Y(A)=\\{y\\in\\Delta(J): e_iAy\\le v\\text{ for every }i\\in I\\},\n$$\nagain an intersection of the simplex with finitely many closed half-spaces.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 2.4.1(a)] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Nonemptiness and polytope structure of optimal strategy sets.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
       "title": "Optimal Pairs Are Exactly Saddle Points",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
     },
     {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets",
+      "title": "Optimal Strategy Sets",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
       "title": "Maximin is Bounded by Minimax",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_le_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
+      "title": "Maximin and Minimax Values",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "title": "Von Neumann Minimax Theorem",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_von_neumann_minimax.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.value_existence",
+      "title": "Existence of Loomis Optimisers",
+      "href": "math/math_minimax_loomis_induction_proof_value_existence.html"
+    },
+    {
+      "id": "math.minimax.ordered_field_minimax",
+      "title": "Ordered-Field Minimax Statement",
+      "href": "math/math_minimax_ordered_field_minimax.html"
+    },
+    {
+      "id": "math.simplex.pure",
+      "title": "Point Mass on the Standard Simplex",
+      "href": "math/math_simplex_pure.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
+    },
+    {
+      "id": "math.simplex.wsum_comm",
+      "title": "Iterated Weighted Sums Commute",
+      "href": "math/math_simplex_wsum_comm.html"
     }
   ],
   "dependents": [],

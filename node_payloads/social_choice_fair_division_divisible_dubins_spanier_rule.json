@@ -15,6 +15,16 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.ds_step",
       "title": "Dubins–Spanier Inductive Step",
       "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
@@ -23,6 +33,16 @@
       "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
       "title": "Dubins–Spanier Proportional Existence",
       "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
     }
   ],
   "dependents": [],

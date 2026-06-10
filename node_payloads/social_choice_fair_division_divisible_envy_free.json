@@ -12,12 +12,103 @@
   ],
   "body_html": "<h1>Divisible Envy-Free, Proportional, Equitable Predicates</h1>\n<p>Three fairness predicates specialised to divisible allocations\n([[social_choice.fair_division.divisible.allocation]]) under a cake\nvaluation $\\mathrm{cv}$ ([[social_choice.fair_division.divisible.cake_valuation]]).</p>\n<h2>Envy-Free (EF)</h2>\n<p>$$\n\\forall i, j \\in N,\\ \\mathrm{cv}(i, A(j)) \\le \\mathrm{cv}(i, A(i)).\n$$</p>\n<p>In Lean: <code>Divisible.IsEnvyFree</code>. Requires only <code>[Preorder V]</code> on the value\ntype.</p>\n<p>For divisible goods with non-atomic measures, EF allocations always exist\n(Stromquist; [[social_choice.fair_division.divisible.ef_exists]]). This is\nthe central difference from the indivisible setting\n([[social_choice.fair_division.indivisible.envy_free]]), where EF may fail\nto exist.</p>\n<h2>Proportional (PROP)</h2>\n<p>For a population size parameter $n$,\n$$\n\\forall i \\in N,\\ \\mathrm{cv}(i, \\Omega) \\le n \\cdot \\mathrm{cv}(i, A(i)).\n$$</p>\n<p>Stated without division so it makes sense over any <code>[Semiring V]</code>. In\nLean: <code>Divisible.IsProportional</code>.</p>\n<h2>Equitable</h2>\n<p>Every agent assigns the same value to their own piece:\n$$\n\\forall i, j \\in N,\\ \\mathrm{cv}(i, A(i)) = \\mathrm{cv}(j, A(j)).\n$$</p>\n<p>In Lean: <code>Divisible.IsEquitable</code>. Comparable across agents only with\nnormalized cake valuations\n([[social_choice.fair_division.divisible.normalized_iff_probability]]).</p>\n<p>These three are exactly the generic\n([[social_choice.fair_division.envy_free]],\n[[social_choice.fair_division.proportional]],\n[[social_choice.fair_division.equitable]]) predicates re-stated with\n$\\mathrm{cv}.val$ in place of an opaque utility function, so the shape\nmatches downstream measure-theoretic proofs.</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Fairness for cake cutting.</li>\n<li>Procaccia, A. D. (2013). \"Cake Cutting: Not Just Child's Play\".</li>\n<li>Robertson, J. M. and Webb, W. A. (1998). <em>Cake-Cutting Algorithms</em>.</li>\n</ul>",
   "proof_html": null,
-  "deps": [],
-  "dependents": [
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cake_valuation",
+      "title": "Cake Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_cake_valuation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
     {
       "id": "social_choice.fair_division.divisible.measure_instance",
       "title": "Divisible Measure Instance",
       "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "href": "social_choice/social_choice_fair_division_divisible_cut_and_choose_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "href": "social_choice/social_choice_fair_division_divisible_ds_step.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "title": "Dubins–Spanier as a Rule on Measure Instances",
+      "href": "social_choice/social_choice_fair_division_divisible_dubins_spanier_rule.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists",
+      "title": "Envy-Free Existence (Stromquist, n Agents)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "title": "EF + Proportional Existence (Stromquist Corollary)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists_and_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "title": "EF ⇒ Proportional (Measure Valuations)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_implies_proportional.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+      "title": "Measure-Instance EF ↔ Real-Valued Cardinal EF",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_ef_iff_real.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_existence",
+      "title": "Measure-Instance Existence Wrappers",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance_existence.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.proportional_exists",
+      "title": "Proportional Existence on [0,1] (n Agents)",
+      "href": "social_choice/social_choice_fair_division_divisible_proportional_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_unusual_case",
+      "title": "Stromquist — Unusual Case (Shifted-Cell Limit)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_unusual_case.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.stromquist_usual_case",
+      "title": "Stromquist — Usual Case (U Covers the Simplex)",
+      "href": "social_choice/social_choice_fair_division_divisible_stromquist_usual_case.html"
     }
   ],
   "lean_refs": [

@@ -13,9 +13,49 @@
   "proof_html": "<p>(i) Each coordinate $x \\mapsto (xA)_j$ and $x \\mapsto (xB)_j$ is a continuous\nlinear functional on $\\Delta(I)$. Their quotient is continuous because the\ndenominator is strictly positive\n(<a class=\"node-ref\" data-node-id=\"math.minimax.loomis_induction_proof.positive_aggregate\" href=\"minimax/loomis_induction_proof/math_minimax_loomis_induction_proof_positive_aggregate.html\">Positive Aggregates xB and By</a>). The\nfinite infimum of continuous functions over the finite set $J$ is continuous.\nThe argument for $\\mu_\\mathrm{aux}$ is dual.</p>\n<p>(ii) Each ratio $(xA)_j / (xB)_j$ is bounded above by the obvious extreme\n$M_A / m_B$, where $M_A := \\max_{i, j} A_{ij}$ and $m_B := \\min_{i, j} B_{ij}</p>\n<blockquote>\n<p>0$. So $\\lambda_\\mathrm{aux} \\le M_A / m_B$. Symmetrically,\n$\\mu_\\mathrm{aux} \\ge m_A / M_B$ where $m_A := \\min_{i, j} A_{ij}$ and\n$M_B := \\max_{i, j} B_{ij}$.</p>\n</blockquote>\n<p>(iii) $\\Delta(I)$ is compact in $\\mathbb{R}^{|I|}$, and the continuous\nfunction $\\lambda_\\mathrm{aux}$ attains its supremum on a compact set\n(extreme-value theorem). Let $x_0$ be a maximiser; then\n$\\lambda_\\mathrm{aux}(x_0) = \\lambda_0$, which by definition of the\ninfimum-over-$j$ gives $(x_0 A)_j / (x_0 B)_j \\ge \\lambda_0$ for every $j$,\ni.e. $(x_0 A)_j \\ge \\lambda_0 (x_0 B)_j$ (multiplying by the strictly\npositive $(x_0 B)_j$). The $\\mu_0$ side is dual.</p>\n<p>The compact/continuous building blocks (<a class=\"node-ref\" data-node-id=\"math.simplex.continuity\" href=\"simplex/math_simplex_continuity.html\">Continuity on the Real Standard Simplex</a>\nand <a class=\"node-ref\" data-node-id=\"math.simplex.bounded_by_value\" href=\"simplex/math_simplex_bounded_by_value.html\">Pointwise Bounds Are Simplex Bounds</a>) live in the core simplex\nlayer; this lemma extends the $B = \\mathbf{1}$ case\n(<a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.lam_mu_existence\" href=\"../game_theory/strategic_game/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html\">Existence of Optimal Mixed Strategies (Loomis Foundations)</a>) to general positive $B$ by composing\nwith positive division. $\\square$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.5] Laraki, Renault, and Sorin, <em>Mathematical Foundations\n  of Game Theory</em>. Compactness\n  step for the Loomis ratios.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.extensive_game.imperfect_information.subroot_subgame",
+      "title": "Subroot And Subgame In Imperfect-Information Games",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_imperfect_information_subroot_subgame.html"
+    },
+    {
+      "id": "game_theory.extensive_game.perfect_information.perfect_information_extensive_game",
+      "title": "Finite Extensive Game With Perfect Information",
+      "href": "game_theory/extensive_game/game_theory_extensive_game_perfect_information_perfect_information_extensive_game.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+      "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.positive_aggregate",
+      "title": "Positive Aggregates xB and By",
+      "href": "math/math_minimax_loomis_induction_proof_positive_aggregate.html"
+    },
+    {
+      "id": "math.simplex.bounded_by_value",
+      "title": "Pointwise Bounds Are Simplex Bounds",
+      "href": "math/math_simplex_bounded_by_value.html"
+    },
+    {
+      "id": "math.simplex.continuity",
+      "title": "Continuity on the Real Standard Simplex",
+      "href": "math/math_simplex_continuity.html"
+    },
+    {
       "id": "math.simplex.mix",
       "title": "Convex Combination of Simplex Points",
       "href": "math/math_simplex_mix.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
     }
   ],
   "dependents": [
@@ -25,14 +65,54 @@
       "href": "foundation/utility/foundation_utility_vnm_axiom_independence.html"
     },
     {
+      "id": "game_theory.strategic_game.equilibrium.nash_existence_finite_games",
+      "title": "Nash Existence For Finite Games",
+      "href": "game_theory/strategic_game/game_theory_strategic_game_equilibrium_nash_existence_finite_games.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.applications.stochastic_matrix_invariant_distribution",
+      "title": "Stochastic Matrix Has An Invariant Distribution",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_applications_stochastic_matrix_invariant_distribution.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_pairs_are_saddle_points",
+      "title": "Optimal Pairs Are Exactly Saddle Points",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_pairs_are_saddle_points.html"
+    },
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets_are_polytopes",
+      "title": "Optimal Strategy Sets Are Polytopes",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_optimal_strategy_sets_are_polytopes.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
       "title": "Existence of Optimal Mixed Strategies (Loomis Foundations)",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_lam_mu_existence.html"
     },
     {
+      "id": "math.minimax.common_guarantee_value",
+      "title": "Common Guarantee Gives The Value",
+      "href": "math/math_minimax_common_guarantee_value.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.row_drop",
       "title": "Row-Drop Step of Loomis Induction",
       "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_induction_proof.weak_duality",
+      "title": "Weak Duality For Loomis Values",
+      "href": "math/math_minimax_loomis_induction_proof_weak_duality.html"
+    },
+    {
+      "id": "math.minimax.loomis_theorem",
+      "title": "Loomis Theorem (Positive B)",
+      "href": "math/math_minimax_loomis_theorem.html"
     },
     {
       "id": "social_choice.fair_division.divisible.stromquist_unusual_case",

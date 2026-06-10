@@ -13,16 +13,36 @@
   "proof_html": "<p>Both simplices are singletons: $\\Delta(I) = \\{e_{i_0}\\}$ and\n$\\Delta(J) = \\{e_{j_0}\\}$, where $e_{i_0}$, $e_{j_0}$ are the unique unit\nmass strategies. For the unique $x = e_{i_0}$ and $j = j_0$ we have\n$(xA)_{j_0} = A_{i_0, j_0}$ and $(xB)_{j_0} = B_{i_0, j_0}$, so\n$$\n  \\lambda_\\mathrm{aux}(e_{i_0}) = \\frac{A_{i_0, j_0}}{B_{i_0, j_0}}.\n$$\nTaking the supremum over the singleton $\\Delta(I)$ gives $\\lambda_0 = A_{i_0,\nj_0} / B_{i_0, j_0}$. The argument for $\\mu_0$ is identical. $\\square$</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Section 2.8, Exercise 1] Laraki, Renault, and Sorin, <em>Mathematical\n  Foundations of Game Theory</em>.\n  Base case of the Loomis induction.</li>\n</ul>",
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+      "title": "Mixed Strategy Simplex",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_mixed_strategy_simplex.html"
+    },
+    {
       "id": "math.minimax.minimax_from_loomis",
       "title": "Minimax via the All-Ones Specialization of Loomis",
       "href": "math/math_minimax_minimax_from_loomis.html"
+    },
+    {
+      "id": "math.simplex.wsum",
+      "title": "Weighted Sum over the Standard Simplex",
+      "href": "math/math_simplex_wsum.html"
     }
   ],
   "dependents": [
     {
+      "id": "math.minimax.loomis_induction_proof.column_drop",
+      "title": "Column-Drop Step of Loomis Induction",
+      "href": "math/math_minimax_loomis_induction_proof_column_drop.html"
+    },
+    {
       "id": "math.minimax.loomis_induction_proof.row_drop",
       "title": "Row-Drop Step of Loomis Induction",
       "href": "math/math_minimax_loomis_induction_proof_row_drop.html"
+    },
+    {
+      "id": "math.minimax.loomis_theorem",
+      "title": "Loomis Theorem (Positive B)",
+      "href": "math/math_minimax_loomis_theorem.html"
     }
   ],
   "lean_refs": [

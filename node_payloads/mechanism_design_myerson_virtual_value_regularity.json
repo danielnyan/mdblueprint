@@ -22,6 +22,11 @@
   ],
   "dependents": [
     {
+      "id": "mechanism_design.myerson.optimal_auction",
+      "title": "Regular Myerson Optimal Single-Item Auction",
+      "href": "mechanism_design/mechanism_design_myerson_optimal_auction.html"
+    },
+    {
       "id": "mechanism_design.myerson.virtual_surplus_maximizing_allocation",
       "title": "Virtual-Surplus-Maximizing Allocation",
       "href": "mechanism_design/mechanism_design_myerson_virtual_surplus_maximizing_allocation.html"

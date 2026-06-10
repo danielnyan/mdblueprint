@@ -14,12 +14,63 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.cardinal_instance",
       "title": "Indivisible Cardinal Instance",
       "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
-  "dependents": [],
+  "dependents": [
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.checker",
+      "title": "Decidable Fairness Checkers",
+      "href": "social_choice/social_choice_fair_division_indivisible_checker.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.ef_implies_efx_mono",
+      "title": "EF ⇒ EFX (Monotone Valuations)",
+      "href": "social_choice/social_choice_fair_division_indivisible_ef_implies_efx_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_exists_two_agents",
+      "title": "EFX Existence — Two Agents, Any Finite Good Set",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_exists_two_agents.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_implies_ef1",
+      "title": "EFX ⇒ EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_implies_ef1.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_of_no_envy_mono",
+      "title": "EFX from No-Envy + Monotonicity",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_of_no_envy_mono.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.efx_two_agents_two_goods",
+      "title": "EFX Existence — 2 Agents, 2 Goods",
+      "href": "social_choice/social_choice_fair_division_indivisible_efx_two_agents_two_goods.html"
+    }
+  ],
   "lean_refs": [
     {
       "name": "SocialChoice.FairDivision.Indivisible.IsEFX",

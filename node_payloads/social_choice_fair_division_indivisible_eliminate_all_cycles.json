@@ -15,9 +15,29 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle",
+      "title": "Envy Cycle",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.pareto_dom_count",
       "title": "Pareto-Domination Count Termination Measure",
       "href": "social_choice/social_choice_fair_division_indivisible_pareto_dom_count.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.rotate_bundles",
+      "title": "Bundle Rotation",
+      "href": "social_choice/social_choice_fair_division_indivisible_rotate_bundles.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
   "dependents": [
@@ -25,6 +45,16 @@
       "id": "social_choice.fair_division.indivisible.acyclic_has_source",
       "title": "Acyclic Envy Graph Has a Source",
       "href": "social_choice/social_choice_fair_division_indivisible_acyclic_has_source.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_algorithm",
+      "title": "Envy-Cycle Elimination Algorithm",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_algorithm.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.envy_cycle_ef1",
+      "title": "Envy-Cycle Elimination Produces EF1",
+      "href": "social_choice/social_choice_fair_division_indivisible_envy_cycle_ef1.html"
     }
   ],
   "lean_refs": [

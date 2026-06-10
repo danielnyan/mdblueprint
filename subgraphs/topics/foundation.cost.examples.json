@@ -16,10 +16,10 @@
     "non_proof_plan_nodes": 7,
     "proof_plan_nodes": 0,
     "selected_proof_plan_nodes": 0,
-    "boundary_topics": 1,
+    "boundary_topics": 2,
     "proof_plan_attachments": 0,
-    "visible_nodes_without_proof_plans": 9,
-    "visible_nodes_with_selected_proof_plans": 9
+    "visible_nodes_without_proof_plans": 10,
+    "visible_nodes_with_selected_proof_plans": 10
   },
   "nodes": [
     {
@@ -87,6 +87,13 @@
       "href": "foundation/index.html",
       "role": "dependency",
       "node_count": 26
+    },
+    {
+      "id": "foundation.utility",
+      "title": "Foundation.Utility",
+      "href": "foundation/utility/index.html",
+      "role": "dependency",
+      "node_count": 7
     }
   ],
   "boundary_edges": [
@@ -109,7 +116,7 @@
       "to": "foundation.cost.examples.lcs",
       "kind": "boundary_dependency",
       "topic": "foundation",
-      "count": 2
+      "count": 4
     },
     {
       "from": "topic:foundation",
@@ -123,20 +130,34 @@
       "to": "foundation.cost.examples.par_all",
       "kind": "boundary_dependency",
       "topic": "foundation",
-      "count": 1
+      "count": 2
     },
     {
       "from": "topic:foundation",
       "to": "foundation.cost.examples.par_sum",
       "kind": "boundary_dependency",
       "topic": "foundation",
-      "count": 1
+      "count": 4
     },
     {
       "from": "topic:foundation",
       "to": "foundation.cost.examples.reverse_space",
       "kind": "boundary_dependency",
       "topic": "foundation",
+      "count": 1
+    },
+    {
+      "from": "topic:foundation.utility",
+      "to": "foundation.cost.examples.lcs",
+      "kind": "boundary_dependency",
+      "topic": "foundation.utility",
+      "count": 1
+    },
+    {
+      "from": "topic:foundation.utility",
+      "to": "foundation.cost.examples.par_sum",
+      "kind": "boundary_dependency",
+      "topic": "foundation.utility",
       "count": 1
     }
   ],

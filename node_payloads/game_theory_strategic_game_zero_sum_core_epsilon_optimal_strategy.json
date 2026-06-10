@@ -13,6 +13,11 @@
   "proof_html": null,
   "deps": [
     {
+      "id": "game_theory.strategic_game.zero_sum.matrix_game",
+      "title": "Matrix Game",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_matrix_game.html"
+    },
+    {
       "id": "game_theory.strategic_game.zero_sum.maximin_minimax",
       "title": "Maximin and Minimax Values",
       "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_maximin_minimax.html"

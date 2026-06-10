@@ -15,9 +15,44 @@
   "proof_html": "<p>For each $i$, $\\alpha_2 \\cdot \\mathrm{MMS}_i \\le \\alpha_1 \\cdot \\mathrm{MMS}_i \\le v_i(A(i))$.\nThe first inequality uses $\\alpha_2 \\le \\alpha_1$ and nonnegativity of\n$\\mathrm{MMS}_i$ ([[social_choice.fair_division.indivisible.mms_value_bounds]]).</p>\n<h2>Trivial bottom</h2>\n<p><code>isAlphaMMS_zero</code>: for any allocation with nonnegative bundle values,\n0-MMS holds vacuously.</p>\n<p><em>Proof.</em> The predicate becomes $0 \\cdot \\mathrm{MMS}_i \\le v_i(A(i))$,\ni.e. $0 \\le v_i(A(i))$. Nonnegativity of the values closes this.</p>\n<h2>Bridge from exact MMS</h2>\n<p><code>IsMaxminShare.isAlphaMMS</code>: if $A$ satisfies the exact MMS guarantee\n([[social_choice.fair_division.indivisible.maximin_share]]), then for\nevery $\\alpha \\in [0, 1]$, $A$ is α-MMS.</p>\n<p><em>Proof.</em> Combine <code>isMaxminShare_iff_isAlphaMMS_one</code>\n([[social_choice.fair_division.indivisible.mms_iff_alpha_one]]) with\nthe monotonicity lemma above: exact MMS gives 1-MMS, and 1-MMS implies\nα-MMS for any $\\alpha \\le 1$.</p>\n<h2>Use</h2>\n<p>These three lemmas form the <em>monotonicity scaffolding</em> that justifies\nα-MMS as a coherent approximation hierarchy. Existence results for\n$\\alpha &lt; 1$ (e.g. Procaccia–Wang $\\frac{2}{3}$, GHSSY $\\frac{3}{4}$)\nare stated in terms of α-MMS and inherit weaker variants for free.</p>\n<h2>References</h2>\n<ul>\n<li>Procaccia, A. D. and Wang, J. (2014). \"Fair Enough: Guaranteeing Approximate Maximin Shares\". <em>EC</em>.</li>\n<li>[AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. α-MMS approximation.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.indivisible.additive_instance",
+      "title": "Indivisible Additive Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_additive_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.allocation",
+      "title": "Indivisible Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "title": "Indivisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_indivisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.is_alpha_mms",
+      "title": "α-MMS Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_is_alpha_mms.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.maximin_share",
+      "title": "Maximin Share (MMS) Allocation",
+      "href": "social_choice/social_choice_fair_division_indivisible_maximin_share.html"
+    },
+    {
       "id": "social_choice.fair_division.indivisible.mms_iff_alpha_one",
       "title": "IsMaxminShare ↔ IsAlphaMMS 1",
       "href": "social_choice/social_choice_fair_division_indivisible_mms_iff_alpha_one.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.mms_value",
+      "title": "Maximin Share Value",
+      "href": "social_choice/social_choice_fair_division_indivisible_mms_value.html"
+    },
+    {
+      "id": "social_choice.fair_division.indivisible.valuation",
+      "title": "Indivisible Valuation",
+      "href": "social_choice/social_choice_fair_division_indivisible_valuation.html"
     }
   ],
   "dependents": [

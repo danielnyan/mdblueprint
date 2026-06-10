@@ -11,7 +11,13 @@
   ],
   "body_html": "<h1>Weak Domination And Completely Mixed Tests</h1>\n<p>In a finite strategic game, a mixed strategy $m_i\\in\\Delta(S_i)$ is weakly\ndominated if and only if it is never a best response against a completely\ncorrelated strategy of the opponents.</p>\n<p>Here \"completely correlated\" means a correlated strategy in the relative interior\nof $\\Delta(S_{-i})$, assigning positive probability to every opponent profile.</p>",
   "proof_html": "<p>Sketch</p>\n<p>Weak domination gives a strict expected-payoff improvement against every\nfull-support correlated opponent strategy, so $m_i$ is not a best response to any\nof them. For the converse, MFoGT reduces to an auxiliary finite zero-sum game. If\nthe value is positive then strict domination follows. If the value is zero, optimal\nsupport and best-response complementarity identify an opponent pure profile\nagainst which an optimal strategy gives a strict improvement while never lowering\nthe payoff elsewhere.</p>\n<h2>Why this lives under <code>zero_sum.applications</code></h2>\n<p>This proposition is a strategic-game result, but the MFoGT 4.3.6 proof\nroute is structural in <a class=\"node-ref\" data-node-id=\"game_theory.strategic_game.zero_sum.core.support_complementarity\" href=\"../strategic_game/zero_sum/core/game_theory_strategic_game_zero_sum_core_support_complementarity.html\">Support Complementarity</a>:\nthe converse uses both the value of the auxiliary zero-sum game and\nsupport/best-response complementarity to extract a separating opponent\nprofile. Filing the node under <code>zero_sum.applications</code> reflects the\nproof technique and keeps the top-level <code>strategic_games</code> topic from\ndepending back on <code>zero_sum</code>. A separation-theorem proof à la Pearce\n1984, which would let the result live under\n<code>strategic_games.dominance</code> while citing only\n<a class=\"node-ref\" data-node-id=\"math.linear_algebra.theorem_of_alternative\" href=\"../../math/linear_algebra/math_linear_algebra_theorem_of_alternative.html\"><code>math.linear_algebra.theorem_of_alternative</code></a>, is an alternative route.</p>\n<h2>References</h2>\n<ul>\n<li>[MFoGT, Prop. 4.3.6] Laraki, Renault, and Sorin, <em>Mathematical Foundations of Game Theory</em>. Weak domination is equivalent to never being a best response against a completely correlated strategy.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "game_theory.strategic_game.zero_sum.core.support_complementarity",
+      "title": "Support Complementarity",
+      "href": "game_theory/zero_sum/game_theory_strategic_game_zero_sum_core_support_complementarity.html"
+    }
+  ],
   "dependents": [],
   "lean_refs": [],
   "lean_modules": []

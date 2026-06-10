@@ -61,14 +61,14 @@
       "id": "math",
       "title": "Math",
       "href": "math/index.html",
-      "role": "dependency",
+      "role": "dependency_and_dependent",
       "node_count": 43
     },
     {
       "id": "mechanism_design",
       "title": "Mechanism Design",
       "href": "mechanism_design/index.html",
-      "role": "dependency",
+      "role": "dependency_and_dependent",
       "node_count": 49
     }
   ],
@@ -85,7 +85,21 @@
       "to": "mechanism_design.auction.knapsack.environment",
       "kind": "boundary_dependency",
       "topic": "mechanism_design",
-      "count": 2
+      "count": 3
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
+      "to": "topic:math",
+      "kind": "boundary_dependent",
+      "topic": "math",
+      "count": 4
+    },
+    {
+      "from": "mechanism_design.auction.knapsack.environment",
+      "to": "topic:mechanism_design",
+      "kind": "boundary_dependent",
+      "topic": "mechanism_design",
+      "count": 3
     }
   ],
   "keywords": [

@@ -12,8 +12,39 @@
   ],
   "body_html": "<h1>EF ⇒ Proportional (Measure Valuations)</h1>\n<p><strong>Theorem.</strong> Let $\\mu : N \\to \\mathrm{Measure}\\ \\Omega$ on a measurable\ncake $\\Omega$ and a finite agent type $N$, and let $A$ be an envy-free\ncomplete divisible allocation under the measure valuation\n$\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.measure_valuation]],\n[[social_choice.fair_division.divisible.envy_free]],\n[[social_choice.fair_division.divisible.allocation]]). Then $A$ is\nproportional with respect to $|N|$.</p>\n<p>That is, for every agent $i$,\n$$\n\\mu_i(\\Omega) \\;\\le\\; |N| \\cdot \\mu_i(A(i)).\n$$</p>\n<p>In Lean: <code>SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional</code>.</p>",
   "proof_html": "<p>Use the partition / additivity properties of the measure valuation. For\neach agent $i$:</p>\n<p>$$\n\\begin{aligned}\n\\mu_i(\\Omega)\n  &amp;= \\mu_i\\bigl(\\bigcup_j A(j)\\bigr) &amp;&amp; \\text{cover of $A$} \\\\\n  &amp;= \\sum_{j} \\mu_i(A(j)) &amp;&amp; \\text{disjoint, measurable pieces} \\\\\n  &amp;\\le \\sum_{j} \\mu_i(A(i)) &amp;&amp; \\text{envy-freeness: $\\mu_i(A_j) \\le \\mu_i(A_i)$} \\\\\n  &amp;= |N| \\cdot \\mu_i(A(i)). &amp;&amp; \\text{constant sum}\n\\end{aligned}\n$$</p>\n<p>The countable-additivity step uses <code>MeasureTheory.measure_iUnion</code> on the\ndisjoint measurable family $A : N \\to \\mathrm{Set}\\ \\Omega$; for a finite\nagent type this collapses to a <code>Finset</code> sum via <code>tsum_fintype</code>.</p>\n<h2>Interpretation</h2>\n<p>Envy-freeness is a <em>strictly stronger</em> fairness notion than\nproportionality for divisible goods. The theorem above is the precise\nform: an EF measure-valued allocation automatically guarantees every\nagent at least their $1/n$ share of the whole.</p>\n<p>The same statement at the bundled <code>MeasureInstance</code> level — including the\nreal-valued (<code>toReal</code>) variant — appears in\n[[social_choice.fair_division.divisible.measure_instance_existence]].</p>\n<h2>References</h2>\n<ul>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. EF implies proportional for divisible goods.</li>\n</ul>",
-  "deps": [],
+  "deps": [
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
+    }
+  ],
   "dependents": [
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "title": "EF + Proportional Existence (Stromquist Corollary)",
+      "href": "social_choice/social_choice_fair_division_divisible_ef_exists_and_proportional.html"
+    },
     {
       "id": "social_choice.fair_division.divisible.measure_instance",
       "title": "Divisible Measure Instance",

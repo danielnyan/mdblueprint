@@ -15,9 +15,34 @@
   "proof_html": "<p>By the moving-knife induction ([[social_choice.fair_division.divisible.ds_step]]),\nusing the IVT-on-measures cut lemma\n([[social_choice.fair_division.divisible.cut_exists]]) at each level.</p>\n<h2>Significance</h2>\n<p>Two parts:</p>\n<ol>\n<li>\n<p><strong>Existence with explicit algorithm.</strong> Unlike Stromquist's EF existence\n   ([[social_choice.fair_division.divisible.ef_exists]]) — which uses a\n   KKM compactness argument — Dubins–Spanier's proportional existence is\n   <em>constructive</em>: the algorithm can be unfolded to produce the\n   allocation step by step.</p>\n</li>\n<li>\n<p><strong>PROP, not EF.</strong> The output is proportional but in general <em>not</em>\n   envy-free. EF is a strictly stronger notion for $n \\ge 3$ agents and\n   requires the deeper Stromquist construction.</p>\n</li>\n</ol>\n<p>The bundled-instance wrapper is\n[[social_choice.fair_division.divisible.dubins_spanier_rule]].</p>\n<h2>References</h2>\n<ul>\n<li>Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". <em>Amer. Math. Monthly</em> 68: 1–17.</li>\n<li>[AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, <em>Algorithmic Game Theory</em>. Dubins–Spanier moving knife.</li>\n</ul>",
   "deps": [
     {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "href": "social_choice/social_choice_fair_division_divisible_allocation.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_cardinal_instance.html"
+    },
+    {
       "id": "social_choice.fair_division.divisible.cut_exists",
       "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
       "href": "social_choice/social_choice_fair_division_divisible_cut_exists.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "href": "social_choice/social_choice_fair_division_divisible_envy_free.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_instance.html"
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_valuation",
+      "title": "Measure Valuation",
+      "href": "social_choice/social_choice_fair_division_divisible_measure_valuation.html"
     }
   ],
   "dependents": [

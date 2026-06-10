@@ -41,9 +41,69 @@
       "id": "mechanism_design.bayesian.bayesian_mechanisms",
       "title": "Bayesian Mechanisms",
       "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
+    {
+      "id": "mechanism_design.transfer.single_parameter_transfer_layer",
+      "title": "Single-Parameter Transfer Layer",
+      "href": "mechanism_design/mechanism_design_transfer_single_parameter_transfer_layer.html"
     }
   ],
   "dependents": [
+    {
+      "id": "mechanism_design.auction.basic.first_price_mechanism",
+      "title": "First-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.first_price_no_dsic",
+      "title": "First-Price Fails DSIC",
+      "href": "mechanism_design/mechanism_design_auction_basic_first_price_no_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.formats",
+      "title": "Basic Auction Formats",
+      "href": "mechanism_design/mechanism_design_auction_basic_formats.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_dsic",
+      "title": "Reserve Second-Price Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.reserve_second_price_mechanism",
+      "title": "Reserve Second-Price Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_reserve_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_dsic",
+      "title": "Vickrey Truth-Telling Is Dominant",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_dsic.html"
+    },
+    {
+      "id": "mechanism_design.auction.basic.second_price_mechanism",
+      "title": "Second-Price (Vickrey) Mechanism",
+      "href": "mechanism_design/mechanism_design_auction_basic_second_price_mechanism.html"
+    },
+    {
+      "id": "mechanism_design.basic.dsic_predicate",
+      "title": "DSIC Predicate",
+      "href": "mechanism_design/mechanism_design_basic_dsic_predicate.html"
+    },
+    {
+      "id": "mechanism_design.basic.induced_strategic_game",
+      "title": "Induced Strategic Game",
+      "href": "mechanism_design/mechanism_design_basic_induced_strategic_game.html"
+    },
+    {
+      "id": "mechanism_design.basic.truthfulness_from_dsic",
+      "title": "Truthfulness From DSIC",
+      "href": "mechanism_design/mechanism_design_basic_truthfulness_from_dsic.html"
+    },
+    {
+      "id": "mechanism_design.bayesian.bayesian_mechanisms",
+      "title": "Bayesian Mechanisms",
+      "href": "mechanism_design/mechanism_design_bayesian_bayesian_mechanisms.html"
+    },
     {
       "id": "mechanism_design.transfer.multiple_parameter_transfer_layer",
       "title": "Multiple-Parameter Transfer Layer",
