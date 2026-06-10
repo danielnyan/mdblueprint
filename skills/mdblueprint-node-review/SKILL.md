@@ -38,8 +38,9 @@ When deciding whether a staged node should be admitted to the knowledge base.
 10. If duplicate clusters, near-duplicates, or canonicalization questions appear, spawn the duplicate-discovery, canonicalization, and validation subagents described in the repository `Agents.md` contract before finalizing the review.
 11. Prefer graph changes that improve human readability and semantic faithfulness over edits that only match the import structure mechanically.
 12. Judge the entire graph bundle, not a subset, and call out stray nodes, disconnected components, and weakly attached islands explicitly.
-13. Produce review reports with explicit decisions under `docs/knowledge/reviews/`.
-14. If all checks pass, recommend to the admission referee.
+13. If uses review surfaces problematic edges, record the proposals and defer the final fix to the node-maintenance agent.
+14. Produce review reports with explicit decisions under `docs/knowledge/reviews/`.
+15. If all checks pass, recommend to the admission referee.
 14. **Stop after writing the review report.** Do not automatically admit nodes; the referee makes that decision.
 
 ## Handoff contract

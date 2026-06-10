@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import shutil
 import subprocess
@@ -10,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from mdblueprint.knowledge_uses import infer_and_prune_uses_for_nodes
+from mdblueprint.knowledge_uses import infer_and_review_uses_for_nodes
 from mdblueprint.knowledge_generation import _render_node
 from mdblueprint.knowledge_verification import KnowledgeVerificationResult, verify_knowledge_tree
 from tools.knowledge.config import (
@@ -339,7 +340,8 @@ def export_blueprint_tree(
 
     nodes = _load_nodes(source_root)
     idx = index_lean_project(lean_root)
-    uses_map = infer_and_prune_uses_for_nodes(nodes, idx)
+    uses_review = infer_and_review_uses_for_nodes(nodes, idx)
+    uses_map = uses_review.retained_by_node
     node_paths: list[Path] = []
     final_edge_count = 0
     for node in nodes:
@@ -355,6 +357,34 @@ def export_blueprint_tree(
         out_path = output_root / rel
         _write_node(out_path, updated)
         node_paths.append(out_path)
+
+    review_payload = {
+        "retained_edges": {
+            node_id: [
+                {
+                    "source_node_id": item.source_node_id,
+                    "target_node_id": item.target_node_id,
+                    "evidence": item.evidence,
+                    "via": list(item.via),
+                }
+                for item in items
+            ]
+            for node_id, items in uses_review.retained_by_node.items()
+        },
+        "problematic_edges": {
+            node_id: [
+                {
+                    "source_node_id": item.source_node_id,
+                    "target_node_id": item.target_node_id,
+                    "evidence": item.evidence,
+                    "via": list(item.via),
+                }
+                for item in items
+            ]
+            for node_id, items in uses_review.problematic_by_node.items()
+        },
+    }
+    (output_root / "uses_review.json").write_text(json.dumps(review_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     config_path = _write_config(
         source_root=source_root,

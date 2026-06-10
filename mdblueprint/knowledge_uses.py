@@ -23,6 +23,12 @@ class InferredUse:
 
 
 @dataclass(frozen=True)
+class UsesReviewResult:
+    retained_by_node: dict[str, list[InferredUse]]
+    problematic_by_node: dict[str, list[InferredUse]]
+
+
+@dataclass(frozen=True)
 class UsesInferenceContext:
     idx: LeanIndex
     nodes_by_id: dict[str, Node]
@@ -349,45 +355,44 @@ def _edge_removal_priority(item: InferredUse) -> tuple[int, int, str, str]:
     return (evidence_rank, -len(item.via), item.source_node_id, item.target_node_id)
 
 
-def prune_redundant_inferred_uses(
+def review_redundant_inferred_uses(
     uses_by_node: dict[str, list[InferredUse]],
-) -> dict[str, list[InferredUse]]:
-    """Remove transitive duplicate edges from a proposed uses graph.
+) -> UsesReviewResult:
+    """Identify problematic ``uses`` edges without silently removing them.
 
     The input is the proposed dependency set after evidence collection.
-    Any edge that is already implied by another path in the proposed graph is
-    dropped. If cycles still remain, the weakest edge in each cycle is removed
-    until the result is acyclic. This leaves a minimal DAG-style dependency
-    layer suitable for graph validation.
+    Rather than mutating the graph to hide ambiguity, this function keeps the
+    inferred edges intact and reports the edges that need an agent decision.
+    Body references, transitive duplicates, and cycle-triggering edges are
+    surfaced in the review report so a higher-level agent can make the final
+    call on the fix.
     """
-    edges: dict[str, list[str]] = {
-        node_id: _unique_preserve_order([
-            item.target_node_id
-            for item in items
-            if item.evidence != "body_node_ref"
-        ])
+    retained: dict[str, list[InferredUse]] = {
+        node_id: _unique_preserve_order(list(items))
         for node_id, items in uses_by_node.items()
     }
+    problematic: dict[str, list[InferredUse]] = {node_id: [] for node_id in uses_by_node}
+    seen_problematic: set[tuple[str, str, str]] = set()
 
-    changed = True
-    while changed:
-        changed = False
-        for node_id in sorted(edges):
-            direct = list(edges.get(node_id, []))
-            if len(direct) < 2:
+    def _mark_problematic(item: InferredUse, reason: str) -> None:
+        key = (item.source_node_id, item.target_node_id, reason)
+        if key in seen_problematic:
+            return
+        seen_problematic.add(key)
+        problematic.setdefault(item.source_node_id, []).append(item)
+
+    for node_id, items in uses_by_node.items():
+        for item in items:
+            if item.evidence == "body_node_ref":
+                _mark_problematic(item, "body_node_ref")
                 continue
-            pruned = []
-            for dep in direct:
-                if _path_exists_excluding_direct(edges, start=node_id, goal=dep, excluded_first_hop=dep):
-                    changed = True
-                    continue
-                pruned.append(dep)
-            edges[node_id] = pruned
+            if len(retained.get(node_id, [])) < 2:
+                continue
+            if _path_exists_excluding_direct(retained, start=node_id, goal=item.target_node_id, excluded_first_hop=item.target_node_id):
+                _mark_problematic(item, "transitive_duplicate")
 
-    while True:
-        cycle = _find_cycle(edges)
-        if cycle is None:
-            break
+    cycle = _find_cycle(retained)
+    if cycle is not None:
         cycle_edges = list(zip(cycle, cycle[1:] + cycle[:1]))
         removable: list[InferredUse] = []
         for source, target in cycle_edges:
@@ -395,33 +400,29 @@ def prune_redundant_inferred_uses(
                 if item.target_node_id == target:
                     removable.append(item)
                     break
-        if not removable:
-            break
-        weakest = min(removable, key=_edge_removal_priority)
-        edges[weakest.source_node_id] = [
-            dep for dep in edges.get(weakest.source_node_id, [])
-            if dep != weakest.target_node_id
-        ]
+        if removable:
+            weakest = min(removable, key=_edge_removal_priority)
+            _mark_problematic(weakest, "cycle_candidate")
 
-    result: dict[str, list[InferredUse]] = {}
-    for node_id, items in uses_by_node.items():
-        keep = set(edges.get(node_id, []))
-        result[node_id] = [
-            item for item in items
-            if item.evidence != "body_node_ref" and item.target_node_id in keep
-        ]
-    return result
+    return UsesReviewResult(retained_by_node=retained, problematic_by_node=problematic)
 
 
-def infer_and_prune_uses_for_nodes(
+def prune_redundant_inferred_uses(
+    uses_by_node: dict[str, list[InferredUse]],
+) -> dict[str, list[InferredUse]]:
+    """Compatibility wrapper that now keeps edges and only reviews them."""
+    return review_redundant_inferred_uses(uses_by_node).retained_by_node
+
+
+def infer_and_review_uses_for_nodes(
     nodes: list[Node],
     idx: LeanIndex,
     *,
     max_depth: int = 3,
     include_body_refs: bool = True,
     theorem_renamer: TheoremRenamer | None = None,
-) -> dict[str, list[InferredUse]]:
-    """Infer uses for every node, then prune transitive duplicates and cycles."""
+) -> UsesReviewResult:
+    """Infer uses for every node, then review redundant edges for agent action."""
     context = build_uses_inference_context(nodes, idx, theorem_renamer=theorem_renamer)
     proposed: dict[str, list[InferredUse]] = {}
     for node in nodes:
@@ -433,7 +434,25 @@ def infer_and_prune_uses_for_nodes(
             include_body_refs=include_body_refs,
             context=context,
         )
-    return prune_redundant_inferred_uses(proposed)
+    return review_redundant_inferred_uses(proposed)
+
+
+def infer_and_prune_uses_for_nodes(
+    nodes: list[Node],
+    idx: LeanIndex,
+    *,
+    max_depth: int = 3,
+    include_body_refs: bool = True,
+    theorem_renamer: TheoremRenamer | None = None,
+) -> dict[str, list[InferredUse]]:
+    """Compatibility wrapper returning the retained inferred uses."""
+    return infer_and_review_uses_for_nodes(
+        nodes,
+        idx,
+        max_depth=max_depth,
+        include_body_refs=include_body_refs,
+        theorem_renamer=theorem_renamer,
+    ).retained_by_node
 
 
 def inferred_uses(node: Node, all_nodes: list[Node], idx: LeanIndex, *, max_depth: int = 3) -> list[str]:

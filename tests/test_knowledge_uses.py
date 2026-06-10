@@ -3,7 +3,7 @@ from __future__ import annotations
 import textwrap
 from pathlib import Path
 
-from mdblueprint.knowledge_uses import InferredUse, inferred_uses, infer_uses_for_node, prune_redundant_inferred_uses
+from mdblueprint.knowledge_uses import InferredUse, inferred_uses, infer_uses_for_node, infer_and_review_uses_for_nodes
 from tools.knowledge.lean_index import index_lean_project
 from tools.knowledge.models import LeanRef, Node
 
@@ -59,7 +59,7 @@ def test_infers_transitive_lean_decl_dependency(tmp_path):
     assert evidence.via == ("Logic.result", "Logic.helper", "Logic.base")
 
 
-def test_infers_body_node_refs_without_lean_dependency(tmp_path):
+def test_review_flags_body_node_refs_without_removing_them(tmp_path):
     _write_lean(tmp_path)
     idx = index_lean_project(tmp_path)
     base = _node("logic.base", ["Logic.base"])
@@ -69,21 +69,20 @@ def test_infers_body_node_refs_without_lean_dependency(tmp_path):
         body="Proof. By [[node:logic.base]].",
     )
 
-    assert inferred_uses(result, [base, result], idx) == ["logic.base"]
-    evidence = infer_uses_for_node(result, [base, result], idx)[0]
-    assert evidence.evidence == "body_node_ref"
+    review = infer_and_review_uses_for_nodes([base, result], idx)
+    assert [item.target_node_id for item in review.retained_by_node["logic.body_ref_result"]] == ["logic.base"]
+    assert [item.evidence for item in review.problematic_by_node["logic.body_ref_result"]] == ["body_node_ref"]
 
 
-
-def test_prunes_cycles_by_removing_the_weakest_edge():
+def test_review_flags_cycles_without_pruning_edges():
     uses_by_node = {
         "a": [InferredUse("a", "b", "lean_direct_decl", ("A.a", "A.b"))],
         "b": [InferredUse("b", "c", "lean_direct_decl", ("B.b", "B.c"))],
         "c": [InferredUse("c", "a", "lean_transitive_decl", ("C.c", "C.helper", "A.a"))],
     }
 
-    pruned = prune_redundant_inferred_uses(uses_by_node)
-    assert [item.target_node_id for item in pruned["a"]] == ["b"]
-    assert [item.target_node_id for item in pruned["b"]] == ["c"]
-    assert [item.target_node_id for item in pruned["c"]] == []
+    from mdblueprint.knowledge_uses import review_redundant_inferred_uses
 
+    review = review_redundant_inferred_uses(uses_by_node)
+    assert [item.target_node_id for item in review.retained_by_node["c"]] == ["a"]
+    assert [item.evidence for item in review.problematic_by_node["c"]] == ["lean_transitive_decl"]

@@ -19,6 +19,9 @@ that the resulting dependency graph stay human-readable and semantically
 faithful, not just mechanically aligned with import structure. The contract
 must score the entire exported graph, not a subset, and treat stray nodes,
 disconnected components, and weakly attached islands as first-class failures.
+It must also treat pruning as a review activity: propose problematic edges,
+then let the node-maintenance agent make the final fix decision. The export
+layer should not silently collapse the graph without surfacing the proposal.
 
 ## Execution Model
 
