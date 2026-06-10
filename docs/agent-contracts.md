@@ -16,7 +16,9 @@ Every agent must define:
 
 For node update and de-duplication work, the agent contract must also require
 that the resulting dependency graph stay human-readable and semantically
-faithful, not just mechanically aligned with import structure.
+faithful, not just mechanically aligned with import structure. The contract
+must score the entire exported graph, not a subset, and treat stray nodes,
+disconnected components, and weakly attached islands as first-class failures.
 
 ## Execution Model
 

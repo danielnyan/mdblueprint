@@ -19,6 +19,8 @@ When converting source material into staged Markdown knowledge nodes.
 4. For each item, search the existing node index (admitted + staged) for duplicates.
    - If the source set is large or cluster-like, spawn a duplicate-discovery subagent instead of trying to hold the entire overlap map in the main prompt.
    - If near-duplicates are found, hand them to the node-maintenance agent described in the repository `Agents.md` contract before creating new staged nodes.
+   - Evaluate the entire exported graph, not a subset of pages or nodes, when judging whether the staged extraction is acceptable.
+   - Treat stray nodes, disconnected components, and weakly attached islands as first-class failures.
 5. If no duplicate, create a staged node under `docs/knowledge/staged/` following the node format. Choose one `primary_topic` home topic and add any additional `topics` memberships needed for graph views. If a source uses an alias, use the canonical topic id and note the alias in the report.
 6. Record source spans with artifact binding and locator format.
 7. Convert formulas to the supported node math syntax in `docs/math-authoring.md`; declare reusable macros in project config instead of writing TeX preamble commands.
