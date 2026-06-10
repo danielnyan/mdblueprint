@@ -2,32 +2,32 @@
 
 ## Summary
 
-This report records the full EconCSLib run after tightening `uses` normalization so that the final graph is:
+This report records the full EconCSLib run after changing `uses` handling from silent pruning to proposal review. The exporter now:
 
-- transitive-reduced
-- cycle-free
-- Lean-backed only
+- keeps the full inferred `uses` set in the exported node files
+- emits a separate review artifact for problematic edges
+- leaves the final fix decision to the agent
 
 The proposal pass still collects two evidence classes:
 
 - explicit `[[node:...]]` references in proof sections
 - Lean declaration reachability from the source node's `lean.declarations`
 
-But the final `uses` graph now keeps only Lean-backed edges. Body-reference proposals remain available for analysis, but they are not retained in the final dependency graph.
+But the final exported graph no longer silently deletes transitive or cyclic candidates. Instead, they are surfaced in the review artifact so the agent can decide whether to keep, reroute, or retire them.
 
 ## Final Normalization Rule
 
 The final pass now does three things, in order:
 
-1. removes transitive duplicate edges
-2. removes any remaining cycles with a deterministic weakest-edge rule
-3. drops non-Lean evidence (`body_node_ref`) from final `uses`
+1. retains the full inferred edge set for export
+2. records transitive, cyclic, and body-reference candidates as review findings
+3. exposes a deterministic weakest-edge suggestion for the reviewer, without auto-pruning the published graph
 
-The edge-removal ranking is conservative:
+The edge-ranking remains conservative for the review artifact:
 
 - `lean_transitive_decl` is weaker than `lean_direct_decl`
-- longer `via` chains are removed before shorter ones
-- `body_node_ref` is not retained in final `uses`
+- longer `via` chains are lower priority than shorter ones
+- `body_node_ref` is flagged as review-only evidence unless the agent explicitly retains it
 
 ## Full-Run Metrics
 
@@ -38,23 +38,23 @@ Corpus:
 Proposal vs final:
 
 - raw proposed edges: `970`
-- final Lean-backed edges: `270`
-- edges removed: `700`
+- retained exported edges: `970`
+- review-flagged edges: `700`
 - nodes with at least one raw proposal: `231`
-- nodes with at least one final `uses` edge: `181`
+- nodes with at least one retained exported `uses` edge: `231`
 
 Validation:
 
 - graph build diagnostics: `2`
-- dependency cycles after normalization: `0`
+- dependency cycles in the review artifact: `0` after the current weakest-edge suggestion
 
 The only remaining graph diagnostics are the existing proof-plan warnings about a mathematical node referencing a proof-plan node as a dependency.
 
 ## What Changed
 
-The important change relative to the earlier implementation is that the final graph no longer keeps body-reference edges. That avoids final `uses` entries that were supported only by markdown proof references instead of Lean evidence.
+The important change relative to the earlier implementation is that the exporter no longer collapses the graph before publication. Instead, it records which edges would have been removed and hands that decision to the agent.
 
-The normalization is still aggressive in dense theorem clusters: some nodes end up with an empty final `uses` set because every Lean-backed candidate edge was either redundant or participated in a cycle cluster that had to be broken.
+That means dense theorem clusters can now stay visible in the published graph. The cost is that the graph is no longer a pure DAG by construction, so downstream consumers must check the review artifact if they need a strictly acyclic view.
 
 ## Representative Examples
 
@@ -179,8 +179,8 @@ Removed:
 
 Interpretation:
 
-- This is the cycle-break example.
-- The edge into `strategy_profile_induced_outcome` was the one removed so that the final graph stayed acyclic.
+- This is the proposal-review split example.
+- The edge into `strategy_profile_induced_outcome` is now a flagged candidate rather than a silently removed dependency.
 
 ### Larger zero-sum theorem cluster
 

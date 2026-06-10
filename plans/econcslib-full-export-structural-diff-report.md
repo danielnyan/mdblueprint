@@ -313,7 +313,7 @@ For the current ablation study, option 1 is the stronger test because it preserv
 
 ## Proposed Remediation Plan
 
-This section lists implementation choices to approve, revise, or veto before the next round.
+This section lists implementation choices to approve, revise, or veto before the next round. It now reflects the current proposal-review mode for `uses`, where the exporter flags problematic edges instead of silently pruning them.
 
 ### Prompt and skill changes
 
@@ -342,12 +342,10 @@ This section lists implementation choices to approve, revise, or veto before the
    - The default `IdentityTheoremRenamer` is a no-op, so current behavior is deterministic and unchanged unless a contributor explicitly supplies a renamer.
    - Future contributors should plug the colleague's theorem-renamer into this interface rather than editing the core `uses` pruning code first.
 
-1. **Preserve body references when they are evidence-backed**
-   - Change `prune_redundant_inferred_uses` so it does not blindly drop every `body_node_ref`.
-   - Keep a `body_node_ref` edge when one of these holds:
-     - the target has a Lean declaration reached from the source Lean declaration graph;
-     - the source and target share a proof-family prefix, such as `math.minimax.loomis_induction_proof.*`;
-     - the target is referenced in the proof section and is not made redundant by another retained blueprint-level path.
+1. **Treat body references as review evidence, not automatic truth**
+   - Keep `body_node_ref` proposals visible in the review artifact.
+   - Let the agent decide whether a body reference should be retained, rerouted, or retired.
+   - Use Lean reachability, proof-family prefixes, and same-proof-section evidence to rank the proposal, but do not let the exporter silently collapse it.
 
 2. **Add edge evidence ranking**
    - Replace the current coarse evidence handling with explicit scores.
@@ -358,7 +356,7 @@ This section lists implementation choices to approve, revise, or veto before the
      - `lean_direct_decl_to_node`
      - `lean_transitive_decl_to_node`
      - `low_level_helper_decl`
-   - Use this ranking for cycle breaking and transitive pruning.
+   - Use this ranking to score the proposal artifact and to explain suggested fixes, not to auto-delete edges from the published graph.
 
 3. **Classify low-level helper declarations**
    - Add a helper-declaration filter for common infrastructure names and broad leaves.
@@ -380,16 +378,16 @@ This section lists implementation choices to approve, revise, or veto before the
    - Emit alias provenance in the evidence report so reviewers can distinguish exact-name matches from renamer-assisted matches.
 
 6. **Emit an edge evidence report**
-   - Extend the export tool to write a machine-readable artifact, for example `uses_evidence.json`.
+   - Extend the export tool to write a machine-readable artifact, for example `uses_review.json`.
    - Each proposed edge should include:
      - source node;
      - target node;
-     - final action: kept, pruned, demoted, or rejected;
+     - review status: keep, reroute, retire, or needs-review;
      - evidence type;
      - Lean declaration path if present;
      - theorem-renamer alias used, if any;
      - body reference locations if present;
-     - pruning reason if removed.
+     - reviewer rationale or fix recommendation.
    - This would make future graph disagreements auditable instead of purely visual.
 
 7. **Add a structural comparison command**
@@ -402,12 +400,10 @@ This section lists implementation choices to approve, revise, or veto before the
      - examples of lost proof-stage edges;
      - examples of low-level helper edges introduced by inference.
 
-8. **Normalize proof-plan nodes before publishing**
-   - Implement a proof-plan normalization pass in the exporter.
-   - It should either:
-     - repair `target` metadata and route theorem dependencies through proof-plan targets; or
-     - exclude proof-plan nodes from the generated comparison tree.
-   - The report currently recommends repair over exclusion for the ablation study, but this is a policy choice.
+8. **Keep proof-plan handling explicit**
+   - Preserve proof-plan nodes as first-class graph objects.
+   - If a proof-plan node is missing `target`, surface that as a reviewer action item instead of hiding the node.
+   - If a theorem points at a proof-plan node directly, report it as a routing issue and let the agent decide whether to repair the route or exclude the plan from the comparison tree.
 
 9. **Represent proof routes separately from ordinary theorem dependencies**
    - Preserve `plan_status: selected` vs `candidate`.
@@ -480,19 +476,19 @@ Implication:
 
 ## Open Project Questions
 
-These decisions affect the next implementation round.
+These decisions affect the next implementation round. The questions are now about how far the review-only `uses` mode should go before we reintroduce any hard DAG enforcement.
 
-1. **Should final `uses` optimize for proof auditability or blueprint readability?**
-   - Auditability favors a smaller Lean-backed graph.
-   - Readability favors preserving proof-stage body references and curated proof narrative.
+1. **Should the published `uses` graph be a strict DAG or a reviewable superset?**
+   - A strict DAG is easier for downstream tooling.
+   - A reviewable superset is better for preserving proof narrative and agent judgment.
 
-2. **Should body references be allowed as final `uses` if they are not Lean-backed?**
-   - Strict option: no, every final edge must have Lean evidence.
-   - Hybrid option: yes, but mark such edges as `body_only` in an evidence report.
+2. **Should body references be allowed in the published graph if they are not Lean-backed?**
+   - Strict option: no, keep them only in the review artifact.
+   - Hybrid option: yes, but mark such edges as `body_only` in a dedicated evidence file.
 
 3. **Should low-level helper nodes appear in the public graph?**
    - Strict Lean option: yes, if they are real formal dependencies.
-   - Blueprint option: no, demote them unless no higher-level node explains the proof step.
+   - Blueprint option: no, demote them in the review rubric unless no higher-level node explains the proof step.
 
 4. **How should proof-plan nodes be handled in the generated tree?**
    - Repair and preserve them.
@@ -501,10 +497,10 @@ These decisions affect the next implementation round.
 
 5. **Should generated `uses` replace authored `uses`, or should they be stored separately?**
    - Replacement is useful for ablation but can destroy editorial structure.
-   - Separate storage, such as `inferred_uses` or `uses_evidence.json`, lets us compare without overwriting the authored blueprint graph.
+   - Separate storage, such as `inferred_uses` or `uses_review.json`, lets us compare without overwriting the authored blueprint graph.
 
 6. **Should the graph comparison metric compare direct edges or transitive closure?**
-   - Direct-edge comparison penalizes transitive pruning heavily.
+   - Direct-edge comparison penalizes proposal retention heavily.
    - Closure comparison better captures whether two graphs imply similar reachability.
    - Both may be needed: direct edges for editorial structure, closure for dependency semantics.
 
@@ -524,22 +520,22 @@ These decisions affect the next implementation round.
 
 10. **Should graph-distance metrics treat alternative proof routes as errors?**
    - Strict authored-graph comparison would count them as differences.
-   - Proof-aware comparison should separate selected-route mismatch, candidate-route discovery, and outright unsupported dependency.
+   - Proof-aware comparison should separate selected-route mismatch, candidate-route discovery, outright unsupported dependency, and review-only candidates.
 
 ## Bottom Line
 
 The export is file-complete and structurally close, but it is not a drop-in equality check against the authored EconCSLib knowledge tree.
 
-The dominant mismatch is `uses`:
+The dominant mismatch is now methodological rather than purely structural:
 
-- `472` nodes changed
-- many changes are intentional DAG reductions
-- many others expose the gap between Lean-backed theorem dependencies and the authored blueprint dependency layer
+- the exporter keeps the full inferred `uses` set
+- the review artifact marks transitive, cyclic, and body-reference candidates
+- the agent is responsible for the final fix decision
 
 The checker then surfaces the remaining contract violations:
 
 - proof-plan nodes missing targets
 - mathematical nodes depending on proof-plan nodes
-- proof references that are not promoted into `uses`
+- proof references that still need a policy decision
 
 This makes the exported tree a useful proposed blueprint, but not yet a fully admitted ground-truth replacement.
