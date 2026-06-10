@@ -51,6 +51,7 @@
     expandedTopic: null,
     currentTopicSubgraph: null,
     proofPlanMode: null,
+    assetVersion: null,
   };
   let graphRenderer = null;
   let graphZoomBehavior = null;
@@ -109,6 +110,12 @@
       .sort(([left], [right]) => left.localeCompare(right))
       .map(([key, value]) => `${key}=${dotQuote(value)}`)
       .join(", ");
+  }
+
+  function versionedAssetUrl(url) {
+    if (!graphState.assetVersion || !url) return url;
+    const separator = url.includes("?") ? "&" : "?";
+    return `${url}${separator}v=${encodeURIComponent(graphState.assetVersion)}`;
   }
 
   function currentProofPlanMode() {
@@ -473,7 +480,7 @@
     if (graphState.nodePayloadCache.has(nodeId)) {
       return graphState.nodePayloadCache.get(nodeId);
     }
-    const response = await fetch(nodePayloadUrl(nodeId));
+    const response = await fetch(versionedAssetUrl(nodePayloadUrl(nodeId)));
     if (!response.ok) throw new Error(`Unable to load node details for ${nodeId}`);
     const payload = await response.json();
     graphState.nodePayloadCache.set(nodeId, payload);
@@ -577,10 +584,11 @@
   async function renderTopicOverview(config) {
     const graphElement = document.getElementById("graph");
     if (!graphElement || !config?.topicOverviewUrl) return;
-    const response = await fetch(config.topicOverviewUrl);
+    const response = await fetch(versionedAssetUrl(config.topicOverviewUrl));
     if (!response.ok) throw new Error(`Unable to load ${config.topicOverviewUrl}`);
     const data = await response.json();
     graphState.config = config;
+    graphState.assetVersion = config.assetVersion || null;
     if (!GRAPH_PROOF_PLAN_POLICIES.has(graphState.proofPlanMode)) {
       graphState.proofPlanMode = config.proofPlans;
     }
@@ -599,7 +607,7 @@
       return graphState.topicCache.get(topicId);
     }
     const baseUrl = graphState.config?.topicSubgraphBaseUrl || "subgraphs/topics";
-    const response = await fetch(`${baseUrl}/${encodeURIComponent(topicId)}.json`);
+    const response = await fetch(versionedAssetUrl(`${baseUrl}/${encodeURIComponent(topicId)}.json`));
     if (!response.ok) throw new Error(`Unable to load topic ${topicId}`);
     const data = await response.json();
     (data.nodes || []).forEach((node) => {
