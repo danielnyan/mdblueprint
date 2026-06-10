@@ -14,7 +14,8 @@ Use this skill when you already have a node set derived from Lean and want to:
 - infer and prune `uses` into a DAG;
 - generate or refresh `docs/knowledge/mdblueprint.yml`;
 - materialize a full output tree that `mdblueprint-check` and `mdblueprint-publish` can consume;
-- compare the exported tree against a reference snapshot.
+- compare the exported tree against a reference snapshot;
+- leave node canonicalization and duplicate retirement to the node-maintenance agent before export when the source tree has overlap clusters.
 
 ## Inputs
 
@@ -35,6 +36,7 @@ Use this skill when you already have a node set derived from Lean and want to:
 
 - Keep `source_root` immutable; write only to `output_root`.
 - Treat `uses` as Lean-backed graph edges after proposal and pruning.
+- Do not use export as a node-deduplication or canonicalization step; if the source tree has duplicate clusters, resolve them first through the node-maintenance agent and its subagents.
 - Preserve copied topic catalogs and other non-node files from the source tree.
 - Do not hand-edit generated `graph.json` or published site artifacts.
 - If the source tree lacks `mdblueprint.yml`, let the exporter synthesize a minimal config from the Lean repo and node topics.

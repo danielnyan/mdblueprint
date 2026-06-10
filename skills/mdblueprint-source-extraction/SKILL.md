@@ -17,6 +17,8 @@ When converting source material into staged Markdown knowledge nodes.
 2. Read `docs/knowledge/mdblueprint.yml`, `docs/topic-model.md`, and the nearest folder-level `topics.md` catalog when present. Select canonical topic ids from the registry and catalog. Do not invent new topic names; if no existing topic fits, record the gap in the extraction report.
 3. Read the source material and identify mathematical content: definitions, theorems, lemmas, examples, and proof text.
 4. For each item, search the existing node index (admitted + staged) for duplicates.
+   - If the source set is large or cluster-like, spawn a duplicate-discovery subagent instead of trying to hold the entire overlap map in the main prompt.
+   - If near-duplicates are found, hand them to the node-maintenance agent described in the repository `Agents.md` contract before creating new staged nodes.
 5. If no duplicate, create a staged node under `docs/knowledge/staged/` following the node format. Choose one `primary_topic` home topic and add any additional `topics` memberships needed for graph views. If a source uses an alias, use the canonical topic id and note the alias in the report.
 6. Record source spans with artifact binding and locator format.
 7. Convert formulas to the supported node math syntax in `docs/math-authoring.md`; declare reusable macros in project config instead of writing TeX preamble commands.
@@ -46,6 +48,7 @@ When converting source material into staged Markdown knowledge nodes.
 - Do not set `verification.proof: accepted` during extraction.
 - Do not add `uses` entries for topical similarity, exposition order, or proof ideas that are not logical dependencies.
 - Check for near-duplicates before creating a new staged file.
+- If overlap clusters or canonicalization questions appear, delegate the decision to the node-maintenance agent and its subagents rather than silently choosing a winner.
 - Preserve source-local statements; propose normalizations as questions.
 - **Stop after writing the extraction report.** Do not invoke node-review or wait for it. The handoff is the report artifact.
 - If the source material is large, split it into bounded batches (one per extraction run) before processing. Stop with a partial report rather than consuming unbounded context.

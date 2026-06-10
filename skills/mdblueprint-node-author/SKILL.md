@@ -21,6 +21,7 @@ When authoring mathematical content for the knowledge base.
 - [ ] Stable node id; do not change it just to alter graph topic membership
 - [ ] One `primary_topic` home topic and a `topics` list containing every graph view that should include the node
 - [ ] One concept, definition, theorem, example, or proof-plan per file
+- [ ] If a near-duplicate already exists, do not author a second file; hand the overlap to the node-maintenance agent instead.
 - [ ] Correct verification fields for the node kind (statement for theorems, definition for definitions)
 - [ ] Source spans with artifact binding if content comes from a reference
 - [ ] Incomplete statements marked with review status, not hidden

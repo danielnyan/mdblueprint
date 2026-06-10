@@ -33,3 +33,4 @@ When building the static site or verifying the knowledge graph output.
 - Do not edit node content to make publishing pass.
 - Do not infer missing dependencies.
 - Do not publish after a spot check only; every generated node page must be checked for rendering regressions.
+- Do not use publishing to resolve duplicate nodes or canonicalize content; fix the source tree first through the node-maintenance agent.
