@@ -14,6 +14,10 @@ Every agent must define:
 - uncertainty behavior;
 - whether it may propose new nodes.
 
+For node update and de-duplication work, the agent contract must also require
+that the resulting dependency graph stay human-readable and semantically
+faithful, not just mechanically aligned with import structure.
+
 ## Execution Model
 
 The v1 implementation can treat every agent as a one-shot call:

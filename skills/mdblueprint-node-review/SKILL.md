@@ -36,9 +36,10 @@ When deciding whether a staged node should be admitted to the knowledge base.
 8. Enforce the generality gate for required kinds (definition, lemma, proposition, theorem, external-theorem).
 9. Check that each staged node uses one canonical `primary_topic` and that all `topics` memberships are canonical topic ids, not aliases.
 10. If duplicate clusters, near-duplicates, or canonicalization questions appear, spawn the duplicate-discovery, canonicalization, and validation subagents described in the repository `Agents.md` contract before finalizing the review.
-11. Produce review reports with explicit decisions under `docs/knowledge/reviews/`.
-12. If all checks pass, recommend to the admission referee.
-13. **Stop after writing the review report.** Do not automatically admit nodes; the referee makes that decision.
+11. Prefer graph changes that improve human readability and semantic faithfulness over edits that only match the import structure mechanically.
+12. Produce review reports with explicit decisions under `docs/knowledge/reviews/`.
+13. If all checks pass, recommend to the admission referee.
+14. **Stop after writing the review report.** Do not automatically admit nodes; the referee makes that decision.
 
 ## Handoff contract
 

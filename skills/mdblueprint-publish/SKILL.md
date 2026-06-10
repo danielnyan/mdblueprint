@@ -34,3 +34,4 @@ When building the static site or verifying the knowledge graph output.
 - Do not infer missing dependencies.
 - Do not publish after a spot check only; every generated node page must be checked for rendering regressions.
 - Do not use publishing to resolve duplicate nodes or canonicalize content; fix the source tree first through the node-maintenance agent.
+- Do not use publishing to paper over graph-quality regressions; if the rendered dependency graph is semantically unclear, fix the source tree or export logic first.

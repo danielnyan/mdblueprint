@@ -36,6 +36,7 @@ Use this skill when you already have a node set derived from Lean and want to:
 
 - Keep `source_root` immutable; write only to `output_root`.
 - Treat `uses` as Lean-backed graph edges after proposal and pruning.
+- Preserve the repository’s graph semantics: export should keep the graph human-readable and semantically faithful, not flatten it into a pure import projection.
 - Do not use export as a node-deduplication or canonicalization step; if the source tree has duplicate clusters, resolve them first through the node-maintenance agent and its subagents.
 - Preserve copied topic catalogs and other non-node files from the source tree.
 - Do not hand-edit generated `graph.json` or published site artifacts.
