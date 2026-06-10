@@ -165,16 +165,20 @@ class TestExampleCorpusPublish:
         assert payload["deps"]
         assert payload["lean_refs"]
 
-    def test_graph_page_uses_topic_overview_as_default_graph(self, tmp_path):
+    def test_graph_page_cache_busts_assets(self, tmp_path):
         publish(GENERIC_KNOWLEDGE_ROOT, tmp_path / "site")
         graph_page = (tmp_path / "site" / "dep_graph_document.html").read_text()
         graph_js = (tmp_path / "site" / "graph.js").read_text()
 
         assert 'id="graph-config"' in graph_page
+        assert "assetVersion" in graph_page
+        assert "style.css?v=" in graph_page
+        assert "graph.js?v=" in graph_page
         assert "graph_topics.json" in graph_page
         assert 'id="graph-dot"' not in graph_page
         assert "topicOverviewUrl" in graph_js
         assert "renderTopicOverview" in graph_js
+        assert "versionedAssetUrl" in graph_js
 
     def test_graph_js_supports_topic_expand_collapse_state(self, tmp_path):
         publish(GENERIC_KNOWLEDGE_ROOT, tmp_path / "site")

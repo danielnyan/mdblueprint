@@ -603,6 +603,7 @@ def render_index(ctx: "KnowledgeContext") -> str:
 
 def render_graph_page(ctx: "KnowledgeContext") -> str:
     tmpl = ctx.jinja_env.get_template("graph.html")
+    asset_version = ctx.jinja_env.globals.get("asset_version", "")
     return tmpl.render(
         title="Dependency graph",
         root="",
@@ -617,6 +618,7 @@ def render_graph_page(ctx: "KnowledgeContext") -> str:
             "maxExpandNodes": ctx.config.graph.max_expand_nodes,
             "proofPlans": ctx.config.graph.proof_plans,
             "mode": "topic-overview",
+            "assetVersion": asset_version,
         }),
         dev_mode=ctx.dev_mode,
     )

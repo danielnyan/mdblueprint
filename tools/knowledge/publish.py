@@ -5,6 +5,7 @@ import argparse
 import json
 import shutil
 import sys
+import uuid
 from pathlib import Path
 
 from tools.knowledge.context import KnowledgeContext
@@ -37,6 +38,8 @@ def publish(knowledge_root: Path, output_dir: Path, config_path: Path | None = N
         dev_mode=False,
         config_path=config_path,
     )
+    asset_version = uuid.uuid4().hex
+    ctx.jinja_env.globals["asset_version"] = asset_version
 
     all_nodes = ctx.all_nodes
     all_nodes_index = ctx.nodes_by_id
