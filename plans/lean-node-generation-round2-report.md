@@ -2,7 +2,7 @@
 
 ## Scope
 
-This round removes the prior report and the previous draft nodes, then re-tests five new EconCSLib nodes against Lean-derived drafts generated with the `mdblueprint-lean-node-generation` workflow.
+This round removes the prior report and the previous draft nodes, then re-tests five new EconCSLib nodes against Lean-derived drafts generated with the `mdblueprint-lean-node-generation` workflow. This workflow is an add-on for Lean-first import and ablation studies, not part of the core Markdown-first knowledge base pipeline. It should be run as a modular downstream step after the upstream authored baseline exists, not as a replacement for the core node/blueprint workflow.
 
 The key question is whether the Lean source alone can reconstruct `uses` and the surrounding metadata without falling back to the authored blueprint.
 
@@ -68,7 +68,7 @@ Failure mode: none for `uses`; the blueprint keeps the theorem node dependency-f
 
 ## Interpretation
 
-The second-round sample confirms the earlier failure mode rather than changing it.
+The second-round sample confirms the earlier failure mode rather than changing it. It also reinforces the role split: the Lean-first node-generation workflow can draft plausible node objects, but the core repository still treats authored Markdown nodes and `mdblueprint.yml` as the durable source of truth.
 
 - `lean.declarations` are recoverable from Lean with simple indexing.
 - `lean.modules` also match once the module path is used as the index reports it, without inventing extra prefixes.

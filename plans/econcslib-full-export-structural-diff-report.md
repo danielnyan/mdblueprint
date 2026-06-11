@@ -5,7 +5,7 @@ This report compares:
 - source tree: [`/home/azureuser/EconCSLib/docs/knowledge`](\/home\/azureuser\/EconCSLib\/docs\/knowledge)
 - Lean-backed export tree: `/tmp/econcslib-blueprint-full-export`
 
-The export was produced with the already-existing Lean-backed pipeline in [`tools/knowledge/lean_blueprint_export.py`](\/home\/azureuser\/mdblueprint\/tools\/knowledge\/lean_blueprint_export.py).
+The export was produced with the already-existing Lean-backed pipeline in [`tools/knowledge/lean_blueprint_export.py`](\/home\/azureuser\/mdblueprint\/tools\/knowledge\/lean_blueprint_export.py). In this project, the authored Markdown node tree and `mdblueprint.yml` remain the primordial source; Lean is the formal evidence layer used to project or validate dependencies, not the durable truth store for the graph.
 
 ## Export Summary
 

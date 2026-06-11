@@ -4,7 +4,7 @@
 
 Build a lightweight natural-language knowledge system for mathematical libraries that is compatible with Lean, but does not use `leanblueprint` or TeX blueprint files as the source of truth.
 
-The source of truth is a Markdown knowledge base:
+The primordial authored source of truth is the Markdown knowledge base and its project metadata:
 
 ```text
 docs/knowledge/nodes/**/*.md
@@ -42,6 +42,7 @@ For this project:
 - LLM agents may create staged candidates, reviews, Lean proposals, and new-node requests.
 - Python tools parse Markdown, validate structure, build the DAG, check mechanical Lean references, and generate the static website.
 - Only admitted files under `docs/knowledge/nodes/` are durable mathematical knowledge.
+- The `docs/knowledge/mdblueprint.yml` project config is authored metadata that controls projection, not derived truth.
 - Anything uncertain remains in `staged/`, `reviews/`, or `requests/`.
 
 ## Meaning of Agent
@@ -190,12 +191,13 @@ This sequence keeps the project usable before the LLM workflows are fully automa
 
 ## Design Decisions
 
-- Markdown nodes are the source of truth.
+- Markdown nodes are the source of truth, with `docs/knowledge/mdblueprint.yml` as the authored project metadata layer.
 - YAML carries system metadata; Markdown body carries only mathematics.
 - Topic directories organize the knowledge base.
 - Python generates the website and DAG.
 - LLMs do semantic work, not deterministic projection.
 - Semantic MD-Lean alignment is done by an LLM verifier, with Python prechecks.
+- Lean-first node generation is an optional add-on for import/ablation workflows, not part of the core Markdown-first authoring and publishing loop.
 - Generator-created nodes are proposals, never direct admissions.
 - Definition and proof verification are separate roles.
 - Kuzu is intentionally excluded from the first version.

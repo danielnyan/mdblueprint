@@ -1,6 +1,6 @@
 ---
 name: mdblueprint-lean-blueprint-export
-description: Use when you need to materialize a full docs/knowledge blueprint tree from Lean-backed node drafts and inferred DAG edges, including a generated mdblueprint.yml, so a fresh agent can run the pipeline end-to-end and compare it against a reference snapshot.
+description: Use when you need to materialize a full docs/knowledge blueprint tree from an existing Lean-backed node set and inferred DAG edges, including a generated mdblueprint.yml, so a fresh agent can run the core export pipeline end-to-end and compare it against a reference snapshot. This is the downstream export step, not the Lean-first node-generation add-on.
 ---
 
 # mdblueprint-lean-blueprint-export
@@ -9,13 +9,13 @@ Export a Lean-backed knowledge tree into a runnable mdblueprint repository.
 
 ## When to use
 
-Use this skill when you already have a node set derived from Lean and want to:
+Use this skill when you already have a node set derived from Lean or a comparable authored source and want to:
 
-- infer and prune `uses` into a DAG;
+- infer and review `uses` into a DAG or proposal artifact, depending on the current exporter mode;
 - generate or refresh `docs/knowledge/mdblueprint.yml`;
 - materialize a full output tree that `mdblueprint-check` and `mdblueprint-publish` can consume;
 - compare the exported tree against a reference snapshot;
-- leave node canonicalization and duplicate retirement to the node-maintenance agent before export when the source tree has overlap clusters.
+- leave node canonicalization and duplicate retirement to the node-maintenance agent before export when the source tree has overlap clusters; this exporter is downstream and must not delete upstream authored files.
 
 ## Inputs
 

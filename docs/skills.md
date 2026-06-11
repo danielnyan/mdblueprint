@@ -6,6 +6,8 @@ An agent is a role-specific LLM call with an input/output contract. A skill teac
 
 The maintained mdblueprint skills live in [`skills/`](../skills/). Each skill has a `SKILL.md` file with YAML frontmatter and optional `references/` files.
 
+The core mdblueprint workflow is Markdown-first: author or extract nodes, review them, publish the graph/site, and optionally connect them to Lean. Lean-first node generation is a separate add-on for import/ablation studies, not a core requirement. It should never remove or rewrite files from the authored baseline; it only drafts, compares, and reports.
+
 ## Skill Map
 
 | Task | Use this skill | Main outputs |
@@ -15,11 +17,33 @@ The maintained mdblueprint skills live in [`skills/`](../skills/). Each skill ha
 | Create or edit a Markdown knowledge node by hand | `mdblueprint-node-author` | node file |
 | Review staged content before admission | `mdblueprint-node-review` | statement/definition review, proof review, admission report |
 | Generate Lean code from admitted Markdown nodes | `mdblueprint-lean-generation` | Lean proposal, missing-node requests |
+| Optional add-on: generate staged node drafts from Lean source and compare them to the authored blueprint | `mdblueprint-lean-node-generation` | staged node drafts, comparison report |
 | Export a Lean-backed node set into a runnable docs/knowledge blueprint tree | `mdblueprint-lean-blueprint-export` | generated `mdblueprint.yml`, node files, verification report |
 | Choose existing Lean declarations for a Markdown node from a bounded candidate bundle | `mdblueprint-lean-linking` | mechanical Lean link proposal |
 | Check semantic alignment between Markdown and Lean | `mdblueprint-alignment-review` | alignment report |
 | Publish or inspect the static site and dependency graph | `mdblueprint-publish` | generated site, `graph.json`, QA notes |
 | Answer from admitted KB content only | `mdblueprint-kb-reasoning` | cited answer, missing-fact report |
+
+
+## Core vs Add-On
+
+The repository has two distinct agentic layers:
+
+1. Upstream Markdown-first processing, which creates and curates the durable knowledge base:
+   - `mdblueprint-source-extraction`
+   - `mdblueprint-node-author`
+   - `mdblueprint-node-review`
+   - `mdblueprint-source-proof-recovery`
+   - `mdblueprint-publish`
+   - `mdblueprint-lean-linking`
+   - `mdblueprint-alignment-review`
+   - `mdblueprint-lean-generation`
+
+2. Downstream Lean-first add-on processing, which drafts nodes from Lean and compares them to the authored baseline:
+   - `mdblueprint-lean-node-generation`
+   - `mdblueprint-lean-blueprint-export`
+
+Treat these as modular stages, not a single monolithic workflow. The add-on may consume upstream artifacts, but it must not delete or replace upstream source files.
 
 ## How To Use A Skill
 
@@ -37,6 +61,11 @@ Recommended order for building a knowledge base from a book:
    connecting admitted nodes to existing Lean declarations.
 7. Use `mdblueprint-lean-generation` when no suitable existing Lean declaration
    exists and new Lean code is needed.
+8. Use `mdblueprint-lean-node-generation` only when you intentionally want the
+   Lean-first add-on to draft Markdown nodes for comparison, import, or ablation
+   studies. It is not part of the normal Markdown-first core loop, and it must
+   write only to its own draft/output path rather than deleting or replacing
+   upstream authored files.
 
 Admission is deterministic and Python-orchestrated:
 

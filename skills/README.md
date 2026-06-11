@@ -1,6 +1,6 @@
 # mdblueprint Skills
 
-This directory contains repo-local Agent Skills for recurring mdblueprint workflows.
+This directory contains repo-local Agent Skills for recurring mdblueprint workflows. The core product is Markdown-first authoring, review, graph building, and publishing. Lean-first node generation is an optional add-on for import and ablation workflows. It is downstream and modular: it drafts and compares, but does not remove or replace upstream authored files.
 
 Each skill is a directory with a `SKILL.md` file and optional `references/` files. The `SKILL.md` files use standard YAML frontmatter (`name` and `description`) so they can be copied or symlinked into tools that support Agent Skills, including Claude Code and Codex-style skill directories.
 
@@ -13,7 +13,7 @@ Each skill is a directory with a `SKILL.md` file and optional `references/` file
 | Create or edit Markdown knowledge nodes by hand | `mdblueprint-node-author` |
 | Review staged nodes before admission | `mdblueprint-node-review` |
 | Generate Lean declarations, proof skeletons, or Lean patch proposals | `mdblueprint-lean-generation` |
-| Generate staged node drafts from Lean source and compare them to the authored blueprint | `mdblueprint-lean-node-generation` |
+| Optional downstream add-on: generate staged node drafts from Lean source and compare them to the authored blueprint | `mdblueprint-lean-node-generation` |
 | Export a Lean-backed node set into a runnable docs/knowledge blueprint tree | `mdblueprint-lean-blueprint-export` |
 | Choose existing Lean declarations from a bounded candidate bundle | `mdblueprint-lean-linking` |
 | Check whether Lean declarations semantically match Markdown nodes | `mdblueprint-alignment-review` |
@@ -23,7 +23,11 @@ Each skill is a directory with a `SKILL.md` file and optional `references/` file
 For existing Lean declarations, run `tools.knowledge.lean_link_candidates`, use
 `mdblueprint-lean-linking` to produce a mechanical proposal, validate or apply it
 with `tools.knowledge.lean_linking`, then use `tools.knowledge.lean_alignment`
-and `mdblueprint-alignment-review` for semantic evidence.
+and `mdblueprint-alignment-review` for semantic evidence. Use
+`mdblueprint-lean-node-generation` only when you intentionally want the Lean-first
+add-on to draft Markdown nodes; it is not required for the core authoring and
+publishing path, and it should only consume upstream artifacts rather than
+mutating them.
 
 ## Use Without Installing
 
