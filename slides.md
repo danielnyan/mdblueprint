@@ -15,7 +15,7 @@ mdc: true
 Using Lean-derived signals to review a human-authored mathematical dependency graph.
 
 <div class="mt-12 text-sm opacity-70">
-Draft deck. Built from the round3 source-text countercheck reports.
+Draft deck. Built from the round3 source-text countercheck reports and rerun review note.
 </div>
 
 ---
@@ -192,6 +192,7 @@ Round3 source-text run:
 - authored EconCSLib docs in `nodes/` and `staged/`: `535`
 - authored docs with `lean.declarations`: `322`
 - extracted declaration records: `1,590`
+- extracted dependency edges in the fresh rerun: `4,761`
 - authored nodes matched to at least one record: `249`
 - declaration records matched to authored nodes: `719`
 - declaration records left unmapped: `871`
@@ -201,11 +202,15 @@ At graph level:
 - round3 graph nodes: `1,464`
 - additional graph nodes beyond authored inventory: `929`
 
+The rerun keeps the same theorem count but increases the dependency signal after
+comment stripping and accessor normalization. That makes the review proposals
+sharper even when the source inventory does not change.
+
 ---
 
 # Edge-Level Results
 
-Projected theorem graph against the published blueprint graph:
+Earlier projection baseline against the published blueprint graph:
 
 - projected node set: `254`
 - blueprint node set: `535`
@@ -221,6 +226,8 @@ Measured alignment:
 - recall: `0.1833`
 
 Low precision and recall are not automatically failures. The graphs have different granularity.
+The fresh rerun was used to sharpen proposal quality; it did not recompute the
+blueprint comparison because no fresh local blueprint checkout was available.
 
 ---
 
@@ -231,6 +238,8 @@ Useful signals from the Lean-derived pass:
 - missing theorem-local helpers
 - new formalization lemmas not represented as authored nodes
 - declaration clusters hidden inside a single high-level node
+- wrapper-heavy definitions that should stay curated but be reviewed through a second-stage reducer
+- theorem clusters where one authored node spans several Lean declarations
 - authored edges that are conceptual rather than lexical
 - proof-local drift caused by autoformalization
 
@@ -240,52 +249,66 @@ It is a ranked list of nodes and edges worth human review.
 
 ---
 
-# Case Study: Wrapper Refactor
+# Case Study: Cardinal-Instance Wrappers
 
-`reserve_second_price_mechanism` is a better value-add example than the Loomis audit.
+`social_choice.fair_division.cardinal_instance_wrappers` is a stronger value-add example from the rerun.
 
-The human-authored node is a wrapper-style concept node, while the Lean theorem `mechanism_isDSIC` exposes theorem-local proof detail such as:
+The authored node is a definition-style wrapper, but it aggregates a family of distinct Lean declarations:
 
-- `truthful_weakly_dominant`
-- `game_eq_toStrategicGame`
-- `IsDSIC`
+- `IsEnvyFree`
+- `IsProportional`
+- `IsEquitable`
+- `IsParetoOptimal`
+- `utilitarianWelfare`
+- `egalitarianWelfare`
+- `IsUtilitarianOptimal`
+- `IsMaxmin`
 
-This is not a success case in the sense of "the human graph was wrong". The benefit is that the countergraph points to an implementable refactor:
+The improvement opportunity is not to delete the wrapper. It is to preserve it as a conceptual anchor while surfacing the declaration cluster as a reviewable source-improvement proposal.
 
-- add a second-stage reducer that clusters theorem-level proof detail under wrapper nodes
-- distinguish summary nodes from atomic theorem nodes during projection
-- keep the curated authored `uses` list, but surface the theorem-local proof cluster as review material
+This suggests a concrete second-stage reducer:
 
-That is the actual value-add over the human-generated graph.
+- keep the authored wrapper node intact
+- attach the underlying theorem/definition cluster as review evidence
+- flag any extra or missing wrapper-local `uses` edges for human review
 
 ---
 
-# Case Study: Reserve Second Price Mechanism
+# Case Study: Minimax Foundations
 
-This is the same wrapper cluster viewed from the opposite angle.
+`game_theory.strategic_game.zero_sum.lam_mu_existence` is the stronger theorem-cluster example from the rerun.
 
-Its authored `uses` list stays intentionally small:
+The authored node packages four conceptual facts:
 
-- `second_price_mechanism`
-- `mechanisms_with_transfers`
+1. continuity
+2. boundedness
+3. existence of optimizers
+4. weak duality
 
-Lean theorem `mechanism_isDSIC` exposes proof-local dependencies such as:
+The Lean side exposes a finer-grained cluster:
 
-- `truthful_weakly_dominant`
-- `game_eq_toStrategicGame`
-- `IsDSIC`
+- `MinimaxLoomis.lam.aux.continuous`
+- `MinimaxLoomis.mu.aux.continuous`
+- `MinimaxLoomis.lam.aux.bddAbove`
+- `MinimaxLoomis.mu.aux.bddBelow`
+- `MinimaxLoomis.lam.aux.le_lam0`
+- `MinimaxLoomis.mu.aux.ge_mu0`
+- `MinimaxLoomis.exists_xx_lam0`
+- `MinimaxLoomis.exists_yy_mu0`
+- `MinimaxLoomis.lam0_le_mu0`
 
-The point here is not to call the authored graph wrong. The point is that the theorem graph provides a refactor candidate:
+This shows a possible way to split up the individual nodes further:
+- the authored node is conceptually sound, but it compresses several proof phases into one bucket
+- the Lean-derived countergraph can propose an internal split or a staged follow-up node for the intermediate existence / weak-duality facts
+- the review layer can distinguish between a real source improvement and a harmless theorem cluster generated by formalization
 
-- the wrapper node could be annotated more explicitly as a summary node
-- the theorem-local cluster could be promoted into a named helper cluster if the repository wants finer organization
-- the adjudicator should treat this as a granularity mismatch, not a hard failure
+In other words, the agent can suggest a meaningful refinement without claiming the original node was wrong.
 
 ---
 
 # What Went Wrong There?
 
-The matcher attached theorem-level proof detail to a definition-style authored node.
+The matcher can attach theorem-level proof detail to the wrong authored node.
 
 That can be legitimate when the node is a conceptual wrapper.
 
@@ -296,7 +319,7 @@ It becomes an obvious oversight when:
 - the mapping only works through a weak basename match
 - the projected edge changes the intended authored dependency graph
 
-The adjudicator should penalize these cases through random spot checks.
+The adjudicator should penalize these cases through random spot checks and flag them as sanity failures.
 
 ---
 
@@ -325,19 +348,3 @@ Potential stronger methods:
 - add a randomized LLM-as-a-judge spot-check layer for obvious mapping mistakes
 
 The next engineering target is a better adjudicator, not a denser graph.
-
----
-
-# Review Checklist
-
-- problem setup introduced
-- original mdblueprint contract described
-- dependency graph risk explained
-- natural-language refactor pass included as placeholder
-- source-text extraction algorithm described
-- normalization and mapping described
-- adjudicator failure modes described
-- numerical results included
-- successful case study included
-- failed or ambiguous case study included
-- limitations and further work included
