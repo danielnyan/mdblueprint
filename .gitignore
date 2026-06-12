@@ -1,6 +1,7 @@
-.venv/
+node_modules/
+.slidev/
+dist/
 __pycache__/
-*.pyc
-.pytest_cache/
-mdblueprint.egg-info/
-.coverage
+*.egg-info/
+*.local
+.DS_Store
