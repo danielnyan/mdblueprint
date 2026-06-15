@@ -699,3 +699,65 @@ These are not failures of the workflow.
 
 They are exactly the kind of refinement targets the workflow is supposed to
 surface.
+---
+
+# Refactor Countercheck Run Summary
+
+The orchestrated refactor-countercheck run on `market_design.matching.one_to_one`
+found two mechanical cleanup opportunities in the authored graph:
+
+- remove `market_design.matching.one_to_one.market` from
+  `market_design.matching.one_to_one.gale_shapley_algorithm`
+- remove `market_design.matching.one_to_one.stability` from
+  `market_design.matching.one_to_one.lattice`
+
+The dry run validated both operations without introducing diagnostics:
+
+- graph edges: `406 -> 404`
+- graph nodes: `273` unchanged
+- report checker: clean
+
+The Lean countercheck then reviewed four mapped nodes and classified the
+mismatches as false abends rather than true discrepancies.
+
+---
+
+# What The Countercheck Said
+
+The countercheck did not find a semantic contradiction in the matching theory
+slice.
+
+It did find the expected granularity issues:
+
+- `gale_shapley_algorithm` is exposed in Lean as `GS.daStep`, `GS.daRun`,
+  `GS.finalState`, and `GS.gs`, plus helper lemmas
+- `lattice` is supported by `GS.opposed_preferences`, `GS.stableJoin_isStable`,
+  `GS.stableMeet_isStable`, and `GS.StableMatching.gsStable_isGreatest`
+- `market` maps to `MatchingMarket` and nearby support predicates
+- `stability` maps to `Matching.IsStable`, `Matching.IsBlocking`, and
+  `Matching.IsIndividuallyRational`
+
+The final adjudication labeled all four cases `false_abend`.
+
+That means the graph cleanup proposals were mechanically safe, but the Lean
+matcher still needs abstraction-aware normalization to avoid over-collecting
+helper artifacts.
+
+---
+
+# Final Takeaway
+
+The end-to-end workflow now has a useful shape:
+
+1. the refactor stage proposes bounded graph edits
+2. the dry-run stage confirms the graph effect before any real change
+3. the Lean countercheck surfaces where the authored graph is too coarse or
+   where the extractor is too literal
+4. the adjudicator decides whether a mismatch is a real problem or just a
+   false abend
+
+For this run, the refactor proposals were real, the dry run was clean, and the
+Lean adjudicator agreed that the mismatches were false abends.
+
+That is the value add: the pipeline can now separate a real graph cleanup from
+an apparent mismatch that is only a consequence of formalization granularity.
