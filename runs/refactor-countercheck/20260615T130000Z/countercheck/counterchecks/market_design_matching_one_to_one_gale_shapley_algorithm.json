@@ -1,0 +1,835 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "isFree_iff",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "not_isFree_iff",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "freeMenSet",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "mem_freeMenSet",
+      "target": "freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "mem_freeMenSet",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "propTarget_lt",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "propTarget_lt",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_nc_free",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_nc_held",
+      "target": "holdinv_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_nc_held",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_holding",
+      "target": "freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_holding",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_holding",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "daStep_holding",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_rank_mono_step",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_rank_mono_step",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_rank_mono_run",
+      "target": "holding_rank_mono_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "held_preserved_run",
+      "target": "holding_rank_mono_run"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "held_preserved_run",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "held_preserved_run",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_injective_step",
+      "target": "isFree_iff"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_injective_step",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_injective_step",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_injective_run",
+      "target": "holding_injective_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holding_injective_run",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "holding_injective_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "holding_rank_mono_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "holding_rank_mono_run"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "galeShapley_isStable"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "daStep_nc_free"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "daStep_nc_held"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "mem_freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "not_isFree_iff"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "pref_list_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "holdinv_step"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "HoldInv"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "initState_injective",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_init",
+      "target": "daStep_nc_free"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_init",
+      "target": "daStep_nc_held"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_init",
+      "target": "not_isFree_iff"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_init",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_init",
+      "target": "HoldInv"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "daStep_holding"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "daStep_nc_free"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "daStep_nc_held"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "not_isFree_iff"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "pref_list_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "propTarget"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "HoldInv"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_step",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_finalState",
+      "target": "initState_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_finalState",
+      "target": "pref_list_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_finalState",
+      "target": "holdinv_init"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_finalState",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "holdinv_finalState",
+      "target": "HoldInv"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "finalState_no_free_men",
+      "target": "initState_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "finalState_no_free_men",
+      "target": "mem_freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "finalState_no_free_men",
+      "target": "freeMenSet"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "finalState_no_free_men",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "finalState_no_free_men",
+      "target": "isFree"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_all_men_held",
+      "target": "finalState_no_free_men"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_all_men_held",
+      "target": "not_isFree_iff"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_holding_injective",
+      "target": "holding_injective_run"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_holding_injective",
+      "target": "initState_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_holding_injective",
+      "target": "initState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_all_women_hold",
+      "target": "final_holding_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "final_all_women_hold",
+      "target": "final_all_men_held"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "gs_injective",
+      "target": "final_holding_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "gs_injective",
+      "target": "final_all_women_hold"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "gs_bijective",
+      "target": "holdinv_finalState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "gs_bijective",
+      "target": "gs_injective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "galeShapley_isStable",
+      "target": "final_all_women_hold"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "galeShapley_isStable",
+      "target": "holdinv_finalState"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "galeShapley_isStable",
+      "target": "pref_list_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "galeShapley_isStable",
+      "target": "gs_bijective"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "source": "galeShapley_isStable",
+      "target": "HoldInv"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Gale-Shapley Deferred Acceptance Algorithm\n\nMen-proposing version on a one-to-one matching market $(M, W, \\succ)$.\n\n## Algorithm\n\nInitialize: every man is free; every woman holds no offer.\n\nRepeat until no free man has any acceptable woman remaining on his list:\n\n1. **Propose.** Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).\n2. **Decide.**\n   - If $j$ currently holds no offer, $j$ tentatively accepts $i$.\n   - If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).\n   - Else $j$ rejects $i$.\n\nThe algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.\n\nThe output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.\n\n## Variant: Women-Proposing\n\nSwap the roles of $M$ and $W$. The output is generally a *different* stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).\n\nIn Lean, the men-proposing algorithm is implemented in\n`EconCSLib.MarketDesign.Matching.GaleShapley` over `Fin n` indices: one\nround is `GS.daStep` (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by `GS.daRun` with fuel\n`n*n + 1` to `GS.finalState`, and `GS.gs` reads off each woman's final\nholding as the output matching.\n\n## References\n\n- [MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, *Game Theory*.\n- Gale & Shapley (1962). *College Admissions and the Stability of Marriage*. AMM 69, 9\u201315.",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+    "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+    "kind": "definition",
+    "lean": {
+      "declarations": [
+        "GS.daStep",
+        "GS.daRun",
+        "GS.finalState",
+        "GS.gs"
+      ],
+      "modules": [
+        "EconCSLib.MarketDesign.Matching.GaleShapley"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "matching",
+      "gale-shapley",
+      "deferred-acceptance",
+      "algorithm"
+    ],
+    "title": "Gale-Shapley Deferred Acceptance Algorithm",
+    "uses": [
+      "market_design.matching.one_to_one.market",
+      "market_design.matching.one_to_one.matching"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "lemma pref_list_mem {n : \u2115} (l : List (Fin n)) (hnd : l.Nodup) (hlen : l.length = n)\n    (x : Fin n) : x \u2208 l := by\n  rw [\u2190 List.mem_toFinset]\n  exact (Finset.eq_univ_of_card _ (by rw [List.toFinset_card_of_nodup hnd, hlen,\n    Fintype.card_fin])).symm \u25b8 Finset.mem_univ _\n\n/-! ### DA state -/\n\n/-- DA state: per-man proposal cursor + per-woman tentative hold. -/\nstructure DAState (n : \u2115) where\n  nextChoice : Fin n \u2192 \u2115\n  holding    : Fin n \u2192 Option (Fin n)\n\n/-- Initial state: all women free, all men start at proposal index 0. -/\n",
+      "column": 1,
+      "end": 5003,
+      "kind": "theorem",
+      "line": 111,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "pref_list_mem",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 4471
+    },
+    {
+      "body": "def initState (n : \u2115) : DAState n :=\n  { nextChoice := fun _ => 0, holding := fun _ => none }\n\n/-! ### Free-man predicate -/\n\n/-- Man `i` is free in `s` iff no woman holds him. -/\n",
+      "column": 1,
+      "end": 5183,
+      "kind": "theorem",
+      "line": 125,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "initState",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5003
+    },
+    {
+      "body": "def isFree {n : \u2115} (s : DAState n) (i : Fin n) : Bool :=\n  decide (\u2200 j : Fin n, s.holding j \u2260 some i)\n\n",
+      "column": 1,
+      "end": 5286,
+      "kind": "theorem",
+      "line": 131,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "isFree",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5183
+    },
+    {
+      "body": "lemma isFree_iff {n : \u2115} (s : DAState n) (i : Fin n) :\n    isFree s i = true \u2194 \u2200 j : Fin n, s.holding j \u2260 some i := by simp [isFree]\n\n",
+      "column": 1,
+      "end": 5420,
+      "kind": "theorem",
+      "line": 134,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "isFree_iff",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5286
+    },
+    {
+      "body": "lemma not_isFree_iff {n : \u2115} (s : DAState n) (i : Fin n) :\n    isFree s i = false \u2194 \u2203 j : Fin n, s.holding j = some i := by\n  simp [isFree, decide_eq_false_iff_not, not_forall, ne_eq]\n\n/-- The finset of all free men in `s`. -/\n",
+      "column": 1,
+      "end": 5647,
+      "kind": "theorem",
+      "line": 137,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "not_isFree_iff",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5420
+    },
+    {
+      "body": "def freeMenSet {n : \u2115} (s : DAState n) : Finset (Fin n) :=\n  Finset.univ.filter (fun i => isFree s i)\n\n",
+      "column": 1,
+      "end": 5750,
+      "kind": "theorem",
+      "line": 142,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "freeMenSet",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5647
+    },
+    {
+      "body": "lemma mem_freeMenSet {n : \u2115} {s : DAState n} {i : Fin n} :\n    i \u2208 freeMenSet s \u2194 isFree s i = true := by simp [freeMenSet]\n\n/-! ### Proposal target -/\n\n/-- The woman man `i` proposes to at cursor index `k` (none if out of bounds). -/\n",
+      "column": 1,
+      "end": 5985,
+      "kind": "theorem",
+      "line": 145,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "mem_freeMenSet",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5750
+    },
+    {
+      "body": "def propTarget {n : \u2115} (m : Preferences n) (i : Fin n) (k : \u2115) : Option (Fin n) :=\n  (m.prefs i)[k]?\n\n/-- `propTarget` returns `some` when `k < n`. -/\n",
+      "column": 1,
+      "end": 6136,
+      "kind": "theorem",
+      "line": 151,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "propTarget",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 5985
+    },
+    {
+      "body": "lemma propTarget_lt {n : \u2115} (m : Preferences n) (i : Fin n) {k : \u2115} (hk : k < n) :\n    \u2203 j, propTarget m i k = some j := by\n  have hlen : k < (m.prefs i).length := by rwa [(m.valid i).2]\n  exact \u27e8(m.prefs i)[k], List.getElem?_eq_getElem hlen\u27e9\n\n/-! ### DA step -/\n\n/-- One step of standard men-proposing DA.\n\n    All free men propose; women pick the best of {held, new proposers} by rank;\n    free men advance their cursor by 1. -/\nnoncomputable def daStep {n : \u2115} (w m : Preferences n) (s : DAState n) : DAState n :=\n  let newNextChoice : Fin n \u2192 \u2115 := fun i =>\n    if isFree s i then s.nextChoice i + 1 else s.nextChoice i\n  let proposerList : Fin n \u2192 List (Fin n) := fun j =>\n    (Finset.univ.filter (fun i =>\n      isFree s i && (propTarget m i (s.nextChoice i) == some j))).val.toList\n  let bestNew : Fin n \u2192 Option (Fin n) := fun j =>\n    (proposerList j).argmin (fun i => (w.prefs j).idxOf i)\n  let newHolding : Fin n \u2192 Option (Fin n) := fun j =>\n    match s.holding j, bestNew j with\n    | none,   none   => none\n    | some h, none   => some h\n    | none,   some p => some p\n    | some h, some p =>\n        if (w.prefs j).idxOf p < (w.prefs j).idxOf h then some p else some h\n  { nextChoice := newNextChoice, holding := newHolding }\n\n",
+      "column": 1,
+      "end": 7376,
+      "kind": "theorem",
+      "line": 155,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "propTarget_lt",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 6136
+    },
+    {
+      "body": "lemma daStep_nc_free {n : \u2115} {w m : Preferences n} {s : DAState n} {i : Fin n}\n    (hi : isFree s i = true) : (daStep w m s).nextChoice i = s.nextChoice i + 1 := by\n  simp [daStep, hi]\n\n",
+      "column": 1,
+      "end": 7562,
+      "kind": "theorem",
+      "line": 183,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "daStep_nc_free",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 7376
+    },
+    {
+      "body": "lemma daStep_nc_held {n : \u2115} {w m : Preferences n} {s : DAState n} {i : Fin n}\n    (hi : isFree s i = false) : (daStep w m s).nextChoice i = s.nextChoice i := by\n  simp [daStep, hi]\n\n/-- One step of DA: woman `p`'s new holding, expanded once.\n\nThis is the workhorse rewrite for any proof that needs to case-split on\nwhat `(daStep w m s).holding p` is. It unfolds the outermost `match`\ninside `daStep`'s `newHolding`. The statement **does inline** the auxiliary\n`proposerList` / `bestNew` formulae verbatim; downstream proofs re-abbreviate\nthem with `set` *after* rewriting (see `holdinv_step`).\n\nThe match shape is:\n\n```\nmatch s.holding p, bestNew p with\n| none,   none   => none                                  -- still free\n| some h, none   => some h                                -- old hold kept\n| none,   some q => some q                                -- new proposer\n| some h, some q => if rank q < rank h then q else h      -- upgrade?\n```\n\nwhere `bestNew p = (proposerList p).argmin (rank in w.prefs p)` and\n`proposerList p` is the list of free men who proposed to `p` this step.\n\nProvable by `rfl` because `daStep` is `noncomputable def` and the body\nis a sequence of `let`s ending in a structure literal whose `.holding p`\nprojects directly to the inner `match`. -/\n",
+      "column": 1,
+      "end": 8841,
+      "kind": "theorem",
+      "line": 187,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "daStep_nc_held",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 7562
+    },
+    {
+      "body": "lemma daStep_holding {n : \u2115} (w m : Preferences n) (s : DAState n) (p : Fin n) :\n    (daStep w m s).holding p =\n      (match s.holding p,\n        ((Finset.univ.filter (fun i : Fin n =>\n            isFree s i && (propTarget m i (s.nextChoice i) == some p))).val.toList).argmin\n          (fun i => (w.prefs p).idxOf i) with\n        | none,   none   => none\n        | some h, none   => some h\n        | none,   some q => some q\n        | some h, some q =>\n            if (w.prefs p).idxOf q < (w.prefs p).idxOf h then some q else some h) := rfl\n\n/-! ### DA run (structurally recursive, no WF needed) -/\n\n/-- Run DA for at most `fuel` steps, stopping early if no free men remain. -/\nnoncomputable def daRun {n : \u2115} (w m : Preferences n) : \u2115 \u2192 DAState n \u2192 DAState n\n  | 0,        s => s\n  | fuel + 1, s => if (freeMenSet s).Nonempty then daRun w m fuel (daStep w m s) else s\n\n/-- `finalState`: run `daRun` with fuel `n*n + 1` from `initState`. -/\nnoncomputable def finalState {n : \u2115} (w m : Preferences n) : DAState n :=\n  daRun w m (n * n + 1) (initState n)\n\n/-- The Gale-Shapley function: woman `j`'s partner at termination. -/\nnoncomputable def gs {n : \u2115} [NeZero n] (w m : Preferences n) : Fin n \u2192 Fin n := fun j =>\n  (finalState w m).holding j |>.getD default\n\nend GS\n\n/-! ### Bridge to EconCSLib native types -/\n\nnamespace MatchingMarket\n\nopen GS\n\nvariable {n : \u2115} [NeZero n]\n\n/-- Build a `MatchingMarket (Fin n) (Fin n)` from list-based preference data.\n    `some j \u227b some k` iff `j` appears earlier in the list; `none` is worst.\n\n    **Side transposition (read carefully).** `ofEquivData a b` puts `a` on the\n    market's MEN (`prefM`) and `b` on the market's WOMEN (`prefW`). Hence when it\n    is applied as `ofEquivData w m` with the algorithm's `w` (women's / choosing\n    preferences) and `m` (men's / proposing preferences), the market's \"men\" are\n    the algorithm's *women* and the market's \"women\" are the algorithm's *men* \u2014\n    the two sides are **transposed**. Stability is symmetric, so this is\n    harmless, but be aware that a market-`M` index corresponds to an algorithm\n    woman (and vice versa); the stability proof reasons in the algorithm frame. -/\nnoncomputable def ofEquivData (wPrefs mPrefs : GS.Preferences n) :\n    MatchingMarket (Fin n) (Fin n) where\n  prefM := fun i =>\n    { rel := fun ow1 ow2 =>\n        match ow1, ow2 with\n        | none,    none    => True\n        | none,    some _  => False\n        | some _,  none    => True\n        | some w1, some w2 => (wPrefs.prefs i).idxOf w1 \u2264 (wPrefs.prefs i).idxOf w2\n      prop :=\n        { reflexive := by intro ow; cases ow <;> simp\n          transitive := by\n            intro ow1 ow2 ow3 h12 h23\n            cases ow1 <;> cases ow2 <;> cases ow3 <;> simp_all\n            exact Nat.le_trans h12 h23\n          total := by\n            intro ow1 ow2; cases ow1 <;> cases ow2 <;> simp\n            exact Nat.le_or_le _ _ } }\n  prefW := fun j =>\n    { rel := fun om1 om2 =>\n        match om1, om2 with\n        | none,    none    => True\n        | none,    some _  => False\n        | some _,  none    => True\n        | some m1, some m2 => (mPrefs.prefs j).idxOf m1 \u2264 (mPrefs.prefs j).idxOf m2\n      prop :=\n        { reflexive := by intro om; cases om <;> simp\n          transitive := by\n            intro om1 om2 om3 h12 h23\n            cases om1 <;> cases om2 <;> cases om3 <;> simp_all\n            exact Nat.le_trans h12 h23\n          total := by\n            intro om1 om2; cases om1 <;> cases om2 <;> simp\n            exact Nat.le_or_le _ _ } }\n\nend MatchingMarket\n\nnamespace Matching\n\nopen GS\n\nvariable {n : \u2115} [NeZero n]\n\n/-- Coerce a bijective `f : Fin n \u2192 Fin n` into `Matching (Fin n) (Fin n)`. -/\nnoncomputable def ofGS (f : Fin n \u2192 Fin n) (hf : Function.Bijective f) :\n    Matching (Fin n) (Fin n) where\n  matchM := fun w => some (f w)\n  matchW := fun m => some ((Equiv.ofBijective f hf).symm m)\n  consistent := by\n    intro m w; simp only [Option.some.injEq]\n    rw [Equiv.symm_apply_eq]; exact eq_comm\n\nend Matching\n\n/-! ### Correctness (MT-L1 #203) -/\n\nsection GS_Correctness\n\nopen GS\n\nvariable {n : \u2115} [NeZero n]\nvariable (w m : Preferences n)\n\n/-! #### Invariant 1: `holding` rank monotonically improves -/\n\n/-- After one `daStep`, woman `j`'s held man's rank can only decrease (she only upgrades). -/\n",
+      "column": 1,
+      "end": 13134,
+      "kind": "theorem",
+      "line": 215,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "daStep_holding",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 8841
+    },
+    {
+      "body": "lemma holding_rank_mono_step (s : DAState n) (j : Fin n) {hval : Fin n}\n    (hh : s.holding j = some hval) :\n    \u2203 h' : Fin n, (daStep w m s).holding j = some h' \u2227\n      (w.prefs j).idxOf h' \u2264 (w.prefs j).idxOf hval := by\n  simp only [daStep]\n  set pl := (Finset.univ.filter (fun i =>\n    isFree s i && (propTarget m i (s.nextChoice i) == some j))).val.toList\n  cases pl.argmin (fun i => (w.prefs j).idxOf i) with\n  | none => exact \u27e8hval, by simp [hh], le_refl _\u27e9\n  | some p =>\n      simp only [hh]\n      split_ifs with hlt\n      \u00b7 exact \u27e8p, rfl, Nat.le_of_lt hlt\u27e9\n      \u00b7 exact \u27e8hval, rfl, le_refl _\u27e9\n\n/-- Rank-mono over any `daRun`. -/\n",
+      "column": 1,
+      "end": 13772,
+      "kind": "theorem",
+      "line": 329,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holding_rank_mono_step",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 13134
+    },
+    {
+      "body": "lemma holding_rank_mono_run (fuel : \u2115) (s : DAState n) (j : Fin n) {hval : Fin n}\n    (hh : s.holding j = some hval) :\n    \u2203 h' : Fin n, (daRun w m fuel s).holding j = some h' \u2227\n      (w.prefs j).idxOf h' \u2264 (w.prefs j).idxOf hval := by\n  induction fuel generalizing s hval with\n  | zero   => exact \u27e8hval, hh, le_refl _\u27e9\n  | succ k ih =>\n      simp only [daRun]\n      split_ifs with hne\n      \u00b7 obtain \u27e8h1, hh1, hrk1\u27e9 := holding_rank_mono_step w m s j hh\n        obtain \u27e8h2, hh2, hrk2\u27e9 := ih (daStep w m s) hh1\n        exact \u27e8h2, hh2, Nat.le_trans hrk2 hrk1\u27e9\n      \u00b7 exact \u27e8hval, hh, le_refl _\u27e9\n\n/-- Once held, always held over `daRun`. -/\n",
+      "column": 1,
+      "end": 14411,
+      "kind": "theorem",
+      "line": 345,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holding_rank_mono_run",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 13772
+    },
+    {
+      "body": "lemma held_preserved_run (fuel : \u2115) (s : DAState n) (j : Fin n) {hval : Fin n}\n    (hh : s.holding j = some hval) :\n    \u2203 h', (daRun w m fuel s).holding j = some h' :=\n  (holding_rank_mono_run w m fuel s j hh).imp fun _ \u27e8eq, _\u27e9 => eq\n\n/-! #### Invariant 2: `holding` is injective -/\n\n/-- Helper: membership in the proposerList implies freedom and proposal target. -/\nprivate lemma pl_free_props {n : \u2115} (s : DAState n) (m : Preferences n) (j k : Fin n) :\n    let pl : Fin n \u2192 List (Fin n) := fun j' =>\n      (Finset.univ.filter (fun i =>\n        isFree s i && (propTarget m i (s.nextChoice i) == some j'))).val.toList\n    k \u2208 pl j \u2192\n    isFree s k = true \u2227 propTarget m k (s.nextChoice k) = some j := by\n  intro pl hk\n  change k \u2208 (Finset.univ.filter (fun i =>\n    isFree s i && (propTarget m i (s.nextChoice i) == some j))).val.toList at hk\n  simp only [Multiset.mem_toList, Finset.mem_val, Finset.mem_filter,\n    Finset.mem_univ, true_and, Bool.and_eq_true, beq_iff_eq] at hk\n  exact hk\n\n/-- In `daStep`, `holding` remains injective. -/\n",
+      "column": 1,
+      "end": 15450,
+      "kind": "theorem",
+      "line": 360,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "held_preserved_run",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 14411
+    },
+    {
+      "body": "lemma holding_injective_step (s : DAState n)\n    (hinj : \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) :\n    \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      (daStep w m s).holding j1 = some i \u2192 (daStep w m s).holding j2 = some i \u2192 j1 = j2 := by\n  intro j1 j2 i hj1 hj2\n  -- The proposerList and bestNew for each woman\n  let pl : Fin n \u2192 List (Fin n) := fun j =>\n    (Finset.univ.filter (fun k =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some j))).val.toList\n  have pl_disj : \u2200 k : Fin n, \u2200 j1' j2' : Fin n,\n      k \u2208 pl j1' \u2192 k \u2208 pl j2' \u2192 j1' = j2' := by\n    intro k j1' j2' hk1 hk2\n    exact Option.some.inj\n      ((pl_free_props s m j1' k hk1).2.symm.trans (pl_free_props s m j2' k hk2).2)\n  let bn : Fin n \u2192 Option (Fin n) := fun j =>\n    (pl j).argmin (fun k => (w.prefs j).idxOf k)\n  have bn_mem : \u2200 j p : Fin n, bn j = some p \u2192 p \u2208 pl j := fun j p hp =>\n    List.argmin_mem hp\n  -- `newHolding j = some i` means i came via bn j or from s.holding j\n  have result_source : \u2200 j : Fin n,\n      (daStep w m s).holding j = some i \u2192\n      bn j = some i \u2228 s.holding j = some i := by\n    intro j hj\n    simp only [daStep] at hj\n    rcases hs : s.holding j with _ | h <;> rcases hb : bn j with _ | p <;>\n    simp only [hs, show (Finset.univ.filter (fun k =>\n        isFree s k && (propTarget m k (s.nextChoice k) == some j))).val.toList.argmin\n        (fun k => idxOf k (w.prefs j)) = bn j from rfl] at hj <;>\n    simp_all [bn] <;> split_ifs at hj with hlt <;> simp_all\n  rcases result_source j1 hj1 with hbn1 | hold1\n  \u00b7 -- i came via proposals to j1 \u2192 i was free in s\n    have hi_free : isFree s i = true := (pl_free_props s m j1 i (bn_mem j1 i hbn1)).1\n    rcases result_source j2 hj2 with hbn2 | hold2\n    \u00b7 -- both via proposals \u2192 j1 = j2 (same man can only propose to one woman)\n      exact pl_disj i j1 j2 (bn_mem j1 i hbn1) (bn_mem j2 i hbn2)\n    \u00b7 -- j2 via old holding: i was free but s.holding j2 = some i \u2192 contradiction\n      rw [isFree_iff] at hi_free; exact absurd hold2 (hi_free j2)\n  \u00b7 rcases result_source j2 hj2 with hbn2 | hold2\n    \u00b7 -- j1 via old holding, j2 via proposals \u2192 contradiction\n      have hi_free : isFree s i = true := (pl_free_props s m j2 i (bn_mem j2 i hbn2)).1\n      rw [isFree_iff] at hi_free; exact absurd hold1 (hi_free j1)\n    \u00b7 -- both via old holding \u2192 induction hypothesis\n      exact hinj j1 j2 i hold1 hold2\n\n/-- Over `daRun`, holding remains injective. -/\n",
+      "column": 1,
+      "end": 17900,
+      "kind": "theorem",
+      "line": 382,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holding_injective_step",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 15450
+    },
+    {
+      "body": "lemma holding_injective_run (fuel : \u2115) (s : DAState n)\n    (hinj : \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) :\n    \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      (daRun w m fuel s).holding j1 = some i \u2192 (daRun w m fuel s).holding j2 = some i \u2192 j1 = j2 := by\n  induction fuel generalizing s with\n  | zero   => exact hinj\n  | succ k ih =>\n      simp only [daRun]\n      split_ifs with hne\n      \u00b7 exact ih (daStep w m s) (holding_injective_step w m s hinj)\n      \u00b7 exact hinj\n\n/-- `initState` has trivially injective holding (all `none`). -/\n",
+      "column": 1,
+      "end": 18479,
+      "kind": "theorem",
+      "line": 428,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holding_injective_run",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 17900
+    },
+    {
+      "body": "lemma initState_injective :\n    \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      (initState n).holding j1 = some i \u2192 (initState n).holding j2 = some i \u2192 j1 = j2 := by\n  intro j1 j2 i h1; simp [initState] at h1\n\n/-! #### Invariant 3: fuel sufficiency -/\n\nend GS_Correctness\n\n/-! The following private lemmas are defined outside `section GS_Correctness` to avoid\n    implicit section variable clutter.  All parameters are explicit. -/\n\nsection GS_Fuel\n\nopen GS\n\nvariable {n : \u2115} [NeZero n]\n\n/-- **JInv** (Proposed \u2192 Held): once man `i` has proposed to woman `p` in some\nprior step, `p` is currently held by *someone* (possibly `i`, possibly someone\nbetter).\n\nFormally: every `p` in the prefix `(m.prefs i).take (s.nextChoice i)` of `i`'s\npreference list \u2014 i.e., every woman `i` has already proposed to \u2014 has\n`s.holding p = some _`.\n\nThis is the **\"once proposed-to, always held\"** invariant: a woman who has\never received a proposal can never go back to being unmatched. It is the dual\nof [`HoldInv`] (every currently-held woman is in her holder's proposed\nprefix), which gives the converse direction.\n\nTogether `JInv` and `HoldInv` pin down a bidirectional correspondence between\nthe per-man cursors and the per-woman holdings, which the stability proof\nneeds in both directions. -/\nprivate def JInv (m : Preferences n) (s : DAState n) : Prop :=\n  \u2200 i p : Fin n, p \u2208 (m.prefs i).take (s.nextChoice i) \u2192 \u2203 h : Fin n, s.holding p = some h\n\nprivate lemma jinv_init (m : Preferences n) : JInv m (initState n) := by\n  intro i p hp; simp [initState] at hp\n\n/-- Free man `i` proposing to woman `p` makes her held in `daStep`. -/\nprivate lemma daStep_held_of_free_prop (w m : Preferences n) (s : DAState n) (i p : Fin n)\n    (hfi : isFree s i = true) (hpt : propTarget m i (s.nextChoice i) = some p) :\n    \u2203 h : Fin n, (daStep w m s).holding p = some h := by\n  have hi_in : i \u2208 (Finset.univ.filter (fun k : Fin n =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some p))).val.toList :=\n    Multiset.mem_toList.mpr (Finset.mem_val.mpr (Finset.mem_filter.mpr \u27e8Finset.mem_univ _, by simp [hfi, hpt]\u27e9))\n  -- The proposer list is nonempty (i is in it), so argmin returns Some.\n  set pl := (Finset.univ.filter (fun k : Fin n =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some p))).val.toList with hpl_def\n  have hne_pl : pl \u2260 [] := List.ne_nil_of_mem hi_in\n  have hbn : \u2203 q : Fin n, pl.argmin (fun k => (w.prefs p).idxOf k) = some q :=\n    (Option.ne_none_iff_exists.mp (List.argmin_eq_none.not.mpr hne_pl)).imp (fun _ h => h.symm)\n  obtain \u27e8q, hq\u27e9 := hbn\n  simp only [daStep, \u2190 hpl_def]\n  cases hs : s.holding p with\n  | none   => simp only [hs, hq]; exact \u27e8q, rfl\u27e9\n  | some h => simp only [hs, hq]; split_ifs <;> exact \u27e8_, rfl\u27e9\n\n/-- `JInv` is preserved by one `daStep`. -/\nprivate lemma jinv_step (w m : Preferences n) (s : DAState n) (hj : JInv m s) :\n    JInv m (daStep w m s) := by\n  intro i p hp\n  -- Helper: if s.holding p = some h, then (daStep s).holding p = some h' for some h'.\n  have mono : \u2200 h : Fin n, s.holding p = some h \u2192\n      \u2203 h' : Fin n, (daStep w m s).holding p = some h' :=\n    fun h hh => (holding_rank_mono_step w m s p hh).imp fun h' \u27e8heq, _\u27e9 => heq\n  by_cases hfi : isFree s i = true\n  \u00b7 -- Man i was free: nc increases by 1, hp : p \u2208 take (nc+1) (prefs i).\n    rw [daStep_nc_free hfi] at hp\n    rcases lt_or_ge (s.nextChoice i) n with hnc_lt | h_ge\n    \u00b7 -- nc < n: take (nc+1) = take nc ++ [(prefs i)[nc]].\n      rw [List.take_succ_eq_append_getElem (by rwa [(m.valid i).2])] at hp\n      simp only [List.mem_append, List.mem_singleton] at hp\n      rcases hp with hp_old | hp_eq\n      \u00b7 obtain \u27e8h, hh\u27e9 := hj i p hp_old; exact mono h hh\n      \u00b7 -- p = (prefs i)[nc]: man i proposes to p this round.\n        have hpt : propTarget m i (s.nextChoice i) = some p := by\n          simp [propTarget, List.getElem?_eq_getElem (by rwa [(m.valid i).2]), hp_eq]\n        exact daStep_held_of_free_prop w m s i p hfi hpt\n    \u00b7 -- nc \u2265 n: take (nc+1) = take nc = prefs i (since length = n).\n      have heq_full : (m.prefs i).take (s.nextChoice i) = m.prefs i :=\n        List.take_of_length_le (by rw [(m.valid i).2]; exact h_ge)\n      have hmem_take : p \u2208 (m.prefs i).take (s.nextChoice i) := by\n        rw [heq_full]\n        rw [List.take_of_length_le (by rw [(m.valid i).2]; omega)] at hp\n        exact hp\n      obtain \u27e8h, hh\u27e9 := hj i p hmem_take; exact mono h hh\n  \u00b7 -- Man i was not free: nc unchanged.\n    simp only [Bool.not_eq_true] at hfi\n    rw [daStep_nc_held hfi] at hp\n    obtain \u27e8h, hh\u27e9 := hj i p hp; exact mono h hh\n\n/-- `JInv` over `daRun`. -/\nprivate lemma jinv_run (w m : Preferences n) (fuel : \u2115) (s : DAState n) (hj : JInv m s) :\n    JInv m (daRun w m fuel s) := by\n  induction fuel generalizing s with\n  | zero   => exact hj\n  | succ k ih =>\n      simp only [daRun]; split_ifs with hne\n      \u00b7 exact ih _ (jinv_step w m s hj)\n      \u00b7 exact hj\n\n/-- `nextChoice i \u2265 n` + injectivity + `JInv` \u2192 man `i` is not free. -/\nprivate lemma not_free_of_nc_ge (m : Preferences n) (s : DAState n) (i : Fin n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2)\n    (hnc : n \u2264 s.nextChoice i) :\n    isFree s i = false := by\n  rw [not_isFree_iff]\n  have hall : \u2200 j : Fin n, \u2203 h, s.holding j = some h := by\n    intro j\n    apply hj i j\n    have hmem : j \u2208 m.prefs i := pref_list_mem _ (m.valid i).1 (m.valid i).2 j\n    rw [List.take_of_length_le (by rw [(m.valid i).2]; exact hnc)]\n    exact hmem\n  -- The function j \u21a6 (hall j).choose is injective (by holding injectivity),\n  -- hence surjective on the finite type Fin n.\n  let f : Fin n \u2192 Fin n := fun j => (hall j).choose\n  have hfinj : Function.Injective f := by\n    intro j1 j2 heq\n    exact hinj j1 j2 (hall j1).choose (hall j1).choose_spec\n      (show s.holding j2 = some (f j1) from heq \u25b8 (hall j2).choose_spec)\n  have hfsurj : Function.Surjective f := Finite.injective_iff_surjective.mp hfinj\n  obtain \u27e8j, rfl\u27e9 := hfsurj i\n  exact \u27e8j, (hall j).choose_spec\u27e9\n\n/-- `nextChoice i \u2264 n` for `daStep`. -/\nprivate lemma daStep_nc_le_n (w m : Preferences n) (s : DAState n)\n    (hnc0 : \u2200 i : Fin n, s.nextChoice i \u2264 n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2)\n    (i : Fin n) : (daStep w m s).nextChoice i \u2264 n := by\n  by_cases hfi : isFree s i = true\n  \u00b7 rw [daStep_nc_free hfi]\n    by_contra h_gt; push_neg at h_gt\n    exact absurd (not_free_of_nc_ge m s i hj hinj (by omega)) (by simp [hfi])\n  \u00b7 rw [daStep_nc_held (by simpa using hfi)]; exact hnc0 i\n\n/-- `nextChoice i \u2264 n` over `daRun`. -/\nprivate lemma nc_le_n_run (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (hnc0 : \u2200 i : Fin n, s.nextChoice i \u2264 n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2)\n    (i : Fin n) : (daRun w m fuel s).nextChoice i \u2264 n := by\n  induction fuel generalizing s with\n  | zero   => exact hnc0 i\n  | succ k ih =>\n      simp only [daRun]; split_ifs with hne\n      \u00b7 exact ih _ (daStep_nc_le_n w m s hnc0 hj hinj) (jinv_step w m s hj)\n            (holding_injective_step w m s hinj)\n      \u00b7 exact hnc0 i\n\n/-- `\u2211 nextChoice` strictly increases when free men exist. -/\nprivate lemma nc_sum_increase (w m : Preferences n) (s : DAState n)\n    (hne : (freeMenSet s).Nonempty) :\n    \u2211 i : Fin n, s.nextChoice i < \u2211 i : Fin n, (daStep w m s).nextChoice i := by\n  obtain \u27e8i0, hi0\u27e9 := hne\n  rw [mem_freeMenSet] at hi0\n  apply Finset.sum_lt_sum\n  \u00b7 intro i _\n    by_cases hfi : isFree s i = true\n    \u00b7 simp [daStep_nc_free hfi]\n    \u00b7 simp [daStep_nc_held (by simpa using hfi)]\n  \u00b7 exact \u27e8i0, Finset.mem_univ _, by simp [daStep_nc_free hi0]\u27e9\n\n/-- `\u2211 nextChoice \u2264 n * n` is preserved over `daRun`. -/\nprivate lemma nc_sum_le_nn (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (hnc0 : \u2200 i : Fin n, s.nextChoice i \u2264 n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2)\n    (hsum0 : \u2211 i : Fin n, s.nextChoice i \u2264 n * n) :\n    \u2211 i : Fin n, (daRun w m fuel s).nextChoice i \u2264 n * n := by\n  induction fuel generalizing s with\n  | zero   => exact hsum0\n  | succ k ih =>\n      simp only [daRun]; split_ifs with hne\n      \u00b7 apply ih _ (daStep_nc_le_n w m s hnc0 hj hinj) (jinv_step w m s hj)\n            (holding_injective_step w m s hinj)\n        calc \u2211 i : Fin n, (daStep w m s).nextChoice i\n            \u2264 \u2211 _i : Fin n, n :=\n              Finset.sum_le_sum (fun i _ => daStep_nc_le_n w m s hnc0 hj hinj i)\n          _ = n * n := by\n              simp [Finset.sum_const, Finset.card_univ, Fintype.card_fin, mul_comm]\n      \u00b7 exact hsum0\n\n/-- After `fuel` rounds ending with free men, `\u2211 nextChoice` grew by \u2265 `fuel`. -/\nprivate lemma nc_sum_grows (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (hnc0 : \u2200 i : Fin n, s.nextChoice i \u2264 n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2)\n    (hne_end : (freeMenSet (daRun w m fuel s)).Nonempty) :\n    \u2211 i : Fin n, s.nextChoice i + fuel \u2264 \u2211 i : Fin n, (daRun w m fuel s).nextChoice i := by\n  induction fuel generalizing s with\n  | zero => simp [daRun]\n  | succ k ih =>\n      simp only [daRun]\n      split_ifs with hne_s\n      \u00b7 -- this round was active\n        have hsum_inc := nc_sum_increase w m s hne_s\n        -- freeMenSet after k more rounds of daStep s is nonempty\n        have hne_k : (freeMenSet (daRun w m k (daStep w m s))).Nonempty := by\n          simp only [daRun] at hne_end; simpa [hne_s] using hne_end\n        have hih := ih _ (daStep_nc_le_n w m s hnc0 hj hinj) (jinv_step w m s hj)\n            (holding_injective_step w m s hinj) hne_k\n        linarith\n      \u00b7 -- freeMenSet s = \u2205: daRun (k+1) s = s\n        simp only [Finset.not_nonempty_iff_eq_empty] at hne_s\n        simp only [daRun, hne_s, Finset.not_nonempty_iff_eq_empty, \u2193reduceIte] at hne_end\n        exact absurd hne_s (Finset.nonempty_iff_ne_empty.mp hne_end)\n\n/-! #### Proposal rank bound: the core of Roth-Sotomayor -/\n\n/-- When free man `j` proposes to woman `i` in `daStep`, the resulting hold has rank \u2264 j. -/\nprivate lemma proposal_rank_bound (w m : Preferences n) (s : DAState n) (j i : Fin n)\n    (hfj : isFree s j = true) (hpt : propTarget m j (s.nextChoice j) = some i) :\n    \u2203 h : Fin n, (daStep w m s).holding i = some h \u2227\n      (w.prefs i).idxOf h \u2264 (w.prefs i).idxOf j := by\n  -- j is in proposerList i\n  have hj_in : j \u2208 (Finset.univ.filter (fun k : Fin n =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some i))).val.toList :=\n    Multiset.mem_toList.mpr (Finset.mem_val.mpr\n      (Finset.mem_filter.mpr \u27e8Finset.mem_univ _, by simp [hfj, hpt]\u27e9))\n  set pl := (Finset.univ.filter (fun k : Fin n =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some i))).val.toList with hpl_def\n  have hne_pl : pl \u2260 [] := List.ne_nil_of_mem hj_in\n  -- argmin returns some q with rank \u2264 j's rank\n  have hbn : \u2203 q : Fin n, pl.argmin (fun k => (w.prefs i).idxOf k) = some q :=\n    (Option.ne_none_iff_exists.mp (List.argmin_eq_none.not.mpr hne_pl)).imp\n      (fun _ h => h.symm)\n  obtain \u27e8q, hq\u27e9 := hbn\n  have hq_le : (w.prefs i).idxOf q \u2264 (w.prefs i).idxOf j :=\n    List.le_of_mem_argmin hj_in (show q \u2208 pl.argmin (fun k => (w.prefs i).idxOf k) from hq)\n  -- daStep holding i = some h with rank \u2264 q \u2264 j\n  simp only [daStep, \u2190 hpl_def]\n  cases hs : s.holding i with\n  | none =>\n      simp only [hs, hq]\n      exact \u27e8q, rfl, hq_le\u27e9\n  | some h =>\n      simp only [hs, hq]\n      split_ifs with hlt\n      \u00b7 exact \u27e8q, rfl, hq_le\u27e9\n      \u00b7 exact \u27e8h, rfl, Nat.le_trans (Nat.le_of_not_lt hlt) hq_le\u27e9\n\n/-- Over a daRun, if man j proposed to woman i at the first step, woman i's final partner\n    has rank \u2264 j's rank in w.prefs i. -/\nprivate lemma proposal_rank_bound_run (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (j i : Fin n) (hfj : isFree s j = true) (hpt : propTarget m j (s.nextChoice j) = some i) :\n    \u2203 h : Fin n, (daRun w m fuel (daStep w m s)).holding i = some h \u2227\n      (w.prefs i).idxOf h \u2264 (w.prefs i).idxOf j := by\n  obtain \u27e8h0, hh0, hrk0\u27e9 := proposal_rank_bound w m s j i hfj hpt\n  obtain \u27e8h1, hh1, hrk1\u27e9 := holding_rank_mono_run w m fuel (daStep w m s) i hh0\n  exact \u27e8h1, hh1, Nat.le_trans hrk1 hrk0\u27e9\n\n/-- At termination: if man j proposed to woman i at some round (j was free, i was his nc-th\n    choice at state s, and the rest of the run reaches finalState), woman i's final partner has\n    rank \u2264 j in w.prefs i. -/\nprivate lemma finalState_rank_bound (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (j i : Fin n) (hfj : isFree s j = true) (hpt : propTarget m j (s.nextChoice j) = some i)\n    (hrun : daRun w m fuel (daStep w m s) = finalState w m) :\n    (w.prefs i).idxOf (gs w m i) \u2264 (w.prefs i).idxOf j := by\n  obtain \u27e8h, hh, hrk\u27e9 := proposal_rank_bound_run w m fuel s j i hfj hpt\n  rw [hrun] at hh\n  -- gs w m i = h (woman i holds man h at termination)\n  have hgs : gs w m i = h := by\n    simp only [gs, finalState]\n    rw [show (daRun w m (n * n + 1) (initState n)).holding i = some h from hh]; simp\n  rw [hgs]; exact hrk\n\n/-! #### Roth\u2013Sotomayor rank invariant -/\n\n/-- **RSInv** (the deferred-acceptance rank invariant \u2014 the engine of the\nstability proof): for every man `j` and every woman `i` that `j` has already\nproposed to, `i` currently holds *some* man whom she prefers at least as much\nas `j`.\n\nFormally: for every `i \u2208 (m.prefs j).take (s.nextChoice j)` (the prefix of\n`j`'s preference list `j` has cycled through), there exists `h` such that\n`s.holding i = some h` **and** `(w.prefs i).idxOf h \u2264 (w.prefs i).idxOf j`\n(smaller index = higher preference).\n\nWhy this is the stability lever: at termination, if `(i, j)` *were* a blocking\npair \u2014 `i` and `j` mutually prefer each other to their final partners \u2014 then\n`j` would have proposed to `i` at some point, so `RSInv` at termination would\nsay `i` holds someone she likes at least as much as `j`. That someone is `i`'s\neventual partner (by `holding_rank_mono_run`), giving `i` no incentive to\ndefect. Contradiction with the blocking-pair assumption.\n\nThe invariant is preserved by every `daStep` (`rsinv_step`) and trivially\nholds at `initState` (`rsinv_init`); see also `rsinv_finalState` for the\nterminal form used in the stability proof. -/\nprivate def RSInv (w m : Preferences n) (s : DAState n) : Prop :=\n  \u2200 j i : Fin n, i \u2208 (m.prefs j).take (s.nextChoice j) \u2192\n    \u2203 h : Fin n, s.holding i = some h \u2227 (w.prefs i).idxOf h \u2264 (w.prefs i).idxOf j\n\nprivate lemma rsinv_init (w m : Preferences n) : RSInv w m (initState n) := by\n  intro j i hi; simp [initState] at hi\n\n/-- RSInv is preserved by one daStep. -/\nprivate lemma rsinv_step (w m : Preferences n) (s : DAState n)\n    (hrs : RSInv w m s)\n    (hnc0 : \u2200 k : Fin n, s.nextChoice k \u2264 n) :\n    RSInv w m (daStep w m s) := by\n  intro j i hi\n  by_cases hfj : isFree s j = true\n  \u00b7 rw [daStep_nc_free hfj] at hi\n    rcases lt_or_ge (s.nextChoice j) n with hnc_lt | h_ge\n    \u00b7 -- nc < n: take (nc+1) = take nc ++ [proposal]\n      rw [List.take_succ_eq_append_getElem (by rwa [(m.valid j).2])] at hi\n      simp only [List.mem_append, List.mem_singleton] at hi\n      rcases hi with hi_old | hi_eq\n      \u00b7 -- i was in the old take \u2014 rank already good; use rank_mono_step\n        obtain \u27e8h, hh, hrk\u27e9 := hrs j i hi_old\n        obtain \u27e8h', hh', hrk'\u27e9 := holding_rank_mono_step w m s i hh\n        exact \u27e8h', hh', Nat.le_trans hrk' hrk\u27e9\n      \u00b7 -- i = (m.prefs j)[nc] = the new proposal; use proposal_rank_bound\n        have hpt : propTarget m j (s.nextChoice j) = some i := by\n          simp [propTarget, List.getElem?_eq_getElem (by rwa [(m.valid j).2]), hi_eq]\n        exact proposal_rank_bound w m s j i hfj hpt\n    \u00b7 -- nc \u2265 n: take (nc+1) = take nc = full list\n      have hmem_take : i \u2208 (m.prefs j).take (s.nextChoice j) := by\n        rw [List.take_of_length_le (by rw [(m.valid j).2]; exact h_ge)]\n        rw [List.take_of_length_le (by rw [(m.valid j).2]; omega)] at hi; exact hi\n      obtain \u27e8h, hh, hrk\u27e9 := hrs j i hmem_take\n      obtain \u27e8h', hh', hrk'\u27e9 := holding_rank_mono_step w m s i hh\n      exact \u27e8h', hh', Nat.le_trans hrk' hrk\u27e9\n  \u00b7 -- j not free: nc unchanged\n    simp only [Bool.not_eq_true] at hfj\n    rw [daStep_nc_held hfj] at hi\n    obtain \u27e8h, hh, hrk\u27e9 := hrs j i hi\n    obtain \u27e8h', hh', hrk'\u27e9 := holding_rank_mono_step w m s i hh\n    exact \u27e8h', hh', Nat.le_trans hrk' hrk\u27e9\n\n/-- RSInv over daRun. -/\nprivate lemma rsinv_run (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (hrs : RSInv w m s)\n    (hnc0 : \u2200 k : Fin n, s.nextChoice k \u2264 n)\n    (hj : JInv m s)\n    (hinj : \u2200 j1 j2 k : Fin n, s.holding j1 = some k \u2192 s.holding j2 = some k \u2192 j1 = j2) :\n    RSInv w m (daRun w m fuel s) := by\n  induction fuel generalizing s with\n  | zero => exact hrs\n  | succ k ih =>\n      simp only [daRun]; split_ifs with hne\n      \u00b7 apply ih\n        \u00b7 exact rsinv_step w m s hrs hnc0\n        \u00b7 exact daStep_nc_le_n w m s hnc0 hj hinj\n        \u00b7 exact jinv_step w m s hj\n        \u00b7 exact holding_injective_step w m s hinj\n      \u00b7 exact hrs\n\n/-- **HoldInv** (Held \u2192 Proposed): if woman `p` currently holds man `j`, then\n`j` must already have proposed to `p` \u2014 i.e., `p` is in the proposed-prefix\n`(m.prefs j).take (s.nextChoice j)` of `j`'s preference list.\n\nThis is the **converse direction** of [`JInv`]: `JInv` says proposed \u21d2 held;\n`HoldInv` says held \u21d2 proposed. Together they make the two-sided\ncorrespondence between cursors and holdings airtight.\n\n`HoldInv` is the one the stability proof's \"the holder must be at least as\npreferred as the blocker\" step relies on, via `RSInv` \u2014 see the proof sketch\nof [`galeShapley_isStable`] and the preservation lemma [`holdinv_step`]. -/\n",
+      "column": 1,
+      "end": 36079,
+      "kind": "theorem",
+      "line": 442,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "initState_injective",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 18479
+    },
+    {
+      "body": "def HoldInv (m : Preferences n) (s : DAState n) : Prop :=\n  \u2200 j p : Fin n, s.holding p = some j \u2192 p \u2208 (m.prefs j).take (s.nextChoice j)\n\n",
+      "column": 1,
+      "end": 36216,
+      "kind": "theorem",
+      "line": 805,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "HoldInv",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 36079
+    },
+    {
+      "body": "lemma holdinv_init (m : Preferences n) : HoldInv m (initState n) := by\n  intro j p hp; simp [initState] at hp\n\n/-- `HoldInv` is preserved by one DA step.\n\nProof structure: case-analyze on the pair `(s.holding p, bestNew p)` that\ndrives `daStep`'s decision for woman `p`. There are four cases, two of\nwhich (`old hold preserved` and `new free-man wins`) recur in mirrored\nform depending on whether `s.holding p` was `some h` or `none`. We\nextract those two arguments into the local helpers `preserve_hold` and\n`new_hold` and dispatch each of the four cases with a single line.\n\nThroughout, the key external lemmas are:\n\n* `pl_free_props` \u2014 anyone in `proposerList p` was free and proposed to `p`.\n* `daStep_nc_free` / `daStep_nc_held` \u2014 `nextChoice j` advances by 1 if `j`\n  was free, stays put otherwise.\n* `not_isFree_iff` \u2014 `j` is not free in `s` iff some woman holds `j`. -/\n",
+      "column": 1,
+      "end": 37094,
+      "kind": "theorem",
+      "line": 808,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holdinv_init",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 36216
+    },
+    {
+      "body": "lemma holdinv_step (w m : Preferences n) (s : DAState n)\n    (hhold : HoldInv m s) : HoldInv m (daStep w m s) := by\n  intro j p hp\n  -- Fold `(daStep w m s).holding p` to the canonical `match` form (see\n  -- `daStep_holding`). This is what lets us name `pl` / `bn` afterwards\n  -- without losing the connection to `hp`.\n  rw [daStep_holding] at hp\n  -- Names matching the inner `let`s of `daStep`.\n  set pl : Fin n \u2192 List (Fin n) := fun p' =>\n    (Finset.univ.filter (fun k : Fin n =>\n      isFree s k && (propTarget m k (s.nextChoice k) == some p'))).val.toList with pl_def\n  set bn : Fin n \u2192 Option (Fin n) := fun p' =>\n    (pl p').argmin (fun k => (w.prefs p').idxOf k) with bn_def\n  -- `(s.holding p, bn p)` is exactly what `daStep_holding` matches on.\n  change (match s.holding p, bn p with\n    | none,   none   => none\n    | some h, none   => some h\n    | none,   some q => some q\n    | some h, some q =>\n        if (w.prefs p).idxOf q < (w.prefs p).idxOf h then some q else some h) = some j at hp\n  ----------------------------------------------------------------------------\n  -- Reusable closer 1: woman `p`'s old hold `h` survives the step (because\n  -- no new proposer outranks him). Then `h = j` and `j`'s cursor doesn't\n  -- advance (since `j` is not free in `s` \u2014 woman `p` holds him).\n  ----------------------------------------------------------------------------\n  have preserve_hold : \u2200 {h : Fin n}, h = j \u2192 s.holding p = some h \u2192\n      p \u2208 (m.prefs j).take ((daStep w m s).nextChoice j) := by\n    rintro h rfl hs\n    -- `rfl` here substitutes `j := h`, so the conclusion is in terms of `h`.\n    have hh_not_free : isFree s h = false := (not_isFree_iff s h).mpr \u27e8p, hs\u27e9\n    rw [daStep_nc_held hh_not_free]\n    exact hhold h p hs\n  ----------------------------------------------------------------------------\n  -- Reusable closer 2: a free man `q \u2208 proposerList p` becomes (or is) `p`'s\n  -- holder. Then `q = j`, his cursor advances by 1 in `daStep`, and `p` sits\n  -- at index `s.nextChoice q` of `m.prefs q` \u2014 so `p` is now within the\n  -- *new* `take` window.\n  ----------------------------------------------------------------------------\n  have new_hold : \u2200 {q : Fin n}, q = j \u2192 q \u2208 pl p \u2192\n      p \u2208 (m.prefs j).take ((daStep w m s).nextChoice j) := by\n    rintro q rfl hq_in\n    -- Substitution: `j := q`. Conclusion is in terms of `q`.\n    have \u27e8hfq, hptq\u27e9 := pl_free_props s m p q hq_in\n    -- `propTarget m q (s.nextChoice q) = some p`, i.e.\n    -- `(m.prefs q)[s.nextChoice q]? = some p`. Unpack via `getElem?_eq_some_iff`.\n    obtain \u27e8hq_lt_len, hget\u27e9 : \u2203 h, (m.prefs q)[s.nextChoice q]'h = p :=\n      List.getElem?_eq_some_iff.mp hptq\n    -- After the step, `q`'s cursor is `s.nextChoice q + 1`; `p` sits at index\n    -- `s.nextChoice q < s.nextChoice q + 1`, so `p` is inside the new prefix.\n    rw [daStep_nc_free hfq, List.mem_take_iff_idxOf_lt]\n    \u00b7 -- `(m.prefs q).idxOf p < s.nextChoice q + 1`\n      rw [\u2190 hget, (m.valid q).1.idxOf_getElem _ hq_lt_len]\n      omega\n    \u00b7 exact pref_list_mem _ (m.valid q).1 (m.valid q).2 p\n  ----------------------------------------------------------------------------\n  -- Main case split \u2014 four cases, each one liner.\n  ----------------------------------------------------------------------------\n  cases hs : s.holding p with\n  | none =>\n      cases hb : bn p with\n      | none =>\n          -- (none, none): match returns `none`, contradicting `hp : \u2026 = some j`.\n          rw [hs, hb] at hp; exact absurd hp (by simp)\n      | some q =>\n          -- (none, some q): new proposer `q` takes the slot; `q = j`.\n          rw [hs, hb] at hp\n          exact new_hold (Option.some.inj hp) (List.argmin_mem hb)\n  | some h =>\n      cases hb : bn p with\n      | none =>\n          -- (some h, none): old hold kept; `h = j`.\n          rw [hs, hb] at hp\n          exact preserve_hold (Option.some.inj hp) hs\n      | some q =>\n          -- (some h, some q): outcome depends on whether `q` outranks `h`.\n          rw [hs, hb] at hp\n          -- The match reduces definitionally to an `if`; force the reduction so\n          -- `split_ifs` can see the conditional.\n          dsimp only at hp\n          split_ifs at hp with hlt\n          \u00b7 -- `q` upgrades: same as Case 2 above.\n            exact new_hold (Option.some.inj hp) (List.argmin_mem hb)\n          \u00b7 -- `h` stays: same as Case 3 above.\n            exact preserve_hold (Option.some.inj hp) hs\n\nprivate lemma holdinv_run (w m : Preferences n) (fuel : \u2115) (s : DAState n)\n    (hh : HoldInv m s) : HoldInv m (daRun w m fuel s) := by\n  induction fuel generalizing s with\n  | zero => exact hh\n  | succ k ih =>\n      simp only [daRun]; split_ifs with hne\n      \u00b7 exact ih _ (holdinv_step w m s hh)\n      \u00b7 exact hh\n\n",
+      "column": 1,
+      "end": 41814,
+      "kind": "theorem",
+      "line": 826,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holdinv_step",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 37094
+    },
+    {
+      "body": "lemma holdinv_finalState (w m : Preferences n) :\n    HoldInv m (finalState w m) :=\n  holdinv_run w m (n * n + 1) (initState n) (holdinv_init m)\n\n/-- RSInv at finalState. -/\nprivate lemma rsinv_finalState (w m : Preferences n) :\n    RSInv w m (finalState w m) := by\n  apply rsinv_run w m (n * n + 1) (initState n) (rsinv_init w m)\n  \u00b7 simp [initState]\n  \u00b7 exact jinv_init m\n  \u00b7 exact initState_injective (n := n)\n\n/-- If j strictly prefers i over his final partner, i's final partner has rank \u2264 j. -/\nprivate lemma rsinv_stability (w m : Preferences n) (j i : Fin n)\n    (hlt : (m.prefs j).idxOf i < (finalState w m).nextChoice j) :\n    (w.prefs i).idxOf (gs w m i) \u2264 (w.prefs i).idxOf j := by\n  have hrs := rsinv_finalState w m j i\n  have hi_mem : i \u2208 (m.prefs j).take ((finalState w m).nextChoice j) := by\n    rw [List.mem_take_iff_idxOf_lt]\n    \u00b7 exact hlt\n    \u00b7 exact pref_list_mem _ (m.valid j).1 (m.valid j).2 i\n  obtain \u27e8h, hh, hrk\u27e9 := hrs hi_mem\n  -- h = gs w m i (since holding i = some h at finalState)\n  have hgs : gs w m i = h := by\n    simp only [gs, finalState] at hh \u22a2; simp [hh]\n  rw [hgs]; exact hrk\n\nend GS_Fuel\n\nsection GS_Correctness\n\nopen GS\n\nvariable {n : \u2115} [NeZero n]\nvariable (w m : Preferences n)\n\n/-! #### Invariant 1: `holding` rank monotonically improves -/\n\n/-! #### Invariant 3: termination -/\n\n/-- At termination, every man is held (no free man remains).\n    Proof: if a free man remained, `nc_sum_grows` would give `n*n + 1 \u2264 n*n`, contradiction. -/\n",
+      "column": 1,
+      "end": 43296,
+      "kind": "theorem",
+      "line": 920,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "holdinv_finalState",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 41814
+    },
+    {
+      "body": "lemma finalState_no_free_men :\n    \u2200 i : Fin n, isFree (finalState w m) i = false := by\n  intro i\n  -- Establish the pre-conditions for the fuel-sufficiency lemmas.\n  have hnc0 : \u2200 j : Fin n, (initState n).nextChoice j \u2264 n := by simp [initState]\n  have hj0 : JInv m (initState n) := jinv_init m\n  have hinj0 := initState_injective (n := n)\n  -- By contradiction: suppose some man i is still free in finalState.\n  by_contra hfree\n  simp only [Bool.not_eq_false] at hfree\n  -- freeMenSet (finalState w m) is nonempty.\n  have hne : (freeMenSet (finalState w m)).Nonempty :=\n    \u27e8i, mem_freeMenSet.mpr hfree\u27e9\n  -- nc_sum_grows: 0 + (n*n+1) \u2264 \u2211 nc at finalState.\n  have hgrows := nc_sum_grows w m (n * n + 1) (initState n) hnc0 hj0 hinj0 hne\n  simp only [initState, Finset.sum_const_zero] at hgrows\n  -- nc_sum_le_nn: \u2211 nc at finalState \u2264 n*n.\n  have hle := nc_sum_le_nn w m (n * n + 1) (initState n) hnc0 hj0 hinj0\n    (by simp [initState])\n  -- Contradiction: n*n+1 \u2264 0 + (n*n+1) \u2264 \u2211 nc \u2264 n*n.\n  simp only [initState] at hle\n  omega\n\n/-! #### Total matching -/\n\n/-- At termination, every man is held by some woman. -/\n",
+      "column": 1,
+      "end": 44411,
+      "kind": "theorem",
+      "line": 962,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "finalState_no_free_men",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 43296
+    },
+    {
+      "body": "lemma final_all_men_held :\n    \u2200 i : Fin n, \u2203 j : Fin n, (finalState w m).holding j = some i := by\n  intro i; exact (not_isFree_iff _ _).mp (finalState_no_free_men w m i)\n\n/-- `finalState` holding is injective. -/\n",
+      "column": 1,
+      "end": 44625,
+      "kind": "theorem",
+      "line": 988,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "final_all_men_held",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 44411
+    },
+    {
+      "body": "lemma final_holding_injective :\n    \u2200 j1 j2 : Fin n, \u2200 i : Fin n,\n      (finalState w m).holding j1 = some i \u2192 (finalState w m).holding j2 = some i \u2192 j1 = j2 :=\n  holding_injective_run w m (n * n + 1) (initState n) (initState_injective (n := n))\n\n/-- At termination, every woman holds some man. -/\n",
+      "column": 1,
+      "end": 44923,
+      "kind": "theorem",
+      "line": 993,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "final_holding_injective",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 44625
+    },
+    {
+      "body": "lemma final_all_women_hold :\n    \u2200 j : Fin n, \u2203 i : Fin n, (finalState w m).holding j = some i := by\n  intro j\n  by_contra hnone\n  push_neg at hnone\n  -- j holds nobody, but every man is held by some woman \u2260 j (pigeon-hole).\n  have hall := final_all_men_held w m\n  have hinj := final_holding_injective w m\n  have hf : \u2200 i : Fin n, \u2203 j' : Fin n, j' \u2260 j \u2227 (finalState w m).holding j' = some i := by\n    intro i\n    obtain \u27e8j', hj'\u27e9 := hall i\n    exact \u27e8j', fun heq => absurd (heq \u25b8 hj') (hnone i), hj'\u27e9\n  -- Inject Fin n \u2192 (univ \\ {j}) of size n-1 \u2192 contradiction.\n  let f : Fin n \u2192 (Finset.univ.erase j : Finset (Fin n)) := fun i =>\n    \u27e8(hf i).choose, Finset.mem_erase.mpr \u27e8(hf i).choose_spec.1, Finset.mem_univ _\u27e9\u27e9\n  have hfinj : Function.Injective f := by\n    intro i1 i2 heq\n    have h1 : (finalState w m).holding ((hf i1).choose) = some i1 := (hf i1).choose_spec.2\n    have h2 : (finalState w m).holding ((hf i2).choose) = some i2 := (hf i2).choose_spec.2\n    have hv : (hf i1).choose = (hf i2).choose := congrArg Subtype.val heq\n    rw [hv] at h1\n    exact Option.some.inj (h1.symm.trans h2)\n  have hcard : (Finset.univ.erase j : Finset (Fin n)).card = n - 1 := by\n    rw [Finset.card_erase_of_mem (Finset.mem_univ _), Finset.card_univ, Fintype.card_fin]\n  have : Fintype.card (Fin n) \u2264 Fintype.card \u21a5(Finset.univ.erase j : Finset (Fin n)) :=\n    Fintype.card_le_of_injective _ hfinj\n  rw [Fintype.card_coe, hcard, Fintype.card_fin] at this\n  exact absurd this (by have hpos := NeZero.pos n; omega)\n\n/-! #### Bijectivity -/\n\n/-- `gs w m` is injective. -/\n",
+      "column": 1,
+      "end": 46483,
+      "kind": "theorem",
+      "line": 999,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "final_all_women_hold",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 44923
+    },
+    {
+      "body": "lemma gs_injective : Function.Injective (gs w m) := by\n  intro j1 j2 heq\n  simp only [gs] at heq\n  obtain \u27e8i1, hi1\u27e9 := final_all_women_hold w m j1\n  obtain \u27e8i2, hi2\u27e9 := final_all_women_hold w m j2\n  simp [hi1, hi2] at heq; subst heq\n  exact final_holding_injective w m j1 j2 i1 hi1 hi2\n\n/-- `gs w m` is a bijection on `Fin n`. -/\n",
+      "column": 1,
+      "end": 46813,
+      "kind": "theorem",
+      "line": 1031,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "gs_injective",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 46483
+    },
+    {
+      "body": "lemma gs_bijective : Function.Bijective (gs w m) :=\n  Finite.injective_iff_bijective.mp (gs_injective w m)\n\n/-! #### Stability -/\n\n-- Sanity-check example: the n=3 counterexample from the old algorithm should give\n-- the standard DA stable matching a-B(1), b-A(0), c-C(2).\n--\n-- men:   A=0: a>b>c (0>1>2),  B=1: b>a>c (1>0>2),  C=2: a>b>c (0>1>2)\n-- women: a=0: B>C>A (1>2>0),  b=1: A>C>B (0>2>1),  c=2: A>B>C (0>1>2)\n-- Expected stable: a holds B(1), b holds A(0), c holds C(2).\n--\n-- `finalState` is `noncomputable` (uses classical choice via `argmin`), so\n-- `#eval` is not available.  A `native_decide`-based checker can be added once\n-- a computable version is provided (future work).\n-- #eval (GS.finalState wPrefs3 mPrefs3).holding 0  -- expected: some 1\n\n/-- **Gale-Shapley stability**: the DA output has no blocking pair.\n\n    The statement is in the *market* frame (`IsBlocking \u2026 (i : M) (j : W)`). But\n    `MatchingMarket.ofEquivData w m` **transposes the two sides** (see its\n    docstring), so the market-`M` index `i` is an algorithm *woman* and the\n    market-`W` index `j` is an algorithm *man*. The proof therefore reads in the\n    algorithm frame \u2014 `i` a woman, `j` a man \u2014 matching the inline comments.\n\n    Proof (standard deferred acceptance): suppose `(i, j)` blocks. In algorithm\n    terms man `j` strictly prefers woman `i` to his wife, so `j` proposed to `i`\n    at some round: his wife is in his proposed-prefix (`holdinv_finalState`) and\n    `i` is ranked at least as early (`hprefJ`). Then `rsinv_stability` (`RSInv`)\n    gives that at termination woman `i` holds a man she ranks at least as high as\n    `j`, so she does *not* strictly prefer `j` to her partner \u2014 contradicting the\n    blocking assumption. -/\n",
+      "column": 1,
+      "end": 48551,
+      "kind": "theorem",
+      "line": 1040,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "gs_bijective",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 46813
+    },
+    {
+      "body": "theorem galeShapley_isStable :\n    Matching.IsStable (MatchingMarket.ofEquivData w m)\n                      (Matching.ofGS (gs w m) (gs_bijective w m)) := by\n  intro i j\n  simp only [Matching.IsBlocking, Matching.ofGS, MatchingMarket.ofEquivData, strict, not_and]\n  intro hprefI hprefJ\n  -- After the simp+intros, the context is:\n  --   hprefI : woman i strictly prefers man j to her current husband gs w m i\n  --     (= idxOf j (w.prefs i) \u2264 idxOf (gs w m i) \u2227 \u00ac converse)\n  --   hprefJ : man j weakly prefers woman i to his current wife (gs w m).symm j\n  --     (the \"\u2264\" half of strict; the \"\u00ac \u2264\" half is the goal to refute, i.e. the\n  --      goal is `\u00ac\u00ac idxOf (gs w m).symm j \u2264 idxOf i`, equivalent to `\u2264`).\n  -- Strategy (Roth\u2013Sotomayor): show woman i is in j's already-proposed prefix, so\n  -- by `rsinv_stability` she'd already be holding someone she prefers at least as\n  -- much as j \u2014 contradicting `hprefI`'s strict preference for j over her husband.\n  obtain \u27e8_, hI_strict\u27e9 := hprefI\n  rw [not_le] at hI_strict\n  -- hI_strict : idxOf j (w.prefs i) < idxOf (gs w m i) (w.prefs i)\n  -- Step 1. Identify j's wife \u2014 the woman matched with j by `gs`.\n  set wife : Fin n := (Equiv.ofBijective (gs w m) (gs_bijective w m)).symm j with wife_def\n  have hwife_apply : gs w m wife = j :=\n    (Equiv.ofBijective (gs w m) (gs_bijective w m)).apply_symm_apply j\n  -- Step 2. `wife` actually holds `j` in `finalState` \u2014 follow `gs`'s definition.\n  have hwife_holds : (finalState w m).holding wife = some j := by\n    obtain \u27e8h, hh\u27e9 := final_all_women_hold w m wife\n    have hgs : gs w m wife = h := by simp [gs, hh]\n    rw [hgs] at hwife_apply\n    exact hwife_apply \u25b8 hh\n  -- Step 3. By `HoldInv` at `finalState`, the wife is in j's already-proposed prefix.\n  have hwife_in : wife \u2208 (m.prefs j).take ((finalState w m).nextChoice j) :=\n    holdinv_finalState w m j wife hwife_holds\n  have hj_prefs_mem : \u2200 x : Fin n, x \u2208 m.prefs j :=\n    pref_list_mem _ (m.valid j).1 (m.valid j).2\n  have hwife_lt : (m.prefs j).idxOf wife < (finalState w m).nextChoice j :=\n    (List.mem_take_iff_idxOf_lt (hj_prefs_mem wife)).mp hwife_in\n  -- Step 4. By `hprefJ` (j weakly prefers i to wife), `i` is at least as early as\n  -- wife in `m.prefs j`, so also in the proposed prefix.\n  have hi_lt : (m.prefs j).idxOf i < (finalState w m).nextChoice j :=\n    lt_of_le_of_lt hprefJ hwife_lt\n  -- Step 5. `rsinv_stability` then says i's husband is *at least* as preferred\n  -- (by i) as j \u2014 directly contradicting i's strict preference for j.\n  exact absurd (rsinv_stability w m j i hi_lt) (not_le.mpr hI_strict)\n\nend GS_Correctness\n",
+      "column": 1,
+      "end": 51156,
+      "kind": "theorem",
+      "line": 1072,
+      "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+      "name": "galeShapley_isStable",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+      "start": 48551
+    }
+  ]
+}

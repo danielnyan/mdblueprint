@@ -1,0 +1,279 @@
+{
+  "added_nodes": [],
+  "after_has_errors": true,
+  "allowed_operations": [
+    "add-dependency",
+    "add-node-from-request",
+    "add-topic-membership",
+    "delete-node",
+    "mark-lean-topic-divergent",
+    "move-primary-topic",
+    "remove-dependency",
+    "remove-topic-membership",
+    "replace-node-body"
+  ],
+  "changed_nodes": [
+    {
+      "after": {
+        "body": "# Gale-Shapley Deferred Acceptance Algorithm\n\nMen-proposing version on a one-to-one matching market $(M, W, \\succ)$.\n\n## Algorithm\n\nInitialize: every man is free; every woman holds no offer.\n\nRepeat until no free man has any acceptable woman remaining on his list:\n\n1. **Propose.** Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).\n2. **Decide.**\n   - If $j$ currently holds no offer, $j$ tentatively accepts $i$.\n   - If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).\n   - Else $j$ rejects $i$.\n\nThe algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.\n\nThe output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.\n\n## Variant: Women-Proposing\n\nSwap the roles of $M$ and $W$. The output is generally a *different* stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).\n\nIn Lean, the men-proposing algorithm is implemented in\n`EconCSLib.MarketDesign.Matching.GaleShapley` over `Fin n` indices: one\nround is `GS.daStep` (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by `GS.daRun` with fuel\n`n*n + 1` to `GS.finalState`, and `GS.gs` reads off each woman's final\nholding as the output matching.\n\n## References\n\n- [MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, *Game Theory*.\n- Gale & Shapley (1962). *College Admissions and the Stability of Marriage*. AMM 69, 9\u201315.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "kind": "definition",
+        "primary_topic": "market_design",
+        "status": "formalized",
+        "title": "Gale-Shapley Deferred Acceptance Algorithm",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.matching"
+        ]
+      },
+      "before": {
+        "body": "# Gale-Shapley Deferred Acceptance Algorithm\n\nMen-proposing version on a one-to-one matching market $(M, W, \\succ)$.\n\n## Algorithm\n\nInitialize: every man is free; every woman holds no offer.\n\nRepeat until no free man has any acceptable woman remaining on his list:\n\n1. **Propose.** Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).\n2. **Decide.**\n   - If $j$ currently holds no offer, $j$ tentatively accepts $i$.\n   - If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).\n   - Else $j$ rejects $i$.\n\nThe algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.\n\nThe output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.\n\n## Variant: Women-Proposing\n\nSwap the roles of $M$ and $W$. The output is generally a *different* stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).\n\nIn Lean, the men-proposing algorithm is implemented in\n`EconCSLib.MarketDesign.Matching.GaleShapley` over `Fin n` indices: one\nround is `GS.daStep` (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by `GS.daRun` with fuel\n`n*n + 1` to `GS.finalState`, and `GS.gs` reads off each woman's final\nholding as the output matching.\n\n## References\n\n- [MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, *Game Theory*.\n- Gale & Shapley (1962). *College Admissions and the Stability of Marriage*. AMM 69, 9\u201315.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "kind": "definition",
+        "primary_topic": "market_design",
+        "status": "formalized",
+        "title": "Gale-Shapley Deferred Acceptance Algorithm",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.market",
+          "market_design.matching.one_to_one.matching"
+        ]
+      },
+      "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm"
+    },
+    {
+      "after": {
+        "body": "# Lattice of Stable Matchings\n\n**Theorem (Conway, reported by Knuth 1976).** The set of stable matchings\nof any finite one-to-one matching market forms a **complete distributive\nlattice** under the partial order\n\n$$\\mu \\le_M \\mu' \\quad \\iff \\quad \\mu(i) \\preceq_i \\mu'(i) \\text{ for all } i \\in M$$\n\n(\"men weakly prefer $\\mu'$ to $\\mu$\"). The join $\\mu \\vee \\mu'$ matches each\nman to his preferred of the two partners; the meet $\\mu \\wedge \\mu'$ matches\neach man to his less-preferred. Both are stable matchings.\n\nEquivalently, under $\\le_W$ defined dually (women's preference), the lattice\nis the order-dual.\n\n## Extrema\n\n- Top under $\\le_M$: the **men-optimal** matching $\\mu^M$ (output of\n  men-proposing GS \u2014 see [[proposing_optimal]]).\n- Bottom under $\\le_M$: the **women-optimal** matching $\\mu^W$ (output of\n  women-proposing GS).\n\nThese two are also the bottom and top respectively under $\\le_W$ \u2014 the men's\nand women's interests are exactly opposed across the stable set.\n\n## Proof Sketch\n\nThe non-trivial part is showing $\\mu \\vee \\mu'$ (each man picks his preferred\npartner from $\\mu$ and $\\mu'$) is itself a matching (not just a function) and\nis stable.\n\n*Matching*: We must show no woman is \"picked\" by two different men. If man\n$i_1$'s preferred partner is $j$, and $i_2$'s preferred is also $j$, then $j$\nis matched to $i_1$ in one of $\\mu, \\mu'$ and to $i_2$ in the other. By the\nopposed-preferences phenomenon (a corollary of stability), $j$ also prefers\nexactly the opposite \u2014 contradiction.\n\n*Stability*: If $(i, k)$ blocks $\\mu \\vee \\mu'$, then $k$ ranks higher on\n$i$'s list than his max of $\\mu(i), \\mu'(i)$, so $(i, k)$ blocks both $\\mu$\nand $\\mu'$ \u2014 contradicting stability of either.\n\nDistributivity follows from the same opposed-preferences structure.\n\n## Formalization\n\nIn the balanced full-preference Lean model (`Preferences n` via\n`MatchingMarket.ofEquivData`, every stable matching perfect), the lattice\nstructure is formalized as a `Lattice` instance on\n`GS.StableMatching w m` (`EconCSLib.MarketDesign.Matching.Lattice`):\n\n- `GS.opposed_preferences` (+ `opposed_preferences_women`) \u2014 the\n  opposed-preferences lemma, proved by a direct pairwise blocking argument.\n- `GS.stableJoin` / `GS.stableMeet` \u2014 the join and meet as `Matching`s, each\n  built from an injective-hence-bijective partner map (`joinWoman` /\n  `meetMan`); the injectivity is the \"no woman picked twice\" step and uses\n  `opposed_preferences`.\n- `GS.stableJoin_isStable` / `GS.stableMeet_isStable` \u2014 both operations are\n  closed within the stable set.\n- The `Lattice (GS.StableMatching w m)` instance \u2014 the men-preference order\n  (`\u03c3 \u2264 \u03c4` iff every man weakly prefers `\u03c4`) with `\u2294 = stableJoin`,\n  `\u2293 = stableMeet`, all lattice axioms discharged.\n- `GS.StableMatching.gsStable_isGreatest` \u2014 the **men-proposing GS output is\n  the greatest element** ($\\top$) of this lattice: every man weakly prefers\n  it to his partner in any other stable matching. This is\n  [[proposing_optimal]] (`galeShapley_isProposingOptimal`) packaged as the\n  lattice maximum, identifying the men-optimal extremum $\\mu^M$ with the GS\n  output.\n\nAll sorry-free (axioms: `propext`, `Classical.choice`, `Quot.sound`).\n\n**Not yet formalized** (classical, future refinements): *distributivity* of\nthe lattice, *completeness*, and the *women-proposing* bottom extremum\n$\\mu^W$ (no women-proposing GS is formalized yet). The general\n$\\bot$/unequal-cardinality version is also out of scope of the balanced model.\n\n## Consequences\n\n- The number of stable matchings is bounded by combinatorial counts on the\n  lattice (e.g., chain lengths, antichains).\n- The Conway-Knuth lattice is the foundation for the [[rural_hospitals]]\n  invariant (\"same set of matched participants across all stable matchings\").\n\n## References\n\n- [MSZ Ch.22, Thm 22.12] Maschler, Solan, Zamir, *Game Theory*.\n- Knuth (1976), *Marriages Stables*. Universit\u00e9 de Montr\u00e9al.\n- Roth & Sotomayor (1990), Ch. 2 \u00a72.3.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.lattice",
+        "kind": "theorem",
+        "primary_topic": "market_design",
+        "status": "proved",
+        "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.proposing_optimal"
+        ]
+      },
+      "before": {
+        "body": "# Lattice of Stable Matchings\n\n**Theorem (Conway, reported by Knuth 1976).** The set of stable matchings\nof any finite one-to-one matching market forms a **complete distributive\nlattice** under the partial order\n\n$$\\mu \\le_M \\mu' \\quad \\iff \\quad \\mu(i) \\preceq_i \\mu'(i) \\text{ for all } i \\in M$$\n\n(\"men weakly prefer $\\mu'$ to $\\mu$\"). The join $\\mu \\vee \\mu'$ matches each\nman to his preferred of the two partners; the meet $\\mu \\wedge \\mu'$ matches\neach man to his less-preferred. Both are stable matchings.\n\nEquivalently, under $\\le_W$ defined dually (women's preference), the lattice\nis the order-dual.\n\n## Extrema\n\n- Top under $\\le_M$: the **men-optimal** matching $\\mu^M$ (output of\n  men-proposing GS \u2014 see [[proposing_optimal]]).\n- Bottom under $\\le_M$: the **women-optimal** matching $\\mu^W$ (output of\n  women-proposing GS).\n\nThese two are also the bottom and top respectively under $\\le_W$ \u2014 the men's\nand women's interests are exactly opposed across the stable set.\n\n## Proof Sketch\n\nThe non-trivial part is showing $\\mu \\vee \\mu'$ (each man picks his preferred\npartner from $\\mu$ and $\\mu'$) is itself a matching (not just a function) and\nis stable.\n\n*Matching*: We must show no woman is \"picked\" by two different men. If man\n$i_1$'s preferred partner is $j$, and $i_2$'s preferred is also $j$, then $j$\nis matched to $i_1$ in one of $\\mu, \\mu'$ and to $i_2$ in the other. By the\nopposed-preferences phenomenon (a corollary of stability), $j$ also prefers\nexactly the opposite \u2014 contradiction.\n\n*Stability*: If $(i, k)$ blocks $\\mu \\vee \\mu'$, then $k$ ranks higher on\n$i$'s list than his max of $\\mu(i), \\mu'(i)$, so $(i, k)$ blocks both $\\mu$\nand $\\mu'$ \u2014 contradicting stability of either.\n\nDistributivity follows from the same opposed-preferences structure.\n\n## Formalization\n\nIn the balanced full-preference Lean model (`Preferences n` via\n`MatchingMarket.ofEquivData`, every stable matching perfect), the lattice\nstructure is formalized as a `Lattice` instance on\n`GS.StableMatching w m` (`EconCSLib.MarketDesign.Matching.Lattice`):\n\n- `GS.opposed_preferences` (+ `opposed_preferences_women`) \u2014 the\n  opposed-preferences lemma, proved by a direct pairwise blocking argument.\n- `GS.stableJoin` / `GS.stableMeet` \u2014 the join and meet as `Matching`s, each\n  built from an injective-hence-bijective partner map (`joinWoman` /\n  `meetMan`); the injectivity is the \"no woman picked twice\" step and uses\n  `opposed_preferences`.\n- `GS.stableJoin_isStable` / `GS.stableMeet_isStable` \u2014 both operations are\n  closed within the stable set.\n- The `Lattice (GS.StableMatching w m)` instance \u2014 the men-preference order\n  (`\u03c3 \u2264 \u03c4` iff every man weakly prefers `\u03c4`) with `\u2294 = stableJoin`,\n  `\u2293 = stableMeet`, all lattice axioms discharged.\n- `GS.StableMatching.gsStable_isGreatest` \u2014 the **men-proposing GS output is\n  the greatest element** ($\\top$) of this lattice: every man weakly prefers\n  it to his partner in any other stable matching. This is\n  [[proposing_optimal]] (`galeShapley_isProposingOptimal`) packaged as the\n  lattice maximum, identifying the men-optimal extremum $\\mu^M$ with the GS\n  output.\n\nAll sorry-free (axioms: `propext`, `Classical.choice`, `Quot.sound`).\n\n**Not yet formalized** (classical, future refinements): *distributivity* of\nthe lattice, *completeness*, and the *women-proposing* bottom extremum\n$\\mu^W$ (no women-proposing GS is formalized yet). The general\n$\\bot$/unequal-cardinality version is also out of scope of the balanced model.\n\n## Consequences\n\n- The number of stable matchings is bounded by combinatorial counts on the\n  lattice (e.g., chain lengths, antichains).\n- The Conway-Knuth lattice is the foundation for the [[rural_hospitals]]\n  invariant (\"same set of matched participants across all stable matchings\").\n\n## References\n\n- [MSZ Ch.22, Thm 22.12] Maschler, Solan, Zamir, *Game Theory*.\n- Knuth (1976), *Marriages Stables*. Universit\u00e9 de Montr\u00e9al.\n- Roth & Sotomayor (1990), Ch. 2 \u00a72.3.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.lattice",
+        "kind": "theorem",
+        "primary_topic": "market_design",
+        "status": "proved",
+        "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.stability",
+          "market_design.matching.one_to_one.proposing_optimal"
+        ]
+      },
+      "node_id": "market_design.matching.one_to_one.lattice"
+    }
+  ],
+  "graph": {
+    "after": {
+      "edges": 404,
+      "nodes": 273
+    },
+    "before": {
+      "edges": 406,
+      "nodes": 273
+    }
+  },
+  "kind": "mdblueprint-refactor-dry-run",
+  "knowledge_root": "/home/azureuser/EconCSLib/docs/knowledge",
+  "mode": "admitted",
+  "new_diagnostics": [],
+  "operation_diagnostics": [],
+  "operations": [
+    {
+      "after": {
+        "body": "# Gale-Shapley Deferred Acceptance Algorithm\n\nMen-proposing version on a one-to-one matching market $(M, W, \\succ)$.\n\n## Algorithm\n\nInitialize: every man is free; every woman holds no offer.\n\nRepeat until no free man has any acceptable woman remaining on his list:\n\n1. **Propose.** Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).\n2. **Decide.**\n   - If $j$ currently holds no offer, $j$ tentatively accepts $i$.\n   - If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).\n   - Else $j$ rejects $i$.\n\nThe algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.\n\nThe output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.\n\n## Variant: Women-Proposing\n\nSwap the roles of $M$ and $W$. The output is generally a *different* stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).\n\nIn Lean, the men-proposing algorithm is implemented in\n`EconCSLib.MarketDesign.Matching.GaleShapley` over `Fin n` indices: one\nround is `GS.daStep` (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by `GS.daRun` with fuel\n`n*n + 1` to `GS.finalState`, and `GS.gs` reads off each woman's final\nholding as the output matching.\n\n## References\n\n- [MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, *Game Theory*.\n- Gale & Shapley (1962). *College Admissions and the Stability of Marriage*. AMM 69, 9\u201315.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "kind": "definition",
+        "primary_topic": "market_design",
+        "status": "formalized",
+        "title": "Gale-Shapley Deferred Acceptance Algorithm",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.matching"
+        ]
+      },
+      "before": {
+        "body": "# Gale-Shapley Deferred Acceptance Algorithm\n\nMen-proposing version on a one-to-one matching market $(M, W, \\succ)$.\n\n## Algorithm\n\nInitialize: every man is free; every woman holds no offer.\n\nRepeat until no free man has any acceptable woman remaining on his list:\n\n1. **Propose.** Pick a free man $i$ who still has at least one acceptable\n   woman not yet proposed to. Let $j$ be $i$'s most-preferred such woman.\n   $i$ proposes to $j$ (and crosses $j$ off his list, whether or not she\n   accepts).\n2. **Decide.**\n   - If $j$ currently holds no offer, $j$ tentatively accepts $i$.\n   - If $j$ currently holds an offer from $i'$ and prefers $i$ to $i'$,\n     $j$ accepts $i$ and rejects $i'$ (who becomes free again).\n   - Else $j$ rejects $i$.\n\nThe algorithm terminates because the total number of (man, woman) proposal\npairs is at most $|M| \\cdot |W|$ and strictly grows each round.\n\nThe output matching matches each woman to the man whose offer she is\nholding at termination; unmatched men get $\\bot$, unmatched women get $\\bot$.\n\n## Variant: Women-Proposing\n\nSwap the roles of $M$ and $W$. The output is generally a *different* stable\nmatching (see [[lattice]]); both are stable but with opposite optimality\nproperties for the two sides (see [[proposing_optimal]]).\n\nIn Lean, the men-proposing algorithm is implemented in\n`EconCSLib.MarketDesign.Matching.GaleShapley` over `Fin n` indices: one\nround is `GS.daStep` (free men propose, women keep the best of held + new\noffers, free men advance their cursor), iterated by `GS.daRun` with fuel\n`n*n + 1` to `GS.finalState`, and `GS.gs` reads off each woman's final\nholding as the output matching.\n\n## References\n\n- [MSZ Ch.22, Alg 22.6] Maschler, Solan, Zamir, *Game Theory*.\n- Gale & Shapley (1962). *College Admissions and the Stability of Marriage*. AMM 69, 9\u201315.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "kind": "definition",
+        "primary_topic": "market_design",
+        "status": "formalized",
+        "title": "Gale-Shapley Deferred Acceptance Algorithm",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.market",
+          "market_design.matching.one_to_one.matching"
+        ]
+      },
+      "index": 1,
+      "message": "would remove dependency 'market_design.matching.one_to_one.market' from 'market_design.matching.one_to_one.gale_shapley_algorithm'",
+      "op": "remove-dependency",
+      "operation": {
+        "dependency": "market_design.matching.one_to_one.market",
+        "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "op": "remove-dependency"
+      },
+      "status": "applied"
+    },
+    {
+      "after": {
+        "body": "# Lattice of Stable Matchings\n\n**Theorem (Conway, reported by Knuth 1976).** The set of stable matchings\nof any finite one-to-one matching market forms a **complete distributive\nlattice** under the partial order\n\n$$\\mu \\le_M \\mu' \\quad \\iff \\quad \\mu(i) \\preceq_i \\mu'(i) \\text{ for all } i \\in M$$\n\n(\"men weakly prefer $\\mu'$ to $\\mu$\"). The join $\\mu \\vee \\mu'$ matches each\nman to his preferred of the two partners; the meet $\\mu \\wedge \\mu'$ matches\neach man to his less-preferred. Both are stable matchings.\n\nEquivalently, under $\\le_W$ defined dually (women's preference), the lattice\nis the order-dual.\n\n## Extrema\n\n- Top under $\\le_M$: the **men-optimal** matching $\\mu^M$ (output of\n  men-proposing GS \u2014 see [[proposing_optimal]]).\n- Bottom under $\\le_M$: the **women-optimal** matching $\\mu^W$ (output of\n  women-proposing GS).\n\nThese two are also the bottom and top respectively under $\\le_W$ \u2014 the men's\nand women's interests are exactly opposed across the stable set.\n\n## Proof Sketch\n\nThe non-trivial part is showing $\\mu \\vee \\mu'$ (each man picks his preferred\npartner from $\\mu$ and $\\mu'$) is itself a matching (not just a function) and\nis stable.\n\n*Matching*: We must show no woman is \"picked\" by two different men. If man\n$i_1$'s preferred partner is $j$, and $i_2$'s preferred is also $j$, then $j$\nis matched to $i_1$ in one of $\\mu, \\mu'$ and to $i_2$ in the other. By the\nopposed-preferences phenomenon (a corollary of stability), $j$ also prefers\nexactly the opposite \u2014 contradiction.\n\n*Stability*: If $(i, k)$ blocks $\\mu \\vee \\mu'$, then $k$ ranks higher on\n$i$'s list than his max of $\\mu(i), \\mu'(i)$, so $(i, k)$ blocks both $\\mu$\nand $\\mu'$ \u2014 contradicting stability of either.\n\nDistributivity follows from the same opposed-preferences structure.\n\n## Formalization\n\nIn the balanced full-preference Lean model (`Preferences n` via\n`MatchingMarket.ofEquivData`, every stable matching perfect), the lattice\nstructure is formalized as a `Lattice` instance on\n`GS.StableMatching w m` (`EconCSLib.MarketDesign.Matching.Lattice`):\n\n- `GS.opposed_preferences` (+ `opposed_preferences_women`) \u2014 the\n  opposed-preferences lemma, proved by a direct pairwise blocking argument.\n- `GS.stableJoin` / `GS.stableMeet` \u2014 the join and meet as `Matching`s, each\n  built from an injective-hence-bijective partner map (`joinWoman` /\n  `meetMan`); the injectivity is the \"no woman picked twice\" step and uses\n  `opposed_preferences`.\n- `GS.stableJoin_isStable` / `GS.stableMeet_isStable` \u2014 both operations are\n  closed within the stable set.\n- The `Lattice (GS.StableMatching w m)` instance \u2014 the men-preference order\n  (`\u03c3 \u2264 \u03c4` iff every man weakly prefers `\u03c4`) with `\u2294 = stableJoin`,\n  `\u2293 = stableMeet`, all lattice axioms discharged.\n- `GS.StableMatching.gsStable_isGreatest` \u2014 the **men-proposing GS output is\n  the greatest element** ($\\top$) of this lattice: every man weakly prefers\n  it to his partner in any other stable matching. This is\n  [[proposing_optimal]] (`galeShapley_isProposingOptimal`) packaged as the\n  lattice maximum, identifying the men-optimal extremum $\\mu^M$ with the GS\n  output.\n\nAll sorry-free (axioms: `propext`, `Classical.choice`, `Quot.sound`).\n\n**Not yet formalized** (classical, future refinements): *distributivity* of\nthe lattice, *completeness*, and the *women-proposing* bottom extremum\n$\\mu^W$ (no women-proposing GS is formalized yet). The general\n$\\bot$/unequal-cardinality version is also out of scope of the balanced model.\n\n## Consequences\n\n- The number of stable matchings is bounded by combinatorial counts on the\n  lattice (e.g., chain lengths, antichains).\n- The Conway-Knuth lattice is the foundation for the [[rural_hospitals]]\n  invariant (\"same set of matched participants across all stable matchings\").\n\n## References\n\n- [MSZ Ch.22, Thm 22.12] Maschler, Solan, Zamir, *Game Theory*.\n- Knuth (1976), *Marriages Stables*. Universit\u00e9 de Montr\u00e9al.\n- Roth & Sotomayor (1990), Ch. 2 \u00a72.3.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.lattice",
+        "kind": "theorem",
+        "primary_topic": "market_design",
+        "status": "proved",
+        "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.proposing_optimal"
+        ]
+      },
+      "before": {
+        "body": "# Lattice of Stable Matchings\n\n**Theorem (Conway, reported by Knuth 1976).** The set of stable matchings\nof any finite one-to-one matching market forms a **complete distributive\nlattice** under the partial order\n\n$$\\mu \\le_M \\mu' \\quad \\iff \\quad \\mu(i) \\preceq_i \\mu'(i) \\text{ for all } i \\in M$$\n\n(\"men weakly prefer $\\mu'$ to $\\mu$\"). The join $\\mu \\vee \\mu'$ matches each\nman to his preferred of the two partners; the meet $\\mu \\wedge \\mu'$ matches\neach man to his less-preferred. Both are stable matchings.\n\nEquivalently, under $\\le_W$ defined dually (women's preference), the lattice\nis the order-dual.\n\n## Extrema\n\n- Top under $\\le_M$: the **men-optimal** matching $\\mu^M$ (output of\n  men-proposing GS \u2014 see [[proposing_optimal]]).\n- Bottom under $\\le_M$: the **women-optimal** matching $\\mu^W$ (output of\n  women-proposing GS).\n\nThese two are also the bottom and top respectively under $\\le_W$ \u2014 the men's\nand women's interests are exactly opposed across the stable set.\n\n## Proof Sketch\n\nThe non-trivial part is showing $\\mu \\vee \\mu'$ (each man picks his preferred\npartner from $\\mu$ and $\\mu'$) is itself a matching (not just a function) and\nis stable.\n\n*Matching*: We must show no woman is \"picked\" by two different men. If man\n$i_1$'s preferred partner is $j$, and $i_2$'s preferred is also $j$, then $j$\nis matched to $i_1$ in one of $\\mu, \\mu'$ and to $i_2$ in the other. By the\nopposed-preferences phenomenon (a corollary of stability), $j$ also prefers\nexactly the opposite \u2014 contradiction.\n\n*Stability*: If $(i, k)$ blocks $\\mu \\vee \\mu'$, then $k$ ranks higher on\n$i$'s list than his max of $\\mu(i), \\mu'(i)$, so $(i, k)$ blocks both $\\mu$\nand $\\mu'$ \u2014 contradicting stability of either.\n\nDistributivity follows from the same opposed-preferences structure.\n\n## Formalization\n\nIn the balanced full-preference Lean model (`Preferences n` via\n`MatchingMarket.ofEquivData`, every stable matching perfect), the lattice\nstructure is formalized as a `Lattice` instance on\n`GS.StableMatching w m` (`EconCSLib.MarketDesign.Matching.Lattice`):\n\n- `GS.opposed_preferences` (+ `opposed_preferences_women`) \u2014 the\n  opposed-preferences lemma, proved by a direct pairwise blocking argument.\n- `GS.stableJoin` / `GS.stableMeet` \u2014 the join and meet as `Matching`s, each\n  built from an injective-hence-bijective partner map (`joinWoman` /\n  `meetMan`); the injectivity is the \"no woman picked twice\" step and uses\n  `opposed_preferences`.\n- `GS.stableJoin_isStable` / `GS.stableMeet_isStable` \u2014 both operations are\n  closed within the stable set.\n- The `Lattice (GS.StableMatching w m)` instance \u2014 the men-preference order\n  (`\u03c3 \u2264 \u03c4` iff every man weakly prefers `\u03c4`) with `\u2294 = stableJoin`,\n  `\u2293 = stableMeet`, all lattice axioms discharged.\n- `GS.StableMatching.gsStable_isGreatest` \u2014 the **men-proposing GS output is\n  the greatest element** ($\\top$) of this lattice: every man weakly prefers\n  it to his partner in any other stable matching. This is\n  [[proposing_optimal]] (`galeShapley_isProposingOptimal`) packaged as the\n  lattice maximum, identifying the men-optimal extremum $\\mu^M$ with the GS\n  output.\n\nAll sorry-free (axioms: `propext`, `Classical.choice`, `Quot.sound`).\n\n**Not yet formalized** (classical, future refinements): *distributivity* of\nthe lattice, *completeness*, and the *women-proposing* bottom extremum\n$\\mu^W$ (no women-proposing GS is formalized yet). The general\n$\\bot$/unequal-cardinality version is also out of scope of the balanced model.\n\n## Consequences\n\n- The number of stable matchings is bounded by combinatorial counts on the\n  lattice (e.g., chain lengths, antichains).\n- The Conway-Knuth lattice is the foundation for the [[rural_hospitals]]\n  invariant (\"same set of matched participants across all stable matchings\").\n\n## References\n\n- [MSZ Ch.22, Thm 22.12] Maschler, Solan, Zamir, *Game Theory*.\n- Knuth (1976), *Marriages Stables*. Universit\u00e9 de Montr\u00e9al.\n- Roth & Sotomayor (1990), Ch. 2 \u00a72.3.",
+        "explicit_topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+        "home_topic": "market_design",
+        "id": "market_design.matching.one_to_one.lattice",
+        "kind": "theorem",
+        "primary_topic": "market_design",
+        "status": "proved",
+        "title": "Lattice Structure of Stable Matchings (Conway-Knuth)",
+        "topic_lean_alignment": null,
+        "topics": [
+          "market_design",
+          "market_design.matching",
+          "market_design.matching.one_to_one"
+        ],
+        "uses": [
+          "market_design.matching.one_to_one.stability",
+          "market_design.matching.one_to_one.proposing_optimal"
+        ]
+      },
+      "index": 2,
+      "message": "would remove dependency 'market_design.matching.one_to_one.stability' from 'market_design.matching.one_to_one.lattice'",
+      "op": "remove-dependency",
+      "operation": {
+        "dependency": "market_design.matching.one_to_one.stability",
+        "node_id": "market_design.matching.one_to_one.lattice",
+        "op": "remove-dependency"
+      },
+      "status": "applied"
+    }
+  ],
+  "plan_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/dry-runs/refactor-plan.yml",
+  "removed_nodes": [],
+  "resolved_diagnostics": [],
+  "summary": {
+    "added_node_count": 0,
+    "baseline_errors": 12,
+    "baseline_warnings": 0,
+    "changed_node_count": 2,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "operation_status_counts": {
+      "applied": 2,
+      "error": 0,
+      "noop": 0
+    },
+    "removed_node_count": 0,
+    "resolved_errors": 0,
+    "resolved_warnings": 0
+  },
+  "would_introduce_errors": false,
+  "writes": []
+}

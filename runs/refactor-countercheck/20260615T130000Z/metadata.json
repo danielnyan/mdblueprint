@@ -1,0 +1,265 @@
+{
+  "adjudicator_ran": true,
+  "agent_results": [
+    {
+      "command": [
+        "codex",
+        "exec",
+        "-C",
+        "/home/azureuser/mdblueprint-clean",
+        "--sandbox",
+        "workspace-write",
+        "--json",
+        "-o",
+        "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/logs/run-adjudicator-last-message.md",
+        "--add-dir",
+        "/home/azureuser/EconCSLib",
+        "--add-dir",
+        "/home/azureuser/EconCSLib/docs/knowledge",
+        "-"
+      ],
+      "events_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/logs/run-adjudicator-events.jsonl",
+      "last_message_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/logs/run-adjudicator-last-message.md",
+      "prompt_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/prompts/adjudicator.md",
+      "returncode": 0,
+      "stage": "adjudicator",
+      "stderr_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/logs/run-adjudicator.stderr"
+    }
+  ],
+  "candidate_count": 4,
+  "countercheck_ran": true,
+  "countercheck_summary": {
+    "corpus_names": 158894,
+    "nodes_with_extra_decls": 4,
+    "nodes_with_extra_uses": 4,
+    "nodes_with_missing_decls": 2,
+    "nodes_with_missing_uses": 3,
+    "pairs": 4,
+    "reports": [
+      {
+        "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/counterchecks/market_design_matching_one_to_one_gale_shapley_algorithm.json",
+        "extra_declarations": [
+          "pref_list_mem",
+          "initState",
+          "isFree",
+          "isFree_iff",
+          "not_isFree_iff",
+          "freeMenSet",
+          "mem_freeMenSet",
+          "propTarget",
+          "propTarget_lt",
+          "daStep_nc_free",
+          "daStep_nc_held",
+          "daStep_holding",
+          "holding_rank_mono_step",
+          "holding_rank_mono_run",
+          "held_preserved_run",
+          "holding_injective_step",
+          "holding_injective_run",
+          "initState_injective",
+          "HoldInv",
+          "holdinv_init",
+          "holdinv_step",
+          "holdinv_finalState",
+          "finalState_no_free_men",
+          "final_all_men_held",
+          "final_holding_injective",
+          "final_all_women_hold",
+          "gs_injective",
+          "gs_bijective",
+          "galeShapley_isStable"
+        ],
+        "extra_uses": [
+          "HoldInv",
+          "daStep_holding",
+          "daStep_nc_free",
+          "daStep_nc_held",
+          "finalState_no_free_men",
+          "final_all_men_held",
+          "final_all_women_hold",
+          "final_holding_injective",
+          "freeMenSet",
+          "galeShapley_isStable",
+          "gs_bijective",
+          "gs_injective",
+          "holding_injective_run",
+          "holding_injective_step",
+          "holding_rank_mono_run",
+          "holding_rank_mono_step",
+          "holdinv_finalState",
+          "holdinv_init",
+          "holdinv_step",
+          "initState",
+          "initState_injective",
+          "isFree",
+          "isFree_iff",
+          "mem_freeMenSet",
+          "not_isFree_iff",
+          "pref_list_mem",
+          "propTarget"
+        ],
+        "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+        "missing_declarations": [
+          "GS.daStep",
+          "GS.daRun",
+          "GS.finalState",
+          "GS.gs"
+        ],
+        "missing_uses": [
+          "market_design.matching.one_to_one.market",
+          "market_design.matching.one_to_one.matching"
+        ],
+        "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+        "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "review_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/reviews/market_design_matching_one_to_one_gale_shapley_algorithm_lean_countercheck_2026-06-15T12_50_28_00_00.md"
+      },
+      {
+        "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/counterchecks/market_design_matching_one_to_one_lattice.json",
+        "extra_declarations": [
+          "wPartner_eq_iff",
+          "joinWoman_eq_or",
+          "joinWoman_mem_men",
+          "joinWoman_worse_left",
+          "joinWoman_worse_right",
+          "joinWoman_injective",
+          "prefM_strict",
+          "prefW_strict",
+          "joinWoman_le_left",
+          "joinWoman_le_right",
+          "opposed_preferences_women",
+          "meetMan_eq_or",
+          "meetMan_mem_women",
+          "meetMan_worse_left",
+          "meetMan_worse_right",
+          "meetMan_injective",
+          "meetMan_le_left",
+          "meetMan_le_right",
+          "wPartner_stableJoin",
+          "wPartner_stableMeet",
+          "meetEquiv_symm_eq_or",
+          "stableMeet_ge_left",
+          "stableMeet_ge_right",
+          "matchW_partner",
+          "gsStable_greatest"
+        ],
+        "extra_uses": [
+          "StableMatching",
+          "gsStable_greatest",
+          "joinWoman_eq_or",
+          "joinWoman_injective",
+          "joinWoman_le_left",
+          "joinWoman_le_right",
+          "joinWoman_mem_men",
+          "joinWoman_worse_left",
+          "joinWoman_worse_right",
+          "matchW_partner",
+          "meetEquiv_symm_eq_or",
+          "meetMan_eq_or",
+          "meetMan_le_left",
+          "meetMan_le_right",
+          "meetMan_mem_women",
+          "meetMan_worse_left",
+          "meetMan_worse_right",
+          "opposed_preferences",
+          "opposed_preferences_women",
+          "prefM_strict",
+          "prefW_strict",
+          "stableJoin_isStable",
+          "stableMeet_ge_left",
+          "stableMeet_ge_right",
+          "stableMeet_isStable",
+          "wPartner_eq_iff"
+        ],
+        "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Lattice.lean",
+        "missing_declarations": [],
+        "missing_uses": [
+          "market_design.matching.one_to_one.stability",
+          "market_design.matching.one_to_one.proposing_optimal"
+        ],
+        "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+        "node_id": "market_design.matching.one_to_one.lattice",
+        "review_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/reviews/market_design_matching_one_to_one_lattice_lean_countercheck_2026-06-15T12_50_28_00_00.md"
+      },
+      {
+        "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/counterchecks/market_design_matching_one_to_one_market.json",
+        "extra_declarations": [
+          "IsBlocking",
+          "IsStable",
+          "IsIndividuallyRational"
+        ],
+        "extra_uses": [
+          "IsBlocking"
+        ],
+        "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+        "missing_declarations": [
+          "MatchingMarket"
+        ],
+        "missing_uses": [],
+        "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/market.md",
+        "node_id": "market_design.matching.one_to_one.market",
+        "review_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/reviews/market_design_matching_one_to_one_market_lean_countercheck_2026-06-15T12_50_28_00_00.md"
+      },
+      {
+        "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/counterchecks/market_design_matching_one_to_one_stability.json",
+        "extra_declarations": [
+          "IsIndividuallyRational"
+        ],
+        "extra_uses": [
+          "IsBlocking"
+        ],
+        "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+        "missing_declarations": [],
+        "missing_uses": [
+          "market_design.matching.one_to_one.matching"
+        ],
+        "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/stability.md",
+        "node_id": "market_design.matching.one_to_one.stability",
+        "review_path": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/reviews/market_design_matching_one_to_one_stability_lean_countercheck_2026-06-15T12_50_28_00_00.md"
+      }
+    ]
+  },
+  "dry_run_summary": {
+    "added_node_count": 0,
+    "baseline_errors": 12,
+    "baseline_warnings": 0,
+    "changed_node_count": 2,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "operation_status_counts": {
+      "applied": 2,
+      "error": 0,
+      "noop": 0
+    },
+    "removed_node_count": 0,
+    "resolved_errors": 0,
+    "resolved_warnings": 0
+  },
+  "include_staged": false,
+  "kind": "mdblueprint-refactor-countercheck-run",
+  "knowledge_root": "/home/azureuser/EconCSLib/docs/knowledge",
+  "lean_corpus_root": "/home/azureuser/EconCSLib",
+  "lean_source_root": "/home/azureuser/EconCSLib",
+  "pair_count": 4,
+  "paths": {
+    "adjudication_report": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/adjudication/adjudication-report.md",
+    "adjudicator_prompt": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/prompts/adjudicator.md",
+    "candidates_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/candidates.json",
+    "countercheck_summary": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/summary.json",
+    "dry_run_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/dry-runs/refactor-dry-run.json",
+    "dry_run_plan": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/dry-runs/refactor-plan.yml",
+    "metadata": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/metadata.json",
+    "pairs_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/pairs.json",
+    "refactor_prompt": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/prompts/refactor-agent.md",
+    "refactor_report": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/reports/refactor-report.md",
+    "run_adjudicator": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/scripts/run-adjudicator.sh",
+    "run_refactor_agent": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/scripts/run-refactor-agent.sh",
+    "skipped_json": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/countercheck/skipped.json",
+    "summary": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z/SUMMARY.md"
+  },
+  "prepare_only": false,
+  "refactor_agent_ran": false,
+  "report_diagnostics": [],
+  "run_dir": "/home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T130000Z",
+  "run_id": "20260615T130000Z",
+  "skipped_count": 0
+}

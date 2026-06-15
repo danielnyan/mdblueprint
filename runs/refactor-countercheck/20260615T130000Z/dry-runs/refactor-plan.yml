@@ -1,0 +1,7 @@
+operations:
+  - op: remove-dependency
+    node_id: market_design.matching.one_to_one.gale_shapley_algorithm
+    dependency: market_design.matching.one_to_one.market
+  - op: remove-dependency
+    node_id: market_design.matching.one_to_one.lattice
+    dependency: market_design.matching.one_to_one.stability

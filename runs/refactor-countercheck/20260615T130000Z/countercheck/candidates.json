@@ -1,0 +1,86 @@
+[
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+    "operations": [
+      {
+        "dependency": "market_design.matching.one_to_one.market",
+        "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+        "op": "remove-dependency"
+      }
+    ],
+    "priority": 90,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report",
+      "dry-run-changed",
+      "dry-run-operation"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "node_id": "market_design.matching.one_to_one.lattice",
+    "operations": [
+      {
+        "dependency": "market_design.matching.one_to_one.stability",
+        "node_id": "market_design.matching.one_to_one.lattice",
+        "op": "remove-dependency"
+      }
+    ],
+    "priority": 90,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report",
+      "dry-run-changed",
+      "dry-run-operation"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "node_id": "market_design.matching.one_to_one.market",
+    "operations": [],
+    "priority": 95,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "node_id": "market_design.matching.one_to_one.stability",
+    "operations": [],
+    "priority": 95,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

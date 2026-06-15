@@ -1,0 +1,102 @@
+[
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "declarations": [
+      "GS.daStep",
+      "GS.daRun",
+      "GS.finalState",
+      "GS.gs"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/gale_shapley_algorithm.md",
+    "node_id": "market_design.matching.one_to_one.gale_shapley_algorithm",
+    "priority": 90,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report",
+      "dry-run-changed",
+      "dry-run-operation"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "declarations": [
+      "GS.opposed_preferences",
+      "GS.stableJoin_isStable",
+      "GS.stableMeet_isStable",
+      "GS.StableMatching",
+      "GS.StableMatching.gsStable_isGreatest"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Lattice.lean",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/lattice.md",
+    "node_id": "market_design.matching.one_to_one.lattice",
+    "priority": 90,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report",
+      "dry-run-changed",
+      "dry-run-operation"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "declarations": [
+      "MatchingMarket"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+    "module": "EconCSLib.MarketDesign.Matching.Basic",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/market.md",
+    "node_id": "market_design.matching.one_to_one.market",
+    "priority": 95,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "mechanical-safe"
+    ],
+    "declarations": [
+      "Matching.IsBlocking",
+      "Matching.IsStable"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+    "module": "EconCSLib.MarketDesign.Matching.Basic",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/market_design/matching/one_to_one/stability.md",
+    "node_id": "market_design.matching.one_to_one.stability",
+    "priority": 95,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "remove-redundant-dependency"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]
