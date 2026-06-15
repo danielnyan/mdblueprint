@@ -1,0 +1,107 @@
+[
+  {
+    "dependencies": [
+      "toAdditiveValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+    "name": "bestGood_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 702
+      },
+      "start": {
+        "column": 1,
+        "line": 702
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean",
+    "type": "lemma bestGood_mem [DecidableEq G] (I : AdditiveInstance (Fin n) G) (i : Fin n) (s : Finset G) (hs : s.Nonempty) : bestGood I i s hs \u2208 s"
+  },
+  {
+    "dependencies": [
+      "toAdditiveValuation",
+      "Allocation",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+    "name": "bestGood_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 710
+      },
+      "start": {
+        "column": 1,
+        "line": 710
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean",
+    "type": "lemma bestGood_le [DecidableEq G] (I : AdditiveInstance (Fin n) G) (i : Fin n) (s : Finset G) (hs : s.Nonempty) {g : G} (hg : g \u2208 s) : I.weight i g \u2264 I.weight i (bestGood I i s hs)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+    "name": "roundRobinAllocation_isAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 737
+      },
+      "start": {
+        "column": 1,
+        "line": 737
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean",
+    "type": "theorem roundRobinAllocation_isAllocation [DecidableEq G] (I : AdditiveInstance (Fin n) G) : IsAllocation I.allGoods (roundRobinAllocation I)"
+  },
+  {
+    "dependencies": [
+      "IsEFX.isEF1",
+      "IsEF1",
+      "toValuation",
+      "toAdditiveValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+    "name": "roundRobinAllocation_isEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 743
+      },
+      "start": {
+        "column": 1,
+        "line": 743
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean",
+    "type": "theorem roundRobinAllocation_isEF1 [DecidableEq G] (I : AdditiveInstance (Fin n) G) (hnn : \u2200 (i : Fin n) (g : G), 0 \u2264 I.weight i g) : I.IsEF1 (roundRobinAllocation I)"
+  },
+  {
+    "dependencies": [
+      "IsEFX.isEF1",
+      "IsEF1",
+      "roundRobinAllocation_isEF1"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.RoundRobin",
+    "name": "roundRobinRule_isEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 752
+      },
+      "start": {
+        "column": 1,
+        "line": 752
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/RoundRobin.lean",
+    "type": "theorem roundRobinRule_isEF1 [DecidableEq G] (I : AdditiveInstance (Fin n) G) (hnn : \u2200 (i : Fin n) (g : G), 0 \u2264 I.weight i g) : I.IsEF1 (roundRobinRule I).1"
+  }
+]

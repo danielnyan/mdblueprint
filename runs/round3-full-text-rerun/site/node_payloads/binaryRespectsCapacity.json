@@ -1,0 +1,63 @@
+{
+  "id": "binaryRespectsCapacity",
+  "title": "binaryRespectsCapacity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/binaryRespectsCapacity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>binaryRespectsCapacity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef binaryRespectsCapacity (A : KnapsackAuction I U) (x : BinaryAllocation I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>binaryLoad</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "binaryLoad",
+      "title": "binaryLoad",
+      "href": "misc/binaryLoad.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations",
+      "title": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+      "href": "misc/BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations.html"
+    },
+    {
+      "id": "binaryToAllocation-fractionalFeasible-of-binaryRespectsCapacity",
+      "title": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+      "href": "misc/binaryToAllocation-fractionalFeasible-of-binaryRespectsCapacity.html"
+    },
+    {
+      "id": "zeroBinaryRespectsCapacity",
+      "title": "zeroBinaryRespectsCapacity",
+      "href": "misc/zeroBinaryRespectsCapacity.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "binaryRespectsCapacity",
+      "display_name": "binaryRespectsCapacity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

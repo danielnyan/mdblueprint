@@ -1,0 +1,52 @@
+{
+  "id": "feas-cert-disjoint",
+  "title": "feas_cert_disjoint",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/feas-cert-disjoint.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>feas_cert_disjoint</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem feas_cert_disjoint {I : Type*} {n : ℕ} [Fintype I] (A : I → Fin n → 𝕜) (b : I → 𝕜) (hfeas : IsFeasible A b) (hcert : HasCertificate A b) : False</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>HasCertificate</li>\n<li>rowEval</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "HasCertificate",
+      "title": "HasCertificate",
+      "href": "misc/HasCertificate.html"
+    },
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "feas_cert_disjoint",
+      "display_name": "feas_cert_disjoint",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

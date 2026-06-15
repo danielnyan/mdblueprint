@@ -1,0 +1,47 @@
+{
+  "id": "not-mem-paretoDomSet-of-strict",
+  "title": "not_mem_paretoDomSet_of_strict",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/not-mem-paretoDomSet-of-strict.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>not_mem_paretoDomSet_of_strict</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma not_mem_paretoDomSet_of_strict [Fintype N] [Fintype G] (v : Valuation N G) (A A' : Allocation N G) (_hweak : ∀ i : N, v.val i (A i) ≤ v.val i (A' i)) (hstrict : ∃ j : N, v.val j (A j) &lt; v.val j (A' j)) : A ∉ Finset.univ.filter (fun B : N → Finset G =&gt; ∀ i : N, v.val i (A' i) ≤ v.val i (B i))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "not_mem_paretoDomSet_of_strict",
+      "display_name": "not_mem_paretoDomSet_of_strict",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "IsESS.strict_against_other",
+    "target": "IsESS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "IsESS.nash_condition",
+    "target": "IsESS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "IsESS.isNSS",
+    "target": "IsESS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "IsESS.isNSS",
+    "target": "IsNSS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "strict_nash_implies_ess",
+    "target": "IsESS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "strict_nash_implies_ess",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "source": "strict_nash_implies_ess",
+    "target": "Indifferent.symm"
+  }
+]

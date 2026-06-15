@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_outside",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_outside",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_outside",
+    "target": "rank_lt_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside",
+    "target": "rank_lt_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside_outside",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside_outside",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_prefers_inside_outside",
+    "target": "rank_lt_card"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "source": "zProfile_apply",
+    "target": "Profile"
+  }
+]

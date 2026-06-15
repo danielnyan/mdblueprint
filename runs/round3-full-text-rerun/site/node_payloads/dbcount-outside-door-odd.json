@@ -1,0 +1,42 @@
+{
+  "id": "dbcount-outside-door-odd",
+  "title": "dbcount_outside_door_odd",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dbcount-outside-door-odd.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dbcount_outside_door_odd</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma dbcount_outside_door_odd (i : I): Odd (filter (fun x =&gt; isOutsideDoor x.1.1 x.1.2) (dbcountingset c i)).card</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isOutsideDoor</li>\n<li>dbcount_outside_door</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isOutsideDoor",
+      "title": "isOutsideDoor",
+      "href": "misc/isOutsideDoor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dbcount_outside_door_odd",
+      "display_name": "dbcount_outside_door_odd",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

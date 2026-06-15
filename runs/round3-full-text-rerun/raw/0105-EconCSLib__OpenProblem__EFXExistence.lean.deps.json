@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.EFXExistence",
+    "source": "EFXExistenceStatement",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.EFXExistence",
+    "source": "EFXExistenceStatement",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.EFXExistence",
+    "source": "efxExistence",
+    "target": "EFXExistenceStatement"
+  }
+]

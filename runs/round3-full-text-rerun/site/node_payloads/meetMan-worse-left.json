@@ -1,0 +1,36 @@
+{
+  "id": "meetMan-worse-left",
+  "title": "meetMan_worse_left",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/meetMan-worse-left.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>meetMan_worse_left</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma meetMan_worse_left {i j : Fin n} (hij : meetMan μ ν hμ hν i = j) (hμij : wPartner μ hμ j = i) : (m.prefs j).idxOf (wPartner ν hν j) ≤ (m.prefs j).idxOf i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>wPartner_eq_iff</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>pref_list_mem</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>opposed_preferences_women</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "meetMan_worse_left",
+      "display_name": "meetMan_worse_left",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

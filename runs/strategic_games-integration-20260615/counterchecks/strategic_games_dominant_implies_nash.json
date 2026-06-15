@@ -1,0 +1,66 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "source": "of_dominant",
+      "target": "IsNashEquilibrium"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Dominant Strategy Profile is a Nash Equilibrium\n\nIf every player $i$ plays a weakly dominant strategy $s_i$, then the resulting\nprofile $\\sigma = (s_i)_{i \\in I}$ is a Nash equilibrium.\n\n*Proof.* A weakly dominant strategy weakly dominates every alternative. In particular,\nfor any player $i$ and any deviation $s'_i$, we have\n$u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma)$. This means each player is best\nresponding, so $\\sigma$ is a Nash equilibrium. $\\square$",
+    "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/dominant_implies_nash.md",
+    "id": "strategic_games.dominant_implies_nash",
+    "kind": "theorem",
+    "lean": {
+      "declarations": [
+        "StrategicGame.IsNashEquilibrium.of_dominant"
+      ],
+      "modules": [
+        "GameTheoryLib.StrategicGame.NashEquilibrium"
+      ],
+      "repository": null
+    },
+    "status": "admitted",
+    "tags": [
+      "strategic-game",
+      "equilibrium",
+      "dominance"
+    ],
+    "title": "Dominant Strategy Profile is a Nash Equilibrium",
+    "uses": [
+      "strategic_games.nash_equilibrium",
+      "strategic_games.weakly_dominant_strategy"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def IsNashEquilibrium (G : StrategicGame N U) (\u03c3 : G.Profile) : Prop :=\n  \u2200 i : N, IsBestResponse G \u03c3 i\n\nnamespace IsNashEquilibrium\n\n/-- T3: If every player has a weakly dominant strategy and `\u03c3` assigns each player\n    their dominant strategy, then `\u03c3` is a Nash equilibrium. -/\n",
+      "column": 1,
+      "end": 995,
+      "kind": "theorem",
+      "line": 28,
+      "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "name": "IsNashEquilibrium",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+      "start": 714
+    },
+    {
+      "body": "theorem of_dominant {G : StrategicGame N U} {\u03c3 : G.Profile}\n    (h : \u2200 i : N, IsWeaklyDominant G i (\u03c3 i)) : IsNashEquilibrium G \u03c3 :=\n  fun i => (h i).isBestResponse \u03c3 rfl\n\nend IsNashEquilibrium\n",
+      "column": 1,
+      "end": 1189,
+      "kind": "theorem",
+      "line": 35,
+      "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+      "name": "of_dominant",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+      "start": 995
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "PayoffVector",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 64
+      },
+      "start": {
+        "column": 1,
+        "line": 64
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "abbrev PayoffVector (N : Type*) (U : Type*)"
+  },
+  {
+    "dependencies": [
+      "PayoffVector"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "coalitionPayoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def coalitionPayoff [AddCommMonoid U] (x : PayoffVector N U) (S : Finset N) : U"
+  },
+  {
+    "dependencies": [
+      "PayoffVector",
+      "coalitionPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsEfficient",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsEfficient [Fintype N] [AddCommMonoid U] (x : PayoffVector N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "PayoffVector"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsIndividuallyRational",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 80
+      },
+      "start": {
+        "column": 1,
+        "line": 80
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsIndividuallyRational [LE U] (x : PayoffVector N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "PayoffVector",
+      "IsEfficient",
+      "IsIndividuallyRational"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsImputation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsImputation [Fintype N] [AddCommMonoid U] [LE U] (x : PayoffVector N U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsSuperadditive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsSuperadditive [LE U] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsMonotonic",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsMonotonic [LE U] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsConvex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsConvex [LE U] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsSimple",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 108
+      },
+      "start": {
+        "column": 1,
+        "line": 108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsSimple [Fintype N] [One U] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsWinning",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsWinning [One U] (S : Finset N) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsAdditive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 117
+      },
+      "start": {
+        "column": 1,
+        "line": 117
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "def IsAdditive [AddCommMonoid U] : Prop"
+  },
+  {
+    "dependencies": [
+      "IsConvex",
+      "IsSuperadditive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "name": "IsConvex.isSuperadditive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Basic.lean",
+    "type": "theorem IsConvex.isSuperadditive [LE U] (hconv : G.IsConvex) : G.IsSuperadditive"
+  }
+]

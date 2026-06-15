@@ -1,0 +1,42 @@
+{
+  "id": "value₀-eq-optStrategy-outcome",
+  "title": "value₀_eq_optStrategy_outcome",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀-eq-optStrategy-outcome.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀_eq_optStrategy_outcome</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value₀_eq_optStrategy_outcome (g : GameTree (Fin 2) ℚ) : value₀ g = outcome (optStrategy : Strategy (Fin 2) ℚ) g 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>outcome_optStrategy_eq_value</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀_eq_optStrategy_outcome",
+      "display_name": "value₀_eq_optStrategy_outcome",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,92 @@
+{
+  "id": "TT",
+  "title": "TT",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/TT.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>TT</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev TT</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "Fcolor",
+      "title": "Fcolor",
+      "href": "misc/Fcolor.html"
+    },
+    {
+      "id": "TT-Ilt",
+      "title": "TT.Ilt",
+      "href": "misc/TT-Ilt.html"
+    },
+    {
+      "id": "TT-Ilt-def",
+      "title": "TT.Ilt_def",
+      "href": "misc/TT-Ilt-def.html"
+    },
+    {
+      "id": "TT-Ilt-keyprop",
+      "title": "TT.Ilt_keyprop",
+      "href": "misc/TT-Ilt-keyprop.html"
+    },
+    {
+      "id": "TTtostdSimplex",
+      "title": "TTtostdSimplex",
+      "href": "misc/TTtostdSimplex.html"
+    },
+    {
+      "id": "dominant-coords-tend-to-zero",
+      "title": "dominant_coords_tend_to_zero",
+      "href": "misc/dominant-coords-tend-to-zero.html"
+    },
+    {
+      "id": "room-seq",
+      "title": "room_seq",
+      "href": "misc/room-seq.html"
+    },
+    {
+      "id": "size-bound-in",
+      "title": "size_bound_in",
+      "href": "misc/size-bound-in.html"
+    },
+    {
+      "id": "size-bound-key",
+      "title": "size_bound_key",
+      "href": "misc/size-bound-key.html"
+    },
+    {
+      "id": "size-bound-out",
+      "title": "size_bound_out",
+      "href": "misc/size-bound-out.html"
+    },
+    {
+      "id": "tendsto-diam-to-zero",
+      "title": "tendsto_diam_to_zero",
+      "href": "misc/tendsto-diam-to-zero.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "TT",
+      "display_name": "TT",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

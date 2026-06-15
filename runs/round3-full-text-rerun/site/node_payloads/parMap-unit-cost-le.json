@@ -1,0 +1,42 @@
+{
+  "id": "parMap-unit-cost-le",
+  "title": "parMap_unit_cost_le",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/parMap-unit-cost-le.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>parMap_unit_cost_le</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem parMap_unit_cost_le (xs : List ℕ) : (parList (xs.map (fun _ =&gt; (do ✓ pure 0 : CostM ℕ ℕ)))).cost ≤ 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>parList</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "parList",
+      "title": "parList",
+      "href": "misc/parList.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "parMap_unit_cost_le",
+      "display_name": "parMap_unit_cost_le",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

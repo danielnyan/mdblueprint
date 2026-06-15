@@ -1,0 +1,58 @@
+{
+  "id": "vetoScore",
+  "title": "vetoScore",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/vetoScore.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>vetoScore</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef vetoScore (m r : Nat) : Int</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>pluralityScore</li>\n<li>bordaScore</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "pluralityScore",
+      "title": "pluralityScore",
+      "href": "misc/pluralityScore.html"
+    },
+    {
+      "id": "bordaScore",
+      "title": "bordaScore",
+      "href": "misc/bordaScore.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "veto-isTotal",
+      "title": "veto_isTotal",
+      "href": "misc/veto-isTotal.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "vetoScore",
+      "display_name": "vetoScore",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

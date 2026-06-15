@@ -1,0 +1,42 @@
+{
+  "id": "toValuation-mono",
+  "title": "toValuation_mono",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/toValuation-mono.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>toValuation_mono</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma toValuation_mono [DecidableEq G] (w : AdditiveValuation N G) (hnn : ∀ (i : N) (g : G), 0 ≤ w.weight i g) (i : N) {S T : Finset G} (h : T ⊆ S) : w.toValuation.val i T ≤ w.toValuation.val i S</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "toValuation_mono",
+      "display_name": "toValuation_mono",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

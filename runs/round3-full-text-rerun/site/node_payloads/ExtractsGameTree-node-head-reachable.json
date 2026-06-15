@@ -1,0 +1,36 @@
+{
+  "id": "ExtractsGameTree-node-head-reachable",
+  "title": "ExtractsGameTree.node_head_reachable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ExtractsGameTree-node-head-reachable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ExtractsGameTree.node_head_reachable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem ExtractsGameTree.node_head_reachable {s : G.State} {i : N} {headTree : GameTree N U} {tailTrees : List (GameTree N U)} (h : ExtractsGameTree G s (GameTree.Node i headTree tailTrees)) : ∃ head : G.Action s, Arena.Reachable G.toArena s (G.next s head) ∧ ExtractsGameTree G (G.next s head) headTree</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n<li>IsReachable.next</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n<li>IsPositiveAffineOf.refl</li>\n<li>Indifferent.refl</li>\n<li>IVariant.refl</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ExtractsGameTree.node_head_reachable",
+      "display_name": "ExtractsGameTree.node_head_reachable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

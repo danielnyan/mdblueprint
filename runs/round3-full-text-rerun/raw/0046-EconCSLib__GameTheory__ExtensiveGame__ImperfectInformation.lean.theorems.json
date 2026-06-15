@@ -1,0 +1,310 @@
+[
+  {
+    "dependencies": [
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "IsTerminal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def IsTerminal (s : G.State) : Prop"
+  },
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "subgameAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def subgameAt (s : G.State) : FiniteImperfectGame N U"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "subgameAt_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "theorem subgameAt_init (s : G.State) : (G.subgameAt s).init = s"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "SameMoverOnInfo",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 72
+      },
+      "start": {
+        "column": 1,
+        "line": 72
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def SameMoverOnInfo : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "SameActionsOnInfo",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def SameActionsOnInfo : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "NoChanceOnDecisionInfo",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def NoChanceOnDecisionInfo : Prop"
+  },
+  {
+    "dependencies": [
+      "SameMoverOnInfo",
+      "SameActionsOnInfo",
+      "NoChanceOnDecisionInfo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "InfoWellFormed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def InfoWellFormed : Prop"
+  },
+  {
+    "dependencies": [
+      "InfoWellFormed",
+      "subgameAt",
+      "SameMoverOnInfo",
+      "SameActionsOnInfo",
+      "NoChanceOnDecisionInfo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "subgameAt_infoWellFormed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "theorem subgameAt_infoWellFormed {s : G.State} (h : G.InfoWellFormed) : (G.subgameAt s).InfoWellFormed"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "PureStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def PureStrategy (i : N) : Type _"
+  },
+  {
+    "dependencies": [
+      "PureStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "PureStrategyProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def PureStrategyProfile : Type _"
+  },
+  {
+    "dependencies": [
+      "PureStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "PureStrategy.actionAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 110
+      },
+      "start": {
+        "column": 1,
+        "line": 110
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def PureStrategy.actionAt {i : N} (\u03c3 : G.PureStrategy i) {s : G.State} {k : G.InfoSet} (hinfo : G.info s = some k) (hmover : G.mover s = some i) : G.Action s"
+  },
+  {
+    "dependencies": [
+      "PureStrategy",
+      "StrategyProfile.actionAt",
+      "PureStrategy.actionAt",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "actionAt_same_info_label",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "theorem actionAt_same_info_label {i : N} (\u03c3 : G.PureStrategy i) {s t : G.State} {k : G.InfoSet} (hs : G.info s = some k) (ht : G.info t = some k) (hms : G.mover s = some i) (hmt : G.mover t = some i) : PureStrategy.actionAt G \u03c3 hs hms = \u03c3 k s hs hms \u2227 PureStrategy.actionAt G \u03c3 ht hmt = \u03c3 k t ht hmt"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsReachable.next",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "tiny",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "def tiny : FiniteImperfectGame Player \u2124"
+  },
+  {
+    "dependencies": [
+      "SameMoverOnInfo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "tiny_same_mover",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 179
+      },
+      "start": {
+        "column": 1,
+        "line": 179
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "theorem tiny_same_mover : tiny.SameMoverOnInfo"
+  },
+  {
+    "dependencies": [
+      "NoChanceOnDecisionInfo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "name": "tiny_no_chance_on_info",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 183
+      },
+      "start": {
+        "column": 1,
+        "line": 183
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ImperfectInformation.lean",
+    "type": "theorem tiny_no_chance_on_info : tiny.NoChanceOnDecisionInfo"
+  }
+]

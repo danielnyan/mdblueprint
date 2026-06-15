@@ -1,0 +1,128 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEF1",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEF1",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEquitable",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEquitable",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsMaxminShare",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsMaxminShare",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree.isEFX_of_mono",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree.isEFX_of_mono",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree.isEFX_of_mono",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEnvyFree.isEFX_of_mono",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX.isEF1",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX.isEF1",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX.isEF1",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX.isEF1",
+    "target": "IsEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsProportional",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsProportional",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "source": "IsEFX",
+    "target": "Allocation"
+  }
+]

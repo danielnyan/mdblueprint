@@ -1,0 +1,404 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_value_zero_sum",
+    "target": "value_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_value_zero_sum",
+    "target": "sample_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_nash_to_spe_on",
+    "target": "leaf_hasOnlyRootSubgames"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "IsSubgamePerfect.toSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_optStrategy_spe_on",
+    "target": "optStrategy_isSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "profileStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "toStrategicGame_nash_iff_isNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "optStrategy_isSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_strategic_form_has_nash",
+    "target": "IsSubgamePerfect.toNE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample",
+    "target": "zeroSumLeaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_hasOnlyRootSubgames",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_hasOnlyRootSubgames",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_hasOnlyRootSubgames",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "leaf_hasOnlyRootSubgames",
+    "target": "HasOnlyRootSubgames"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_ne",
+    "target": "zermelo_exists_pure_NE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "zermelo_determinacy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_determinacy",
+    "target": "sample_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "zeroSumLeaf",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "zeroSumLeaf",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "zeroSumLeaf",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zermelo_spe",
+    "target": "zermelo_exists_pure_SPE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "zeroSumLeaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "source": "sample_zero_sum",
+    "target": "Kuhn_exists_SPE"
+  }
+]

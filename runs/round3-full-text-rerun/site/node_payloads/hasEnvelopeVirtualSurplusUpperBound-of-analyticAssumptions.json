@@ -1,0 +1,42 @@
+{
+  "id": "hasEnvelopeVirtualSurplusUpperBound-of-analyticAssumptions",
+  "title": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasEnvelopeVirtualSurplusUpperBound-of-analyticAssumptions.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions [Fintype I] (A B : BayesianSingleItemAuction I) (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) : A.HasEnvelopeVirtualSurplusUpperBound B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasEnvelopeVirtualSurplusUpperBound</li>\n<li>EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasEnvelopeVirtualSurplusUpperBound",
+      "title": "HasEnvelopeVirtualSurplusUpperBound",
+      "href": "misc/HasEnvelopeVirtualSurplusUpperBound.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+      "display_name": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

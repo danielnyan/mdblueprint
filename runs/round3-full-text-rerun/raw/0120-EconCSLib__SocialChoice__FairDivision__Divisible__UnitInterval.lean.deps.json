@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "source": "cdfRealContinuous",
+    "target": "Profile.ext"
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "inducedSharePref",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def inducedSharePref {N R S : Type*} (I : CardinalInstance N R S) : N \u2192 Pref S"
+  },
+  {
+    "dependencies": [
+      "inducedSharePref"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def toShareInstance {N R S : Type*} (I : CardinalInstance N R S) : ShareInstance N R S"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "UtilityRepresentsSharePref",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def UtilityRepresentsSharePref {N R S : Type*} (I\u2081 : ShareInstance N R S) (I\u2082 : CardinalInstance N R S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsEnvyFree {N R S : Type*} (I : CardinalInstance N R S) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 72
+      },
+      "start": {
+        "column": 1,
+        "line": 72
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsProportional {N R S : Type*} (I : CardinalInstance N R S) (n : \u2115) (whole : S) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsEquitable {N R S : Type*} (I : CardinalInstance N R S) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsParetoOptimal {N R S : Type*} (I : CardinalInstance N R S) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsUtilitarianOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsUtilitarianOptimal {N R S : Type*} [Fintype N] (I : CardinalInstance N R S) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "name": "IsMaxmin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Cardinal.lean",
+    "type": "def IsMaxmin {N R S : Type*} [Fintype N] [Nonempty N] (I : CardinalInstance N R S) (A : Allocation N S) : Prop"
+  }
+]

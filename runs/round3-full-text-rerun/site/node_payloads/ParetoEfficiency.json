@@ -1,0 +1,47 @@
+{
+  "id": "ParetoEfficiency",
+  "title": "ParetoEfficiency",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ParetoEfficiency.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ParetoEfficiency</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev ParetoEfficiency (f : VotingRule N A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Unanimity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ParetoEfficiency",
+      "display_name": "ParetoEfficiency",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

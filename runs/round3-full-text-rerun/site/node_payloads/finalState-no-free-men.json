@@ -1,0 +1,57 @@
+{
+  "id": "finalState-no-free-men",
+  "title": "finalState_no_free_men",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/finalState-no-free-men.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>finalState_no_free_men</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma finalState_no_free_men : ∀ i : Fin n, isFree (finalState w m) i = false</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isFree</li>\n<li>finalState</li>\n<li>initState</li>\n<li>initState_injective</li>\n<li>freeMenSet</li>\n<li>mem_freeMenSet</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    },
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "initState",
+      "title": "initState",
+      "href": "misc/initState.html"
+    },
+    {
+      "id": "freeMenSet",
+      "title": "freeMenSet",
+      "href": "misc/freeMenSet.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "finalState_no_free_men",
+      "display_name": "finalState_no_free_men",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

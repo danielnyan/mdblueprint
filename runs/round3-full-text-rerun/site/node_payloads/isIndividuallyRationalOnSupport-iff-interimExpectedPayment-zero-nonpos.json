@@ -1,0 +1,52 @@
+{
+  "id": "isIndividuallyRationalOnSupport-iff-interimExpectedPayment-zero-nonpos",
+  "title": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isIndividuallyRationalOnSupport-iff-interimExpectedPayment-zero-nonpos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) (hint_nonneg : A.HasNonnegativeInterimAllocationIntegralOnSupport) : A.IsIndividuallyRationalOnSupport ↔ ∀ i : I, A.interimExpectedPayment i 0 ≤ 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeFormula</li>\n<li>HasNonnegativeInterimAllocationIntegralOnSupport</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "title": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "href": "misc/HasNonnegativeInterimAllocationIntegralOnSupport.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+      "display_name": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

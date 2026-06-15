@@ -1,0 +1,68 @@
+{
+  "id": "candidateChoiceGame",
+  "title": "candidateChoiceGame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/candidateChoiceGame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>candidateChoiceGame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef candidateChoiceGame : GameTree Player ℚ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>larryChoice</li>\n<li>majorityOutcome</li>\n<li>majorityOutcome_pairwise_distinct</li>\n<li>sergeyChoice</li>\n<li>IsZeroSum.tail_mem</li>\n<li>Subtree.tail_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    },
+    {
+      "id": "larryChoice",
+      "title": "larryChoice",
+      "href": "misc/larryChoice.html"
+    },
+    {
+      "id": "majorityOutcome",
+      "title": "majorityOutcome",
+      "href": "misc/majorityOutcome.html"
+    },
+    {
+      "id": "sergeyChoice",
+      "title": "sergeyChoice",
+      "href": "misc/sergeyChoice.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "candidateChoice-has-ne",
+      "title": "candidateChoice_has_ne",
+      "href": "misc/candidateChoice-has-ne.html"
+    },
+    {
+      "id": "sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame",
+      "title": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+      "href": "misc/sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "candidateChoiceGame",
+      "display_name": "candidateChoiceGame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

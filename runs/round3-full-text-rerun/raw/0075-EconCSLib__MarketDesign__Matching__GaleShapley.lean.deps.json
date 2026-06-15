@@ -1,0 +1,608 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_run",
+    "target": "holding_injective_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "held_preserved_run",
+    "target": "holding_rank_mono_run"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "held_preserved_run",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "held_preserved_run",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "mem_freeMenSet",
+    "target": "freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "mem_freeMenSet",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_holding_injective",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_holding_injective",
+    "target": "holding_injective_run"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_holding_injective",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_holding_injective",
+    "target": "initState_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "isFree_iff",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "final_all_men_held"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "final_holding_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_women_hold",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "pref_list_mem",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "pref_list_mem",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "propTarget_lt",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "propTarget_lt",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "gs_injective",
+    "target": "final_all_women_hold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "gs_injective",
+    "target": "final_holding_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "Survives.mono"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "holding_rank_mono_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "daStep_nc_free"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "daStep_nc_held"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "not_isFree_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "holding_injective_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "mem_freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "holding_rank_mono_run"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "initState_injective",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_rank_mono_run",
+    "target": "holding_rank_mono_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_holding",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "initState_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "finalState_no_free_men",
+    "target": "mem_freeMenSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_injective_step",
+    "target": "isFree_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_nc_free",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "gs_bijective",
+    "target": "gs_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "freeMenSet",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "HoldInv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "holdinv_init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "initState_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_finalState",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "HoldInv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "daStep_holding"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "not_isFree_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "daStep_nc_held"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "daStep_nc_free"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_step",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "daStep_nc_held",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "gs_bijective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "IsBlocking"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "final_all_women_hold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "holdinv_finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "galeShapley_isStable",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_init",
+    "target": "HoldInv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holdinv_init",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_rank_mono_step",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "holding_rank_mono_step",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "not_isFree_iff",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_men_held",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_men_held",
+    "target": "not_isFree_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "source": "final_all_men_held",
+    "target": "finalState_no_free_men"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "id": "IsOrdinalPotential-isNash-iff-localMax",
+  "title": "IsOrdinalPotential.isNash_iff_localMax",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsOrdinalPotential-isNash-iff-localMax.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsOrdinalPotential.isNash_iff_localMax</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsOrdinalPotential.isNash_iff_localMax {Φ : G.Profile → U} (hΦ : IsOrdinalPotential G Φ) {σ : G.Profile} : IsNashEquilibrium G σ ↔ ∀ i (s' : G.strategy i), Φ σ ≥ Φ (deviate σ i s')</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>IsOrdinalPotential</li>\n<li>IsNashEquilibrium</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsOrdinalPotential",
+      "title": "IsOrdinalPotential",
+      "href": "misc/IsOrdinalPotential.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsOrdinalPotential.isNash_iff_localMax",
+      "display_name": "IsOrdinalPotential.isNash_iff_localMax",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

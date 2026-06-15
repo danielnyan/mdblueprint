@@ -1,0 +1,52 @@
+{
+  "id": "Prefers-total-of-ne",
+  "title": "Prefers.total_of_ne",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Prefers-total-of-ne.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Prefers.total_of_ne</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Prefers.total_of_ne [Fintype N] [Fintype A] (P : Profile N A) (i : N) {a b : A} (hne : a ≠ b) : Prefers P i a b ∨ Prefers P i b a</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>Prefers</li>\n<li>BallotPrefers.total_of_ne</li>\n<li>BallotPrefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    },
+    {
+      "id": "BallotPrefers",
+      "title": "BallotPrefers",
+      "href": "misc/BallotPrefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Prefers.total_of_ne",
+      "display_name": "Prefers.total_of_ne",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

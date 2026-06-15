@@ -1,0 +1,52 @@
+{
+  "id": "StrictlyDominates-weakly",
+  "title": "StrictlyDominates.weakly",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/StrictlyDominates-weakly.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>StrictlyDominates.weakly</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem StrictlyDominates.weakly {G : StrategicGame N U} {i : N} {s s' : G.strategy i} (h : StrictlyDominates G i s s') : WeaklyDominates G i s s'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>StrictlyDominates</li>\n<li>WeaklyDominates</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "StrictlyDominates",
+      "title": "StrictlyDominates",
+      "href": "misc/StrictlyDominates.html"
+    },
+    {
+      "id": "WeaklyDominates",
+      "title": "WeaklyDominates",
+      "href": "misc/WeaklyDominates.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrictlyDominates.weakly",
+      "display_name": "StrictlyDominates.weakly",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

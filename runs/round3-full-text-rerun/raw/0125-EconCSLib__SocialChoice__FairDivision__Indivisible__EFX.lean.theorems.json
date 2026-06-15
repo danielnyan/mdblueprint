@@ -1,0 +1,96 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree",
+      "IsEFX",
+      "IsEnvyFree.isEFX_of_mono"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "name": "IsEFX.of_noEnvy_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean",
+    "type": "theorem IsEFX.of_noEnvy_mono [DecidableEq G] (v : Valuation (Fin 2) G) (hmono : \u2200 i S T, T \u2286 S \u2192 v.val i T \u2264 v.val i S) (A : Allocation (Fin 2) G) (h : IsEnvyFree v A) : IsEFX v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "name": "isEFX_of_singleton_bundle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean",
+    "type": "lemma isEFX_of_singleton_bundle [DecidableEq G] (v : Valuation (Fin 2) G) (A : Allocation (Fin 2) G) (i j : Fin 2) {g : G} (hAi : A i = {g}) (h_empty_le : v.val j \u2205 \u2264 v.val j (A j)) : \u2200 h \u2208 A i, v.val j (A i \\ {h}) \u2264 v.val j (A j)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEFX",
+      "isEFX_of_singleton_bundle",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "name": "efx_two_agents_two_goods",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean",
+    "type": "theorem efx_two_agents_two_goods [DecidableEq G] (v : Valuation (Fin 2) G) {g\u2080 g\u2081 : G} (h\u2080 : v.val 0 \u2205 \u2264 v.val 0 {g\u2080}) (h\u2081 : v.val 1 \u2205 \u2264 v.val 1 {g\u2081}) (A : Allocation (Fin 2) G) (hA0 : A 0 = {g\u2080}) (hA1 : A 1 = {g\u2081}) : IsEFX v A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEFX",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "name": "efx_exists_two_agents",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 233
+      },
+      "start": {
+        "column": 1,
+        "line": 233
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EFX.lean",
+    "type": "theorem efx_exists_two_agents [Fintype G] [DecidableEq G] (w : AdditiveValuation (Fin 2) G) (hnn\u2080 : \u2200 g, 0 \u2264 w.weight 0 g) (hnn\u2081 : \u2200 g, 0 \u2264 w.weight 1 g) (allGoods : Finset G) : \u2203 A : Allocation (Fin 2) G, IsAllocation allGoods A \u2227 IsEFX w.toValuation A"
+  }
+]

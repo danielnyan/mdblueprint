@@ -1,0 +1,500 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "SWF",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "SimpleLift",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "SimpleLift",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Neutrality",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Neutrality",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Dictatorial",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Dictatorial",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Monotonicity",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Monotonicity",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Monotonicity",
+    "target": "SimpleLift"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "PessimistStrategyproofness",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "PessimistStrategyproofness",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "PessimistStrategyproofness",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "VotingRule",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers",
+    "target": "ballotLT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers",
+    "target": "ballotLE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Unanimity",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Unanimity",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Unanimity",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "permuteVoters",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "permuteVoters",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "permuteVoters",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.total_of_ne",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.total_of_ne",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.total_of_ne",
+    "target": "BallotPrefers.total_of_ne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.total_of_ne",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ParetoEfficiency",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ParetoEfficiency",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "constantProfile",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotBottom",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotBottom",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Profile.ext",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Resolute",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Resolute",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topRank_eq_topChoice",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topRank_eq_topChoice",
+    "target": "TopRank"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topRank_eq_topChoice",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topRank_eq_topChoice",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topRank_eq_topChoice",
+    "target": "topChoice_topRank"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "NonDictatorial",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "NonDictatorial",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "IsTotal",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "IsTotal",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "top_unanimity_of_unanimity",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "top_unanimity_of_unanimity",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "top_unanimity_of_unanimity",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "top_unanimity_of_unanimity",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "top_unanimity_of_unanimity",
+    "target": "TopRank"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "IIA",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "IIA",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "IIA",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotTop",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BottomRank",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BottomRank",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topChoice_topRank",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topChoice_topRank",
+    "target": "TopRank"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topChoice_topRank",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topChoice_topRank",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "topChoice_topRank",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "OptimistStrategyproofness",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "OptimistStrategyproofness",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "OptimistStrategyproofness",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers.asymm",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers_ballotFromInjective",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers_ballotFromInjective",
+    "target": "ballotLT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Anonymity",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Anonymity",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Anonymity",
+    "target": "permuteVoters"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ResoluteStrategyproofness",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ResoluteStrategyproofness",
+    "target": "Resolute"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ResoluteStrategyproofness",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "ResoluteStrategyproofness",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers.total_of_ne",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "BallotPrefers.total_of_ne",
+    "target": "ballotLT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.asymm",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.asymm",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.asymm",
+    "target": "StrictlyPreferred.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.asymm",
+    "target": "BallotPrefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "Prefers.asymm",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "TopRank",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "source": "TopRank",
+    "target": "Prefers"
+  }
+]

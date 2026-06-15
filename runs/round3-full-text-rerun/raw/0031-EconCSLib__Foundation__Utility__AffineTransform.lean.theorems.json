@@ -1,0 +1,121 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "def IsPositiveAffineOf (u v : X \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf.refl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "theorem IsPositiveAffineOf.refl (u : X \u2192 \ud835\udd5c) : IsPositiveAffineOf u u"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf.trans",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 47
+      },
+      "start": {
+        "column": 1,
+        "line": 47
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "theorem IsPositiveAffineOf.trans {u v w : X \u2192 \ud835\udd5c} (h\u2081 : IsPositiveAffineOf u v) (h\u2082 : IsPositiveAffineOf v w) : IsPositiveAffineOf u w"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf.preserves_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "theorem IsPositiveAffineOf.preserves_le {u v : X \u2192 \ud835\udd5c} (h : IsPositiveAffineOf u v) (x y : X) : u x \u2264 u y \u2194 v x \u2264 v y"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf",
+      "IsPositiveAffineOf.preserves_le"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf.preserves_representation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "theorem IsPositiveAffineOf.preserves_representation [Preorder X] {u v : X \u2192 \ud835\udd5c} (h : IsPositiveAffineOf u v) (hrep : RepresentsPreference u) : RepresentsPreference v"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "name": "IsPositiveAffineOf.symm",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/AffineTransform.lean",
+    "type": "theorem IsPositiveAffineOf.symm {u v : X \u2192 \ud835\udd5c} (h : IsPositiveAffineOf u v) : IsPositiveAffineOf v u"
+  }
+]

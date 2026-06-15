@@ -1,0 +1,68 @@
+{
+  "id": "Vickrey",
+  "title": "Vickrey",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Vickrey.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Vickrey</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Vickrey (v : Fin 2 → Fin n) : StrategicGame (Fin 2) ℤ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "truthful-weakly-dominant-p0",
+      "title": "truthful_weakly_dominant_p0",
+      "href": "misc/truthful-weakly-dominant-p0.html"
+    },
+    {
+      "id": "truthful-weakly-dominant-p1",
+      "title": "truthful_weakly_dominant_p1",
+      "href": "misc/truthful-weakly-dominant-p1.html"
+    },
+    {
+      "id": "vickrey4-p0-dominant",
+      "title": "vickrey4_p0_dominant",
+      "href": "misc/vickrey4-p0-dominant.html"
+    },
+    {
+      "id": "vickrey4-p1-dominant",
+      "title": "vickrey4_p1_dominant",
+      "href": "misc/vickrey4-p1-dominant.html"
+    },
+    {
+      "id": "vickrey4-truthful-nash",
+      "title": "vickrey4_truthful_nash",
+      "href": "misc/vickrey4-truthful-nash.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Vickrey",
+      "display_name": "Vickrey",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

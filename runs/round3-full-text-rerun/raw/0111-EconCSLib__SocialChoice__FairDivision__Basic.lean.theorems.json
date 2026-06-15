@@ -1,0 +1,78 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "name": "Allocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 34
+      },
+      "start": {
+        "column": 1,
+        "line": 34
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Basic.lean",
+    "type": "abbrev Allocation (N S : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "name": "toInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Basic.lean",
+    "type": "def toInstance {N R S : Type*} (I : ShareInstance N R S) : Instance N R S"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "name": "SolutionConcept",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Basic.lean",
+    "type": "def SolutionConcept (N R S : Type*)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "name": "Rule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Basic.lean",
+    "type": "def Rule (N R S : Type*)"
+  }
+]

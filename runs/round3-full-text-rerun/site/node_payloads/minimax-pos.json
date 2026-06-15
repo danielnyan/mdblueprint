@@ -1,0 +1,42 @@
+{
+  "id": "minimax-pos",
+  "title": "minimax_pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/minimax-pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>minimax_pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem minimax_pos (A : I → J → 𝕜) (hA : ∀ i j, 0 &lt; A i j) : ∃ (x : I → 𝕜) (y : J → 𝕜) (v : 𝕜), (∀ i, 0 ≤ x i) ∧ (∑ i, x i = 1) ∧ (∀ j, 0 ≤ y j) ∧ (∑ j, y j = 1) ∧ (∀ j, v ≤ ∑ i, x i * A i j) ∧ (∀ i, ∑ j, A i j * y j ≤ v)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>skew_optimal</li>\n<li>symMat</li>\n<li>symMat_skew</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "symMat",
+      "title": "symMat",
+      "href": "misc/symMat.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "minimax_pos",
+      "display_name": "minimax_pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

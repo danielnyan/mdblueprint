@@ -1,0 +1,52 @@
+{
+  "id": "MultiItemBundle",
+  "title": "MultiItemBundle",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/MultiItemBundle.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>MultiItemBundle</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef MultiItemBundle (k : ℕ)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "CombinatorialAllocation",
+      "title": "CombinatorialAllocation",
+      "href": "misc/CombinatorialAllocation.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MultiItemBundle",
+      "display_name": "MultiItemBundle",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "MeasureInstance-envyFree-and-proportional-exists",
+  "title": "MeasureInstance.envyFree_and_proportional_exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/MeasureInstance-envyFree-and-proportional-exists.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>MeasureInstance.envyFree_and_proportional_exists</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem MeasureInstance.envyFree_and_proportional_exists {N : Type*} [Fintype N] [Nonempty N] (M : MeasureInstance N I) [∀ i, IsFiniteMeasure (M.measure i)] [∀ i, NoAtoms (M.measure i)] : ∃ A : Allocation N I, IsAllocation A ∧ M.IsEnvyFree A ∧ M.IsProportional (Fintype.card N) A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n<li>ef_exists_and_proportional</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MeasureInstance.envyFree_and_proportional_exists",
+      "display_name": "MeasureInstance.envyFree_and_proportional_exists",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "hasInterimPaymentFormula-of-hasInterimEnvelopeDerivative",
+  "title": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentFormula-of-hasInterimEnvelopeDerivative.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) (hderiv : A.HasInterimEnvelopeDerivative) (hint : A.HasIntervalIntegrableInterimAllocation) : A.HasInterimPaymentFormula</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeDerivative</li>\n<li>HasIntervalIntegrableInterimAllocation</li>\n<li>HasInterimPaymentFormula</li>\n<li>hasInterimPaymentFormula_of_hasInterimEnvelopeFormula</li>\n<li>hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeDerivative",
+      "title": "HasInterimEnvelopeDerivative",
+      "href": "misc/HasInterimEnvelopeDerivative.html"
+    },
+    {
+      "id": "HasIntervalIntegrableInterimAllocation",
+      "title": "HasIntervalIntegrableInterimAllocation",
+      "href": "misc/HasIntervalIntegrableInterimAllocation.html"
+    },
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+      "display_name": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

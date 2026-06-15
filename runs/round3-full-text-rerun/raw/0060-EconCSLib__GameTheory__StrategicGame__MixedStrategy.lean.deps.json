@@ -1,0 +1,296 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "MixedStrategy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixed",
+    "target": "MixedStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsMixedNashEq",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsMixedNashEq",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsMixedNashEq",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsMixedNashEq",
+    "target": "deviateMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_isCompletelyMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_isCompletelyMixed",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_isCompletelyMixed",
+    "target": "uniformMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_isCompletelyMixed",
+    "target": "uniformMixed_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureToMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureToMixed",
+    "target": "MixedStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureProfileToMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureProfileToMixed",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureProfileToMixed",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureProfileToMixed",
+    "target": "pureToMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "deviateMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "deviateMixed",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "deviateMixed",
+    "target": "pureToMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_pos",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_pos",
+    "target": "uniformMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_pos",
+    "target": "uniformMixed_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile",
+    "target": "uniformMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile_isCompletelyMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile_isCompletelyMixed",
+    "target": "IsCompletelyMixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile_isCompletelyMixed",
+    "target": "uniformMixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixedProfile_isCompletelyMixed",
+    "target": "uniformMixed_isCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "expectedPayoff",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "expectedPayoff",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "expectedPayoff",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "MixedProfile",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "MixedProfile",
+    "target": "MixedStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureToMixed_not_isCompletelyMixed_of_ne",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureToMixed_not_isCompletelyMixed_of_ne",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "pureToMixed_not_isCompletelyMixed_of_ne",
+    "target": "pureToMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile.player",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile.player",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile.player",
+    "target": "IsCompletelyMixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "IsCompletelyMixedProfile.player",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed",
+    "target": "MixedStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_apply",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "source": "uniformMixed_apply",
+    "target": "uniformMixed"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "id": "inBox-iff-inSet-Icc",
+  "title": "inBox_iff_inSet_Icc",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/inBox-iff-inSet-Icc.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>inBox_iff_inSet_Icc</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma inBox_iff_inSet_Icc [Preorder V] (b : I → V) (ℓ u : I → V) : InBox b ℓ u ↔ InSet b (fun i =&gt; Set.Icc (ℓ i) (u i))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>InBox</li>\n<li>InSet</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "InBox",
+      "title": "InBox",
+      "href": "misc/InBox.html"
+    },
+    {
+      "id": "InSet",
+      "title": "InSet",
+      "href": "misc/InSet.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "inBox_iff_inSet_Icc",
+      "display_name": "inBox_iff_inSet_Icc",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

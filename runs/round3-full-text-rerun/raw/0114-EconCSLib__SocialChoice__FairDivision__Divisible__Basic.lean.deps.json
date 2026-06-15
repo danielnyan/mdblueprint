@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEnvyFree",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEquitable",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEnvyFree.isProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEnvyFree.isProportional",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEnvyFree.isProportional",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "source": "IsEnvyFree.isProportional",
+    "target": "IsProportional"
+  }
+]

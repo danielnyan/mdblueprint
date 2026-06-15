@@ -1,0 +1,52 @@
+{
+  "id": "dbcount-outside-door",
+  "title": "dbcount_outside_door",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dbcount-outside-door.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dbcount_outside_door</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma dbcount_outside_door' (i : I): ∃ x, filter (fun x =&gt; isOutsideDoor x.1.1 x.1.2) (dbcountingset c i) = {x}</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isOutsideDoor</li>\n<li>outsidedoor_singleton</li>\n<li>isTypedNC</li>\n<li>NC_of_outsidedoor</li>\n<li>Profile.ext</li>\n<li>outsidedoor_is_singleton</li>\n<li>isRoom</li>\n<li>isRoom_of_Door</li>\n<li>sigma_nonempty_of_room</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isOutsideDoor",
+      "title": "isOutsideDoor",
+      "href": "misc/isOutsideDoor.html"
+    },
+    {
+      "id": "isTypedNC",
+      "title": "isTypedNC",
+      "href": "misc/isTypedNC.html"
+    },
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dbcount_outside_door",
+      "display_name": "dbcount_outside_door",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

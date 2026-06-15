@@ -1,0 +1,52 @@
+{
+  "id": "hasInterimPaymentEnvelopeUpperBound-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport",
+  "title": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentEnvelopeUpperBound-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport [Fintype I] (A B : BayesianSingleItemAuction I) (hdens_ae : ∀ i : I, ∀ᵐ v ∂(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 ≤ A.typeDensity i v) (hint_pay : ∀ i : I, IntervalIntegrable (fun v =&gt; B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hint_env : ∀ i : I, IntervalIntegrable (fun v =&gt; (B.interimAllocProb i v * v - ∫ z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.HasInterimPaymentEnvelopeUpperBound B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>HasInterimPaymentEnvelopeUpperBound</li>\n<li>hasInterimPaymentEnvelopeUpperBound_of_pointwise</li>\n<li>interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "HasInterimPaymentEnvelopeUpperBound",
+      "title": "HasInterimPaymentEnvelopeUpperBound",
+      "href": "misc/HasInterimPaymentEnvelopeUpperBound.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "display_name": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

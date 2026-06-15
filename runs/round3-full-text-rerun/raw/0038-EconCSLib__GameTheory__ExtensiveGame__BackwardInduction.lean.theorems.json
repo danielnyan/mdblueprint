@@ -1,0 +1,160 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "value_Leaf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 58
+      },
+      "start": {
+        "column": 1,
+        "line": 58
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "@[simp] theorem value_Leaf (p : N \u2192 U) : value (Leaf p : GameTree N U) = p"
+  },
+  {
+    "dependencies": [
+      "argMaxOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "value_Node",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "@[simp] theorem value_Node (m : N) (h : GameTree N U) (t : List (GameTree N U)) : value (Node m h t) = List.argMaxOn (fun v => v m) (value h) (valueList t)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "valueList_nil",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "@[simp] theorem valueList_nil : valueList ([] : List (GameTree N U)) = []"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "valueList_cons",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "@[simp] theorem valueList_cons (x : GameTree N U) (xs : List (GameTree N U)) : valueList (x :: xs) = value x :: valueList xs"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "valueList_eq_map",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "theorem valueList_eq_map (l : List (GameTree N U)) : valueList l = l.map value"
+  },
+  {
+    "dependencies": [
+      "valueList_eq_map"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "mem_valueList_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "theorem mem_valueList_iff {v : N \u2192 U} {l : List (GameTree N U)} : v \u2208 valueList l \u2194 \u2203 c \u2208 l, value c = v"
+  },
+  {
+    "dependencies": [
+      "value_Node",
+      "valueList_eq_map",
+      "argMaxOn_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "value_Node_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "theorem value_Node_ge (m : N) (h : GameTree N U) (t : List (GameTree N U)) (c : GameTree N U) (hmem : c \u2208 h :: t) : (value c) m \u2264 (value (Node m h t)) m"
+  },
+  {
+    "dependencies": [
+      "value_Node",
+      "argMaxOn_mem",
+      "mem_valueList_iff",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "name": "value_Node_eq_some_child_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BackwardInduction.lean",
+    "type": "theorem value_Node_eq_some_child_value (m : N) (h : GameTree N U) (t : List (GameTree N U)) : \u2203 c \u2208 h :: t, value (Node m h t) = value c"
+  }
+]

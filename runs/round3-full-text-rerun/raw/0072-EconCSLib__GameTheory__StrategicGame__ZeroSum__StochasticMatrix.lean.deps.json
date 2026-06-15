@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "exists_mixed_nash_equilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "optimal_pairs_iff_saddle_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "exists_invariant_distribution",
+    "target": "total_mass_preserved"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "total_mass_preserved",
+    "target": "value_eq_minimax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "total_mass_preserved",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "source": "total_mass_preserved",
+    "target": "mu.aux.bddBelow"
+  }
+]

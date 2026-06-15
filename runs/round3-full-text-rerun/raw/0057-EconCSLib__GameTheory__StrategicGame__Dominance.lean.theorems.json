@@ -1,0 +1,156 @@
+[
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "WeaklyDominates",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 29
+      },
+      "start": {
+        "column": 1,
+        "line": 29
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "def WeaklyDominates (G : StrategicGame N U) (i : N) (s s' : G.strategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "StrictlyDominates",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 33
+      },
+      "start": {
+        "column": 1,
+        "line": 33
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "def StrictlyDominates (G : StrategicGame N U) (i : N) (s s' : G.strategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "IsWeaklyDominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "def IsWeaklyDominant (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "StrictlyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "IsStrictlyDominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "def IsStrictlyDominant (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "StrictlyDominates",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "StrictlyDominates.weakly",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "theorem StrictlyDominates.weakly {G : StrategicGame N U} {i : N} {s s' : G.strategy i} (h : StrictlyDominates G i s s') : WeaklyDominates G i s s'"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsStrictlyDominant",
+      "IsWeaklyDominant",
+      "StrictlyDominates.weakly"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "IsStrictlyDominant.isWeaklyDominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "theorem IsStrictlyDominant.isWeaklyDominant {G : StrategicGame N U} {i : N} {s : G.strategy i} [DecidableEq (G.strategy i)] (h : IsStrictlyDominant G i s) : IsWeaklyDominant G i s"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "Profile",
+      "IsBestResponse",
+      "deviate_self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "name": "IsWeaklyDominant.isBestResponse",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+    "type": "theorem IsWeaklyDominant.isBestResponse {G : StrategicGame N U} {i : N} {s : G.strategy i} (hdom : IsWeaklyDominant G i s) (\u03c3 : G.Profile) (h\u03c3 : \u03c3 i = s) : IsBestResponse G \u03c3 i"
+  }
+]

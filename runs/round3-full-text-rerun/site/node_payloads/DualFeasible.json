@@ -1,0 +1,77 @@
+{
+  "id": "DualFeasible",
+  "title": "DualFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/DualFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>DualFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef DualFeasible (A : I → Fin n → 𝕜) (c : Fin n → 𝕜) (u : I → 𝕜) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "exists-col-strict-pair",
+      "title": "exists_col_strict_pair",
+      "href": "misc/exists-col-strict-pair.html"
+    },
+    {
+      "id": "exists-row-strict-pair",
+      "title": "exists_row_strict_pair",
+      "href": "misc/exists-row-strict-pair.html"
+    },
+    {
+      "id": "exists-strong-complementary-pair",
+      "title": "exists_strong_complementary_pair",
+      "href": "misc/exists-strong-complementary-pair.html"
+    },
+    {
+      "id": "exists-strong-complementary-pair",
+      "title": "exists_strong_complementary_pair",
+      "href": "misc/exists-strong-complementary-pair.html"
+    },
+    {
+      "id": "lp-strong-duality",
+      "title": "lp_strong_duality",
+      "href": "misc/lp-strong-duality.html"
+    },
+    {
+      "id": "lp-weak-complementarity-col",
+      "title": "lp_weak_complementarity_col",
+      "href": "misc/lp-weak-complementarity-col.html"
+    },
+    {
+      "id": "lp-weak-complementarity-row",
+      "title": "lp_weak_complementarity_row",
+      "href": "misc/lp-weak-complementarity-row.html"
+    },
+    {
+      "id": "lp-weak-duality",
+      "title": "lp_weak_duality",
+      "href": "misc/lp-weak-duality.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "DualFeasible",
+      "display_name": "DualFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

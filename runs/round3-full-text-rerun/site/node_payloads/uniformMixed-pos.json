@@ -1,0 +1,47 @@
+{
+  "id": "uniformMixed-pos",
+  "title": "uniformMixed_pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/uniformMixed-pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>uniformMixed_pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem uniformMixed_pos {G : StrategicGame N ℚ} {i : N} [Fintype (G.strategy i)] [Nonempty (G.strategy i)] (s : G.strategy i) : 0 &lt; (uniformMixed (G</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>uniformMixed</li>\n<li>uniformMixed_apply</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "uniformMixed",
+      "title": "uniformMixed",
+      "href": "misc/uniformMixed.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "uniformMixed_pos",
+      "display_name": "uniformMixed_pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

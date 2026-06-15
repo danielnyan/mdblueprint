@@ -1,0 +1,42 @@
+{
+  "id": "interimExpectedPayment-eq-of-hasInterimPaymentFormula-of-interimAllocProb-eq",
+  "title": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/interimExpectedPayment-eq-of-hasInterimPaymentFormula-of-interimAllocProb-eq.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq (A B : BayesianSingleItemAuction I) (hpayA : A.HasInterimPaymentFormula) (hpayB : B.HasInterimPaymentFormula) (i : I) (hQ : ∀ z : ℝ, A.interimAllocProb i z = B.interimAllocProb i z) (hM0 : A.interimExpectedPayment i 0 = B.interimExpectedPayment i 0) (v_i : ℝ) : A.interimExpectedPayment i v_i = B.interimExpectedPayment i v_i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimPaymentFormula</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+      "display_name": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

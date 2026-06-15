@@ -1,0 +1,103 @@
+[
+  {
+    "dependencies": [
+      "Profile.ext",
+      "IsSingleItemAllocationRule.le_one",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "MeasureValuation",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "mem_iUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "name": "cut_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean",
+    "type": "lemma cut_exists (\u03bc : Measure I) [IsFiniteMeasure \u03bc] [NoAtoms \u03bc] (c : \u211d) (hc_pos : 0 < c) (hc_lt : c < (\u03bc Set.univ).toReal) : \u2203 t : I, (\u03bc (Set.Iic t)).toReal = c"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "name": "dubinsSpanierProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 423
+      },
+      "start": {
+        "column": 1,
+        "line": 423
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean",
+    "type": "theorem dubinsSpanierProportional (n : \u2115) (hn : 0 < n) (\u03bc : Fin n \u2192 Measure I) [\u2200 i, IsFiniteMeasure (\u03bc i)] [\u2200 i, NoAtoms (\u03bc i)] : \u2203 A : Allocation (Fin n) I, IsAllocation A \u2227 IsProportional n (MeasureValuation \u03bc) A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "dubinsSpanierProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "name": "dubinsSpanier_exists_proportional_allocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 430
+      },
+      "start": {
+        "column": 1,
+        "line": 430
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean",
+    "type": "theorem dubinsSpanier_exists_proportional_allocation (n : \u2115) (hn : 0 < n) (M : MeasureInstance (Fin n) I) [\u2200 i, IsFiniteMeasure (M.measure i)] [\u2200 i, NoAtoms (M.measure i)] : \u2203 A : Allocation (Fin n) I, IsAllocation A \u2227 M.IsProportional n A"
+  },
+  {
+    "dependencies": [
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "dubinsSpanier_exists_proportional_allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "name": "dubinsSpanierRule_isProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 447
+      },
+      "start": {
+        "column": 1,
+        "line": 447
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/DubinsSpanier.lean",
+    "type": "theorem dubinsSpanierRule_isProportional (n : \u2115) (hn : 0 < n) (M : MeasureInstance (Fin n) I) [\u2200 i, IsFiniteMeasure (M.measure i)] [\u2200 i, NoAtoms (M.measure i)] : M.IsProportional n (dubinsSpanierRule n hn M).1"
+  }
+]

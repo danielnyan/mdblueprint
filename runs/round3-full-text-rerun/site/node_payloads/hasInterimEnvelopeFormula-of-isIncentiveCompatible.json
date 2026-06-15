@@ -1,0 +1,47 @@
+{
+  "id": "hasInterimEnvelopeFormula-of-isIncentiveCompatible",
+  "title": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimEnvelopeFormula-of-isIncentiveCompatible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimEnvelopeFormula_of_isIncentiveCompatible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimEnvelopeFormula_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasInterimEnvelopeFormula</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>HasInterimEnvelopeFormula</li>\n<li>equilibriumPayoff_convexOn_of_isIncentiveCompatible</li>\n<li>deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+      "display_name": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

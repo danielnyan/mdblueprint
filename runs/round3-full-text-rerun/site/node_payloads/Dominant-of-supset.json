@@ -1,0 +1,42 @@
+{
+  "id": "Dominant-of-supset",
+  "title": "Dominant_of_supset",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Dominant-of-supset.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Dominant_of_supset</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma Dominant_of_supset (σ : Finset T) (C D: Finset I) : C ⊆ D → isDominant σ C → isDominant σ D</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Dominant_of_supset",
+      "display_name": "Dominant_of_supset",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,63 @@
+{
+  "id": "NoAchievableRejection",
+  "title": "NoAchievableRejection",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/NoAchievableRejection.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>NoAchievableRejection</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef NoAchievableRejection (s : DAState n) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAchievable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsAchievable",
+      "title": "IsAchievable",
+      "href": "misc/IsAchievable.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "daRun-NoAchievableRejection",
+      "title": "daRun_NoAchievableRejection",
+      "href": "misc/daRun-NoAchievableRejection.html"
+    },
+    {
+      "id": "daStep-NoAchievableRejection",
+      "title": "daStep_NoAchievableRejection",
+      "href": "misc/daStep-NoAchievableRejection.html"
+    },
+    {
+      "id": "finalState-NoAchievableRejection",
+      "title": "finalState_NoAchievableRejection",
+      "href": "misc/finalState-NoAchievableRejection.html"
+    },
+    {
+      "id": "initState-NoAchievableRejection",
+      "title": "initState_NoAchievableRejection",
+      "href": "misc/initState-NoAchievableRejection.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "NoAchievableRejection",
+      "display_name": "NoAchievableRejection",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

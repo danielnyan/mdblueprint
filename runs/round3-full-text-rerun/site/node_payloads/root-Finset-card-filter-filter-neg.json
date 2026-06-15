@@ -1,0 +1,36 @@
+{
+  "id": "root-Finset-card-filter-filter-neg",
+  "title": "_root_.Finset.card_filter_filter_neg",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/root-Finset-card-filter-filter-neg.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1><em>root</em>.Finset.card_filter_filter_neg</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem _root_.Finset.card_filter_filter_neg {X : Type*} (s : Finset X) (p : X → Prop) [DecidablePred p] : s.card = (Finset.filter p s).card + (Finset.filter (fun (a : X) =&gt; ¬p a) s).card</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "_root_.Finset.card_filter_filter_neg",
+      "display_name": "_root_.Finset.card_filter_filter_neg",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

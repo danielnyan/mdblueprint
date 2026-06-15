@@ -1,0 +1,52 @@
+{
+  "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible",
+  "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (hB : B.IsFeasible) (hB_int : A.IntegrableVirtualSurplus B.allocationRule) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) : A.expectedVirtualSurplus B.allocationRule ≤ A.expectedVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule</li>\n<li>IsFeasible.isSingleItemAllocationRule</li>\n<li>IsSingleItemAllocationRule</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "IsSingleItemAllocationRule",
+      "title": "IsSingleItemAllocationRule",
+      "href": "misc/IsSingleItemAllocationRule.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+      "display_name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

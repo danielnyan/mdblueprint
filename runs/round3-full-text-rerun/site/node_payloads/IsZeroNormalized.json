@@ -1,0 +1,88 @@
+{
+  "id": "IsZeroNormalized",
+  "title": "IsZeroNormalized",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroNormalized.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroNormalized</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsZeroNormalized [DecidableEq I] (B : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ZeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ZeroNormalized",
+      "title": "ZeroNormalized",
+      "href": "misc/ZeroNormalized.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "expectedSellerRevenueInEnvironment-eq-myersonPaymentRevenueInEnvironment-of-isDSIC-of-isZeroNormalized",
+      "title": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/expectedSellerRevenueInEnvironment-eq-myersonPaymentRevenueInEnvironment-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "hasInterimPaymentEnvelopeIdentity-of-zeroNormalized-of-interimPaymentFormula",
+      "title": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "href": "misc/hasInterimPaymentEnvelopeIdentity-of-zeroNormalized-of-interimPaymentFormula.html"
+    },
+    {
+      "id": "hasInterimPaymentVirtualSurplusIdentity-of-zeroNormalized-of-interimPaymentFormula",
+      "title": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "href": "misc/hasInterimPaymentVirtualSurplusIdentity-of-zeroNormalized-of-interimPaymentFormula.html"
+    },
+    {
+      "id": "interimExpectedPayment-zero-of-isZeroNormalized",
+      "title": "interimExpectedPayment_zero_of_isZeroNormalized",
+      "href": "misc/interimExpectedPayment-zero-of-isZeroNormalized.html"
+    },
+    {
+      "id": "isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula",
+      "title": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "href": "misc/isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "paymentRule-eq-myersonPayment-of-isDSIC-of-isZeroNormalized",
+      "title": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/paymentRule-eq-myersonPayment-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isZeroNormalized",
+      "title": "virtualSurplusMaximizingAuction_isZeroNormalized",
+      "href": "misc/virtualSurplusMaximizingAuction-isZeroNormalized.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsZeroNormalized",
+      "display_name": "IsZeroNormalized",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "symMat",
+  "title": "symMat",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/symMat.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>symMat</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef symMat (A : I → J → 𝕜) : (I ⊕ J ⊕ Unit) → (I ⊕ J ⊕ Unit) → 𝕜 | Sum.inl _, Sum.inl _ =&gt; 0 | Sum.inl i, Sum.inr (Sum.inl j) =&gt; A i j | Sum.inl _, Sum.inr (Sum.inr _) =&gt; -1 | Sum.inr (Sum.inl j), Sum.inl i =&gt; -A i j | Sum.inr (Sum.inl _), Sum.inr (Sum.inl _) =&gt; 0 | Sum.inr (Sum.inl _), Sum.inr (Sum.inr _) =&gt; 1 | Sum.inr (Sum.inr _), Sum.inl _ =&gt; 1 | Sum.inr (Sum.inr _), Sum.inr (Sum.inl _) =&gt; -1 | Sum.inr (Sum.inr _), Sum.inr (Sum.inr _) =&gt; 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "minimax-pos",
+      "title": "minimax_pos",
+      "href": "misc/minimax-pos.html"
+    },
+    {
+      "id": "symMat-skew",
+      "title": "symMat_skew",
+      "href": "misc/symMat-skew.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "symMat",
+      "display_name": "symMat",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

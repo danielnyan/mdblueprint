@@ -1,0 +1,608 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_embed_id",
+    "target": "ProductSimplices"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_embed_id",
+    "target": "index_split_combine_inverse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_embed_id",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_embed_id",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_continuous",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "ProductSimplices"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "embed_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "project_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "Brouwer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "Brouwer_Product",
+    "target": "project_embed_id"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_nonneg",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_continuous",
+    "target": "blockSum_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_split_existence",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "ProductSimplices"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "embed_continuous",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_formula",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "blockSum_pushTowardsZ_formula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "blockWeight_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "blockSum_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "tPush_mem_Icc"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "deficit_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockSum_pushTowardsZ_pos",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "deficit_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_continuous",
+    "target": "deficit_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "blockWeight_pos",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "index_split_spec"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "ProductSimplices"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_combine_split_inverse",
+    "target": "index_split_combine_inverse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "deficit_nonneg",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "pushTowardsZ_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "project_continuous",
+    "target": "blockSum_pushTowardsZ_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_mem_Icc",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "tPush_mem_Icc",
+    "target": "deficit_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "BigSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "pushTowardsZ_continuous",
+    "target": "tPush_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_split_spec",
+    "target": "index_split_existence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_split_spec",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_split_combine_inverse",
+    "target": "index_split_spec"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "source": "index_split_combine_inverse",
+    "target": "Profile.ext"
+  }
+]

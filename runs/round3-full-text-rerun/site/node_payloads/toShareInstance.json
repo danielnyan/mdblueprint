@@ -1,0 +1,48 @@
+{
+  "id": "toShareInstance",
+  "title": "toShareInstance",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/toShareInstance.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>toShareInstance</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef toShareInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) : SocialChoice.FairDivision.ShareInstance N (Finset G) (Finset G)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>inducedSharePref</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "inducedSharePref",
+      "title": "inducedSharePref",
+      "href": "misc/inducedSharePref.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "feasible",
+      "title": "feasible",
+      "href": "misc/feasible.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "toShareInstance",
+      "display_name": "toShareInstance",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

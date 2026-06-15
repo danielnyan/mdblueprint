@@ -1,0 +1,78 @@
+{
+  "id": "natBinaryLoad",
+  "title": "natBinaryLoad",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/natBinaryLoad.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>natBinaryLoad</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef natBinaryLoad (w : I → Nat) (x : BinaryAllocation I) : Nat</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "dpSolveList-feasible",
+      "title": "dpSolveList_feasible",
+      "href": "misc/dpSolveList-feasible.html"
+    },
+    {
+      "id": "dpSolveList-optimal",
+      "title": "dpSolveList_optimal",
+      "href": "misc/dpSolveList-optimal.html"
+    },
+    {
+      "id": "dynamicProgrammingOptimalAllocation-feasible",
+      "title": "dynamicProgrammingOptimalAllocation_feasible",
+      "href": "misc/dynamicProgrammingOptimalAllocation-feasible.html"
+    },
+    {
+      "id": "dynamicProgrammingOptimalAllocation-fractionalFeasible",
+      "title": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+      "href": "misc/dynamicProgrammingOptimalAllocation-fractionalFeasible.html"
+    },
+    {
+      "id": "dynamicProgrammingOptimalAllocation-optimal",
+      "title": "dynamicProgrammingOptimalAllocation_optimal",
+      "href": "misc/dynamicProgrammingOptimalAllocation-optimal.html"
+    },
+    {
+      "id": "natBinaryLoad-eq-add-of-true",
+      "title": "natBinaryLoad_eq_add_of_true",
+      "href": "misc/natBinaryLoad-eq-add-of-true.html"
+    },
+    {
+      "id": "natBinaryLoad-update-true-of-false",
+      "title": "natBinaryLoad_update_true_of_false",
+      "href": "misc/natBinaryLoad-update-true-of-false.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "natBinaryLoad",
+      "display_name": "natBinaryLoad",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

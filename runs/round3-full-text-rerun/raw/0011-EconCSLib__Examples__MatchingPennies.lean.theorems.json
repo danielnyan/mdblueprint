@@ -1,0 +1,23 @@
+[
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "matchingPennies"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.MatchingPennies",
+    "name": "mp_isZeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 60
+      },
+      "start": {
+        "column": 1,
+        "line": 60
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/MatchingPennies.lean",
+    "type": "theorem mp_isZeroSum : IsZeroSum MP"
+  }
+]

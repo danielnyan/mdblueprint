@@ -1,0 +1,52 @@
+{
+  "id": "isWeaklyDecisiveFor-of-isDecisiveFor",
+  "title": "isWeaklyDecisiveFor_of_isDecisiveFor",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isWeaklyDecisiveFor-of-isDecisiveFor.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isWeaklyDecisiveFor_of_isDecisiveFor</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isWeaklyDecisiveFor_of_isDecisiveFor [Fintype N] [Fintype A] {F : SWF N A} {C : Set N} {a b : A} (h : IsDecisiveFor F C a b) : IsWeaklyDecisiveFor F C a b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>IsDecisiveFor</li>\n<li>IsWeaklyDecisiveFor</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "IsDecisiveFor",
+      "title": "IsDecisiveFor",
+      "href": "misc/IsDecisiveFor.html"
+    },
+    {
+      "id": "IsWeaklyDecisiveFor",
+      "title": "IsWeaklyDecisiveFor",
+      "href": "misc/IsWeaklyDecisiveFor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isWeaklyDecisiveFor_of_isDecisiveFor",
+      "display_name": "isWeaklyDecisiveFor_of_isDecisiveFor",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

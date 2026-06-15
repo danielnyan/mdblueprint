@@ -1,0 +1,188 @@
+{
+  "id": "IsDSIC",
+  "title": "IsDSIC",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsDSIC.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsDSIC</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsDSIC [Mul R] [Sub R] [Preorder R] : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStrictlyDominant.isWeaklyDominant</li>\n<li>IsWeaklyDominant</li>\n<li>toStrategicGame</li>\n<li>isDSIC</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    },
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsDSIC-truthful-isNash",
+      "title": "IsDSIC.truthful_isNash",
+      "href": "misc/IsDSIC-truthful-isNash.html"
+    },
+    {
+      "id": "IsImplementable",
+      "title": "IsImplementable",
+      "href": "misc/IsImplementable.html"
+    },
+    {
+      "id": "existsUnique-zeroNormalized-payment-of-isMonotone",
+      "title": "existsUnique_zeroNormalized_payment_of_isMonotone",
+      "href": "misc/existsUnique-zeroNormalized-payment-of-isMonotone.html"
+    },
+    {
+      "id": "existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule",
+      "title": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+      "href": "misc/existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule.html"
+    },
+    {
+      "id": "expectedSellerRevenueInEnvironment-eq-myersonPaymentRevenueInEnvironment-of-isDSIC-of-isZeroNormalized",
+      "title": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/expectedSellerRevenueInEnvironment-eq-myersonPaymentRevenueInEnvironment-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "interimQuasiLinearUtilityIntegrand-le-of-isDSIC",
+      "title": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+      "href": "misc/interimQuasiLinearUtilityIntegrand-le-of-isDSIC.html"
+    },
+    {
+      "id": "isIncentiveCompatible-of-isDSIC",
+      "title": "isIncentiveCompatible_of_isDSIC",
+      "href": "misc/isIncentiveCompatible-of-isDSIC.html"
+    },
+    {
+      "id": "isMonotone-of-isDSIC",
+      "title": "isMonotone_of_isDSIC",
+      "href": "misc/isMonotone-of-isDSIC.html"
+    },
+    {
+      "id": "isQuasiLinearDSIC",
+      "title": "isQuasiLinearDSIC",
+      "href": "misc/isQuasiLinearDSIC.html"
+    },
+    {
+      "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "mechanism-isDSIC",
+      "title": "mechanism_isDSIC",
+      "href": "misc/mechanism-isDSIC.html"
+    },
+    {
+      "id": "mechanism-isDSIC",
+      "title": "mechanism_isDSIC",
+      "href": "misc/mechanism-isDSIC.html"
+    },
+    {
+      "id": "mechanism-not-isDSIC",
+      "title": "mechanism_not_isDSIC",
+      "href": "misc/mechanism-not-isDSIC.html"
+    },
+    {
+      "id": "payment-difference-bound",
+      "title": "payment_difference_bound",
+      "href": "misc/payment-difference-bound.html"
+    },
+    {
+      "id": "payment-eq-myersonPayment-of-isDSIC-of-zeroNormalized",
+      "title": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+      "href": "misc/payment-eq-myersonPayment-of-isDSIC-of-zeroNormalized.html"
+    },
+    {
+      "id": "payment-formula-of-isDSIC-of-zeroNormalized",
+      "title": "payment_formula_of_isDSIC_of_zeroNormalized",
+      "href": "misc/payment-formula-of-isDSIC-of-zeroNormalized.html"
+    },
+    {
+      "id": "payment-formula-of-zeroNormalized-and-isDSIC",
+      "title": "payment_formula_of_zeroNormalized_and_isDSIC",
+      "href": "misc/payment-formula-of-zeroNormalized-and-isDSIC.html"
+    },
+    {
+      "id": "payment-sandwich",
+      "title": "payment_sandwich",
+      "href": "misc/payment-sandwich.html"
+    },
+    {
+      "id": "paymentRule-eq-myersonPayment-of-isDSIC-of-isZeroNormalized",
+      "title": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/paymentRule-eq-myersonPayment-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "paymentRule-eq-virtualSurplusMaximizingPaymentRule-of-isDSIC-of-zeroNormalized",
+      "title": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+      "href": "misc/paymentRule-eq-virtualSurplusMaximizingPaymentRule-of-isDSIC-of-zeroNormalized.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingMechanism-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "welfareMaximizingMechanism-isDSIC",
+      "title": "welfareMaximizingMechanism_isDSIC",
+      "href": "misc/welfareMaximizingMechanism-isDSIC.html"
+    },
+    {
+      "id": "withMyersonPayment-isDSIC-of-isMonotone",
+      "title": "withMyersonPayment_isDSIC_of_isMonotone",
+      "href": "misc/withMyersonPayment-isDSIC-of-isMonotone.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsDSIC",
+      "display_name": "IsDSIC",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

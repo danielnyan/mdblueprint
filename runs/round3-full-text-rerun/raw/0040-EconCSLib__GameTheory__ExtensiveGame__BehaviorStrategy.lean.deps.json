@@ -1,0 +1,926 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb_restrictSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb_restrictSubgame",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb_restrictSubgame",
+    "target": "actionProb"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "target": "reachableSubgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "target": "liftReachableSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "target": "restrictReachableSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorSubgamePerfect",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorSubgamePerfect",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorSubgamePerfect",
+    "target": "IsBehaviorNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorSubgamePerfect",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorSubgamePerfect",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb_nonneg",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb_nonneg",
+    "target": "actionProb"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "BehaviorProfile",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "restrictSubgame_deviate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "restrictSubgame_liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "actionProb"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate_liftSubgame",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "actionProb",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.mixed",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.mixed",
+    "target": "IsCompletelyMixedWithPositiveReach"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.mixed",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "IsBehaviorNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "ReachedSubgamePayoffTransfer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "probAt",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "target": "restrictSubgame_deviate_liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "IsBehaviorNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.restrictSubgame_init",
+    "target": "restrictSubgame_deviate_liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_eq_self",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_eq_self",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame",
+    "target": "reachableSubgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_liftReachableSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_liftReachableSubgame",
+    "target": "reachableSubgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_liftReachableSubgame",
+    "target": "liftReachableSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictReachableSubgame_liftReachableSubgame",
+    "target": "restrictReachableSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_next",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_next",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_next",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_next",
+    "target": "reachableSubgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_mover",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftSubgame_eq_self",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftSubgame_eq_self",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftSubgame_eq_self",
+    "target": "liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "IsBehaviorNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "IsCompletelyMixedWithPositiveReach"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "ReachedSubgamePayoffTransfer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "IsBehaviorSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "target": "IsCompletelyMixedWithPositiveReach.reach_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_init",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_init",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftReachableSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftReachableSubgame",
+    "target": "reachableSubgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.actionProb_pos",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.actionProb_pos",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.actionProb_pos",
+    "target": "actionProb"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_liftSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_liftSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_liftSubgame",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "IsCompletelyMixedWithPositiveReach"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "actionProb"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate_same",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate_same",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate_of_ne",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate_of_ne",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "deviate_of_ne",
+    "target": "Mark.other"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoff_restrictSubgame_init",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "ReachedSubgamePayoffTransfer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "restrictSubgame_deviate_liftSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "ReachedSubgamePayoffTransfer.init",
+    "target": "expectedPayoffFrom_restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixedWithPositiveReach",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "IsBehaviorNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "ReachedSubgamePayoffTransfer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "IsBehaviorSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "target": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "liftSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "subgameAt_payoff",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "actionProb_restrictSubgame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "expectedPayoffFrom_restrictSubgame",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.player",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.player",
+    "target": "IsCompletelyMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "IsCompletelyMixed.player",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate",
+    "target": "BehaviorProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate",
+    "target": "BehaviorStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "source": "restrictSubgame_deviate",
+    "target": "restrictSubgame"
+  }
+]

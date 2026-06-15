@@ -1,0 +1,36 @@
+{
+  "id": "value-Node-eq-some-child-value",
+  "title": "value_Node_eq_some_child_value",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value-Node-eq-some-child-value.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value_Node_eq_some_child_value</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value_Node_eq_some_child_value (m : N) (h : GameTree N U) (t : List (GameTree N U)) : ∃ c ∈ h :: t, value (Node m h t) = value c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>value_Node</li>\n<li>argMaxOn_mem</li>\n<li>mem_valueList_iff</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value_Node_eq_some_child_value",
+      "display_name": "value_Node_eq_some_child_value",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

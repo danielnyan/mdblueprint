@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC.truthful_isNash",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC.truthful_isNash",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC.truthful_isNash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC.truthful_isNash",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC.truthful_isNash",
+    "target": "of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "toStrategicGame",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "source": "IsDSIC",
+    "target": "toStrategicGame"
+  }
+]

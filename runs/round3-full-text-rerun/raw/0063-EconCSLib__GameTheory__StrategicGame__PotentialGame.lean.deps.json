@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsExactPotential.maximizer_is_nash",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsExactPotential.maximizer_is_nash",
+    "target": "IsExactPotential"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsExactPotential.maximizer_is_nash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential.isNash_iff_localMax",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential.isNash_iff_localMax",
+    "target": "IsOrdinalPotential"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential.isNash_iff_localMax",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsOrdinalPotential.isNash_iff_localMax",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsExactPotential",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "source": "IsExactPotential",
+    "target": "Strategy"
+  }
+]

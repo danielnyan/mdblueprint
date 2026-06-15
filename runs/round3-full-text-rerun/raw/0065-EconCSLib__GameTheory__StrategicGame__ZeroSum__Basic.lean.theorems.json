@@ -1,0 +1,355 @@
+[
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "def IsZeroSum [Add U] [Zero U] (G : StrategicGame (Fin 2) U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "def IsConstantSum [Add U] (G : StrategicGame (Fin 2) U) (c : U) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "IsConstantSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "isZeroSum_iff_isConstantSum_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem isZeroSum_iff_isConstantSum_zero [Add U] [Zero U] {G : StrategicGame (Fin 2) U} : IsZeroSum G \u2194 IsConstantSum G 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "IsConstantSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.toIsConstantSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.toIsConstantSum [Add U] [Zero U] {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) : IsConstantSum G 0"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum",
+      "IsZeroSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum.zero_isZeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsConstantSum.zero_isZeroSum [Add U] [Zero U] {G : StrategicGame (Fin 2) U} (h : IsConstantSum G 0) : IsZeroSum G"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.welfare_eq_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.welfare_eq_zero [AddCommMonoid U] {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (\u03c3 : G.Profile) : welfare G \u03c3 = 0"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum.welfare_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsConstantSum.welfare_eq [AddCommMonoid U] {G : StrategicGame (Fin 2) U} {c : U} (hcs : IsConstantSum G c) (\u03c3 : G.Profile) : welfare G \u03c3 = c"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum.neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsConstantSum.neg [AddCommGroup U] {G : StrategicGame (Fin 2) U} {c : U} (hcs : IsConstantSum G c) (\u03c3 : G.Profile) : G.payoff \u03c3 1 = c - G.payoff \u03c3 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 115
+      },
+      "start": {
+        "column": 1,
+        "line": 115
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.neg [AddGroup U] {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (\u03c3 : G.Profile) : G.payoff \u03c3 1 = - G.payoff \u03c3 0"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum.neg",
+      "IsZeroSum",
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 121
+      },
+      "start": {
+        "column": 1,
+        "line": 121
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.neg' [AddGroup U] {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (\u03c3 : G.Profile) : G.payoff \u03c3 0 = - G.payoff \u03c3 1"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Profile",
+      "IsNashEquilibrium",
+      "IsConstantSum.neg",
+      "IsZeroSum.neg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.nash_payoff_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.nash_payoff_eq (hzs : IsZeroSum G) {\u03c3 \u03c4 : G.Profile} (h\u03c3 : IsNashEquilibrium G \u03c3) (h\u03c4 : IsNashEquilibrium G \u03c4) : G.payoff \u03c3 0 = G.payoff \u03c4 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Profile",
+      "IsNashEquilibrium",
+      "IsConstantSum.neg",
+      "IsZeroSum.neg",
+      "IsConstantSum.nash_payoff_eq",
+      "IsZeroSum.nash_payoff_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.nash_payoff_eq_p1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 208
+      },
+      "start": {
+        "column": 1,
+        "line": 208
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.nash_payoff_eq_p1 (hzs : IsZeroSum G) {\u03c3 \u03c4 : G.Profile} (h\u03c3 : IsNashEquilibrium G \u03c3) (h\u03c4 : IsNashEquilibrium G \u03c4) : G.payoff \u03c3 1 = G.payoff \u03c4 1"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum",
+      "Profile",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum.nash_payoff_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 222
+      },
+      "start": {
+        "column": 1,
+        "line": 222
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsConstantSum.nash_payoff_eq {c : U} (hcs : IsConstantSum G c) {\u03c3 \u03c4 : G.Profile} (h\u03c3 : IsNashEquilibrium G \u03c3) (h\u03c4 : IsNashEquilibrium G \u03c4) : G.payoff \u03c3 0 = G.payoff \u03c4 0"
+  },
+  {
+    "dependencies": [
+      "IsConstantSum",
+      "Profile",
+      "IsNashEquilibrium",
+      "IsConstantSum.nash_payoff_eq",
+      "IsZeroSum.nash_payoff_eq",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsConstantSum.nash_payoff_eq_p1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 264
+      },
+      "start": {
+        "column": 1,
+        "line": 264
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsConstantSum.nash_payoff_eq_p1 {c : U} (hcs : IsConstantSum G c) {\u03c3 \u03c4 : G.Profile} (h\u03c3 : IsNashEquilibrium G \u03c3) (h\u03c4 : IsNashEquilibrium G \u03c4) : G.payoff \u03c3 1 = G.payoff \u03c4 1"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "MixedProfile",
+      "expectedPayoff",
+      "IsConstantSum.neg",
+      "IsZeroSum.neg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.expectedPayoff_neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 280
+      },
+      "start": {
+        "column": 1,
+        "line": 280
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.expectedPayoff_neg (hzs : IsZeroSum G) (p : StrategicGame.MixedProfile G) : StrategicGame.expectedPayoff G p 1 = -(StrategicGame.expectedPayoff G p 0)"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "MixedProfile",
+      "expectedPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "name": "IsZeroSum.expectedPayoff_neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 292
+      },
+      "start": {
+        "column": 1,
+        "line": 292
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Basic.lean",
+    "type": "theorem IsZeroSum.expectedPayoff_neg' (hzs : IsZeroSum G) (p : StrategicGame.MixedProfile G) : StrategicGame.expectedPayoff G p 0 = -(StrategicGame.expectedPayoff G p 1)"
+  }
+]

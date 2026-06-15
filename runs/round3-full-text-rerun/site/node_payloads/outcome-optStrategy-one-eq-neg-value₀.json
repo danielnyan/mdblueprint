@@ -1,0 +1,47 @@
+{
+  "id": "outcome-optStrategy-one-eq-neg-value₀",
+  "title": "outcome_optStrategy_one_eq_neg_value₀",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/outcome-optStrategy-one-eq-neg-value₀.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>outcome_optStrategy_one_eq_neg_value₀</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem outcome_optStrategy_one_eq_neg_value₀ (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) : outcome (optStrategy : Strategy (Fin 2) ℚ) g 1 = -value₀ g</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>Strategy</li>\n<li>outcome_optStrategy_eq_value</li>\n<li>value_one_eq_neg_value₀</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "outcome_optStrategy_one_eq_neg_value₀",
+      "display_name": "outcome_optStrategy_one_eq_neg_value₀",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

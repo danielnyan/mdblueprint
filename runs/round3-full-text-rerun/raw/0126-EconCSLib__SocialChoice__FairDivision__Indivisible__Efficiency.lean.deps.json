@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+    "source": "IsParetoOptimal",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+    "source": "IsParetoOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+    "source": "not_paretoImproved_self",
+    "target": "Allocation"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "id": "isZeroSum-iff-isConstantSum-zero",
+  "title": "isZeroSum_iff_isConstantSum_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isZeroSum-iff-isConstantSum-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isZeroSum_iff_isConstantSum_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isZeroSum_iff_isConstantSum_zero [Add U] [Zero U] {G : StrategicGame (Fin 2) U} : IsZeroSum G ↔ IsConstantSum G 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>IsConstantSum</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "IsConstantSum",
+      "title": "IsConstantSum",
+      "href": "misc/IsConstantSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isZeroSum_iff_isConstantSum_zero",
+      "display_name": "isZeroSum_iff_isConstantSum_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

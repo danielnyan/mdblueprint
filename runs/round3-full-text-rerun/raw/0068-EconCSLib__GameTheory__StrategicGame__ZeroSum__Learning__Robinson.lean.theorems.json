@@ -1,0 +1,38 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.Robinson",
+    "name": "IsRowUsefulInWindow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/Robinson.lean",
+    "type": "def IsRowUsefulInWindow (s : AdmissibleSequence A) (start length : \u2115) (i : I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.Robinson",
+    "name": "IsColUsefulInWindow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 93
+      },
+      "start": {
+        "column": 1,
+        "line": 93
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/Robinson.lean",
+    "type": "def IsColUsefulInWindow (s : AdmissibleSequence A) (start length : \u2115) (j : J) : Prop"
+  }
+]

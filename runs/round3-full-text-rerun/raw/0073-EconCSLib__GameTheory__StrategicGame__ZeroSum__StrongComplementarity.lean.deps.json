@@ -1,0 +1,104 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "exists_mixed_nash_equilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "optimal_pairs_iff_saddle_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "support_complementarity_row"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "support_complementarity_column"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+    "name": "Allocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 27
+      },
+      "start": {
+        "column": 1,
+        "line": 27
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean",
+    "type": "abbrev Allocation (N \u03a9 : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+    "name": "mem_iUnion",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean",
+    "type": "lemma mem_iUnion (ha : IsAllocation A) (x : \u03a9) : \u2203 i : N, x \u2208 A i"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Allocation",
+    "name": "IsContiguousAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Allocation.lean",
+    "type": "def IsContiguousAllocation {N : Type*} (A : Allocation N \u211d) : Prop"
+  }
+]

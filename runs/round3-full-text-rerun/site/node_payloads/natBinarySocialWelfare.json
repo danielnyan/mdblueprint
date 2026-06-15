@@ -1,0 +1,93 @@
+{
+  "id": "natBinarySocialWelfare",
+  "title": "natBinarySocialWelfare",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/natBinarySocialWelfare.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>natBinarySocialWelfare</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef natBinarySocialWelfare (b : I → Nat) (x : BinaryAllocation I) : Nat</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "dpSolveList",
+      "title": "dpSolveList",
+      "href": "misc/dpSolveList.html"
+    },
+    {
+      "id": "dpSolveList-feasible",
+      "title": "dpSolveList_feasible",
+      "href": "misc/dpSolveList-feasible.html"
+    },
+    {
+      "id": "dpSolveList-optimal",
+      "title": "dpSolveList_optimal",
+      "href": "misc/dpSolveList-optimal.html"
+    },
+    {
+      "id": "dpSolveList-supportedOn",
+      "title": "dpSolveList_supportedOn",
+      "href": "misc/dpSolveList-supportedOn.html"
+    },
+    {
+      "id": "dynamicProgrammingOptimalAllocation-optimal",
+      "title": "dynamicProgrammingOptimalAllocation_optimal",
+      "href": "misc/dynamicProgrammingOptimalAllocation-optimal.html"
+    },
+    {
+      "id": "fractionalSocialWelfare-realBidOfNat-binaryToAllocation",
+      "title": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+      "href": "misc/fractionalSocialWelfare-realBidOfNat-binaryToAllocation.html"
+    },
+    {
+      "id": "integralGreedyList",
+      "title": "integralGreedyList",
+      "href": "misc/integralGreedyList.html"
+    },
+    {
+      "id": "natBinarySocialWelfare-eq-add-of-true",
+      "title": "natBinarySocialWelfare_eq_add_of_true",
+      "href": "misc/natBinarySocialWelfare-eq-add-of-true.html"
+    },
+    {
+      "id": "natBinarySocialWelfare-update-true-of-false",
+      "title": "natBinarySocialWelfare_update_true_of_false",
+      "href": "misc/natBinarySocialWelfare-update-true-of-false.html"
+    },
+    {
+      "id": "natFractionalGreedyList-le-integralGreedyList-plus-highest",
+      "title": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+      "href": "misc/natFractionalGreedyList-le-integralGreedyList-plus-highest.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "natBinarySocialWelfare",
+      "display_name": "natBinarySocialWelfare",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

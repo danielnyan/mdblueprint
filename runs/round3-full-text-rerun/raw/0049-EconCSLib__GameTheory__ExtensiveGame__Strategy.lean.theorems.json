@@ -1,0 +1,60 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+    "name": "Strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 26
+      },
+      "start": {
+        "column": 1,
+        "line": 26
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean",
+    "type": "def Strategy (G : ExtensiveGame N U) (i : N)"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+    "name": "StrategyProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 30
+      },
+      "start": {
+        "column": 1,
+        "line": 30
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean",
+    "type": "def StrategyProfile (G : ExtensiveGame N U)"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+    "name": "StrategyProfile.actionAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 35
+      },
+      "start": {
+        "column": 1,
+        "line": 35
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Strategy.lean",
+    "type": "def StrategyProfile.actionAt [DecidableEq N] {G : ExtensiveGame N U} (\u03c3 : StrategyProfile G) (s : G.State) : Option (\u03a3 i : N, G.Action s)"
+  }
+]

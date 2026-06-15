@@ -1,0 +1,103 @@
+{
+  "id": "isTypedNC",
+  "title": "isTypedNC",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isTypedNC.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isTypedNC</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef isTypedNC (i : I) (σ : Finset T) (C : Finset I): Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isCell</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "NC-of-NCdoor",
+      "title": "NC_of_NCdoor",
+      "href": "misc/NC-of-NCdoor.html"
+    },
+    {
+      "id": "NC-of-TNC",
+      "title": "NC_of_TNC",
+      "href": "misc/NC-of-TNC.html"
+    },
+    {
+      "id": "NC-or-C-of-door",
+      "title": "NC_or_C_of_door",
+      "href": "misc/NC-or-C-of-door.html"
+    },
+    {
+      "id": "NCtype-of-door",
+      "title": "NCtype_of_door",
+      "href": "misc/NCtype-of-door.html"
+    },
+    {
+      "id": "dbcount-NCroom",
+      "title": "dbcount_NCroom",
+      "href": "misc/dbcount-NCroom.html"
+    },
+    {
+      "id": "dbcount-internal-door-even",
+      "title": "dbcount_internal_door_even",
+      "href": "misc/dbcount-internal-door-even.html"
+    },
+    {
+      "id": "dbcount-outside-door",
+      "title": "dbcount_outside_door",
+      "href": "misc/dbcount-outside-door.html"
+    },
+    {
+      "id": "dbcountingset",
+      "title": "dbcountingset",
+      "href": "misc/dbcountingset.html"
+    },
+    {
+      "id": "fiber-size-internal-door",
+      "title": "fiber_size_internal_door",
+      "href": "misc/fiber-size-internal-door.html"
+    },
+    {
+      "id": "firber2-doors-NCroom",
+      "title": "firber2_doors_NCroom",
+      "href": "misc/firber2-doors-NCroom.html"
+    },
+    {
+      "id": "isTypedNC-of-isNearlyColorful-of-isDoorof-isTypedNC",
+      "title": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC",
+      "href": "misc/isTypedNC-of-isNearlyColorful-of-isDoorof-isTypedNC.html"
+    },
+    {
+      "id": "not-colorful-of-TypedNC",
+      "title": "not_colorful_of_TypedNC",
+      "href": "misc/not-colorful-of-TypedNC.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isTypedNC",
+      "display_name": "isTypedNC",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

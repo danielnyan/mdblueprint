@@ -1,0 +1,42 @@
+{
+  "id": "expectedSellerRevenueInEnvironment-le-of-expectedVirtualSurplus-le",
+  "title": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedSellerRevenueInEnvironment-le-of-expectedVirtualSurplus-le.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le [Fintype I] (A : BayesianSingleItemAuction I) {B C : BayesianSingleItemAuction I} (hB : A.HasExpectedRevenueVirtualSurplusIdentity B) (hC : A.HasExpectedRevenueVirtualSurplusIdentity C) (hvs : A.expectedVirtualSurplus B.allocationRule ≤ A.expectedVirtualSurplus C.allocationRule) : A.expectedSellerRevenueInEnvironment B ≤ A.expectedSellerRevenueInEnvironment C</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+      "display_name": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

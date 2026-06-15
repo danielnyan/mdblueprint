@@ -1,0 +1,63 @@
+{
+  "id": "BundlePartitionAllocation",
+  "title": "BundlePartitionAllocation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BundlePartitionAllocation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BundlePartitionAllocation</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BundlePartitionAllocation (I : Type*) {G : Type*} [DecidableEq G] (M : Finset G) : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BundleAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BundleAllocation",
+      "title": "BundleAllocation",
+      "href": "misc/BundleAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BundlePartitionProfileValuation",
+      "title": "BundlePartitionProfileValuation",
+      "href": "misc/BundlePartitionProfileValuation.html"
+    },
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    },
+    {
+      "id": "RandomizedSubmodularWelfareAlgorithm-IsPolynomial",
+      "title": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+      "href": "misc/RandomizedSubmodularWelfareAlgorithm-IsPolynomial.html"
+    },
+    {
+      "id": "demandOracleSWMBeatsOneMinusInvE",
+      "title": "demandOracleSWMBeatsOneMinusInvE",
+      "href": "misc/demandOracleSWMBeatsOneMinusInvE.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BundlePartitionAllocation",
+      "display_name": "BundlePartitionAllocation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

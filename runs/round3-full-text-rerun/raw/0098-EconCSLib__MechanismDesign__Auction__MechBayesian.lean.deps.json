@@ -1,0 +1,224 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "inducedMessages",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "directRevelation",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "directRevelation",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "directRevelation",
+    "target": "inducedAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "directRevelation",
+    "target": "inducedPayments"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "inducedPayments",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "inducedPayments",
+    "target": "inducedMessages"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "IsExAnteBayesianNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "ExAnteRevelationPrincipleConclusion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "truthfulStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "inducedAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "inducedPayments"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "inducedMessages"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "exAnte_revelation_principle",
+    "target": "directRevelation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "toBayesianMechanism",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "toBayesianMechanism",
+    "target": "inducedAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "toBayesianMechanism",
+    "target": "inducedPayments"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "inducedAllocation",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "inducedAllocation",
+    "target": "inducedMessages"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IntegrableExAnteUtility",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IntegrableExAnteUtility",
+    "target": "inducedAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IntegrableExAnteUtility",
+    "target": "inducedPayments"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "ExAnteRevelationPrincipleConclusion",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "ExAnteRevelationPrincipleConclusion",
+    "target": "directRevelation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "ExAnteRevelationPrincipleConclusion",
+    "target": "IsExAnteBayesianNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "ExAnteRevelationPrincipleConclusion",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "ExAnteRevelationPrincipleConclusion",
+    "target": "truthfulStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IsMeasurableStrategyProfile",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "deviate",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IsExAnteBayesianNashEquilibrium",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "IsExAnteBayesianNashEquilibrium",
+    "target": "IsMeasurableStrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "truthfulStrategy",
+    "target": "StrategyProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "truthfulStrategy",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "source": "truthfulStrategy",
+    "target": "exAnte_revelation_principle"
+  }
+]

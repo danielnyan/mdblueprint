@@ -1,0 +1,57 @@
+{
+  "id": "efx-two-agents-two-goods",
+  "title": "efx_two_agents_two_goods",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/efx-two-agents-two-goods.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>efx_two_agents_two_goods</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem efx_two_agents_two_goods [DecidableEq G] (v : Valuation (Fin 2) G) {g₀ g₁ : G} (h₀ : v.val 0 ∅ ≤ v.val 0 {g₀}) (h₁ : v.val 1 ∅ ≤ v.val 1 {g₁}) (A : Allocation (Fin 2) G) (hA0 : A 0 = {g₀}) (hA1 : A 1 = {g₁}) : IsEFX v A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsEFX</li>\n<li>isEFX_of_singleton_bundle</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>Profile.ext</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "efx_two_agents_two_goods",
+      "display_name": "efx_two_agents_two_goods",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

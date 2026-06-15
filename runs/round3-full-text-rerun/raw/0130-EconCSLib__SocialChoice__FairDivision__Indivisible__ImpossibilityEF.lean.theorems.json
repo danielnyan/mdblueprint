@@ -1,0 +1,25 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree",
+      "mem_biUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+    "name": "ef_impossible_two_agents_one_good",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/ImpossibilityEF.lean",
+    "type": "theorem ef_impossible_two_agents_one_good {G : Type*} [DecidableEq G] {g : G} (v : Valuation (Fin 2) G) (h0 : v.val 0 \u2205 < v.val 0 {g}) (h1 : v.val 1 \u2205 < v.val 1 {g}) {A : Allocation (Fin 2) G} (hA : IsAllocation {g} A) : \u00ac IsEnvyFree v A"
+  }
+]

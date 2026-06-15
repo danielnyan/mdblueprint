@@ -1,0 +1,110 @@
+[
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "name": "skew_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 28
+      },
+      "start": {
+        "column": 1,
+        "line": 28
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "type": "theorem skew_optimal {K : Type*} [Fintype K] [DecidableEq K] [Nonempty K] (S : K \u2192 K \u2192 \ud835\udd5c) (hS : \u2200 k l, S k l = - S l k) : \u2203 z : K \u2192 \ud835\udd5c, (\u2200 k, 0 \u2264 z k) \u2227 (\u2211 k, z k = 1) \u2227 (\u2200 l, 0 \u2264 \u2211 k, z k * S k l)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "name": "symMat",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 52
+      },
+      "start": {
+        "column": 1,
+        "line": 52
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "type": "def symMat (A : I \u2192 J \u2192 \ud835\udd5c) : (I \u2295 J \u2295 Unit) \u2192 (I \u2295 J \u2295 Unit) \u2192 \ud835\udd5c | Sum.inl _, Sum.inl _ => 0 | Sum.inl i, Sum.inr (Sum.inl j) => A i j | Sum.inl _, Sum.inr (Sum.inr _) => -1 | Sum.inr (Sum.inl j), Sum.inl i => -A i j | Sum.inr (Sum.inl _), Sum.inr (Sum.inl _) => 0 | Sum.inr (Sum.inl _), Sum.inr (Sum.inr _) => 1 | Sum.inr (Sum.inr _), Sum.inl _ => 1 | Sum.inr (Sum.inr _), Sum.inr (Sum.inl _) => -1 | Sum.inr (Sum.inr _), Sum.inr (Sum.inr _) => 0"
+  },
+  {
+    "dependencies": [
+      "symMat"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "name": "symMat_skew",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "type": "theorem symMat_skew (A : I \u2192 J \u2192 \ud835\udd5c) : \u2200 k l, symMat A k l = - symMat A l k"
+  },
+  {
+    "dependencies": [
+      "skew_optimal",
+      "symMat",
+      "symMat_skew",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "name": "minimax_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "type": "theorem minimax_pos (A : I \u2192 J \u2192 \ud835\udd5c) (hA : \u2200 i j, 0 < A i j) : \u2203 (x : I \u2192 \ud835\udd5c) (y : J \u2192 \ud835\udd5c) (v : \ud835\udd5c), (\u2200 i, 0 \u2264 x i) \u2227 (\u2211 i, x i = 1) \u2227 (\u2200 j, 0 \u2264 y j) \u2227 (\u2211 j, y j = 1) \u2227 (\u2200 j, v \u2264 \u2211 i, x i * A i j) \u2227 (\u2200 i, \u2211 j, A i j * y j \u2264 v)"
+  },
+  {
+    "dependencies": [
+      "minimax_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "name": "minimax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 170
+      },
+      "start": {
+        "column": 1,
+        "line": 170
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "type": "theorem minimax (A : I \u2192 J \u2192 \ud835\udd5c) : \u2203 (x : I \u2192 \ud835\udd5c) (y : J \u2192 \ud835\udd5c) (v : \ud835\udd5c), (\u2200 i, 0 \u2264 x i) \u2227 (\u2211 i, x i = 1) \u2227 (\u2200 j, 0 \u2264 y j) \u2227 (\u2211 j, y j = 1) \u2227 (\u2200 j, v \u2264 \u2211 i, x i * A i j) \u2227 (\u2200 i, \u2211 j, A i j * y j \u2264 v)"
+  }
+]

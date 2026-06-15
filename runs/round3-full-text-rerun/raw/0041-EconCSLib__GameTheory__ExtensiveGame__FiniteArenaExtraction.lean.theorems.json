@@ -1,0 +1,181 @@
+[
+  {
+    "dependencies": [
+      "NoChance",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "TreeShapedFrom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "def TreeShapedFrom (root : G.State) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsTerminal",
+      "isTerminal",
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "ActionListComplete",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "def ActionListComplete (s : G.State) (head : G.Action s) (tail : List (G.Action s)) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "extractTerminalGameTree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 94
+      },
+      "start": {
+        "column": 1,
+        "line": 94
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "def extractTerminalGameTree (s : G.State) (_hs : G.isTerminal s) : GameTree N U"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal",
+      "extractTerminalGameTree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "extractTerminal_payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "theorem extractTerminal_payoff (s : G.State) (hs : G.isTerminal s) : G.extractTerminalGameTree s hs = GameTree.Leaf (G.payoff s)"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal",
+      "extractTerminalGameTree",
+      "extractTerminal_payoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "extractTerminal_extracts",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 103
+      },
+      "start": {
+        "column": 1,
+        "line": 103
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "theorem extractTerminal_extracts (s : G.State) (hs : G.isTerminal s) : ExtractsGameTree G s (G.extractTerminalGameTree s hs)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "ExtractsGameTree.leaf_payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 110
+      },
+      "start": {
+        "column": 1,
+        "line": 110
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "theorem ExtractsGameTree.leaf_payoff {s : G.State} {p : N \u2192 U} (h : ExtractsGameTree G s (GameTree.Leaf p)) : p = G.payoff s"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsReachable.next",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "ExtractsGameTree.node_head_reachable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "theorem ExtractsGameTree.node_head_reachable {s : G.State} {i : N} {headTree : GameTree N U} {tailTrees : List (GameTree N U)} (h : ExtractsGameTree G s (GameTree.Node i headTree tailTrees)) : \u2203 head : G.Action s, Arena.Reachable G.toArena s (G.next s head) \u2227 ExtractsGameTree G (G.next s head) headTree"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "IsNashAt",
+      "IsSubgamePerfectOn.toNashAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "name": "ExtractsGameTree.spe_on_to_nash_at",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 130
+      },
+      "start": {
+        "column": 1,
+        "line": 130
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/FiniteArenaExtraction.lean",
+    "type": "theorem ExtractsGameTree.spe_on_to_nash_at [TotalPreorder U] {s : G.State} {tree : GameTree N U} (_h : ExtractsGameTree G s tree) {\u03c3 : GameTree.Strategy N U} (hspe : GameTree.IsSubgamePerfectOn \u03c3 tree) : GameTree.IsNashAt \u03c3 tree"
+  }
+]

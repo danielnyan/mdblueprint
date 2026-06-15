@@ -1,0 +1,239 @@
+[
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "MeasureValuation",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "dubinsSpanierProportional",
+      "Profile.ext",
+      "mem_iUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "proportional_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem proportional_exists {N : Type*} [Fintype N] [Nonempty N] (\u03bc : N \u2192 Measure I) [\u2200 i, IsFiniteMeasure (\u03bc i)] [\u2200 i, NoAtoms (\u03bc i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 IsProportional (Fintype.card N) (MeasureValuation \u03bc) A"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "Profile.ext",
+      "mem_iUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "strom_piece_partition",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 250
+      },
+      "start": {
+        "column": 1,
+        "line": 250
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "lemma strom_piece_partition (x : Fin n \u2192 \u211d) (hx : x \u2208 stdSimplex \u211d (Fin n)) : (\u2200 i, MeasurableSet (strom_piece n x i)) \u2227 (\u2200 i j : Fin n, i \u2260 j \u2192 Disjoint (strom_piece n x i) (strom_piece n x j)) \u2227 (\u22c3 i, strom_piece n x i = Set.Ico 0 1)"
+  },
+  {
+    "dependencies": [
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "strom_piece_empty_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 341
+      },
+      "start": {
+        "column": 1,
+        "line": 341
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "lemma strom_piece_empty_iff (x : Fin n \u2192 \u211d) (hx : x \u2208 stdSimplex \u211d (Fin n)) (i : Fin n) : strom_piece n x i = \u2205 \u2194 x i = 0"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "cdfRealContinuous",
+      "simplexFaceOpp",
+      "strom_piece_empty_iff",
+      "strom_piece_partition",
+      "Profile.ext",
+      "mem_iUnion",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "mem_biUnion",
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "kkm_open_cover",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "strom_value_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 371
+      },
+      "start": {
+        "column": 1,
+        "line": 371
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "lemma strom_value_continuous (j i : Fin n) : Continuous (fun x : Fin n \u2192 \u211d => strom_value n \u03bc x j i)"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "mem_iUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "ef_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1284
+      },
+      "start": {
+        "column": 1,
+        "line": 1284
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem ef_exists {N : Type*} [Fintype N] [Nonempty N] (\u03bc : N \u2192 Measure I) [\u2200 i, IsFiniteMeasure (\u03bc i)] [\u2200 i, NoAtoms (\u03bc i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 IsEnvyFree (MeasureValuation \u03bc) A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "ef_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "ef_exists_and_proportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1347
+      },
+      "start": {
+        "column": 1,
+        "line": 1347
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem ef_exists_and_proportional {N : Type*} [Fintype N] [Nonempty N] (\u03bc : N \u2192 Measure I) [\u2200 i, IsFiniteMeasure (\u03bc i)] [\u2200 i, NoAtoms (\u03bc i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 IsEnvyFree (MeasureValuation \u03bc) A \u2227 IsProportional (Fintype.card N) (MeasureValuation \u03bc) A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "proportional_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "MeasureInstance.proportional_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1362
+      },
+      "start": {
+        "column": 1,
+        "line": 1362
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem MeasureInstance.proportional_exists {N : Type*} [Fintype N] [Nonempty N] (M : MeasureInstance N I) [\u2200 i, IsFiniteMeasure (M.measure i)] [\u2200 i, NoAtoms (M.measure i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 M.IsProportional (Fintype.card N) A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "ef_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "MeasureInstance.envyFree_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1373
+      },
+      "start": {
+        "column": 1,
+        "line": 1373
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem MeasureInstance.envyFree_exists {N : Type*} [Fintype N] [Nonempty N] (M : MeasureInstance N I) [\u2200 i, IsFiniteMeasure (M.measure i)] [\u2200 i, NoAtoms (M.measure i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 M.IsEnvyFree A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "ef_exists_and_proportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "name": "MeasureInstance.envyFree_and_proportional_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1384
+      },
+      "start": {
+        "column": 1,
+        "line": 1384
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Existence.lean",
+    "type": "theorem MeasureInstance.envyFree_and_proportional_exists {N : Type*} [Fintype N] [Nonempty N] (M : MeasureInstance N I) [\u2200 i, IsFiniteMeasure (M.measure i)] [\u2200 i, NoAtoms (M.measure i)] : \u2203 A : Allocation N I, IsAllocation A \u2227 M.IsEnvyFree A \u2227 M.IsProportional (Fintype.card N) A"
+  }
+]

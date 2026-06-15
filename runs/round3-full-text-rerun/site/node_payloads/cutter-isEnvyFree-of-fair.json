@@ -1,0 +1,47 @@
+{
+  "id": "cutter-isEnvyFree-of-fair",
+  "title": "cutter_isEnvyFree_of_fair",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/cutter-isEnvyFree-of-fair.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>cutter_isEnvyFree_of_fair</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem cutter_isEnvyFree_of_fair (μ : Fin 2 → Measure I) (t : I) (hfair : IsFairCutPoint μ t) : (MeasureValuation μ).val 0 (cutAndChooseAlloc μ t 1) ≤ (MeasureValuation μ).val 0 (cutAndChooseAlloc μ t 0)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsFairCutPoint</li>\n<li>MeasureValuation</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFairCutPoint",
+      "title": "IsFairCutPoint",
+      "href": "misc/IsFairCutPoint.html"
+    },
+    {
+      "id": "MeasureValuation",
+      "title": "MeasureValuation",
+      "href": "misc/MeasureValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "cutter_isEnvyFree_of_fair",
+      "display_name": "cutter_isEnvyFree_of_fair",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

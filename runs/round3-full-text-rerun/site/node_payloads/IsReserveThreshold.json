@@ -1,0 +1,87 @@
+{
+  "id": "IsReserveThreshold",
+  "title": "IsReserveThreshold",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsReserveThreshold.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsReserveThreshold</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsReserveThreshold (A : BayesianSingleItemAuction I) (i : I) (reserve : ℝ) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "exists-reserveThreshold-le-bid-of-exists-virtualSurplusMaximizingAllocationRule-eq-one",
+      "title": "exists_reserveThreshold_le_bid_of_exists_virtualSurplusMaximizingAllocationRule_eq_one",
+      "href": "misc/exists-reserveThreshold-le-bid-of-exists-virtualSurplusMaximizingAllocationRule-eq-one.html"
+    },
+    {
+      "id": "exists-reserveThreshold-le-bid-of-winningVirtualValue-pos",
+      "title": "exists_reserveThreshold_le_bid_of_winningVirtualValue_pos",
+      "href": "misc/exists-reserveThreshold-le-bid-of-winningVirtualValue-pos.html"
+    },
+    {
+      "id": "isReserveThreshold-of-isRegular-of-virtualValue-eq-zero",
+      "title": "isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+      "href": "misc/isReserveThreshold-of-isRegular-of-virtualValue-eq-zero.html"
+    },
+    {
+      "id": "not-forall-lt-reserveThreshold-of-winningVirtualValue-pos",
+      "title": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+      "href": "misc/not-forall-lt-reserveThreshold-of-winningVirtualValue-pos.html"
+    },
+    {
+      "id": "reserveThreshold-le-bid-of-virtualSurplusMaximizingAllocationRule-eq-one",
+      "title": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+      "href": "misc/reserveThreshold-le-bid-of-virtualSurplusMaximizingAllocationRule-eq-one.html"
+    },
+    {
+      "id": "reserveThreshold-le-winner-bid-of-winningVirtualValue-pos",
+      "title": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+      "href": "misc/reserveThreshold-le-winner-bid-of-winningVirtualValue-pos.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-eq-zero-of-forall-lt-reserveThreshold",
+      "title": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-eq-zero-of-forall-lt-reserveThreshold.html"
+    },
+    {
+      "id": "virtualValue-nonneg-of-isReserveThreshold",
+      "title": "virtualValue_nonneg_of_isReserveThreshold",
+      "href": "misc/virtualValue-nonneg-of-isReserveThreshold.html"
+    },
+    {
+      "id": "virtualValue-nonpos-of-lt-isReserveThreshold",
+      "title": "virtualValue_nonpos_of_lt_isReserveThreshold",
+      "href": "misc/virtualValue-nonpos-of-lt-isReserveThreshold.html"
+    },
+    {
+      "id": "winningVirtualValue-nonpos-of-forall-lt-reserveThreshold",
+      "title": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold",
+      "href": "misc/winningVirtualValue-nonpos-of-forall-lt-reserveThreshold.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsReserveThreshold",
+      "display_name": "IsReserveThreshold",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

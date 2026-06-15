@@ -1,0 +1,36 @@
+{
+  "id": "wsum-mix-lt-of-le-lt",
+  "title": "wsum_mix_lt_of_le_lt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/wsum-mix-lt-of-le-lt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>wsum_mix_lt_of_le_lt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem wsum_mix_lt_of_le_lt {I : Type*} [Fintype I] (f : I → 𝕜) (x y : stdSimplex 𝕜 I) (c : 𝕜) (H1 : wsum x f ≤ c) (H2 : wsum y f &lt; c) {t : 𝕜} (ht₀ : 0 ≤ t) (ht₁ : t ≤ 1) (Ht : t &lt; 1) : wsum (stdSimplex.mix t ht₀ ht₁ x y) f &lt; c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>stdSimplex.mix</li>\n<li>Lottery.mix</li>\n<li>wsum_mix</li>\n<li>linear_comb_lt_of_le_lt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "wsum_mix_lt_of_le_lt",
+      "display_name": "wsum_mix_lt_of_le_lt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

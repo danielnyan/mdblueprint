@@ -1,0 +1,506 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "arrow_of_unanimity_iia",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "arrow_of_unanimity_iia",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "arrow_of_unanimity_iia",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "arrow_of_unanimity_iia",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "arrow_of_unanimity_iia",
+    "target": "decisive_minimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "IsWeaklyDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "isWeaklyDecisiveFor_of_isDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_spread",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsDecisive",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsDecisive",
+    "target": "IsDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "exists_nonempty_decisive_of_size"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "unanimity_univ_isDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "decisive_spread"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "StrictlyPreferred.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "BallotPrefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "Prefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_minimal_decisive_coalition",
+    "target": "iia_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_dictatorial",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_dictatorial",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_dictatorial",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsDecisiveFor",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsDecisiveFor",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsDecisiveFor",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_isDictator",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_isDictator",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "singleton_unanimity_isDictator",
+    "target": "SWF.IsDictator"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_nonempty_decisive_of_size",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "exists_nonempty_decisive_of_size",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "rank_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "rank_lt_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "rank_lt_card"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "StrictlyPreferred.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "BallotPrefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "Prefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "IsWeaklyDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "IsDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "strict_transitive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "iia_strict",
+    "target": "isWeaklyDecisiveFor_of_isDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "SWF.IsDictator",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "SWF.IsDictator",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "over",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "unanimity_univ_isDecisive",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "unanimity_univ_isDecisive",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "unanimity_univ_isDecisive",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "isWeaklyDecisiveFor_of_isDecisiveFor",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "isWeaklyDecisiveFor_of_isDecisiveFor",
+    "target": "IsDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "isWeaklyDecisiveFor_of_isDecisiveFor",
+    "target": "IsWeaklyDecisiveFor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "exists_nonempty_decisive_of_size"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "exists_minimal_decisive_coalition"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_minimal",
+    "target": "decisive_contraction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "IsDecisive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "decisive_contraction",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsWeaklyDecisiveFor",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsWeaklyDecisiveFor",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "source": "IsWeaklyDecisiveFor",
+    "target": "Prefers"
+  }
+]

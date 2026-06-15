@@ -1,0 +1,62 @@
+{
+  "id": "virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular",
+  "title": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingAuction).IsIncentiveCompatible ∧ (A.virtualSurplusMaximizingAuction).IsIndividuallyRationalOnSupport</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegular</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular</li>\n<li>HasInterimEnvelopeFormula</li>\n<li>hasInterimEnvelopeFormula_of_isIncentiveCompatible</li>\n<li>HasNonnegativeInterimAllocationIntegralOnSupport</li>\n<li>hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible</li>\n<li>virtualSurplusMaximizingAuction_isFeasible</li>\n<li>virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "title": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "href": "misc/HasNonnegativeInterimAllocationIntegralOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "display_name": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

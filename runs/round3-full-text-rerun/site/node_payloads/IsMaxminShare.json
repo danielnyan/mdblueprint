@@ -1,0 +1,78 @@
+{
+  "id": "IsMaxminShare",
+  "title": "IsMaxminShare",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsMaxminShare.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsMaxminShare</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsMaxminShare {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>IsProportional.isMaxminShare</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsMaxminShare-isAlphaMMS",
+      "title": "IsMaxminShare.isAlphaMMS",
+      "href": "misc/IsMaxminShare-isAlphaMMS.html"
+    },
+    {
+      "id": "IsProportional-isAlphaMMS-additive",
+      "title": "IsProportional.isAlphaMMS_additive",
+      "href": "misc/IsProportional-isAlphaMMS-additive.html"
+    },
+    {
+      "id": "IsProportional-isMaxminShare",
+      "title": "IsProportional.isMaxminShare",
+      "href": "misc/IsProportional-isMaxminShare.html"
+    },
+    {
+      "id": "isMaxminShare-iff-isAlphaMMS-one",
+      "title": "isMaxminShare_iff_isAlphaMMS_one",
+      "href": "misc/isMaxminShare-iff-isAlphaMMS-one.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsMaxminShare",
+      "display_name": "IsMaxminShare",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

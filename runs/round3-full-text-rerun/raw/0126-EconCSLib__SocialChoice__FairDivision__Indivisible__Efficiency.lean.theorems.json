@@ -1,0 +1,43 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 47
+      },
+      "start": {
+        "column": 1,
+        "line": 47
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Efficiency.lean",
+    "type": "abbrev IsParetoOptimal [Fintype N] [DecidableEq G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Efficiency",
+    "name": "not_paretoImproved_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Efficiency.lean",
+    "type": "lemma not_paretoImproved_self (A : Allocation N G) : \u00ac (IsAllocation allGoods A \u2227 (\u2200 i, v.val i (A i) \u2264 v.val i (A i)) \u2227 \u2203 i, v.val i (A i) < v.val i (A i))"
+  }
+]

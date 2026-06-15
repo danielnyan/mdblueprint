@@ -1,0 +1,36 @@
+{
+  "id": "eq-argmaxBid-of-strict-max",
+  "title": "eq_argmaxBid_of_strict_max",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/eq-argmaxBid-of-strict-max.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>eq_argmaxBid_of_strict_max</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma eq_argmaxBid_of_strict_max (i : I) (h : ∀ j, j ≠ i → b j &lt; b i) : i = argmaxBid b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>bid_le_maxBid</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "eq_argmaxBid_of_strict_max",
+      "display_name": "eq_argmaxBid_of_strict_max",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

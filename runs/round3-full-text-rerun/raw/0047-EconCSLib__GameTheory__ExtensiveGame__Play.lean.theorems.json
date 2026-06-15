@@ -1,0 +1,143 @@
+[
+  {
+    "dependencies": [
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "play",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 30
+      },
+      "start": {
+        "column": 1,
+        "line": 30
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "def play (choose : (s : A.State) \u2192 A.Action s) (start : A.State) : (fuel : \u2115) \u2192 List A.State | 0 => [start] | n + 1 => start :: play choose (A.next start (choose start)) n /-- The final state after at most `fuel` steps. -/"
+  },
+  {
+    "dependencies": [
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "finalState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 36
+      },
+      "start": {
+        "column": 1,
+        "line": 36
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "def finalState (choose : (s : A.State) \u2192 A.Action s) (start : A.State) : (fuel : \u2115) \u2192 A.State | 0 => start | n + 1 => finalState choose (A.next start (choose start)) n"
+  },
+  {
+    "dependencies": [
+      "finalState"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "finalState_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "theorem finalState_zero (choose : (s : A.State) \u2192 A.Action s) (s : A.State) : A.finalState choose s 0 = s"
+  },
+  {
+    "dependencies": [
+      "finalState",
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "finalState_succ",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "theorem finalState_succ (choose : (s : A.State) \u2192 A.Action s) (s : A.State) (n : \u2115) : A.finalState choose s (n + 1) = A.finalState choose (A.next s (choose s)) n"
+  },
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "play",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "def play (choose : (s : G.State) \u2192 G.Action s) (fuel : \u2115) : List G.State"
+  },
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "finalState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "def finalState (choose : (s : G.State) \u2192 G.Action s) (fuel : \u2115) : G.State"
+  },
+  {
+    "dependencies": [
+      "finalState"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "name": "finalPayoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Play.lean",
+    "type": "def finalPayoff (choose : (s : G.State) \u2192 G.Action s) (fuel : \u2115) (i : N) : U"
+  }
+]

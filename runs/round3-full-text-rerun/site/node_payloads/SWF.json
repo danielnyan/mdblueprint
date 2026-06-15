@@ -1,0 +1,143 @@
+{
+  "id": "SWF",
+  "title": "SWF",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/SWF.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>SWF</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev SWF (N A : Type*) [Fintype N] [Fintype A]</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "IsDecisive",
+      "title": "IsDecisive",
+      "href": "misc/IsDecisive.html"
+    },
+    {
+      "id": "IsDecisiveFor",
+      "title": "IsDecisiveFor",
+      "href": "misc/IsDecisiveFor.html"
+    },
+    {
+      "id": "IsWeaklyDecisiveFor",
+      "title": "IsWeaklyDecisiveFor",
+      "href": "misc/IsWeaklyDecisiveFor.html"
+    },
+    {
+      "id": "NonDictatorial",
+      "title": "NonDictatorial",
+      "href": "misc/NonDictatorial.html"
+    },
+    {
+      "id": "SWF-IsDictator",
+      "title": "SWF.IsDictator",
+      "href": "misc/SWF-IsDictator.html"
+    },
+    {
+      "id": "arrow-impossibility",
+      "title": "arrow_impossibility",
+      "href": "misc/arrow-impossibility.html"
+    },
+    {
+      "id": "arrow-of-unanimity-iia",
+      "title": "arrow_of_unanimity_iia",
+      "href": "misc/arrow-of-unanimity-iia.html"
+    },
+    {
+      "id": "decisive-contraction",
+      "title": "decisive_contraction",
+      "href": "misc/decisive-contraction.html"
+    },
+    {
+      "id": "decisive-minimal",
+      "title": "decisive_minimal",
+      "href": "misc/decisive-minimal.html"
+    },
+    {
+      "id": "decisive-spread",
+      "title": "decisive_spread",
+      "href": "misc/decisive-spread.html"
+    },
+    {
+      "id": "exists-minimal-decisive-coalition",
+      "title": "exists_minimal_decisive_coalition",
+      "href": "misc/exists-minimal-decisive-coalition.html"
+    },
+    {
+      "id": "exists-nonempty-decisive-of-size",
+      "title": "exists_nonempty_decisive_of_size",
+      "href": "misc/exists-nonempty-decisive-of-size.html"
+    },
+    {
+      "id": "iia-strict",
+      "title": "iia_strict",
+      "href": "misc/iia-strict.html"
+    },
+    {
+      "id": "isWeaklyDecisiveFor-of-isDecisiveFor",
+      "title": "isWeaklyDecisiveFor_of_isDecisiveFor",
+      "href": "misc/isWeaklyDecisiveFor-of-isDecisiveFor.html"
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller_satterthwaite",
+      "href": "misc/muller-satterthwaite.html"
+    },
+    {
+      "id": "singleton-unanimity-dictatorial",
+      "title": "singleton_unanimity_dictatorial",
+      "href": "misc/singleton-unanimity-dictatorial.html"
+    },
+    {
+      "id": "singleton-unanimity-isDictator",
+      "title": "singleton_unanimity_isDictator",
+      "href": "misc/singleton-unanimity-isDictator.html"
+    },
+    {
+      "id": "unanimity-univ-isDecisive",
+      "title": "unanimity_univ_isDecisive",
+      "href": "misc/unanimity-univ-isDecisive.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "SWF",
+      "display_name": "SWF",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

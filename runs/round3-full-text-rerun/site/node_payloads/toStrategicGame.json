@@ -1,0 +1,143 @@
+{
+  "id": "toStrategicGame",
+  "title": "toStrategicGame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/toStrategicGame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>toStrategicGame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef toStrategicGame (u : A → (I → P) → (∀ i, T i) → I → U) (trueTypes : ∀ i, T i) : StrategicGame I U</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "IsDSIC-truthful-isNash",
+      "title": "IsDSIC.truthful_isNash",
+      "href": "misc/IsDSIC-truthful-isNash.html"
+    },
+    {
+      "id": "exists-mixed-nash-equilibrium",
+      "title": "exists_mixed_nash_equilibrium",
+      "href": "misc/exists-mixed-nash-equilibrium.html"
+    },
+    {
+      "id": "exists-strategic-game-nash-equilibrium",
+      "title": "exists_strategic_game_nash_equilibrium",
+      "href": "misc/exists-strategic-game-nash-equilibrium.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-one",
+      "title": "expectedPayoff_toStrategicGame_one",
+      "href": "misc/expectedPayoff-toStrategicGame-one.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-zero",
+      "title": "expectedPayoff_toStrategicGame_zero",
+      "href": "misc/expectedPayoff-toStrategicGame-zero.html"
+    },
+    {
+      "id": "game-eq-toStrategicGame",
+      "title": "game_eq_toStrategicGame",
+      "href": "misc/game-eq-toStrategicGame.html"
+    },
+    {
+      "id": "game-eq-toStrategicGame",
+      "title": "game_eq_toStrategicGame",
+      "href": "misc/game-eq-toStrategicGame.html"
+    },
+    {
+      "id": "game-eq-toStrategicGame",
+      "title": "game_eq_toStrategicGame",
+      "href": "misc/game-eq-toStrategicGame.html"
+    },
+    {
+      "id": "interimQuasiLinearUtilityIntegrand-le-of-isDSIC",
+      "title": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+      "href": "misc/interimQuasiLinearUtilityIntegrand-le-of-isDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "isMonotone-of-isDSIC",
+      "title": "isMonotone_of_isDSIC",
+      "href": "misc/isMonotone-of-isDSIC.html"
+    },
+    {
+      "id": "mechanism-not-isDSIC",
+      "title": "mechanism_not_isDSIC",
+      "href": "misc/mechanism-not-isDSIC.html"
+    },
+    {
+      "id": "payment-sandwich",
+      "title": "payment_sandwich",
+      "href": "misc/payment-sandwich.html"
+    },
+    {
+      "id": "profileStrategy",
+      "title": "profileStrategy",
+      "href": "misc/profileStrategy.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "toQuasiLinearGame",
+      "title": "toQuasiLinearGame",
+      "href": "misc/toQuasiLinearGame.html"
+    },
+    {
+      "id": "toStrategicGame-isZeroSum",
+      "title": "toStrategicGame_isZeroSum",
+      "href": "misc/toStrategicGame-isZeroSum.html"
+    },
+    {
+      "id": "toStrategicGame-nash-iff-isNashAt",
+      "title": "toStrategicGame_nash_iff_isNashAt",
+      "href": "misc/toStrategicGame-nash-iff-isNashAt.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "toStrategicGame",
+      "display_name": "toStrategicGame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "minimax_optimal_strategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "maximin_le_minimax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_nonempty",
+    "target": "value_eq_maximin"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "image_optimalColumnStrategies_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "optimalColumnSet_convex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "optimalColumnSet_isClosed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "optimalColumnSet_isCompact"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnStrategies_image_isPolytope",
+    "target": "optimalColumnSet_nonempty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_convex",
+    "target": "optimalColumnSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_isCompact",
+    "target": "optimalColumnSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_isCompact",
+    "target": "optimalColumnSet_isClosed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "image_optimalRowStrategies_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "optimalRowSet_convex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "optimalRowSet_isClosed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "optimalRowSet_isCompact"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowStrategies_image_isPolytope",
+    "target": "optimalRowSet_nonempty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_convex",
+    "target": "optimalRowSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_isCompact",
+    "target": "optimalRowSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_isCompact",
+    "target": "optimalRowSet_isClosed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "minimax_optimal_strategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "maximin_le_minimax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_nonempty",
+    "target": "value_eq_maximin"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "optimalColumnSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalColumnStrategies_eq",
+    "target": "le_iff_simplex_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "optimalRowSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "image_optimalRowStrategies_eq",
+    "target": "ge_iff_simplex_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalColumnSet_isClosed",
+    "target": "optimalColumnSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "source": "optimalRowSet_isClosed",
+    "target": "optimalRowSet"
+  }
+]

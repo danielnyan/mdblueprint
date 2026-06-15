@@ -1,0 +1,140 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 32
+      },
+      "start": {
+        "column": 1,
+        "line": 32
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "def matchingPennies : MatrixGame (Fin 2) (Fin 2) \u211d"
+  },
+  {
+    "dependencies": [
+      "matchingPennies"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies_uniform_row_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "theorem matchingPennies_uniform_row_guarantee (j : Fin 2) : 0 \u2264 matchingPennies.Ej matchingPenniesUniform j"
+  },
+  {
+    "dependencies": [
+      "matchingPennies"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies_uniform_column_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "theorem matchingPennies_uniform_column_guarantee (i : Fin 2) : matchingPennies.Ei i matchingPenniesUniform \u2264 0"
+  },
+  {
+    "dependencies": [
+      "matchingPennies",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "common_guarantee_eq_value",
+      "matchingPennies_uniform_row_guarantee",
+      "matchingPennies_uniform_column_guarantee"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "theorem matchingPennies_value : matchingPennies.value = 0"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "matchingPennies",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "matchingPennies_value",
+      "wsum_wsum_comm",
+      "wsum_const",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "wsum_le_wsum",
+      "matchingPennies_uniform_row_guarantee"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies_uniform_row_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "theorem matchingPennies_uniform_row_optimal : matchingPenniesUniform \u2208 matchingPennies.optimalRowStrategies"
+  },
+  {
+    "dependencies": [
+      "optimalColumnStrategies",
+      "matchingPennies",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "matchingPennies_value",
+      "wsum_le_wsum",
+      "matchingPennies_uniform_column_guarantee",
+      "wsum_const"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "name": "matchingPennies_uniform_column_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/MatchingPennies.lean",
+    "type": "theorem matchingPennies_uniform_column_optimal : matchingPenniesUniform \u2208 matchingPennies.optimalColumnStrategies"
+  }
+]

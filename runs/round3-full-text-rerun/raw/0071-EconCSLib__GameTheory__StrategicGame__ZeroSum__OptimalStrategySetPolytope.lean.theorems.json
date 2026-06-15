@@ -1,0 +1,317 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 56
+      },
+      "start": {
+        "column": 1,
+        "line": 56
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "def optimalRowSet : Set (I \u2192 \u211d)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "def optimalColumnSet : Set (J \u2192 \u211d)"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalRowSet",
+      "Profile.ext",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "wsum_wsum_comm",
+      "ge_iff_simplex_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "image_optimalRowStrategies_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem image_optimalRowStrategies_eq : (Subtype.val '' A.optimalRowStrategies) = A.optimalRowSet"
+  },
+  {
+    "dependencies": [
+      "optimalRowSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowSet_convex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalRowSet_convex : Convex \u211d A.optimalRowSet"
+  },
+  {
+    "dependencies": [
+      "optimalRowSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowSet_isClosed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalRowSet_isClosed : IsClosed A.optimalRowSet"
+  },
+  {
+    "dependencies": [
+      "optimalRowSet",
+      "optimalRowSet_isClosed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowSet_isCompact",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalRowSet_isCompact : IsCompact A.optimalRowSet"
+  },
+  {
+    "dependencies": [
+      "minimax_optimal_strategies",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow",
+      "maximin_le_minimax",
+      "value_eq_maximin"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowSet_nonempty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 138
+      },
+      "start": {
+        "column": 1,
+        "line": 138
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalRowSet_nonempty : A.optimalRowSet.Nonempty"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "image_optimalRowStrategies_eq",
+      "optimalRowSet_convex",
+      "optimalRowSet_isClosed",
+      "optimalRowSet_isCompact",
+      "optimalRowSet_nonempty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalRowStrategies_image_isPolytope",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 173
+      },
+      "start": {
+        "column": 1,
+        "line": 173
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalRowStrategies_image_isPolytope : Convex \u211d (Subtype.val '' A.optimalRowStrategies) \u2227 IsClosed (Subtype.val '' A.optimalRowStrategies) \u2227 IsCompact (Subtype.val '' A.optimalRowStrategies) \u2227 (Subtype.val '' A.optimalRowStrategies).Nonempty"
+  },
+  {
+    "dependencies": [
+      "optimalColumnStrategies",
+      "optimalColumnSet",
+      "Profile.ext",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "le_iff_simplex_le"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "image_optimalColumnStrategies_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 184
+      },
+      "start": {
+        "column": 1,
+        "line": 184
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem image_optimalColumnStrategies_eq : (Subtype.val '' A.optimalColumnStrategies) = A.optimalColumnSet"
+  },
+  {
+    "dependencies": [
+      "optimalColumnSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnSet_convex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 210
+      },
+      "start": {
+        "column": 1,
+        "line": 210
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalColumnSet_convex : Convex \u211d A.optimalColumnSet"
+  },
+  {
+    "dependencies": [
+      "optimalColumnSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnSet_isClosed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 231
+      },
+      "start": {
+        "column": 1,
+        "line": 231
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalColumnSet_isClosed : IsClosed A.optimalColumnSet"
+  },
+  {
+    "dependencies": [
+      "optimalColumnSet",
+      "optimalColumnSet_isClosed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnSet_isCompact",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 240
+      },
+      "start": {
+        "column": 1,
+        "line": 240
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalColumnSet_isCompact : IsCompact A.optimalColumnSet"
+  },
+  {
+    "dependencies": [
+      "minimax_optimal_strategies",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow",
+      "maximin_le_minimax",
+      "value_eq_maximin"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnSet_nonempty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 244
+      },
+      "start": {
+        "column": 1,
+        "line": 244
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalColumnSet_nonempty : A.optimalColumnSet.Nonempty"
+  },
+  {
+    "dependencies": [
+      "optimalColumnStrategies",
+      "image_optimalColumnStrategies_eq",
+      "optimalColumnSet_convex",
+      "optimalColumnSet_isClosed",
+      "optimalColumnSet_isCompact",
+      "optimalColumnSet_nonempty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.OptimalStrategySetPolytope",
+    "name": "optimalColumnStrategies_image_isPolytope",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 276
+      },
+      "start": {
+        "column": 1,
+        "line": 276
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/OptimalStrategySetPolytope.lean",
+    "type": "theorem optimalColumnStrategies_image_isPolytope : Convex \u211d (Subtype.val '' A.optimalColumnStrategies) \u2227 IsClosed (Subtype.val '' A.optimalColumnStrategies) \u2227 IsCompact (Subtype.val '' A.optimalColumnStrategies) \u2227 (Subtype.val '' A.optimalColumnStrategies).Nonempty"
+  }
+]

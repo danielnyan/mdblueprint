@@ -1,0 +1,36 @@
+{
+  "id": "joinWoman-injective",
+  "title": "joinWoman_injective",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/joinWoman-injective.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>joinWoman_injective</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma joinWoman_injective : Function.Injective (joinWoman μ ν hμ hν)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>joinWoman_mem_men</li>\n<li>joinWoman_worse_left</li>\n<li>joinWoman_worse_right</li>\n<li>pref_list_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "joinWoman_injective",
+      "display_name": "joinWoman_injective",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

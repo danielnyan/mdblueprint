@@ -1,0 +1,235 @@
+[
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_no_pure_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_no_pure_nash : \u00ac \u2203 \u03c3 : RPS.Profile, IsNashEquilibrium RPS \u03c3"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 159
+      },
+      "start": {
+        "column": 1,
+        "line": 159
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_zero_sum : \u2200 \u03c3 : RPS.Profile, RPS.payoff \u03c3 0 + RPS.payoff \u03c3 1 = 0"
+  },
+  {
+    "dependencies": [
+      "MixedStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "uniform",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 167
+      },
+      "start": {
+        "column": 1,
+        "line": 167
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "def uniform : MixedStrategy RPS (i"
+  },
+  {
+    "dependencies": [
+      "MixedProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "uniformProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 172
+      },
+      "start": {
+        "column": 1,
+        "line": 172
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "def uniformProfile : MixedProfile RPS"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_uniform_completely_mixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 176
+      },
+      "start": {
+        "column": 1,
+        "line": 176
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_uniform_completely_mixed : IsCompletelyMixedProfile RPS uniformProfile"
+  },
+  {
+    "dependencies": [
+      "expectedPayoff",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_eu_uniform_0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 181
+      },
+      "start": {
+        "column": 1,
+        "line": 181
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_eu_uniform_0 : expectedPayoff RPS uniformProfile 0 = 0"
+  },
+  {
+    "dependencies": [
+      "expectedPayoff",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_eu_uniform_1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 185
+      },
+      "start": {
+        "column": 1,
+        "line": 185
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_eu_uniform_1 : expectedPayoff RPS uniformProfile 1 = 0"
+  },
+  {
+    "dependencies": [
+      "expectedPayoff",
+      "deviateMixed",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_dev0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 189
+      },
+      "start": {
+        "column": 1,
+        "line": 189
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_dev0 (s\u2080 : RPSMove) : expectedPayoff RPS (deviateMixed RPS uniformProfile 0 s\u2080) 0 = 0"
+  },
+  {
+    "dependencies": [
+      "expectedPayoff",
+      "deviateMixed",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_dev1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 194
+      },
+      "start": {
+        "column": 1,
+        "line": 194
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_dev1 (s\u2081 : RPSMove) : expectedPayoff RPS (deviateMixed RPS uniformProfile 1 s\u2081) 1 = 0"
+  },
+  {
+    "dependencies": [
+      "IsMixedNashEq",
+      "uniformProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_mixed_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 201
+      },
+      "start": {
+        "column": 1,
+        "line": 201
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_mixed_nash : IsMixedNashEq RPS uniformProfile"
+  },
+  {
+    "dependencies": [
+      "MixedProfile",
+      "IsMixedNashEq",
+      "uniformProfile",
+      "expectedPayoff",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "name": "rps_mixed_nash_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 206
+      },
+      "start": {
+        "column": 1,
+        "line": 206
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/RockPaperScissors.lean",
+    "type": "theorem rps_mixed_nash_unique (p : MixedProfile RPS) (hN : IsMixedNashEq RPS p) : p = uniformProfile"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "id": "internal-door-two-rooms",
+  "title": "internal_door_two_rooms",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/internal-door-two-rooms.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>internal_door_two_rooms</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem internal_door_two_rooms [Fintype T] (τ : Finset T) (D : Finset I) (h_int_door : IST.isInternalDoor τ D) : ∃ (σ₁ σ₂ : Finset T) (C₁ C₂ : Finset I), (σ₁, C₁) ≠ (σ₂, C₂) ∧ IST.isRoom σ₁ C₁ ∧ IST.isRoom σ₂ C₂ ∧ isDoorof τ D σ₁ C₁ ∧ isDoorof τ D σ₂ C₂ ∧ (∀ σ C, IST.isRoom σ C → isDoorof τ D σ C → (σ = σ₁ ∧ C = C₁) ∨ (σ = σ₂ ∧ C = C₂))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isInternalDoor</li>\n<li>isRoom</li>\n<li>isDominant</li>\n<li>keylemma_of_dominant</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>injOn_sdiff</li>\n<li>M_set</li>\n<li>M_sets_disjoint</li>\n<li>is_maximal_in_M_set</li>\n<li>m_element_is_maximal</li>\n<li>m_element_not_in_tau</li>\n<li>sublemma_3_2</li>\n<li>idoor_determines_element</li>\n<li>sublemma_3_1</li>\n<li>maximal_element_unique</li>\n<li>odoor_index_in_pair</li>\n<li>Scarf</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isInternalDoor",
+      "title": "isInternalDoor",
+      "href": "misc/isInternalDoor.html"
+    },
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    },
+    {
+      "id": "Scarf",
+      "title": "Scarf",
+      "href": "misc/Scarf.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "internal_door_two_rooms",
+      "display_name": "internal_door_two_rooms",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,72 @@
+{
+  "id": "VCGMechanism-isDSIC",
+  "title": "VCGMechanism_isDSIC",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/VCGMechanism-isDSIC.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>VCGMechanism_isDSIC</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem VCGMechanism_isDSIC : MechanismWithTransfers.isQuasiLinearDSIC (M</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isQuasiLinearDSIC</li>\n<li>Valuation</li>\n<li>valueOfAllocation</li>\n<li>IsStrictlyDominant.isWeaklyDominant</li>\n<li>IsWeaklyDominant</li>\n<li>WeaklyDominates</li>\n<li>socialWelfare</li>\n<li>efficientAllocation_isOptimal</li>\n<li>quasiLinearUtility</li>\n<li>VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout</li>\n<li>maxWelfareWithout_update_self</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isQuasiLinearDSIC",
+      "title": "isQuasiLinearDSIC",
+      "href": "misc/isQuasiLinearDSIC.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "valueOfAllocation",
+      "title": "valueOfAllocation",
+      "href": "misc/valueOfAllocation.html"
+    },
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    },
+    {
+      "id": "WeaklyDominates",
+      "title": "WeaklyDominates",
+      "href": "misc/WeaklyDominates.html"
+    },
+    {
+      "id": "socialWelfare",
+      "title": "socialWelfare",
+      "href": "misc/socialWelfare.html"
+    },
+    {
+      "id": "quasiLinearUtility",
+      "title": "quasiLinearUtility",
+      "href": "misc/quasiLinearUtility.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "VCGMechanism_isDSIC",
+      "display_name": "VCGMechanism_isDSIC",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

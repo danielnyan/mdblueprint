@@ -1,0 +1,57 @@
+{
+  "id": "monotonic-zProfile",
+  "title": "monotonic_zProfile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/monotonic-zProfile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>monotonic_zProfile</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem monotonic_zProfile [Fintype N] [Fintype A] (f : VotingRule N A) (hM : Monotonicity f) (P Q : Profile N A) (R : Set A) [∀ a : A, Decidable (a ∈ R)] {a : A} (haR : a ∈ R) (ha : a ∈ f P) : a ∈ f (zProfile P Q R)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Monotonicity</li>\n<li>Profile</li>\n<li>zProfile_prefers_inside</li>\n<li>zProfile_prefers_inside_outside</li>\n<li>StrictlyPreferred.asymm</li>\n<li>BallotPrefers.asymm</li>\n<li>Prefers.asymm</li>\n<li>Prefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "monotonic_zProfile",
+      "display_name": "monotonic_zProfile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,318 @@
+{
+  "allowed_inputs": [
+    "docs/knowledge/nodes/**/*.md",
+    "docs/knowledge/mdblueprint.yml",
+    "topics.md catalogs",
+    "deterministic graph/index data derived from loaded nodes",
+    "docs/knowledge/staged/**/*.md as loaded provisional graph nodes"
+  ],
+  "bounds": {
+    "ancestor_depth": 2,
+    "descendant_depth": 2,
+    "max_nodes": 40,
+    "selected_node_count": 11,
+    "sibling_limit": 20,
+    "truncated": false
+  },
+  "focus": {
+    "direct_dependencies": [
+      "strategic_games.strategic_game"
+    ],
+    "direct_dependents": [],
+    "sibling_topic_nodes": [
+      "strategic_games.best_response",
+      "strategic_games.dominant_implies_nash",
+      "strategic_games.nash_equilibrium",
+      "strategic_games.prisoners_dilemma",
+      "strategic_games.strategic_game",
+      "strategic_games.strategy_profile",
+      "strategic_games.strictly_dominates",
+      "strategic_games.unilateral_deviation",
+      "strategic_games.weakly_dominant_strategy",
+      "strategic_games.weakly_dominates"
+    ],
+    "topic_nodes": [],
+    "transitive_ancestors": [
+      {
+        "distance": 1,
+        "node_id": "strategic_games.strategic_game"
+      }
+    ],
+    "transitive_descendants": []
+  },
+  "forbidden_inputs": [
+    "source artifacts",
+    "internet",
+    "uncited model memory",
+    "generated graph/site artifacts as source of truth"
+  ],
+  "formulation_impact": {
+    "descendant_ids": [],
+    "reason": "No target descendants loaded for formulation-impact review.",
+    "review_recommended": false
+  },
+  "graph_diagnostics": [],
+  "kind": "mdblueprint-refactor-pack",
+  "knowledge_root": "/home/azureuser/mdblueprint-clean/docs/knowledge",
+  "lint_findings": [],
+  "mode": "admitted+staged",
+  "nodes": [
+    {
+      "body": "# Mixed Strategy\n\nA mixed strategy for player $i$ is a probability distribution over the strategy\nset $S_i$. When $S_i$ is finite, a mixed strategy is a vector\n$x_i \\in \\Delta(S_i)$ in the standard simplex.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "non-admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/staged/mixed_strategy.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.mixed_strategy",
+      "kind": "definition",
+      "status": "staged",
+      "title": "Mixed Strategy",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [],
+      "uses": [
+        "strategic_games.strategic_game"
+      ]
+    },
+    {
+      "body": "# Strategic Game\n\nA strategic game (or normal-form game) is a tuple $(I, (S_i)_{i \\in I}, (u_i)_{i \\in I})$\nwhere $I$ is a set of players, $S_i$ is the strategy set of player $i$, and\n$u_i \\colon \\prod_{j \\in I} S_j \\to U$ is the payoff function of player $i$.\n\nIn the Lean formalization, this is a structure with fields `strategy : \u03b9 \u2192 Type*` and\n`payoff : Profile \u2192 \u03b9 \u2192 U`, where `Profile = \u2200 i, strategy i`.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/strategic_game.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.strategic_game",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Strategic Game",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.mixed_strategy",
+        "strategic_games.strategy_profile"
+      ],
+      "uses": []
+    },
+    {
+      "body": "# Best Response\n\nA strategy $\\sigma_i$ is a best response for player $i$ to the profile $\\sigma$ if\nno unilateral deviation can improve $i$'s payoff:\n\n$$\\forall s'_i \\in S_i, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma).$$",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/best_response.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.best_response",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Best Response",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.nash_equilibrium"
+      ],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ]
+    },
+    {
+      "body": "# Dominant Strategy Profile is a Nash Equilibrium\n\nIf every player $i$ plays a weakly dominant strategy $s_i$, then the resulting\nprofile $\\sigma = (s_i)_{i \\in I}$ is a Nash equilibrium.\n\n*Proof.* A weakly dominant strategy weakly dominates every alternative. In particular,\nfor any player $i$ and any deviation $s'_i$, we have\n$u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma)$. This means each player is best\nresponding, so $\\sigma$ is a Nash equilibrium. $\\square$",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/dominant_implies_nash.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.dominant_implies_nash",
+      "kind": "theorem",
+      "status": "admitted",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [],
+      "uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ]
+    },
+    {
+      "body": "# Nash Equilibrium\n\nA strategy profile $\\sigma$ is a Nash equilibrium if every player is playing a best\nresponse to the strategies of the other players:\n\n$$\\forall i \\in I, \\quad \\sigma_i \\text{ is a best response to } \\sigma.$$\n\nEquivalently, no player can improve their payoff by a unilateral deviation.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/nash_equilibrium.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.nash_equilibrium",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Nash Equilibrium",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.dominant_implies_nash",
+        "strategic_games.prisoners_dilemma"
+      ],
+      "uses": [
+        "strategic_games.best_response"
+      ]
+    },
+    {
+      "body": "# Prisoner's Dilemma\n\nThe Prisoner's Dilemma is a two-player strategic game where each player can\nCooperate ($C$) or Defect ($D$). The payoff matrix is:\n\n|       | $C$    | $D$    |\n|-------|--------|--------|\n| $C$   | (2, 2) | (0, 3) |\n| $D$   | (3, 0) | (1, 1) |\n\nDefecting is a weakly dominant strategy for each player. The unique Nash\nequilibrium is $(D, D)$ with payoff $(1, 1)$, which is Pareto-dominated by\n$(C, C)$ with payoff $(2, 2)$.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/prisoners_dilemma.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.prisoners_dilemma",
+      "kind": "example",
+      "status": "admitted",
+      "title": "Prisoner's Dilemma",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [],
+      "uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ]
+    },
+    {
+      "body": "# Strategy Profile\n\nGiven a strategic game $(I, (S_i), (u_i))$, a strategy profile is a tuple\n$\\sigma = (\\sigma_i)_{i \\in I}$ where $\\sigma_i \\in S_i$ for each player $i$.\n\nIn Lean, a profile is `\u2200 i, G.strategy i`.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/strategy_profile.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.strategy_profile",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Strategy Profile",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "uses": [
+        "strategic_games.strategic_game"
+      ]
+    },
+    {
+      "body": "# Strict Dominance\n\nA strategy $s_i$ strictly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields strictly higher\npayoff:\n\n$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) < u_i(\\sigma[i \\mapsto s_i]).$$",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/strictly_dominates.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.strictly_dominates",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Strict Dominance",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ]
+    },
+    {
+      "body": "# Unilateral Deviation\n\nGiven a strategy profile $\\sigma$ and a player $i$, the unilateral deviation\n$(\\sigma_{-i}, s'_i)$ is the profile where player $i$ plays $s'_i$ and all other\nplayers play according to $\\sigma$. We write $\\sigma[i \\mapsto s']$.\n\nIn Lean, this is `Function.update \u03c3 i s'`.",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/unilateral_deviation.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.unilateral_deviation",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Unilateral Deviation",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.best_response",
+        "strategic_games.strictly_dominates",
+        "strategic_games.weakly_dominates"
+      ],
+      "uses": [
+        "strategic_games.strategy_profile"
+      ]
+    },
+    {
+      "body": "# Weakly Dominant Strategy\n\nA strategy $s_i$ is weakly dominant for player $i$ if it weakly dominates every\nother strategy available to $i$:\n\n$$\\forall s'_i \\in S_i, \\quad s_i \\text{ weakly dominates } s'_i.$$",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/weakly_dominant_strategy.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.weakly_dominant_strategy",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Weakly Dominant Strategy",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.dominant_implies_nash",
+        "strategic_games.prisoners_dilemma"
+      ],
+      "uses": [
+        "strategic_games.weakly_dominates"
+      ]
+    },
+    {
+      "body": "# Weak Dominance\n\nA strategy $s_i$ weakly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields at least as high\na payoff as playing $s'_i$:\n\n$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma[i \\mapsto s_i]).$$",
+      "body_refs": {
+        "missing_from_uses": [],
+        "refs": []
+      },
+      "evidence": "admitted",
+      "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/weakly_dominates.md",
+      "home_topic": "strategic_games",
+      "id": "strategic_games.weakly_dominates",
+      "kind": "definition",
+      "status": "admitted",
+      "title": "Weak Dominance",
+      "topics": [
+        "strategic_games"
+      ],
+      "used_by": [
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ]
+    }
+  ],
+  "staged_policy": {
+    "admission_role": "staged nodes are not admitted truth and this pack does not propose promotion",
+    "graph_role": "loaded nodes for dependency existence, reachability, topic, duplicate/overlap, and formulation-impact analysis",
+    "included": true
+  },
+  "target_id": "strategic_games.mixed_strategy",
+  "topic": null
+}

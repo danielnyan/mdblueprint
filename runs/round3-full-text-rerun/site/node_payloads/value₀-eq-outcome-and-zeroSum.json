@@ -1,0 +1,47 @@
+{
+  "id": "value₀-eq-outcome-and-zeroSum",
+  "title": "value₀_eq_outcome_and_zeroSum",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀-eq-outcome-and-zeroSum.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀_eq_outcome_and_zeroSum</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value₀_eq_outcome_and_zeroSum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) : value₀ g = outcome (optStrategy : Strategy (Fin 2) ℚ) g 0 ∧ (value g) 1 = -value₀ g</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>Strategy</li>\n<li>value₀_eq_optStrategy_outcome</li>\n<li>value_one_eq_neg_value₀</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀_eq_outcome_and_zeroSum",
+      "display_name": "value₀_eq_outcome_and_zeroSum",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

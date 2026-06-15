@@ -1,0 +1,80 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "no_dominant_strategy",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "no_dominant_strategy",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "no_dominant_strategy",
+    "target": "utility_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "mechanism_isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "no_dominant_strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "mechanism_not_isDSIC",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "utility_loser",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "source": "game_eq_toStrategicGame",
+    "target": "toStrategicGame"
+  }
+]

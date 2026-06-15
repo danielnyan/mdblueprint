@@ -1,0 +1,52 @@
+{
+  "id": "valuation-is-dominant",
+  "title": "valuation_is_dominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/valuation-is-dominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>valuation_is_dominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem valuation_is_dominant (v : I → U) (i : I) (b : I → U) : utility v b i ≤ utility v (Function.update b i (v i)) i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>utility_winner</li>\n<li>clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some</li>\n<li>maxBidExcluding_update_self</li>\n<li>utility_loser</li>\n<li>utility_nonneg</li>\n<li>Strategy</li>\n<li>maxBidExcluding_update_self</li>\n<li>utility_winner</li>\n<li>utility_loser</li>\n<li>utility_nonneg</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "valuation_is_dominant",
+      "display_name": "valuation_is_dominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "cut-exists",
+  "title": "cut_exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/cut-exists.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>cut_exists</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma cut_exists (μ : Measure I) [IsFiniteMeasure μ] [NoAtoms μ] (c : ℝ) (hc_pos : 0 &lt; c) (hc_lt : c &lt; (μ Set.univ).toReal) : ∃ t : I, (μ (Set.Iic t)).toReal = c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile.ext</li>\n<li>IsSingleItemAllocationRule.le_one</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n<li>MeasureValuation</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>mem_iUnion</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "MeasureValuation",
+      "title": "MeasureValuation",
+      "href": "misc/MeasureValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "cut_exists",
+      "display_name": "cut_exists",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

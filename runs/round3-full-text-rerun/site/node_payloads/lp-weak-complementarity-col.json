@@ -1,0 +1,42 @@
+{
+  "id": "lp-weak-complementarity-col",
+  "title": "lp_weak_complementarity_col",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lp-weak-complementarity-col.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lp_weak_complementarity_col</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lp_weak_complementarity_col (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) {x : Fin n → 𝕜} (hxA : ∀ i, b i ≤ ∑ j, A i j * x j) (hxnn : ∀ j, 0 ≤ x j) {u : I → 𝕜} (hu_du : DualFeasible A c u) (h_match : ∑ j, c j * x j = ∑ i, u i * b i) : ∀ j, (c j - ∑ i, u i * A i j) * x j = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>DualFeasible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "DualFeasible",
+      "title": "DualFeasible",
+      "href": "misc/DualFeasible.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lp_weak_complementarity_col",
+      "display_name": "lp_weak_complementarity_col",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

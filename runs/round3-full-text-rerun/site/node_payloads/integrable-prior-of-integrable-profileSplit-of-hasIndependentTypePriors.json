@@ -1,0 +1,47 @@
+{
+  "id": "integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors",
+  "title": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) {E : Type*} [NormedAddCommGroup E] {f : (∀ _ : I, ℝ) → E} (hf : Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentPrior i))) : Integrable f A.prior</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIndependentTypePriors</li>\n<li>OpponentTypeProfile</li>\n<li>integrable_productPrior_of_integrable_profileSplit</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIndependentTypePriors",
+      "title": "HasIndependentTypePriors",
+      "href": "misc/HasIndependentTypePriors.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "display_name": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

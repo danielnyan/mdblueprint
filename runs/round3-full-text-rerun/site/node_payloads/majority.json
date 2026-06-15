@@ -1,0 +1,36 @@
+{
+  "id": "majority",
+  "title": "majority",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/majority.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>majority</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef majority : List A → CostM Cells (Option A) | [] =&gt; pure none | x :: xs =&gt; do ✓[Cells.alloc 2] do let result ← loop x 1 xs ✓[Cells.free 2] pure result where /-- Single-pass loop carrying the current candidate and counter as parameters — no allocation, no ticks. -/ loop (cand : A) (cnt : ℕ) : List A → CostM Cells (Option A) | [] =&gt; pure (some cand) | y :: ys =&gt; if y = cand then loop cand (cnt + 1) ys else if cnt = 0 then loop y 1 ys else loop cand (cnt - 1) ys /-- The loop has zero cost: it overwrites the two slots without allocating. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "majority",
+      "display_name": "majority",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

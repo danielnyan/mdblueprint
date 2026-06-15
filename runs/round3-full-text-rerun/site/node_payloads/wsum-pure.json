@@ -1,0 +1,36 @@
+{
+  "id": "wsum-pure",
+  "title": "wsum_pure",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/wsum-pure.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>wsum_pure</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem wsum_pure [DecidableEq I] (i₀ : I) (f : I → 𝕜) : wsum ⟨fun i =&gt; if i = i₀ then 1 else 0, fun i =&gt; by simp only; split_ifs &lt;;&gt; norm_num, by simp [Finset.sum_ite_eq', Finset.mem_univ]⟩ f = f i₀</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>wsum_pure_apply</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "wsum_pure",
+      "display_name": "wsum_pure",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

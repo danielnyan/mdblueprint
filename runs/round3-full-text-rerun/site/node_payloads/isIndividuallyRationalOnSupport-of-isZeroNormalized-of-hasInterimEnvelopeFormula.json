@@ -1,0 +1,62 @@
+{
+  "id": "isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula",
+  "title": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula [DecidableEq I] (B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (henv : B.HasInterimEnvelopeFormula) (hint_nonneg : B.HasNonnegativeInterimAllocationIntegralOnSupport) : B.IsIndividuallyRationalOnSupport</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroNormalized</li>\n<li>HasInterimEnvelopeFormula</li>\n<li>HasNonnegativeInterimAllocationIntegralOnSupport</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos</li>\n<li>interimExpectedPayment_zero_of_isZeroNormalized</li>\n<li>IsRegular</li>\n<li>bid_le_maxBid</li>\n<li>eq_argmaxBid_of_strict_max</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroNormalized",
+      "title": "IsZeroNormalized",
+      "href": "misc/IsZeroNormalized.html"
+    },
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "title": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "href": "misc/HasNonnegativeInterimAllocationIntegralOnSupport.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "display_name": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

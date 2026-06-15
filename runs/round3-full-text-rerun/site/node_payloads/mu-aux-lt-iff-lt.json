@@ -1,0 +1,36 @@
+{
+  "id": "mu-aux-lt-iff-lt",
+  "title": "mu.aux_lt_iff_lt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mu-aux-lt-iff-lt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mu.aux_lt_iff_lt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem mu.aux_lt_iff_lt (A : I → J → ℝ) (c : ℝ) (y : stdSimplex ℝ J) : mu.aux A y &lt; c ↔ ∀ i, wsum y (fun j =&gt; A i j) &lt; c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mu.aux_lt_iff_lt",
+      "display_name": "mu.aux_lt_iff_lt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "roundRobinAllocation-isEF1",
+  "title": "roundRobinAllocation_isEF1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/roundRobinAllocation-isEF1.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>roundRobinAllocation_isEF1</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem roundRobinAllocation_isEF1 [DecidableEq G] (I : AdditiveInstance (Fin n) G) (hnn : ∀ (i : Fin n) (g : G), 0 ≤ I.weight i g) : I.IsEF1 (roundRobinAllocation I)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsEFX.isEF1</li>\n<li>IsEF1</li>\n<li>toValuation</li>\n<li>toAdditiveValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsEF1",
+      "title": "IsEF1",
+      "href": "misc/IsEF1.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    },
+    {
+      "id": "toAdditiveValuation",
+      "title": "toAdditiveValuation",
+      "href": "misc/toAdditiveValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "roundRobinAllocation_isEF1",
+      "display_name": "roundRobinAllocation_isEF1",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

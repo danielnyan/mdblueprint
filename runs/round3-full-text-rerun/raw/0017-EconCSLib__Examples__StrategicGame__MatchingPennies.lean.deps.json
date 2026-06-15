@@ -1,0 +1,152 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_guarantee",
+    "target": "matchingPennies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "matchingPennies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "common_guarantee_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "matchingPennies_uniform_row_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_value",
+    "target": "matchingPennies_uniform_column_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_guarantee",
+    "target": "matchingPennies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "matchingPennies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "matchingPennies_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_row_optimal",
+    "target": "matchingPennies_uniform_row_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "matchingPennies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "matchingPennies_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "matchingPennies_uniform_column_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.MatchingPennies",
+    "source": "matchingPennies_uniform_column_optimal",
+    "target": "wsum_const"
+  }
+]

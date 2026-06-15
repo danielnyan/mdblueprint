@@ -1,0 +1,132 @@
+{
+  "id": "isDominant",
+  "title": "isDominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isDominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isDominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef isDominant</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "Dominant-of-subset",
+      "title": "Dominant_of_subset",
+      "href": "misc/Dominant-of-subset.html"
+    },
+    {
+      "id": "Dominant-of-supset",
+      "title": "Dominant_of_supset",
+      "href": "misc/Dominant-of-supset.html"
+    },
+    {
+      "id": "Nonempty-of-Dominant",
+      "title": "Nonempty_of_Dominant",
+      "href": "misc/Nonempty-of-Dominant.html"
+    },
+    {
+      "id": "card-le-of-domiant",
+      "title": "card_le_of_domiant",
+      "href": "misc/card-le-of-domiant.html"
+    },
+    {
+      "id": "dominant-coords-tend-to-zero",
+      "title": "dominant_coords_tend_to_zero",
+      "href": "misc/dominant-coords-tend-to-zero.html"
+    },
+    {
+      "id": "doors-of-NCroom",
+      "title": "doors_of_NCroom",
+      "href": "misc/doors-of-NCroom.html"
+    },
+    {
+      "id": "empty-Dominant",
+      "title": "empty_Dominant",
+      "href": "misc/empty-Dominant.html"
+    },
+    {
+      "id": "idoor-determines-element",
+      "title": "idoor_determines_element",
+      "href": "misc/idoor-determines-element.html"
+    },
+    {
+      "id": "internal-door-two-rooms",
+      "title": "internal_door_two_rooms",
+      "href": "misc/internal-door-two-rooms.html"
+    },
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    },
+    {
+      "id": "keylemma-of-dominant",
+      "title": "keylemma_of_dominant",
+      "href": "misc/keylemma-of-dominant.html"
+    },
+    {
+      "id": "odoor-index-in-pair",
+      "title": "odoor_index_in_pair",
+      "href": "misc/odoor-index-in-pair.html"
+    },
+    {
+      "id": "outsidedoor-singleton",
+      "title": "outsidedoor_singleton",
+      "href": "misc/outsidedoor-singleton.html"
+    },
+    {
+      "id": "size-bound-in",
+      "title": "size_bound_in",
+      "href": "misc/size-bound-in.html"
+    },
+    {
+      "id": "size-bound-key",
+      "title": "size_bound_key",
+      "href": "misc/size-bound-key.html"
+    },
+    {
+      "id": "size-bound-out",
+      "title": "size_bound_out",
+      "href": "misc/size-bound-out.html"
+    },
+    {
+      "id": "sublemma-3-1",
+      "title": "sublemma_3_1",
+      "href": "misc/sublemma-3-1.html"
+    },
+    {
+      "id": "sublemma-3-2",
+      "title": "sublemma_3_2",
+      "href": "misc/sublemma-3-2.html"
+    },
+    {
+      "id": "tendsto-diam-to-zero",
+      "title": "tendsto_diam_to_zero",
+      "href": "misc/tendsto-diam-to-zero.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isDominant",
+      "display_name": "isDominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

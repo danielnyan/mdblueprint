@@ -1,0 +1,199 @@
+[
+  {
+    "dependencies": [
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "IsTerminal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def IsTerminal (s : A.State) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "IsDecision",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 60
+      },
+      "start": {
+        "column": 1,
+        "line": 60
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def IsDecision (s : A.State) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal",
+      "IsDecision",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "isTerminal_iff_not_isDecision",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "theorem isTerminal_iff_not_isDecision (s : A.State) : A.IsTerminal s \u2194 \u00ac A.IsDecision s"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "arena",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "abbrev arena (G : ExtensiveGame N U) : Arena"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "actions",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "abbrev actions (G : ExtensiveGame N U) (s : G.State)"
+  },
+  {
+    "dependencies": [
+      "IsTerminal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "isTerminal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "abbrev isTerminal (G : ExtensiveGame N U) (s : G.State)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "isPlayerState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def isPlayerState (G : ExtensiveGame N U) (s : G.State) (i : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "isChanceState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def isChanceState (G : ExtensiveGame N U) (s : G.State) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsTerminal",
+      "isTerminal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "NoChance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 109
+      },
+      "start": {
+        "column": 1,
+        "line": 109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def NoChance (G : ExtensiveGame N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "name": "Arena.ofFin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Basic.lean",
+    "type": "def Arena.ofFin (n : \u2115) (nActions : Fin n \u2192 \u2115) (next : (s : Fin n) \u2192 Fin (nActions s) \u2192 Fin n) : Arena"
+  }
+]

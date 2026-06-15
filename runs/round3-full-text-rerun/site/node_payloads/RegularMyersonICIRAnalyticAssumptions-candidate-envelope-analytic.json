@@ -1,0 +1,52 @@
+{
+  "id": "RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic",
+  "title": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.EnvelopeVirtualSurplusAnalyticAssumptions B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>envelopeVirtualSurplusAnalyticAssumptions_of_environment</li>\n<li>hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "display_name": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+  "title": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasExpectedRevenueVirtualSurplusIdentity-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hmyerson : A.HasMyersonPaymentRevenueVirtualSurplusIdentity B) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : A.HasExpectedRevenueVirtualSurplusIdentity B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasMyersonPaymentRevenueVirtualSurplusIdentity</li>\n<li>IsDSIC</li>\n<li>isDSIC</li>\n<li>IsZeroNormalized</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n<li>expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "title": "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "href": "misc/HasMyersonPaymentRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "IsZeroNormalized",
+      "title": "IsZeroNormalized",
+      "href": "misc/IsZeroNormalized.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "display_name": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "maximin-eq-one-quarter",
+  "title": "maximin_eq_one_quarter",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/maximin-eq-one-quarter.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>maximin_eq_one_quarter</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem maximin_eq_one_quarter : -- Witness x = y = 1/2 achieves at least 1/4 against every z. (∀ z, 0 ≤ z → z ≤ 1 → (1 / 4 : ℝ) ≤ G (1/2) (1/2) z) ∧ -- Upper bound: every (x,y) ∈ [0,1]² has min_z G(x,y,z) ≤ 1/4. (∀ x y, 0 ≤ x → x ≤ 1 → 0 ≤ y → y ≤ 1 → min (x * y) ((1 - x) * (1 - y)) ≤ (1 / 4 : ℝ))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>maximin_lower_bound</li>\n<li>maximin_upper_bound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "maximin_eq_one_quarter",
+      "display_name": "maximin_eq_one_quarter",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "daStep-holding",
+  "title": "daStep_holding",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/daStep-holding.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>daStep_holding</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma daStep_holding {n : ℕ} (w m : Preferences n) (s : DAState n) (p : Fin n) : (daStep w m s).holding p = (match s.holding p, ((Finset.univ.filter (fun i : Fin n =&gt; isFree s i &amp;&amp; (propTarget m i (s.nextChoice i) == some p))).val.toList).argmin (fun i =&gt; (w.prefs p).idxOf i) with | none, none =&gt; none | some h, none =&gt; some h | none, some q =&gt; some q | some h, some q =&gt; if (w.prefs p).idxOf q &lt; (w.prefs p).idxOf h then some q else some h)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isFree</li>\n<li>propTarget</li>\n<li>freeMenSet</li>\n<li>finalState</li>\n<li>initState</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    },
+    {
+      "id": "propTarget",
+      "title": "propTarget",
+      "href": "misc/propTarget.html"
+    },
+    {
+      "id": "freeMenSet",
+      "title": "freeMenSet",
+      "href": "misc/freeMenSet.html"
+    },
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "initState",
+      "title": "initState",
+      "href": "misc/initState.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "daStep_holding",
+      "display_name": "daStep_holding",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

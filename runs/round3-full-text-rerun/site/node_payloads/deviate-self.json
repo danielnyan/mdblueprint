@@ -1,0 +1,47 @@
+{
+  "id": "deviate-self",
+  "title": "deviate_self",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/deviate-self.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>deviate_self</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem deviate_self (σ : G.Profile) (i : N) : deviate σ i (σ i) = σ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "deviate_self",
+      "display_name": "deviate_self",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

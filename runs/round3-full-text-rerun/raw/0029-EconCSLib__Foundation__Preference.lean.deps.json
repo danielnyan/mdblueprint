@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "StrictlyPreferred.asymm",
+    "target": "StrictlyPreferred"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "StrictlyPreferred.irrefl",
+    "target": "StrictlyPreferred"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "Indifferent.refl",
+    "target": "Indifferent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "RepresentsPreference.indifferent_iff",
+    "target": "Indifferent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "Indifferent.symm",
+    "target": "Indifferent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "StrictlyPreferred.trans",
+    "target": "StrictlyPreferred"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Preference",
+    "source": "Indifferent.trans",
+    "target": "Indifferent"
+  }
+]

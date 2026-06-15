@@ -1,0 +1,63 @@
+{
+  "id": "freeMenSet",
+  "title": "freeMenSet",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/freeMenSet.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>freeMenSet</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef freeMenSet {n : ℕ} (s : DAState n) : Finset (Fin n)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isFree</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "daStep-holding",
+      "title": "daStep_holding",
+      "href": "misc/daStep-holding.html"
+    },
+    {
+      "id": "finalState-no-free-men",
+      "title": "finalState_no_free_men",
+      "href": "misc/finalState-no-free-men.html"
+    },
+    {
+      "id": "initState-injective",
+      "title": "initState_injective",
+      "href": "misc/initState-injective.html"
+    },
+    {
+      "id": "mem-freeMenSet",
+      "title": "mem_freeMenSet",
+      "href": "misc/mem-freeMenSet.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "freeMenSet",
+      "display_name": "freeMenSet",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

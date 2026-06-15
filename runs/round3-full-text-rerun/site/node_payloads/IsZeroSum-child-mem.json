@@ -1,0 +1,42 @@
+{
+  "id": "IsZeroSum-child-mem",
+  "title": "IsZeroSum.child_mem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum-child-mem.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum.child_mem</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsZeroSum.child_mem {m : Fin 2} {h : GameTree (Fin 2) ℚ} {t : List (GameTree (Fin 2) ℚ)} {c : GameTree (Fin 2) ℚ} (hzs : IsZeroSum (Node m h t)) (hmem : c ∈ h :: t) : IsZeroSum c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n<li>IsZeroSum.tail_mem</li>\n<li>Subtree.tail_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum.child_mem",
+      "display_name": "IsZeroSum.child_mem",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

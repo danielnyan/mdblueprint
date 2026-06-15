@@ -1,0 +1,380 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "efficientAllocation_isOptimal",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "efficientAllocation_isOptimal",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "efficientAllocation_isOptimal",
+    "target": "exists_efficientAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_update_self",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_update_self",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "withoutAllocation_isOptimal",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "withoutAllocation_isOptimal",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "withoutAllocation_isOptimal",
+    "target": "exists_withoutAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "exists_efficientAllocation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "exists_efficientAllocation",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare_eq_value_add_welfareWithout",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare_eq_value_add_welfareWithout",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare_eq_value_add_welfareWithout",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare_eq_value_add_welfareWithout",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "socialWelfare_eq_value_add_welfareWithout",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "welfareWithout_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "target": "socialWelfare_eq_value_add_welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "maxWelfareWithout_update_self",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "maxWelfareWithout_update_self",
+    "target": "welfareWithout_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "target": "isQuasiLinearExPostIR"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "target": "VCGMechanism_truthful_quasiLinearUtility_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "exists_withoutAllocation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "exists_withoutAllocation",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare_of_nonneg_i",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare_of_nonneg_i",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare_of_nonneg_i",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "welfareWithout_le_socialWelfare_of_nonneg_i",
+    "target": "socialWelfare_eq_value_add_welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "isQuasiLinearDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "efficientAllocation_isOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_isDSIC",
+    "target": "maxWelfareWithout_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+    "target": "VCGMechanism_truthful_quasiLinearUtility_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "welfareWithout"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "welfareWithout_le_socialWelfare_of_nonneg_i"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "efficientAllocation_isOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "source": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "target": "socialWelfare_eq_value_add_welfareWithout"
+  }
+]

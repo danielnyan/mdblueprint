@@ -1,0 +1,42 @@
+{
+  "id": "virtualSurplusMaximizingPaymentRule-zeroNormalized",
+  "title": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingPaymentRule-zeroNormalized.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingPaymentRule_zeroNormalized</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingPaymentRule_zeroNormalized [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : SingleParameterMechanism.ZeroNormalized A.virtualSurplusMaximizingPaymentRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ZeroNormalized</li>\n<li>myersonPayment_zeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ZeroNormalized",
+      "title": "ZeroNormalized",
+      "href": "misc/ZeroNormalized.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+      "display_name": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

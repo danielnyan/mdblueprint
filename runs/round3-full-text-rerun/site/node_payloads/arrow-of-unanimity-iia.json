@@ -1,0 +1,57 @@
+{
+  "id": "arrow-of-unanimity-iia",
+  "title": "arrow_of_unanimity_iia",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/arrow-of-unanimity-iia.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>arrow_of_unanimity_iia</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem arrow_of_unanimity_iia [Fintype N] [Nonempty N] [Fintype A] (h0 : ∃ x y z : A, x ≠ y ∧ x ≠ z ∧ y ≠ z) {F : SWF N A} (h1 : SWF.Unanimity F) (h2 : SWF.IIA F) : SWF.Dictatorial F</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>IIA</li>\n<li>Dictatorial</li>\n<li>decisive_minimal</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "arrow_of_unanimity_iia",
+      "display_name": "arrow_of_unanimity_iia",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

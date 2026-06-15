@@ -1,0 +1,42 @@
+{
+  "id": "survivalIntegral-eq-intervalIntegral-mul-deriv",
+  "title": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/survivalIntegral-eq-intervalIntegral-mul-deriv.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>survivalIntegral_eq_intervalIntegral_mul_deriv</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem survivalIntegral_eq_intervalIntegral_mul_deriv {F Q : ℝ → ℝ} {ω : ℝ} (hω : 0 ≤ ω) (hF : AbsolutelyContinuousOnInterval F 0 ω) (hF0 : F 0 = 0) (hFω : F ω = 1) (hQ : IntervalIntegrable Q volume 0 ω) : (∫ v in 0..ω, Q v * (1 - F v)) = ∫ v in 0..ω, (∫ z in 0..v, Q z) * deriv F v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>HasPositiveDensityOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasPositiveDensityOnSupport",
+      "title": "HasPositiveDensityOnSupport",
+      "href": "misc/HasPositiveDensityOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+      "display_name": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

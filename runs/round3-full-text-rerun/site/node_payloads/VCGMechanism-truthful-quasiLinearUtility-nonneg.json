@@ -1,0 +1,62 @@
+{
+  "id": "VCGMechanism-truthful-quasiLinearUtility-nonneg",
+  "title": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/VCGMechanism-truthful-quasiLinearUtility-nonneg.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>VCGMechanism_truthful_quasiLinearUtility_nonneg</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem VCGMechanism_truthful_quasiLinearUtility_nonneg (v : ∀ _ : I, Valuation A ℝ) (hnonneg : ∀ i : I, ∀ a : A, 0 ≤ v i a) (i : I) (r : ∀ _ : I, Valuation A ℝ) : 0 ≤ MechanismWithTransfers.quasiLinearUtility VCGTransferMechanism valueOfAllocation id id (Function.update r i (v i)) v i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>quasiLinearUtility</li>\n<li>valueOfAllocation</li>\n<li>socialWelfare</li>\n<li>welfareWithout</li>\n<li>welfareWithout_le_socialWelfare_of_nonneg_i</li>\n<li>efficientAllocation_isOptimal</li>\n<li>socialWelfare_eq_value_add_welfareWithout</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "quasiLinearUtility",
+      "title": "quasiLinearUtility",
+      "href": "misc/quasiLinearUtility.html"
+    },
+    {
+      "id": "valueOfAllocation",
+      "title": "valueOfAllocation",
+      "href": "misc/valueOfAllocation.html"
+    },
+    {
+      "id": "socialWelfare",
+      "title": "socialWelfare",
+      "href": "misc/socialWelfare.html"
+    },
+    {
+      "id": "welfareWithout",
+      "title": "welfareWithout",
+      "href": "misc/welfareWithout.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "display_name": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "strategyproof-monotonic",
+  "title": "strategyproof_monotonic",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/strategyproof-monotonic.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>strategyproof_monotonic</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem strategyproof_monotonic [Fintype N] [Fintype A] (f : VotingRule N A) (hf_res : Resolute f) (hSP : ResoluteStrategyproofness f hf_res) : Monotonicity f</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Resolute</li>\n<li>ResoluteStrategyproofness</li>\n<li>Monotonicity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "ResoluteStrategyproofness",
+      "title": "ResoluteStrategyproofness",
+      "href": "misc/ResoluteStrategyproofness.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "strategyproof_monotonic",
+      "display_name": "strategyproof_monotonic",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

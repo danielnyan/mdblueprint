@@ -1,0 +1,42 @@
+{
+  "id": "diagonalGame-column-guarantee",
+  "title": "diagonalGame_column_guarantee",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/diagonalGame-column-guarantee.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>diagonalGame_column_guarantee</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem diagonalGame_column_guarantee (a : I → ℝ) (hpos : ∀ i, 0 &lt; a i) : ∀ i, (diagonalGame a).Ei i (diagonalGameStrategy a hpos) ≤ diagonalGameValue a</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>diagonalGame</li>\n<li>diagonalGame_value</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "diagonalGame",
+      "title": "diagonalGame",
+      "href": "misc/diagonalGame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "diagonalGame_column_guarantee",
+      "display_name": "diagonalGame_column_guarantee",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,271 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "children",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "@[simp] def children : GameTree N U \u2192 List (GameTree N U) | Leaf _ => [] | Node _ h t => h :: t /-- Children of a `Node` are never empty. -/"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "children_node_ne_nil",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem children_node_ne_nil (m : N) (h : GameTree N U) (t : List (GameTree N U)) : children (Node m h t) \u2260 []"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "size",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "def size : GameTree N U \u2192 \u2115 | Leaf _ => 1 | Node _ h t => 1 + h.size + (t.map size).sum /-- Size is always positive. -/"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "size_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem size_pos (g : GameTree N U) : 0 < g.size"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "size_head_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem size_head_lt (m : N) (h : GameTree N U) (t : List (GameTree N U)) : h.size < (Node m h t).size"
+  },
+  {
+    "dependencies": [
+      "size_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "size_mem_tail_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem size_mem_tail_lt (m : N) (h : GameTree N U) (t : List (GameTree N U)) {c : GameTree N U} (hmem : c \u2208 t) : c.size < (Node m h t).size"
+  },
+  {
+    "dependencies": [
+      "size_head_lt",
+      "size_mem_tail_lt",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "size_mem_children_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 109
+      },
+      "start": {
+        "column": 1,
+        "line": 109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem size_mem_children_lt (m : N) (h : GameTree N U) (t : List (GameTree N U)) {c : GameTree N U} (hmem : c \u2208 children (Node m h t)) : c.size < (Node m h t).size"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "Subtree.self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 133
+      },
+      "start": {
+        "column": 1,
+        "line": 133
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem Subtree.self (g : GameTree N U) : Subtree g g"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "Subtree.head",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 136
+      },
+      "start": {
+        "column": 1,
+        "line": 136
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem Subtree.head (m : N) (h : GameTree N U) (t : List (GameTree N U)) : Subtree h (Node m h t)"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "Subtree.tail_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 141
+      },
+      "start": {
+        "column": 1,
+        "line": 141
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem Subtree.tail_mem (m : N) (h : GameTree N U) (t : List (GameTree N U)) {c : GameTree N U} (hmem : c \u2208 t) : Subtree c (Node m h t)"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsZeroSum.tail_mem",
+      "Subtree.tail_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "Subtree.child_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 146
+      },
+      "start": {
+        "column": 1,
+        "line": 146
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem Subtree.child_mem (m : N) (h : GameTree N U) (t : List (GameTree N U)) {c : GameTree N U} (hmem : c \u2208 h :: t) : Subtree c (Node m h t)"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "Subtree.trans",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem Subtree.trans {r s g : GameTree N U} (hrs : Subtree r s) (hsg : Subtree s g) : Subtree r g"
+  },
+  {
+    "dependencies": [
+      "Arena.Reachable.step",
+      "CPState.step",
+      "size_pos",
+      "size_head_lt",
+      "size_mem_tail_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "name": "strong_induction",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 171
+      },
+      "start": {
+        "column": 1,
+        "line": 171
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTree.lean",
+    "type": "theorem strong_induction {motive : GameTree N U \u2192 Prop} (base : \u2200 p, motive (Leaf p)) (step : \u2200 (m : N) (h : GameTree N U) (t : List (GameTree N U)), (\u2200 c \u2208 h :: t, motive c) \u2192 motive (Node m h t)) (g : GameTree N U) : motive g"
+  }
+]

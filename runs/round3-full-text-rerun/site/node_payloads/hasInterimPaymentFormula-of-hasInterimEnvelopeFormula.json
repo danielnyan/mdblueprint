@@ -1,0 +1,47 @@
+{
+  "id": "hasInterimPaymentFormula-of-hasInterimEnvelopeFormula",
+  "title": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentFormula-of-hasInterimEnvelopeFormula.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentFormula_of_hasInterimEnvelopeFormula</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentFormula_of_hasInterimEnvelopeFormula (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) : A.HasInterimPaymentFormula</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeFormula</li>\n<li>HasInterimPaymentFormula</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+      "display_name": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

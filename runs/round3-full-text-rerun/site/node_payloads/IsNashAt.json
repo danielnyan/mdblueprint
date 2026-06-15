@@ -1,0 +1,88 @@
+{
+  "id": "IsNashAt",
+  "title": "IsNashAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsNashAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsNashAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev IsNashAt (σ : Strategy N U) (g : GameTree N U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsNashEquilibrium</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ExtractsGameTree-spe-on-to-nash-at",
+      "title": "ExtractsGameTree.spe_on_to_nash_at",
+      "href": "misc/ExtractsGameTree-spe-on-to-nash-at.html"
+    },
+    {
+      "id": "IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames",
+      "title": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+      "href": "misc/IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn-toNashAt",
+      "title": "IsSubgamePerfectOn.toNashAt",
+      "href": "misc/IsSubgamePerfectOn-toNashAt.html"
+    },
+    {
+      "id": "centipedePrefix-has-nash-at",
+      "title": "centipedePrefix_has_nash_at",
+      "href": "misc/centipedePrefix-has-nash-at.html"
+    },
+    {
+      "id": "isSubgamePerfectOn-iff-forall-subtree-isNashAt",
+      "title": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+      "href": "misc/isSubgamePerfectOn-iff-forall-subtree-isNashAt.html"
+    },
+    {
+      "id": "leaf-nash-to-spe-on",
+      "title": "leaf_nash_to_spe_on",
+      "href": "misc/leaf-nash-to-spe-on.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "toStrategicGame-nash-iff-isNashAt",
+      "title": "toStrategicGame_nash_iff_isNashAt",
+      "href": "misc/toStrategicGame-nash-iff-isNashAt.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsNashAt",
+      "display_name": "IsNashAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

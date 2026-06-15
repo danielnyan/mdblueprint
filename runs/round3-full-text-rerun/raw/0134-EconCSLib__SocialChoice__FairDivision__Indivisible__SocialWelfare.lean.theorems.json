@@ -1,0 +1,128 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "IsUtilitarianOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "abbrev IsUtilitarianOptimal [Fintype N] [DecidableEq G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "IsMaxmin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "abbrev IsMaxmin [Fintype N] [Nonempty N] [DecidableEq G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "utilitarianWelfare_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "lemma utilitarianWelfare_mono (v : Valuation N G) (A B : Allocation N G) (h : \u2200 i : N, v.val i (A i) \u2264 v.val i (B i)) : utilitarianWelfare v A \u2264 utilitarianWelfare v B"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "utilitarianWelfare_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 126
+      },
+      "start": {
+        "column": 1,
+        "line": 126
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "@[simp] lemma utilitarianWelfare_unique [Unique N] (v : Valuation N G) (A : Allocation N G) : utilitarianWelfare v A = v.val default (A default)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "egalitarianWelfare_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 133
+      },
+      "start": {
+        "column": 1,
+        "line": 133
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "lemma egalitarianWelfare_le [Nonempty N] (v : Valuation N G) (A : Allocation N G) (i : N) : egalitarianWelfare v A \u2264 v.val i (A i)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "name": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/SocialWelfare.lean",
+    "type": "lemma nsmul_egalitarianWelfare_le_utilitarianWelfare [Nonempty N] (v : Valuation N G) (A : Allocation N G) (hle : \u2200 i : N, egalitarianWelfare v A \u2264 v.val i (A i)) : Fintype.card N \u2022 egalitarianWelfare v A \u2264 utilitarianWelfare v A"
+  }
+]

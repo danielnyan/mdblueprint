@@ -1,0 +1,47 @@
+{
+  "id": "isRevenueUpperBounded-of-isRevenueComparable",
+  "title": "isRevenueUpperBounded_of_isRevenueComparable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isRevenueUpperBounded-of-isRevenueComparable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isRevenueUpperBounded_of_isRevenueComparable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isRevenueUpperBounded_of_isRevenueComparable [Fintype I] (A B : BayesianSingleItemAuction I) (hB : A.IsRevenueComparable B) : A.IsRevenueUpperBounded B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRevenueComparable</li>\n<li>IsRevenueUpperBounded</li>\n<li>hasExpectedRevenueVirtualSurplusUpperBound_of_identity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRevenueComparable",
+      "title": "IsRevenueComparable",
+      "href": "misc/IsRevenueComparable.html"
+    },
+    {
+      "id": "IsRevenueUpperBounded",
+      "title": "IsRevenueUpperBounded",
+      "href": "misc/IsRevenueUpperBounded.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isRevenueUpperBounded_of_isRevenueComparable",
+      "display_name": "isRevenueUpperBounded_of_isRevenueComparable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "BundlePartitionProfileValuation",
+  "title": "BundlePartitionProfileValuation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BundlePartitionProfileValuation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BundlePartitionProfileValuation</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BundlePartitionProfileValuation {I G : Type*} [DecidableEq G] {M : Finset G} (v : I → SubmodularBundleValuation M) (i : I) : MultipleParameterMechanism.Valuation (BundlePartitionAllocation I M) ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>BundlePartitionAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "BundlePartitionAllocation",
+      "title": "BundlePartitionAllocation",
+      "href": "misc/BundlePartitionAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BundlePartitionProfileValuation",
+      "display_name": "BundlePartitionProfileValuation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

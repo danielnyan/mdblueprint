@@ -1,0 +1,47 @@
+{
+  "id": "iInf-partition-le-mmsValue",
+  "title": "iInf_partition_le_mmsValue",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/iInf-partition-le-mmsValue.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>iInf_partition_le_mmsValue</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma iInf_partition_le_mmsValue (v : Valuation N G) (allGoods : Finset G) (i : N) (B : Allocation N G) (hB : IsAllocation allGoods B) (hbdd : BddAbove (Set.range fun X : {A : Allocation N G // IsAllocation allGoods A} =&gt; iInf fun j : N =&gt; v.val i (X.val j))) : iInf (fun j : N =&gt; v.val i (B j)) ≤ mmsValue v allGoods i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>lamB.aux.bddAbove</li>\n<li>lam.aux.bddAbove</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "iInf_partition_le_mmsValue",
+      "display_name": "iInf_partition_le_mmsValue",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

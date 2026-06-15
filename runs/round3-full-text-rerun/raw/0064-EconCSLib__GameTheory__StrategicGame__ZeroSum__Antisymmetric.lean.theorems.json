@@ -1,0 +1,118 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "name": "IsAntisymmetric",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 29
+      },
+      "start": {
+        "column": 1,
+        "line": 29
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Antisymmetric.lean",
+    "type": "def IsAntisymmetric (B : I \u2192 I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsAntisymmetric"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "name": "IsAntisymmetric.diag_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 32
+      },
+      "start": {
+        "column": 1,
+        "line": 32
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Antisymmetric.lean",
+    "type": "theorem IsAntisymmetric.diag_zero {B : I \u2192 I \u2192 \u211d} (hB : IsAntisymmetric B) (i : I) : B i i = 0"
+  },
+  {
+    "dependencies": [
+      "IsAntisymmetric"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "name": "IsAntisymmetric.quadform_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Antisymmetric.lean",
+    "type": "theorem IsAntisymmetric.quadform_zero {B : I \u2192 I \u2192 \u211d} (hB : IsAntisymmetric B) (z : I \u2192 \u211d) : \u2211 i, \u2211 j, z i * B i j * z j = 0"
+  },
+  {
+    "dependencies": [
+      "IsAntisymmetric",
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "exists_mixed_nash_equilibrium",
+      "optimal_pairs_iff_saddle_point",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "mem_optimalColumnStrategies_iff_E_le"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "name": "MatrixGame.antisymmetric_value_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Antisymmetric.lean",
+    "type": "theorem MatrixGame.antisymmetric_value_zero {B : I \u2192 I \u2192 \u211d} (hB : IsAntisymmetric B) : (\u27e8B\u27e9 : MatrixGame I I \u211d).value = 0"
+  },
+  {
+    "dependencies": [
+      "IsAntisymmetric",
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "exists_mixed_nash_equilibrium",
+      "optimal_pairs_iff_saddle_point",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "MatrixGame.antisymmetric_value_zero"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "name": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 141
+      },
+      "start": {
+        "column": 1,
+        "line": 141
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Antisymmetric.lean",
+    "type": "theorem MatrixGame.antisymmetric_exists_optimal_strategy {B : I \u2192 I \u2192 \u211d} (hB : IsAntisymmetric B) : \u2203 y : stdSimplex \u211d I, \u2200 i, \u2211 j, B i j * y.val j \u2264 0"
+  }
+]

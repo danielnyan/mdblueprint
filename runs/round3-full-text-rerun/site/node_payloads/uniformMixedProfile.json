@@ -1,0 +1,58 @@
+{
+  "id": "uniformMixedProfile",
+  "title": "uniformMixedProfile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/uniformMixedProfile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>uniformMixedProfile</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef uniformMixedProfile (G : StrategicGame N ℚ) [∀ i, Fintype (G.strategy i)] [∀ i, Nonempty (G.strategy i)] : MixedProfile G</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedProfile</li>\n<li>uniformMixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "uniformMixed",
+      "title": "uniformMixed",
+      "href": "misc/uniformMixed.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "uniformMixedProfile-isCompletelyMixed",
+      "title": "uniformMixedProfile_isCompletelyMixed",
+      "href": "misc/uniformMixedProfile-isCompletelyMixed.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "uniformMixedProfile",
+      "display_name": "uniformMixedProfile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

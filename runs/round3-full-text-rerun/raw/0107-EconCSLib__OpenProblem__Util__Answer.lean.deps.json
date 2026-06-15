@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "elabTermAndAnnotate",
+    "target": "mkAnswerAnnotation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "AnswerInfo.format",
+    "target": "answerElab"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "AnswerInfo.format",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "AnswerInfo.format",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "answerElab",
+    "target": "elabTermAndAnnotate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "source": "answerElab",
+    "target": "mkAnswerAnnotation"
+  }
+]

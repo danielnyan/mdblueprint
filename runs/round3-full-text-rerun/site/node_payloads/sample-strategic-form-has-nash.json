@@ -1,0 +1,72 @@
+{
+  "id": "sample-strategic-form-has-nash",
+  "title": "sample_strategic_form_has_nash",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sample-strategic-form-has-nash.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sample_strategic_form_has_nash</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem sample_strategic_form_has_nash : ∃ σ : (toStrategicGame sample).Profile, IsNashEquilibrium (toStrategicGame sample) σ ∧ IsNashAt (profileStrategy σ) sample</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>toStrategicGame</li>\n<li>Profile</li>\n<li>IsNashEquilibrium</li>\n<li>IsNashAt</li>\n<li>profileStrategy</li>\n<li>Strategy</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>toStrategicGame_nash_iff_isNashAt</li>\n<li>optStrategy_isSubgamePerfect</li>\n<li>IsSubgamePerfect.toNE</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    },
+    {
+      "id": "profileStrategy",
+      "title": "profileStrategy",
+      "href": "misc/profileStrategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sample_strategic_form_has_nash",
+      "display_name": "sample_strategic_form_has_nash",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

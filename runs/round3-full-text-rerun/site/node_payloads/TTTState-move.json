@@ -1,0 +1,47 @@
+{
+  "id": "TTTState-move",
+  "title": "TTTState.move",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/TTTState-move.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>TTTState.move</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef TTTState.move (s : TTTState) (p : Pos) : TTTState</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Pos</li>\n<li>Board</li>\n<li>Mark.other</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    },
+    {
+      "id": "Board",
+      "title": "Board",
+      "href": "misc/Board.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "TTTState.move",
+      "display_name": "TTTState.move",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

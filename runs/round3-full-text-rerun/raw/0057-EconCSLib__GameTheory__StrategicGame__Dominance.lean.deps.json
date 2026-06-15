@@ -1,0 +1,128 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "StrictlyDominates.weakly",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "StrictlyDominates.weakly",
+    "target": "StrictlyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "StrictlyDominates.weakly",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant.isWeaklyDominant",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant.isWeaklyDominant",
+    "target": "IsStrictlyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant.isWeaklyDominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant.isWeaklyDominant",
+    "target": "StrictlyDominates.weakly"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "IsBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsWeaklyDominant.isBestResponse",
+    "target": "deviate_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "StrictlyDominates",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "StrictlyDominates",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "WeaklyDominates",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "WeaklyDominates",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Dominance",
+    "source": "IsStrictlyDominant",
+    "target": "StrictlyDominates"
+  }
+]

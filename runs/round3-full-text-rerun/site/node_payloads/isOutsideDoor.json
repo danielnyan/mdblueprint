@@ -1,0 +1,83 @@
+{
+  "id": "isOutsideDoor",
+  "title": "isOutsideDoor",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isOutsideDoor.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isOutsideDoor</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev isOutsideDoor</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDoor</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "NC-of-outsidedoor",
+      "title": "NC_of_outsidedoor",
+      "href": "misc/NC-of-outsidedoor.html"
+    },
+    {
+      "id": "dbcount-internal-door-even",
+      "title": "dbcount_internal_door_even",
+      "href": "misc/dbcount-internal-door-even.html"
+    },
+    {
+      "id": "dbcount-outside-door",
+      "title": "dbcount_outside_door",
+      "href": "misc/dbcount-outside-door.html"
+    },
+    {
+      "id": "dbcount-outside-door-odd",
+      "title": "dbcount_outside_door_odd",
+      "href": "misc/dbcount-outside-door-odd.html"
+    },
+    {
+      "id": "fiber-size-internal-door",
+      "title": "fiber_size_internal_door",
+      "href": "misc/fiber-size-internal-door.html"
+    },
+    {
+      "id": "outsidedoor-is-singleton",
+      "title": "outsidedoor_is_singleton",
+      "href": "misc/outsidedoor-is-singleton.html"
+    },
+    {
+      "id": "outsidedoor-singleton",
+      "title": "outsidedoor_singleton",
+      "href": "misc/outsidedoor-singleton.html"
+    },
+    {
+      "id": "typed-colorful-room-odd",
+      "title": "typed_colorful_room_odd",
+      "href": "misc/typed-colorful-room-odd.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isOutsideDoor",
+      "display_name": "isOutsideDoor",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

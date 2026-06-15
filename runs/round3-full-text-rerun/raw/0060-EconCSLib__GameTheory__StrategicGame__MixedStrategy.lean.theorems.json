@@ -1,0 +1,374 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "MixedStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "abbrev MixedStrategy (G : StrategicGame N U) (i : N) [Fintype (G.strategy i)]"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "MixedProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 58
+      },
+      "start": {
+        "column": 1,
+        "line": 58
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def MixedProfile (G : StrategicGame N U) [\u2200 i, Fintype (G.strategy i)]"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "IsCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def IsCompletelyMixed (G : StrategicGame N \u211a) {i : N} [Fintype (G.strategy i)] (p : MixedStrategy G i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "IsCompletelyMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "IsCompletelyMixedProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def IsCompletelyMixedProfile (G : StrategicGame N \u211a) [\u2200 i, Fintype (G.strategy i)] (p : MixedProfile G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "IsCompletelyMixedProfile",
+      "IsCompletelyMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "IsCompletelyMixedProfile.player",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem IsCompletelyMixedProfile.player {G : StrategicGame N \u211a} [\u2200 i, Fintype (G.strategy i)] {p : MixedProfile G} (hp : IsCompletelyMixedProfile G p) (i : N) : IsCompletelyMixed G (p i)"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "pureToMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def pureToMixed {G : StrategicGame N U} {i : N} [Fintype (G.strategy i)] [DecidableEq (G.strategy i)] (s\u2080 : G.strategy i) : MixedStrategy G i"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def uniformMixed {G : StrategicGame N U} {i : N} [Fintype (G.strategy i)] [Nonempty (G.strategy i)] : MixedStrategy G i"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "uniformMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixed_apply",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 104
+      },
+      "start": {
+        "column": 1,
+        "line": 104
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem uniformMixed_apply {G : StrategicGame N \u211a} {i : N} [Fintype (G.strategy i)] [Nonempty (G.strategy i)] (s : G.strategy i) : (uniformMixed (G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "uniformMixed",
+      "uniformMixed_apply"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixed_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem uniformMixed_pos {G : StrategicGame N \u211a} {i : N} [Fintype (G.strategy i)] [Nonempty (G.strategy i)] (s : G.strategy i) : 0 < (uniformMixed (G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixed",
+      "uniformMixed",
+      "uniformMixed_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixed_isCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem uniformMixed_isCompletelyMixed {G : StrategicGame N \u211a} {i : N} [Fintype (G.strategy i)] [Nonempty (G.strategy i)] : IsCompletelyMixed G (uniformMixed (G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "uniformMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixedProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 127
+      },
+      "start": {
+        "column": 1,
+        "line": 127
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def uniformMixedProfile (G : StrategicGame N \u211a) [\u2200 i, Fintype (G.strategy i)] [\u2200 i, Nonempty (G.strategy i)] : MixedProfile G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile",
+      "uniformMixedProfile",
+      "uniformMixed_isCompletelyMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "uniformMixedProfile_isCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 133
+      },
+      "start": {
+        "column": 1,
+        "line": 133
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem uniformMixedProfile_isCompletelyMixed (G : StrategicGame N \u211a) [\u2200 i, Fintype (G.strategy i)] [\u2200 i, Nonempty (G.strategy i)] : IsCompletelyMixedProfile G (uniformMixedProfile G)"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixed",
+      "pureToMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "pureToMixed_not_isCompletelyMixed_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "theorem pureToMixed_not_isCompletelyMixed_of_ne {G : StrategicGame N \u211a} {i : N} [Fintype (G.strategy i)] [DecidableEq (G.strategy i)] {s\u2080 s\u2081 : G.strategy i} (h : s\u2081 \u2260 s\u2080) : \u00ac IsCompletelyMixed G (pureToMixed (G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile",
+      "MixedProfile",
+      "pureToMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "pureProfileToMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 151
+      },
+      "start": {
+        "column": 1,
+        "line": 151
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def pureProfileToMixed {G : StrategicGame N U} [\u2200 i, Fintype (G.strategy i)] [\u2200 i, DecidableEq (G.strategy i)] (\u03c3 : G.Profile) : MixedProfile G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "expectedPayoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 164
+      },
+      "start": {
+        "column": 1,
+        "line": 164
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def expectedPayoff (G : StrategicGame N U) [Fintype N] [DecidableEq N] [\u2200 i, Fintype (G.strategy i)] (p : MixedProfile G) (who : N) : U"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "pureToMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "deviateMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 171
+      },
+      "start": {
+        "column": 1,
+        "line": 171
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def deviateMixed (G : StrategicGame N U) [\u2200 i, Fintype (G.strategy i)] [DecidableEq N] [\u2200 i, DecidableEq (G.strategy i)] (p : MixedProfile G) (who : N) (s' : G.strategy who) : MixedProfile G"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedProfile",
+      "expectedPayoff",
+      "deviateMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.MixedStrategy",
+    "name": "IsMixedNashEq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 186
+      },
+      "start": {
+        "column": 1,
+        "line": 186
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+    "type": "def IsMixedNashEq (G : StrategicGame N U) [Fintype N] [DecidableEq N] [\u2200 i, Fintype (G.strategy i)] [\u2200 i, DecidableEq (G.strategy i)] (p : MixedProfile G) : Prop"
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "pref_list_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma pref_list_mem {n : \u2115} (l : List (Fin n)) (hnd : l.Nodup) (hlen : l.length = n) (x : Fin n) : x \u2208 l"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "initState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "def initState (n : \u2115) : DAState n"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "isFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 131
+      },
+      "start": {
+        "column": 1,
+        "line": 131
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "def isFree {n : \u2115} (s : DAState n) (i : Fin n) : Bool"
+  },
+  {
+    "dependencies": [
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "isFree_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma isFree_iff {n : \u2115} (s : DAState n) (i : Fin n) : isFree s i = true \u2194 \u2200 j : Fin n, s.holding j \u2260 some i"
+  },
+  {
+    "dependencies": [
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "not_isFree_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 137
+      },
+      "start": {
+        "column": 1,
+        "line": 137
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma not_isFree_iff {n : \u2115} (s : DAState n) (i : Fin n) : isFree s i = false \u2194 \u2203 j : Fin n, s.holding j = some i"
+  },
+  {
+    "dependencies": [
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "freeMenSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "def freeMenSet {n : \u2115} (s : DAState n) : Finset (Fin n)"
+  },
+  {
+    "dependencies": [
+      "freeMenSet",
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "mem_freeMenSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma mem_freeMenSet {n : \u2115} {s : DAState n} {i : Fin n} : i \u2208 freeMenSet s \u2194 isFree s i = true"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "propTarget",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 151
+      },
+      "start": {
+        "column": 1,
+        "line": 151
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "def propTarget {n : \u2115} (m : Preferences n) (i : Fin n) (k : \u2115) : Option (Fin n)"
+  },
+  {
+    "dependencies": [
+      "propTarget",
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "propTarget_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 155
+      },
+      "start": {
+        "column": 1,
+        "line": 155
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma propTarget_lt {n : \u2115} (m : Preferences n) (i : Fin n) {k : \u2115} (hk : k < n) : \u2203 j, propTarget m i k = some j"
+  },
+  {
+    "dependencies": [
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "daStep_nc_free",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 183
+      },
+      "start": {
+        "column": 1,
+        "line": 183
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma daStep_nc_free {n : \u2115} {w m : Preferences n} {s : DAState n} {i : Fin n} (hi : isFree s i = true) : (daStep w m s).nextChoice i = s.nextChoice i + 1"
+  },
+  {
+    "dependencies": [
+      "isFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "daStep_nc_held",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 187
+      },
+      "start": {
+        "column": 1,
+        "line": 187
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma daStep_nc_held {n : \u2115} {w m : Preferences n} {s : DAState n} {i : Fin n} (hi : isFree s i = false) : (daStep w m s).nextChoice i = s.nextChoice i"
+  },
+  {
+    "dependencies": [
+      "isFree",
+      "propTarget",
+      "freeMenSet",
+      "finalState",
+      "initState",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "daStep_holding",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 215
+      },
+      "start": {
+        "column": 1,
+        "line": 215
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma daStep_holding {n : \u2115} (w m : Preferences n) (s : DAState n) (p : Fin n) : (daStep w m s).holding p = (match s.holding p, ((Finset.univ.filter (fun i : Fin n => isFree s i && (propTarget m i (s.nextChoice i) == some p))).val.toList).argmin (fun i => (w.prefs p).idxOf i) with | none, none => none | some h, none => some h | none, some q => some q | some h, some q => if (w.prefs p).idxOf q < (w.prefs p).idxOf h then some q else some h)"
+  },
+  {
+    "dependencies": [
+      "isFree",
+      "propTarget"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holding_rank_mono_step",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 329
+      },
+      "start": {
+        "column": 1,
+        "line": 329
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holding_rank_mono_step (s : DAState n) (j : Fin n) {hval : Fin n} (hh : s.holding j = some hval) : \u2203 h' : Fin n, (daStep w m s).holding j = some h' \u2227 (w.prefs j).idxOf h' \u2264 (w.prefs j).idxOf hval"
+  },
+  {
+    "dependencies": [
+      "holding_rank_mono_step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holding_rank_mono_run",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 345
+      },
+      "start": {
+        "column": 1,
+        "line": 345
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holding_rank_mono_run (fuel : \u2115) (s : DAState n) (j : Fin n) {hval : Fin n} (hh : s.holding j = some hval) : \u2203 h' : Fin n, (daRun w m fuel s).holding j = some h' \u2227 (w.prefs j).idxOf h' \u2264 (w.prefs j).idxOf hval"
+  },
+  {
+    "dependencies": [
+      "holding_rank_mono_run",
+      "isFree",
+      "propTarget"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "held_preserved_run",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 360
+      },
+      "start": {
+        "column": 1,
+        "line": 360
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma held_preserved_run (fuel : \u2115) (s : DAState n) (j : Fin n) {hval : Fin n} (hh : s.holding j = some hval) : \u2203 h', (daRun w m fuel s).holding j = some h'"
+  },
+  {
+    "dependencies": [
+      "isFree",
+      "propTarget",
+      "IsPositiveAffineOf.trans",
+      "IsPositiveAffineOf.symm",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Indifferent.symm",
+      "Subtree.trans",
+      "isFree_iff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holding_injective_step",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 382
+      },
+      "start": {
+        "column": 1,
+        "line": 382
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holding_injective_step (s : DAState n) (hinj : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, (daStep w m s).holding j1 = some i \u2192 (daStep w m s).holding j2 = some i \u2192 j1 = j2"
+  },
+  {
+    "dependencies": [
+      "holding_injective_step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holding_injective_run",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 428
+      },
+      "start": {
+        "column": 1,
+        "line": 428
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holding_injective_run (fuel : \u2115) (s : DAState n) (hinj : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, (daRun w m fuel s).holding j1 = some i \u2192 (daRun w m fuel s).holding j2 = some i \u2192 j1 = j2"
+  },
+  {
+    "dependencies": [
+      "initState",
+      "isFree",
+      "propTarget",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Survives.mono",
+      "holding_rank_mono_step",
+      "daStep_nc_free",
+      "daStep_nc_held",
+      "not_isFree_iff",
+      "pref_list_mem",
+      "holding_injective_step",
+      "freeMenSet",
+      "mem_freeMenSet",
+      "holding_rank_mono_run",
+      "finalState"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "initState_injective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 442
+      },
+      "start": {
+        "column": 1,
+        "line": 442
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma initState_injective : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, (initState n).holding j1 = some i \u2192 (initState n).holding j2 = some i \u2192 j1 = j2"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "HoldInv",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 805
+      },
+      "start": {
+        "column": 1,
+        "line": 805
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "def HoldInv (m : Preferences n) (s : DAState n) : Prop"
+  },
+  {
+    "dependencies": [
+      "HoldInv",
+      "initState"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holdinv_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 808
+      },
+      "start": {
+        "column": 1,
+        "line": 808
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holdinv_init (m : Preferences n) : HoldInv m (initState n)"
+  },
+  {
+    "dependencies": [
+      "HoldInv",
+      "daStep_holding",
+      "isFree",
+      "propTarget",
+      "not_isFree_iff",
+      "daStep_nc_held",
+      "daStep_nc_free",
+      "pref_list_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holdinv_step",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 826
+      },
+      "start": {
+        "column": 1,
+        "line": 826
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holdinv_step (w m : Preferences n) (s : DAState n) (hhold : HoldInv m s) : HoldInv m (daStep w m s)"
+  },
+  {
+    "dependencies": [
+      "HoldInv",
+      "finalState",
+      "initState",
+      "holdinv_init",
+      "initState_injective",
+      "pref_list_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "holdinv_finalState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 920
+      },
+      "start": {
+        "column": 1,
+        "line": 920
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma holdinv_finalState (w m : Preferences n) : HoldInv m (finalState w m)"
+  },
+  {
+    "dependencies": [
+      "isFree",
+      "finalState",
+      "initState",
+      "initState_injective",
+      "freeMenSet",
+      "mem_freeMenSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "finalState_no_free_men",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 962
+      },
+      "start": {
+        "column": 1,
+        "line": 962
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma finalState_no_free_men : \u2200 i : Fin n, isFree (finalState w m) i = false"
+  },
+  {
+    "dependencies": [
+      "finalState",
+      "not_isFree_iff",
+      "finalState_no_free_men"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "final_all_men_held",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 988
+      },
+      "start": {
+        "column": 1,
+        "line": 988
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma final_all_men_held : \u2200 i : Fin n, \u2203 j : Fin n, (finalState w m).holding j = some i"
+  },
+  {
+    "dependencies": [
+      "finalState",
+      "holding_injective_run",
+      "initState",
+      "initState_injective"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "final_holding_injective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 993
+      },
+      "start": {
+        "column": 1,
+        "line": 993
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma final_holding_injective : \u2200 j1 j2 : Fin n, \u2200 i : Fin n, (finalState w m).holding j1 = some i \u2192 (finalState w m).holding j2 = some i \u2192 j1 = j2"
+  },
+  {
+    "dependencies": [
+      "finalState",
+      "final_all_men_held",
+      "final_holding_injective",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "final_all_women_hold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 999
+      },
+      "start": {
+        "column": 1,
+        "line": 999
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma final_all_women_hold : \u2200 j : Fin n, \u2203 i : Fin n, (finalState w m).holding j = some i"
+  },
+  {
+    "dependencies": [
+      "final_all_women_hold",
+      "final_holding_injective"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "gs_injective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1031
+      },
+      "start": {
+        "column": 1,
+        "line": 1031
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma gs_injective : Function.Injective (gs w m)"
+  },
+  {
+    "dependencies": [
+      "gs_injective"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "gs_bijective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1040
+      },
+      "start": {
+        "column": 1,
+        "line": 1040
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "lemma gs_bijective : Function.Bijective (gs w m)"
+  },
+  {
+    "dependencies": [
+      "IsStable",
+      "gs_bijective",
+      "IsBlocking",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "finalState",
+      "final_all_women_hold",
+      "holdinv_finalState",
+      "pref_list_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.GaleShapley",
+    "name": "galeShapley_isStable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1072
+      },
+      "start": {
+        "column": 1,
+        "line": 1072
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/GaleShapley.lean",
+    "type": "theorem galeShapley_isStable : Matching.IsStable (MatchingMarket.ofEquivData w m) (Matching.ofGS (gs w m) (gs_bijective w m))"
+  }
+]

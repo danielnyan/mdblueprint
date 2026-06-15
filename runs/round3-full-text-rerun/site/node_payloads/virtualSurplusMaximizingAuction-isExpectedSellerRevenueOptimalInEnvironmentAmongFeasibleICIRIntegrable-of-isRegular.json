@@ -1,0 +1,67 @@
+{
+  "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular",
+  "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (h : A.RegularMyersonICIRAnalyticAssumptions) : A.IsExpectedSellerRevenueOptimalInEnvironmentAmong A.virtualSurplusMaximizingAuction (fun B =&gt; A.IsFeasibleICIRIntegrable B)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegular</li>\n<li>IsExpectedSellerRevenueOptimalInEnvironmentAmong</li>\n<li>IsFeasibleICIRIntegrable</li>\n<li>RegularMyersonICIRAnalyticAssumptions.opt_identity</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus</li>\n<li>virtualSurplusMaximizingAuction_isFeasible</li>\n<li>virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular</li>\n<li>expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded</li>\n<li>isRevenueUpperBounded_of_ic_ir_upper</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    },
+    {
+      "id": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "title": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "href": "misc/IsExpectedSellerRevenueOptimalInEnvironmentAmong.html"
+    },
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+      "display_name": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

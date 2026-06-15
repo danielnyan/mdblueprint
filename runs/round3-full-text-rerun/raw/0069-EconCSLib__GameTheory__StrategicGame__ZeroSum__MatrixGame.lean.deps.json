@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "and",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "maximin_le_minimax",
+    "target": "lam0_le_mu0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "minimax_theorem",
+    "target": "minmax_from_general"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "minimax_optimal_strategies",
+    "target": "exists_xx_lam0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "minimax_optimal_strategies",
+    "target": "exists_yy_mu0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "source": "minimax_optimal_strategies",
+    "target": "minmax_from_general"
+  }
+]

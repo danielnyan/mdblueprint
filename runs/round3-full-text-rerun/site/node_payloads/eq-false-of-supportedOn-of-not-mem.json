@@ -1,0 +1,47 @@
+{
+  "id": "eq-false-of-supportedOn-of-not-mem",
+  "title": "eq_false_of_supportedOn_of_not_mem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/eq-false-of-supportedOn-of-not-mem.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>eq_false_of_supportedOn_of_not_mem</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma eq_false_of_supportedOn_of_not_mem {items : List I} {x : BinaryAllocation I} (hsupp : supportedOn items x) {i : I} (hi : i ∉ items) : x i = false</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>supportedOn</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "supportedOn",
+      "title": "supportedOn",
+      "href": "misc/supportedOn.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "eq_false_of_supportedOn_of_not_mem",
+      "display_name": "eq_false_of_supportedOn_of_not_mem",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

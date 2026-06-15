@@ -1,0 +1,52 @@
+{
+  "id": "restrictSubgame-liftSubgame",
+  "title": "restrictSubgame_liftSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictSubgame-liftSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictSubgame_liftSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem restrictSubgame_liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] {root : G.State} (beta : (G.subgameAt root).BehaviorProfile) : beta.liftSubgame.restrictSubgame root = beta</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>subgameAt</li>\n<li>BehaviorProfile</li>\n<li>restrictSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "subgameAt",
+      "title": "subgameAt",
+      "href": "misc/subgameAt.html"
+    },
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "restrictSubgame",
+      "title": "restrictSubgame",
+      "href": "misc/restrictSubgame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "restrictSubgame_liftSubgame",
+      "display_name": "restrictSubgame_liftSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

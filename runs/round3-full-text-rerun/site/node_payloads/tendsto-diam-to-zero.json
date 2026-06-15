@@ -1,0 +1,52 @@
+{
+  "id": "tendsto-diam-to-zero",
+  "title": "tendsto_diam_to_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/tendsto-diam-to-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>tendsto_diam_to_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem tendsto_diam_to_zero (f : stdSimplex ℝ (Fin n) → stdSimplex ℝ (Fin n)) : Tendsto (fun k =&gt; Metric.diam ((((room_seq f (g1 f ((hpkg f).1.2 k))).1.1.image (fun x =&gt; TTtostdSimplex x)) : Set (stdSimplex ℝ (Fin n))))) atTop (𝓝 0)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>room_seq</li>\n<li>TTtostdSimplex</li>\n<li>isDominant</li>\n<li>TT</li>\n<li>size_bound_in</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "TTtostdSimplex",
+      "title": "TTtostdSimplex",
+      "href": "misc/TTtostdSimplex.html"
+    },
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    },
+    {
+      "id": "TT",
+      "title": "TT",
+      "href": "misc/TT.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "tendsto_diam_to_zero",
+      "display_name": "tendsto_diam_to_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

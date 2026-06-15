@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Lean-derived Blueprint</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.css"
+        integrity="sha384-hW6ZmmePRD2f/9cuxGE6C9faGprtIBOme5OLUiEjtRKMTN67tY23ur9eAi21H8De"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.js"
+          integrity="sha384-FVvsvR4UzyIP8Y5hVvHjOfjVh+LWV78ll63SYx1t+nuuMPGMAihB8dJ2YsYyg1Wb"
+          crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/contrib/auto-render.min.js"
+          integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+          crossorigin="anonymous"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.MDBLUEPRINT_MATH_OPTIONS = {"delimiters": [{"left": "$$", "right": "$$", "display": true}, {"left": "\\[", "right": "\\]", "display": true}, {"left": "$", "right": "$", "display": false}, {"left": "\\(", "right": "\\)", "display": false}], "throwOnError": false, "macros": {}};
+      renderMathInElement(document.body, window.MDBLUEPRINT_MATH_OPTIONS);
+    });
+  </script>
+</head>
+<body>
+  <nav class="sidebar">
+    <a class="logo" href="../index.html">Lean Blueprint</a>
+    <a class="nav-link" href="../dep_graph_document.html">Dependency graph</a>
+    <section class="nav-section" aria-labelledby="nav-topics">
+      <button class="sidebar-toggle" type="button" aria-expanded="true" aria-controls="topic-list">
+        <span class="toggle-icon" aria-hidden="true">▾</span> Topics
+      </button>
+      <ul id="topic-list" class="topic-list nav-list">
+        <li class="topic-leaf topic-active">
+          <a href="../misc/index.html">Misc</a>
+        </li>
+      
+      </ul>
+    </section>
+    
+  </nav>
+  <main>
+    
+<article class="theorem_thmwrapper theorem-style-theorem node-page" id="node-Profile">
+  <header class="theorem_thmheading thm-heading">
+    <span class="theorem_thmcaption thm-caption">Theorem</span>
+    <span class="theorem_thmtitle thm-title">Profile</span>
+    <div class="thm_header_extras">
+      
+      <span class="badge kind-theorem">theorem</span>
+      <span class="badge status-staged">staged</span>
+    </div>
+    <div class="thm_header_hidden_extras">
+      <a class="permalink" href="#node-Profile">#</a>
+      
+      <button class="modal-trigger" type="button" data-modal-target="uses-modal">Uses</button>
+      
+      
+      <button class="modal-trigger lean" type="button" data-modal-target="lean-modal">L∃∀N</button>
+      
+    </div>
+  </header>
+
+  
+  <div class="modal-container" id="uses-modal" hidden>
+    <div class="modal-content">
+      <header><h1>Uses</h1><button class="closebtn" type="button">x</button></header>
+      <ul class="uses">
+        
+        <li><a href="Strategy.html">Strategy</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+
+  
+  <div class="modal-container" id="lean-modal" hidden>
+    <div class="modal-content">
+      <header><h1>Lean declarations</h1><button class="closebtn" type="button">x</button></header>
+      <ul class="uses">
+        
+        <li class="lean-ref">
+          
+          
+          <code>Profile</code>
+          
+          
+          
+          
+          
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  
+
+  <div class="theorem_thmcontent thm-content body">
+    <h1>Profile</h1>
+<h2>Lean type</h2>
+<p><code>lean
+abbrev Profile (G : StrategicGame N U)</code></p>
+<h2>Dependencies</h2>
+<ul>
+<li>Strategy</li>
+</ul>
+    
+  </div>
+
+  
+
+  
+  <section class="deps deps-used-by">
+    <h2>Used by</h2>
+    <ul>
+      
+      <li><a href="Anonymity.html">Anonymity</a></li>
+      
+      <li><a href="BallotBottom.html">BallotBottom</a></li>
+      
+      <li><a href="BottomRank.html">BottomRank</a></li>
+      
+      <li><a href="BundlePartitionSocialWelfare.html">BundlePartitionSocialWelfare</a></li>
+      
+      <li><a href="CondorcetConsistency.html">CondorcetConsistency</a></li>
+      
+      <li><a href="CondorcetWinner.html">CondorcetWinner</a></li>
+      
+      <li><a href="Dictatorial.html">Dictatorial</a></li>
+      
+      <li><a href="HasCondorcetWinner.html">HasCondorcetWinner</a></li>
+      
+      <li><a href="IIA.html">IIA</a></li>
+      
+      <li><a href="IsBestResponse.html">IsBestResponse</a></li>
+      
+      <li><a href="IsConstantSum.html">IsConstantSum</a></li>
+      
+      <li><a href="IsConstantSum-nash-payoff-eq.html">IsConstantSum.nash_payoff_eq</a></li>
+      
+      <li><a href="IsConstantSum-nash-payoff-eq-p1.html">IsConstantSum.nash_payoff_eq_p1</a></li>
+      
+      <li><a href="IsConstantSum-neg.html">IsConstantSum.neg</a></li>
+      
+      <li><a href="IsConstantSum-welfare-eq.html">IsConstantSum.welfare_eq</a></li>
+      
+      <li><a href="IsDecisiveFor.html">IsDecisiveFor</a></li>
+      
+      <li><a href="IsDegenerateCorrelatedEq.html">IsDegenerateCorrelatedEq</a></li>
+      
+      <li><a href="IsDominanceSolvable.html">IsDominanceSolvable</a></li>
+      
+      <li><a href="IsExactPotential.html">IsExactPotential</a></li>
+      
+      <li><a href="IsExactPotential-maximizer-is-nash.html">IsExactPotential.maximizer_is_nash</a></li>
+      
+      <li><a href="IsNashEquilibrium.html">IsNashEquilibrium</a></li>
+      
+      <li><a href="IsNashEquilibrium-isRationalizable.html">IsNashEquilibrium.isRationalizable</a></li>
+      
+      <li><a href="IsNashEquilibrium-survives.html">IsNashEquilibrium.survives</a></li>
+      
+      <li><a href="IsOrdinalPotential.html">IsOrdinalPotential</a></li>
+      
+      <li><a href="IsOrdinalPotential-isNash-iff-localMax.html">IsOrdinalPotential.isNash_iff_localMax</a></li>
+      
+      <li><a href="IsTotal.html">IsTotal</a></li>
+      
+      <li><a href="IsWeaklyDecisiveFor.html">IsWeaklyDecisiveFor</a></li>
+      
+      <li><a href="IsWeaklyDominant-isBestResponse.html">IsWeaklyDominant.isBestResponse</a></li>
+      
+      <li><a href="IsZeroSum.html">IsZeroSum</a></li>
+      
+      <li><a href="IsZeroSum-nash-payoff-eq.html">IsZeroSum.nash_payoff_eq</a></li>
+      
+      <li><a href="IsZeroSum-nash-payoff-eq-p1.html">IsZeroSum.nash_payoff_eq_p1</a></li>
+      
+      <li><a href="IsZeroSum-neg.html">IsZeroSum.neg</a></li>
+      
+      <li><a href="IsZeroSum-welfare-eq-zero.html">IsZeroSum.welfare_eq_zero</a></li>
+      
+      <li><a href="MajorityPrefers.html">MajorityPrefers</a></li>
+      
+      <li><a href="Monotonicity.html">Monotonicity</a></li>
+      
+      <li><a href="Neutrality.html">Neutrality</a></li>
+      
+      <li><a href="OpponentTypeProfile.html">OpponentTypeProfile</a></li>
+      
+      <li><a href="OptimistStrategyproofness.html">OptimistStrategyproofness</a></li>
+      
+      <li><a href="PessimistStrategyproofness.html">PessimistStrategyproofness</a></li>
+      
+      <li><a href="Prefers.html">Prefers</a></li>
+      
+      <li><a href="Prefers-asymm.html">Prefers.asymm</a></li>
+      
+      <li><a href="Prefers-total-of-ne.html">Prefers.total_of_ne</a></li>
+      
+      <li><a href="Profile-ext.html">Profile.ext</a></li>
+      
+      <li><a href="RandomizedSubmodularWelfareAlgorithm-IsPolynomial.html">RandomizedSubmodularWelfareAlgorithm.IsPolynomial</a></li>
+      
+      <li><a href="Resolute.html">Resolute</a></li>
+      
+      <li><a href="ResoluteStrategyproofness.html">ResoluteStrategyproofness</a></li>
+      
+      <li><a href="SWF.html">SWF</a></li>
+      
+      <li><a href="SimpleLift.html">SimpleLift</a></li>
+      
+      <li><a href="StrictlyDominates.html">StrictlyDominates</a></li>
+      
+      <li><a href="Survives.html">Survives</a></li>
+      
+      <li><a href="TopRank.html">TopRank</a></li>
+      
+      <li><a href="Unanimity.html">Unanimity</a></li>
+      
+      <li><a href="VotingRule.html">VotingRule</a></li>
+      
+      <li><a href="WeaklyDominates.html">WeaklyDominates</a></li>
+      
+      <li><a href="condorcet-paradox-possible.html">condorcet_paradox_possible</a></li>
+      
+      <li><a href="congr-payoff.html">congr_payoff</a></li>
+      
+      <li><a href="constantProfile.html">constantProfile</a></li>
+      
+      <li><a href="copeland-isTotal.html">copeland_isTotal</a></li>
+      
+      <li><a href="deviate.html">deviate</a></li>
+      
+      <li><a href="deviate.html">deviate</a></li>
+      
+      <li><a href="deviate-of-ne.html">deviate_of_ne</a></li>
+      
+      <li><a href="deviate-of-ne.html">deviate_of_ne</a></li>
+      
+      <li><a href="deviate-same.html">deviate_same</a></li>
+      
+      <li><a href="deviate-same.html">deviate_same</a></li>
+      
+      <li><a href="deviate-self.html">deviate_self</a></li>
+      
+      <li><a href="deviate-self.html">deviate_self</a></li>
+      
+      <li><a href="evaluate-at-mixed.html">evaluate_at_mixed</a></li>
+      
+      <li><a href="exists-minimal-decisive-coalition.html">exists_minimal_decisive_coalition</a></li>
+      
+      <li><a href="expectedPayoff.html">expectedPayoff</a></li>
+      
+      <li><a href="iia-strict.html">iia_strict</a></li>
+      
+      <li><a href="isNashEq.html">isNashEq</a></li>
+      
+      <li><a href="isNashEq-iff.html">isNashEq_iff</a></li>
+      
+      <li><a href="margin-pos.html">margin_pos</a></li>
+      
+      <li><a href="margin-self.html">margin_self</a></li>
+      
+      <li><a href="margin-skew.html">margin_skew</a></li>
+      
+      <li><a href="mixed-g.html">mixed_g</a></li>
+      
+      <li><a href="monotonic-zProfile.html">monotonic_zProfile</a></li>
+      
+      <li><a href="nash-iff-degenerate-ce.html">nash_iff_degenerate_ce</a></li>
+      
+      <li><a href="of-dominant.html">of_dominant</a></li>
+      
+      <li><a href="pd-nash-unique.html">pd_nash_unique</a></li>
+      
+      <li><a href="permuteVoters.html">permuteVoters</a></li>
+      
+      <li><a href="pureProfileToMixed.html">pureProfileToMixed</a></li>
+      
+      <li><a href="rank-injective.html">rank_injective</a></li>
+      
+      <li><a href="rps-no-pure-nash.html">rps_no_pure_nash</a></li>
+      
+      <li><a href="rps-zero-sum.html">rps_zero_sum</a></li>
+      
+      <li><a href="sample-strategic-form-has-nash.html">sample_strategic_form_has_nash</a></li>
+      
+      <li><a href="scoringWinners-nonempty.html">scoringWinners_nonempty</a></li>
+      
+      <li><a href="toStrategicGame-nash-iff-isNashAt.html">toStrategicGame_nash_iff_isNashAt</a></li>
+      
+      <li><a href="top-unanimity-of-unanimity.html">top_unanimity_of_unanimity</a></li>
+      
+      <li><a href="topChoice-topRank.html">topChoice_topRank</a></li>
+      
+      <li><a href="topRank-eq-topChoice.html">topRank_eq_topChoice</a></li>
+      
+      <li><a href="unanimous-strict-pref-not-chosen.html">unanimous_strict_pref_not_chosen</a></li>
+      
+      <li><a href="veto-isTotal.html">veto_isTotal</a></li>
+      
+      <li><a href="zProfile-apply.html">zProfile_apply</a></li>
+      
+      <li><a href="zProfile-choice-mem.html">zProfile_choice_mem</a></li>
+      
+      <li><a href="zProfile-prefers-inside.html">zProfile_prefers_inside</a></li>
+      
+      <li><a href="zProfile-prefers-inside-outside.html">zProfile_prefers_inside_outside</a></li>
+      
+      <li><a href="zProfile-prefers-outside.html">zProfile_prefers_outside</a></li>
+      
+    </ul>
+  </section>
+  
+
+  
+
+  
+</article>
+
+  </main>
+  <script src="../graph.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Global Topics section toggle
+      var btn = document.querySelector('.sidebar-toggle');
+      var list = document.getElementById('topic-list');
+      if (btn && list) {
+        var stored = localStorage.getItem('sidebar-topics-folded');
+        var folded = stored === 'true';
+        list.hidden = folded;
+        btn.setAttribute('aria-expanded', String(!folded));
+        btn.addEventListener('click', function() {
+          folded = !folded;
+          list.hidden = folded;
+          btn.setAttribute('aria-expanded', String(!folded));
+          localStorage.setItem('sidebar-topics-folded', String(folded));
+        });
+      }
+
+      // Per-root-topic <details> fold state via localStorage
+      document.querySelectorAll('details[data-topic-root]').forEach(function(details) {
+        var rootId = details.getAttribute('data-topic-root');
+        var key = 'sidebar-topic-open-' + rootId;
+        // Only restore if localStorage has an explicit stored value (don't override active-path open)
+        var stored = localStorage.getItem(key);
+        if (stored !== null) {
+          details.open = stored === 'true';
+        }
+        details.addEventListener('toggle', function() {
+          localStorage.setItem(key, String(details.open));
+        });
+      });
+
+      // Keywords section toggle
+      var keywordBtn = document.querySelector('.sidebar-toggle-keywords');
+      var keywordList = document.getElementById('keyword-list');
+      if (keywordBtn && keywordList) {
+        var kwStored = localStorage.getItem('sidebar-keywords-folded');
+        var kwFolded = kwStored === 'true';
+        keywordList.hidden = kwFolded;
+        keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+        keywordBtn.addEventListener('click', function() {
+          kwFolded = !kwFolded;
+          keywordList.hidden = kwFolded;
+          keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+          localStorage.setItem('sidebar-keywords-folded', String(kwFolded));
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

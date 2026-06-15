@@ -1,0 +1,47 @@
+{
+  "id": "withoutAllocation-isOptimal",
+  "title": "withoutAllocation_isOptimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/withoutAllocation-isOptimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>withoutAllocation_isOptimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma withoutAllocation_isOptimal (v : ∀ _ : I, Valuation A ℝ) (i : I) (a : A) : welfareWithout v i a ≤ welfareWithout v i (withoutAllocation v i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>welfareWithout</li>\n<li>exists_withoutAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "welfareWithout",
+      "title": "welfareWithout",
+      "href": "misc/welfareWithout.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "withoutAllocation_isOptimal",
+      "display_name": "withoutAllocation_isOptimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "hasExpectedRevenueVirtualSurplusIdentity-of-interim-identities",
+  "title": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasExpectedRevenueVirtualSurplusIdentity-of-interim-identities.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities [Fintype I] (A B : BayesianSingleItemAuction I) (hrev : A.HasExpectedRevenueInterimPaymentIdentity B) (hvs : A.HasExpectedVirtualSurplusInterimIdentity B) (hid : ∀ i : I, (∫ v in 0..A.typeData.omega i, B.interimExpectedPayment i v * A.typeDensity i v) = ∫ v in 0..A.typeData.omega i, B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v) : A.HasExpectedRevenueVirtualSurplusIdentity B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>HasExpectedRevenueInterimPaymentIdentity</li>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity</li>\n<li>HasExpectedVirtualSurplusInterimIdentity</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasExpectedRevenueInterimPaymentIdentity",
+      "title": "HasExpectedRevenueInterimPaymentIdentity",
+      "href": "misc/HasExpectedRevenueInterimPaymentIdentity.html"
+    },
+    {
+      "id": "HasExpectedVirtualSurplusInterimIdentity",
+      "title": "HasExpectedVirtualSurplusInterimIdentity",
+      "href": "misc/HasExpectedVirtualSurplusInterimIdentity.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+      "display_name": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

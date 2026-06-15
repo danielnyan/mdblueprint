@@ -1,0 +1,42 @@
+{
+  "id": "equilibriumPayoff-eq-of-hasInterimEnvelopeFormula-of-interimAllocProb-eq",
+  "title": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/equilibriumPayoff-eq-of-hasInterimEnvelopeFormula-of-interimAllocProb-eq.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq (A B : BayesianSingleItemAuction I) (henvA : A.HasInterimEnvelopeFormula) (henvB : B.HasInterimEnvelopeFormula) (i : I) (hQ : ∀ z : ℝ, A.interimAllocProb i z = B.interimAllocProb i z) (hM0 : A.interimExpectedPayment i 0 = B.interimExpectedPayment i 0) (v_i : ℝ) : A.equilibriumPayoff i v_i = B.equilibriumPayoff i v_i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeFormula</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+      "display_name": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "daStep-nc-free",
+  "title": "daStep_nc_free",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/daStep-nc-free.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>daStep_nc_free</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma daStep_nc_free {n : ℕ} {w m : Preferences n} {s : DAState n} {i : Fin n} (hi : isFree s i = true) : (daStep w m s).nextChoice i = s.nextChoice i + 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isFree</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "daStep_nc_free",
+      "display_name": "daStep_nc_free",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

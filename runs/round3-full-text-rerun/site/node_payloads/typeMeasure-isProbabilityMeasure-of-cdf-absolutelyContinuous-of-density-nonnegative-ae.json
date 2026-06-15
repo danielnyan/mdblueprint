@@ -1,0 +1,36 @@
+{
+  "id": "typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-density-nonnegative-ae",
+  "title": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-density-nonnegative-ae.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae (A : BayesianSingleItemAuction I) (i : I) (hAC : AbsolutelyContinuousOnInterval (A.typeData.cdf i).cdf 0 (A.typeData.omega i)) (hdens_ae : ∀ᵐ v ∂(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 ≤ A.typeDensity i v) : IsProbabilityMeasure (A.typeMeasure i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae",
+      "display_name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction",
+  "title": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (hB : A.IsRevenueComparable B) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.expectedSellerRevenueInEnvironment B ≤ A.expectedSellerRevenueInEnvironment A.virtualSurplusMaximizingAuction</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRevenueComparable</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n<li>expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le</li>\n<li>expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule</li>\n<li>IsFeasible.isSingleItemAllocationRule</li>\n<li>IsSingleItemAllocationRule</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRevenueComparable",
+      "title": "IsRevenueComparable",
+      "href": "misc/IsRevenueComparable.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "IsSingleItemAllocationRule",
+      "title": "IsSingleItemAllocationRule",
+      "href": "misc/IsSingleItemAllocationRule.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+      "display_name": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

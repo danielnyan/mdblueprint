@@ -1,0 +1,25 @@
+[
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "cutAndChoose_ef_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+    "name": "ef_exists_two_agents",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/EnvyFree.lean",
+    "type": "theorem ef_exists_two_agents (\u03bc : Fin 2 \u2192 Measure I) [IsFiniteMeasure (\u03bc 0)] [IsFiniteMeasure (\u03bc 1)] [NoAtoms (\u03bc 0)] : \u2203 A : Allocation (Fin 2) I, IsAllocation A \u2227 IsEnvyFree (MeasureValuation \u03bc) A"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "value₀-Node-one-le-child",
+  "title": "value₀_Node_one_le_child",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀-Node-one-le-child.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀_Node_one_le_child</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value₀_Node_one_le_child (h : GameTree (Fin 2) ℚ) (t : List (GameTree (Fin 2) ℚ)) (hzs : IsZeroSum (Node (1 : Fin 2) h t)) (c : GameTree (Fin 2) ℚ) (hmem : c ∈ h :: t) : value₀ (Node (1 : Fin 2) h t) ≤ value₀ c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>value_Node_ge</li>\n<li>value_one_eq_neg_value₀</li>\n<li>IsZeroSum.child_mem</li>\n<li>Subtree.child_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀_Node_one_le_child",
+      "display_name": "value₀_Node_one_le_child",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

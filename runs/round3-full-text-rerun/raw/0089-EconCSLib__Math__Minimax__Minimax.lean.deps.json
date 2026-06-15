@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "skew_optimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "symMat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "symMat_skew"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax_pos",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "symMat_skew",
+    "target": "symMat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "skew_optimal",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "skew_optimal",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "source": "minimax",
+    "target": "minimax_pos"
+  }
+]

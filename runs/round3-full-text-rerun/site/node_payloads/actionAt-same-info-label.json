@@ -1,0 +1,47 @@
+{
+  "id": "actionAt-same-info-label",
+  "title": "actionAt_same_info_label",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/actionAt-same-info-label.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>actionAt_same_info_label</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem actionAt_same_info_label {i : N} (σ : G.PureStrategy i) {s t : G.State} {k : G.InfoSet} (hs : G.info s = some k) (ht : G.info t = some k) (hms : G.mover s = some i) (hmt : G.mover t = some i) : PureStrategy.actionAt G σ hs hms = σ k s hs hms ∧ PureStrategy.actionAt G σ ht hmt = σ k t ht hmt</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PureStrategy</li>\n<li>StrategyProfile.actionAt</li>\n<li>PureStrategy.actionAt</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PureStrategy",
+      "title": "PureStrategy",
+      "href": "misc/PureStrategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "actionAt_same_info_label",
+      "display_name": "actionAt_same_info_label",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

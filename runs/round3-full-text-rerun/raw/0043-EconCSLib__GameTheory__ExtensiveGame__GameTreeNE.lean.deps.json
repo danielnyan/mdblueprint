@@ -1,0 +1,188 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toNE",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toNE",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toNE",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashEquilibrium",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashEquilibrium",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toSubgamePerfectOn",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toSubgamePerfectOn",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfect.toSubgamePerfectOn",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn.toNashAt",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn.toNashAt",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn.toNashAt",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsSubgamePerfectOn.toNashAt",
+    "target": "Subtree.self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+    "target": "HasOnlyRootSubgames"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_NE",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_NE",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_NE",
+    "target": "Kuhn_exists_SPE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_NE",
+    "target": "IsSubgamePerfect.toNE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "IsNashAt",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_SPE_on",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_SPE_on",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_SPE_on",
+    "target": "Kuhn_exists_SPE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "source": "Kuhn_exists_SPE_on",
+    "target": "IsSubgamePerfect.toSubgamePerfectOn"
+  }
+]

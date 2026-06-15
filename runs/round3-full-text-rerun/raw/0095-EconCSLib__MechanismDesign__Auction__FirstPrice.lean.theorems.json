@@ -1,0 +1,109 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "name": "utility_winner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/FirstPrice.lean",
+    "type": "lemma utility_winner {b : I \u2192 U} {i : I} (h : i = winner b) : utility v b i = v i - b i"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "name": "utility_loser",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/FirstPrice.lean",
+    "type": "lemma utility_loser {b : I \u2192 U} {i : I} (h : i \u2260 winner b) : utility v b i = 0"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "utility_winner"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "name": "no_dominant_strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 110
+      },
+      "start": {
+        "column": 1,
+        "line": 110
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/FirstPrice.lean",
+    "type": "theorem no_dominant_strategy (v : I \u2192 U) (i : I) (bi : U) (ha : \u2203 a : U, 0 < a) : \u00ac IsWeaklyDominant (game v) i bi"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "name": "game_eq_toStrategicGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 171
+      },
+      "start": {
+        "column": 1,
+        "line": 171
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/FirstPrice.lean",
+    "type": "lemma game_eq_toStrategicGame (v : I \u2192 U) : game v = mechanism.toStrategicGame (fun (w : I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if i = w then vals i - pay i else 0) v"
+  },
+  {
+    "dependencies": [
+      "mechanism_isDSIC",
+      "IsDSIC",
+      "isDSIC",
+      "toStrategicGame",
+      "no_dominant_strategy",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.FirstPrice",
+    "name": "mechanism_not_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 187
+      },
+      "start": {
+        "column": 1,
+        "line": 187
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/FirstPrice.lean",
+    "type": "theorem mechanism_not_isDSIC (ha : \u2203 a : U, 0 < a) : \u00ac mechanism.isDSIC (fun (w : I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if i = w then vals i - pay i else 0)"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "mem-biUnion",
+  "title": "mem_biUnion",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mem-biUnion.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mem_biUnion</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma mem_biUnion (h : IsAllocation allGoods A) (g : G) (hg : g ∈ allGoods) : ∃ i : N, g ∈ A i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mem_biUnion",
+      "display_name": "mem_biUnion",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

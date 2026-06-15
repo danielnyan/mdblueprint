@@ -1,0 +1,42 @@
+{
+  "id": "majorityOutcome-second-third-same",
+  "title": "majorityOutcome_second_third_same",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/majorityOutcome-second-third-same.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>majorityOutcome_second_third_same</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem majorityOutcome_second_third_same (a b : Candidate) : majorityOutcome b a a = Accepted a</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>majorityOutcome</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "majorityOutcome",
+      "title": "majorityOutcome",
+      "href": "misc/majorityOutcome.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "majorityOutcome_second_third_same",
+      "display_name": "majorityOutcome_second_third_same",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

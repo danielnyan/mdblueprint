@@ -1,0 +1,47 @@
+{
+  "id": "restrictSubgame-eq-self",
+  "title": "restrictSubgame_eq_self",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictSubgame-eq-self.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictSubgame_eq_self</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem restrictSubgame_eq_self {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] (beta : G.BehaviorProfile) (root : G.State) : beta.restrictSubgame root = beta</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>restrictSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "restrictSubgame",
+      "title": "restrictSubgame",
+      "href": "misc/restrictSubgame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "restrictSubgame_eq_self",
+      "display_name": "restrictSubgame_eq_self",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

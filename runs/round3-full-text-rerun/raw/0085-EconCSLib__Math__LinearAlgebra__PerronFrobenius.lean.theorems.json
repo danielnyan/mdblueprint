@@ -1,0 +1,25 @@
+[
+  {
+    "dependencies": [
+      "IsPositive",
+      "loomis_theorem",
+      "By_pos",
+      "xB_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "name": "perron_frobenius",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/PerronFrobenius.lean",
+    "type": "theorem perron_frobenius (M : Fin n \u2192 Fin n \u2192 \u211d) (hM_pos : \u2200 i j, 0 < M i j) : \u2203 (x y : stdSimplex \u211d (Fin n)) (lam : \u211d), 0 < lam \u2227 (\u2200 i, 0 < x.val i) \u2227 (\u2200 i, 0 < y.val i) \u2227 (\u2200 j, wsum x (fun i => M i j) = lam * x.val j) \u2227 (\u2200 i, wsum y (M i) = lam * y.val i)"
+  }
+]

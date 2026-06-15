@@ -1,0 +1,47 @@
+{
+  "id": "f-coords-ge-z-coords",
+  "title": "f_coords_ge_z_coords",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/f-coords-ge-z-coords.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>f_coords_ge_z_coords</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem f_coords_ge_z_coords (f : stdSimplex ℝ (Fin n) → stdSimplex ℝ (Fin n)) (hf : Continuous f) : ∀ i ∈ (gpkg f).1.1, (f (hpkg f).1.1).1 i ≥ ((hpkg f).1.1).1 i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>room_point_seq</li>\n<li>room_seq</li>\n<li>Fcolor</li>\n<li>TTtostdSimplex</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>pick_colorful_point</li>\n<li>tendsto_diam_to_zero</li>\n<li>Survives.mono</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Fcolor",
+      "title": "Fcolor",
+      "href": "misc/Fcolor.html"
+    },
+    {
+      "id": "TTtostdSimplex",
+      "title": "TTtostdSimplex",
+      "href": "misc/TTtostdSimplex.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "f_coords_ge_z_coords",
+      "display_name": "f_coords_ge_z_coords",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

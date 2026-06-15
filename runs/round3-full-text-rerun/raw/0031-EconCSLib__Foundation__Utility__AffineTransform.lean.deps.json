@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.refl",
+    "target": "IsPositiveAffineOf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.symm",
+    "target": "IsPositiveAffineOf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.preserves_representation",
+    "target": "IsPositiveAffineOf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.preserves_representation",
+    "target": "IsPositiveAffineOf.preserves_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.trans",
+    "target": "IsPositiveAffineOf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.AffineTransform",
+    "source": "IsPositiveAffineOf.preserves_le",
+    "target": "IsPositiveAffineOf"
+  }
+]

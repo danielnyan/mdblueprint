@@ -1,0 +1,36 @@
+{
+  "id": "joinWoman-mem-men",
+  "title": "joinWoman_mem_men",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/joinWoman-mem-men.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>joinWoman_mem_men</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma joinWoman_mem_men {j i : Fin n} (h : joinWoman μ ν hμ hν j = i) : mPartner μ hμ i = j ∨ mPartner ν hν i = j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>joinWoman_eq_or</li>\n<li>wPartner_eq_iff</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "joinWoman_mem_men",
+      "display_name": "joinWoman_mem_men",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

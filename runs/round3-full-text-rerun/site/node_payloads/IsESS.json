@@ -1,0 +1,57 @@
+{
+  "id": "IsESS",
+  "title": "IsESS",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsESS.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsESS</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsESS {S : Type*} (u : S → S → ℝ) (s : S) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsESS-isNSS",
+      "title": "IsESS.isNSS",
+      "href": "misc/IsESS-isNSS.html"
+    },
+    {
+      "id": "IsESS-nash-condition",
+      "title": "IsESS.nash_condition",
+      "href": "misc/IsESS-nash-condition.html"
+    },
+    {
+      "id": "IsESS-strict-against-other",
+      "title": "IsESS.strict_against_other",
+      "href": "misc/IsESS-strict-against-other.html"
+    },
+    {
+      "id": "strict-nash-implies-ess",
+      "title": "strict_nash_implies_ess",
+      "href": "misc/strict-nash-implies-ess.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsESS",
+      "display_name": "IsESS",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

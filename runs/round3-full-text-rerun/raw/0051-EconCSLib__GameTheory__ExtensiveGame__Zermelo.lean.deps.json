@@ -1,0 +1,488 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_le_child",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_le_child",
+    "target": "value_Node_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_le_child",
+    "target": "value_one_eq_neg_value\u2080"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_le_child",
+    "target": "IsZeroSum.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_le_child",
+    "target": "Subtree.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_le_value\u2080_of_iVariant_zero",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_le_value\u2080_of_iVariant_zero",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_le_value\u2080_of_iVariant_zero",
+    "target": "optStrategy_isSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_le_value\u2080_of_iVariant_zero",
+    "target": "outcome_optStrategy_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Leaf",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "strong_induction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "outcome_Leaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "outcome_Node"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "IsZeroSum.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_zero_sum",
+    "target": "Subtree.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_one_eq_neg_value\u2080",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_one_eq_neg_value\u2080",
+    "target": "value_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_SPE",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_SPE",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_SPE",
+    "target": "Kuhn_exists_SPE_on"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.head",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_zero_isMax",
+    "target": "value\u2080_Node_eq_some_child"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_zero_isMax",
+    "target": "value\u2080_Node_zero_ge_child"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "IsZeroSum.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.of_subtree",
+    "target": "Subtree.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+    "target": "outcome_optStrategy_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+    "target": "value_one_eq_neg_value\u2080"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_isMin",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_isMin",
+    "target": "value\u2080_Node_eq_some_child"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_one_isMin",
+    "target": "value\u2080_Node_one_le_child"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_eq_some_child",
+    "target": "value_Node_eq_some_child_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_NE",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_NE",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_exists_pure_NE",
+    "target": "Kuhn_exists_NE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_outcome_and_zeroSum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_outcome_and_zeroSum",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_outcome_and_zeroSum",
+    "target": "value\u2080_eq_optStrategy_outcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_outcome_and_zeroSum",
+    "target": "value_one_eq_neg_value\u2080"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_optStrategy_outcome",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_eq_optStrategy_outcome",
+    "target": "outcome_optStrategy_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "strong_induction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "value_Node_eq_some_child_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "IsZeroSum.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value_zero_sum",
+    "target": "Subtree.child_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.tail_mem",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "optStrategy_isSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "outcome_optStrategy_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "value_one_eq_neg_value\u2080"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_le_outcome_of_iVariant_one",
+    "target": "outcome_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "value\u2080_Node_zero_ge_child",
+    "target": "value_Node_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_determinacy",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_determinacy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_determinacy",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_determinacy",
+    "target": "value\u2080_le_outcome_of_iVariant_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "zermelo_determinacy",
+    "target": "outcome_le_value\u2080_of_iVariant_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_zero_sum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_zero_sum",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "outcome_optStrategy_zero_sum",
+    "target": "outcome_zero_sum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.child_mem",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.child_mem",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.child_mem",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.child_mem",
+    "target": "IsZeroSum.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "source": "IsZeroSum.child_mem",
+    "target": "Subtree.tail_mem"
+  }
+]

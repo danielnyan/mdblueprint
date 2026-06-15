@@ -1,0 +1,109 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "name": "PD",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 60
+      },
+      "start": {
+        "column": 1,
+        "line": 60
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "type": "def PD : StrategicGame (Fin 2) \u2115"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "PD"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "name": "pd_defect_weakly_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "type": "theorem pd_defect_weakly_dominant : \u2200 i : Fin 2, IsWeaklyDominant PD i Defect"
+  },
+  {
+    "dependencies": [
+      "IsNashEquilibrium",
+      "PD",
+      "of_dominant",
+      "pd_defect_weakly_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "name": "pd_defect_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "type": "theorem pd_defect_nash : IsNashEquilibrium PD (fun _ => Defect)"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "PD",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "name": "pd_nash_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "type": "theorem pd_nash_unique : \u2200 \u03c3 : PD.Profile, IsNashEquilibrium PD \u03c3 \u2192 \u03c3 = fun _ => Defect"
+  },
+  {
+    "dependencies": [
+      "PD"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "name": "pd_pareto_suboptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "type": "theorem pd_pareto_suboptimal : PD.payoff (fun _ => Cooperate) 0 > PD.payoff (fun _ => Defect) 0"
+  }
+]

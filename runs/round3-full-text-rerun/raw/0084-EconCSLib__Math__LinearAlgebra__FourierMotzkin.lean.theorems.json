@@ -1,0 +1,439 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "rowEval",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def rowEval {I : Type*} {n : \u2115} [Fintype I] (A : I \u2192 Fin n \u2192 \ud835\udd5c) (i : I) (x : Fin n \u2192 \ud835\udd5c) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "IsFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def IsFeasible {I : Type*} {n : \u2115} [Fintype I] (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "IsCertificate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 67
+      },
+      "start": {
+        "column": 1,
+        "line": 67
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def IsCertificate {I : Type*} {n : \u2115} [Fintype I] (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (u : I \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsCertificate"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "HasCertificate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def HasCertificate {I : Type*} {n : \u2115} [Fintype I] (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasCertificate",
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "feas_cert_disjoint",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 80
+      },
+      "start": {
+        "column": 1,
+        "line": 80
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem feas_cert_disjoint {I : Type*} {n : \u2115} [Fintype I] (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (hfeas : IsFeasible A b) (hcert : HasCertificate A b) : False"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "ZeroRows",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 126
+      },
+      "start": {
+        "column": 1,
+        "line": 126
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "abbrev ZeroRows (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) : Type _"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "PosRows",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 130
+      },
+      "start": {
+        "column": 1,
+        "line": 130
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "abbrev PosRows (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) : Type _"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "NegRows",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "abbrev NegRows (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) : Type _"
+  },
+  {
+    "dependencies": [
+      "ZeroRows",
+      "PosRows",
+      "NegRows"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "FMRowIndex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 138
+      },
+      "start": {
+        "column": 1,
+        "line": 138
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "abbrev FMRowIndex (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) : Type _"
+  },
+  {
+    "dependencies": [
+      "FMRowIndex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "fmA",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 152
+      },
+      "start": {
+        "column": 1,
+        "line": 152
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def fmA (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (idx : FMRowIndex A) (j : Fin n) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "FMRowIndex",
+      "ZeroRows",
+      "fmA",
+      "PosRows",
+      "NegRows",
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "fmB",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 160
+      },
+      "start": {
+        "column": 1,
+        "line": 160
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def fmB (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (idx : FMRowIndex A) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "fmA",
+      "fmB",
+      "rowEval",
+      "PosRows",
+      "NegRows"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "fm_feasible_of_feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 194
+      },
+      "start": {
+        "column": 1,
+        "line": 194
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem fm_feasible_of_feasible (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (hfeas : IsFeasible A b) : IsFeasible (fmA A) (fmB A b)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "fmA",
+      "fmB",
+      "PosRows",
+      "NegRows",
+      "rowEval",
+      "ZeroRows"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "feasible_of_fm_feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 304
+      },
+      "start": {
+        "column": 1,
+        "line": 304
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem feasible_of_fm_feasible (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (hred : IsFeasible (fmA A) (fmB A b)) : IsFeasible A b"
+  },
+  {
+    "dependencies": [
+      "FMRowIndex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "liftCoeff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 392
+      },
+      "start": {
+        "column": 1,
+        "line": 392
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def liftCoeff (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (idx : FMRowIndex A) (i : I) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "ZeroRows",
+      "liftCoeff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "liftCoeff_inl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 399
+      },
+      "start": {
+        "column": 1,
+        "line": 399
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem liftCoeff_inl (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (k : ZeroRows A) (i : I) : liftCoeff A (Sum.inl k) i = if k.val = i then 1 else 0"
+  },
+  {
+    "dependencies": [
+      "PosRows",
+      "NegRows",
+      "liftCoeff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "liftCoeff_inr",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 403
+      },
+      "start": {
+        "column": 1,
+        "line": 403
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem liftCoeff_inr (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (p : PosRows A) (q : NegRows A) (i : I) : liftCoeff A (Sum.inr (p, q)) i = (if p.val = i then -A q.val (Fin.last n) else 0) + (if q.val = i then A p.val (Fin.last n) else 0)"
+  },
+  {
+    "dependencies": [
+      "FMRowIndex",
+      "liftCoeff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "liftCert",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 410
+      },
+      "start": {
+        "column": 1,
+        "line": 410
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "def liftCert (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (u' : FMRowIndex A \u2192 \ud835\udd5c) (i : I) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "FMRowIndex",
+      "liftCert",
+      "liftCoeff_inl",
+      "liftCoeff_inr",
+      "liftCoeff",
+      "ZeroRows",
+      "PosRows",
+      "NegRows",
+      "fmA",
+      "fmB"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "liftCert_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 415
+      },
+      "start": {
+        "column": 1,
+        "line": 415
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem liftCert_nonneg (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) {u' : FMRowIndex A \u2192 \ud835\udd5c} (hu' : \u2200 idx, 0 \u2264 u' idx) (i : I) : 0 \u2264 liftCert A u' i"
+  },
+  {
+    "dependencies": [
+      "HasCertificate",
+      "fmA",
+      "fmB",
+      "liftCert",
+      "liftCert_nonneg",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "feas_cert_disjoint",
+      "rowEval",
+      "feasible_of_fm_feasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "fm_cert_lift",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 518
+      },
+      "start": {
+        "column": 1,
+        "line": 518
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem fm_cert_lift (A : I \u2192 Fin (n+1) \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (hred : HasCertificate (fmA A) (fmB A b)) : HasCertificate A b"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasCertificate"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "name": "theorem_of_alternative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 603
+      },
+      "start": {
+        "column": 1,
+        "line": 603
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/FourierMotzkin.lean",
+    "type": "theorem theorem_of_alternative {I : Type*} [Fintype I] [DecidableEq I] {n : \u2115} (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) : \u00ac IsFeasible A b \u2194 HasCertificate A b"
+  }
+]

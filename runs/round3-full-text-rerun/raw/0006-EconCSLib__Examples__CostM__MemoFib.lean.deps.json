@@ -1,0 +1,116 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux_cost",
+    "target": "fibAux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux_cost",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux_cost",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux_cost",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_value",
+    "target": "fibAux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_value",
+    "target": "fibAux_ret"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux_ret",
+    "target": "fibAux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_cost_card",
+    "target": "fib_cost"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib",
+    "target": "fibAux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fibAux",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_cost",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_cost",
+    "target": "fibAux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_cost",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "source": "fib_cost",
+    "target": "fibAux_cost"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "interimFubiniAnalyticAssumptions-of-independentTypePriors",
+  "title": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/interimFubiniAnalyticAssumptions-of-independentTypePriors.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>interimFubiniAnalyticAssumptions_of_independentTypePriors</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem interimFubiniAnalyticAssumptions_of_independentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (hdens_ae : ∀ i : I, ∀ᵐ v ∂(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 ≤ A.typeDensity i v) (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hpay_prod_int : ∀ i : I, Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) (hvs_prod_int : ∀ i : I, Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.InterimFubiniAnalyticAssumptions B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIndependentTypePriors</li>\n<li>HasSameSellingEnvironment</li>\n<li>OpponentTypeProfile</li>\n<li>typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors</li>\n<li>TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIndependentTypePriors",
+      "title": "HasIndependentTypePriors",
+      "href": "misc/HasIndependentTypePriors.html"
+    },
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "display_name": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "extractTerminal-extracts",
+  "title": "extractTerminal_extracts",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/extractTerminal-extracts.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>extractTerminal_extracts</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem extractTerminal_extracts (s : G.State) (hs : G.isTerminal s) : ExtractsGameTree G s (G.extractTerminalGameTree s hs)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsTerminal</li>\n<li>isTerminal</li>\n<li>extractTerminalGameTree</li>\n<li>extractTerminal_payoff</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsTerminal",
+      "title": "IsTerminal",
+      "href": "misc/IsTerminal.html"
+    },
+    {
+      "id": "isTerminal",
+      "title": "isTerminal",
+      "href": "misc/isTerminal.html"
+    },
+    {
+      "id": "extractTerminalGameTree",
+      "title": "extractTerminalGameTree",
+      "href": "misc/extractTerminalGameTree.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "extractTerminal_extracts",
+      "display_name": "extractTerminal_extracts",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,175 @@
+[
+  {
+    "dependencies": [
+      "maxBid",
+      "maxBidExcluding_le_maxBid",
+      "argmaxBid_eq_maxBid",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "secondPrice_le_bid_winner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "lemma secondPrice_le_bid_winner (b : I \u2192 U) : secondPrice b \u2264 b (winner b)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "utility_winner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "lemma utility_winner {b : I \u2192 U} {i : I} (h : i = winner b) : utility v b i = v i - secondPrice b"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "utility_loser",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "lemma utility_loser {b : I \u2192 U} {i : I} (h : i \u2260 winner b) : utility v b i = 0"
+  },
+  {
+    "dependencies": [
+      "utility_winner",
+      "secondPrice_le_bid_winner",
+      "utility_loser"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "utility_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "lemma utility_nonneg {b : I \u2192 U} {i : I} (htruth : b i = v i) : 0 \u2264 utility v b i"
+  },
+  {
+    "dependencies": [
+      "maxBidExcluding_update_self",
+      "utility_winner",
+      "utility_loser",
+      "utility_nonneg",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "valuation_is_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 139
+      },
+      "start": {
+        "column": 1,
+        "line": 139
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "theorem valuation_is_dominant (v : I \u2192 U) (i : I) (b : I \u2192 U) : utility v b i \u2264 utility v (Function.update b i (v i)) i"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "valuation_is_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "truthful_weakly_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 178
+      },
+      "start": {
+        "column": 1,
+        "line": 178
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "theorem truthful_weakly_dominant (v : I \u2192 U) (i : I) : IsWeaklyDominant (game v) i (v i)"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "game_eq_toStrategicGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 203
+      },
+      "start": {
+        "column": 1,
+        "line": 203
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "lemma game_eq_toStrategicGame (v : I \u2192 U) : game v = mechanism.toStrategicGame (fun (w : I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if i = w then vals i - pay i else 0) v"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "truthful_weakly_dominant",
+      "game_eq_toStrategicGame",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "name": "mechanism_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 219
+      },
+      "start": {
+        "column": 1,
+        "line": 219
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Vickrey.lean",
+    "type": "theorem mechanism_isDSIC : mechanism.isDSIC (fun (w : I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if i = w then vals i - pay i else 0)"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "jointDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior",
+  "title": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/jointDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior [Fintype I] (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) {t : I → ℝ} (ht : A.IsOnTypeProfileInterior t) : A.HasPositiveJointDensityAt t</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasPositiveDensityOnSupport</li>\n<li>IsOnTypeProfileInterior</li>\n<li>HasPositiveJointDensityAt</li>\n<li>typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasPositiveDensityOnSupport",
+      "title": "HasPositiveDensityOnSupport",
+      "href": "misc/HasPositiveDensityOnSupport.html"
+    },
+    {
+      "id": "IsOnTypeProfileInterior",
+      "title": "IsOnTypeProfileInterior",
+      "href": "misc/IsOnTypeProfileInterior.html"
+    },
+    {
+      "id": "HasPositiveJointDensityAt",
+      "title": "HasPositiveJointDensityAt",
+      "href": "misc/HasPositiveJointDensityAt.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+      "display_name": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

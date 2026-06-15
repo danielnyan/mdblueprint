@@ -1,0 +1,58 @@
+{
+  "id": "tttGame",
+  "title": "tttGame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/tttGame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>tttGame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef tttGame : ExtensiveGame (Fin 2) ℤ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Pos</li>\n<li>IsReachable.next</li>\n<li>TTTState.isOver</li>\n<li>CPState.isOver</li>\n<li>TTTState.move</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n<li>TTTState.initial</li>\n<li>isWinner</li>\n<li>Board</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    },
+    {
+      "id": "isWinner",
+      "title": "isWinner",
+      "href": "misc/isWinner.html"
+    },
+    {
+      "id": "Board",
+      "title": "Board",
+      "href": "misc/Board.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "tttGame",
+      "display_name": "tttGame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "name": "zProfile_apply",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/ProfileSurgery.lean",
+    "type": "@[simp] theorem zProfile_apply [Fintype N] [Fintype A] (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] (i : N) : (zProfile P Q R).pref i = zBallot (P.pref i) (Q.pref i) R"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers",
+      "rank_lt_iff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "name": "zProfile_prefers_inside",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/ProfileSurgery.lean",
+    "type": "theorem zProfile_prefers_inside [Fintype N] [Fintype A] (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] {a b : A} (ha : a \u2208 R) (hb : b \u2208 R) (i : N) : Prefers (zProfile P Q R) i a b \u2194 Prefers P i a b"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers",
+      "rank_lt_iff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "name": "zProfile_prefers_outside",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/ProfileSurgery.lean",
+    "type": "theorem zProfile_prefers_outside [Fintype N] [Fintype A] (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] {a b : A} (ha : a \u2209 R) (hb : b \u2209 R) (i : N) : Prefers (zProfile P Q R) i a b \u2194 Prefers Q i a b"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers",
+      "rank_lt_card"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.ProfileSurgery",
+    "name": "zProfile_prefers_inside_outside",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/ProfileSurgery.lean",
+    "type": "theorem zProfile_prefers_inside_outside [Fintype N] [Fintype A] (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] {a b : A} (ha : a \u2208 R) (hb : b \u2209 R) (i : N) : Prefers (zProfile P Q R) i a b"
+  }
+]

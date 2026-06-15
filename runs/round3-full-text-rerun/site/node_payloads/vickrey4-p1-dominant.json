@@ -1,0 +1,47 @@
+{
+  "id": "vickrey4-p1-dominant",
+  "title": "vickrey4_p1_dominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/vickrey4-p1-dominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>vickrey4_p1_dominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem vickrey4_p1_dominant : IsWeaklyDominant (Vickrey 4 v4) 1 (v4 1)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStrictlyDominant.isWeaklyDominant</li>\n<li>IsWeaklyDominant</li>\n<li>Vickrey</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    },
+    {
+      "id": "Vickrey",
+      "title": "Vickrey",
+      "href": "misc/Vickrey.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "vickrey4_p1_dominant",
+      "display_name": "vickrey4_p1_dominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

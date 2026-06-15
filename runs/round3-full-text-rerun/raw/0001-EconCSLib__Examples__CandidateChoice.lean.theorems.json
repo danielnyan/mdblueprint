@@ -1,0 +1,322 @@
+[
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "utility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def utility : Player \u2192 Outcome \u2192 \u211a | Eric, Accepted Lee => 3 | Eric, Accepted Rebecca => 2 | Eric, Accepted John => 1 | Eric, Rejected => 0 | Larry, Accepted Rebecca => 3 | Larry, Accepted John => 2 | Larry, Accepted Lee => 1 | Larry, Rejected => 0 | Sergey, Accepted John => 3 | Sergey, Accepted Lee => 2 | Sergey, Accepted Rebecca => 1 | Sergey, Rejected => 0 /-- Convert an outcome into the payoff vector required by `GameTree`. -/"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def payoff (o : Outcome) : Player \u2192 \u211a"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "terminal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def terminal (o : Outcome) : GameTree Player \u211a"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "majorityOutcome",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def majorityOutcome (a b c : Candidate) : Outcome"
+  },
+  {
+    "dependencies": [
+      "majorityOutcome"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "majorityOutcome_first_second_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "@[simp] theorem majorityOutcome_first_second_same (a c : Candidate) : majorityOutcome a a c = Accepted a"
+  },
+  {
+    "dependencies": [
+      "majorityOutcome"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "majorityOutcome_first_third_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "@[simp] theorem majorityOutcome_first_third_same (a b : Candidate) : majorityOutcome a b a = Accepted a"
+  },
+  {
+    "dependencies": [
+      "majorityOutcome"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "majorityOutcome_second_third_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "@[simp] theorem majorityOutcome_second_third_same (a b : Candidate) : majorityOutcome b a a = Accepted a"
+  },
+  {
+    "dependencies": [
+      "majorityOutcome"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "majorityOutcome_pairwise_distinct",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "theorem majorityOutcome_pairwise_distinct {a b c : Candidate} (hab : a \u2260 b) (hac : a \u2260 c) (hbc : b \u2260 c) : majorityOutcome a b c = Rejected"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "majorityOutcome"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "sergeyChoice",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def sergeyChoice (ericVote larryVote : Candidate) : GameTree Player \u211a"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "sergeyChoice"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "larryChoice",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def larryChoice (ericVote : Candidate) : GameTree Player \u211a"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "larryChoice",
+      "majorityOutcome",
+      "majorityOutcome_pairwise_distinct",
+      "sergeyChoice",
+      "IsZeroSum.tail_mem",
+      "Subtree.tail_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "candidateChoiceGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 152
+      },
+      "start": {
+        "column": 1,
+        "line": 152
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "def candidateChoiceGame : GameTree Player \u211a"
+  },
+  {
+    "dependencies": [
+      "sergeyChoice",
+      "candidateChoiceGame",
+      "larryChoice",
+      "IsZeroSum.tail_mem",
+      "Subtree.tail_mem",
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 193
+      },
+      "start": {
+        "column": 1,
+        "line": 193
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "theorem sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame : Subtree (sergeyChoice Lee Rebecca) candidateChoiceGame"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsSubgamePerfect",
+      "Kuhn_exists_SPE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "candidateChoice_has_spe",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 207
+      },
+      "start": {
+        "column": 1,
+        "line": 207
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "theorem candidateChoice_has_spe : \u2203 \u03c3 : Strategy Player \u211a, IsSubgamePerfect \u03c3"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsNashEquilibrium",
+      "candidateChoiceGame",
+      "Kuhn_exists_NE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "name": "candidateChoice_has_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 211
+      },
+      "start": {
+        "column": 1,
+        "line": 211
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CandidateChoice.lean",
+    "type": "theorem candidateChoice_has_ne : \u2203 \u03c3 : Strategy Player \u211a, IsNashEquilibrium \u03c3 candidateChoiceGame"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "IsZeroSum-head",
+  "title": "IsZeroSum.head",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum-head.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum.head</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsZeroSum.head {m : Fin 2} {h : GameTree (Fin 2) ℚ} {t : List (GameTree (Fin 2) ℚ)} (hzs : IsZeroSum (Node m h t)) : IsZeroSum h</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum.head",
+      "display_name": "IsZeroSum.head",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

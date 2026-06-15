@@ -1,0 +1,78 @@
+{
+  "id": "Survives",
+  "title": "Survives",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Survives.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Survives</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Survives (G : StrategicGame N U) : ℕ → (i : N) → G.strategy i → Prop | 0 =&gt; fun _ _ =&gt; True | n + 1 =&gt; fun i s =&gt; G.Survives n i s ∧ ¬ ∃ t : G.strategy i, G.Survives n i t ∧ ∀ σ : G.Profile, (∀ j, G.Survives n j (σ j)) → G.payoff (deviate σ i s) i &lt; G.payoff (deviate σ i t) i /-- Survival at round n+1 implies survival at round n. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsNashEquilibrium.survives</li>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsDominanceSolvable",
+      "title": "IsDominanceSolvable",
+      "href": "misc/IsDominanceSolvable.html"
+    },
+    {
+      "id": "IsNashEquilibrium-isRationalizable",
+      "title": "IsNashEquilibrium.isRationalizable",
+      "href": "misc/IsNashEquilibrium-isRationalizable.html"
+    },
+    {
+      "id": "IsNashEquilibrium-survives",
+      "title": "IsNashEquilibrium.survives",
+      "href": "misc/IsNashEquilibrium-survives.html"
+    },
+    {
+      "id": "IsRationalizable",
+      "title": "IsRationalizable",
+      "href": "misc/IsRationalizable.html"
+    },
+    {
+      "id": "Survives-mono",
+      "title": "Survives.mono",
+      "href": "misc/Survives-mono.html"
+    },
+    {
+      "id": "Survives-prev",
+      "title": "Survives.prev",
+      "href": "misc/Survives-prev.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Survives",
+      "display_name": "Survives",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

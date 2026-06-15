@@ -1,0 +1,36 @@
+{
+  "id": "integral-comp-eval-productPrior",
+  "title": "integral_comp_eval_productPrior",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integral-comp-eval-productPrior.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integral_comp_eval_productPrior</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integral_comp_eval_productPrior [Fintype I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] {i : I} {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] {f : ℝ → E} (hf : AEStronglyMeasurable f (A.typeMeasure i)) : (∫ t : ∀ _ : I, ℝ, f (t i) ∂A.productPrior) = ∫ v, f v ∂A.typeMeasure i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integral_comp_eval_productPrior",
+      "display_name": "integral_comp_eval_productPrior",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

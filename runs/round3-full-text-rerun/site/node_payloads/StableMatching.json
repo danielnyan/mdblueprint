@@ -1,0 +1,58 @@
+{
+  "id": "StableMatching",
+  "title": "StableMatching",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/StableMatching.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>StableMatching</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef StableMatching (w' m' : Preferences n) : Type</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "gsStable-greatest",
+      "title": "gsStable_greatest",
+      "href": "misc/gsStable-greatest.html"
+    },
+    {
+      "id": "gsStable-isGreatest",
+      "title": "gsStable_isGreatest",
+      "href": "misc/gsStable-isGreatest.html"
+    },
+    {
+      "id": "matchW-partner",
+      "title": "matchW_partner",
+      "href": "misc/matchW-partner.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "StableMatching",
+      "display_name": "StableMatching",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

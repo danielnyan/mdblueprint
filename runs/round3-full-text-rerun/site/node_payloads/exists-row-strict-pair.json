@@ -1,0 +1,62 @@
+{
+  "id": "exists-row-strict-pair",
+  "title": "exists_row_strict_pair",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-row-strict-pair.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_row_strict_pair</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem exists_row_strict_pair (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (v : 𝕜) {x₀ : Fin n → 𝕜} (hx₀A : ∀ i, b i ≤ ∑ j, A i j * x₀ j) (hx₀nn : ∀ j, 0 ≤ x₀ j) (hx₀_val : ∑ j, c j * x₀ j = v) {u₀ : I → 𝕜} (hu₀ : DualFeasible A c u₀) (hu₀_val : ∑ i, u₀ i * b i = v) (i₀ : I) : ∃ (x : Fin n → 𝕜) (u : I → 𝕜), (∀ i, b i ≤ ∑ j, A i j * x j) ∧ (∀ j, 0 ≤ x j) ∧ DualFeasible A c u ∧ (∑ j, c j * x j = v) ∧ (∑ i, u i * b i = v) ∧ 0 &lt; (∑ j, A i₀ j * x j - b i₀) + u i₀</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>DualFeasible</li>\n<li>optAugB</li>\n<li>optAugA</li>\n<li>optAug_feasible_iff</li>\n<li>lp_weak_duality</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>farkas_lemma</li>\n<li>OptAugRow</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "DualFeasible",
+      "title": "DualFeasible",
+      "href": "misc/DualFeasible.html"
+    },
+    {
+      "id": "optAugB",
+      "title": "optAugB",
+      "href": "misc/optAugB.html"
+    },
+    {
+      "id": "optAugA",
+      "title": "optAugA",
+      "href": "misc/optAugA.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "OptAugRow",
+      "title": "OptAugRow",
+      "href": "misc/OptAugRow.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_row_strict_pair",
+      "display_name": "exists_row_strict_pair",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

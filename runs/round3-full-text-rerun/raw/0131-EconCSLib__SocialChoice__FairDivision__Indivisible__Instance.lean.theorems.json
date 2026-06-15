@@ -1,0 +1,612 @@
+[
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def feasible {N G : Type*} [Fintype N] [DecidableEq G] (I : Instance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toShareInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : Instance N G) : SocialChoice.FairDivision.ShareInstance N (Finset G) (Finset G)"
+  },
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toValuation {N G : Type*} (I : CardinalInstance N G) : Valuation N G"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def feasible {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toGenericCardinalInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toGenericCardinalInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) : SocialChoice.FairDivision.CardinalInstance N (Finset G) (Finset G)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toShareInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) : SocialChoice.FairDivision.ShareInstance N (Finset G) (Finset G)"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEnvyFree {N G : Type*} (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEFX.isEF1",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEF1 {N G : Type*} [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEFX",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEFX {N G : Type*} [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsProportional {N G : Type*} (I : CardinalInstance N G) (n : \u2115) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 117
+      },
+      "start": {
+        "column": 1,
+        "line": 117
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEquitable {N G : Type*} (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsProportional.isMaxminShare",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsMaxminShare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsMaxminShare {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 127
+      },
+      "start": {
+        "column": 1,
+        "line": 127
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsParetoOptimal {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsUtilitarianOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsUtilitarianOptimal {N G : Type*} [Fintype N] [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsMaxmin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 147
+      },
+      "start": {
+        "column": 1,
+        "line": 147
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsMaxmin {N G : Type*} [Fintype N] [Nonempty N] [DecidableEq G] (I : CardinalInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toAdditiveValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 163
+      },
+      "start": {
+        "column": 1,
+        "line": 163
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toAdditiveValuation {N G : Type*} (I : AdditiveInstance N G) : AdditiveValuation N G"
+  },
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 168
+      },
+      "start": {
+        "column": 1,
+        "line": 168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toValuation {N G : Type*} (I : AdditiveInstance N G) : Valuation N G"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toCardinalInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 173
+      },
+      "start": {
+        "column": 1,
+        "line": 173
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toCardinalInstance {N G : Type*} (I : AdditiveInstance N G) : CardinalInstance N G"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toGenericCardinalInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 180
+      },
+      "start": {
+        "column": 1,
+        "line": 180
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toGenericCardinalInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) : SocialChoice.FairDivision.CardinalInstance N (Finset G) (Finset G)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 187
+      },
+      "start": {
+        "column": 1,
+        "line": 187
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def toShareInstance {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) : SocialChoice.FairDivision.ShareInstance N (Finset G) (Finset G)"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 195
+      },
+      "start": {
+        "column": 1,
+        "line": 195
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEnvyFree {N G : Type*} (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEFX.isEF1",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 200
+      },
+      "start": {
+        "column": 1,
+        "line": 200
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEF1 {N G : Type*} [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEFX",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 205
+      },
+      "start": {
+        "column": 1,
+        "line": 205
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEFX {N G : Type*} [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 210
+      },
+      "start": {
+        "column": 1,
+        "line": 210
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsProportional {N G : Type*} (I : AdditiveInstance N G) (n : \u2115) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 215
+      },
+      "start": {
+        "column": 1,
+        "line": 215
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsEquitable {N G : Type*} (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsProportional.isMaxminShare",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsMaxminShare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 220
+      },
+      "start": {
+        "column": 1,
+        "line": 220
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsMaxminShare {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 225
+      },
+      "start": {
+        "column": 1,
+        "line": 225
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsParetoOptimal {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsUtilitarianOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 240
+      },
+      "start": {
+        "column": 1,
+        "line": 240
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsUtilitarianOptimal {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "IsMaxmin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 245
+      },
+      "start": {
+        "column": 1,
+        "line": 245
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def IsMaxmin {N G : Type*} [Fintype N] [Nonempty N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 250
+      },
+      "start": {
+        "column": 1,
+        "line": 250
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+    "type": "def feasible {N G : Type*} [Fintype N] [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop"
+  }
+]

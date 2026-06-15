@@ -1,0 +1,32 @@
+[
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "theorem_of_alternative",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "name": "optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/SkewSymmetric.lean",
+    "type": "theorem optimal [NeZero N] (S : Fin N \u2192 Fin N \u2192 \ud835\udd5c) (hS : \u2200 k l, S k l = - S l k) : \u2203 z : Fin N \u2192 \ud835\udd5c, (\u2200 k, 0 \u2264 z k) \u2227 (\u2211 k, z k = 1) \u2227 (\u2200 l, 0 \u2264 \u2211 k, z k * S k l)"
+  }
+]

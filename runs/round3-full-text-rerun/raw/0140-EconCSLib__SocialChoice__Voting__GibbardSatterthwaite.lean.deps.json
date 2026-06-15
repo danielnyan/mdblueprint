@@ -1,0 +1,332 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "unanimous_strict_pref_not_chosen",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "unanimous_strict_pref_not_chosen",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "unanimous_strict_pref_not_chosen",
+    "target": "Monotonicity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "unanimous_strict_pref_not_chosen",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "unanimous_strict_pref_not_chosen",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Monotonicity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "zProfile_prefers_inside_outside"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "zProfile_prefers_inside"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "StrictlyPreferred.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "BallotPrefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Prefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Resolute"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "BallotPrefers.total_of_ne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "Prefers.total_of_ne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "zProfile_choice_mem",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "Resolute"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "Monotonicity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "arrow_impossibility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "topChoice_topRank"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "muller_satterthwaite",
+    "target": "monotonic_zProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "strategyproof_monotonic",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "strategyproof_monotonic",
+    "target": "Resolute"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "strategyproof_monotonic",
+    "target": "ResoluteStrategyproofness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "strategyproof_monotonic",
+    "target": "Monotonicity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "Resolute"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "ResoluteStrategyproofness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "muller_satterthwaite"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "gibbard_satterthwaite",
+    "target": "strategyproof_monotonic"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "Monotonicity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "zProfile_prefers_inside"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "zProfile_prefers_inside_outside"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "StrictlyPreferred.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "BallotPrefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "Prefers.asymm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "source": "monotonic_zProfile",
+    "target": "Prefers"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny_same_mover",
+    "target": "SameMoverOnInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "PureStrategyProfile",
+    "target": "PureStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "InfoWellFormed",
+    "target": "SameMoverOnInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "InfoWellFormed",
+    "target": "SameActionsOnInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "InfoWellFormed",
+    "target": "NoChanceOnDecisionInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_infoWellFormed",
+    "target": "InfoWellFormed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_infoWellFormed",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_infoWellFormed",
+    "target": "SameMoverOnInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_infoWellFormed",
+    "target": "SameActionsOnInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_infoWellFormed",
+    "target": "NoChanceOnDecisionInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "PureStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "StrategyProfile.actionAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "PureStrategy.actionAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "actionAt_same_info_label",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "PureStrategy.actionAt",
+    "target": "PureStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "tiny_no_chance_on_info",
+    "target": "NoChanceOnDecisionInfo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_init",
+    "target": "subgameAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "subgameAt_init",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ImperfectInformation",
+    "source": "IsTerminal",
+    "target": "isEmpty"
+  }
+]

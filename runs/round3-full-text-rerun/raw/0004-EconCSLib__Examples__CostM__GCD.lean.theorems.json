@@ -1,0 +1,59 @@
+[
+  {
+    "dependencies": [
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "name": "gcd",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+    "type": "def gcd : \u2115 \u2192 \u2115 \u2192 CostM \u2115 \u2115 | a, 0 => pure a | a, b + 1 => do \u2713 gcd (b + 1) (a % (b + 1)) termination_by _ b => b decreasing_by exact Nat.mod_lt _ (Nat.succ_pos _) /-- Linear cost bound: `gcd a b` performs at most `b` `mod` operations. -/"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "name": "gcd_cost_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 47
+      },
+      "start": {
+        "column": 1,
+        "line": 47
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+    "type": "theorem gcd_cost_le (a b : \u2115) : (gcd a b).cost \u2264 b"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "name": "gcd_cost_log_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+    "type": "theorem gcd_cost_log_le (a b : \u2115) : (gcd a b).cost \u2264 2 * Nat.log 2 b + 1"
+  }
+]

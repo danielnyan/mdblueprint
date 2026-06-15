@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "Core",
+    "target": "PayoffVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "Core",
+    "target": "IsEfficient"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "Core",
+    "target": "coalitionPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "core_subset_imputations",
+    "target": "Core"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "core_subset_imputations",
+    "target": "IsImputation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "source": "core_subset_imputations",
+    "target": "coalitionPayoff"
+  }
+]

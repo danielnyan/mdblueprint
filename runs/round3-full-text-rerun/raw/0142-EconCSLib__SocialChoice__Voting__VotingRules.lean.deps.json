@@ -1,0 +1,314 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "margin_pos",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "CondorcetWinner",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "CondorcetWinner",
+    "target": "MajorityPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "BallotPrefers.total_of_ne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "Prefers.total_of_ne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "rank_lt_of_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_injective",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "MajorityPrefers",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "MajorityPrefers",
+    "target": "margin_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_iff",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_iff",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_iff",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_iff",
+    "target": "rank_lt_of_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "HasCondorcetWinner",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "HasCondorcetWinner",
+    "target": "CondorcetWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "MajorityPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "copeland_isTotal",
+    "target": "margin_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "scoringWinners_nonempty",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "scoringRule_isTotal",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "scoringRule_isTotal",
+    "target": "scoringWinners_nonempty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "plurality_isTotal",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "plurality_isTotal",
+    "target": "scoringRule_isTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "plurality_isTotal",
+    "target": "pluralityScore"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "margin_self",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "margin_self",
+    "target": "Prefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "scoringRule_isTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "vetoScore"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "MajorityPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "veto_isTotal",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_of_lt",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "condorcet_paradox_possible",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "condorcet_paradox_possible",
+    "target": "HasCondorcetWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "position_le_card",
+    "target": "rank_lt_card"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "margin_skew",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "borda_isTotal",
+    "target": "IsTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "borda_isTotal",
+    "target": "scoringRule_isTotal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "borda_isTotal",
+    "target": "bordaScore"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "CondorcetConsistency",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "CondorcetConsistency",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "CondorcetConsistency",
+    "target": "CondorcetWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "rank_lt_card",
+    "target": "BallotPrefers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "vetoScore",
+    "target": "VotingRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "vetoScore",
+    "target": "pluralityScore"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "source": "vetoScore",
+    "target": "bordaScore"
+  }
+]

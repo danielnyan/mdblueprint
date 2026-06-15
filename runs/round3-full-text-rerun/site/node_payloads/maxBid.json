@@ -1,0 +1,72 @@
+{
+  "id": "maxBid",
+  "title": "maxBid",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/maxBid.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>maxBid</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] def maxBid : V</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "argmaxBid-eq-maxBid",
+      "title": "argmaxBid_eq_maxBid",
+      "href": "misc/argmaxBid-eq-maxBid.html"
+    },
+    {
+      "id": "clearingPrice-eq-max-reserve-excluding-of-allocation-eq-some",
+      "title": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+      "href": "misc/clearingPrice-eq-max-reserve-excluding-of-allocation-eq-some.html"
+    },
+    {
+      "id": "exists-maxBid",
+      "title": "exists_maxBid",
+      "href": "misc/exists-maxBid.html"
+    },
+    {
+      "id": "maxBidExcluding-eq-maxBid-of-not-argmax",
+      "title": "maxBidExcluding_eq_maxBid_of_not_argmax",
+      "href": "misc/maxBidExcluding-eq-maxBid-of-not-argmax.html"
+    },
+    {
+      "id": "maxBidExcluding-le-argmaxBid-bid",
+      "title": "maxBidExcluding_le_argmaxBid_bid",
+      "href": "misc/maxBidExcluding-le-argmaxBid-bid.html"
+    },
+    {
+      "id": "maxBidExcluding-le-maxBid",
+      "title": "maxBidExcluding_le_maxBid",
+      "href": "misc/maxBidExcluding-le-maxBid.html"
+    },
+    {
+      "id": "secondPrice-le-bid-winner",
+      "title": "secondPrice_le_bid_winner",
+      "href": "misc/secondPrice-le-bid-winner.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "maxBid",
+      "display_name": "maxBid",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

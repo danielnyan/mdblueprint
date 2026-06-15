@@ -1,0 +1,113 @@
+{
+  "id": "BallotPrefers",
+  "title": "BallotPrefers",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BallotPrefers.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BallotPrefers</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BallotPrefers (r : LinearOrder A) (a b : A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ballotLT</li>\n<li>ballotLE</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ballotLT",
+      "title": "ballotLT",
+      "href": "misc/ballotLT.html"
+    },
+    {
+      "id": "ballotLE",
+      "title": "ballotLE",
+      "href": "misc/ballotLE.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BallotBottom",
+      "title": "BallotBottom",
+      "href": "misc/BallotBottom.html"
+    },
+    {
+      "id": "BallotPrefers-asymm",
+      "title": "BallotPrefers.asymm",
+      "href": "misc/BallotPrefers-asymm.html"
+    },
+    {
+      "id": "BallotPrefers-ballotFromInjective",
+      "title": "BallotPrefers_ballotFromInjective",
+      "href": "misc/BallotPrefers-ballotFromInjective.html"
+    },
+    {
+      "id": "BallotPrefers-total-of-ne",
+      "title": "BallotPrefers.total_of_ne",
+      "href": "misc/BallotPrefers-total-of-ne.html"
+    },
+    {
+      "id": "BallotTop",
+      "title": "BallotTop",
+      "href": "misc/BallotTop.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    },
+    {
+      "id": "Prefers-asymm",
+      "title": "Prefers.asymm",
+      "href": "misc/Prefers-asymm.html"
+    },
+    {
+      "id": "Prefers-total-of-ne",
+      "title": "Prefers.total_of_ne",
+      "href": "misc/Prefers-total-of-ne.html"
+    },
+    {
+      "id": "iia-strict",
+      "title": "iia_strict",
+      "href": "misc/iia-strict.html"
+    },
+    {
+      "id": "rank-injective",
+      "title": "rank_injective",
+      "href": "misc/rank-injective.html"
+    },
+    {
+      "id": "rank-lt-card",
+      "title": "rank_lt_card",
+      "href": "misc/rank-lt-card.html"
+    },
+    {
+      "id": "rank-lt-iff",
+      "title": "rank_lt_iff",
+      "href": "misc/rank-lt-iff.html"
+    },
+    {
+      "id": "rank-lt-of-lt",
+      "title": "rank_lt_of_lt",
+      "href": "misc/rank-lt-of-lt.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BallotPrefers",
+      "display_name": "BallotPrefers",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

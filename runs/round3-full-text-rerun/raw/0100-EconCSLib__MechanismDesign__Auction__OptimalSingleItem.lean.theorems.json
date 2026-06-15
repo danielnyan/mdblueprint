@@ -1,0 +1,3733 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsRegular (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "measurable_virtualValue_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem measurable_virtualValue_of_isRegular (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (i : I) : Measurable (A.virtualValue i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsReserveThreshold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsReserveThreshold (A : BayesianSingleItemAuction I) (i : I) (reserve : \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualValue_nonneg_of_isReserveThreshold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualValue_nonneg_of_isReserveThreshold (A : BayesianSingleItemAuction I) {i : I} {reserve v : \u211d} (hreserve : A.IsReserveThreshold i reserve) (hv : reserve \u2264 v) : 0 \u2264 A.virtualValue i v"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualValue_nonpos_of_lt_isReserveThreshold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualValue_nonpos_of_lt_isReserveThreshold (A : BayesianSingleItemAuction I) {i : I} {reserve v : \u211d} (hreserve : A.IsReserveThreshold i reserve) (hv : v < reserve) : A.virtualValue i v \u2264 0"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isReserveThreshold_of_isRegular_of_virtualValue_eq_zero (A : BayesianSingleItemAuction I) (hA : A.IsRegular) {i : I} {reserve : \u211d} (hzero : A.virtualValue i reserve = 0) : A.IsReserveThreshold i reserve"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IntegrableVirtualSurplus",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 131
+      },
+      "start": {
+        "column": 1,
+        "line": 131
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IntegrableVirtualSurplus [Fintype I] (A : BayesianSingleItemAuction I) (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedVirtualSurplus_le_of_forall_virtualSurplus_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 136
+      },
+      "start": {
+        "column": 1,
+        "line": 136
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedVirtualSurplus_le_of_forall_virtualSurplus_le [Fintype I] (A : BayesianSingleItemAuction I) {x y : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx_int : A.IntegrableVirtualSurplus x) (hy_int : A.IntegrableVirtualSurplus y) (hxy : \u2200 t, A.virtualSurplus x t \u2264 A.virtualSurplus y t) : A.expectedVirtualSurplus x \u2264 A.expectedVirtualSurplus y"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsSingleItemAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsSingleItemAllocationRule [Fintype I] (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsSingleItemAllocationRule.le_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 150
+      },
+      "start": {
+        "column": 1,
+        "line": 150
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsSingleItemAllocationRule.le_one [Fintype I] [DecidableEq I] {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsSingleItemAllocationRule x) (b : I \u2192 \u211d) (i : I) : x b i \u2264 1"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule",
+      "IsAllocFeasible",
+      "IsSingleItemAllocationRule.le_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 159
+      },
+      "start": {
+        "column": 1,
+        "line": 159
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem withPayment_isAllocFeasible_of_isSingleItemAllocationRule [Fintype I] [DecidableEq I] {x p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsSingleItemAllocationRule x) : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsVirtualSurplusOptimalAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 168
+      },
+      "start": {
+        "column": 1,
+        "line": 168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsVirtualSurplusOptimalAllocationRule [Fintype I] (A : BayesianSingleItemAuction I) (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "bid_le_maxBid",
+      "toDirectBayesianMechanismWithTransfers",
+      "DirectBayesianMechanismWithTransfers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 189
+      },
+      "start": {
+        "column": 1,
+        "line": 189
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : A.virtualSurplusMaximizingWinner b = i \u2194 \u2200 j, A.virtualScore b j \u2264 A.virtualScore b i"
+  },
+  {
+    "dependencies": [
+      "bid_le_maxBid"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingWinner_virtualValue_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 363
+      },
+      "start": {
+        "column": 1,
+        "line": 363
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingWinner_virtualValue_ge [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : A.virtualValue i (b i) \u2264 A.winningVirtualValue b"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 436
+      },
+      "start": {
+        "column": 1,
+        "line": 436
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplus_le_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} {b : I \u2192 \u211d} (hx_nonneg : \u2200 i, 0 \u2264 x b i) (hx_capacity : (\u2211 i, x b i) \u2264 1) : A.virtualSurplus x b \u2264 A.virtualSurplus A.virtualSurplusMaximizingAllocationRule b"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_winnerIndicator_of_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 457
+      },
+      "start": {
+        "column": 1,
+        "line": 457
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_winnerIndicator_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (hpos : 0 < A.winningVirtualValue b) : A.virtualSurplusMaximizingAllocationRule b = fun i => if i = A.virtualSurplusMaximizingWinner b then (1 : \u211d) else 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 466
+      },
+      "start": {
+        "column": 1,
+        "line": 466
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (hpos : 0 < A.winningVirtualValue b) : A.virtualSurplusMaximizingAllocationRule b (A.virtualSurplusMaximizingWinner b) = 1"
+  },
+  {
+    "dependencies": [
+      "virtualSurplusMaximizingWinner_virtualValue_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "winningVirtualValue_pos_iff_exists_virtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 474
+      },
+      "start": {
+        "column": 1,
+        "line": 474
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem winningVirtualValue_pos_iff_exists_virtualValue_pos [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : 0 < A.winningVirtualValue b \u2194 \u2203 i, 0 < A.virtualValue i (b i)"
+  },
+  {
+    "dependencies": [
+      "virtualSurplusMaximizingWinner_virtualValue_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 485
+      },
+      "start": {
+        "column": 1,
+        "line": 485
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : A.winningVirtualValue b \u2264 0 \u2194 \u2200 i, A.virtualValue i (b i) \u2264 0"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 496
+      },
+      "start": {
+        "column": 1,
+        "line": 496
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_one_iff [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : A.virtualSurplusMaximizingAllocationRule b i = 1 \u2194 0 < A.winningVirtualValue b \u2227 i = A.virtualSurplusMaximizingWinner b"
+  },
+  {
+    "dependencies": [
+      "virtualSurplusMaximizingAllocationRule_eq_one_iff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 518
+      },
+      "start": {
+        "column": 1,
+        "line": 518
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I \u2192 \u211d} {i : I} (hi : A.virtualSurplusMaximizingAllocationRule b i = 1) : 0 < A.virtualValue i (b i)"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one",
+      "virtualValue_nonpos_of_lt_isReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 528
+      },
+      "start": {
+        "column": 1,
+        "line": 528
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I \u2192 \u211d} {i : I} {reserve : \u211d} (hreserve : A.IsReserveThreshold i reserve) (hi : A.virtualSurplusMaximizingAllocationRule b i = 1) : reserve \u2264 b i"
+  },
+  {
+    "dependencies": [
+      "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one",
+      "winningVirtualValue_pos_iff_exists_virtualValue_pos",
+      "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 541
+      },
+      "start": {
+        "column": 1,
+        "line": 541
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : (\u2203 i, A.virtualSurplusMaximizingAllocationRule b i = 1) \u2194 \u2203 i, 0 < A.virtualValue i (b i)"
+  },
+  {
+    "dependencies": [
+      "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos",
+      "winningVirtualValue_pos_iff_exists_virtualValue_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 556
+      },
+      "start": {
+        "column": 1,
+        "line": 556
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : (\u2203 i, A.virtualSurplusMaximizingAllocationRule b i = 1) \u2194 0 < A.winningVirtualValue b"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "exists_reserveThreshold_le_bid_of_exists_virtualSurplusMaximizingAllocationRule_eq_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 565
+      },
+      "start": {
+        "column": 1,
+        "line": 565
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem exists_reserveThreshold_le_bid_of_exists_virtualSurplusMaximizingAllocationRule_eq_one [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hsale : \u2203 i, A.virtualSurplusMaximizingAllocationRule b i = 1) : \u2203 i, reserve i \u2264 b i"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+      "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 576
+      },
+      "start": {
+        "column": 1,
+        "line": 576
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem reserveThreshold_le_winner_bid_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hpos : 0 < A.winningVirtualValue b) : reserve (A.virtualSurplusMaximizingWinner b) \u2264 b (A.virtualSurplusMaximizingWinner b)"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "exists_reserveThreshold_le_bid_of_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 587
+      },
+      "start": {
+        "column": 1,
+        "line": 587
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem exists_reserveThreshold_le_bid_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hpos : 0 < A.winningVirtualValue b) : \u2203 i, reserve i \u2264 b i"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos",
+      "virtualValue_nonpos_of_lt_isReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 597
+      },
+      "start": {
+        "column": 1,
+        "line": 597
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem winningVirtualValue_nonpos_of_forall_lt_reserveThreshold [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hb : \u2200 i, b i < reserve i) : A.winningVirtualValue b \u2264 0"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 607
+      },
+      "start": {
+        "column": 1,
+        "line": 607
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem not_forall_lt_reserveThreshold_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hpos : 0 < A.winningVirtualValue b) : \u00ac \u2200 i, b i < reserve i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 617
+      },
+      "start": {
+        "column": 1,
+        "line": 617
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I \u2192 \u211d} (hnonpos : \u2200 i, A.virtualValue i (b i) \u2264 0) : A.virtualSurplusMaximizingAllocationRule b = fun _ => (0 : \u211d)"
+  },
+  {
+    "dependencies": [
+      "IsReserveThreshold",
+      "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos",
+      "virtualValue_nonpos_of_lt_isReserveThreshold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 628
+      },
+      "start": {
+        "column": 1,
+        "line": 628
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I \u2192 \u211d} (hreserve : \u2200 i, A.IsReserveThreshold i (reserve i)) (hb : \u2200 i, b i < reserve i) : A.virtualSurplusMaximizingAllocationRule b = fun _ => (0 : \u211d)"
+  },
+  {
+    "dependencies": [
+      "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos",
+      "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 638
+      },
+      "start": {
+        "column": 1,
+        "line": 638
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I \u2192 \u211d} : (A.virtualSurplusMaximizingAllocationRule b = fun _ => (0 : \u211d)) \u2194 \u2200 i, A.virtualValue i (b i) \u2264 0"
+  },
+  {
+    "dependencies": [
+      "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_winningVirtualValue_nonpos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 658
+      },
+      "start": {
+        "column": 1,
+        "line": 658
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_eq_zero_iff_winningVirtualValue_nonpos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I \u2192 \u211d} : (A.virtualSurplusMaximizingAllocationRule b = fun _ => (0 : \u211d)) \u2194 A.winningVirtualValue b \u2264 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplus_virtualSurplusMaximizingAllocationRule_eq_max_winningVirtualValue_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 671
+      },
+      "start": {
+        "column": 1,
+        "line": 671
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplus_virtualSurplusMaximizingAllocationRule_eq_max_winningVirtualValue_zero [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : A.virtualSurplus A.virtualSurplusMaximizingAllocationRule b = max (A.winningVirtualValue b) 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 690
+      },
+      "start": {
+        "column": 1,
+        "line": 690
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "lemma virtualSurplusMaximizingAllocationRule_nonneg [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : 0 \u2264 A.virtualSurplusMaximizingAllocationRule b i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_le_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 700
+      },
+      "start": {
+        "column": 1,
+        "line": 700
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "lemma virtualSurplusMaximizingAllocationRule_le_one [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : A.virtualSurplusMaximizingAllocationRule b i \u2264 1"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 711
+      },
+      "start": {
+        "column": 1,
+        "line": 711
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "lemma virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) : (\u2211 i, A.virtualSurplusMaximizingAllocationRule b i) \u2264 1"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule",
+      "virtualSurplusMaximizingAllocationRule_nonneg",
+      "virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 723
+      },
+      "start": {
+        "column": 1,
+        "line": 723
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : IsSingleItemAllocationRule A.virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "dependencies": [
+      "IsAllocFeasible",
+      "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+      "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingMechanism_isAllocFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 731
+      },
+      "start": {
+        "column": 1,
+        "line": 731
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingMechanism_isAllocFeasible [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : (A.virtualSurplusMaximizingMechanism).IsAllocFeasible"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "virtualSurplusMaximizingMechanism_isAllocFeasible",
+      "virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 741
+      },
+      "start": {
+        "column": 1,
+        "line": 741
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isFeasible [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : (A.virtualSurplusMaximizingAuction).IsFeasible"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsSingleItemAllocationRule",
+      "Profile.ext",
+      "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+      "winningVirtualValue_pos_iff_exists_virtualValue_pos",
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsFeasible.isSingleItemAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 752
+      },
+      "start": {
+        "column": 1,
+        "line": 752
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsFeasible.isSingleItemAllocationRule [Fintype I] {B : BayesianSingleItemAuction I} (hB : B.IsFeasible) : IsSingleItemAllocationRule B.allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+      "virtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 991
+      },
+      "start": {
+        "column": 1,
+        "line": 991
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : A.IsVirtualSurplusOptimalAllocationRule A.virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1004
+      },
+      "start": {
+        "column": 1,
+        "line": 1004
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : A.IsVirtualSurplusOptimalAllocationRule (A.virtualSurplusMaximizingMechanism).allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1014
+      },
+      "start": {
+        "column": 1,
+        "line": 1014
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : A.IsVirtualSurplusOptimalAllocationRule (A.virtualSurplusMaximizingAuction).allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "expectedVirtualSurplus_le_of_forall_virtualSurplus_le",
+      "virtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1024
+      },
+      "start": {
+        "column": 1,
+        "line": 1024
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsSingleItemAllocationRule x) (hx_int : A.IntegrableVirtualSurplus x) (hopt_int : A.IntegrableVirtualSurplus A.virtualSurplusMaximizingAllocationRule) : A.expectedVirtualSurplus x \u2264 A.expectedVirtualSurplus A.virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "dependencies": [
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1038
+      },
+      "start": {
+        "column": 1,
+        "line": 1038
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsSingleItemAllocationRule x) (hx_int : A.IntegrableVirtualSurplus x) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) : A.expectedVirtualSurplus x \u2264 A.expectedVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1050
+      },
+      "start": {
+        "column": 1,
+        "line": 1050
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (hB : B.IsFeasible) (hB_int : A.IntegrableVirtualSurplus B.allocationRule) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) : A.expectedVirtualSurplus B.allocationRule \u2264 A.expectedVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule"
+  },
+  {
+    "dependencies": [
+      "ZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1067
+      },
+      "start": {
+        "column": 1,
+        "line": 1067
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsZeroNormalized [DecidableEq I] (B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsZeroNormalized",
+      "OpponentTypeProfile",
+      "ZeroNormalized",
+      "interimExpectedPayment_eq_integral_interimPaymentIntegrand"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "interimExpectedPayment_zero_of_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1072
+      },
+      "start": {
+        "column": 1,
+        "line": 1072
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem interimExpectedPayment_zero_of_isZeroNormalized [DecidableEq I] (B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (i : I) : B.interimExpectedPayment i 0 = 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroNormalized",
+      "HasInterimEnvelopeFormula",
+      "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+      "interimExpectedPayment_zero_of_isZeroNormalized",
+      "IsRegular",
+      "bid_le_maxBid",
+      "eq_argmaxBid_of_strict_max",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1088
+      },
+      "start": {
+        "column": 1,
+        "line": 1088
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula [DecidableEq I] (B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (henv : B.HasInterimEnvelopeFormula) (hint_nonneg : B.HasNonnegativeInterimAllocationIntegralOnSupport) : B.IsIndividuallyRationalOnSupport"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsMonotone",
+      "virtualSurplusMaximizingAllocationRule_nonneg",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1171
+      },
+      "start": {
+        "column": 1,
+        "line": 1171
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : SingleParameterMechanism.IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsDSIC",
+      "isDSIC",
+      "withMyersonPayment_isDSIC_of_isMonotone",
+      "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1213
+      },
+      "start": {
+        "column": 1,
+        "line": 1213
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingMechanism_isDSIC_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingMechanism).IsDSIC"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsDSIC",
+      "isDSIC",
+      "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1225
+      },
+      "start": {
+        "column": 1,
+        "line": 1225
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isDSIC_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingAuction).IsDSIC"
+  },
+  {
+    "dependencies": [
+      "virtualSurplusMaximizingAllocationRule_nonneg",
+      "virtualSurplusMaximizingAllocationRule_le_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "norm_virtualSurplusMaximizingPaymentRule_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1253
+      },
+      "start": {
+        "column": 1,
+        "line": 1253
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem norm_virtualSurplusMaximizingPaymentRule_le [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I \u2192 \u211d) (i : I) : \u2016A.virtualSurplusMaximizingPaymentRule b i\u2016 \u2264 2 * \u2016b i\u2016"
+  },
+  {
+    "dependencies": [
+      "norm_virtualSurplusMaximizingPaymentRule_le"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1302
+      },
+      "start": {
+        "column": 1,
+        "line": 1302
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (i : I) (z_i : \u211d) : \u2200\u1d50 t \u2202A.opponentPrior i, \u2016A.virtualSurplusMaximizingAuction.interimPaymentIntegrand i z_i t\u2016 \u2264 2 * \u2016z_i\u2016"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimObjects",
+      "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1317
+      },
+      "start": {
+        "column": 1,
+        "line": 1317
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (halloc_meas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.virtualSurplusMaximizingAuction.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) (hpay_meas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.virtualSurplusMaximizingAuction.interimPaymentIntegrand i z_i t) (A.opponentPrior i)) : A.virtualSurplusMaximizingAuction.HasIntegrableInterimObjects"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "HasIntegrableInterimObjects",
+      "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+      "measurable_virtualValue_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1357
+      },
+      "start": {
+        "column": 1,
+        "line": 1357
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : A.virtualSurplusMaximizingAuction.HasIntegrableInterimObjects"
+  },
+  {
+    "dependencies": [
+      "ZeroNormalized",
+      "myersonPayment_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1367
+      },
+      "start": {
+        "column": 1,
+        "line": 1367
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingPaymentRule_zeroNormalized [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : SingleParameterMechanism.ZeroNormalized A.virtualSurplusMaximizingPaymentRule"
+  },
+  {
+    "dependencies": [
+      "IsZeroNormalized",
+      "virtualSurplusMaximizingPaymentRule_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1375
+      },
+      "start": {
+        "column": 1,
+        "line": 1375
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isZeroNormalized [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) : (A.virtualSurplusMaximizingAuction).IsZeroNormalized"
+  },
+  {
+    "dependencies": [
+      "quasiLinearUtility",
+      "withMyersonPayment_quasiLinearUtility_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingMechanism_quasiLinearUtility_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1383
+      },
+      "start": {
+        "column": 1,
+        "line": 1383
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingMechanism_quasiLinearUtility_eq [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (v b : I \u2192 \u211d) (i : I) : (A.virtualSurplusMaximizingMechanism).quasiLinearUtility b v i = (v i - b i) * A.virtualSurplusMaximizingAllocationRule b i + \u222b z in 0..b i, A.virtualSurplusMaximizingAllocationRule (Function.update b i z) i"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsImplementable",
+      "isImplementable_of_isMonotone",
+      "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1393
+      },
+      "start": {
+        "column": 1,
+        "line": 1393
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : SingleParameterMechanism.IsImplementable A.virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "ZeroNormalized",
+      "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1403
+      },
+      "start": {
+        "column": 1,
+        "line": 1403
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hdsic : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "ZeroNormalized",
+      "IsDSIC",
+      "isDSIC",
+      "existsUnique_zeroNormalized_payment_of_isMonotone",
+      "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1415
+      },
+      "start": {
+        "column": 1,
+        "line": 1415
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : \u2203! p : (I \u2192 \u211d) \u2192 I \u2192 \u211d, SingleParameterMechanism.ZeroNormalized p \u2227 ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "IsDSIC",
+      "isDSIC",
+      "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+      "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1432
+      },
+      "start": {
+        "column": 1,
+        "line": 1432
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : A.IsVirtualSurplusOptimalAllocationRule (A.virtualSurplusMaximizingMechanism).allocationRule \u2227 (A.virtualSurplusMaximizingMechanism).IsDSIC"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsDSIC",
+      "isDSIC",
+      "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "virtualSurplusMaximizingAuction_isDSIC_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1445
+      },
+      "start": {
+        "column": 1,
+        "line": 1445
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : A.IsVirtualSurplusOptimalAllocationRule (A.virtualSurplusMaximizingAuction).allocationRule \u2227 (A.virtualSurplusMaximizingAuction).IsFeasible \u2227 (A.virtualSurplusMaximizingAuction).IsDSIC"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsOnTypeSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1463
+      },
+      "start": {
+        "column": 1,
+        "line": 1463
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsOnTypeSupport (A : BayesianSingleItemAuction I) (i : I) (v : \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsOnTypeSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsOnTypeProfileSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1467
+      },
+      "start": {
+        "column": 1,
+        "line": 1467
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsOnTypeProfileSupport (A : BayesianSingleItemAuction I) (t : I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasPositiveDensityOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1471
+      },
+      "start": {
+        "column": 1,
+        "line": 1471
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasPositiveDensityOnSupport (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasNonnegativeDensityOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1475
+      },
+      "start": {
+        "column": 1,
+        "line": 1475
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasNonnegativeDensityOnSupport (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasPositiveJointDensityAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1479
+      },
+      "start": {
+        "column": 1,
+        "line": 1479
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasPositiveJointDensityAt [Fintype I] (A : BayesianSingleItemAuction I) (t : I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsOnTypeProfileInterior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1484
+      },
+      "start": {
+        "column": 1,
+        "line": 1484
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsOnTypeProfileInterior (A : BayesianSingleItemAuction I) (t : I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsOnTypeSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isOnTypeSupport_left",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1487
+      },
+      "start": {
+        "column": 1,
+        "line": 1487
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isOnTypeSupport_left (A : BayesianSingleItemAuction I) {i : I} {v : \u211d} (hv : A.IsOnTypeSupport i v) : 0 \u2264 v"
+  },
+  {
+    "dependencies": [
+      "IsOnTypeSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isOnTypeSupport_right",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1493
+      },
+      "start": {
+        "column": 1,
+        "line": 1493
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isOnTypeSupport_right (A : BayesianSingleItemAuction I) {i : I} {v : \u211d} (hv : A.IsOnTypeSupport i v) : v \u2264 A.typeData.omega i"
+  },
+  {
+    "dependencies": [
+      "IsOnTypeProfileSupport",
+      "IsOnTypeSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isOnTypeProfileSupport_apply",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1499
+      },
+      "start": {
+        "column": 1,
+        "line": 1499
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isOnTypeProfileSupport_apply (A : BayesianSingleItemAuction I) {t : I \u2192 \u211d} (ht : A.IsOnTypeProfileSupport t) (i : I) : A.IsOnTypeSupport i (t i)"
+  },
+  {
+    "dependencies": [
+      "IsOnTypeProfileInterior",
+      "IsOnTypeProfileSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isOnTypeProfileInterior_isOnTypeProfileSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1505
+      },
+      "start": {
+        "column": 1,
+        "line": 1505
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isOnTypeProfileInterior_isOnTypeProfileSupport (A : BayesianSingleItemAuction I) {t : I \u2192 \u211d} (ht : A.IsOnTypeProfileInterior t) : A.IsOnTypeProfileSupport t"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_pos_of_hasPositiveDensityOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1512
+      },
+      "start": {
+        "column": 1,
+        "line": 1512
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_pos_of_hasPositiveDensityOnSupport (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) {i : I} {v : \u211d} (h0 : 0 < v) (homega : v < A.typeData.omega i) : 0 < A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "HasNonnegativeDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_nonneg_of_hasNonnegativeDensityOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1519
+      },
+      "start": {
+        "column": 1,
+        "line": 1519
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_nonneg_of_hasNonnegativeDensityOnSupport (A : BayesianSingleItemAuction I) (hA : A.HasNonnegativeDensityOnSupport) {i : I} {v : \u211d} (h0 : 0 \u2264 v) (homega : v \u2264 A.typeData.omega i) : 0 \u2264 A.typeDensity i v"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_measurable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1526
+      },
+      "start": {
+        "column": 1,
+        "line": 1526
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_measurable (A : BayesianSingleItemAuction I) (i : I) : Measurable (A.typeDensity i)"
+  },
+  {
+    "dependencies": [
+      "typeDensity_measurable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_ennreal_ofReal_aemeasurable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1530
+      },
+      "start": {
+        "column": 1,
+        "line": 1530
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_ennreal_ofReal_aemeasurable (A : BayesianSingleItemAuction I) (i : I) : AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport",
+      "typeDensity_pos_of_hasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1537
+      },
+      "start": {
+        "column": 1,
+        "line": 1537
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) (i : I) : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1550
+      },
+      "start": {
+        "column": 1,
+        "line": 1550
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae (A : BayesianSingleItemAuction I) (i : I) (hAC : AbsolutelyContinuousOnInterval (A.typeData.cdf i).cdf 0 (A.typeData.omega i)) (hdens_ae : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) : IsProbabilityMeasure (A.typeMeasure i)"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport",
+      "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae",
+      "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1589
+      },
+      "start": {
+        "column": 1,
+        "line": 1589
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity (A : BayesianSingleItemAuction I) (hdens : A.HasPositiveDensityOnSupport) (i : I) (hAC : AbsolutelyContinuousOnInterval (A.typeData.cdf i).cdf 0 (A.typeData.omega i)) : IsProbabilityMeasure (A.typeMeasure i)"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport",
+      "IsOnTypeProfileInterior",
+      "typeDensity_pos_of_hasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1599
+      },
+      "start": {
+        "column": 1,
+        "line": 1599
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) {t : I \u2192 \u211d} (ht : A.IsOnTypeProfileInterior t) (i : I) : 0 < A.typeDensity i (t i)"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport",
+      "IsOnTypeProfileInterior",
+      "HasPositiveJointDensityAt",
+      "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1606
+      },
+      "start": {
+        "column": 1,
+        "line": 1606
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior [Fintype I] (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) {t : I \u2192 \u211d} (ht : A.IsOnTypeProfileInterior t) : A.HasPositiveJointDensityAt t"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "HasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1616
+      },
+      "start": {
+        "column": 1,
+        "line": 1616
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem survivalIntegral_eq_intervalIntegral_mul_deriv {F Q : \u211d \u2192 \u211d} {\u03c9 : \u211d} (h\u03c9 : 0 \u2264 \u03c9) (hF : AbsolutelyContinuousOnInterval F 0 \u03c9) (hF0 : F 0 = 0) (hF\u03c9 : F \u03c9 = 1) (hQ : IntervalIntegrable Q volume 0 \u03c9) : (\u222b v in 0..\u03c9, Q v * (1 - F v)) = \u222b v in 0..\u03c9, (\u222b z in 0..v, Q z) * deriv F v"
+  },
+  {
+    "dependencies": [
+      "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1694
+      },
+      "start": {
+        "column": 1,
+        "line": 1694
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae {A : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusEnvironmentAssumptions) (i : I) : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1702
+      },
+      "start": {
+        "column": 1,
+        "line": 1702
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure {A : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusEnvironmentAssumptions) (i : I) : IsProbabilityMeasure (A.typeMeasure i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "envelopeVirtualSurplusAnalyticAssumptions_of_environment",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1709
+      },
+      "start": {
+        "column": 1,
+        "line": 1709
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem envelopeVirtualSurplusAnalyticAssumptions_of_environment {A B : BayesianSingleItemAuction I} (henv : A.EnvelopeVirtualSurplusEnvironmentAssumptions) (hQ : \u2200 i : I, IntervalIntegrable (B.interimAllocProb i) volume 0 (A.typeData.omega i)) (hQsurv : \u2200 i : I, IntervalIntegrable (fun v => B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v)) volume 0 (A.typeData.omega i)) (hvirt : \u2200 i : I, IntervalIntegrable (fun v => B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v) volume 0 (A.typeData.omega i)) : A.EnvelopeVirtualSurplusAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport",
+      "typeDensity_pos_of_hasPositiveDensityOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasPositiveDensityOnSupport.nonzero_on_support",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1731
+      },
+      "start": {
+        "column": 1,
+        "line": 1731
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem HasPositiveDensityOnSupport.nonzero_on_support (A : BayesianSingleItemAuction I) (hA : A.HasPositiveDensityOnSupport) {i : I} {v : \u211d} (h0 : 0 < v) (homega : v < A.typeData.omega i) : A.typeDensity i v \u2260 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1738
+      },
+      "start": {
+        "column": 1,
+        "line": 1738
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : IntervalIntegrable (B.interimAllocProb i) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "HasPositiveDensityOnSupport.nonzero_on_support"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1744
+      },
+      "start": {
+        "column": 1,
+        "line": 1744
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : Set.EqOn (fun v => (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) (fun v => B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v + B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v) - (\u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) (Set.uIoc 0 (A.typeData.omega i))"
+  },
+  {
+    "dependencies": [
+      "EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1775
+      },
+      "start": {
+        "column": 1,
+        "line": 1775
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : IntervalIntegrable (fun v => (\u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "survivalIntegral_eq_intervalIntegral_mul_deriv",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1796
+      },
+      "start": {
+        "column": 1,
+        "line": 1796
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : (\u222b v in 0..A.typeData.omega i, B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v)) = \u222b v in 0..A.typeData.omega i, (\u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1814
+      },
+      "start": {
+        "column": 1,
+        "line": 1814
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : IntervalIntegrable (fun v => (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasExpectedRevenueVirtualSurplusIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1854
+      },
+      "start": {
+        "column": 1,
+        "line": 1854
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasExpectedRevenueVirtualSurplusIdentity [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasExpectedRevenueVirtualSurplusUpperBound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1860
+      },
+      "start": {
+        "column": 1,
+        "line": 1860
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasExpectedRevenueVirtualSurplusUpperBound [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1866
+      },
+      "start": {
+        "column": 1,
+        "line": 1866
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasMyersonPaymentRevenueVirtualSurplusIdentity [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasExpectedVirtualSurplusInterimIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1872
+      },
+      "start": {
+        "column": 1,
+        "line": 1872
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasExpectedVirtualSurplusInterimIdentity [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "InterimFubiniAnalyticAssumptions.toPaymentInterimFubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1894
+      },
+      "start": {
+        "column": 1,
+        "line": 1894
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem InterimFubiniAnalyticAssumptions.toPaymentInterimFubini [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.InterimFubiniAnalyticAssumptions B) : A.PaymentInterimFubiniAssumptions B"
+  },
+  {
+    "dependencies": [
+      "PaymentInterimFubiniAssumptions.expectedPaymentRevenueIntegrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "InterimFubiniAnalyticAssumptions.expectedPaymentRevenueIntegrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1901
+      },
+      "start": {
+        "column": 1,
+        "line": 1901
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem InterimFubiniAnalyticAssumptions.expectedPaymentRevenueIntegrable [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.InterimFubiniAnalyticAssumptions B) : Integrable (fun t => \u2211 i, B.paymentRule t i) A.prior"
+  },
+  {
+    "dependencies": [
+      "IntegrableVirtualSurplus"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1907
+      },
+      "start": {
+        "column": 1,
+        "line": 1907
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem InterimFubiniAnalyticAssumptions.integrableVirtualSurplus [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.InterimFubiniAnalyticAssumptions B) : A.IntegrableVirtualSurplus B.allocationRule"
+  },
+  {
+    "dependencies": [
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1914
+      },
+      "start": {
+        "column": 1,
+        "line": 1914
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.InterimFubiniAnalyticAssumptions B) : A.HasExpectedRevenueInterimPaymentIdentity B"
+  },
+  {
+    "dependencies": [
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "typeDensity_measurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1920
+      },
+      "start": {
+        "column": 1,
+        "line": 1920
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.InterimFubiniAnalyticAssumptions B) : A.HasExpectedVirtualSurplusInterimIdentity B"
+  },
+  {
+    "dependencies": [
+      "typeDensity_measurable",
+      "typeDensity_ennreal_ofReal_aemeasurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1965
+      },
+      "start": {
+        "column": 1,
+        "line": 1965
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini [Fintype I] {A B : BayesianSingleItemAuction I} (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hpay_int : \u2200 i : I, Integrable (fun t => B.paymentRule t i) A.prior) (hvs_int : \u2200 i : I, Integrable (fun t => B.allocationRule t i * A.virtualValue i (t i)) A.prior) (hpay_fubini : \u2200 i : I, (\u222b t, B.paymentRule t i \u2202A.prior) = \u222b v, B.interimExpectedPayment i v \u2202A.typeMeasure i) (hvs_fubini : \u2200 i : I, (\u222b t, B.allocationRule t i * A.virtualValue i (t i) \u2202A.prior) = \u222b v, B.interimAllocProb i v * A.virtualValue i v \u2202A.typeMeasure i) : A.TypeMeasureInterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "integral_typeMeasure_eq_intervalIntegral_mul",
+      "typeDensity_measurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1991
+      },
+      "start": {
+        "column": 1,
+        "line": 1991
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.TypeMeasureInterimFubiniAnalyticAssumptions B) : A.InterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasInterimPaymentVirtualSurplusUpperBound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2028
+      },
+      "start": {
+        "column": 1,
+        "line": 2028
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasInterimPaymentVirtualSurplusUpperBound [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasInterimPaymentEnvelopeUpperBound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2036
+      },
+      "start": {
+        "column": 1,
+        "line": 2036
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasInterimPaymentEnvelopeUpperBound [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "HasEnvelopeVirtualSurplusUpperBound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2045
+      },
+      "start": {
+        "column": 1,
+        "line": 2045
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def HasEnvelopeVirtualSurplusUpperBound [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2054
+      },
+      "start": {
+        "column": 1,
+        "line": 2054
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : (\u222b v in 0..A.typeData.omega i, (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) = \u222b v in 0..A.typeData.omega i, B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "HasEnvelopeVirtualSurplusUpperBound",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2099
+      },
+      "start": {
+        "column": 1,
+        "line": 2099
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions [Fintype I] (A B : BayesianSingleItemAuction I) (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) : A.HasEnvelopeVirtualSurplusUpperBound B"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile",
+      "HasSameSellingEnvironment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2108
+      },
+      "start": {
+        "column": 1,
+        "line": 2108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable {A B : BayesianSingleItemAuction I} (i : I) (hmeas : AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hnonneg : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hvs : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : IntervalIntegrable (fun v => B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "HasSameSellingEnvironment",
+      "OpponentTypeProfile",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "HasSameSellingEnvironment.opponentPrior_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2186
+      },
+      "start": {
+        "column": 1,
+        "line": 2186
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hvs_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.IntegrableVirtualSurplus B.allocationRule"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "HasSameSellingEnvironment",
+      "OpponentTypeProfile",
+      "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "HasSameSellingEnvironment.opponentPrior_eq",
+      "typeDensity_measurable",
+      "typeDensity_ennreal_ofReal_aemeasurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+      "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2208
+      },
+      "start": {
+        "column": 1,
+        "line": 2208
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hpay_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) (hvs_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.TypeMeasureInterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "HasSameSellingEnvironment",
+      "OpponentTypeProfile",
+      "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2307
+      },
+      "start": {
+        "column": 1,
+        "line": 2307
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem interimFubiniAnalyticAssumptions_of_independentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hpay_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) (hvs_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.InterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRevenueComparable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2333
+      },
+      "start": {
+        "column": 1,
+        "line": 2333
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsRevenueComparable [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusUpperBound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRevenueUpperBounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2341
+      },
+      "start": {
+        "column": 1,
+        "line": 2341
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsRevenueUpperBounded [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsFeasibleICIRIntegrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2349
+      },
+      "start": {
+        "column": 1,
+        "line": 2349
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsFeasibleICIRIntegrable [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2386
+      },
+      "start": {
+        "column": 1,
+        "line": 2386
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (i : I) : IsProbabilityMeasure (A.typeMeasure i)"
+  },
+  {
+    "dependencies": [
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2393
+      },
+      "start": {
+        "column": 1,
+        "line": 2393
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (i : I) : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+      "typeDensity_ennreal_ofReal_aemeasurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2401
+      },
+      "start": {
+        "column": 1,
+        "line": 2401
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : \u2200 i : I, IntervalIntegrable (fun v => B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+      "typeDensity_ennreal_ofReal_aemeasurable",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2420
+      },
+      "start": {
+        "column": 1,
+        "line": 2420
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : \u2200 i : I, IntervalIntegrable (fun v => B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2440
+      },
+      "start": {
+        "column": 1,
+        "line": 2440
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (_hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (_hIR : B.IsIndividuallyRationalOnSupport) : \u2200 i : I, IntervalIntegrable (fun v => B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v)) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "envelopeVirtualSurplusAnalyticAssumptions_of_environment",
+      "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2457
+      },
+      "start": {
+        "column": 1,
+        "line": 2457
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.EnvelopeVirtualSurplusAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure",
+      "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure",
+      "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2473
+      },
+      "start": {
+        "column": 1,
+        "line": 2473
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.TypeMeasureInterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+      "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2492
+      },
+      "start": {
+        "column": 1,
+        "line": 2492
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.InterimFubiniAnalyticAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure",
+      "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure",
+      "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2504
+      },
+      "start": {
+        "column": 1,
+        "line": 2504
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.IntegrableVirtualSurplus B.allocationRule"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2523
+      },
+      "start": {
+        "column": 1,
+        "line": 2523
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsExpectedSellerRevenueOptimalInEnvironmentAmong [Fintype I] (A B : BayesianSingleItemAuction I) (Candidate : BayesianSingleItemAuction I \u2192 Prop) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "IsVirtualSurplusOptimalAllocationRule",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "IsFeasibleICIRIntegrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2532
+      },
+      "start": {
+        "column": 1,
+        "line": 2532
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "def IsRegularMyersonOptimalICIRAuction [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsVirtualSurplusOptimalAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2541
+      },
+      "start": {
+        "column": 1,
+        "line": 2541
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : A.IsVirtualSurplusOptimalAllocationRule B.allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2547
+      },
+      "start": {
+        "column": 1,
+        "line": 2547
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsRegularMyersonOptimalICIRAuction.isFeasible [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : B.IsFeasible"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2553
+      },
+      "start": {
+        "column": 1,
+        "line": 2553
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : B.IsIncentiveCompatible"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2559
+      },
+      "start": {
+        "column": 1,
+        "line": 2559
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : B.IsIndividuallyRationalOnSupport"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "IsFeasibleICIRIntegrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2565
+      },
+      "start": {
+        "column": 1,
+        "line": 2565
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : A.IsExpectedSellerRevenueOptimalInEnvironmentAmong B (fun C => A.IsFeasibleICIRIntegrable C)"
+  },
+  {
+    "dependencies": [
+      "HasExpectedRevenueVirtualSurplusIdentity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2573
+      },
+      "start": {
+        "column": 1,
+        "line": 2573
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le [Fintype I] (A : BayesianSingleItemAuction I) {B C : BayesianSingleItemAuction I} (hB : A.HasExpectedRevenueVirtualSurplusIdentity B) (hC : A.HasExpectedRevenueVirtualSurplusIdentity C) (hvs : A.expectedVirtualSurplus B.allocationRule \u2264 A.expectedVirtualSurplus C.allocationRule) : A.expectedSellerRevenueInEnvironment B \u2264 A.expectedSellerRevenueInEnvironment C"
+  },
+  {
+    "dependencies": [
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "HasExpectedRevenueVirtualSurplusUpperBound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2586
+      },
+      "start": {
+        "column": 1,
+        "line": 2586
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasExpectedRevenueVirtualSurplusUpperBound_of_identity [Fintype I] (A B : BayesianSingleItemAuction I) (hB : A.HasExpectedRevenueVirtualSurplusIdentity B) : A.HasExpectedRevenueVirtualSurplusUpperBound B"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "IsZeroNormalized",
+      "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2593
+      },
+      "start": {
+        "column": 1,
+        "line": 2593
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (B : BayesianSingleItemAuction I) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : B.paymentRule = SingleParameterMechanism.myersonPayment B.allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "IsZeroNormalized",
+      "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2602
+      },
+      "start": {
+        "column": 1,
+        "line": 2602
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : A.expectedSellerRevenueInEnvironment B = A.myersonPaymentRevenueInEnvironment B"
+  },
+  {
+    "dependencies": [
+      "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "IsDSIC",
+      "isDSIC",
+      "IsZeroNormalized",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2614
+      },
+      "start": {
+        "column": 1,
+        "line": 2614
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hmyerson : A.HasMyersonPaymentRevenueVirtualSurplusIdentity B) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : A.HasExpectedRevenueVirtualSurplusIdentity B"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity",
+      "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "HasInterimPaymentVirtualSurplusUpperBound",
+      "HasExpectedRevenueVirtualSurplusUpperBound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2627
+      },
+      "start": {
+        "column": 1,
+        "line": 2627
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities [Fintype I] (A B : BayesianSingleItemAuction I) (hrev : A.HasExpectedRevenueInterimPaymentIdentity B) (hvs : A.HasExpectedVirtualSurplusInterimIdentity B) (hupper : A.HasInterimPaymentVirtualSurplusUpperBound B) : A.HasExpectedRevenueVirtualSurplusUpperBound B"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity",
+      "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedRevenueVirtualSurplusIdentity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2643
+      },
+      "start": {
+        "column": 1,
+        "line": 2643
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities [Fintype I] (A B : BayesianSingleItemAuction I) (hrev : A.HasExpectedRevenueInterimPaymentIdentity B) (hvs : A.HasExpectedVirtualSurplusInterimIdentity B) (hid : \u2200 i : I, (\u222b v in 0..A.typeData.omega i, B.interimExpectedPayment i v * A.typeDensity i v) = \u222b v in 0..A.typeData.omega i, B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v) : A.HasExpectedRevenueVirtualSurplusIdentity B"
+  },
+  {
+    "dependencies": [
+      "HasInterimPaymentEnvelopeUpperBound",
+      "HasEnvelopeVirtualSurplusUpperBound",
+      "HasInterimPaymentVirtualSurplusUpperBound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2661
+      },
+      "start": {
+        "column": 1,
+        "line": 2661
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper [Fintype I] (A B : BayesianSingleItemAuction I) (hpay : A.HasInterimPaymentEnvelopeUpperBound B) (henv : A.HasEnvelopeVirtualSurplusUpperBound B) : A.HasInterimPaymentVirtualSurplusUpperBound B"
+  },
+  {
+    "dependencies": [
+      "IsZeroNormalized",
+      "HasInterimPaymentFormula",
+      "interimExpectedPayment_zero_of_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2669
+      },
+      "start": {
+        "column": 1,
+        "line": 2669
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (hpay_formula : B.HasInterimPaymentFormula) : \u2200 i : I, (\u222b v in 0..A.typeData.omega i, B.interimExpectedPayment i v * A.typeDensity i v) = \u222b v in 0..A.typeData.omega i, (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "IsZeroNormalized",
+      "HasInterimPaymentFormula",
+      "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2692
+      },
+      "start": {
+        "column": 1,
+        "line": 2692
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (hpay_formula : B.HasInterimPaymentFormula) (henv : A.EnvelopeVirtualSurplusAnalyticAssumptions B) : \u2200 i : I, (\u222b v in 0..A.typeData.omega i, B.interimExpectedPayment i v * A.typeDensity i v) = \u222b v in 0..A.typeData.omega i, B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "HasInterimPaymentEnvelopeUpperBound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasInterimPaymentEnvelopeUpperBound_of_pointwise",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2714
+      },
+      "start": {
+        "column": 1,
+        "line": 2714
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasInterimPaymentEnvelopeUpperBound_of_pointwise [Fintype I] (A B : BayesianSingleItemAuction I) (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hint_pay : \u2200 i : I, IntervalIntegrable (fun v => B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hint_env : \u2200 i : I, IntervalIntegrable (fun v => (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hpoint : \u2200 (i : I) (v : \u211d), 0 \u2264 v \u2192 v \u2264 A.typeData.omega i \u2192 B.interimExpectedPayment i v \u2264 B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) : A.HasInterimPaymentEnvelopeUpperBound B"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "HasInterimPaymentEnvelopeUpperBound",
+      "hasInterimPaymentEnvelopeUpperBound_of_pointwise",
+      "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2753
+      },
+      "start": {
+        "column": 1,
+        "line": 2753
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport [Fintype I] (A B : BayesianSingleItemAuction I) (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hint_pay : \u2200 i : I, IntervalIntegrable (fun v => B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hint_env : \u2200 i : I, IntervalIntegrable (fun v => (B.interimAllocProb i v * v - \u222b z in 0..v, B.interimAllocProb i z) * A.typeDensity i v) volume 0 (A.typeData.omega i)) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.HasInterimPaymentEnvelopeUpperBound B"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "HasInterimPaymentEnvelopeUpperBound",
+      "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2779
+      },
+      "start": {
+        "column": 1,
+        "line": 2779
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A B : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.HasInterimPaymentEnvelopeUpperBound B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2794
+      },
+      "start": {
+        "column": 1,
+        "line": 2794
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A B : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.HasExpectedRevenueInterimPaymentIdentity B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2806
+      },
+      "start": {
+        "column": 1,
+        "line": 2806
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A B : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : A.HasExpectedVirtualSurplusInterimIdentity B"
+  },
+  {
+    "dependencies": [
+      "IsRevenueComparable",
+      "IsRevenueUpperBounded",
+      "hasExpectedRevenueVirtualSurplusUpperBound_of_identity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isRevenueUpperBounded_of_isRevenueComparable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2818
+      },
+      "start": {
+        "column": 1,
+        "line": 2818
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isRevenueUpperBounded_of_isRevenueComparable [Fintype I] (A B : BayesianSingleItemAuction I) (hB : A.IsRevenueComparable B) : A.IsRevenueUpperBounded B"
+  },
+  {
+    "dependencies": [
+      "IsFeasibleICIRIntegrable",
+      "IsRevenueUpperBounded",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+      "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity",
+      "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+      "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isRevenueUpperBounded_of_ic_ir_upper",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2826
+      },
+      "start": {
+        "column": 1,
+        "line": 2826
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isRevenueUpperBounded_of_ic_ir_upper [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (h : A.RegularMyersonICIRAnalyticAssumptions) (hB : A.IsFeasibleICIRIntegrable B) : A.IsRevenueUpperBounded B"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "IsDSIC",
+      "isDSIC",
+      "IsZeroNormalized",
+      "IsRevenueComparable",
+      "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2844
+      },
+      "start": {
+        "column": 1,
+        "line": 2844
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hint : A.IntegrableVirtualSurplus B.allocationRule) (hmyerson : A.HasMyersonPaymentRevenueVirtualSurplusIdentity B) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : A.IsRevenueComparable B"
+  },
+  {
+    "dependencies": [
+      "IsRevenueComparable",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+      "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2858
+      },
+      "start": {
+        "column": 1,
+        "line": 2858
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (hB : A.IsRevenueComparable B) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.expectedSellerRevenueInEnvironment B \u2264 A.expectedSellerRevenueInEnvironment A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "IsRevenueUpperBounded",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+      "IsFeasible.isSingleItemAllocationRule",
+      "IsSingleItemAllocationRule",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2874
+      },
+      "start": {
+        "column": 1,
+        "line": 2874
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (hB : A.IsRevenueUpperBounded B) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.expectedSellerRevenueInEnvironment B \u2264 A.expectedSellerRevenueInEnvironment A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "IsRevenueComparable",
+      "virtualSurplusMaximizingAuction_isFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2894
+      },
+      "start": {
+        "column": 1,
+        "line": 2894
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isRevenueComparable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.IsRevenueComparable A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "IsRevenueUpperBounded",
+      "isRevenueUpperBounded_of_isRevenueComparable",
+      "virtualSurplusMaximizingAuction_isRevenueComparable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2905
+      },
+      "start": {
+        "column": 1,
+        "line": 2905
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isRevenueUpperBounded [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.IsRevenueUpperBounded A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasIntegrableInterimObjects",
+      "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+      "isIncentiveCompatible_of_isDSIC",
+      "virtualSurplusMaximizingAuction_isDSIC_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2917
+      },
+      "start": {
+        "column": 1,
+        "line": 2917
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingAuction).IsIncentiveCompatible"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula",
+      "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "virtualSurplusMaximizingAuction_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2926
+      },
+      "start": {
+        "column": 1,
+        "line": 2926
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (henv : A.virtualSurplusMaximizingAuction.HasInterimEnvelopeFormula) (hint_nonneg : A.virtualSurplusMaximizingAuction.HasNonnegativeInterimAllocationIntegralOnSupport) : (A.virtualSurplusMaximizingAuction).IsIndividuallyRationalOnSupport"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+      "HasInterimEnvelopeFormula",
+      "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+      "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2938
+      },
+      "start": {
+        "column": 1,
+        "line": 2938
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingAuction).IsIncentiveCompatible \u2227 (A.virtualSurplusMaximizingAuction).IsIndividuallyRationalOnSupport"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2959
+      },
+      "start": {
+        "column": 1,
+        "line": 2959
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : (A.virtualSurplusMaximizingAuction).IsIndividuallyRationalOnSupport"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "HasSameSellingEnvironment",
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "HasExpectedVirtualSurplusInterimIdentity",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+      "HasInterimPaymentFormula",
+      "hasInterimPaymentFormula_of_isIncentiveCompatible",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+      "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "virtualSurplusMaximizingAuction_isZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2966
+      },
+      "start": {
+        "column": 1,
+        "line": 2966
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem RegularMyersonICIRAnalyticAssumptions.opt_identity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (hA : A.IsRegular) : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsFeasibleICIRIntegrable",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 3018
+      },
+      "start": {
+        "column": 1,
+        "line": 3018
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (h : A.RegularMyersonICIRAnalyticAssumptions) : A.IsFeasibleICIRIntegrable A.virtualSurplusMaximizingAuction"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "IsRevenueComparable",
+      "virtualSurplusMaximizingAuction_isRevenueComparable",
+      "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 3041
+      },
+      "start": {
+        "column": 1,
+        "line": 3041
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.IsExpectedSellerRevenueOptimalInEnvironmentAmong A.virtualSurplusMaximizingAuction (fun B => A.IsRevenueComparable B)"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "HasExpectedRevenueVirtualSurplusIdentity",
+      "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "IsRevenueUpperBounded",
+      "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+      "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 3058
+      },
+      "start": {
+        "column": 1,
+        "line": 3058
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.IsExpectedSellerRevenueOptimalInEnvironmentAmong A.virtualSurplusMaximizingAuction (fun B => A.IsRevenueUpperBounded B)"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "IsFeasibleICIRIntegrable",
+      "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+      "IntegrableVirtualSurplus",
+      "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+      "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+      "isRevenueUpperBounded_of_ic_ir_upper"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 3076
+      },
+      "start": {
+        "column": 1,
+        "line": 3076
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (h : A.RegularMyersonICIRAnalyticAssumptions) : A.IsExpectedSellerRevenueOptimalInEnvironmentAmong A.virtualSurplusMaximizingAuction (fun B => A.IsFeasibleICIRIntegrable B)"
+  },
+  {
+    "dependencies": [
+      "IsRegular",
+      "IsRegularMyersonOptimalICIRAuction",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+      "virtualSurplusMaximizingAuction_isFeasible",
+      "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "name": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 3108
+      },
+      "start": {
+        "column": 1,
+        "line": 3108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/OptimalSingleItem.lean",
+    "type": "theorem virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) (h : A.RegularMyersonICIRAnalyticAssumptions) : A.IsRegularMyersonOptimalICIRAuction A.virtualSurplusMaximizingAuction"
+  }
+]

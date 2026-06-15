@@ -1,0 +1,52 @@
+{
+  "id": "truthful-weakly-dominant-p1",
+  "title": "truthful_weakly_dominant_p1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/truthful-weakly-dominant-p1.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>truthful_weakly_dominant_p1</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem truthful_weakly_dominant_p1 (v : Fin 2 → Fin n) : IsWeaklyDominant (Vickrey n v) 1 (v 1)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStrictlyDominant.isWeaklyDominant</li>\n<li>IsWeaklyDominant</li>\n<li>Vickrey</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    },
+    {
+      "id": "Vickrey",
+      "title": "Vickrey",
+      "href": "misc/Vickrey.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "truthful_weakly_dominant_p1",
+      "display_name": "truthful_weakly_dominant_p1",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

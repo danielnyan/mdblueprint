@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "source": "naiveReverse_cost_le",
+    "target": "naiveReverse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "source": "naiveReverse",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "source": "naiveReverse",
+    "target": "Lottery.pure"
+  }
+]

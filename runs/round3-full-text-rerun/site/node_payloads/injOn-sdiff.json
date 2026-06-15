@@ -1,0 +1,36 @@
+{
+  "id": "injOn-sdiff",
+  "title": "injOn_sdiff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/injOn-sdiff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>injOn_sdiff</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma injOn_sdiff (s : Finset X) (f : X → Y) (h : s.card = (Finset.image f s).card + 1) : ∃ a b, a ∈ s ∧ b ∈ s ∧ f a = f b ∧ a ≠ b ∧ Set.InjOn f (s \\ ({a, b} : Finset X))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>Profile.ext</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "injOn_sdiff",
+      "display_name": "injOn_sdiff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

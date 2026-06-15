@@ -1,0 +1,42 @@
+{
+  "id": "utility",
+  "title": "utility",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/utility.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>utility</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef utility : Player → Outcome → ℚ | Eric, Accepted Lee =&gt; 3 | Eric, Accepted Rebecca =&gt; 2 | Eric, Accepted John =&gt; 1 | Eric, Rejected =&gt; 0 | Larry, Accepted Rebecca =&gt; 3 | Larry, Accepted John =&gt; 2 | Larry, Accepted Lee =&gt; 1 | Larry, Rejected =&gt; 0 | Sergey, Accepted John =&gt; 3 | Sergey, Accepted Lee =&gt; 2 | Sergey, Accepted Rebecca =&gt; 1 | Sergey, Rejected =&gt; 0 /-- Convert an outcome into the payoff vector required by `GameTree`. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "utility",
+      "display_name": "utility",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

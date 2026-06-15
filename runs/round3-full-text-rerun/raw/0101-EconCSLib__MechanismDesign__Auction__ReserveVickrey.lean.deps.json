@@ -1,0 +1,302 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "winner_eq_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "valuation_is_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_le_bid_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_le_bid_of_allocation_eq_some",
+    "target": "winner_eq_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_le_bid_of_allocation_eq_some",
+    "target": "reserve_le_bid_winner_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_le_bid_of_allocation_eq_some",
+    "target": "secondPrice_le_bid_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "truthful_weakly_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "game_eq_toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_isDSIC",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "secondPrice_le_clearingPrice",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_eq_zero_of_allocation_eq_none",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_eq_zero_of_allocation_eq_none",
+    "target": "mechanism_payment_of_allocation_ne_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_loser",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_nonneg",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_nonneg",
+    "target": "utility_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_nonneg",
+    "target": "clearingPrice_le_bid_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_nonneg",
+    "target": "utility_loser"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "utility_winner",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "allocation_eq_some_iff",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "reserve_le_bid_winner_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_of_allocation_ne_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "game_eq_toStrategicGame",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "winner_eq_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "bid_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "maxBidExcluding_eq_maxBid_of_not_argmax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "argmaxBid_eq_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "target": "maxBidExcluding_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "allocation_eq_none_iff",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "allocation_eq_some_winner_iff",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_le_bid_of_allocation_eq_some",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_le_bid_of_allocation_eq_some",
+    "target": "mechanism_payment_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "mechanism_payment_le_bid_of_allocation_eq_some",
+    "target": "clearingPrice_le_bid_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "maxBidExcluding_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_loser"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "source": "valuation_is_dominant",
+    "target": "Strategy"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "TreeShapedFrom",
+    "target": "NoChance"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "TreeShapedFrom",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.node_head_reachable",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_payoff",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_payoff",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_payoff",
+    "target": "extractTerminalGameTree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ActionListComplete",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ActionListComplete",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ActionListComplete",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ActionListComplete",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ActionListComplete",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.spe_on_to_nash_at",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.spe_on_to_nash_at",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.spe_on_to_nash_at",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "ExtractsGameTree.spe_on_to_nash_at",
+    "target": "IsSubgamePerfectOn.toNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_extracts",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_extracts",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_extracts",
+    "target": "extractTerminalGameTree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminal_extracts",
+    "target": "extractTerminal_payoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminalGameTree",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.FiniteArenaExtraction",
+    "source": "extractTerminalGameTree",
+    "target": "isTerminal"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "IsCompletelyMixedWithPositiveReach-mixed",
+  "title": "IsCompletelyMixedWithPositiveReach.mixed",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsCompletelyMixedWithPositiveReach-mixed.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsCompletelyMixedWithPositiveReach.mixed</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsCompletelyMixedWithPositiveReach.mixed {G : ExtensiveGame iota U} [DecidableEq G.State] [(s : G.State) -&gt; Fintype (G.Action s)] {beta : G.BehaviorProfile} {fuel : Nat} (hbeta : IsCompletelyMixedWithPositiveReach beta fuel) : IsCompletelyMixed beta</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>IsCompletelyMixedWithPositiveReach</li>\n<li>IsCompletelyMixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach",
+      "title": "IsCompletelyMixedWithPositiveReach",
+      "href": "misc/IsCompletelyMixedWithPositiveReach.html"
+    },
+    {
+      "id": "IsCompletelyMixed",
+      "title": "IsCompletelyMixed",
+      "href": "misc/IsCompletelyMixed.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsCompletelyMixedWithPositiveReach.mixed",
+      "display_name": "IsCompletelyMixedWithPositiveReach.mixed",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

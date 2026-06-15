@@ -1,0 +1,77 @@
+{
+  "id": "IsMonotone",
+  "title": "IsMonotone",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsMonotone.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsMonotone</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsMonotone [Preorder R] : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "existsUnique-zeroNormalized-payment-of-isMonotone",
+      "title": "existsUnique_zeroNormalized_payment_of_isMonotone",
+      "href": "misc/existsUnique-zeroNormalized-payment-of-isMonotone.html"
+    },
+    {
+      "id": "isImplementable-iff-isMonotone",
+      "title": "isImplementable_iff_isMonotone",
+      "href": "misc/isImplementable-iff-isMonotone.html"
+    },
+    {
+      "id": "isImplementable-of-isMonotone",
+      "title": "isImplementable_of_isMonotone",
+      "href": "misc/isImplementable-of-isMonotone.html"
+    },
+    {
+      "id": "isMonotone-of-isDSIC",
+      "title": "isMonotone_of_isDSIC",
+      "href": "misc/isMonotone-of-isDSIC.html"
+    },
+    {
+      "id": "payment-formula-of-isDSIC-of-zeroNormalized",
+      "title": "payment_formula_of_isDSIC_of_zeroNormalized",
+      "href": "misc/payment-formula-of-isDSIC-of-zeroNormalized.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-isMonotone-of-isRegular",
+      "title": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-isMonotone-of-isRegular.html"
+    },
+    {
+      "id": "welfareMaximizingAllocationRule-isMonotone",
+      "title": "welfareMaximizingAllocationRule_isMonotone",
+      "href": "misc/welfareMaximizingAllocationRule-isMonotone.html"
+    },
+    {
+      "id": "withMyersonPayment-isDSIC-of-isMonotone",
+      "title": "withMyersonPayment_isDSIC_of_isMonotone",
+      "href": "misc/withMyersonPayment-isDSIC-of-isMonotone.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsMonotone",
+      "display_name": "IsMonotone",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

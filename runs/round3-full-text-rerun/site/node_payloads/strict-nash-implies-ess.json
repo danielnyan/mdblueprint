@@ -1,0 +1,42 @@
+{
+  "id": "strict-nash-implies-ess",
+  "title": "strict_nash_implies_ess",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/strict-nash-implies-ess.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>strict_nash_implies_ess</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem strict_nash_implies_ess {s : S} (hstrict : ∀ t, t ≠ s → u s s &gt; u t s) : IsESS u s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsESS</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsESS",
+      "title": "IsESS",
+      "href": "misc/IsESS.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "strict_nash_implies_ess",
+      "display_name": "strict_nash_implies_ess",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

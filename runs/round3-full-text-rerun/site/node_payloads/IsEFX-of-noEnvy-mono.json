@@ -1,0 +1,57 @@
+{
+  "id": "IsEFX-of-noEnvy-mono",
+  "title": "IsEFX.of_noEnvy_mono",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEFX-of-noEnvy-mono.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEFX.of_noEnvy_mono</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsEFX.of_noEnvy_mono [DecidableEq G] (v : Valuation (Fin 2) G) (hmono : ∀ i S T, T ⊆ S → v.val i T ≤ v.val i S) (A : Allocation (Fin 2) G) (h : IsEnvyFree v A) : IsEFX v A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n<li>IsEFX</li>\n<li>IsEnvyFree.isEFX_of_mono</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsEFX.of_noEnvy_mono",
+      "display_name": "IsEFX.of_noEnvy_mono",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

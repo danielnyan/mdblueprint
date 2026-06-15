@@ -1,0 +1,102 @@
+{
+  "id": "BehaviorStrategy",
+  "title": "BehaviorStrategy",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BehaviorStrategy.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BehaviorStrategy</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BehaviorStrategy (G : ExtensiveGame iota U) (i : iota) [(s : G.State) -&gt; Fintype (G.Action s)] : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "IsBehaviorNashEq",
+      "title": "IsBehaviorNashEq",
+      "href": "misc/IsBehaviorNashEq.html"
+    },
+    {
+      "id": "IsCompletelyMixed",
+      "title": "IsCompletelyMixed",
+      "href": "misc/IsCompletelyMixed.html"
+    },
+    {
+      "id": "IsCompletelyMixed-player",
+      "title": "IsCompletelyMixed.player",
+      "href": "misc/IsCompletelyMixed-player.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "deviate",
+      "title": "deviate",
+      "href": "misc/deviate.html"
+    },
+    {
+      "id": "deviate-of-ne",
+      "title": "deviate_of_ne",
+      "href": "misc/deviate-of-ne.html"
+    },
+    {
+      "id": "deviate-same",
+      "title": "deviate_same",
+      "href": "misc/deviate-same.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "liftSubgame-eq-self",
+      "title": "liftSubgame_eq_self",
+      "href": "misc/liftSubgame-eq-self.html"
+    },
+    {
+      "id": "restrictReachableSubgame-deviate-liftReachableSubgame",
+      "title": "restrictReachableSubgame_deviate_liftReachableSubgame",
+      "href": "misc/restrictReachableSubgame-deviate-liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictSubgame-deviate",
+      "title": "restrictSubgame_deviate",
+      "href": "misc/restrictSubgame-deviate.html"
+    },
+    {
+      "id": "restrictSubgame-deviate-liftSubgame",
+      "title": "restrictSubgame_deviate_liftSubgame",
+      "href": "misc/restrictSubgame-deviate-liftSubgame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BehaviorStrategy",
+      "display_name": "BehaviorStrategy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

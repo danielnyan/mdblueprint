@@ -1,0 +1,116 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEquitable",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEquitable",
+    "target": "toCakeValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "toCakeValuation",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "toCakeValuation",
+    "target": "toCardinalInstance"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "feasible",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "feasible",
+    "target": "toGenericCardinalInstance"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "feasible",
+    "target": "toShareInstance"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEnvyFree",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEnvyFree",
+    "target": "toCakeValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEnvyFree.isProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEnvyFree.isProportional",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsEnvyFree.isProportional",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsParetoOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsParetoOptimal",
+    "target": "toGenericCardinalInstance"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsProportional",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "source": "IsProportional",
+    "target": "toCakeValuation"
+  }
+]

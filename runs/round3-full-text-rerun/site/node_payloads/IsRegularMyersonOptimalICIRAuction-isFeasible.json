@@ -1,0 +1,47 @@
+{
+  "id": "IsRegularMyersonOptimalICIRAuction-isFeasible",
+  "title": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRegularMyersonOptimalICIRAuction-isFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRegularMyersonOptimalICIRAuction.isFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsRegularMyersonOptimalICIRAuction.isFeasible [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : B.IsFeasible</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction</li>\n<li>IsFeasible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "display_name": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,481 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "BigSimplex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "abbrev BigSimplex"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "ProductSimplices",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "abbrev ProductSimplices"
+  },
+  {
+    "dependencies": [
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "index_split_existence",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma index_split_existence (k : Fin (total_card card)) : \u2203 (p : \u03a3 i, Fin (card i)), prefix_sum card p.1 \u2264 k.val \u2227 k.val < prefix_sum card p.1 + (card p.1 : \u2115) \u2227 p.2.val = k.val - prefix_sum card p.1"
+  },
+  {
+    "dependencies": [
+      "index_split_existence",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "index_split_spec",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma index_split_spec (k : Fin (total_card card)) : let p"
+  },
+  {
+    "dependencies": [
+      "index_split_spec",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "index_split_combine_inverse",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 185
+      },
+      "start": {
+        "column": 1,
+        "line": 185
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma index_split_combine_inverse (p : \u03a3 i, Fin (card i)) : index_split card (index_combine card p) = p"
+  },
+  {
+    "dependencies": [
+      "index_split_spec",
+      "Profile.ext",
+      "BigSimplex",
+      "ProductSimplices",
+      "Pos",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "index_split_combine_inverse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "index_combine_split_inverse",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 247
+      },
+      "start": {
+        "column": 1,
+        "line": 247
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma index_combine_split_inverse (k : Fin (total_card card)) : index_combine card (index_split card k) = k"
+  },
+  {
+    "dependencies": [
+      "ProductSimplices",
+      "index_split_combine_inverse",
+      "Profile.ext",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "project_embed_id",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 462
+      },
+      "start": {
+        "column": 1,
+        "line": 462
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma project_embed_id (y : ProductSimplices card) : project_to_product card (embed_from_product card y) = y"
+  },
+  {
+    "dependencies": [
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "blockWeight_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 537
+      },
+      "start": {
+        "column": 1,
+        "line": 537
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma blockWeight_pos (i : I) : 0 < blockWeight card i"
+  },
+  {
+    "dependencies": [
+      "BigSimplex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "blockSum_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 544
+      },
+      "start": {
+        "column": 1,
+        "line": 544
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma blockSum_nonneg (i : I) (x : BigSimplex card) : 0 \u2264 blockSum card i x"
+  },
+  {
+    "dependencies": [
+      "BigSimplex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "deficit_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 551
+      },
+      "start": {
+        "column": 1,
+        "line": 551
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma deficit_nonneg (x : BigSimplex card) : 0 \u2264 deficit card x"
+  },
+  {
+    "dependencies": [
+      "BigSimplex",
+      "deficit_nonneg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "tPush_mem_Icc",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 558
+      },
+      "start": {
+        "column": 1,
+        "line": 558
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma tPush_mem_Icc (x : BigSimplex card) : tPush card x \u2208 Set.Icc (0 : \u211d) 1"
+  },
+  {
+    "dependencies": [
+      "BigSimplex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "blockSum_pushTowardsZ_formula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 574
+      },
+      "start": {
+        "column": 1,
+        "line": 574
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma blockSum_pushTowardsZ_formula (i : I) (x : BigSimplex card) : blockSum card i (pushTowardsZ card x) = (1 - tPush card x) * blockSum card i x + (tPush card x) * blockWeight card i"
+  },
+  {
+    "dependencies": [
+      "BigSimplex",
+      "blockSum_pushTowardsZ_formula",
+      "blockWeight_pos",
+      "blockSum_nonneg",
+      "tPush_mem_Icc",
+      "deficit_nonneg",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "blockSum_pushTowardsZ_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 581
+      },
+      "start": {
+        "column": 1,
+        "line": 581
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma blockSum_pushTowardsZ_pos (i : I) (x : BigSimplex card) : 0 < blockSum card i (pushTowardsZ card x)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "BigSimplex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "blockSum_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 609
+      },
+      "start": {
+        "column": 1,
+        "line": 609
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma blockSum_continuous (i : I) : Continuous (blockSum card i)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "BigSimplex",
+      "blockSum_continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "deficit_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 617
+      },
+      "start": {
+        "column": 1,
+        "line": 617
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma deficit_continuous : Continuous (deficit card)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "deficit_continuous",
+      "deficit_nonneg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "tPush_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 625
+      },
+      "start": {
+        "column": 1,
+        "line": 625
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma tPush_continuous : Continuous (tPush card)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "BigSimplex",
+      "tPush_continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "pushTowardsZ_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 633
+      },
+      "start": {
+        "column": 1,
+        "line": 633
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma pushTowardsZ_continuous : Continuous (pushTowardsZ card)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "BigSimplex",
+      "pushTowardsZ_continuous",
+      "blockSum_pushTowardsZ_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "project_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 649
+      },
+      "start": {
+        "column": 1,
+        "line": 649
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma project_continuous : Continuous (project_to_product card)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "ProductSimplices",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "embed_continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 675
+      },
+      "start": {
+        "column": 1,
+        "line": 675
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "lemma embed_continuous : Continuous (embed_from_product card)"
+  },
+  {
+    "dependencies": [
+      "ProductSimplices",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "BigSimplex",
+      "embed_continuous",
+      "project_continuous",
+      "Brouwer",
+      "project_embed_id"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer_product",
+    "name": "Brouwer_Product",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 703
+      },
+      "start": {
+        "column": 1,
+        "line": 703
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer_product.lean",
+    "type": "theorem Brouwer_Product (f : ProductSimplices card \u2192 ProductSimplices card) (hf : Continuous f) : \u2203 x : ProductSimplices card, f x = x"
+  }
+]

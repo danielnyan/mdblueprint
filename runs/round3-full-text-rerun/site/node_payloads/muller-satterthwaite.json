@@ -1,0 +1,77 @@
+{
+  "id": "muller-satterthwaite",
+  "title": "muller_satterthwaite",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/muller-satterthwaite.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>muller_satterthwaite</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem muller_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A] (hA : Fintype.card A ≥ 3) (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f) (hU : Unanimity f) (hM : Monotonicity f) : Dictatorial f</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>IsTotal</li>\n<li>Resolute</li>\n<li>Unanimity</li>\n<li>Monotonicity</li>\n<li>Dictatorial</li>\n<li>SWF</li>\n<li>arrow_impossibility</li>\n<li>Prefers</li>\n<li>topChoice_topRank</li>\n<li>monotonic_zProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    },
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "muller_satterthwaite",
+      "display_name": "muller_satterthwaite",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

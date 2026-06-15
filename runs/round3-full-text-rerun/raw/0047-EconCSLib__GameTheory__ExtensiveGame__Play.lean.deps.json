@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "finalState_succ",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "finalState_succ",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "play",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "finalState",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "finalPayoff",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Play",
+    "source": "finalState_zero",
+    "target": "finalState"
+  }
+]

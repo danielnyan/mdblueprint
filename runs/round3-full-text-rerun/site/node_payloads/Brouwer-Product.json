@@ -1,0 +1,52 @@
+{
+  "id": "Brouwer-Product",
+  "title": "Brouwer_Product",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Brouwer-Product.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Brouwer_Product</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Brouwer_Product (f : ProductSimplices card → ProductSimplices card) (hf : Continuous f) : ∃ x : ProductSimplices card, f x = x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ProductSimplices</li>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>BigSimplex</li>\n<li>embed_continuous</li>\n<li>project_continuous</li>\n<li>Brouwer</li>\n<li>project_embed_id</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ProductSimplices",
+      "title": "ProductSimplices",
+      "href": "misc/ProductSimplices.html"
+    },
+    {
+      "id": "BigSimplex",
+      "title": "BigSimplex",
+      "href": "misc/BigSimplex.html"
+    },
+    {
+      "id": "Brouwer",
+      "title": "Brouwer",
+      "href": "misc/Brouwer.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Brouwer_Product",
+      "display_name": "Brouwer_Product",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

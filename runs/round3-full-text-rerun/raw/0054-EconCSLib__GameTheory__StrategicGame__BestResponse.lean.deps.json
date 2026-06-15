@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "source": "congr_payoff",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "source": "congr_payoff",
+    "target": "IsWeaklyDominant.isBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "source": "congr_payoff",
+    "target": "IsBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "source": "IsBestResponse",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "source": "IsBestResponse",
+    "target": "Strategy"
+  }
+]

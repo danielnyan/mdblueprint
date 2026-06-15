@@ -1,0 +1,770 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetEquiv_symm_eq_or",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetEquiv_symm_eq_or",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetEquiv_symm_eq_or",
+    "target": "meetMan_mem_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "prefM_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "prefW_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "joinWoman_mem_men"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "joinWoman_le_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableJoin_isStable",
+    "target": "joinWoman_le_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "StableMatching"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "stableJoin_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "stableMeet_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "joinWoman_le_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "joinWoman_le_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "joinWoman_eq_or"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "stableMeet_ge_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "stableMeet_ge_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "meetEquiv_symm_eq_or"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "gs_bijective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "matchW_partner",
+    "target": "galeShapley_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_right",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_right",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_right",
+    "target": "meetMan_mem_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_right",
+    "target": "meetMan_worse_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "StableMatching"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "gs_bijective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "galeShapley_isProposingOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_greatest",
+    "target": "matchW_partner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "wPartner_stableMeet",
+    "target": "stableMeet_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "wPartner_stableMeet",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "wPartner_stableMeet",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "meetMan_mem_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "meetMan_worse_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "meetMan_worse_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_injective",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "wPartner_stableJoin",
+    "target": "stableJoin_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_right",
+    "target": "opposed_preferences"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_worse_left",
+    "target": "opposed_preferences"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences",
+    "target": "stable_matching_perfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "joinWoman_mem_men"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "joinWoman_worse_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "joinWoman_worse_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_injective",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_mem_women",
+    "target": "meetMan_eq_or"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_mem_women",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "prefM_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "prefW_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "meetMan_mem_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "meetMan_le_left"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_isStable",
+    "target": "meetMan_le_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "prefW_strict",
+    "target": "joinWoman_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "prefW_strict",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "prefW_strict",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_right",
+    "target": "opposed_preferences_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "wPartner_eq_iff",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_left",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_left",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_left",
+    "target": "meetMan_mem_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "stableMeet_ge_left",
+    "target": "meetMan_worse_right"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_mem_men",
+    "target": "joinWoman_eq_or"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "joinWoman_mem_men",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "StableMatching",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "wPartner_eq_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "meetMan_worse_left",
+    "target": "opposed_preferences_women"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_isGreatest",
+    "target": "StableMatching"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "gsStable_isGreatest",
+    "target": "gsStable_greatest"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences_women",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences_women",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences_women",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Lattice",
+    "source": "opposed_preferences_women",
+    "target": "pref_list_mem"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_weak_duality",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "dualAugA",
+    "target": "DualAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "PrimalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "dualAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "dualAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "isFeasible_dualAug_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "farkas_lemma"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "lp_strong_duality",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "dualAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "dualAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "PrimalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "isFeasible_dualAug_iff",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "dualAugB",
+    "target": "DualAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "source": "dualAugB",
+    "target": "dualAugA"
+  }
+]

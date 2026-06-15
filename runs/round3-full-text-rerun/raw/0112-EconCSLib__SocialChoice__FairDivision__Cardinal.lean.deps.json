@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "toShareInstance",
+    "target": "inducedSharePref"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsEquitable",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsUtilitarianOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsMaxmin",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsEnvyFree",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsParetoOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Cardinal",
+    "source": "IsProportional",
+    "target": "IsEnvyFree.isProportional"
+  }
+]

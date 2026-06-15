@@ -1,0 +1,52 @@
+{
+  "id": "decisive-minimal",
+  "title": "decisive_minimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/decisive-minimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>decisive_minimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem decisive_minimal [Fintype N] [Nonempty N] [Fintype A] (h0 : ∃ x y z : A, x ≠ y ∧ x ≠ z ∧ y ≠ z) {F : SWF N A} (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) : Minimal (exists_nonempty_decisive_of_size F) 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>IIA</li>\n<li>exists_nonempty_decisive_of_size</li>\n<li>exists_minimal_decisive_coalition</li>\n<li>decisive_contraction</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "decisive_minimal",
+      "display_name": "decisive_minimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

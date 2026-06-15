@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_card_le",
+    "target": "lcs_cost_subset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs_cost_subset",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "source": "lcs",
+    "target": "Lottery.pure"
+  }
+]

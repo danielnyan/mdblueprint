@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_lower_bound",
+    "target": "min_over_z"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_lower_bound",
+    "target": "min_at_half"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "minimax_eq_one_half",
+    "target": "minimax_upper_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "minimax_eq_one_half",
+    "target": "minimax_lower_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "minimax_lower_bound",
+    "target": "max_over_xy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_upper_bound",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_upper_bound",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_eq_one_quarter",
+    "target": "maximin_lower_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "source": "maximin_eq_one_quarter",
+    "target": "maximin_upper_bound"
+  }
+]

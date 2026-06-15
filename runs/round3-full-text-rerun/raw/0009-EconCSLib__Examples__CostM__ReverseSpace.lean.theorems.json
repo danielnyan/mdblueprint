@@ -1,0 +1,43 @@
+[
+  {
+    "dependencies": [
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "name": "naiveReverse",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 42
+      },
+      "start": {
+        "column": 1,
+        "line": 42
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+    "type": "def naiveReverse {A : Type} : List A \u2192 CostM \u2115 (List A) | [] => pure [] | a :: as => do \u2713[as.length + 1] do let rest \u2190 naiveReverse as pure (rest ++ [a]) /-- Cumulative `++` allocation is quadratic in input length. -/"
+  },
+  {
+    "dependencies": [
+      "naiveReverse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "name": "naiveReverse_cost_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+    "type": "theorem naiveReverse_cost_le {A : Type} (l : List A) : (naiveReverse l).cost \u2264 l.length * l.length"
+  }
+]

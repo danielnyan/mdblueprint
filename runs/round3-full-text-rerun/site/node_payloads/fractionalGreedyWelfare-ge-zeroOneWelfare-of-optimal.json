@@ -1,0 +1,57 @@
+{
+  "id": "fractionalGreedyWelfare-ge-zeroOneWelfare-of-optimal",
+  "title": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fractionalGreedyWelfare-ge-zeroOneWelfare-of-optimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal (A : KnapsackAuction I U) (b : I → U) (hW : 0 ≤ A.totalCapacity) (hgreedyOptimal : ∀ x : I → U, A.fractionalFeasible x → fractionalSocialWelfare b x ≤ fractionalSocialWelfare b (A.fractionalGreedyAllocation b)) : A.maximalSocialWelfare b hW ≤ fractionalSocialWelfare b (A.fractionalGreedyAllocation b)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>fractionalFeasible</li>\n<li>fractionalSocialWelfare</li>\n<li>binaryToAllocation</li>\n<li>binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity</li>\n<li>BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations</li>\n<li>welfareMaximizer_mem_feasibleBinaryAllocations</li>\n<li>binarySocialWelfare</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "fractionalFeasible",
+      "title": "fractionalFeasible",
+      "href": "misc/fractionalFeasible.html"
+    },
+    {
+      "id": "fractionalSocialWelfare",
+      "title": "fractionalSocialWelfare",
+      "href": "misc/fractionalSocialWelfare.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    },
+    {
+      "id": "binarySocialWelfare",
+      "title": "binarySocialWelfare",
+      "href": "misc/binarySocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+      "display_name": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

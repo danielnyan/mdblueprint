@@ -1,0 +1,63 @@
+{
+  "id": "sergeyChoice",
+  "title": "sergeyChoice",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sergeyChoice.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sergeyChoice</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef sergeyChoice (ericVote larryVote : Candidate) : GameTree Player ℚ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>majorityOutcome</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    },
+    {
+      "id": "majorityOutcome",
+      "title": "majorityOutcome",
+      "href": "misc/majorityOutcome.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "candidateChoiceGame",
+      "title": "candidateChoiceGame",
+      "href": "misc/candidateChoiceGame.html"
+    },
+    {
+      "id": "larryChoice",
+      "title": "larryChoice",
+      "href": "misc/larryChoice.html"
+    },
+    {
+      "id": "sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame",
+      "title": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+      "href": "misc/sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "sergeyChoice",
+      "display_name": "sergeyChoice",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

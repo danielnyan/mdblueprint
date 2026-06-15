@@ -1,0 +1,173 @@
+{
+  "id": "Prefers",
+  "title": "Prefers",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Prefers.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Prefers</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Prefers [Fintype N] [Fintype A] (P : Profile N A) (i : N) (a b : A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>BallotPrefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "BallotPrefers",
+      "title": "BallotPrefers",
+      "href": "misc/BallotPrefers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BottomRank",
+      "title": "BottomRank",
+      "href": "misc/BottomRank.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "IsDecisiveFor",
+      "title": "IsDecisiveFor",
+      "href": "misc/IsDecisiveFor.html"
+    },
+    {
+      "id": "IsWeaklyDecisiveFor",
+      "title": "IsWeaklyDecisiveFor",
+      "href": "misc/IsWeaklyDecisiveFor.html"
+    },
+    {
+      "id": "OptimistStrategyproofness",
+      "title": "OptimistStrategyproofness",
+      "href": "misc/OptimistStrategyproofness.html"
+    },
+    {
+      "id": "PessimistStrategyproofness",
+      "title": "PessimistStrategyproofness",
+      "href": "misc/PessimistStrategyproofness.html"
+    },
+    {
+      "id": "Prefers-asymm",
+      "title": "Prefers.asymm",
+      "href": "misc/Prefers-asymm.html"
+    },
+    {
+      "id": "Prefers-total-of-ne",
+      "title": "Prefers.total_of_ne",
+      "href": "misc/Prefers-total-of-ne.html"
+    },
+    {
+      "id": "ResoluteStrategyproofness",
+      "title": "ResoluteStrategyproofness",
+      "href": "misc/ResoluteStrategyproofness.html"
+    },
+    {
+      "id": "SimpleLift",
+      "title": "SimpleLift",
+      "href": "misc/SimpleLift.html"
+    },
+    {
+      "id": "TopRank",
+      "title": "TopRank",
+      "href": "misc/TopRank.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "copeland-isTotal",
+      "title": "copeland_isTotal",
+      "href": "misc/copeland-isTotal.html"
+    },
+    {
+      "id": "exists-minimal-decisive-coalition",
+      "title": "exists_minimal_decisive_coalition",
+      "href": "misc/exists-minimal-decisive-coalition.html"
+    },
+    {
+      "id": "iia-strict",
+      "title": "iia_strict",
+      "href": "misc/iia-strict.html"
+    },
+    {
+      "id": "margin-self",
+      "title": "margin_self",
+      "href": "misc/margin-self.html"
+    },
+    {
+      "id": "monotonic-zProfile",
+      "title": "monotonic_zProfile",
+      "href": "misc/monotonic-zProfile.html"
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller_satterthwaite",
+      "href": "misc/muller-satterthwaite.html"
+    },
+    {
+      "id": "rank-injective",
+      "title": "rank_injective",
+      "href": "misc/rank-injective.html"
+    },
+    {
+      "id": "topChoice-topRank",
+      "title": "topChoice_topRank",
+      "href": "misc/topChoice-topRank.html"
+    },
+    {
+      "id": "unanimous-strict-pref-not-chosen",
+      "title": "unanimous_strict_pref_not_chosen",
+      "href": "misc/unanimous-strict-pref-not-chosen.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    },
+    {
+      "id": "zProfile-prefers-inside",
+      "title": "zProfile_prefers_inside",
+      "href": "misc/zProfile-prefers-inside.html"
+    },
+    {
+      "id": "zProfile-prefers-inside-outside",
+      "title": "zProfile_prefers_inside_outside",
+      "href": "misc/zProfile-prefers-inside-outside.html"
+    },
+    {
+      "id": "zProfile-prefers-outside",
+      "title": "zProfile_prefers_outside",
+      "href": "misc/zProfile-prefers-outside.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Prefers",
+      "display_name": "Prefers",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

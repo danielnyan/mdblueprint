@@ -1,0 +1,42 @@
+{
+  "id": "natFractionalGreedyList-supportedOn",
+  "title": "natFractionalGreedyList_supportedOn",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/natFractionalGreedyList-supportedOn.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>natFractionalGreedyList_supportedOn</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma natFractionalGreedyList_supportedOn (w : I → Nat) : ∀ items remaining, fractionalSupportedOn items (natFractionalGreedyList w items remaining)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>fractionalSupportedOn</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "fractionalSupportedOn",
+      "title": "fractionalSupportedOn",
+      "href": "misc/fractionalSupportedOn.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "natFractionalGreedyList_supportedOn",
+      "display_name": "natFractionalGreedyList_supportedOn",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

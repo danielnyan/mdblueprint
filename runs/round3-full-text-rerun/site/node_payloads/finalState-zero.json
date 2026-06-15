@@ -1,0 +1,42 @@
+{
+  "id": "finalState-zero",
+  "title": "finalState_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/finalState-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>finalState_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem finalState_zero (choose : (s : A.State) → A.Action s) (s : A.State) : A.finalState choose s 0 = s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>finalState</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "finalState_zero",
+      "display_name": "finalState_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

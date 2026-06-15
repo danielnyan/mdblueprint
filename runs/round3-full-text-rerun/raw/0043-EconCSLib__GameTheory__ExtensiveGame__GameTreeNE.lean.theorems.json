@@ -1,0 +1,241 @@
+[
+  {
+    "dependencies": [
+      "Strategy",
+      "IVariant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsNashEquilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "def IsNashEquilibrium (\u03c3 : Strategy N U) (g : GameTree N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsNashAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "abbrev IsNashAt (\u03c3 : Strategy N U) (g : GameTree N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IVariant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsSubgamePerfectOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "def IsSubgamePerfectOn (\u03c3 : Strategy N U) (g : GameTree N U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "HasOnlyRootSubgames",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "def HasOnlyRootSubgames (g : GameTree N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "IsNashAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem isSubgamePerfectOn_iff_forall_subtree_isNashAt {\u03c3 : Strategy N U} {g : GameTree N U} : IsSubgamePerfectOn \u03c3 g \u2194 \u2200 s : GameTree N U, Subtree s g \u2192 IsNashAt \u03c3 s"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfect",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsSubgamePerfect.toNE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem IsSubgamePerfect.toNE {\u03c3 : Strategy N U} (hspe : IsSubgamePerfect \u03c3) (g : GameTree N U) : IsNashEquilibrium \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfect",
+      "IsSubgamePerfectOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsSubgamePerfect.toSubgamePerfectOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem IsSubgamePerfect.toSubgamePerfectOn {\u03c3 : Strategy N U} (hspe : IsSubgamePerfect \u03c3) (g : GameTree N U) : IsSubgamePerfectOn \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "IsNashAt",
+      "Subtree.self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsSubgamePerfectOn.toNashAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem IsSubgamePerfectOn.toNashAt {\u03c3 : Strategy N U} {g : GameTree N U} (hspe : IsSubgamePerfectOn \u03c3 g) : IsNashAt \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashAt",
+      "HasOnlyRootSubgames",
+      "IsSubgamePerfectOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames {\u03c3 : Strategy N U} {g : GameTree N U} (hnash : IsNashAt \u03c3 g) (hsubgames : HasOnlyRootSubgames g) : IsSubgamePerfectOn \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium",
+      "Kuhn_exists_SPE",
+      "IsSubgamePerfect.toNE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "Kuhn_exists_NE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 110
+      },
+      "start": {
+        "column": 1,
+        "line": 110
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem Kuhn_exists_NE [DecidableLE U] (g : GameTree N U) : \u2203 \u03c3 : Strategy N U, IsNashEquilibrium \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "Kuhn_exists_SPE",
+      "IsSubgamePerfect.toSubgamePerfectOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeNE",
+    "name": "Kuhn_exists_SPE_on",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeNE.lean",
+    "type": "theorem Kuhn_exists_SPE_on [DecidableLE U] (g : GameTree N U) : \u2203 \u03c3 : Strategy N U, IsSubgamePerfectOn \u03c3 g"
+  }
+]

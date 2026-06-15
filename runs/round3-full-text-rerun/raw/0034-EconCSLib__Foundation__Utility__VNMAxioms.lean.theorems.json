@@ -1,0 +1,244 @@
+[
+  {
+    "dependencies": [
+      "Lottery",
+      "stdSimplex.mix",
+      "Lottery.mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "Independence",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "def Independence (pref : Lottery \ud835\udd5c O \u2192 Lottery \ud835\udd5c O \u2192 Prop) : Prop"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "stdSimplex.mix",
+      "Lottery.mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "Continuity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "def Continuity (pref : Lottery \ud835\udd5c O \u2192 Lottery \ud835\udd5c O \u2192 Prop) : Prop"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Independence",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "Profile.ext",
+      "Completeness",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "Transitivity",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "Continuity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "sure_thing_principle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem sure_thing_principle {pref : Lottery \ud835\udd5c O \u2192 Lottery \ud835\udd5c O \u2192 Prop} (hind : Independence pref) (L\u2081 L\u2082 L\u2083 L\u2084 : Lottery \ud835\udd5c O) (\u03b1 : \ud835\udd5c) (h\u03b1\u2080 : 0 \u2264 \u03b1) (h\u03b1\u2081 : \u03b1 \u2264 1) : strict pref (Lottery.mix \u03b1 h\u03b1\u2080 h\u03b1\u2081 L\u2081 L\u2083) (Lottery.mix \u03b1 h\u03b1\u2080 h\u03b1\u2081 L\u2082 L\u2083) \u2194 strict pref (Lottery.mix \u03b1 h\u03b1\u2080 h\u03b1\u2081 L\u2081 L\u2084) (Lottery.mix \u03b1 h\u03b1\u2080 h\u03b1\u2081 L\u2082 L\u2084)"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Completeness",
+      "Transitivity",
+      "Independence",
+      "Continuity",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "completeness_independent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 149
+      },
+      "start": {
+        "column": 1,
+        "line": 149
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem completeness_independent : \u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Completeness pref \u2227 Transitivity pref \u2227 Independence pref \u2227 Continuity pref"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Continuity",
+      "Completeness",
+      "Transitivity",
+      "Independence",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "continuity_independent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 231
+      },
+      "start": {
+        "column": 1,
+        "line": 231
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem continuity_independent : \u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Continuity pref \u2227 Completeness pref \u2227 Transitivity pref \u2227 Independence pref"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Transitivity",
+      "Completeness",
+      "Independence",
+      "Continuity",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "stdSimplex.mix",
+      "Lottery.mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "transitivity_independent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 324
+      },
+      "start": {
+        "column": 1,
+        "line": 324
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem transitivity_independent : \u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Transitivity pref \u2227 Completeness pref \u2227 Independence pref \u2227 Continuity pref"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Independence",
+      "Completeness",
+      "Transitivity",
+      "Continuity",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "independence_independent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 404
+      },
+      "start": {
+        "column": 1,
+        "line": 404
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem independence_independent : \u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Independence pref \u2227 Completeness pref \u2227 Transitivity pref \u2227 Continuity pref"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Completeness",
+      "Transitivity",
+      "Independence",
+      "Continuity",
+      "completeness_independent",
+      "transitivity_independent",
+      "independence_independent",
+      "continuity_independent"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "name": "VNM.axioms_independent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 417
+      },
+      "start": {
+        "column": 1,
+        "line": 417
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/VNMAxioms.lean",
+    "type": "theorem VNM.axioms_independent : -- \u00acComplete (\u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Completeness pref \u2227 Transitivity pref \u2227 Independence pref \u2227 Continuity pref) \u2227 -- \u00acTransitive (\u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Transitivity pref \u2227 Completeness pref \u2227 Independence pref \u2227 Continuity pref) \u2227 -- \u00acIndependent (\u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Independence pref \u2227 Completeness pref \u2227 Transitivity pref \u2227 Continuity pref) \u2227 -- \u00acContinuous (\u2203 pref : Lottery \u211a (Fin 3) \u2192 Lottery \u211a (Fin 3) \u2192 Prop, \u00ac Continuity pref \u2227 Completeness pref \u2227 Transitivity pref \u2227 Independence pref)"
+  }
+]

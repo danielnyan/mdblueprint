@@ -1,0 +1,712 @@
+{
+  "id": "Allocation",
+  "title": "Allocation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Allocation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Allocation</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Allocation (N G : Type*)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "EFXExistenceStatement",
+      "title": "EFXExistenceStatement",
+      "href": "misc/EFXExistenceStatement.html"
+    },
+    {
+      "id": "IsAlphaMMS",
+      "title": "IsAlphaMMS",
+      "href": "misc/IsAlphaMMS.html"
+    },
+    {
+      "id": "IsContiguousAllocation",
+      "title": "IsContiguousAllocation",
+      "href": "misc/IsContiguousAllocation.html"
+    },
+    {
+      "id": "IsEF1",
+      "title": "IsEF1",
+      "href": "misc/IsEF1.html"
+    },
+    {
+      "id": "IsEF1",
+      "title": "IsEF1",
+      "href": "misc/IsEF1.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    },
+    {
+      "id": "IsEFX-isEF1",
+      "title": "IsEFX.isEF1",
+      "href": "misc/IsEFX-isEF1.html"
+    },
+    {
+      "id": "IsEFX-of-noEnvy-mono",
+      "title": "IsEFX.of_noEnvy_mono",
+      "href": "misc/IsEFX-of-noEnvy-mono.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "IsEnvyFree-isEFX-of-mono",
+      "title": "IsEnvyFree.isEFX_of_mono",
+      "href": "misc/IsEnvyFree-isEFX-of-mono.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional-additive",
+      "title": "IsEnvyFree.isProportional_additive",
+      "href": "misc/IsEnvyFree-isProportional-additive.html"
+    },
+    {
+      "id": "IsEnvyFree-isSource-all",
+      "title": "IsEnvyFree.isSource_all",
+      "href": "misc/IsEnvyFree-isSource-all.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsEquitable",
+      "title": "IsEquitable",
+      "href": "misc/IsEquitable.html"
+    },
+    {
+      "id": "IsMaxmin",
+      "title": "IsMaxmin",
+      "href": "misc/IsMaxmin.html"
+    },
+    {
+      "id": "IsMaxmin",
+      "title": "IsMaxmin",
+      "href": "misc/IsMaxmin.html"
+    },
+    {
+      "id": "IsMaxmin",
+      "title": "IsMaxmin",
+      "href": "misc/IsMaxmin.html"
+    },
+    {
+      "id": "IsMaxmin",
+      "title": "IsMaxmin",
+      "href": "misc/IsMaxmin.html"
+    },
+    {
+      "id": "IsMaxminShare",
+      "title": "IsMaxminShare",
+      "href": "misc/IsMaxminShare.html"
+    },
+    {
+      "id": "IsMaxminShare",
+      "title": "IsMaxminShare",
+      "href": "misc/IsMaxminShare.html"
+    },
+    {
+      "id": "IsMaxminShare-isAlphaMMS",
+      "title": "IsMaxminShare.isAlphaMMS",
+      "href": "misc/IsMaxminShare-isAlphaMMS.html"
+    },
+    {
+      "id": "IsParetoOptimal",
+      "title": "IsParetoOptimal",
+      "href": "misc/IsParetoOptimal.html"
+    },
+    {
+      "id": "IsParetoOptimal",
+      "title": "IsParetoOptimal",
+      "href": "misc/IsParetoOptimal.html"
+    },
+    {
+      "id": "IsParetoOptimal",
+      "title": "IsParetoOptimal",
+      "href": "misc/IsParetoOptimal.html"
+    },
+    {
+      "id": "IsParetoOptimal",
+      "title": "IsParetoOptimal",
+      "href": "misc/IsParetoOptimal.html"
+    },
+    {
+      "id": "IsParetoOptimal",
+      "title": "IsParetoOptimal",
+      "href": "misc/IsParetoOptimal.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "IsProportional-isAlphaMMS-additive",
+      "title": "IsProportional.isAlphaMMS_additive",
+      "href": "misc/IsProportional-isAlphaMMS-additive.html"
+    },
+    {
+      "id": "IsProportional-isMaxminShare",
+      "title": "IsProportional.isMaxminShare",
+      "href": "misc/IsProportional-isMaxminShare.html"
+    },
+    {
+      "id": "IsUtilitarianOptimal",
+      "title": "IsUtilitarianOptimal",
+      "href": "misc/IsUtilitarianOptimal.html"
+    },
+    {
+      "id": "IsUtilitarianOptimal",
+      "title": "IsUtilitarianOptimal",
+      "href": "misc/IsUtilitarianOptimal.html"
+    },
+    {
+      "id": "IsUtilitarianOptimal",
+      "title": "IsUtilitarianOptimal",
+      "href": "misc/IsUtilitarianOptimal.html"
+    },
+    {
+      "id": "IsUtilitarianOptimal",
+      "title": "IsUtilitarianOptimal",
+      "href": "misc/IsUtilitarianOptimal.html"
+    },
+    {
+      "id": "MeasureInstance-envyFree-and-proportional-exists",
+      "title": "MeasureInstance.envyFree_and_proportional_exists",
+      "href": "misc/MeasureInstance-envyFree-and-proportional-exists.html"
+    },
+    {
+      "id": "MeasureInstance-envyFree-exists",
+      "title": "MeasureInstance.envyFree_exists",
+      "href": "misc/MeasureInstance-envyFree-exists.html"
+    },
+    {
+      "id": "MeasureInstance-proportional-exists",
+      "title": "MeasureInstance.proportional_exists",
+      "href": "misc/MeasureInstance-proportional-exists.html"
+    },
+    {
+      "id": "Rule",
+      "title": "Rule",
+      "href": "misc/Rule.html"
+    },
+    {
+      "id": "SolutionConcept",
+      "title": "SolutionConcept",
+      "href": "misc/SolutionConcept.html"
+    },
+    {
+      "id": "acyclic-has-source",
+      "title": "acyclic_has_source",
+      "href": "misc/acyclic-has-source.html"
+    },
+    {
+      "id": "allocation-eq-none-iff",
+      "title": "allocation_eq_none_iff",
+      "href": "misc/allocation-eq-none-iff.html"
+    },
+    {
+      "id": "allocation-eq-some-iff",
+      "title": "allocation_eq_some_iff",
+      "href": "misc/allocation-eq-some-iff.html"
+    },
+    {
+      "id": "allocation-eq-some-winner-iff",
+      "title": "allocation_eq_some_winner_iff",
+      "href": "misc/allocation-eq-some-winner-iff.html"
+    },
+    {
+      "id": "bestGood-le",
+      "title": "bestGood_le",
+      "href": "misc/bestGood-le.html"
+    },
+    {
+      "id": "clearingPrice-eq-max-reserve-excluding-of-allocation-eq-some",
+      "title": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+      "href": "misc/clearingPrice-eq-max-reserve-excluding-of-allocation-eq-some.html"
+    },
+    {
+      "id": "clearingPrice-le-bid-of-allocation-eq-some",
+      "title": "clearingPrice_le_bid_of_allocation_eq_some",
+      "href": "misc/clearingPrice-le-bid-of-allocation-eq-some.html"
+    },
+    {
+      "id": "cut-exists",
+      "title": "cut_exists",
+      "href": "misc/cut-exists.html"
+    },
+    {
+      "id": "cutAndChoose-ef-exists",
+      "title": "cutAndChoose_ef_exists",
+      "href": "misc/cutAndChoose-ef-exists.html"
+    },
+    {
+      "id": "cutAndChoose-exists-envyFree-allocation",
+      "title": "cutAndChoose_exists_envyFree_allocation",
+      "href": "misc/cutAndChoose-exists-envyFree-allocation.html"
+    },
+    {
+      "id": "dubinsSpanier-exists-proportional-allocation",
+      "title": "dubinsSpanier_exists_proportional_allocation",
+      "href": "misc/dubinsSpanier-exists-proportional-allocation.html"
+    },
+    {
+      "id": "dubinsSpanierProportional",
+      "title": "dubinsSpanierProportional",
+      "href": "misc/dubinsSpanierProportional.html"
+    },
+    {
+      "id": "ef-exists",
+      "title": "ef_exists",
+      "href": "misc/ef-exists.html"
+    },
+    {
+      "id": "ef-exists-and-proportional",
+      "title": "ef_exists_and_proportional",
+      "href": "misc/ef-exists-and-proportional.html"
+    },
+    {
+      "id": "ef-exists-two-agents",
+      "title": "ef_exists_two_agents",
+      "href": "misc/ef-exists-two-agents.html"
+    },
+    {
+      "id": "ef-impossible-two-agents-one-good",
+      "title": "ef_impossible_two_agents_one_good",
+      "href": "misc/ef-impossible-two-agents-one-good.html"
+    },
+    {
+      "id": "efx-exists-two-agents",
+      "title": "efx_exists_two_agents",
+      "href": "misc/efx-exists-two-agents.html"
+    },
+    {
+      "id": "efx-two-agents-two-goods",
+      "title": "efx_two_agents_two_goods",
+      "href": "misc/efx-two-agents-two-goods.html"
+    },
+    {
+      "id": "egalitarianWelfare-le",
+      "title": "egalitarianWelfare_le",
+      "href": "misc/egalitarianWelfare-le.html"
+    },
+    {
+      "id": "egalitarianWelfare-le",
+      "title": "egalitarianWelfare_le",
+      "href": "misc/egalitarianWelfare-le.html"
+    },
+    {
+      "id": "eliminateAllCycles-acyclic",
+      "title": "eliminateAllCycles_acyclic",
+      "href": "misc/eliminateAllCycles-acyclic.html"
+    },
+    {
+      "id": "eliminateAllCycles-eq-of-acyclic",
+      "title": "eliminateAllCycles_eq_of_acyclic",
+      "href": "misc/eliminateAllCycles-eq-of-acyclic.html"
+    },
+    {
+      "id": "eliminateAllCycles-isAllocation",
+      "title": "eliminateAllCycles_isAllocation",
+      "href": "misc/eliminateAllCycles-isAllocation.html"
+    },
+    {
+      "id": "eliminateAllCycles-nondecreasing",
+      "title": "eliminateAllCycles_nondecreasing",
+      "href": "misc/eliminateAllCycles-nondecreasing.html"
+    },
+    {
+      "id": "eliminateAllCycles-unfold",
+      "title": "eliminateAllCycles_unfold",
+      "href": "misc/eliminateAllCycles-unfold.html"
+    },
+    {
+      "id": "envies",
+      "title": "envies",
+      "href": "misc/envies.html"
+    },
+    {
+      "id": "envies-irrefl",
+      "title": "envies_irrefl",
+      "href": "misc/envies-irrefl.html"
+    },
+    {
+      "id": "envies-ne",
+      "title": "envies_ne",
+      "href": "misc/envies-ne.html"
+    },
+    {
+      "id": "feasible",
+      "title": "feasible",
+      "href": "misc/feasible.html"
+    },
+    {
+      "id": "feasible",
+      "title": "feasible",
+      "href": "misc/feasible.html"
+    },
+    {
+      "id": "findSource-isSource",
+      "title": "findSource_isSource",
+      "href": "misc/findSource-isSource.html"
+    },
+    {
+      "id": "hasEnvyCycle",
+      "title": "hasEnvyCycle",
+      "href": "misc/hasEnvyCycle.html"
+    },
+    {
+      "id": "iInf-partition-le-mmsValue",
+      "title": "iInf_partition_le_mmsValue",
+      "href": "misc/iInf-partition-le-mmsValue.html"
+    },
+    {
+      "id": "isAlphaMMS-mono-alpha",
+      "title": "isAlphaMMS_mono_alpha",
+      "href": "misc/isAlphaMMS-mono-alpha.html"
+    },
+    {
+      "id": "isAlphaMMS-zero",
+      "title": "isAlphaMMS_zero",
+      "href": "misc/isAlphaMMS-zero.html"
+    },
+    {
+      "id": "isEF1-iff",
+      "title": "isEF1_iff",
+      "href": "misc/isEF1-iff.html"
+    },
+    {
+      "id": "isEFX-iff",
+      "title": "isEFX_iff",
+      "href": "misc/isEFX-iff.html"
+    },
+    {
+      "id": "isEFX-of-singleton-bundle",
+      "title": "isEFX_of_singleton_bundle",
+      "href": "misc/isEFX-of-singleton-bundle.html"
+    },
+    {
+      "id": "isEnvyCycle",
+      "title": "isEnvyCycle",
+      "href": "misc/isEnvyCycle.html"
+    },
+    {
+      "id": "isEnvyCycle-length-ge-two",
+      "title": "isEnvyCycle_length_ge_two",
+      "href": "misc/isEnvyCycle-length-ge-two.html"
+    },
+    {
+      "id": "isEnvyFree-iff",
+      "title": "isEnvyFree_iff",
+      "href": "misc/isEnvyFree-iff.html"
+    },
+    {
+      "id": "isEnvyFree-iff-toCardinalInstance-isEnvyFree",
+      "title": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "href": "misc/isEnvyFree-iff-toCardinalInstance-isEnvyFree.html"
+    },
+    {
+      "id": "isMaxminShare-iff-isAlphaMMS-one",
+      "title": "isMaxminShare_iff_isAlphaMMS_one",
+      "href": "misc/isMaxminShare-iff-isAlphaMMS-one.html"
+    },
+    {
+      "id": "isProportional-iff",
+      "title": "isProportional_iff",
+      "href": "misc/isProportional-iff.html"
+    },
+    {
+      "id": "isSource",
+      "title": "isSource",
+      "href": "misc/isSource.html"
+    },
+    {
+      "id": "isSource-not-mem-envyCycle",
+      "title": "isSource_not_mem_envyCycle",
+      "href": "misc/isSource-not-mem-envyCycle.html"
+    },
+    {
+      "id": "mechanism-payment-eq-zero-of-allocation-eq-none",
+      "title": "mechanism_payment_eq_zero_of_allocation_eq_none",
+      "href": "misc/mechanism-payment-eq-zero-of-allocation-eq-none.html"
+    },
+    {
+      "id": "mechanism-payment-le-bid-of-allocation-eq-some",
+      "title": "mechanism_payment_le_bid_of_allocation_eq_some",
+      "href": "misc/mechanism-payment-le-bid-of-allocation-eq-some.html"
+    },
+    {
+      "id": "mechanism-payment-of-allocation-eq-some",
+      "title": "mechanism_payment_of_allocation_eq_some",
+      "href": "misc/mechanism-payment-of-allocation-eq-some.html"
+    },
+    {
+      "id": "mechanism-payment-of-allocation-ne-some",
+      "title": "mechanism_payment_of_allocation_ne_some",
+      "href": "misc/mechanism-payment-of-allocation-ne-some.html"
+    },
+    {
+      "id": "mmsValue-le-of-forall",
+      "title": "mmsValue_le_of_forall",
+      "href": "misc/mmsValue-le-of-forall.html"
+    },
+    {
+      "id": "mmsValue-le-proportional-share-additive",
+      "title": "mmsValue_le_proportional_share_additive",
+      "href": "misc/mmsValue-le-proportional-share-additive.html"
+    },
+    {
+      "id": "mmsValue-nonneg",
+      "title": "mmsValue_nonneg",
+      "href": "misc/mmsValue-nonneg.html"
+    },
+    {
+      "id": "not-mem-paretoDomSet-of-strict",
+      "title": "not_mem_paretoDomSet_of_strict",
+      "href": "misc/not-mem-paretoDomSet-of-strict.html"
+    },
+    {
+      "id": "not-paretoImproved-self",
+      "title": "not_paretoImproved_self",
+      "href": "misc/not-paretoImproved-self.html"
+    },
+    {
+      "id": "nsmul-egalitarianWelfare-le-utilitarianWelfare",
+      "title": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "href": "misc/nsmul-egalitarianWelfare-le-utilitarianWelfare.html"
+    },
+    {
+      "id": "nsmul-egalitarianWelfare-le-utilitarianWelfare",
+      "title": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+      "href": "misc/nsmul-egalitarianWelfare-le-utilitarianWelfare.html"
+    },
+    {
+      "id": "paretoDomSet-subset",
+      "title": "paretoDomSet_subset",
+      "href": "misc/paretoDomSet-subset.html"
+    },
+    {
+      "id": "proportional-exists",
+      "title": "proportional_exists",
+      "href": "misc/proportional-exists.html"
+    },
+    {
+      "id": "reserve-le-bid-winner-of-allocation-eq-some",
+      "title": "reserve_le_bid_winner_of_allocation_eq_some",
+      "href": "misc/reserve-le-bid-winner-of-allocation-eq-some.html"
+    },
+    {
+      "id": "rotateBundles-improves",
+      "title": "rotateBundles_improves",
+      "href": "misc/rotateBundles-improves.html"
+    },
+    {
+      "id": "rotateBundles-isAllocation",
+      "title": "rotateBundles_isAllocation",
+      "href": "misc/rotateBundles-isAllocation.html"
+    },
+    {
+      "id": "rotateBundles-mem",
+      "title": "rotateBundles_mem",
+      "href": "misc/rotateBundles-mem.html"
+    },
+    {
+      "id": "rotateBundles-nondecreasing",
+      "title": "rotateBundles_nondecreasing",
+      "href": "misc/rotateBundles-nondecreasing.html"
+    },
+    {
+      "id": "rotateBundles-not-mem",
+      "title": "rotateBundles_not_mem",
+      "href": "misc/rotateBundles-not-mem.html"
+    },
+    {
+      "id": "rotateBundles-paretoDomCount-lt",
+      "title": "rotateBundles_paretoDomCount_lt",
+      "href": "misc/rotateBundles-paretoDomCount-lt.html"
+    },
+    {
+      "id": "secondPrice-le-clearingPrice",
+      "title": "secondPrice_le_clearingPrice",
+      "href": "misc/secondPrice-le-clearingPrice.html"
+    },
+    {
+      "id": "self-mem-paretoDomSet",
+      "title": "self_mem_paretoDomSet",
+      "href": "misc/self-mem-paretoDomSet.html"
+    },
+    {
+      "id": "strom-value-continuous",
+      "title": "strom_value_continuous",
+      "href": "misc/strom-value-continuous.html"
+    },
+    {
+      "id": "truthful-weakly-dominant",
+      "title": "truthful_weakly_dominant",
+      "href": "misc/truthful-weakly-dominant.html"
+    },
+    {
+      "id": "utilitarianWelfare-mono",
+      "title": "utilitarianWelfare_mono",
+      "href": "misc/utilitarianWelfare-mono.html"
+    },
+    {
+      "id": "utilitarianWelfare-mono",
+      "title": "utilitarianWelfare_mono",
+      "href": "misc/utilitarianWelfare-mono.html"
+    },
+    {
+      "id": "utilitarianWelfare-unique",
+      "title": "utilitarianWelfare_unique",
+      "href": "misc/utilitarianWelfare-unique.html"
+    },
+    {
+      "id": "utilitarianWelfare-unique",
+      "title": "utilitarianWelfare_unique",
+      "href": "misc/utilitarianWelfare-unique.html"
+    },
+    {
+      "id": "utility-loser",
+      "title": "utility_loser",
+      "href": "misc/utility-loser.html"
+    },
+    {
+      "id": "utility-nonneg",
+      "title": "utility_nonneg",
+      "href": "misc/utility-nonneg.html"
+    },
+    {
+      "id": "utility-winner",
+      "title": "utility_winner",
+      "href": "misc/utility-winner.html"
+    },
+    {
+      "id": "val-iUnion",
+      "title": "val_iUnion",
+      "href": "misc/val-iUnion.html"
+    },
+    {
+      "id": "valuation-is-dominant",
+      "title": "valuation_is_dominant",
+      "href": "misc/valuation-is-dominant.html"
+    },
+    {
+      "id": "winner-eq-of-allocation-eq-some",
+      "title": "winner_eq_of_allocation_eq_some",
+      "href": "misc/winner-eq-of-allocation-eq-some.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Allocation",
+      "display_name": "Allocation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

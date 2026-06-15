@@ -1,0 +1,52 @@
+{
+  "id": "cutAndChoose-ef-exists",
+  "title": "cutAndChoose_ef_exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/cutAndChoose-ef-exists.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>cutAndChoose_ef_exists</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem cutAndChoose_ef_exists (μ : Fin 2 → Measure I) [IsFiniteMeasure (μ 0)] [NoAtoms (μ 0)] : ∃ A : Allocation (Fin 2) I, IsAllocation A ∧ IsEnvyFree (MeasureValuation μ) A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n<li>MeasureValuation</li>\n<li>fairCutPoint_exists</li>\n<li>cutAndChooseAlloc_isAllocation</li>\n<li>cutAndChoose_isEnvyFree</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "MeasureValuation",
+      "title": "MeasureValuation",
+      "href": "misc/MeasureValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "cutAndChoose_ef_exists",
+      "display_name": "cutAndChoose_ef_exists",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

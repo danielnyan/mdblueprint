@@ -1,0 +1,36 @@
+{
+  "id": "minimax-eq-one-half",
+  "title": "minimax_eq_one_half",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/minimax-eq-one-half.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>minimax_eq_one_half</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem minimax_eq_one_half : -- Witness z = 1/2 caps every (x,y) at 1/2. (∀ x y, 0 ≤ x → x ≤ 1 → 0 ≤ y → y ≤ 1 → G x y (1/2) ≤ (1 / 2 : ℝ)) ∧ -- Lower bound: every z ∈ [0,1] has max_{x,y} G(x,y,z) ≥ 1/2. (∀ z, 0 ≤ z → z ≤ 1 → (1 / 2 : ℝ) ≤ max (G 1 1 z) (G 0 0 z))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>minimax_upper_bound</li>\n<li>minimax_lower_bound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "minimax_eq_one_half",
+      "display_name": "minimax_eq_one_half",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

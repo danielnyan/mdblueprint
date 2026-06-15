@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "source": "arrow_impossibility",
+    "target": "SWF"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "source": "arrow_impossibility",
+    "target": "Unanimity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "source": "arrow_impossibility",
+    "target": "IIA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "source": "arrow_impossibility",
+    "target": "Dictatorial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "source": "arrow_impossibility",
+    "target": "arrow_of_unanimity_iia"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "blockSum-pushTowardsZ-formula",
+  "title": "blockSum_pushTowardsZ_formula",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/blockSum-pushTowardsZ-formula.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>blockSum_pushTowardsZ_formula</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma blockSum_pushTowardsZ_formula (i : I) (x : BigSimplex card) : blockSum card i (pushTowardsZ card x) = (1 - tPush card x) * blockSum card i x + (tPush card x) * blockWeight card i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BigSimplex</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BigSimplex",
+      "title": "BigSimplex",
+      "href": "misc/BigSimplex.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "blockSum_pushTowardsZ_formula",
+      "display_name": "blockSum_pushTowardsZ_formula",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

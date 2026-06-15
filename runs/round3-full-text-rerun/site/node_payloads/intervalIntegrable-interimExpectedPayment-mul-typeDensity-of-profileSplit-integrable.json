@@ -1,0 +1,42 @@
+{
+  "id": "intervalIntegrable-interimExpectedPayment-mul-typeDensity-of-profileSplit-integrable",
+  "title": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/intervalIntegrable-interimExpectedPayment-mul-typeDensity-of-profileSplit-integrable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable {A B : BayesianSingleItemAuction I} (i : I) (hmeas : AEMeasurable (fun v =&gt; ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hnonneg : ∀ᵐ v ∂(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 ≤ A.typeDensity i v) (hpay : Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) : IntervalIntegrable (fun v =&gt; B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>OpponentTypeProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+      "display_name": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

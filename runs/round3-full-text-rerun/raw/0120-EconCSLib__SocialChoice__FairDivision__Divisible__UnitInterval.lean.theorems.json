@@ -1,0 +1,28 @@
+[
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.UnitInterval",
+    "name": "cdfRealContinuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/UnitInterval.lean",
+    "type": "lemma cdfRealContinuous (\u03bd : Measure \u211d) [IsFiniteMeasure \u03bd] [NoAtoms \u03bd] : Continuous (fun t : \u211d => (\u03bd (Set.Iic t)).toReal)"
+  }
+]

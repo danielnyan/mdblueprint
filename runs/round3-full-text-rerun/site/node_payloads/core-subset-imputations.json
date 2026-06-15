@@ -1,0 +1,52 @@
+{
+  "id": "core-subset-imputations",
+  "title": "core_subset_imputations",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/core-subset-imputations.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>core_subset_imputations</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem core_subset_imputations : G.Core ⊆ { x | G.IsImputation x }</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Core</li>\n<li>IsImputation</li>\n<li>coalitionPayoff</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Core",
+      "title": "Core",
+      "href": "misc/Core.html"
+    },
+    {
+      "id": "IsImputation",
+      "title": "IsImputation",
+      "href": "misc/IsImputation.html"
+    },
+    {
+      "id": "coalitionPayoff",
+      "title": "coalitionPayoff",
+      "href": "misc/coalitionPayoff.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "core_subset_imputations",
+      "display_name": "core_subset_imputations",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "Scarf",
+  "title": "Scarf",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Scarf.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Scarf</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Scarf : (IST.colorful c).Nonempty</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Pos</li>\n<li>typed_colorful_room_odd</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "internal-door-two-rooms",
+      "title": "internal_door_two_rooms",
+      "href": "misc/internal-door-two-rooms.html"
+    },
+    {
+      "id": "room-seq",
+      "title": "room_seq",
+      "href": "misc/room-seq.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Scarf",
+      "display_name": "Scarf",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

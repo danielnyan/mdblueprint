@@ -1,0 +1,135 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "Vickrey",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "def Vickrey (v : Fin 2 \u2192 Fin n) : StrategicGame (Fin 2) \u2124"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "Vickrey"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "truthful_weakly_dominant_p0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "theorem truthful_weakly_dominant_p0 (v : Fin 2 \u2192 Fin n) : IsWeaklyDominant (Vickrey n v) 0 (v 0)"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "Vickrey",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "truthful_weakly_dominant_p1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "theorem truthful_weakly_dominant_p1 (v : Fin 2 \u2192 Fin n) : IsWeaklyDominant (Vickrey n v) 1 (v 1)"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "Vickrey"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "vickrey4_p0_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "theorem vickrey4_p0_dominant : IsWeaklyDominant (Vickrey 4 v4) 0 (v4 0)"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "Vickrey"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "vickrey4_p1_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 127
+      },
+      "start": {
+        "column": 1,
+        "line": 127
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "theorem vickrey4_p1_dominant : IsWeaklyDominant (Vickrey 4 v4) 1 (v4 1)"
+  },
+  {
+    "dependencies": [
+      "IsNashEquilibrium",
+      "Vickrey",
+      "of_dominant",
+      "vickrey4_p0_dominant",
+      "vickrey4_p1_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "name": "vickrey4_truthful_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleAuction.lean",
+    "type": "theorem vickrey4_truthful_nash : IsNashEquilibrium (Vickrey 4 v4) v4"
+  }
+]

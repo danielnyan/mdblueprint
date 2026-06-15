@@ -1,0 +1,57 @@
+{
+  "id": "ReachedSubgamePayoffTransfer-init",
+  "title": "ReachedSubgamePayoffTransfer.init",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ReachedSubgamePayoffTransfer-init.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ReachedSubgamePayoffTransfer.init</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem ReachedSubgamePayoffTransfer.init (G : ExtensiveGame iota Real) [DecidableEq G.State] [(s : G.State) -&gt; Fintype (G.Action s)] [(s : G.State) -&gt; Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (fuel : Nat) : ReachedSubgamePayoffTransfer G beta G.init fuel</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isEmpty</li>\n<li>BehaviorProfile</li>\n<li>ReachedSubgamePayoffTransfer</li>\n<li>expectedPayoff</li>\n<li>restrictSubgame_deviate_liftSubgame</li>\n<li>expectedPayoffFrom_restrictSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isEmpty",
+      "title": "isEmpty",
+      "href": "misc/isEmpty.html"
+    },
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ReachedSubgamePayoffTransfer.init",
+      "display_name": "ReachedSubgamePayoffTransfer.init",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

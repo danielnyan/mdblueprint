@@ -1,0 +1,206 @@
+{
+  "notable_review_items": [
+    {
+      "extra_declarations": [
+        "congr_payoff"
+      ],
+      "extra_uses": [
+        "IsBestResponse"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_id": "strategic_games.best_response"
+    },
+    {
+      "extra_declarations": [
+        "IsNashEquilibrium"
+      ],
+      "extra_uses": [
+        "IsNashEquilibrium"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "node_id": "strategic_games.dominant_implies_nash"
+    },
+    {
+      "extra_declarations": [
+        "of_dominant"
+      ],
+      "extra_uses": [
+        "IsNashEquilibrium"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.best_response"
+      ],
+      "node_id": "strategic_games.nash_equilibrium"
+    },
+    {
+      "extra_declarations": [
+        "pd_nash_unique",
+        "pd_pareto_suboptimal"
+      ],
+      "extra_uses": [
+        "PD",
+        "pd_defect_weakly_dominant"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "node_id": "strategic_games.prisoners_dilemma"
+    },
+    {
+      "extra_declarations": [
+        "Profile",
+        "deviate",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "missing_declarations": [
+        "StrategicGame"
+      ],
+      "missing_uses": [],
+      "node_id": "strategic_games.strategic_game"
+    },
+    {
+      "extra_declarations": [
+        "deviate",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategic_game"
+      ],
+      "node_id": "strategic_games.strategy_profile"
+    },
+    {
+      "extra_declarations": [
+        "WeaklyDominates",
+        "IsWeaklyDominant",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsStrictlyDominant.isWeaklyDominant",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates",
+        "WeaklyDominates"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_id": "strategic_games.strictly_dominates"
+    },
+    {
+      "extra_declarations": [
+        "Profile",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategy_profile"
+      ],
+      "node_id": "strategic_games.unilateral_deviation"
+    },
+    {
+      "extra_declarations": [
+        "WeaklyDominates",
+        "StrictlyDominates",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [],
+      "node_id": "strategic_games.weakly_dominant_strategy"
+    },
+    {
+      "extra_declarations": [
+        "StrictlyDominates",
+        "IsWeaklyDominant",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsStrictlyDominant.isWeaklyDominant",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates",
+        "WeaklyDominates"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_id": "strategic_games.weakly_dominates"
+    },
+    {
+      "extra_declarations": [
+        "MixedProfile",
+        "IsCompletelyMixed",
+        "IsCompletelyMixedProfile",
+        "IsCompletelyMixedProfile.player",
+        "pureToMixed",
+        "uniformMixed"
+      ],
+      "extra_uses": [
+        "IsCompletelyMixed",
+        "IsCompletelyMixedProfile",
+        "MixedProfile",
+        "MixedStrategy",
+        "deviateMixed",
+        "expectedPayoff"
+      ],
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategic_game"
+      ],
+      "node_id": "strategic_games.mixed_strategy"
+    }
+  ],
+  "phase1": {
+    "accepted": "no-op / no structural edit justified",
+    "actionable_proposals": 0,
+    "lint_findings": 0,
+    "mode": "admitted+staged",
+    "selected_nodes": 11,
+    "target": "strategic_games.mixed_strategy"
+  },
+  "phase2": {
+    "nodes_checked": 11,
+    "nodes_with_extra_decls": 11,
+    "nodes_with_extra_uses": 11,
+    "nodes_with_missing_decls": 1,
+    "nodes_with_missing_uses": 9
+  }
+}

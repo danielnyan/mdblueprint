@@ -1,0 +1,36 @@
+{
+  "id": "RegularMyersonICIRAnalyticAssumptions-typeDensity-nonnegative-ae",
+  "title": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RegularMyersonICIRAnalyticAssumptions-typeDensity-nonnegative-ae.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (i : I) : ∀ᵐ v ∂(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 ≤ A.typeDensity i v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+      "display_name": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

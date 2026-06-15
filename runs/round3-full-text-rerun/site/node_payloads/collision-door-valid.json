@@ -1,0 +1,42 @@
+{
+  "id": "collision-door-valid",
+  "title": "collision_door_valid",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/collision-door-valid.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>collision_door_valid</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma collision_door_valid [DecidableEq T] (σ : Finset T) (C : Finset I) (_ : T → I) (x : T) (h_cell : isCell σ C) (hx_in_σ : x ∈ σ) (h_card_eq : C.card = σ.card) : isDoorof (σ.erase x) C σ C</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isCell</li>\n<li>Dominant_of_subset</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "collision_door_valid",
+      "display_name": "collision_door_valid",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

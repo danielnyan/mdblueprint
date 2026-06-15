@@ -1,0 +1,47 @@
+{
+  "id": "optAug-feasible-iff",
+  "title": "optAug_feasible_iff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/optAug-feasible-iff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>optAug_feasible_iff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem optAug_feasible_iff (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (v : 𝕜) (x : Fin n → 𝕜) : (∀ idx, optAugB b v idx ≤ ∑ j, optAugA A c idx j * x j) ↔ (∀ i, b i ≤ ∑ j, A i j * x j) ∧ (∀ j, 0 ≤ x j) ∧ (∑ j, c j * x j ≤ v)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>optAugB</li>\n<li>optAugA</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "optAugB",
+      "title": "optAugB",
+      "href": "misc/optAugB.html"
+    },
+    {
+      "id": "optAugA",
+      "title": "optAugA",
+      "href": "misc/optAugA.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "optAug_feasible_iff",
+      "display_name": "optAug_feasible_iff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

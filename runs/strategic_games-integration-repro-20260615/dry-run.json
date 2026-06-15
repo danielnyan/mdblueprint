@@ -1,0 +1,62 @@
+{
+  "kind": "mdblueprint-refactor-dry-run",
+  "mode": "admitted+staged",
+  "knowledge_root": "docs/knowledge",
+  "plan_path": "runs/strategic_games-integration-repro-20260615/dry-run-plan.yml",
+  "writes": [],
+  "allowed_operations": [
+    "add-dependency",
+    "add-node-from-request",
+    "add-topic-membership",
+    "delete-node",
+    "mark-lean-topic-divergent",
+    "move-primary-topic",
+    "remove-dependency",
+    "remove-topic-membership",
+    "replace-node-body"
+  ],
+  "would_introduce_errors": true,
+  "after_has_errors": true,
+  "summary": {
+    "operation_status_counts": {
+      "applied": 0,
+      "noop": 0,
+      "error": 0
+    },
+    "added_node_count": 0,
+    "changed_node_count": 0,
+    "removed_node_count": 0,
+    "baseline_errors": 0,
+    "baseline_warnings": 0,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "resolved_errors": 0,
+    "resolved_warnings": 0
+  },
+  "graph": {
+    "before": {
+      "nodes": 11,
+      "edges": 12
+    },
+    "after": {
+      "nodes": 11,
+      "edges": 12
+    }
+  },
+  "operations": [],
+  "operation_diagnostics": [
+    {
+      "level": "error",
+      "node_id": "<refactor-dry-run>",
+      "message": "cannot read dry-run plan: [Errno 2] No such file or directory: 'runs/strategic_games-integration-repro-20260615/dry-run-plan.yml'",
+      "file_path": "runs/strategic_games-integration-repro-20260615/dry-run-plan.yml",
+      "code": "REFACTOR_DRY_RUN",
+      "related": []
+    }
+  ],
+  "new_diagnostics": [],
+  "resolved_diagnostics": [],
+  "added_nodes": [],
+  "changed_nodes": [],
+  "removed_nodes": []
+}

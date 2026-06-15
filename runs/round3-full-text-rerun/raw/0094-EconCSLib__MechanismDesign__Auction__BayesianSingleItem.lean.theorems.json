@@ -1,0 +1,1832 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "OpponentProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "abbrev OpponentProfile (I : Type*) (X : Type*) (i : I)"
+  },
+  {
+    "dependencies": [
+      "OpponentProfile",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "OpponentTypeProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "abbrev OpponentTypeProfile (I : Type*) (i : I)"
+  },
+  {
+    "dependencies": [
+      "DirectBayesianMechanismWithTransfers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "toDirectBayesianMechanismWithTransfers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 148
+      },
+      "start": {
+        "column": 1,
+        "line": 148
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def toDirectBayesianMechanismWithTransfers (A : BayesianSingleItemAuction I) : DirectBayesianMechanismWithTransfers I (fun _ => \u211d) (I \u2192 \u211d) \u211d"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "RespectsSingleItemCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 160
+      },
+      "start": {
+        "column": 1,
+        "line": 160
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def RespectsSingleItemCapacity [Fintype I] (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsAllocFeasible",
+      "RespectsSingleItemCapacity",
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "IsFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 167
+      },
+      "start": {
+        "column": 1,
+        "line": 167
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def IsFeasible [Fintype I] (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 209
+      },
+      "start": {
+        "column": 1,
+        "line": 209
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasSameSellingEnvironment",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 215
+      },
+      "start": {
+        "column": 1,
+        "line": 215
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasSameSellingEnvironment (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasSameSellingEnvironment.prior_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 221
+      },
+      "start": {
+        "column": 1,
+        "line": 221
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem HasSameSellingEnvironment.prior_eq {A B : BayesianSingleItemAuction I} (h : A.HasSameSellingEnvironment B) : B.prior = A.prior"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasSameSellingEnvironment.opponentPrior_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 227
+      },
+      "start": {
+        "column": 1,
+        "line": 227
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem HasSameSellingEnvironment.opponentPrior_eq {A B : BayesianSingleItemAuction I} (h : A.HasSameSellingEnvironment B) : B.opponentPrior = A.opponentPrior"
+  },
+  {
+    "dependencies": [
+      "HasSameSellingEnvironment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasSameSellingEnvironment.typeData_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 233
+      },
+      "start": {
+        "column": 1,
+        "line": 233
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem HasSameSellingEnvironment.typeData_eq {A B : BayesianSingleItemAuction I} (h : A.HasSameSellingEnvironment B) : B.typeData = A.typeData"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "productPrior_map_eval",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 253
+      },
+      "start": {
+        "column": 1,
+        "line": 253
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem productPrior_map_eval [Fintype I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) : A.productPrior.map (Function.eval i) = A.typeMeasure i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "opponentProductPrior_map_eval",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 259
+      },
+      "start": {
+        "column": 1,
+        "line": 259
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem opponentProductPrior_map_eval [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) (j : {j // j \u2260 i}) : (A.opponentProductPrior i).map (Function.eval j) = A.typeMeasure j"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "productPrior_map_eval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "prior_map_eval_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 267
+      },
+      "start": {
+        "column": 1,
+        "line": 267
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem prior_map_eval_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) : A.prior.map (Function.eval i) = A.typeMeasure i"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "opponentProductPrior_map_eval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "opponentPrior_map_eval_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 275
+      },
+      "start": {
+        "column": 1,
+        "line": 275
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem opponentPrior_map_eval_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) (j : {j // j \u2260 i}) : (A.opponentPrior i).map (Function.eval j) = A.typeMeasure j"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_comp_eval_productPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 283
+      },
+      "start": {
+        "column": 1,
+        "line": 283
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_comp_eval_productPrior [Fintype I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] {i : I} {E : Type*} [NormedAddCommGroup E] {f : \u211d \u2192 E} (hf : Integrable f (A.typeMeasure i)) : Integrable (fun t : \u2200 _ : I, \u211d => f (t i)) A.productPrior"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_comp_eval_opponentProductPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 292
+      },
+      "start": {
+        "column": 1,
+        "line": 292
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_comp_eval_opponentProductPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] {i : I} {j : {j // j \u2260 i}} {E : Type*} [NormedAddCommGroup E] {f : \u211d \u2192 E} (hf : Integrable f (A.typeMeasure j)) : Integrable (fun t : OpponentTypeProfile I i => f (t j)) (A.opponentProductPrior i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_comp_eval_productPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 301
+      },
+      "start": {
+        "column": 1,
+        "line": 301
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_comp_eval_productPrior [Fintype I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] {i : I} {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] {f : \u211d \u2192 E} (hf : AEStronglyMeasurable f (A.typeMeasure i)) : (\u222b t : \u2200 _ : I, \u211d, f (t i) \u2202A.productPrior) = \u222b v, f v \u2202A.typeMeasure i"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_comp_eval_opponentProductPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 311
+      },
+      "start": {
+        "column": 1,
+        "line": 311
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_comp_eval_opponentProductPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] {i : I} {j : {j // j \u2260 i}} {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] {f : \u211d \u2192 E} (hf : AEStronglyMeasurable f (A.typeMeasure j)) : (\u222b t : OpponentTypeProfile I i, f (t j) \u2202A.opponentProductPrior i) = \u222b v, f v \u2202A.typeMeasure j"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "integrable_comp_eval_productPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_comp_eval_prior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 322
+      },
+      "start": {
+        "column": 1,
+        "line": 322
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_comp_eval_prior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) {i : I} {E : Type*} [NormedAddCommGroup E] {f : \u211d \u2192 E} (hf : Integrable f (A.typeMeasure i)) : Integrable (fun t : \u2200 _ : I, \u211d => f (t i)) A.prior"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile",
+      "integrable_comp_eval_opponentProductPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 332
+      },
+      "start": {
+        "column": 1,
+        "line": 332
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) {i : I} {j : {j // j \u2260 i}} {E : Type*} [NormedAddCommGroup E] {f : \u211d \u2192 E} (hf : Integrable f (A.typeMeasure j)) : Integrable (fun t : OpponentTypeProfile I i => f (t j)) (A.opponentPrior i)"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "integral_comp_eval_productPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_comp_eval_prior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 342
+      },
+      "start": {
+        "column": 1,
+        "line": 342
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_comp_eval_prior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) {i : I} {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] {f : \u211d \u2192 E} (hf : AEStronglyMeasurable f (A.typeMeasure i)) : (\u222b t : \u2200 _ : I, \u211d, f (t i) \u2202A.prior) = \u222b v, f v \u2202A.typeMeasure i"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile",
+      "integral_comp_eval_opponentProductPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 353
+      },
+      "start": {
+        "column": 1,
+        "line": 353
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_comp_eval_opponentPrior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) {i : I} {j : {j // j \u2260 i}} {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] {f : \u211d \u2192 E} (hf : AEStronglyMeasurable f (A.typeMeasure j)) : (\u222b t : OpponentTypeProfile I i, f (t j) \u2202A.opponentPrior i) = \u222b v, f v \u2202A.typeMeasure j"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_typeMeasure_eq_intervalIntegral_smul",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 365
+      },
+      "start": {
+        "column": 1,
+        "line": 365
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_typeMeasure_eq_intervalIntegral_smul (A : BayesianSingleItemAuction I) (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] (g : \u211d \u2192 E) (hmeas : AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hnonneg : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) : (\u222b v, g v \u2202A.typeMeasure i) = \u222b v in 0..A.typeData.omega i, A.typeDensity i v \u2022 g v"
+  },
+  {
+    "dependencies": [
+      "integral_typeMeasure_eq_intervalIntegral_smul",
+      "OpponentTypeProfile",
+      "Profile.ext",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 397
+      },
+      "start": {
+        "column": 1,
+        "line": 397
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_typeMeasure_eq_intervalIntegral_mul (A : BayesianSingleItemAuction I) (i : I) (g : \u211d \u2192 \u211d) (hmeas : AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hnonneg : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) : (\u222b v, g v \u2202A.typeMeasure i) = \u222b v in 0..A.typeData.omega i, g v * A.typeDensity i v"
+  },
+  {
+    "dependencies": [
+      "Profile.ext",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl",
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 486
+      },
+      "start": {
+        "column": 1,
+        "line": 486
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem measurePreserving_profileSplitMeasurableEquiv_productPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) : MeasurePreserving (profileSplitMeasurableEquiv i) A.productPrior ((A.typeMeasure i).prod (A.opponentProductPrior i))"
+  },
+  {
+    "dependencies": [
+      "measurePreserving_profileSplitMeasurableEquiv_productPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "productPrior_map_profileSplitMeasurableEquiv",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 526
+      },
+      "start": {
+        "column": 1,
+        "line": 526
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem productPrior_map_profileSplitMeasurableEquiv [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) : A.productPrior.map (profileSplitMeasurableEquiv i) = (A.typeMeasure i).prod (A.opponentProductPrior i)"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "productPrior_map_profileSplitMeasurableEquiv"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "prior_map_profileSplitMeasurableEquiv_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 533
+      },
+      "start": {
+        "column": 1,
+        "line": 533
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem prior_map_profileSplitMeasurableEquiv_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) : A.prior.map (profileSplitMeasurableEquiv i) = (A.typeMeasure i).prod (A.opponentProductPrior i)"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile",
+      "measurePreserving_profileSplitMeasurableEquiv_productPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 542
+      },
+      "start": {
+        "column": 1,
+        "line": 542
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_comp_profileSplitMeasurableEquiv_productPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] (g : \u211d \u00d7 OpponentTypeProfile I i \u2192 E) : (\u222b t, g (profileSplitMeasurableEquiv i t) \u2202A.productPrior) = \u222b p, g p \u2202(A.typeMeasure i).prod (A.opponentProductPrior i)"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile",
+      "productPrior_map_profileSplitMeasurableEquiv",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_productPrior_of_integrable_profileSplit",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 551
+      },
+      "start": {
+        "column": 1,
+        "line": 551
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_productPrior_of_integrable_profileSplit [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) {E : Type*} [NormedAddCommGroup E] {f : (\u2200 _ : I, \u211d) \u2192 E} (hf : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentProductPrior i))) : Integrable f A.productPrior"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile",
+      "integrable_productPrior_of_integrable_profileSplit"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 574
+      },
+      "start": {
+        "column": 1,
+        "line": 574
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) {E : Type*} [NormedAddCommGroup E] {f : (\u2200 _ : I, \u211d) \u2192 E} (hf : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentPrior i))) : Integrable f A.prior"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "integral_comp_profileSplitMeasurableEquiv_productPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 589
+      },
+      "start": {
+        "column": 1,
+        "line": 589
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_productPrior_eq_integral_typeMeasure_opponentProductPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] (f : (\u2200 _ : I, \u211d) \u2192 E) (hf : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentProductPrior i))) : (\u222b t, f t \u2202A.productPrior) = \u222b v, \u222b t, f (reportProfile i v t) \u2202A.opponentProductPrior i \u2202A.typeMeasure i"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile",
+      "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 624
+      },
+      "start": {
+        "column": 1,
+        "line": 624
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] (f : (\u2200 _ : I, \u211d) \u2192 E) (hf : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentProductPrior i))) : (\u222b t, f t \u2202A.prior) = \u222b v, \u222b t, f (reportProfile i v t) \u2202A.opponentProductPrior i \u2202A.typeMeasure i"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "OpponentTypeProfile",
+      "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 638
+      },
+      "start": {
+        "column": 1,
+        "line": 638
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (h : A.HasIndependentTypePriors) (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E] (f : (\u2200 _ : I, \u211d) \u2192 E) (hf : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentPrior i))) : (\u222b t, f t \u2202A.prior) = \u222b v, \u222b t, f (reportProfile i v t) \u2202A.opponentPrior i \u2202A.typeMeasure i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIntegrableInterimAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 679
+      },
+      "start": {
+        "column": 1,
+        "line": 679
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIntegrableInterimAllocation (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIntegrableInterimPayment",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 684
+      },
+      "start": {
+        "column": 1,
+        "line": 684
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIntegrableInterimPayment (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimAllocation",
+      "HasIntegrableInterimPayment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIntegrableInterimObjects",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 689
+      },
+      "start": {
+        "column": 1,
+        "line": 689
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIntegrableInterimObjects (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 693
+      },
+      "start": {
+        "column": 1,
+        "line": 693
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound (A : BayesianSingleItemAuction I) (hmeas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) (hbound : \u2200 i z_i, \u2203 C : \u211d, \u2200\u1d50 t \u2202A.opponentPrior i, \u2016A.interimAllocationIntegrand i z_i t\u2016 \u2264 C) : A.HasIntegrableInterimAllocation"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimPayment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 710
+      },
+      "start": {
+        "column": 1,
+        "line": 710
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound (A : BayesianSingleItemAuction I) (hmeas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.interimPaymentIntegrand i z_i t) (A.opponentPrior i)) (hbound : \u2200 i z_i, \u2203 C : \u211d, \u2200\u1d50 t \u2202A.opponentPrior i, \u2016A.interimPaymentIntegrand i z_i t\u2016 \u2264 C) : A.HasIntegrableInterimPayment"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimObjects",
+      "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound",
+      "hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 727
+      },
+      "start": {
+        "column": 1,
+        "line": 727
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound (A : BayesianSingleItemAuction I) (halloc_meas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) (hpay_meas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.interimPaymentIntegrand i z_i t) (A.opponentPrior i)) (halloc_bound : \u2200 i z_i, \u2203 C : \u211d, \u2200\u1d50 t \u2202A.opponentPrior i, \u2016A.interimAllocationIntegrand i z_i t\u2016 \u2264 C) (hpay_bound : \u2200 i z_i, \u2203 C : \u211d, \u2200\u1d50 t \u2202A.opponentPrior i, \u2016A.interimPaymentIntegrand i z_i t\u2016 \u2264 C) : A.HasIntegrableInterimObjects"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasIntegrableInterimAllocation",
+      "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 754
+      },
+      "start": {
+        "column": 1,
+        "line": 754
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (hmeas : \u2200 i z_i, AEStronglyMeasurable (fun t => A.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) : A.HasIntegrableInterimAllocation"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimAllocProb_eq_integral_interimAllocationIntegrand",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 781
+      },
+      "start": {
+        "column": 1,
+        "line": 781
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimAllocProb_eq_integral_interimAllocationIntegrand (A : BayesianSingleItemAuction I) (i : I) (z_i : \u211d) : A.interimAllocProb i z_i = \u222b t, A.interimAllocationIntegrand i z_i t \u2202A.opponentPrior i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimExpectedPayment_eq_integral_interimPaymentIntegrand",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 788
+      },
+      "start": {
+        "column": 1,
+        "line": 788
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimExpectedPayment_eq_integral_interimPaymentIntegrand (A : BayesianSingleItemAuction I) (i : I) (z_i : \u211d) : A.interimExpectedPayment i z_i = \u222b t, A.interimPaymentIntegrand i z_i t \u2202A.opponentPrior i"
+  },
+  {
+    "dependencies": [
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 795
+      },
+      "start": {
+        "column": 1,
+        "line": 795
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable {A B : BayesianSingleItemAuction I} (i : I) (hmeas : AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hnonneg : \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hpay : Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) : IntervalIntegrable (fun v => B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimAllocProb_nonneg_of_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 855
+      },
+      "start": {
+        "column": 1,
+        "line": 855
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimAllocProb_nonneg_of_isFeasible [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (i : I) (z_i : \u211d) : 0 \u2264 A.interimAllocProb i z_i"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasIntegrableInterimAllocation",
+      "OpponentTypeProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimAllocProb_le_one_of_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 862
+      },
+      "start": {
+        "column": 1,
+        "line": 862
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimAllocProb_le_one_of_isFeasible [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (hint : A.HasIntegrableInterimAllocation) (i : I) (z_i : \u211d) : A.interimAllocProb i z_i \u2264 1"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasIntegrableInterimAllocation",
+      "interimAllocProb_nonneg_of_isFeasible",
+      "interimAllocProb_le_one_of_isFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimAllocProb_mem_Icc_of_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 875
+      },
+      "start": {
+        "column": 1,
+        "line": 875
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimAllocProb_mem_Icc_of_isFeasible [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (hint : A.HasIntegrableInterimAllocation) (i : I) (z_i : \u211d) : A.interimAllocProb i z_i \u2208 Set.Icc (0 : \u211d) 1"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasExpectedRevenueInterimPaymentIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 906
+      },
+      "start": {
+        "column": 1,
+        "line": 906
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasExpectedRevenueInterimPaymentIdentity [Fintype I] (A B : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "PaymentInterimFubiniAssumptions.expectedPaymentRevenueIntegrable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 921
+      },
+      "start": {
+        "column": 1,
+        "line": 921
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem PaymentInterimFubiniAssumptions.expectedPaymentRevenueIntegrable [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.PaymentInterimFubiniAssumptions B) : Integrable (fun t => \u2211 i, B.paymentRule t i) A.prior"
+  },
+  {
+    "dependencies": [
+      "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+      "HasExpectedRevenueInterimPaymentIdentity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 927
+      },
+      "start": {
+        "column": 1,
+        "line": 927
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.PaymentInterimFubiniAssumptions B) : A.HasExpectedRevenueInterimPaymentIdentity B"
+  },
+  {
+    "dependencies": [
+      "integral_typeMeasure_eq_intervalIntegral_mul"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "paymentInterimFubiniAssumptions_of_typeMeasure_fubini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 948
+      },
+      "start": {
+        "column": 1,
+        "line": 948
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem paymentInterimFubiniAssumptions_of_typeMeasure_fubini [Fintype I] {A B : BayesianSingleItemAuction I} (hdens_meas : \u2200 i : I, AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hpay_int : \u2200 i : I, Integrable (fun t => B.paymentRule t i) A.prior) (hpay_fubini : \u2200 i : I, (\u222b t, B.paymentRule t i \u2202A.prior) = \u222b v, B.interimExpectedPayment i v \u2202A.typeMeasure i) : A.PaymentInterimFubiniAssumptions B"
+  },
+  {
+    "dependencies": [
+      "HasIndependentTypePriors",
+      "HasSameSellingEnvironment",
+      "OpponentTypeProfile",
+      "paymentInterimFubiniAssumptions_of_typeMeasure_fubini",
+      "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "HasSameSellingEnvironment.opponentPrior_eq",
+      "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 981
+      },
+      "start": {
+        "column": 1,
+        "line": 981
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem paymentInterimFubiniAssumptions_of_independentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [\u2200 i : I, IsProbabilityMeasure (A.typeMeasure i)] (hdens_meas : \u2200 i : I, AEMeasurable (fun v => ENNReal.ofReal (A.typeDensity i v)) (volume.restrict (Set.Ioc 0 (A.typeData.omega i)))) (hdens_ae : \u2200 i : I, \u2200\u1d50 v \u2202(volume.restrict (Set.Ioc 0 (A.typeData.omega i))), 0 \u2264 A.typeDensity i v) (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hpay_prod_int : \u2200 i : I, Integrable (fun p : \u211d \u00d7 OpponentTypeProfile I i => B.paymentRule (reportProfile i p.1 p.2) i) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.PaymentInterimFubiniAssumptions B"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIntervalIntegrableInterimAllocationOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1029
+      },
+      "start": {
+        "column": 1,
+        "line": 1029
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIntervalIntegrableInterimAllocationOnSupport (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasIntervalIntegrableInterimAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1035
+      },
+      "start": {
+        "column": 1,
+        "line": 1035
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasIntervalIntegrableInterimAllocation (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "IsIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1051
+      },
+      "start": {
+        "column": 1,
+        "line": 1051
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def IsIncentiveCompatible (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimQuasiLinearUtility_eq_equilibriumPayoff_add",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1057
+      },
+      "start": {
+        "column": 1,
+        "line": 1057
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimQuasiLinearUtility_eq_equilibriumPayoff_add (A : BayesianSingleItemAuction I) (i : I) (t_i z_i : \u211d) : A.interimQuasiLinearUtility i t_i z_i = A.equilibriumPayoff i z_i + A.interimAllocProb i z_i * (t_i - z_i)"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimAllocation",
+      "HasIntegrableInterimPayment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integrable_interimQuasiLinearUtilityIntegrand",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1065
+      },
+      "start": {
+        "column": 1,
+        "line": 1065
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integrable_interimQuasiLinearUtilityIntegrand (A : BayesianSingleItemAuction I) (hQ : A.HasIntegrableInterimAllocation) (hM : A.HasIntegrableInterimPayment) (i : I) (t_i z_i : \u211d) : Integrable (fun t => A.interimQuasiLinearUtilityIntegrand i t_i z_i t) (A.opponentPrior i)"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimAllocation",
+      "HasIntegrableInterimPayment"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "integral_interimQuasiLinearUtilityIntegrand_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1074
+      },
+      "start": {
+        "column": 1,
+        "line": 1074
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem integral_interimQuasiLinearUtilityIntegrand_eq (A : BayesianSingleItemAuction I) (hQ : A.HasIntegrableInterimAllocation) (hM : A.HasIntegrableInterimPayment) (i : I) (t_i z_i : \u211d) : (\u222b t, A.interimQuasiLinearUtilityIntegrand i t_i z_i t \u2202A.opponentPrior i) = A.interimQuasiLinearUtility i t_i z_i"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "OpponentTypeProfile",
+      "toStrategicGame",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1096
+      },
+      "start": {
+        "column": 1,
+        "line": 1096
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimQuasiLinearUtilityIntegrand_le_of_isDSIC [DecidableEq I] (A : BayesianSingleItemAuction I) (hdsic : A.IsDSIC) (i : I) (t_i z_i : \u211d) (t : OpponentTypeProfile I i) : A.interimQuasiLinearUtilityIntegrand i t_i z_i t \u2264 A.interimQuasiLinearUtilityIntegrand i t_i t_i t"
+  },
+  {
+    "dependencies": [
+      "HasIntegrableInterimObjects",
+      "IsDSIC",
+      "isDSIC",
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "integral_interimQuasiLinearUtilityIntegrand_eq",
+      "integrable_interimQuasiLinearUtilityIntegrand",
+      "interimQuasiLinearUtilityIntegrand_le_of_isDSIC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "isIncentiveCompatible_of_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1109
+      },
+      "start": {
+        "column": 1,
+        "line": 1109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem isIncentiveCompatible_of_isDSIC [DecidableEq I] (A : BayesianSingleItemAuction I) (hint : A.HasIntegrableInterimObjects) (hdsic : A.IsDSIC) : A.IsIncentiveCompatible"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "interimQuasiLinearUtility_eq_equilibriumPayoff_add"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "isIncentiveCompatible_iff_equilibriumPayoff_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1124
+      },
+      "start": {
+        "column": 1,
+        "line": 1124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem isIncentiveCompatible_iff_equilibriumPayoff_ge (A : BayesianSingleItemAuction I) : A.IsIncentiveCompatible \u2194 \u2200 (i : I) (v_i x_i : \u211d), A.equilibriumPayoff i v_i \u2265 A.equilibriumPayoff i x_i + A.interimAllocProb i x_i * (v_i - x_i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimAllocProb_mono_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1137
+      },
+      "start": {
+        "column": 1,
+        "line": 1137
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimAllocProb_mono_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (i : I) : Monotone (A.interimAllocProb i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasIntervalIntegrableInterimAllocation",
+      "interimAllocProb_mono_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1161
+      },
+      "start": {
+        "column": 1,
+        "line": 1161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasIntervalIntegrableInterimAllocation"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "equilibriumPayoff_convexOn_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1168
+      },
+      "start": {
+        "column": 1,
+        "line": 1168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem equilibriumPayoff_convexOn_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (i : I) : ConvexOn \u211d Set.univ (A.equilibriumPayoff i)"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1209
+      },
+      "start": {
+        "column": 1,
+        "line": 1209
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) {i : I} {v_i : \u211d} (hdiff : DifferentiableAt \u211d (A.equilibriumPayoff i) v_i) : deriv (A.equilibriumPayoff i) v_i = A.interimAllocProb i v_i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "IsIndividuallyRational",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1234
+      },
+      "start": {
+        "column": 1,
+        "line": 1234
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def IsIndividuallyRational (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "IsIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1238
+      },
+      "start": {
+        "column": 1,
+        "line": 1238
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def IsIndividuallyRationalOnSupport (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasInterimEnvelopeFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1243
+      },
+      "start": {
+        "column": 1,
+        "line": 1243
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasInterimEnvelopeFormula (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasInterimPaymentFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1249
+      },
+      "start": {
+        "column": 1,
+        "line": 1249
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasInterimPaymentFormula (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasInterimEnvelopeDerivative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1256
+      },
+      "start": {
+        "column": 1,
+        "line": 1256
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimEnvelopeDerivative",
+      "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1261
+      },
+      "start": {
+        "column": 1,
+        "line": 1261
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hdiff : \u2200 (i : I) (v_i : \u211d), DifferentiableAt \u211d (A.equilibriumPayoff i) v_i) : A.HasInterimEnvelopeDerivative"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeDerivative",
+      "HasIntervalIntegrableInterimAllocation",
+      "HasInterimEnvelopeFormula"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1274
+      },
+      "start": {
+        "column": 1,
+        "line": 1274
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) (hderiv : A.HasInterimEnvelopeDerivative) (hint : A.HasIntervalIntegrableInterimAllocation) : A.HasInterimEnvelopeFormula"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimEnvelopeDerivative",
+      "HasInterimEnvelopeFormula",
+      "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+      "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1293
+      },
+      "start": {
+        "column": 1,
+        "line": 1293
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hderiv : A.HasInterimEnvelopeDerivative) : A.HasInterimEnvelopeFormula"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimEnvelopeFormula",
+      "equilibriumPayoff_convexOn_of_isIncentiveCompatible",
+      "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1302
+      },
+      "start": {
+        "column": 1,
+        "line": 1302
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimEnvelopeFormula_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasInterimEnvelopeFormula"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1340
+      },
+      "start": {
+        "column": 1,
+        "line": 1340
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) (i : I) (v_i : \u211d) : A.equilibriumPayoff i v_i = -A.interimExpectedPayment i 0 + \u222b z in 0..v_i, A.interimAllocProb i z"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula",
+      "HasInterimPaymentFormula"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1351
+      },
+      "start": {
+        "column": 1,
+        "line": 1351
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimPaymentFormula_of_hasInterimEnvelopeFormula (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) : A.HasInterimPaymentFormula"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeDerivative",
+      "HasIntervalIntegrableInterimAllocation",
+      "HasInterimPaymentFormula",
+      "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+      "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1369
+      },
+      "start": {
+        "column": 1,
+        "line": 1369
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) (hderiv : A.HasInterimEnvelopeDerivative) (hint : A.HasIntervalIntegrableInterimAllocation) : A.HasInterimPaymentFormula"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimPaymentFormula",
+      "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+      "hasInterimEnvelopeFormula_of_isIncentiveCompatible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1378
+      },
+      "start": {
+        "column": 1,
+        "line": 1378
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasInterimPaymentFormula_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasInterimPaymentFormula"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimEnvelopeDerivative",
+      "HasInterimEnvelopeFormula",
+      "HasInterimPaymentFormula",
+      "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+      "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1386
+      },
+      "start": {
+        "column": 1,
+        "line": 1386
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hderiv : A.HasInterimEnvelopeDerivative) : A.HasInterimEnvelopeFormula \u2227 A.HasInterimPaymentFormula"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "HasInterimEnvelopeFormula",
+      "HasInterimPaymentFormula",
+      "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+      "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1398
+      },
+      "start": {
+        "column": 1,
+        "line": 1398
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasInterimEnvelopeFormula \u2227 A.HasInterimPaymentFormula"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1407
+      },
+      "start": {
+        "column": 1,
+        "line": 1407
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq (A B : BayesianSingleItemAuction I) (henvA : A.HasInterimEnvelopeFormula) (henvB : B.HasInterimEnvelopeFormula) (i : I) (hQ : \u2200 z : \u211d, A.interimAllocProb i z = B.interimAllocProb i z) (hM0 : A.interimExpectedPayment i 0 = B.interimExpectedPayment i 0) (v_i : \u211d) : A.equilibriumPayoff i v_i = B.equilibriumPayoff i v_i"
+  },
+  {
+    "dependencies": [
+      "HasInterimPaymentFormula",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1430
+      },
+      "start": {
+        "column": 1,
+        "line": 1430
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq (A B : BayesianSingleItemAuction I) (hpayA : A.HasInterimPaymentFormula) (hpayB : B.HasInterimPaymentFormula) (i : I) (hQ : \u2200 z : \u211d, A.interimAllocProb i z = B.interimAllocProb i z) (hM0 : A.interimExpectedPayment i 0 = B.interimExpectedPayment i 0) (v_i : \u211d) : A.interimExpectedPayment i v_i = B.interimExpectedPayment i v_i"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula",
+      "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+      "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+      "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1451
+      },
+      "start": {
+        "column": 1,
+        "line": 1451
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula (A B : BayesianSingleItemAuction I) (henvA : A.HasInterimEnvelopeFormula) (henvB : B.HasInterimEnvelopeFormula) (i : I) (hQ : \u2200 z : \u211d, A.interimAllocProb i z = B.interimAllocProb i z) (hM0 : A.interimExpectedPayment i 0 = B.interimExpectedPayment i 0) (v_i : \u211d) : A.interimExpectedPayment i v_i = B.interimExpectedPayment i v_i \u2227 A.equilibriumPayoff i v_i = B.equilibriumPayoff i v_i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "HasNonnegativeInterimAllocationIntegralOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1471
+      },
+      "start": {
+        "column": 1,
+        "line": 1471
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "def HasNonnegativeInterimAllocationIntegralOnSupport (A : BayesianSingleItemAuction I) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "interimAllocProb_nonneg_of_isFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1478
+      },
+      "start": {
+        "column": 1,
+        "line": 1478
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) : A.HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "dependencies": [
+      "HasInterimEnvelopeFormula",
+      "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1487
+      },
+      "start": {
+        "column": 1,
+        "line": 1487
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) (hint_nonneg : A.HasNonnegativeInterimAllocationIntegralOnSupport) : A.IsIndividuallyRationalOnSupport \u2194 \u2200 i : I, A.interimExpectedPayment i 0 \u2264 0"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1512
+      },
+      "start": {
+        "column": 1,
+        "line": 1512
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport (A : BayesianSingleItemAuction I) (hIR : A.IsIndividuallyRationalOnSupport) (i : I) : A.interimExpectedPayment i 0 \u2264 0"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+      "IsIncentiveCompatible",
+      "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "IsIndividuallyRationalOnSupport",
+      "hasInterimPaymentFormula_of_isIncentiveCompatible",
+      "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "name": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1522
+      },
+      "start": {
+        "column": 1,
+        "line": 1522
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/BayesianSingleItem.lean",
+    "type": "theorem interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hIR : A.IsIndividuallyRationalOnSupport) (i : I) (v_i : \u211d) : A.interimExpectedPayment i v_i \u2264 A.interimAllocProb i v_i * v_i - \u222b z in 0..v_i, A.interimAllocProb i z"
+  }
+]

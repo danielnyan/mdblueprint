@@ -1,0 +1,42 @@
+{
+  "id": "terminal",
+  "title": "terminal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/terminal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>terminal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef terminal (o : Outcome) : GameTree Player ℚ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "terminal",
+      "display_name": "terminal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

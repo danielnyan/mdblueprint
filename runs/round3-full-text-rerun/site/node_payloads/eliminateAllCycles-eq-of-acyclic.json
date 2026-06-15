@@ -1,0 +1,52 @@
+{
+  "id": "eliminateAllCycles-eq-of-acyclic",
+  "title": "eliminateAllCycles_eq_of_acyclic",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/eliminateAllCycles-eq-of-acyclic.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>eliminateAllCycles_eq_of_acyclic</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma eliminateAllCycles_eq_of_acyclic (v : Valuation N G) (A : Allocation N G) (h : ¬ hasEnvyCycle v A) : eliminateAllCycles v A = A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>hasEnvyCycle</li>\n<li>eliminateAllCycles_unfold</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "hasEnvyCycle",
+      "title": "hasEnvyCycle",
+      "href": "misc/hasEnvyCycle.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "eliminateAllCycles_eq_of_acyclic",
+      "display_name": "eliminateAllCycles_eq_of_acyclic",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,68 @@
+{
+  "id": "ResoluteStrategyproofness",
+  "title": "ResoluteStrategyproofness",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ResoluteStrategyproofness.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ResoluteStrategyproofness</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef ResoluteStrategyproofness (f : VotingRule N A) (_hf : Resolute f) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Resolute</li>\n<li>Profile</li>\n<li>Prefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "gibbard-satterthwaite",
+      "title": "gibbard_satterthwaite",
+      "href": "misc/gibbard-satterthwaite.html"
+    },
+    {
+      "id": "strategyproof-monotonic",
+      "title": "strategyproof_monotonic",
+      "href": "misc/strategyproof-monotonic.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "ResoluteStrategyproofness",
+      "display_name": "ResoluteStrategyproofness",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

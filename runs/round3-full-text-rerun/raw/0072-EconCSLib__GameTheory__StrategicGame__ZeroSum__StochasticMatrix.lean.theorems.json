@@ -1,0 +1,52 @@
+[
+  {
+    "dependencies": [
+      "value_eq_minimax",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "name": "total_mass_preserved",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StochasticMatrix.lean",
+    "type": "theorem total_mass_preserved (hA : IsStochasticMatrix A) (x : I \u2192 \u211d) : \u2211 j, \u2211 i, x i * A i j = \u2211 i, x i"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "exists_mixed_nash_equilibrium",
+      "optimal_pairs_iff_saddle_point",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "total_mass_preserved"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StochasticMatrix",
+    "name": "exists_invariant_distribution",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 190
+      },
+      "start": {
+        "column": 1,
+        "line": 190
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StochasticMatrix.lean",
+    "type": "theorem exists_invariant_distribution (A : I \u2192 I \u2192 \u211d) (hA : IsStochasticMatrix A) : \u2203 x : stdSimplex \u211d I, \u2200 j, \u2211 i, x.val i * A i j = x.val j"
+  }
+]

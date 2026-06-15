@@ -1,0 +1,42 @@
+{
+  "id": "rank-lt-iff",
+  "title": "rank_lt_iff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/rank-lt-iff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>rank_lt_iff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem rank_lt_iff [Fintype A] (r : LinearOrder A) {a b : A} : rank r a &lt; rank r b ↔ BallotPrefers r a b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BallotPrefers</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>rank_lt_of_lt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BallotPrefers",
+      "title": "BallotPrefers",
+      "href": "misc/BallotPrefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "rank_lt_iff",
+      "display_name": "rank_lt_iff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

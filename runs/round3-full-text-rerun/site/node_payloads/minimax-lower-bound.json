@@ -1,0 +1,36 @@
+{
+  "id": "minimax-lower-bound",
+  "title": "minimax_lower_bound",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/minimax-lower-bound.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>minimax_lower_bound</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem minimax_lower_bound (z : ℝ) (hz0 : 0 ≤ z) (hz1 : z ≤ 1) : (1 / 2 : ℝ) ≤ max (G 1 1 z) (G 0 0 z)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>max_over_xy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "minimax_lower_bound",
+      "display_name": "minimax_lower_bound",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

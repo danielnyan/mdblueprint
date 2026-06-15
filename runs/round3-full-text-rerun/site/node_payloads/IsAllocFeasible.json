@@ -1,0 +1,57 @@
+{
+  "id": "IsAllocFeasible",
+  "title": "IsAllocFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsAllocFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsAllocFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsAllocFeasible [Zero R] [One R] [LE R] : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isAllocFeasible",
+      "title": "virtualSurplusMaximizingMechanism_isAllocFeasible",
+      "href": "misc/virtualSurplusMaximizingMechanism-isAllocFeasible.html"
+    },
+    {
+      "id": "withPayment-isAllocFeasible-of-isSingleItemAllocationRule",
+      "title": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+      "href": "misc/withPayment-isAllocFeasible-of-isSingleItemAllocationRule.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsAllocFeasible",
+      "display_name": "IsAllocFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

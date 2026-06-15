@@ -1,0 +1,47 @@
+{
+  "id": "interimAllocProb-mem-Icc-of-isFeasible",
+  "title": "interimAllocProb_mem_Icc_of_isFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/interimAllocProb-mem-Icc-of-isFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>interimAllocProb_mem_Icc_of_isFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem interimAllocProb_mem_Icc_of_isFeasible [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (hint : A.HasIntegrableInterimAllocation) (i : I) (z_i : ℝ) : A.interimAllocProb i z_i ∈ Set.Icc (0 : ℝ) 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>HasIntegrableInterimAllocation</li>\n<li>interimAllocProb_nonneg_of_isFeasible</li>\n<li>interimAllocProb_le_one_of_isFeasible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "HasIntegrableInterimAllocation",
+      "title": "HasIntegrableInterimAllocation",
+      "href": "misc/HasIntegrableInterimAllocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "interimAllocProb_mem_Icc_of_isFeasible",
+      "display_name": "interimAllocProb_mem_Icc_of_isFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

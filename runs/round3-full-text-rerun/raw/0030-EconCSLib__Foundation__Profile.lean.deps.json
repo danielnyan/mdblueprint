@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Profile",
+    "source": "deviate_of_ne",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Profile",
+    "source": "deviate_same",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Profile",
+    "source": "deviate",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Profile",
+    "source": "deviate_self",
+    "target": "Profile"
+  }
+]

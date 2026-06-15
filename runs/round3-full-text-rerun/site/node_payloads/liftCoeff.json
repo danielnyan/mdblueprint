@@ -1,0 +1,63 @@
+{
+  "id": "liftCoeff",
+  "title": "liftCoeff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/liftCoeff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>liftCoeff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef liftCoeff (A : I → Fin (n+1) → 𝕜) (idx : FMRowIndex A) (i : I) : 𝕜</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>FMRowIndex</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "FMRowIndex",
+      "title": "FMRowIndex",
+      "href": "misc/FMRowIndex.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "liftCert",
+      "title": "liftCert",
+      "href": "misc/liftCert.html"
+    },
+    {
+      "id": "liftCert-nonneg",
+      "title": "liftCert_nonneg",
+      "href": "misc/liftCert-nonneg.html"
+    },
+    {
+      "id": "liftCoeff-inl",
+      "title": "liftCoeff_inl",
+      "href": "misc/liftCoeff-inl.html"
+    },
+    {
+      "id": "liftCoeff-inr",
+      "title": "liftCoeff_inr",
+      "href": "misc/liftCoeff-inr.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "liftCoeff",
+      "display_name": "liftCoeff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "value-zero-sum",
+  "title": "value_zero_sum",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value-zero-sum.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value_zero_sum</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value_zero_sum (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) : (value g) 0 + (value g) 1 = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>strong_induction</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n<li>value_Node_eq_some_child_value</li>\n<li>IsZeroSum.child_mem</li>\n<li>Subtree.child_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value_zero_sum",
+      "display_name": "value_zero_sum",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "gsStable-greatest",
+  "title": "gsStable_greatest",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/gsStable-greatest.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>gsStable_greatest</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem gsStable_greatest [NeZero n] (μ : StableMatching w m) : μ ≤ gsStable w m</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StableMatching</li>\n<li>gs_bijective</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>galeShapley_isProposingOptimal</li>\n<li>matchW_partner</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StableMatching",
+      "title": "StableMatching",
+      "href": "misc/StableMatching.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "gsStable_greatest",
+      "display_name": "gsStable_greatest",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "fairCoin-expected-player0",
+  "title": "fairCoin_expected_player0",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fairCoin-expected-player0.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fairCoin_expected_player0</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem fairCoin_expected_player0 : expectedPayoff (headStrategy : Strategy (Fin 2)) fairCoinGame 0 = 1 / 2</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>expectedPayoff</li>\n<li>headStrategy</li>\n<li>Strategy</li>\n<li>fairCoinGame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "headStrategy",
+      "title": "headStrategy",
+      "href": "misc/headStrategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "fairCoinGame",
+      "title": "fairCoinGame",
+      "href": "misc/fairCoinGame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fairCoin_expected_player0",
+      "display_name": "fairCoin_expected_player0",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

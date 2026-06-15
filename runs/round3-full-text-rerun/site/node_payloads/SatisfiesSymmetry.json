@@ -1,0 +1,42 @@
+{
+  "id": "SatisfiesSymmetry",
+  "title": "SatisfiesSymmetry",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/SatisfiesSymmetry.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>SatisfiesSymmetry</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef SatisfiesSymmetry (φ : CoalitionalGame N ℝ → N → ℝ) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>AreSymmetric</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "AreSymmetric",
+      "title": "AreSymmetric",
+      "href": "misc/AreSymmetric.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SatisfiesSymmetry",
+      "display_name": "SatisfiesSymmetry",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

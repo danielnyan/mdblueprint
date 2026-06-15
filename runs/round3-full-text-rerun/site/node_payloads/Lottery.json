@@ -1,0 +1,132 @@
+{
+  "id": "Lottery",
+  "title": "Lottery",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Lottery.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Lottery</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Lottery (𝕜 : Type*) (O : Type*) [Semiring 𝕜] [PartialOrder 𝕜] [Fintype O]</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    },
+    {
+      "id": "Continuity",
+      "title": "Continuity",
+      "href": "misc/Continuity.html"
+    },
+    {
+      "id": "Independence",
+      "title": "Independence",
+      "href": "misc/Independence.html"
+    },
+    {
+      "id": "IsLinearUtility",
+      "title": "IsLinearUtility",
+      "href": "misc/IsLinearUtility.html"
+    },
+    {
+      "id": "IsRiskNeutral-isAffine",
+      "title": "IsRiskNeutral.isAffine",
+      "href": "misc/IsRiskNeutral-isAffine.html"
+    },
+    {
+      "id": "Lottery-expectedValue",
+      "title": "Lottery.expectedValue",
+      "href": "misc/Lottery-expectedValue.html"
+    },
+    {
+      "id": "Lottery-expectedValue-const",
+      "title": "Lottery.expectedValue_const",
+      "href": "misc/Lottery-expectedValue-const.html"
+    },
+    {
+      "id": "Lottery-expectedValue-mix",
+      "title": "Lottery.expectedValue_mix",
+      "href": "misc/Lottery-expectedValue-mix.html"
+    },
+    {
+      "id": "Lottery-expectedValue-mono",
+      "title": "Lottery.expectedValue_mono",
+      "href": "misc/Lottery-expectedValue-mono.html"
+    },
+    {
+      "id": "Lottery-expectedValue-pure",
+      "title": "Lottery.expectedValue_pure",
+      "href": "misc/Lottery-expectedValue-pure.html"
+    },
+    {
+      "id": "Lottery-mix",
+      "title": "Lottery.mix",
+      "href": "misc/Lottery-mix.html"
+    },
+    {
+      "id": "Lottery-pure",
+      "title": "Lottery.pure",
+      "href": "misc/Lottery-pure.html"
+    },
+    {
+      "id": "VNM-axioms-independent",
+      "title": "VNM.axioms_independent",
+      "href": "misc/VNM-axioms-independent.html"
+    },
+    {
+      "id": "completeness-independent",
+      "title": "completeness_independent",
+      "href": "misc/completeness-independent.html"
+    },
+    {
+      "id": "continuity-independent",
+      "title": "continuity_independent",
+      "href": "misc/continuity-independent.html"
+    },
+    {
+      "id": "expectedValue-isLinearUtility",
+      "title": "expectedValue_isLinearUtility",
+      "href": "misc/expectedValue-isLinearUtility.html"
+    },
+    {
+      "id": "independence-independent",
+      "title": "independence_independent",
+      "href": "misc/independence-independent.html"
+    },
+    {
+      "id": "sure-thing-principle",
+      "title": "sure_thing_principle",
+      "href": "misc/sure-thing-principle.html"
+    },
+    {
+      "id": "transitivity-independent",
+      "title": "transitivity_independent",
+      "href": "misc/transitivity-independent.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Lottery",
+      "display_name": "Lottery",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

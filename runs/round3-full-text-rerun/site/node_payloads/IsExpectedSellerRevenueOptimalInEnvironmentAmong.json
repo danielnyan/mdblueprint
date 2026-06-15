@@ -1,0 +1,62 @@
+{
+  "id": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+  "title": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsExpectedSellerRevenueOptimalInEnvironmentAmong.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsExpectedSellerRevenueOptimalInEnvironmentAmong</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsExpectedSellerRevenueOptimalInEnvironmentAmong [Fintype I] (A B : BayesianSingleItemAuction I) (Candidate : BayesianSingleItemAuction I → Prop) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction-isExpectedSellerRevenueOptimal",
+      "title": "IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction-isExpectedSellerRevenueOptimal.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "display_name": "IsExpectedSellerRevenueOptimalInEnvironmentAmong",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

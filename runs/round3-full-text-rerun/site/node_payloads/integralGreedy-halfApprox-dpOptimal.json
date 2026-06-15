@@ -1,0 +1,62 @@
+{
+  "id": "integralGreedy-halfApprox-dpOptimal",
+  "title": "integralGreedy_halfApprox_dpOptimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integralGreedy-halfApprox-dpOptimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integralGreedy_halfApprox_dpOptimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integralGreedy_halfApprox_dpOptimal (w b : I → Nat) (capacity : Nat) (hwpos : ∀ i, 0 &lt; w i) (_hallfit : ∀ i, w i ≤ capacity) (hfracOptimal : ∀ x : I → ℝ, (natAuctionData w capacity).fractionalFeasible x → fractionalSocialWelfare (realBidOfNat b) x ≤ natFractionalGreedyValue w b capacity) : ((dynamicProgrammingOptimalValue w b capacity : ℝ) / 2) ≤ max (integralGreedyValue w b capacity) (highestBidValue b)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>natAuctionData</li>\n<li>fractionalFeasible</li>\n<li>fractionalSocialWelfare</li>\n<li>realBidOfNat</li>\n<li>binaryToAllocation</li>\n<li>fractionalSocialWelfare_realBidOfNat_binaryToAllocation</li>\n<li>dynamicProgrammingOptimalAllocation_fractionalFeasible</li>\n<li>natFractionalGreedyValue_le_integralGreedyValue_plus_highest</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "natAuctionData",
+      "title": "natAuctionData",
+      "href": "misc/natAuctionData.html"
+    },
+    {
+      "id": "fractionalFeasible",
+      "title": "fractionalFeasible",
+      "href": "misc/fractionalFeasible.html"
+    },
+    {
+      "id": "fractionalSocialWelfare",
+      "title": "fractionalSocialWelfare",
+      "href": "misc/fractionalSocialWelfare.html"
+    },
+    {
+      "id": "realBidOfNat",
+      "title": "realBidOfNat",
+      "href": "misc/realBidOfNat.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integralGreedy_halfApprox_dpOptimal",
+      "display_name": "integralGreedy_halfApprox_dpOptimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

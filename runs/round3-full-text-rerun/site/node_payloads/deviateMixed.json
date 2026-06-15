@@ -1,0 +1,73 @@
+{
+  "id": "deviateMixed",
+  "title": "deviateMixed",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/deviateMixed.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>deviateMixed</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef deviateMixed (G : StrategicGame N U) [∀ i, Fintype (G.strategy i)] [DecidableEq N] [∀ i, DecidableEq (G.strategy i)] (p : MixedProfile G) (who : N) (s' : G.strategy who) : MixedProfile G</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedProfile</li>\n<li>pureToMixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "pureToMixed",
+      "title": "pureToMixed",
+      "href": "misc/pureToMixed.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsMixedNashEq",
+      "title": "IsMixedNashEq",
+      "href": "misc/IsMixedNashEq.html"
+    },
+    {
+      "id": "exists-strategic-game-nash-equilibrium",
+      "title": "exists_strategic_game_nash_equilibrium",
+      "href": "misc/exists-strategic-game-nash-equilibrium.html"
+    },
+    {
+      "id": "rps-dev0",
+      "title": "rps_dev0",
+      "href": "misc/rps-dev0.html"
+    },
+    {
+      "id": "rps-dev1",
+      "title": "rps_dev1",
+      "href": "misc/rps-dev1.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "deviateMixed",
+      "display_name": "deviateMixed",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

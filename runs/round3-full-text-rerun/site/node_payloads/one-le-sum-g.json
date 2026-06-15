@@ -1,0 +1,47 @@
+{
+  "id": "one-le-sum-g",
+  "title": "one_le_sum_g",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/one-le-sum-g.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>one_le_sum_g</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma one_le_sum_g (i : N) (σ : MixedS G) : 1 ≤ ∑ a : G.strategy i, g_function G i σ a</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>MixedS</li>\n<li>Strategy</li>\n<li>g_function</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>sigma_le_g_function</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "one_le_sum_g",
+      "display_name": "one_le_sum_g",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "name": "IsAffineUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Basic.lean",
+    "type": "def IsAffineUtility (u : \ud835\udd5c \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "name": "IsRiskNeutral",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Basic.lean",
+    "type": "def IsRiskNeutral {I : Type*} [Fintype I] (u : \ud835\udd5c \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsAffineUtility",
+      "IsRiskNeutral",
+      "wsum_add",
+      "wsum_smul",
+      "wsum_const"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "name": "IsAffineUtility.isRiskNeutral",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Basic.lean",
+    "type": "theorem IsAffineUtility.isRiskNeutral {I : Type*} [Fintype I] {u : \ud835\udd5c \u2192 \ud835\udd5c} (h : IsAffineUtility u) : IsRiskNeutral (I"
+  },
+  {
+    "dependencies": [
+      "IsAffineUtility.isRiskNeutral",
+      "IsRiskNeutral",
+      "IsAffineUtility",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "Lottery",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "Lottery.expectedValue",
+      "Lottery.expectedValue_mix",
+      "Lottery.expectedValue_pure",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "name": "IsRiskNeutral.isAffine",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Basic.lean",
+    "type": "theorem IsRiskNeutral.isAffine {I : Type*} [Fintype I] [Nontrivial I] {u : \ud835\udd5c \u2192 \ud835\udd5c} (h : IsRiskNeutral (I"
+  }
+]

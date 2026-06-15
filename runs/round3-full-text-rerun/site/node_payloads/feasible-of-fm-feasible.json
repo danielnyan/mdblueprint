@@ -1,0 +1,72 @@
+{
+  "id": "feasible-of-fm-feasible",
+  "title": "feasible_of_fm_feasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/feasible-of-fm-feasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>feasible_of_fm_feasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem feasible_of_fm_feasible (A : I → Fin (n+1) → 𝕜) (b : I → 𝕜) (hred : IsFeasible (fmA A) (fmB A b)) : IsFeasible A b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>fmA</li>\n<li>fmB</li>\n<li>PosRows</li>\n<li>NegRows</li>\n<li>rowEval</li>\n<li>ZeroRows</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "fmA",
+      "title": "fmA",
+      "href": "misc/fmA.html"
+    },
+    {
+      "id": "fmB",
+      "title": "fmB",
+      "href": "misc/fmB.html"
+    },
+    {
+      "id": "PosRows",
+      "title": "PosRows",
+      "href": "misc/PosRows.html"
+    },
+    {
+      "id": "NegRows",
+      "title": "NegRows",
+      "href": "misc/NegRows.html"
+    },
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    },
+    {
+      "id": "ZeroRows",
+      "title": "ZeroRows",
+      "href": "misc/ZeroRows.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "feasible_of_fm_feasible",
+      "display_name": "feasible_of_fm_feasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

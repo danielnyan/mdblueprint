@@ -1,0 +1,85 @@
+[
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean",
+    "type": "def IsEnvyFree {N \u03a9 V : Type*} [Preorder V] (\u03bc : CakeValuation N \u03a9 V) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean",
+    "type": "def IsProportional {N \u03a9 V : Type*} [Preorder V] [Semiring V] (n : \u2115) (\u03bc : CakeValuation N \u03a9 V) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 80
+      },
+      "start": {
+        "column": 1,
+        "line": 80
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean",
+    "type": "def IsEquitable {N \u03a9 V : Type*} [Preorder V] (cv : CakeValuation N \u03a9 V) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "IsProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Basic",
+    "name": "IsEnvyFree.isProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Basic.lean",
+    "type": "theorem IsEnvyFree.isProportional {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (\u03bc : N \u2192 Measure \u03a9) (A : Allocation N \u03a9) (ha : IsAllocation A) (hef : IsEnvyFree (MeasureValuation \u03bc) A) : IsProportional (Fintype.card N) (MeasureValuation \u03bc) A"
+  }
+]

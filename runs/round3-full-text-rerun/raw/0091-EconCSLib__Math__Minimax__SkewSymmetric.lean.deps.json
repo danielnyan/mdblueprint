@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "theorem_of_alternative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "source": "optimal",
+    "target": "rowEval"
+  }
+]

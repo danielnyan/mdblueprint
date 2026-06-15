@@ -1,0 +1,57 @@
+{
+  "id": "isRevenueUpperBounded-of-ic-ir-upper",
+  "title": "isRevenueUpperBounded_of_ic_ir_upper",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isRevenueUpperBounded-of-ic-ir-upper.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isRevenueUpperBounded_of_ic_ir_upper</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isRevenueUpperBounded_of_ic_ir_upper [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A B : BayesianSingleItemAuction I) (h : A.RegularMyersonICIRAnalyticAssumptions) (hB : A.IsFeasibleICIRIntegrable B) : A.IsRevenueUpperBounded B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsFeasibleICIRIntegrable</li>\n<li>IsRevenueUpperBounded</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini</li>\n<li>hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities</li>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>HasExpectedRevenueInterimPaymentIdentity</li>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity</li>\n<li>HasExpectedVirtualSurplusInterimIdentity</li>\n<li>hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper</li>\n<li>hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "IsRevenueUpperBounded",
+      "title": "IsRevenueUpperBounded",
+      "href": "misc/IsRevenueUpperBounded.html"
+    },
+    {
+      "id": "HasExpectedRevenueInterimPaymentIdentity",
+      "title": "HasExpectedRevenueInterimPaymentIdentity",
+      "href": "misc/HasExpectedRevenueInterimPaymentIdentity.html"
+    },
+    {
+      "id": "HasExpectedVirtualSurplusInterimIdentity",
+      "title": "HasExpectedVirtualSurplusInterimIdentity",
+      "href": "misc/HasExpectedVirtualSurplusInterimIdentity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isRevenueUpperBounded_of_ic_ir_upper",
+      "display_name": "isRevenueUpperBounded_of_ic_ir_upper",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

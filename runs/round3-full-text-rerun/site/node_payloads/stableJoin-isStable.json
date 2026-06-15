@@ -1,0 +1,42 @@
+{
+  "id": "stableJoin-isStable",
+  "title": "stableJoin_isStable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/stableJoin-isStable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>stableJoin_isStable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem stableJoin_isStable : Matching.IsStable (MatchingMarket.ofEquivData w m) (stableJoin μ ν hμ hν)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>prefM_strict</li>\n<li>prefW_strict</li>\n<li>joinWoman_mem_men</li>\n<li>joinWoman_le_left</li>\n<li>joinWoman_le_right</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "stableJoin_isStable",
+      "display_name": "stableJoin_isStable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

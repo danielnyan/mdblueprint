@@ -1,0 +1,58 @@
+{
+  "id": "IsEfficient",
+  "title": "IsEfficient",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEfficient.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEfficient</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsEfficient [Fintype N] [AddCommMonoid U] (x : PayoffVector N U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PayoffVector</li>\n<li>coalitionPayoff</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PayoffVector",
+      "title": "PayoffVector",
+      "href": "misc/PayoffVector.html"
+    },
+    {
+      "id": "coalitionPayoff",
+      "title": "coalitionPayoff",
+      "href": "misc/coalitionPayoff.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "Core",
+      "title": "Core",
+      "href": "misc/Core.html"
+    },
+    {
+      "id": "IsImputation",
+      "title": "IsImputation",
+      "href": "misc/IsImputation.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsEfficient",
+      "display_name": "IsEfficient",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

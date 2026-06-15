@@ -1,0 +1,47 @@
+{
+  "id": "virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-isRegular",
+  "title": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-isRegular.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : A.virtualSurplusMaximizingAuction.HasIntegrableInterimObjects</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegular</li>\n<li>HasIntegrableInterimObjects</li>\n<li>virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable</li>\n<li>measurable_virtualValue_of_isRegular</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    },
+    {
+      "id": "HasIntegrableInterimObjects",
+      "title": "HasIntegrableInterimObjects",
+      "href": "misc/HasIntegrableInterimObjects.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+      "display_name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "IsMaxminShare-isAlphaMMS",
+  "title": "IsMaxminShare.isAlphaMMS",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsMaxminShare-isAlphaMMS.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsMaxminShare.isAlphaMMS</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsMaxminShare.isAlphaMMS [Nonempty N] [Fintype G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) (hMMS : IsMaxminShare v allGoods A) (α : ℝ) (hα_le : α ≤ 1) (hmms_nn : ∀ i, 0 ≤ mmsValue v allGoods i) : IsAlphaMMS α v allGoods A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsProportional.isMaxminShare</li>\n<li>IsMaxminShare</li>\n<li>IsAlphaMMS</li>\n<li>isAlphaMMS_mono_alpha</li>\n<li>isMaxminShare_iff_isAlphaMMS_one</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsMaxminShare",
+      "title": "IsMaxminShare",
+      "href": "misc/IsMaxminShare.html"
+    },
+    {
+      "id": "IsAlphaMMS",
+      "title": "IsAlphaMMS",
+      "href": "misc/IsAlphaMMS.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsMaxminShare.isAlphaMMS",
+      "display_name": "IsMaxminShare.isAlphaMMS",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

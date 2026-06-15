@@ -1,0 +1,52 @@
+{
+  "id": "sample-optStrategy-spe-on",
+  "title": "sample_optStrategy_spe_on",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sample-optStrategy-spe-on.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sample_optStrategy_spe_on</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem sample_optStrategy_spe_on : IsSubgamePerfectOn (optStrategy : Strategy Player ℚ) sample</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsSubgamePerfectOn</li>\n<li>Strategy</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>IsSubgamePerfect.toSubgamePerfectOn</li>\n<li>optStrategy_isSubgamePerfect</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsSubgamePerfectOn",
+      "title": "IsSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfectOn.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sample_optStrategy_spe_on",
+      "display_name": "sample_optStrategy_spe_on",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

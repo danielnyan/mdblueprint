@@ -1,0 +1,52 @@
+{
+  "id": "Brouwer",
+  "title": "Brouwer",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Brouwer.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Brouwer</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Brouwer (hf : Continuous f): ∃ x , f x = x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>tendsto_diam_to_zero</li>\n<li>room_point_seq</li>\n<li>room_seq</li>\n<li>dominant_coords_tend_to_zero</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>f_coords_ge_z_coords</li>\n<li>Profile.ext</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "Brouwer-Product",
+      "title": "Brouwer_Product",
+      "href": "misc/Brouwer-Product.html"
+    },
+    {
+      "id": "kkm-closed-cover",
+      "title": "kkm_closed_cover",
+      "href": "misc/kkm-closed-cover.html"
+    },
+    {
+      "id": "size-bound-out",
+      "title": "size_bound_out",
+      "href": "misc/size-bound-out.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Brouwer",
+      "display_name": "Brouwer",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

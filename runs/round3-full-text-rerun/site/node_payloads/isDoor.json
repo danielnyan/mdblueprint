@@ -1,0 +1,103 @@
+{
+  "id": "isDoor",
+  "title": "isDoor",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isDoor.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isDoor</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev isDoor</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isCell</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "M-sets-disjoint",
+      "title": "M_sets_disjoint",
+      "href": "misc/M-sets-disjoint.html"
+    },
+    {
+      "id": "NC-of-outsidedoor",
+      "title": "NC_of_outsidedoor",
+      "href": "misc/NC-of-outsidedoor.html"
+    },
+    {
+      "id": "idoor-determines-element",
+      "title": "idoor_determines_element",
+      "href": "misc/idoor-determines-element.html"
+    },
+    {
+      "id": "image-subset-of-NCdoor",
+      "title": "image_subset_of_NCdoor",
+      "href": "misc/image-subset-of-NCdoor.html"
+    },
+    {
+      "id": "isInternalDoor",
+      "title": "isInternalDoor",
+      "href": "misc/isInternalDoor.html"
+    },
+    {
+      "id": "isOutsideDoor",
+      "title": "isOutsideDoor",
+      "href": "misc/isOutsideDoor.html"
+    },
+    {
+      "id": "m-element-not-in-tau",
+      "title": "m_element_not_in_tau",
+      "href": "misc/m-element-not-in-tau.html"
+    },
+    {
+      "id": "odoor-index-in-pair",
+      "title": "odoor_index_in_pair",
+      "href": "misc/odoor-index-in-pair.html"
+    },
+    {
+      "id": "outsidedoor-singleton",
+      "title": "outsidedoor_singleton",
+      "href": "misc/outsidedoor-singleton.html"
+    },
+    {
+      "id": "room-is-not-door",
+      "title": "room_is_not_door",
+      "href": "misc/room-is-not-door.html"
+    },
+    {
+      "id": "sublemma-3-1",
+      "title": "sublemma_3_1",
+      "href": "misc/sublemma-3-1.html"
+    },
+    {
+      "id": "sublemma-3-2",
+      "title": "sublemma_3_2",
+      "href": "misc/sublemma-3-2.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isDoor",
+      "display_name": "isDoor",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

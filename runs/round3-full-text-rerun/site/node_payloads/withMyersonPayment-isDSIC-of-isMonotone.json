@@ -1,0 +1,57 @@
+{
+  "id": "withMyersonPayment-isDSIC-of-isMonotone",
+  "title": "withMyersonPayment_isDSIC_of_isMonotone",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/withMyersonPayment-isDSIC-of-isMonotone.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>withMyersonPayment_isDSIC_of_isMonotone</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem withMyersonPayment_isDSIC_of_isMonotone [DecidableEq I] {x : (I → ℝ) → I → ℝ} (hx : IsMonotone ({ allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsMonotone</li>\n<li>IsDSIC</li>\n<li>isDSIC</li>\n<li>quasiLinearUtility</li>\n<li>withMyersonPayment_quasiLinearUtility_eq</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsMonotone",
+      "title": "IsMonotone",
+      "href": "misc/IsMonotone.html"
+    },
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "quasiLinearUtility",
+      "title": "quasiLinearUtility",
+      "href": "misc/quasiLinearUtility.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "withMyersonPayment_isDSIC_of_isMonotone",
+      "display_name": "withMyersonPayment_isDSIC_of_isMonotone",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

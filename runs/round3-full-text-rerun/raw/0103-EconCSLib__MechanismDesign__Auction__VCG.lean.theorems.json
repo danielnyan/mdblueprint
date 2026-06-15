@@ -1,0 +1,369 @@
+[
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "socialWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "def socialWelfare (v : \u2200 _ : I, Valuation A \u211d) (a : A) : \u211d"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "socialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "exists_efficientAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma exists_efficientAllocation (v : \u2200 _ : I, Valuation A \u211d) : \u2203 a : A, \u2200 b : A, socialWelfare v b \u2264 socialWelfare v a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "socialWelfare",
+      "exists_efficientAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "efficientAllocation_isOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma efficientAllocation_isOptimal (v : \u2200 _ : I, Valuation A \u211d) (a : A) : socialWelfare v a \u2264 socialWelfare v (efficientAllocation v)"
+  },
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "welfareWithout",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 83
+      },
+      "start": {
+        "column": 1,
+        "line": 83
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "def welfareWithout (v : \u2200 _ : I, Valuation A \u211d) (i : I) (a : A) : \u211d"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "socialWelfare",
+      "welfareWithout",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "socialWelfare_eq_value_add_welfareWithout",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma socialWelfare_eq_value_add_welfareWithout (v : \u2200 _ : I, Valuation A \u211d) (i : I) (a : A) : socialWelfare v a = v i a + welfareWithout v i a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout",
+      "socialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "welfareWithout_le_socialWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma welfareWithout_le_socialWelfare (v : \u2200 _ : I, Valuation A \u211d) (hnonneg : \u2200 i : I, \u2200 a : A, 0 \u2264 v i a) (i : I) (a : A) : welfareWithout v i a \u2264 socialWelfare v a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout",
+      "socialWelfare",
+      "socialWelfare_eq_value_add_welfareWithout"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "welfareWithout_le_socialWelfare_of_nonneg_i",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma welfareWithout_le_socialWelfare_of_nonneg_i (v : \u2200 _ : I, Valuation A \u211d) (i : I) (hi_nonneg : \u2200 a : A, 0 \u2264 v i a) (a : A) : welfareWithout v i a \u2264 socialWelfare v a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "welfareWithout_update_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma welfareWithout_update_self (v : \u2200 _ : I, Valuation A \u211d) (i : I) (report : Valuation A \u211d) (a : A) : welfareWithout (Function.update v i report) i a = welfareWithout v i a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout_update_self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "maxWelfareWithout_update_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 138
+      },
+      "start": {
+        "column": 1,
+        "line": 138
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma maxWelfareWithout_update_self (v : \u2200 _ : I, Valuation A \u211d) (i : I) (report : Valuation A \u211d) : maxWelfareWithout (Function.update v i report) i = maxWelfareWithout v i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "exists_withoutAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 147
+      },
+      "start": {
+        "column": 1,
+        "line": 147
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma exists_withoutAllocation (v : \u2200 _ : I, Valuation A \u211d) (i : I) : \u2203 a : A, \u2200 b : A, welfareWithout v i b \u2264 welfareWithout v i a"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "welfareWithout",
+      "exists_withoutAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "withoutAllocation_isOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 165
+      },
+      "start": {
+        "column": 1,
+        "line": 165
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma withoutAllocation_isOptimal (v : \u2200 _ : I, Valuation A \u211d) (i : I) (a : A) : welfareWithout v i a \u2264 welfareWithout v i (withoutAllocation v i)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "quasiLinearUtility",
+      "valueOfAllocation",
+      "socialWelfare",
+      "welfareWithout",
+      "welfareWithout_update_self",
+      "socialWelfare_eq_value_add_welfareWithout"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 193
+      },
+      "start": {
+        "column": 1,
+        "line": 193
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "lemma VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout (reports trueTypes : \u2200 _ : I, Valuation A \u211d) (i : I) : MechanismWithTransfers.quasiLinearUtility VCGTransferMechanism valueOfAllocation id id reports trueTypes i = socialWelfare (Function.update reports i (trueTypes i)) (efficientAllocation reports) - maxWelfareWithout reports i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "quasiLinearUtility",
+      "valueOfAllocation",
+      "socialWelfare",
+      "welfareWithout",
+      "welfareWithout_le_socialWelfare_of_nonneg_i",
+      "efficientAllocation_isOptimal",
+      "socialWelfare_eq_value_add_welfareWithout"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 214
+      },
+      "start": {
+        "column": 1,
+        "line": 214
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "theorem VCGMechanism_truthful_quasiLinearUtility_nonneg (v : \u2200 _ : I, Valuation A \u211d) (hnonneg : \u2200 i : I, \u2200 a : A, 0 \u2264 v i a) (i : I) (r : \u2200 _ : I, Valuation A \u211d) : 0 \u2264 MechanismWithTransfers.quasiLinearUtility VCGTransferMechanism valueOfAllocation id id (Function.update r i (v i)) v i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "quasiLinearUtility",
+      "valueOfAllocation",
+      "VCGMechanism_truthful_quasiLinearUtility_nonneg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 243
+      },
+      "start": {
+        "column": 1,
+        "line": 243
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "theorem VCGMechanism_truthful_profile_quasiLinearUtility_nonneg (v : \u2200 _ : I, Valuation A \u211d) (hnonneg : \u2200 i : I, \u2200 a : A, 0 \u2264 v i a) (i : I) : 0 \u2264 MechanismWithTransfers.quasiLinearUtility VCGTransferMechanism valueOfAllocation id id v v i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "isQuasiLinearExPostIR",
+      "valueOfAllocation",
+      "quasiLinearUtility",
+      "VCGMechanism_truthful_quasiLinearUtility_nonneg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "VCGMechanism_isExPostIR_of_all_nonnegative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 256
+      },
+      "start": {
+        "column": 1,
+        "line": 256
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "theorem VCGMechanism_isExPostIR_of_all_nonnegative (hnonneg : \u2200 v : (\u2200 _ : I, Valuation A \u211d), \u2200 i : I, \u2200 a : A, 0 \u2264 v i a) : MechanismWithTransfers.isQuasiLinearExPostIR (M"
+  },
+  {
+    "dependencies": [
+      "isQuasiLinearDSIC",
+      "Valuation",
+      "valueOfAllocation",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "WeaklyDominates",
+      "socialWelfare",
+      "efficientAllocation_isOptimal",
+      "quasiLinearUtility",
+      "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+      "maxWelfareWithout_update_self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.VCG",
+    "name": "VCGMechanism_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 280
+      },
+      "start": {
+        "column": 1,
+        "line": 280
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/VCG.lean",
+    "type": "theorem VCGMechanism_isDSIC : MechanismWithTransfers.isQuasiLinearDSIC (M"
+  }
+]

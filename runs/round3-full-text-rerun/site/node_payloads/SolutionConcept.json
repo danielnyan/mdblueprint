@@ -1,0 +1,42 @@
+{
+  "id": "SolutionConcept",
+  "title": "SolutionConcept",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/SolutionConcept.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>SolutionConcept</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef SolutionConcept (N R S : Type*)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SolutionConcept",
+      "display_name": "SolutionConcept",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

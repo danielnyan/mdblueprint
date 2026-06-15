@@ -1,0 +1,58 @@
+{
+  "id": "farkasAugB",
+  "title": "farkasAugB",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/farkasAugB.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>farkasAugB</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef farkasAugB (b : I → 𝕜) : FarkasAugRow I → 𝕜 | Sum.inl _ =&gt; 0 | Sum.inr false =&gt; 0 | Sum.inr true =&gt; 1 /-! ### Simp lemmas for `farkasAugA` and `farkasAugB` -/ @[simp] theorem farkasAugA_inl_castSucc (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜) (i : I) (j' : Fin n) : farkasAugA A b c d (Sum.inl i) j'.castSucc = A i j'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>FarkasAugRow</li>\n<li>farkasAugA</li>\n<li>rowEval</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "FarkasAugRow",
+      "title": "FarkasAugRow",
+      "href": "misc/FarkasAugRow.html"
+    },
+    {
+      "id": "farkasAugA",
+      "title": "farkasAugA",
+      "href": "misc/farkasAugA.html"
+    },
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "farkas-lemma",
+      "title": "farkas_lemma",
+      "href": "misc/farkas-lemma.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "farkasAugB",
+      "display_name": "farkasAugB",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

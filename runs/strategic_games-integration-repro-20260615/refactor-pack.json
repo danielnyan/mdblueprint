@@ -1,0 +1,318 @@
+{
+  "kind": "mdblueprint-refactor-pack",
+  "mode": "admitted+staged",
+  "knowledge_root": "docs/knowledge",
+  "target_id": "strategic_games.mixed_strategy",
+  "topic": null,
+  "allowed_inputs": [
+    "docs/knowledge/nodes/**/*.md",
+    "docs/knowledge/mdblueprint.yml",
+    "topics.md catalogs",
+    "deterministic graph/index data derived from loaded nodes",
+    "docs/knowledge/staged/**/*.md as loaded provisional graph nodes"
+  ],
+  "staged_policy": {
+    "included": true,
+    "graph_role": "loaded nodes for dependency existence, reachability, topic, duplicate/overlap, and formulation-impact analysis",
+    "admission_role": "staged nodes are not admitted truth and this pack does not propose promotion"
+  },
+  "forbidden_inputs": [
+    "source artifacts",
+    "internet",
+    "uncited model memory",
+    "generated graph/site artifacts as source of truth"
+  ],
+  "bounds": {
+    "ancestor_depth": 2,
+    "descendant_depth": 2,
+    "sibling_limit": 20,
+    "max_nodes": 40,
+    "selected_node_count": 11,
+    "truncated": false
+  },
+  "graph_diagnostics": [],
+  "focus": {
+    "direct_dependencies": [
+      "strategic_games.strategic_game"
+    ],
+    "direct_dependents": [],
+    "transitive_ancestors": [
+      {
+        "node_id": "strategic_games.strategic_game",
+        "distance": 1
+      }
+    ],
+    "transitive_descendants": [],
+    "sibling_topic_nodes": [
+      "strategic_games.best_response",
+      "strategic_games.dominant_implies_nash",
+      "strategic_games.nash_equilibrium",
+      "strategic_games.prisoners_dilemma",
+      "strategic_games.strategic_game",
+      "strategic_games.strategy_profile",
+      "strategic_games.strictly_dominates",
+      "strategic_games.unilateral_deviation",
+      "strategic_games.weakly_dominant_strategy",
+      "strategic_games.weakly_dominates"
+    ],
+    "topic_nodes": []
+  },
+  "formulation_impact": {
+    "review_recommended": false,
+    "reason": "No target descendants loaded for formulation-impact review.",
+    "descendant_ids": []
+  },
+  "lint_findings": [],
+  "nodes": [
+    {
+      "id": "strategic_games.mixed_strategy",
+      "title": "Mixed Strategy",
+      "kind": "definition",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.strategic_game"
+      ],
+      "used_by": [],
+      "file_path": "docs/knowledge/staged/mixed_strategy.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Mixed Strategy\n\nA mixed strategy for player $i$ is a probability distribution over the strategy\nset $S_i$. When $S_i$ is finite, a mixed strategy is a vector\n$x_i \\in \\Delta(S_i)$ in the standard simplex."
+    },
+    {
+      "id": "strategic_games.strategic_game",
+      "title": "Strategic Game",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [],
+      "used_by": [
+        "strategic_games.mixed_strategy",
+        "strategic_games.strategy_profile"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/strategic_game.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Strategic Game\n\nA strategic game (or normal-form game) is a tuple $(I, (S_i)_{i \\in I}, (u_i)_{i \\in I})$\nwhere $I$ is a set of players, $S_i$ is the strategy set of player $i$, and\n$u_i \\colon \\prod_{j \\in I} S_j \\to U$ is the payoff function of player $i$.\n\nIn the Lean formalization, this is a structure with fields `strategy : ι → Type*` and\n`payoff : Profile → ι → U`, where `Profile = ∀ i, strategy i`."
+    },
+    {
+      "id": "strategic_games.best_response",
+      "title": "Best Response",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "used_by": [
+        "strategic_games.nash_equilibrium"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/best_response.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Best Response\n\nA strategy $\\sigma_i$ is a best response for player $i$ to the profile $\\sigma$ if\nno unilateral deviation can improve $i$'s payoff:\n\n$$\\forall s'_i \\in S_i, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma).$$"
+    },
+    {
+      "id": "strategic_games.dominant_implies_nash",
+      "title": "Dominant Strategy Profile is a Nash Equilibrium",
+      "kind": "theorem",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "used_by": [],
+      "file_path": "docs/knowledge/nodes/strategic_games/dominant_implies_nash.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Dominant Strategy Profile is a Nash Equilibrium\n\nIf every player $i$ plays a weakly dominant strategy $s_i$, then the resulting\nprofile $\\sigma = (s_i)_{i \\in I}$ is a Nash equilibrium.\n\n*Proof.* A weakly dominant strategy weakly dominates every alternative. In particular,\nfor any player $i$ and any deviation $s'_i$, we have\n$u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma)$. This means each player is best\nresponding, so $\\sigma$ is a Nash equilibrium. $\\square$"
+    },
+    {
+      "id": "strategic_games.nash_equilibrium",
+      "title": "Nash Equilibrium",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.best_response"
+      ],
+      "used_by": [
+        "strategic_games.dominant_implies_nash",
+        "strategic_games.prisoners_dilemma"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/nash_equilibrium.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Nash Equilibrium\n\nA strategy profile $\\sigma$ is a Nash equilibrium if every player is playing a best\nresponse to the strategies of the other players:\n\n$$\\forall i \\in I, \\quad \\sigma_i \\text{ is a best response to } \\sigma.$$\n\nEquivalently, no player can improve their payoff by a unilateral deviation."
+    },
+    {
+      "id": "strategic_games.prisoners_dilemma",
+      "title": "Prisoner's Dilemma",
+      "kind": "example",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "used_by": [],
+      "file_path": "docs/knowledge/nodes/strategic_games/prisoners_dilemma.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Prisoner's Dilemma\n\nThe Prisoner's Dilemma is a two-player strategic game where each player can\nCooperate ($C$) or Defect ($D$). The payoff matrix is:\n\n|       | $C$    | $D$    |\n|-------|--------|--------|\n| $C$   | (2, 2) | (0, 3) |\n| $D$   | (3, 0) | (1, 1) |\n\nDefecting is a weakly dominant strategy for each player. The unique Nash\nequilibrium is $(D, D)$ with payoff $(1, 1)$, which is Pareto-dominated by\n$(C, C)$ with payoff $(2, 2)$."
+    },
+    {
+      "id": "strategic_games.strategy_profile",
+      "title": "Strategy Profile",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.strategic_game"
+      ],
+      "used_by": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/strategy_profile.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Strategy Profile\n\nGiven a strategic game $(I, (S_i), (u_i))$, a strategy profile is a tuple\n$\\sigma = (\\sigma_i)_{i \\in I}$ where $\\sigma_i \\in S_i$ for each player $i$.\n\nIn Lean, a profile is `∀ i, G.strategy i`."
+    },
+    {
+      "id": "strategic_games.strictly_dominates",
+      "title": "Strict Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "used_by": [],
+      "file_path": "docs/knowledge/nodes/strategic_games/strictly_dominates.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Strict Dominance\n\nA strategy $s_i$ strictly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields strictly higher\npayoff:\n\n$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) < u_i(\\sigma[i \\mapsto s_i]).$$"
+    },
+    {
+      "id": "strategic_games.unilateral_deviation",
+      "title": "Unilateral Deviation",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.strategy_profile"
+      ],
+      "used_by": [
+        "strategic_games.best_response",
+        "strategic_games.strictly_dominates",
+        "strategic_games.weakly_dominates"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/unilateral_deviation.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Unilateral Deviation\n\nGiven a strategy profile $\\sigma$ and a player $i$, the unilateral deviation\n$(\\sigma_{-i}, s'_i)$ is the profile where player $i$ plays $s'_i$ and all other\nplayers play according to $\\sigma$. We write $\\sigma[i \\mapsto s']$.\n\nIn Lean, this is `Function.update σ i s'`."
+    },
+    {
+      "id": "strategic_games.weakly_dominant_strategy",
+      "title": "Weakly Dominant Strategy",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.weakly_dominates"
+      ],
+      "used_by": [
+        "strategic_games.dominant_implies_nash",
+        "strategic_games.prisoners_dilemma"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/weakly_dominant_strategy.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Weakly Dominant Strategy\n\nA strategy $s_i$ is weakly dominant for player $i$ if it weakly dominates every\nother strategy available to $i$:\n\n$$\\forall s'_i \\in S_i, \\quad s_i \\text{ weakly dominates } s'_i.$$"
+    },
+    {
+      "id": "strategic_games.weakly_dominates",
+      "title": "Weak Dominance",
+      "kind": "definition",
+      "status": "admitted",
+      "evidence": "admitted",
+      "home_topic": "strategic_games",
+      "topics": [
+        "strategic_games"
+      ],
+      "uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "used_by": [
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "file_path": "docs/knowledge/nodes/strategic_games/weakly_dominates.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Weak Dominance\n\nA strategy $s_i$ weakly dominates another strategy $s'_i$ for player $i$ if, for\nevery profile $\\sigma$ of the other players, playing $s_i$ yields at least as high\na payoff as playing $s'_i$:\n\n$$\\forall \\sigma, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma[i \\mapsto s_i]).$$"
+    }
+  ]
+}

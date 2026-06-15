@@ -1,0 +1,146 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "uniformProfile",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_no_pure_nash",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_no_pure_nash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_uniform_completely_mixed",
+    "target": "IsCompletelyMixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_uniform_completely_mixed",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_eu_uniform_1",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_eu_uniform_1",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "uniform",
+    "target": "MixedStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_zero_sum",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev1",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev1",
+    "target": "deviateMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev1",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_eu_uniform_0",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_eu_uniform_0",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev0",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev0",
+    "target": "deviateMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_dev0",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash_unique",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash_unique",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash_unique",
+    "target": "uniformProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash_unique",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.RockPaperScissors",
+    "source": "rps_mixed_nash_unique",
+    "target": "Profile.ext"
+  }
+]

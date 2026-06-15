@@ -1,0 +1,122 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_eq_of_variant",
+    "target": "PlayerStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_eq_of_variant",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_eq_of_variant",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_eq_of_variant",
+    "target": "profileStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "profileStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "PlayerStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "IsWeaklyDominant.isBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "IsBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "profileStrategy_deviate_eq_of_variant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "toStrategicGame_nash_iff_isNashAt",
+    "target": "profileStrategy_deviate_variant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy",
+    "target": "PlayerStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_variant",
+    "target": "PlayerStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_variant",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "source": "profileStrategy_deviate_variant",
+    "target": "profileStrategy"
+  }
+]

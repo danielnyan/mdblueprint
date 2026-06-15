@@ -1,0 +1,36 @@
+{
+  "id": "mix-gt-of-gt-nbh",
+  "title": "mix_gt_of_gt_nbh",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mix-gt-of-gt-nbh.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mix_gt_of_gt_nbh</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem mix_gt_of_gt_nbh (x y c : 𝕜) (H : c &lt; x) : ∃ t : 𝕜, 0 &lt; t ∧ t &lt; 1 ∧ c &lt; t * x + (1 - t) * y</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mix_gt_of_gt_nbh",
+      "display_name": "mix_gt_of_gt_nbh",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

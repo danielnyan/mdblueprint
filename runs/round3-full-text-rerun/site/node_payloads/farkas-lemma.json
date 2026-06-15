@@ -1,0 +1,62 @@
+{
+  "id": "farkas-lemma",
+  "title": "farkas_lemma",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/farkas-lemma.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>farkas_lemma</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem farkas_lemma (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜) (hS : IsFeasible A b) : (∀ x : Fin n → 𝕜, (∀ i, b i ≤ ∑ j, A i j * x j) → d ≤ ∑ j, c j * x j) ↔ (∃ u : I → 𝕜, (∀ i, 0 ≤ u i) ∧ (∀ j, ∑ i, u i * A i j = c j) ∧ d ≤ ∑ i, u i * b i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>farkasAugA</li>\n<li>farkasAugB</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>rowEval</li>\n<li>HasCertificate</li>\n<li>theorem_of_alternative</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "farkasAugA",
+      "title": "farkasAugA",
+      "href": "misc/farkasAugA.html"
+    },
+    {
+      "id": "farkasAugB",
+      "title": "farkasAugB",
+      "href": "misc/farkasAugB.html"
+    },
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    },
+    {
+      "id": "HasCertificate",
+      "title": "HasCertificate",
+      "href": "misc/HasCertificate.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "farkas_lemma",
+      "display_name": "farkas_lemma",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

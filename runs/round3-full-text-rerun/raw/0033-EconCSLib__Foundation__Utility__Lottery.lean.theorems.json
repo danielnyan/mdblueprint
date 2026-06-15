@@ -1,0 +1,219 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 48
+      },
+      "start": {
+        "column": 1,
+        "line": 48
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "abbrev Lottery (\ud835\udd5c : Type*) (O : Type*) [Semiring \ud835\udd5c] [PartialOrder \ud835\udd5c] [Fintype O]"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "stdSimplex.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.pure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "abbrev Lottery.pure {O : Type*} [Fintype O] [DecidableEq O] (o\u2080 : O) : Lottery \ud835\udd5c O"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "stdSimplex.mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.mix",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "abbrev Lottery.mix {O : Type*} [Fintype O] (\u03b1 : \ud835\udd5c) (h\u03b1\u2080 : 0 \u2264 \u03b1) (h\u03b1\u2081 : \u03b1 \u2264 1) (L\u2081 L\u2082 : Lottery \ud835\udd5c O) : Lottery \ud835\udd5c O"
+  },
+  {
+    "dependencies": [
+      "Lottery"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.expectedValue",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "abbrev Lottery.expectedValue {O : Type*} [Fintype O] (L : Lottery \ud835\udd5c O) (f : O \u2192 \ud835\udd5c) : \ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "Lottery.expectedValue",
+      "Lottery",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.expectedValue_pure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "theorem Lottery.expectedValue_pure [DecidableEq O] (o\u2080 : O) (f : O \u2192 \ud835\udd5c) : Lottery.expectedValue (Lottery.pure (\ud835\udd5c"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Lottery.expectedValue",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "wsum_mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.expectedValue_mix",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 104
+      },
+      "start": {
+        "column": 1,
+        "line": 104
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "theorem Lottery.expectedValue_mix (\u03b1 : \ud835\udd5c) (h\u03b1\u2080 : 0 \u2264 \u03b1) (h\u03b1\u2081 : \u03b1 \u2264 1) (L\u2081 L\u2082 : Lottery \ud835\udd5c O) (f : O \u2192 \ud835\udd5c) : Lottery.expectedValue (Lottery.mix \u03b1 h\u03b1\u2080 h\u03b1\u2081 L\u2081 L\u2082) f = \u03b1 * Lottery.expectedValue L\u2081 f + (1 - \u03b1) * Lottery.expectedValue L\u2082 f"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Lottery.expectedValue",
+      "wsum_le_wsum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.expectedValue_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "theorem Lottery.expectedValue_mono {L : Lottery \ud835\udd5c O} {f g : O \u2192 \ud835\udd5c} (h : \u2200 o, f o \u2264 g o) : Lottery.expectedValue L f \u2264 Lottery.expectedValue L g"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "Lottery.expectedValue",
+      "wsum_const"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "Lottery.expectedValue_const",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 117
+      },
+      "start": {
+        "column": 1,
+        "line": 117
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "theorem Lottery.expectedValue_const (L : Lottery \ud835\udd5c O) (c : \ud835\udd5c) : Lottery.expectedValue L (fun _ => c) = c"
+  },
+  {
+    "dependencies": [
+      "Lottery",
+      "stdSimplex.mix",
+      "Lottery.mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "IsLinearUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 131
+      },
+      "start": {
+        "column": 1,
+        "line": 131
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "def IsLinearUtility {O : Type*} [Fintype O] (u : Lottery \ud835\udd5c O \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsLinearUtility",
+      "Lottery.expectedValue",
+      "Lottery",
+      "Lottery.expectedValue_mix"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "name": "expectedValue_isLinearUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 137
+      },
+      "start": {
+        "column": 1,
+        "line": 137
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Utility/Lottery.lean",
+    "type": "theorem expectedValue_isLinearUtility {O : Type*} [Fintype O] (f : O \u2192 \ud835\udd5c) : IsLinearUtility (\ud835\udd5c"
+  }
+]

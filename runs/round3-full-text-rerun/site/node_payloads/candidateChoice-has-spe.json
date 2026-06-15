@@ -1,0 +1,52 @@
+{
+  "id": "candidateChoice-has-spe",
+  "title": "candidateChoice_has_spe",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/candidateChoice-has-spe.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>candidateChoice_has_spe</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem candidateChoice_has_spe : ∃ σ : Strategy Player ℚ, IsSubgamePerfect σ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>IsSubgamePerfect</li>\n<li>Kuhn_exists_SPE</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    },
+    {
+      "id": "IsSubgamePerfect",
+      "title": "IsSubgamePerfect",
+      "href": "misc/IsSubgamePerfect.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "candidateChoice_has_spe",
+      "display_name": "candidateChoice_has_spe",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

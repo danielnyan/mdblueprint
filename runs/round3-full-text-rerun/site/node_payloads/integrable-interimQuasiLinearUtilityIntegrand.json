@@ -1,0 +1,47 @@
+{
+  "id": "integrable-interimQuasiLinearUtilityIntegrand",
+  "title": "integrable_interimQuasiLinearUtilityIntegrand",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integrable-interimQuasiLinearUtilityIntegrand.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integrable_interimQuasiLinearUtilityIntegrand</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integrable_interimQuasiLinearUtilityIntegrand (A : BayesianSingleItemAuction I) (hQ : A.HasIntegrableInterimAllocation) (hM : A.HasIntegrableInterimPayment) (i : I) (t_i z_i : ℝ) : Integrable (fun t =&gt; A.interimQuasiLinearUtilityIntegrand i t_i z_i t) (A.opponentPrior i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIntegrableInterimAllocation</li>\n<li>HasIntegrableInterimPayment</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIntegrableInterimAllocation",
+      "title": "HasIntegrableInterimAllocation",
+      "href": "misc/HasIntegrableInterimAllocation.html"
+    },
+    {
+      "id": "HasIntegrableInterimPayment",
+      "title": "HasIntegrableInterimPayment",
+      "href": "misc/HasIntegrableInterimPayment.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integrable_interimQuasiLinearUtilityIntegrand",
+      "display_name": "integrable_interimQuasiLinearUtilityIntegrand",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

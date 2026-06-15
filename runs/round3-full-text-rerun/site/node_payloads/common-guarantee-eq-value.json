@@ -1,0 +1,47 @@
+{
+  "id": "common-guarantee-eq-value",
+  "title": "common_guarantee_eq_value",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/common-guarantee-eq-value.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>common_guarantee_eq_value</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem common_guarantee_eq_value (w : ℝ) (h1 : A.IsPlayerIGuarantee w) (h2 : A.IsPlayerIIGuarantee w) : w = A.value</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPlayerIGuarantee</li>\n<li>IsPlayerIIGuarantee</li>\n<li>lamB.aux.bddAbove</li>\n<li>lam.aux.bddAbove</li>\n<li>muB.aux.bddBelow</li>\n<li>mu.aux.bddBelow</li>\n<li>minimax_theorem</li>\n<li>value_eq_maximin</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPlayerIGuarantee",
+      "title": "IsPlayerIGuarantee",
+      "href": "misc/IsPlayerIGuarantee.html"
+    },
+    {
+      "id": "IsPlayerIIGuarantee",
+      "title": "IsPlayerIIGuarantee",
+      "href": "misc/IsPlayerIIGuarantee.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "common_guarantee_eq_value",
+      "display_name": "common_guarantee_eq_value",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

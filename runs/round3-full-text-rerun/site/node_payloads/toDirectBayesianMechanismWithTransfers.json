@@ -1,0 +1,48 @@
+{
+  "id": "toDirectBayesianMechanismWithTransfers",
+  "title": "toDirectBayesianMechanismWithTransfers",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/toDirectBayesianMechanismWithTransfers.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>toDirectBayesianMechanismWithTransfers</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef toDirectBayesianMechanismWithTransfers (A : BayesianSingleItemAuction I) : DirectBayesianMechanismWithTransfers I (fun _ =&gt; ℝ) (I → ℝ) ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>DirectBayesianMechanismWithTransfers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "DirectBayesianMechanismWithTransfers",
+      "title": "DirectBayesianMechanismWithTransfers",
+      "href": "misc/DirectBayesianMechanismWithTransfers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "virtualSurplusMaximizingWinner-eq-iff-forall-virtualScore-le",
+      "title": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+      "href": "misc/virtualSurplusMaximizingWinner-eq-iff-forall-virtualScore-le.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "toDirectBayesianMechanismWithTransfers",
+      "display_name": "toDirectBayesianMechanismWithTransfers",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

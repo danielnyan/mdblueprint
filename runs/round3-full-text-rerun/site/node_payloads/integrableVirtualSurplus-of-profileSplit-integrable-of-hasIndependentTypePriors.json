@@ -1,0 +1,57 @@
+{
+  "id": "integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors",
+  "title": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors [Fintype I] [DecidableEq I] {A B : BayesianSingleItemAuction I} [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (hind : A.HasIndependentTypePriors) (henv : A.HasSameSellingEnvironment B) (hvs_prod_int : ∀ i : I, Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; B.allocationRule (reportProfile i p.1 p.2) i * A.virtualValue i p.1) ((A.typeMeasure i).prod (B.opponentPrior i))) : A.IntegrableVirtualSurplus B.allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIndependentTypePriors</li>\n<li>HasSameSellingEnvironment</li>\n<li>OpponentTypeProfile</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors</li>\n<li>HasSameSellingEnvironment.opponentPrior_eq</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIndependentTypePriors",
+      "title": "HasIndependentTypePriors",
+      "href": "misc/HasIndependentTypePriors.html"
+    },
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+      "display_name": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

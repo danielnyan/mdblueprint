@@ -1,0 +1,148 @@
+{
+  "id": "expectedPayoff",
+  "title": "expectedPayoff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedPayoff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedPayoff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef expectedPayoff (G : StrategicGame N U) [Fintype N] [DecidableEq N] [∀ i, Fintype (G.strategy i)] (p : MixedProfile G) (who : N) : U</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedProfile</li>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ChanceProbabilitiesSumToOne",
+      "title": "ChanceProbabilitiesSumToOne",
+      "href": "misc/ChanceProbabilitiesSumToOne.html"
+    },
+    {
+      "id": "IsBehaviorNashEq",
+      "title": "IsBehaviorNashEq",
+      "href": "misc/IsBehaviorNashEq.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-init",
+      "title": "IsBehaviorNashEq.restrictSubgame_init",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-init.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach-reach-pos",
+      "title": "IsCompletelyMixedWithPositiveReach.reach_pos",
+      "href": "misc/IsCompletelyMixedWithPositiveReach-reach-pos.html"
+    },
+    {
+      "id": "IsMixedNashEq",
+      "title": "IsMixedNashEq",
+      "href": "misc/IsMixedNashEq.html"
+    },
+    {
+      "id": "IsZeroSum-expectedPayoff-neg",
+      "title": "IsZeroSum.expectedPayoff_neg",
+      "href": "misc/IsZeroSum-expectedPayoff-neg.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer-init",
+      "title": "ReachedSubgamePayoffTransfer.init",
+      "href": "misc/ReachedSubgamePayoffTransfer-init.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-init",
+      "title": "expectedPayoff_restrictSubgame_init",
+      "href": "misc/expectedPayoff-restrictSubgame-init.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-one",
+      "title": "expectedPayoff_toStrategicGame_one",
+      "href": "misc/expectedPayoff-toStrategicGame-one.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-zero",
+      "title": "expectedPayoff_toStrategicGame_zero",
+      "href": "misc/expectedPayoff-toStrategicGame-zero.html"
+    },
+    {
+      "id": "fairCoin-expected-player0",
+      "title": "fairCoin_expected_player0",
+      "href": "misc/fairCoin-expected-player0.html"
+    },
+    {
+      "id": "rps-dev0",
+      "title": "rps_dev0",
+      "href": "misc/rps-dev0.html"
+    },
+    {
+      "id": "rps-dev1",
+      "title": "rps_dev1",
+      "href": "misc/rps-dev1.html"
+    },
+    {
+      "id": "rps-eu-uniform-0",
+      "title": "rps_eu_uniform_0",
+      "href": "misc/rps-eu-uniform-0.html"
+    },
+    {
+      "id": "rps-eu-uniform-1",
+      "title": "rps_eu_uniform_1",
+      "href": "misc/rps-eu-uniform-1.html"
+    },
+    {
+      "id": "rps-mixed-nash-unique",
+      "title": "rps_mixed_nash_unique",
+      "href": "misc/rps-mixed-nash-unique.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "expectedPayoff",
+      "display_name": "expectedPayoff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

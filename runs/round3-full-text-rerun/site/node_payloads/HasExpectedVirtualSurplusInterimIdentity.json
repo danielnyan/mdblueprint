@@ -1,0 +1,67 @@
+{
+  "id": "HasExpectedVirtualSurplusInterimIdentity",
+  "title": "HasExpectedVirtualSurplusInterimIdentity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasExpectedVirtualSurplusInterimIdentity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasExpectedVirtualSurplusInterimIdentity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasExpectedVirtualSurplusInterimIdentity [Fintype I] (A B : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "InterimFubiniAnalyticAssumptions-hasExpectedVirtualSurplusInterimIdentity",
+      "title": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+      "href": "misc/InterimFubiniAnalyticAssumptions-hasExpectedVirtualSurplusInterimIdentity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-opt-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-opt-identity.html"
+    },
+    {
+      "id": "hasExpectedRevenueVirtualSurplusIdentity-of-interim-identities",
+      "title": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+      "href": "misc/hasExpectedRevenueVirtualSurplusIdentity-of-interim-identities.html"
+    },
+    {
+      "id": "hasExpectedRevenueVirtualSurplusUpperBound-of-interim-identities",
+      "title": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+      "href": "misc/hasExpectedRevenueVirtualSurplusUpperBound-of-interim-identities.html"
+    },
+    {
+      "id": "isRevenueUpperBounded-of-ic-ir-upper",
+      "title": "isRevenueUpperBounded_of_ic_ir_upper",
+      "href": "misc/isRevenueUpperBounded-of-ic-ir-upper.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasExpectedVirtualSurplusInterimIdentity",
+      "display_name": "HasExpectedVirtualSurplusInterimIdentity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hasInterimPaymentFormula-of-isIncentiveCompatible",
+  "title": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentFormula-of-isIncentiveCompatible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentFormula_of_isIncentiveCompatible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentFormula_of_isIncentiveCompatible (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) : A.HasInterimPaymentFormula</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>HasInterimPaymentFormula</li>\n<li>hasInterimPaymentFormula_of_hasInterimEnvelopeFormula</li>\n<li>hasInterimEnvelopeFormula_of_isIncentiveCompatible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+      "display_name": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

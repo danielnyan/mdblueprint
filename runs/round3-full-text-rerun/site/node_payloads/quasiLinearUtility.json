@@ -1,0 +1,88 @@
+{
+  "id": "quasiLinearUtility",
+  "title": "quasiLinearUtility",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/quasiLinearUtility.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>quasiLinearUtility</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef quasiLinearUtility [Mul R] [Sub R] (b θ : I → R) (i : I) : R</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>quasiLinearValue</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "quasiLinearValue",
+      "title": "quasiLinearValue",
+      "href": "misc/quasiLinearValue.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "VCGMechanism-isDSIC",
+      "title": "VCGMechanism_isDSIC",
+      "href": "misc/VCGMechanism-isDSIC.html"
+    },
+    {
+      "id": "VCGMechanism-isExPostIR-of-all-nonnegative",
+      "title": "VCGMechanism_isExPostIR_of_all_nonnegative",
+      "href": "misc/VCGMechanism-isExPostIR-of-all-nonnegative.html"
+    },
+    {
+      "id": "VCGMechanism-quasiLinearUtility-eq-socialWelfare-sub-maxWelfareWithout",
+      "title": "VCGMechanism_quasiLinearUtility_eq_socialWelfare_sub_maxWelfareWithout",
+      "href": "misc/VCGMechanism-quasiLinearUtility-eq-socialWelfare-sub-maxWelfareWithout.html"
+    },
+    {
+      "id": "VCGMechanism-truthful-profile-quasiLinearUtility-nonneg",
+      "title": "VCGMechanism_truthful_profile_quasiLinearUtility_nonneg",
+      "href": "misc/VCGMechanism-truthful-profile-quasiLinearUtility-nonneg.html"
+    },
+    {
+      "id": "VCGMechanism-truthful-quasiLinearUtility-nonneg",
+      "title": "VCGMechanism_truthful_quasiLinearUtility_nonneg",
+      "href": "misc/VCGMechanism-truthful-quasiLinearUtility-nonneg.html"
+    },
+    {
+      "id": "quasiLinearUtility-eq-transferQuasiLinearUtility",
+      "title": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+      "href": "misc/quasiLinearUtility-eq-transferQuasiLinearUtility.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-quasiLinearUtility-eq",
+      "title": "virtualSurplusMaximizingMechanism_quasiLinearUtility_eq",
+      "href": "misc/virtualSurplusMaximizingMechanism-quasiLinearUtility-eq.html"
+    },
+    {
+      "id": "withMyersonPayment-isDSIC-of-isMonotone",
+      "title": "withMyersonPayment_isDSIC_of_isMonotone",
+      "href": "misc/withMyersonPayment-isDSIC-of-isMonotone.html"
+    },
+    {
+      "id": "withMyersonPayment-quasiLinearUtility-eq",
+      "title": "withMyersonPayment_quasiLinearUtility_eq",
+      "href": "misc/withMyersonPayment-quasiLinearUtility-eq.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "quasiLinearUtility",
+      "display_name": "quasiLinearUtility",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

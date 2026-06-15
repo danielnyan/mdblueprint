@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParAll",
+    "source": "parMap_unit_cost_le",
+    "target": "parList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParAll",
+    "source": "parMap_unit_cost_le",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParAll",
+    "source": "parMap_unit_cost_le",
+    "target": "Lottery.pure"
+  }
+]

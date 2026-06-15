@@ -1,0 +1,36 @@
+{
+  "id": "norm-virtualSurplusMaximizingPaymentRule-le",
+  "title": "norm_virtualSurplusMaximizingPaymentRule_le",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/norm-virtualSurplusMaximizingPaymentRule-le.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>norm_virtualSurplusMaximizingPaymentRule_le</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem norm_virtualSurplusMaximizingPaymentRule_le [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (b : I → ℝ) (i : I) : ‖A.virtualSurplusMaximizingPaymentRule b i‖ ≤ 2 * ‖b i‖</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>virtualSurplusMaximizingAllocationRule_nonneg</li>\n<li>virtualSurplusMaximizingAllocationRule_le_one</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "norm_virtualSurplusMaximizingPaymentRule_le",
+      "display_name": "norm_virtualSurplusMaximizingPaymentRule_le",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "name": "toStrategicGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBasic.lean",
+    "type": "def toStrategicGame (v : \u2200 i, T i) : StrategicGame I U"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "name": "IsDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBasic.lean",
+    "type": "def IsDSIC [Preorder U] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "name": "IsExPostIR",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBasic.lean",
+    "type": "def IsExPostIR [Preorder U] [Zero U] : Prop"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "IsNashEquilibrium",
+      "toStrategicGame",
+      "of_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBasic",
+    "name": "IsDSIC.truthful_isNash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBasic.lean",
+    "type": "theorem IsDSIC.truthful_isNash [Preorder U] (hdsic : M.IsDSIC u) (v : \u2200 i, T i) : IsNashEquilibrium (M.toStrategicGame u v) v"
+  }
+]

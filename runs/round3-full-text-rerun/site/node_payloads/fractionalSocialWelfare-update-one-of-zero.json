@@ -1,0 +1,42 @@
+{
+  "id": "fractionalSocialWelfare-update-one-of-zero",
+  "title": "fractionalSocialWelfare_update_one_of_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fractionalSocialWelfare-update-one-of-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fractionalSocialWelfare_update_one_of_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma fractionalSocialWelfare_update_one_of_zero (b : I → ℝ) {x : I → ℝ} {i : I} (hxi : x i = 0) : fractionalSocialWelfare b (Function.update x i 1) = b i + fractionalSocialWelfare b x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>fractionalSocialWelfare</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "fractionalSocialWelfare",
+      "title": "fractionalSocialWelfare",
+      "href": "misc/fractionalSocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fractionalSocialWelfare_update_one_of_zero",
+      "display_name": "fractionalSocialWelfare_update_one_of_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

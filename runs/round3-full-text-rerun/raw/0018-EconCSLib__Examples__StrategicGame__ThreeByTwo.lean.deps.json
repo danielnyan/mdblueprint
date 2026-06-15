@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwo_row_guarantee",
+    "target": "threeByTwoExample"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwo_column_guarantee",
+    "target": "threeByTwoExample"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "threeByTwoExample"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "common_guarantee_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "threeByTwo_row_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "source": "threeByTwoExample_value",
+    "target": "threeByTwo_column_guarantee"
+  }
+]

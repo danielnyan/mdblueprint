@@ -1,0 +1,47 @@
+{
+  "id": "hasExpectedRevenueVirtualSurplusUpperBound-of-identity",
+  "title": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasExpectedRevenueVirtualSurplusUpperBound-of-identity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasExpectedRevenueVirtualSurplusUpperBound_of_identity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasExpectedRevenueVirtualSurplusUpperBound_of_identity [Fintype I] (A B : BayesianSingleItemAuction I) (hB : A.HasExpectedRevenueVirtualSurplusIdentity B) : A.HasExpectedRevenueVirtualSurplusUpperBound B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n<li>HasExpectedRevenueVirtualSurplusUpperBound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusUpperBound",
+      "title": "HasExpectedRevenueVirtualSurplusUpperBound",
+      "href": "misc/HasExpectedRevenueVirtualSurplusUpperBound.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+      "display_name": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

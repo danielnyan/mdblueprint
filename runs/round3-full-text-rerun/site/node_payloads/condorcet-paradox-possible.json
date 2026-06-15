@@ -1,0 +1,47 @@
+{
+  "id": "condorcet-paradox-possible",
+  "title": "condorcet_paradox_possible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/condorcet-paradox-possible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>condorcet_paradox_possible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem condorcet_paradox_possible : ∃ P : Profile (Fin 3) (Fin 3), ¬ HasCondorcetWinner P</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>HasCondorcetWinner</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "HasCondorcetWinner",
+      "title": "HasCondorcetWinner",
+      "href": "misc/HasCondorcetWinner.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "condorcet_paradox_possible",
+      "display_name": "condorcet_paradox_possible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

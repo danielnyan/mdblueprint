@@ -1,0 +1,147 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "Strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "def Strategy (N : Type*) : Type _"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "headStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "def headStrategy : Strategy N"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "ofGameTree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "def ofGameTree : GameTree N \u211a \u2192 StochasticGameTree N | GameTree.Leaf p => StochasticGameTree.Leaf p | GameTree.Node m h t => StochasticGameTree.Player m (ofGameTree h) (t.map ofGameTree) /-- Local probability mass check at a chance node. -/"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "expectedPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "ChanceProbabilitiesSumToOne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 58
+      },
+      "start": {
+        "column": 1,
+        "line": 58
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "def ChanceProbabilitiesSumToOne (headProb : \u211a) (tail : List (\u211a \u00d7 StochasticGameTree N)) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "fairCoinGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "def fairCoinGame : StochasticGameTree (Fin 2)"
+  },
+  {
+    "dependencies": [
+      "ChanceProbabilitiesSumToOne"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "fairCoin_probs_sum_to_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "theorem fairCoin_probs_sum_to_one : ChanceProbabilitiesSumToOne (1 / 2) (List.cons (1 / 2, StochasticGameTree.Leaf (fun i : Fin 2 => if i = 0 then 0 else 1)) List.nil)"
+  },
+  {
+    "dependencies": [
+      "expectedPayoff",
+      "headStrategy",
+      "Strategy",
+      "fairCoinGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "name": "fairCoin_expected_player0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/StochasticGameTree.lean",
+    "type": "theorem fairCoin_expected_player0 : expectedPayoff (headStrategy : Strategy (Fin 2)) fairCoinGame 0 = 1 / 2"
+  }
+]

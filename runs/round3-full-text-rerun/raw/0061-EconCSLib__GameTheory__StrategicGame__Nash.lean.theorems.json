@@ -1,0 +1,352 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "MixedS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "abbrev MixedS"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "evaluate_at_mixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "def evaluate_at_mixed (i : N) (\u03c3 : MixedS G) : \u211d"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "mixed_g",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "def mixed_g (i : N) (m : \u2200 i, G.strategy i \u2192 \u211d) : \u211d"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "evaluate_at_mixed",
+      "mixed_g"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "evaluate_at_mixed_eq_mixed_g",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "theorem evaluate_at_mixed_eq_mixed_g (i : N) (\u03c3 : MixedS G) : evaluate_at_mixed G i \u03c3 = mixed_g G i (fun j => (\u03c3 j).val)"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "evaluate_at_mixed",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "g_function",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "def g_function (i : N) (\u03c3 : MixedS G) (a : G.strategy i) : \u211d"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "g_function"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "sigma_le_g_function",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "lemma sigma_le_g_function (i : N) (\u03c3 : MixedS G) (a : G.strategy i) : (\u03c3 i).val a \u2264 g_function G i \u03c3 a"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "g_function",
+      "sigma_le_g_function"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "g_function_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "lemma g_function_nonneg (i : N) (\u03c3 : MixedS G) (a : G.strategy i) : 0 \u2264 g_function G i \u03c3 a"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "g_function",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "sigma_le_g_function"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "one_le_sum_g",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 117
+      },
+      "start": {
+        "column": 1,
+        "line": 117
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "lemma one_le_sum_g (i : N) (\u03c3 : MixedS G) : 1 \u2264 \u2211 a : G.strategy i, g_function G i \u03c3 a"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "g_function",
+      "one_le_sum_g",
+      "g_function_nonneg"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "nash_map_cert",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 132
+      },
+      "start": {
+        "column": 1,
+        "line": 132
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "lemma nash_map_cert (\u03c3 : MixedS G) (i : N) : nash_map_aux G \u03c3 i \u2208 stdSimplex \u211d (G.strategy i)"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "nash_map_cert",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "evaluate_at_mixed",
+      "Strategy",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "g_function"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "nash_map",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "def nash_map (\u03c3 : MixedS G) : MixedS G"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "nash_map",
+      "one_le_sum_g"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "nash_map_cont",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 197
+      },
+      "start": {
+        "column": 1,
+        "line": 197
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "theorem nash_map_cont : Continuous (nash_map G)"
+  },
+  {
+    "dependencies": [
+      "MixedS",
+      "Strategy",
+      "evaluate_at_mixed",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "Profile.ext",
+      "stdSimplex.pure_apply"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "evaluate_at_mixed_linear",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 216
+      },
+      "start": {
+        "column": 1,
+        "line": 216
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "lemma evaluate_at_mixed_linear (i : N) (\u03c3 : MixedS G) (\u03c4 : stdSimplex \u211d (G.strategy i)) : evaluate_at_mixed G i (update \u03c3 i \u03c4) = \u2211 a : G.strategy i, (\u03c4.val a) * evaluate_at_mixed G i (update \u03c3 i (stdSimplex.pure a))"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedS",
+      "evaluate_at_mixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "mixedNashEquilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 249
+      },
+      "start": {
+        "column": 1,
+        "line": 249
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "def mixedNashEquilibrium (G : StrategicGame N \u211d) [Fintype N] [\u2200 i, Fintype (G.strategy i)] : MixedS G \u2192 Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "MixedS",
+      "mixedNashEquilibrium",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "ProductSimplices",
+      "nash_map",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "nash_map_cont",
+      "Brouwer_Product",
+      "g_function",
+      "one_le_sum_g",
+      "evaluate_at_mixed",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "evaluate_at_mixed_linear"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "name": "exists_mixed_nash_equilibrium_finite",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 291
+      },
+      "start": {
+        "column": 1,
+        "line": 291
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Nash.lean",
+    "type": "theorem exists_mixed_nash_equilibrium_finite (G : StrategicGame N \u211d) [Fintype N] [DecidableEq N] [\u2200 i, Fintype (G.strategy i)] [\u2200 i, DecidableEq (G.strategy i)] [\u2200 i, Inhabited (G.strategy i)] [Inhabited N] : \u2203 \u03c3 : MixedS G, mixedNashEquilibrium G \u03c3"
+  }
+]

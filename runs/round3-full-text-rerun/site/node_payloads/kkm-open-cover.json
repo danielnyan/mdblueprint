@@ -1,0 +1,47 @@
+{
+  "id": "kkm-open-cover",
+  "title": "kkm_open_cover",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/kkm-open-cover.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>kkm_open_cover</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem kkm_open_cover (hn : 0 &lt; n) (U : Fin n → Set (Fin n → ℝ)) (hopen : ∀ i, IsOpen (U i)) (hface : ∀ i, simplexFaceOpp i ⊆ (U i)ᶜ) (hcover : stdSimplex ℝ (Fin n) ⊆ ⋃ i, U i) : ∃ x ∈ stdSimplex ℝ (Fin n), ∀ i, x ∈ U i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>simplexFaceOpp</li>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>IsKKMCover</li>\n<li>mem_iUnion</li>\n<li>kkm_closed_cover</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "simplexFaceOpp",
+      "title": "simplexFaceOpp",
+      "href": "misc/simplexFaceOpp.html"
+    },
+    {
+      "id": "IsKKMCover",
+      "title": "IsKKMCover",
+      "href": "misc/IsKKMCover.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "kkm_open_cover",
+      "display_name": "kkm_open_cover",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

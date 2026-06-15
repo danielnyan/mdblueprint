@@ -1,0 +1,24 @@
+[
+  {
+    "dependencies": [
+      "parList",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ParAll",
+    "name": "parMap_unit_cost_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParAll.lean",
+    "type": "theorem parMap_unit_cost_le (xs : List \u2115) : (parList (xs.map (fun _ => (do \u2713 pure 0 : CostM \u2115 \u2115)))).cost \u2264 1"
+  }
+]

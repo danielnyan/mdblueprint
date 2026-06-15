@@ -1,0 +1,52 @@
+{
+  "id": "holdinv-finalState",
+  "title": "holdinv_finalState",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/holdinv-finalState.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>holdinv_finalState</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma holdinv_finalState (w m : Preferences n) : HoldInv m (finalState w m)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HoldInv</li>\n<li>finalState</li>\n<li>initState</li>\n<li>holdinv_init</li>\n<li>initState_injective</li>\n<li>pref_list_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HoldInv",
+      "title": "HoldInv",
+      "href": "misc/HoldInv.html"
+    },
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "initState",
+      "title": "initState",
+      "href": "misc/initState.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "holdinv_finalState",
+      "display_name": "holdinv_finalState",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

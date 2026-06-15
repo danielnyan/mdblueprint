@@ -1,0 +1,52 @@
+{
+  "id": "IsZeroSum-expectedPayoff-neg",
+  "title": "IsZeroSum.expectedPayoff_neg",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum-expectedPayoff-neg.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum.expectedPayoff_neg</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsZeroSum.expectedPayoff_neg' (hzs : IsZeroSum G) (p : StrategicGame.MixedProfile G) : StrategicGame.expectedPayoff G p 0 = -(StrategicGame.expectedPayoff G p 1)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>MixedProfile</li>\n<li>expectedPayoff</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum.expectedPayoff_neg",
+      "display_name": "IsZeroSum.expectedPayoff_neg",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

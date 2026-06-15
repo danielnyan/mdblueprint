@@ -1,0 +1,110 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "payoff_anti_payment",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem payoff_anti_payment {value price\u2081 price\u2082 : U} (h : price\u2081 \u2264 price\u2082) : value - price\u2082 \u2264 value - price\u2081"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "payoff_nonneg_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem payoff_nonneg_iff {value price : U} : 0 \u2264 value - price \u2194 price \u2264 value"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "payoff_nonpos_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem payoff_nonpos_iff {value price : U} : value - price \u2264 0 \u2194 value \u2264 price"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "payoff_lt_of_price_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem payoff_lt_of_price_lt {value price\u2081 price\u2082 : U} (h : price\u2081 < price\u2082) : value - price\u2082 < value - price\u2081"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "le_zero_of_add_le_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem le_zero_of_add_le_self {a b : U} (h : a + b \u2264 a) : b \u2264 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.OrderedGroup",
+    "name": "nonneg_of_self_le_add",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/OrderedGroup.lean",
+    "type": "theorem nonneg_of_self_le_add {a b : U} (h : a \u2264 a + b) : 0 \u2264 b"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "IsRiskNeutral-isAffine",
+  "title": "IsRiskNeutral.isAffine",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRiskNeutral-isAffine.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRiskNeutral.isAffine</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsRiskNeutral.isAffine {I : Type*} [Fintype I] [Nontrivial I] {u : 𝕜 → 𝕜} (h : IsRiskNeutral (I</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAffineUtility.isRiskNeutral</li>\n<li>IsRiskNeutral</li>\n<li>IsAffineUtility</li>\n<li>stdSimplex.mix</li>\n<li>Lottery.mix</li>\n<li>Lottery</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>Lottery.expectedValue</li>\n<li>Lottery.expectedValue_mix</li>\n<li>Lottery.expectedValue_pure</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRiskNeutral",
+      "title": "IsRiskNeutral",
+      "href": "misc/IsRiskNeutral.html"
+    },
+    {
+      "id": "IsAffineUtility",
+      "title": "IsAffineUtility",
+      "href": "misc/IsAffineUtility.html"
+    },
+    {
+      "id": "Lottery",
+      "title": "Lottery",
+      "href": "misc/Lottery.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsRiskNeutral.isAffine",
+      "display_name": "IsRiskNeutral.isAffine",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

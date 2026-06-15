@@ -1,0 +1,42 @@
+{
+  "id": "card-le-of-domiant",
+  "title": "card_le_of_domiant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/card-le-of-domiant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>card_le_of_domiant</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma card_le_of_domiant {σ : Finset T} {C: Finset I} (h1 : IST.isDominant σ C) : σ.card ≤ C.card</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDominant</li>\n<li>keylemma_of_dominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "card_le_of_domiant",
+      "display_name": "card_le_of_domiant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

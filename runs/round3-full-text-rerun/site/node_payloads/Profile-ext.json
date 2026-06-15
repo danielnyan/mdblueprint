@@ -1,0 +1,42 @@
+{
+  "id": "Profile-ext",
+  "title": "Profile.ext",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Profile-ext.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Profile.ext</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[ext] theorem Profile.ext [Fintype N] [Fintype A] {P Q : Profile N A} (h : ∀ i : N, P.pref i = Q.pref i) : P = Q</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Profile.ext",
+      "display_name": "Profile.ext",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

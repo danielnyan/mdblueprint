@@ -1,0 +1,67 @@
+{
+  "id": "fm-cert-lift",
+  "title": "fm_cert_lift",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fm-cert-lift.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fm_cert_lift</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem fm_cert_lift (A : I → Fin (n+1) → 𝕜) (b : I → 𝕜) (hred : HasCertificate (fmA A) (fmB A b)) : HasCertificate A b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasCertificate</li>\n<li>fmA</li>\n<li>fmB</li>\n<li>liftCert</li>\n<li>liftCert_nonneg</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>feas_cert_disjoint</li>\n<li>rowEval</li>\n<li>feasible_of_fm_feasible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasCertificate",
+      "title": "HasCertificate",
+      "href": "misc/HasCertificate.html"
+    },
+    {
+      "id": "fmA",
+      "title": "fmA",
+      "href": "misc/fmA.html"
+    },
+    {
+      "id": "fmB",
+      "title": "fmB",
+      "href": "misc/fmB.html"
+    },
+    {
+      "id": "liftCert",
+      "title": "liftCert",
+      "href": "misc/liftCert.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fm_cert_lift",
+      "display_name": "fm_cert_lift",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

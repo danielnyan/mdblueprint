@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "source": "gcd",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "source": "gcd",
+    "target": "Lottery.pure"
+  }
+]

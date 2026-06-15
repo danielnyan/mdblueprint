@@ -1,0 +1,52 @@
+{
+  "id": "IsStrictlyDominant-isWeaklyDominant",
+  "title": "IsStrictlyDominant.isWeaklyDominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsStrictlyDominant-isWeaklyDominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsStrictlyDominant.isWeaklyDominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsStrictlyDominant.isWeaklyDominant {G : StrategicGame N U} {i : N} {s : G.strategy i} [DecidableEq (G.strategy i)] (h : IsStrictlyDominant G i s) : IsWeaklyDominant G i s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsStrictlyDominant</li>\n<li>IsWeaklyDominant</li>\n<li>StrictlyDominates.weakly</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IsStrictlyDominant",
+      "title": "IsStrictlyDominant",
+      "href": "misc/IsStrictlyDominant.html"
+    },
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsStrictlyDominant.isWeaklyDominant",
+      "display_name": "IsStrictlyDominant.isWeaklyDominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

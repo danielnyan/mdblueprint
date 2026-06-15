@@ -1,0 +1,42 @@
+{
+  "id": "tiny-no-chance-on-info",
+  "title": "tiny_no_chance_on_info",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/tiny-no-chance-on-info.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>tiny_no_chance_on_info</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem tiny_no_chance_on_info : tiny.NoChanceOnDecisionInfo</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>NoChanceOnDecisionInfo</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "NoChanceOnDecisionInfo",
+      "title": "NoChanceOnDecisionInfo",
+      "href": "misc/NoChanceOnDecisionInfo.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "tiny_no_chance_on_info",
+      "display_name": "tiny_no_chance_on_info",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

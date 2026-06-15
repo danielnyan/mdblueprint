@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "IsUtilitarianOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "IsMaxmin",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "utilitarianWelfare_unique",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "utilitarianWelfare_mono",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "source": "egalitarianWelfare_le",
+    "target": "Allocation"
+  }
+]

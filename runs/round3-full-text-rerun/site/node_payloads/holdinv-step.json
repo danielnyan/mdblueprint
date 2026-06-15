@@ -1,0 +1,52 @@
+{
+  "id": "holdinv-step",
+  "title": "holdinv_step",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/holdinv-step.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>holdinv_step</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma holdinv_step (w m : Preferences n) (s : DAState n) (hhold : HoldInv m s) : HoldInv m (daStep w m s)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HoldInv</li>\n<li>daStep_holding</li>\n<li>isFree</li>\n<li>propTarget</li>\n<li>not_isFree_iff</li>\n<li>daStep_nc_held</li>\n<li>daStep_nc_free</li>\n<li>pref_list_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HoldInv",
+      "title": "HoldInv",
+      "href": "misc/HoldInv.html"
+    },
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    },
+    {
+      "id": "propTarget",
+      "title": "propTarget",
+      "href": "misc/propTarget.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "holdinv_step",
+      "display_name": "holdinv_step",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

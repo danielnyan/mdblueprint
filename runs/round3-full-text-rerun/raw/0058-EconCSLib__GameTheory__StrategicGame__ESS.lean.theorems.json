@@ -1,0 +1,121 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "IsESS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "def IsESS {S : Type*} (u : S \u2192 S \u2192 \u211d) (s : S) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "IsNSS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "def IsNSS {S : Type*} (u : S \u2192 S \u2192 \u211d) (s : S) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsESS",
+      "IsNSS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "IsESS.isNSS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "theorem IsESS.isNSS {s : S} (h : IsESS u s) : IsNSS u s"
+  },
+  {
+    "dependencies": [
+      "IsESS",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "strict_nash_implies_ess",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "theorem strict_nash_implies_ess {s : S} (hstrict : \u2200 t, t \u2260 s \u2192 u s s > u t s) : IsESS u s"
+  },
+  {
+    "dependencies": [
+      "IsESS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "IsESS.nash_condition",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "theorem IsESS.nash_condition {s : S} (h : IsESS u s) : \u2200 t, u s s \u2265 u t s"
+  },
+  {
+    "dependencies": [
+      "IsESS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ESS",
+    "name": "IsESS.strict_against_other",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ESS.lean",
+    "type": "theorem IsESS.strict_against_other {s t : S} (hs : IsESS u s) (ht : IsESS u t) (hne : s \u2260 t) : u s s > u t s"
+  }
+]

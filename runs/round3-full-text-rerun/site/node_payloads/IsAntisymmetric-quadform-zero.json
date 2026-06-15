@@ -1,0 +1,42 @@
+{
+  "id": "IsAntisymmetric-quadform-zero",
+  "title": "IsAntisymmetric.quadform_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsAntisymmetric-quadform-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsAntisymmetric.quadform_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsAntisymmetric.quadform_zero {B : I → I → ℝ} (hB : IsAntisymmetric B) (z : I → ℝ) : ∑ i, ∑ j, z i * B i j * z j = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAntisymmetric</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsAntisymmetric",
+      "title": "IsAntisymmetric",
+      "href": "misc/IsAntisymmetric.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsAntisymmetric.quadform_zero",
+      "display_name": "IsAntisymmetric.quadform_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

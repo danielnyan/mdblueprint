@@ -1,0 +1,182 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "demandOracleSWMBeatsOneMinusInvE",
+    "target": "BundlePartitionAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "ValueOracle",
+    "target": "BundleAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "ValueOracle",
+    "target": "valueOfAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionAllocation",
+    "target": "BundleAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "BundlePartitionAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "socialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "BundlePartitionProfileValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "ValueOracle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "BundleAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "DemandOracle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "BundlePriceVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionSocialWelfare",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundleAllocation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundleAllocation",
+    "target": "Nonnegative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionProfileValuation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundlePartitionProfileValuation",
+    "target": "BundlePartitionAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+    "target": "BundlePartitionAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+    "target": "PolynomialTimeInAgentsItems"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+    "target": "PolynomialBundleOracleQueryBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "DemandOracle",
+    "target": "BundlePriceVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "DemandOracle",
+    "target": "BundleAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "DemandOracle",
+    "target": "BundleDemandUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundleDemandUtility",
+    "target": "BundlePriceVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundleDemandUtility",
+    "target": "BundleAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.OpenProblem.SubmodularWelfareDemandOracle",
+    "source": "BundleDemandUtility",
+    "target": "ValueOracle"
+  }
+]

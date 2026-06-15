@@ -1,0 +1,70 @@
+[
+  {
+    "dependencies": [
+      "Visited",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "name": "lcs",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+    "type": "def lcs : List A \u2192 List A \u2192 CostM (Visited (\u2115 \u00d7 \u2115)) \u2115 | [], ys => do CostM.tick (Visited.singleton (0, ys.length)) pure 0 | x :: xs, [] => do CostM.tick (Visited.singleton (xs.length + 1, 0)) pure 0 | x :: xs, y :: ys => if x = y then do CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1)) let r \u2190 lcs xs ys pure (r + 1) else do CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1)) let r1 \u2190 lcs xs (y :: ys) let r2 \u2190 lcs (x :: xs) ys pure (max r1 r2) /-- Monotonicity helper: enlarging both arguments of `Finset.range` preserves the `\u00d7\u02e2` containment. -/ private lemma range_prod_mono {a a' b b' : \u2115} (ha : a \u2264 a') (hb : b \u2264 b') : Finset.range a \u00d7\u02e2 Finset.range b \u2286 Finset.range a' \u00d7\u02e2 Finset.range b'"
+  },
+  {
+    "dependencies": [
+      "toFinset",
+      "Visited",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "name": "lcs_cost_subset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+    "type": "theorem lcs_cost_subset (xs : List A) : \u2200 (ys : List A), (lcs xs ys).cost.toFinset \u2286 Finset.range (xs.length + 1) \u00d7\u02e2 Finset.range (ys.length + 1)"
+  },
+  {
+    "dependencies": [
+      "lcs_cost_subset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "name": "lcs_cost_card_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 131
+      },
+      "start": {
+        "column": 1,
+        "line": 131
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+    "type": "theorem lcs_cost_card_le (xs ys : List A) : (lcs xs ys).cost.toFinset.card \u2264 (xs.length + 1) * (ys.length + 1)"
+  }
+]

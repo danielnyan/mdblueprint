@@ -1,0 +1,42 @@
+{
+  "id": "IsESS-nash-condition",
+  "title": "IsESS.nash_condition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsESS-nash-condition.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsESS.nash_condition</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsESS.nash_condition {s : S} (h : IsESS u s) : ∀ t, u s s ≥ u t s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsESS</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsESS",
+      "title": "IsESS",
+      "href": "misc/IsESS.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsESS.nash_condition",
+      "display_name": "IsESS.nash_condition",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

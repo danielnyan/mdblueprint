@@ -1,0 +1,52 @@
+{
+  "id": "zermelo-determinacy",
+  "title": "zermelo_determinacy",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/zermelo-determinacy.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>zermelo_determinacy</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem zermelo_determinacy (g : GameTree (Fin 2) ℚ) (hzs : IsZeroSum g) : (∀ σ' : Strategy (Fin 2) ℚ, IVariant (1 : Fin 2) optStrategy σ' → value₀ g ≤ outcome σ' g 0) ∧ (∀ σ' : Strategy (Fin 2) ℚ, IVariant (0 : Fin 2) optStrategy σ' → outcome σ' g 0 ≤ value₀ g)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>Strategy</li>\n<li>IVariant</li>\n<li>value₀_le_outcome_of_iVariant_one</li>\n<li>outcome_le_value₀_of_iVariant_zero</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "zermelo_determinacy",
+      "display_name": "zermelo_determinacy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

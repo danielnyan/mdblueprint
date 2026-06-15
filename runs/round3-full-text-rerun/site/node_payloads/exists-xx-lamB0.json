@@ -1,0 +1,42 @@
+{
+  "id": "exists-xx-lamB0",
+  "title": "exists_xx_lamB0",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-xx-lamB0.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_xx_lamB0</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem exists_xx_lamB0 (A B : I → J → ℝ) (hB : IsPositive B) : ∃ xx : stdSimplex ℝ I, ∀ j, lamB0 A B * xB B xx j ≤ xA A xx j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositive</li>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>xB_pos</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_xx_lamB0",
+      "display_name": "exists_xx_lamB0",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

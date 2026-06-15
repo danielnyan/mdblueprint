@@ -1,0 +1,36 @@
+{
+  "id": "prefW-strict",
+  "title": "prefW_strict",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/prefW-strict.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>prefW_strict</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma prefW_strict {j a b : Fin n} : strict ((MatchingMarket.ofEquivData w m).prefW j).rel (some a) (some b) ↔ (m.prefs j).idxOf a &lt; (m.prefs j).idxOf b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>joinWoman_injective</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "prefW_strict",
+      "display_name": "prefW_strict",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

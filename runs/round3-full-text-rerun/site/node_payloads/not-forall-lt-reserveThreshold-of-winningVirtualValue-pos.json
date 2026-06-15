@@ -1,0 +1,42 @@
+{
+  "id": "not-forall-lt-reserveThreshold-of-winningVirtualValue-pos",
+  "title": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/not-forall-lt-reserveThreshold-of-winningVirtualValue-pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>not_forall_lt_reserveThreshold_of_winningVirtualValue_pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem not_forall_lt_reserveThreshold_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I → ℝ} (hreserve : ∀ i, A.IsReserveThreshold i (reserve i)) (hpos : 0 &lt; A.winningVirtualValue b) : ¬ ∀ i, b i &lt; reserve i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsReserveThreshold</li>\n<li>winningVirtualValue_nonpos_of_forall_lt_reserveThreshold</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsReserveThreshold",
+      "title": "IsReserveThreshold",
+      "href": "misc/IsReserveThreshold.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+      "display_name": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "IsNashEquilibrium-survives",
+  "title": "IsNashEquilibrium.survives",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsNashEquilibrium-survives.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsNashEquilibrium.survives</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsNashEquilibrium.survives {G : StrategicGame N U} {σ : G.Profile} (hN : IsNashEquilibrium G σ) : ∀ (n : ℕ) (i : N), G.Survives n i (σ i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>IsNashEquilibrium</li>\n<li>Survives</li>\n<li>deviate_self</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "Survives",
+      "title": "Survives",
+      "href": "misc/Survives.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsNashEquilibrium.survives",
+      "display_name": "IsNashEquilibrium.survives",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

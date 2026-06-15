@@ -1,0 +1,47 @@
+{
+  "id": "hasInterimEnvelopeDerivative-of-isIncentiveCompatible-of-equilibriumPayoff-differentiable",
+  "title": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimEnvelopeDerivative-of-isIncentiveCompatible-of-equilibriumPayoff-differentiable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hdiff : ∀ (i : I) (v_i : ℝ), DifferentiableAt ℝ (A.equilibriumPayoff i) v_i) : A.HasInterimEnvelopeDerivative</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>HasInterimEnvelopeDerivative</li>\n<li>deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "HasInterimEnvelopeDerivative",
+      "title": "HasInterimEnvelopeDerivative",
+      "href": "misc/HasInterimEnvelopeDerivative.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+      "display_name": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

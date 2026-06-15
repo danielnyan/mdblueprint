@@ -1,0 +1,42 @@
+{
+  "id": "NCtype-of-door",
+  "title": "NCtype_of_door",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/NCtype-of-door.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>NCtype_of_door</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma NCtype_of_door (h1 : isTypedNC c i τ D) (_ : isDoorof τ D σ C) (_ : isTypedNC c i σ C) : isTypedNC c i τ D</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isTypedNC</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isTypedNC",
+      "title": "isTypedNC",
+      "href": "misc/isTypedNC.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "NCtype_of_door",
+      "display_name": "NCtype_of_door",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

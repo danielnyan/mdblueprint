@@ -1,0 +1,1106 @@
+[
+  {
+    "dependencies": [
+      "subgameAt",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "subgameAt_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem subgameAt_init (G : ExtensiveGame iota U) (s : G.State) : (G.subgameAt s).init = s"
+  },
+  {
+    "dependencies": [
+      "subgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "subgameAt_mover",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem subgameAt_mover (G : ExtensiveGame iota U) (s t : G.State) : (G.subgameAt s).mover t = G.mover t"
+  },
+  {
+    "dependencies": [
+      "subgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "subgameAt_payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem subgameAt_payoff (G : ExtensiveGame iota U) (s t : G.State) (i : iota) : (G.subgameAt s).payoff t i = G.payoff t i"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "IsReachable.next",
+      "isEmpty",
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "subgameAt_next",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem subgameAt_next (G : ExtensiveGame iota U) (s t : G.State) (a : G.Action t) : (G.subgameAt s).next t a = G.next t a"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "BehaviorStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def BehaviorStrategy (G : ExtensiveGame iota U) (i : iota) [(s : G.State) -> Fintype (G.Action s)] : Type _"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "BehaviorProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def BehaviorProfile (G : ExtensiveGame iota U) [(s : G.State) -> Fintype (G.Action s)] : Type _"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "BehaviorProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def IsCompletelyMixed {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} (beta : G.BehaviorStrategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 136
+      },
+      "start": {
+        "column": 1,
+        "line": 136
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def IsCompletelyMixed {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) : Prop"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "IsCompletelyMixed",
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixed.player",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsCompletelyMixed.player {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {beta : G.BehaviorProfile} (hbeta : IsCompletelyMixed beta) (i : iota) : BehaviorStrategy.IsCompletelyMixed (G"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "probAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 151
+      },
+      "start": {
+        "column": 1,
+        "line": 151
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def probAt {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) {s : G.State} {i : iota} (h : G.mover s = some i) (a : G.Action s) : Real"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "actionProb",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 162
+      },
+      "start": {
+        "column": 1,
+        "line": 162
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def actionProb {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (s : G.State) (a : G.Action s) : Real"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "actionProb"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "actionProb_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 169
+      },
+      "start": {
+        "column": 1,
+        "line": 169
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem actionProb_nonneg {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (s : G.State) (a : G.Action s) : 0 <= beta.actionProb s a"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "IsCompletelyMixed",
+      "actionProb"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixed.actionProb_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 181
+      },
+      "start": {
+        "column": 1,
+        "line": 181
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsCompletelyMixed.actionProb_pos {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {beta : G.BehaviorProfile} (hbeta : IsCompletelyMixed beta) {s : G.State} {i : iota} (hm : G.mover s = some i) (a : G.Action s) : 0 < beta.actionProb s a"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "deviate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 198
+      },
+      "start": {
+        "column": 1,
+        "line": 198
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def deviate {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) (beta' : G.BehaviorStrategy who) : G.BehaviorProfile"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "deviate_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 203
+      },
+      "start": {
+        "column": 1,
+        "line": 203
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem deviate_same {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) (beta' : G.BehaviorStrategy who) : beta.deviate who beta' who = beta'"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "BehaviorStrategy",
+      "Mark.other"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "deviate_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 210
+      },
+      "start": {
+        "column": 1,
+        "line": 210
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem deviate_of_ne {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) (beta' : G.BehaviorStrategy who) {other : iota} (h : other \u2260 who) : beta.deviate who beta' other = beta other"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "subgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 228
+      },
+      "start": {
+        "column": 1,
+        "line": 228
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def restrictSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} (beta : G.BehaviorStrategy i) (root : G.State) : (G.subgameAt root).BehaviorStrategy i"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_eq_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 234
+      },
+      "start": {
+        "column": 1,
+        "line": 234
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem restrictSubgame_eq_self {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} (beta : G.BehaviorStrategy i) (root : G.State) : beta.restrictSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "BehaviorStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 246
+      },
+      "start": {
+        "column": 1,
+        "line": 246
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} {root : G.State} (beta : (G.subgameAt root).BehaviorStrategy i) : G.BehaviorStrategy i"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "BehaviorStrategy",
+      "liftSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "liftSubgame_eq_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 251
+      },
+      "start": {
+        "column": 1,
+        "line": 251
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem liftSubgame_eq_self {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} {root : G.State} (beta : (G.subgameAt root).BehaviorStrategy i) : beta.liftSubgame = beta"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "BehaviorStrategy",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 258
+      },
+      "start": {
+        "column": 1,
+        "line": 258
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem restrictSubgame_liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} {root : G.State} (beta : (G.subgameAt root).BehaviorStrategy i) : beta.liftSubgame.restrictSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 270
+      },
+      "start": {
+        "column": 1,
+        "line": 270
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def restrictReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} (beta : G.BehaviorStrategy i) (root : G.State) : (G.reachableSubgameAt root).BehaviorStrategy i"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "liftReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 278
+      },
+      "start": {
+        "column": 1,
+        "line": 278
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} {root : G.State} [(s : G.State) -> Decidable (Arena.Reachable G.toArena root s)] (base : G.BehaviorStrategy i) (beta : (G.reachableSubgameAt root).BehaviorStrategy i) : G.BehaviorStrategy i"
+  },
+  {
+    "dependencies": [
+      "BehaviorStrategy",
+      "reachableSubgameAt",
+      "liftReachableSubgame",
+      "restrictReachableSubgame",
+      "BehaviorProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictReachableSubgame_liftReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 290
+      },
+      "start": {
+        "column": 1,
+        "line": 290
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem restrictReachableSubgame_liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {i : iota} {root : G.State} [(s : G.State) -> Decidable (Arena.Reachable G.toArena root s)] (base : G.BehaviorStrategy i) (beta : (G.reachableSubgameAt root).BehaviorStrategy i) : (base.liftReachableSubgame beta).restrictReachableSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "subgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 308
+      },
+      "start": {
+        "column": 1,
+        "line": 308
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def restrictSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (root : G.State) : (G.subgameAt root).BehaviorProfile"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_eq_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 314
+      },
+      "start": {
+        "column": 1,
+        "line": 314
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem restrictSubgame_eq_self {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (root : G.State) : beta.restrictSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "BehaviorProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 323
+      },
+      "start": {
+        "column": 1,
+        "line": 323
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {root : G.State} (beta : (G.subgameAt root).BehaviorProfile) : G.BehaviorProfile"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "BehaviorProfile",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 328
+      },
+      "start": {
+        "column": 1,
+        "line": 328
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem restrictSubgame_liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {root : G.State} (beta : (G.subgameAt root).BehaviorProfile) : beta.liftSubgame.restrictSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 338
+      },
+      "start": {
+        "column": 1,
+        "line": 338
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def restrictReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (root : G.State) : (G.reachableSubgameAt root).BehaviorProfile"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "liftReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 346
+      },
+      "start": {
+        "column": 1,
+        "line": 346
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {root : G.State} [(s : G.State) -> Decidable (Arena.Reachable G.toArena root s)] (base : G.BehaviorProfile) (beta : (G.reachableSubgameAt root).BehaviorProfile) : G.BehaviorProfile"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "reachableSubgameAt",
+      "liftReachableSubgame",
+      "restrictReachableSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictReachableSubgame_liftReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 354
+      },
+      "start": {
+        "column": 1,
+        "line": 354
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem restrictReachableSubgame_liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] {root : G.State} [(s : G.State) -> Decidable (Arena.Reachable G.toArena root s)] (base : G.BehaviorProfile) (beta : (G.reachableSubgameAt root).BehaviorProfile) : (base.liftReachableSubgame beta).restrictReachableSubgame root = beta"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "reachableSubgameAt",
+      "BehaviorStrategy",
+      "liftReachableSubgame",
+      "restrictReachableSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictReachableSubgame_deviate_liftReachableSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 367
+      },
+      "start": {
+        "column": 1,
+        "line": 367
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem restrictReachableSubgame_deviate_liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] {root : G.State} [(s : G.State) -> Decidable (Arena.Reachable G.toArena root s)] (beta : G.BehaviorProfile) (who : iota) (beta' : (G.reachableSubgameAt root).BehaviorStrategy who) : (beta.deviate who ((beta who).liftReachableSubgame beta')).restrictReachableSubgame root = (beta.restrictReachableSubgame root).deviate who beta'"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "restrictSubgame",
+      "actionProb"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "actionProb_restrictSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 382
+      },
+      "start": {
+        "column": 1,
+        "line": 382
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem actionProb_restrictSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (root s : G.State) (a : G.Action s) : (beta.restrictSubgame root).actionProb s a = beta.actionProb s a"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "BehaviorStrategy",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_deviate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 393
+      },
+      "start": {
+        "column": 1,
+        "line": 393
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem restrictSubgame_deviate {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) (beta' : G.BehaviorStrategy who) (root : G.State) : (beta.deviate who beta').restrictSubgame root = (beta.restrictSubgame root).deviate who (beta'.restrictSubgame root)"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "subgameAt",
+      "BehaviorStrategy",
+      "liftSubgame",
+      "restrictSubgame",
+      "restrictSubgame_deviate",
+      "restrictSubgame_liftSubgame",
+      "actionProb",
+      "IsReachable.next",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "restrictSubgame_deviate_liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 407
+      },
+      "start": {
+        "column": 1,
+        "line": 407
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem restrictSubgame_deviate_liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -> Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) {root : G.State} (beta' : (G.subgameAt root).BehaviorStrategy who) : (beta.deviate who beta'.liftSubgame).restrictSubgame root = (beta.restrictSubgame root).deviate who beta'"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "IsCompletelyMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixedWithPositiveReach",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 452
+      },
+      "start": {
+        "column": 1,
+        "line": 452
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def IsCompletelyMixedWithPositiveReach {G : ExtensiveGame iota U} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] (beta : G.BehaviorProfile) (fuel : Nat) : Prop"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "IsCompletelyMixedWithPositiveReach",
+      "IsCompletelyMixed"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixedWithPositiveReach.mixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 459
+      },
+      "start": {
+        "column": 1,
+        "line": 459
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsCompletelyMixedWithPositiveReach.mixed {G : ExtensiveGame iota U} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] {beta : G.BehaviorProfile} {fuel : Nat} (hbeta : IsCompletelyMixedWithPositiveReach beta fuel) : IsCompletelyMixed beta"
+  },
+  {
+    "dependencies": [
+      "BehaviorProfile",
+      "IsCompletelyMixedWithPositiveReach",
+      "isEmpty",
+      "actionProb",
+      "IsReachable.next",
+      "expectedPayoff",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsCompletelyMixedWithPositiveReach.reach_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 468
+      },
+      "start": {
+        "column": 1,
+        "line": 468
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsCompletelyMixedWithPositiveReach.reach_pos {G : ExtensiveGame iota U} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] {beta : G.BehaviorProfile} {fuel : Nat} (hbeta : IsCompletelyMixedWithPositiveReach beta fuel) (root : G.State) : 0 < reachProb G beta root fuel"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "subgameAt",
+      "restrictSubgame",
+      "actionProb_restrictSubgame",
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "expectedPayoffFrom_restrictSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 507
+      },
+      "start": {
+        "column": 1,
+        "line": 507
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem expectedPayoffFrom_restrictSubgame {G : ExtensiveGame iota Real} [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] (beta : G.BehaviorProfile) (root start : G.State) (fuel : Nat) (who : iota) : expectedPayoffFrom (G"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "expectedPayoff",
+      "subgameAt",
+      "ReachedSubgamePayoffTransfer.init",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "expectedPayoff_restrictSubgame_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 532
+      },
+      "start": {
+        "column": 1,
+        "line": 532
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "@[simp] theorem expectedPayoff_restrictSubgame_init {G : ExtensiveGame iota Real} [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] (beta : G.BehaviorProfile) (fuel : Nat) (who : iota) : expectedPayoff (G.subgameAt G.init) (beta.restrictSubgame G.init) fuel who = expectedPayoff G beta fuel who"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "subgameAt",
+      "BehaviorStrategy",
+      "expectedPayoff",
+      "liftSubgame",
+      "restrictSubgame",
+      "restrictSubgame_deviate_liftSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 543
+      },
+      "start": {
+        "column": 1,
+        "line": 543
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem expectedPayoff_restrictSubgame_deviate_liftSubgame {G : ExtensiveGame iota Real} [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) {root : G.State} (beta' : (G.subgameAt root).BehaviorStrategy who) (fuel : Nat) : expectedPayoff (G.subgameAt root) ((beta.deviate who beta'.liftSubgame).restrictSubgame root) fuel who = expectedPayoff (G.subgameAt root) ((beta.restrictSubgame root).deviate who beta') fuel who"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "subgameAt",
+      "BehaviorStrategy",
+      "expectedPayoff",
+      "liftSubgame",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "ReachedSubgamePayoffTransfer",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 563
+      },
+      "start": {
+        "column": 1,
+        "line": 563
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def ReachedSubgamePayoffTransfer (G : ExtensiveGame iota Real) [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (root : G.State) (fuel : Nat) : Prop"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "ReachedSubgamePayoffTransfer",
+      "expectedPayoff",
+      "restrictSubgame_deviate_liftSubgame",
+      "expectedPayoffFrom_restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "ReachedSubgamePayoffTransfer.init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 582
+      },
+      "start": {
+        "column": 1,
+        "line": 582
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem ReachedSubgamePayoffTransfer.init (G : ExtensiveGame iota Real) [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (fuel : Nat) : ReachedSubgamePayoffTransfer G beta G.init fuel"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "BehaviorStrategy",
+      "expectedPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorNashEq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 604
+      },
+      "start": {
+        "column": 1,
+        "line": 604
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def IsBehaviorNashEq (G : ExtensiveGame iota Real) [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (fuel : Nat) : Prop"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "IsBehaviorNashEq",
+      "subgameAt",
+      "restrictSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorSubgamePerfect",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 615
+      },
+      "start": {
+        "column": 1,
+        "line": 615
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "def IsBehaviorSubgamePerfect (G : ExtensiveGame iota Real) [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] (beta : G.BehaviorProfile) (fuel : Nat) : Prop"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "IsBehaviorNashEq",
+      "ReachedSubgamePayoffTransfer",
+      "subgameAt",
+      "restrictSubgame",
+      "liftSubgame",
+      "expectedPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 633
+      },
+      "start": {
+        "column": 1,
+        "line": 633
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsBehaviorNashEq.restrictSubgame_of_reachProb_pos {G : ExtensiveGame iota Real} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] {beta : G.BehaviorProfile} {root : G.State} {fuel : Nat} (hNash : IsBehaviorNashEq G beta fuel) (hreach : 0 < reachProb G beta root fuel) (hpay : ReachedSubgamePayoffTransfer G beta root fuel) : IsBehaviorNashEq (G.subgameAt root) (beta.restrictSubgame root) fuel"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "IsBehaviorNashEq",
+      "ReachedSubgamePayoffTransfer",
+      "IsBehaviorSubgamePerfect",
+      "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 662
+      },
+      "start": {
+        "column": 1,
+        "line": 662
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos {G : ExtensiveGame iota Real} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] {beta : G.BehaviorProfile} {fuel : Nat} (hNash : IsBehaviorNashEq G beta fuel) (hreach : forall root : G.State, 0 < reachProb G beta root fuel) (hpay : forall root : G.State, ReachedSubgamePayoffTransfer G beta root fuel) : IsBehaviorSubgamePerfect G beta fuel"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "IsBehaviorNashEq",
+      "IsCompletelyMixedWithPositiveReach",
+      "ReachedSubgamePayoffTransfer",
+      "IsBehaviorSubgamePerfect",
+      "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+      "IsCompletelyMixedWithPositiveReach.reach_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 682
+      },
+      "start": {
+        "column": 1,
+        "line": 682
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed {G : ExtensiveGame iota Real} [DecidableEq G.State] [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] {beta : G.BehaviorProfile} {fuel : Nat} (hNash : IsBehaviorNashEq G beta fuel) (hbeta : BehaviorProfile.IsCompletelyMixedWithPositiveReach beta fuel) (hpay : forall root : G.State, ReachedSubgamePayoffTransfer G beta root fuel) : IsBehaviorSubgamePerfect G beta fuel"
+  },
+  {
+    "dependencies": [
+      "isEmpty",
+      "BehaviorProfile",
+      "IsBehaviorNashEq",
+      "subgameAt",
+      "ReachedSubgamePayoffTransfer.init",
+      "restrictSubgame",
+      "liftSubgame",
+      "expectedPayoff",
+      "restrictSubgame_deviate_liftSubgame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BehaviorStrategy",
+    "name": "IsBehaviorNashEq.restrictSubgame_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 701
+      },
+      "start": {
+        "column": 1,
+        "line": 701
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/BehaviorStrategy.lean",
+    "type": "theorem IsBehaviorNashEq.restrictSubgame_init {G : ExtensiveGame iota Real} [(s : G.State) -> Fintype (G.Action s)] [(s : G.State) -> Decidable (IsEmpty (G.Action s))] [DecidableEq iota] {beta : G.BehaviorProfile} {fuel : Nat} (hNash : IsBehaviorNashEq G beta fuel) : IsBehaviorNashEq (G.subgameAt G.init) (beta.restrictSubgame G.init) fuel"
+  }
+]

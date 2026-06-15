@@ -1,0 +1,57 @@
+{
+  "id": "existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule",
+  "title": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hA : A.IsRegular) : ∃! p : (I → ℝ) → I → ℝ, SingleParameterMechanism.ZeroNormalized p ∧ ({ allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegular</li>\n<li>ZeroNormalized</li>\n<li>IsDSIC</li>\n<li>isDSIC</li>\n<li>existsUnique_zeroNormalized_payment_of_isMonotone</li>\n<li>virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    },
+    {
+      "id": "ZeroNormalized",
+      "title": "ZeroNormalized",
+      "href": "misc/ZeroNormalized.html"
+    },
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+      "display_name": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

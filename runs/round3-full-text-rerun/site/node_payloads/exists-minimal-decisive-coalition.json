@@ -1,0 +1,67 @@
+{
+  "id": "exists-minimal-decisive-coalition",
+  "title": "exists_minimal_decisive_coalition",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-minimal-decisive-coalition.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_minimal_decisive_coalition</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem exists_minimal_decisive_coalition [Fintype N] [Nonempty N] [Fintype A] {F : SWF N A} (hU : SWF.Unanimity F) : ∃ n, Minimal (exists_nonempty_decisive_of_size F) n</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>exists_nonempty_decisive_of_size</li>\n<li>unanimity_univ_isDecisive</li>\n<li>IIA</li>\n<li>Profile</li>\n<li>Prefers</li>\n<li>IsDecisive</li>\n<li>decisive_spread</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>StrictlyPreferred.asymm</li>\n<li>BallotPrefers.asymm</li>\n<li>Prefers.asymm</li>\n<li>iia_strict</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    },
+    {
+      "id": "IsDecisive",
+      "title": "IsDecisive",
+      "href": "misc/IsDecisive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_minimal_decisive_coalition",
+      "display_name": "exists_minimal_decisive_coalition",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

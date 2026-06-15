@@ -1,0 +1,42 @@
+{
+  "id": "expectedPayoffMatrix-comm",
+  "title": "expectedPayoffMatrix_comm",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedPayoffMatrix-comm.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedPayoffMatrix_comm</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem expectedPayoffMatrix_comm {J : Type*} [Fintype J] (A : I → J → 𝕜) (x : stdSimplex 𝕜 I) (y : stdSimplex 𝕜 J) : expectedPayoffMatrix A x y = y ⬝ᵥ fun j =&gt; x ⬝ᵥ fun i =&gt; A i j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>expectedPayoffMatrix</li>\n<li>wsum_wsum_comm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "expectedPayoffMatrix",
+      "title": "expectedPayoffMatrix",
+      "href": "misc/expectedPayoffMatrix.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedPayoffMatrix_comm",
+      "display_name": "expectedPayoffMatrix_comm",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

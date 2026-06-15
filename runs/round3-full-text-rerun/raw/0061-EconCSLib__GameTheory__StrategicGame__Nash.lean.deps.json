@@ -1,0 +1,506 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "mixed_g",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "mixed_g",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_linear",
+    "target": "stdSimplex.pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "mixedNashEquilibrium",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "mixedNashEquilibrium",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "mixedNashEquilibrium",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_eq_mixed_g",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_eq_mixed_g",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed_eq_mixed_g",
+    "target": "mixed_g"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "one_le_sum_g",
+    "target": "sigma_le_g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "nash_map"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cont",
+    "target": "one_le_sum_g"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "mixedNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "ProductSimplices"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "nash_map"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "nash_map_cont"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "Brouwer_Product"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "one_le_sum_g"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "exists_mixed_nash_equilibrium_finite",
+    "target": "evaluate_at_mixed_linear"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "nash_map_cert"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "evaluate_at_mixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map",
+    "target": "g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "MixedS",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function_nonneg",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function_nonneg",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function_nonneg",
+    "target": "g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "g_function_nonneg",
+    "target": "sigma_le_g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cert",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cert",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cert",
+    "target": "g_function"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cert",
+    "target": "one_le_sum_g"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "nash_map_cert",
+    "target": "g_function_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "evaluate_at_mixed",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "sigma_le_g_function",
+    "target": "MixedS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "sigma_le_g_function",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Nash",
+    "source": "sigma_le_g_function",
+    "target": "g_function"
+  }
+]

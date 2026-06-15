@@ -1,0 +1,62 @@
+{
+  "id": "IsProportional-isAlphaMMS-additive",
+  "title": "IsProportional.isAlphaMMS_additive",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsProportional-isAlphaMMS-additive.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsProportional.isAlphaMMS_additive</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsProportional.isAlphaMMS_additive [Nonempty N] [Fintype G] (w : AdditiveValuation N G) {allGoods : Finset G} {A : Allocation N G} (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) (hProp : IsProportional (Fintype.card N) w.toValuation allGoods A) (α : ℝ) (hα_le : α ≤ 1) (hmms_nn : ∀ i, 0 ≤ mmsValue w.toValuation allGoods i) : IsAlphaMMS α w.toValuation allGoods A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n<li>toValuation</li>\n<li>IsMaxminShare.isAlphaMMS</li>\n<li>IsAlphaMMS</li>\n<li>IsProportional.isMaxminShare</li>\n<li>IsMaxminShare</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    },
+    {
+      "id": "IsAlphaMMS",
+      "title": "IsAlphaMMS",
+      "href": "misc/IsAlphaMMS.html"
+    },
+    {
+      "id": "IsMaxminShare",
+      "title": "IsMaxminShare",
+      "href": "misc/IsMaxminShare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsProportional.isAlphaMMS_additive",
+      "display_name": "IsProportional.isAlphaMMS_additive",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "efxExistence",
+  "title": "efxExistence",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/efxExistence.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>efxExistence</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem efxExistence : answer(sorry) ↔ EFXExistenceStatement</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>EFXExistenceStatement</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "EFXExistenceStatement",
+      "title": "EFXExistenceStatement",
+      "href": "misc/EFXExistenceStatement.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "efxExistence",
+      "display_name": "efxExistence",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

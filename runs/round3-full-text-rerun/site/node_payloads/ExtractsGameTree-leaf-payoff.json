@@ -1,0 +1,36 @@
+{
+  "id": "ExtractsGameTree-leaf-payoff",
+  "title": "ExtractsGameTree.leaf_payoff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ExtractsGameTree-leaf-payoff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ExtractsGameTree.leaf_payoff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem ExtractsGameTree.leaf_payoff {s : G.State} {p : N → U} (h : ExtractsGameTree G s (GameTree.Leaf p)) : p = G.payoff s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "ExtractsGameTree.leaf_payoff",
+      "display_name": "ExtractsGameTree.leaf_payoff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "mix_gt_of_gt_nbh",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "mix_gt_of_gt_nbh",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pos",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pos",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pos",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pos",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pos",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_lt_of_le_lt",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_lt_of_le_lt",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_lt_of_le_lt",
+    "target": "wsum_mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_lt_of_le_lt",
+    "target": "linear_comb_lt_of_le_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "expectedPayoffMatrix_comm",
+    "target": "expectedPayoffMatrix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "expectedPayoffMatrix_comm",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_ge_wsum",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pure_apply",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pure_apply",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_pure",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.pure_apply",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.pure_apply",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_gt_of_ge_gt",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_gt_of_ge_gt",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_gt_of_ge_gt",
+    "target": "wsum_mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix_gt_of_ge_gt",
+    "target": "linear_comb_gt_of_ge_gt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_nonneg",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_nonneg",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_nonneg",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_nonneg",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_continuous",
+    "target": "stdSimplex.continuous_coord"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.continuous_coord",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "mix_lt_of_lt_nbh",
+    "target": "mix_gt_of_gt_nbh"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "le_iff_simplex_le",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "le_iff_simplex_le",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "le_iff_simplex_le",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "le_iff_simplex_le",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_mix",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.mix_apply",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "stdSimplex.mix_apply",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "wsum_wsum_comm",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Simplex",
+    "source": "ge_iff_simplex_ge",
+    "target": "Lottery.pure"
+  }
+]

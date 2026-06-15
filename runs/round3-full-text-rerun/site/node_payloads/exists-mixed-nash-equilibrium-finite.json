@@ -1,0 +1,57 @@
+{
+  "id": "exists-mixed-nash-equilibrium-finite",
+  "title": "exists_mixed_nash_equilibrium_finite",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-mixed-nash-equilibrium-finite.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_mixed_nash_equilibrium_finite</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem exists_mixed_nash_equilibrium_finite (G : StrategicGame N ℝ) [Fintype N] [DecidableEq N] [∀ i, Fintype (G.strategy i)] [∀ i, DecidableEq (G.strategy i)] [∀ i, Inhabited (G.strategy i)] [Inhabited N] : ∃ σ : MixedS G, mixedNashEquilibrium G σ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedS</li>\n<li>mixedNashEquilibrium</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>Profile.ext</li>\n<li>ProductSimplices</li>\n<li>nash_map</li>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>nash_map_cont</li>\n<li>Brouwer_Product</li>\n<li>g_function</li>\n<li>one_le_sum_g</li>\n<li>evaluate_at_mixed</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>evaluate_at_mixed_linear</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    },
+    {
+      "id": "mixedNashEquilibrium",
+      "title": "mixedNashEquilibrium",
+      "href": "misc/mixedNashEquilibrium.html"
+    },
+    {
+      "id": "ProductSimplices",
+      "title": "ProductSimplices",
+      "href": "misc/ProductSimplices.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_mixed_nash_equilibrium_finite",
+      "display_name": "exists_mixed_nash_equilibrium_finite",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hasInterimPaymentVirtualSurplusIdentity-of-zeroNormalized-of-interimPaymentFormula",
+  "title": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentVirtualSurplusIdentity-of-zeroNormalized-of-interimPaymentFormula.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (hzero : B.IsZeroNormalized) (hpay_formula : B.HasInterimPaymentFormula) (henv : A.EnvelopeVirtualSurplusAnalyticAssumptions B) : ∀ i : I, (∫ v in 0..A.typeData.omega i, B.interimExpectedPayment i v * A.typeDensity i v) = ∫ v in 0..A.typeData.omega i, B.interimAllocProb i v * A.virtualValue i v * A.typeDensity i v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroNormalized</li>\n<li>HasInterimPaymentFormula</li>\n<li>hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula</li>\n<li>EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroNormalized",
+      "title": "IsZeroNormalized",
+      "href": "misc/IsZeroNormalized.html"
+    },
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "display_name": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "holding-rank-mono-step",
+  "title": "holding_rank_mono_step",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/holding-rank-mono-step.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>holding_rank_mono_step</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma holding_rank_mono_step (s : DAState n) (j : Fin n) {hval : Fin n} (hh : s.holding j = some hval) : ∃ h' : Fin n, (daStep w m s).holding j = some h' ∧ (w.prefs j).idxOf h' ≤ (w.prefs j).idxOf hval</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isFree</li>\n<li>propTarget</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isFree",
+      "title": "isFree",
+      "href": "misc/isFree.html"
+    },
+    {
+      "id": "propTarget",
+      "title": "propTarget",
+      "href": "misc/propTarget.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "holding_rank_mono_step",
+      "display_name": "holding_rank_mono_step",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

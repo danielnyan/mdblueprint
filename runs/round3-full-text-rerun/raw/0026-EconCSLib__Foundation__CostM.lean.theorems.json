@@ -1,0 +1,94 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM",
+    "name": "tick",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 228
+      },
+      "start": {
+        "column": 1,
+        "line": 228
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM.lean",
+    "type": "def tick (c : C) : CostM C PUnit"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM",
+    "name": "par",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 260
+      },
+      "start": {
+        "column": 1,
+        "line": 260
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM.lean",
+    "type": "def par [SemilatticeSup C] (m\u2081 : CostM C A) (m\u2082 : CostM C B) : CostM C (A \u00d7 B)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM",
+    "name": "parList",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 286
+      },
+      "start": {
+        "column": 1,
+        "line": 286
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM.lean",
+    "type": "def parList [SemilatticeSup C] [OrderBot C] (ms : List (CostM C A)) : CostM C (List A)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM",
+    "name": "Bounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 316
+      },
+      "start": {
+        "column": 1,
+        "line": 316
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM.lean",
+    "type": "def Bounded {Input Output : Type*} [LE C] (alg : Input \u2192 CostM C Output) (size : Input \u2192 \u2115) (bound : \u2115 \u2192 C) : Prop"
+  },
+  {
+    "dependencies": [
+      "Bounded"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM",
+    "name": "IsPolyBounded",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 321
+      },
+      "start": {
+        "column": 1,
+        "line": 321
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM.lean",
+    "type": "def IsPolyBounded {Input Output : Type*} (alg : Input \u2192 CostM \u2115 Output) (size : Input \u2192 \u2115) : Prop"
+  }
+]

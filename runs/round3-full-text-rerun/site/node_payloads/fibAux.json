@@ -1,0 +1,68 @@
+{
+  "id": "fibAux",
+  "title": "fibAux",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fibAux.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fibAux</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef fibAux : ℕ → CostM (Visited ℕ) (ℕ × ℕ) | 0 =&gt; do ✓[singleton 0] pure (0, 1) | k + 1 =&gt; do let p ← fibAux k ✓[singleton (k + 1)] pure (p.2, p.1 + p.2) /-- Bottom-up Fibonacci. Visits each sub-problem in `{0, …, n}` exactly once. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Visited</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Visited",
+      "title": "Visited",
+      "href": "misc/Visited.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "fib",
+      "title": "fib",
+      "href": "misc/fib.html"
+    },
+    {
+      "id": "fib-cost",
+      "title": "fib_cost",
+      "href": "misc/fib-cost.html"
+    },
+    {
+      "id": "fib-value",
+      "title": "fib_value",
+      "href": "misc/fib-value.html"
+    },
+    {
+      "id": "fibAux-cost",
+      "title": "fibAux_cost",
+      "href": "misc/fibAux-cost.html"
+    },
+    {
+      "id": "fibAux-ret",
+      "title": "fibAux_ret",
+      "href": "misc/fibAux-ret.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "fibAux",
+      "display_name": "fibAux",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

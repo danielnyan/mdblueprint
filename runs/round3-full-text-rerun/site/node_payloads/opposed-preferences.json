@@ -1,0 +1,42 @@
+{
+  "id": "opposed-preferences",
+  "title": "opposed_preferences",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/opposed-preferences.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>opposed_preferences</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem opposed_preferences (μ : Matching (Fin n) (Fin n)) (hμ : Matching.IsStable (MatchingMarket.ofEquivData w m) μ) {j wj wj' m' : Fin n} (hμ_j : μ.matchW j = some wj') (hpref : (m.prefs j).idxOf wj &lt; (m.prefs j).idxOf wj') (hμ_w : μ.matchM wj = some m') : (w.prefs wj).idxOf m' &lt; (w.prefs wj).idxOf j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>pref_list_mem</li>\n<li>stable_matching_perfect</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "opposed_preferences",
+      "display_name": "opposed_preferences",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

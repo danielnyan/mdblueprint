@@ -1,0 +1,358 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "CPState.isOver",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def CPState.isOver (s : CPState) : Bool"
+  },
+  {
+    "dependencies": [
+      "TTTState.isOver",
+      "CPState.isOver"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "CPState.step",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def CPState.step (s : CPState) (a : CPAct) : CPState"
+  },
+  {
+    "dependencies": [
+      "IsReachable.next",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "ReachedSubgamePayoffTransfer.init",
+      "TTTState.isOver",
+      "CPState.isOver"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipede",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def centipede (n : \u2115) : ExtensiveGame (Fin 2) \u2124"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "cp3",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def cp3"
+  },
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init",
+      "TTTState.isOver",
+      "CPState.isOver"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "s\u2080",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def s\u2080"
+  },
+  {
+    "dependencies": [
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "s\u2080S",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def s\u2080S"
+  },
+  {
+    "dependencies": [
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "s\u2081",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def s\u2081"
+  },
+  {
+    "dependencies": [
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "s\u2082",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def s\u2082"
+  },
+  {
+    "dependencies": [
+      "Arena.Reachable.step",
+      "CPState.step",
+      "TTTState.isOver",
+      "CPState.isOver",
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "s\u2083",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def s\u2083"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "next",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 148
+      },
+      "start": {
+        "column": 1,
+        "line": 148
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def next : (s : PrefixState) \u2192 PrefixAction s \u2192 PrefixState | root, stopRoot => stop0 | root, continueRoot => afterContinue | afterContinue, stopP1 => stop1 | afterContinue, continueP1 => continue1"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "mover",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def mover : PrefixState \u2192 Option (Fin 2) | root => some 0 | afterContinue => some 1 | stop0 => none | stop1 => none | continue1 => none"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 161
+      },
+      "start": {
+        "column": 1,
+        "line": 161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def payoff : PrefixState \u2192 Fin 2 \u2192 \u2124 | stop0, i => if i = 0 then 1 else 0 | stop1, i => if i = 0 then 0 else 3 | continue1, i => if i = 0 then 3 else 2 | root, _ => 0 | afterContinue, _ => 0 end PrefixState /-- Arena-style presentation of the two-decision Centipede prefix. -/"
+  },
+  {
+    "dependencies": [
+      "IsReachable.next",
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipedePrefixArena",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 171
+      },
+      "start": {
+        "column": 1,
+        "line": 171
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def centipedePrefixArena : ExtensiveGame (Fin 2) \u2124"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipedePrefixTree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 181
+      },
+      "start": {
+        "column": 1,
+        "line": 181
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "def centipedePrefixTree : GameTree (Fin 2) \u2124"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "centipedePrefixTree",
+      "Kuhn_exists_SPE_on"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipedePrefix_has_spe_on",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 192
+      },
+      "start": {
+        "column": 1,
+        "line": 192
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "theorem centipedePrefix_has_spe_on : \u2203 \u03c3 : GameTree.Strategy (Fin 2) \u2124, GameTree.IsSubgamePerfectOn \u03c3 centipedePrefixTree"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashAt",
+      "centipedePrefixTree",
+      "centipedePrefix_has_spe_on",
+      "IsSubgamePerfectOn.toNashAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipedePrefix_has_nash_at",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 199
+      },
+      "start": {
+        "column": 1,
+        "line": 199
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "theorem centipedePrefix_has_nash_at : \u2203 \u03c3 : GameTree.Strategy (Fin 2) \u2124, GameTree.IsNashAt \u03c3 centipedePrefixTree"
+  },
+  {
+    "dependencies": [
+      "centipedePrefixArena",
+      "ReachedSubgamePayoffTransfer.init",
+      "centipedePrefixTree",
+      "IsZeroSum.head",
+      "Subtree.head",
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "name": "centipedePrefixArena_extracts_tree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 207
+      },
+      "start": {
+        "column": 1,
+        "line": 207
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CentipedeGame.lean",
+    "type": "theorem centipedePrefixArena_extracts_tree : ExtensiveGame.ExtractsGameTree centipedePrefixArena centipedePrefixArena.init centipedePrefixTree"
+  }
+]

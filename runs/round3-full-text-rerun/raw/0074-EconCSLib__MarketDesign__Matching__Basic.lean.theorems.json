@@ -1,0 +1,58 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Basic",
+    "name": "IsBlocking",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+    "type": "def IsBlocking (market : MatchingMarket M W) (\u03bc : Matching M W) (m : M) (w : W) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsBlocking"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Basic",
+    "name": "IsStable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+    "type": "def IsStable (market : MatchingMarket M W) (\u03bc : Matching M W) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Basic",
+    "name": "IsIndividuallyRational",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Basic.lean",
+    "type": "def IsIndividuallyRational (market : MatchingMarket M W) (\u03bc : Matching M W) : Prop"
+  }
+]

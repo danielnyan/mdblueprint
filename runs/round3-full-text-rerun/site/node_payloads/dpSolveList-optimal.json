@@ -1,0 +1,62 @@
+{
+  "id": "dpSolveList-optimal",
+  "title": "dpSolveList_optimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dpSolveList-optimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dpSolveList_optimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma dpSolveList_optimal (w b : I → Nat) : ∀ (items : List I), items.Nodup → ∀ capacity {x : BinaryAllocation I}, supportedOn items x → natBinaryLoad w x ≤ capacity → natBinarySocialWelfare b x ≤ natBinarySocialWelfare b (dpSolveList w b items capacity)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>supportedOn</li>\n<li>natBinaryLoad</li>\n<li>natBinarySocialWelfare</li>\n<li>dpSolveList</li>\n<li>supportedOn_nil_iff</li>\n<li>supportedOn_update_false</li>\n<li>natBinaryLoad_eq_add_of_true</li>\n<li>eq_false_of_supportedOn_of_not_mem</li>\n<li>dpSolveList_supportedOn</li>\n<li>natBinarySocialWelfare_eq_add_of_true</li>\n<li>natBinarySocialWelfare_update_true_of_false</li>\n<li>supportedOn_tail_of_eq_false</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "supportedOn",
+      "title": "supportedOn",
+      "href": "misc/supportedOn.html"
+    },
+    {
+      "id": "natBinaryLoad",
+      "title": "natBinaryLoad",
+      "href": "misc/natBinaryLoad.html"
+    },
+    {
+      "id": "natBinarySocialWelfare",
+      "title": "natBinarySocialWelfare",
+      "href": "misc/natBinarySocialWelfare.html"
+    },
+    {
+      "id": "dpSolveList",
+      "title": "dpSolveList",
+      "href": "misc/dpSolveList.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dpSolveList_optimal",
+      "display_name": "dpSolveList_optimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

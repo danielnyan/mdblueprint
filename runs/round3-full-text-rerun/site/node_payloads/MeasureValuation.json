@@ -1,0 +1,122 @@
+{
+  "id": "MeasureValuation",
+  "title": "MeasureValuation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/MeasureValuation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>MeasureValuation</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef MeasureValuation {N Ω : Type*} [MeasurableSpace Ω] (μ : N → MeasureTheory.Measure Ω) : CakeValuation N Ω ENNReal</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "chooser-isEnvyFree",
+      "title": "chooser_isEnvyFree",
+      "href": "misc/chooser-isEnvyFree.html"
+    },
+    {
+      "id": "cut-exists",
+      "title": "cut_exists",
+      "href": "misc/cut-exists.html"
+    },
+    {
+      "id": "cutAndChoose-ef-exists",
+      "title": "cutAndChoose_ef_exists",
+      "href": "misc/cutAndChoose-ef-exists.html"
+    },
+    {
+      "id": "cutAndChoose-isEnvyFree",
+      "title": "cutAndChoose_isEnvyFree",
+      "href": "misc/cutAndChoose-isEnvyFree.html"
+    },
+    {
+      "id": "cutter-isEnvyFree-of-fair",
+      "title": "cutter_isEnvyFree_of_fair",
+      "href": "misc/cutter-isEnvyFree-of-fair.html"
+    },
+    {
+      "id": "dubinsSpanierProportional",
+      "title": "dubinsSpanierProportional",
+      "href": "misc/dubinsSpanierProportional.html"
+    },
+    {
+      "id": "ef-exists",
+      "title": "ef_exists",
+      "href": "misc/ef-exists.html"
+    },
+    {
+      "id": "ef-exists-and-proportional",
+      "title": "ef_exists_and_proportional",
+      "href": "misc/ef-exists-and-proportional.html"
+    },
+    {
+      "id": "ef-exists-two-agents",
+      "title": "ef_exists_two_agents",
+      "href": "misc/ef-exists-two-agents.html"
+    },
+    {
+      "id": "iff-isProbabilityMeasure",
+      "title": "iff_isProbabilityMeasure",
+      "href": "misc/iff-isProbabilityMeasure.html"
+    },
+    {
+      "id": "proportional-exists",
+      "title": "proportional_exists",
+      "href": "misc/proportional-exists.html"
+    },
+    {
+      "id": "strom-value-continuous",
+      "title": "strom_value_continuous",
+      "href": "misc/strom-value-continuous.html"
+    },
+    {
+      "id": "toCakeValuation",
+      "title": "toCakeValuation",
+      "href": "misc/toCakeValuation.html"
+    },
+    {
+      "id": "val-empty",
+      "title": "val_empty",
+      "href": "misc/val-empty.html"
+    },
+    {
+      "id": "val-iUnion",
+      "title": "val_iUnion",
+      "href": "misc/val-iUnion.html"
+    },
+    {
+      "id": "val-union",
+      "title": "val_union",
+      "href": "misc/val-union.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MeasureValuation",
+      "display_name": "MeasureValuation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "M-sets-disjoint",
+  "title": "M_sets_disjoint",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/M-sets-disjoint.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>M_sets_disjoint</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma M_sets_disjoint [Fintype T] (τ : Finset T) (D : Finset I) (a b : I) (h_nonempty : τ.Nonempty) (h_door : IST.isDoor τ D) (ha : a ∈ D) (hb : b ∈ D) (hab : a ≠ b) (h_eq : mini h_nonempty a = mini h_nonempty b) : M_set τ D a h_nonempty ∩ M_set τ D b h_nonempty = ∅</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDoor</li>\n<li>M_set</li>\n<li>Profile.ext</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "M_sets_disjoint",
+      "display_name": "M_sets_disjoint",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

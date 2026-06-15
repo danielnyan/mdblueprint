@@ -1,0 +1,78 @@
+{
+  "id": "FMRowIndex",
+  "title": "FMRowIndex",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/FMRowIndex.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>FMRowIndex</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev FMRowIndex (A : I → Fin (n+1) → 𝕜) : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ZeroRows</li>\n<li>PosRows</li>\n<li>NegRows</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ZeroRows",
+      "title": "ZeroRows",
+      "href": "misc/ZeroRows.html"
+    },
+    {
+      "id": "PosRows",
+      "title": "PosRows",
+      "href": "misc/PosRows.html"
+    },
+    {
+      "id": "NegRows",
+      "title": "NegRows",
+      "href": "misc/NegRows.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "fmA",
+      "title": "fmA",
+      "href": "misc/fmA.html"
+    },
+    {
+      "id": "fmB",
+      "title": "fmB",
+      "href": "misc/fmB.html"
+    },
+    {
+      "id": "liftCert",
+      "title": "liftCert",
+      "href": "misc/liftCert.html"
+    },
+    {
+      "id": "liftCert-nonneg",
+      "title": "liftCert_nonneg",
+      "href": "misc/liftCert-nonneg.html"
+    },
+    {
+      "id": "liftCoeff",
+      "title": "liftCoeff",
+      "href": "misc/liftCoeff.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "FMRowIndex",
+      "display_name": "FMRowIndex",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

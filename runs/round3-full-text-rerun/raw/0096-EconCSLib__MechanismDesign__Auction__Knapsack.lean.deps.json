@@ -1,0 +1,866 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "natAuctionData"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "fractionalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "realBidOfNat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "dynamicProgrammingOptimalAllocation_fractionalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedy_halfApprox_dpOptimal",
+    "target": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinarySocialWelfare_eq_add_of_true",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinarySocialWelfare_eq_add_of_true",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizer_ge",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizer_ge",
+    "target": "binarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizer_ge",
+    "target": "exists_welfareMaximizer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "realBidOfNat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "integralGreedyList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "eq_zero_of_fractionalSupportedOn_of_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "natFractionalGreedyList_supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "eq_false_of_supportedOn_of_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "integralGreedyList_supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "natBinarySocialWelfare_update_true_of_false"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "fractionalSocialWelfare_update_one_of_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "fractionalSocialWelfare_singleton"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "target": "le_highestBidValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "dpSolveList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "eq_false_of_supportedOn_of_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "dpSolveList_supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_feasible",
+    "target": "natBinaryLoad_update_true_of_false"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "dpSolveList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "supportedOn_nil_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "supportedOn_update_false"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "natBinaryLoad_eq_add_of_true"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "eq_false_of_supportedOn_of_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "dpSolveList_supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "natBinarySocialWelfare_eq_add_of_true"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "natBinarySocialWelfare_update_true_of_false"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_optimal",
+    "target": "supportedOn_tail_of_eq_false"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinaryLoad_eq_add_of_true",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinaryLoad_eq_add_of_true",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "target": "natAuctionData"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "target": "fractionalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "target": "dynamicProgrammingOptimalAllocation_feasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "zeroBinaryRespectsCapacity",
+    "target": "binaryRespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "zeroBinaryRespectsCapacity",
+    "target": "binaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "zeroBinaryRespectsCapacity",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "welfareMaximizer_mem_feasibleBinaryAllocations"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "binarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "welfareMaximizer_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingAllocationRule_isMonotone",
+    "target": "binarySocialWelfare_update"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinarySocialWelfare_update_true_of_false",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinarySocialWelfare_update_true_of_false",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingMechanism_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingMechanism_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingMechanism_isDSIC",
+    "target": "withMyersonPayment_isDSIC_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizingMechanism_isDSIC",
+    "target": "welfareMaximizingAllocationRule_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_singleton",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_optimal",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_optimal",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_optimal",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_optimal",
+    "target": "dpSolveList_optimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_feasible",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dynamicProgrammingOptimalAllocation_feasible",
+    "target": "dpSolveList_feasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryLoad",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryLoad",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binarySocialWelfare_update",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binarySocialWelfare_update",
+    "target": "binarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binarySocialWelfare_update",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinaryLoad",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "fractionalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "welfareMaximizer_mem_feasibleBinaryAllocations"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "target": "binarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList",
+    "target": "natAuctionData"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList",
+    "target": "realBidOfNat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_update_one_of_zero",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryRespectsCapacity",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryRespectsCapacity",
+    "target": "binaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+    "target": "binaryRespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyList_supportedOn",
+    "target": "fractionalSupportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinaryLoad_update_true_of_false",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinaryLoad_update_true_of_false",
+    "target": "natBinaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "binarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "feasibleBinaryAllocations_nonempty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "exists_welfareMaximizer",
+    "target": "exists_argMax_on"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_nil_iff",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_nil_iff",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_nil_iff",
+    "target": "eq_false_of_supportedOn_of_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+    "target": "natAuctionData"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+    "target": "realBidOfNat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+    "target": "natFractionalGreedyList_le_integralGreedyList_plus_highest"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_tail_of_eq_false",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_tail_of_eq_false",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "fractionalSocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "realBidOfNat"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "target": "natAuctionData"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_supportedOn",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_supportedOn",
+    "target": "dpSolveList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList_supportedOn",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binarySocialWelfare",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binarySocialWelfare",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "IsFeasible",
+    "target": "IsAllocFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "IsFeasible",
+    "target": "RespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "target": "binaryRespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "target": "fractionalFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "target": "binaryToAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "target": "binaryLoad"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "eq_zero_of_fractionalSupportedOn_of_not_mem",
+    "target": "fractionalSupportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "feasibleBinaryAllocations_nonempty",
+    "target": "zeroBinaryRespectsCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "dpSolveList",
+    "target": "natBinarySocialWelfare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "natBinarySocialWelfare",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_update_false",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "supportedOn_update_false",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList_supportedOn",
+    "target": "supportedOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "integralGreedyList_supportedOn",
+    "target": "integralGreedyList"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "welfareMaximizer_mem_feasibleBinaryAllocations",
+    "target": "exists_welfareMaximizer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "eq_false_of_supportedOn_of_not_mem",
+    "target": "BinaryAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "source": "eq_false_of_supportedOn_of_not_mem",
+    "target": "supportedOn"
+  }
+]

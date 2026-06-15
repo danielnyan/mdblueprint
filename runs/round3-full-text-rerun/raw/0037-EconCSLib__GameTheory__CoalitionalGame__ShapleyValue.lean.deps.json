@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "source": "SatisfiesSymmetry",
+    "target": "AreSymmetric"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "source": "IsNullPlayer",
+    "target": "marginalContrib"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "source": "SatisfiesNullPlayer",
+    "target": "IsNullPlayer"
+  }
+]

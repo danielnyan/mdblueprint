@@ -1,0 +1,52 @@
+{
+  "id": "centipedePrefix-has-nash-at",
+  "title": "centipedePrefix_has_nash_at",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/centipedePrefix-has-nash-at.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>centipedePrefix_has_nash_at</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem centipedePrefix_has_nash_at : ∃ σ : GameTree.Strategy (Fin 2) ℤ, GameTree.IsNashAt σ centipedePrefixTree</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsNashAt</li>\n<li>centipedePrefixTree</li>\n<li>centipedePrefix_has_spe_on</li>\n<li>IsSubgamePerfectOn.toNashAt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    },
+    {
+      "id": "centipedePrefixTree",
+      "title": "centipedePrefixTree",
+      "href": "misc/centipedePrefixTree.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "centipedePrefix_has_nash_at",
+      "display_name": "centipedePrefix_has_nash_at",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

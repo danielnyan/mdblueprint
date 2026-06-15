@@ -1,0 +1,260 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "emptyBoard",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "place",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "place",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "isEmpty",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "isEmpty",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "emptyPositions",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "emptyPositions",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "emptyPositions",
+    "target": "allPos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "emptyPositions",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.move",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.move",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.move",
+    "target": "Mark.other"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "sampleGame",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "playMoves",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "playMoves",
+    "target": "TTTState.move"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "playMoves",
+    "target": "TTTState.initial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.initial",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.initial",
+    "target": "emptyBoard"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "playMoves"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "sampleGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "isWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "finalState",
+    "target": "tttGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "isWinner",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "isWinner",
+    "target": "winLines"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "Board",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "allPos",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.isOver",
+    "target": "isWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.isOver",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.isOver",
+    "target": "emptyPositions"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "TTTState.isOver",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "TTTState.move"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "TTTState.initial"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "isWinner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "tttGame",
+    "target": "Board"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "source": "winLines",
+    "target": "Pos"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "id": "Board",
+  "title": "Board",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Board.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Board</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Board</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "TTTState-initial",
+      "title": "TTTState.initial",
+      "href": "misc/TTTState-initial.html"
+    },
+    {
+      "id": "TTTState-isOver",
+      "title": "TTTState.isOver",
+      "href": "misc/TTTState-isOver.html"
+    },
+    {
+      "id": "TTTState-move",
+      "title": "TTTState.move",
+      "href": "misc/TTTState-move.html"
+    },
+    {
+      "id": "emptyBoard",
+      "title": "emptyBoard",
+      "href": "misc/emptyBoard.html"
+    },
+    {
+      "id": "emptyPositions",
+      "title": "emptyPositions",
+      "href": "misc/emptyPositions.html"
+    },
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "isEmpty",
+      "title": "isEmpty",
+      "href": "misc/isEmpty.html"
+    },
+    {
+      "id": "isWinner",
+      "title": "isWinner",
+      "href": "misc/isWinner.html"
+    },
+    {
+      "id": "place",
+      "title": "place",
+      "href": "misc/place.html"
+    },
+    {
+      "id": "tttGame",
+      "title": "tttGame",
+      "href": "misc/tttGame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Board",
+      "display_name": "Board",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

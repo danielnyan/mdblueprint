@@ -1,0 +1,78 @@
+{
+  "id": "Monotonicity",
+  "title": "Monotonicity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Monotonicity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Monotonicity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Monotonicity (f : VotingRule N A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Profile</li>\n<li>SimpleLift</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "SimpleLift",
+      "title": "SimpleLift",
+      "href": "misc/SimpleLift.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "monotonic-zProfile",
+      "title": "monotonic_zProfile",
+      "href": "misc/monotonic-zProfile.html"
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller_satterthwaite",
+      "href": "misc/muller-satterthwaite.html"
+    },
+    {
+      "id": "strategyproof-monotonic",
+      "title": "strategyproof_monotonic",
+      "href": "misc/strategyproof-monotonic.html"
+    },
+    {
+      "id": "unanimous-strict-pref-not-chosen",
+      "title": "unanimous_strict_pref_not_chosen",
+      "href": "misc/unanimous-strict-pref-not-chosen.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Monotonicity",
+      "display_name": "Monotonicity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

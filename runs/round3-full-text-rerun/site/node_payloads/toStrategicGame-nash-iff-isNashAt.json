@@ -1,0 +1,72 @@
+{
+  "id": "toStrategicGame-nash-iff-isNashAt",
+  "title": "toStrategicGame_nash_iff_isNashAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/toStrategicGame-nash-iff-isNashAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>toStrategicGame_nash_iff_isNashAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem toStrategicGame_nash_iff_isNashAt (g : GameTree N U) (σ : (toStrategicGame g).Profile) : _root_.IsNashEquilibrium (toStrategicGame g) σ ↔ IsNashAt (profileStrategy σ) g</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>toStrategicGame</li>\n<li>Profile</li>\n<li>IsNashEquilibrium</li>\n<li>IsNashAt</li>\n<li>profileStrategy</li>\n<li>PlayerStrategy</li>\n<li>IsWeaklyDominant.isBestResponse</li>\n<li>IsBestResponse</li>\n<li>profileStrategy_deviate_eq_of_variant</li>\n<li>profileStrategy_deviate_variant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    },
+    {
+      "id": "profileStrategy",
+      "title": "profileStrategy",
+      "href": "misc/profileStrategy.html"
+    },
+    {
+      "id": "PlayerStrategy",
+      "title": "PlayerStrategy",
+      "href": "misc/PlayerStrategy.html"
+    },
+    {
+      "id": "IsBestResponse",
+      "title": "IsBestResponse",
+      "href": "misc/IsBestResponse.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "toStrategicGame_nash_iff_isNashAt",
+      "display_name": "toStrategicGame_nash_iff_isNashAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

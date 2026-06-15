@@ -1,0 +1,42 @@
+{
+  "id": "matchW-partner",
+  "title": "matchW_partner",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/matchW-partner.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>matchW_partner</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma matchW_partner (μ : StableMatching w m) (j : Fin n) : μ.1.matchW j = some (μ.partner j)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StableMatching</li>\n<li>pref_list_mem</li>\n<li>Profile.ext</li>\n<li>stableJoin_isStable</li>\n<li>stableMeet_isStable</li>\n<li>joinWoman_le_left</li>\n<li>joinWoman_le_right</li>\n<li>joinWoman_eq_or</li>\n<li>stableMeet_ge_left</li>\n<li>stableMeet_ge_right</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>meetEquiv_symm_eq_or</li>\n<li>gs_bijective</li>\n<li>galeShapley_isStable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StableMatching",
+      "title": "StableMatching",
+      "href": "misc/StableMatching.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "matchW_partner",
+      "display_name": "matchW_partner",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

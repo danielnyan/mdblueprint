@@ -1,0 +1,47 @@
+{
+  "id": "zermelo-exists-pure-NE",
+  "title": "zermelo_exists_pure_NE",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/zermelo-exists-pure-NE.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>zermelo_exists_pure_NE</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem zermelo_exists_pure_NE (g : GameTree (Fin 2) ℚ) : ∃ σ : Strategy (Fin 2) ℚ, IsNashEquilibrium σ g</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsNashEquilibrium</li>\n<li>Kuhn_exists_NE</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "zermelo_exists_pure_NE",
+      "display_name": "zermelo_exists_pure_NE",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

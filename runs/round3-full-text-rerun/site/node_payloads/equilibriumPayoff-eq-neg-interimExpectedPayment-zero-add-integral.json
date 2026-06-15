@@ -1,0 +1,42 @@
+{
+  "id": "equilibriumPayoff-eq-neg-interimExpectedPayment-zero-add-integral",
+  "title": "equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/equilibriumPayoff-eq-neg-interimExpectedPayment-zero-add-integral.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral (A : BayesianSingleItemAuction I) (henv : A.HasInterimEnvelopeFormula) (i : I) (v_i : ℝ) : A.equilibriumPayoff i v_i = -A.interimExpectedPayment i 0 + ∫ z in 0..v_i, A.interimAllocProb i z</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeFormula</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral",
+      "display_name": "equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

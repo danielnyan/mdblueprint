@@ -1,0 +1,57 @@
+{
+  "id": "restrictReachableSubgame-liftReachableSubgame",
+  "title": "restrictReachableSubgame_liftReachableSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictReachableSubgame-liftReachableSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictReachableSubgame_liftReachableSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem restrictReachableSubgame_liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] {root : G.State} [(s : G.State) -&gt; Decidable (Arena.Reachable G.toArena root s)] (base : G.BehaviorProfile) (beta : (G.reachableSubgameAt root).BehaviorProfile) : (base.liftReachableSubgame beta).restrictReachableSubgame root = beta</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>reachableSubgameAt</li>\n<li>liftReachableSubgame</li>\n<li>restrictReachableSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "reachableSubgameAt",
+      "title": "reachableSubgameAt",
+      "href": "misc/reachableSubgameAt.html"
+    },
+    {
+      "id": "liftReachableSubgame",
+      "title": "liftReachableSubgame",
+      "href": "misc/liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame",
+      "title": "restrictReachableSubgame",
+      "href": "misc/restrictReachableSubgame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "restrictReachableSubgame_liftReachableSubgame",
+      "display_name": "restrictReachableSubgame_liftReachableSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

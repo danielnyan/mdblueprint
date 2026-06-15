@@ -1,0 +1,36 @@
+{
+  "id": "mu-aux-bddBelow",
+  "title": "mu.aux.bddBelow",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mu-aux-bddBelow.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mu.aux.bddBelow</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem mu.aux.bddBelow (A : I → J → ℝ) : ∃ C, ∀ y, C ≤ mu.aux A y</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>wsum_const</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>wsum_le_wsum</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mu.aux.bddBelow",
+      "display_name": "mu.aux.bddBelow",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

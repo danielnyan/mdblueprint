@@ -1,0 +1,47 @@
+{
+  "id": "BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations",
+  "title": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations (A : KnapsackAuction I U) {x : BinaryAllocation I} (hx : x ∈ A.feasibleBinaryAllocations) : A.binaryRespectsCapacity x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>binaryRespectsCapacity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "binaryRespectsCapacity",
+      "title": "binaryRespectsCapacity",
+      "href": "misc/binaryRespectsCapacity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+      "display_name": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

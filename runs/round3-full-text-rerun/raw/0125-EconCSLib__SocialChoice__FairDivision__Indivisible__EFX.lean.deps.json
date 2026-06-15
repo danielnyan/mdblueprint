@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "IsEFX.of_noEnvy_mono",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "IsEFX.of_noEnvy_mono",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "IsEFX.of_noEnvy_mono",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "IsEFX.of_noEnvy_mono",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "IsEFX.of_noEnvy_mono",
+    "target": "IsEnvyFree.isEFX_of_mono"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "isEFX_of_singleton_bundle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_two_agents_two_goods",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "isEFX_of_singleton_bundle",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "isEFX_of_singleton_bundle",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_exists_two_agents",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_exists_two_agents",
+    "target": "IsEFX"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EFX",
+    "source": "efx_exists_two_agents",
+    "target": "toValuation"
+  }
+]

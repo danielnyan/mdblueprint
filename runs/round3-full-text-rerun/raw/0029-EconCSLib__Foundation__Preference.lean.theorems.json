@@ -1,0 +1,394 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "strict",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def strict {A : Type*} (R : A \u2192 A \u2192 Prop) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "indiff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def indiff {A : Type*} (R : A \u2192 A \u2192 Prop) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "strict_transitive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem strict_transitive {A : Type*} {R : A \u2192 A \u2192 Prop} (h : Transitive R) : Transitive (strict R)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Indifferent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def Indifferent (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Indifferent"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Indifferent.refl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem Indifferent.refl (a : A) : Indifferent a a"
+  },
+  {
+    "dependencies": [
+      "Indifferent"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Indifferent.symm",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem Indifferent.symm {a b : A} (h : Indifferent a b) : Indifferent b a"
+  },
+  {
+    "dependencies": [
+      "Indifferent"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Indifferent.trans",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem Indifferent.trans {a b c : A} (h\u2081 : Indifferent a b) (h\u2082 : Indifferent b c) : Indifferent a c"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "StrictlyPreferred",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "abbrev StrictlyPreferred (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "StrictlyPreferred"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "StrictlyPreferred.asymm",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 93
+      },
+      "start": {
+        "column": 1,
+        "line": 93
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem StrictlyPreferred.asymm {a b : A} (h : StrictlyPreferred a b) : \u00ac StrictlyPreferred b a"
+  },
+  {
+    "dependencies": [
+      "StrictlyPreferred"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "StrictlyPreferred.trans",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem StrictlyPreferred.trans {a b c : A} (h\u2081 : StrictlyPreferred a b) (h\u2082 : StrictlyPreferred b c) : StrictlyPreferred a c"
+  },
+  {
+    "dependencies": [
+      "StrictlyPreferred"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "StrictlyPreferred.irrefl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 104
+      },
+      "start": {
+        "column": 1,
+        "line": 104
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem StrictlyPreferred.irrefl (a : A) : \u00ac StrictlyPreferred a a"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "TotalPreorder.comparable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem TotalPreorder.comparable [TotalPreorder A] (a b : A) : a \u2264 b \u2228 b \u2264 a"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def lt {A : Type*} (p : Pref A) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "indifferent",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def indifferent {A : Type*} (p : Pref A) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "ofTotalPreorder",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 162
+      },
+      "start": {
+        "column": 1,
+        "line": 162
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def ofTotalPreorder {A : Type*} (r : TotalPreorder A) : Pref A"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "ofLinearOrder",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 170
+      },
+      "start": {
+        "column": 1,
+        "line": 170
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def ofLinearOrder {A : Type*} (r : LinearOrder A) : Pref A"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "PrefProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 180
+      },
+      "start": {
+        "column": 1,
+        "line": 180
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def PrefProfile (N A : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "RepresentsPreference.lt_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 191
+      },
+      "start": {
+        "column": 1,
+        "line": 191
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem RepresentsPreference.lt_iff [Preorder A] [Preorder V] {u : A \u2192 V} (h : RepresentsPreference u) (a b : A) : a < b \u2194 u a < u b"
+  },
+  {
+    "dependencies": [
+      "Indifferent"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "RepresentsPreference.indifferent_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 197
+      },
+      "start": {
+        "column": 1,
+        "line": 197
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "theorem RepresentsPreference.indifferent_iff [Preorder A] [Preorder V] {u : A \u2192 V} (h : RepresentsPreference u) (a b : A) : Indifferent a b \u2194 Indifferent (u a) (u b)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Completeness",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 213
+      },
+      "start": {
+        "column": 1,
+        "line": 213
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def Completeness (pref : A \u2192 A \u2192 Prop) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Preference",
+    "name": "Transitivity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 217
+      },
+      "start": {
+        "column": 1,
+        "line": 217
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Preference.lean",
+    "type": "def Transitivity (pref : A \u2192 A \u2192 Prop) : Prop"
+  }
+]

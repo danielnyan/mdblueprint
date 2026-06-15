@@ -1,0 +1,42 @@
+{
+  "id": "matchingPennies-uniform-column-guarantee",
+  "title": "matchingPennies_uniform_column_guarantee",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/matchingPennies-uniform-column-guarantee.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>matchingPennies_uniform_column_guarantee</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem matchingPennies_uniform_column_guarantee (i : Fin 2) : matchingPennies.Ei i matchingPenniesUniform ≤ 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>matchingPennies</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "matchingPennies",
+      "title": "matchingPennies",
+      "href": "misc/matchingPennies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "matchingPennies_uniform_column_guarantee",
+      "display_name": "matchingPennies_uniform_column_guarantee",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

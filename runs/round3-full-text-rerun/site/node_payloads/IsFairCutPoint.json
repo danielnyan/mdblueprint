@@ -1,0 +1,52 @@
+{
+  "id": "IsFairCutPoint",
+  "title": "IsFairCutPoint",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsFairCutPoint.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsFairCutPoint</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsFairCutPoint (μ : Fin 2 → Measure I) (t : I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "cutAndChoose-isEnvyFree",
+      "title": "cutAndChoose_isEnvyFree",
+      "href": "misc/cutAndChoose-isEnvyFree.html"
+    },
+    {
+      "id": "cutter-isEnvyFree-of-fair",
+      "title": "cutter_isEnvyFree_of_fair",
+      "href": "misc/cutter-isEnvyFree-of-fair.html"
+    },
+    {
+      "id": "fairCutPoint-exists",
+      "title": "fairCutPoint_exists",
+      "href": "misc/fairCutPoint-exists.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsFairCutPoint",
+      "display_name": "IsFairCutPoint",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

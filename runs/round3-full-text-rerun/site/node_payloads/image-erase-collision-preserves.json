@@ -1,0 +1,36 @@
+{
+  "id": "image-erase-collision-preserves",
+  "title": "image_erase_collision_preserves",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/image-erase-collision-preserves.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>image_erase_collision_preserves</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma image_erase_collision_preserves [DecidableEq T] (σ : Finset T) (c : T → I) (x y : T) (hx_in_σ : x ∈ σ) (hy_in_σ : y ∈ σ) (hxy_ne : x ≠ y) (hcxy_eq : c x = c y) : (σ.erase x).image c = σ.image c ∧ (σ.erase y).image c = σ.image c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile.ext</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "image_erase_collision_preserves",
+      "display_name": "image_erase_collision_preserves",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

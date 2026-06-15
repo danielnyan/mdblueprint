@@ -1,0 +1,47 @@
+{
+  "id": "kkm-closed-cover",
+  "title": "kkm_closed_cover",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/kkm-closed-cover.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>kkm_closed_cover</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem kkm_closed_cover (hn : 0 &lt; n) (F : Fin n → Set (Fin n → ℝ)) (hclosed : ∀ i, IsClosed (F i)) (hkkm : IsKKMCover F) : ∃ x ∈ stdSimplex ℝ (Fin n), ∀ i, x ∈ F i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsKKMCover</li>\n<li>mem_iUnion</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>Brouwer</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsKKMCover",
+      "title": "IsKKMCover",
+      "href": "misc/IsKKMCover.html"
+    },
+    {
+      "id": "Brouwer",
+      "title": "Brouwer",
+      "href": "misc/Brouwer.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "kkm_closed_cover",
+      "display_name": "kkm_closed_cover",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

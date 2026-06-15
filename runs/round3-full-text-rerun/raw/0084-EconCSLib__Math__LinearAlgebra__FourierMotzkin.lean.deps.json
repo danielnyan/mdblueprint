@@ -1,0 +1,374 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "fmA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "fmB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feasible_of_fm_feasible",
+    "target": "ZeroRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "fmA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "fmB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_feasible_of_feasible",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "FMRowIndex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "ZeroRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "fmA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmB",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff_inl",
+    "target": "ZeroRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff_inl",
+    "target": "liftCoeff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feas_cert_disjoint",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feas_cert_disjoint",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feas_cert_disjoint",
+    "target": "HasCertificate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "feas_cert_disjoint",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "HasCertificate",
+    "target": "IsCertificate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "FMRowIndex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "liftCert"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "liftCoeff_inl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "liftCoeff_inr"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "liftCoeff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "ZeroRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "fmA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert_nonneg",
+    "target": "fmB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff_inr",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff_inr",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff_inr",
+    "target": "liftCoeff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "theorem_of_alternative",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "theorem_of_alternative",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "theorem_of_alternative",
+    "target": "HasCertificate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "HasCertificate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "fmA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "fmB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "liftCert"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "liftCert_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "feas_cert_disjoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fm_cert_lift",
+    "target": "feasible_of_fm_feasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCoeff",
+    "target": "FMRowIndex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "FMRowIndex",
+    "target": "ZeroRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "FMRowIndex",
+    "target": "PosRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "FMRowIndex",
+    "target": "NegRows"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert",
+    "target": "FMRowIndex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "liftCert",
+    "target": "liftCoeff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "IsFeasible",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.FourierMotzkin",
+    "source": "fmA",
+    "target": "FMRowIndex"
+  }
+]

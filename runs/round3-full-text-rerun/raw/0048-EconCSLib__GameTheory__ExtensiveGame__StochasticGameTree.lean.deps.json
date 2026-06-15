@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "headStrategy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "fairCoin_expected_player0",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "fairCoin_expected_player0",
+    "target": "headStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "fairCoin_expected_player0",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "fairCoin_expected_player0",
+    "target": "fairCoinGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "fairCoin_probs_sum_to_one",
+    "target": "ChanceProbabilitiesSumToOne"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ofGameTree",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ofGameTree",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ofGameTree",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ChanceProbabilitiesSumToOne",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ChanceProbabilitiesSumToOne",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ChanceProbabilitiesSumToOne",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ChanceProbabilitiesSumToOne",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.StochasticGameTree",
+    "source": "ChanceProbabilitiesSumToOne",
+    "target": "expectedPayoff"
+  }
+]

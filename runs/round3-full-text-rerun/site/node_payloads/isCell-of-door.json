@@ -1,0 +1,42 @@
+{
+  "id": "isCell-of-door",
+  "title": "isCell_of_door",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isCell-of-door.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isCell_of_door</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma isCell_of_door (h1 : isDoorof τ D σ C) : IST.isCell τ D</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isCell</li>\n<li>Dominant_of_subset</li>\n<li>Dominant_of_supset</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isCell_of_door",
+      "display_name": "isCell_of_door",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

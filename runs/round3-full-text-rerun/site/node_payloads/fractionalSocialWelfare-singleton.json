@@ -1,0 +1,42 @@
+{
+  "id": "fractionalSocialWelfare-singleton",
+  "title": "fractionalSocialWelfare_singleton",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fractionalSocialWelfare-singleton.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fractionalSocialWelfare_singleton</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma fractionalSocialWelfare_singleton (b : I → ℝ) (i : I) (α : ℝ) : fractionalSocialWelfare b (fun j =&gt; if j = i then α else 0) = b i * α</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>fractionalSocialWelfare</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "fractionalSocialWelfare",
+      "title": "fractionalSocialWelfare",
+      "href": "misc/fractionalSocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fractionalSocialWelfare_singleton",
+      "display_name": "fractionalSocialWelfare_singleton",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

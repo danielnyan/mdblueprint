@@ -1,0 +1,42 @@
+{
+  "id": "over",
+  "title": "over",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/over.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>over</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem over strict voting profiles. This file records the public decisive-coalition vocabulary for the strict ranked-ballot voting domain. The proof route is the standard one: 1. unanimity implies the grand coalition is decisive; 2. weak decisiveness for one ordered pair spreads to decisiveness for all pairs; 3. any decisive coalition of size at least two has a strictly smaller nonempty decisive subcoalition; 4. a minimal decisive coalition is a singleton; 5. the singleton voter is a dictator. -/ namespace SocialChoice namespace Voting variable {N A : Type*} /-- A coalition is decisive for `a` over `b` if unanimous strict support inside the coalition forces the social strict preference `a ≻ b`. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Unanimity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "over",
+      "display_name": "over",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

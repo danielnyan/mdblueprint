@@ -1,0 +1,242 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "IsFairCutPoint",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "def IsFairCutPoint (\u03bc : Fin 2 \u2192 Measure I) (t : I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChooseAlloc_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 93
+      },
+      "start": {
+        "column": 1,
+        "line": 93
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "@[simp] lemma cutAndChooseAlloc_zero (\u03bc : Fin 2 \u2192 Measure I) (t : I) : cutAndChooseAlloc \u03bc t 0 = if \u03bc 1 (Iic t) \u2265 \u03bc 1 (Ioi t) then Ioi t else Iic t"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChooseAlloc_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "@[simp] lemma cutAndChooseAlloc_one (\u03bc : Fin 2 \u2192 Measure I) (t : I) : cutAndChooseAlloc \u03bc t 1 = if \u03bc 1 (Iic t) \u2265 \u03bc 1 (Ioi t) then Iic t else Ioi t"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "mem_iUnion",
+      "cutAndChooseAlloc_one",
+      "cutAndChooseAlloc_zero"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChooseAlloc_isAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutAndChooseAlloc_isAllocation (\u03bc : Fin 2 \u2192 Measure I) (t : I) : IsAllocation (cutAndChooseAlloc \u03bc t)"
+  },
+  {
+    "dependencies": [
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "chooser_isEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 159
+      },
+      "start": {
+        "column": 1,
+        "line": 159
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem chooser_isEnvyFree (\u03bc : Fin 2 \u2192 Measure I) (t : I) : (MeasureValuation \u03bc).val 1 (cutAndChooseAlloc \u03bc t 0) \u2264 (MeasureValuation \u03bc).val 1 (cutAndChooseAlloc \u03bc t 1)"
+  },
+  {
+    "dependencies": [
+      "IsFairCutPoint",
+      "MeasureValuation",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutter_isEnvyFree_of_fair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 175
+      },
+      "start": {
+        "column": 1,
+        "line": 175
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutter_isEnvyFree_of_fair (\u03bc : Fin 2 \u2192 Measure I) (t : I) (hfair : IsFairCutPoint \u03bc t) : (MeasureValuation \u03bc).val 0 (cutAndChooseAlloc \u03bc t 1) \u2264 (MeasureValuation \u03bc).val 0 (cutAndChooseAlloc \u03bc t 0)"
+  },
+  {
+    "dependencies": [
+      "IsFairCutPoint",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "cutter_isEnvyFree_of_fair",
+      "chooser_isEnvyFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChoose_isEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 193
+      },
+      "start": {
+        "column": 1,
+        "line": 193
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutAndChoose_isEnvyFree (\u03bc : Fin 2 \u2192 Measure I) (t : I) (hfair : IsFairCutPoint \u03bc t) : IsEnvyFree (MeasureValuation \u03bc) (cutAndChooseAlloc \u03bc t)"
+  },
+  {
+    "dependencies": [
+      "IsFairCutPoint",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "cut_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "fairCutPoint_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 208
+      },
+      "start": {
+        "column": 1,
+        "line": 208
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem fairCutPoint_exists (\u03bc : Fin 2 \u2192 Measure I) [IsFiniteMeasure (\u03bc 0)] [NoAtoms (\u03bc 0)] : \u2203 t : I, IsFairCutPoint \u03bc t"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "MeasureValuation",
+      "fairCutPoint_exists",
+      "cutAndChooseAlloc_isAllocation",
+      "cutAndChoose_isEnvyFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChoose_ef_exists",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 264
+      },
+      "start": {
+        "column": 1,
+        "line": 264
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutAndChoose_ef_exists (\u03bc : Fin 2 \u2192 Measure I) [IsFiniteMeasure (\u03bc 0)] [NoAtoms (\u03bc 0)] : \u2203 A : Allocation (Fin 2) I, IsAllocation A \u2227 IsEnvyFree (MeasureValuation \u03bc) A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "cutAndChoose_ef_exists",
+      "fairCutPoint_exists",
+      "cutAndChooseAlloc_isAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChoose_exists_envyFree_allocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 275
+      },
+      "start": {
+        "column": 1,
+        "line": 275
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutAndChoose_exists_envyFree_allocation (M : MeasureInstance (Fin 2) I) [IsFiniteMeasure (M.measure 0)] [NoAtoms (M.measure 0)] : \u2203 A : Allocation (Fin 2) I, IsAllocation A \u2227 M.IsEnvyFree A"
+  },
+  {
+    "dependencies": [
+      "IsEnvyFree",
+      "cutAndChoose_isEnvyFree",
+      "fairCutPoint_exists"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "name": "cutAndChooseRule_isEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 291
+      },
+      "start": {
+        "column": 1,
+        "line": 291
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/CutAndChoose.lean",
+    "type": "theorem cutAndChooseRule_isEnvyFree (M : MeasureInstance (Fin 2) I) [IsFiniteMeasure (M.measure 0)] [NoAtoms (M.measure 0)] : M.IsEnvyFree (cutAndChooseRule M).1"
+  }
+]

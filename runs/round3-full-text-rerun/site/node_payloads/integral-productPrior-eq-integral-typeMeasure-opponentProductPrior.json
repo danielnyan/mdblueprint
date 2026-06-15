@@ -1,0 +1,42 @@
+{
+  "id": "integral-productPrior-eq-integral-typeMeasure-opponentProductPrior",
+  "title": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integral-productPrior-eq-integral-typeMeasure-opponentProductPrior.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integral_productPrior_eq_integral_typeMeasure_opponentProductPrior</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integral_productPrior_eq_integral_typeMeasure_opponentProductPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] (f : (∀ _ : I, ℝ) → E) (hf : Integrable (fun p : ℝ × OpponentTypeProfile I i =&gt; f (reportProfile i p.1 p.2)) ((A.typeMeasure i).prod (A.opponentProductPrior i))) : (∫ t, f t ∂A.productPrior) = ∫ v, ∫ t, f (reportProfile i v t) ∂A.opponentProductPrior i ∂A.typeMeasure i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>OpponentTypeProfile</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>integral_comp_profileSplitMeasurableEquiv_productPrior</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+      "display_name": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

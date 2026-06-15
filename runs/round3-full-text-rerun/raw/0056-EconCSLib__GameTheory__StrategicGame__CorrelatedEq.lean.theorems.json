@@ -1,0 +1,45 @@
+[
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "name": "IsDegenerateCorrelatedEq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/CorrelatedEq.lean",
+    "type": "def IsDegenerateCorrelatedEq (G : StrategicGame N U) (\u03c3 : G.Profile) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium",
+      "IsDegenerateCorrelatedEq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "name": "nash_iff_degenerate_ce",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/CorrelatedEq.lean",
+    "type": "theorem nash_iff_degenerate_ce (G : StrategicGame N U) (\u03c3 : G.Profile) : IsNashEquilibrium G \u03c3 \u2194 IsDegenerateCorrelatedEq G \u03c3"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "id": "isColorful",
+  "title": "isColorful",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isColorful.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isColorful</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef isColorful : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isCell</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "NC-of-NCdoor",
+      "title": "NC_of_NCdoor",
+      "href": "misc/NC-of-NCdoor.html"
+    },
+    {
+      "id": "NC-or-C-of-door",
+      "title": "NC_or_C_of_door",
+      "href": "misc/NC-or-C-of-door.html"
+    },
+    {
+      "id": "colorful",
+      "title": "colorful",
+      "href": "misc/colorful.html"
+    },
+    {
+      "id": "dbcount-NCroom",
+      "title": "dbcount_NCroom",
+      "href": "misc/dbcount-NCroom.html"
+    },
+    {
+      "id": "not-colorful-of-TypedNC",
+      "title": "not_colorful_of_TypedNC",
+      "href": "misc/not-colorful-of-TypedNC.html"
+    },
+    {
+      "id": "pick-colorful-point",
+      "title": "pick_colorful_point",
+      "href": "misc/pick-colorful-point.html"
+    },
+    {
+      "id": "room-of-colorful",
+      "title": "room_of_colorful",
+      "href": "misc/room-of-colorful.html"
+    },
+    {
+      "id": "typed-colorful-room-odd",
+      "title": "typed_colorful_room_odd",
+      "href": "misc/typed-colorful-room-odd.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isColorful",
+      "display_name": "isColorful",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

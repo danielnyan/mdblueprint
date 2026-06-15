@@ -1,0 +1,170 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_pure",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_pure",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_pure",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_pure",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_pure",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "IsLinearUtility",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "IsLinearUtility",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "IsLinearUtility",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.pure",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.pure",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mono",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mono",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mono",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_const",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_const",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_const",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "expectedValue_isLinearUtility",
+    "target": "IsLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "expectedValue_isLinearUtility",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "expectedValue_isLinearUtility",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "expectedValue_isLinearUtility",
+    "target": "Lottery.expectedValue_mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.mix",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.mix",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mix",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mix",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mix",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mix",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Lottery",
+    "source": "Lottery.expectedValue_mix",
+    "target": "wsum_mix"
+  }
+]

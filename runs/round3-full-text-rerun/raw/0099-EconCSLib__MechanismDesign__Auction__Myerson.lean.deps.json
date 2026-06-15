@@ -1,0 +1,338 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "myersonPayment_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "withMyersonPayment_isDSIC_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "target": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isMonotone_of_isDSIC",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_sandwich",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_difference_bound",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_difference_bound",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_difference_bound",
+    "target": "payment_sandwich"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+    "target": "payment_formula_of_isDSIC_of_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_isDSIC_of_isMonotone",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_isDSIC_of_isMonotone",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_isDSIC_of_isMonotone",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_isDSIC_of_isMonotone",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_isDSIC_of_isMonotone",
+    "target": "withMyersonPayment_quasiLinearUtility_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_zeroNormalized_and_isDSIC",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_zeroNormalized_and_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_zeroNormalized_and_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_zeroNormalized_and_isDSIC",
+    "target": "payment_formula_of_isDSIC_of_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_of_isMonotone",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_of_isMonotone",
+    "target": "IsImplementable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_of_isMonotone",
+    "target": "withMyersonPayment_isDSIC_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "isMonotone_of_isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "withMyersonPayment_isDSIC_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "payment_difference_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "myersonPayment_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "myersonPayment_zeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_iff_isMonotone",
+    "target": "IsImplementable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_iff_isMonotone",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_iff_isMonotone",
+    "target": "isMonotone_of_isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "isImplementable_iff_isMonotone",
+    "target": "isImplementable_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_quasiLinearUtility_eq",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "source": "withMyersonPayment_quasiLinearUtility_eq",
+    "target": "quasiLinearValue"
+  }
+]

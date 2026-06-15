@@ -1,0 +1,764 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isEnvyCycle_length_ge_two",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isEnvyCycle_length_ge_two",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isEnvyCycle_length_ge_two",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "isSource"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isSource_not_mem_envyCycle",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_not_mem",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_not_mem",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_not_mem",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "not_mem_paretoDomSet_of_strict",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "not_mem_paretoDomSet_of_strict",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_acyclic",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_acyclic",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_acyclic",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_acyclic",
+    "target": "eliminateAllCycles_unfold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_acyclic",
+    "target": "rotateBundles_paretoDomCount_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies_irrefl",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies_irrefl",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "rotateBundles_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "rotateBundles_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_isAllocation",
+    "target": "mem_biUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "IsEnvyFree.isSource_all",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "IsEnvyFree.isSource_all",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "IsEnvyFree.isSource_all",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "IsEnvyFree.isSource_all",
+    "target": "isSource"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "hasEnvyCycle",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "hasEnvyCycle",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "hasEnvyCycle",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleRule_isEF1",
+    "target": "IsEFX.isEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleRule_isEF1",
+    "target": "IsEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleRule_isEF1",
+    "target": "envyCycleAllocation_isEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "paretoDomSet_subset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "rotateBundles_nondecreasing"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "self_mem_paretoDomSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "not_mem_paretoDomSet_of_strict"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "rotateBundles_improves"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_paretoDomCount_lt",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "isSource"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "acyclic_has_source",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_eq_of_acyclic",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_eq_of_acyclic",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_eq_of_acyclic",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_eq_of_acyclic",
+    "target": "eliminateAllCycles_unfold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_mem",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_mem",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_mem",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_mem",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies_ne",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envies_ne",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_nondecreasing",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_nondecreasing",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_nondecreasing",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_nondecreasing",
+    "target": "rotateBundles_improves"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_nondecreasing",
+    "target": "rotateBundles_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_improves",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_improves",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_improves",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "rotateBundles_improves",
+    "target": "rotateBundles_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_unfold",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_unfold",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_unfold",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "eliminateAllCycles_unfold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "rotateBundles_isAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_isAllocation",
+    "target": "rotateBundles_paretoDomCount_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "self_mem_paretoDomSet",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "self_mem_paretoDomSet",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_nondecreasing",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_nondecreasing",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_nondecreasing",
+    "target": "eliminateAllCycles_unfold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_nondecreasing",
+    "target": "rotateBundles_nondecreasing"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "eliminateAllCycles_nondecreasing",
+    "target": "rotateBundles_paretoDomCount_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "hasEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "isSource"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "acyclic_has_source"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "eliminateAllCycles_acyclic"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "isEnvyCycle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "eliminateAllCycles_isAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "rotateBundles_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "rotateBundles_not_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "eliminateAllCycles_unfold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "rotateBundles_paretoDomCount_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "IsEFX.isEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "IsEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "findSource_isSource",
+    "target": "eliminateAllCycles_nondecreasing"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleAllocation_isEF1",
+    "target": "IsEFX.isEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleAllocation_isEF1",
+    "target": "IsEF1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleAllocation_isEF1",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "envyCycleAllocation_isEF1",
+    "target": "toAdditiveValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isEnvyCycle",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "isEnvyCycle",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "paretoDomSet_subset",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "source": "paretoDomSet_subset",
+    "target": "Allocation"
+  }
+]

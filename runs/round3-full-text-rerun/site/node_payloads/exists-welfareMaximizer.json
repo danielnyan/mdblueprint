@@ -1,0 +1,47 @@
+{
+  "id": "exists-welfareMaximizer",
+  "title": "exists_welfareMaximizer",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-welfareMaximizer.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_welfareMaximizer</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma exists_welfareMaximizer (A : KnapsackAuction I U) (b : I → U) (hW : 0 ≤ A.totalCapacity) : ∃ x : BinaryAllocation I, x ∈ A.feasibleBinaryAllocations ∧ ∀ y ∈ A.feasibleBinaryAllocations, binarySocialWelfare b y ≤ binarySocialWelfare b x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>binarySocialWelfare</li>\n<li>feasibleBinaryAllocations_nonempty</li>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n<li>exists_argMax_on</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "binarySocialWelfare",
+      "title": "binarySocialWelfare",
+      "href": "misc/binarySocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_welfareMaximizer",
+      "display_name": "exists_welfareMaximizer",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

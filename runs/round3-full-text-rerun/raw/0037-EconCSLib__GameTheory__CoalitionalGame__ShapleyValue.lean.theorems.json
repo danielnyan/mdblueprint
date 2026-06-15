@@ -1,0 +1,134 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "marginalContrib",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 38
+      },
+      "start": {
+        "column": 1,
+        "line": 38
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def marginalContrib (i : N) (S : Finset N) : \u211d"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "AreSymmetric",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 42
+      },
+      "start": {
+        "column": 1,
+        "line": 42
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def AreSymmetric (i j : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "marginalContrib"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "IsNullPlayer",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def IsNullPlayer (i : N) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "SatisfiesEfficiency",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def SatisfiesEfficiency (\u03c6 : CoalitionalGame N \u211d \u2192 N \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "AreSymmetric"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "SatisfiesSymmetry",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 67
+      },
+      "start": {
+        "column": 1,
+        "line": 67
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def SatisfiesSymmetry (\u03c6 : CoalitionalGame N \u211d \u2192 N \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsNullPlayer"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "SatisfiesNullPlayer",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def SatisfiesNullPlayer (\u03c6 : CoalitionalGame N \u211d \u2192 N \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.ShapleyValue",
+    "name": "SatisfiesAdditivity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/ShapleyValue.lean",
+    "type": "def SatisfiesAdditivity (\u03c6 : CoalitionalGame N \u211d \u2192 N \u2192 \u211d) : Prop"
+  }
+]

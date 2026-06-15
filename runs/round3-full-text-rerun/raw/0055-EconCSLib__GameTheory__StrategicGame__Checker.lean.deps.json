@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "isNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "IsWeaklyDominant.isBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "source": "isNashEq_iff",
+    "target": "IsBestResponse"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "iff_isProbabilityMeasure",
+    "target": "IsNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "iff_isProbabilityMeasure",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "val_iUnion",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "val_iUnion",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "val_empty",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "source": "val_union",
+    "target": "MeasureValuation"
+  }
+]

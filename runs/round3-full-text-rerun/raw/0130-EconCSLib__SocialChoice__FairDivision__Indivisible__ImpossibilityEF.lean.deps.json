@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+    "source": "ef_impossible_two_agents_one_good",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+    "source": "ef_impossible_two_agents_one_good",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+    "source": "ef_impossible_two_agents_one_good",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.ImpossibilityEF",
+    "source": "ef_impossible_two_agents_one_good",
+    "target": "mem_biUnion"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "sum-split-at",
+  "title": "sum_split_at",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sum-split-at.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sum_split_at</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem sum_split_at [DecidableEq J] (j₀ : J) (f : J → ℝ) : ∑ j : J, f j = f j₀ + ∑ j' : {j : J // j ≠ j₀}, f j'.val</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sum_split_at",
+      "display_name": "sum_split_at",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

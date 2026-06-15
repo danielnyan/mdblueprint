@@ -1,0 +1,36 @@
+{
+  "id": "productPrior-map-profileSplitMeasurableEquiv",
+  "title": "productPrior_map_profileSplitMeasurableEquiv",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/productPrior-map-profileSplitMeasurableEquiv.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>productPrior_map_profileSplitMeasurableEquiv</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem productPrior_map_profileSplitMeasurableEquiv [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) : A.productPrior.map (profileSplitMeasurableEquiv i) = (A.typeMeasure i).prod (A.opponentProductPrior i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>measurePreserving_profileSplitMeasurableEquiv_productPrior</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "productPrior_map_profileSplitMeasurableEquiv",
+      "display_name": "productPrior_map_profileSplitMeasurableEquiv",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

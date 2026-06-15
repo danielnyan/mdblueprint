@@ -1,0 +1,47 @@
+{
+  "id": "project-embed-id",
+  "title": "project_embed_id",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/project-embed-id.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>project_embed_id</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma project_embed_id (y : ProductSimplices card) : project_to_product card (embed_from_product card y) = y</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>ProductSimplices</li>\n<li>index_split_combine_inverse</li>\n<li>Profile.ext</li>\n<li>Pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "ProductSimplices",
+      "title": "ProductSimplices",
+      "href": "misc/ProductSimplices.html"
+    },
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "project_embed_id",
+      "display_name": "project_embed_id",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

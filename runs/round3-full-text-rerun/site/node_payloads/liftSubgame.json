@@ -1,0 +1,78 @@
+{
+  "id": "liftSubgame",
+  "title": "liftSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/liftSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>liftSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] {root : G.State} (beta : (G.subgameAt root).BehaviorProfile) : G.BehaviorProfile</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>subgameAt</li>\n<li>BehaviorProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "subgameAt",
+      "title": "subgameAt",
+      "href": "misc/subgameAt.html"
+    },
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-init",
+      "title": "IsBehaviorNashEq.restrictSubgame_init",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-init.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-of-reachProb-pos.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "liftSubgame-eq-self",
+      "title": "liftSubgame_eq_self",
+      "href": "misc/liftSubgame-eq-self.html"
+    },
+    {
+      "id": "restrictSubgame-deviate-liftSubgame",
+      "title": "restrictSubgame_deviate_liftSubgame",
+      "href": "misc/restrictSubgame-deviate-liftSubgame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "liftSubgame",
+      "display_name": "liftSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

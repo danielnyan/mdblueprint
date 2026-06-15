@@ -1,0 +1,585 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "IsPositive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "def IsPositive (B : I \u2192 J \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsPositive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem one : IsPositive (fun (_ : I) (_ : J) => (1 : \u211d))"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "wsum_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "xB_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem xB_pos {B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (x : stdSimplex \u211d I) (j : J) : 0 < xB B x j"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "wsum_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "By_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem By_pos {B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (y : stdSimplex \u211d J) (i : I) : 0 < By B y i"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "wsum_pos",
+      "By_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "xBy_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem xBy_pos {B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (x : stdSimplex \u211d I) (y : stdSimplex \u211d J) : 0 < wsum x (fun i => By B y i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB.aux_gt_iff_gt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB.aux_gt_iff_gt (A B : I \u2192 J \u2192 \u211d) (c : \u211d) (x : stdSimplex \u211d I) : c < lamB.aux A B x \u2194 \u2200 j, c < colRatio A B x j"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "muB.aux_lt_iff_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem muB.aux_lt_iff_lt (A B : I \u2192 J \u2192 \u211d) (c : \u211d) (y : stdSimplex \u211d J) : muB.aux A B y < c \u2194 \u2200 i, rowRatio A B y i < c"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "wsum_continuous",
+      "xB_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "colRatio.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem colRatio.continuous {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (j : J) : Continuous (fun x : stdSimplex \u211d I => colRatio A B x j)"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "wsum_continuous",
+      "By_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "rowRatio.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 153
+      },
+      "start": {
+        "column": 1,
+        "line": 153
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem rowRatio.continuous {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (i : I) : Continuous (fun y : stdSimplex \u211d J => rowRatio A B y i)"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB.aux.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 161
+      },
+      "start": {
+        "column": 1,
+        "line": 161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB.aux.continuous {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) : Continuous (lamB.aux A B)"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "mu.aux.continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "muB.aux.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 168
+      },
+      "start": {
+        "column": 1,
+        "line": 168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem muB.aux.continuous {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) : Continuous (muB.aux A B)"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "lam.aux.bddAbove"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB.aux.bddAbove",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 176
+      },
+      "start": {
+        "column": 1,
+        "line": 176
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB.aux.bddAbove {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) : \u2203 C, \u2200 x, lamB.aux A B x \u2264 C"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "mu.aux.bddBelow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "muB.aux.bddBelow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 183
+      },
+      "start": {
+        "column": 1,
+        "line": 183
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem muB.aux.bddBelow {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) : \u2203 C, \u2200 y, C \u2264 muB.aux A B y"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB.aux.le_lamB0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 190
+      },
+      "start": {
+        "column": 1,
+        "line": 190
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB.aux.le_lamB0 {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (x : stdSimplex \u211d I) : lamB.aux A B x \u2264 lamB0 A B"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "muB.aux.ge_muB0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 198
+      },
+      "start": {
+        "column": 1,
+        "line": 198
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem muB.aux.ge_muB0 {A B : I \u2192 J \u2192 \u211d} (hB : IsPositive B) (y : stdSimplex \u211d J) : muB0 A B \u2264 muB.aux A B y"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "xB_pos",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "exists_xx_lamB0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 207
+      },
+      "start": {
+        "column": 1,
+        "line": 207
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem exists_xx_lamB0 (A B : I \u2192 J \u2192 \u211d) (hB : IsPositive B) : \u2203 xx : stdSimplex \u211d I, \u2200 j, lamB0 A B * xB B xx j \u2264 xA A xx j"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "By_pos",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "wsum_wsum_comm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "exists_yy_muB0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 226
+      },
+      "start": {
+        "column": 1,
+        "line": 226
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem exists_yy_muB0 (A B : I \u2192 J \u2192 \u211d) (hB : IsPositive B) : \u2203 yy : stdSimplex \u211d J, \u2200 i, Ay A yy i \u2264 muB0 A B * By B yy i"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "exists_xx_lamB0",
+      "exists_yy_muB0",
+      "xBy_pos",
+      "wsum_wsum_comm",
+      "wsum_le_wsum",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB0_le_muB0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 264
+      },
+      "start": {
+        "column": 1,
+        "line": 264
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB0_le_muB0 (A B : I \u2192 J \u2192 \u211d) (hB : IsPositive B) : lamB0 A B \u2264 muB0 A B"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "singleton_of_card_one",
+      "stdSimplex.mix",
+      "Lottery.mix",
+      "wsum_mix",
+      "lamB.aux_gt_iff_gt",
+      "lam.aux_gt_iff_gt",
+      "xB_pos",
+      "muB.aux_lt_iff_lt",
+      "mu.aux_lt_iff_lt",
+      "By_pos",
+      "wsum_extendDropColumn",
+      "wsum_extendDropRow",
+      "lamB0_le_muB0",
+      "exists_xx_lamB0",
+      "exists_yy_muB0",
+      "xBy_pos",
+      "wsum_wsum_comm",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "lamB.aux.le_lamB0",
+      "Profile.ext",
+      "muB.aux.ge_muB0",
+      "mix_gt_of_gt_nbh",
+      "linear_comb_gt_of_ge_gt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "loomis_value_IJ_2",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 303
+      },
+      "start": {
+        "column": 1,
+        "line": 303
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem loomis_value_IJ_2 (Hn : 2 = Fintype.card I + Fintype.card J) {A B : I \u2192 J \u2192 \u211d} (_hB : IsPositive B) : lamB0 A B = muB0 A B"
+  },
+  {
+    "dependencies": [
+      "IsPositive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "loomis_value_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 806
+      },
+      "start": {
+        "column": 1,
+        "line": 806
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem loomis_value_eq (A B : I \u2192 J \u2192 \u211d) (hB : IsPositive B) : lamB0 A B = muB0 A B"
+  },
+  {
+    "dependencies": [
+      "IsPositive",
+      "exists_xx_lamB0",
+      "exists_yy_muB0",
+      "loomis_value_eq",
+      "wsum_const",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "loomis_theorem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 826
+      },
+      "start": {
+        "column": 1,
+        "line": 826
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem loomis_theorem (A B : I \u2192 J \u2192 \u211d) (hB : IsPositive B) : \u2203 (x : stdSimplex \u211d I) (y : stdSimplex \u211d J) (v : \u211d), (\u2200 j, v * xB B x j \u2264 xA A x j) \u2227 (\u2200 i, Ay A y i \u2264 v * By B y i)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "lamB0_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 881
+      },
+      "start": {
+        "column": 1,
+        "line": 881
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem lamB0_one (A : I \u2192 J \u2192 \u211d) : lamB0 A (fun _ _ => 1) = MinimaxLoomis.lam0 A"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "muB0_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 886
+      },
+      "start": {
+        "column": 1,
+        "line": 886
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem muB0_one (A : I \u2192 J \u2192 \u211d) : muB0 A (fun _ _ => 1) = MinimaxLoomis.mu0 A"
+  },
+  {
+    "dependencies": [
+      "loomis_value_eq",
+      "IsPositive",
+      "lamB0_one",
+      "muB0_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "name": "minmax_from_general",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 900
+      },
+      "start": {
+        "column": 1,
+        "line": 900
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "type": "theorem minmax_from_general (A : I \u2192 J \u2192 \u211d) : MinimaxLoomis.lam0 A = MinimaxLoomis.mu0 A"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "DStrategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "value_prop",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "DStrategy",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "outcome",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "PUInterval",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "PUInterval",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "source": "PUInterval",
+    "target": "Player"
+  }
+]

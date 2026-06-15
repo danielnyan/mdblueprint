@@ -1,0 +1,122 @@
+[
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "IsUtilitarianOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 34
+      },
+      "start": {
+        "column": 1,
+        "line": 34
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "def IsUtilitarianOptimal [Fintype N] (feasible : Allocation N S \u2192 Prop) (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "IsMaxmin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "def IsMaxmin [Fintype N] [Nonempty N] (feasible : Allocation N S \u2192 Prop) (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "utilitarianWelfare_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 52
+      },
+      "start": {
+        "column": 1,
+        "line": 52
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "lemma utilitarianWelfare_mono (u : N \u2192 S \u2192 \u211d) (A B : Allocation N S) (h : \u2200 i : N, u i (A i) \u2264 u i (B i)) : utilitarianWelfare u A \u2264 utilitarianWelfare u B"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "utilitarianWelfare_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 59
+      },
+      "start": {
+        "column": 1,
+        "line": 59
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "@[simp] lemma utilitarianWelfare_unique [Unique N] (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : utilitarianWelfare u A = u default (A default)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "egalitarianWelfare_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "lemma egalitarianWelfare_le [Nonempty N] (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) (i : N) : egalitarianWelfare u A \u2264 u i (A i)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Welfare",
+    "name": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Welfare.lean",
+    "type": "lemma nsmul_egalitarianWelfare_le_utilitarianWelfare [Nonempty N] (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) (hle : \u2200 i : N, egalitarianWelfare u A \u2264 u i (A i)) : Fintype.card N \u2022 egalitarianWelfare u A \u2264 utilitarianWelfare u A"
+  }
+]

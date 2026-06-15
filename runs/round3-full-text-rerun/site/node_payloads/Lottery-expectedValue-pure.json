@@ -1,0 +1,42 @@
+{
+  "id": "Lottery-expectedValue-pure",
+  "title": "Lottery.expectedValue_pure",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Lottery-expectedValue-pure.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Lottery.expectedValue_pure</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Lottery.expectedValue_pure [DecidableEq O] (o₀ : O) (f : O → 𝕜) : Lottery.expectedValue (Lottery.pure (𝕜</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Lottery.expectedValue</li>\n<li>Lottery</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>wsum_pure_apply</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Lottery",
+      "title": "Lottery",
+      "href": "misc/Lottery.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Lottery.expectedValue_pure",
+      "display_name": "Lottery.expectedValue_pure",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

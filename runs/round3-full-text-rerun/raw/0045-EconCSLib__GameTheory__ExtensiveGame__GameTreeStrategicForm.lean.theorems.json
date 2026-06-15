@@ -1,0 +1,116 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "name": "PlayerStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 38
+      },
+      "start": {
+        "column": 1,
+        "line": 38
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean",
+    "type": "def PlayerStrategy (N U : Type*) : Type _"
+  },
+  {
+    "dependencies": [
+      "PlayerStrategy",
+      "Strategy",
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "name": "profileStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean",
+    "type": "def profileStrategy (\u03c3 : N \u2192 PlayerStrategy N U) : Strategy N U"
+  },
+  {
+    "dependencies": [
+      "PlayerStrategy",
+      "IVariant",
+      "profileStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "name": "profileStrategy_deviate_variant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean",
+    "type": "theorem profileStrategy_deviate_variant (\u03c3 : N \u2192 PlayerStrategy N U) (i : N) (s' : PlayerStrategy N U) : IVariant i (profileStrategy \u03c3) (profileStrategy (Function.update \u03c3 i s'))"
+  },
+  {
+    "dependencies": [
+      "PlayerStrategy",
+      "Strategy",
+      "IVariant",
+      "profileStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "name": "profileStrategy_deviate_eq_of_variant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean",
+    "type": "theorem profileStrategy_deviate_eq_of_variant (\u03c3 : N \u2192 PlayerStrategy N U) (i : N) (\u03c4 : Strategy N U) (h\u03c4 : IVariant i (profileStrategy \u03c3) \u03c4) : profileStrategy (Function.update \u03c3 i (\u03c4 : PlayerStrategy N U)) = \u03c4"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame",
+      "Profile",
+      "IsNashEquilibrium",
+      "IsNashAt",
+      "profileStrategy",
+      "PlayerStrategy",
+      "IsWeaklyDominant.isBestResponse",
+      "IsBestResponse",
+      "profileStrategy_deviate_eq_of_variant",
+      "profileStrategy_deviate_variant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeStrategicForm",
+    "name": "toStrategicGame_nash_iff_isNashAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeStrategicForm.lean",
+    "type": "theorem toStrategicGame_nash_iff_isNashAt (g : GameTree N U) (\u03c3 : (toStrategicGame g).Profile) : _root_.IsNashEquilibrium (toStrategicGame g) \u03c3 \u2194 IsNashAt (profileStrategy \u03c3) g"
+  }
+]

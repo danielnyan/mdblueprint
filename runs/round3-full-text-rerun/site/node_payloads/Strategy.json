@@ -1,0 +1,597 @@
+{
+  "id": "Strategy",
+  "title": "Strategy",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Strategy.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Strategy</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Strategy (Tᵢ : Type*) (Mᵢ : Type*)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>size_mem_children_lt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "ChanceProbabilitiesSumToOne",
+      "title": "ChanceProbabilitiesSumToOne",
+      "href": "misc/ChanceProbabilitiesSumToOne.html"
+    },
+    {
+      "id": "DStrategy",
+      "title": "DStrategy",
+      "href": "misc/DStrategy.html"
+    },
+    {
+      "id": "ExtractsGameTree-spe-on-to-nash-at",
+      "title": "ExtractsGameTree.spe_on_to_nash_at",
+      "href": "misc/ExtractsGameTree-spe-on-to-nash-at.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    },
+    {
+      "id": "IVariant-refl",
+      "title": "IVariant.refl",
+      "href": "misc/IVariant-refl.html"
+    },
+    {
+      "id": "IsBestResponse",
+      "title": "IsBestResponse",
+      "href": "misc/IsBestResponse.html"
+    },
+    {
+      "id": "IsCompletelyMixed",
+      "title": "IsCompletelyMixed",
+      "href": "misc/IsCompletelyMixed.html"
+    },
+    {
+      "id": "IsCompletelyMixedProfile",
+      "title": "IsCompletelyMixedProfile",
+      "href": "misc/IsCompletelyMixedProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixedProfile-player",
+      "title": "IsCompletelyMixedProfile.player",
+      "href": "misc/IsCompletelyMixedProfile-player.html"
+    },
+    {
+      "id": "IsConstantSum-nash-payoff-eq-p1",
+      "title": "IsConstantSum.nash_payoff_eq_p1",
+      "href": "misc/IsConstantSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "IsExactPotential",
+      "title": "IsExactPotential",
+      "href": "misc/IsExactPotential.html"
+    },
+    {
+      "id": "IsMixedNashEq",
+      "title": "IsMixedNashEq",
+      "href": "misc/IsMixedNashEq.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    },
+    {
+      "id": "IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames",
+      "title": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+      "href": "misc/IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsOrdinalPotential",
+      "title": "IsOrdinalPotential",
+      "href": "misc/IsOrdinalPotential.html"
+    },
+    {
+      "id": "IsOrdinalPotential-isNash-iff-localMax",
+      "title": "IsOrdinalPotential.isNash_iff_localMax",
+      "href": "misc/IsOrdinalPotential-isNash-iff-localMax.html"
+    },
+    {
+      "id": "IsRationalizable",
+      "title": "IsRationalizable",
+      "href": "misc/IsRationalizable.html"
+    },
+    {
+      "id": "IsStrictlyDominant",
+      "title": "IsStrictlyDominant",
+      "href": "misc/IsStrictlyDominant.html"
+    },
+    {
+      "id": "IsStrictlyDominant-isWeaklyDominant",
+      "title": "IsStrictlyDominant.isWeaklyDominant",
+      "href": "misc/IsStrictlyDominant-isWeaklyDominant.html"
+    },
+    {
+      "id": "IsSubgamePerfect",
+      "title": "IsSubgamePerfect",
+      "href": "misc/IsSubgamePerfect.html"
+    },
+    {
+      "id": "IsSubgamePerfect-toNE",
+      "title": "IsSubgamePerfect.toNE",
+      "href": "misc/IsSubgamePerfect-toNE.html"
+    },
+    {
+      "id": "IsSubgamePerfect-toSubgamePerfectOn",
+      "title": "IsSubgamePerfect.toSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfect-toSubgamePerfectOn.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn",
+      "title": "IsSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfectOn.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn-toNashAt",
+      "title": "IsSubgamePerfectOn.toNashAt",
+      "href": "misc/IsSubgamePerfectOn-toNashAt.html"
+    },
+    {
+      "id": "IsWeaklyDominant",
+      "title": "IsWeaklyDominant",
+      "href": "misc/IsWeaklyDominant.html"
+    },
+    {
+      "id": "IsWeaklyDominant-isBestResponse",
+      "title": "IsWeaklyDominant.isBestResponse",
+      "href": "misc/IsWeaklyDominant-isBestResponse.html"
+    },
+    {
+      "id": "IsZeroSum-neg",
+      "title": "IsZeroSum.neg",
+      "href": "misc/IsZeroSum-neg.html"
+    },
+    {
+      "id": "Kuhn-exists-NE",
+      "title": "Kuhn_exists_NE",
+      "href": "misc/Kuhn-exists-NE.html"
+    },
+    {
+      "id": "Kuhn-exists-SPE",
+      "title": "Kuhn_exists_SPE",
+      "href": "misc/Kuhn-exists-SPE.html"
+    },
+    {
+      "id": "Kuhn-exists-SPE-on",
+      "title": "Kuhn_exists_SPE_on",
+      "href": "misc/Kuhn-exists-SPE-on.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    },
+    {
+      "id": "MixedStrategy",
+      "title": "MixedStrategy",
+      "href": "misc/MixedStrategy.html"
+    },
+    {
+      "id": "PD",
+      "title": "PD",
+      "href": "misc/PD.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "StrategyProfile",
+      "title": "StrategyProfile",
+      "href": "misc/StrategyProfile.html"
+    },
+    {
+      "id": "StrictlyDominates",
+      "title": "StrictlyDominates",
+      "href": "misc/StrictlyDominates.html"
+    },
+    {
+      "id": "StrictlyDominates-weakly",
+      "title": "StrictlyDominates.weakly",
+      "href": "misc/StrictlyDominates-weakly.html"
+    },
+    {
+      "id": "Survives",
+      "title": "Survives",
+      "href": "misc/Survives.html"
+    },
+    {
+      "id": "Survives-mono",
+      "title": "Survives.mono",
+      "href": "misc/Survives-mono.html"
+    },
+    {
+      "id": "Survives-prev",
+      "title": "Survives.prev",
+      "href": "misc/Survives-prev.html"
+    },
+    {
+      "id": "Vickrey",
+      "title": "Vickrey",
+      "href": "misc/Vickrey.html"
+    },
+    {
+      "id": "WeaklyDominates",
+      "title": "WeaklyDominates",
+      "href": "misc/WeaklyDominates.html"
+    },
+    {
+      "id": "candidateChoice-has-ne",
+      "title": "candidateChoice_has_ne",
+      "href": "misc/candidateChoice-has-ne.html"
+    },
+    {
+      "id": "candidateChoice-has-spe",
+      "title": "candidateChoice_has_spe",
+      "href": "misc/candidateChoice-has-spe.html"
+    },
+    {
+      "id": "centipedePrefix-has-nash-at",
+      "title": "centipedePrefix_has_nash_at",
+      "href": "misc/centipedePrefix-has-nash-at.html"
+    },
+    {
+      "id": "centipedePrefix-has-spe-on",
+      "title": "centipedePrefix_has_spe_on",
+      "href": "misc/centipedePrefix-has-spe-on.html"
+    },
+    {
+      "id": "deviate",
+      "title": "deviate",
+      "href": "misc/deviate.html"
+    },
+    {
+      "id": "deviate-of-ne",
+      "title": "deviate_of_ne",
+      "href": "misc/deviate-of-ne.html"
+    },
+    {
+      "id": "deviate-same",
+      "title": "deviate_same",
+      "href": "misc/deviate-same.html"
+    },
+    {
+      "id": "deviateMixed",
+      "title": "deviateMixed",
+      "href": "misc/deviateMixed.html"
+    },
+    {
+      "id": "evaluate-at-mixed-linear",
+      "title": "evaluate_at_mixed_linear",
+      "href": "misc/evaluate-at-mixed-linear.html"
+    },
+    {
+      "id": "exists-mixed-nash-equilibrium",
+      "title": "exists_mixed_nash_equilibrium",
+      "href": "misc/exists-mixed-nash-equilibrium.html"
+    },
+    {
+      "id": "exists-mixed-nash-equilibrium-finite",
+      "title": "exists_mixed_nash_equilibrium_finite",
+      "href": "misc/exists-mixed-nash-equilibrium-finite.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-one",
+      "title": "expectedPayoff_toStrategicGame_one",
+      "href": "misc/expectedPayoff-toStrategicGame-one.html"
+    },
+    {
+      "id": "expectedPayoff-toStrategicGame-zero",
+      "title": "expectedPayoff_toStrategicGame_zero",
+      "href": "misc/expectedPayoff-toStrategicGame-zero.html"
+    },
+    {
+      "id": "fairCoin-expected-player0",
+      "title": "fairCoin_expected_player0",
+      "href": "misc/fairCoin-expected-player0.html"
+    },
+    {
+      "id": "g-function",
+      "title": "g_function",
+      "href": "misc/g-function.html"
+    },
+    {
+      "id": "g-function-nonneg",
+      "title": "g_function_nonneg",
+      "href": "misc/g-function-nonneg.html"
+    },
+    {
+      "id": "headStrategy",
+      "title": "headStrategy",
+      "href": "misc/headStrategy.html"
+    },
+    {
+      "id": "isNashEq",
+      "title": "isNashEq",
+      "href": "misc/isNashEq.html"
+    },
+    {
+      "id": "isNashEq-iff",
+      "title": "isNashEq_iff",
+      "href": "misc/isNashEq-iff.html"
+    },
+    {
+      "id": "isSubgamePerfectOn-iff-forall-subtree-isNashAt",
+      "title": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+      "href": "misc/isSubgamePerfectOn-iff-forall-subtree-isNashAt.html"
+    },
+    {
+      "id": "leaf-nash-to-spe-on",
+      "title": "leaf_nash_to_spe_on",
+      "href": "misc/leaf-nash-to-spe-on.html"
+    },
+    {
+      "id": "mixed-g",
+      "title": "mixed_g",
+      "href": "misc/mixed-g.html"
+    },
+    {
+      "id": "mixedNashEquilibrium",
+      "title": "mixedNashEquilibrium",
+      "href": "misc/mixedNashEquilibrium.html"
+    },
+    {
+      "id": "nash-map",
+      "title": "nash_map",
+      "href": "misc/nash-map.html"
+    },
+    {
+      "id": "nash-map-cert",
+      "title": "nash_map_cert",
+      "href": "misc/nash-map-cert.html"
+    },
+    {
+      "id": "one-le-sum-g",
+      "title": "one_le_sum_g",
+      "href": "misc/one-le-sum-g.html"
+    },
+    {
+      "id": "optStrategy-isSubgamePerfect",
+      "title": "optStrategy_isSubgamePerfect",
+      "href": "misc/optStrategy-isSubgamePerfect.html"
+    },
+    {
+      "id": "outcome",
+      "title": "outcome",
+      "href": "misc/outcome.html"
+    },
+    {
+      "id": "outcome-Leaf",
+      "title": "outcome_Leaf",
+      "href": "misc/outcome-Leaf.html"
+    },
+    {
+      "id": "outcome-Node",
+      "title": "outcome_Node",
+      "href": "misc/outcome-Node.html"
+    },
+    {
+      "id": "outcome-le-value₀-of-iVariant-zero",
+      "title": "outcome_le_value₀_of_iVariant_zero",
+      "href": "misc/outcome-le-value₀-of-iVariant-zero.html"
+    },
+    {
+      "id": "outcome-optStrategy-eq-value",
+      "title": "outcome_optStrategy_eq_value",
+      "href": "misc/outcome-optStrategy-eq-value.html"
+    },
+    {
+      "id": "outcome-optStrategy-one-eq-neg-value₀",
+      "title": "outcome_optStrategy_one_eq_neg_value₀",
+      "href": "misc/outcome-optStrategy-one-eq-neg-value₀.html"
+    },
+    {
+      "id": "outcome-optStrategy-zero-sum",
+      "title": "outcome_optStrategy_zero_sum",
+      "href": "misc/outcome-optStrategy-zero-sum.html"
+    },
+    {
+      "id": "outcome-zero-sum",
+      "title": "outcome_zero_sum",
+      "href": "misc/outcome-zero-sum.html"
+    },
+    {
+      "id": "profileStrategy",
+      "title": "profileStrategy",
+      "href": "misc/profileStrategy.html"
+    },
+    {
+      "id": "profileStrategy-deviate-eq-of-variant",
+      "title": "profileStrategy_deviate_eq_of_variant",
+      "href": "misc/profileStrategy-deviate-eq-of-variant.html"
+    },
+    {
+      "id": "pureProfileToMixed",
+      "title": "pureProfileToMixed",
+      "href": "misc/pureProfileToMixed.html"
+    },
+    {
+      "id": "pureToMixed",
+      "title": "pureToMixed",
+      "href": "misc/pureToMixed.html"
+    },
+    {
+      "id": "pureToMixed-not-isCompletelyMixed-of-ne",
+      "title": "pureToMixed_not_isCompletelyMixed_of_ne",
+      "href": "misc/pureToMixed-not-isCompletelyMixed-of-ne.html"
+    },
+    {
+      "id": "sample-optStrategy-spe-on",
+      "title": "sample_optStrategy_spe_on",
+      "href": "misc/sample-optStrategy-spe-on.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "sample-zermelo-determinacy",
+      "title": "sample_zermelo_determinacy",
+      "href": "misc/sample-zermelo-determinacy.html"
+    },
+    {
+      "id": "sample-zermelo-ne",
+      "title": "sample_zermelo_ne",
+      "href": "misc/sample-zermelo-ne.html"
+    },
+    {
+      "id": "sample-zermelo-spe",
+      "title": "sample_zermelo_spe",
+      "href": "misc/sample-zermelo-spe.html"
+    },
+    {
+      "id": "sample-zero-sum",
+      "title": "sample_zero_sum",
+      "href": "misc/sample-zero-sum.html"
+    },
+    {
+      "id": "sigma-le-g-function",
+      "title": "sigma_le_g_function",
+      "href": "misc/sigma-le-g-function.html"
+    },
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    },
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    },
+    {
+      "id": "toStrategicGame-isZeroSum",
+      "title": "toStrategicGame_isZeroSum",
+      "href": "misc/toStrategicGame-isZeroSum.html"
+    },
+    {
+      "id": "truthful-weakly-dominant-p1",
+      "title": "truthful_weakly_dominant_p1",
+      "href": "misc/truthful-weakly-dominant-p1.html"
+    },
+    {
+      "id": "uniformMixed",
+      "title": "uniformMixed",
+      "href": "misc/uniformMixed.html"
+    },
+    {
+      "id": "uniformMixed-apply",
+      "title": "uniformMixed_apply",
+      "href": "misc/uniformMixed-apply.html"
+    },
+    {
+      "id": "uniformMixed-isCompletelyMixed",
+      "title": "uniformMixed_isCompletelyMixed",
+      "href": "misc/uniformMixed-isCompletelyMixed.html"
+    },
+    {
+      "id": "uniformMixed-pos",
+      "title": "uniformMixed_pos",
+      "href": "misc/uniformMixed-pos.html"
+    },
+    {
+      "id": "uniformMixedProfile",
+      "title": "uniformMixedProfile",
+      "href": "misc/uniformMixedProfile.html"
+    },
+    {
+      "id": "uniformMixedProfile-isCompletelyMixed",
+      "title": "uniformMixedProfile_isCompletelyMixed",
+      "href": "misc/uniformMixedProfile-isCompletelyMixed.html"
+    },
+    {
+      "id": "utility-loser",
+      "title": "utility_loser",
+      "href": "misc/utility-loser.html"
+    },
+    {
+      "id": "valuation-is-dominant",
+      "title": "valuation_is_dominant",
+      "href": "misc/valuation-is-dominant.html"
+    },
+    {
+      "id": "valuation-is-dominant",
+      "title": "valuation_is_dominant",
+      "href": "misc/valuation-is-dominant.html"
+    },
+    {
+      "id": "value-prop",
+      "title": "value_prop",
+      "href": "misc/value-prop.html"
+    },
+    {
+      "id": "value₀-eq-optStrategy-outcome",
+      "title": "value₀_eq_optStrategy_outcome",
+      "href": "misc/value₀-eq-optStrategy-outcome.html"
+    },
+    {
+      "id": "value₀-eq-outcome-and-zeroSum",
+      "title": "value₀_eq_outcome_and_zeroSum",
+      "href": "misc/value₀-eq-outcome-and-zeroSum.html"
+    },
+    {
+      "id": "value₀-le-outcome-of-iVariant-one",
+      "title": "value₀_le_outcome_of_iVariant_one",
+      "href": "misc/value₀-le-outcome-of-iVariant-one.html"
+    },
+    {
+      "id": "zermelo-determinacy",
+      "title": "zermelo_determinacy",
+      "href": "misc/zermelo-determinacy.html"
+    },
+    {
+      "id": "zermelo-exists-pure-NE",
+      "title": "zermelo_exists_pure_NE",
+      "href": "misc/zermelo-exists-pure-NE.html"
+    },
+    {
+      "id": "zermelo-exists-pure-SPE",
+      "title": "zermelo_exists_pure_SPE",
+      "href": "misc/zermelo-exists-pure-SPE.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Strategy",
+      "display_name": "Strategy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "IsDSIC-truthful-isNash",
+  "title": "IsDSIC.truthful_isNash",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsDSIC-truthful-isNash.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsDSIC.truthful_isNash</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsDSIC.truthful_isNash [Preorder U] (hdsic : M.IsDSIC u) (v : ∀ i, T i) : IsNashEquilibrium (M.toStrategicGame u v) v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsDSIC</li>\n<li>isDSIC</li>\n<li>IsNashEquilibrium</li>\n<li>toStrategicGame</li>\n<li>of_dominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "toStrategicGame",
+      "title": "toStrategicGame",
+      "href": "misc/toStrategicGame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsDSIC.truthful_isNash",
+      "display_name": "IsDSIC.truthful_isNash",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

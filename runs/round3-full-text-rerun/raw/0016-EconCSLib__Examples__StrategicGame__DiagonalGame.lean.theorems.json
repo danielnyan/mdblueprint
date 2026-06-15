@@ -1,0 +1,109 @@
+[
+  {
+    "dependencies": [
+      "diagonalGame_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "name": "diagonalGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 31
+      },
+      "start": {
+        "column": 1,
+        "line": 31
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "type": "def diagonalGame (a : I \u2192 \u211d) : MatrixGame I I \u211d"
+  },
+  {
+    "dependencies": [
+      "diagonalGame_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "name": "diagonalGameValue_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "type": "theorem diagonalGameValue_pos (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) : 0 < diagonalGameValue a"
+  },
+  {
+    "dependencies": [
+      "diagonalGame_value",
+      "diagonalGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "name": "diagonalGame_row_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 64
+      },
+      "start": {
+        "column": 1,
+        "line": 64
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "type": "theorem diagonalGame_row_guarantee (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) : \u2200 j, diagonalGameValue a \u2264 (diagonalGame a).Ej (diagonalGameStrategy a hpos) j"
+  },
+  {
+    "dependencies": [
+      "diagonalGame",
+      "diagonalGame_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "name": "diagonalGame_column_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "type": "theorem diagonalGame_column_guarantee (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) : \u2200 i, (diagonalGame a).Ei i (diagonalGameStrategy a hpos) \u2264 diagonalGameValue a"
+  },
+  {
+    "dependencies": [
+      "diagonalGame",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "common_guarantee_eq_value",
+      "diagonalGame_row_guarantee",
+      "diagonalGame_column_guarantee"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "name": "diagonalGame_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "type": "theorem diagonalGame_value (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) : (diagonalGame a).value = diagonalGameValue a"
+  }
+]

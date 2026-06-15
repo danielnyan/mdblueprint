@@ -1,0 +1,52 @@
+{
+  "id": "efx-exists-two-agents",
+  "title": "efx_exists_two_agents",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/efx-exists-two-agents.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>efx_exists_two_agents</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem efx_exists_two_agents [Fintype G] [DecidableEq G] (w : AdditiveValuation (Fin 2) G) (hnn₀ : ∀ g, 0 ≤ w.weight 0 g) (hnn₁ : ∀ g, 0 ≤ w.weight 1 g) (allGoods : Finset G) : ∃ A : Allocation (Fin 2) G, IsAllocation allGoods A ∧ IsEFX w.toValuation A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEFX</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "efx_exists_two_agents",
+      "display_name": "efx_exists_two_agents",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

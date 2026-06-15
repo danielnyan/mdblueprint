@@ -1,0 +1,82 @@
+[
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 26
+      },
+      "start": {
+        "column": 1,
+        "line": 26
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Fairness.lean",
+    "type": "def IsEnvyFree (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 32
+      },
+      "start": {
+        "column": 1,
+        "line": 32
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Fairness.lean",
+    "type": "def IsProportional (n : \u2115) (whole : S) (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Fairness.lean",
+    "type": "def IsEquitable (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Fairness",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 42
+      },
+      "start": {
+        "column": 1,
+        "line": 42
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Fairness.lean",
+    "type": "def IsParetoOptimal (feasible : Allocation N S \u2192 Prop) (u : N \u2192 S \u2192 \u211d) (A : Allocation N S) : Prop"
+  }
+]

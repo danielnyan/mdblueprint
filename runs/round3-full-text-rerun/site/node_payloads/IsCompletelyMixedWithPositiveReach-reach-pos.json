@@ -1,0 +1,62 @@
+{
+  "id": "IsCompletelyMixedWithPositiveReach-reach-pos",
+  "title": "IsCompletelyMixedWithPositiveReach.reach_pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsCompletelyMixedWithPositiveReach-reach-pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsCompletelyMixedWithPositiveReach.reach_pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsCompletelyMixedWithPositiveReach.reach_pos {G : ExtensiveGame iota U} [DecidableEq G.State] [(s : G.State) -&gt; Fintype (G.Action s)] {beta : G.BehaviorProfile} {fuel : Nat} (hbeta : IsCompletelyMixedWithPositiveReach beta fuel) (root : G.State) : 0 &lt; reachProb G beta root fuel</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>IsCompletelyMixedWithPositiveReach</li>\n<li>isEmpty</li>\n<li>actionProb</li>\n<li>IsReachable.next</li>\n<li>expectedPayoff</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach",
+      "title": "IsCompletelyMixedWithPositiveReach",
+      "href": "misc/IsCompletelyMixedWithPositiveReach.html"
+    },
+    {
+      "id": "isEmpty",
+      "title": "isEmpty",
+      "href": "misc/isEmpty.html"
+    },
+    {
+      "id": "actionProb",
+      "title": "actionProb",
+      "href": "misc/actionProb.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsCompletelyMixedWithPositiveReach.reach_pos",
+      "display_name": "IsCompletelyMixedWithPositiveReach.reach_pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

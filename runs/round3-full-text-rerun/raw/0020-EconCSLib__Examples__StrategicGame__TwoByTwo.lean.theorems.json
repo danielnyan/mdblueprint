@@ -1,0 +1,85 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "name": "twoByTwo",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 44
+      },
+      "start": {
+        "column": 1,
+        "line": 44
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/TwoByTwo.lean",
+    "type": "def twoByTwo (a b c d : \u211d) : MatrixGame (Fin 2) (Fin 2) \u211d"
+  },
+  {
+    "dependencies": [
+      "twoByTwo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "name": "twoByTwo_row_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/TwoByTwo.lean",
+    "type": "theorem twoByTwo_row_guarantee (a b c d : \u211d) (hdenom : 0 < a + d - b - c) (hab : b \u2264 a) (hdc : c \u2264 d) : \u2200 j, twoByTwoMixedValue a b c d \u2264 (twoByTwo a b c d).Ej (twoByTwoRowMixed a b c d hdenom hab hdc) j"
+  },
+  {
+    "dependencies": [
+      "twoByTwo"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "name": "twoByTwo_column_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/TwoByTwo.lean",
+    "type": "theorem twoByTwo_column_guarantee (a b c d : \u211d) (hdenom : 0 < a + d - b - c) (hac : c \u2264 a) (hdb : b \u2264 d) : \u2200 i, (twoByTwo a b c d).Ei i (twoByTwoColumnMixed a b c d hdenom hac hdb) \u2264 twoByTwoMixedValue a b c d"
+  },
+  {
+    "dependencies": [
+      "twoByTwo",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "common_guarantee_eq_value",
+      "twoByTwo_row_guarantee",
+      "twoByTwo_column_guarantee"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "name": "twoByTwo_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/TwoByTwo.lean",
+    "type": "theorem twoByTwo_value (a b c d : \u211d) (hdenom : 0 < a + d - b - c) (hab : b \u2264 a) (hac : c \u2264 a) (hdb : b \u2264 d) (hdc : c \u2264 d) : (twoByTwo a b c d).value = twoByTwoMixedValue a b c d"
+  }
+]

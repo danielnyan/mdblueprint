@@ -1,0 +1,53 @@
+{
+  "id": "isQuasiLinearExPostIR",
+  "title": "isQuasiLinearExPostIR",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isQuasiLinearExPostIR.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isQuasiLinearExPostIR</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef isQuasiLinearExPostIR [Sub U] [Preorder U] [Zero U] (val : A → (∀ i, T i) → I → V) (valueToUtility : V → U) (paymentToUtility : P → U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsExPostIR</li>\n<li>isExPostIR</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsExPostIR",
+      "title": "IsExPostIR",
+      "href": "misc/IsExPostIR.html"
+    },
+    {
+      "id": "isExPostIR",
+      "title": "isExPostIR",
+      "href": "misc/isExPostIR.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "VCGMechanism-isExPostIR-of-all-nonnegative",
+      "title": "VCGMechanism_isExPostIR_of_all_nonnegative",
+      "href": "misc/VCGMechanism-isExPostIR-of-all-nonnegative.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isQuasiLinearExPostIR",
+      "display_name": "isQuasiLinearExPostIR",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

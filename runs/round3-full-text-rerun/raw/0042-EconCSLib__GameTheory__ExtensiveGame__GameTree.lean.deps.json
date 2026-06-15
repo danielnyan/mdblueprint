@@ -1,0 +1,164 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.head",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.head",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.head",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.tail_mem",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.tail_mem",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.tail_mem",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.child_mem",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.child_mem",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.child_mem",
+    "target": "IsZeroSum.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.child_mem",
+    "target": "Subtree.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.trans",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.trans",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.trans",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "strong_induction",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "strong_induction",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "strong_induction",
+    "target": "size_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "strong_induction",
+    "target": "size_head_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "strong_induction",
+    "target": "size_mem_tail_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.self",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.self",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "Subtree.self",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_children_lt",
+    "target": "size_head_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_children_lt",
+    "target": "size_mem_tail_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_children_lt",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_children_lt",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_children_lt",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTree",
+    "source": "size_mem_tail_lt",
+    "target": "size_pos"
+  }
+]

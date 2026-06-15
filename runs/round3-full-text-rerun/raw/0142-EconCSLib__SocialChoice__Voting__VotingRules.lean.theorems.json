@@ -1,0 +1,488 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "position_eq_rank_succ",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem position_eq_rank_succ [Fintype A] (r : LinearOrder A) (a : A) : position r a = rank r a + 1"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "rank_lt_card",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 58
+      },
+      "start": {
+        "column": 1,
+        "line": 58
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem rank_lt_card [Fintype A] (r : LinearOrder A) (a : A) : rank r a < Fintype.card A"
+  },
+  {
+    "dependencies": [
+      "rank_lt_card"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "position_le_card",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 72
+      },
+      "start": {
+        "column": 1,
+        "line": 72
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem position_le_card [Fintype A] (r : LinearOrder A) (a : A) : position r a \u2264 Fintype.card A"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "rank_lt_of_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem rank_lt_of_lt [Fintype A] (r : LinearOrder A) {a b : A} (hab : BallotPrefers r a b) : rank r a < rank r b"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "rank_lt_of_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "rank_lt_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem rank_lt_iff [Fintype A] (r : LinearOrder A) {a b : A} : rank r a < rank r b \u2194 BallotPrefers r a b"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers.total_of_ne",
+      "Prefers.total_of_ne",
+      "BallotPrefers",
+      "rank_lt_of_lt",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "rank_injective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 114
+      },
+      "start": {
+        "column": 1,
+        "line": 114
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem rank_injective [Fintype A] (r : LinearOrder A) : Function.Injective (rank r)"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "margin_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 139
+      },
+      "start": {
+        "column": 1,
+        "line": 139
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def margin_pos [Fintype N] [Fintype A] (P : Profile N A) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "margin_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem margin_self [Fintype N] [Fintype A] (P : Profile N A) (a : A) : margin P a a = 0"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "margin_skew",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 146
+      },
+      "start": {
+        "column": 1,
+        "line": 146
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem margin_skew [Fintype N] [Fintype A] (P : Profile N A) (a b : A) : margin P a b = -margin P b a"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "margin_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "MajorityPrefers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 152
+      },
+      "start": {
+        "column": 1,
+        "line": 152
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def MajorityPrefers [Fintype N] [Fintype A] (P : Profile N A) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "MajorityPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "CondorcetWinner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def CondorcetWinner [Fintype N] [Fintype A] (P : Profile N A) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "CondorcetWinner"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "HasCondorcetWinner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 161
+      },
+      "start": {
+        "column": 1,
+        "line": 161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def HasCondorcetWinner [Fintype N] [Fintype A] (P : Profile N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "CondorcetWinner"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "CondorcetConsistency",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 166
+      },
+      "start": {
+        "column": 1,
+        "line": 166
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def CondorcetConsistency [Fintype N] [Fintype A] (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "scoringWinners_nonempty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 192
+      },
+      "start": {
+        "column": 1,
+        "line": 192
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem scoringWinners_nonempty [Fintype N] [Fintype A] [Nonempty A] (P : Profile N A) (score : Nat \u2192 Int) : (scoringWinners P score).Nonempty"
+  },
+  {
+    "dependencies": [
+      "IsTotal",
+      "scoringWinners_nonempty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "scoringRule_isTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 205
+      },
+      "start": {
+        "column": 1,
+        "line": 205
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem scoringRule_isTotal (score : Nat \u2192 Nat \u2192 Int) [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "pluralityScore",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 213
+      },
+      "start": {
+        "column": 1,
+        "line": 213
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def pluralityScore (_m r : Nat) : Int"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "bordaScore",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 217
+      },
+      "start": {
+        "column": 1,
+        "line": 217
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def bordaScore (m r : Nat) : Int"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "pluralityScore",
+      "bordaScore"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "vetoScore",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 221
+      },
+      "start": {
+        "column": 1,
+        "line": 221
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "def vetoScore (m r : Nat) : Int"
+  },
+  {
+    "dependencies": [
+      "IsTotal",
+      "scoringRule_isTotal",
+      "pluralityScore"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "plurality_isTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 236
+      },
+      "start": {
+        "column": 1,
+        "line": 236
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem plurality_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N"
+  },
+  {
+    "dependencies": [
+      "IsTotal",
+      "scoringRule_isTotal",
+      "bordaScore"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "borda_isTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 240
+      },
+      "start": {
+        "column": 1,
+        "line": 240
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem borda_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N"
+  },
+  {
+    "dependencies": [
+      "IsTotal",
+      "scoringRule_isTotal",
+      "vetoScore",
+      "Profile",
+      "MajorityPrefers",
+      "VotingRule"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "veto_isTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 244
+      },
+      "start": {
+        "column": 1,
+        "line": 244
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem veto_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N"
+  },
+  {
+    "dependencies": [
+      "IsTotal",
+      "Profile",
+      "MajorityPrefers",
+      "Profile.ext",
+      "Prefers",
+      "margin_pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "copeland_isTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 265
+      },
+      "start": {
+        "column": 1,
+        "line": 265
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem copeland_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "HasCondorcetWinner"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.VotingRules",
+    "name": "condorcet_paradox_possible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 340
+      },
+      "start": {
+        "column": 1,
+        "line": 340
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/VotingRules.lean",
+    "type": "theorem condorcet_paradox_possible : \u2203 P : Profile (Fin 3) (Fin 3), \u00ac HasCondorcetWinner P"
+  }
+]

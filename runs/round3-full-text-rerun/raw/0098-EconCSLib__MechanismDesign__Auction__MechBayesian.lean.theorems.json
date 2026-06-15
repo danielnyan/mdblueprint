@@ -1,0 +1,416 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "Strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "abbrev Strategy (T\u1d62 : Type*) (M\u1d62 : Type*)"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "StrategyProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "abbrev StrategyProfile (T : I \u2192 Type*) (M : I \u2192 Type*)"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "IsMeasurableStrategyProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def IsMeasurableStrategyProfile [\u2200 i, MeasurableSpace (M i)] (\u03c3 : StrategyProfile T M) : Prop"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "inducedMessages",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def inducedMessages (\u03c3 : StrategyProfile T M) (t : \u2200 i, T i) : \u2200 i, M i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "toMechanism",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def toMechanism (B : BayesianMechanism I T M O) : Mechanism I M O"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "DirectBayesianMechanism",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "abbrev DirectBayesianMechanism (I : Type*) (T : I \u2192 Type*) [\u2200 i, MeasurableSpace (T i)] (O : Type*)"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "DirectBayesianMechanism"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "truthfulStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 114
+      },
+      "start": {
+        "column": 1,
+        "line": 114
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def truthfulStrategy : BayesianMechanism.StrategyProfile T T"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "StrategyProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 148
+      },
+      "start": {
+        "column": 1,
+        "line": 148
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "abbrev StrategyProfile (T : I \u2192 Type*) (M : I \u2192 Type*)"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "inducedMessages"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "inducedAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 152
+      },
+      "start": {
+        "column": 1,
+        "line": 152
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def inducedAllocation (B : BayesianMechanismWithTransfers I T M A P) (\u03c3 : StrategyProfile T M) (t : \u2200 i, T i) : A"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "inducedMessages"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "inducedPayments",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def inducedPayments (B : BayesianMechanismWithTransfers I T M A P) (\u03c3 : StrategyProfile T M) (t : \u2200 i, T i) : I \u2192 P"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "deviate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 164
+      },
+      "start": {
+        "column": 1,
+        "line": 164
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def deviate [DecidableEq I] (\u03c3 : StrategyProfile T M) (i : I) (\u03c4 : T i \u2192 M i) : StrategyProfile T M"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "toMechanismWithTransfers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 172
+      },
+      "start": {
+        "column": 1,
+        "line": 172
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def toMechanismWithTransfers (B : BayesianMechanismWithTransfers I T M A P) : MechanismWithTransfers I M A P"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "inducedAllocation",
+      "inducedPayments"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "toBayesianMechanism",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 180
+      },
+      "start": {
+        "column": 1,
+        "line": 180
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def toBayesianMechanism (B : BayesianMechanismWithTransfers I T M A P) : BayesianMechanism I T M (A \u00d7 (I \u2192 P))"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "inducedAllocation",
+      "inducedPayments"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "IntegrableExAnteUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 199
+      },
+      "start": {
+        "column": 1,
+        "line": 199
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def IntegrableExAnteUtility (B : BayesianMechanismWithTransfers I T M A P) (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 \u211d) (\u03c3 : StrategyProfile T M) (i : I) : Prop"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "IsMeasurableStrategyProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "IsExAnteBayesianNashEquilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 213
+      },
+      "start": {
+        "column": 1,
+        "line": 213
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def IsExAnteBayesianNashEquilibrium [DecidableEq I] [\u2200 i, MeasurableSpace (M i)] (B : BayesianMechanismWithTransfers I T M A P) (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 \u211d) (\u03c3 : StrategyProfile T M) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "DirectBayesianMechanismWithTransfers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 227
+      },
+      "start": {
+        "column": 1,
+        "line": 227
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "abbrev DirectBayesianMechanismWithTransfers (I : Type*) (T : I \u2192 Type*) [\u2200 i, MeasurableSpace (T i)] (A : Type*) (P : Type*)"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "DirectBayesianMechanismWithTransfers",
+      "exAnte_revelation_principle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "truthfulStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 236
+      },
+      "start": {
+        "column": 1,
+        "line": 236
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def truthfulStrategy : BayesianMechanismWithTransfers.StrategyProfile T T"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "DirectBayesianMechanismWithTransfers",
+      "inducedAllocation",
+      "inducedPayments"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "directRevelation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 256
+      },
+      "start": {
+        "column": 1,
+        "line": 256
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def directRevelation (B : BayesianMechanismWithTransfers I T M A P) (\u03c3 : StrategyProfile T M) : DirectBayesianMechanismWithTransfers I T A P"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "directRevelation",
+      "IsExAnteBayesianNashEquilibrium",
+      "DirectBayesianMechanismWithTransfers",
+      "truthfulStrategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "ExAnteRevelationPrincipleConclusion",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 286
+      },
+      "start": {
+        "column": 1,
+        "line": 286
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "def ExAnteRevelationPrincipleConclusion [DecidableEq I] [\u2200 i, MeasurableSpace (T i)] [\u2200 i, MeasurableSpace (M i)] (B : BayesianMechanismWithTransfers I T M A P) (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 \u211d) (\u03c3 : StrategyProfile T M) : Prop"
+  },
+  {
+    "dependencies": [
+      "StrategyProfile",
+      "IsExAnteBayesianNashEquilibrium",
+      "ExAnteRevelationPrincipleConclusion",
+      "DirectBayesianMechanismWithTransfers",
+      "truthfulStrategy",
+      "inducedAllocation",
+      "inducedPayments",
+      "Profile.ext",
+      "inducedMessages",
+      "directRevelation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.MechBayesian",
+    "name": "exAnte_revelation_principle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 309
+      },
+      "start": {
+        "column": 1,
+        "line": 309
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/MechBayesian.lean",
+    "type": "theorem exAnte_revelation_principle [DecidableEq I] [\u2200 i, MeasurableSpace (T i)] [\u2200 i, MeasurableSpace (M i)] (B : BayesianMechanismWithTransfers I T M A P) (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 \u211d) (\u03c3 : StrategyProfile T M) (h\u03c3 : B.IsExAnteBayesianNashEquilibrium u \u03c3) : B.ExAnteRevelationPrincipleConclusion u \u03c3"
+  }
+]

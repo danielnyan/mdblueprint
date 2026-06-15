@@ -1,0 +1,56 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Basic",
+    "name": "SolutionConcept",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Basic.lean",
+    "type": "def SolutionConcept (N A : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Basic",
+    "name": "Rule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Basic.lean",
+    "type": "def Rule (N A : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Basic",
+    "name": "Correspondence",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Basic.lean",
+    "type": "def Correspondence (N A : Type*)"
+  }
+]

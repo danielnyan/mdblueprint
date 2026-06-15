@@ -1,0 +1,162 @@
+{
+  "id": "IsIndividuallyRationalOnSupport",
+  "title": "IsIndividuallyRationalOnSupport",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsIndividuallyRationalOnSupport.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsIndividuallyRationalOnSupport</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsIndividuallyRationalOnSupport (A : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction-isIndividuallyRationalOnSupport",
+      "title": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction-isIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-interim-virtual-surplus-density-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-interim-virtual-surplus-density-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-payment-envelope-upper",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-payment-envelope-upper.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-opt-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-opt-identity.html"
+    },
+    {
+      "id": "hasInterimPaymentEnvelopeUpperBound-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport",
+      "title": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "href": "misc/hasInterimPaymentEnvelopeUpperBound-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "interimExpectedPayment-le-alloc-mul-sub-integral-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport",
+      "title": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "href": "misc/interimExpectedPayment-le-alloc-mul-sub-integral-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "interimExpectedPayment-zero-nonpos-of-isIndividuallyRationalOnSupport",
+      "title": "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport",
+      "href": "misc/interimExpectedPayment-zero-nonpos-of-isIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "isIndividuallyRationalOnSupport-iff-interimExpectedPayment-zero-nonpos",
+      "title": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+      "href": "misc/isIndividuallyRationalOnSupport-iff-interimExpectedPayment-zero-nonpos.html"
+    },
+    {
+      "id": "isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula",
+      "title": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "href": "misc/isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isFeasibleICIRIntegrable-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isFeasibleICIRIntegrable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport",
+      "title": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+      "href": "misc/virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-regularMyersonOptimalICIR-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-regularMyersonOptimalICIR-of-isRegular.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsIndividuallyRationalOnSupport",
+      "display_name": "IsIndividuallyRationalOnSupport",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

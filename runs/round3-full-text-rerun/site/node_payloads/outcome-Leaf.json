@@ -1,0 +1,42 @@
+{
+  "id": "outcome-Leaf",
+  "title": "outcome_Leaf",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/outcome-Leaf.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>outcome_Leaf</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem outcome_Leaf (σ : Strategy N U) (p : N → U) : outcome σ (Leaf p) = p</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "outcome_Leaf",
+      "display_name": "outcome_Leaf",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

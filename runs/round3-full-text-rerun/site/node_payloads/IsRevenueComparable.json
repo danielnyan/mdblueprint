@@ -1,0 +1,83 @@
+{
+  "id": "IsRevenueComparable",
+  "title": "IsRevenueComparable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRevenueComparable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRevenueComparable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsRevenueComparable [Fintype I] (A B : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasSameSellingEnvironment</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction",
+      "title": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+      "href": "misc/expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction.html"
+    },
+    {
+      "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "isRevenueUpperBounded-of-isRevenueComparable",
+      "title": "isRevenueUpperBounded_of_isRevenueComparable",
+      "href": "misc/isRevenueUpperBounded-of-isRevenueComparable.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isRevenueComparable",
+      "title": "virtualSurplusMaximizingAuction_isRevenueComparable",
+      "href": "misc/virtualSurplusMaximizingAuction-isRevenueComparable.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsRevenueComparable",
+      "display_name": "IsRevenueComparable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

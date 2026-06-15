@@ -1,0 +1,42 @@
+{
+  "id": "pd-pareto-suboptimal",
+  "title": "pd_pareto_suboptimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/pd-pareto-suboptimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>pd_pareto_suboptimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem pd_pareto_suboptimal : PD.payoff (fun _ =&gt; Cooperate) 0 &gt; PD.payoff (fun _ =&gt; Defect) 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PD</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PD",
+      "title": "PD",
+      "href": "misc/PD.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "pd_pareto_suboptimal",
+      "display_name": "pd_pareto_suboptimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+    "name": "toValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean",
+    "type": "def toValuation (w : AdditiveValuation N G) : Valuation N G"
+  },
+  {
+    "dependencies": [
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+    "name": "toValuation_empty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 83
+      },
+      "start": {
+        "column": 1,
+        "line": 83
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean",
+    "type": "@[simp] lemma toValuation_empty (w : AdditiveValuation N G) (i : N) : w.toValuation.val i \u2205 = 0"
+  },
+  {
+    "dependencies": [
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+    "name": "toValuation_union",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean",
+    "type": "lemma toValuation_union [DecidableEq G] (w : AdditiveValuation N G) (i : N) (S T : Finset G) (h : Disjoint S T) : w.toValuation.val i (S \u222a T) = w.toValuation.val i S + w.toValuation.val i T"
+  },
+  {
+    "dependencies": [
+      "toValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Valuation",
+    "name": "toValuation_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Valuation.lean",
+    "type": "lemma toValuation_mono [DecidableEq G] (w : AdditiveValuation N G) (hnn : \u2200 (i : N) (g : G), 0 \u2264 w.weight i g) (i : N) {S T : Finset G} (h : T \u2286 S) : w.toValuation.val i T \u2264 w.toValuation.val i S"
+  }
+]

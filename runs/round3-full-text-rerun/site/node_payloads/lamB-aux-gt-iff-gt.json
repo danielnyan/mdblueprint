@@ -1,0 +1,36 @@
+{
+  "id": "lamB-aux-gt-iff-gt",
+  "title": "lamB.aux_gt_iff_gt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lamB-aux-gt-iff-gt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lamB.aux_gt_iff_gt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lamB.aux_gt_iff_gt (A B : I → J → ℝ) (c : ℝ) (x : stdSimplex ℝ I) : c &lt; lamB.aux A B x ↔ ∀ j, c &lt; colRatio A B x j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lamB.aux_gt_iff_gt",
+      "display_name": "lamB.aux_gt_iff_gt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

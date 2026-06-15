@@ -1,0 +1,42 @@
+{
+  "id": "empty-Dominant",
+  "title": "empty_Dominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/empty-Dominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>empty_Dominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma empty_Dominant (h : D.Nonempty) : IST.isDominant Finset.empty D</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "empty_Dominant",
+      "display_name": "empty_Dominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

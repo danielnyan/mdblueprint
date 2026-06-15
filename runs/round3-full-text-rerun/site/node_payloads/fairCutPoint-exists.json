@@ -1,0 +1,42 @@
+{
+  "id": "fairCutPoint-exists",
+  "title": "fairCutPoint_exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fairCutPoint-exists.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fairCutPoint_exists</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem fairCutPoint_exists (μ : Fin 2 → Measure I) [IsFiniteMeasure (μ 0)] [NoAtoms (μ 0)] : ∃ t : I, IsFairCutPoint μ t</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsFairCutPoint</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>cut_exists</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFairCutPoint",
+      "title": "IsFairCutPoint",
+      "href": "misc/IsFairCutPoint.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fairCutPoint_exists",
+      "display_name": "fairCutPoint_exists",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

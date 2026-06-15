@@ -1,0 +1,137 @@
+{
+  "id": "IsPositive",
+  "title": "IsPositive",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsPositive.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsPositive</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsPositive (B : I → J → ℝ) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "By-pos",
+      "title": "By_pos",
+      "href": "misc/By-pos.html"
+    },
+    {
+      "id": "colRatio-continuous",
+      "title": "colRatio.continuous",
+      "href": "misc/colRatio-continuous.html"
+    },
+    {
+      "id": "exists-xx-lamB0",
+      "title": "exists_xx_lamB0",
+      "href": "misc/exists-xx-lamB0.html"
+    },
+    {
+      "id": "exists-yy-muB0",
+      "title": "exists_yy_muB0",
+      "href": "misc/exists-yy-muB0.html"
+    },
+    {
+      "id": "lamB-aux-bddAbove",
+      "title": "lamB.aux.bddAbove",
+      "href": "misc/lamB-aux-bddAbove.html"
+    },
+    {
+      "id": "lamB-aux-continuous",
+      "title": "lamB.aux.continuous",
+      "href": "misc/lamB-aux-continuous.html"
+    },
+    {
+      "id": "lamB-aux-le-lamB0",
+      "title": "lamB.aux.le_lamB0",
+      "href": "misc/lamB-aux-le-lamB0.html"
+    },
+    {
+      "id": "lamB0-le-muB0",
+      "title": "lamB0_le_muB0",
+      "href": "misc/lamB0-le-muB0.html"
+    },
+    {
+      "id": "loomis-theorem",
+      "title": "loomis_theorem",
+      "href": "misc/loomis-theorem.html"
+    },
+    {
+      "id": "loomis-value-IJ-2",
+      "title": "loomis_value_IJ_2",
+      "href": "misc/loomis-value-IJ-2.html"
+    },
+    {
+      "id": "loomis-value-eq",
+      "title": "loomis_value_eq",
+      "href": "misc/loomis-value-eq.html"
+    },
+    {
+      "id": "minmax-from-general",
+      "title": "minmax_from_general",
+      "href": "misc/minmax-from-general.html"
+    },
+    {
+      "id": "muB-aux-bddBelow",
+      "title": "muB.aux.bddBelow",
+      "href": "misc/muB-aux-bddBelow.html"
+    },
+    {
+      "id": "muB-aux-continuous",
+      "title": "muB.aux.continuous",
+      "href": "misc/muB-aux-continuous.html"
+    },
+    {
+      "id": "muB-aux-ge-muB0",
+      "title": "muB.aux.ge_muB0",
+      "href": "misc/muB-aux-ge-muB0.html"
+    },
+    {
+      "id": "one",
+      "title": "one",
+      "href": "misc/one.html"
+    },
+    {
+      "id": "perron-frobenius",
+      "title": "perron_frobenius",
+      "href": "misc/perron-frobenius.html"
+    },
+    {
+      "id": "rowRatio-continuous",
+      "title": "rowRatio.continuous",
+      "href": "misc/rowRatio-continuous.html"
+    },
+    {
+      "id": "xB-pos",
+      "title": "xB_pos",
+      "href": "misc/xB-pos.html"
+    },
+    {
+      "id": "xBy-pos",
+      "title": "xBy_pos",
+      "href": "misc/xBy-pos.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsPositive",
+      "display_name": "IsPositive",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

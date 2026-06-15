@@ -1,0 +1,162 @@
+{
+  "id": "BinaryAllocation",
+  "title": "BinaryAllocation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BinaryAllocation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BinaryAllocation</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev BinaryAllocation (I : Type*)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations",
+      "title": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+      "href": "misc/BinaryRespectsCapacity-of-mem-feasibleBinaryAllocations.html"
+    },
+    {
+      "id": "binaryLoad",
+      "title": "binaryLoad",
+      "href": "misc/binaryLoad.html"
+    },
+    {
+      "id": "binaryRespectsCapacity",
+      "title": "binaryRespectsCapacity",
+      "href": "misc/binaryRespectsCapacity.html"
+    },
+    {
+      "id": "binarySocialWelfare",
+      "title": "binarySocialWelfare",
+      "href": "misc/binarySocialWelfare.html"
+    },
+    {
+      "id": "binarySocialWelfare-update",
+      "title": "binarySocialWelfare_update",
+      "href": "misc/binarySocialWelfare-update.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    },
+    {
+      "id": "binaryToAllocation-fractionalFeasible-of-binaryRespectsCapacity",
+      "title": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+      "href": "misc/binaryToAllocation-fractionalFeasible-of-binaryRespectsCapacity.html"
+    },
+    {
+      "id": "dpSolveList",
+      "title": "dpSolveList",
+      "href": "misc/dpSolveList.html"
+    },
+    {
+      "id": "dpSolveList-optimal",
+      "title": "dpSolveList_optimal",
+      "href": "misc/dpSolveList-optimal.html"
+    },
+    {
+      "id": "dynamicProgrammingOptimalAllocation-optimal",
+      "title": "dynamicProgrammingOptimalAllocation_optimal",
+      "href": "misc/dynamicProgrammingOptimalAllocation-optimal.html"
+    },
+    {
+      "id": "eq-false-of-supportedOn-of-not-mem",
+      "title": "eq_false_of_supportedOn_of_not_mem",
+      "href": "misc/eq-false-of-supportedOn-of-not-mem.html"
+    },
+    {
+      "id": "exists-welfareMaximizer",
+      "title": "exists_welfareMaximizer",
+      "href": "misc/exists-welfareMaximizer.html"
+    },
+    {
+      "id": "fractionalSocialWelfare-realBidOfNat-binaryToAllocation",
+      "title": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+      "href": "misc/fractionalSocialWelfare-realBidOfNat-binaryToAllocation.html"
+    },
+    {
+      "id": "integralGreedyList",
+      "title": "integralGreedyList",
+      "href": "misc/integralGreedyList.html"
+    },
+    {
+      "id": "natBinaryLoad",
+      "title": "natBinaryLoad",
+      "href": "misc/natBinaryLoad.html"
+    },
+    {
+      "id": "natBinaryLoad-eq-add-of-true",
+      "title": "natBinaryLoad_eq_add_of_true",
+      "href": "misc/natBinaryLoad-eq-add-of-true.html"
+    },
+    {
+      "id": "natBinaryLoad-update-true-of-false",
+      "title": "natBinaryLoad_update_true_of_false",
+      "href": "misc/natBinaryLoad-update-true-of-false.html"
+    },
+    {
+      "id": "natBinarySocialWelfare",
+      "title": "natBinarySocialWelfare",
+      "href": "misc/natBinarySocialWelfare.html"
+    },
+    {
+      "id": "natBinarySocialWelfare-eq-add-of-true",
+      "title": "natBinarySocialWelfare_eq_add_of_true",
+      "href": "misc/natBinarySocialWelfare-eq-add-of-true.html"
+    },
+    {
+      "id": "natBinarySocialWelfare-update-true-of-false",
+      "title": "natBinarySocialWelfare_update_true_of_false",
+      "href": "misc/natBinarySocialWelfare-update-true-of-false.html"
+    },
+    {
+      "id": "supportedOn",
+      "title": "supportedOn",
+      "href": "misc/supportedOn.html"
+    },
+    {
+      "id": "supportedOn-nil-iff",
+      "title": "supportedOn_nil_iff",
+      "href": "misc/supportedOn-nil-iff.html"
+    },
+    {
+      "id": "supportedOn-tail-of-eq-false",
+      "title": "supportedOn_tail_of_eq_false",
+      "href": "misc/supportedOn-tail-of-eq-false.html"
+    },
+    {
+      "id": "supportedOn-update-false",
+      "title": "supportedOn_update_false",
+      "href": "misc/supportedOn-update-false.html"
+    },
+    {
+      "id": "welfareMaximizer-ge",
+      "title": "welfareMaximizer_ge",
+      "href": "misc/welfareMaximizer-ge.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BinaryAllocation",
+      "display_name": "BinaryAllocation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

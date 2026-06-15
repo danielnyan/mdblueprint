@@ -1,0 +1,431 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "reserve_le_clearingPrice",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma reserve_le_clearingPrice (reserve : U) (b : I \u2192 U) : reserve \u2264 clearingPrice reserve b"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "secondPrice_le_clearingPrice",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 90
+      },
+      "start": {
+        "column": 1,
+        "line": 90
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma secondPrice_le_clearingPrice (reserve : U) (b : I \u2192 U) : SecondPrice.secondPrice b \u2264 clearingPrice reserve b"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "winner_eq_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma winner_eq_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : SecondPrice.winner b = i"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "reserve_le_bid_winner_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma reserve_le_bid_winner_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : reserve \u2264 b (SecondPrice.winner b)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "allocation_eq_some_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 123
+      },
+      "start": {
+        "column": 1,
+        "line": 123
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma allocation_eq_some_iff {reserve : U} {b : I \u2192 U} {i : I} : allocation reserve b = some i \u2194 reserve \u2264 b (SecondPrice.winner b) \u2227 SecondPrice.winner b = i"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "allocation_eq_some_winner_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma allocation_eq_some_winner_iff {reserve : U} {b : I \u2192 U} : allocation reserve b = some (SecondPrice.winner b) \u2194 reserve \u2264 b (SecondPrice.winner b)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "allocation_eq_none_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma allocation_eq_none_iff {reserve : U} {b : I \u2192 U} : allocation reserve b = none \u2194 b (SecondPrice.winner b) < reserve"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "winner_eq_of_allocation_eq_some",
+      "reserve_le_bid_winner_of_allocation_eq_some",
+      "secondPrice_le_bid_winner"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "clearingPrice_le_bid_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 153
+      },
+      "start": {
+        "column": 1,
+        "line": 153
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma clearingPrice_le_bid_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : clearingPrice reserve b \u2264 b i"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "winner_eq_of_allocation_eq_some",
+      "bid_le_maxBid",
+      "maxBid",
+      "maxBidExcluding_eq_maxBid_of_not_argmax",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "argmaxBid_eq_maxBid",
+      "maxBidExcluding_update_self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 167
+      },
+      "start": {
+        "column": 1,
+        "line": 167
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : clearingPrice reserve b = max reserve (Auction.maxBidExcluding b i)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "utility_winner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 219
+      },
+      "start": {
+        "column": 1,
+        "line": 219
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma utility_winner {b : I \u2192 U} {i : I} (h : allocation reserve b = some i) : utility reserve v b i = v i - clearingPrice reserve b"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "utility_loser",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 223
+      },
+      "start": {
+        "column": 1,
+        "line": 223
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma utility_loser {b : I \u2192 U} {i : I} (h : allocation reserve b \u2260 some i) : utility reserve v b i = 0"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "utility_winner",
+      "clearingPrice_le_bid_of_allocation_eq_some",
+      "utility_loser"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "utility_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 227
+      },
+      "start": {
+        "column": 1,
+        "line": 227
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma utility_nonneg {b : I \u2192 U} {i : I} (htruth : b i = v i) : 0 \u2264 utility reserve v b i"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "utility_winner",
+      "clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some",
+      "maxBidExcluding_update_self",
+      "utility_loser",
+      "utility_nonneg",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "valuation_is_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 235
+      },
+      "start": {
+        "column": 1,
+        "line": 235
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "theorem valuation_is_dominant (reserve : U) (v : I \u2192 U) (i : I) (b : I \u2192 U) : utility reserve v b i \u2264 utility reserve v (Function.update b i (v i)) i"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "valuation_is_dominant",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "truthful_weakly_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 276
+      },
+      "start": {
+        "column": 1,
+        "line": 276
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "theorem truthful_weakly_dominant (reserve : U) (v : I \u2192 U) (i : I) : IsWeaklyDominant (game reserve v) i (v i)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "mechanism_payment_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 306
+      },
+      "start": {
+        "column": 1,
+        "line": 306
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma mechanism_payment_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : (mechanism reserve).paymentRule b i = clearingPrice reserve b"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "mechanism_payment_of_allocation_ne_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 313
+      },
+      "start": {
+        "column": 1,
+        "line": 313
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma mechanism_payment_of_allocation_ne_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b \u2260 some i) : (mechanism reserve).paymentRule b i = 0"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "mechanism_payment_of_allocation_ne_some"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "mechanism_payment_eq_zero_of_allocation_eq_none",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 320
+      },
+      "start": {
+        "column": 1,
+        "line": 320
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma mechanism_payment_eq_zero_of_allocation_eq_none {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = none) : (mechanism reserve).paymentRule b i = 0"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "mechanism_payment_of_allocation_eq_some",
+      "clearingPrice_le_bid_of_allocation_eq_some"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "mechanism_payment_le_bid_of_allocation_eq_some",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 327
+      },
+      "start": {
+        "column": 1,
+        "line": 327
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma mechanism_payment_le_bid_of_allocation_eq_some {reserve : U} {b : I \u2192 U} {i : I} (halloc : allocation reserve b = some i) : (mechanism reserve).paymentRule b i \u2264 b i"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "game_eq_toStrategicGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 335
+      },
+      "start": {
+        "column": 1,
+        "line": 335
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "lemma game_eq_toStrategicGame (reserve : U) (v : I \u2192 U) : game reserve v = (mechanism reserve).toStrategicGame (fun (w : Option I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if w = some i then vals i - pay i else 0) v"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "truthful_weakly_dominant",
+      "game_eq_toStrategicGame",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.ReserveVickrey",
+    "name": "mechanism_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 348
+      },
+      "start": {
+        "column": 1,
+        "line": 348
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/ReserveVickrey.lean",
+    "type": "theorem mechanism_isDSIC (reserve : U) : (mechanism reserve).isDSIC (fun (w : Option I) (pay : I \u2192 U) (vals : I \u2192 U) (i : I) => if w = some i then vals i - pay i else 0)"
+  }
+]

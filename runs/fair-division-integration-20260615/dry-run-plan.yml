@@ -1,0 +1,7 @@
+operations:
+  - op: add-dependency
+    node_id: social_choice.fair_division.divisible.cardinal_instance
+    dependency: social_choice.fair_division.divisible.allocation
+  - op: add-dependency
+    node_id: social_choice.fair_division.indivisible.cardinal_instance
+    dependency: social_choice.fair_division.indivisible.allocation

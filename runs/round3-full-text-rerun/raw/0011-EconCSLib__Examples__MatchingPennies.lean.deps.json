@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.MatchingPennies",
+    "source": "mp_isZeroSum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.MatchingPennies",
+    "source": "mp_isZeroSum",
+    "target": "matchingPennies"
+  }
+]

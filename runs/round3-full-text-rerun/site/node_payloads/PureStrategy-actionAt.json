@@ -1,0 +1,42 @@
+{
+  "id": "PureStrategy-actionAt",
+  "title": "PureStrategy.actionAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/PureStrategy-actionAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>PureStrategy.actionAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef PureStrategy.actionAt {i : N} (σ : G.PureStrategy i) {s : G.State} {k : G.InfoSet} (hinfo : G.info s = some k) (hmover : G.mover s = some i) : G.Action s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PureStrategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PureStrategy",
+      "title": "PureStrategy",
+      "href": "misc/PureStrategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "PureStrategy.actionAt",
+      "display_name": "PureStrategy.actionAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

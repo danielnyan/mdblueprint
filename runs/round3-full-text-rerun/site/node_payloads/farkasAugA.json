@@ -1,0 +1,53 @@
+{
+  "id": "farkasAugA",
+  "title": "farkasAugA",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/farkasAugA.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>farkasAugA</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef farkasAugA (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜) : FarkasAugRow I → Fin (n+1) → 𝕜 | Sum.inl i, j =&gt; Fin.lastCases (-b i) (fun j' =&gt; A i j') j | Sum.inr false, j =&gt; Fin.lastCases 1 (fun _ =&gt; (0 : 𝕜)) j | Sum.inr true, j =&gt; Fin.lastCases d (fun j' =&gt; -c j') j /-- Augmented RHS `b_aug : FarkasAugRow I → 𝕜`. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>FarkasAugRow</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "FarkasAugRow",
+      "title": "FarkasAugRow",
+      "href": "misc/FarkasAugRow.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "farkas-lemma",
+      "title": "farkas_lemma",
+      "href": "misc/farkas-lemma.html"
+    },
+    {
+      "id": "farkasAugB",
+      "title": "farkasAugB",
+      "href": "misc/farkasAugB.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "farkasAugA",
+      "display_name": "farkasAugA",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

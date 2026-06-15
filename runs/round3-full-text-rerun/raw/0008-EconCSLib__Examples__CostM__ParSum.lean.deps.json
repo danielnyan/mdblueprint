@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "parSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_clog",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "source": "parSum_cost_le_length",
+    "target": "parSum"
+  }
+]

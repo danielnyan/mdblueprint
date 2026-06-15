@@ -1,0 +1,57 @@
+{
+  "id": "proportional-exists",
+  "title": "proportional_exists",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/proportional-exists.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>proportional_exists</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem proportional_exists {N : Type*} [Fintype N] [Nonempty N] (μ : N → Measure I) [∀ i, IsFiniteMeasure (μ i)] [∀ i, NoAtoms (μ i)] : ∃ A : Allocation N I, IsAllocation A ∧ IsProportional (Fintype.card N) (MeasureValuation μ) A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n<li>MeasureValuation</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>dubinsSpanierProportional</li>\n<li>Profile.ext</li>\n<li>mem_iUnion</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    },
+    {
+      "id": "MeasureValuation",
+      "title": "MeasureValuation",
+      "href": "misc/MeasureValuation.html"
+    },
+    {
+      "id": "dubinsSpanierProportional",
+      "title": "dubinsSpanierProportional",
+      "href": "misc/dubinsSpanierProportional.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "proportional_exists",
+      "display_name": "proportional_exists",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

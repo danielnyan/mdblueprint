@@ -1,0 +1,52 @@
+{
+  "id": "MatrixGame-antisymmetric-exists-optimal-strategy",
+  "title": "MatrixGame.antisymmetric_exists_optimal_strategy",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/MatrixGame-antisymmetric-exists-optimal-strategy.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>MatrixGame.antisymmetric_exists_optimal_strategy</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem MatrixGame.antisymmetric_exists_optimal_strategy {B : I → I → ℝ} (hB : IsAntisymmetric B) : ∃ y : stdSimplex ℝ I, ∀ i, ∑ j, B i j * y.val j ≤ 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAntisymmetric</li>\n<li>optimalRowStrategies</li>\n<li>optimalColumnStrategies</li>\n<li>exists_mixed_nash_equilibrium</li>\n<li>optimal_pairs_iff_saddle_point</li>\n<li>mem_optimalColumnStrategies_iff_E_le</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>wsum_pure_apply</li>\n<li>MatrixGame.antisymmetric_value_zero</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsAntisymmetric",
+      "title": "IsAntisymmetric",
+      "href": "misc/IsAntisymmetric.html"
+    },
+    {
+      "id": "optimalRowStrategies",
+      "title": "optimalRowStrategies",
+      "href": "misc/optimalRowStrategies.html"
+    },
+    {
+      "id": "optimalColumnStrategies",
+      "title": "optimalColumnStrategies",
+      "href": "misc/optimalColumnStrategies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "MatrixGame.antisymmetric_exists_optimal_strategy",
+      "display_name": "MatrixGame.antisymmetric_exists_optimal_strategy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

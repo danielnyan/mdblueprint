@@ -1,0 +1,53 @@
+{
+  "id": "answerElab",
+  "title": "answerElab",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/answerElab.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>answerElab</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[term_elab answer] def answerElab : TermElab</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>elabTermAndAnnotate</li>\n<li>mkAnswerAnnotation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "elabTermAndAnnotate",
+      "title": "elabTermAndAnnotate",
+      "href": "misc/elabTermAndAnnotate.html"
+    },
+    {
+      "id": "mkAnswerAnnotation",
+      "title": "mkAnswerAnnotation",
+      "href": "misc/mkAnswerAnnotation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "AnswerInfo-format",
+      "title": "AnswerInfo.format",
+      "href": "misc/AnswerInfo-format.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "answerElab",
+      "display_name": "answerElab",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "expectedPayoff-restrictSubgame-init",
+  "title": "expectedPayoff_restrictSubgame_init",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedPayoff-restrictSubgame-init.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedPayoff_restrictSubgame_init</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem expectedPayoff_restrictSubgame_init {G : ExtensiveGame iota Real} [(s : G.State) -&gt; Fintype (G.Action s)] [(s : G.State) -&gt; Decidable (IsEmpty (G.Action s))] (beta : G.BehaviorProfile) (fuel : Nat) (who : iota) : expectedPayoff (G.subgameAt G.init) (beta.restrictSubgame G.init) fuel who = expectedPayoff G beta fuel who</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isEmpty</li>\n<li>BehaviorProfile</li>\n<li>expectedPayoff</li>\n<li>subgameAt</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n<li>restrictSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isEmpty",
+      "title": "isEmpty",
+      "href": "misc/isEmpty.html"
+    },
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "subgameAt",
+      "title": "subgameAt",
+      "href": "misc/subgameAt.html"
+    },
+    {
+      "id": "restrictSubgame",
+      "title": "restrictSubgame",
+      "href": "misc/restrictSubgame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedPayoff_restrictSubgame_init",
+      "display_name": "expectedPayoff_restrictSubgame_init",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

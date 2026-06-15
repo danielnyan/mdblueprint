@@ -1,0 +1,42 @@
+{
+  "id": "reachableSubgameAt-next",
+  "title": "reachableSubgameAt_next",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/reachableSubgameAt-next.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>reachableSubgameAt_next</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem reachableSubgameAt_next (G : ExtensiveGame iota U) (root : G.State) (s : (G.reachableSubgameAt root).State) (a : (G.reachableSubgameAt root).Action s) : (G.reachableSubgameAt root).next s a = ⟨G.next s.1 a, s.2.step' a⟩</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>reachableSubgameAt</li>\n<li>IsReachable.next</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "reachableSubgameAt",
+      "title": "reachableSubgameAt",
+      "href": "misc/reachableSubgameAt.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "reachableSubgameAt_next",
+      "display_name": "reachableSubgameAt_next",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "name": "mkAnswerAnnotation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 72
+      },
+      "start": {
+        "column": 1,
+        "line": 72
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/Util/Answer.lean",
+    "type": "def mkAnswerAnnotation (e : Expr) : Expr"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "name": "findAnswerExpr",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/Util/Answer.lean",
+    "type": "def findAnswerExpr (e : Expr) : Option Expr"
+  },
+  {
+    "dependencies": [
+      "mkAnswerAnnotation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "name": "elabTermAndAnnotate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/Util/Answer.lean",
+    "type": "def elabTermAndAnnotate (stx : TSyntax `term) (expectedType? : Option Expr) (postpone : Bool"
+  },
+  {
+    "dependencies": [
+      "elabTermAndAnnotate",
+      "mkAnswerAnnotation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "name": "answerElab",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/Util/Answer.lean",
+    "type": "@[term_elab answer] def answerElab : TermElab"
+  },
+  {
+    "dependencies": [
+      "answerElab",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.Util.Answer",
+    "name": "AnswerInfo.format",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/Util/Answer.lean",
+    "type": "def AnswerInfo.format (a : AnswerInfo) : Elab.Term.TermElabM MessageData"
+  }
+]

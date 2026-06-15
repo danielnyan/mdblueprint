@@ -1,0 +1,78 @@
+{
+  "id": "uniformProfile",
+  "title": "uniformProfile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/uniformProfile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>uniformProfile</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef uniformProfile : MixedProfile RPS</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>MixedProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "rps-dev0",
+      "title": "rps_dev0",
+      "href": "misc/rps-dev0.html"
+    },
+    {
+      "id": "rps-dev1",
+      "title": "rps_dev1",
+      "href": "misc/rps-dev1.html"
+    },
+    {
+      "id": "rps-eu-uniform-0",
+      "title": "rps_eu_uniform_0",
+      "href": "misc/rps-eu-uniform-0.html"
+    },
+    {
+      "id": "rps-eu-uniform-1",
+      "title": "rps_eu_uniform_1",
+      "href": "misc/rps-eu-uniform-1.html"
+    },
+    {
+      "id": "rps-mixed-nash",
+      "title": "rps_mixed_nash",
+      "href": "misc/rps-mixed-nash.html"
+    },
+    {
+      "id": "rps-mixed-nash-unique",
+      "title": "rps_mixed_nash_unique",
+      "href": "misc/rps-mixed-nash-unique.html"
+    },
+    {
+      "id": "rps-uniform-completely-mixed",
+      "title": "rps_uniform_completely_mixed",
+      "href": "misc/rps-uniform-completely-mixed.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "uniformProfile",
+      "display_name": "uniformProfile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

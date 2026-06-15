@@ -1,0 +1,42 @@
+{
+  "id": "value₀-Node-one-isMin",
+  "title": "value₀_Node_one_isMin",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀-Node-one-isMin.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀_Node_one_isMin</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value₀_Node_one_isMin (h : GameTree (Fin 2) ℚ) (t : List (GameTree (Fin 2) ℚ)) (hzs : IsZeroSum (Node (1 : Fin 2) h t)) : ∃ c ∈ h :: t, value₀ (Node (1 : Fin 2) h t) = value₀ c ∧ ∀ d ∈ h :: t, value₀ c ≤ value₀ d</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>value₀_Node_eq_some_child</li>\n<li>value₀_Node_one_le_child</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀_Node_one_isMin",
+      "display_name": "value₀_Node_one_isMin",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

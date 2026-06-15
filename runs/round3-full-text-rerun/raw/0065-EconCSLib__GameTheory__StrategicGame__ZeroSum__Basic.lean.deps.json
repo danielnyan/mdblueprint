@@ -1,0 +1,254 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.zero_isZeroSum",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.zero_isZeroSum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "IsConstantSum.nash_payoff_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "IsZeroSum.nash_payoff_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq_p1",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsConstantSum.neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsZeroSum.neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsConstantSum.nash_payoff_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq_p1",
+    "target": "IsZeroSum.nash_payoff_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.neg",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.neg",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "isZeroSum_iff_isConstantSum_zero",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "isZeroSum_iff_isConstantSum_zero",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.toIsConstantSum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.toIsConstantSum",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq",
+    "target": "IsConstantSum.neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.nash_payoff_eq",
+    "target": "IsZeroSum.neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.welfare_eq_zero",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.welfare_eq_zero",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.nash_payoff_eq",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.welfare_eq",
+    "target": "IsConstantSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum.welfare_eq",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.neg",
+    "target": "IsConstantSum.neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.neg",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.neg",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.neg",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsConstantSum",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.expectedPayoff_neg",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.expectedPayoff_neg",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Basic",
+    "source": "IsZeroSum.expectedPayoff_neg",
+    "target": "expectedPayoff"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "id": "IsEnvyFree-isProportional-additive",
+  "title": "IsEnvyFree.isProportional_additive",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEnvyFree-isProportional-additive.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEnvyFree.isProportional_additive</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsEnvyFree.isProportional_additive [Fintype N] [DecidableEq G] (w : AdditiveValuation N G) {allGoods : Finset G} {A : Allocation N G} (hA : IsAllocation allGoods A) (hEF : IsEnvyFree w.toValuation A) : IsProportional (Fintype.card N) w.toValuation allGoods A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n<li>toValuation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    },
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsEnvyFree.isProportional_additive",
+      "display_name": "IsEnvyFree.isProportional_additive",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

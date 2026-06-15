@@ -1,0 +1,138 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "IsMaximin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 127
+      },
+      "start": {
+        "column": 1,
+        "line": 127
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "def IsMaximin (A : MatrixGame I J \ud835\udd5c) (v : \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "IsMinimax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "def IsMinimax (A : MatrixGame I J \ud835\udd5c) (v : \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "IsValue",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "def IsValue (A : MatrixGame I J \ud835\udd5c) (v : \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "Continuity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "and",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 181
+      },
+      "start": {
+        "column": 1,
+        "line": 181
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "theorem and are proved by aliasing the simplified-Loomis development in [`MinimaxLoomis`](MinimaxLoomis.lean). The Loomis proof uses \u211d-specific compactness / continuity, so the theorems are pinned to \u211d even though their statements (via `maximin` / `minimax` above) make sense over any order-complete linearly ordered field. -/ section LayerThree variable (A : MatrixGame I J \u211d) /-- Maximin \u2264 minimax (always holds, for any matrix game). This is the finite weak-duality inequality. -/"
+  },
+  {
+    "dependencies": [
+      "lam0_le_mu0"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "maximin_le_minimax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 192
+      },
+      "start": {
+        "column": 1,
+        "line": 192
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "theorem maximin_le_minimax : A.maximin \u2264 A.minimax"
+  },
+  {
+    "dependencies": [
+      "minmax_from_general"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "minimax_theorem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 205
+      },
+      "start": {
+        "column": 1,
+        "line": 205
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "theorem minimax_theorem : A.maximin = A.minimax"
+  },
+  {
+    "dependencies": [
+      "exists_xx_lam0",
+      "exists_yy_mu0",
+      "minmax_from_general"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "name": "minimax_optimal_strategies",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 214
+      },
+      "start": {
+        "column": 1,
+        "line": 214
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "type": "theorem minimax_optimal_strategies : \u2203 (xx : stdSimplex \u211d I) (yy : stdSimplex \u211d J) (v : \u211d), (\u2200 j : J, A.Ej xx j \u2265 v) \u2227 (\u2200 i : I, A.Ei i yy \u2264 v)"
+  }
+]

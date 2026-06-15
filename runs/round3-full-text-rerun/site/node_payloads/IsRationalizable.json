@@ -1,0 +1,53 @@
+{
+  "id": "IsRationalizable",
+  "title": "IsRationalizable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRationalizable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRationalizable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsRationalizable (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsNashEquilibrium.survives</li>\n<li>Survives</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Survives",
+      "title": "Survives",
+      "href": "misc/Survives.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsNashEquilibrium-isRationalizable",
+      "title": "IsNashEquilibrium.isRationalizable",
+      "href": "misc/IsNashEquilibrium-isRationalizable.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsRationalizable",
+      "display_name": "IsRationalizable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

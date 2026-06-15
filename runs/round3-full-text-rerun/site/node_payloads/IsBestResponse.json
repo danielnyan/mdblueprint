@@ -1,0 +1,78 @@
+{
+  "id": "IsBestResponse",
+  "title": "IsBestResponse",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsBestResponse.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsBestResponse</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsBestResponse (G : StrategicGame N U) (σ : G.Profile) (i : N) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsWeaklyDominant-isBestResponse",
+      "title": "IsWeaklyDominant.isBestResponse",
+      "href": "misc/IsWeaklyDominant-isBestResponse.html"
+    },
+    {
+      "id": "congr-payoff",
+      "title": "congr_payoff",
+      "href": "misc/congr-payoff.html"
+    },
+    {
+      "id": "isNashEq-iff",
+      "title": "isNashEq_iff",
+      "href": "misc/isNashEq-iff.html"
+    },
+    {
+      "id": "of-dominant",
+      "title": "of_dominant",
+      "href": "misc/of-dominant.html"
+    },
+    {
+      "id": "toStrategicGame-nash-iff-isNashAt",
+      "title": "toStrategicGame_nash_iff_isNashAt",
+      "href": "misc/toStrategicGame-nash-iff-isNashAt.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsBestResponse",
+      "display_name": "IsBestResponse",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

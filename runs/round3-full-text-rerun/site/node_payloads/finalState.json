@@ -1,0 +1,128 @@
+{
+  "id": "finalState",
+  "title": "finalState",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/finalState.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>finalState</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef finalState (choose : (s : G.State) → G.Action s) (fuel : ℕ) : G.State</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>playMoves</li>\n<li>sampleGame</li>\n<li>isWinner</li>\n<li>Board</li>\n<li>TTTState.isOver</li>\n<li>CPState.isOver</li>\n<li>tttGame</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "playMoves",
+      "title": "playMoves",
+      "href": "misc/playMoves.html"
+    },
+    {
+      "id": "sampleGame",
+      "title": "sampleGame",
+      "href": "misc/sampleGame.html"
+    },
+    {
+      "id": "isWinner",
+      "title": "isWinner",
+      "href": "misc/isWinner.html"
+    },
+    {
+      "id": "Board",
+      "title": "Board",
+      "href": "misc/Board.html"
+    },
+    {
+      "id": "tttGame",
+      "title": "tttGame",
+      "href": "misc/tttGame.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "daStep-holding",
+      "title": "daStep_holding",
+      "href": "misc/daStep-holding.html"
+    },
+    {
+      "id": "final-all-men-held",
+      "title": "final_all_men_held",
+      "href": "misc/final-all-men-held.html"
+    },
+    {
+      "id": "final-all-women-hold",
+      "title": "final_all_women_hold",
+      "href": "misc/final-all-women-hold.html"
+    },
+    {
+      "id": "final-holding-injective",
+      "title": "final_holding_injective",
+      "href": "misc/final-holding-injective.html"
+    },
+    {
+      "id": "finalPayoff",
+      "title": "finalPayoff",
+      "href": "misc/finalPayoff.html"
+    },
+    {
+      "id": "finalState-NoAchievableRejection",
+      "title": "finalState_NoAchievableRejection",
+      "href": "misc/finalState-NoAchievableRejection.html"
+    },
+    {
+      "id": "finalState-no-free-men",
+      "title": "finalState_no_free_men",
+      "href": "misc/finalState-no-free-men.html"
+    },
+    {
+      "id": "finalState-succ",
+      "title": "finalState_succ",
+      "href": "misc/finalState-succ.html"
+    },
+    {
+      "id": "finalState-zero",
+      "title": "finalState_zero",
+      "href": "misc/finalState-zero.html"
+    },
+    {
+      "id": "galeShapley-isProposingOptimal",
+      "title": "galeShapley_isProposingOptimal",
+      "href": "misc/galeShapley-isProposingOptimal.html"
+    },
+    {
+      "id": "galeShapley-isStable",
+      "title": "galeShapley_isStable",
+      "href": "misc/galeShapley-isStable.html"
+    },
+    {
+      "id": "holdinv-finalState",
+      "title": "holdinv_finalState",
+      "href": "misc/holdinv-finalState.html"
+    },
+    {
+      "id": "initState-injective",
+      "title": "initState_injective",
+      "href": "misc/initState-injective.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "finalState",
+      "display_name": "finalState",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

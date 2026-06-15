@@ -1,0 +1,47 @@
+{
+  "id": "matchingPennies-uniform-column-optimal",
+  "title": "matchingPennies_uniform_column_optimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/matchingPennies-uniform-column-optimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>matchingPennies_uniform_column_optimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem matchingPennies_uniform_column_optimal : matchingPenniesUniform ∈ matchingPennies.optimalColumnStrategies</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>optimalColumnStrategies</li>\n<li>matchingPennies</li>\n<li>mem_optimalColumnStrategies_iff_E_le</li>\n<li>matchingPennies_value</li>\n<li>wsum_le_wsum</li>\n<li>matchingPennies_uniform_column_guarantee</li>\n<li>wsum_const</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "optimalColumnStrategies",
+      "title": "optimalColumnStrategies",
+      "href": "misc/optimalColumnStrategies.html"
+    },
+    {
+      "id": "matchingPennies",
+      "title": "matchingPennies",
+      "href": "misc/matchingPennies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "matchingPennies_uniform_column_optimal",
+      "display_name": "matchingPennies_uniform_column_optimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

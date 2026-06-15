@@ -1,0 +1,53 @@
+{
+  "id": "NCdoors",
+  "title": "NCdoors",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/NCdoors.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>NCdoors</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev NCdoors</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isNearlyColorful</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isNearlyColorful",
+      "title": "isNearlyColorful",
+      "href": "misc/isNearlyColorful.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "doors-of-NCroom",
+      "title": "doors_of_NCroom",
+      "href": "misc/doors-of-NCroom.html"
+    },
+    {
+      "id": "firber2-doors-NCroom",
+      "title": "firber2_doors_NCroom",
+      "href": "misc/firber2-doors-NCroom.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "NCdoors",
+      "display_name": "NCdoors",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

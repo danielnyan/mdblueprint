@@ -1,0 +1,42 @@
+{
+  "id": "loomis-value-eq",
+  "title": "loomis_value_eq",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/loomis-value-eq.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>loomis_value_eq</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem loomis_value_eq (A B : I → J → ℝ) (hB : IsPositive B) : lamB0 A B = muB0 A B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositive</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "loomis_value_eq",
+      "display_name": "loomis_value_eq",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

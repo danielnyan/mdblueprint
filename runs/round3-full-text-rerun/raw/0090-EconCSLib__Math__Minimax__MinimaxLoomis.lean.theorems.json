@@ -1,0 +1,349 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "lam.aux_gt_iff_gt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem lam.aux_gt_iff_gt (A : I \u2192 J \u2192 \u211d) (c : \u211d) (x : stdSimplex \u211d I) : c < lam.aux A x \u2194 \u2200 j, c < wsum x (fun i => A i j)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "wsum_continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "lam.aux.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem lam.aux.continuous (A : I \u2192 J \u2192 \u211d) : Continuous (lam.aux A)"
+  },
+  {
+    "dependencies": [
+      "wsum_le_wsum",
+      "wsum_const",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "lam.aux.bddAbove",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 80
+      },
+      "start": {
+        "column": 1,
+        "line": 80
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem lam.aux.bddAbove (A : I \u2192 J \u2192 \u211d) : \u2203 C, \u2200 x, lam.aux A x \u2264 C"
+  },
+  {
+    "dependencies": [
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "lam.aux.le_lam0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem lam.aux.le_lam0 (A : I \u2192 J \u2192 \u211d) (x : stdSimplex \u211d I) : lam.aux A x \u2264 lam0 A"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "exists_xx_lam0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 114
+      },
+      "start": {
+        "column": 1,
+        "line": 114
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem exists_xx_lam0 (A : I \u2192 J \u2192 \u211d) : \u2203 xx : stdSimplex \u211d I, \u2200 j, lam0 A \u2264 wsum xx (fun i => A i j)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "mu.aux_lt_iff_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 137
+      },
+      "start": {
+        "column": 1,
+        "line": 137
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem mu.aux_lt_iff_lt (A : I \u2192 J \u2192 \u211d) (c : \u211d) (y : stdSimplex \u211d J) : mu.aux A y < c \u2194 \u2200 i, wsum y (fun j => A i j) < c"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "wsum_continuous"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "mu.aux.continuous",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem mu.aux.continuous (A : I \u2192 J \u2192 \u211d) : Continuous (mu.aux A)"
+  },
+  {
+    "dependencies": [
+      "wsum_const",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "wsum_le_wsum",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "mu.aux.bddBelow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 149
+      },
+      "start": {
+        "column": 1,
+        "line": 149
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem mu.aux.bddBelow (A : I \u2192 J \u2192 \u211d) : \u2203 C, \u2200 y, C \u2264 mu.aux A y"
+  },
+  {
+    "dependencies": [
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "mu.aux.ge_mu0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 170
+      },
+      "start": {
+        "column": 1,
+        "line": 170
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem mu.aux.ge_mu0 (A : I \u2192 J \u2192 \u211d) (y : stdSimplex \u211d J) : mu0 A \u2264 mu.aux A y"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "exists_yy_mu0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 178
+      },
+      "start": {
+        "column": 1,
+        "line": 178
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem exists_yy_mu0 (A : I \u2192 J \u2192 \u211d) : \u2203 yy : stdSimplex \u211d J, \u2200 i, wsum yy (fun j => A i j) \u2264 mu0 A"
+  },
+  {
+    "dependencies": [
+      "exists_xx_lam0",
+      "exists_yy_mu0",
+      "wsum_wsum_comm",
+      "ge_iff_simplex_ge",
+      "le_iff_simplex_le"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "lam0_le_mu0",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 194
+      },
+      "start": {
+        "column": 1,
+        "line": 194
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem lam0_le_mu0 (A : I \u2192 J \u2192 \u211d) : lam0 A \u2264 mu0 A"
+  },
+  {
+    "dependencies": [
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "singleton_of_card_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 212
+      },
+      "start": {
+        "column": 1,
+        "line": 212
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem singleton_of_card_one {K : Type*} [Fintype K] [DecidableEq K] (H : Fintype.card K = 1) : \u2203 a : K, (Finset.univ : Finset K) = {a}"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "sum_split_at",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 231
+      },
+      "start": {
+        "column": 1,
+        "line": 231
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem sum_split_at [DecidableEq J] (j\u2080 : J) (f : J \u2192 \u211d) : \u2211 j : J, f j = f j\u2080 + \u2211 j' : {j : J // j \u2260 j\u2080}, f j'.val"
+  },
+  {
+    "dependencies": [
+      "sum_split_at"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "wsum_extendDropColumn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 267
+      },
+      "start": {
+        "column": 1,
+        "line": 267
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem wsum_extendDropColumn [DecidableEq J] (j\u2080 : J) (y' : stdSimplex \u211d {j : J // j \u2260 j\u2080}) (f : J \u2192 \u211d) : wsum (extendDropColumn j\u2080 y') f = \u2211 j' : {j : J // j \u2260 j\u2080}, y'.val j' * f j'.val"
+  },
+  {
+    "dependencies": [
+      "wsum_extendDropColumn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "name": "wsum_extendDropRow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 284
+      },
+      "start": {
+        "column": 1,
+        "line": 284
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "type": "theorem wsum_extendDropRow [DecidableEq I] (i\u2080 : I) (x' : stdSimplex \u211d {i : I // i \u2260 i\u2080}) (f : I \u2192 \u211d) : wsum (extendDropRow i\u2080 x') f = \u2211 i' : {i : I // i \u2260 i\u2080}, x'.val i' * f i'.val"
+  }
+]

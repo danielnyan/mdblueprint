@@ -1,0 +1,157 @@
+{
+  "id": "Player",
+  "title": "Player",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Player.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Player</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Player</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "ChanceProbabilitiesSumToOne",
+      "title": "ChanceProbabilitiesSumToOne",
+      "href": "misc/ChanceProbabilitiesSumToOne.html"
+    },
+    {
+      "id": "PUInterval",
+      "title": "PUInterval",
+      "href": "misc/PUInterval.html"
+    },
+    {
+      "id": "actionAt-same-info-label",
+      "title": "actionAt_same_info_label",
+      "href": "misc/actionAt-same-info-label.html"
+    },
+    {
+      "id": "candidateChoice-has-ne",
+      "title": "candidateChoice_has_ne",
+      "href": "misc/candidateChoice-has-ne.html"
+    },
+    {
+      "id": "candidateChoice-has-spe",
+      "title": "candidateChoice_has_spe",
+      "href": "misc/candidateChoice-has-spe.html"
+    },
+    {
+      "id": "candidateChoiceGame",
+      "title": "candidateChoiceGame",
+      "href": "misc/candidateChoiceGame.html"
+    },
+    {
+      "id": "larryChoice",
+      "title": "larryChoice",
+      "href": "misc/larryChoice.html"
+    },
+    {
+      "id": "leaf-hasOnlyRootSubgames",
+      "title": "leaf_hasOnlyRootSubgames",
+      "href": "misc/leaf-hasOnlyRootSubgames.html"
+    },
+    {
+      "id": "leaf-nash-to-spe-on",
+      "title": "leaf_nash_to_spe_on",
+      "href": "misc/leaf-nash-to-spe-on.html"
+    },
+    {
+      "id": "ofGameTree",
+      "title": "ofGameTree",
+      "href": "misc/ofGameTree.html"
+    },
+    {
+      "id": "payoff",
+      "title": "payoff",
+      "href": "misc/payoff.html"
+    },
+    {
+      "id": "sample",
+      "title": "sample",
+      "href": "misc/sample.html"
+    },
+    {
+      "id": "sample-optStrategy-spe-on",
+      "title": "sample_optStrategy_spe_on",
+      "href": "misc/sample-optStrategy-spe-on.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "sample-zermelo-determinacy",
+      "title": "sample_zermelo_determinacy",
+      "href": "misc/sample-zermelo-determinacy.html"
+    },
+    {
+      "id": "sample-zermelo-ne",
+      "title": "sample_zermelo_ne",
+      "href": "misc/sample-zermelo-ne.html"
+    },
+    {
+      "id": "sample-zermelo-spe",
+      "title": "sample_zermelo_spe",
+      "href": "misc/sample-zermelo-spe.html"
+    },
+    {
+      "id": "sample-zero-sum",
+      "title": "sample_zero_sum",
+      "href": "misc/sample-zero-sum.html"
+    },
+    {
+      "id": "sergeyChoice",
+      "title": "sergeyChoice",
+      "href": "misc/sergeyChoice.html"
+    },
+    {
+      "id": "terminal",
+      "title": "terminal",
+      "href": "misc/terminal.html"
+    },
+    {
+      "id": "tiny",
+      "title": "tiny",
+      "href": "misc/tiny.html"
+    },
+    {
+      "id": "utility",
+      "title": "utility",
+      "href": "misc/utility.html"
+    },
+    {
+      "id": "value-prop",
+      "title": "value_prop",
+      "href": "misc/value-prop.html"
+    },
+    {
+      "id": "zeroSumLeaf",
+      "title": "zeroSumLeaf",
+      "href": "misc/zeroSumLeaf.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Player",
+      "display_name": "Player",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

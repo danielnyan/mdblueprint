@@ -1,0 +1,530 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_key",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_key",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_key",
+    "target": "TT.Ilt_keyprop"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_key",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_key",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt_keyprop",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "room_seq",
+    "target": "Scarf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "room_seq",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "room_seq",
+    "target": "Fcolor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "hpkg",
+    "target": "hpkg_aux"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "tendsto_diam_to_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "room_point_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "dominant_coords_tend_to_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "f_coords_ge_z_coords"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Brouwer",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt_def",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt_def",
+    "target": "TT.Ilt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "StrictlyPreferred.irrefl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TT.Ilt",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "TTtostdSimplex",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "exists_subseq_constant_of_finite_image",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "exists_subseq_constant_of_finite_image",
+    "target": "mk_subseq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "Fcolor",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "hpkg_aux",
+    "target": "room_point_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "room_point_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "pick_colorful_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "size_bound_out"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "dominant_coords_tend_to_zero",
+    "target": "TTtostdSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "constant_index_set_nonempty",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "constant_index_set_nonempty",
+    "target": "exists_subseq_constant_of_finite_image"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "gpkg",
+    "target": "constant_index_set_nonempty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "size_bound_key"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "Brouwer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_out",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "room_point_seq",
+    "target": "pick_colorful_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "room_point_seq",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "tendsto_diam_to_zero",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "tendsto_diam_to_zero",
+    "target": "TTtostdSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "tendsto_diam_to_zero",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "tendsto_diam_to_zero",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "tendsto_diam_to_zero",
+    "target": "size_bound_in"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "TT"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "size_bound_key"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "size_bound_in",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "room_point_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "room_seq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "Fcolor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "TTtostdSimplex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "pick_colorful_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "tendsto_diam_to_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "source": "f_coords_ge_z_coords",
+    "target": "Survives.mono"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree",
+      "IsEFX.isEF1",
+      "IsEF1"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+    "name": "isEnvyFree_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 56
+      },
+      "start": {
+        "column": 1,
+        "line": 56
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean",
+    "type": "theorem isEnvyFree_iff [Fintype N] (v : Valuation N G) (A : Allocation N G) : isEnvyFree v A = true \u2194 IsEnvyFree v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEFX.isEF1",
+      "IsEF1",
+      "IsEFX"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+    "name": "isEF1_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean",
+    "type": "theorem isEF1_iff [Fintype N] [DecidableEq N] [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : isEF1 v A = true \u2194 IsEF1 v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEFX",
+      "IsEnvyFree.isProportional",
+      "IsProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+    "name": "isEFX_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean",
+    "type": "theorem isEFX_iff [Fintype N] [DecidableEq N] [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : isEFX v A = true \u2194 IsEFX v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Checker",
+    "name": "isProportional_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Checker.lean",
+    "type": "theorem isProportional_iff [Fintype N] (n : \u2115) (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : isProportional n v allGoods A = true \u2194 IsProportional n v allGoods A"
+  }
+]

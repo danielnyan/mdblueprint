@@ -1,0 +1,80 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkasAugA",
+    "target": "FarkasAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "farkasAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "farkasAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "rowEval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "HasCertificate"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkas_lemma",
+    "target": "theorem_of_alternative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkasAugB",
+    "target": "FarkasAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkasAugB",
+    "target": "farkasAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "source": "farkasAugB",
+    "target": "rowEval"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "id": "exists-invariant-distribution",
+  "title": "exists_invariant_distribution",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-invariant-distribution.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_invariant_distribution</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem exists_invariant_distribution (A : I → I → ℝ) (hA : IsStochasticMatrix A) : ∃ x : stdSimplex ℝ I, ∀ j, ∑ i, x.val i * A i j = x.val j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>optimalRowStrategies</li>\n<li>optimalColumnStrategies</li>\n<li>exists_mixed_nash_equilibrium</li>\n<li>optimal_pairs_iff_saddle_point</li>\n<li>mem_optimalRowStrategies_iff_E_ge</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>wsum_pure_apply</li>\n<li>total_mass_preserved</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "optimalRowStrategies",
+      "title": "optimalRowStrategies",
+      "href": "misc/optimalRowStrategies.html"
+    },
+    {
+      "id": "optimalColumnStrategies",
+      "title": "optimalColumnStrategies",
+      "href": "misc/optimalColumnStrategies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_invariant_distribution",
+      "display_name": "exists_invariant_distribution",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

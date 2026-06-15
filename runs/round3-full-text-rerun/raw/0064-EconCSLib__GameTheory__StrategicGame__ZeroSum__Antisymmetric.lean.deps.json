@@ -1,0 +1,134 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "IsAntisymmetric"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "exists_mixed_nash_equilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "optimal_pairs_iff_saddle_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_value_zero",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "IsAntisymmetric"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "exists_mixed_nash_equilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "optimal_pairs_iff_saddle_point"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "MatrixGame.antisymmetric_exists_optimal_strategy",
+    "target": "MatrixGame.antisymmetric_value_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "IsAntisymmetric.diag_zero",
+    "target": "IsAntisymmetric"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Antisymmetric",
+    "source": "IsAntisymmetric.quadform_zero",
+    "target": "IsAntisymmetric"
+  }
+]

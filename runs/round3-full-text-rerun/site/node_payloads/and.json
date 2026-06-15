@@ -1,0 +1,42 @@
+{
+  "id": "and",
+  "title": "and",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/and.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>and</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem and are proved by aliasing the simplified-Loomis development in [`MinimaxLoomis`](MinimaxLoomis.lean). The Loomis proof uses ℝ-specific compactness / continuity, so the theorems are pinned to ℝ even though their statements (via `maximin` / `minimax` above) make sense over any order-complete linearly ordered field. -/ section LayerThree variable (A : MatrixGame I J ℝ) /-- Maximin ≤ minimax (always holds, for any matrix game). This is the finite weak-duality inequality. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Continuity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Continuity",
+      "title": "Continuity",
+      "href": "misc/Continuity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "and",
+      "display_name": "and",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

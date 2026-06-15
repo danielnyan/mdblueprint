@@ -1,0 +1,47 @@
+{
+  "id": "SWF-IsDictator",
+  "title": "SWF.IsDictator",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/SWF-IsDictator.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>SWF.IsDictator</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef SWF.IsDictator [Fintype N] [Fintype A] (F : SWF N A) (i : N) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>IsDecisive</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "IsDecisive",
+      "title": "IsDecisive",
+      "href": "misc/IsDecisive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "SWF.IsDictator",
+      "display_name": "SWF.IsDictator",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

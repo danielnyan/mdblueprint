@@ -1,0 +1,42 @@
+{
+  "id": "gs-partner-isAchievable",
+  "title": "gs_partner_isAchievable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/gs-partner-isAchievable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>gs_partner_isAchievable</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma gs_partner_isAchievable (j : Fin n) : IsAchievable w m j ((Equiv.ofBijective (gs w m) (gs_bijective w m)).symm j)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAchievable</li>\n<li>gs_bijective</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>galeShapley_isStable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsAchievable",
+      "title": "IsAchievable",
+      "href": "misc/IsAchievable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "gs_partner_isAchievable",
+      "display_name": "gs_partner_isAchievable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

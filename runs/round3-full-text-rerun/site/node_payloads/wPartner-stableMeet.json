@@ -1,0 +1,36 @@
+{
+  "id": "wPartner-stableMeet",
+  "title": "wPartner_stableMeet",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/wPartner-stableMeet.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>wPartner_stableMeet</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma wPartner_stableMeet (j : Fin n) : wPartner (stableMeet μ ν hμ hν) (stableMeet_isStable μ ν hμ hν) j = (meetEquiv μ ν hμ hν).symm j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>stableMeet_isStable</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "wPartner_stableMeet",
+      "display_name": "wPartner_stableMeet",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

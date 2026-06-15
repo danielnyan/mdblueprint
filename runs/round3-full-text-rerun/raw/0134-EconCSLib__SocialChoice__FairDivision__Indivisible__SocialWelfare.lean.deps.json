@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "nsmul_egalitarianWelfare_le_utilitarianWelfare",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "IsUtilitarianOptimal",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "IsUtilitarianOptimal",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "IsMaxmin",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "IsMaxmin",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "utilitarianWelfare_unique",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "utilitarianWelfare_unique",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "utilitarianWelfare_mono",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "utilitarianWelfare_mono",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "egalitarianWelfare_le",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.SocialWelfare",
+    "source": "egalitarianWelfare_le",
+    "target": "Allocation"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "id": "Unanimity",
+  "title": "Unanimity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Unanimity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Unanimity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Unanimity (f : VotingRule N A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Profile</li>\n<li>Prefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ParetoEfficiency",
+      "title": "ParetoEfficiency",
+      "href": "misc/ParetoEfficiency.html"
+    },
+    {
+      "id": "arrow-impossibility",
+      "title": "arrow_impossibility",
+      "href": "misc/arrow-impossibility.html"
+    },
+    {
+      "id": "arrow-of-unanimity-iia",
+      "title": "arrow_of_unanimity_iia",
+      "href": "misc/arrow-of-unanimity-iia.html"
+    },
+    {
+      "id": "decisive-contraction",
+      "title": "decisive_contraction",
+      "href": "misc/decisive-contraction.html"
+    },
+    {
+      "id": "decisive-minimal",
+      "title": "decisive_minimal",
+      "href": "misc/decisive-minimal.html"
+    },
+    {
+      "id": "decisive-spread",
+      "title": "decisive_spread",
+      "href": "misc/decisive-spread.html"
+    },
+    {
+      "id": "exists-minimal-decisive-coalition",
+      "title": "exists_minimal_decisive_coalition",
+      "href": "misc/exists-minimal-decisive-coalition.html"
+    },
+    {
+      "id": "gibbard-satterthwaite",
+      "title": "gibbard_satterthwaite",
+      "href": "misc/gibbard-satterthwaite.html"
+    },
+    {
+      "id": "iia-strict",
+      "title": "iia_strict",
+      "href": "misc/iia-strict.html"
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller_satterthwaite",
+      "href": "misc/muller-satterthwaite.html"
+    },
+    {
+      "id": "over",
+      "title": "over",
+      "href": "misc/over.html"
+    },
+    {
+      "id": "singleton-unanimity-dictatorial",
+      "title": "singleton_unanimity_dictatorial",
+      "href": "misc/singleton-unanimity-dictatorial.html"
+    },
+    {
+      "id": "singleton-unanimity-isDictator",
+      "title": "singleton_unanimity_isDictator",
+      "href": "misc/singleton-unanimity-isDictator.html"
+    },
+    {
+      "id": "top-unanimity-of-unanimity",
+      "title": "top_unanimity_of_unanimity",
+      "href": "misc/top-unanimity-of-unanimity.html"
+    },
+    {
+      "id": "unanimity-univ-isDecisive",
+      "title": "unanimity_univ_isDecisive",
+      "href": "misc/unanimity-univ-isDecisive.html"
+    },
+    {
+      "id": "unanimous-strict-pref-not-chosen",
+      "title": "unanimous_strict_pref_not_chosen",
+      "href": "misc/unanimous-strict-pref-not-chosen.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Unanimity",
+      "display_name": "Unanimity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

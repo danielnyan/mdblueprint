@@ -1,0 +1,68 @@
+{
+  "id": "inducedPayments",
+  "title": "inducedPayments",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/inducedPayments.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>inducedPayments</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef inducedPayments (B : BayesianMechanismWithTransfers I T M A P) (σ : StrategyProfile T M) (t : ∀ i, T i) : I → P</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StrategyProfile</li>\n<li>inducedMessages</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StrategyProfile",
+      "title": "StrategyProfile",
+      "href": "misc/StrategyProfile.html"
+    },
+    {
+      "id": "inducedMessages",
+      "title": "inducedMessages",
+      "href": "misc/inducedMessages.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IntegrableExAnteUtility",
+      "title": "IntegrableExAnteUtility",
+      "href": "misc/IntegrableExAnteUtility.html"
+    },
+    {
+      "id": "directRevelation",
+      "title": "directRevelation",
+      "href": "misc/directRevelation.html"
+    },
+    {
+      "id": "exAnte-revelation-principle",
+      "title": "exAnte_revelation_principle",
+      "href": "misc/exAnte-revelation-principle.html"
+    },
+    {
+      "id": "toBayesianMechanism",
+      "title": "toBayesianMechanism",
+      "href": "misc/toBayesianMechanism.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "inducedPayments",
+      "display_name": "inducedPayments",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

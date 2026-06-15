@@ -1,0 +1,296 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "Player",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "abbrev Player"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "zeroSumLeaf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 48
+      },
+      "start": {
+        "column": 1,
+        "line": 48
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "def zeroSumLeaf (v : \u211a) : Player \u2192 \u211a | \u27e80, _\u27e9 => v | \u27e81, _\u27e9 => -v /-- The sample game tree (see module docstring). -/"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "zeroSumLeaf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "def sample : GameTree Player \u211a"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "zeroSumLeaf",
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsSubgamePerfect",
+      "Kuhn_exists_SPE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_zero_sum : IsZeroSum sample"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsSubgamePerfectOn",
+      "zermelo_exists_pure_SPE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_zermelo_spe",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_zermelo_spe : \u2203 \u03c3 : Strategy Player \u211a, IsSubgamePerfectOn \u03c3 sample"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsNashEquilibrium",
+      "zermelo_exists_pure_NE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_zermelo_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_zermelo_ne : \u2203 \u03c3 : Strategy Player \u211a, GameTree.IsNashEquilibrium \u03c3 sample"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IVariant",
+      "zermelo_determinacy",
+      "sample_zero_sum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_zermelo_determinacy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_zermelo_determinacy : (\u2200 \u03c3' : Strategy Player \u211a, IVariant (1 : Player) optStrategy \u03c3' \u2192 value\u2080 sample \u2264 outcome \u03c3' sample 0) \u2227 (\u2200 \u03c3' : Strategy Player \u211a, IVariant (0 : Player) optStrategy \u03c3' \u2192 outcome \u03c3' sample 0 \u2264 value\u2080 sample)"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "HasOnlyRootSubgames"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "leaf_hasOnlyRootSubgames",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem leaf_hasOnlyRootSubgames (p : Player \u2192 \u211a) : HasOnlyRootSubgames (Leaf p : GameTree Player \u211a)"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "Strategy",
+      "IsNashAt",
+      "IsSubgamePerfectOn",
+      "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+      "leaf_hasOnlyRootSubgames"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "leaf_nash_to_spe_on",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 109
+      },
+      "start": {
+        "column": 1,
+        "line": 109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem leaf_nash_to_spe_on (p : Player \u2192 \u211a) {\u03c3 : Strategy Player \u211a} (hnash : GameTree.IsNashAt \u03c3 (Leaf p)) : IsSubgamePerfectOn \u03c3 (Leaf p)"
+  },
+  {
+    "dependencies": [
+      "value_zero_sum",
+      "sample_zero_sum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_value_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 115
+      },
+      "start": {
+        "column": 1,
+        "line": 115
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_value_zero_sum : (value sample) 0 + (value sample) 1 = 0"
+  },
+  {
+    "dependencies": [
+      "IsSubgamePerfectOn",
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsSubgamePerfect.toSubgamePerfectOn",
+      "optStrategy_isSubgamePerfect"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_optStrategy_spe_on",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_optStrategy_spe_on : IsSubgamePerfectOn (optStrategy : Strategy Player \u211a) sample"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame",
+      "Profile",
+      "IsNashEquilibrium",
+      "IsNashAt",
+      "profileStrategy",
+      "Strategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "toStrategicGame_nash_iff_isNashAt",
+      "optStrategy_isSubgamePerfect",
+      "IsSubgamePerfect.toNE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "name": "sample_strategic_form_has_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "type": "theorem sample_strategic_form_has_nash : \u2203 \u03c3 : (toStrategicGame sample).Profile, IsNashEquilibrium (toStrategicGame sample) \u03c3 \u2227 IsNashAt (profileStrategy \u03c3) sample"
+  }
+]

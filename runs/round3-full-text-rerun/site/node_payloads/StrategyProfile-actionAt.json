@@ -1,0 +1,42 @@
+{
+  "id": "StrategyProfile-actionAt",
+  "title": "StrategyProfile.actionAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/StrategyProfile-actionAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>StrategyProfile.actionAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef StrategyProfile.actionAt [DecidableEq N] {G : ExtensiveGame N U} (σ : StrategyProfile G) (s : G.State) : Option (Σ i : N, G.Action s)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StrategyProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StrategyProfile",
+      "title": "StrategyProfile",
+      "href": "misc/StrategyProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrategyProfile.actionAt",
+      "display_name": "StrategyProfile.actionAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

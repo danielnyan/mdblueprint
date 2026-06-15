@@ -1,0 +1,42 @@
+{
+  "id": "StrictlyPreferred-trans",
+  "title": "StrictlyPreferred.trans",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/StrictlyPreferred-trans.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>StrictlyPreferred.trans</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem StrictlyPreferred.trans {a b c : A} (h₁ : StrictlyPreferred a b) (h₂ : StrictlyPreferred b c) : StrictlyPreferred a c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StrictlyPreferred</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StrictlyPreferred",
+      "title": "StrictlyPreferred",
+      "href": "misc/StrictlyPreferred.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "StrictlyPreferred.trans",
+      "display_name": "StrictlyPreferred.trans",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

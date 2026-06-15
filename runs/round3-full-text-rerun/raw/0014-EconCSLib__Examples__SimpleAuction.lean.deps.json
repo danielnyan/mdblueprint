@@ -1,0 +1,116 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p1",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p1",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p1",
+    "target": "Vickrey"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p1",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_truthful_nash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_truthful_nash",
+    "target": "Vickrey"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_truthful_nash",
+    "target": "of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_truthful_nash",
+    "target": "vickrey4_p0_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_truthful_nash",
+    "target": "vickrey4_p1_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p0",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p0",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "truthful_weakly_dominant_p0",
+    "target": "Vickrey"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p0_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p0_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p0_dominant",
+    "target": "Vickrey"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p1_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p1_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "vickrey4_p1_dominant",
+    "target": "Vickrey"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.SimpleAuction",
+    "source": "Vickrey",
+    "target": "Strategy"
+  }
+]

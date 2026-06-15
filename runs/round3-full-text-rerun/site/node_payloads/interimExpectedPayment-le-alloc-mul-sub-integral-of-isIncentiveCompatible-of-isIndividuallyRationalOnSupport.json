@@ -1,0 +1,47 @@
+{
+  "id": "interimExpectedPayment-le-alloc-mul-sub-integral-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport",
+  "title": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/interimExpectedPayment-le-alloc-mul-sub-integral-of-isIncentiveCompatible-of-isIndividuallyRationalOnSupport.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport (A : BayesianSingleItemAuction I) (hIC : A.IsIncentiveCompatible) (hIR : A.IsIndividuallyRationalOnSupport) (i : I) (v_i : ℝ) : A.interimExpectedPayment i v_i ≤ A.interimAllocProb i v_i * v_i - ∫ z in 0..v_i, A.interimAllocProb i z</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>hasInterimPaymentFormula_of_isIncentiveCompatible</li>\n<li>interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "display_name": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "clearingPrice-le-bid-of-allocation-eq-some",
+  "title": "clearingPrice_le_bid_of_allocation_eq_some",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/clearingPrice-le-bid-of-allocation-eq-some.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>clearingPrice_le_bid_of_allocation_eq_some</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma clearingPrice_le_bid_of_allocation_eq_some {reserve : U} {b : I → U} {i : I} (halloc : allocation reserve b = some i) : clearingPrice reserve b ≤ b i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>winner_eq_of_allocation_eq_some</li>\n<li>reserve_le_bid_winner_of_allocation_eq_some</li>\n<li>secondPrice_le_bid_winner</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "clearingPrice_le_bid_of_allocation_eq_some",
+      "display_name": "clearingPrice_le_bid_of_allocation_eq_some",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

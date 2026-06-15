@@ -1,0 +1,57 @@
+{
+  "id": "fiber-size-internal-door",
+  "title": "fiber_size_internal_door",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fiber-size-internal-door.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fiber_size_internal_door</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma fiber_size_internal_door (c : T → I) (i : I) (y : Finset T × Finset I) (hy_internal : IST.isInternalDoor y.1 y.2) (hy_typed : isTypedNC c i y.1 y.2) : let s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isInternalDoor</li>\n<li>isTypedNC</li>\n<li>isOutsideDoor</li>\n<li>internal_door_two_rooms</li>\n<li>Profile.ext</li>\n<li>isRoom</li>\n<li>isRoom_of_Door</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isInternalDoor",
+      "title": "isInternalDoor",
+      "href": "misc/isInternalDoor.html"
+    },
+    {
+      "id": "isTypedNC",
+      "title": "isTypedNC",
+      "href": "misc/isTypedNC.html"
+    },
+    {
+      "id": "isOutsideDoor",
+      "title": "isOutsideDoor",
+      "href": "misc/isOutsideDoor.html"
+    },
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fiber_size_internal_door",
+      "display_name": "fiber_size_internal_door",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

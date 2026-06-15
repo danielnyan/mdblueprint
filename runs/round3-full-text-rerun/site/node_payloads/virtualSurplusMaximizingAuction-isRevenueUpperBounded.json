@@ -1,0 +1,52 @@
+{
+  "id": "virtualSurplusMaximizingAuction-isRevenueUpperBounded",
+  "title": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-isRevenueUpperBounded.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_isRevenueUpperBounded</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_isRevenueUpperBounded [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (hopt_int : A.IntegrableVirtualSurplus (A.virtualSurplusMaximizingAuction).allocationRule) (hopt_id : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction) : A.IsRevenueUpperBounded A.virtualSurplusMaximizingAuction</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n<li>IsRevenueUpperBounded</li>\n<li>isRevenueUpperBounded_of_isRevenueComparable</li>\n<li>virtualSurplusMaximizingAuction_isRevenueComparable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "IsRevenueUpperBounded",
+      "title": "IsRevenueUpperBounded",
+      "href": "misc/IsRevenueUpperBounded.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+      "display_name": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

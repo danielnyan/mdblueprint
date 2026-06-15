@@ -1,0 +1,36 @@
+{
+  "id": "productPrior-map-eval",
+  "title": "productPrior_map_eval",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/productPrior-map-eval.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>productPrior_map_eval</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem productPrior_map_eval [Fintype I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) : A.productPrior.map (Function.eval i) = A.typeMeasure i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "productPrior_map_eval",
+      "display_name": "productPrior_map_eval",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

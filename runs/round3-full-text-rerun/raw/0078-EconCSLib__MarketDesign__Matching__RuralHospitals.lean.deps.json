@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+    "source": "stable_matching_perfect",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+    "source": "stable_matching_perfect",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+    "source": "stable_matching_perfect",
+    "target": "Indifferent.symm"
+  }
+]

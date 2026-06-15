@@ -1,0 +1,115 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "source": "deviate",
+      "target": "Profile"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "source": "deviate_self",
+      "target": "Profile"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "source": "deviate_same",
+      "target": "Profile"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "source": "deviate_of_ne",
+      "target": "Profile"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Strategy Profile\n\nGiven a strategic game $(I, (S_i), (u_i))$, a strategy profile is a tuple\n$\\sigma = (\\sigma_i)_{i \\in I}$ where $\\sigma_i \\in S_i$ for each player $i$.\n\nIn Lean, a profile is `\u2200 i, G.strategy i`.",
+    "file_path": "docs/knowledge/nodes/strategic_games/strategy_profile.md",
+    "id": "strategic_games.strategy_profile",
+    "kind": "definition",
+    "lean": {
+      "declarations": [
+        "StrategicGame.Profile"
+      ],
+      "modules": [
+        "GameTheoryLib.StrategicGame.Basic"
+      ],
+      "repository": null
+    },
+    "status": "admitted",
+    "tags": [
+      "strategic-game",
+      "foundational"
+    ],
+    "title": "Strategy Profile",
+    "uses": [
+      "strategic_games.strategic_game"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "abbrev Profile (G : StrategicGame N U) := \u2200 i, G.strategy i\n\n/-- Unilateral deviation in a game-bound profile: player `i` switches to `s'`,\n    while all other players keep their current strategies. -/\n",
+      "column": 1,
+      "end": 1969,
+      "kind": "theorem",
+      "line": 49,
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "name": "Profile",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "start": 1767
+    },
+    {
+      "body": "abbrev deviate {G : StrategicGame N U} [DecidableEq N]\n    (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) : G.Profile :=\n  Function.update \u03c3 i s'\n\n/-- `\u03c3[i \u21a6 s']` is the profile where player `i` switches to `s'`. -/\nnotation:max \u03c3 \"[\" i \" \u21a6 \" s \"]\" => StrategicGame.deviate \u03c3 i s\n\nnamespace Profile\n\nvariable {G : StrategicGame N U} [DecidableEq N]\n\n/-- Deviating to the same strategy is the identity. -/\n",
+      "column": 1,
+      "end": 2371,
+      "kind": "theorem",
+      "line": 53,
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "name": "deviate",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "start": 1969
+    },
+    {
+      "body": "@[simp]\ntheorem deviate_self (\u03c3 : G.Profile) (i : N) :\n    deviate \u03c3 i (\u03c3 i) = \u03c3 := by\n  simp [StrategicGame.deviate]\n\n/-- At the deviated player, the updated profile returns the new strategy. -/\n",
+      "column": 1,
+      "end": 2567,
+      "kind": "theorem",
+      "line": 65,
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "name": "deviate_self",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "start": 2371
+    },
+    {
+      "body": "@[simp]\ntheorem deviate_same (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) :\n    deviate \u03c3 i s' i = s' := by\n  simp [StrategicGame.deviate]\n\n/-- At every other player, the updated profile is unchanged. -/\n",
+      "column": 1,
+      "end": 2770,
+      "kind": "theorem",
+      "line": 71,
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "name": "deviate_same",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "start": 2567
+    },
+    {
+      "body": "@[simp]\ntheorem deviate_of_ne (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) {j : N} (h : j \u2260 i) :\n    deviate \u03c3 i s' j = \u03c3 j := by\n  simp [StrategicGame.deviate, h]\n\nend Profile\n\n/-! ### Welfare -/\n\n/-- The social welfare of a profile: the sum of all players' payoffs.\n    Requires `[Fintype N]` and `[AddCommMonoid U]`. -/\nnoncomputable def welfare [Fintype N] [AddCommMonoid U]\n    (G : StrategicGame N U) (\u03c3 : G.Profile) : U :=\n  \u2211 i, G.payoff \u03c3 i\n\nend StrategicGame\n",
+      "column": 1,
+      "end": 3238,
+      "kind": "theorem",
+      "line": 77,
+      "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+      "name": "deviate_of_ne",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "start": 2770
+    }
+  ]
+}

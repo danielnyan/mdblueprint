@@ -1,0 +1,52 @@
+{
+  "id": "diagonalGame",
+  "title": "diagonalGame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/diagonalGame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>diagonalGame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef diagonalGame (a : I → ℝ) : MatrixGame I I ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>diagonalGame_value</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "diagonalGame-column-guarantee",
+      "title": "diagonalGame_column_guarantee",
+      "href": "misc/diagonalGame-column-guarantee.html"
+    },
+    {
+      "id": "diagonalGame-row-guarantee",
+      "title": "diagonalGame_row_guarantee",
+      "href": "misc/diagonalGame-row-guarantee.html"
+    },
+    {
+      "id": "diagonalGame-value",
+      "title": "diagonalGame_value",
+      "href": "misc/diagonalGame-value.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "diagonalGame",
+      "display_name": "diagonalGame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

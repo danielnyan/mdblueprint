@@ -1,0 +1,38 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+    "name": "Allocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 42
+      },
+      "start": {
+        "column": 1,
+        "line": 42
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Basic.lean",
+    "type": "def Allocation (N G : Type*)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Basic",
+    "name": "mem_biUnion",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Basic.lean",
+    "type": "lemma mem_biUnion (h : IsAllocation allGoods A) (g : G) (hg : g \u2208 allGoods) : \u2203 i : N, g \u2208 A i"
+  }
+]

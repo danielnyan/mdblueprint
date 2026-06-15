@@ -1,0 +1,43 @@
+[
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEFX"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.EFXExistence",
+    "name": "EFXExistenceStatement",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 33
+      },
+      "start": {
+        "column": 1,
+        "line": 33
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/EFXExistence.lean",
+    "type": "def EFXExistenceStatement : Prop"
+  },
+  {
+    "dependencies": [
+      "EFXExistenceStatement"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.OpenProblem.EFXExistence",
+    "name": "efxExistence",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/OpenProblem/EFXExistence.lean",
+    "type": "theorem efxExistence : answer(sorry) \u2194 EFXExistenceStatement"
+  }
+]

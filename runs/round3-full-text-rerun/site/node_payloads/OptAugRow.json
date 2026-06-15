@@ -1,0 +1,57 @@
+{
+  "id": "OptAugRow",
+  "title": "OptAugRow",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/OptAugRow.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>OptAugRow</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev OptAugRow (I : Type*) (n : ℕ) : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "exists-col-strict-pair",
+      "title": "exists_col_strict_pair",
+      "href": "misc/exists-col-strict-pair.html"
+    },
+    {
+      "id": "exists-row-strict-pair",
+      "title": "exists_row_strict_pair",
+      "href": "misc/exists-row-strict-pair.html"
+    },
+    {
+      "id": "optAugA",
+      "title": "optAugA",
+      "href": "misc/optAugA.html"
+    },
+    {
+      "id": "optAugB",
+      "title": "optAugB",
+      "href": "misc/optAugB.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "OptAugRow",
+      "display_name": "OptAugRow",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

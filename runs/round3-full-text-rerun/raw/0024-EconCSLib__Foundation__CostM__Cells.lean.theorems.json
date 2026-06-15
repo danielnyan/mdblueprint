@@ -1,0 +1,38 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Cells",
+    "name": "alloc",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Cells.lean",
+    "type": "def alloc (n : \u2115) : Cells"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Cells",
+    "name": "free",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Cells.lean",
+    "type": "def free (n : \u2115) : Cells"
+  }
+]

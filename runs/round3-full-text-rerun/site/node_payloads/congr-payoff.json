@@ -1,0 +1,47 @@
+{
+  "id": "congr-payoff",
+  "title": "congr_payoff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/congr-payoff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>congr_payoff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem congr_payoff (G : StrategicGame N U) (σ : G.Profile) (i : N) {payoff' : G.Profile → N → U} (h : ∀ τ : G.Profile, payoff' τ i = G.payoff τ i) : IsBestResponse G σ i ↔ IsBestResponse { G with payoff</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>IsWeaklyDominant.isBestResponse</li>\n<li>IsBestResponse</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsBestResponse",
+      "title": "IsBestResponse",
+      "href": "misc/IsBestResponse.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "congr_payoff",
+      "display_name": "congr_payoff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "centipede",
+  "title": "centipede",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/centipede.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>centipede</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef centipede (n : ℕ) : ExtensiveGame (Fin 2) ℤ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsReachable.next</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n<li>TTTState.isOver</li>\n<li>CPState.isOver</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "centipede",
+      "display_name": "centipede",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,98 @@
+{
+  "id": "IsEFX",
+  "title": "IsEFX",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEFX.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEFX</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsEFX {N G : Type*} [DecidableEq G] (I : AdditiveInstance N G) (A : Allocation N G) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "EFXExistenceStatement",
+      "title": "EFXExistenceStatement",
+      "href": "misc/EFXExistenceStatement.html"
+    },
+    {
+      "id": "IsEFX-isEF1",
+      "title": "IsEFX.isEF1",
+      "href": "misc/IsEFX-isEF1.html"
+    },
+    {
+      "id": "IsEFX-of-noEnvy-mono",
+      "title": "IsEFX.of_noEnvy_mono",
+      "href": "misc/IsEFX-of-noEnvy-mono.html"
+    },
+    {
+      "id": "IsEnvyFree-isEFX-of-mono",
+      "title": "IsEnvyFree.isEFX_of_mono",
+      "href": "misc/IsEnvyFree-isEFX-of-mono.html"
+    },
+    {
+      "id": "efx-exists-two-agents",
+      "title": "efx_exists_two_agents",
+      "href": "misc/efx-exists-two-agents.html"
+    },
+    {
+      "id": "efx-two-agents-two-goods",
+      "title": "efx_two_agents_two_goods",
+      "href": "misc/efx-two-agents-two-goods.html"
+    },
+    {
+      "id": "isEF1-iff",
+      "title": "isEF1_iff",
+      "href": "misc/isEF1-iff.html"
+    },
+    {
+      "id": "isEFX-iff",
+      "title": "isEFX_iff",
+      "href": "misc/isEFX-iff.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsEFX",
+      "display_name": "IsEFX",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

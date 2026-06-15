@@ -1,0 +1,93 @@
+{
+  "id": "IVariant",
+  "title": "IVariant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IVariant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IVariant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IVariant (i : N) (σ σ' : Strategy N U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IVariant-refl",
+      "title": "IVariant.refl",
+      "href": "misc/IVariant-refl.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsSubgamePerfect",
+      "title": "IsSubgamePerfect",
+      "href": "misc/IsSubgamePerfect.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn",
+      "title": "IsSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfectOn.html"
+    },
+    {
+      "id": "outcome-le-value₀-of-iVariant-zero",
+      "title": "outcome_le_value₀_of_iVariant_zero",
+      "href": "misc/outcome-le-value₀-of-iVariant-zero.html"
+    },
+    {
+      "id": "profileStrategy-deviate-eq-of-variant",
+      "title": "profileStrategy_deviate_eq_of_variant",
+      "href": "misc/profileStrategy-deviate-eq-of-variant.html"
+    },
+    {
+      "id": "profileStrategy-deviate-variant",
+      "title": "profileStrategy_deviate_variant",
+      "href": "misc/profileStrategy-deviate-variant.html"
+    },
+    {
+      "id": "sample-zermelo-determinacy",
+      "title": "sample_zermelo_determinacy",
+      "href": "misc/sample-zermelo-determinacy.html"
+    },
+    {
+      "id": "value₀-le-outcome-of-iVariant-one",
+      "title": "value₀_le_outcome_of_iVariant_one",
+      "href": "misc/value₀-le-outcome-of-iVariant-one.html"
+    },
+    {
+      "id": "zermelo-determinacy",
+      "title": "zermelo_determinacy",
+      "href": "misc/zermelo-determinacy.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IVariant",
+      "display_name": "IVariant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

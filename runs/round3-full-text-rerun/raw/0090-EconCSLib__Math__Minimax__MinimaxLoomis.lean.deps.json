@@ -1,0 +1,386 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "sum_split_at",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "sum_split_at",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.continuous",
+    "target": "wsum_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.continuous",
+    "target": "wsum_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.bddBelow",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam0_le_mu0",
+    "target": "exists_xx_lam0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam0_le_mu0",
+    "target": "exists_yy_mu0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam0_le_mu0",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam0_le_mu0",
+    "target": "ge_iff_simplex_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam0_le_mu0",
+    "target": "le_iff_simplex_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "wsum_extendDropRow",
+    "target": "wsum_extendDropColumn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "singleton_of_card_one",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_yy_mu0",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.bddAbove",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "exists_xx_lam0",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.ge_mu0",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "mu.aux.ge_mu0",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.le_lam0",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "lam.aux.le_lam0",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "source": "wsum_extendDropColumn",
+    "target": "sum_split_at"
+  }
+]

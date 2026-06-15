@@ -1,0 +1,165 @@
+[
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium.survives",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "Survives",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 40
+      },
+      "start": {
+        "column": 1,
+        "line": 40
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "def Survives (G : StrategicGame N U) : \u2115 \u2192 (i : N) \u2192 G.strategy i \u2192 Prop | 0 => fun _ _ => True | n + 1 => fun i s => G.Survives n i s \u2227 \u00ac \u2203 t : G.strategy i, G.Survives n i t \u2227 \u2200 \u03c3 : G.Profile, (\u2200 j, G.Survives n j (\u03c3 j)) \u2192 G.payoff (deviate \u03c3 i s) i < G.payoff (deviate \u03c3 i t) i /-- Survival at round n+1 implies survival at round n. -/"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium.survives",
+      "Survives"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "Survives.prev",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "theorem Survives.prev {G : StrategicGame N U} {n : \u2115} {i : N} {s : G.strategy i} (h : G.Survives (n + 1) i s) : G.Survives n i s"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium.survives",
+      "Survives",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "Survives.prev"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "Survives.mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "theorem Survives.mono {G : StrategicGame N U} {m n : \u2115} (hmn : m \u2264 n) {i : N} {s : G.strategy i} (h : G.Survives n i s) : G.Survives m i s"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium.survives",
+      "Survives"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "IsRationalizable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "def IsRationalizable (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium",
+      "Survives",
+      "deviate_self"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "IsNashEquilibrium.survives",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "theorem IsNashEquilibrium.survives {G : StrategicGame N U} {\u03c3 : G.Profile} (hN : IsNashEquilibrium G \u03c3) : \u2200 (n : \u2115) (i : N), G.Survives n i (\u03c3 i)"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium",
+      "IsRationalizable",
+      "IsNashEquilibrium.survives",
+      "Survives"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "IsNashEquilibrium.isRationalizable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "theorem IsNashEquilibrium.isRationalizable {G : StrategicGame N U} {\u03c3 : G.Profile} (hN : IsNashEquilibrium G \u03c3) (i : N) : G.IsRationalizable i (\u03c3 i)"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsNashEquilibrium.survives",
+      "Survives"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "name": "IsDominanceSolvable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/IESDS.lean",
+    "type": "def IsDominanceSolvable (G : StrategicGame N U) : Prop"
+  }
+]

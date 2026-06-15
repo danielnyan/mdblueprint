@@ -1,0 +1,42 @@
+{
+  "id": "symMat-skew",
+  "title": "symMat_skew",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/symMat-skew.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>symMat_skew</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem symMat_skew (A : I → J → 𝕜) : ∀ k l, symMat A k l = - symMat A l k</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>symMat</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "symMat",
+      "title": "symMat",
+      "href": "misc/symMat.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "symMat_skew",
+      "display_name": "symMat_skew",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

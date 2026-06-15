@@ -1,0 +1,42 @@
+{
+  "id": "dubinsSpanierRule-isProportional",
+  "title": "dubinsSpanierRule_isProportional",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dubinsSpanierRule-isProportional.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dubinsSpanierRule_isProportional</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem dubinsSpanierRule_isProportional (n : ℕ) (hn : 0 &lt; n) (M : MeasureInstance (Fin n) I) [∀ i, IsFiniteMeasure (M.measure i)] [∀ i, NoAtoms (M.measure i)] : M.IsProportional n (dubinsSpanierRule n hn M).1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsEnvyFree.isProportional</li>\n<li>IsProportional</li>\n<li>dubinsSpanier_exists_proportional_allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsProportional",
+      "title": "IsProportional",
+      "href": "misc/IsProportional.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dubinsSpanierRule_isProportional",
+      "display_name": "dubinsSpanierRule_isProportional",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

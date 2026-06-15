@@ -1,0 +1,42 @@
+{
+  "id": "quasiLinearUtility-eq-transferQuasiLinearUtility",
+  "title": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/quasiLinearUtility-eq-transferQuasiLinearUtility.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>quasiLinearUtility_eq_transferQuasiLinearUtility</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma quasiLinearUtility_eq_transferQuasiLinearUtility [Mul R] [Sub R] (b θ : I → R) (i : I) : M.quasiLinearUtility b θ i = MechanismWithTransfers.quasiLinearUtility (I</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>quasiLinearUtility</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "quasiLinearUtility",
+      "title": "quasiLinearUtility",
+      "href": "misc/quasiLinearUtility.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+      "display_name": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

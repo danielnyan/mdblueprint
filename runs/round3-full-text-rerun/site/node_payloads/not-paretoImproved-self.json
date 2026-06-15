@@ -1,0 +1,42 @@
+{
+  "id": "not-paretoImproved-self",
+  "title": "not_paretoImproved_self",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/not-paretoImproved-self.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>not_paretoImproved_self</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma not_paretoImproved_self (A : Allocation N G) : ¬ (IsAllocation allGoods A ∧ (∀ i, v.val i (A i) ≤ v.val i (A i)) ∧ ∃ i, v.val i (A i) &lt; v.val i (A i))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "not_paretoImproved_self",
+      "display_name": "not_paretoImproved_self",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

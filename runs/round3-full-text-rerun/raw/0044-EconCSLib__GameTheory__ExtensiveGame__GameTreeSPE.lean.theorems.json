@@ -1,0 +1,228 @@
+[
+  {
+    "dependencies": [
+      "size_mem_children_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "Strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "def Strategy (N U : Type*) : Type _"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "outcome_Leaf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "@[simp] theorem outcome_Leaf (\u03c3 : Strategy N U) (p : N \u2192 U) : outcome \u03c3 (Leaf p) = p"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "value_Node_eq_some_child_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "outcome_Node",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "@[simp] theorem outcome_Node (\u03c3 : Strategy N U) (m : N) (h : GameTree N U) (t : List (GameTree N U)) : outcome \u03c3 (Node m h t) = outcome \u03c3 (\u03c3 m h t).val"
+  },
+  {
+    "dependencies": [
+      "value_Node_eq_some_child_value",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "value_optStrategy_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "theorem value_optStrategy_eq [DecidableLE U] (m : N) (h : GameTree N U) (t : List (GameTree N U)) : value (optStrategy m h t).val = value (Node m h t)"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "IVariant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 115
+      },
+      "start": {
+        "column": 1,
+        "line": 115
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "def IVariant (i : N) (\u03c3 \u03c3' : Strategy N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IVariant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "IVariant.refl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 121
+      },
+      "start": {
+        "column": 1,
+        "line": 121
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "theorem IVariant.refl (i : N) (\u03c3 : Strategy N U) : IVariant i \u03c3 \u03c3"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IVariant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "IsSubgamePerfect",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "def IsSubgamePerfect (\u03c3 : Strategy N U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "strong_induction",
+      "outcome_Leaf",
+      "value\u2080_Leaf",
+      "value_Leaf",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "outcome_Node",
+      "value_optStrategy_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "outcome_optStrategy_eq_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 140
+      },
+      "start": {
+        "column": 1,
+        "line": 140
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "theorem outcome_optStrategy_eq_value [DecidableLE U] (g : GameTree N U) : outcome (optStrategy : Strategy N U) g = value g"
+  },
+  {
+    "dependencies": [
+      "IsSubgamePerfect",
+      "Strategy",
+      "strong_induction",
+      "outcome_Leaf",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "outcome_Node",
+      "outcome_optStrategy_eq_value",
+      "value_Node_ge",
+      "value_optStrategy_eq",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "optStrategy_isSubgamePerfect",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "theorem optStrategy_isSubgamePerfect [DecidableLE U] : IsSubgamePerfect (optStrategy : Strategy N U)"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfect",
+      "optStrategy_isSubgamePerfect"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "name": "Kuhn_exists_SPE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 199
+      },
+      "start": {
+        "column": 1,
+        "line": 199
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "type": "theorem Kuhn_exists_SPE [DecidableLE U] : \u2203 \u03c3 : Strategy N U, IsSubgamePerfect \u03c3"
+  }
+]

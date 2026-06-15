@@ -1,0 +1,98 @@
+{
+  "id": "IsCompletelyMixed",
+  "title": "IsCompletelyMixed",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsCompletelyMixed.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsCompletelyMixed</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsCompletelyMixed (G : StrategicGame N ℚ) {i : N} [Fintype (G.strategy i)] (p : MixedStrategy G i) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>BehaviorStrategy</li>\n<li>Strategy</li>\n<li>MixedStrategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "BehaviorStrategy",
+      "title": "BehaviorStrategy",
+      "href": "misc/BehaviorStrategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedStrategy",
+      "title": "MixedStrategy",
+      "href": "misc/MixedStrategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsCompletelyMixed-actionProb-pos",
+      "title": "IsCompletelyMixed.actionProb_pos",
+      "href": "misc/IsCompletelyMixed-actionProb-pos.html"
+    },
+    {
+      "id": "IsCompletelyMixed-player",
+      "title": "IsCompletelyMixed.player",
+      "href": "misc/IsCompletelyMixed-player.html"
+    },
+    {
+      "id": "IsCompletelyMixedProfile",
+      "title": "IsCompletelyMixedProfile",
+      "href": "misc/IsCompletelyMixedProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixedProfile-player",
+      "title": "IsCompletelyMixedProfile.player",
+      "href": "misc/IsCompletelyMixedProfile-player.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach",
+      "title": "IsCompletelyMixedWithPositiveReach",
+      "href": "misc/IsCompletelyMixedWithPositiveReach.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach-mixed",
+      "title": "IsCompletelyMixedWithPositiveReach.mixed",
+      "href": "misc/IsCompletelyMixedWithPositiveReach-mixed.html"
+    },
+    {
+      "id": "pureToMixed-not-isCompletelyMixed-of-ne",
+      "title": "pureToMixed_not_isCompletelyMixed_of_ne",
+      "href": "misc/pureToMixed-not-isCompletelyMixed-of-ne.html"
+    },
+    {
+      "id": "uniformMixed-isCompletelyMixed",
+      "title": "uniformMixed_isCompletelyMixed",
+      "href": "misc/uniformMixed-isCompletelyMixed.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsCompletelyMixed",
+      "display_name": "IsCompletelyMixed",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

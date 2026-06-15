@@ -1,0 +1,42 @@
+{
+  "id": "rps-zero-sum",
+  "title": "rps_zero_sum",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/rps-zero-sum.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>rps_zero_sum</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem rps_zero_sum : ∀ σ : RPS.Profile, RPS.payoff σ 0 + RPS.payoff σ 1 = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "rps_zero_sum",
+      "display_name": "rps_zero_sum",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "IsEnvyFree-isSource-all",
+  "title": "IsEnvyFree.isSource_all",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEnvyFree-isSource-all.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEnvyFree.isSource_all</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma IsEnvyFree.isSource_all (v : Valuation N G) (A : Allocation N G) (hef : IsEnvyFree v A) (i : N) : isSource v A i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n<li>isSource</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    },
+    {
+      "id": "isSource",
+      "title": "isSource",
+      "href": "misc/isSource.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsEnvyFree.isSource_all",
+      "display_name": "IsEnvyFree.isSource_all",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "argMaxOn",
+  "title": "argMaxOn",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/argMaxOn.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>argMaxOn</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef argMaxOn [TotalPreorder Y] [DecidableLE Y] (f : X → Y) (head : X) (tail : List X) : X</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "argMaxOn-ge",
+      "title": "argMaxOn_ge",
+      "href": "misc/argMaxOn-ge.html"
+    },
+    {
+      "id": "argMaxOn-mem",
+      "title": "argMaxOn_mem",
+      "href": "misc/argMaxOn-mem.html"
+    },
+    {
+      "id": "le-argMaxOn-head",
+      "title": "le_argMaxOn_head",
+      "href": "misc/le-argMaxOn-head.html"
+    },
+    {
+      "id": "value-Node",
+      "title": "value_Node",
+      "href": "misc/value-Node.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "argMaxOn",
+      "display_name": "argMaxOn",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

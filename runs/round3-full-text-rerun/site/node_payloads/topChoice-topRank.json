@@ -1,0 +1,52 @@
+{
+  "id": "topChoice-topRank",
+  "title": "topChoice_topRank",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/topChoice-topRank.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>topChoice_topRank</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem topChoice_topRank [Fintype N] [Fintype A] [Nonempty A] (P : Profile N A) (i : N) : TopRank P i (topChoice P i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>TopRank</li>\n<li>Prefers</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "TopRank",
+      "title": "TopRank",
+      "href": "misc/TopRank.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "topChoice_topRank",
+      "display_name": "topChoice_topRank",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

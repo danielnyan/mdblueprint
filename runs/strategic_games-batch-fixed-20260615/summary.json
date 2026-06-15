@@ -1,0 +1,257 @@
+{
+  "corpus_names": 158894,
+  "nodes_with_extra_decls": 11,
+  "nodes_with_extra_uses": 11,
+  "nodes_with_missing_decls": 1,
+  "nodes_with_missing_uses": 9,
+  "pairs": 11,
+  "reports": [
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_best_response.json",
+      "extra_declarations": [
+        "congr_payoff"
+      ],
+      "extra_uses": [
+        "IsBestResponse"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/best_response.md",
+      "node_id": "strategic_games.best_response",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_dominant_implies_nash.json",
+      "extra_declarations": [
+        "IsNashEquilibrium"
+      ],
+      "extra_uses": [
+        "IsNashEquilibrium"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/dominant_implies_nash.md",
+      "node_id": "strategic_games.dominant_implies_nash",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_nash_equilibrium.json",
+      "extra_declarations": [
+        "of_dominant"
+      ],
+      "extra_uses": [
+        "IsNashEquilibrium"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.best_response"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/nash_equilibrium.md",
+      "node_id": "strategic_games.nash_equilibrium",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_prisoners_dilemma.json",
+      "extra_declarations": [
+        "pd_nash_unique",
+        "pd_pareto_suboptimal"
+      ],
+      "extra_uses": [
+        "PD",
+        "pd_defect_weakly_dominant"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.nash_equilibrium",
+        "strategic_games.weakly_dominant_strategy"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/prisoners_dilemma.md",
+      "node_id": "strategic_games.prisoners_dilemma",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_strategic_game.json",
+      "extra_declarations": [
+        "Profile",
+        "deviate",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "missing_declarations": [
+        "StrategicGame"
+      ],
+      "missing_uses": [],
+      "node_file": "docs/knowledge/nodes/strategic_games/strategic_game.md",
+      "node_id": "strategic_games.strategic_game",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_strategy_profile.json",
+      "extra_declarations": [
+        "deviate",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategic_game"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/strategy_profile.md",
+      "node_id": "strategic_games.strategy_profile",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_strictly_dominates.json",
+      "extra_declarations": [
+        "WeaklyDominates",
+        "IsWeaklyDominant",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsStrictlyDominant.isWeaklyDominant",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates",
+        "WeaklyDominates"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/strictly_dominates.md",
+      "node_id": "strategic_games.strictly_dominates",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_unilateral_deviation.json",
+      "extra_declarations": [
+        "Profile",
+        "deviate_self",
+        "deviate_same",
+        "deviate_of_ne"
+      ],
+      "extra_uses": [
+        "Profile"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategy_profile"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/unilateral_deviation.md",
+      "node_id": "strategic_games.unilateral_deviation",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_weakly_dominant_strategy.json",
+      "extra_declarations": [
+        "WeaklyDominates",
+        "StrictlyDominates",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+      "missing_declarations": [],
+      "missing_uses": [],
+      "node_file": "docs/knowledge/nodes/strategic_games/weakly_dominant_strategy.md",
+      "node_id": "strategic_games.weakly_dominant_strategy",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_weakly_dominates.json",
+      "extra_declarations": [
+        "StrictlyDominates",
+        "IsWeaklyDominant",
+        "IsStrictlyDominant",
+        "StrictlyDominates.weakly",
+        "IsStrictlyDominant.isWeaklyDominant",
+        "IsWeaklyDominant.isBestResponse"
+      ],
+      "extra_uses": [
+        "IsStrictlyDominant",
+        "IsWeaklyDominant",
+        "StrictlyDominates",
+        "WeaklyDominates"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.unilateral_deviation"
+      ],
+      "node_file": "docs/knowledge/nodes/strategic_games/weakly_dominates.md",
+      "node_id": "strategic_games.weakly_dominates",
+      "review_path": null
+    },
+    {
+      "countercheck_json": "runs/strategic_games-batch-fixed-20260615/counterchecks/strategic_games_mixed_strategy.json",
+      "extra_declarations": [
+        "MixedProfile",
+        "IsCompletelyMixed",
+        "IsCompletelyMixedProfile",
+        "IsCompletelyMixedProfile.player",
+        "pureToMixed",
+        "uniformMixed",
+        "uniformMixed_apply",
+        "uniformMixed_pos",
+        "uniformMixed_isCompletelyMixed",
+        "uniformMixedProfile",
+        "uniformMixedProfile_isCompletelyMixed",
+        "pureToMixed_not_isCompletelyMixed_of_ne",
+        "pureProfileToMixed",
+        "expectedPayoff",
+        "deviateMixed",
+        "IsMixedNashEq"
+      ],
+      "extra_uses": [
+        "IsCompletelyMixed",
+        "IsCompletelyMixedProfile",
+        "MixedProfile",
+        "MixedStrategy",
+        "deviateMixed",
+        "expectedPayoff",
+        "pureToMixed",
+        "uniformMixed",
+        "uniformMixedProfile",
+        "uniformMixed_apply",
+        "uniformMixed_isCompletelyMixed",
+        "uniformMixed_pos"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "strategic_games.strategic_game"
+      ],
+      "node_file": "docs/knowledge/staged/mixed_strategy.md",
+      "node_id": "strategic_games.mixed_strategy",
+      "review_path": null
+    }
+  ]
+}

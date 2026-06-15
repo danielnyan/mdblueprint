@@ -1,0 +1,26 @@
+[
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "IIA",
+      "Dictatorial",
+      "arrow_of_unanimity_iia"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Arrow",
+    "name": "arrow_impossibility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 67
+      },
+      "start": {
+        "column": 1,
+        "line": 67
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Arrow.lean",
+    "type": "theorem arrow_impossibility [Fintype A] [Fintype N] [Nonempty N] (hA : Fintype.card A \u2265 3) (F : SWF N A) (hU : F.Unanimity) (hIIA : F.IIA) : F.Dictatorial"
+  }
+]

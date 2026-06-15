@@ -1,0 +1,47 @@
+{
+  "id": "IsRegularMyersonOptimalICIRAuction-isVirtualSurplusOptimalAllocationRule",
+  "title": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRegularMyersonOptimalICIRAuction-isVirtualSurplusOptimalAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule [Fintype I] {A B : BayesianSingleItemAuction I} (hB : A.IsRegularMyersonOptimalICIRAuction B) : A.IsVirtualSurplusOptimalAllocationRule B.allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction</li>\n<li>IsVirtualSurplusOptimalAllocationRule</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsVirtualSurplusOptimalAllocationRule",
+      "title": "IsVirtualSurplusOptimalAllocationRule",
+      "href": "misc/IsVirtualSurplusOptimalAllocationRule.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "display_name": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

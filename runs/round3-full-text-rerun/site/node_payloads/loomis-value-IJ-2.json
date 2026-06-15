@@ -1,0 +1,42 @@
+{
+  "id": "loomis-value-IJ-2",
+  "title": "loomis_value_IJ_2",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/loomis-value-IJ-2.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>loomis_value_IJ_2</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem loomis_value_IJ_2 (Hn : 2 = Fintype.card I + Fintype.card J) {A B : I → J → ℝ} (_hB : IsPositive B) : lamB0 A B = muB0 A B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositive</li>\n<li>singleton_of_card_one</li>\n<li>stdSimplex.mix</li>\n<li>Lottery.mix</li>\n<li>wsum_mix</li>\n<li>lamB.aux_gt_iff_gt</li>\n<li>lam.aux_gt_iff_gt</li>\n<li>xB_pos</li>\n<li>muB.aux_lt_iff_lt</li>\n<li>mu.aux_lt_iff_lt</li>\n<li>By_pos</li>\n<li>wsum_extendDropColumn</li>\n<li>wsum_extendDropRow</li>\n<li>lamB0_le_muB0</li>\n<li>exists_xx_lamB0</li>\n<li>exists_yy_muB0</li>\n<li>xBy_pos</li>\n<li>wsum_wsum_comm</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>lamB.aux.le_lamB0</li>\n<li>Profile.ext</li>\n<li>muB.aux.ge_muB0</li>\n<li>mix_gt_of_gt_nbh</li>\n<li>linear_comb_gt_of_ge_gt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "loomis_value_IJ_2",
+      "display_name": "loomis_value_IJ_2",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isTerminal_iff_not_isDecision",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isTerminal_iff_not_isDecision",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isTerminal_iff_not_isDecision",
+    "target": "IsDecision"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isTerminal_iff_not_isDecision",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isChanceState",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isChanceState",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "NoChance",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "NoChance",
+    "target": "isTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "isTerminal",
+    "target": "IsTerminal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "Arena.ofFin",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Basic",
+    "source": "IsTerminal",
+    "target": "isEmpty"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "name": "threeByTwoExample",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 32
+      },
+      "start": {
+        "column": 1,
+        "line": 32
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+    "type": "def threeByTwoExample : MatrixGame (Fin 3) (Fin 2) \u211d"
+  },
+  {
+    "dependencies": [
+      "threeByTwoExample"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "name": "threeByTwo_row_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+    "type": "theorem threeByTwo_row_guarantee : \u2200 j, (1 : \u211d) / 7 \u2264 threeByTwoExample.Ej threeByTwoRowOpt j"
+  },
+  {
+    "dependencies": [
+      "threeByTwoExample"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "name": "threeByTwo_column_guarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+    "type": "theorem threeByTwo_column_guarantee : \u2200 i, threeByTwoExample.Ei i threeByTwoColOpt \u2264 (1 : \u211d) / 7"
+  },
+  {
+    "dependencies": [
+      "threeByTwoExample",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "common_guarantee_eq_value",
+      "threeByTwo_row_guarantee",
+      "threeByTwo_column_guarantee"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "name": "threeByTwoExample_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+    "type": "theorem threeByTwoExample_value : threeByTwoExample.value = 1 / 7"
+  }
+]

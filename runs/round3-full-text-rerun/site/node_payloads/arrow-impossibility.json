@@ -1,0 +1,57 @@
+{
+  "id": "arrow-impossibility",
+  "title": "arrow_impossibility",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/arrow-impossibility.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>arrow_impossibility</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem arrow_impossibility [Fintype A] [Fintype N] [Nonempty N] (hA : Fintype.card A ≥ 3) (F : SWF N A) (hU : F.Unanimity) (hIIA : F.IIA) : F.Dictatorial</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>IIA</li>\n<li>Dictatorial</li>\n<li>arrow_of_unanimity_iia</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "arrow_impossibility",
+      "display_name": "arrow_impossibility",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

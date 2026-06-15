@@ -1,0 +1,63 @@
+{
+  "id": "dpSolveList",
+  "title": "dpSolveList",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dpSolveList.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dpSolveList</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef dpSolveList (w b : I → Nat) : List I → Nat → BinaryAllocation I | [], _ =&gt; fun _ =&gt; false | i :: is, capacity =&gt; if w i ≤ capacity then let skip</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>natBinarySocialWelfare</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "natBinarySocialWelfare",
+      "title": "natBinarySocialWelfare",
+      "href": "misc/natBinarySocialWelfare.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "dpSolveList-feasible",
+      "title": "dpSolveList_feasible",
+      "href": "misc/dpSolveList-feasible.html"
+    },
+    {
+      "id": "dpSolveList-optimal",
+      "title": "dpSolveList_optimal",
+      "href": "misc/dpSolveList-optimal.html"
+    },
+    {
+      "id": "dpSolveList-supportedOn",
+      "title": "dpSolveList_supportedOn",
+      "href": "misc/dpSolveList-supportedOn.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "dpSolveList",
+      "display_name": "dpSolveList",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

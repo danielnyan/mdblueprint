@@ -1,0 +1,42 @@
+{
+  "id": "parSum-cost-le-clog",
+  "title": "parSum_cost_le_clog",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/parSum-cost-le-clog.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>parSum_cost_le_clog</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem parSum_cost_le_clog (xs : List ℕ) : (parSum xs).cost ≤ Nat.clog 2 xs.length</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>parSum</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "parSum",
+      "title": "parSum",
+      "href": "misc/parSum.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "parSum_cost_le_clog",
+      "display_name": "parSum_cost_le_clog",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "isEF1-iff",
+  "title": "isEF1_iff",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isEF1-iff.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isEF1_iff</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isEF1_iff [Fintype N] [DecidableEq N] [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : isEF1 v A = true ↔ IsEF1 v A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsEFX.isEF1</li>\n<li>IsEF1</li>\n<li>IsEFX</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEF1",
+      "title": "IsEF1",
+      "href": "misc/IsEF1.html"
+    },
+    {
+      "id": "IsEFX",
+      "title": "IsEFX",
+      "href": "misc/IsEFX.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isEF1_iff",
+      "display_name": "isEF1_iff",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

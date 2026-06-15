@@ -1,0 +1,128 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "IsKKMCover"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_closed_cover",
+    "target": "Brouwer"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "simplexFaceOpp"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "IsKKMCover"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.KKM",
+    "source": "kkm_open_cover",
+    "target": "kkm_closed_cover"
+  }
+]

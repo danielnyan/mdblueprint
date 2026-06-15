@@ -1,0 +1,148 @@
+{
+  "id": "isEmpty",
+  "title": "isEmpty",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isEmpty.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isEmpty</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef isEmpty (b : Board) (p : Pos) : Bool</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Board</li>\n<li>Pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Board",
+      "title": "Board",
+      "href": "misc/Board.html"
+    },
+    {
+      "id": "Pos",
+      "title": "Pos",
+      "href": "misc/Pos.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsBehaviorNashEq",
+      "title": "IsBehaviorNashEq",
+      "href": "misc/IsBehaviorNashEq.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-init",
+      "title": "IsBehaviorNashEq.restrictSubgame_init",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-init.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-toSubgamePerfect-of-isCompletelyMixed",
+      "title": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+      "href": "misc/IsBehaviorNashEq-toSubgamePerfect-of-isCompletelyMixed.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-toSubgamePerfect-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-toSubgamePerfect-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsBehaviorSubgamePerfect",
+      "title": "IsBehaviorSubgamePerfect",
+      "href": "misc/IsBehaviorSubgamePerfect.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach-reach-pos",
+      "title": "IsCompletelyMixedWithPositiveReach.reach_pos",
+      "href": "misc/IsCompletelyMixedWithPositiveReach-reach-pos.html"
+    },
+    {
+      "id": "IsTerminal",
+      "title": "IsTerminal",
+      "href": "misc/IsTerminal.html"
+    },
+    {
+      "id": "IsTerminal",
+      "title": "IsTerminal",
+      "href": "misc/IsTerminal.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer-init",
+      "title": "ReachedSubgamePayoffTransfer.init",
+      "href": "misc/ReachedSubgamePayoffTransfer-init.html"
+    },
+    {
+      "id": "TTTState-isOver",
+      "title": "TTTState.isOver",
+      "href": "misc/TTTState-isOver.html"
+    },
+    {
+      "id": "centipedePrefixArena-extracts-tree",
+      "title": "centipedePrefixArena_extracts_tree",
+      "href": "misc/centipedePrefixArena-extracts-tree.html"
+    },
+    {
+      "id": "emptyPositions",
+      "title": "emptyPositions",
+      "href": "misc/emptyPositions.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-init",
+      "title": "expectedPayoff_restrictSubgame_init",
+      "href": "misc/expectedPayoff-restrictSubgame-init.html"
+    },
+    {
+      "id": "expectedPayoffFrom-restrictSubgame",
+      "title": "expectedPayoffFrom_restrictSubgame",
+      "href": "misc/expectedPayoffFrom-restrictSubgame.html"
+    },
+    {
+      "id": "size-bound-out",
+      "title": "size_bound_out",
+      "href": "misc/size-bound-out.html"
+    },
+    {
+      "id": "subgameAt-next",
+      "title": "subgameAt_next",
+      "href": "misc/subgameAt-next.html"
+    },
+    {
+      "id": "s₃",
+      "title": "s₃",
+      "href": "misc/s₃.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isEmpty",
+      "display_name": "isEmpty",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

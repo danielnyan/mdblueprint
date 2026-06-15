@@ -1,0 +1,57 @@
+{
+  "id": "IsCompletelyMixedProfile-player",
+  "title": "IsCompletelyMixedProfile.player",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsCompletelyMixedProfile-player.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsCompletelyMixedProfile.player</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsCompletelyMixedProfile.player {G : StrategicGame N ℚ} [∀ i, Fintype (G.strategy i)] {p : MixedProfile G} (hp : IsCompletelyMixedProfile G p) (i : N) : IsCompletelyMixed G (p i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedProfile</li>\n<li>IsCompletelyMixedProfile</li>\n<li>IsCompletelyMixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixedProfile",
+      "title": "IsCompletelyMixedProfile",
+      "href": "misc/IsCompletelyMixedProfile.html"
+    },
+    {
+      "id": "IsCompletelyMixed",
+      "title": "IsCompletelyMixed",
+      "href": "misc/IsCompletelyMixed.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsCompletelyMixedProfile.player",
+      "display_name": "IsCompletelyMixedProfile.player",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

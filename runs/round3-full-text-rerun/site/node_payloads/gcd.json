@@ -1,0 +1,36 @@
+{
+  "id": "gcd",
+  "title": "gcd",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/gcd.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>gcd</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef gcd : ℕ → ℕ → CostM ℕ ℕ | a, 0 =&gt; pure a | a, b + 1 =&gt; do ✓ gcd (b + 1) (a % (b + 1)) termination_by _ b =&gt; b decreasing_by exact Nat.mod_lt _ (Nat.succ_pos _) /-- Linear cost bound: `gcd a b` performs at most `b` `mod` operations. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "gcd",
+      "display_name": "gcd",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

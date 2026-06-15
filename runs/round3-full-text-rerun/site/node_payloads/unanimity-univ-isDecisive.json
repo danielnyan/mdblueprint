@@ -1,0 +1,52 @@
+{
+  "id": "unanimity-univ-isDecisive",
+  "title": "unanimity_univ_isDecisive",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/unanimity-univ-isDecisive.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>unanimity_univ_isDecisive</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem unanimity_univ_isDecisive [Fintype N] [Fintype A] {F : SWF N A} (h : SWF.Unanimity F) : IsDecisive F Set.univ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>IsDecisive</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IsDecisive",
+      "title": "IsDecisive",
+      "href": "misc/IsDecisive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "unanimity_univ_isDecisive",
+      "display_name": "unanimity_univ_isDecisive",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

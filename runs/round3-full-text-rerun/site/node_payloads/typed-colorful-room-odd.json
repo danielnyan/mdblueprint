@@ -1,0 +1,47 @@
+{
+  "id": "typed-colorful-room-odd",
+  "title": "typed_colorful_room_odd",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/typed-colorful-room-odd.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>typed_colorful_room_odd</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma typed_colorful_room_odd (i : I): Odd (Finset.filter (fun (x: (Finset T× Finset I) × Finset T × Finset I) =&gt; isColorful c x.2.1 x.2.2) (dbcountingset c i)).card</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isColorful</li>\n<li><em>root</em>.Finset.card_filter_filter_neg</li>\n<li>isOutsideDoor</li>\n<li>parity_lemma</li>\n<li>dbcount_outside_door_odd</li>\n<li>dbcount_internal_door_even</li>\n<li>dbcount_NCroom</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isColorful",
+      "title": "isColorful",
+      "href": "misc/isColorful.html"
+    },
+    {
+      "id": "isOutsideDoor",
+      "title": "isOutsideDoor",
+      "href": "misc/isOutsideDoor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "typed_colorful_room_odd",
+      "display_name": "typed_colorful_room_odd",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

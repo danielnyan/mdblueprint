@@ -1,0 +1,92 @@
+{
+  "id": "optimalColumnStrategies",
+  "title": "optimalColumnStrategies",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/optimalColumnStrategies.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>optimalColumnStrategies</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef optimalColumnStrategies {𝕜 : Type} [Field 𝕜] [ConditionallyCompleteLinearOrder 𝕜] [IsStrictOrderedRing 𝕜] (A : MatrixGame I J 𝕜) : Set (stdSimplex 𝕜 J)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "MatrixGame-antisymmetric-exists-optimal-strategy",
+      "title": "MatrixGame.antisymmetric_exists_optimal_strategy",
+      "href": "misc/MatrixGame-antisymmetric-exists-optimal-strategy.html"
+    },
+    {
+      "id": "MatrixGame-antisymmetric-value-zero",
+      "title": "MatrixGame.antisymmetric_value_zero",
+      "href": "misc/MatrixGame-antisymmetric-value-zero.html"
+    },
+    {
+      "id": "exists-invariant-distribution",
+      "title": "exists_invariant_distribution",
+      "href": "misc/exists-invariant-distribution.html"
+    },
+    {
+      "id": "exists-strong-complementary-pair",
+      "title": "exists_strong_complementary_pair",
+      "href": "misc/exists-strong-complementary-pair.html"
+    },
+    {
+      "id": "image-optimalColumnStrategies-eq",
+      "title": "image_optimalColumnStrategies_eq",
+      "href": "misc/image-optimalColumnStrategies-eq.html"
+    },
+    {
+      "id": "matchingPennies-uniform-column-optimal",
+      "title": "matchingPennies_uniform_column_optimal",
+      "href": "misc/matchingPennies-uniform-column-optimal.html"
+    },
+    {
+      "id": "mem-optimalColumnStrategies-iff-E-le",
+      "title": "mem_optimalColumnStrategies_iff_E_le",
+      "href": "misc/mem-optimalColumnStrategies-iff-E-le.html"
+    },
+    {
+      "id": "optimal-pairs-iff-saddle-point",
+      "title": "optimal_pairs_iff_saddle_point",
+      "href": "misc/optimal-pairs-iff-saddle-point.html"
+    },
+    {
+      "id": "optimalColumnStrategies-image-isPolytope",
+      "title": "optimalColumnStrategies_image_isPolytope",
+      "href": "misc/optimalColumnStrategies-image-isPolytope.html"
+    },
+    {
+      "id": "support-complementarity-column",
+      "title": "support_complementarity_column",
+      "href": "misc/support-complementarity-column.html"
+    },
+    {
+      "id": "support-complementarity-row",
+      "title": "support_complementarity_row",
+      "href": "misc/support-complementarity-row.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "optimalColumnStrategies",
+      "display_name": "optimalColumnStrategies",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

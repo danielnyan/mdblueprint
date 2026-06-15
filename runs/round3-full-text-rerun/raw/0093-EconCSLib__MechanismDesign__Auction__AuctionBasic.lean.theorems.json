@@ -1,0 +1,365 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "MultiItemBundle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def MultiItemBundle (k : \u2115)"
+  },
+  {
+    "dependencies": [
+      "MultiItemBundle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "toFinset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 105
+      },
+      "start": {
+        "column": 1,
+        "line": 105
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def toFinset {k : \u2115} (bundle : MultiItemBundle k) : Finset (Fin k)"
+  },
+  {
+    "dependencies": [
+      "MultiItemBundle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "CombinatorialAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 111
+      },
+      "start": {
+        "column": 1,
+        "line": 111
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def CombinatorialAllocation (I : Type*) (k : \u2115)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "CombinatorialAllocation",
+      "MultiItemBundle",
+      "toFinset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "IsFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def IsFeasible {I : Type*} {k : \u2115} {V P : Type*} (M : CombinatorialAuction I k V P) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "Nonnegative",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 150
+      },
+      "start": {
+        "column": 1,
+        "line": 150
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def Nonnegative [Zero V] [LE V] (b : I \u2192 V) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "InSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def InSet (b : I \u2192 V) (S : I \u2192 Set V) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "InBox",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 163
+      },
+      "start": {
+        "column": 1,
+        "line": 163
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def InBox [LE V] (b : I \u2192 V) (\u2113 u : I \u2192 V) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "StrategyMapsBoxToBox",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 170
+      },
+      "start": {
+        "column": 1,
+        "line": 170
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "def StrategyMapsBoxToBox [LE V] (\u03c3 : V \u2192 V) (\u2113 u \u2113' u' : V) : Prop"
+  },
+  {
+    "dependencies": [
+      "InBox",
+      "InSet"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "inBox_iff_inSet_Icc",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 177
+      },
+      "start": {
+        "column": 1,
+        "line": 177
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma inBox_iff_inSet_Icc [Preorder V] (b : I \u2192 V) (\u2113 u : I \u2192 V) : InBox b \u2113 u \u2194 InSet b (fun i => Set.Icc (\u2113 i) (u i))"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "maxBid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 201
+      },
+      "start": {
+        "column": 1,
+        "line": 201
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "@[simp] def maxBid : V"
+  },
+  {
+    "dependencies": [
+      "maxBid",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "exists_maxBid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 205
+      },
+      "start": {
+        "column": 1,
+        "line": 205
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma exists_maxBid : \u2203 i : I, b i = maxBid b"
+  },
+  {
+    "dependencies": [
+      "maxBid",
+      "exists_maxBid"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "argmaxBid_eq_maxBid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 216
+      },
+      "start": {
+        "column": 1,
+        "line": 216
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma argmaxBid_eq_maxBid : b (argmaxBid b) = maxBid b"
+  },
+  {
+    "dependencies": [
+      "argmaxBid_eq_maxBid"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "bid_le_maxBid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 220
+      },
+      "start": {
+        "column": 1,
+        "line": 220
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma bid_le_maxBid (j : I) : b j \u2264 b (argmaxBid b)"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "bid_le_maxBid"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "eq_argmaxBid_of_strict_max",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 225
+      },
+      "start": {
+        "column": 1,
+        "line": 225
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma eq_argmaxBid_of_strict_max (i : I) (h : \u2200 j, j \u2260 i \u2192 b j < b i) : i = argmaxBid b"
+  },
+  {
+    "dependencies": [
+      "maxBid"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "maxBidExcluding_le_maxBid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 237
+      },
+      "start": {
+        "column": 1,
+        "line": 237
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma maxBidExcluding_le_maxBid (i : I) : maxBidExcluding b i \u2264 maxBid b"
+  },
+  {
+    "dependencies": [
+      "maxBid",
+      "maxBidExcluding_le_maxBid",
+      "argmaxBid_eq_maxBid",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 242
+      },
+      "start": {
+        "column": 1,
+        "line": 242
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma maxBidExcluding_eq_maxBid_of_not_argmax {i : I} (h : i \u2260 argmaxBid b) : maxBidExcluding b i = maxBid b"
+  },
+  {
+    "dependencies": [
+      "maxBid",
+      "maxBidExcluding_le_maxBid",
+      "argmaxBid_eq_maxBid",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "maxBidExcluding_le_argmaxBid_bid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 250
+      },
+      "start": {
+        "column": 1,
+        "line": 250
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma maxBidExcluding_le_argmaxBid_bid : maxBidExcluding b (argmaxBid b) \u2264 b (argmaxBid b)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "name": "maxBidExcluding_update_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 257
+      },
+      "start": {
+        "column": 1,
+        "line": 257
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/AuctionBasic.lean",
+    "type": "lemma maxBidExcluding_update_self (i : I) (bi : V) : maxBidExcluding (Function.update b i bi) i = maxBidExcluding b i"
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "size",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "def size : GameTree \u2192 \u2115 | Leaf _ => 1 | Pnode _ L R => L.size + R.size | Nnode _ L R => L.size + R.size /-- Every game tree has positive size. -/"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "size_pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 108
+      },
+      "start": {
+        "column": 1,
+        "line": 108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "lemma size_pos (t : GameTree) : 1 \u2264 t.size"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "Strategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "abbrev Strategy"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "def value : GameTree \u2192 \u211a | Leaf r => r | Pnode p L R => match p with | .A => max L.value R.value | .B => min L.value R.value | Nnode prob L R => prob * L.value + (1 - prob) * R.value /-- **A's dominant strategy**: at each A-node, move to whichever child has the higher value; ties go left. -/"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "DStrategy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 134
+      },
+      "start": {
+        "column": 1,
+        "line": 134
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "def DStrategy : Strategy"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "outcome",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 142
+      },
+      "start": {
+        "column": 1,
+        "line": 142
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "def outcome (SA SB : Strategy) : GameTree \u2192 \u211a | Leaf r => r | Pnode p L R => match p with | .A => match SA L R with | .l => outcome SA SB L | .r => outcome SA SB R | .B => match SB L R with | .l => outcome SA SB L | .r => outcome SA SB R | Nnode prob L R => prob * outcome SA SB L + (1 - prob) * outcome SA SB R /-! ### Main theorem -/ /-- **Soundness of `DStrategy`**: the backward-induction value is a lower bound on the outcome A achieves by following `DStrategy`, regardless of how B plays. Formally: for every B-strategy `SB` and game tree `t`, `t.value \u2264 t.outcome DStrategy SB`. -/"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "DStrategy",
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "value_prop",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 160
+      },
+      "start": {
+        "column": 1,
+        "line": 160
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "theorem value_prop (SB : Strategy) {t : GameTree} : t.value \u2264 t.outcome DStrategy SB"
+  },
+  {
+    "dependencies": [
+      "IsCompletelyMixedProfile.player",
+      "IsCompletelyMixed.player",
+      "Player"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "name": "PUInterval",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 195
+      },
+      "start": {
+        "column": 1,
+        "line": 195
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "type": "def PUInterval (a : \u211a) : Set.Icc (0 : \u211a) 1"
+  }
+]

@@ -1,0 +1,537 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "IsZeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "def IsZeroSum : GameTree (Fin 2) \u211a \u2192 Prop | Leaf p => p 0 + p 1 = 0 | Node _ h t => IsZeroSum h \u2227 \u2200 c \u2208 t, IsZeroSum c /-- The head child of a zero-sum node is zero-sum. -/"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "IsZeroSum.head",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem IsZeroSum.head {m : Fin 2} {h : GameTree (Fin 2) \u211a} {t : List (GameTree (Fin 2) \u211a)} (hzs : IsZeroSum (Node m h t)) : IsZeroSum h"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "IsZeroSum.tail_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem IsZeroSum.tail_mem {m : Fin 2} {h : GameTree (Fin 2) \u211a} {t : List (GameTree (Fin 2) \u211a)} {c : GameTree (Fin 2) \u211a} (hzs : IsZeroSum (Node m h t)) (hmem : c \u2208 t) : IsZeroSum c"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsZeroSum.tail_mem",
+      "Subtree.tail_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "IsZeroSum.child_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 87
+      },
+      "start": {
+        "column": 1,
+        "line": 87
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem IsZeroSum.child_mem {m : Fin 2} {h : GameTree (Fin 2) \u211a} {t : List (GameTree (Fin 2) \u211a)} {c : GameTree (Fin 2) \u211a} (hzs : IsZeroSum (Node m h t)) (hmem : c \u2208 h :: t) : IsZeroSum c"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl",
+      "IsZeroSum.head",
+      "Subtree.head",
+      "IsZeroSum.tail_mem",
+      "Subtree.tail_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "IsZeroSum.of_subtree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem IsZeroSum.of_subtree {s g : GameTree (Fin 2) \u211a} (hzs : IsZeroSum g) (hsub : Subtree s g) : IsZeroSum s"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsSubgamePerfectOn",
+      "Kuhn_exists_SPE_on"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "zermelo_exists_pure_SPE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 114
+      },
+      "start": {
+        "column": 1,
+        "line": 114
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem zermelo_exists_pure_SPE (g : GameTree (Fin 2) \u211a) : \u2203 \u03c3 : Strategy (Fin 2) \u211a, IsSubgamePerfectOn \u03c3 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsNashEquilibrium",
+      "Kuhn_exists_NE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "zermelo_exists_pure_NE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem zermelo_exists_pure_NE (g : GameTree (Fin 2) \u211a) : \u2203 \u03c3 : Strategy (Fin 2) \u211a, IsNashEquilibrium \u03c3 g"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 130
+      },
+      "start": {
+        "column": 1,
+        "line": 130
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "def value\u2080 (g : GameTree (Fin 2) \u211a) : \u211a"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Leaf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 135
+      },
+      "start": {
+        "column": 1,
+        "line": 135
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Leaf (p : Fin 2 \u2192 \u211a) (_h : IsZeroSum (Leaf p)) : value\u2080 (Leaf p) = p 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "strong_induction",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "value_Node_eq_some_child_value",
+      "IsZeroSum.child_mem",
+      "Subtree.child_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value_zero_sum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : (value g) 0 + (value g) 1 = 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "value_zero_sum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value_one_eq_neg_value\u2080",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value_one_eq_neg_value\u2080 (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : (value g) 1 = -value\u2080 g"
+  },
+  {
+    "dependencies": [
+      "value_Node_eq_some_child_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Node_eq_some_child",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 168
+      },
+      "start": {
+        "column": 1,
+        "line": 168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Node_eq_some_child (m : Fin 2) (h : GameTree (Fin 2) \u211a) (t : List (GameTree (Fin 2) \u211a)) : \u2203 c \u2208 h :: t, value\u2080 (Node m h t) = value\u2080 c"
+  },
+  {
+    "dependencies": [
+      "value_Node_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Node_zero_ge_child",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 177
+      },
+      "start": {
+        "column": 1,
+        "line": 177
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Node_zero_ge_child (h : GameTree (Fin 2) \u211a) (t : List (GameTree (Fin 2) \u211a)) (c : GameTree (Fin 2) \u211a) (hmem : c \u2208 h :: t) : value\u2080 c \u2264 value\u2080 (Node (0 : Fin 2) h t)"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "value_Node_ge",
+      "value_one_eq_neg_value\u2080",
+      "IsZeroSum.child_mem",
+      "Subtree.child_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Node_one_le_child",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 187
+      },
+      "start": {
+        "column": 1,
+        "line": 187
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Node_one_le_child (h : GameTree (Fin 2) \u211a) (t : List (GameTree (Fin 2) \u211a)) (hzs : IsZeroSum (Node (1 : Fin 2) h t)) (c : GameTree (Fin 2) \u211a) (hmem : c \u2208 h :: t) : value\u2080 (Node (1 : Fin 2) h t) \u2264 value\u2080 c"
+  },
+  {
+    "dependencies": [
+      "value\u2080_Node_eq_some_child",
+      "value\u2080_Node_zero_ge_child"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Node_zero_isMax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 199
+      },
+      "start": {
+        "column": 1,
+        "line": 199
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Node_zero_isMax (h : GameTree (Fin 2) \u211a) (t : List (GameTree (Fin 2) \u211a)) : \u2203 c \u2208 h :: t, value\u2080 (Node (0 : Fin 2) h t) = value\u2080 c \u2227 \u2200 d \u2208 h :: t, value\u2080 d \u2264 value\u2080 c"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "value\u2080_Node_eq_some_child",
+      "value\u2080_Node_one_le_child"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_Node_one_isMin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 212
+      },
+      "start": {
+        "column": 1,
+        "line": 212
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_Node_one_isMin (h : GameTree (Fin 2) \u211a) (t : List (GameTree (Fin 2) \u211a)) (hzs : IsZeroSum (Node (1 : Fin 2) h t)) : \u2203 c \u2208 h :: t, value\u2080 (Node (1 : Fin 2) h t) = value\u2080 c \u2227 \u2200 d \u2208 h :: t, value\u2080 c \u2264 value\u2080 d"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IsZeroSum",
+      "strong_induction",
+      "outcome_Leaf",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "outcome_Node",
+      "IsZeroSum.child_mem",
+      "Subtree.child_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "outcome_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 228
+      },
+      "start": {
+        "column": 1,
+        "line": 228
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem outcome_zero_sum (\u03c3 : Strategy (Fin 2) \u211a) (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : outcome \u03c3 g 0 + outcome \u03c3 g 1 = 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Strategy",
+      "outcome_zero_sum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "outcome_optStrategy_zero_sum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 244
+      },
+      "start": {
+        "column": 1,
+        "line": 244
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem outcome_optStrategy_zero_sum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : outcome (optStrategy : Strategy (Fin 2) \u211a) g 0 + outcome (optStrategy : Strategy (Fin 2) \u211a) g 1 = 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Strategy",
+      "outcome_optStrategy_eq_value",
+      "value_one_eq_neg_value\u2080"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "outcome_optStrategy_one_eq_neg_value\u2080",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 251
+      },
+      "start": {
+        "column": 1,
+        "line": 251
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem outcome_optStrategy_one_eq_neg_value\u2080 (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : outcome (optStrategy : Strategy (Fin 2) \u211a) g 1 = -value\u2080 g"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "outcome_optStrategy_eq_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_eq_optStrategy_outcome",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 260
+      },
+      "start": {
+        "column": 1,
+        "line": 260
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_eq_optStrategy_outcome (g : GameTree (Fin 2) \u211a) : value\u2080 g = outcome (optStrategy : Strategy (Fin 2) \u211a) g 0"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Strategy",
+      "value\u2080_eq_optStrategy_outcome",
+      "value_one_eq_neg_value\u2080"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_eq_outcome_and_zeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 269
+      },
+      "start": {
+        "column": 1,
+        "line": 269
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_eq_outcome_and_zeroSum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : value\u2080 g = outcome (optStrategy : Strategy (Fin 2) \u211a) g 0 \u2227 (value g) 1 = -value\u2080 g"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Strategy",
+      "IVariant",
+      "optStrategy_isSubgamePerfect",
+      "outcome_optStrategy_eq_value",
+      "value_one_eq_neg_value\u2080",
+      "outcome_zero_sum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "value\u2080_le_outcome_of_iVariant_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 288
+      },
+      "start": {
+        "column": 1,
+        "line": 288
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem value\u2080_le_outcome_of_iVariant_one (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) {\u03c3' : Strategy (Fin 2) \u211a} (hiv : IVariant (1 : Fin 2) optStrategy \u03c3') : value\u2080 g \u2264 outcome \u03c3' g 0"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "IVariant",
+      "optStrategy_isSubgamePerfect",
+      "outcome_optStrategy_eq_value"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "outcome_le_value\u2080_of_iVariant_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 301
+      },
+      "start": {
+        "column": 1,
+        "line": 301
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem outcome_le_value\u2080_of_iVariant_zero (g : GameTree (Fin 2) \u211a) {\u03c3' : Strategy (Fin 2) \u211a} (hiv : IVariant (0 : Fin 2) optStrategy \u03c3') : outcome \u03c3' g 0 \u2264 value\u2080 g"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "Strategy",
+      "IVariant",
+      "value\u2080_le_outcome_of_iVariant_one",
+      "outcome_le_value\u2080_of_iVariant_zero"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "name": "zermelo_determinacy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 319
+      },
+      "start": {
+        "column": 1,
+        "line": 319
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "type": "theorem zermelo_determinacy (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) : (\u2200 \u03c3' : Strategy (Fin 2) \u211a, IVariant (1 : Fin 2) optStrategy \u03c3' \u2192 value\u2080 g \u2264 outcome \u03c3' g 0) \u2227 (\u2200 \u03c3' : Strategy (Fin 2) \u211a, IVariant (0 : Fin 2) optStrategy \u03c3' \u2192 outcome \u03c3' g 0 \u2264 value\u2080 g)"
+  }
+]

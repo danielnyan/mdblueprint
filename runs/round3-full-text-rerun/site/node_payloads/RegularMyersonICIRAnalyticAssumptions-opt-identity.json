@@ -1,0 +1,77 @@
+{
+  "id": "RegularMyersonICIRAnalyticAssumptions-opt-identity",
+  "title": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RegularMyersonICIRAnalyticAssumptions-opt-identity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RegularMyersonICIRAnalyticAssumptions.opt_identity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem RegularMyersonICIRAnalyticAssumptions.opt_identity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (hA : A.IsRegular) : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegular</li>\n<li>HasExpectedRevenueVirtualSurplusIdentity</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular</li>\n<li>HasSameSellingEnvironment</li>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity</li>\n<li>HasExpectedRevenueInterimPaymentIdentity</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity</li>\n<li>virtualSurplusMaximizingAuction_isFeasible</li>\n<li>InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity</li>\n<li>HasExpectedVirtualSurplusInterimIdentity</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity</li>\n<li>HasInterimPaymentFormula</li>\n<li>hasInterimPaymentFormula_of_isIncentiveCompatible</li>\n<li>RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic</li>\n<li>hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities</li>\n<li>hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula</li>\n<li>virtualSurplusMaximizingAuction_isZeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsRegular",
+      "title": "IsRegular",
+      "href": "misc/IsRegular.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusIdentity",
+      "title": "HasExpectedRevenueVirtualSurplusIdentity",
+      "href": "misc/HasExpectedRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    },
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "HasExpectedRevenueInterimPaymentIdentity",
+      "title": "HasExpectedRevenueInterimPaymentIdentity",
+      "href": "misc/HasExpectedRevenueInterimPaymentIdentity.html"
+    },
+    {
+      "id": "HasExpectedVirtualSurplusInterimIdentity",
+      "title": "HasExpectedVirtualSurplusInterimIdentity",
+      "href": "misc/HasExpectedVirtualSurplusInterimIdentity.html"
+    },
+    {
+      "id": "HasInterimPaymentFormula",
+      "title": "HasInterimPaymentFormula",
+      "href": "misc/HasInterimPaymentFormula.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "display_name": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

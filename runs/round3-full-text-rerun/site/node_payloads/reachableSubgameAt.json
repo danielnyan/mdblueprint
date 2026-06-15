@@ -1,0 +1,82 @@
+{
+  "id": "reachableSubgameAt",
+  "title": "reachableSubgameAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/reachableSubgameAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>reachableSubgameAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef reachableSubgameAt (G : ExtensiveGame iota U) (root : G.State) : ExtensiveGame iota U</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsReachable.next</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n<li>IsPositiveAffineOf.refl</li>\n<li>Indifferent.refl</li>\n<li>IVariant.refl</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "liftReachableSubgame",
+      "title": "liftReachableSubgame",
+      "href": "misc/liftReachableSubgame.html"
+    },
+    {
+      "id": "reachableSubgameAt-init",
+      "title": "reachableSubgameAt_init",
+      "href": "misc/reachableSubgameAt-init.html"
+    },
+    {
+      "id": "reachableSubgameAt-mover",
+      "title": "reachableSubgameAt_mover",
+      "href": "misc/reachableSubgameAt-mover.html"
+    },
+    {
+      "id": "reachableSubgameAt-next",
+      "title": "reachableSubgameAt_next",
+      "href": "misc/reachableSubgameAt-next.html"
+    },
+    {
+      "id": "reachableSubgameAt-payoff",
+      "title": "reachableSubgameAt_payoff",
+      "href": "misc/reachableSubgameAt-payoff.html"
+    },
+    {
+      "id": "restrictReachableSubgame",
+      "title": "restrictReachableSubgame",
+      "href": "misc/restrictReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame-deviate-liftReachableSubgame",
+      "title": "restrictReachableSubgame_deviate_liftReachableSubgame",
+      "href": "misc/restrictReachableSubgame-deviate-liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame-liftReachableSubgame",
+      "title": "restrictReachableSubgame_liftReachableSubgame",
+      "href": "misc/restrictReachableSubgame-liftReachableSubgame.html"
+    },
+    {
+      "id": "subgameAt-next",
+      "title": "subgameAt_next",
+      "href": "misc/subgameAt-next.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "reachableSubgameAt",
+      "display_name": "reachableSubgameAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

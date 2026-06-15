@@ -1,0 +1,98 @@
+{
+  "id": "isCell",
+  "title": "isCell",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isCell.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isCell</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev isCell</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "NC-of-outsidedoor",
+      "title": "NC_of_outsidedoor",
+      "href": "misc/NC-of-outsidedoor.html"
+    },
+    {
+      "id": "NC-or-C-of-door",
+      "title": "NC_or_C_of_door",
+      "href": "misc/NC-or-C-of-door.html"
+    },
+    {
+      "id": "collision-door-valid",
+      "title": "collision_door_valid",
+      "href": "misc/collision-door-valid.html"
+    },
+    {
+      "id": "doors-of-NCroom",
+      "title": "doors_of_NCroom",
+      "href": "misc/doors-of-NCroom.html"
+    },
+    {
+      "id": "isCell-of-door",
+      "title": "isCell_of_door",
+      "href": "misc/isCell-of-door.html"
+    },
+    {
+      "id": "isColorful",
+      "title": "isColorful",
+      "href": "misc/isColorful.html"
+    },
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    },
+    {
+      "id": "isNearlyColorful",
+      "title": "isNearlyColorful",
+      "href": "misc/isNearlyColorful.html"
+    },
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isTypedNC",
+      "title": "isTypedNC",
+      "href": "misc/isTypedNC.html"
+    },
+    {
+      "id": "outsidedoor-singleton",
+      "title": "outsidedoor_singleton",
+      "href": "misc/outsidedoor-singleton.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isCell",
+      "display_name": "isCell",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

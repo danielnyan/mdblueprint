@@ -1,0 +1,87 @@
+{
+  "id": "Visited",
+  "title": "Visited",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Visited.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Visited</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Visited (A : Type*) : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "alg",
+      "title": "alg",
+      "href": "misc/alg.html"
+    },
+    {
+      "id": "fib",
+      "title": "fib",
+      "href": "misc/fib.html"
+    },
+    {
+      "id": "fib-cost",
+      "title": "fib_cost",
+      "href": "misc/fib-cost.html"
+    },
+    {
+      "id": "fibAux",
+      "title": "fibAux",
+      "href": "misc/fibAux.html"
+    },
+    {
+      "id": "fibAux-cost",
+      "title": "fibAux_cost",
+      "href": "misc/fibAux-cost.html"
+    },
+    {
+      "id": "lcs",
+      "title": "lcs",
+      "href": "misc/lcs.html"
+    },
+    {
+      "id": "lcs-cost-subset",
+      "title": "lcs_cost_subset",
+      "href": "misc/lcs-cost-subset.html"
+    },
+    {
+      "id": "ofFinset",
+      "title": "ofFinset",
+      "href": "misc/ofFinset.html"
+    },
+    {
+      "id": "singleton",
+      "title": "singleton",
+      "href": "misc/singleton.html"
+    },
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Visited",
+      "display_name": "Visited",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

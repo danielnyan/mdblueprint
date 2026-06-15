@@ -1,0 +1,1216 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "RespectsCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def RespectsCapacity [Fintype I] (A : KnapsackAuction I U) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsAllocFeasible",
+      "RespectsCapacity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "IsFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def IsFeasible [Fintype I] (A : KnapsackAuction I U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "size",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "abbrev size (A : KnapsackAuction I U) (i : I) : U"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "capacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 104
+      },
+      "start": {
+        "column": 1,
+        "line": 104
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "abbrev capacity (A : KnapsackAuction I U) : U"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "NonnegativeWeights",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 108
+      },
+      "start": {
+        "column": 1,
+        "line": 108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def NonnegativeWeights (A : KnapsackAuction I U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "PositiveWeights",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def PositiveWeights (A : KnapsackAuction I U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "NonnegativeCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 116
+      },
+      "start": {
+        "column": 1,
+        "line": 116
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def NonnegativeCapacity (A : KnapsackAuction I U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "BinaryAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "abbrev BinaryAllocation (I : Type*)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binaryToAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 132
+      },
+      "start": {
+        "column": 1,
+        "line": 132
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def binaryToAllocation (x : BinaryAllocation I) : I \u2192 U"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binaryToAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binaryLoad",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 136
+      },
+      "start": {
+        "column": 1,
+        "line": 136
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def binaryLoad (A : KnapsackAuction I U) (x : BinaryAllocation I) : U"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binaryLoad"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binaryRespectsCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 140
+      },
+      "start": {
+        "column": 1,
+        "line": 140
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def binaryRespectsCapacity (A : KnapsackAuction I U) (x : BinaryAllocation I) : Prop"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binaryToAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binarySocialWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 149
+      },
+      "start": {
+        "column": 1,
+        "line": 149
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def binarySocialWelfare (b : I \u2192 U) (x : BinaryAllocation I) : U"
+  },
+  {
+    "dependencies": [
+      "binaryRespectsCapacity",
+      "binaryLoad",
+      "binaryToAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "zeroBinaryRespectsCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 153
+      },
+      "start": {
+        "column": 1,
+        "line": 153
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma zeroBinaryRespectsCapacity (A : KnapsackAuction I U) (hW : 0 \u2264 A.totalCapacity) : A.binaryRespectsCapacity (fun _ => false)"
+  },
+  {
+    "dependencies": [
+      "zeroBinaryRespectsCapacity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "feasibleBinaryAllocations_nonempty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 157
+      },
+      "start": {
+        "column": 1,
+        "line": 157
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma feasibleBinaryAllocations_nonempty (A : KnapsackAuction I U) (hW : 0 \u2264 A.totalCapacity) : A.feasibleBinaryAllocations \u2260 []"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binarySocialWelfare",
+      "feasibleBinaryAllocations_nonempty",
+      "IsZeroSum.head",
+      "Subtree.head",
+      "exists_argMax_on"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "exists_welfareMaximizer",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 169
+      },
+      "start": {
+        "column": 1,
+        "line": 169
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma exists_welfareMaximizer (A : KnapsackAuction I U) (b : I \u2192 U) (hW : 0 \u2264 A.totalCapacity) : \u2203 x : BinaryAllocation I, x \u2208 A.feasibleBinaryAllocations \u2227 \u2200 y \u2208 A.feasibleBinaryAllocations, binarySocialWelfare b y \u2264 binarySocialWelfare b x"
+  },
+  {
+    "dependencies": [
+      "exists_welfareMaximizer"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "welfareMaximizer_mem_feasibleBinaryAllocations",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 197
+      },
+      "start": {
+        "column": 1,
+        "line": 197
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma welfareMaximizer_mem_feasibleBinaryAllocations (A : KnapsackAuction I U) (b : I \u2192 U) (hW : 0 \u2264 A.totalCapacity) : A.welfareMaximizer b hW \u2208 A.feasibleBinaryAllocations"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binarySocialWelfare",
+      "exists_welfareMaximizer"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "welfareMaximizer_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 202
+      },
+      "start": {
+        "column": 1,
+        "line": 202
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma welfareMaximizer_ge (A : KnapsackAuction I U) (b : I \u2192 U) (hW : 0 \u2264 A.totalCapacity) {x : BinaryAllocation I} (hx : x \u2208 A.feasibleBinaryAllocations) : binarySocialWelfare b x \u2264 binarySocialWelfare b (A.welfareMaximizer b hW)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binarySocialWelfare",
+      "binaryToAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binarySocialWelfare_update",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 209
+      },
+      "start": {
+        "column": 1,
+        "line": 209
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma binarySocialWelfare_update (b : I \u2192 U) (i : I) (\u03b8 : U) (x : BinaryAllocation I) : binarySocialWelfare (Function.update b i \u03b8) x = \u03b8 * binaryToAllocation x i + Finset.sum (Finset.univ.erase i) (fun j => b j * binaryToAllocation x j)"
+  },
+  {
+    "dependencies": [
+      "IsMonotone",
+      "welfareMaximizer_mem_feasibleBinaryAllocations",
+      "binarySocialWelfare",
+      "welfareMaximizer_ge",
+      "binaryToAllocation",
+      "binarySocialWelfare_update"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "welfareMaximizingAllocationRule_isMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 258
+      },
+      "start": {
+        "column": 1,
+        "line": 258
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma welfareMaximizingAllocationRule_isMonotone (A : KnapsackAuction I \u211d) (hW : 0 \u2264 A.totalCapacity) : SingleParameterMechanism.IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "withMyersonPayment_isDSIC_of_isMonotone",
+      "welfareMaximizingAllocationRule_isMonotone"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "welfareMaximizingMechanism_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 309
+      },
+      "start": {
+        "column": 1,
+        "line": 309
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "theorem welfareMaximizingMechanism_isDSIC (A : KnapsackAuction I \u211d) (hW : 0 \u2264 A.totalCapacity) : (A.welfareMaximizingMechanism hW).IsDSIC"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalSocialWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 326
+      },
+      "start": {
+        "column": 1,
+        "line": 326
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def fractionalSocialWelfare (b : I \u2192 U) (x : I \u2192 U) : U"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 331
+      },
+      "start": {
+        "column": 1,
+        "line": 331
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def fractionalFeasible (A : KnapsackAuction I U) (x : I \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binaryRespectsCapacity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 373
+      },
+      "start": {
+        "column": 1,
+        "line": 373
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations (A : KnapsackAuction I U) {x : BinaryAllocation I} (hx : x \u2208 A.feasibleBinaryAllocations) : A.binaryRespectsCapacity x"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "binaryRespectsCapacity",
+      "fractionalFeasible",
+      "binaryToAllocation",
+      "binaryLoad"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 383
+      },
+      "start": {
+        "column": 1,
+        "line": 383
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity (A : KnapsackAuction I U) {x : BinaryAllocation I} (hx : A.binaryRespectsCapacity x) : A.fractionalFeasible (binaryToAllocation x)"
+  },
+  {
+    "dependencies": [
+      "fractionalFeasible",
+      "fractionalSocialWelfare",
+      "binaryToAllocation",
+      "binaryToAllocation_fractionalFeasible_of_binaryRespectsCapacity",
+      "BinaryRespectsCapacity_of_mem_feasibleBinaryAllocations",
+      "welfareMaximizer_mem_feasibleBinaryAllocations",
+      "binarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 396
+      },
+      "start": {
+        "column": 1,
+        "line": 396
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "theorem fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal (A : KnapsackAuction I U) (b : I \u2192 U) (hW : 0 \u2264 A.totalCapacity) (hgreedyOptimal : \u2200 x : I \u2192 U, A.fractionalFeasible x \u2192 fractionalSocialWelfare b x \u2264 fractionalSocialWelfare b (A.fractionalGreedyAllocation b)) : A.maximalSocialWelfare b hW \u2264 fractionalSocialWelfare b (A.fractionalGreedyAllocation b)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinarySocialWelfare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 423
+      },
+      "start": {
+        "column": 1,
+        "line": 423
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def natBinarySocialWelfare (b : I \u2192 Nat) (x : BinaryAllocation I) : Nat"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinaryLoad",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 427
+      },
+      "start": {
+        "column": 1,
+        "line": 427
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def natBinaryLoad (w : I \u2192 Nat) (x : BinaryAllocation I) : Nat"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "supportedOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 432
+      },
+      "start": {
+        "column": 1,
+        "line": 432
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def supportedOn (items : List I) (x : BinaryAllocation I) : Prop"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "supportedOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "eq_false_of_supportedOn_of_not_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 436
+      },
+      "start": {
+        "column": 1,
+        "line": 436
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma eq_false_of_supportedOn_of_not_mem {items : List I} {x : BinaryAllocation I} (hsupp : supportedOn items x) {i : I} (hi : i \u2209 items) : x i = false"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "supportedOn",
+      "eq_false_of_supportedOn_of_not_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "supportedOn_nil_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 445
+      },
+      "start": {
+        "column": 1,
+        "line": 445
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma supportedOn_nil_iff {x : BinaryAllocation I} : supportedOn ([] : List I) x \u2194 x = fun _ => false"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "supportedOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "supportedOn_tail_of_eq_false",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 455
+      },
+      "start": {
+        "column": 1,
+        "line": 455
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma supportedOn_tail_of_eq_false {i : I} {items : List I} {x : BinaryAllocation I} (hsupp : supportedOn (i :: items) x) (hxi : x i = false) : supportedOn items x"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "supportedOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "supportedOn_update_false",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 466
+      },
+      "start": {
+        "column": 1,
+        "line": 466
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma supportedOn_update_false {i : I} {items : List I} {x : BinaryAllocation I} (hsupp : supportedOn (i :: items) x) : supportedOn items (Function.update x i false)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinarySocialWelfare_eq_add_of_true",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 480
+      },
+      "start": {
+        "column": 1,
+        "line": 480
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natBinarySocialWelfare_eq_add_of_true (b : I \u2192 Nat) {x : BinaryAllocation I} {i : I} (hxi : x i = true) : natBinarySocialWelfare b x = b i + natBinarySocialWelfare b (Function.update x i false)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinaryLoad"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinaryLoad_eq_add_of_true",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 501
+      },
+      "start": {
+        "column": 1,
+        "line": 501
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natBinaryLoad_eq_add_of_true (w : I \u2192 Nat) {x : BinaryAllocation I} {i : I} (hxi : x i = true) : natBinaryLoad w x = w i + natBinaryLoad w (Function.update x i false)"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinarySocialWelfare_update_true_of_false",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 522
+      },
+      "start": {
+        "column": 1,
+        "line": 522
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natBinarySocialWelfare_update_true_of_false (b : I \u2192 Nat) {x : BinaryAllocation I} {i : I} (hxi : x i = false) : natBinarySocialWelfare b (Function.update x i true) = b i + natBinarySocialWelfare b x"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinaryLoad"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natBinaryLoad_update_true_of_false",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 543
+      },
+      "start": {
+        "column": 1,
+        "line": 543
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natBinaryLoad_update_true_of_false (w : I \u2192 Nat) {x : BinaryAllocation I} {i : I} (hxi : x i = false) : natBinaryLoad w (Function.update x i true) = w i + natBinaryLoad w x"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dpSolveList",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 570
+      },
+      "start": {
+        "column": 1,
+        "line": 570
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def dpSolveList (w b : I \u2192 Nat) : List I \u2192 Nat \u2192 BinaryAllocation I | [], _ => fun _ => false | i :: is, capacity => if w i \u2264 capacity then let skip"
+  },
+  {
+    "dependencies": [
+      "supportedOn",
+      "dpSolveList",
+      "natBinarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dpSolveList_supportedOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 585
+      },
+      "start": {
+        "column": 1,
+        "line": 585
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma dpSolveList_supportedOn (w b : I \u2192 Nat) : \u2200 items capacity, supportedOn items (dpSolveList w b items capacity)"
+  },
+  {
+    "dependencies": [
+      "natBinaryLoad",
+      "dpSolveList",
+      "eq_false_of_supportedOn_of_not_mem",
+      "dpSolveList_supportedOn",
+      "natBinarySocialWelfare",
+      "natBinaryLoad_update_true_of_false"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dpSolveList_feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 613
+      },
+      "start": {
+        "column": 1,
+        "line": 613
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma dpSolveList_feasible (w b : I \u2192 Nat) : \u2200 items, items.Nodup \u2192 \u2200 capacity, natBinaryLoad w (dpSolveList w b items capacity) \u2264 capacity"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "supportedOn",
+      "natBinaryLoad",
+      "natBinarySocialWelfare",
+      "dpSolveList",
+      "supportedOn_nil_iff",
+      "supportedOn_update_false",
+      "natBinaryLoad_eq_add_of_true",
+      "eq_false_of_supportedOn_of_not_mem",
+      "dpSolveList_supportedOn",
+      "natBinarySocialWelfare_eq_add_of_true",
+      "natBinarySocialWelfare_update_true_of_false",
+      "supportedOn_tail_of_eq_false"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dpSolveList_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 644
+      },
+      "start": {
+        "column": 1,
+        "line": 644
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma dpSolveList_optimal (w b : I \u2192 Nat) : \u2200 (items : List I), items.Nodup \u2192 \u2200 capacity {x : BinaryAllocation I}, supportedOn items x \u2192 natBinaryLoad w x \u2264 capacity \u2192 natBinarySocialWelfare b x \u2264 natBinarySocialWelfare b (dpSolveList w b items capacity)"
+  },
+  {
+    "dependencies": [
+      "natBinaryLoad",
+      "dpSolveList_feasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dynamicProgrammingOptimalAllocation_feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 727
+      },
+      "start": {
+        "column": 1,
+        "line": 727
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "theorem dynamicProgrammingOptimalAllocation_feasible (w b : I \u2192 Nat) (capacity : Nat) : natBinaryLoad w (dynamicProgrammingOptimalAllocation w b capacity) \u2264 capacity"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natBinaryLoad",
+      "natBinarySocialWelfare",
+      "dpSolveList_optimal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dynamicProgrammingOptimalAllocation_optimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 741
+      },
+      "start": {
+        "column": 1,
+        "line": 741
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "theorem dynamicProgrammingOptimalAllocation_optimal (w b : I \u2192 Nat) (capacity : Nat) {x : BinaryAllocation I} (hfeas : natBinaryLoad w x \u2264 capacity) : natBinarySocialWelfare b x \u2264 natBinarySocialWelfare b (dynamicProgrammingOptimalAllocation w b capacity)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natAuctionData",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 767
+      },
+      "start": {
+        "column": 1,
+        "line": 767
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def natAuctionData (w : I \u2192 Nat) (capacity : Nat) : KnapsackAuction I \u211d"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "realBidOfNat",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 774
+      },
+      "start": {
+        "column": 1,
+        "line": 774
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def realBidOfNat (b : I \u2192 Nat) : I \u2192 \u211d"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "natAuctionData",
+      "realBidOfNat",
+      "natBinarySocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "integralGreedyList",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 779
+      },
+      "start": {
+        "column": 1,
+        "line": 779
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def integralGreedyList (w : I \u2192 Nat) : List I \u2192 Nat \u2192 BinaryAllocation I | [], _ => fun _ => false | i :: items, remaining => if w i \u2264 remaining then Function.update (integralGreedyList w items (remaining - w i)) i true else fun _ => false termination_by items _ => items.length /-- The ratio-sorted integral greedy allocation. -/ noncomputable def integralGreedyAllocation (w b : I \u2192 Nat) (capacity : Nat) : BinaryAllocation I"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "le_highestBidValue",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 801
+      },
+      "start": {
+        "column": 1,
+        "line": 801
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma le_highestBidValue (b : I \u2192 Nat) (i : I) : b i \u2264 highestBidValue b"
+  },
+  {
+    "dependencies": [
+      "BinaryAllocation",
+      "fractionalSocialWelfare",
+      "realBidOfNat",
+      "binaryToAllocation",
+      "natBinarySocialWelfare",
+      "natAuctionData"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 807
+      },
+      "start": {
+        "column": 1,
+        "line": 807
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma fractionalSocialWelfare_realBidOfNat_binaryToAllocation (b : I \u2192 Nat) (x : BinaryAllocation I) : fractionalSocialWelfare (realBidOfNat b) (binaryToAllocation x) = natBinarySocialWelfare b x"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalSupportedOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 835
+      },
+      "start": {
+        "column": 1,
+        "line": 835
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "def fractionalSupportedOn (items : List I) (x : I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "fractionalSupportedOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "eq_zero_of_fractionalSupportedOn_of_not_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 839
+      },
+      "start": {
+        "column": 1,
+        "line": 839
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma eq_zero_of_fractionalSupportedOn_of_not_mem {items : List I} {x : I \u2192 \u211d} (hsupp : fractionalSupportedOn items x) {i : I} (hi : i \u2209 items) : x i = 0"
+  },
+  {
+    "dependencies": [
+      "supportedOn",
+      "integralGreedyList"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "integralGreedyList_supportedOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 847
+      },
+      "start": {
+        "column": 1,
+        "line": 847
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma integralGreedyList_supportedOn (w : I \u2192 Nat) : \u2200 items remaining, supportedOn items (integralGreedyList w items remaining)"
+  },
+  {
+    "dependencies": [
+      "fractionalSupportedOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natFractionalGreedyList_supportedOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 866
+      },
+      "start": {
+        "column": 1,
+        "line": 866
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natFractionalGreedyList_supportedOn (w : I \u2192 Nat) : \u2200 items remaining, fractionalSupportedOn items (natFractionalGreedyList w items remaining)"
+  },
+  {
+    "dependencies": [
+      "fractionalSocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalSocialWelfare_update_one_of_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 890
+      },
+      "start": {
+        "column": 1,
+        "line": 890
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma fractionalSocialWelfare_update_one_of_zero (b : I \u2192 \u211d) {x : I \u2192 \u211d} {i : I} (hxi : x i = 0) : fractionalSocialWelfare b (Function.update x i 1) = b i + fractionalSocialWelfare b x"
+  },
+  {
+    "dependencies": [
+      "fractionalSocialWelfare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "fractionalSocialWelfare_singleton",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 909
+      },
+      "start": {
+        "column": 1,
+        "line": 909
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma fractionalSocialWelfare_singleton (b : I \u2192 \u211d) (i : I) (\u03b1 : \u211d) : fractionalSocialWelfare b (fun j => if j = i then \u03b1 else 0) = b i * \u03b1"
+  },
+  {
+    "dependencies": [
+      "fractionalSocialWelfare",
+      "realBidOfNat",
+      "natBinarySocialWelfare",
+      "integralGreedyList",
+      "eq_zero_of_fractionalSupportedOn_of_not_mem",
+      "natFractionalGreedyList_supportedOn",
+      "eq_false_of_supportedOn_of_not_mem",
+      "integralGreedyList_supportedOn",
+      "natBinarySocialWelfare_update_true_of_false",
+      "fractionalSocialWelfare_update_one_of_zero",
+      "fractionalSocialWelfare_singleton",
+      "le_highestBidValue"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natFractionalGreedyList_le_integralGreedyList_plus_highest",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 923
+      },
+      "start": {
+        "column": 1,
+        "line": 923
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natFractionalGreedyList_le_integralGreedyList_plus_highest (w b : I \u2192 Nat) (hwpos : \u2200 i, 0 < w i) : \u2200 {items : List I}, items.Nodup \u2192 \u2200 remaining, fractionalSocialWelfare (realBidOfNat b) (natFractionalGreedyList w items remaining) \u2264 (natBinarySocialWelfare b (integralGreedyList w items remaining) : \u211d) + highestBidValue b"
+  },
+  {
+    "dependencies": [
+      "natAuctionData",
+      "realBidOfNat",
+      "natFractionalGreedyList_le_integralGreedyList_plus_highest"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1006
+      },
+      "start": {
+        "column": 1,
+        "line": 1006
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma natFractionalGreedyValue_le_integralGreedyValue_plus_highest (w b : I \u2192 Nat) (capacity : Nat) (hwpos : \u2200 i, 0 < w i) : natFractionalGreedyValue w b capacity \u2264 integralGreedyValue w b capacity + highestBidValue b"
+  },
+  {
+    "dependencies": [
+      "natAuctionData",
+      "fractionalFeasible",
+      "binaryToAllocation",
+      "dynamicProgrammingOptimalAllocation_feasible",
+      "natBinaryLoad"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1027
+      },
+      "start": {
+        "column": 1,
+        "line": 1027
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "lemma dynamicProgrammingOptimalAllocation_fractionalFeasible (w b : I \u2192 Nat) (capacity : Nat) : (natAuctionData w capacity).fractionalFeasible (binaryToAllocation (dynamicProgrammingOptimalAllocation w b capacity))"
+  },
+  {
+    "dependencies": [
+      "natAuctionData",
+      "fractionalFeasible",
+      "fractionalSocialWelfare",
+      "realBidOfNat",
+      "binaryToAllocation",
+      "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+      "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+      "natFractionalGreedyValue_le_integralGreedyValue_plus_highest"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Knapsack",
+    "name": "integralGreedy_halfApprox_dpOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1044
+      },
+      "start": {
+        "column": 1,
+        "line": 1044
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Knapsack.lean",
+    "type": "theorem integralGreedy_halfApprox_dpOptimal (w b : I \u2192 Nat) (capacity : Nat) (hwpos : \u2200 i, 0 < w i) (_hallfit : \u2200 i, w i \u2264 capacity) (hfracOptimal : \u2200 x : I \u2192 \u211d, (natAuctionData w capacity).fractionalFeasible x \u2192 fractionalSocialWelfare (realBidOfNat b) x \u2264 natFractionalGreedyValue w b capacity) : ((dynamicProgrammingOptimalValue w b capacity : \u211d) / 2) \u2264 max (integralGreedyValue w b capacity) (highestBidValue b)"
+  }
+]

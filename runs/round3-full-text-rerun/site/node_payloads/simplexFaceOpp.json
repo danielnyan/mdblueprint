@@ -1,0 +1,47 @@
+{
+  "id": "simplexFaceOpp",
+  "title": "simplexFaceOpp",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/simplexFaceOpp.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>simplexFaceOpp</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef simplexFaceOpp (i : Fin n) : Set (Fin n → ℝ)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "kkm-open-cover",
+      "title": "kkm_open_cover",
+      "href": "misc/kkm-open-cover.html"
+    },
+    {
+      "id": "strom-value-continuous",
+      "title": "strom_value_continuous",
+      "href": "misc/strom-value-continuous.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "simplexFaceOpp",
+      "display_name": "simplexFaceOpp",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

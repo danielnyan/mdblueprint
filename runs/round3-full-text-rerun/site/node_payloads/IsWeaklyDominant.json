@@ -1,0 +1,138 @@
+{
+  "id": "IsWeaklyDominant",
+  "title": "IsWeaklyDominant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsWeaklyDominant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsWeaklyDominant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsWeaklyDominant (G : StrategicGame N U) (i : N) (s : G.strategy i) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>WeaklyDominates</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "WeaklyDominates",
+      "title": "WeaklyDominates",
+      "href": "misc/WeaklyDominates.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "IsStrictlyDominant-isWeaklyDominant",
+      "title": "IsStrictlyDominant.isWeaklyDominant",
+      "href": "misc/IsStrictlyDominant-isWeaklyDominant.html"
+    },
+    {
+      "id": "IsWeaklyDominant-isBestResponse",
+      "title": "IsWeaklyDominant.isBestResponse",
+      "href": "misc/IsWeaklyDominant-isBestResponse.html"
+    },
+    {
+      "id": "VCGMechanism-isDSIC",
+      "title": "VCGMechanism_isDSIC",
+      "href": "misc/VCGMechanism-isDSIC.html"
+    },
+    {
+      "id": "interimQuasiLinearUtilityIntegrand-le-of-isDSIC",
+      "title": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+      "href": "misc/interimQuasiLinearUtilityIntegrand-le-of-isDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "isMonotone-of-isDSIC",
+      "title": "isMonotone_of_isDSIC",
+      "href": "misc/isMonotone-of-isDSIC.html"
+    },
+    {
+      "id": "mechanism-not-isDSIC",
+      "title": "mechanism_not_isDSIC",
+      "href": "misc/mechanism-not-isDSIC.html"
+    },
+    {
+      "id": "no-dominant-strategy",
+      "title": "no_dominant_strategy",
+      "href": "misc/no-dominant-strategy.html"
+    },
+    {
+      "id": "of-dominant",
+      "title": "of_dominant",
+      "href": "misc/of-dominant.html"
+    },
+    {
+      "id": "payment-sandwich",
+      "title": "payment_sandwich",
+      "href": "misc/payment-sandwich.html"
+    },
+    {
+      "id": "pd-defect-weakly-dominant",
+      "title": "pd_defect_weakly_dominant",
+      "href": "misc/pd-defect-weakly-dominant.html"
+    },
+    {
+      "id": "truthful-weakly-dominant",
+      "title": "truthful_weakly_dominant",
+      "href": "misc/truthful-weakly-dominant.html"
+    },
+    {
+      "id": "truthful-weakly-dominant",
+      "title": "truthful_weakly_dominant",
+      "href": "misc/truthful-weakly-dominant.html"
+    },
+    {
+      "id": "truthful-weakly-dominant-p0",
+      "title": "truthful_weakly_dominant_p0",
+      "href": "misc/truthful-weakly-dominant-p0.html"
+    },
+    {
+      "id": "truthful-weakly-dominant-p1",
+      "title": "truthful_weakly_dominant_p1",
+      "href": "misc/truthful-weakly-dominant-p1.html"
+    },
+    {
+      "id": "vickrey4-p0-dominant",
+      "title": "vickrey4_p0_dominant",
+      "href": "misc/vickrey4-p0-dominant.html"
+    },
+    {
+      "id": "vickrey4-p1-dominant",
+      "title": "vickrey4_p1_dominant",
+      "href": "misc/vickrey4-p1-dominant.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsWeaklyDominant",
+      "display_name": "IsWeaklyDominant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

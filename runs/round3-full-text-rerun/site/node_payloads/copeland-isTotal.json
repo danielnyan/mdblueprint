@@ -1,0 +1,57 @@
+{
+  "id": "copeland-isTotal",
+  "title": "copeland_isTotal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/copeland-isTotal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>copeland_isTotal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem copeland_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsTotal</li>\n<li>Profile</li>\n<li>MajorityPrefers</li>\n<li>Profile.ext</li>\n<li>Prefers</li>\n<li>margin_pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "MajorityPrefers",
+      "title": "MajorityPrefers",
+      "href": "misc/MajorityPrefers.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "copeland_isTotal",
+      "display_name": "copeland_isTotal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

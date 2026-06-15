@@ -1,0 +1,47 @@
+{
+  "id": "IsAffineUtility-isRiskNeutral",
+  "title": "IsAffineUtility.isRiskNeutral",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsAffineUtility-isRiskNeutral.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsAffineUtility.isRiskNeutral</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsAffineUtility.isRiskNeutral {I : Type*} [Fintype I] {u : 𝕜 → 𝕜} (h : IsAffineUtility u) : IsRiskNeutral (I</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsAffineUtility</li>\n<li>IsRiskNeutral</li>\n<li>wsum_add</li>\n<li>wsum_smul</li>\n<li>wsum_const</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsAffineUtility",
+      "title": "IsAffineUtility",
+      "href": "misc/IsAffineUtility.html"
+    },
+    {
+      "id": "IsRiskNeutral",
+      "title": "IsRiskNeutral",
+      "href": "misc/IsRiskNeutral.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsAffineUtility.isRiskNeutral",
+      "display_name": "IsAffineUtility.isRiskNeutral",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM",
+    "source": "IsPolyBounded",
+    "target": "Bounded"
+  }
+]

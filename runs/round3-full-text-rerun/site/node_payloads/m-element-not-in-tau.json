@@ -1,0 +1,42 @@
+{
+  "id": "m-element-not-in-tau",
+  "title": "m_element_not_in_tau",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/m-element-not-in-tau.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>m_element_not_in_tau</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma m_element_not_in_tau [Fintype T] (τ : Finset T) (D : Finset I) (i a b : I) (h_door : IST.isDoor τ D) (h_nonempty : τ.Nonempty) (ha_mem : a ∈ D) (hb_mem : b ∈ D) (hab : a ≠ b) (h_eq_mini : mini h_nonempty a = mini h_nonempty b) (h_M_nonempty : (M_set τ D i h_nonempty).Nonempty) (h_i_is : i = a ∨ i = b) : m_element τ D i h_nonempty h_M_nonempty ∉ τ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDoor</li>\n<li>M_set</li>\n<li>is_maximal_in_M_set</li>\n<li>m_element_is_maximal</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "m_element_not_in_tau",
+      "display_name": "m_element_not_in_tau",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

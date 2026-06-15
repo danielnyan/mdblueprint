@@ -1,0 +1,390 @@
+[
+  {
+    "dependencies": [
+      "Unanimity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "over",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 17
+      },
+      "start": {
+        "column": 1,
+        "line": 17
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem over strict voting profiles. This file records the public decisive-coalition vocabulary for the strict ranked-ballot voting domain. The proof route is the standard one: 1. unanimity implies the grand coalition is decisive; 2. weak decisiveness for one ordered pair spreads to decisiveness for all pairs; 3. any decisive coalition of size at least two has a strictly smaller nonempty decisive subcoalition; 4. a minimal decisive coalition is a singleton; 5. the singleton voter is a dictator. -/ namespace SocialChoice namespace Voting variable {N A : Type*} /-- A coalition is decisive for `a` over `b` if unanimous strict support inside the coalition forces the social strict preference `a \u227b b`. -/"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "IsDecisiveFor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "def IsDecisiveFor [Fintype N] [Fintype A] (F : SWF N A) (C : Set N) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IsDecisiveFor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "IsDecisive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "def IsDecisive [Fintype N] [Fintype A] (F : SWF N A) (C : Set N) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IsDecisive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "SWF.IsDictator",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 48
+      },
+      "start": {
+        "column": 1,
+        "line": 48
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "def SWF.IsDictator [Fintype N] [Fintype A] (F : SWF N A) (i : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "IsDecisive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "unanimity_univ_isDecisive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem unanimity_univ_isDecisive [Fintype N] [Fintype A] {F : SWF N A} (h : SWF.Unanimity F) : IsDecisive F Set.univ"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "SWF.IsDictator"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "singleton_unanimity_isDictator",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 56
+      },
+      "start": {
+        "column": 1,
+        "line": 56
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem singleton_unanimity_isDictator [Fintype N] [Fintype A] [Subsingleton N] {F : SWF N A} (h : SWF.Unanimity F) (i : N) : F.IsDictator i"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "Dictatorial"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "singleton_unanimity_dictatorial",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem singleton_unanimity_dictatorial [Fintype N] [Fintype A] [Subsingleton N] [Nonempty N] {F : SWF N A} (h : SWF.Unanimity F) : SWF.Dictatorial F"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "IsWeaklyDecisiveFor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "def IsWeaklyDecisiveFor [Fintype N] [Fintype A] (F : SWF N A) (C : Set N) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IsDecisiveFor",
+      "IsWeaklyDecisiveFor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "isWeaklyDecisiveFor_of_isDecisiveFor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 83
+      },
+      "start": {
+        "column": 1,
+        "line": 83
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem isWeaklyDecisiveFor_of_isDecisiveFor [Fintype N] [Fintype A] {F : SWF N A} {C : Set N} {a b : A} (h : IsDecisiveFor F C a b) : IsWeaklyDecisiveFor F C a b"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IIA",
+      "Profile",
+      "Prefers",
+      "BallotPrefers",
+      "rank_injective",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "rank_lt_iff",
+      "rank_lt_card",
+      "StrictlyPreferred.asymm",
+      "BallotPrefers.asymm",
+      "Prefers.asymm",
+      "Unanimity",
+      "IsWeaklyDecisiveFor",
+      "IsDecisiveFor",
+      "strict_transitive",
+      "isWeaklyDecisiveFor_of_isDecisiveFor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "iia_strict",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 89
+      },
+      "start": {
+        "column": 1,
+        "line": 89
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem iia_strict [Fintype N] [Fintype A] {F : SWF N A} (hF : SWF.IIA F) {P Q : Profile N A} {a b : A} (hab : \u2200 i, Prefers P i a b \u2194 Prefers Q i a b) (hba : \u2200 i, Prefers P i b a \u2194 Prefers Q i b a) : strict (F P) a b \u2194 strict (F Q) a b"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "IIA",
+      "IsWeaklyDecisiveFor",
+      "IsDecisive",
+      "isWeaklyDecisiveFor_of_isDecisiveFor",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "decisive_spread",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 474
+      },
+      "start": {
+        "column": 1,
+        "line": 474
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem decisive_spread [Fintype N] [Fintype A] {F : SWF N A} (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) {C : Set N} {x y z : A} (hxy : x \u2260 y) (hxz : x \u2260 z) (hyz : y \u2260 z) (hC : Set.Nonempty C) (h : IsWeaklyDecisiveFor F C x y) : IsDecisive F C"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IsDecisive"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "exists_nonempty_decisive_of_size",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 503
+      },
+      "start": {
+        "column": 1,
+        "line": 503
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "def exists_nonempty_decisive_of_size [Fintype N] [Fintype A] (F : SWF N A) (n : Nat) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "exists_nonempty_decisive_of_size",
+      "unanimity_univ_isDecisive",
+      "IIA",
+      "Profile",
+      "Prefers",
+      "IsDecisive",
+      "decisive_spread",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "StrictlyPreferred.asymm",
+      "BallotPrefers.asymm",
+      "Prefers.asymm",
+      "iia_strict"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "exists_minimal_decisive_coalition",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 507
+      },
+      "start": {
+        "column": 1,
+        "line": 507
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem exists_minimal_decisive_coalition [Fintype N] [Nonempty N] [Fintype A] {F : SWF N A} (hU : SWF.Unanimity F) : \u2203 n, Minimal (exists_nonempty_decisive_of_size F) n"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "IsDecisive",
+      "Unanimity",
+      "IIA",
+      "Profile.ext",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "decisive_contraction",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 555
+      },
+      "start": {
+        "column": 1,
+        "line": 555
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem decisive_contraction [Fintype N] [Fintype A] {F : SWF N A} (h0 : \u2203 x y z : A, x \u2260 y \u2227 x \u2260 z \u2227 y \u2260 z) {C : Set N} (hCdec : IsDecisive F C) (hCcard : 2 \u2264 C.ncard) (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) : \u2203 S : Set N, S.Nonempty \u2227 S < C \u2227 IsDecisive F S"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "IIA",
+      "exists_nonempty_decisive_of_size",
+      "exists_minimal_decisive_coalition",
+      "decisive_contraction"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "decisive_minimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 665
+      },
+      "start": {
+        "column": 1,
+        "line": 665
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem decisive_minimal [Fintype N] [Nonempty N] [Fintype A] (h0 : \u2203 x y z : A, x \u2260 y \u2227 x \u2260 z \u2227 y \u2260 z) {F : SWF N A} (hU : SWF.Unanimity F) (hIIA : SWF.IIA F) : Minimal (exists_nonempty_decisive_of_size F) 1"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Unanimity",
+      "IIA",
+      "Dictatorial",
+      "decisive_minimal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Decisive",
+    "name": "arrow_of_unanimity_iia",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 697
+      },
+      "start": {
+        "column": 1,
+        "line": 697
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Decisive.lean",
+    "type": "theorem arrow_of_unanimity_iia [Fintype N] [Nonempty N] [Fintype A] (h0 : \u2203 x y z : A, x \u2260 y \u2227 x \u2260 z \u2227 y \u2260 z) {F : SWF N A} (h1 : SWF.Unanimity F) (h2 : SWF.IIA F) : SWF.Dictatorial F"
+  }
+]

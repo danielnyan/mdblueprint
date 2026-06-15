@@ -1,0 +1,52 @@
+{
+  "id": "pd-nash-unique",
+  "title": "pd_nash_unique",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/pd-nash-unique.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>pd_nash_unique</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem pd_nash_unique : ∀ σ : PD.Profile, IsNashEquilibrium PD σ → σ = fun _ =&gt; Defect</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>PD</li>\n<li>IsNashEquilibrium</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "PD",
+      "title": "PD",
+      "href": "misc/PD.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "pd_nash_unique",
+      "display_name": "pd_nash_unique",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

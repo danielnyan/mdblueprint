@@ -1,0 +1,42 @@
+{
+  "id": "Indifferent-refl",
+  "title": "Indifferent.refl",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Indifferent-refl.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Indifferent.refl</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem Indifferent.refl (a : A) : Indifferent a a</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Indifferent</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Indifferent",
+      "title": "Indifferent",
+      "href": "misc/Indifferent.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "Indifferent.refl",
+      "display_name": "Indifferent.refl",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "top-unanimity-of-unanimity",
+  "title": "top_unanimity_of_unanimity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/top-unanimity-of-unanimity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>top_unanimity_of_unanimity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem top_unanimity_of_unanimity [Nonempty A] {f : VotingRule N A} (hf : IsTotal f) (hU : Unanimity f) : ∀ (P : Profile N A) (a : A), (∀ i : N, TopRank P i a) → f P = {a}</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>IsTotal</li>\n<li>Unanimity</li>\n<li>Profile</li>\n<li>TopRank</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "TopRank",
+      "title": "TopRank",
+      "href": "misc/TopRank.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "top_unanimity_of_unanimity",
+      "display_name": "top_unanimity_of_unanimity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

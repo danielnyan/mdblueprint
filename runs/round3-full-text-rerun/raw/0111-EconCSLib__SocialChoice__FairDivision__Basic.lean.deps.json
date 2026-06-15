@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "source": "SolutionConcept",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Basic",
+    "source": "Rule",
+    "target": "Allocation"
+  }
+]

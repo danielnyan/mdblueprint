@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_eq_some_child_value",
+    "target": "value_Node"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_eq_some_child_value",
+    "target": "argMaxOn_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_eq_some_child_value",
+    "target": "mem_valueList_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_eq_some_child_value",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_eq_some_child_value",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "mem_valueList_iff",
+    "target": "valueList_eq_map"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_ge",
+    "target": "value_Node"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_ge",
+    "target": "valueList_eq_map"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node_ge",
+    "target": "argMaxOn_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.BackwardInduction",
+    "source": "value_Node",
+    "target": "argMaxOn"
+  }
+]

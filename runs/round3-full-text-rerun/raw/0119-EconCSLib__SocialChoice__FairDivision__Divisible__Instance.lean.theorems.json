@@ -1,0 +1,331 @@
+[
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def feasible {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (_I : Instance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def toShareInstance {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : Instance N \u03a9) : SocialChoice.FairDivision.ShareInstance N (Set \u03a9) (Set \u03a9)"
+  },
+  {
+    "dependencies": [
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def feasible {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (_I : CardinalInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "toGenericCardinalInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def toGenericCardinalInstance {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) : SocialChoice.FairDivision.CardinalInstance N (Set \u03a9) (Set \u03a9)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "toShareInstance",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def toShareInstance {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) : SocialChoice.FairDivision.ShareInstance N (Set \u03a9) (Set \u03a9)"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toGenericCardinalInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsEnvyFree {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "toGenericCardinalInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 92
+      },
+      "start": {
+        "column": 1,
+        "line": 92
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsProportional {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) (n : \u2115) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toGenericCardinalInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsEquitable {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toGenericCardinalInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsParetoOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 104
+      },
+      "start": {
+        "column": 1,
+        "line": 104
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsParetoOptimal {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : CardinalInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "MeasureValuation",
+      "toCardinalInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "toCakeValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 133
+      },
+      "start": {
+        "column": 1,
+        "line": 133
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def toCakeValuation {N \u03a9 : Type*} [MeasurableSpace \u03a9] (I : MeasureInstance N \u03a9) : CakeValuation N \u03a9 ENNReal"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toGenericCardinalInstance",
+      "toShareInstance"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "feasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def feasible {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (_I : MeasureInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toCakeValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 167
+      },
+      "start": {
+        "column": 1,
+        "line": 167
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsEnvyFree {N \u03a9 : Type*} [MeasurableSpace \u03a9] (I : MeasureInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 173
+      },
+      "start": {
+        "column": 1,
+        "line": 173
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "theorem isEnvyFree_iff_toCardinalInstance_isEnvyFree {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : MeasureInstance N \u03a9) [\u2200 i, IsFiniteMeasure (I.measure i)] (A : Allocation N \u03a9) : I.IsEnvyFree A \u2194 I.toCardinalInstance.IsEnvyFree A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "toCakeValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 185
+      },
+      "start": {
+        "column": 1,
+        "line": 185
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsProportional {N \u03a9 : Type*} [MeasurableSpace \u03a9] (I : MeasureInstance N \u03a9) (n : \u2115) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toCakeValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 190
+      },
+      "start": {
+        "column": 1,
+        "line": 190
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "def IsEquitable {N \u03a9 : Type*} [MeasurableSpace \u03a9] (I : MeasureInstance N \u03a9) (A : Allocation N \u03a9) : Prop"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "IsProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Instance",
+    "name": "IsEnvyFree.isProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 195
+      },
+      "start": {
+        "column": 1,
+        "line": 195
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+    "type": "theorem IsEnvyFree.isProportional {N \u03a9 : Type*} [MeasurableSpace \u03a9] [Fintype N] (I : MeasureInstance N \u03a9) (A : Allocation N \u03a9) (ha : IsAllocation A) (hef : I.IsEnvyFree A) : I.IsProportional (Fintype.card N) A"
+  }
+]

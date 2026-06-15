@@ -1,0 +1,89 @@
+[
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "name": "IsExactPotential",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean",
+    "type": "def IsExactPotential (G : StrategicGame N U) (\u03a6 : G.Profile \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "name": "IsOrdinalPotential",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean",
+    "type": "def IsOrdinalPotential (G : StrategicGame N U) (\u03a6 : G.Profile \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsExactPotential",
+      "IsNashEquilibrium"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "name": "IsExactPotential.maximizer_is_nash",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 64
+      },
+      "start": {
+        "column": 1,
+        "line": 64
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean",
+    "type": "theorem IsExactPotential.maximizer_is_nash {\u03a6 : G.Profile \u2192 U} (h\u03a6 : IsExactPotential G \u03a6) {\u03c3 : G.Profile} (hmax : \u2200 \u03c4 : G.Profile, \u03a6 \u03c3 \u2265 \u03a6 \u03c4) : IsNashEquilibrium G \u03c3"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsOrdinalPotential",
+      "IsNashEquilibrium",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.PotentialGame",
+    "name": "IsOrdinalPotential.isNash_iff_localMax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/PotentialGame.lean",
+    "type": "theorem IsOrdinalPotential.isNash_iff_localMax {\u03a6 : G.Profile \u2192 U} (h\u03a6 : IsOrdinalPotential G \u03a6) {\u03c3 : G.Profile} : IsNashEquilibrium G \u03c3 \u2194 \u2200 i (s' : G.strategy i), \u03a6 \u03c3 \u2265 \u03a6 (deviate \u03c3 i s')"
+  }
+]

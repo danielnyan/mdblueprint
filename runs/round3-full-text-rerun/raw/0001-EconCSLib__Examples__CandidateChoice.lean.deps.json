@@ -1,0 +1,332 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "majorityOutcome_first_second_same",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "majorityOutcome_first_third_same",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "majorityOutcome_second_third_same",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "majorityOutcome_pairwise_distinct",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_spe",
+    "target": "Kuhn_exists_SPE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "sergeyChoice"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "candidateChoiceGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "larryChoice"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "IsZeroSum.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "Subtree.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "sergeyChoice",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "payoff",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "payoff",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "payoff",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "larryChoice",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "larryChoice",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "larryChoice",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "larryChoice",
+    "target": "sergeyChoice"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "candidateChoiceGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoice_has_ne",
+    "target": "Kuhn_exists_NE"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "terminal",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "terminal",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "terminal",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "Player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "larryChoice"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "majorityOutcome"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "majorityOutcome_pairwise_distinct"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "sergeyChoice"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "IsZeroSum.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "candidateChoiceGame",
+    "target": "Subtree.tail_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "utility",
+    "target": "IsCompletelyMixedProfile.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "utility",
+    "target": "IsCompletelyMixed.player"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CandidateChoice",
+    "source": "utility",
+    "target": "Player"
+  }
+]

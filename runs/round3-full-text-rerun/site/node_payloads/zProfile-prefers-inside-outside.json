@@ -1,0 +1,47 @@
+{
+  "id": "zProfile-prefers-inside-outside",
+  "title": "zProfile_prefers_inside_outside",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/zProfile-prefers-inside-outside.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>zProfile_prefers_inside_outside</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem zProfile_prefers_inside_outside [Fintype N] [Fintype A] (P Q : Profile N A) (R : Set A) [∀ a : A, Decidable (a ∈ R)] {a b : A} (ha : a ∈ R) (hb : b ∉ R) (i : N) : Prefers (zProfile P Q R) i a b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>Prefers</li>\n<li>rank_lt_card</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "zProfile_prefers_inside_outside",
+      "display_name": "zProfile_prefers_inside_outside",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hasIntegrableInterimAllocation-of-isFeasible-of-aestronglyMeasurable",
+  "title": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasIntegrableInterimAllocation-of-isFeasible-of-aestronglyMeasurable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable [Fintype I] (A : BayesianSingleItemAuction I) (hfeas : A.IsFeasible) (hmeas : ∀ i z_i, AEStronglyMeasurable (fun t =&gt; A.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) : A.HasIntegrableInterimAllocation</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>HasIntegrableInterimAllocation</li>\n<li>hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "HasIntegrableInterimAllocation",
+      "title": "HasIntegrableInterimAllocation",
+      "href": "misc/HasIntegrableInterimAllocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+      "display_name": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

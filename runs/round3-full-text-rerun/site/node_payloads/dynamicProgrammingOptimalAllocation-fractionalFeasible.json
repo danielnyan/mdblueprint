@@ -1,0 +1,57 @@
+{
+  "id": "dynamicProgrammingOptimalAllocation-fractionalFeasible",
+  "title": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dynamicProgrammingOptimalAllocation-fractionalFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dynamicProgrammingOptimalAllocation_fractionalFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma dynamicProgrammingOptimalAllocation_fractionalFeasible (w b : I → Nat) (capacity : Nat) : (natAuctionData w capacity).fractionalFeasible (binaryToAllocation (dynamicProgrammingOptimalAllocation w b capacity))</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>natAuctionData</li>\n<li>fractionalFeasible</li>\n<li>binaryToAllocation</li>\n<li>dynamicProgrammingOptimalAllocation_feasible</li>\n<li>natBinaryLoad</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "natAuctionData",
+      "title": "natAuctionData",
+      "href": "misc/natAuctionData.html"
+    },
+    {
+      "id": "fractionalFeasible",
+      "title": "fractionalFeasible",
+      "href": "misc/fractionalFeasible.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    },
+    {
+      "id": "natBinaryLoad",
+      "title": "natBinaryLoad",
+      "href": "misc/natBinaryLoad.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+      "display_name": "dynamicProgrammingOptimalAllocation_fractionalFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

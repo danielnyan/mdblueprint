@@ -1,0 +1,42 @@
+{
+  "id": "minmax-from-general",
+  "title": "minmax_from_general",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/minmax-from-general.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>minmax_from_general</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem minmax_from_general (A : I → J → ℝ) : MinimaxLoomis.lam0 A = MinimaxLoomis.mu0 A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>loomis_value_eq</li>\n<li>IsPositive</li>\n<li>lamB0_one</li>\n<li>muB0_one</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "minmax_from_general",
+      "display_name": "minmax_from_general",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

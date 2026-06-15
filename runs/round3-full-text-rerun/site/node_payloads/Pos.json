@@ -1,0 +1,127 @@
+{
+  "id": "Pos",
+  "title": "Pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Pos</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "Board",
+      "title": "Board",
+      "href": "misc/Board.html"
+    },
+    {
+      "id": "Scarf",
+      "title": "Scarf",
+      "href": "misc/Scarf.html"
+    },
+    {
+      "id": "TTTState-move",
+      "title": "TTTState.move",
+      "href": "misc/TTTState-move.html"
+    },
+    {
+      "id": "allPos",
+      "title": "allPos",
+      "href": "misc/allPos.html"
+    },
+    {
+      "id": "bestGood-le",
+      "title": "bestGood_le",
+      "href": "misc/bestGood-le.html"
+    },
+    {
+      "id": "blockWeight-pos",
+      "title": "blockWeight_pos",
+      "href": "misc/blockWeight-pos.html"
+    },
+    {
+      "id": "embed-continuous",
+      "title": "embed_continuous",
+      "href": "misc/embed-continuous.html"
+    },
+    {
+      "id": "emptyPositions",
+      "title": "emptyPositions",
+      "href": "misc/emptyPositions.html"
+    },
+    {
+      "id": "final-all-women-hold",
+      "title": "final_all_women_hold",
+      "href": "misc/final-all-women-hold.html"
+    },
+    {
+      "id": "index-combine-split-inverse",
+      "title": "index_combine_split_inverse",
+      "href": "misc/index-combine-split-inverse.html"
+    },
+    {
+      "id": "isEmpty",
+      "title": "isEmpty",
+      "href": "misc/isEmpty.html"
+    },
+    {
+      "id": "place",
+      "title": "place",
+      "href": "misc/place.html"
+    },
+    {
+      "id": "playMoves",
+      "title": "playMoves",
+      "href": "misc/playMoves.html"
+    },
+    {
+      "id": "project-embed-id",
+      "title": "project_embed_id",
+      "href": "misc/project-embed-id.html"
+    },
+    {
+      "id": "rotateBundles-mem",
+      "title": "rotateBundles_mem",
+      "href": "misc/rotateBundles-mem.html"
+    },
+    {
+      "id": "sampleGame",
+      "title": "sampleGame",
+      "href": "misc/sampleGame.html"
+    },
+    {
+      "id": "tttGame",
+      "title": "tttGame",
+      "href": "misc/tttGame.html"
+    },
+    {
+      "id": "winLines",
+      "title": "winLines",
+      "href": "misc/winLines.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Pos",
+      "display_name": "Pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

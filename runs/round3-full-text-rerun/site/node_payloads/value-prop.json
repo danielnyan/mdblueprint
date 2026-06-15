@@ -1,0 +1,52 @@
+{
+  "id": "value-prop",
+  "title": "value_prop",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value-prop.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value_prop</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value_prop (SB : Strategy) {t : GameTree} : t.value ≤ t.outcome DStrategy SB</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>DStrategy</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "DStrategy",
+      "title": "DStrategy",
+      "href": "misc/DStrategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value_prop",
+      "display_name": "value_prop",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

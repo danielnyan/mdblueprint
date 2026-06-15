@@ -1,0 +1,42 @@
+{
+  "id": "integral-comp-profileSplitMeasurableEquiv-productPrior",
+  "title": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/integral-comp-profileSplitMeasurableEquiv-productPrior.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>integral_comp_profileSplitMeasurableEquiv_productPrior</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem integral_comp_profileSplitMeasurableEquiv_productPrior [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) [∀ i : I, IsProbabilityMeasure (A.typeMeasure i)] (i : I) {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] (g : ℝ × OpponentTypeProfile I i → E) : (∫ t, g (profileSplitMeasurableEquiv i t) ∂A.productPrior) = ∫ p, g p ∂(A.typeMeasure i).prod (A.opponentProductPrior i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>OpponentTypeProfile</li>\n<li>measurePreserving_profileSplitMeasurableEquiv_productPrior</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+      "display_name": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

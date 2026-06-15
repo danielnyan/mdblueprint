@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsProportional.isMaxminShare",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsProportional.isMaxminShare",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsProportional.isMaxminShare",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsProportional.isMaxminShare",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsProportional.isMaxminShare",
+    "target": "IsMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsEnvyFree.isProportional_additive",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsEnvyFree.isProportional_additive",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsEnvyFree.isProportional_additive",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsEnvyFree.isProportional_additive",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "source": "IsEnvyFree.isProportional_additive",
+    "target": "IsProportional"
+  }
+]

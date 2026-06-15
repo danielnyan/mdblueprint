@@ -1,0 +1,82 @@
+[
+  {
+    "dependencies": [
+      "PayoffVector",
+      "IsEfficient",
+      "coalitionPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "name": "Core",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 46
+      },
+      "start": {
+        "column": 1,
+        "line": 46
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Core.lean",
+    "type": "def Core : Set (PayoffVector N \u211d)"
+  },
+  {
+    "dependencies": [
+      "Core",
+      "IsImputation",
+      "coalitionPayoff"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "name": "core_subset_imputations",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 50
+      },
+      "start": {
+        "column": 1,
+        "line": 50
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Core.lean",
+    "type": "theorem core_subset_imputations : G.Core \u2286 { x | G.IsImputation x }"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "name": "IsBalanced",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Core.lean",
+    "type": "def IsBalanced (\ud835\udc9f : Finset (Finset N)) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Core",
+    "name": "IsBalancedGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/CoalitionalGame/Core.lean",
+    "type": "def IsBalancedGame : Prop"
+  }
+]

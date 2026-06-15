@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allocation — Lean-derived Blueprint</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.css"
+        integrity="sha384-hW6ZmmePRD2f/9cuxGE6C9faGprtIBOme5OLUiEjtRKMTN67tY23ur9eAi21H8De"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.js"
+          integrity="sha384-FVvsvR4UzyIP8Y5hVvHjOfjVh+LWV78ll63SYx1t+nuuMPGMAihB8dJ2YsYyg1Wb"
+          crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/contrib/auto-render.min.js"
+          integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+          crossorigin="anonymous"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.MDBLUEPRINT_MATH_OPTIONS = {"delimiters": [{"left": "$$", "right": "$$", "display": true}, {"left": "\\[", "right": "\\]", "display": true}, {"left": "$", "right": "$", "display": false}, {"left": "\\(", "right": "\\)", "display": false}], "throwOnError": false, "macros": {}};
+      renderMathInElement(document.body, window.MDBLUEPRINT_MATH_OPTIONS);
+    });
+  </script>
+</head>
+<body>
+  <nav class="sidebar">
+    <a class="logo" href="../index.html">Lean Blueprint</a>
+    <a class="nav-link" href="../dep_graph_document.html">Dependency graph</a>
+    <section class="nav-section" aria-labelledby="nav-topics">
+      <button class="sidebar-toggle" type="button" aria-expanded="true" aria-controls="topic-list">
+        <span class="toggle-icon" aria-hidden="true">▾</span> Topics
+      </button>
+      <ul id="topic-list" class="topic-list nav-list">
+        <li class="topic-leaf topic-active">
+          <a href="../misc/index.html">Misc</a>
+        </li>
+      
+      </ul>
+    </section>
+    
+  </nav>
+  <main>
+    
+<article class="theorem_thmwrapper theorem-style-theorem node-page" id="node-Allocation">
+  <header class="theorem_thmheading thm-heading">
+    <span class="theorem_thmcaption thm-caption">Theorem</span>
+    <span class="theorem_thmtitle thm-title">Allocation</span>
+    <div class="thm_header_extras">
+      
+      <span class="badge kind-theorem">theorem</span>
+      <span class="badge status-staged">staged</span>
+    </div>
+    <div class="thm_header_hidden_extras">
+      <a class="permalink" href="#node-Allocation">#</a>
+      
+      
+      <button class="modal-trigger lean" type="button" data-modal-target="lean-modal">L∃∀N</button>
+      
+    </div>
+  </header>
+
+  
+
+  
+  <div class="modal-container" id="lean-modal" hidden>
+    <div class="modal-content">
+      <header><h1>Lean declarations</h1><button class="closebtn" type="button">x</button></header>
+      <ul class="uses">
+        
+        <li class="lean-ref">
+          
+          
+          <code>Allocation</code>
+          
+          
+          
+          
+          
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  
+
+  <div class="theorem_thmcontent thm-content body">
+    <h1>Allocation</h1>
+<h2>Lean type</h2>
+<p><code>lean
+def Allocation (N G : Type*)</code></p>
+<h2>Dependencies</h2>
+<ul>
+<li>none</li>
+</ul>
+    
+  </div>
+
+  
+
+  
+  <section class="deps deps-used-by">
+    <h2>Used by</h2>
+    <ul>
+      
+      <li><a href="EFXExistenceStatement.html">EFXExistenceStatement</a></li>
+      
+      <li><a href="IsAlphaMMS.html">IsAlphaMMS</a></li>
+      
+      <li><a href="IsContiguousAllocation.html">IsContiguousAllocation</a></li>
+      
+      <li><a href="IsEF1.html">IsEF1</a></li>
+      
+      <li><a href="IsEF1.html">IsEF1</a></li>
+      
+      <li><a href="IsEFX.html">IsEFX</a></li>
+      
+      <li><a href="IsEFX.html">IsEFX</a></li>
+      
+      <li><a href="IsEFX-isEF1.html">IsEFX.isEF1</a></li>
+      
+      <li><a href="IsEFX-of-noEnvy-mono.html">IsEFX.of_noEnvy_mono</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree.html">IsEnvyFree</a></li>
+      
+      <li><a href="IsEnvyFree-isEFX-of-mono.html">IsEnvyFree.isEFX_of_mono</a></li>
+      
+      <li><a href="IsEnvyFree-isProportional.html">IsEnvyFree.isProportional</a></li>
+      
+      <li><a href="IsEnvyFree-isProportional.html">IsEnvyFree.isProportional</a></li>
+      
+      <li><a href="IsEnvyFree-isProportional-additive.html">IsEnvyFree.isProportional_additive</a></li>
+      
+      <li><a href="IsEnvyFree-isSource-all.html">IsEnvyFree.isSource_all</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsEquitable.html">IsEquitable</a></li>
+      
+      <li><a href="IsMaxmin.html">IsMaxmin</a></li>
+      
+      <li><a href="IsMaxmin.html">IsMaxmin</a></li>
+      
+      <li><a href="IsMaxmin.html">IsMaxmin</a></li>
+      
+      <li><a href="IsMaxmin.html">IsMaxmin</a></li>
+      
+      <li><a href="IsMaxminShare.html">IsMaxminShare</a></li>
+      
+      <li><a href="IsMaxminShare.html">IsMaxminShare</a></li>
+      
+      <li><a href="IsMaxminShare-isAlphaMMS.html">IsMaxminShare.isAlphaMMS</a></li>
+      
+      <li><a href="IsParetoOptimal.html">IsParetoOptimal</a></li>
+      
+      <li><a href="IsParetoOptimal.html">IsParetoOptimal</a></li>
+      
+      <li><a href="IsParetoOptimal.html">IsParetoOptimal</a></li>
+      
+      <li><a href="IsParetoOptimal.html">IsParetoOptimal</a></li>
+      
+      <li><a href="IsParetoOptimal.html">IsParetoOptimal</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional.html">IsProportional</a></li>
+      
+      <li><a href="IsProportional-isAlphaMMS-additive.html">IsProportional.isAlphaMMS_additive</a></li>
+      
+      <li><a href="IsProportional-isMaxminShare.html">IsProportional.isMaxminShare</a></li>
+      
+      <li><a href="IsUtilitarianOptimal.html">IsUtilitarianOptimal</a></li>
+      
+      <li><a href="IsUtilitarianOptimal.html">IsUtilitarianOptimal</a></li>
+      
+      <li><a href="IsUtilitarianOptimal.html">IsUtilitarianOptimal</a></li>
+      
+      <li><a href="IsUtilitarianOptimal.html">IsUtilitarianOptimal</a></li>
+      
+      <li><a href="MeasureInstance-envyFree-and-proportional-exists.html">MeasureInstance.envyFree_and_proportional_exists</a></li>
+      
+      <li><a href="MeasureInstance-envyFree-exists.html">MeasureInstance.envyFree_exists</a></li>
+      
+      <li><a href="MeasureInstance-proportional-exists.html">MeasureInstance.proportional_exists</a></li>
+      
+      <li><a href="Rule.html">Rule</a></li>
+      
+      <li><a href="SolutionConcept.html">SolutionConcept</a></li>
+      
+      <li><a href="acyclic-has-source.html">acyclic_has_source</a></li>
+      
+      <li><a href="allocation-eq-none-iff.html">allocation_eq_none_iff</a></li>
+      
+      <li><a href="allocation-eq-some-iff.html">allocation_eq_some_iff</a></li>
+      
+      <li><a href="allocation-eq-some-winner-iff.html">allocation_eq_some_winner_iff</a></li>
+      
+      <li><a href="bestGood-le.html">bestGood_le</a></li>
+      
+      <li><a href="clearingPrice-eq-max-reserve-excluding-of-allocation-eq-some.html">clearingPrice_eq_max_reserve_excluding_of_allocation_eq_some</a></li>
+      
+      <li><a href="clearingPrice-le-bid-of-allocation-eq-some.html">clearingPrice_le_bid_of_allocation_eq_some</a></li>
+      
+      <li><a href="cut-exists.html">cut_exists</a></li>
+      
+      <li><a href="cutAndChoose-ef-exists.html">cutAndChoose_ef_exists</a></li>
+      
+      <li><a href="cutAndChoose-exists-envyFree-allocation.html">cutAndChoose_exists_envyFree_allocation</a></li>
+      
+      <li><a href="dubinsSpanier-exists-proportional-allocation.html">dubinsSpanier_exists_proportional_allocation</a></li>
+      
+      <li><a href="dubinsSpanierProportional.html">dubinsSpanierProportional</a></li>
+      
+      <li><a href="ef-exists.html">ef_exists</a></li>
+      
+      <li><a href="ef-exists-and-proportional.html">ef_exists_and_proportional</a></li>
+      
+      <li><a href="ef-exists-two-agents.html">ef_exists_two_agents</a></li>
+      
+      <li><a href="ef-impossible-two-agents-one-good.html">ef_impossible_two_agents_one_good</a></li>
+      
+      <li><a href="efx-exists-two-agents.html">efx_exists_two_agents</a></li>
+      
+      <li><a href="efx-two-agents-two-goods.html">efx_two_agents_two_goods</a></li>
+      
+      <li><a href="egalitarianWelfare-le.html">egalitarianWelfare_le</a></li>
+      
+      <li><a href="egalitarianWelfare-le.html">egalitarianWelfare_le</a></li>
+      
+      <li><a href="eliminateAllCycles-acyclic.html">eliminateAllCycles_acyclic</a></li>
+      
+      <li><a href="eliminateAllCycles-eq-of-acyclic.html">eliminateAllCycles_eq_of_acyclic</a></li>
+      
+      <li><a href="eliminateAllCycles-isAllocation.html">eliminateAllCycles_isAllocation</a></li>
+      
+      <li><a href="eliminateAllCycles-nondecreasing.html">eliminateAllCycles_nondecreasing</a></li>
+      
+      <li><a href="eliminateAllCycles-unfold.html">eliminateAllCycles_unfold</a></li>
+      
+      <li><a href="envies.html">envies</a></li>
+      
+      <li><a href="envies-irrefl.html">envies_irrefl</a></li>
+      
+      <li><a href="envies-ne.html">envies_ne</a></li>
+      
+      <li><a href="feasible.html">feasible</a></li>
+      
+      <li><a href="feasible.html">feasible</a></li>
+      
+      <li><a href="findSource-isSource.html">findSource_isSource</a></li>
+      
+      <li><a href="hasEnvyCycle.html">hasEnvyCycle</a></li>
+      
+      <li><a href="iInf-partition-le-mmsValue.html">iInf_partition_le_mmsValue</a></li>
+      
+      <li><a href="isAlphaMMS-mono-alpha.html">isAlphaMMS_mono_alpha</a></li>
+      
+      <li><a href="isAlphaMMS-zero.html">isAlphaMMS_zero</a></li>
+      
+      <li><a href="isEF1-iff.html">isEF1_iff</a></li>
+      
+      <li><a href="isEFX-iff.html">isEFX_iff</a></li>
+      
+      <li><a href="isEFX-of-singleton-bundle.html">isEFX_of_singleton_bundle</a></li>
+      
+      <li><a href="isEnvyCycle.html">isEnvyCycle</a></li>
+      
+      <li><a href="isEnvyCycle-length-ge-two.html">isEnvyCycle_length_ge_two</a></li>
+      
+      <li><a href="isEnvyFree-iff.html">isEnvyFree_iff</a></li>
+      
+      <li><a href="isEnvyFree-iff-toCardinalInstance-isEnvyFree.html">isEnvyFree_iff_toCardinalInstance_isEnvyFree</a></li>
+      
+      <li><a href="isMaxminShare-iff-isAlphaMMS-one.html">isMaxminShare_iff_isAlphaMMS_one</a></li>
+      
+      <li><a href="isProportional-iff.html">isProportional_iff</a></li>
+      
+      <li><a href="isSource.html">isSource</a></li>
+      
+      <li><a href="isSource-not-mem-envyCycle.html">isSource_not_mem_envyCycle</a></li>
+      
+      <li><a href="mechanism-payment-eq-zero-of-allocation-eq-none.html">mechanism_payment_eq_zero_of_allocation_eq_none</a></li>
+      
+      <li><a href="mechanism-payment-le-bid-of-allocation-eq-some.html">mechanism_payment_le_bid_of_allocation_eq_some</a></li>
+      
+      <li><a href="mechanism-payment-of-allocation-eq-some.html">mechanism_payment_of_allocation_eq_some</a></li>
+      
+      <li><a href="mechanism-payment-of-allocation-ne-some.html">mechanism_payment_of_allocation_ne_some</a></li>
+      
+      <li><a href="mmsValue-le-of-forall.html">mmsValue_le_of_forall</a></li>
+      
+      <li><a href="mmsValue-le-proportional-share-additive.html">mmsValue_le_proportional_share_additive</a></li>
+      
+      <li><a href="mmsValue-nonneg.html">mmsValue_nonneg</a></li>
+      
+      <li><a href="not-mem-paretoDomSet-of-strict.html">not_mem_paretoDomSet_of_strict</a></li>
+      
+      <li><a href="not-paretoImproved-self.html">not_paretoImproved_self</a></li>
+      
+      <li><a href="nsmul-egalitarianWelfare-le-utilitarianWelfare.html">nsmul_egalitarianWelfare_le_utilitarianWelfare</a></li>
+      
+      <li><a href="nsmul-egalitarianWelfare-le-utilitarianWelfare.html">nsmul_egalitarianWelfare_le_utilitarianWelfare</a></li>
+      
+      <li><a href="paretoDomSet-subset.html">paretoDomSet_subset</a></li>
+      
+      <li><a href="proportional-exists.html">proportional_exists</a></li>
+      
+      <li><a href="reserve-le-bid-winner-of-allocation-eq-some.html">reserve_le_bid_winner_of_allocation_eq_some</a></li>
+      
+      <li><a href="rotateBundles-improves.html">rotateBundles_improves</a></li>
+      
+      <li><a href="rotateBundles-isAllocation.html">rotateBundles_isAllocation</a></li>
+      
+      <li><a href="rotateBundles-mem.html">rotateBundles_mem</a></li>
+      
+      <li><a href="rotateBundles-nondecreasing.html">rotateBundles_nondecreasing</a></li>
+      
+      <li><a href="rotateBundles-not-mem.html">rotateBundles_not_mem</a></li>
+      
+      <li><a href="rotateBundles-paretoDomCount-lt.html">rotateBundles_paretoDomCount_lt</a></li>
+      
+      <li><a href="secondPrice-le-clearingPrice.html">secondPrice_le_clearingPrice</a></li>
+      
+      <li><a href="self-mem-paretoDomSet.html">self_mem_paretoDomSet</a></li>
+      
+      <li><a href="strom-value-continuous.html">strom_value_continuous</a></li>
+      
+      <li><a href="truthful-weakly-dominant.html">truthful_weakly_dominant</a></li>
+      
+      <li><a href="utilitarianWelfare-mono.html">utilitarianWelfare_mono</a></li>
+      
+      <li><a href="utilitarianWelfare-mono.html">utilitarianWelfare_mono</a></li>
+      
+      <li><a href="utilitarianWelfare-unique.html">utilitarianWelfare_unique</a></li>
+      
+      <li><a href="utilitarianWelfare-unique.html">utilitarianWelfare_unique</a></li>
+      
+      <li><a href="utility-loser.html">utility_loser</a></li>
+      
+      <li><a href="utility-nonneg.html">utility_nonneg</a></li>
+      
+      <li><a href="utility-winner.html">utility_winner</a></li>
+      
+      <li><a href="val-iUnion.html">val_iUnion</a></li>
+      
+      <li><a href="valuation-is-dominant.html">valuation_is_dominant</a></li>
+      
+      <li><a href="winner-eq-of-allocation-eq-some.html">winner_eq_of_allocation_eq_some</a></li>
+      
+    </ul>
+  </section>
+  
+
+  
+
+  
+</article>
+
+  </main>
+  <script src="../graph.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Global Topics section toggle
+      var btn = document.querySelector('.sidebar-toggle');
+      var list = document.getElementById('topic-list');
+      if (btn && list) {
+        var stored = localStorage.getItem('sidebar-topics-folded');
+        var folded = stored === 'true';
+        list.hidden = folded;
+        btn.setAttribute('aria-expanded', String(!folded));
+        btn.addEventListener('click', function() {
+          folded = !folded;
+          list.hidden = folded;
+          btn.setAttribute('aria-expanded', String(!folded));
+          localStorage.setItem('sidebar-topics-folded', String(folded));
+        });
+      }
+
+      // Per-root-topic <details> fold state via localStorage
+      document.querySelectorAll('details[data-topic-root]').forEach(function(details) {
+        var rootId = details.getAttribute('data-topic-root');
+        var key = 'sidebar-topic-open-' + rootId;
+        // Only restore if localStorage has an explicit stored value (don't override active-path open)
+        var stored = localStorage.getItem(key);
+        if (stored !== null) {
+          details.open = stored === 'true';
+        }
+        details.addEventListener('toggle', function() {
+          localStorage.setItem(key, String(details.open));
+        });
+      });
+
+      // Keywords section toggle
+      var keywordBtn = document.querySelector('.sidebar-toggle-keywords');
+      var keywordList = document.getElementById('keyword-list');
+      if (keywordBtn && keywordList) {
+        var kwStored = localStorage.getItem('sidebar-keywords-folded');
+        var kwFolded = kwStored === 'true';
+        keywordList.hidden = kwFolded;
+        keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+        keywordBtn.addEventListener('click', function() {
+          kwFolded = !kwFolded;
+          keywordList.hidden = kwFolded;
+          keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+          localStorage.setItem('sidebar-keywords-folded', String(kwFolded));
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

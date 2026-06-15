@@ -1,0 +1,52 @@
+{
+  "id": "isSubgamePerfectOn-iff-forall-subtree-isNashAt",
+  "title": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isSubgamePerfectOn-iff-forall-subtree-isNashAt.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isSubgamePerfectOn_iff_forall_subtree_isNashAt</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isSubgamePerfectOn_iff_forall_subtree_isNashAt {σ : Strategy N U} {g : GameTree N U} : IsSubgamePerfectOn σ g ↔ ∀ s : GameTree N U, Subtree s g → IsNashAt σ s</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IsSubgamePerfectOn</li>\n<li>IsNashAt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn",
+      "title": "IsSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfectOn.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+      "display_name": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

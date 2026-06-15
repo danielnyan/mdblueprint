@@ -1,0 +1,254 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "IsProportional.isMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "IsMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "IsAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "isAlphaMMS_mono_alpha"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsMaxminShare.isAlphaMMS",
+    "target": "isMaxminShare_iff_isAlphaMMS_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_nonneg",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_nonneg",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsAlphaMMS",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsAlphaMMS",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_le_of_forall",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_le_of_forall",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_zero",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_zero",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_zero",
+    "target": "IsMaxminShare.isAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_zero",
+    "target": "IsAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "iInf_partition_le_mmsValue",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "iInf_partition_le_mmsValue",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "iInf_partition_le_mmsValue",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "iInf_partition_le_mmsValue",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_le_proportional_share_additive",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_le_proportional_share_additive",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "mmsValue_le_proportional_share_additive",
+    "target": "mmsValue_le_of_forall"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "IsProportional.isMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "IsMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "IsMaxminShare.isAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isMaxminShare_iff_isAlphaMMS_one",
+    "target": "IsAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "toValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsMaxminShare.isAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsProportional.isMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "IsProportional.isAlphaMMS_additive",
+    "target": "IsMaxminShare"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_mono_alpha",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_mono_alpha",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_mono_alpha",
+    "target": "IsMaxminShare.isAlphaMMS"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "source": "isAlphaMMS_mono_alpha",
+    "target": "IsAlphaMMS"
+  }
+]

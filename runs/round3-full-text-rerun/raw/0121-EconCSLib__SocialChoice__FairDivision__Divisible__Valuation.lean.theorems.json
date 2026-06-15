@@ -1,0 +1,120 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "MeasureValuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 31
+      },
+      "start": {
+        "column": 1,
+        "line": 31
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "def MeasureValuation {N \u03a9 : Type*} [MeasurableSpace \u03a9] (\u03bc : N \u2192 MeasureTheory.Measure \u03a9) : CakeValuation N \u03a9 ENNReal"
+  },
+  {
+    "dependencies": [
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "val_empty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 40
+      },
+      "start": {
+        "column": 1,
+        "line": 40
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "@[simp] lemma val_empty (i : N) : (MeasureValuation \u03bc).val i \u2205 = 0"
+  },
+  {
+    "dependencies": [
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "val_union",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "lemma val_union (i : N) (S T : Set \u03a9) (hdisj : Disjoint S T) (ht : MeasurableSet T) : (MeasureValuation \u03bc).val i (S \u222a T) = (MeasureValuation \u03bc).val i S + (MeasureValuation \u03bc).val i T"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "val_iUnion",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "lemma val_iUnion [Countable N] (i : N) (A : Allocation N \u03a9) (hdisj : \u2200 j k : N, j \u2260 k \u2192 Disjoint (A j) (A k)) (hmeas : \u2200 j, MeasurableSet (A j)) : (MeasureValuation \u03bc).val i (\u22c3 j, A j) = \u2211' j, (MeasureValuation \u03bc).val i (A j)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "IsNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "def IsNormalized {N \u03a9 V : Type*} [One V] (cv : CakeValuation N \u03a9 V) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsNormalized",
+      "MeasureValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Valuation",
+    "name": "iff_isProbabilityMeasure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Valuation.lean",
+    "type": "lemma iff_isProbabilityMeasure {N \u03a9 : Type*} [MeasurableSpace \u03a9] (\u03bc : N \u2192 MeasureTheory.Measure \u03a9) : IsNormalized (MeasureValuation \u03bc) \u2194 \u2200 i, MeasureTheory.IsProbabilityMeasure (\u03bc i)"
+  }
+]

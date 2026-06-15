@@ -1,0 +1,58 @@
+{
+  "id": "truthfulStrategy",
+  "title": "truthfulStrategy",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/truthfulStrategy.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>truthfulStrategy</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef truthfulStrategy : BayesianMechanismWithTransfers.StrategyProfile T T</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StrategyProfile</li>\n<li>DirectBayesianMechanismWithTransfers</li>\n<li>exAnte_revelation_principle</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StrategyProfile",
+      "title": "StrategyProfile",
+      "href": "misc/StrategyProfile.html"
+    },
+    {
+      "id": "DirectBayesianMechanismWithTransfers",
+      "title": "DirectBayesianMechanismWithTransfers",
+      "href": "misc/DirectBayesianMechanismWithTransfers.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ExAnteRevelationPrincipleConclusion",
+      "title": "ExAnteRevelationPrincipleConclusion",
+      "href": "misc/ExAnteRevelationPrincipleConclusion.html"
+    },
+    {
+      "id": "exAnte-revelation-principle",
+      "title": "exAnte_revelation_principle",
+      "href": "misc/exAnte-revelation-principle.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "truthfulStrategy",
+      "display_name": "truthfulStrategy",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

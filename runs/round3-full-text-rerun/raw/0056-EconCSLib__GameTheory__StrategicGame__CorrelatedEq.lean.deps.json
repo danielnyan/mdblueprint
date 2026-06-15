@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "source": "nash_iff_degenerate_ce",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "source": "nash_iff_degenerate_ce",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "source": "nash_iff_degenerate_ce",
+    "target": "IsDegenerateCorrelatedEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "source": "IsDegenerateCorrelatedEq",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.CorrelatedEq",
+    "source": "IsDegenerateCorrelatedEq",
+    "target": "IsNashEquilibrium"
+  }
+]

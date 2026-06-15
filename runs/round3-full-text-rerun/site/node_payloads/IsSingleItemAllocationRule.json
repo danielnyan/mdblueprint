@@ -1,0 +1,87 @@
+{
+  "id": "IsSingleItemAllocationRule",
+  "title": "IsSingleItemAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsSingleItemAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsSingleItemAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsSingleItemAllocationRule [Fintype I] (x : (I → ℝ) → I → ℝ) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsFeasible-isSingleItemAllocationRule",
+      "title": "IsFeasible.isSingleItemAllocationRule",
+      "href": "misc/IsFeasible-isSingleItemAllocationRule.html"
+    },
+    {
+      "id": "IsSingleItemAllocationRule-le-one",
+      "title": "IsSingleItemAllocationRule.le_one",
+      "href": "misc/IsSingleItemAllocationRule-le-one.html"
+    },
+    {
+      "id": "IsVirtualSurplusOptimalAllocationRule",
+      "title": "IsVirtualSurplusOptimalAllocationRule",
+      "href": "misc/IsVirtualSurplusOptimalAllocationRule.html"
+    },
+    {
+      "id": "expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction",
+      "title": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+      "href": "misc/expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction.html"
+    },
+    {
+      "id": "expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction-of-revenueUpperBounded",
+      "title": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+      "href": "misc/expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction-of-revenueUpperBounded.html"
+    },
+    {
+      "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAllocationRule",
+      "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+      "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAllocationRule.html"
+    },
+    {
+      "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-allocationRule",
+      "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+      "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-allocationRule.html"
+    },
+    {
+      "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible",
+      "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+      "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-isSingleItemAllocationRule",
+      "title": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-isSingleItemAllocationRule.html"
+    },
+    {
+      "id": "withPayment-isAllocFeasible-of-isSingleItemAllocationRule",
+      "title": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+      "href": "misc/withPayment-isAllocFeasible-of-isSingleItemAllocationRule.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsSingleItemAllocationRule",
+      "display_name": "IsSingleItemAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

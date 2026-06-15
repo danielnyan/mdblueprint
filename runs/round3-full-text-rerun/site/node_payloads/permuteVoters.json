@@ -1,0 +1,48 @@
+{
+  "id": "permuteVoters",
+  "title": "permuteVoters",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/permuteVoters.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>permuteVoters</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef permuteVoters [Fintype N] [Fintype A] (P : Profile N A) (σ : Equiv.Perm N) : Profile N A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "Anonymity",
+      "title": "Anonymity",
+      "href": "misc/Anonymity.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "permuteVoters",
+      "display_name": "permuteVoters",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

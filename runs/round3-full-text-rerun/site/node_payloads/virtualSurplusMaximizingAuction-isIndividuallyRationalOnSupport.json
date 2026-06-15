@@ -1,0 +1,52 @@
+{
+  "id": "virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport",
+  "title": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (henv : A.virtualSurplusMaximizingAuction.HasInterimEnvelopeFormula) (hint_nonneg : A.virtualSurplusMaximizingAuction.HasNonnegativeInterimAllocationIntegralOnSupport) : (A.virtualSurplusMaximizingAuction).IsIndividuallyRationalOnSupport</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimEnvelopeFormula</li>\n<li>HasNonnegativeInterimAllocationIntegralOnSupport</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula</li>\n<li>virtualSurplusMaximizingAuction_isZeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimEnvelopeFormula",
+      "title": "HasInterimEnvelopeFormula",
+      "href": "misc/HasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "title": "HasNonnegativeInterimAllocationIntegralOnSupport",
+      "href": "misc/HasNonnegativeInterimAllocationIntegralOnSupport.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+      "display_name": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

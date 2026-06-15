@@ -1,0 +1,127 @@
+{
+  "id": "IsRegular",
+  "title": "IsRegular",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRegular.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRegular</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsRegular (A : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-opt-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-opt-identity.html"
+    },
+    {
+      "id": "existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule",
+      "title": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+      "href": "misc/existsUnique-zeroNormalized-paymentRule-for-virtualSurplusMaximizingAllocationRule.html"
+    },
+    {
+      "id": "isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula",
+      "title": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+      "href": "misc/isIndividuallyRationalOnSupport-of-isZeroNormalized-of-hasInterimEnvelopeFormula.html"
+    },
+    {
+      "id": "isReserveThreshold-of-isRegular-of-virtualValue-eq-zero",
+      "title": "isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+      "href": "misc/isReserveThreshold-of-isRegular-of-virtualValue-eq-zero.html"
+    },
+    {
+      "id": "measurable-virtualValue-of-isRegular",
+      "title": "measurable_virtualValue_of_isRegular",
+      "href": "misc/measurable-virtualValue-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-isImplementable-of-isRegular",
+      "title": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-isImplementable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-isMonotone-of-isRegular",
+      "title": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-isMonotone-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isFeasibleICIRIntegrable-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isFeasibleICIRIntegrable-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isIncentiveCompatible-and-individuallyRationalOnSupport-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIncentiveCompatible-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isIncentiveCompatible-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isIndividuallyRationalOnSupport-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-regularMyersonOptimalICIR-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-regularMyersonOptimalICIR-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingMechanism-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsRegular",
+      "display_name": "IsRegular",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

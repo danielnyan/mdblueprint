@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IsZeroSum — Lean-derived Blueprint</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.css"
+        integrity="sha384-hW6ZmmePRD2f/9cuxGE6C9faGprtIBOme5OLUiEjtRKMTN67tY23ur9eAi21H8De"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/katex.min.js"
+          integrity="sha384-FVvsvR4UzyIP8Y5hVvHjOfjVh+LWV78ll63SYx1t+nuuMPGMAihB8dJ2YsYyg1Wb"
+          crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.46/dist/contrib/auto-render.min.js"
+          integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+          crossorigin="anonymous"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.MDBLUEPRINT_MATH_OPTIONS = {"delimiters": [{"left": "$$", "right": "$$", "display": true}, {"left": "\\[", "right": "\\]", "display": true}, {"left": "$", "right": "$", "display": false}, {"left": "\\(", "right": "\\)", "display": false}], "throwOnError": false, "macros": {}};
+      renderMathInElement(document.body, window.MDBLUEPRINT_MATH_OPTIONS);
+    });
+  </script>
+</head>
+<body>
+  <nav class="sidebar">
+    <a class="logo" href="../index.html">Lean Blueprint</a>
+    <a class="nav-link" href="../dep_graph_document.html">Dependency graph</a>
+    <section class="nav-section" aria-labelledby="nav-topics">
+      <button class="sidebar-toggle" type="button" aria-expanded="true" aria-controls="topic-list">
+        <span class="toggle-icon" aria-hidden="true">▾</span> Topics
+      </button>
+      <ul id="topic-list" class="topic-list nav-list">
+        <li class="topic-leaf topic-active">
+          <a href="../misc/index.html">Misc</a>
+        </li>
+      
+      </ul>
+    </section>
+    
+  </nav>
+  <main>
+    
+<article class="theorem_thmwrapper theorem-style-theorem node-page" id="node-IsZeroSum">
+  <header class="theorem_thmheading thm-heading">
+    <span class="theorem_thmcaption thm-caption">Theorem</span>
+    <span class="theorem_thmtitle thm-title">IsZeroSum</span>
+    <div class="thm_header_extras">
+      
+      <span class="badge kind-theorem">theorem</span>
+      <span class="badge status-staged">staged</span>
+    </div>
+    <div class="thm_header_hidden_extras">
+      <a class="permalink" href="#node-IsZeroSum">#</a>
+      
+      <button class="modal-trigger" type="button" data-modal-target="uses-modal">Uses</button>
+      
+      
+      <button class="modal-trigger lean" type="button" data-modal-target="lean-modal">L∃∀N</button>
+      
+    </div>
+  </header>
+
+  
+  <div class="modal-container" id="uses-modal" hidden>
+    <div class="modal-content">
+      <header><h1>Uses</h1><button class="closebtn" type="button">x</button></header>
+      <ul class="uses">
+        
+        <li><a href="Profile.html">Profile</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+
+  
+  <div class="modal-container" id="lean-modal" hidden>
+    <div class="modal-content">
+      <header><h1>Lean declarations</h1><button class="closebtn" type="button">x</button></header>
+      <ul class="uses">
+        
+        <li class="lean-ref">
+          
+          
+          <code>IsZeroSum</code>
+          
+          
+          
+          
+          
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  
+
+  <div class="theorem_thmcontent thm-content body">
+    <h1>IsZeroSum</h1>
+<h2>Lean type</h2>
+<p><code>lean
+def IsZeroSum [Add U] [Zero U] (G : StrategicGame (Fin 2) U) : Prop</code></p>
+<h2>Dependencies</h2>
+<ul>
+<li>Profile</li>
+</ul>
+    
+  </div>
+
+  
+
+  
+  <section class="deps deps-used-by">
+    <h2>Used by</h2>
+    <ul>
+      
+      <li><a href="IsConstantSum-zero-isZeroSum.html">IsConstantSum.zero_isZeroSum</a></li>
+      
+      <li><a href="IsZeroSum-child-mem.html">IsZeroSum.child_mem</a></li>
+      
+      <li><a href="IsZeroSum-expectedPayoff-neg.html">IsZeroSum.expectedPayoff_neg</a></li>
+      
+      <li><a href="IsZeroSum-head.html">IsZeroSum.head</a></li>
+      
+      <li><a href="IsZeroSum-nash-payoff-eq.html">IsZeroSum.nash_payoff_eq</a></li>
+      
+      <li><a href="IsZeroSum-nash-payoff-eq-p1.html">IsZeroSum.nash_payoff_eq_p1</a></li>
+      
+      <li><a href="IsZeroSum-neg.html">IsZeroSum.neg</a></li>
+      
+      <li><a href="IsZeroSum-of-subtree.html">IsZeroSum.of_subtree</a></li>
+      
+      <li><a href="IsZeroSum-tail-mem.html">IsZeroSum.tail_mem</a></li>
+      
+      <li><a href="IsZeroSum-toIsConstantSum.html">IsZeroSum.toIsConstantSum</a></li>
+      
+      <li><a href="IsZeroSum-welfare-eq-zero.html">IsZeroSum.welfare_eq_zero</a></li>
+      
+      <li><a href="isZeroSum-iff-isConstantSum-zero.html">isZeroSum_iff_isConstantSum_zero</a></li>
+      
+      <li><a href="mp-isZeroSum.html">mp_isZeroSum</a></li>
+      
+      <li><a href="outcome-optStrategy-one-eq-neg-value₀.html">outcome_optStrategy_one_eq_neg_value₀</a></li>
+      
+      <li><a href="outcome-optStrategy-zero-sum.html">outcome_optStrategy_zero_sum</a></li>
+      
+      <li><a href="outcome-zero-sum.html">outcome_zero_sum</a></li>
+      
+      <li><a href="sample-zero-sum.html">sample_zero_sum</a></li>
+      
+      <li><a href="toStrategicGame-isZeroSum.html">toStrategicGame_isZeroSum</a></li>
+      
+      <li><a href="value-one-eq-neg-value₀.html">value_one_eq_neg_value₀</a></li>
+      
+      <li><a href="value-zero-sum.html">value_zero_sum</a></li>
+      
+      <li><a href="value₀-Leaf.html">value₀_Leaf</a></li>
+      
+      <li><a href="value₀-Node-one-isMin.html">value₀_Node_one_isMin</a></li>
+      
+      <li><a href="value₀-Node-one-le-child.html">value₀_Node_one_le_child</a></li>
+      
+      <li><a href="value₀-eq-outcome-and-zeroSum.html">value₀_eq_outcome_and_zeroSum</a></li>
+      
+      <li><a href="value₀-le-outcome-of-iVariant-one.html">value₀_le_outcome_of_iVariant_one</a></li>
+      
+      <li><a href="zermelo-determinacy.html">zermelo_determinacy</a></li>
+      
+    </ul>
+  </section>
+  
+
+  
+
+  
+</article>
+
+  </main>
+  <script src="../graph.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Global Topics section toggle
+      var btn = document.querySelector('.sidebar-toggle');
+      var list = document.getElementById('topic-list');
+      if (btn && list) {
+        var stored = localStorage.getItem('sidebar-topics-folded');
+        var folded = stored === 'true';
+        list.hidden = folded;
+        btn.setAttribute('aria-expanded', String(!folded));
+        btn.addEventListener('click', function() {
+          folded = !folded;
+          list.hidden = folded;
+          btn.setAttribute('aria-expanded', String(!folded));
+          localStorage.setItem('sidebar-topics-folded', String(folded));
+        });
+      }
+
+      // Per-root-topic <details> fold state via localStorage
+      document.querySelectorAll('details[data-topic-root]').forEach(function(details) {
+        var rootId = details.getAttribute('data-topic-root');
+        var key = 'sidebar-topic-open-' + rootId;
+        // Only restore if localStorage has an explicit stored value (don't override active-path open)
+        var stored = localStorage.getItem(key);
+        if (stored !== null) {
+          details.open = stored === 'true';
+        }
+        details.addEventListener('toggle', function() {
+          localStorage.setItem(key, String(details.open));
+        });
+      });
+
+      // Keywords section toggle
+      var keywordBtn = document.querySelector('.sidebar-toggle-keywords');
+      var keywordList = document.getElementById('keyword-list');
+      if (keywordBtn && keywordList) {
+        var kwStored = localStorage.getItem('sidebar-keywords-folded');
+        var kwFolded = kwStored === 'true';
+        keywordList.hidden = kwFolded;
+        keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+        keywordBtn.addEventListener('click', function() {
+          kwFolded = !kwFolded;
+          keywordList.hidden = kwFolded;
+          keywordBtn.setAttribute('aria-expanded', String(!kwFolded));
+          localStorage.setItem('sidebar-keywords-folded', String(kwFolded));
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

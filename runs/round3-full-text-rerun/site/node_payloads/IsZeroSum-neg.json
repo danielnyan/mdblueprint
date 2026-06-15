@@ -1,0 +1,52 @@
+{
+  "id": "IsZeroSum-neg",
+  "title": "IsZeroSum.neg",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum-neg.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum.neg</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsZeroSum.neg' [AddGroup U] {G : StrategicGame (Fin 2) U} (hzs : IsZeroSum G) (σ : G.Profile) : G.payoff σ 0 = - G.payoff σ 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsConstantSum.neg</li>\n<li>IsZeroSum</li>\n<li>Profile</li>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum.neg",
+      "display_name": "IsZeroSum.neg",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

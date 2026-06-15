@@ -1,0 +1,87 @@
+{
+  "id": "BundlePartitionSocialWelfare",
+  "title": "BundlePartitionSocialWelfare",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BundlePartitionSocialWelfare.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BundlePartitionSocialWelfare</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BundlePartitionSocialWelfare {I G : Type*} [Fintype I] [DecidableEq G] {M : Finset G} [Fintype (BundlePartitionAllocation I M)] [Nonempty (BundlePartitionAllocation I M)] (v : I → SubmodularBundleValuation M) (S : BundlePartitionAllocation I M) : ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BundlePartitionAllocation</li>\n<li>socialWelfare</li>\n<li>BundlePartitionProfileValuation</li>\n<li>Valuation</li>\n<li>ValueOracle</li>\n<li>BundleAllocation</li>\n<li>DemandOracle</li>\n<li>BundlePriceVector</li>\n<li>Lottery</li>\n<li>Profile</li>\n<li>Lottery.expectedValue</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BundlePartitionAllocation",
+      "title": "BundlePartitionAllocation",
+      "href": "misc/BundlePartitionAllocation.html"
+    },
+    {
+      "id": "socialWelfare",
+      "title": "socialWelfare",
+      "href": "misc/socialWelfare.html"
+    },
+    {
+      "id": "BundlePartitionProfileValuation",
+      "title": "BundlePartitionProfileValuation",
+      "href": "misc/BundlePartitionProfileValuation.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "ValueOracle",
+      "title": "ValueOracle",
+      "href": "misc/ValueOracle.html"
+    },
+    {
+      "id": "BundleAllocation",
+      "title": "BundleAllocation",
+      "href": "misc/BundleAllocation.html"
+    },
+    {
+      "id": "DemandOracle",
+      "title": "DemandOracle",
+      "href": "misc/DemandOracle.html"
+    },
+    {
+      "id": "BundlePriceVector",
+      "title": "BundlePriceVector",
+      "href": "misc/BundlePriceVector.html"
+    },
+    {
+      "id": "Lottery",
+      "title": "Lottery",
+      "href": "misc/Lottery.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "BundlePartitionSocialWelfare",
+      "display_name": "BundlePartitionSocialWelfare",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

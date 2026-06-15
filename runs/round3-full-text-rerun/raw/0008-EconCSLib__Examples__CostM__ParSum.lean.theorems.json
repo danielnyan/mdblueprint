@@ -1,0 +1,70 @@
+[
+  {
+    "dependencies": [
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "IsZeroSum.head",
+      "Subtree.head"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "name": "parSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 62
+      },
+      "start": {
+        "column": 1,
+        "line": 62
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+    "type": "def parSum (xs : List \u2115) : CostM \u2115 \u2115"
+  },
+  {
+    "dependencies": [
+      "parSum",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "name": "parSum_cost_le_clog",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 80
+      },
+      "start": {
+        "column": 1,
+        "line": 80
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+    "type": "theorem parSum_cost_le_clog (xs : List \u2115) : (parSum xs).cost \u2264 Nat.clog 2 xs.length"
+  },
+  {
+    "dependencies": [
+      "parSum"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "name": "parSum_cost_le_length",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+    "type": "theorem parSum_cost_le_length (xs : List \u2115) : (parSum xs).cost \u2264 xs.length"
+  }
+]

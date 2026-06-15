@@ -1,0 +1,36 @@
+{
+  "id": "virtualSurplus-le-virtualSurplusMaximizingAllocationRule",
+  "title": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplus-le-virtualSurplusMaximizingAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplus_le_virtualSurplusMaximizingAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplus_le_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {x : (I → ℝ) → I → ℝ} {b : I → ℝ} (hx_nonneg : ∀ i, 0 ≤ x b i) (hx_capacity : (∑ i, x b i) ≤ 1) : A.virtualSurplus x b ≤ A.virtualSurplus A.virtualSurplusMaximizingAllocationRule b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+      "display_name": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

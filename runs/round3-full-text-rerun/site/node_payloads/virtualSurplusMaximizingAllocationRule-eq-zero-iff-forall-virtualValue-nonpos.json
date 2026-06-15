@@ -1,0 +1,36 @@
+{
+  "id": "virtualSurplusMaximizingAllocationRule-eq-zero-iff-forall-virtualValue-nonpos",
+  "title": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAllocationRule-eq-zero-iff-forall-virtualValue-nonpos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {b : I → ℝ} : (A.virtualSurplusMaximizingAllocationRule b = fun _ =&gt; (0 : ℝ)) ↔ ∀ i, A.virtualValue i (b i) ≤ 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos</li>\n<li>virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+      "display_name": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

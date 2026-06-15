@@ -1,0 +1,47 @@
+{
+  "id": "pd-defect-nash",
+  "title": "pd_defect_nash",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/pd-defect-nash.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>pd_defect_nash</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem pd_defect_nash : IsNashEquilibrium PD (fun _ =&gt; Defect)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsNashEquilibrium</li>\n<li>PD</li>\n<li>of_dominant</li>\n<li>pd_defect_weakly_dominant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "PD",
+      "title": "PD",
+      "href": "misc/PD.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "pd_defect_nash",
+      "display_name": "pd_defect_nash",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+  "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized [Fintype I] [DecidableEq I] (A B : BayesianSingleItemAuction I) (henv : A.HasSameSellingEnvironment B) (hfeas : B.IsFeasible) (hint : A.IntegrableVirtualSurplus B.allocationRule) (hmyerson : A.HasMyersonPaymentRevenueVirtualSurplusIdentity B) (hdsic : B.IsDSIC) (hzero : B.IsZeroNormalized) : A.IsRevenueComparable B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasSameSellingEnvironment</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>HasMyersonPaymentRevenueVirtualSurplusIdentity</li>\n<li>IsDSIC</li>\n<li>isDSIC</li>\n<li>IsZeroNormalized</li>\n<li>IsRevenueComparable</li>\n<li>hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "title": "HasMyersonPaymentRevenueVirtualSurplusIdentity",
+      "href": "misc/HasMyersonPaymentRevenueVirtualSurplusIdentity.html"
+    },
+    {
+      "id": "IsDSIC",
+      "title": "IsDSIC",
+      "href": "misc/IsDSIC.html"
+    },
+    {
+      "id": "isDSIC",
+      "title": "isDSIC",
+      "href": "misc/isDSIC.html"
+    },
+    {
+      "id": "IsZeroNormalized",
+      "title": "IsZeroNormalized",
+      "href": "misc/IsZeroNormalized.html"
+    },
+    {
+      "id": "IsRevenueComparable",
+      "title": "IsRevenueComparable",
+      "href": "misc/IsRevenueComparable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "display_name": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

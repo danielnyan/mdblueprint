@@ -1,0 +1,98 @@
+{
+  "id": "MixedS",
+  "title": "MixedS",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/MixedS.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>MixedS</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev MixedS</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "evaluate-at-mixed",
+      "title": "evaluate_at_mixed",
+      "href": "misc/evaluate-at-mixed.html"
+    },
+    {
+      "id": "evaluate-at-mixed-eq-mixed-g",
+      "title": "evaluate_at_mixed_eq_mixed_g",
+      "href": "misc/evaluate-at-mixed-eq-mixed-g.html"
+    },
+    {
+      "id": "evaluate-at-mixed-linear",
+      "title": "evaluate_at_mixed_linear",
+      "href": "misc/evaluate-at-mixed-linear.html"
+    },
+    {
+      "id": "exists-mixed-nash-equilibrium-finite",
+      "title": "exists_mixed_nash_equilibrium_finite",
+      "href": "misc/exists-mixed-nash-equilibrium-finite.html"
+    },
+    {
+      "id": "g-function",
+      "title": "g_function",
+      "href": "misc/g-function.html"
+    },
+    {
+      "id": "g-function-nonneg",
+      "title": "g_function_nonneg",
+      "href": "misc/g-function-nonneg.html"
+    },
+    {
+      "id": "mixedNashEquilibrium",
+      "title": "mixedNashEquilibrium",
+      "href": "misc/mixedNashEquilibrium.html"
+    },
+    {
+      "id": "nash-map",
+      "title": "nash_map",
+      "href": "misc/nash-map.html"
+    },
+    {
+      "id": "nash-map-cert",
+      "title": "nash_map_cert",
+      "href": "misc/nash-map-cert.html"
+    },
+    {
+      "id": "one-le-sum-g",
+      "title": "one_le_sum_g",
+      "href": "misc/one-le-sum-g.html"
+    },
+    {
+      "id": "sigma-le-g-function",
+      "title": "sigma_le_g_function",
+      "href": "misc/sigma-le-g-function.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "MixedS",
+      "display_name": "MixedS",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

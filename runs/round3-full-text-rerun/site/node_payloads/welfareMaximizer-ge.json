@@ -1,0 +1,47 @@
+{
+  "id": "welfareMaximizer-ge",
+  "title": "welfareMaximizer_ge",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/welfareMaximizer-ge.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>welfareMaximizer_ge</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma welfareMaximizer_ge (A : KnapsackAuction I U) (b : I → U) (hW : 0 ≤ A.totalCapacity) {x : BinaryAllocation I} (hx : x ∈ A.feasibleBinaryAllocations) : binarySocialWelfare b x ≤ binarySocialWelfare b (A.welfareMaximizer b hW)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>binarySocialWelfare</li>\n<li>exists_welfareMaximizer</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "binarySocialWelfare",
+      "title": "binarySocialWelfare",
+      "href": "misc/binarySocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "welfareMaximizer_ge",
+      "display_name": "welfareMaximizer_ge",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

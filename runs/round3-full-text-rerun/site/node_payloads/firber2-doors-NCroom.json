@@ -1,0 +1,52 @@
+{
+  "id": "firber2-doors-NCroom",
+  "title": "firber2_doors_NCroom",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/firber2-doors-NCroom.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>firber2_doors_NCroom</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma firber2_doors_NCroom (h0 : isRoom σ C) (h1 : isTypedNC c i σ C) : (filter (fun (x : (Finset T× Finset I)× Finset T × Finset I) =&gt; x.2 = (σ,C)) (dbcountingset c i)).card = 2</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isRoom</li>\n<li>isTypedNC</li>\n<li>doors_of_NCroom</li>\n<li>NC_of_TNC</li>\n<li>Profile.ext</li>\n<li>NCdoors</li>\n<li>isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isTypedNC",
+      "title": "isTypedNC",
+      "href": "misc/isTypedNC.html"
+    },
+    {
+      "id": "NCdoors",
+      "title": "NCdoors",
+      "href": "misc/NCdoors.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "firber2_doors_NCroom",
+      "display_name": "firber2_doors_NCroom",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

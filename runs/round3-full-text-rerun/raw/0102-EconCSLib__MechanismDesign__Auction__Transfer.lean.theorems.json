@@ -1,0 +1,351 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "quasiLinearUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def quasiLinearUtility [Sub U] (val : A \u2192 (\u2200 i, T i) \u2192 I \u2192 V) (valueToUtility : V \u2192 U) (paymentToUtility : P \u2192 U) (r : \u2200 i, T i) (trueTypes : \u2200 i, T i) (i : I) : U"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "toMechanism",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def toMechanism : Mechanism I T (A \u00d7 (I \u2192 P))"
+  },
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "toStrategicGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def toStrategicGame (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 U) (trueTypes : \u2200 i, T i) : StrategicGame I U"
+  },
+  {
+    "dependencies": [
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 114
+      },
+      "start": {
+        "column": 1,
+        "line": 114
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def isDSIC [Preorder U] (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "isExPostIR",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 121
+      },
+      "start": {
+        "column": 1,
+        "line": 121
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def isExPostIR [Preorder U] [Zero U] (u : A \u2192 (I \u2192 P) \u2192 (\u2200 i, T i) \u2192 I \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [
+      "toStrategicGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "toQuasiLinearGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 128
+      },
+      "start": {
+        "column": 1,
+        "line": 128
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def toQuasiLinearGame [Sub U] (val : A \u2192 (\u2200 i, T i) \u2192 I \u2192 V) (valueToUtility : V \u2192 U) (paymentToUtility : P \u2192 U) (trueTypes : \u2200 i, T i) : StrategicGame I U"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "isQuasiLinearDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 137
+      },
+      "start": {
+        "column": 1,
+        "line": 137
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def isQuasiLinearDSIC [Sub U] [Preorder U] (val : A \u2192 (\u2200 i, T i) \u2192 I \u2192 V) (valueToUtility : V \u2192 U) (paymentToUtility : P \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsExPostIR",
+      "isExPostIR"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "isQuasiLinearExPostIR",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def isQuasiLinearExPostIR [Sub U] [Preorder U] [Zero U] (val : A \u2192 (\u2200 i, T i) \u2192 I \u2192 V) (valueToUtility : V \u2192 U) (paymentToUtility : P \u2192 U) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "IsAllocFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 174
+      },
+      "start": {
+        "column": 1,
+        "line": 174
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def IsAllocFeasible [Zero R] [One R] [LE R] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "IsMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 185
+      },
+      "start": {
+        "column": 1,
+        "line": 185
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def IsMonotone [Preorder R] : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "payment",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 195
+      },
+      "start": {
+        "column": 1,
+        "line": 195
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "abbrev payment (b : I \u2192 R) : I \u2192 R"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "quasiLinearValue",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 200
+      },
+      "start": {
+        "column": 1,
+        "line": 200
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def quasiLinearValue [Mul R] (x \u03b8 : I \u2192 R) (i : I) : R"
+  },
+  {
+    "dependencies": [
+      "quasiLinearValue"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "quasiLinearUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 206
+      },
+      "start": {
+        "column": 1,
+        "line": 206
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def quasiLinearUtility [Mul R] [Sub R] (b \u03b8 : I \u2192 R) (i : I) : R"
+  },
+  {
+    "dependencies": [
+      "quasiLinearUtility"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 214
+      },
+      "start": {
+        "column": 1,
+        "line": 214
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "lemma quasiLinearUtility_eq_transferQuasiLinearUtility [Mul R] [Sub R] (b \u03b8 : I \u2192 R) (i : I) : M.quasiLinearUtility b \u03b8 i = MechanismWithTransfers.quasiLinearUtility (I"
+  },
+  {
+    "dependencies": [
+      "isDSIC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "IsDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 230
+      },
+      "start": {
+        "column": 1,
+        "line": 230
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def IsDSIC [Mul R] [Sub R] [Preorder R] : Prop"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "IsImplementable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 238
+      },
+      "start": {
+        "column": 1,
+        "line": 238
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def IsImplementable [Mul R] [Sub R] [Preorder R] (x : (I \u2192 R) \u2192 I \u2192 R) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "Valuation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 261
+      },
+      "start": {
+        "column": 1,
+        "line": 261
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "abbrev Valuation (A : Type*) (V : Type*)"
+  },
+  {
+    "dependencies": [
+      "Valuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "name": "valueOfAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 265
+      },
+      "start": {
+        "column": 1,
+        "line": 265
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Transfer.lean",
+    "type": "def valueOfAllocation (a : A) (types : \u2200 _ : I, Valuation A V) (i : I) : V"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "le-argMaxOn-head",
+  "title": "le_argMaxOn_head",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/le-argMaxOn-head.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>le_argMaxOn_head</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem le_argMaxOn_head [TotalPreorder Y] [DecidableLE Y] (f : X → Y) (head : X) (tail : List X) : f head ≤ f (argMaxOn f head tail)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n<li>argMaxOn</li>\n<li>argMaxOn_ge</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "argMaxOn",
+      "title": "argMaxOn",
+      "href": "misc/argMaxOn.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "le_argMaxOn_head",
+      "display_name": "le_argMaxOn_head",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

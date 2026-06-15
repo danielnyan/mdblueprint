@@ -1,0 +1,47 @@
+{
+  "id": "isMixedNashEq-iff-isSaddlePoint",
+  "title": "isMixedNashEq_iff_isSaddlePoint",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isMixedNashEq-iff-isSaddlePoint.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isMixedNashEq_iff_isSaddlePoint</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isMixedNashEq_iff_isSaddlePoint {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜] (A : MatrixGame I J 𝕜) (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J) : A.IsMixedNashEq xx yy ↔ A.IsSaddlePoint xx yy</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsMixedNashEq</li>\n<li>IsSaddlePoint</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsMixedNashEq",
+      "title": "IsMixedNashEq",
+      "href": "misc/IsMixedNashEq.html"
+    },
+    {
+      "id": "IsSaddlePoint",
+      "title": "IsSaddlePoint",
+      "href": "misc/IsSaddlePoint.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isMixedNashEq_iff_isSaddlePoint",
+      "display_name": "isMixedNashEq_iff_isSaddlePoint",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

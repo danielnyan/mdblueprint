@@ -1,0 +1,63 @@
+{
+  "id": "optAugA",
+  "title": "optAugA",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/optAugA.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>optAugA</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef optAugA (A : I → Fin n → 𝕜) (c : Fin n → 𝕜) : OptAugRow I n → Fin n → 𝕜 | Sum.inl (Sum.inl i), j =&gt; A i j | Sum.inl (Sum.inr j'), j =&gt; if j = j' then 1 else 0 | Sum.inr (), j =&gt; -c j /-- Optimality-augmented RHS. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>OptAugRow</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "OptAugRow",
+      "title": "OptAugRow",
+      "href": "misc/OptAugRow.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "exists-col-strict-pair",
+      "title": "exists_col_strict_pair",
+      "href": "misc/exists-col-strict-pair.html"
+    },
+    {
+      "id": "exists-row-strict-pair",
+      "title": "exists_row_strict_pair",
+      "href": "misc/exists-row-strict-pair.html"
+    },
+    {
+      "id": "optAug-feasible-iff",
+      "title": "optAug_feasible_iff",
+      "href": "misc/optAug-feasible-iff.html"
+    },
+    {
+      "id": "optAugB",
+      "title": "optAugB",
+      "href": "misc/optAugB.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "optAugA",
+      "display_name": "optAugA",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

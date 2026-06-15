@@ -1,0 +1,53 @@
+{
+  "id": "ofFinset",
+  "title": "ofFinset",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ofFinset.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ofFinset</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef ofFinset (s : Finset A) : Visited A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Visited</li>\n<li>Profile.ext</li>\n<li>toFinset</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Visited",
+      "title": "Visited",
+      "href": "misc/Visited.html"
+    },
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "singleton",
+      "title": "singleton",
+      "href": "misc/singleton.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "ofFinset",
+      "display_name": "ofFinset",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

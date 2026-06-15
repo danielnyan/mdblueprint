@@ -1,0 +1,36 @@
+{
+  "id": "lam0-le-mu0",
+  "title": "lam0_le_mu0",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lam0-le-mu0.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lam0_le_mu0</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lam0_le_mu0 (A : I → J → ℝ) : lam0 A ≤ mu0 A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>exists_xx_lam0</li>\n<li>exists_yy_mu0</li>\n<li>wsum_wsum_comm</li>\n<li>ge_iff_simplex_ge</li>\n<li>le_iff_simplex_le</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lam0_le_mu0",
+      "display_name": "lam0_le_mu0",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

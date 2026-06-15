@@ -1,0 +1,52 @@
+{
+  "id": "dynamicProgrammingOptimalAllocation-optimal",
+  "title": "dynamicProgrammingOptimalAllocation_optimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dynamicProgrammingOptimalAllocation-optimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dynamicProgrammingOptimalAllocation_optimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem dynamicProgrammingOptimalAllocation_optimal (w b : I → Nat) (capacity : Nat) {x : BinaryAllocation I} (hfeas : natBinaryLoad w x ≤ capacity) : natBinarySocialWelfare b x ≤ natBinarySocialWelfare b (dynamicProgrammingOptimalAllocation w b capacity)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>natBinaryLoad</li>\n<li>natBinarySocialWelfare</li>\n<li>dpSolveList_optimal</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "natBinaryLoad",
+      "title": "natBinaryLoad",
+      "href": "misc/natBinaryLoad.html"
+    },
+    {
+      "id": "natBinarySocialWelfare",
+      "title": "natBinarySocialWelfare",
+      "href": "misc/natBinarySocialWelfare.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "dynamicProgrammingOptimalAllocation_optimal",
+      "display_name": "dynamicProgrammingOptimalAllocation_optimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

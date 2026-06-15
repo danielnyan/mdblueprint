@@ -1,0 +1,57 @@
+{
+  "id": "profileStrategy-deviate-eq-of-variant",
+  "title": "profileStrategy_deviate_eq_of_variant",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/profileStrategy-deviate-eq-of-variant.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>profileStrategy_deviate_eq_of_variant</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem profileStrategy_deviate_eq_of_variant (σ : N → PlayerStrategy N U) (i : N) (τ : Strategy N U) (hτ : IVariant i (profileStrategy σ) τ) : profileStrategy (Function.update σ i (τ : PlayerStrategy N U)) = τ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PlayerStrategy</li>\n<li>Strategy</li>\n<li>IVariant</li>\n<li>profileStrategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PlayerStrategy",
+      "title": "PlayerStrategy",
+      "href": "misc/PlayerStrategy.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    },
+    {
+      "id": "profileStrategy",
+      "title": "profileStrategy",
+      "href": "misc/profileStrategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "profileStrategy_deviate_eq_of_variant",
+      "display_name": "profileStrategy_deviate_eq_of_variant",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

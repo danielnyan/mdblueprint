@@ -1,0 +1,42 @@
+{
+  "id": "mem-optimalRowStrategies-iff-E-ge",
+  "title": "mem_optimalRowStrategies_iff_E_ge",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mem-optimalRowStrategies-iff-E-ge.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mem_optimalRowStrategies_iff_E_ge</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem mem_optimalRowStrategies_iff_E_ge (xx : stdSimplex ℝ I) : xx ∈ A.optimalRowStrategies ↔ ∀ y' : stdSimplex ℝ J, A.value ≤ A.E xx y'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>optimalRowStrategies</li>\n<li>wsum_wsum_comm</li>\n<li>ge_iff_simplex_ge</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n<li>wsum_pure_apply</li>\n<li>lamB.aux.bddAbove</li>\n<li>lam.aux.bddAbove</li>\n<li>value_eq_maximin</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "optimalRowStrategies",
+      "title": "optimalRowStrategies",
+      "href": "misc/optimalRowStrategies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mem_optimalRowStrategies_iff_E_ge",
+      "display_name": "mem_optimalRowStrategies_iff_E_ge",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

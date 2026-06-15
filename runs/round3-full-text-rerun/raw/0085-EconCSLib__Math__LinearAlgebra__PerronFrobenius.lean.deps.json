@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "source": "perron_frobenius",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "source": "perron_frobenius",
+    "target": "loomis_theorem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "source": "perron_frobenius",
+    "target": "By_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "source": "perron_frobenius",
+    "target": "xB_pos"
+  }
+]

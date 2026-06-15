@@ -1,0 +1,47 @@
+{
+  "id": "NonDictatorial",
+  "title": "NonDictatorial",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/NonDictatorial.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>NonDictatorial</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef NonDictatorial (F : SWF N A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Dictatorial</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "NonDictatorial",
+      "display_name": "NonDictatorial",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

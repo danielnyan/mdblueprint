@@ -1,0 +1,52 @@
+{
+  "id": "IsZeroSum-nash-payoff-eq-p1",
+  "title": "IsZeroSum.nash_payoff_eq_p1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum-nash-payoff-eq-p1.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum.nash_payoff_eq_p1</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsZeroSum.nash_payoff_eq_p1 (hzs : IsZeroSum G) {σ τ : G.Profile} (hσ : IsNashEquilibrium G σ) (hτ : IsNashEquilibrium G τ) : G.payoff σ 1 = G.payoff τ 1</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>Profile</li>\n<li>IsNashEquilibrium</li>\n<li>IsConstantSum.neg</li>\n<li>IsZeroSum.neg</li>\n<li>IsConstantSum.nash_payoff_eq</li>\n<li>IsZeroSum.nash_payoff_eq</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum.nash_payoff_eq_p1",
+      "display_name": "IsZeroSum.nash_payoff_eq_p1",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

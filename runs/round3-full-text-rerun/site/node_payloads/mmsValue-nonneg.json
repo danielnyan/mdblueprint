@@ -1,0 +1,47 @@
+{
+  "id": "mmsValue-nonneg",
+  "title": "mmsValue_nonneg",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mmsValue-nonneg.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mmsValue_nonneg</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma mmsValue_nonneg [Fintype G] (v : Valuation N G) (allGoods : Finset G) (i : N) (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A}) (hnonneg : ∀ S : Finset G, 0 ≤ v.val i S) : 0 ≤ mmsValue v allGoods i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mmsValue_nonneg",
+      "display_name": "mmsValue_nonneg",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

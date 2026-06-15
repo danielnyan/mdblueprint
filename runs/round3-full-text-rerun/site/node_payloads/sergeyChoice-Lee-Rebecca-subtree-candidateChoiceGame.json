@@ -1,0 +1,52 @@
+{
+  "id": "sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame",
+  "title": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sergeyChoice-Lee-Rebecca-subtree-candidateChoiceGame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame : Subtree (sergeyChoice Lee Rebecca) candidateChoiceGame</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>sergeyChoice</li>\n<li>candidateChoiceGame</li>\n<li>larryChoice</li>\n<li>IsZeroSum.tail_mem</li>\n<li>Subtree.tail_mem</li>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "sergeyChoice",
+      "title": "sergeyChoice",
+      "href": "misc/sergeyChoice.html"
+    },
+    {
+      "id": "candidateChoiceGame",
+      "title": "candidateChoiceGame",
+      "href": "misc/candidateChoiceGame.html"
+    },
+    {
+      "id": "larryChoice",
+      "title": "larryChoice",
+      "href": "misc/larryChoice.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+      "display_name": "sergeyChoice_Lee_Rebecca_subtree_candidateChoiceGame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

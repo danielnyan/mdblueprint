@@ -1,0 +1,62 @@
+{
+  "id": "unanimous-strict-pref-not-chosen",
+  "title": "unanimous_strict_pref_not_chosen",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/unanimous-strict-pref-not-chosen.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>unanimous_strict_pref_not_chosen</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem unanimous_strict_pref_not_chosen [Fintype N] [Nonempty N] [Fintype A] (f : VotingRule N A) (hU : Unanimity f) (_hM : Monotonicity f) (P : Profile N A) {a b : A} (hab : ∀ i : N, Prefers P i a b) : b ∉ f P</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>Unanimity</li>\n<li>Monotonicity</li>\n<li>Profile</li>\n<li>Prefers</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "unanimous_strict_pref_not_chosen",
+      "display_name": "unanimous_strict_pref_not_chosen",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "isTerminal",
+  "title": "isTerminal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isTerminal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isTerminal</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev isTerminal (G : ExtensiveGame N U) (s : G.State)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsTerminal</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsTerminal",
+      "title": "IsTerminal",
+      "href": "misc/IsTerminal.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ActionListComplete",
+      "title": "ActionListComplete",
+      "href": "misc/ActionListComplete.html"
+    },
+    {
+      "id": "NoChance",
+      "title": "NoChance",
+      "href": "misc/NoChance.html"
+    },
+    {
+      "id": "extractTerminal-extracts",
+      "title": "extractTerminal_extracts",
+      "href": "misc/extractTerminal-extracts.html"
+    },
+    {
+      "id": "extractTerminal-payoff",
+      "title": "extractTerminal_payoff",
+      "href": "misc/extractTerminal-payoff.html"
+    },
+    {
+      "id": "extractTerminalGameTree",
+      "title": "extractTerminalGameTree",
+      "href": "misc/extractTerminalGameTree.html"
+    },
+    {
+      "id": "isChanceState",
+      "title": "isChanceState",
+      "href": "misc/isChanceState.html"
+    },
+    {
+      "id": "isTerminal-iff-not-isDecision",
+      "title": "isTerminal_iff_not_isDecision",
+      "href": "misc/isTerminal-iff-not-isDecision.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "isTerminal",
+      "display_name": "isTerminal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

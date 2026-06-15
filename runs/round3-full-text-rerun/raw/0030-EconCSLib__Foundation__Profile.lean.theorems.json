@@ -1,0 +1,100 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Profile",
+    "name": "Profile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 23
+      },
+      "start": {
+        "column": 1,
+        "line": 23
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Profile.lean",
+    "type": "abbrev Profile (N : Type*) (S : N \u2192 Type*)"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Profile",
+    "name": "deviate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 27
+      },
+      "start": {
+        "column": 1,
+        "line": 27
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Profile.lean",
+    "type": "abbrev deviate {N : Type*} {S : N \u2192 Type*} [DecidableEq N] (\u03c3 : Profile N S) (i : N) (s' : S i) : Profile N S"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Profile",
+    "name": "deviate_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Profile.lean",
+    "type": "@[simp] theorem deviate_self (\u03c3 : Profile N S) (i : N) : deviate \u03c3 i (\u03c3 i) = \u03c3"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Profile",
+    "name": "deviate_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Profile.lean",
+    "type": "@[simp] theorem deviate_same (\u03c3 : Profile N S) (i : N) (s' : S i) : deviate \u03c3 i s' i = s'"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Profile",
+    "name": "deviate_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Profile.lean",
+    "type": "@[simp] theorem deviate_of_ne (\u03c3 : Profile N S) (i : N) (s' : S i) {j : N} (h : j \u2260 i) : deviate \u03c3 i s' j = \u03c3 j"
+  }
+]

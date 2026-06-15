@@ -1,0 +1,47 @@
+{
+  "id": "exists-nonempty-decisive-of-size",
+  "title": "exists_nonempty_decisive_of_size",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/exists-nonempty-decisive-of-size.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>exists_nonempty_decisive_of_size</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef exists_nonempty_decisive_of_size [Fintype N] [Fintype A] (F : SWF N A) (n : Nat) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>IsDecisive</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "IsDecisive",
+      "title": "IsDecisive",
+      "href": "misc/IsDecisive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "exists_nonempty_decisive_of_size",
+      "display_name": "exists_nonempty_decisive_of_size",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "dependencies": [
+      "IsStable",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.RuralHospitals",
+    "name": "stable_matching_perfect",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/RuralHospitals.lean",
+    "type": "theorem stable_matching_perfect (\u03bc : Matching (Fin n) (Fin n)) (h\u03bc : Matching.IsStable (MatchingMarket.ofEquivData w m) \u03bc) : (\u2200 i : Fin n, (\u03bc.matchM i).isSome) \u2227 (\u2200 j : Fin n, (\u03bc.matchW j).isSome)"
+  }
+]

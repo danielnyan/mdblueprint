@@ -1,0 +1,67 @@
+{
+  "id": "gibbard-satterthwaite",
+  "title": "gibbard_satterthwaite",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/gibbard-satterthwaite.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>gibbard_satterthwaite</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem gibbard_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A] (hA : Fintype.card A ≥ 3) (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f) (hU : Unanimity f) (hSP : ResoluteStrategyproofness f hf_res) : Dictatorial f</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>VotingRule</li>\n<li>IsTotal</li>\n<li>Resolute</li>\n<li>Unanimity</li>\n<li>ResoluteStrategyproofness</li>\n<li>Dictatorial</li>\n<li>muller_satterthwaite</li>\n<li>strategyproof_monotonic</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "ResoluteStrategyproofness",
+      "title": "ResoluteStrategyproofness",
+      "href": "misc/ResoluteStrategyproofness.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "gibbard_satterthwaite",
+      "display_name": "gibbard_satterthwaite",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

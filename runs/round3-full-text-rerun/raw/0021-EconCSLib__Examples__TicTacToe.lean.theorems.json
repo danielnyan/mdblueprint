@@ -1,0 +1,366 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "Pos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 24
+      },
+      "start": {
+        "column": 1,
+        "line": 24
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "abbrev Pos"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "Mark.other",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 29
+      },
+      "start": {
+        "column": 1,
+        "line": 29
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def Mark.other : Mark \u2192 Mark | .X => .O | .O => .X /-- Board = assignment of marks to positions. -/"
+  },
+  {
+    "dependencies": [
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "Board",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 32
+      },
+      "start": {
+        "column": 1,
+        "line": 32
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "abbrev Board"
+  },
+  {
+    "dependencies": [
+      "Board"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "emptyBoard",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 34
+      },
+      "start": {
+        "column": 1,
+        "line": 34
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def emptyBoard : Board"
+  },
+  {
+    "dependencies": [
+      "Board",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "place",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 37
+      },
+      "start": {
+        "column": 1,
+        "line": 37
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def place (b : Board) (p : Pos) (m : Mark) : Board"
+  },
+  {
+    "dependencies": [
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "allPos",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 41
+      },
+      "start": {
+        "column": 1,
+        "line": 41
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def allPos : List Pos"
+  },
+  {
+    "dependencies": [
+      "Board",
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "isEmpty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def isEmpty (b : Board) (p : Pos) : Bool"
+  },
+  {
+    "dependencies": [
+      "Board",
+      "Pos",
+      "allPos",
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "emptyPositions",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 48
+      },
+      "start": {
+        "column": 1,
+        "line": 48
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def emptyPositions (b : Board) : List Pos"
+  },
+  {
+    "dependencies": [
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "winLines",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def winLines : List (List Pos)"
+  },
+  {
+    "dependencies": [
+      "Board",
+      "winLines"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "isWinner",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def isWinner (b : Board) (m : Mark) : Bool"
+  },
+  {
+    "dependencies": [
+      "Board",
+      "emptyBoard"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "TTTState.initial",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def TTTState.initial : TTTState"
+  },
+  {
+    "dependencies": [
+      "isWinner",
+      "Board",
+      "emptyPositions",
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "TTTState.isOver",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def TTTState.isOver (s : TTTState) : Bool"
+  },
+  {
+    "dependencies": [
+      "Pos",
+      "Board",
+      "Mark.other"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "TTTState.move",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def TTTState.move (s : TTTState) (p : Pos) : TTTState"
+  },
+  {
+    "dependencies": [
+      "Pos",
+      "IsReachable.next",
+      "TTTState.isOver",
+      "CPState.isOver",
+      "TTTState.move",
+      "ReachedSubgamePayoffTransfer.init",
+      "TTTState.initial",
+      "isWinner",
+      "Board"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "tttGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def tttGame : ExtensiveGame (Fin 2) \u2124"
+  },
+  {
+    "dependencies": [
+      "Pos"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "sampleGame",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 101
+      },
+      "start": {
+        "column": 1,
+        "line": 101
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def sampleGame : List Pos"
+  },
+  {
+    "dependencies": [
+      "Pos",
+      "TTTState.move",
+      "TTTState.initial"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "playMoves",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def playMoves (moves : List Pos) : TTTState"
+  },
+  {
+    "dependencies": [
+      "playMoves",
+      "sampleGame",
+      "isWinner",
+      "Board",
+      "TTTState.isOver",
+      "CPState.isOver",
+      "tttGame"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.TicTacToe",
+    "name": "finalState",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 115
+      },
+      "start": {
+        "column": 1,
+        "line": 115
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/TicTacToe.lean",
+    "type": "def finalState"
+  }
+]

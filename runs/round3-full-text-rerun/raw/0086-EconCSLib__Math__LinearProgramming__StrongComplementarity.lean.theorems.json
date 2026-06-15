@@ -1,0 +1,200 @@
+[
+  {
+    "dependencies": [
+      "DualFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "lp_weak_complementarity_row",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem lp_weak_complementarity_row (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) {x : Fin n \u2192 \ud835\udd5c} (hxA : \u2200 i, b i \u2264 \u2211 j, A i j * x j) (hxnn : \u2200 j, 0 \u2264 x j) {u : I \u2192 \ud835\udd5c} (hu_du : DualFeasible A c u) (h_match : \u2211 j, c j * x j = \u2211 i, u i * b i) : \u2200 i, (\u2211 j, A i j * x j - b i) * u i = 0"
+  },
+  {
+    "dependencies": [
+      "DualFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "lp_weak_complementarity_col",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem lp_weak_complementarity_col (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) {x : Fin n \u2192 \ud835\udd5c} (hxA : \u2200 i, b i \u2264 \u2211 j, A i j * x j) (hxnn : \u2200 j, 0 \u2264 x j) {u : I \u2192 \ud835\udd5c} (hu_du : DualFeasible A c u) (h_match : \u2211 j, c j * x j = \u2211 i, u i * b i) : \u2200 j, (c j - \u2211 i, u i * A i j) * x j = 0"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "OptAugRow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 177
+      },
+      "start": {
+        "column": 1,
+        "line": 177
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "abbrev OptAugRow (I : Type*) (n : \u2115) : Type _"
+  },
+  {
+    "dependencies": [
+      "OptAugRow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "optAugA",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 180
+      },
+      "start": {
+        "column": 1,
+        "line": 180
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "def optAugA (A : I \u2192 Fin n \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) : OptAugRow I n \u2192 Fin n \u2192 \ud835\udd5c | Sum.inl (Sum.inl i), j => A i j | Sum.inl (Sum.inr j'), j => if j = j' then 1 else 0 | Sum.inr (), j => -c j /-- Optimality-augmented RHS. -/"
+  },
+  {
+    "dependencies": [
+      "OptAugRow",
+      "optAugA"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "optAugB",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 186
+      },
+      "start": {
+        "column": 1,
+        "line": 186
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "def optAugB (b : I \u2192 \ud835\udd5c) (v : \ud835\udd5c) : OptAugRow I n \u2192 \ud835\udd5c | Sum.inl (Sum.inl i) => b i | Sum.inl (Sum.inr _) => 0 | Sum.inr () => -v @[simp] theorem optAugA_inl_inl (A : I \u2192 Fin n \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (i : I) (j : Fin n) : optAugA A c (Sum.inl (Sum.inl i)) j = A i j"
+  },
+  {
+    "dependencies": [
+      "optAugB",
+      "optAugA"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "optAug_feasible_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 213
+      },
+      "start": {
+        "column": 1,
+        "line": 213
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem optAug_feasible_iff (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (v : \ud835\udd5c) (x : Fin n \u2192 \ud835\udd5c) : (\u2200 idx, optAugB b v idx \u2264 \u2211 j, optAugA A c idx j * x j) \u2194 (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2227 (\u2200 j, 0 \u2264 x j) \u2227 (\u2211 j, c j * x j \u2264 v)"
+  },
+  {
+    "dependencies": [
+      "DualFeasible",
+      "optAugB",
+      "optAugA",
+      "optAug_feasible_iff",
+      "lp_weak_duality",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "farkas_lemma",
+      "OptAugRow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "exists_row_strict_pair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 271
+      },
+      "start": {
+        "column": 1,
+        "line": 271
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem exists_row_strict_pair (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (v : \ud835\udd5c) {x\u2080 : Fin n \u2192 \ud835\udd5c} (hx\u2080A : \u2200 i, b i \u2264 \u2211 j, A i j * x\u2080 j) (hx\u2080nn : \u2200 j, 0 \u2264 x\u2080 j) (hx\u2080_val : \u2211 j, c j * x\u2080 j = v) {u\u2080 : I \u2192 \ud835\udd5c} (hu\u2080 : DualFeasible A c u\u2080) (hu\u2080_val : \u2211 i, u\u2080 i * b i = v) (i\u2080 : I) : \u2203 (x : Fin n \u2192 \ud835\udd5c) (u : I \u2192 \ud835\udd5c), (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2227 (\u2200 j, 0 \u2264 x j) \u2227 DualFeasible A c u \u2227 (\u2211 j, c j * x j = v) \u2227 (\u2211 i, u i * b i = v) \u2227 0 < (\u2211 j, A i\u2080 j * x j - b i\u2080) + u i\u2080"
+  },
+  {
+    "dependencies": [
+      "DualFeasible",
+      "optAugB",
+      "optAugA",
+      "optAug_feasible_iff",
+      "lp_weak_duality",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "farkas_lemma",
+      "OptAugRow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "exists_col_strict_pair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 538
+      },
+      "start": {
+        "column": 1,
+        "line": 538
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem exists_col_strict_pair (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (v : \ud835\udd5c) {x\u2080 : Fin n \u2192 \ud835\udd5c} (hx\u2080A : \u2200 i, b i \u2264 \u2211 j, A i j * x\u2080 j) (hx\u2080nn : \u2200 j, 0 \u2264 x\u2080 j) (hx\u2080_val : \u2211 j, c j * x\u2080 j = v) {u\u2080 : I \u2192 \ud835\udd5c} (hu\u2080 : DualFeasible A c u\u2080) (hu\u2080_val : \u2211 i, u\u2080 i * b i = v) (j\u2080 : Fin n) : \u2203 (x : Fin n \u2192 \ud835\udd5c) (u : I \u2192 \ud835\udd5c), (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2227 (\u2200 j, 0 \u2264 x j) \u2227 DualFeasible A c u \u2227 (\u2211 j, c j * x j = v) \u2227 (\u2211 i, u i * b i = v) \u2227 0 < x j\u2080 + (c j\u2080 - \u2211 i, u i * A i j\u2080)"
+  },
+  {
+    "dependencies": [
+      "DualFeasible",
+      "exists_row_strict_pair",
+      "exists_col_strict_pair"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "name": "exists_strong_complementary_pair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 753
+      },
+      "start": {
+        "column": 1,
+        "line": 753
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongComplementarity.lean",
+    "type": "theorem exists_strong_complementary_pair (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (v : \ud835\udd5c) (hN_pos : (0 : \ud835\udd5c) < ((Fintype.card I + n : \u2115) : \ud835\udd5c)) {x\u2080 : Fin n \u2192 \ud835\udd5c} (hx\u2080A : \u2200 i, b i \u2264 \u2211 j, A i j * x\u2080 j) (hx\u2080nn : \u2200 j, 0 \u2264 x\u2080 j) (hx\u2080_val : \u2211 j, c j * x\u2080 j = v) {u\u2080 : I \u2192 \ud835\udd5c} (hu\u2080 : DualFeasible A c u\u2080) (hu\u2080_val : \u2211 i, u\u2080 i * b i = v) : \u2203 (x : Fin n \u2192 \ud835\udd5c) (u : I \u2192 \ud835\udd5c), (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2227 (\u2200 j, 0 \u2264 x j) \u2227 DualFeasible A c u \u2227 (\u2211 j, c j * x j = v) \u2227 (\u2211 i, u i * b i = v) \u2227 (\u2200 i, 0 < (\u2211 j, A i j * x j - b i) + u i) \u2227 (\u2200 j, 0 < x j + (c j - \u2211 i, u i * A i j))"
+  }
+]

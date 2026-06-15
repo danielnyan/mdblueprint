@@ -1,0 +1,304 @@
+[
+  {
+    "dependencies": [
+      "quasiLinearUtility",
+      "quasiLinearValue"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "withMyersonPayment_quasiLinearUtility_eq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "lemma withMyersonPayment_quasiLinearUtility_eq [DecidableEq I] (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) (v b : I \u2192 \u211d) (i : I) : (withMyersonPayment x).quasiLinearUtility b v i = (v i - b i) * x b i + \u222b z in 0..b i, x (Function.update b i z) i"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "ZeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "def ZeroNormalized [DecidableEq I] (p : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : Prop"
+  },
+  {
+    "dependencies": [
+      "ZeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "myersonPayment_zeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem myersonPayment_zeroNormalized [DecidableEq I] (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : ZeroNormalized (myersonPayment x)"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "IsMonotone",
+      "toStrategicGame",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "isMonotone_of_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 82
+      },
+      "start": {
+        "column": 1,
+        "line": 82
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem isMonotone_of_isDSIC [DecidableEq I] {M : SingleParameterMechanism I \u211d} (hdsic : M.IsDSIC) : M.IsMonotone"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "toStrategicGame",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "WeaklyDominates"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "payment_sandwich",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 113
+      },
+      "start": {
+        "column": 1,
+        "line": 113
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem payment_sandwich [DecidableEq I] {x p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hdsic : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "payment_sandwich"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "payment_difference_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 144
+      },
+      "start": {
+        "column": 1,
+        "line": 144
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem payment_difference_bound [DecidableEq I] {x p q : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hpdsic : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsMonotone",
+      "IsDSIC",
+      "isDSIC",
+      "quasiLinearUtility",
+      "withMyersonPayment_quasiLinearUtility_eq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "withMyersonPayment_isDSIC_of_isMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 162
+      },
+      "start": {
+        "column": 1,
+        "line": 162
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem withMyersonPayment_isDSIC_of_isMonotone [DecidableEq I] {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsMonotone",
+      "IsImplementable",
+      "withMyersonPayment_isDSIC_of_isMonotone"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "isImplementable_of_isMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 225
+      },
+      "start": {
+        "column": 1,
+        "line": 225
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem isImplementable_of_isMonotone [DecidableEq I] {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsImplementable",
+      "IsMonotone",
+      "isMonotone_of_isDSIC",
+      "isImplementable_of_isMonotone"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "isImplementable_iff_isMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 235
+      },
+      "start": {
+        "column": 1,
+        "line": 235
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem isImplementable_iff_isMonotone [DecidableEq I] (x : (I \u2192 \u211d) \u2192 I \u2192 \u211d) : IsImplementable x \u2194 IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "ZeroNormalized",
+      "IsMonotone",
+      "isMonotone_of_isDSIC",
+      "withMyersonPayment_isDSIC_of_isMonotone",
+      "payment_difference_bound",
+      "myersonPayment_zeroNormalized",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "payment_formula_of_isDSIC_of_zeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 252
+      },
+      "start": {
+        "column": 1,
+        "line": 252
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem payment_formula_of_isDSIC_of_zeroNormalized [DecidableEq I] {x p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hdsic : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsDSIC",
+      "isDSIC",
+      "ZeroNormalized",
+      "payment_formula_of_isDSIC_of_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 385
+      },
+      "start": {
+        "column": 1,
+        "line": 385
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized [DecidableEq I] {x p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hdsic : ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "IsMonotone",
+      "ZeroNormalized",
+      "IsDSIC",
+      "isDSIC",
+      "myersonPayment_zeroNormalized",
+      "withMyersonPayment_isDSIC_of_isMonotone",
+      "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "existsUnique_zeroNormalized_payment_of_isMonotone",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 397
+      },
+      "start": {
+        "column": 1,
+        "line": 397
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem existsUnique_zeroNormalized_payment_of_isMonotone [DecidableEq I] {x : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hx : IsMonotone ({ allocationRule"
+  },
+  {
+    "dependencies": [
+      "ZeroNormalized",
+      "IsDSIC",
+      "isDSIC",
+      "payment_formula_of_isDSIC_of_zeroNormalized"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MechanismDesign.Auction.Myerson",
+    "name": "payment_formula_of_zeroNormalized_and_isDSIC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 412
+      },
+      "start": {
+        "column": 1,
+        "line": 412
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MechanismDesign/Auction/Myerson.lean",
+    "type": "theorem payment_formula_of_zeroNormalized_and_isDSIC [DecidableEq I] {x p : (I \u2192 \u211d) \u2192 I \u2192 \u211d} (hp : ZeroNormalized p \u2227 ({ allocationRule"
+  }
+]

@@ -1,0 +1,1208 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_productPrior_of_integrable_profileSplit",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_productPrior_of_integrable_profileSplit",
+    "target": "productPrior_map_profileSplitMeasurableEquiv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_productPrior_of_integrable_profileSplit",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_productPrior_of_integrable_profileSplit",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasIntervalIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "toDirectBayesianMechanismWithTransfers",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "opponentPrior_map_eval_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "opponentPrior_map_eval_of_hasIndependentTypePriors",
+    "target": "opponentProductPrior_map_eval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+    "target": "HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+    "target": "interimAllocProb_nonneg_of_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_prior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_prior_of_hasIndependentTypePriors",
+    "target": "integral_comp_eval_productPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+    "target": "measurePreserving_profileSplitMeasurableEquiv_productPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "HasIntegrableInterimObjects"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "integral_interimQuasiLinearUtilityIntegrand_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "integrable_interimQuasiLinearUtilityIntegrand"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_of_isDSIC",
+    "target": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+    "target": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound",
+    "target": "HasIntegrableInterimPayment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_le_one_of_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_le_one_of_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_le_one_of_isFeasible",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_le_one_of_isFeasible",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+    "target": "integrable_productPrior_of_integrable_profileSplit"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "hasInterimPaymentFormula_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_prior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_prior_of_hasIndependentTypePriors",
+    "target": "integrable_comp_eval_productPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_nonneg_of_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_nonneg_of_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "HasSameSellingEnvironment.typeData_eq",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mem_Icc_of_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mem_Icc_of_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mem_Icc_of_isFeasible",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mem_Icc_of_isFeasible",
+    "target": "interimAllocProb_nonneg_of_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mem_Icc_of_isFeasible",
+    "target": "interimAllocProb_le_one_of_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula",
+    "target": "interimExpectedPayment_eq_of_hasInterimPaymentFormula_of_interimAllocProb_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula",
+    "target": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_eq_and_equilibriumPayoff_eq_of_hasInterimEnvelopeFormula",
+    "target": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_interimQuasiLinearUtilityIntegrand_eq",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_interimQuasiLinearUtilityIntegrand_eq",
+    "target": "HasIntegrableInterimPayment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+    "target": "HasIntegrableInterimObjects"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+    "target": "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+    "target": "hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "target": "equilibriumPayoff_convexOn_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible",
+    "target": "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+    "target": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+    "target": "HasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeDerivative_of_isIncentiveCompatible_of_equilibriumPayoff_differentiable",
+    "target": "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+    "target": "HasIntervalIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+    "target": "interimAllocProb_mono_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_convexOn_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_convexOn_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_interimQuasiLinearUtilityIntegrand",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_interimQuasiLinearUtilityIntegrand",
+    "target": "HasIntegrableInterimPayment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "prior_map_profileSplitMeasurableEquiv_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "prior_map_profileSplitMeasurableEquiv_of_hasIndependentTypePriors",
+    "target": "productPrior_map_profileSplitMeasurableEquiv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "target": "integral_typeMeasure_eq_intervalIntegral_smul"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_mul",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "deriv_equilibriumPayoff_eq_interimAllocProb_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "HasIntegrableInterimObjects",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "HasIntegrableInterimObjects",
+    "target": "HasIntegrableInterimPayment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+    "target": "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "hasInterimEnvelopeFormula_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible",
+    "target": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "OpponentTypeProfile",
+    "target": "OpponentProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "OpponentTypeProfile",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_opponentProductPrior",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_typeMeasure_fubini",
+    "target": "integral_typeMeasure_eq_intervalIntegral_mul"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "IsFeasible",
+    "target": "IsAllocFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "IsFeasible",
+    "target": "RespectsSingleItemCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "IsFeasible",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasIntervalIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "target": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+    "target": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimEnvelopeFormula_and_paymentFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimExpectedPayment_zero_nonpos_of_isIndividuallyRationalOnSupport",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_iff_equilibriumPayoff_ge",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_iff_equilibriumPayoff_ge",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIncentiveCompatible_iff_equilibriumPayoff_ge",
+    "target": "interimQuasiLinearUtility_eq_equilibriumPayoff_add"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "integrable_comp_eval_opponentProductPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_eq_of_hasInterimEnvelopeFormula_of_interimAllocProb_eq",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "equilibriumPayoff_eq_neg_interimExpectedPayment_zero_add_integral",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integrable_comp_eval_opponentProductPrior",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "HasSameSellingEnvironment.prior_eq",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+    "target": "HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "paymentInterimFubiniAssumptions_of_typeMeasure_fubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "HasSameSellingEnvironment.opponentPrior_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+    "target": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimEnvelopeFormula_of_isIncentiveCompatible_of_hasInterimEnvelopeDerivative",
+    "target": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "prior_map_eval_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "prior_map_eval_of_hasIndependentTypePriors",
+    "target": "productPrior_map_eval"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "HasSameSellingEnvironment.opponentPrior_eq",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "target": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_isIncentiveCompatible",
+    "target": "hasInterimEnvelopeFormula_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+    "target": "WeaklyDominates"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound",
+    "target": "HasIntegrableInterimAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_smul",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_typeMeasure_eq_intervalIntegral_smul",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mono_of_isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "interimAllocProb_mono_of_isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+    "target": "integral_comp_profileSplitMeasurableEquiv_productPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+    "target": "integral_comp_eval_opponentProductPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "productPrior_map_profileSplitMeasurableEquiv",
+    "target": "measurePreserving_profileSplitMeasurableEquiv_productPrior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.BayesianSingleItem",
+    "source": "hasInterimPaymentFormula_of_hasInterimEnvelopeFormula",
+    "target": "HasInterimPaymentFormula"
+  }
+]

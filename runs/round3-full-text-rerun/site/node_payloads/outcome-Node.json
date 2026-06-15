@@ -1,0 +1,42 @@
+{
+  "id": "outcome-Node",
+  "title": "outcome_Node",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/outcome-Node.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>outcome_Node</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem outcome_Node (σ : Strategy N U) (m : N) (h : GameTree N U) (t : List (GameTree N U)) : outcome σ (Node m h t) = outcome σ (σ m h t).val</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>value_Node_eq_some_child_value</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "outcome_Node",
+      "display_name": "outcome_Node",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

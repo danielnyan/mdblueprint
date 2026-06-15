@@ -1,0 +1,398 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_exists",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_exists",
+    "target": "ef_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_empty_iff",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "dubinsSpanierProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "proportional_exists",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.proportional_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.proportional_exists",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.proportional_exists",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.proportional_exists",
+    "target": "proportional_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_piece_partition",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_and_proportional_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_and_proportional_exists",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_and_proportional_exists",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_and_proportional_exists",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "MeasureInstance.envyFree_and_proportional_exists",
+    "target": "ef_exists_and_proportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "cdfRealContinuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "simplexFaceOpp"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "strom_piece_empty_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "strom_piece_partition"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "mem_biUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "kkm_open_cover"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "strom_value_continuous",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.Existence",
+    "source": "ef_exists_and_proportional",
+    "target": "ef_exists"
+  }
+]

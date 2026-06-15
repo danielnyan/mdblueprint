@@ -1,0 +1,47 @@
+{
+  "id": "g-function",
+  "title": "g_function",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/g-function.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>g_function</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef g_function (i : N) (σ : MixedS G) (a : G.strategy i) : ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>MixedS</li>\n<li>Strategy</li>\n<li>evaluate_at_mixed</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "g_function",
+      "display_name": "g_function",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

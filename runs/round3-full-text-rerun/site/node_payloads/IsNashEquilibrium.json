@@ -1,0 +1,183 @@
+{
+  "id": "IsNashEquilibrium",
+  "title": "IsNashEquilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsNashEquilibrium.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsNashEquilibrium</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsNashEquilibrium (G : StrategicGame N U) (σ : G.Profile) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IVariant</li>\n<li>Profile</li>\n<li>IsWeaklyDominant.isBestResponse</li>\n<li>IsBestResponse</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "IsBestResponse",
+      "title": "IsBestResponse",
+      "href": "misc/IsBestResponse.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsConstantSum-nash-payoff-eq",
+      "title": "IsConstantSum.nash_payoff_eq",
+      "href": "misc/IsConstantSum-nash-payoff-eq.html"
+    },
+    {
+      "id": "IsConstantSum-nash-payoff-eq-p1",
+      "title": "IsConstantSum.nash_payoff_eq_p1",
+      "href": "misc/IsConstantSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "IsDSIC-truthful-isNash",
+      "title": "IsDSIC.truthful_isNash",
+      "href": "misc/IsDSIC-truthful-isNash.html"
+    },
+    {
+      "id": "IsDegenerateCorrelatedEq",
+      "title": "IsDegenerateCorrelatedEq",
+      "href": "misc/IsDegenerateCorrelatedEq.html"
+    },
+    {
+      "id": "IsExactPotential-maximizer-is-nash",
+      "title": "IsExactPotential.maximizer_is_nash",
+      "href": "misc/IsExactPotential-maximizer-is-nash.html"
+    },
+    {
+      "id": "IsNashAt",
+      "title": "IsNashAt",
+      "href": "misc/IsNashAt.html"
+    },
+    {
+      "id": "IsNashEquilibrium-isRationalizable",
+      "title": "IsNashEquilibrium.isRationalizable",
+      "href": "misc/IsNashEquilibrium-isRationalizable.html"
+    },
+    {
+      "id": "IsNashEquilibrium-survives",
+      "title": "IsNashEquilibrium.survives",
+      "href": "misc/IsNashEquilibrium-survives.html"
+    },
+    {
+      "id": "IsOrdinalPotential-isNash-iff-localMax",
+      "title": "IsOrdinalPotential.isNash_iff_localMax",
+      "href": "misc/IsOrdinalPotential-isNash-iff-localMax.html"
+    },
+    {
+      "id": "IsSubgamePerfect-toNE",
+      "title": "IsSubgamePerfect.toNE",
+      "href": "misc/IsSubgamePerfect-toNE.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq",
+      "title": "IsZeroSum.nash_payoff_eq",
+      "href": "misc/IsZeroSum-nash-payoff-eq.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq-p1",
+      "title": "IsZeroSum.nash_payoff_eq_p1",
+      "href": "misc/IsZeroSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "Kuhn-exists-NE",
+      "title": "Kuhn_exists_NE",
+      "href": "misc/Kuhn-exists-NE.html"
+    },
+    {
+      "id": "candidateChoice-has-ne",
+      "title": "candidateChoice_has_ne",
+      "href": "misc/candidateChoice-has-ne.html"
+    },
+    {
+      "id": "isNashEq-iff",
+      "title": "isNashEq_iff",
+      "href": "misc/isNashEq-iff.html"
+    },
+    {
+      "id": "nash-iff-degenerate-ce",
+      "title": "nash_iff_degenerate_ce",
+      "href": "misc/nash-iff-degenerate-ce.html"
+    },
+    {
+      "id": "of-dominant",
+      "title": "of_dominant",
+      "href": "misc/of-dominant.html"
+    },
+    {
+      "id": "pd-defect-nash",
+      "title": "pd_defect_nash",
+      "href": "misc/pd-defect-nash.html"
+    },
+    {
+      "id": "pd-nash-unique",
+      "title": "pd_nash_unique",
+      "href": "misc/pd-nash-unique.html"
+    },
+    {
+      "id": "rps-no-pure-nash",
+      "title": "rps_no_pure_nash",
+      "href": "misc/rps-no-pure-nash.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "sample-zermelo-ne",
+      "title": "sample_zermelo_ne",
+      "href": "misc/sample-zermelo-ne.html"
+    },
+    {
+      "id": "toStrategicGame-nash-iff-isNashAt",
+      "title": "toStrategicGame_nash_iff_isNashAt",
+      "href": "misc/toStrategicGame-nash-iff-isNashAt.html"
+    },
+    {
+      "id": "vickrey4-truthful-nash",
+      "title": "vickrey4_truthful_nash",
+      "href": "misc/vickrey4-truthful-nash.html"
+    },
+    {
+      "id": "zermelo-exists-pure-NE",
+      "title": "zermelo_exists_pure_NE",
+      "href": "misc/zermelo-exists-pure-NE.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsNashEquilibrium",
+      "display_name": "IsNashEquilibrium",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

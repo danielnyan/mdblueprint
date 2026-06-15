@@ -1,0 +1,505 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "TT",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 79
+      },
+      "start": {
+        "column": 1,
+        "line": 79
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "abbrev TT"
+  },
+  {
+    "dependencies": [
+      "TT"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "TTtostdSimplex",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def TTtostdSimplex (x : TT n l) : stdSimplex \u211d (Fin n)"
+  },
+  {
+    "dependencies": [
+      "TT",
+      "StrictlyPreferred.irrefl",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "TT.Ilt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 115
+      },
+      "start": {
+        "column": 1,
+        "line": 115
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "abbrev TT.Ilt ( x y : TT n l)"
+  },
+  {
+    "dependencies": [
+      "TT",
+      "TT.Ilt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "TT.Ilt_def",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 147
+      },
+      "start": {
+        "column": 1,
+        "line": 147
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "lemma TT.Ilt_def (a b : TT n l) : (a <[i] b) \u2194 TT.Ilt i a b"
+  },
+  {
+    "dependencies": [
+      "TT"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "TT.Ilt_keyprop",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 151
+      },
+      "start": {
+        "column": 1,
+        "line": 151
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "lemma TT.Ilt_keyprop (a b : TT n l) : a i < b i \u2192 a <[i] b"
+  },
+  {
+    "dependencies": [
+      "TT",
+      "isDominant",
+      "TT.Ilt_keyprop",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "size_bound_key",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "lemma size_bound_key (\u03c3 : Finset (TT n l)) (C : Finset (Fin n)) (h : TT.ILO.isDominant \u03c3 C) (h2 : \u03c3.Nonempty): l < \u2211 k \u2208 C, (\u03c3.image (fun x => (x k : \u2115))).min' (h2.image _) + C.card"
+  },
+  {
+    "dependencies": [
+      "TT",
+      "isDominant",
+      "size_bound_key",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "size_bound_in",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 266
+      },
+      "start": {
+        "column": 1,
+        "line": 266
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem size_bound_in (\u03c3 : Finset (TT n l)) (C : Finset (Fin n)) (h : TT.ILO.isDominant \u03c3 C): \u2200 x \u2208 \u03c3, \u2200 y \u2208 \u03c3, \u2200 i : Fin n, abs ((x i : \u2124) - (y i : \u2124)) < 2 * (n + 1)"
+  },
+  {
+    "dependencies": [
+      "TT",
+      "isDominant",
+      "size_bound_key",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "Brouwer",
+      "isEmpty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "size_bound_out",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 379
+      },
+      "start": {
+        "column": 1,
+        "line": 379
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem size_bound_out (\u03c3 : Finset (TT n l)) (C : Finset (Fin n)) (h : TT.ILO.isDominant \u03c3 C): \u2200 x \u2208 \u03c3, \u2200 i \u2209 C, (x i : \u2124) < n + 1"
+  },
+  {
+    "dependencies": [
+      "TT"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "Fcolor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 455
+      },
+      "start": {
+        "column": 1,
+        "line": 455
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def Fcolor (x : TT n l) : Fin n"
+  },
+  {
+    "dependencies": [
+      "Scarf",
+      "TT",
+      "Fcolor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "room_seq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 457
+      },
+      "start": {
+        "column": 1,
+        "line": 457
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def room_seq (l' : \u2115)"
+  },
+  {
+    "dependencies": [
+      "pick_colorful_point",
+      "room_seq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "room_point_seq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 461
+      },
+      "start": {
+        "column": 1,
+        "line": 461
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def room_point_seq (l' : \u2115)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "mk_subseq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 469
+      },
+      "start": {
+        "column": 1,
+        "line": 469
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def mk_subseq (f : \u2115 \u2192 \u2115) (h : \u2200 n, n < f n) : \u2115 \u2192 \u2115 | 0 => f 0 | n+1 => f (mk_subseq f h n)"
+  },
+  {
+    "dependencies": [
+      "Profile.ext",
+      "mk_subseq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "exists_subseq_constant_of_finite_image",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 473
+      },
+      "start": {
+        "column": 1,
+        "line": 473
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem exists_subseq_constant_of_finite_image {s : Finset X} (e : \u2115 \u2192 X) (he : \u2200 n, e n \u2208 s ) : \u2203 a \u2208 s, \u2203 g : \u2115 \u21aao \u2115, (\u2200 n, e (g n) = a)"
+  },
+  {
+    "dependencies": [
+      "room_seq",
+      "exists_subseq_constant_of_finite_image"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "constant_index_set_nonempty",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 542
+      },
+      "start": {
+        "column": 1,
+        "line": 542
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "lemma constant_index_set_nonempty : Nonempty {(a, g) :(Finset (Fin n)) \u00d7 (\u2115 \u21aao \u2115) | \u2200 l', (room_seq f (g l')).1.2 = a }"
+  },
+  {
+    "dependencies": [
+      "constant_index_set_nonempty"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "gpkg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 549
+      },
+      "start": {
+        "column": 1,
+        "line": 549
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def gpkg"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "g1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 551
+      },
+      "start": {
+        "column": 1,
+        "line": 551
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "abbrev g1"
+  },
+  {
+    "dependencies": [
+      "room_seq",
+      "room_point_seq",
+      "pick_colorful_point",
+      "isDominant",
+      "TT",
+      "size_bound_out",
+      "TTtostdSimplex"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "dominant_coords_tend_to_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 559
+      },
+      "start": {
+        "column": 1,
+        "line": 559
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "lemma dominant_coords_tend_to_zero (f : stdSimplex \u211d (Fin n) \u2192 stdSimplex \u211d (Fin n)) (C : Finset (Fin n)) (g : \u2115 \u21aao \u2115) (h_const : \u2200 l', (room_seq f (g l')).1.2 = C) : \u2200 i \u2209 C, Filter.Tendsto (fun l' => ((room_point_seq f (g l')) : stdSimplex \u211d (Fin n)).1 i) Filter.atTop (\ud835\udcdd 0)"
+  },
+  {
+    "dependencies": [
+      "room_point_seq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "hpkg_aux",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 599
+      },
+      "start": {
+        "column": 1,
+        "line": 599
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "@[reducible] def hpkg_aux: Nonempty {(z , h) : (stdSimplex \u211d (Fin n)) \u00d7 (\u2115 \u2192 \u2115) | StrictMono h \u2227 Filter.Tendsto ((fun l' => (room_point_seq f (g1 f l'): stdSimplex \u211d (Fin n))) \u2218 h) Filter.atTop (\ud835\udcdd z) }"
+  },
+  {
+    "dependencies": [
+      "hpkg_aux"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "hpkg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 611
+      },
+      "start": {
+        "column": 1,
+        "line": 611
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "def hpkg"
+  },
+  {
+    "dependencies": [
+      "room_seq",
+      "TTtostdSimplex",
+      "isDominant",
+      "TT",
+      "size_bound_in"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "tendsto_diam_to_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 619
+      },
+      "start": {
+        "column": 1,
+        "line": 619
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem tendsto_diam_to_zero (f : stdSimplex \u211d (Fin n) \u2192 stdSimplex \u211d (Fin n)) : Tendsto (fun k => Metric.diam ((((room_seq f (g1 f ((hpkg f).1.2 k))).1.1.image (fun x => TTtostdSimplex x)) : Set (stdSimplex \u211d (Fin n))))) atTop (\ud835\udcdd 0)"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "room_point_seq",
+      "room_seq",
+      "Fcolor",
+      "TTtostdSimplex",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "pick_colorful_point",
+      "tendsto_diam_to_zero",
+      "Survives.mono"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "f_coords_ge_z_coords",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 686
+      },
+      "start": {
+        "column": 1,
+        "line": 686
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem f_coords_ge_z_coords (f : stdSimplex \u211d (Fin n) \u2192 stdSimplex \u211d (Fin n)) (hf : Continuous f) : \u2200 i \u2208 (gpkg f).1.1, (f (hpkg f).1.1).1 i \u2265 ((hpkg f).1.1).1 i"
+  },
+  {
+    "dependencies": [
+      "colRatio.continuous",
+      "lamB.aux.continuous",
+      "rowRatio.continuous",
+      "lam.aux.continuous",
+      "muB.aux.continuous",
+      "mu.aux.continuous",
+      "tendsto_diam_to_zero",
+      "room_point_seq",
+      "room_seq",
+      "dominant_coords_tend_to_zero",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "f_coords_ge_z_coords",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Brouwer",
+    "name": "Brouwer",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 780
+      },
+      "start": {
+        "column": 1,
+        "line": 780
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Brouwer.lean",
+    "type": "theorem Brouwer (hf : Continuous f): \u2203 x , f x = x"
+  }
+]

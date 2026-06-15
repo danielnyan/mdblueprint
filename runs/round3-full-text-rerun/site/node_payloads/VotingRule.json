@@ -1,0 +1,148 @@
+{
+  "id": "VotingRule",
+  "title": "VotingRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/VotingRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>VotingRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev VotingRule (N A : Type*) [Fintype N] [Fintype A]</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "Anonymity",
+      "title": "Anonymity",
+      "href": "misc/Anonymity.html"
+    },
+    {
+      "id": "CondorcetConsistency",
+      "title": "CondorcetConsistency",
+      "href": "misc/CondorcetConsistency.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    },
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    },
+    {
+      "id": "Neutrality",
+      "title": "Neutrality",
+      "href": "misc/Neutrality.html"
+    },
+    {
+      "id": "OptimistStrategyproofness",
+      "title": "OptimistStrategyproofness",
+      "href": "misc/OptimistStrategyproofness.html"
+    },
+    {
+      "id": "ParetoEfficiency",
+      "title": "ParetoEfficiency",
+      "href": "misc/ParetoEfficiency.html"
+    },
+    {
+      "id": "PessimistStrategyproofness",
+      "title": "PessimistStrategyproofness",
+      "href": "misc/PessimistStrategyproofness.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "ResoluteStrategyproofness",
+      "title": "ResoluteStrategyproofness",
+      "href": "misc/ResoluteStrategyproofness.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "gibbard-satterthwaite",
+      "title": "gibbard_satterthwaite",
+      "href": "misc/gibbard-satterthwaite.html"
+    },
+    {
+      "id": "monotonic-zProfile",
+      "title": "monotonic_zProfile",
+      "href": "misc/monotonic-zProfile.html"
+    },
+    {
+      "id": "muller-satterthwaite",
+      "title": "muller_satterthwaite",
+      "href": "misc/muller-satterthwaite.html"
+    },
+    {
+      "id": "strategyproof-monotonic",
+      "title": "strategyproof_monotonic",
+      "href": "misc/strategyproof-monotonic.html"
+    },
+    {
+      "id": "top-unanimity-of-unanimity",
+      "title": "top_unanimity_of_unanimity",
+      "href": "misc/top-unanimity-of-unanimity.html"
+    },
+    {
+      "id": "unanimous-strict-pref-not-chosen",
+      "title": "unanimous_strict_pref_not_chosen",
+      "href": "misc/unanimous-strict-pref-not-chosen.html"
+    },
+    {
+      "id": "veto-isTotal",
+      "title": "veto_isTotal",
+      "href": "misc/veto-isTotal.html"
+    },
+    {
+      "id": "vetoScore",
+      "title": "vetoScore",
+      "href": "misc/vetoScore.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "VotingRule",
+      "display_name": "VotingRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

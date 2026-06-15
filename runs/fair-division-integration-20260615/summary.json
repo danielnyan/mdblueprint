@@ -1,0 +1,75 @@
+{
+  "corpus_names": 158894,
+  "nodes_with_extra_decls": 2,
+  "nodes_with_extra_uses": 2,
+  "nodes_with_missing_decls": 2,
+  "nodes_with_missing_uses": 2,
+  "pairs": 2,
+  "reports": [
+    {
+      "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/fair-division-integration-20260615/counterchecks/social_choice_fair_division_divisible_cardinal_instance.json",
+      "extra_declarations": [
+        "feasible",
+        "feasible",
+        "toCakeValuation",
+        "feasible",
+        "isEnvyFree_iff_toCardinalInstance_isEnvyFree"
+      ],
+      "extra_uses": [
+        "IsEnvyFree",
+        "IsProportional",
+        "toCakeValuation",
+        "toGenericCardinalInstance",
+        "toShareInstance"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Divisible/Instance.lean",
+      "missing_declarations": [
+        "SocialChoice.FairDivision.Divisible.CardinalInstance",
+        "SocialChoice.FairDivision.Divisible.CardinalInstance.utilitarianWelfare",
+        "SocialChoice.FairDivision.Divisible.CardinalInstance.egalitarianWelfare"
+      ],
+      "missing_uses": [
+        "social_choice.fair_division.divisible.ordinal_instance",
+        "social_choice.fair_division.cardinal_instance",
+        "social_choice.fair_division.envy_free",
+        "social_choice.fair_division.proportional",
+        "social_choice.fair_division.utilitarian_welfare",
+        "social_choice.fair_division.egalitarian_welfare"
+      ],
+      "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cardinal_instance.md",
+      "node_id": "social_choice.fair_division.divisible.cardinal_instance",
+      "review_path": "/home/azureuser/mdblueprint-clean/runs/fair-division-integration-20260615/reviews/social_choice_fair_division_divisible_cardinal_instance_lean_countercheck_2026-06-15T06_18_05_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/azureuser/mdblueprint-clean/runs/fair-division-integration-20260615/counterchecks/social_choice_fair_division_indivisible_cardinal_instance.json",
+      "extra_declarations": [
+        "feasible",
+        "feasible",
+        "toAdditiveValuation",
+        "toCardinalInstance",
+        "feasible"
+      ],
+      "extra_uses": [
+        "toAdditiveValuation",
+        "toCardinalInstance",
+        "toGenericCardinalInstance",
+        "toValuation"
+      ],
+      "lean_file": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Instance.lean",
+      "missing_declarations": [
+        "SocialChoice.FairDivision.Indivisible.CardinalInstance"
+      ],
+      "missing_uses": [
+        "social_choice.fair_division.indivisible.valuation",
+        "social_choice.fair_division.cardinal_instance",
+        "social_choice.fair_division.envy_free",
+        "social_choice.fair_division.proportional",
+        "social_choice.fair_division.utilitarian_welfare",
+        "social_choice.fair_division.egalitarian_welfare"
+      ],
+      "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/indivisible/cardinal_instance.md",
+      "node_id": "social_choice.fair_division.indivisible.cardinal_instance",
+      "review_path": "/home/azureuser/mdblueprint-clean/runs/fair-division-integration-20260615/reviews/social_choice_fair_division_indivisible_cardinal_instance_lean_countercheck_2026-06-15T06_18_32_00_00.md"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "ofFinset",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "ofFinset",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "ofFinset",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "alg",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "toFinset",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "singleton",
+    "target": "Visited"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "singleton",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "singleton",
+    "target": "ofFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "source": "singleton",
+    "target": "Profile.ext"
+  }
+]

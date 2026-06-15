@@ -1,0 +1,1418 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isDoor",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "room_is_not_door",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "room_is_not_door",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "keylemma_of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "injOn_sdiff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_1",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcountingset",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door_odd",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door_odd",
+    "target": "dbcount_outside_door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "isRoom_of_Door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "NC_of_NCdoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "firber2_doors_NCroom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_NCroom",
+    "target": "not_colorful_of_TypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "keylemma_of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sublemma_3_2",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Finset.eq_of_mem_of_card_one",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Nonempty_of_Dominant",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_erase_collision_preserves",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_erase_collision_preserves",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_erase_collision_preserves",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "isInternalDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "internal_door_two_rooms"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "isRoom_of_Door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "fiber_size_internal_door",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isCell",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "collision_door_valid",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "collision_door_valid",
+    "target": "Dominant_of_subset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "collision_door_valid",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "collision_door_valid",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "NCdoors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "card_of_NCcell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "image_erase_eq_erase_image_of_unique"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "Dominant_of_subset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "Dominant_of_supset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "injOn_sdiff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "three_collision_card_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "collision_door_valid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "image_erase_collision_preserves"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "doors_of_NCroom",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sigma_nonempty_of_room",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sigma_nonempty_of_room",
+    "target": "Nonempty_of_Dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sigma_nonempty_of_room",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "sigma_nonempty_of_room",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isNearlyColorful",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_internal_door_even",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_internal_door_even",
+    "target": "isInternalDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_internal_door_even",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_internal_door_even",
+    "target": "fiber_size_internal_door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "keylemma_of_dominant",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "keylemma_of_dominant",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "outsidedoor_is_singleton",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_outsidedoor",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_outsidedoor",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_outsidedoor",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_outsidedoor",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "_root_.Finset.card_filter_filter_neg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "parity_lemma"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "dbcount_outside_door_odd"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "dbcount_internal_door_even"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "typed_colorful_room_odd",
+    "target": "dbcount_NCroom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "doors_of_NCroom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "NC_of_TNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "NCdoors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "firber2_doors_NCroom",
+    "target": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isInternalDoor",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isColorful",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_of_NCcell",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_of_NCcell",
+    "target": "card_le_of_domiant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_of_NCcell",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_of_NCcell",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isRoom",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "isInternalDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "keylemma_of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "injOn_sdiff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "M_sets_disjoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "m_element_is_maximal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "m_element_not_in_tau"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "sublemma_3_2"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "idoor_determines_element"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "sublemma_3_1"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "maximal_element_unique"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "odoor_index_in_pair"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "internal_door_two_rooms",
+    "target": "Scarf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NCdoors",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isOutsideDoor",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC",
+    "target": "Finset.eq_of_mem_of_card_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Dominant_of_subset",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_le_of_domiant",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "card_le_of_domiant",
+    "target": "keylemma_of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_is_maximal",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_is_maximal",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_is_maximal",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "odoor_index_in_pair",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "odoor_index_in_pair",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "odoor_index_in_pair",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "odoor_index_in_pair",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "odoor_index_in_pair",
+    "target": "keylemma_of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "room_of_colorful",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "room_of_colorful",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "room_of_colorful",
+    "target": "card_le_of_domiant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "pick_colorful_point",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "pick_colorful_point",
+    "target": "sigma_nonempty_of_room"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "pick_colorful_point",
+    "target": "room_of_colorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NCtype_of_door",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "outsidedoor_singleton"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "NC_of_outsidedoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "outsidedoor_is_singleton"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "isRoom_of_Door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "dbcount_outside_door",
+    "target": "sigma_nonempty_of_room"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isTypedNC",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Dominant_of_supset",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "M_sets_disjoint",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "M_sets_disjoint",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "M_sets_disjoint",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "M_sets_disjoint",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "M_sets_disjoint",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "three_collision_card_bound",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_erase_eq_erase_image_of_unique",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "outsidedoor_singleton",
+    "target": "isOutsideDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "outsidedoor_singleton",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "outsidedoor_singleton",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "outsidedoor_singleton",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_subset_of_NCdoor",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_subset_of_NCdoor",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_subset_of_NCdoor",
+    "target": "card_le_of_domiant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_subset_of_NCdoor",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "image_subset_of_NCdoor",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "m_element_is_maximal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "m_element_not_in_tau",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "is_maximal_in_M_set",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "is_maximal_in_M_set",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "not_colorful_of_TypedNC",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "not_colorful_of_TypedNC",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_NCdoor",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_NCdoor",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_NCdoor",
+    "target": "NC_or_C_of_door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "isRoom_of_Door"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_or_C_of_door",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "injOn_sdiff",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "injOn_sdiff",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "injOn_sdiff",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_TNC",
+    "target": "isTypedNC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "NC_of_TNC",
+    "target": "isNearlyColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "colorful",
+    "target": "isColorful"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Scarf",
+    "target": "Pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "Scarf",
+    "target": "typed_colorful_room_odd"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "isDoor"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "isDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "sublemma_3_2"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "idoor_determines_element",
+    "target": "maximal_element_unique"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isRoom_of_Door",
+    "target": "isRoom"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isRoom_of_Door",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isRoom_of_Door",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "maximal_element_unique",
+    "target": "M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "maximal_element_unique",
+    "target": "is_maximal_in_M_set"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "maximal_element_unique",
+    "target": "m_element_is_maximal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isCell_of_door",
+    "target": "isCell"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isCell_of_door",
+    "target": "Dominant_of_subset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "isCell_of_door",
+    "target": "Dominant_of_supset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "source": "empty_Dominant",
+    "target": "isDominant"
+  }
+]

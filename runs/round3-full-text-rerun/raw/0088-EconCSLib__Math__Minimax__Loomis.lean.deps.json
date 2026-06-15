@@ -1,0 +1,794 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "By_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_yy_muB0",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_eq",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "By_pos",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "By_pos",
+    "target": "wsum_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.ge_muB0",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.ge_muB0",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.ge_muB0",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "singleton_of_card_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "wsum_mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "lamB.aux_gt_iff_gt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "lam.aux_gt_iff_gt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "xB_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "muB.aux_lt_iff_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "mu.aux_lt_iff_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "By_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "wsum_extendDropColumn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "wsum_extendDropRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "lamB0_le_muB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "exists_xx_lamB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "exists_yy_muB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "xBy_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "lamB.aux.le_lamB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "muB.aux.ge_muB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "mix_gt_of_gt_nbh"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_value_IJ_2",
+    "target": "linear_comb_gt_of_ge_gt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "xBy_pos",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "xBy_pos",
+    "target": "wsum_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "xBy_pos",
+    "target": "By_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "wsum_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "rowRatio.continuous",
+    "target": "By_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "xB_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "exists_xx_lamB0",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.bddAbove",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.le_lamB0",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.le_lamB0",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.le_lamB0",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "xB_pos",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "xB_pos",
+    "target": "wsum_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "exists_xx_lamB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "exists_yy_muB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "loomis_value_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "loomis_theorem",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "exists_xx_lamB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "exists_yy_muB0"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "xBy_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB0_le_muB0",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.bddBelow",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "muB.aux.continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "lamB.aux.continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "one",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "minmax_from_general",
+    "target": "loomis_value_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "minmax_from_general",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "minmax_from_general",
+    "target": "lamB0_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "minmax_from_general",
+    "target": "muB0_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "IsPositive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "wsum_continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "source": "colRatio.continuous",
+    "target": "xB_pos"
+  }
+]

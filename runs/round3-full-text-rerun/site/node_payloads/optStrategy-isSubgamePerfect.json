@@ -1,0 +1,47 @@
+{
+  "id": "optStrategy-isSubgamePerfect",
+  "title": "optStrategy_isSubgamePerfect",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/optStrategy-isSubgamePerfect.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>optStrategy_isSubgamePerfect</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem optStrategy_isSubgamePerfect [DecidableLE U] : IsSubgamePerfect (optStrategy : Strategy N U)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsSubgamePerfect</li>\n<li>Strategy</li>\n<li>strong_induction</li>\n<li>outcome_Leaf</li>\n<li>Arena.Reachable.step</li>\n<li>CPState.step</li>\n<li>outcome_Node</li>\n<li>outcome_optStrategy_eq_value</li>\n<li>value_Node_ge</li>\n<li>value_optStrategy_eq</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsSubgamePerfect",
+      "title": "IsSubgamePerfect",
+      "href": "misc/IsSubgamePerfect.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "optStrategy_isSubgamePerfect",
+      "display_name": "optStrategy_isSubgamePerfect",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

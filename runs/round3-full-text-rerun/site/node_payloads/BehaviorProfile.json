@@ -1,0 +1,213 @@
+{
+  "id": "BehaviorProfile",
+  "title": "BehaviorProfile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/BehaviorProfile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>BehaviorProfile</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef BehaviorProfile (G : ExtensiveGame iota U) [(s : G.State) -&gt; Fintype (G.Action s)] : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorStrategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorStrategy",
+      "title": "BehaviorStrategy",
+      "href": "misc/BehaviorStrategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsBehaviorNashEq",
+      "title": "IsBehaviorNashEq",
+      "href": "misc/IsBehaviorNashEq.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-init",
+      "title": "IsBehaviorNashEq.restrictSubgame_init",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-init.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-toSubgamePerfect-of-isCompletelyMixed",
+      "title": "IsBehaviorNashEq.toSubgamePerfect_of_isCompletelyMixed",
+      "href": "misc/IsBehaviorNashEq-toSubgamePerfect-of-isCompletelyMixed.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-toSubgamePerfect-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.toSubgamePerfect_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-toSubgamePerfect-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsBehaviorSubgamePerfect",
+      "title": "IsBehaviorSubgamePerfect",
+      "href": "misc/IsBehaviorSubgamePerfect.html"
+    },
+    {
+      "id": "IsCompletelyMixed",
+      "title": "IsCompletelyMixed",
+      "href": "misc/IsCompletelyMixed.html"
+    },
+    {
+      "id": "IsCompletelyMixed-actionProb-pos",
+      "title": "IsCompletelyMixed.actionProb_pos",
+      "href": "misc/IsCompletelyMixed-actionProb-pos.html"
+    },
+    {
+      "id": "IsCompletelyMixed-player",
+      "title": "IsCompletelyMixed.player",
+      "href": "misc/IsCompletelyMixed-player.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach",
+      "title": "IsCompletelyMixedWithPositiveReach",
+      "href": "misc/IsCompletelyMixedWithPositiveReach.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach-mixed",
+      "title": "IsCompletelyMixedWithPositiveReach.mixed",
+      "href": "misc/IsCompletelyMixedWithPositiveReach-mixed.html"
+    },
+    {
+      "id": "IsCompletelyMixedWithPositiveReach-reach-pos",
+      "title": "IsCompletelyMixedWithPositiveReach.reach_pos",
+      "href": "misc/IsCompletelyMixedWithPositiveReach-reach-pos.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer-init",
+      "title": "ReachedSubgamePayoffTransfer.init",
+      "href": "misc/ReachedSubgamePayoffTransfer-init.html"
+    },
+    {
+      "id": "actionProb",
+      "title": "actionProb",
+      "href": "misc/actionProb.html"
+    },
+    {
+      "id": "actionProb-nonneg",
+      "title": "actionProb_nonneg",
+      "href": "misc/actionProb-nonneg.html"
+    },
+    {
+      "id": "actionProb-restrictSubgame",
+      "title": "actionProb_restrictSubgame",
+      "href": "misc/actionProb-restrictSubgame.html"
+    },
+    {
+      "id": "deviate",
+      "title": "deviate",
+      "href": "misc/deviate.html"
+    },
+    {
+      "id": "deviate-of-ne",
+      "title": "deviate_of_ne",
+      "href": "misc/deviate-of-ne.html"
+    },
+    {
+      "id": "deviate-same",
+      "title": "deviate_same",
+      "href": "misc/deviate-same.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-init",
+      "title": "expectedPayoff_restrictSubgame_init",
+      "href": "misc/expectedPayoff-restrictSubgame-init.html"
+    },
+    {
+      "id": "expectedPayoffFrom-restrictSubgame",
+      "title": "expectedPayoffFrom_restrictSubgame",
+      "href": "misc/expectedPayoffFrom-restrictSubgame.html"
+    },
+    {
+      "id": "liftReachableSubgame",
+      "title": "liftReachableSubgame",
+      "href": "misc/liftReachableSubgame.html"
+    },
+    {
+      "id": "liftSubgame",
+      "title": "liftSubgame",
+      "href": "misc/liftSubgame.html"
+    },
+    {
+      "id": "probAt",
+      "title": "probAt",
+      "href": "misc/probAt.html"
+    },
+    {
+      "id": "restrictReachableSubgame",
+      "title": "restrictReachableSubgame",
+      "href": "misc/restrictReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame-deviate-liftReachableSubgame",
+      "title": "restrictReachableSubgame_deviate_liftReachableSubgame",
+      "href": "misc/restrictReachableSubgame-deviate-liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame-liftReachableSubgame",
+      "title": "restrictReachableSubgame_liftReachableSubgame",
+      "href": "misc/restrictReachableSubgame-liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictSubgame",
+      "title": "restrictSubgame",
+      "href": "misc/restrictSubgame.html"
+    },
+    {
+      "id": "restrictSubgame-deviate",
+      "title": "restrictSubgame_deviate",
+      "href": "misc/restrictSubgame-deviate.html"
+    },
+    {
+      "id": "restrictSubgame-deviate-liftSubgame",
+      "title": "restrictSubgame_deviate_liftSubgame",
+      "href": "misc/restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "restrictSubgame-eq-self",
+      "title": "restrictSubgame_eq_self",
+      "href": "misc/restrictSubgame-eq-self.html"
+    },
+    {
+      "id": "restrictSubgame-liftSubgame",
+      "title": "restrictSubgame_liftSubgame",
+      "href": "misc/restrictSubgame-liftSubgame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "BehaviorProfile",
+      "display_name": "BehaviorProfile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

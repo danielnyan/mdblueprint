@@ -1,0 +1,105 @@
+[
+  {
+    "dependencies": [
+      "Visited"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "name": "alg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Visited.lean",
+    "type": "def alg : \u2115 \u2192 CostM (Visited \u2115) Result"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "name": "Visited",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Visited.lean",
+    "type": "def Visited (A : Type*) : Type _"
+  },
+  {
+    "dependencies": [
+      "Visited"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "name": "toFinset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 60
+      },
+      "start": {
+        "column": 1,
+        "line": 60
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Visited.lean",
+    "type": "def toFinset (v : Visited A) : Finset A"
+  },
+  {
+    "dependencies": [
+      "Visited",
+      "Profile.ext",
+      "toFinset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "name": "ofFinset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 63
+      },
+      "start": {
+        "column": 1,
+        "line": 63
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Visited.lean",
+    "type": "def ofFinset (s : Finset A) : Visited A"
+  },
+  {
+    "dependencies": [
+      "Visited",
+      "toFinset",
+      "ofFinset",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.CostM.Visited",
+    "name": "singleton",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 75
+      },
+      "start": {
+        "column": 1,
+        "line": 75
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/CostM/Visited.lean",
+    "type": "def singleton (a : A) : Visited A"
+  }
+]

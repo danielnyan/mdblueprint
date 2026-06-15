@@ -1,0 +1,1449 @@
+[
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "injOn_sdiff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 72
+      },
+      "start": {
+        "column": 1,
+        "line": 72
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma injOn_sdiff (s : Finset X) (f : X \u2192 Y) (h : s.card = (Finset.image f s).card + 1) : \u2203 a b, a \u2208 s \u2227 b \u2208 s \u2227 f a = f b \u2227 a \u2260 b \u2227 Set.InjOn f (s \\ ({a, b} : Finset X))"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isDominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 179
+      },
+      "start": {
+        "column": 1,
+        "line": 179
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def isDominant"
+  },
+  {
+    "dependencies": [
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "Nonempty_of_Dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 183
+      },
+      "start": {
+        "column": 1,
+        "line": 183
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma Nonempty_of_Dominant (h : IST.isDominant \u03c3 C) : C.Nonempty"
+  },
+  {
+    "dependencies": [
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "Dominant_of_subset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 189
+      },
+      "start": {
+        "column": 1,
+        "line": 189
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma Dominant_of_subset (\u03c3 \u03c4 : Finset T) (C : Finset I) : \u03c4 \u2286 \u03c3 \u2192 isDominant \u03c3 C \u2192 isDominant \u03c4 C"
+  },
+  {
+    "dependencies": [
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "Dominant_of_supset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 199
+      },
+      "start": {
+        "column": 1,
+        "line": 199
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma Dominant_of_supset (\u03c3 : Finset T) (C D: Finset I) : C \u2286 D \u2192 isDominant \u03c3 C \u2192 isDominant \u03c3 D"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "mini",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 208
+      },
+      "start": {
+        "column": 1,
+        "line": 208
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev mini {\u03c3 : Finset T} (h2 : \u03c3.Nonempty) (i : I) : T"
+  },
+  {
+    "dependencies": [
+      "isDominant",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "keylemma_of_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 211
+      },
+      "start": {
+        "column": 1,
+        "line": 211
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma keylemma_of_dominant {\u03c3 : Finset T} {C: Finset I} (h1 : IST.isDominant \u03c3 C) (h2: \u03c3.Nonempty): \u03c3 = C.image (mini h2)"
+  },
+  {
+    "dependencies": [
+      "isDominant",
+      "keylemma_of_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "card_le_of_domiant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 232
+      },
+      "start": {
+        "column": 1,
+        "line": 232
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma card_le_of_domiant {\u03c3 : Finset T} {C: Finset I} (h1 : IST.isDominant \u03c3 C) : \u03c3.card \u2264 C.card"
+  },
+  {
+    "dependencies": [
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "empty_Dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 240
+      },
+      "start": {
+        "column": 1,
+        "line": 240
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma empty_Dominant (h : D.Nonempty) : IST.isDominant Finset.empty D"
+  },
+  {
+    "dependencies": [
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isCell",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 250
+      },
+      "start": {
+        "column": 1,
+        "line": 250
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev isCell"
+  },
+  {
+    "dependencies": [
+      "isCell"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isRoom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 256
+      },
+      "start": {
+        "column": 1,
+        "line": 256
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev isRoom"
+  },
+  {
+    "dependencies": [
+      "isRoom",
+      "Nonempty_of_Dominant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "sigma_nonempty_of_room",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 258
+      },
+      "start": {
+        "column": 1,
+        "line": 258
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma sigma_nonempty_of_room {\u03c3 : Finset T} {C : Finset I} (h : isRoom \u03c3 C) : \u03c3.Nonempty"
+  },
+  {
+    "dependencies": [
+      "isCell"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isDoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 269
+      },
+      "start": {
+        "column": 1,
+        "line": 269
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev isDoor"
+  },
+  {
+    "dependencies": [
+      "isCell",
+      "Dominant_of_subset",
+      "Dominant_of_supset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isCell_of_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 279
+      },
+      "start": {
+        "column": 1,
+        "line": 279
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma isCell_of_door (h1 : isDoorof \u03c4 D \u03c3 C) : IST.isCell \u03c4 D"
+  },
+  {
+    "dependencies": [
+      "isRoom",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isRoom_of_Door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 290
+      },
+      "start": {
+        "column": 1,
+        "line": 290
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma isRoom_of_Door (h1 : isDoorof \u03c4 D \u03c3 C) : IST.isRoom \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isRoom",
+      "isDoor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "room_is_not_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 307
+      },
+      "start": {
+        "column": 1,
+        "line": 307
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma room_is_not_door (h1 : IST.isRoom \u03c3 C) : \u2200 \u03c4 D, \u00ac (isDoorof \u03c3 C \u03c4 D)"
+  },
+  {
+    "dependencies": [
+      "isDoor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isOutsideDoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 323
+      },
+      "start": {
+        "column": 1,
+        "line": 323
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev isOutsideDoor"
+  },
+  {
+    "dependencies": [
+      "isDoor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isInternalDoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 326
+      },
+      "start": {
+        "column": 1,
+        "line": 326
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev isInternalDoor"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor",
+      "isDoor",
+      "isCell",
+      "isDominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "outsidedoor_singleton",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 330
+      },
+      "start": {
+        "column": 1,
+        "line": 330
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma outsidedoor_singleton (i : I) : IST.isOutsideDoor Finset.empty {i}"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "outsidedoor_is_singleton",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 346
+      },
+      "start": {
+        "column": 1,
+        "line": 346
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma outsidedoor_is_singleton (h : IST.isOutsideDoor \u03c4 D) : \u03c4 = Finset.empty \u2227 \u2203 i, D = {i}"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "M_set",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 360
+      },
+      "start": {
+        "column": 1,
+        "line": 360
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def M_set (\u03c4 : Finset T) (D : Finset I) (i : I) (h_nonempty : \u03c4.Nonempty) : Set T"
+  },
+  {
+    "dependencies": [
+      "M_set",
+      "toFinset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "is_maximal_in_M_set",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 364
+      },
+      "start": {
+        "column": 1,
+        "line": 364
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def is_maximal_in_M_set (\u03c4 : Finset T) (D : Finset I) (i : I) (h_nonempty : \u03c4.Nonempty) (x : T) : Prop"
+  },
+  {
+    "dependencies": [
+      "M_set",
+      "is_maximal_in_M_set",
+      "toFinset"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "m_element_is_maximal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 374
+      },
+      "start": {
+        "column": 1,
+        "line": 374
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "theorem m_element_is_maximal [Fintype T] (\u03c4 : Finset T) (D : Finset I) (i : I) (h_nonempty : \u03c4.Nonempty) (h : (M_set \u03c4 D i h_nonempty).Nonempty) : is_maximal_in_M_set \u03c4 D i h_nonempty (m_element \u03c4 D i h_nonempty h)"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "isDominant",
+      "M_set",
+      "keylemma_of_dominant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "injOn_sdiff",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "sublemma_3_1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 390
+      },
+      "start": {
+        "column": 1,
+        "line": 390
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma sublemma_3_1 [Fintype T] (\u03c4 : Finset T) (D : Finset I) (h_door : IST.isDoor \u03c4 D) (h_nonempty : \u03c4.Nonempty) : \u2200 i \u2208 D, (IST.isDominant \u03c4 (D.erase i) \u2194 (\u2203 a b, a \u2208 D \u2227 b \u2208 D \u2227 a \u2260 b \u2227 mini h_nonempty a = mini h_nonempty b \u2227 (i = a \u2228 i = b) \u2227 M_set \u03c4 D i h_nonempty = \u2205))"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "isDominant",
+      "M_set",
+      "is_maximal_in_M_set",
+      "keylemma_of_dominant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "isRoom",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "sublemma_3_2",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 468
+      },
+      "start": {
+        "column": 1,
+        "line": 468
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma sublemma_3_2 [Fintype T] (\u03c4 : Finset T) (D : Finset I) (x : T) (h_door : IST.isDoor \u03c4 D) (h_nonempty : \u03c4.Nonempty) (h_not_mem : x \u2209 \u03c4) (a b : I) (ha : a \u2208 D) (hb : b \u2208 D) (hab : a \u2260 b) (h_eq : mini h_nonempty a = mini h_nonempty b) : IST.isDominant (insert x \u03c4) D \u2194 (\u2203 i \u2208 ({a, b} : Finset I), (M_set \u03c4 D i h_nonempty).Nonempty \u2227 is_maximal_in_M_set \u03c4 D i h_nonempty x)"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "M_set",
+      "Profile.ext",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "M_sets_disjoint",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 670
+      },
+      "start": {
+        "column": 1,
+        "line": 670
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma M_sets_disjoint [Fintype T] (\u03c4 : Finset T) (D : Finset I) (a b : I) (h_nonempty : \u03c4.Nonempty) (h_door : IST.isDoor \u03c4 D) (ha : a \u2208 D) (hb : b \u2208 D) (hab : a \u2260 b) (h_eq : mini h_nonempty a = mini h_nonempty b) : M_set \u03c4 D a h_nonempty \u2229 M_set \u03c4 D b h_nonempty = \u2205"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "M_set",
+      "is_maximal_in_M_set",
+      "m_element_is_maximal",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "m_element_not_in_tau",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 708
+      },
+      "start": {
+        "column": 1,
+        "line": 708
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma m_element_not_in_tau [Fintype T] (\u03c4 : Finset T) (D : Finset I) (i a b : I) (h_door : IST.isDoor \u03c4 D) (h_nonempty : \u03c4.Nonempty) (ha_mem : a \u2208 D) (hb_mem : b \u2208 D) (hab : a \u2260 b) (h_eq_mini : mini h_nonempty a = mini h_nonempty b) (h_M_nonempty : (M_set \u03c4 D i h_nonempty).Nonempty) (h_i_is : i = a \u2228 i = b) : m_element \u03c4 D i h_nonempty h_M_nonempty \u2209 \u03c4"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "isDominant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "keylemma_of_dominant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "odoor_index_in_pair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 754
+      },
+      "start": {
+        "column": 1,
+        "line": 754
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma odoor_index_in_pair [Fintype T] (\u03c4 : Finset T) (D : Finset I) (C : Finset I) (a b j : I) (_h_door : IST.isDoor \u03c4 D) (h_nonempty : \u03c4.Nonempty) (ha_mem : a \u2208 D) (hb_mem : b \u2208 D) (hab : a \u2260 b) (h_eq_mini : mini h_nonempty a = mini h_nonempty b) (h_dom : IST.isDominant \u03c4 C) (h_room_card : C.card = \u03c4.card) (_hj_not_mem : j \u2209 C) (hc_eq : D = insert j C) : j \u2208 ({a, b} : Finset I)"
+  },
+  {
+    "dependencies": [
+      "M_set",
+      "is_maximal_in_M_set",
+      "m_element_is_maximal"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "maximal_element_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 786
+      },
+      "start": {
+        "column": 1,
+        "line": 786
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma maximal_element_unique [Fintype T] (\u03c4 : Finset T) (D : Finset I) (i : I) (h_nonempty : \u03c4.Nonempty) (h_M_nonempty : (M_set \u03c4 D i h_nonempty).Nonempty) (x : T) (h_x_max : is_maximal_in_M_set \u03c4 D i h_nonempty x) : x = m_element \u03c4 D i h_nonempty h_M_nonempty"
+  },
+  {
+    "dependencies": [
+      "isDoor",
+      "M_set",
+      "isRoom",
+      "isDominant",
+      "is_maximal_in_M_set",
+      "sublemma_3_2",
+      "maximal_element_unique"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "idoor_determines_element",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 801
+      },
+      "start": {
+        "column": 1,
+        "line": 801
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma idoor_determines_element [Fintype T] (\u03c4 : Finset T) (D : Finset I) (a b : I) (h_door : IST.isDoor \u03c4 D) (h_nonempty : \u03c4.Nonempty) (ha_mem : a \u2208 D) (hb_mem : b \u2208 D) (hab : a \u2260 b) (h_eq_mini : mini h_nonempty a = mini h_nonempty b) (h_Ma_nonempty : (M_set \u03c4 D a h_nonempty).Nonempty) (h_Mb_nonempty : (M_set \u03c4 D b h_nonempty).Nonempty) (x : T) (h_room : IST.isRoom (insert x \u03c4) D) (hx_not_mem : x \u2209 \u03c4) : x = m_element \u03c4 D a h_nonempty h_Ma_nonempty \u2228 x = m_element \u03c4 D b h_nonempty h_Mb_nonempty"
+  },
+  {
+    "dependencies": [
+      "isInternalDoor",
+      "isRoom",
+      "isDominant",
+      "keylemma_of_dominant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "injOn_sdiff",
+      "M_set",
+      "M_sets_disjoint",
+      "is_maximal_in_M_set",
+      "m_element_is_maximal",
+      "m_element_not_in_tau",
+      "sublemma_3_2",
+      "idoor_determines_element",
+      "sublemma_3_1",
+      "maximal_element_unique",
+      "odoor_index_in_pair",
+      "Scarf"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "internal_door_two_rooms",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 832
+      },
+      "start": {
+        "column": 1,
+        "line": 832
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "theorem internal_door_two_rooms [Fintype T] (\u03c4 : Finset T) (D : Finset I) (h_int_door : IST.isInternalDoor \u03c4 D) : \u2203 (\u03c3\u2081 \u03c3\u2082 : Finset T) (C\u2081 C\u2082 : Finset I), (\u03c3\u2081, C\u2081) \u2260 (\u03c3\u2082, C\u2082) \u2227 IST.isRoom \u03c3\u2081 C\u2081 \u2227 IST.isRoom \u03c3\u2082 C\u2082 \u2227 isDoorof \u03c4 D \u03c3\u2081 C\u2081 \u2227 isDoorof \u03c4 D \u03c3\u2082 C\u2082 \u2227 (\u2200 \u03c3 C, IST.isRoom \u03c3 C \u2192 isDoorof \u03c4 D \u03c3 C \u2192 (\u03c3 = \u03c3\u2081 \u2227 C = C\u2081) \u2228 (\u03c3 = \u03c3\u2082 \u2227 C = C\u2082))"
+  },
+  {
+    "dependencies": [
+      "isCell"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isColorful",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1237
+      },
+      "start": {
+        "column": 1,
+        "line": 1237
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def isColorful : Prop"
+  },
+  {
+    "dependencies": [
+      "isCell"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isNearlyColorful",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1241
+      },
+      "start": {
+        "column": 1,
+        "line": 1241
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def isNearlyColorful : Prop"
+  },
+  {
+    "dependencies": [
+      "isCell"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isTypedNC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1245
+      },
+      "start": {
+        "column": 1,
+        "line": 1245
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def isTypedNC (i : I) (\u03c3 : Finset T) (C : Finset I): Prop"
+  },
+  {
+    "dependencies": [
+      "isTypedNC",
+      "isColorful"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "not_colorful_of_TypedNC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1252
+      },
+      "start": {
+        "column": 1,
+        "line": 1252
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma not_colorful_of_TypedNC (h1 : isTypedNC c i \u03c3 C) : \u00ac IST.isColorful c \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isTypedNC",
+      "isNearlyColorful"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NC_of_TNC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1266
+      },
+      "start": {
+        "column": 1,
+        "line": 1266
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma NC_of_TNC (h1 : isTypedNC c i \u03c3 C) : isNearlyColorful c \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "Finset.eq_of_mem_of_card_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1278
+      },
+      "start": {
+        "column": 1,
+        "line": 1278
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma Finset.eq_of_mem_of_card_one {X : Type*} [DecidableEq X] {s : Finset X} {a : X} (h_mem : a \u2208 s) (h_card : s.card = 1) : s = {a}"
+  },
+  {
+    "dependencies": [
+      "isColorful",
+      "isRoom",
+      "card_le_of_domiant"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "room_of_colorful",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1286
+      },
+      "start": {
+        "column": 1,
+        "line": 1286
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma room_of_colorful (h : IST.isColorful c \u03c3 C) : IST.isRoom \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isColorful",
+      "sigma_nonempty_of_room",
+      "room_of_colorful"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "pick_colorful_point",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1298
+      },
+      "start": {
+        "column": 1,
+        "line": 1298
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "def pick_colorful_point (h : IST.isColorful c \u03c3 C): \u03c3"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor",
+      "isNearlyColorful",
+      "isCell",
+      "isDoor"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NC_of_outsidedoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1304
+      },
+      "start": {
+        "column": 1,
+        "line": 1304
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma NC_of_outsidedoor (h : isOutsideDoor \u03c3 C) : isNearlyColorful c \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isTypedNC",
+      "isColorful",
+      "isCell",
+      "isRoom",
+      "isRoom_of_Door",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NC_or_C_of_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1324
+      },
+      "start": {
+        "column": 1,
+        "line": 1324
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma NC_or_C_of_door (h1 : isTypedNC c i \u03c4 D) (h2 : isDoorof \u03c4 D \u03c3 C) : isTypedNC c i \u03c3 C \u2228 isColorful c \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isTypedNC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NCtype_of_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1403
+      },
+      "start": {
+        "column": 1,
+        "line": 1403
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma NCtype_of_door (h1 : isTypedNC c i \u03c4 D) (_ : isDoorof \u03c4 D \u03c3 C) (_ : isTypedNC c i \u03c3 C) : isTypedNC c i \u03c4 D"
+  },
+  {
+    "dependencies": [
+      "isNearlyColorful",
+      "isTypedNC",
+      "Finset.eq_of_mem_of_card_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1406
+      },
+      "start": {
+        "column": 1,
+        "line": 1406
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC (h_nc : isNearlyColorful c \u03c4 D) (h_door : isDoorof \u03c4 D \u03c3 C) (h_room_typed : isTypedNC c i \u03c3 C) : isTypedNC c i \u03c4 D"
+  },
+  {
+    "dependencies": [
+      "isNearlyColorful",
+      "card_le_of_domiant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "card_of_NCcell",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1431
+      },
+      "start": {
+        "column": 1,
+        "line": 1431
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma card_of_NCcell (h : isNearlyColorful c \u03c3 D) : #\u03c3 = #(image c \u03c3) \u2228 #\u03c3 = #(image c \u03c3) + 1"
+  },
+  {
+    "dependencies": [
+      "isNearlyColorful",
+      "isDoor",
+      "card_le_of_domiant",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "image_subset_of_NCdoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1456
+      },
+      "start": {
+        "column": 1,
+        "line": 1456
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma image_subset_of_NCdoor (h1 : isNearlyColorful c \u03c3 C) (h2 : isDoor \u03c3 C) : image c \u03c3 \u2286 C"
+  },
+  {
+    "dependencies": [
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "image_erase_eq_erase_image_of_unique",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1485
+      },
+      "start": {
+        "column": 1,
+        "line": 1485
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma image_erase_eq_erase_image_of_unique (\u03c3 : Finset T) (c : T \u2192 I) {z : T} (_ : z \u2208 \u03c3) (uniq : \u2200 \u2983w\u2984, w \u2208 \u03c3 \u2192 c w = c z \u2192 w = z) : (\u03c3.erase z).image c = (\u03c3.image c).erase (c z)"
+  },
+  {
+    "dependencies": [
+      "isNearlyColorful"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NCdoors",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1511
+      },
+      "start": {
+        "column": 1,
+        "line": 1511
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev NCdoors"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "three_collision_card_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1515
+      },
+      "start": {
+        "column": 1,
+        "line": 1515
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma three_collision_card_bound [DecidableEq T] (\u03c3 : Finset T) (c : T \u2192 I) (a b z : T) (ha_in_\u03c3 : a \u2208 \u03c3) (hb_in_\u03c3 : b \u2208 \u03c3) (hz_in_\u03c3 : z \u2208 \u03c3) (hab_ne : a \u2260 b) (haz_ne : a \u2260 z) (hbz_ne : b \u2260 z) (hc_eq : c a = c b) (hcz_eq : c b = c z) : \u03c3.card \u2265 (\u03c3.image c).card + 2"
+  },
+  {
+    "dependencies": [
+      "Profile.ext",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "image_erase_collision_preserves",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1565
+      },
+      "start": {
+        "column": 1,
+        "line": 1565
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma image_erase_collision_preserves [DecidableEq T] (\u03c3 : Finset T) (c : T \u2192 I) (x y : T) (hx_in_\u03c3 : x \u2208 \u03c3) (hy_in_\u03c3 : y \u2208 \u03c3) (hxy_ne : x \u2260 y) (hcxy_eq : c x = c y) : (\u03c3.erase x).image c = \u03c3.image c \u2227 (\u03c3.erase y).image c = \u03c3.image c"
+  },
+  {
+    "dependencies": [
+      "isCell",
+      "Dominant_of_subset",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "collision_door_valid",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1608
+      },
+      "start": {
+        "column": 1,
+        "line": 1608
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma collision_door_valid [DecidableEq T] (\u03c3 : Finset T) (C : Finset I) (_ : T \u2192 I) (x : T) (h_cell : isCell \u03c3 C) (hx_in_\u03c3 : x \u2208 \u03c3) (h_card_eq : C.card = \u03c3.card) : isDoorof (\u03c3.erase x) C \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isRoom",
+      "isNearlyColorful",
+      "NCdoors",
+      "card_of_NCcell",
+      "isCell",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "image_erase_eq_erase_image_of_unique",
+      "Dominant_of_subset",
+      "isDominant",
+      "Dominant_of_supset",
+      "injOn_sdiff",
+      "three_collision_card_bound",
+      "collision_door_valid",
+      "image_erase_collision_preserves",
+      "Transitivity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "doors_of_NCroom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 1623
+      },
+      "start": {
+        "column": 1,
+        "line": 1623
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma doors_of_NCroom [DecidableEq T] (h_room : isRoom \u03c3 C) (h_nc : isNearlyColorful c \u03c3 C) : \u2203 door1 door2, door1 \u2260 door2 \u2227 NCdoors c \u03c3 C = {door1, door2}"
+  },
+  {
+    "dependencies": [
+      "isColorful"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "colorful",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2276
+      },
+      "start": {
+        "column": 1,
+        "line": 2276
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev colorful"
+  },
+  {
+    "dependencies": [
+      "isTypedNC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "dbcountingset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2279
+      },
+      "start": {
+        "column": 1,
+        "line": 2279
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "abbrev dbcountingset (i : I)"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor",
+      "outsidedoor_singleton",
+      "isTypedNC",
+      "NC_of_outsidedoor",
+      "Profile.ext",
+      "outsidedoor_is_singleton",
+      "isRoom",
+      "isRoom_of_Door",
+      "sigma_nonempty_of_room"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "dbcount_outside_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2283
+      },
+      "start": {
+        "column": 1,
+        "line": 2283
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma dbcount_outside_door' (i : I): \u2203 x, filter (fun x => isOutsideDoor x.1.1 x.1.2) (dbcountingset c i) = {x}"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor",
+      "dbcount_outside_door"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "dbcount_outside_door_odd",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2398
+      },
+      "start": {
+        "column": 1,
+        "line": 2398
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma dbcount_outside_door_odd (i : I): Odd (filter (fun x => isOutsideDoor x.1.1 x.1.2) (dbcountingset c i)).card"
+  },
+  {
+    "dependencies": [
+      "isInternalDoor",
+      "isTypedNC",
+      "isOutsideDoor",
+      "internal_door_two_rooms",
+      "Profile.ext",
+      "isRoom",
+      "isRoom_of_Door",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "fiber_size_internal_door",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2405
+      },
+      "start": {
+        "column": 1,
+        "line": 2405
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma fiber_size_internal_door (c : T \u2192 I) (i : I) (y : Finset T \u00d7 Finset I) (hy_internal : IST.isInternalDoor y.1 y.2) (hy_typed : isTypedNC c i y.1 y.2) : let s"
+  },
+  {
+    "dependencies": [
+      "isOutsideDoor",
+      "isInternalDoor",
+      "isTypedNC",
+      "fiber_size_internal_door"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "dbcount_internal_door_even",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2478
+      },
+      "start": {
+        "column": 1,
+        "line": 2478
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma dbcount_internal_door_even (i : I) : Even (filter (fun x => \u00ac isOutsideDoor x.1.1 x.1.2) (dbcountingset c i)).card"
+  },
+  {
+    "dependencies": [
+      "isTypedNC",
+      "isColorful",
+      "NC_or_C_of_door"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "NC_of_NCdoor",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2521
+      },
+      "start": {
+        "column": 1,
+        "line": 2521
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma NC_of_NCdoor (h1 : isTypedNC c i \u03c4 D) (h2 : isDoorof \u03c4 D \u03c3 C) : \u00ac isColorful c \u03c3 C \u2192 isTypedNC c i \u03c3 C"
+  },
+  {
+    "dependencies": [
+      "isRoom",
+      "isTypedNC",
+      "doors_of_NCroom",
+      "NC_of_TNC",
+      "Profile.ext",
+      "NCdoors",
+      "isTypedNC_of_isNearlyColorful_of_isDoorof_isTypedNC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "firber2_doors_NCroom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2531
+      },
+      "start": {
+        "column": 1,
+        "line": 2531
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma firber2_doors_NCroom (h0 : isRoom \u03c3 C) (h1 : isTypedNC c i \u03c3 C) : (filter (fun (x : (Finset T\u00d7 Finset I)\u00d7 Finset T \u00d7 Finset I) => x.2 = (\u03c3,C)) (dbcountingset c i)).card = 2"
+  },
+  {
+    "dependencies": [
+      "isColorful",
+      "isRoom",
+      "isTypedNC",
+      "isRoom_of_Door",
+      "NC_of_NCdoor",
+      "firber2_doors_NCroom",
+      "not_colorful_of_TypedNC"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "dbcount_NCroom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2584
+      },
+      "start": {
+        "column": 1,
+        "line": 2584
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma dbcount_NCroom (i : I) : Even (filter (fun x => \u00acisColorful c x.2.1 x.2.2) (dbcountingset c i)).card"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "parity_lemma",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2623
+      },
+      "start": {
+        "column": 1,
+        "line": 2623
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma parity_lemma {a b c d : \u2115 } (h1 : Odd a) (h2 : Even b) (h3 : Even d) (h4 : a + b = c + d ): Odd c"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "_root_.Finset.card_filter_filter_neg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2632
+      },
+      "start": {
+        "column": 1,
+        "line": 2632
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "theorem _root_.Finset.card_filter_filter_neg {X : Type*} (s : Finset X) (p : X \u2192 Prop) [DecidablePred p] : s.card = (Finset.filter p s).card + (Finset.filter (fun (a : X) => \u00acp a) s).card"
+  },
+  {
+    "dependencies": [
+      "isColorful",
+      "_root_.Finset.card_filter_filter_neg",
+      "isOutsideDoor",
+      "parity_lemma",
+      "dbcount_outside_door_odd",
+      "dbcount_internal_door_even",
+      "dbcount_NCroom"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "typed_colorful_room_odd",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2638
+      },
+      "start": {
+        "column": 1,
+        "line": 2638
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "lemma typed_colorful_room_odd (i : I): Odd (Finset.filter (fun (x: (Finset T\u00d7 Finset I) \u00d7 Finset T \u00d7 Finset I) => isColorful c x.2.1 x.2.2) (dbcountingset c i)).card"
+  },
+  {
+    "dependencies": [
+      "Pos",
+      "typed_colorful_room_odd"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.FixedPoint.Scarf",
+    "name": "Scarf",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 2654
+      },
+      "start": {
+        "column": 1,
+        "line": 2654
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/FixedPoint/Scarf.lean",
+    "type": "theorem Scarf : (IST.colorful c).Nonempty"
+  }
+]

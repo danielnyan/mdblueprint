@@ -1,0 +1,42 @@
+{
+  "id": "AnswerInfo-format",
+  "title": "AnswerInfo.format",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/AnswerInfo-format.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>AnswerInfo.format</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef AnswerInfo.format (a : AnswerInfo) : Elab.Term.TermElabM MessageData</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>answerElab</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "answerElab",
+      "title": "answerElab",
+      "href": "misc/answerElab.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "AnswerInfo.format",
+      "display_name": "AnswerInfo.format",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

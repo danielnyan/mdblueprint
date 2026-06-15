@@ -1,0 +1,111 @@
+[
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Argmax",
+    "name": "exists_argMax_on",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 40
+      },
+      "start": {
+        "column": 1,
+        "line": 40
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Argmax.lean",
+    "type": "theorem exists_argMax_on [TotalPreorder Y] (f : X \u2192 Y) (head : X) (tail : List X) : \u2203 m, m \u2208 head :: tail \u2227 \u2200 x \u2208 head :: tail, f x \u2264 f m"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Argmax",
+    "name": "argMaxOn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Argmax.lean",
+    "type": "def argMaxOn [TotalPreorder Y] [DecidableLE Y] (f : X \u2192 Y) (head : X) (tail : List X) : X"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "argMaxOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Argmax",
+    "name": "argMaxOn_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Argmax.lean",
+    "type": "theorem argMaxOn_mem [TotalPreorder Y] [DecidableLE Y] (f : X \u2192 Y) (head : X) (tail : List X) : argMaxOn f head tail \u2208 head :: tail"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "argMaxOn"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Argmax",
+    "name": "argMaxOn_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 130
+      },
+      "start": {
+        "column": 1,
+        "line": 130
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Argmax.lean",
+    "type": "theorem argMaxOn_ge [TotalPreorder Y] [DecidableLE Y] (f : X \u2192 Y) (head : X) (tail : List X) : \u2200 x \u2208 head :: tail, f x \u2264 f (argMaxOn f head tail)"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum.head",
+      "Subtree.head",
+      "argMaxOn",
+      "argMaxOn_ge"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Foundation.Argmax",
+    "name": "le_argMaxOn_head",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 136
+      },
+      "start": {
+        "column": 1,
+        "line": 136
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Foundation/Argmax.lean",
+    "type": "theorem le_argMaxOn_head [TotalPreorder Y] [DecidableLE Y] (f : X \u2192 Y) (head : X) (tail : List X) : f head \u2264 f (argMaxOn f head tail)"
+  }
+]

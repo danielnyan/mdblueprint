@@ -1,0 +1,67 @@
+{
+  "id": "deviate",
+  "title": "deviate",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/deviate.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>deviate</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef deviate [DecidableEq I] (σ : StrategyProfile T M) (i : I) (τ : T i → M i) : StrategyProfile T M</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>BehaviorProfile</li>\n<li>BehaviorStrategy</li>\n<li>Profile</li>\n<li>Strategy</li>\n<li>StrategyProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "BehaviorStrategy",
+      "title": "BehaviorStrategy",
+      "href": "misc/BehaviorStrategy.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "StrategyProfile",
+      "title": "StrategyProfile",
+      "href": "misc/StrategyProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "deviate",
+      "display_name": "deviate",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

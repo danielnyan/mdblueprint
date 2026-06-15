@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "le_argMaxOn_head",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "le_argMaxOn_head",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "le_argMaxOn_head",
+    "target": "argMaxOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "le_argMaxOn_head",
+    "target": "argMaxOn_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "exists_argMax_on",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "exists_argMax_on",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_ge",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_ge",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_ge",
+    "target": "argMaxOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_mem",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_mem",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Argmax",
+    "source": "argMaxOn_mem",
+    "target": "argMaxOn"
+  }
+]

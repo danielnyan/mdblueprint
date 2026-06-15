@@ -1,0 +1,47 @@
+{
+  "id": "natFractionalGreedyValue-le-integralGreedyValue-plus-highest",
+  "title": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/natFractionalGreedyValue-le-integralGreedyValue-plus-highest.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>natFractionalGreedyValue_le_integralGreedyValue_plus_highest</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma natFractionalGreedyValue_le_integralGreedyValue_plus_highest (w b : I → Nat) (capacity : Nat) (hwpos : ∀ i, 0 &lt; w i) : natFractionalGreedyValue w b capacity ≤ integralGreedyValue w b capacity + highestBidValue b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>natAuctionData</li>\n<li>realBidOfNat</li>\n<li>natFractionalGreedyList_le_integralGreedyList_plus_highest</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "natAuctionData",
+      "title": "natAuctionData",
+      "href": "misc/natAuctionData.html"
+    },
+    {
+      "id": "realBidOfNat",
+      "title": "realBidOfNat",
+      "href": "misc/realBidOfNat.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+      "display_name": "natFractionalGreedyValue_le_integralGreedyValue_plus_highest",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

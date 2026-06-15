@@ -1,0 +1,53 @@
+{
+  "id": "HasCondorcetWinner",
+  "title": "HasCondorcetWinner",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasCondorcetWinner.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasCondorcetWinner</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasCondorcetWinner [Fintype N] [Fintype A] (P : Profile N A) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n<li>CondorcetWinner</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "CondorcetWinner",
+      "title": "CondorcetWinner",
+      "href": "misc/CondorcetWinner.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "condorcet-paradox-possible",
+      "title": "condorcet_paradox_possible",
+      "href": "misc/condorcet-paradox-possible.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasCondorcetWinner",
+      "display_name": "HasCondorcetWinner",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

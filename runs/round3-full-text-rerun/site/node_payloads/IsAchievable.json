@@ -1,0 +1,63 @@
+{
+  "id": "IsAchievable",
+  "title": "IsAchievable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsAchievable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsAchievable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsAchievable (j wj : Fin n) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "NoAchievableRejection",
+      "title": "NoAchievableRejection",
+      "href": "misc/NoAchievableRejection.html"
+    },
+    {
+      "id": "daStep-NoAchievableRejection",
+      "title": "daStep_NoAchievableRejection",
+      "href": "misc/daStep-NoAchievableRejection.html"
+    },
+    {
+      "id": "galeShapley-isProposingOptimal",
+      "title": "galeShapley_isProposingOptimal",
+      "href": "misc/galeShapley-isProposingOptimal.html"
+    },
+    {
+      "id": "gs-partner-isAchievable",
+      "title": "gs_partner_isAchievable",
+      "href": "misc/gs-partner-isAchievable.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsAchievable",
+      "display_name": "IsAchievable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

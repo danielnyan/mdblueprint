@@ -1,0 +1,67 @@
+{
+  "id": "restrictSubgame-deviate-liftSubgame",
+  "title": "restrictSubgame_deviate_liftSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictSubgame-deviate-liftSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictSubgame_deviate_liftSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem restrictSubgame_deviate_liftSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] [DecidableEq iota] (beta : G.BehaviorProfile) (who : iota) {root : G.State} (beta' : (G.subgameAt root).BehaviorStrategy who) : (beta.deviate who beta'.liftSubgame).restrictSubgame root = (beta.restrictSubgame root).deviate who beta'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>subgameAt</li>\n<li>BehaviorStrategy</li>\n<li>liftSubgame</li>\n<li>restrictSubgame</li>\n<li>restrictSubgame_deviate</li>\n<li>restrictSubgame_liftSubgame</li>\n<li>actionProb</li>\n<li>IsReachable.next</li>\n<li>ReachedSubgamePayoffTransfer.init</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "subgameAt",
+      "title": "subgameAt",
+      "href": "misc/subgameAt.html"
+    },
+    {
+      "id": "BehaviorStrategy",
+      "title": "BehaviorStrategy",
+      "href": "misc/BehaviorStrategy.html"
+    },
+    {
+      "id": "liftSubgame",
+      "title": "liftSubgame",
+      "href": "misc/liftSubgame.html"
+    },
+    {
+      "id": "restrictSubgame",
+      "title": "restrictSubgame",
+      "href": "misc/restrictSubgame.html"
+    },
+    {
+      "id": "actionProb",
+      "title": "actionProb",
+      "href": "misc/actionProb.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "restrictSubgame_deviate_liftSubgame",
+      "display_name": "restrictSubgame_deviate_liftSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

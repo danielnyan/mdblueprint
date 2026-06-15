@@ -1,0 +1,93 @@
+{
+  "id": "IsMixedNashEq",
+  "title": "IsMixedNashEq",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsMixedNashEq.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsMixedNashEq</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsMixedNashEq {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜] (A : MatrixGame I J 𝕜) (xx : stdSimplex 𝕜 I) (yy : stdSimplex 𝕜 J) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedProfile</li>\n<li>expectedPayoff</li>\n<li>deviateMixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedProfile",
+      "title": "MixedProfile",
+      "href": "misc/MixedProfile.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "deviateMixed",
+      "title": "deviateMixed",
+      "href": "misc/deviateMixed.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsSaddlePoint",
+      "title": "IsSaddlePoint",
+      "href": "misc/IsSaddlePoint.html"
+    },
+    {
+      "id": "exists-mixed-nash-equilibrium",
+      "title": "exists_mixed_nash_equilibrium",
+      "href": "misc/exists-mixed-nash-equilibrium.html"
+    },
+    {
+      "id": "exists-strategic-game-nash-equilibrium",
+      "title": "exists_strategic_game_nash_equilibrium",
+      "href": "misc/exists-strategic-game-nash-equilibrium.html"
+    },
+    {
+      "id": "isMixedNashEq-iff-isSaddlePoint",
+      "title": "isMixedNashEq_iff_isSaddlePoint",
+      "href": "misc/isMixedNashEq-iff-isSaddlePoint.html"
+    },
+    {
+      "id": "isMixedNashEq-of-pure",
+      "title": "isMixedNashEq_of_pure",
+      "href": "misc/isMixedNashEq-of-pure.html"
+    },
+    {
+      "id": "rps-mixed-nash",
+      "title": "rps_mixed_nash",
+      "href": "misc/rps-mixed-nash.html"
+    },
+    {
+      "id": "rps-mixed-nash-unique",
+      "title": "rps_mixed_nash_unique",
+      "href": "misc/rps-mixed-nash-unique.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsMixedNashEq",
+      "display_name": "IsMixedNashEq",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

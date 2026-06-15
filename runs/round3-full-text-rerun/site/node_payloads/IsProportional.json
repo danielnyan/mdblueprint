@@ -1,0 +1,158 @@
+{
+  "id": "IsProportional",
+  "title": "IsProportional",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsProportional.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsProportional</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsProportional {N G : Type*} (I : AdditiveInstance N G) (n : ℕ) (A : Allocation N G) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>toCakeValuation</li>\n<li>Allocation</li>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>Allocation</li>\n<li>IsEnvyFree.isProportional</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toCakeValuation",
+      "title": "toCakeValuation",
+      "href": "misc/toCakeValuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional-additive",
+      "title": "IsEnvyFree.isProportional_additive",
+      "href": "misc/IsEnvyFree-isProportional-additive.html"
+    },
+    {
+      "id": "IsProportional-isAlphaMMS-additive",
+      "title": "IsProportional.isAlphaMMS_additive",
+      "href": "misc/IsProportional-isAlphaMMS-additive.html"
+    },
+    {
+      "id": "IsProportional-isMaxminShare",
+      "title": "IsProportional.isMaxminShare",
+      "href": "misc/IsProportional-isMaxminShare.html"
+    },
+    {
+      "id": "MeasureInstance-envyFree-and-proportional-exists",
+      "title": "MeasureInstance.envyFree_and_proportional_exists",
+      "href": "misc/MeasureInstance-envyFree-and-proportional-exists.html"
+    },
+    {
+      "id": "MeasureInstance-proportional-exists",
+      "title": "MeasureInstance.proportional_exists",
+      "href": "misc/MeasureInstance-proportional-exists.html"
+    },
+    {
+      "id": "cut-exists",
+      "title": "cut_exists",
+      "href": "misc/cut-exists.html"
+    },
+    {
+      "id": "dubinsSpanier-exists-proportional-allocation",
+      "title": "dubinsSpanier_exists_proportional_allocation",
+      "href": "misc/dubinsSpanier-exists-proportional-allocation.html"
+    },
+    {
+      "id": "dubinsSpanierProportional",
+      "title": "dubinsSpanierProportional",
+      "href": "misc/dubinsSpanierProportional.html"
+    },
+    {
+      "id": "dubinsSpanierRule-isProportional",
+      "title": "dubinsSpanierRule_isProportional",
+      "href": "misc/dubinsSpanierRule-isProportional.html"
+    },
+    {
+      "id": "ef-exists-and-proportional",
+      "title": "ef_exists_and_proportional",
+      "href": "misc/ef-exists-and-proportional.html"
+    },
+    {
+      "id": "isEFX-iff",
+      "title": "isEFX_iff",
+      "href": "misc/isEFX-iff.html"
+    },
+    {
+      "id": "isProportional-iff",
+      "title": "isProportional_iff",
+      "href": "misc/isProportional-iff.html"
+    },
+    {
+      "id": "proportional-exists",
+      "title": "proportional_exists",
+      "href": "misc/proportional-exists.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsProportional",
+      "display_name": "IsProportional",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

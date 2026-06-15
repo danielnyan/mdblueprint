@@ -1,0 +1,47 @@
+{
+  "id": "lcs-cost-subset",
+  "title": "lcs_cost_subset",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lcs-cost-subset.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lcs_cost_subset</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lcs_cost_subset (xs : List A) : ∀ (ys : List A), (lcs xs ys).cost.toFinset ⊆ Finset.range (xs.length + 1) ×ˢ Finset.range (ys.length + 1)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>toFinset</li>\n<li>Visited</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    },
+    {
+      "id": "Visited",
+      "title": "Visited",
+      "href": "misc/Visited.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lcs_cost_subset",
+      "display_name": "lcs_cost_subset",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "Fcolor",
+  "title": "Fcolor",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Fcolor.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Fcolor</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Fcolor (x : TT n l) : Fin n</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>TT</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "TT",
+      "title": "TT",
+      "href": "misc/TT.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "f-coords-ge-z-coords",
+      "title": "f_coords_ge_z_coords",
+      "href": "misc/f-coords-ge-z-coords.html"
+    },
+    {
+      "id": "room-seq",
+      "title": "room_seq",
+      "href": "misc/room-seq.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Fcolor",
+      "display_name": "Fcolor",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

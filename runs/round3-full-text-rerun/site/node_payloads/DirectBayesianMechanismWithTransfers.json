@@ -1,0 +1,67 @@
+{
+  "id": "DirectBayesianMechanismWithTransfers",
+  "title": "DirectBayesianMechanismWithTransfers",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/DirectBayesianMechanismWithTransfers.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>DirectBayesianMechanismWithTransfers</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev DirectBayesianMechanismWithTransfers (I : Type*) (T : I → Type*) [∀ i, MeasurableSpace (T i)] (A : Type*) (P : Type*)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "ExAnteRevelationPrincipleConclusion",
+      "title": "ExAnteRevelationPrincipleConclusion",
+      "href": "misc/ExAnteRevelationPrincipleConclusion.html"
+    },
+    {
+      "id": "directRevelation",
+      "title": "directRevelation",
+      "href": "misc/directRevelation.html"
+    },
+    {
+      "id": "exAnte-revelation-principle",
+      "title": "exAnte_revelation_principle",
+      "href": "misc/exAnte-revelation-principle.html"
+    },
+    {
+      "id": "toDirectBayesianMechanismWithTransfers",
+      "title": "toDirectBayesianMechanismWithTransfers",
+      "href": "misc/toDirectBayesianMechanismWithTransfers.html"
+    },
+    {
+      "id": "truthfulStrategy",
+      "title": "truthfulStrategy",
+      "href": "misc/truthfulStrategy.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingWinner-eq-iff-forall-virtualScore-le",
+      "title": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+      "href": "misc/virtualSurplusMaximizingWinner-eq-iff-forall-virtualScore-le.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "DirectBayesianMechanismWithTransfers",
+      "display_name": "DirectBayesianMechanismWithTransfers",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

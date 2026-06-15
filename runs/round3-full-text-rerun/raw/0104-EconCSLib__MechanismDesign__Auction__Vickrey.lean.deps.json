@@ -1,0 +1,140 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "truthful_weakly_dominant",
+    "target": "valuation_is_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "secondPrice_le_bid_winner",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "secondPrice_le_bid_winner",
+    "target": "maxBidExcluding_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "secondPrice_le_bid_winner",
+    "target": "argmaxBid_eq_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "secondPrice_le_bid_winner",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "secondPrice_le_bid_winner",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "utility_nonneg",
+    "target": "utility_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "utility_nonneg",
+    "target": "secondPrice_le_bid_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "utility_nonneg",
+    "target": "utility_loser"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "truthful_weakly_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "game_eq_toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "mechanism_isDSIC",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "game_eq_toStrategicGame",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "valuation_is_dominant",
+    "target": "maxBidExcluding_update_self"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_winner"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_loser"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "valuation_is_dominant",
+    "target": "utility_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Vickrey",
+    "source": "valuation_is_dominant",
+    "target": "Strategy"
+  }
+]

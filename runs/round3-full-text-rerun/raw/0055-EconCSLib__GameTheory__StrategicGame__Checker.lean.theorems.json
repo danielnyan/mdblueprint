@@ -1,0 +1,48 @@
+[
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "name": "isNashEq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 25
+      },
+      "start": {
+        "column": 1,
+        "line": 25
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Checker.lean",
+    "type": "def isNashEq [Fintype N] (G : StrategicGame N U) [\u2200 i, Fintype (G.strategy i)] (\u03c3 : G.Profile) : Bool"
+  },
+  {
+    "dependencies": [
+      "Strategy",
+      "Profile",
+      "isNashEq",
+      "IsNashEquilibrium",
+      "IsWeaklyDominant.isBestResponse",
+      "IsBestResponse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Checker",
+    "name": "isNashEq_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 30
+      },
+      "start": {
+        "column": 1,
+        "line": 30
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Checker.lean",
+    "type": "theorem isNashEq_iff [Fintype N] (G : StrategicGame N U) [\u2200 i, Fintype (G.strategy i)] (\u03c3 : G.Profile) : isNashEq G \u03c3 = true \u2194 IsNashEquilibrium G \u03c3"
+  }
+]

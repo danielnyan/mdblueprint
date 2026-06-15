@@ -1,0 +1,36 @@
+{
+  "id": "value₀-Node-zero-isMax",
+  "title": "value₀_Node_zero_isMax",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀-Node-zero-isMax.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀_Node_zero_isMax</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem value₀_Node_zero_isMax (h : GameTree (Fin 2) ℚ) (t : List (GameTree (Fin 2) ℚ)) : ∃ c ∈ h :: t, value₀ (Node (0 : Fin 2) h t) = value₀ c ∧ ∀ d ∈ h :: t, value₀ d ≤ value₀ c</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>value₀_Node_eq_some_child</li>\n<li>value₀_Node_zero_ge_child</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀_Node_zero_isMax",
+      "display_name": "value₀_Node_zero_isMax",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

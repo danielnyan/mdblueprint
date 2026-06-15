@@ -1,0 +1,62 @@
+{
+  "id": "restrictReachableSubgame-deviate-liftReachableSubgame",
+  "title": "restrictReachableSubgame_deviate_liftReachableSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictReachableSubgame-deviate-liftReachableSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictReachableSubgame_deviate_liftReachableSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem restrictReachableSubgame_deviate_liftReachableSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] [DecidableEq iota] {root : G.State} [(s : G.State) -&gt; Decidable (Arena.Reachable G.toArena root s)] (beta : G.BehaviorProfile) (who : iota) (beta' : (G.reachableSubgameAt root).BehaviorStrategy who) : (beta.deviate who ((beta who).liftReachableSubgame beta')).restrictReachableSubgame root = (beta.restrictReachableSubgame root).deviate who beta'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>reachableSubgameAt</li>\n<li>BehaviorStrategy</li>\n<li>liftReachableSubgame</li>\n<li>restrictReachableSubgame</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "reachableSubgameAt",
+      "title": "reachableSubgameAt",
+      "href": "misc/reachableSubgameAt.html"
+    },
+    {
+      "id": "BehaviorStrategy",
+      "title": "BehaviorStrategy",
+      "href": "misc/BehaviorStrategy.html"
+    },
+    {
+      "id": "liftReachableSubgame",
+      "title": "liftReachableSubgame",
+      "href": "misc/liftReachableSubgame.html"
+    },
+    {
+      "id": "restrictReachableSubgame",
+      "title": "restrictReachableSubgame",
+      "href": "misc/restrictReachableSubgame.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "restrictReachableSubgame_deviate_liftReachableSubgame",
+      "display_name": "restrictReachableSubgame_deviate_liftReachableSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

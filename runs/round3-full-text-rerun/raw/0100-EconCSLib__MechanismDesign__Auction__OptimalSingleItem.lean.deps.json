@@ -1,0 +1,3758 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_forall_virtualValue_nonpos",
+    "target": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+    "target": "IsAllocFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule",
+    "target": "IsSingleItemAllocationRule.le_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "envelopeVirtualSurplusAnalyticAssumptions_of_environment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+    "target": "HasSameSellingEnvironment.opponentPrior_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingPaymentRule_zeroNormalized",
+    "target": "myersonPayment_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "HasMyersonPaymentRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+    "target": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+    "target": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimExpectedPayment_zero_of_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimExpectedPayment_zero_of_isZeroNormalized",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimExpectedPayment_zero_of_isZeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimExpectedPayment_zero_of_isZeroNormalized",
+    "target": "interimExpectedPayment_eq_integral_interimPaymentIntegrand"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos",
+    "target": "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos",
+    "target": "winningVirtualValue_pos_iff_exists_virtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos",
+    "target": "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isZeroNormalized",
+    "target": "virtualSurplusMaximizingPaymentRule_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_ennreal_ofReal_aemeasurable",
+    "target": "typeDensity_measurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "hasInterimEnvelopeFormula_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "IsOnTypeProfileInterior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "typeDensity_pos_of_hasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isReserveThreshold_of_isRegular_of_virtualValue_eq_zero",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "typeDensity_ennreal_ofReal_aemeasurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_pointwise",
+    "target": "HasInterimPaymentEnvelopeUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+    "target": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "IsRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "expectedSellerRevenueInEnvironment_le_of_expectedVirtualSurplus_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeIdentity_of_zeroNormalized_of_interimPaymentFormula",
+    "target": "interimExpectedPayment_zero_of_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsFeasibleICIRIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsVirtualSurplusOptimalAllocationRule",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsVirtualSurplusOptimalAllocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized",
+    "target": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeSupport_right",
+    "target": "IsOnTypeSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold",
+    "target": "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold",
+    "target": "virtualValue_nonpos_of_lt_isReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "HasSameSellingEnvironment.opponentPrior_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "typeDensity_measurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "typeDensity_ennreal_ofReal_aemeasurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+    "target": "HasInterimPaymentEnvelopeUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+    "target": "HasEnvelopeVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+    "target": "HasInterimPaymentVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "target": "IsRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueComparable",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "IsRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+    "target": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+    "target": "typeDensity_measurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueUpperBounded",
+    "target": "HasExpectedRevenueVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae",
+    "target": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+    "target": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_quasiLinearUtility_eq",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_quasiLinearUtility_eq",
+    "target": "withMyersonPayment_quasiLinearUtility_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+    "target": "HasEnvelopeVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRevenueComparable",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+    "target": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "HasInterimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "hasInterimPaymentFormula_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+    "target": "virtualSurplusMaximizingAuction_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+    "target": "IsImplementable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+    "target": "isImplementable_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isImplementable_of_isRegular",
+    "target": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+    "target": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+    "target": "virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeProfileInterior_isOnTypeProfileSupport",
+    "target": "IsOnTypeProfileInterior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeProfileInterior_isOnTypeProfileSupport",
+    "target": "IsOnTypeProfileSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsOnTypeProfileSupport",
+    "target": "IsOnTypeSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+    "target": "HasIntegrableInterimObjects"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+    "target": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+    "target": "virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "virtualSurplusMaximizingAllocationRule_eq_one_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+    "target": "bid_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+    "target": "toDirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le",
+    "target": "DirectBayesianMechanismWithTransfers"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos",
+    "target": "virtualSurplusMaximizingWinner_virtualValue_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsZeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "isIndividuallyRationalOnSupport_iff_interimExpectedPayment_zero_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "interimExpectedPayment_zero_of_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "bid_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "eq_argmaxBid_of_strict_max"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "HasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "HasNonnegativeInterimAllocationIntegralOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "isIndividuallyRationalOnSupport_of_isZeroNormalized_of_hasInterimEnvelopeFormula"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIndividuallyRationalOnSupport",
+    "target": "virtualSurplusMaximizingAuction_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "expectedVirtualSurplus_le_of_forall_virtualSurplus_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+    "target": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "HasInterimPaymentVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities",
+    "target": "HasExpectedRevenueVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_nonneg_of_hasNonnegativeDensityOnSupport",
+    "target": "HasNonnegativeDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_winningVirtualValue_pos",
+    "target": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_exists_virtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_virtualSurplusMaximizingAllocationRule_eq_one_iff_winningVirtualValue_pos",
+    "target": "winningVirtualValue_pos_iff_exists_virtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal",
+    "target": "IsExpectedSellerRevenueOptimalInEnvironmentAmong"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isExpectedSellerRevenueOptimal",
+    "target": "IsFeasibleICIRIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_of_forall_virtualSurplus_le",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_of_forall_virtualSurplus_le",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "HasPositiveDensityOnSupport.nonzero_on_support",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "HasPositiveDensityOnSupport.nonzero_on_support",
+    "target": "typeDensity_pos_of_hasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "HasIndependentTypePriors"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasibleICIRIntegrable",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini",
+    "target": "typeDensity_measurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini",
+    "target": "typeDensity_ennreal_ofReal_aemeasurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeMeasureInterimFubiniAnalyticAssumptions_of_typeMeasure_fubini",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+    "target": "integral_typeMeasure_eq_intervalIntegral_mul"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+    "target": "typeDensity_measurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_myersonPayment_of_isDSIC_of_isZeroNormalized",
+    "target": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "HasInterimPaymentEnvelopeUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "hasInterimPaymentEnvelopeUpperBound_of_pointwise"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport",
+    "target": "interimExpectedPayment_le_alloc_mul_sub_integral_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport",
+    "target": "typeDensity_pos_of_hasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "typeDensity_pos_of_hasPositiveDensityOnSupport",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsSingleItemAllocationRule.le_one",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsSingleItemAllocationRule.le_one",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "existsUnique_zeroNormalized_payment_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "existsUnique_zeroNormalized_paymentRule_for_virtualSurplusMaximizingAllocationRule",
+    "target": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "typeDensity_ennreal_ofReal_aemeasurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule",
+    "target": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity",
+    "target": "HasExpectedRevenueVirtualSurplusUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+    "target": "virtualSurplusMaximizingAllocationRule_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule",
+    "target": "virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "IsExpectedSellerRevenueOptimalInEnvironmentAmong"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "IsRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "virtualSurplusMaximizingAuction_isRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueComparable",
+    "target": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "HasMyersonPaymentRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "IsZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+    "target": "expectedSellerRevenueInEnvironment_eq_myersonPaymentRevenueInEnvironment_of_isDSIC_of_isZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "IsFeasibleICIRIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "IsRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "hasExpectedRevenueVirtualSurplusUpperBound_of_interim_identities"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "hasEnvelopeVirtualSurplusUpperBound_of_analyticAssumptions"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_ic_ir_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "winningVirtualValue_pos_iff_exists_virtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsFeasible.isSingleItemAllocationRule",
+    "target": "OpponentTypeProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "measurable_virtualValue_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "not_forall_lt_reserveThreshold_of_winningVirtualValue_pos",
+    "target": "winningVirtualValue_nonpos_of_forall_lt_reserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+    "target": "ZeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "paymentRule_eq_virtualSurplusMaximizingPaymentRule_of_isDSIC_of_zeroNormalized",
+    "target": "payment_eq_myersonPayment_of_isDSIC_of_zeroNormalized"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+    "target": "HasIntegrableInterimObjects"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular",
+    "target": "measurable_virtualValue_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isAllocFeasible",
+    "target": "IsAllocFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isAllocFeasible",
+    "target": "withPayment_isAllocFeasible_of_isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isAllocFeasible",
+    "target": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_reserveThreshold_le_bid_of_winningVirtualValue_pos",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_reserveThreshold_le_bid_of_winningVirtualValue_pos",
+    "target": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "IsRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "isRevenueUpperBounded_of_isRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+    "target": "virtualSurplusMaximizingAuction_isRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "HasInterimPaymentEnvelopeUpperBound"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "hasInterimPaymentEnvelopeUpperBound_of_isIncentiveCompatible_of_isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+    "target": "virtualSurplusMaximizingAllocationRule_isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+    "target": "virtualSurplus_le_virtualSurplusMaximizingAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "HasExpectedVirtualSurplusInterimIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "HasSameSellingEnvironment"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "target": "IsMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "target": "virtualSurplusMaximizingAllocationRule_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure",
+    "target": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelope_density_integrable",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold",
+    "target": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_virtualValue_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_of_forall_lt_reserveThreshold",
+    "target": "virtualValue_nonpos_of_lt_isReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualValue_nonneg_of_isReserveThreshold",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegral_eq_virtualSurplusIntegral",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.accumulatedAllocation_density_integrable",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "HasExpectedRevenueVirtualSurplusIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "IsExpectedSellerRevenueOptimalInEnvironmentAmong"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "IsRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "virtualSurplusMaximizingAuction_isRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+    "target": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+    "target": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_regularMyersonOptimalICIR_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.expectedPaymentRevenueIntegrable",
+    "target": "PaymentInterimFubiniAssumptions.expectedPaymentRevenueIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_allocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "IsFeasible.isSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+    "target": "IsSingleItemAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_one_iff",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeProfileSupport_apply",
+    "target": "IsOnTypeProfileSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeProfileSupport_apply",
+    "target": "IsOnTypeSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.typeMeasure_isProbabilityMeasure",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeMeasure_isProbabilityMeasure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "norm_virtualSurplusMaximizingPaymentRule_le",
+    "target": "virtualSurplusMaximizingAllocationRule_nonneg"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "norm_virtualSurplusMaximizingPaymentRule_le",
+    "target": "virtualSurplusMaximizingAllocationRule_le_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+    "target": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAllocationRule_eq_zero_iff_winningVirtualValue_nonpos",
+    "target": "winningVirtualValue_nonpos_iff_forall_virtualValue_nonpos"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_reserveThreshold_le_bid_of_exists_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "exists_reserveThreshold_le_bid_of_exists_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsExpectedSellerRevenueOptimalInEnvironmentAmong"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction",
+    "target": "IsFeasibleICIRIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_isRevenueComparable",
+    "target": "IsRevenueComparable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_isRevenueComparable",
+    "target": "IsRevenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isRevenueUpperBounded_of_isRevenueComparable",
+    "target": "hasExpectedRevenueVirtualSurplusUpperBound_of_identity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "winningVirtualValue_pos_iff_exists_virtualValue_pos",
+    "target": "virtualSurplusMaximizingWinner_virtualValue_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsExpectedSellerRevenueOptimalInEnvironmentAmong"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsFeasibleICIRIntegrable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "RegularMyersonICIRAnalyticAssumptions.opt_identity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IsIndividuallyRationalOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isFeasibleICIRIntegrable_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongFeasibleICIRIntegrable_of_isRegular",
+    "target": "isRevenueUpperBounded_of_ic_ir_upper"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasible",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasible",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasible",
+    "target": "virtualSurplusMaximizingMechanism_isAllocFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isFeasible",
+    "target": "virtualSurplusMaximizingAllocationRule_respectsSingleItemCapacity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.integrableVirtualSurplus",
+    "target": "IntegrableVirtualSurplus"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingWinner_virtualValue_ge",
+    "target": "bid_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "target": "PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity",
+    "target": "HasExpectedRevenueInterimPaymentIdentity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "IsReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "virtualValue_pos_of_virtualSurplusMaximizingAllocationRule_eq_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one",
+    "target": "virtualValue_nonpos_of_lt_isReserveThreshold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae",
+    "target": "EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "isOnTypeSupport_left",
+    "target": "IsOnTypeSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+    "target": "IsVirtualSurplusOptimalAllocationRule"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "target": "withMyersonPayment_isDSIC_of_isMonotone"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingMechanism_isDSIC_of_isRegular",
+    "target": "virtualSurplusMaximizingAllocationRule_isMonotone_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+    "target": "survivalIntegral_eq_intervalIntegral_mul_deriv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+    "target": "EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound",
+    "target": "norm_virtualSurplusMaximizingPaymentRule_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "IsRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "HasIntegrableInterimObjects"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "isIncentiveCompatible_of_isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualSurplusMaximizingAuction_isIncentiveCompatible_of_isRegular",
+    "target": "virtualSurplusMaximizingAuction_isDSIC_of_isRegular"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "HasPositiveDensityOnSupport"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "IsOnTypeProfileInterior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "HasPositiveJointDensityAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+    "target": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+    "target": "IsRegularMyersonOptimalICIRAuction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible",
+    "target": "IsIncentiveCompatible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "EnvelopeVirtualSurplusAnalyticAssumptions.envelopeIntegrand_eq_onSupport",
+    "target": "HasPositiveDensityOnSupport.nonzero_on_support"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.OptimalSingleItem",
+    "source": "virtualValue_nonpos_of_lt_isReserveThreshold",
+    "target": "IsReserveThreshold"
+  }
+]

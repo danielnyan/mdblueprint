@@ -1,0 +1,42 @@
+{
+  "id": "isMixedNashEq-of-pure",
+  "title": "isMixedNashEq_of_pure",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isMixedNashEq-of-pure.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isMixedNashEq_of_pure</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isMixedNashEq_of_pure {𝕜 : Type} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜] (A : MatrixGame I J 𝕜) {xx : stdSimplex 𝕜 I} {yy : stdSimplex 𝕜 J} {v : 𝕜} (Hxx : ∀ j, v ≤ wsum xx (fun i =&gt; A.g i j)) (Hyy : ∀ i, wsum yy (A.g i) ≤ v) : A.IsMixedNashEq xx yy</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsMixedNashEq</li>\n<li>wsum_le_wsum</li>\n<li>wsum_const</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsMixedNashEq",
+      "title": "IsMixedNashEq",
+      "href": "misc/IsMixedNashEq.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isMixedNashEq_of_pure",
+      "display_name": "isMixedNashEq_of_pure",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

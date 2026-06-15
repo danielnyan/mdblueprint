@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+    "source": "ef_exists_two_agents",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+    "source": "ef_exists_two_agents",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+    "source": "ef_exists_two_agents",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.EnvyFree",
+    "source": "ef_exists_two_agents",
+    "target": "cutAndChoose_ef_exists"
+  }
+]

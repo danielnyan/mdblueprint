@@ -1,0 +1,57 @@
+{
+  "id": "VCGMechanism-isExPostIR-of-all-nonnegative",
+  "title": "VCGMechanism_isExPostIR_of_all_nonnegative",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/VCGMechanism-isExPostIR-of-all-nonnegative.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>VCGMechanism_isExPostIR_of_all_nonnegative</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem VCGMechanism_isExPostIR_of_all_nonnegative (hnonneg : ∀ v : (∀ _ : I, Valuation A ℝ), ∀ i : I, ∀ a : A, 0 ≤ v i a) : MechanismWithTransfers.isQuasiLinearExPostIR (M</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>isQuasiLinearExPostIR</li>\n<li>valueOfAllocation</li>\n<li>quasiLinearUtility</li>\n<li>VCGMechanism_truthful_quasiLinearUtility_nonneg</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "isQuasiLinearExPostIR",
+      "title": "isQuasiLinearExPostIR",
+      "href": "misc/isQuasiLinearExPostIR.html"
+    },
+    {
+      "id": "valueOfAllocation",
+      "title": "valueOfAllocation",
+      "href": "misc/valueOfAllocation.html"
+    },
+    {
+      "id": "quasiLinearUtility",
+      "title": "quasiLinearUtility",
+      "href": "misc/quasiLinearUtility.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "VCGMechanism_isExPostIR_of_all_nonnegative",
+      "display_name": "VCGMechanism_isExPostIR_of_all_nonnegative",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

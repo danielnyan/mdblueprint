@@ -1,0 +1,50 @@
+[
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree",
+      "toValuation",
+      "IsEnvyFree.isProportional",
+      "IsProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "name": "IsEnvyFree.isProportional_additive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Implications.lean",
+    "type": "theorem IsEnvyFree.isProportional_additive [Fintype N] [DecidableEq G] (w : AdditiveValuation N G) {allGoods : Finset G} {A : Allocation N G} (hA : IsAllocation allGoods A) (hEF : IsEnvyFree w.toValuation A) : IsProportional (Fintype.card N) w.toValuation allGoods A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "toValuation",
+      "IsMaxminShare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Implications",
+    "name": "IsProportional.isMaxminShare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Implications.lean",
+    "type": "theorem IsProportional.isMaxminShare [Fintype N] [Nonempty N] [DecidableEq G] (w : AdditiveValuation N G) {allGoods : Finset G} {A : Allocation N G} (hProp : IsProportional (Fintype.card N) w.toValuation allGoods A) : IsMaxminShare w.toValuation allGoods A"
+  }
+]

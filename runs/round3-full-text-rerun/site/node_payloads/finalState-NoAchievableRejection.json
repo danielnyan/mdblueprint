@@ -1,0 +1,52 @@
+{
+  "id": "finalState-NoAchievableRejection",
+  "title": "finalState_NoAchievableRejection",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/finalState-NoAchievableRejection.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>finalState_NoAchievableRejection</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma finalState_NoAchievableRejection : NoAchievableRejection w m (finalState w m)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>NoAchievableRejection</li>\n<li>finalState</li>\n<li>daRun_NoAchievableRejection</li>\n<li>initState</li>\n<li>holdinv_init</li>\n<li>initState_injective</li>\n<li>initState_NoAchievableRejection</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "NoAchievableRejection",
+      "title": "NoAchievableRejection",
+      "href": "misc/NoAchievableRejection.html"
+    },
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "initState",
+      "title": "initState",
+      "href": "misc/initState.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "finalState_NoAchievableRejection",
+      "display_name": "finalState_NoAchievableRejection",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

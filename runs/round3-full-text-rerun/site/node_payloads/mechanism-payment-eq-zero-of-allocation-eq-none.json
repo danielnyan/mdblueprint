@@ -1,0 +1,42 @@
+{
+  "id": "mechanism-payment-eq-zero-of-allocation-eq-none",
+  "title": "mechanism_payment_eq_zero_of_allocation_eq_none",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mechanism-payment-eq-zero-of-allocation-eq-none.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mechanism_payment_eq_zero_of_allocation_eq_none</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma mechanism_payment_eq_zero_of_allocation_eq_none {reserve : U} {b : I → U} {i : I} (halloc : allocation reserve b = none) : (mechanism reserve).paymentRule b i = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>mechanism_payment_of_allocation_ne_some</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "mechanism_payment_eq_zero_of_allocation_eq_none",
+      "display_name": "mechanism_payment_eq_zero_of_allocation_eq_none",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

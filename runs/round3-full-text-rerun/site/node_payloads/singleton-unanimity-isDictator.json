@@ -1,0 +1,47 @@
+{
+  "id": "singleton-unanimity-isDictator",
+  "title": "singleton_unanimity_isDictator",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/singleton-unanimity-isDictator.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>singleton_unanimity_isDictator</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem singleton_unanimity_isDictator [Fintype N] [Fintype A] [Subsingleton N] {F : SWF N A} (h : SWF.Unanimity F) (i : N) : F.IsDictator i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>Unanimity</li>\n<li>SWF.IsDictator</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "singleton_unanimity_isDictator",
+      "display_name": "singleton_unanimity_isDictator",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

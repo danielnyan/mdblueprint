@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsConvex.isSuperadditive",
+    "target": "IsConvex"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsConvex.isSuperadditive",
+    "target": "IsSuperadditive"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsEfficient",
+    "target": "PayoffVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsEfficient",
+    "target": "coalitionPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsIndividuallyRational",
+    "target": "PayoffVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsImputation",
+    "target": "PayoffVector"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsImputation",
+    "target": "IsEfficient"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "IsImputation",
+    "target": "IsIndividuallyRational"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.CoalitionalGame.Basic",
+    "source": "coalitionPayoff",
+    "target": "PayoffVector"
+  }
+]

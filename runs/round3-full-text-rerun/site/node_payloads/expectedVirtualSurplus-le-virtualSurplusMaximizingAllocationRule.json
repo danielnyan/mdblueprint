@@ -1,0 +1,47 @@
+{
+  "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAllocationRule",
+  "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {x : (I → ℝ) → I → ℝ} (hx : IsSingleItemAllocationRule x) (hx_int : A.IntegrableVirtualSurplus x) (hopt_int : A.IntegrableVirtualSurplus A.virtualSurplusMaximizingAllocationRule) : A.expectedVirtualSurplus x ≤ A.expectedVirtualSurplus A.virtualSurplusMaximizingAllocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsFeasible.isSingleItemAllocationRule</li>\n<li>IsSingleItemAllocationRule</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>expectedVirtualSurplus_le_of_forall_virtualSurplus_le</li>\n<li>virtualSurplus_le_virtualSurplusMaximizingAllocationRule</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsSingleItemAllocationRule",
+      "title": "IsSingleItemAllocationRule",
+      "href": "misc/IsSingleItemAllocationRule.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+      "display_name": "expectedVirtualSurplus_le_virtualSurplusMaximizingAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

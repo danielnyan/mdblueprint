@@ -1,0 +1,36 @@
+{
+  "id": "maximal-element-unique",
+  "title": "maximal_element_unique",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/maximal-element-unique.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>maximal_element_unique</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma maximal_element_unique [Fintype T] (τ : Finset T) (D : Finset I) (i : I) (h_nonempty : τ.Nonempty) (h_M_nonempty : (M_set τ D i h_nonempty).Nonempty) (x : T) (h_x_max : is_maximal_in_M_set τ D i h_nonempty x) : x = m_element τ D i h_nonempty h_M_nonempty</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>M_set</li>\n<li>is_maximal_in_M_set</li>\n<li>m_element_is_maximal</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "maximal_element_unique",
+      "display_name": "maximal_element_unique",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

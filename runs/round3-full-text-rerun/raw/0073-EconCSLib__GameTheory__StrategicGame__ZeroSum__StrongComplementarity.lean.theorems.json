@@ -1,0 +1,38 @@
+[
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "exists_mixed_nash_equilibrium",
+      "optimal_pairs_iff_saddle_point",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "DualFeasible",
+      "wsum_wsum_comm",
+      "wsum_const",
+      "wsum_le_wsum",
+      "support_complementarity_row",
+      "support_complementarity_column"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "name": "exists_strong_complementary_pair",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+    "type": "theorem exists_strong_complementary_pair : \u2203 (xx : stdSimplex \u211d I) (yy : stdSimplex \u211d J), xx \u2208 A.optimalRowStrategies \u2227 yy \u2208 A.optimalColumnStrategies \u2227 (\u2200 i, 0 < xx.val i \u2194 A.Ei i yy = A.value) \u2227 (\u2200 j, 0 < yy.val j \u2194 A.Ej xx j = A.value)"
+  }
+]

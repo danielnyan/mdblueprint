@@ -1,0 +1,72 @@
+{
+  "id": "HasPositiveDensityOnSupport",
+  "title": "HasPositiveDensityOnSupport",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasPositiveDensityOnSupport.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasPositiveDensityOnSupport</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasPositiveDensityOnSupport (A : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "HasPositiveDensityOnSupport-nonzero-on-support",
+      "title": "HasPositiveDensityOnSupport.nonzero_on_support",
+      "href": "misc/HasPositiveDensityOnSupport-nonzero-on-support.html"
+    },
+    {
+      "id": "jointDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior",
+      "title": "jointDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+      "href": "misc/jointDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior.html"
+    },
+    {
+      "id": "survivalIntegral-eq-intervalIntegral-mul-deriv",
+      "title": "survivalIntegral_eq_intervalIntegral_mul_deriv",
+      "href": "misc/survivalIntegral-eq-intervalIntegral-mul-deriv.html"
+    },
+    {
+      "id": "typeDensity-nonnegative-ae-of-hasPositiveDensityOnSupport",
+      "title": "typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport",
+      "href": "misc/typeDensity-nonnegative-ae-of-hasPositiveDensityOnSupport.html"
+    },
+    {
+      "id": "typeDensity-pos-of-hasPositiveDensityOnSupport",
+      "title": "typeDensity_pos_of_hasPositiveDensityOnSupport",
+      "href": "misc/typeDensity-pos-of-hasPositiveDensityOnSupport.html"
+    },
+    {
+      "id": "typeDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior",
+      "title": "typeDensity_pos_of_hasPositiveDensityOnSupport_of_profileInterior",
+      "href": "misc/typeDensity-pos-of-hasPositiveDensityOnSupport-of-profileInterior.html"
+    },
+    {
+      "id": "typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-positiveDensity",
+      "title": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+      "href": "misc/typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-positiveDensity.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasPositiveDensityOnSupport",
+      "display_name": "HasPositiveDensityOnSupport",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

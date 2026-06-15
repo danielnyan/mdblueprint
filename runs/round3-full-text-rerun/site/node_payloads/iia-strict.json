@@ -1,0 +1,77 @@
+{
+  "id": "iia-strict",
+  "title": "iia_strict",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/iia-strict.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>iia_strict</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem iia_strict [Fintype N] [Fintype A] {F : SWF N A} (hF : SWF.IIA F) {P Q : Profile N A} {a b : A} (hab : ∀ i, Prefers P i a b ↔ Prefers Q i a b) (hba : ∀ i, Prefers P i b a ↔ Prefers Q i b a) : strict (F P) a b ↔ strict (F Q) a b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SWF</li>\n<li>IIA</li>\n<li>Profile</li>\n<li>Prefers</li>\n<li>BallotPrefers</li>\n<li>rank_injective</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>rank_lt_iff</li>\n<li>rank_lt_card</li>\n<li>StrictlyPreferred.asymm</li>\n<li>BallotPrefers.asymm</li>\n<li>Prefers.asymm</li>\n<li>Unanimity</li>\n<li>IsWeaklyDecisiveFor</li>\n<li>IsDecisiveFor</li>\n<li>strict_transitive</li>\n<li>isWeaklyDecisiveFor_of_isDecisiveFor</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    },
+    {
+      "id": "BallotPrefers",
+      "title": "BallotPrefers",
+      "href": "misc/BallotPrefers.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "IsWeaklyDecisiveFor",
+      "title": "IsWeaklyDecisiveFor",
+      "href": "misc/IsWeaklyDecisiveFor.html"
+    },
+    {
+      "id": "IsDecisiveFor",
+      "title": "IsDecisiveFor",
+      "href": "misc/IsDecisiveFor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "iia_strict",
+      "display_name": "iia_strict",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

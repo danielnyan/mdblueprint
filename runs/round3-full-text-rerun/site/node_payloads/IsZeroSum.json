@@ -1,0 +1,173 @@
+{
+  "id": "IsZeroSum",
+  "title": "IsZeroSum",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsZeroSum.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsZeroSum</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsZeroSum [Add U] [Zero U] (G : StrategicGame (Fin 2) U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsConstantSum-zero-isZeroSum",
+      "title": "IsConstantSum.zero_isZeroSum",
+      "href": "misc/IsConstantSum-zero-isZeroSum.html"
+    },
+    {
+      "id": "IsZeroSum-child-mem",
+      "title": "IsZeroSum.child_mem",
+      "href": "misc/IsZeroSum-child-mem.html"
+    },
+    {
+      "id": "IsZeroSum-expectedPayoff-neg",
+      "title": "IsZeroSum.expectedPayoff_neg",
+      "href": "misc/IsZeroSum-expectedPayoff-neg.html"
+    },
+    {
+      "id": "IsZeroSum-head",
+      "title": "IsZeroSum.head",
+      "href": "misc/IsZeroSum-head.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq",
+      "title": "IsZeroSum.nash_payoff_eq",
+      "href": "misc/IsZeroSum-nash-payoff-eq.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq-p1",
+      "title": "IsZeroSum.nash_payoff_eq_p1",
+      "href": "misc/IsZeroSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "IsZeroSum-neg",
+      "title": "IsZeroSum.neg",
+      "href": "misc/IsZeroSum-neg.html"
+    },
+    {
+      "id": "IsZeroSum-of-subtree",
+      "title": "IsZeroSum.of_subtree",
+      "href": "misc/IsZeroSum-of-subtree.html"
+    },
+    {
+      "id": "IsZeroSum-tail-mem",
+      "title": "IsZeroSum.tail_mem",
+      "href": "misc/IsZeroSum-tail-mem.html"
+    },
+    {
+      "id": "IsZeroSum-toIsConstantSum",
+      "title": "IsZeroSum.toIsConstantSum",
+      "href": "misc/IsZeroSum-toIsConstantSum.html"
+    },
+    {
+      "id": "IsZeroSum-welfare-eq-zero",
+      "title": "IsZeroSum.welfare_eq_zero",
+      "href": "misc/IsZeroSum-welfare-eq-zero.html"
+    },
+    {
+      "id": "isZeroSum-iff-isConstantSum-zero",
+      "title": "isZeroSum_iff_isConstantSum_zero",
+      "href": "misc/isZeroSum-iff-isConstantSum-zero.html"
+    },
+    {
+      "id": "mp-isZeroSum",
+      "title": "mp_isZeroSum",
+      "href": "misc/mp-isZeroSum.html"
+    },
+    {
+      "id": "outcome-optStrategy-one-eq-neg-value₀",
+      "title": "outcome_optStrategy_one_eq_neg_value₀",
+      "href": "misc/outcome-optStrategy-one-eq-neg-value₀.html"
+    },
+    {
+      "id": "outcome-optStrategy-zero-sum",
+      "title": "outcome_optStrategy_zero_sum",
+      "href": "misc/outcome-optStrategy-zero-sum.html"
+    },
+    {
+      "id": "outcome-zero-sum",
+      "title": "outcome_zero_sum",
+      "href": "misc/outcome-zero-sum.html"
+    },
+    {
+      "id": "sample-zero-sum",
+      "title": "sample_zero_sum",
+      "href": "misc/sample-zero-sum.html"
+    },
+    {
+      "id": "toStrategicGame-isZeroSum",
+      "title": "toStrategicGame_isZeroSum",
+      "href": "misc/toStrategicGame-isZeroSum.html"
+    },
+    {
+      "id": "value-one-eq-neg-value₀",
+      "title": "value_one_eq_neg_value₀",
+      "href": "misc/value-one-eq-neg-value₀.html"
+    },
+    {
+      "id": "value-zero-sum",
+      "title": "value_zero_sum",
+      "href": "misc/value-zero-sum.html"
+    },
+    {
+      "id": "value₀-Leaf",
+      "title": "value₀_Leaf",
+      "href": "misc/value₀-Leaf.html"
+    },
+    {
+      "id": "value₀-Node-one-isMin",
+      "title": "value₀_Node_one_isMin",
+      "href": "misc/value₀-Node-one-isMin.html"
+    },
+    {
+      "id": "value₀-Node-one-le-child",
+      "title": "value₀_Node_one_le_child",
+      "href": "misc/value₀-Node-one-le-child.html"
+    },
+    {
+      "id": "value₀-eq-outcome-and-zeroSum",
+      "title": "value₀_eq_outcome_and_zeroSum",
+      "href": "misc/value₀-eq-outcome-and-zeroSum.html"
+    },
+    {
+      "id": "value₀-le-outcome-of-iVariant-one",
+      "title": "value₀_le_outcome_of_iVariant_one",
+      "href": "misc/value₀-le-outcome-of-iVariant-one.html"
+    },
+    {
+      "id": "zermelo-determinacy",
+      "title": "zermelo_determinacy",
+      "href": "misc/zermelo-determinacy.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsZeroSum",
+      "display_name": "IsZeroSum",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

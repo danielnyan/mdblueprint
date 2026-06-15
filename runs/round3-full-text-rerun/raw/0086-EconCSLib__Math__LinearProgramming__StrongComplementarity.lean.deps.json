@@ -1,0 +1,170 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "optAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "optAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "optAug_feasible_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "lp_weak_duality"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "farkas_lemma"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_row_strict_pair",
+    "target": "OptAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "lp_weak_complementarity_row",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "optAug_feasible_iff",
+    "target": "optAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "optAug_feasible_iff",
+    "target": "optAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "optAugB"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "optAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "optAug_feasible_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "lp_weak_duality"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "IsRegularMyersonOptimalICIRAuction.isFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "IsFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "farkas_lemma"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_col_strict_pair",
+    "target": "OptAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "optAugB",
+    "target": "OptAugRow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "optAugB",
+    "target": "optAugA"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "lp_weak_complementarity_col",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "DualFeasible"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "exists_row_strict_pair"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "exists_strong_complementary_pair",
+    "target": "exists_col_strict_pair"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Math.LinearProgramming.StrongComplementarity",
+    "source": "optAugA",
+    "target": "OptAugRow"
+  }
+]

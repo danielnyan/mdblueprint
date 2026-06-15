@@ -1,0 +1,42 @@
+{
+  "id": "typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-positiveDensity",
+  "title": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/typeMeasure-isProbabilityMeasure-of-cdf-absolutelyContinuous-of-positiveDensity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity (A : BayesianSingleItemAuction I) (hdens : A.HasPositiveDensityOnSupport) (i : I) (hAC : AbsolutelyContinuousOnInterval (A.typeData.cdf i).cdf 0 (A.typeData.omega i)) : IsProbabilityMeasure (A.typeMeasure i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasPositiveDensityOnSupport</li>\n<li>typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_density_nonnegative_ae</li>\n<li>typeDensity_nonnegative_ae_of_hasPositiveDensityOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasPositiveDensityOnSupport",
+      "title": "HasPositiveDensityOnSupport",
+      "href": "misc/HasPositiveDensityOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+      "display_name": "typeMeasure_isProbabilityMeasure_of_cdf_absolutelyContinuous_of_positiveDensity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,67 @@
+{
+  "id": "Completeness",
+  "title": "Completeness",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Completeness.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Completeness</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef Completeness (pref : A → A → Prop) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "VNM-axioms-independent",
+      "title": "VNM.axioms_independent",
+      "href": "misc/VNM-axioms-independent.html"
+    },
+    {
+      "id": "completeness-independent",
+      "title": "completeness_independent",
+      "href": "misc/completeness-independent.html"
+    },
+    {
+      "id": "continuity-independent",
+      "title": "continuity_independent",
+      "href": "misc/continuity-independent.html"
+    },
+    {
+      "id": "independence-independent",
+      "title": "independence_independent",
+      "href": "misc/independence-independent.html"
+    },
+    {
+      "id": "sure-thing-principle",
+      "title": "sure_thing_principle",
+      "href": "misc/sure-thing-principle.html"
+    },
+    {
+      "id": "transitivity-independent",
+      "title": "transitivity_independent",
+      "href": "misc/transitivity-independent.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Completeness",
+      "display_name": "Completeness",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

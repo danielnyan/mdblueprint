@@ -1,0 +1,536 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "ge_iff_simplex_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalRowStrategies_iff_E_ge",
+    "target": "value_eq_maximin"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_zero",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_zero",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_zero",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_zero",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "IsPlayerIGuarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "IsPlayerIIGuarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "minimax_theorem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "common_guarantee_eq_value",
+    "target": "value_eq_maximin"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "le_iff_simplex_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "value_eq_minimax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "mem_optimalColumnStrategies_iff_E_le",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_mixed_nash_equilibrium",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_mixed_nash_equilibrium",
+    "target": "isMixedNashEq_of_pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_mixed_nash_equilibrium",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_mixed_nash_equilibrium",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "toStrategicGame_isZeroSum",
+    "target": "IsZeroSum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "toStrategicGame_isZeroSum",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "toStrategicGame_isZeroSum",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "toStrategicGame_isZeroSum",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_of_pure",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_of_pure",
+    "target": "wsum_le_wsum"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_of_pure",
+    "target": "wsum_const"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_of_pure",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_of_pure",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "value_eq_minimax",
+    "target": "minimax_theorem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "IsSaddlePoint",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "IsSaddlePoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "lamB.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "lam.aux.bddAbove"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "value_eq_minimax"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "muB.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "mu.aux.bddBelow"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "optimal_pairs_iff_saddle_point",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "exists_mixed_nash_equilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "expectedPayoff_toStrategicGame_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "deviateMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "pureToMixed"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "exists_strategic_game_nash_equilibrium",
+    "target": "expectedPayoff_toStrategicGame_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_row",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "optimalRowStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "optimalColumnStrategies"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "mem_optimalRowStrategies_iff_E_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "mem_optimalColumnStrategies_iff_E_le"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "wsum_pure_apply"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "support_complementarity_column",
+    "target": "wsum_wsum_comm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_one",
+    "target": "MixedProfile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_one",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_one",
+    "target": "expectedPayoff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "expectedPayoff_toStrategicGame_one",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_iff_isSaddlePoint",
+    "target": "IsMixedNashEq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "source": "isMixedNashEq_iff_isSaddlePoint",
+    "target": "IsSaddlePoint"
+  }
+]

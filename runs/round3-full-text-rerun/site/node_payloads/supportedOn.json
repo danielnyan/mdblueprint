@@ -1,0 +1,78 @@
+{
+  "id": "supportedOn",
+  "title": "supportedOn",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/supportedOn.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>supportedOn</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef supportedOn (items : List I) (x : BinaryAllocation I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "dpSolveList-optimal",
+      "title": "dpSolveList_optimal",
+      "href": "misc/dpSolveList-optimal.html"
+    },
+    {
+      "id": "dpSolveList-supportedOn",
+      "title": "dpSolveList_supportedOn",
+      "href": "misc/dpSolveList-supportedOn.html"
+    },
+    {
+      "id": "eq-false-of-supportedOn-of-not-mem",
+      "title": "eq_false_of_supportedOn_of_not_mem",
+      "href": "misc/eq-false-of-supportedOn-of-not-mem.html"
+    },
+    {
+      "id": "integralGreedyList-supportedOn",
+      "title": "integralGreedyList_supportedOn",
+      "href": "misc/integralGreedyList-supportedOn.html"
+    },
+    {
+      "id": "supportedOn-nil-iff",
+      "title": "supportedOn_nil_iff",
+      "href": "misc/supportedOn-nil-iff.html"
+    },
+    {
+      "id": "supportedOn-tail-of-eq-false",
+      "title": "supportedOn_tail_of_eq_false",
+      "href": "misc/supportedOn-tail-of-eq-false.html"
+    },
+    {
+      "id": "supportedOn-update-false",
+      "title": "supportedOn_update_false",
+      "href": "misc/supportedOn-update-false.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "supportedOn",
+      "display_name": "supportedOn",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

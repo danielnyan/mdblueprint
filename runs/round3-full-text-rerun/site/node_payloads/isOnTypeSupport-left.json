@@ -1,0 +1,42 @@
+{
+  "id": "isOnTypeSupport-left",
+  "title": "isOnTypeSupport_left",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isOnTypeSupport-left.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isOnTypeSupport_left</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isOnTypeSupport_left (A : BayesianSingleItemAuction I) {i : I} {v : ℝ} (hv : A.IsOnTypeSupport i v) : 0 ≤ v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsOnTypeSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsOnTypeSupport",
+      "title": "IsOnTypeSupport",
+      "href": "misc/IsOnTypeSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isOnTypeSupport_left",
+      "display_name": "isOnTypeSupport_left",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

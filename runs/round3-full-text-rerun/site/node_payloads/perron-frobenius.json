@@ -1,0 +1,42 @@
+{
+  "id": "perron-frobenius",
+  "title": "perron_frobenius",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/perron-frobenius.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>perron_frobenius</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem perron_frobenius (M : Fin n → Fin n → ℝ) (hM_pos : ∀ i j, 0 &lt; M i j) : ∃ (x y : stdSimplex ℝ (Fin n)) (lam : ℝ), 0 &lt; lam ∧ (∀ i, 0 &lt; x.val i) ∧ (∀ i, 0 &lt; y.val i) ∧ (∀ j, wsum x (fun i =&gt; M i j) = lam * x.val j) ∧ (∀ i, wsum y (M i) = lam * y.val i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositive</li>\n<li>loomis_theorem</li>\n<li>By_pos</li>\n<li>xB_pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "perron_frobenius",
+      "display_name": "perron_frobenius",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

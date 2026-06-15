@@ -1,0 +1,62 @@
+{
+  "id": "RandomizedSubmodularWelfareAlgorithm-IsPolynomial",
+  "title": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RandomizedSubmodularWelfareAlgorithm-IsPolynomial.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RandomizedSubmodularWelfareAlgorithm.IsPolynomial</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef RandomizedSubmodularWelfareAlgorithm.IsPolynomial {I Ω G : Type*} [Fintype I] [Fintype Ω] [DecidableEq G] {M : Finset G} [Fintype (BundlePartitionAllocation I M)] [Nonempty (BundlePartitionAllocation I M)] (_alg : RandomizedSubmodularWelfareAlgorithm I Ω M) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BundlePartitionAllocation</li>\n<li>PolynomialTimeInAgentsItems</li>\n<li>PolynomialBundleOracleQueryBound</li>\n<li>Profile</li>\n<li>Valuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BundlePartitionAllocation",
+      "title": "BundlePartitionAllocation",
+      "href": "misc/BundlePartitionAllocation.html"
+    },
+    {
+      "id": "PolynomialTimeInAgentsItems",
+      "title": "PolynomialTimeInAgentsItems",
+      "href": "misc/PolynomialTimeInAgentsItems.html"
+    },
+    {
+      "id": "PolynomialBundleOracleQueryBound",
+      "title": "PolynomialBundleOracleQueryBound",
+      "href": "misc/PolynomialBundleOracleQueryBound.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+      "display_name": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "gs_bijective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "IsAchievable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "final_all_women_hold"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "holdinv_finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "finalState_NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "galeShapley_isProposingOptimal",
+    "target": "final_holding_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "finalState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "daRun_NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "initState"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "holdinv_init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "initState_injective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "finalState_NoAchievableRejection",
+    "target": "initState_NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "IsAchievable",
+    "target": "IsStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "HoldInv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "IsAchievable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "isFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "propTarget"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "pref_list_mem"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "isFree_iff"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "daStep_holding"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "daStep_nc_free"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daStep_NoAchievableRejection",
+    "target": "daStep_nc_held"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "gs_partner_isAchievable",
+    "target": "IsAchievable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "gs_partner_isAchievable",
+    "target": "gs_bijective"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "gs_partner_isAchievable",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "gs_partner_isAchievable",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "gs_partner_isAchievable",
+    "target": "galeShapley_isStable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "NoAchievableRejection",
+    "target": "IsAchievable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daRun_NoAchievableRejection",
+    "target": "HoldInv"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daRun_NoAchievableRejection",
+    "target": "NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daRun_NoAchievableRejection",
+    "target": "holdinv_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daRun_NoAchievableRejection",
+    "target": "holding_injective_step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "daRun_NoAchievableRejection",
+    "target": "daStep_NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "initState_NoAchievableRejection",
+    "target": "NoAchievableRejection"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "source": "initState_NoAchievableRejection",
+    "target": "initState"
+  }
+]

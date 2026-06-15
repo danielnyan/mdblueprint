@@ -1,0 +1,57 @@
+{
+  "id": "isSource-not-mem-envyCycle",
+  "title": "isSource_not_mem_envyCycle",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isSource-not-mem-envyCycle.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isSource_not_mem_envyCycle</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma isSource_not_mem_envyCycle (v : Valuation N G) (A : Allocation N G) (i : N) (hs : isSource v A i) (l : List N) (hcyc : isEnvyCycle v A l) : i ∉ l</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>isSource</li>\n<li>isEnvyCycle</li>\n<li>Profile.ext</li>\n<li>IsZeroSum.head</li>\n<li>Subtree.head</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "isSource",
+      "title": "isSource",
+      "href": "misc/isSource.html"
+    },
+    {
+      "id": "isEnvyCycle",
+      "title": "isEnvyCycle",
+      "href": "misc/isEnvyCycle.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isSource_not_mem_envyCycle",
+      "display_name": "isSource_not_mem_envyCycle",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,66 @@
+---
+id: RegularMyersonICIRAnalyticAssumptions-opt-identity
+title: RegularMyersonICIRAnalyticAssumptions.opt_identity
+kind: theorem
+status: staged
+lean:
+  module: EconCSLib.MechanismDesign.Auction.OptimalSingleItem
+  declarations:
+    - RegularMyersonICIRAnalyticAssumptions.opt_identity
+uses:
+  - IsRegular
+  - HasExpectedRevenueVirtualSurplusIdentity
+  - IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible
+  - IsIncentiveCompatible
+  - IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport
+  - IsIndividuallyRationalOnSupport
+  - virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular
+  - HasSameSellingEnvironment
+  - InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity
+  - PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity
+  - HasExpectedRevenueInterimPaymentIdentity
+  - RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity
+  - virtualSurplusMaximizingAuction_isFeasible
+  - InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity
+  - HasExpectedVirtualSurplusInterimIdentity
+  - RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity
+  - HasInterimPaymentFormula
+  - hasInterimPaymentFormula_of_isIncentiveCompatible
+  - RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic
+  - hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities
+  - hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula
+  - virtualSurplusMaximizingAuction_isZeroNormalized
+---
+
+# RegularMyersonICIRAnalyticAssumptions.opt_identity
+
+## Lean type
+
+```lean
+theorem RegularMyersonICIRAnalyticAssumptions.opt_identity [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (hA : A.IsRegular) : A.HasExpectedRevenueVirtualSurplusIdentity A.virtualSurplusMaximizingAuction
+```
+
+## Dependencies
+
+- IsRegular
+- HasExpectedRevenueVirtualSurplusIdentity
+- IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible
+- IsIncentiveCompatible
+- IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport
+- IsIndividuallyRationalOnSupport
+- virtualSurplusMaximizingAuction_isIncentiveCompatible_and_individuallyRationalOnSupport_of_isRegular
+- HasSameSellingEnvironment
+- InterimFubiniAnalyticAssumptions.hasExpectedRevenueInterimPaymentIdentity
+- PaymentInterimFubiniAssumptions.hasExpectedRevenueInterimPaymentIdentity
+- HasExpectedRevenueInterimPaymentIdentity
+- RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity
+- virtualSurplusMaximizingAuction_isFeasible
+- InterimFubiniAnalyticAssumptions.hasExpectedVirtualSurplusInterimIdentity
+- HasExpectedVirtualSurplusInterimIdentity
+- RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity
+- HasInterimPaymentFormula
+- hasInterimPaymentFormula_of_isIncentiveCompatible
+- RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic
+- hasExpectedRevenueVirtualSurplusIdentity_of_interim_identities
+- hasInterimPaymentVirtualSurplusIdentity_of_zeroNormalized_of_interimPaymentFormula
+- virtualSurplusMaximizingAuction_isZeroNormalized

@@ -1,0 +1,182 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "IsPositiveAffineOf.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "Indifferent.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "IVariant.refl"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.mono",
+    "target": "Survives.prev"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsRationalizable",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsRationalizable",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsRationalizable",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.isRationalizable",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.isRationalizable",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.isRationalizable",
+    "target": "IsRationalizable"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.isRationalizable",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.isRationalizable",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.prev",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.prev",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "Survives.prev",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsDominanceSolvable",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsDominanceSolvable",
+    "target": "IsNashEquilibrium.survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsDominanceSolvable",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.survives",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.survives",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.survives",
+    "target": "Survives"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.IESDS",
+    "source": "IsNashEquilibrium.survives",
+    "target": "deviate_self"
+  }
+]

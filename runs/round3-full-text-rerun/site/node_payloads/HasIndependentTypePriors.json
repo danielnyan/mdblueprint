@@ -1,0 +1,112 @@
+{
+  "id": "HasIndependentTypePriors",
+  "title": "HasIndependentTypePriors",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasIndependentTypePriors.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasIndependentTypePriors</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasIndependentTypePriors [Fintype I] [DecidableEq I] (A : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "integrable-comp-eval-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integrable-comp-eval-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integrable-comp-eval-prior-of-hasIndependentTypePriors",
+      "title": "integrable_comp_eval_prior_of_hasIndependentTypePriors",
+      "href": "misc/integrable-comp-eval-prior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors",
+      "title": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "href": "misc/integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors",
+      "title": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+      "href": "misc/integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-comp-eval-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-comp-eval-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-comp-eval-prior-of-hasIndependentTypePriors",
+      "title": "integral_comp_eval_prior_of_hasIndependentTypePriors",
+      "href": "misc/integral-comp-eval-prior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-prior-eq-integral-typeMeasure-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-prior-eq-integral-typeMeasure-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-prior-eq-integral-typeMeasure-opponentProductPrior-of-hasIndependentTypePriors",
+      "title": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-prior-eq-integral-typeMeasure-opponentProductPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "interimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/interimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "opponentPrior-map-eval-of-hasIndependentTypePriors",
+      "title": "opponentPrior_map_eval_of_hasIndependentTypePriors",
+      "href": "misc/opponentPrior-map-eval-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "paymentInterimFubiniAssumptions-of-independentTypePriors",
+      "title": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+      "href": "misc/paymentInterimFubiniAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "prior-map-eval-of-hasIndependentTypePriors",
+      "title": "prior_map_eval_of_hasIndependentTypePriors",
+      "href": "misc/prior-map-eval-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "prior-map-profileSplitMeasurableEquiv-of-hasIndependentTypePriors",
+      "title": "prior_map_profileSplitMeasurableEquiv_of_hasIndependentTypePriors",
+      "href": "misc/prior-map-profileSplitMeasurableEquiv-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasIndependentTypePriors",
+      "display_name": "HasIndependentTypePriors",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

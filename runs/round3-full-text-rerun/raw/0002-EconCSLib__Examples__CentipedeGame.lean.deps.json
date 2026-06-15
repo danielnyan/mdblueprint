@@ -1,0 +1,236 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2080",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2080",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2080",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_nash_at",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_nash_at",
+    "target": "IsNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_nash_at",
+    "target": "centipedePrefixTree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_nash_at",
+    "target": "centipedePrefix_has_spe_on"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_nash_at",
+    "target": "IsSubgamePerfectOn.toNashAt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_spe_on",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_spe_on",
+    "target": "IsSubgamePerfectOn"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_spe_on",
+    "target": "centipedePrefixTree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefix_has_spe_on",
+    "target": "Kuhn_exists_SPE_on"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2081",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2081",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipede",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2082",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2082",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2080S",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2080S",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2083",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2083",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2083",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2083",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "s\u2083",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "centipedePrefixArena"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "centipedePrefixTree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "IsZeroSum.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "Subtree.head"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena_extracts_tree",
+    "target": "isEmpty"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "CPState.step",
+    "target": "TTTState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "CPState.step",
+    "target": "CPState.isOver"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena",
+    "target": "IsReachable.next"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CentipedeGame",
+    "source": "centipedePrefixArena",
+    "target": "ReachedSubgamePayoffTransfer.init"
+  }
+]

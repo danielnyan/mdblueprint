@@ -1,0 +1,78 @@
+{
+  "id": "IsSubgamePerfect",
+  "title": "IsSubgamePerfect",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsSubgamePerfect.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsSubgamePerfect</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsSubgamePerfect (σ : Strategy N U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IVariant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsSubgamePerfect-toNE",
+      "title": "IsSubgamePerfect.toNE",
+      "href": "misc/IsSubgamePerfect-toNE.html"
+    },
+    {
+      "id": "IsSubgamePerfect-toSubgamePerfectOn",
+      "title": "IsSubgamePerfect.toSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfect-toSubgamePerfectOn.html"
+    },
+    {
+      "id": "Kuhn-exists-SPE",
+      "title": "Kuhn_exists_SPE",
+      "href": "misc/Kuhn-exists-SPE.html"
+    },
+    {
+      "id": "candidateChoice-has-spe",
+      "title": "candidateChoice_has_spe",
+      "href": "misc/candidateChoice-has-spe.html"
+    },
+    {
+      "id": "optStrategy-isSubgamePerfect",
+      "title": "optStrategy_isSubgamePerfect",
+      "href": "misc/optStrategy-isSubgamePerfect.html"
+    },
+    {
+      "id": "sample-zero-sum",
+      "title": "sample_zero_sum",
+      "href": "misc/sample-zero-sum.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsSubgamePerfect",
+      "display_name": "IsSubgamePerfect",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

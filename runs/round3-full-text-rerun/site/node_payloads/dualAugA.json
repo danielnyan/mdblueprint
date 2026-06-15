@@ -1,0 +1,58 @@
+{
+  "id": "dualAugA",
+  "title": "dualAugA",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/dualAugA.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>dualAugA</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef dualAugA (A : I → Fin n → 𝕜) : DualAugRow I n → Fin n → 𝕜 | Sum.inl i, j =&gt; A i j | Sum.inr j', j =&gt; if j = j' then 1 else 0 /-- Augmented RHS. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>DualAugRow</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "DualAugRow",
+      "title": "DualAugRow",
+      "href": "misc/DualAugRow.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "dualAugB",
+      "title": "dualAugB",
+      "href": "misc/dualAugB.html"
+    },
+    {
+      "id": "isFeasible-dualAug-iff",
+      "title": "isFeasible_dualAug_iff",
+      "href": "misc/isFeasible-dualAug-iff.html"
+    },
+    {
+      "id": "lp-strong-duality",
+      "title": "lp_strong_duality",
+      "href": "misc/lp-strong-duality.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "dualAugA",
+      "display_name": "dualAugA",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

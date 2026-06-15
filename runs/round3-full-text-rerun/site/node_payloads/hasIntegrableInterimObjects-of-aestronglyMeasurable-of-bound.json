@@ -1,0 +1,42 @@
+{
+  "id": "hasIntegrableInterimObjects-of-aestronglyMeasurable-of-bound",
+  "title": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasIntegrableInterimObjects-of-aestronglyMeasurable-of-bound.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound (A : BayesianSingleItemAuction I) (halloc_meas : ∀ i z_i, AEStronglyMeasurable (fun t =&gt; A.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) (hpay_meas : ∀ i z_i, AEStronglyMeasurable (fun t =&gt; A.interimPaymentIntegrand i z_i t) (A.opponentPrior i)) (halloc_bound : ∀ i z_i, ∃ C : ℝ, ∀ᵐ t ∂A.opponentPrior i, ‖A.interimAllocationIntegrand i z_i t‖ ≤ C) (hpay_bound : ∀ i z_i, ∃ C : ℝ, ∀ᵐ t ∂A.opponentPrior i, ‖A.interimPaymentIntegrand i z_i t‖ ≤ C) : A.HasIntegrableInterimObjects</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIntegrableInterimObjects</li>\n<li>hasIntegrableInterimAllocation_of_aestronglyMeasurable_of_bound</li>\n<li>hasIntegrableInterimPayment_of_aestronglyMeasurable_of_bound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIntegrableInterimObjects",
+      "title": "HasIntegrableInterimObjects",
+      "href": "misc/HasIntegrableInterimObjects.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+      "display_name": "hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

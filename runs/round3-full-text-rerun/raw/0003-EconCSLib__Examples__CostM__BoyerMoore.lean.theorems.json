@@ -1,0 +1,61 @@
+[
+  {
+    "dependencies": [
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "name": "majority",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+    "type": "def majority : List A \u2192 CostM Cells (Option A) | [] => pure none | x :: xs => do \u2713[Cells.alloc 2] do let result \u2190 loop x 1 xs \u2713[Cells.free 2] pure result where /-- Single-pass loop carrying the current candidate and counter as parameters \u2014 no allocation, no ticks. -/ loop (cand : A) (cnt : \u2115) : List A \u2192 CostM Cells (Option A) | [] => pure (some cand) | y :: ys => if y = cand then loop cand (cnt + 1) ys else if cnt = 0 then loop y 1 ys else loop cand (cnt - 1) ys /-- The loop has zero cost: it overwrites the two slots without allocating. -/"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "name": "loop_cost",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+    "type": "theorem loop_cost (cand : A) (cnt : \u2115) (xs : List A) : (majority.loop cand cnt xs).cost = 0"
+  },
+  {
+    "dependencies": [
+      "loop_cost"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "name": "majority_peak_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 84
+      },
+      "start": {
+        "column": 1,
+        "line": 84
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+    "type": "theorem majority_peak_le (xs : List A) : (majority xs).cost.peak \u2264 2"
+  }
+]

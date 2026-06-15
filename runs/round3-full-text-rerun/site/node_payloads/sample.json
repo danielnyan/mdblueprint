@@ -1,0 +1,47 @@
+{
+  "id": "sample",
+  "title": "sample",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sample.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sample</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef sample : GameTree Player ℚ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>zeroSumLeaf</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    },
+    {
+      "id": "zeroSumLeaf",
+      "title": "zeroSumLeaf",
+      "href": "misc/zeroSumLeaf.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sample",
+      "display_name": "sample",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "inBox_iff_inSet_Icc",
+    "target": "InBox"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "inBox_iff_inSet_Icc",
+    "target": "InSet"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_argmaxBid_bid",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_argmaxBid_bid",
+    "target": "maxBidExcluding_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_argmaxBid_bid",
+    "target": "argmaxBid_eq_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_argmaxBid_bid",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_argmaxBid_bid",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "eq_argmaxBid_of_strict_max",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "eq_argmaxBid_of_strict_max",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "eq_argmaxBid_of_strict_max",
+    "target": "bid_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "exists_maxBid",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "exists_maxBid",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "exists_maxBid",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "IsFeasible",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "IsFeasible",
+    "target": "CombinatorialAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "IsFeasible",
+    "target": "MultiItemBundle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "IsFeasible",
+    "target": "toFinset"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "target": "maxBidExcluding_le_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "target": "argmaxBid_eq_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_eq_maxBid_of_not_argmax",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "argmaxBid_eq_maxBid",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "argmaxBid_eq_maxBid",
+    "target": "exists_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "bid_le_maxBid",
+    "target": "argmaxBid_eq_maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "maxBidExcluding_le_maxBid",
+    "target": "maxBid"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "CombinatorialAllocation",
+    "target": "MultiItemBundle"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.AuctionBasic",
+    "source": "toFinset",
+    "target": "MultiItemBundle"
+  }
+]

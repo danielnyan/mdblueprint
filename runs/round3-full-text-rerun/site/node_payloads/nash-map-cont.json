@@ -1,0 +1,36 @@
+{
+  "id": "nash-map-cont",
+  "title": "nash_map_cont",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/nash-map-cont.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>nash_map_cont</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem nash_map_cont : Continuous (nash_map G)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>colRatio.continuous</li>\n<li>lamB.aux.continuous</li>\n<li>rowRatio.continuous</li>\n<li>lam.aux.continuous</li>\n<li>muB.aux.continuous</li>\n<li>mu.aux.continuous</li>\n<li>nash_map</li>\n<li>one_le_sum_g</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "nash_map_cont",
+      "display_name": "nash_map_cont",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "lp-strong-duality",
+  "title": "lp_strong_duality",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lp-strong-duality.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lp_strong_duality</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lp_strong_duality (A : I → Fin n → 𝕜) (b : I → 𝕜) (c : Fin n → 𝕜) (d : 𝕜) (hP_feas : PrimalFeasible A b) (hP_bound : ∀ x : Fin n → 𝕜, (∀ i, b i ≤ ∑ j, A i j * x j) → (∀ j, 0 ≤ x j) → d ≤ ∑ j, c j * x j) : ∃ u : I → 𝕜, DualFeasible A c u ∧ d ≤ ∑ i, u i * b i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>PrimalFeasible</li>\n<li>DualFeasible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>dualAugA</li>\n<li>dualAugB</li>\n<li>isFeasible_dualAug_iff</li>\n<li>farkas_lemma</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "PrimalFeasible",
+      "title": "PrimalFeasible",
+      "href": "misc/PrimalFeasible.html"
+    },
+    {
+      "id": "DualFeasible",
+      "title": "DualFeasible",
+      "href": "misc/DualFeasible.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "dualAugA",
+      "title": "dualAugA",
+      "href": "misc/dualAugA.html"
+    },
+    {
+      "id": "dualAugB",
+      "title": "dualAugB",
+      "href": "misc/dualAugB.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lp_strong_duality",
+      "display_name": "lp_strong_duality",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

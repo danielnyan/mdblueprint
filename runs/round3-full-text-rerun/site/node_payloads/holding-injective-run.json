@@ -1,0 +1,36 @@
+{
+  "id": "holding-injective-run",
+  "title": "holding_injective_run",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/holding-injective-run.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>holding_injective_run</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma holding_injective_run (fuel : ℕ) (s : DAState n) (hinj : ∀ j1 j2 : Fin n, ∀ i : Fin n, s.holding j1 = some i → s.holding j2 = some i → j1 = j2) : ∀ j1 j2 : Fin n, ∀ i : Fin n, (daRun w m fuel s).holding j1 = some i → (daRun w m fuel s).holding j2 = some i → j1 = j2</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>holding_injective_step</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "holding_injective_run",
+      "display_name": "holding_injective_run",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

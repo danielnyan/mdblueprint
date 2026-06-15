@@ -1,0 +1,206 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_isEnvyFree",
+    "target": "IsFairCutPoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_isEnvyFree",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_isEnvyFree",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_isEnvyFree",
+    "target": "cutter_isEnvyFree_of_fair"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_isEnvyFree",
+    "target": "chooser_isEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseRule_isEnvyFree",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseRule_isEnvyFree",
+    "target": "cutAndChoose_isEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseRule_isEnvyFree",
+    "target": "fairCutPoint_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "fairCutPoint_exists",
+    "target": "IsFairCutPoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "fairCutPoint_exists",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "fairCutPoint_exists",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "fairCutPoint_exists",
+    "target": "cut_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "cutAndChooseAlloc_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChooseAlloc_isAllocation",
+    "target": "cutAndChooseAlloc_zero"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "chooser_isEnvyFree",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutter_isEnvyFree_of_fair",
+    "target": "IsFairCutPoint"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutter_isEnvyFree_of_fair",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutter_isEnvyFree_of_fair",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutter_isEnvyFree_of_fair",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "fairCutPoint_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "cutAndChooseAlloc_isAllocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_ef_exists",
+    "target": "cutAndChoose_isEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_exists_envyFree_allocation",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_exists_envyFree_allocation",
+    "target": "IsEnvyFree"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_exists_envyFree_allocation",
+    "target": "cutAndChoose_ef_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_exists_envyFree_allocation",
+    "target": "fairCutPoint_exists"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.CutAndChoose",
+    "source": "cutAndChoose_exists_envyFree_allocation",
+    "target": "cutAndChooseAlloc_isAllocation"
+  }
+]

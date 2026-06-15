@@ -1,0 +1,108 @@
+{
+  "id": "restrictSubgame",
+  "title": "restrictSubgame",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/restrictSubgame.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>restrictSubgame</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef restrictSubgame {G : ExtensiveGame iota U} [(s : G.State) -&gt; Fintype (G.Action s)] (beta : G.BehaviorProfile) (root : G.State) : (G.subgameAt root).BehaviorProfile</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BehaviorProfile</li>\n<li>subgameAt</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BehaviorProfile",
+      "title": "BehaviorProfile",
+      "href": "misc/BehaviorProfile.html"
+    },
+    {
+      "id": "subgameAt",
+      "title": "subgameAt",
+      "href": "misc/subgameAt.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-init",
+      "title": "IsBehaviorNashEq.restrictSubgame_init",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-init.html"
+    },
+    {
+      "id": "IsBehaviorNashEq-restrictSubgame-of-reachProb-pos",
+      "title": "IsBehaviorNashEq.restrictSubgame_of_reachProb_pos",
+      "href": "misc/IsBehaviorNashEq-restrictSubgame-of-reachProb-pos.html"
+    },
+    {
+      "id": "IsBehaviorSubgamePerfect",
+      "title": "IsBehaviorSubgamePerfect",
+      "href": "misc/IsBehaviorSubgamePerfect.html"
+    },
+    {
+      "id": "ReachedSubgamePayoffTransfer",
+      "title": "ReachedSubgamePayoffTransfer",
+      "href": "misc/ReachedSubgamePayoffTransfer.html"
+    },
+    {
+      "id": "actionProb-restrictSubgame",
+      "title": "actionProb_restrictSubgame",
+      "href": "misc/actionProb-restrictSubgame.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-deviate-liftSubgame",
+      "title": "expectedPayoff_restrictSubgame_deviate_liftSubgame",
+      "href": "misc/expectedPayoff-restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "expectedPayoff-restrictSubgame-init",
+      "title": "expectedPayoff_restrictSubgame_init",
+      "href": "misc/expectedPayoff-restrictSubgame-init.html"
+    },
+    {
+      "id": "expectedPayoffFrom-restrictSubgame",
+      "title": "expectedPayoffFrom_restrictSubgame",
+      "href": "misc/expectedPayoffFrom-restrictSubgame.html"
+    },
+    {
+      "id": "restrictSubgame-deviate",
+      "title": "restrictSubgame_deviate",
+      "href": "misc/restrictSubgame-deviate.html"
+    },
+    {
+      "id": "restrictSubgame-deviate-liftSubgame",
+      "title": "restrictSubgame_deviate_liftSubgame",
+      "href": "misc/restrictSubgame-deviate-liftSubgame.html"
+    },
+    {
+      "id": "restrictSubgame-eq-self",
+      "title": "restrictSubgame_eq_self",
+      "href": "misc/restrictSubgame-eq-self.html"
+    },
+    {
+      "id": "restrictSubgame-liftSubgame",
+      "title": "restrictSubgame_liftSubgame",
+      "href": "misc/restrictSubgame-liftSubgame.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "restrictSubgame",
+      "display_name": "restrictSubgame",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable",
+  "title": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (hIR : B.IsIndividuallyRationalOnSupport) : ∀ i : I, IntervalIntegrable (fun v =&gt; B.interimExpectedPayment i v * A.typeDensity i v) volume 0 (A.typeData.omega i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable</li>\n<li>typeDensity_ennreal_ofReal_aemeasurable</li>\n<li>EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae</li>\n<li>RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+      "display_name": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

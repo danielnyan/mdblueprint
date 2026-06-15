@@ -1,0 +1,46 @@
+[
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/best_response.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/dominant_implies_nash.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/nash_equilibrium.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/prisoners_dilemma.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/strategic_game.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/strategy_profile.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/strictly_dominates.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/unilateral_deviation.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/weakly_dominant_strategy.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean"
+  },
+  {
+    "node_file": "docs/knowledge/nodes/strategic_games/weakly_dominates.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Dominance.lean"
+  },
+  {
+    "node_file": "docs/knowledge/staged/mixed_strategy.md",
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/MixedStrategy.lean"
+  }
+]

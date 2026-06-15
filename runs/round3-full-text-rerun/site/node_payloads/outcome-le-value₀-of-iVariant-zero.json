@@ -1,0 +1,47 @@
+{
+  "id": "outcome-le-value₀-of-iVariant-zero",
+  "title": "outcome_le_value₀_of_iVariant_zero",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/outcome-le-value₀-of-iVariant-zero.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>outcome_le_value₀_of_iVariant_zero</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem outcome_le_value₀_of_iVariant_zero (g : GameTree (Fin 2) ℚ) {σ' : Strategy (Fin 2) ℚ} (hiv : IVariant (0 : Fin 2) optStrategy σ') : outcome σ' g 0 ≤ value₀ g</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IVariant</li>\n<li>optStrategy_isSubgamePerfect</li>\n<li>outcome_optStrategy_eq_value</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "outcome_le_value₀_of_iVariant_zero",
+      "display_name": "outcome_le_value₀_of_iVariant_zero",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "final-holding-injective",
+  "title": "final_holding_injective",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/final-holding-injective.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>final_holding_injective</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma final_holding_injective : ∀ j1 j2 : Fin n, ∀ i : Fin n, (finalState w m).holding j1 = some i → (finalState w m).holding j2 = some i → j1 = j2</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>finalState</li>\n<li>holding_injective_run</li>\n<li>initState</li>\n<li>initState_injective</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "finalState",
+      "title": "finalState",
+      "href": "misc/finalState.html"
+    },
+    {
+      "id": "initState",
+      "title": "initState",
+      "href": "misc/initState.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "final_holding_injective",
+      "display_name": "final_holding_injective",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

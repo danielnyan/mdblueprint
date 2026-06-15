@@ -1,0 +1,47 @@
+{
+  "id": "isImplementable-of-isMonotone",
+  "title": "isImplementable_of_isMonotone",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isImplementable-of-isMonotone.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isImplementable_of_isMonotone</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isImplementable_of_isMonotone [DecidableEq I] {x : (I → ℝ) → I → ℝ} (hx : IsMonotone ({ allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsMonotone</li>\n<li>IsImplementable</li>\n<li>withMyersonPayment_isDSIC_of_isMonotone</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsMonotone",
+      "title": "IsMonotone",
+      "href": "misc/IsMonotone.html"
+    },
+    {
+      "id": "IsImplementable",
+      "title": "IsImplementable",
+      "href": "misc/IsImplementable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isImplementable_of_isMonotone",
+      "display_name": "isImplementable_of_isMonotone",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

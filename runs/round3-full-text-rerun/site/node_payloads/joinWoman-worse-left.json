@@ -1,0 +1,36 @@
+{
+  "id": "joinWoman-worse-left",
+  "title": "joinWoman_worse_left",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/joinWoman-worse-left.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>joinWoman_worse_left</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma joinWoman_worse_left {j i : Fin n} (hji : joinWoman μ ν hμ hν j = i) (hμji : mPartner μ hμ i = j) : (w.prefs i).idxOf (mPartner ν hν i) ≤ (w.prefs i).idxOf j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>wPartner_eq_iff</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n<li>pref_list_mem</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>opposed_preferences</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "joinWoman_worse_left",
+      "display_name": "joinWoman_worse_left",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

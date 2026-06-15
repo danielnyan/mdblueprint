@@ -1,0 +1,47 @@
+{
+  "id": "isOnTypeProfileSupport-apply",
+  "title": "isOnTypeProfileSupport_apply",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isOnTypeProfileSupport-apply.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isOnTypeProfileSupport_apply</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isOnTypeProfileSupport_apply (A : BayesianSingleItemAuction I) {t : I → ℝ} (ht : A.IsOnTypeProfileSupport t) (i : I) : A.IsOnTypeSupport i (t i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsOnTypeProfileSupport</li>\n<li>IsOnTypeSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsOnTypeProfileSupport",
+      "title": "IsOnTypeProfileSupport",
+      "href": "misc/IsOnTypeProfileSupport.html"
+    },
+    {
+      "id": "IsOnTypeSupport",
+      "title": "IsOnTypeSupport",
+      "href": "misc/IsOnTypeSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isOnTypeProfileSupport_apply",
+      "display_name": "isOnTypeProfileSupport_apply",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

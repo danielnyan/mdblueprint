@@ -1,0 +1,67 @@
+{
+  "id": "fractionalSocialWelfare-realBidOfNat-binaryToAllocation",
+  "title": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/fractionalSocialWelfare-realBidOfNat-binaryToAllocation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>fractionalSocialWelfare_realBidOfNat_binaryToAllocation</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma fractionalSocialWelfare_realBidOfNat_binaryToAllocation (b : I → Nat) (x : BinaryAllocation I) : fractionalSocialWelfare (realBidOfNat b) (binaryToAllocation x) = natBinarySocialWelfare b x</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>fractionalSocialWelfare</li>\n<li>realBidOfNat</li>\n<li>binaryToAllocation</li>\n<li>natBinarySocialWelfare</li>\n<li>natAuctionData</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "fractionalSocialWelfare",
+      "title": "fractionalSocialWelfare",
+      "href": "misc/fractionalSocialWelfare.html"
+    },
+    {
+      "id": "realBidOfNat",
+      "title": "realBidOfNat",
+      "href": "misc/realBidOfNat.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    },
+    {
+      "id": "natBinarySocialWelfare",
+      "title": "natBinarySocialWelfare",
+      "href": "misc/natBinarySocialWelfare.html"
+    },
+    {
+      "id": "natAuctionData",
+      "title": "natAuctionData",
+      "href": "misc/natAuctionData.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+      "display_name": "fractionalSocialWelfare_realBidOfNat_binaryToAllocation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+    "source": "StrategyProfile",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Strategy",
+    "source": "StrategyProfile.actionAt",
+    "target": "StrategyProfile"
+  }
+]

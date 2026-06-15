@@ -1,0 +1,234 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "IsAlphaMMS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 121
+      },
+      "start": {
+        "column": 1,
+        "line": 121
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "def IsAlphaMMS [Fintype N] [DecidableEq G] (\u03b1 : \u211d) (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "iInf_partition_le_mmsValue",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 140
+      },
+      "start": {
+        "column": 1,
+        "line": 140
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "lemma iInf_partition_le_mmsValue (v : Valuation N G) (allGoods : Finset G) (i : N) (B : Allocation N G) (hB : IsAllocation allGoods B) (hbdd : BddAbove (Set.range fun X : {A : Allocation N G // IsAllocation allGoods A} => iInf fun j : N => v.val i (X.val j))) : iInf (fun j : N => v.val i (B j)) \u2264 mmsValue v allGoods i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "mmsValue_le_of_forall",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "lemma mmsValue_le_of_forall (v : Valuation N G) (allGoods : Finset G) (i : N) (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A}) (ub : \u211d) (h : \u2200 B : Allocation N G, IsAllocation allGoods B \u2192 iInf (fun j : N => v.val i (B j)) \u2264 ub) : mmsValue v allGoods i \u2264 ub"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "mmsValue_nonneg",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 168
+      },
+      "start": {
+        "column": 1,
+        "line": 168
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "lemma mmsValue_nonneg [Fintype G] (v : Valuation N G) (allGoods : Finset G) (i : N) (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A}) (hnonneg : \u2200 S : Finset G, 0 \u2264 v.val i S) : 0 \u2264 mmsValue v allGoods i"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "toValuation",
+      "mmsValue_le_of_forall"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "mmsValue_le_proportional_share_additive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 198
+      },
+      "start": {
+        "column": 1,
+        "line": 198
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "lemma mmsValue_le_proportional_share_additive (w : AdditiveValuation N G) (allGoods : Finset G) (i : N) (hne : Nonempty {A : Allocation N G // IsAllocation allGoods A}) : (Fintype.card N : \u211d) * mmsValue w.toValuation allGoods i \u2264 w.toValuation.val i allGoods"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsProportional.isMaxminShare",
+      "IsMaxminShare",
+      "IsMaxminShare.isAlphaMMS",
+      "IsAlphaMMS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "isMaxminShare_iff_isAlphaMMS_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 247
+      },
+      "start": {
+        "column": 1,
+        "line": 247
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "theorem isMaxminShare_iff_isAlphaMMS_one [Nonempty N] [Fintype G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) : IsMaxminShare v allGoods A \u2194 IsAlphaMMS 1 v allGoods A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsMaxminShare.isAlphaMMS",
+      "IsAlphaMMS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "isAlphaMMS_mono_alpha",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 294
+      },
+      "start": {
+        "column": 1,
+        "line": 294
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "theorem isAlphaMMS_mono_alpha (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) (\u03b1 \u03b2 : \u211d) (h\u03b2\u03b1 : \u03b2 \u2264 \u03b1) (hmms_nn : \u2200 i, 0 \u2264 mmsValue v allGoods i) (h\u03b1 : IsAlphaMMS \u03b1 v allGoods A) : IsAlphaMMS \u03b2 v allGoods A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsMaxminShare.isAlphaMMS",
+      "IsAlphaMMS"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "isAlphaMMS_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 308
+      },
+      "start": {
+        "column": 1,
+        "line": 308
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "theorem isAlphaMMS_zero (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) (hnonneg : \u2200 i S, 0 \u2264 v.val i S) : IsAlphaMMS 0 v allGoods A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsProportional.isMaxminShare",
+      "IsMaxminShare",
+      "IsAlphaMMS",
+      "isAlphaMMS_mono_alpha",
+      "isMaxminShare_iff_isAlphaMMS_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "IsMaxminShare.isAlphaMMS",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 318
+      },
+      "start": {
+        "column": 1,
+        "line": 318
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "theorem IsMaxminShare.isAlphaMMS [Nonempty N] [Fintype G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) (hMMS : IsMaxminShare v allGoods A) (\u03b1 : \u211d) (h\u03b1_le : \u03b1 \u2264 1) (hmms_nn : \u2200 i, 0 \u2264 mmsValue v allGoods i) : IsAlphaMMS \u03b1 v allGoods A"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsEnvyFree.isProportional",
+      "IsProportional",
+      "toValuation",
+      "IsMaxminShare.isAlphaMMS",
+      "IsAlphaMMS",
+      "IsProportional.isMaxminShare",
+      "IsMaxminShare"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.MMS",
+    "name": "IsProportional.isAlphaMMS_additive",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 344
+      },
+      "start": {
+        "column": 1,
+        "line": 344
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/MMS.lean",
+    "type": "theorem IsProportional.isAlphaMMS_additive [Nonempty N] [Fintype G] (w : AdditiveValuation N G) {allGoods : Finset G} {A : Allocation N G} (hne : Nonempty {A' : Allocation N G // IsAllocation allGoods A'}) (hProp : IsProportional (Fintype.card N) w.toValuation allGoods A) (\u03b1 : \u211d) (h\u03b1_le : \u03b1 \u2264 1) (hmms_nn : \u2200 i, 0 \u2264 mmsValue w.toValuation allGoods i) : IsAlphaMMS \u03b1 w.toValuation allGoods A"
+  }
+]

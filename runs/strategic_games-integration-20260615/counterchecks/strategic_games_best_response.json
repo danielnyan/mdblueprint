@@ -1,0 +1,64 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+      "source": "congr_payoff",
+      "target": "IsBestResponse"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Best Response\n\nA strategy $\\sigma_i$ is a best response for player $i$ to the profile $\\sigma$ if\nno unilateral deviation can improve $i$'s payoff:\n\n$$\\forall s'_i \\in S_i, \\quad u_i(\\sigma[i \\mapsto s'_i]) \\le u_i(\\sigma).$$",
+    "file_path": "/home/azureuser/mdblueprint-clean/docs/knowledge/nodes/strategic_games/best_response.md",
+    "id": "strategic_games.best_response",
+    "kind": "definition",
+    "lean": {
+      "declarations": [
+        "StrategicGame.IsBestResponse"
+      ],
+      "modules": [
+        "GameTheoryLib.StrategicGame.BestResponse"
+      ],
+      "repository": null
+    },
+    "status": "admitted",
+    "tags": [
+      "strategic-game",
+      "solution-concept"
+    ],
+    "title": "Best Response",
+    "uses": [
+      "strategic_games.unilateral_deviation"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def IsBestResponse (G : StrategicGame N U) (\u03c3 : G.Profile) (i : N) : Prop :=\n  \u2200 s' : G.strategy i, G.payoff (deviate \u03c3 i s') i \u2264 G.payoff \u03c3 i\n\nnamespace IsBestResponse\n\n/-- T1: Best response depends only on player `i`'s payoff column. -/\n",
+      "column": 1,
+      "end": 944,
+      "kind": "theorem",
+      "line": 24,
+      "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+      "name": "IsBestResponse",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+      "start": 705
+    },
+    {
+      "body": "theorem congr_payoff (G : StrategicGame N U) (\u03c3 : G.Profile) (i : N)\n    {payoff' : G.Profile \u2192 N \u2192 U}\n    (h : \u2200 \u03c4 : G.Profile, payoff' \u03c4 i = G.payoff \u03c4 i) :\n    IsBestResponse G \u03c3 i \u2194\n    IsBestResponse { G with payoff := payoff' } \u03c3 i := by\n  simp [IsBestResponse, h]\n\nend IsBestResponse\n",
+      "column": 1,
+      "end": 1235,
+      "kind": "theorem",
+      "line": 30,
+      "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+      "name": "congr_payoff",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+      "start": 944
+    }
+  ]
+}

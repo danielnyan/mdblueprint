@@ -1,0 +1,42 @@
+{
+  "id": "maxBidExcluding-eq-maxBid-of-not-argmax",
+  "title": "maxBidExcluding_eq_maxBid_of_not_argmax",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/maxBidExcluding-eq-maxBid-of-not-argmax.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>maxBidExcluding_eq_maxBid_of_not_argmax</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma maxBidExcluding_eq_maxBid_of_not_argmax {i : I} (h : i ≠ argmaxBid b) : maxBidExcluding b i = maxBid b</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>maxBid</li>\n<li>maxBidExcluding_le_maxBid</li>\n<li>argmaxBid_eq_maxBid</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "maxBid",
+      "title": "maxBid",
+      "href": "misc/maxBid.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "maxBidExcluding_eq_maxBid_of_not_argmax",
+      "display_name": "maxBidExcluding_eq_maxBid_of_not_argmax",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

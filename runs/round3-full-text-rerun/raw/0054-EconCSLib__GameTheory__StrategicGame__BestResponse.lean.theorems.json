@@ -1,0 +1,45 @@
+[
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "name": "IsBestResponse",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 24
+      },
+      "start": {
+        "column": 1,
+        "line": 24
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+    "type": "def IsBestResponse (G : StrategicGame N U) (\u03c3 : G.Profile) (i : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsWeaklyDominant.isBestResponse",
+      "IsBestResponse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.BestResponse",
+    "name": "congr_payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 30
+      },
+      "start": {
+        "column": 1,
+        "line": 30
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/BestResponse.lean",
+    "type": "theorem congr_payoff (G : StrategicGame N U) (\u03c3 : G.Profile) (i : N) {payoff' : G.Profile \u2192 N \u2192 U} (h : \u2200 \u03c4 : G.Profile, payoff' \u03c4 i = G.payoff \u03c4 i) : IsBestResponse G \u03c3 i \u2194 IsBestResponse { G with payoff"
+  }
+]

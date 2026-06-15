@@ -1,0 +1,52 @@
+{
+  "id": "HasIntervalIntegrableInterimAllocation",
+  "title": "HasIntervalIntegrableInterimAllocation",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasIntervalIntegrableInterimAllocation.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasIntervalIntegrableInterimAllocation</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasIntervalIntegrableInterimAllocation (A : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "hasInterimEnvelopeFormula-of-hasInterimEnvelopeDerivative",
+      "title": "hasInterimEnvelopeFormula_of_hasInterimEnvelopeDerivative",
+      "href": "misc/hasInterimEnvelopeFormula-of-hasInterimEnvelopeDerivative.html"
+    },
+    {
+      "id": "hasInterimPaymentFormula-of-hasInterimEnvelopeDerivative",
+      "title": "hasInterimPaymentFormula_of_hasInterimEnvelopeDerivative",
+      "href": "misc/hasInterimPaymentFormula-of-hasInterimEnvelopeDerivative.html"
+    },
+    {
+      "id": "hasIntervalIntegrableInterimAllocation-of-isIncentiveCompatible",
+      "title": "hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible",
+      "href": "misc/hasIntervalIntegrableInterimAllocation-of-isIncentiveCompatible.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasIntervalIntegrableInterimAllocation",
+      "display_name": "HasIntervalIntegrableInterimAllocation",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "TypeMeasureInterimFubiniAnalyticAssumptions-toInterimFubini",
+  "title": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/TypeMeasureInterimFubiniAnalyticAssumptions-toInterimFubini.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini [Fintype I] {A B : BayesianSingleItemAuction I} (h : A.TypeMeasureInterimFubiniAnalyticAssumptions B) : A.InterimFubiniAnalyticAssumptions B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>integral_typeMeasure_eq_intervalIntegral_mul</li>\n<li>typeDensity_measurable</li>\n<li>EnvelopeVirtualSurplusEnvironmentAssumptions.typeDensity_nonnegative_ae</li>\n<li>RegularMyersonICIRAnalyticAssumptions.typeDensity_nonnegative_ae</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+      "display_name": "TypeMeasureInterimFubiniAnalyticAssumptions.toInterimFubini",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

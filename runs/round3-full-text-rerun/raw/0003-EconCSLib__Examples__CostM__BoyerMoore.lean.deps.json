@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "source": "majority",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "source": "majority",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "source": "majority_peak_le",
+    "target": "loop_cost"
+  }
+]

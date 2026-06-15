@@ -1,0 +1,127 @@
+{
+  "id": "HasSameSellingEnvironment",
+  "title": "HasSameSellingEnvironment",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/HasSameSellingEnvironment.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>HasSameSellingEnvironment</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef HasSameSellingEnvironment (A B : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [
+    {
+      "id": "HasSameSellingEnvironment-opponentPrior-eq",
+      "title": "HasSameSellingEnvironment.opponentPrior_eq",
+      "href": "misc/HasSameSellingEnvironment-opponentPrior-eq.html"
+    },
+    {
+      "id": "HasSameSellingEnvironment-prior-eq",
+      "title": "HasSameSellingEnvironment.prior_eq",
+      "href": "misc/HasSameSellingEnvironment-prior-eq.html"
+    },
+    {
+      "id": "HasSameSellingEnvironment-typeData-eq",
+      "title": "HasSameSellingEnvironment.typeData_eq",
+      "href": "misc/HasSameSellingEnvironment-typeData-eq.html"
+    },
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "IsRevenueComparable",
+      "title": "IsRevenueComparable",
+      "href": "misc/IsRevenueComparable.html"
+    },
+    {
+      "id": "IsRevenueUpperBounded",
+      "title": "IsRevenueUpperBounded",
+      "href": "misc/IsRevenueUpperBounded.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-opt-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.opt_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-opt-identity.html"
+    },
+    {
+      "id": "integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors",
+      "title": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+      "href": "misc/integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "interimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/interimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "intervalIntegrable-interimAllocProb-mul-virtualValue-mul-typeDensity-of-profileSplit-integrable",
+      "title": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+      "href": "misc/intervalIntegrable-interimAllocProb-mul-virtualValue-mul-typeDensity-of-profileSplit-integrable.html"
+    },
+    {
+      "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "paymentInterimFubiniAssumptions-of-independentTypePriors",
+      "title": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+      "href": "misc/paymentInterimFubiniAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "HasSameSellingEnvironment",
+      "display_name": "HasSameSellingEnvironment",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,980 @@
+{
+  "kind": "mdblueprint-refactor-pack",
+  "mode": "admitted+staged",
+  "knowledge_root": "/home/azureuser/EconCSLib/docs/knowledge",
+  "target_id": "social_choice.fair_division.divisible.cardinal_instance",
+  "topic": null,
+  "allowed_inputs": [
+    "docs/knowledge/nodes/**/*.md",
+    "docs/knowledge/mdblueprint.yml",
+    "topics.md catalogs",
+    "deterministic graph/index data derived from loaded nodes",
+    "docs/knowledge/staged/**/*.md as loaded provisional graph nodes"
+  ],
+  "staged_policy": {
+    "included": true,
+    "graph_role": "loaded nodes for dependency existence, reachability, topic, duplicate/overlap, and formulation-impact analysis",
+    "admission_role": "staged nodes are not admitted truth and this pack does not propose promotion"
+  },
+  "forbidden_inputs": [
+    "source artifacts",
+    "internet",
+    "uncited model memory",
+    "generated graph/site artifacts as source of truth"
+  ],
+  "bounds": {
+    "ancestor_depth": 2,
+    "descendant_depth": 2,
+    "sibling_limit": 20,
+    "max_nodes": 60,
+    "selected_node_count": 30,
+    "truncated": false
+  },
+  "graph_diagnostics": [],
+  "focus": {
+    "direct_dependencies": [
+      "social_choice.fair_division.cardinal_instance",
+      "social_choice.fair_division.divisible.ordinal_instance",
+      "social_choice.fair_division.egalitarian_welfare",
+      "social_choice.fair_division.envy_free",
+      "social_choice.fair_division.proportional",
+      "social_choice.fair_division.utilitarian_welfare"
+    ],
+    "direct_dependents": [
+      "social_choice.fair_division.divisible.measure_instance"
+    ],
+    "transitive_ancestors": [
+      {
+        "node_id": "social_choice.fair_division.cardinal_instance",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.divisible.ordinal_instance",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.egalitarian_welfare",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.envy_free",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.proportional",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.utilitarian_welfare",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.allocation",
+        "distance": 2
+      },
+      {
+        "node_id": "social_choice.fair_division.share_instance",
+        "distance": 2
+      }
+    ],
+    "transitive_descendants": [
+      {
+        "node_id": "social_choice.fair_division.divisible.measure_instance",
+        "distance": 1
+      },
+      {
+        "node_id": "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+        "distance": 2
+      },
+      {
+        "node_id": "social_choice.fair_division.divisible.measure_instance_existence",
+        "distance": 2
+      }
+    ],
+    "sibling_topic_nodes": [
+      "social_choice.fair_division.allocation",
+      "social_choice.fair_division.cardinal_instance",
+      "social_choice.fair_division.cardinal_instance_wrappers",
+      "social_choice.fair_division.divisible.allocation",
+      "social_choice.fair_division.divisible.cake_valuation",
+      "social_choice.fair_division.divisible.cdf_continuous",
+      "social_choice.fair_division.divisible.chooser_envy_free",
+      "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "social_choice.fair_division.divisible.cut_exists",
+      "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "social_choice.fair_division.divisible.ds_step",
+      "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "social_choice.fair_division.divisible.ef_exists",
+      "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "social_choice.fair_division.divisible.ef_implies_proportional",
+      "social_choice.fair_division.divisible.envy_free"
+    ],
+    "topic_nodes": []
+  },
+  "formulation_impact": {
+    "review_recommended": true,
+    "reason": "Target has descendants; graph reachability is only a first-pass impact signal.",
+    "descendant_ids": [
+      "social_choice.fair_division.divisible.measure_instance",
+      "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+      "social_choice.fair_division.divisible.measure_instance_existence"
+    ]
+  },
+  "lint_findings": [
+    {
+      "level": "warning",
+      "node_id": "social_choice.fair_division.divisible.allocation",
+      "message": "near-duplicate of 'social_choice.fair_division.indivisible.allocation' (similarity 0.95)",
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/allocation.md",
+      "code": "LINT_FUZZY_DUP",
+      "related": [
+        "social_choice.fair_division.indivisible.allocation"
+      ]
+    },
+    {
+      "level": "warning",
+      "node_id": "social_choice.fair_division.divisible.cardinal_instance",
+      "message": "near-duplicate of 'social_choice.fair_division.divisible.ordinal_instance' (similarity 0.94)",
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cardinal_instance.md",
+      "code": "LINT_FUZZY_DUP",
+      "related": [
+        "social_choice.fair_division.divisible.ordinal_instance"
+      ]
+    },
+    {
+      "level": "warning",
+      "node_id": "social_choice.fair_division.divisible.cardinal_instance",
+      "message": "near-duplicate of 'social_choice.fair_division.indivisible.cardinal_instance' (similarity 0.96)",
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cardinal_instance.md",
+      "code": "LINT_FUZZY_DUP",
+      "related": [
+        "social_choice.fair_division.indivisible.cardinal_instance"
+      ]
+    },
+    {
+      "level": "warning",
+      "node_id": "social_choice.fair_division.divisible.ordinal_instance",
+      "message": "near-duplicate of 'social_choice.fair_division.indivisible.ordinal_instance' (similarity 0.96)",
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/ordinal_instance.md",
+      "code": "LINT_FUZZY_DUP",
+      "related": [
+        "social_choice.fair_division.indivisible.ordinal_instance"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "social_choice.fair_division.divisible.cardinal_instance",
+      "title": "Divisible Cardinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.ordinal_instance",
+        "social_choice.fair_division.cardinal_instance",
+        "social_choice.fair_division.envy_free",
+        "social_choice.fair_division.proportional",
+        "social_choice.fair_division.utilitarian_welfare",
+        "social_choice.fair_division.egalitarian_welfare"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.measure_instance"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cardinal_instance.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Divisible Cardinal Instance\n\nA *divisible cardinal instance* assigns each agent a real-valued utility\nfor every measurable cake piece:\n$$\n\\mathrm{utility} : N \\to \\mathrm{Set}\\ \\Omega \\to \\mathbb{R}.\n$$\n\nIn Lean: structure `SocialChoice.FairDivision.Divisible.CardinalInstance N Ω`.\n\n## Bridges\n\n- `toGenericCardinalInstance` — view as a generic real-valued cardinal\n  fair-division instance\n  ([[social_choice.fair_division.cardinal_instance]]) over share type\n  $\\mathrm{Set}\\ \\Omega$ and resource $\\mathrm{Set.univ}$.\n- `toShareInstance` — compose with `inducedSharePref` to get the\n  underlying divisible *ordinal* instance\n  ([[social_choice.fair_division.divisible.ordinal_instance]]).\n\n## Instance-keyed fairness and welfare\n\nA complete set of instance-keyed wrappers re-exports the generic\npredicates:\n\n- `IsEnvyFree A`, `IsProportional n A`, `IsEquitable A`,\n  `IsParetoOptimal A` — fairness / efficiency predicates pinned to the\n  current instance's utility and feasibility.\n- `utilitarianWelfare A`, `egalitarianWelfare A` — welfare aggregations\n  ([[social_choice.fair_division.utilitarian_welfare]],\n  [[social_choice.fair_division.egalitarian_welfare]]).\n\nAll wrappers are definitional passes through to the corresponding\ngeneric predicates with $I.\\mathrm{utility}$ and feasibility supplied\nfrom the instance.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Cardinal valuations in cake-cutting."
+    },
+    {
+      "id": "social_choice.fair_division.cardinal_instance",
+      "title": "Cardinal Fair-Division Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.share_instance"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance_wrappers",
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.cardinal_instance",
+        "social_choice.fair_division.utility_represents"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/cardinal_instance.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cardinal Fair-Division Instance\n\nA *cardinal fair-division instance* is the standard real-valued\nno-externality model: each agent assigns a real *utility* to every\ncandidate share.\n\nIn Lean: `SocialChoice.FairDivision.CardinalInstance N R S` with fields\n`resource : R`, `feasible : Allocation N S → Prop`, and\n`utility : N → S → ℝ`.\n\n## Induced share preference\n\nThe natural ordinal preference associated with $u_i$ ranks shares by\nutility — *higher utility is weakly preferred*:\n$$\ns \\preceq_i t \\iff u_i(s) \\le u_i(t).\n$$\n\nIn Lean: `CardinalInstance.inducedSharePref` — bundled as a `Pref S` whose\nreflexivity, transitivity, and totality come from the linear order on\n$\\mathbb{R}$.\n\n## Bridge to the ordinal share instance\n\n`CardinalInstance.toShareInstance` lifts the cardinal data into a\nno-externality share instance ([[social_choice.fair_division.share_instance]])\nwhose share preference is `inducedSharePref`. This is the canonical way to\nview a real-valued utility problem inside the ordinal share-instance API.\n\nThe compatibility condition between an *external* ordinal share instance\n$I_1$ and a cardinal instance $I_2$ is captured by\n`UtilityRepresentsSharePref`:\n$$\nI_1.\\mathrm{sharePref}(i)\\ s\\ t \\iff I_2.\\mathrm{utility}(i)\\ t \\le I_2.\\mathrm{utility}(i)\\ s,\n$$\nasserting that $I_2$'s utility represents $I_1$'s ordinal preference.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Cardinal valuation in fair division."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ordinal_instance",
+      "title": "Divisible Ordinal Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.share_instance"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.cardinal_instance"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/ordinal_instance.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Divisible Ordinal Instance\n\nA *divisible ordinal instance* is the no-externality share model\nspecialized to cake-cutting: each agent's preference is an ordinal\npreference on cake pieces $\\mathrm{Set}\\ \\Omega$.\n\nIn Lean: structure `SocialChoice.FairDivision.Divisible.Instance N Ω`\nwith a single field `sharePref : N → Pref (Set Ω)`.\n\nFeasibility is fixed at the divisible-allocation level (a measurable\npartition of $\\Omega$, the predicate\n[[social_choice.fair_division.divisible.allocation]]). The instance's\n`feasible` member is therefore a definitional alias for `IsAllocation`.\n\n## Bridge to the generic share-instance API\n\n`Divisible.Instance.toShareInstance` views the divisible instance as a\nno-externality share instance\n([[social_choice.fair_division.share_instance]]) over the share type\n$S = \\mathrm{Set}\\ \\Omega$ and resource value $\\mathrm{Set.univ}$. This\nmakes every fair-division solution concept stated against the generic\n`ShareInstance` API ([[social_choice.fair_division.solution_concept]])\nautomatically applicable to divisible instances.\n\nThe cardinal-instance and measure-instance specializations\n([[social_choice.fair_division.divisible.cardinal_instance]],\n[[social_choice.fair_division.divisible.measure_instance]]) feed into\nthe same bridge — the entire divisible track plugs into the shared\nsocial-choice infrastructure through these wrappers.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Cake-cutting instances."
+    },
+    {
+      "id": "social_choice.fair_division.egalitarian_welfare",
+      "title": "Egalitarian (Maximin) Welfare",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance_wrappers",
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.egalitarian_welfare",
+        "social_choice.fair_division.welfare_monotone"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/egalitarian_welfare.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Egalitarian (Maximin) Welfare\n\nFor a finite nonempty population $N$, a utility profile $u : N \\to S \\to\n\\mathbb{R}$, and an allocation $A : N \\to S$\n([[social_choice.fair_division.allocation]]), the *egalitarian welfare*\nis the minimum agent utility:\n$$\nW_{\\mathrm{egal}}(u, A) = \\min_{i \\in N} u_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.egalitarianWelfare`, defined via\n`Finset.univ.inf'` to handle the minimum over a finite nonempty type.\n\nAn allocation $A$ is *maximin* w.r.t. a feasibility predicate $F$ if no\nfeasible allocation has a strictly larger minimum utility:\n$$\n\\forall B,\\ F(B) \\Rightarrow W_{\\mathrm{egal}}(u, B) \\le W_{\\mathrm{egal}}(u, A).\n$$\n\nIn Lean: `SocialChoice.FairDivision.IsMaxmin`.\n\nBasic facts (`Welfare.lean`):\n\n- $W_{\\mathrm{egal}}(u, A) \\le u_i(A(i))$ for every agent $i$.\n- *Egalitarian ≤ utilitarian / n:* if every agent's utility is bounded\n  below by $W_{\\mathrm{egal}}$, then $|N| \\cdot W_{\\mathrm{egal}}(u, A) \\le\n  W_{\\mathrm{util}}(u, A)$\n  ([[social_choice.fair_division.utilitarian_welfare]]). This is the\n  Lean lemma `nsmul_egalitarianWelfare_le_utilitarianWelfare` and matches\n  the AM-min inequality.\n\nEgalitarian welfare prioritizes the worst-off agent; utilitarian welfare\nmaximizes the aggregate. They generally trade off, and a single\nallocation rarely maximizes both.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Egalitarian (Rawlsian) welfare."
+    },
+    {
+      "id": "social_choice.fair_division.envy_free",
+      "title": "Envy-Free Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance_wrappers",
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.envy_free"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/envy_free.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Envy-Free Allocation\n\nFor a real-valued utility profile $u : N \\to S \\to \\mathbb{R}$ and an\nallocation $A : N \\to S$ ([[social_choice.fair_division.allocation]]),\n$A$ is *envy-free* (EF) if every agent weakly prefers their own share to\nevery other agent's share:\n$$\n\\forall i, j \\in N,\\ u_i(A(j)) \\le u_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.IsEnvyFree`. The signature takes\n$u$ and $A$ as plain functions, so the predicate applies uniformly to the\ndivisible and indivisible specializations\n([[social_choice.fair_division.divisible.envy_free]],\n[[social_choice.fair_division.indivisible.envy_free]]).\n\n## Existence\n\n- *Divisible* (cake cutting with non-atomic finite measures): EF\n  allocations always exist (Stromquist,\n  [[social_choice.fair_division.divisible.ef_exists]]).\n- *Indivisible* (additive valuations over a finite set of items): EF\n  *need not* exist, even with 2 agents and 1 item\n  ([[social_choice.fair_division.indivisible.ef_impossible_two_agents_one_good]]).\n  This motivates the relaxations EF1 / EFX\n  ([[social_choice.fair_division.indivisible.ef1]],\n  [[social_choice.fair_division.indivisible.efx]]).\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Envy-freeness in fair division."
+    },
+    {
+      "id": "social_choice.fair_division.proportional",
+      "title": "Proportional Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance_wrappers",
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.proportional"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/proportional.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Proportional Allocation\n\nFix a population size $n$, a distinguished *whole* share `whole : S`\n(typically \"the entire resource\"), a utility profile $u : N \\to S \\to\n\\mathbb{R}$, and an allocation $A : N \\to S$\n([[social_choice.fair_division.allocation]]).\n\nThe allocation $A$ is *proportional* (PROP) if every agent values their own\nshare at least a $1/n$ fraction of the whole:\n$$\n\\forall i \\in N,\\ u_i(\\mathrm{whole}) \\le n \\cdot u_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.IsProportional`. The \"$1/n$\"\nintuition is stated without division (multiply through by $n$) so the\ndefinition works over arbitrary `Semiring V`.\n\nPROP and EF ([[social_choice.fair_division.envy_free]]) are related but\nincomparable in general:\n\n- For divisible goods (non-atomic measures), EF implies PROP\n  ([[social_choice.fair_division.divisible.ef_implies_proportional]]).\n- For indivisible goods (additive valuations) on complete allocations,\n  EF still implies PROP\n  ([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]]),\n  but PROP does not imply EF in general.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Proportional allocations."
+    },
+    {
+      "id": "social_choice.fair_division.utilitarian_welfare",
+      "title": "Utilitarian Welfare and Utilitarian Optimality",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance_wrappers",
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.cardinal_instance",
+        "social_choice.fair_division.indivisible.utilitarian_welfare",
+        "social_choice.fair_division.welfare_monotone"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/utilitarian_welfare.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Utilitarian Welfare and Utilitarian Optimality\n\nFor a finite population $N$, a utility profile $u : N \\to S \\to \\mathbb{R}$,\nand an allocation $A : N \\to S$ ([[social_choice.fair_division.allocation]]),\nthe *utilitarian (social) welfare* is the sum of agents' utilities from\ntheir own shares:\n$$\nW_{\\mathrm{util}}(u, A) = \\sum_{i \\in N} u_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.utilitarianWelfare` (noncomputable, uses\n`∑ i : N` on `Fintype N`).\n\nAn allocation $A$ is *utilitarian-optimal* w.r.t. a feasibility predicate\n$F$ if no feasible allocation has strictly larger utilitarian welfare:\n$$\n\\forall B,\\ F(B) \\Rightarrow W_{\\mathrm{util}}(u, B) \\le W_{\\mathrm{util}}(u, A).\n$$\n\nIn Lean: `SocialChoice.FairDivision.IsUtilitarianOptimal`.\n\nThe accompanying basic lemmas in `Welfare.lean` say:\n\n- $W_{\\mathrm{util}}$ is monotone in the per-agent utility:\n  $\\forall i,\\ u_i(A_i) \\le u_i(B_i) \\Rightarrow W_{\\mathrm{util}}(u, A) \\le W_{\\mathrm{util}}(u, B)$.\n- For a unique-agent population it collapses to the single agent's\n  utility.\n\nUtilitarian-optimal allocations are Pareto optimal\n([[social_choice.fair_division.pareto_optimal]]) but the converse fails:\nPO is a much weaker condition.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Utilitarian social welfare."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance",
+      "title": "Divisible Measure Instance",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cardinal_instance",
+        "social_choice.fair_division.divisible.measure_valuation",
+        "social_choice.fair_division.divisible.envy_free"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+        "social_choice.fair_division.divisible.measure_instance_existence"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/measure_instance.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Divisible Measure Instance\n\nA *divisible measure instance* equips each agent with a (typically\nfinite, non-atomic) measure on the cake $\\Omega$:\n$$\n\\mathrm{measure} : N \\to \\mathrm{Measure}\\ \\Omega.\n$$\n\nIn Lean: structure `SocialChoice.FairDivision.Divisible.MeasureInstance N Ω`.\n\n## Conversions\n\nThree canonical conversions tie the measure-instance into the rest of\nthe stack:\n\n- `toCakeValuation` — view the family as a cake valuation\n  ([[social_choice.fair_division.divisible.measure_valuation]]) with\n  $\\mathrm{ENNReal}$ values.\n- `toCardinalInstance` — push the measures to real-valued utilities via\n  `.toReal`, giving a divisible cardinal instance\n  ([[social_choice.fair_division.divisible.cardinal_instance]]).\n- `toShareInstance` — compose with the cardinal-induced share\n  preference to obtain a no-externality share instance.\n\n## Instance-keyed fairness predicates\n\nRe-exports of the divisible fairness predicates\n([[social_choice.fair_division.divisible.envy_free]]) keyed on the\ninstance: `IsEnvyFree A`, `IsProportional n A`, `IsEquitable A`. These\nare stated in $\\mathrm{ENNReal}$ (the natural ambient ring for measure\nvalues), with a translation to the real-valued cardinal form provided\nby [[social_choice.fair_division.divisible.measure_instance_ef_iff_real]].\n\nThe basic implication `IsEnvyFree ⇒ IsProportional` lifts directly from\nthe cake-valuation level\n([[social_choice.fair_division.divisible.ef_implies_proportional]]); the\ninstance-level wrapper is `MeasureInstance.IsEnvyFree.isProportional`.\n\nThe existence theorems\n([[social_choice.fair_division.divisible.measure_instance_existence]])\nare stated at this layer.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Measure-based cake-cutting instances."
+    },
+    {
+      "id": "social_choice.fair_division.allocation",
+      "title": "Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [],
+      "used_by": [
+        "social_choice.fair_division.divisible.allocation",
+        "social_choice.fair_division.egalitarian_welfare",
+        "social_choice.fair_division.envy_free",
+        "social_choice.fair_division.equitable",
+        "social_choice.fair_division.instance",
+        "social_choice.fair_division.pareto_optimal",
+        "social_choice.fair_division.proportional",
+        "social_choice.fair_division.utilitarian_welfare"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/allocation.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Allocation\n\nFor a population $N$ and a share type $S$, an *allocation* is a function\n$A : N \\to S$ assigning each agent the share they receive.\n\nIn Lean: `SocialChoice.FairDivision.Allocation N S := N → S`, a plain type\nalias. Structural feasibility (partitioning a cake into disjoint pieces, or\nsplitting items into disjoint bundles) is *not* baked into this type — it\nis stated separately by predicates such as the divisible\n`IsAllocation` ([[social_choice.fair_division.divisible.allocation]]) or\nthe indivisible `IsAllocation`\n([[social_choice.fair_division.indivisible.allocation]]).\n\nThe separation is deliberate: many algorithms manipulate raw allocations\n(round-robin steps, cycle rotations) before establishing that the result\nis a valid partition.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Allocation as a function from agents to shares.\n- [AGT Chapter 13] Nisan et al., *Algorithmic Game Theory*. Allocations for cake-cutting."
+    },
+    {
+      "id": "social_choice.fair_division.share_instance",
+      "title": "Share Instance (No-Externality Model)",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.instance"
+      ],
+      "used_by": [
+        "social_choice.fair_division.cardinal_instance",
+        "social_choice.fair_division.divisible.ordinal_instance",
+        "social_choice.fair_division.indivisible.ordinal_instance"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/share_instance.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Share Instance (No-Externality Model)\n\nA *share instance* is a fair-division instance restricted to the\n*no-externality* model: each agent ranks only the share they personally\nreceive, not the entire allocation.\n\nIn Lean: `SocialChoice.FairDivision.ShareInstance N R S`, with fields\n`resource : R`, `feasible : Allocation N S → Prop`, and\n`sharePref : N → Pref S`.\n\nThis is the standard input shape for textbook fair-division problems\n(envy-freeness, proportionality, MMS, etc., all formulated in terms of\neach agent's own share).\n\n## Lift to the full-allocation interface\n\nThere is a canonical embedding\n`toInstance : ShareInstance N R S → Instance N R S`\n([[social_choice.fair_division.instance]]) that promotes share preferences\nto allocation preferences by comparing two allocations only through the\nevaluating agent's own share:\n$$\nA \\preceq_i B \\iff A(i) \\preceq_{\\mathrm{share},i} B(i).\n$$\n\nThe promoted relation inherits reflexivity, transitivity, and totality\npointwise from `sharePref i`, so the result is a valid `Pref` on\nallocations.\n\nThis lift is the bridge that makes the share-instance API a true special\ncase of the generic allocation-preference instance, and lets the same\nsolution concepts apply at both layers.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. No-externality fair-division model."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_ef_iff_real",
+      "title": "Measure-Instance EF ↔ Real-Valued Cardinal EF",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.measure_instance"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/measure_instance_ef_iff_real.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Measure-Instance EF ↔ Real-Valued Cardinal EF\n\n**Theorem.** For a divisible measure instance\n$I : \\mathrm{MeasureInstance}\\ N\\ \\Omega$\n([[social_choice.fair_division.divisible.measure_instance]]) with every\n$I.\\mathrm{measure}\\ i$ finite, and any allocation $A$, the\n$\\mathrm{ENNReal}$-valued envy-freeness predicate agrees with the\nreal-valued cardinal envy-freeness obtained from $.toCardinalInstance$:\n$$\nI.\\mathrm{IsEnvyFree}\\ A \\;\\iff\\; (I.\\mathrm{toCardinalInstance}).\\mathrm{IsEnvyFree}\\ A.\n$$\n\nIn Lean:\n`SocialChoice.FairDivision.Divisible.MeasureInstance.isEnvyFree_iff_toCardinalInstance_isEnvyFree`.\n\n## Proof\n\nThe two predicates compare values of the form $\\mu_i(A(j))$ vs\n$\\mu_i(A(i))$:\n\n- The $\\mathrm{ENNReal}$ form compares directly:\n  $\\mu_i(A(j)) \\le \\mu_i(A(i))$ in $\\mathrm{ENNReal}$.\n- The real form compares after `.toReal`:\n  $(\\mu_i(A(j))).\\mathrm{toReal} \\le (\\mu_i(A(i))).\\mathrm{toReal}$.\n\nBoth quantities are finite (`[IsFiniteMeasure (I.measure i)]`) so\n`measure_ne_top` lets `ENNReal.toReal_le_toReal` translate between the\ntwo forms. Each direction of the iff is a short calculation.\n\n## Why this matters\n\n`MeasureInstance` is the natural input for measure-theoretic algorithms\n(cut-and-choose, Dubins–Spanier, Stromquist), which all reason with\n$\\mathrm{ENNReal}$-valued measures. But the bundled real-valued cardinal\ninterface\n([[social_choice.fair_division.divisible.cardinal_instance]]) is what\ndownstream call sites prefer (algebra over $\\mathbb{R}$ is much easier\nthan over $\\mathrm{ENNReal}$).\n\nThis equivalence lets a single theorem stated against either form\ndischarge both — pick the convenient one when authoring, then convert\nat the boundary.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.measure_instance_existence",
+      "title": "Measure-Instance Existence Wrappers",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.measure_instance",
+        "social_choice.fair_division.divisible.proportional_exists",
+        "social_choice.fair_division.divisible.ef_exists_and_proportional"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/measure_instance_existence.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Measure-Instance Existence Wrappers\n\nThe bundled-instance forms of the three main existence results on\n$I = [0, 1]$, all stated against a divisible measure instance\n$\\mathrm{MeasureInstance}\\ (\\mathrm{Fin}\\ n)\\ I$\n([[social_choice.fair_division.divisible.measure_instance]]).\n\n| Theorem | Underlying result |\n|---|---|\n| `MeasureInstance.proportional_exists` | [[social_choice.fair_division.divisible.proportional_exists]] |\n| `MeasureInstance.envyFree_exists` | [[social_choice.fair_division.divisible.ef_exists]] |\n| `MeasureInstance.envyFree_and_proportional_exists` | [[social_choice.fair_division.divisible.ef_exists_and_proportional]] |\n\nEach wrapper takes a `MeasureInstance` whose underlying measure family\n$I.\\mathrm{measure}$ is finite and non-atomic, and produces the\ncorresponding feasible allocation satisfying the named property under\n$I.\\mathrm{IsProportional}$ / $I.\\mathrm{IsEnvyFree}$.\n\n## Why three wrappers\n\nSplitting the existence statements at the bundled-instance level lets\ndownstream consumers refer to the property they need without dragging\nin the entire Stromquist machinery:\n\n- `proportional_exists` is the cheapest (Dubins–Spanier route, fully\n  constructive).\n- `envyFree_exists` invokes Stromquist's KKM / shifted-cell argument.\n- `envyFree_and_proportional_exists` packages both for the common\n  textbook statement \"fair division exists for cake-cutting\".\n\nEach wrapper is a thin definitional bridge from the underlying raw\nexistence theorem; the substantive content lives in the unwrapped\nversions.\n\n## References\n\n- Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 68: 1–17.\n- Stromquist, W. (1980). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 87: 640–644.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.cardinal_instance_wrappers",
+      "title": "Cardinal-Instance Fairness and Welfare Wrappers",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.core"
+      ],
+      "uses": [
+        "social_choice.fair_division.cardinal_instance",
+        "social_choice.fair_division.envy_free",
+        "social_choice.fair_division.proportional",
+        "social_choice.fair_division.equitable",
+        "social_choice.fair_division.pareto_optimal",
+        "social_choice.fair_division.utilitarian_welfare",
+        "social_choice.fair_division.egalitarian_welfare"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/cardinal_instance_wrappers.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cardinal-Instance Fairness and Welfare Wrappers\n\nThe cardinal-instance API ([[social_choice.fair_division.cardinal_instance]])\nre-exports the shared fairness and welfare predicates so they take an\ninstance as input directly, sparing call sites from unpacking the utility\nfield.\n\nFor an instance $I : \\mathrm{CardinalInstance}\\ N\\ R\\ S$ and an allocation $A$:\n\n- `I.IsEnvyFree A` ⇔ envy-freeness w.r.t. $I.\\mathrm{utility}$\n  ([[social_choice.fair_division.envy_free]]).\n- `I.IsProportional n whole A` ⇔ proportional with whole share `whole`\n  ([[social_choice.fair_division.proportional]]).\n- `I.IsEquitable A` ⇔ equitable\n  ([[social_choice.fair_division.equitable]]).\n- `I.IsParetoOptimal A` ⇔ Pareto optimal under $I.\\mathrm{feasible}$\n  ([[social_choice.fair_division.pareto_optimal]]).\n- `I.utilitarianWelfare A`, `I.egalitarianWelfare A` ⇔ welfare\n  aggregations ([[social_choice.fair_division.utilitarian_welfare]],\n  [[social_choice.fair_division.egalitarian_welfare]]).\n- `I.IsUtilitarianOptimal A`, `I.IsMaxmin A` ⇔ welfare-optimality under\n  $I.\\mathrm{feasible}$.\n\nEach wrapper is a definitional pass-through to the underlying generic\npredicate; no extra invariants are introduced. The point is purely\nergonomic: at the instance layer one writes `I.IsEnvyFree A` instead of\nspelling out `IsEnvyFree I.utility A`.\n\nThe divisible-instance and indivisible-instance wrappers\n([[social_choice.fair_division.divisible.cardinal_instance]],\n[[social_choice.fair_division.indivisible.cardinal_instance]]) compose\nthis layer with the structured allocation types.\n\n## References\n\n- [AGT Chapter 11] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Cardinal fair-division wrappers."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.allocation",
+      "title": "Divisible Allocation",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.cut_and_choose_alloc",
+        "social_choice.fair_division.divisible.envy_free",
+        "social_choice.fair_division.divisible.stromquist_pieces"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/allocation.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Divisible Allocation\n\nA *divisible allocation* on a measurable cake $\\Omega$ assigns each agent\n$i \\in N$ a *piece* $A(i) \\subseteq \\Omega$. Concretely the type is a\nspecialization of the generic allocation alias\n([[social_choice.fair_division.allocation]]):\n$$\n\\mathrm{Allocation}\\ N\\ \\Omega \\;=\\;\n\\mathrm{FairDivision.Allocation}\\ N\\ (\\mathrm{Set}\\ \\Omega) \\;=\\; N \\to \\mathrm{Set}\\ \\Omega.\n$$\n\nIn Lean: `SocialChoice.FairDivision.Divisible.Allocation N Ω`.\n\n## Partition predicate\n\nA *complete* divisible allocation is a measurable partition of the cake. In\nLean: `IsAllocation` is a structure with three fields:\n\n- `measurable : ∀ i, MeasurableSet (A i)` — each piece is measurable;\n- `disjoint  : ∀ i ≠ j, Disjoint (A i) (A j)` — distinct agents get\n  disjoint pieces;\n- `cover     : ⋃ i, A i = Set.univ` — every cake-point belongs to some\n  agent's piece.\n\nThe class hypotheses `[MeasurableSpace Ω]` and `[Fintype N]` are needed for\nthe union/disjointness conditions to make sense.\n\nA small derived fact `IsAllocation.mem_iUnion` says every $x \\in \\Omega$\nbelongs to some $A(i)$.\n\n## Contiguous allocations on $\\mathbb{R}$\n\nA specialised predicate `IsContiguousAllocation A` (on $A : N \\to\n\\mathrm{Set}\\ \\mathbb{R}$) asserts that every piece is *order-connected*\n(an interval). This is the natural restriction for Stromquist's EF\nexistence theorem: the EF allocation constructed by KKM is contiguous.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Allocations in cake-cutting.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cake_valuation",
+      "title": "Cake Valuation",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [],
+      "used_by": [
+        "social_choice.fair_division.divisible.envy_free",
+        "social_choice.fair_division.divisible.measure_valuation"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cake_valuation.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cake Valuation\n\nA *cake valuation* assigns a value in some ordered value type $V$ to each\nagent–piece pair $(i, S)$ with $S \\subseteq \\Omega$:\n$$\n\\mathrm{val} : N \\to \\mathrm{Set}\\ \\Omega \\to V.\n$$\n\nIn Lean: structure `SocialChoice.FairDivision.Divisible.CakeValuation N Ω V`\ncarrying a single field `val`.\n\nThe value type $V$ stays polymorphic because the canonical instance —\nmeasure-based valuations\n([[social_choice.fair_division.divisible.measure_valuation]]) — takes values\nin `ENNReal`, while real-valued bundled interfaces use $\\mathbb{R}$.\n\n## Normalization\n\nA cake valuation is *normalized* if every agent values the whole cake at\n$1$:\n$$\n\\forall i \\in N,\\ \\mathrm{val}(i, \\Omega) = 1.\n$$\n\nIn Lean: `IsNormalized`, requiring `[One V]`.\n\nFor a measure-valuation $\\mu_i$, normalization is equivalent to each\n$\\mu_i$ being a probability measure\n([[social_choice.fair_division.divisible.normalized_iff_probability]]).\n\nNormalized cake valuations are the standard setting for comparing\nproportionality bounds, MMS values, and welfare aggregates across\nagents.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Valuations on cake pieces.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cdf_continuous",
+      "title": "CDF of a Non-Atomic Finite Measure on ℝ Is Continuous",
+      "kind": "lemma",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [],
+      "used_by": [
+        "social_choice.fair_division.divisible.cut_exists",
+        "social_choice.fair_division.divisible.stromquist_value_continuous"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cdf_continuous.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# CDF of a Non-Atomic Finite Measure on ℝ Is Continuous\n\n**Lemma.** Let $\\nu$ be a finite non-atomic measure on $\\mathbb{R}$. The\nreal-valued CDF\n$$\nF : \\mathbb{R} \\to \\mathbb{R}, \\qquad F(t) = \\nu\\bigl((-\\infty, t]\\bigr).\\mathrm{toReal}\n$$\nis continuous.\n\nIn Lean: `SocialChoice.FairDivision.Divisible.cdfRealContinuous`. The\nargument shows continuity from the left and from the right separately\nusing the monotonicity of $F$.\n\n## Proof sketch\n\n- *Monotonicity.* $F$ is monotone because $t \\le s$ implies\n  $(-\\infty, t] \\subseteq (-\\infty, s]$, and `measure_mono` plus\n  `ENNReal.toReal_le_toReal` give $F(t) \\le F(s)$ (both measures are\n  finite).\n- *Right-continuity.* Apply `tendsto_measure_biInter_gt` to the\n  decreasing family $\\{(-\\infty, r] : r > a\\}$; its intersection is\n  $(-\\infty, a]$, and `ENNReal.continuousAt_toReal` finishes the\n  reduction back to the real CDF.\n- *Left-continuity.* This is where non-atomicity enters. Pick a strictly\n  increasing sequence $u_n \\uparrow a$ in $(-\\infty, a)$. Its union\n  satisfies $\\bigcup_n (-\\infty, u_n] = (-\\infty, a)$, and\n  `tendsto_measure_iUnion_atTop` plus `Iio_ae_eq_Iic` (which depends on\n  non-atomicity to identify $(-\\infty, a)$ and $(-\\infty, a]$ up to\n  $\\nu$-null sets) closes the left limit equality.\n\nThe combination of left- and right-continuity yields continuity at every\n$a \\in \\mathbb{R}$, hence everywhere.\n\n## Where this is used\n\nThis is the IVT-input for cake-cutting: it lets `cut_exists`\n([[social_choice.fair_division.divisible.cut_exists]]) build a cut point\n$t$ with $\\nu((-\\infty, t]) = c$ for any prescribed $0 < c < \\nu(\\mathbb{R})$\non the unit interval — exactly what cut-and-choose, Dubins–Spanier, and\nStromquist all need.\n\n## References\n\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*. Continuity of fair-cut-cumulative functions."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.chooser_envy_free",
+      "title": "Chooser Is Always Envy-Free",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cut_and_choose_alloc",
+        "social_choice.fair_division.divisible.envy_free"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.cut_and_choose_envy_free"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/chooser_envy_free.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Chooser Is Always Envy-Free\n\n**Theorem.** For any cut point $t \\in I$ and any two-agent measure family\n$\\mu : \\mathrm{Fin}\\ 2 \\to \\mathrm{Measure}\\ I$, the chooser (agent 1) in\nthe cut-and-choose allocation\n([[social_choice.fair_division.divisible.cut_and_choose_alloc]]) does not\nenvy the cutter:\n$$\n\\mu_1\\bigl(A_{\\mathrm{cutter}}\\bigr) \\;\\le\\; \\mu_1\\bigl(A_{\\mathrm{chooser}}\\bigr).\n$$\n\nIn Lean: `chooser_isEnvyFree`. The statement *does not depend* on the cut\nbeing fair — the chooser's guarantee holds for **every** cut.\n\n## Proof\n\nBy construction of the protocol, the chooser receives whichever of the two\nsides $L = [0, t]$ and $R = (t, 1]$ they value at least as much (with the\ntie broken to the left). Concretely:\n\n- If $\\mu_1(L) \\ge \\mu_1(R)$ the chooser takes $L$ and the cutter is left\n  with $R$, giving $\\mu_1(R) \\le \\mu_1(L)$.\n- Otherwise the chooser takes $R$ and the cutter takes $L$, giving\n  $\\mu_1(L) < \\mu_1(R) \\le \\mu_1(R)$.\n\nIn both branches the chooser's value for their own piece weakly dominates\ntheir value for the cutter's piece, which is the envy-freeness statement.\n\n## Significance\n\nThe chooser is structurally protected: they get the optimal choice between\nthe two halves by construction. The interesting half of cut-and-choose is\nthat the *cutter* can also be made envy-free\n([[social_choice.fair_division.divisible.cutter_envy_free_of_fair]]) by\ncutting at the right point — namely a fair cut.\n\n## References\n\n- Steinhaus, H. (1948). \"The Problem of Fair Division\". *Econometrica*.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_alloc",
+      "title": "Cut-and-Choose Allocation and Fair Cut Point",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.allocation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.chooser_envy_free",
+        "social_choice.fair_division.divisible.cut_and_choose_partition",
+        "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+        "social_choice.fair_division.divisible.fair_cut_exists"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/cut_and_choose_alloc.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cut-and-Choose Allocation and Fair Cut Point\n\nThe cut-and-choose protocol on $I = [0, 1]$ with two agents\n$\\{0, 1\\} \\subseteq \\mathrm{Fin}\\ 2$ is parameterised by a cut point\n$t \\in I$. The output is the function `cutAndChooseAlloc μ t : Allocation\n(Fin 2) I` defined by:\n\n- Compute the left and right pieces $L = [0, t]$ and $R = (t, 1]$.\n- The chooser (agent $1$) takes whichever side they prefer:\n  - if $\\mu_1(L) \\ge \\mu_1(R)$, the chooser takes $L$, the cutter takes $R$;\n  - otherwise the chooser takes $R$, the cutter takes $L$.\n\nIn Lean: `cutAndChooseAlloc μ t`. The `@[simp]` lemmas\n`cutAndChooseAlloc_zero` and `cutAndChooseAlloc_one` unfold the assignment\nfor the cutter (agent 0) and the chooser (agent 1) respectively.\n\n## Fair cut point\n\nThe cut point $t$ is *fair for the cutter* if agent 0's measure splits the\ncake into two equal halves:\n$$\n\\mu_0([0, t]) = \\mu_0((t, 1]).\n$$\n\nIn Lean: `IsFairCutPoint μ t`.\n\nA fair cut point always exists for finite non-atomic $\\mu_0$ — this is the\nshared unit-interval IVT lemma\n([[social_choice.fair_division.divisible.cut_exists]]) specialised at\n$c = \\mu_0(I)/2$, giving\n[[social_choice.fair_division.divisible.fair_cut_exists]].\n\n## References\n\n- Steinhaus, H. (1948). \"The Problem of Fair Division\". *Econometrica*.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_ef_exists",
+      "title": "Two-Agent EF Existence via Cut-and-Choose",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+        "social_choice.fair_division.divisible.fair_cut_exists"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cut_and_choose_ef_exists.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Two-Agent EF Existence via Cut-and-Choose\n\n**Theorem.** For two agents with measures $\\mu_0, \\mu_1$ on the unit\ninterval $I = [0, 1]$ where $\\mu_0, \\mu_1$ are finite and $\\mu_0$ is\nnon-atomic, there exists a complete measurable partition of $I$ that is\nenvy-free under the measure valuation\n$\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.envy_free]]).\n\nFormally:\n$$\n\\exists A : \\mathrm{Allocation}\\ (\\mathrm{Fin}\\ 2)\\ I,\\;\n\\mathrm{IsAllocation}\\ A \\;\\wedge\\;\n\\mathrm{IsEnvyFree}\\ (\\mathrm{MeasureValuation}\\ \\mu)\\ A.\n$$\n\nIn Lean this appears as two equivalent statements: `cutAndChoose_ef_exists`\n(in `CutAndChoose.lean`) and the alias `ef_exists_two_agents` (in\n`EnvyFree.lean`).\n\n## Proof\n\nConstructively: pick a fair cut point $t$ via\n[[social_choice.fair_division.divisible.fair_cut_exists]], use it in the\ncut-and-choose protocol to produce\n$A = \\mathrm{cutAndChooseAlloc}\\ \\mu\\ t$, and verify EF via\n[[social_choice.fair_division.divisible.cut_and_choose_envy_free]].\n\nThe result is a *contiguous* EF allocation — each agent receives a single\ninterval, not a fragmented set. This stronger conclusion sets the stage\nfor Stromquist's $n$-agent generalization\n([[social_choice.fair_division.divisible.ef_exists]]), which also\nproduces contiguous EF allocations.\n\n## References\n\n- Steinhaus, H. (1948). \"The Problem of Fair Division\". *Econometrica*.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_envy_free",
+      "title": "Cut-and-Choose Is Envy-Free at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.chooser_envy_free",
+        "social_choice.fair_division.divisible.cutter_envy_free_of_fair"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.cut_and_choose_ef_exists"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cut_and_choose_envy_free.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cut-and-Choose Is Envy-Free at a Fair Cut\n\n**Theorem.** For a two-agent measure family $\\mu : \\mathrm{Fin}\\ 2 \\to\n\\mathrm{Measure}\\ I$ and a *fair* cut point $t$ for the cutter, the\ncut-and-choose allocation is envy-free.\n\nIn Lean: `cutAndChoose_isEnvyFree`.\n\n## Proof\n\nCombine the two half-results:\n\n- The chooser never envies the cutter at *any* cut\n  ([[social_choice.fair_division.divisible.chooser_envy_free]]).\n- The cutter does not envy the chooser *at a fair cut*\n  ([[social_choice.fair_division.divisible.cutter_envy_free_of_fair]]).\n\nTogether these cover both directions of the envy-freeness condition\n$\\forall i, j,\\ \\mu_i(A_j) \\le \\mu_i(A_i)$ for the two agents.\n\n## Existence corollary\n\nBecause fair cut points always exist for finite non-atomic cutter measures\n([[social_choice.fair_division.divisible.fair_cut_exists]]), cut-and-choose\ngives a constructive existence proof for EF allocations on two agents\n([[social_choice.fair_division.divisible.cut_and_choose_ef_exists]]).\n\n## References\n\n- Steinhaus, H. (1948). \"The Problem of Fair Division\". *Econometrica*.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_and_choose_partition",
+      "title": "Cut-and-Choose Output Is a Complete Partition",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cut_and_choose_alloc"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cut_and_choose_partition.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cut-and-Choose Output Is a Complete Partition\n\n**Theorem.** For any cut point $t \\in I$ and any two-agent measure family\n$\\mu : \\mathrm{Fin}\\ 2 \\to \\mathrm{Measure}\\ I$, the allocation produced by\ncut-and-choose ([[social_choice.fair_division.divisible.cut_and_choose_alloc]])\nis a complete measurable partition of the cake.\n\nThat is, `cutAndChooseAlloc μ t` satisfies the divisible\n`IsAllocation` predicate ([[social_choice.fair_division.divisible.allocation]]):\n\n- both pieces are measurable;\n- the cutter's piece and the chooser's piece are disjoint;\n- their union is the whole cake $I$.\n\nIn Lean: `cutAndChooseAlloc_isAllocation`.\n\n## Proof outline\n\nBy case analysis on whether the chooser picks left or right:\n\n- If $\\mu_1(L) \\ge \\mu_1(R)$, agent 0 receives $R = (t, 1]$ and agent 1\n  receives $L = [0, t]$. Both are measurable; $L \\cap R = \\emptyset$;\n  $L \\cup R = I$.\n\n- Otherwise (the other branch of the protocol), the assignment is the\n  same partition with pieces swapped between agents. The same three\n  facts hold.\n\nIn either branch, the disjointness and cover conditions are immediate\nproperties of $[0, t]$ and $(t, 1]$ on the unit interval, and\nmeasurability comes from the standard half-open / closed interval\nconstructors.\n\n## Significance\n\nThis is the *feasibility* lemma for cut-and-choose: regardless of whether\nthe cut is \"fair\" for the cutter\n([[social_choice.fair_division.divisible.cut_and_choose_alloc]]) or\narbitrary, the protocol always produces a valid measurable partition.\nFairness only enters when we ask whether the cutter is envy-free\n([[social_choice.fair_division.divisible.cutter_envy_free_of_fair]]).\n\n## References\n\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cut_exists",
+      "title": "IVT — Cut Point Exists for Non-Atomic Measures on [0,1]",
+      "kind": "lemma",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.dubins_spanier"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cdf_continuous",
+        "social_choice.fair_division.divisible.no_atoms_map_subtype"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.ds_step",
+        "social_choice.fair_division.divisible.fair_cut_exists"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cut_exists.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# IVT — Cut Point Exists for Non-Atomic Measures on [0,1]\n\n**Lemma.** Let $\\mu$ be a finite non-atomic measure on the unit interval\n$I = [0, 1]$. For every target value $0 < c < (\\mu(I)).\\mathrm{toReal}$,\nthere exists a cut point $t \\in I$ such that\n$$\n\\bigl(\\mu([0, t])\\bigr).\\mathrm{toReal} = c.\n$$\n\nIn Lean: `SocialChoice.FairDivision.Divisible.cut_exists`.\n\n## Proof sketch\n\nThis is the *intermediate value theorem applied to the real-valued CDF*\n$$\nF(t) = \\bigl(\\mu([0, t])\\bigr).\\mathrm{toReal}.\n$$\n\nThe required ingredients:\n\n1. **Continuity.** $F$ is continuous on $\\mathbb{R}$ for finite\n   non-atomic measures\n   ([[social_choice.fair_division.divisible.cdf_continuous]]). Restricted\n   to $I = [0, 1]$ it stays continuous.\n\n2. **Boundary values.** $F(0) = (\\mu(\\{0\\})).\\mathrm{toReal} = 0$ by\n   non-atomicity, and $F(1) = (\\mu(I)).\\mathrm{toReal}$.\n\n3. **IVT.** The standard real IVT on $[0, 1]$ yields a $t$ in $I$ with\n   $F(t) = c$ for any prescribed $0 < c < F(1)$.\n\nThe non-atomic-pushforward instance\n[[social_choice.fair_division.divisible.no_atoms_map_subtype]] handles the\ntype-level conversion between `Measure I` and the real-valued\n$\\mu.\\mathrm{map}\\ \\mathrm{Subtype.val}$ on $\\mathbb{R}$ so that the IVT\napplies cleanly.\n\n## Where this is used\n\nThis is the *single* measure-theoretic input to the cake-cutting\nalgorithms in the library:\n\n- Cut-and-choose specializes it at $c = \\mu_0(I)/2$ to obtain a fair\n  cut ([[social_choice.fair_division.divisible.fair_cut_exists]]).\n- Dubins–Spanier specializes it at $c = \\mu_i(I)/n$ at each agent in\n  the moving-knife step.\n- Stromquist uses it implicitly inside the value-continuity argument.\n\nKeeping it as a self-contained lemma means downstream proofs reduce\n*directly* to set-existence statements without ever opening\n`MeasureTheory.tendsto_*` from inside an algorithm proof.\n\n## References\n\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*. IVT-on-measures device.\n- Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 68: 1–17."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+      "title": "Cutter Does Not Envy at a Fair Cut",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.cut_and_choose"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cut_and_choose_alloc",
+        "social_choice.fair_division.divisible.envy_free"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.cut_and_choose_envy_free"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/cutter_envy_free_of_fair.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Cutter Does Not Envy at a Fair Cut\n\n**Theorem.** If the cut point $t \\in I$ is *fair* for the cutter\n([[social_choice.fair_division.divisible.cut_and_choose_alloc]]) — i.e.\n$\\mu_0([0, t]) = \\mu_0((t, 1])$ — then in the cut-and-choose allocation,\nthe cutter (agent 0) does not envy the chooser:\n$$\n\\mu_0\\bigl(A_{\\mathrm{chooser}}\\bigr) \\;\\le\\; \\mu_0\\bigl(A_{\\mathrm{cutter}}\\bigr).\n$$\n\nIn Lean: `cutter_isEnvyFree_of_fair`.\n\n## Proof\n\nBoth pieces have equal cutter-measure by the fair-cut hypothesis:\n$\\mu_0([0,t]) = \\mu_0((t,1])$. Whichever side the chooser takes leaves the\ncutter with a piece of the *same* cutter-value as the one taken. So\n$\\mu_0(A_{\\mathrm{cutter}}) = \\mu_0(A_{\\mathrm{chooser}})$, hence the\nno-envy inequality is in fact an equality.\n\n## Significance\n\nThis complements the chooser's structural guarantee\n([[social_choice.fair_division.divisible.chooser_envy_free]]): when the\ncutter cuts at a fair point, the *cutter* becomes indifferent between the\ntwo halves and therefore cannot envy. Combining the two gives full\nenvy-freeness ([[social_choice.fair_division.divisible.cut_and_choose_envy_free]]).\n\nFair cut points always exist for finite non-atomic cutter measures\n([[social_choice.fair_division.divisible.fair_cut_exists]]), so cut-and-\nchoose with a fair cut is a constructive EF-existence procedure for two\nagents.\n\n## References\n\n- Steinhaus, H. (1948). \"The Problem of Fair Division\". *Econometrica*.\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*, Ch. 1."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ds_step",
+      "title": "Dubins–Spanier Inductive Step",
+      "kind": "lemma",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.dubins_spanier"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.cut_exists",
+        "social_choice.fair_division.divisible.envy_free"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.dubins_spanier_proportional"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/ds_step.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Dubins–Spanier Inductive Step\n\nThe Dubins–Spanier moving-knife algorithm builds a proportional allocation\non $n$ agents by induction. The key construction is an inductive\nproposition\n\n$$\nP(n) \\;\\;\\text{is}\\;\\;\n\\bigl(\\forall\\ \\mu : \\mathrm{Fin}\\ n \\to \\mathrm{Measure}\\ I,\\\n\\text{prop-conditions}\\bigr)\n\\;\\Rightarrow\\;\n\\exists A : \\mathrm{Allocation}\\ (\\mathrm{Fin}\\ n)\\ I,\\\n\\mathrm{IsAllocation}\\ A \\wedge \\mathrm{IsProportional}\\ n\\ \\mu\\ A,\n$$\n\nproved by induction on $n$ in\n`SocialChoice.FairDivision.Divisible.dubinsSpanierProportional`. The\nproof uses three concrete pieces:\n\n## Algorithm shape\n\n1. **Threshold step.** For each remaining agent $i$, find $t_i \\in I$ with\n   $\\mu_i([0, t_i]) = \\mu_i(I)/n$ via the IVT lemma\n   ([[social_choice.fair_division.divisible.cut_exists]]).\n\n2. **Argmin selection.** Let $i^* = \\arg\\min_i t_i$ and $t^* = t_{i^*}$.\n   Assign agent $i^*$ the piece $[0, t^*]$.\n\n3. **Recurse.** Restrict the remaining agents $j \\ne i^*$ to\n   $(t^*, 1]$ and apply the algorithm recursively with $n - 1$ agents.\n\n## Why proportionality is preserved\n\n- **The selected agent.** $\\mu_{i^*}([0, t^*]) = \\mu_{i^*}(I) / n$ by\n  the threshold construction. ✓\n\n- **Each remaining agent $j$.** $t^* \\le t_j$ by argmin, so\n  $\\mu_j([0, t^*]) \\le \\mu_j(I)/n$ by monotonicity of the CDF.\n  Hence\n  $$\n  \\mu_j((t^*, 1]) \\;=\\; \\mu_j(I) - \\mu_j([0, t^*]) \\;\\ge\\; \\frac{n-1}{n}\\,\\mu_j(I).\n  $$\n  Inductively, the recursive call on $n - 1$ agents on the remaining\n  interval yields each $j$ a piece worth at least $1/(n-1)$ of their\n  *remaining* value, which (combined with the bound above) is at least\n  $\\mu_j(I)/n$. ✓\n\n## Lean implementation notes\n\nThe Lean proof uses `Fin.insertNth` to fold the recursively-produced\nsub-allocation back into a full allocation over `Fin n`. Partition\nvalidity (measurability, disjointness, cover) and proportionality are\nestablished by `ennreal_prop_step` — a packaged induction-step lemma\nthat combines the moving-knife construction with monotonicity bounds in\n`ENNReal`.\n\nAll sorries are closed; the resulting public theorem is\n[[social_choice.fair_division.divisible.dubins_spanier_proportional]].\n\n## References\n\n- Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 68: 1–17.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Moving-knife procedures."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_proportional",
+      "title": "Dubins–Spanier Proportional Existence",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.dubins_spanier"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.ds_step"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.dubins_spanier_rule",
+        "social_choice.fair_division.divisible.proportional_exists"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/dubins_spanier_proportional.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Dubins–Spanier Proportional Existence\n\n**Theorem.** For every $n \\ge 1$ and every family of finite measures\n$\\mu : \\mathrm{Fin}\\ n \\to \\mathrm{Measure}\\ I$ on the unit interval $I =\n[0, 1]$ with each $\\mu_i$ non-atomic, there exists a complete measurable\npartition $A : \\mathrm{Allocation}\\ (\\mathrm{Fin}\\ n)\\ I$ that is\nproportional in the measure sense:\n$$\n\\forall i \\in \\mathrm{Fin}\\ n,\\ \\mu_i(I) \\;\\le\\; n \\cdot \\mu_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.Divisible.dubinsSpanierProportional`.\n\n## Proof\n\nBy the moving-knife induction ([[social_choice.fair_division.divisible.ds_step]]),\nusing the IVT-on-measures cut lemma\n([[social_choice.fair_division.divisible.cut_exists]]) at each level.\n\n## Significance\n\nTwo parts:\n\n1. **Existence with explicit algorithm.** Unlike Stromquist's EF existence\n   ([[social_choice.fair_division.divisible.ef_exists]]) — which uses a\n   KKM compactness argument — Dubins–Spanier's proportional existence is\n   *constructive*: the algorithm can be unfolded to produce the\n   allocation step by step.\n\n2. **PROP, not EF.** The output is proportional but in general *not*\n   envy-free. EF is a strictly stronger notion for $n \\ge 3$ agents and\n   requires the deeper Stromquist construction.\n\nThe bundled-instance wrapper is\n[[social_choice.fair_division.divisible.dubins_spanier_rule]].\n\n## References\n\n- Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 68: 1–17.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Dubins–Spanier moving knife."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.dubins_spanier_rule",
+      "title": "Dubins–Spanier as a Rule on Measure Instances",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.dubins_spanier"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.dubins_spanier_proportional",
+        "social_choice.fair_division.solution_concept"
+      ],
+      "used_by": [],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/dubins_spanier_rule.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Dubins–Spanier as a Rule on Measure Instances\n\nTwo bundled-instance reformulations of\n[[social_choice.fair_division.divisible.dubins_spanier_proportional]]:\n\n## Existence at the instance level\n\n`dubinsSpanier_exists_proportional_allocation` repackages the bare\ntheorem as a `Divisible.MeasureInstance`-keyed existence statement:\n$$\n\\forall n \\ge 1,\\ \\forall I : \\mathrm{MeasureInstance}\\ (\\mathrm{Fin}\\ n)\\ \\mathrm{[0,1]}\\ \\text{(non-atomic finite)},\\\n\\exists A,\\ I.\\mathrm{feasible}\\ A \\wedge I.\\mathrm{IsProportional}\\ n\\ A.\n$$\n\nThe translation is mechanical: an `Instance` exposes the measure\nfamily $I.\\mathrm{measure}$, and the underlying theorem applies to that\nfamily.\n\n## Rule form\n\n`dubinsSpanierRule_isProportional` exhibits Dubins–Spanier as a *rule* in\nthe sense of [[social_choice.fair_division.solution_concept]] — a\nfunction that takes a measure instance and returns a feasible allocation\ntogether with a proof that the returned allocation is proportional.\n\nThe rule is *non-canonical*: the construction depends on choosing one of\nthe proportional witnesses (selecting which agent to assign first at the\nmoving-knife step). Different selection rules give different outputs;\nall are proportional.\n\n## Why both\n\nThe proof of existence is the same theorem in all three forms, but\nexposing it as\n\n- a bare existential (`dubinsSpanierProportional`),\n- an instance-level existential (`dubinsSpanier_exists_proportional_allocation`),\n- a deterministic rule (`dubinsSpanierRule_isProportional`),\n\nlets downstream callers pick whichever fits their needs (proof\nergonomics, instance polymorphism, or computability).\n\n## References\n\n- Dubins, L. E. and Spanier, E. H. (1961). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 68: 1–17."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists",
+      "title": "Envy-Free Existence (Stromquist, n Agents)",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible",
+        "social_choice.fair_division.divisible.stromquist"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.stromquist_unusual_case"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.ef_exists_and_proportional"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/ef_exists.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Envy-Free Existence (Stromquist, n Agents)\n\n**Theorem (Stromquist 1980).** For every $n \\ge 1$ and every family of\nfinite non-atomic measures $\\mu : \\mathrm{Fin}\\ n \\to \\mathrm{Measure}\\ I$\non the unit interval $I = [0, 1]$, there exists a complete measurable\npartition $A : \\mathrm{Fin}\\ n \\to \\mathrm{Set}\\ I$ that is envy-free\nunder the measure valuation $\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.envy_free]]).\n\nIn Lean: `SocialChoice.FairDivision.Divisible.ef_exists`.\n\n## Proof\n\nCase split on whether the agent-preference unions\n$\\{U(i)\\}_i$ cover the division simplex\n([[social_choice.fair_division.divisible.stromquist_U]]):\n\n- **Usual case.** $\\{U(i)\\}_i$ covers $S$. Apply\n  [[social_choice.fair_division.divisible.stromquist_usual_case]] —\n  KKM yields a common point with a unique-preference bijection, and\n  [[social_choice.fair_division.divisible.stromquist_assignment]]\n  converts the bijection into an EF allocation.\n\n- **Unusual case.** $\\{U(i)\\}_i$ does not cover $S$. Apply\n  [[social_choice.fair_division.divisible.stromquist_unusual_case]] —\n  the shifted-cell refinement\n  ([[social_choice.fair_division.divisible.stromquist_shifted_cells]])\n  produces approximate fair divisions whose limit is fair for the\n  original measures.\n\nIn both cases the output is a *contiguous* EF allocation (each agent\nreceives a single interval).\n\n## Significance\n\nThis is the high point of the divisible-fair-division formalization:\n\n- Compared to cut-and-choose\n  ([[social_choice.fair_division.divisible.cut_and_choose_ef_exists]])\n  it works for *any* number of agents, not just two.\n- Compared to Dubins–Spanier\n  ([[social_choice.fair_division.divisible.dubins_spanier_proportional]])\n  it gives EF, not merely PROP.\n- The proof is *non-constructive*: KKM (and Brouwer / Sperner) are not\n  algorithmic, so the EF allocation is shown to exist without an\n  explicit construction.\n\nThe combined EF + PROP existence statement is\n[[social_choice.fair_division.divisible.ef_exists_and_proportional]].\n\n## References\n\n- Stromquist, W. (1980). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 87: 640–644.\n- Su, F. E. (1999). \"Rental Harmony: Sperner's Lemma in Fair Division\". *Amer. Math. Monthly* 106.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_exists_and_proportional",
+      "title": "EF + Proportional Existence (Stromquist Corollary)",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.ef_exists",
+        "social_choice.fair_division.divisible.ef_implies_proportional"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.measure_instance_existence"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/ef_exists_and_proportional.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# EF + Proportional Existence (Stromquist Corollary)\n\n**Theorem.** For every $n \\ge 1$ and every family of finite non-atomic\nmeasures $\\mu : \\mathrm{Fin}\\ n \\to \\mathrm{Measure}\\ I$ on $I = [0, 1]$,\nthere exists a complete measurable partition that is **both**\nenvy-free and proportional.\n\nIn Lean: `SocialChoice.FairDivision.Divisible.ef_exists_and_proportional`.\n\n## Proof\n\nA two-step composition:\n\n1. Stromquist's EF existence\n   ([[social_choice.fair_division.divisible.ef_exists]]) yields an EF\n   allocation $A$.\n\n2. EF implies proportional for measure valuations\n   ([[social_choice.fair_division.divisible.ef_implies_proportional]])\n   gives the proportionality bound on the same $A$.\n\n## Why list this as a separate node\n\nTwo reasons:\n\n- Many downstream contexts want a single statement asserting both\n  fairness notions hold together (typical for textbook statements of\n  \"fair division exists for cake-cutting\").\n- It exposes the *strength gap* between EF and PROP in the divisible\n  setting: PROP is implied by EF here for free, whereas in the\n  indivisible setting the implication only holds for additive\n  valuations on complete allocations\n  ([[social_choice.fair_division.indivisible.ef_implies_proportional_additive]])\n  and EF itself need not exist.\n\nThe bundled-instance form sits in\n[[social_choice.fair_division.divisible.measure_instance_existence]].\n\n## References\n\n- Stromquist, W. (1980). \"How to Cut a Cake Fairly\". *Amer. Math. Monthly* 87: 640–644.\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.ef_implies_proportional",
+      "title": "EF ⇒ Proportional (Measure Valuations)",
+      "kind": "theorem",
+      "status": "staged",
+      "evidence": "non-admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.envy_free",
+        "social_choice.fair_division.divisible.measure_valuation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.ef_exists_and_proportional"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/staged/social_choice/fair_division/divisible/ef_implies_proportional.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# EF ⇒ Proportional (Measure Valuations)\n\n**Theorem.** Let $\\mu : N \\to \\mathrm{Measure}\\ \\Omega$ on a measurable\ncake $\\Omega$ and a finite agent type $N$, and let $A$ be an envy-free\ncomplete divisible allocation under the measure valuation\n$\\mathrm{MeasureValuation}\\ \\mu$\n([[social_choice.fair_division.divisible.measure_valuation]],\n[[social_choice.fair_division.divisible.envy_free]],\n[[social_choice.fair_division.divisible.allocation]]). Then $A$ is\nproportional with respect to $|N|$.\n\nThat is, for every agent $i$,\n$$\n\\mu_i(\\Omega) \\;\\le\\; |N| \\cdot \\mu_i(A(i)).\n$$\n\nIn Lean: `SocialChoice.FairDivision.Divisible.IsEnvyFree.isProportional`.\n\n## Proof\n\nUse the partition / additivity properties of the measure valuation. For\neach agent $i$:\n\n$$\n\\begin{aligned}\n\\mu_i(\\Omega)\n  &= \\mu_i\\bigl(\\bigcup_j A(j)\\bigr) && \\text{cover of $A$} \\\\\n  &= \\sum_{j} \\mu_i(A(j)) && \\text{disjoint, measurable pieces} \\\\\n  &\\le \\sum_{j} \\mu_i(A(i)) && \\text{envy-freeness: $\\mu_i(A_j) \\le \\mu_i(A_i)$} \\\\\n  &= |N| \\cdot \\mu_i(A(i)). && \\text{constant sum}\n\\end{aligned}\n$$\n\nThe countable-additivity step uses `MeasureTheory.measure_iUnion` on the\ndisjoint measurable family $A : N \\to \\mathrm{Set}\\ \\Omega$; for a finite\nagent type this collapses to a `Finset` sum via `tsum_fintype`.\n\n## Interpretation\n\nEnvy-freeness is a *strictly stronger* fairness notion than\nproportionality for divisible goods. The theorem above is the precise\nform: an EF measure-valued allocation automatically guarantees every\nagent at least their $1/n$ share of the whole.\n\nThe same statement at the bundled `MeasureInstance` level — including the\nreal-valued (`toReal`) variant — appears in\n[[social_choice.fair_division.divisible.measure_instance_existence]].\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. EF implies proportional for divisible goods."
+    },
+    {
+      "id": "social_choice.fair_division.divisible.envy_free",
+      "title": "Divisible Envy-Free, Proportional, Equitable Predicates",
+      "kind": "definition",
+      "status": "formalized",
+      "evidence": "admitted",
+      "home_topic": "social_choice",
+      "topics": [
+        "social_choice",
+        "social_choice.fair_division",
+        "social_choice.fair_division.divisible"
+      ],
+      "uses": [
+        "social_choice.fair_division.divisible.allocation",
+        "social_choice.fair_division.divisible.cake_valuation"
+      ],
+      "used_by": [
+        "social_choice.fair_division.divisible.chooser_envy_free",
+        "social_choice.fair_division.divisible.cutter_envy_free_of_fair",
+        "social_choice.fair_division.divisible.ds_step",
+        "social_choice.fair_division.divisible.ef_implies_proportional",
+        "social_choice.fair_division.divisible.measure_instance",
+        "social_choice.fair_division.divisible.stromquist_assignment"
+      ],
+      "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/social_choice/fair_division/divisible/envy_free.md",
+      "body_refs": {
+        "refs": [],
+        "missing_from_uses": []
+      },
+      "body": "# Divisible Envy-Free, Proportional, Equitable Predicates\n\nThree fairness predicates specialised to divisible allocations\n([[social_choice.fair_division.divisible.allocation]]) under a cake\nvaluation $\\mathrm{cv}$ ([[social_choice.fair_division.divisible.cake_valuation]]).\n\n## Envy-Free (EF)\n\n$$\n\\forall i, j \\in N,\\ \\mathrm{cv}(i, A(j)) \\le \\mathrm{cv}(i, A(i)).\n$$\n\nIn Lean: `Divisible.IsEnvyFree`. Requires only `[Preorder V]` on the value\ntype.\n\nFor divisible goods with non-atomic measures, EF allocations always exist\n(Stromquist; [[social_choice.fair_division.divisible.ef_exists]]). This is\nthe central difference from the indivisible setting\n([[social_choice.fair_division.indivisible.envy_free]]), where EF may fail\nto exist.\n\n## Proportional (PROP)\n\nFor a population size parameter $n$,\n$$\n\\forall i \\in N,\\ \\mathrm{cv}(i, \\Omega) \\le n \\cdot \\mathrm{cv}(i, A(i)).\n$$\n\nStated without division so it makes sense over any `[Semiring V]`. In\nLean: `Divisible.IsProportional`.\n\n## Equitable\n\nEvery agent assigns the same value to their own piece:\n$$\n\\forall i, j \\in N,\\ \\mathrm{cv}(i, A(i)) = \\mathrm{cv}(j, A(j)).\n$$\n\nIn Lean: `Divisible.IsEquitable`. Comparable across agents only with\nnormalized cake valuations\n([[social_choice.fair_division.divisible.normalized_iff_probability]]).\n\nThese three are exactly the generic\n([[social_choice.fair_division.envy_free]],\n[[social_choice.fair_division.proportional]],\n[[social_choice.fair_division.equitable]]) predicates re-stated with\n$\\mathrm{cv}.val$ in place of an opaque utility function, so the shape\nmatches downstream measure-theoretic proofs.\n\n## References\n\n- [AGT Chapter 13] Nisan, Roughgarden, Tardos, and Vazirani, *Algorithmic Game Theory*. Fairness for cake cutting.\n- Procaccia, A. D. (2013). \"Cake Cutting: Not Just Child's Play\".\n- Robertson, J. M. and Webb, W. A. (1998). *Cake-Cutting Algorithms*."
+    }
+  ]
+}

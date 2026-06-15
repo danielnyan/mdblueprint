@@ -1,0 +1,171 @@
+[
+  {
+    "dependencies": [
+      "VotingRule",
+      "Monotonicity",
+      "Profile",
+      "zProfile_prefers_inside",
+      "zProfile_prefers_inside_outside",
+      "StrictlyPreferred.asymm",
+      "BallotPrefers.asymm",
+      "Prefers.asymm",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "monotonic_zProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 163
+      },
+      "start": {
+        "column": 1,
+        "line": 163
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem monotonic_zProfile [Fintype N] [Fintype A] (f : VotingRule N A) (hM : Monotonicity f) (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] {a : A} (haR : a \u2208 R) (ha : a \u2208 f P) : a \u2208 f (zProfile P Q R)"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Unanimity",
+      "Monotonicity",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "unanimous_strict_pref_not_chosen",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 184
+      },
+      "start": {
+        "column": 1,
+        "line": 184
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem unanimous_strict_pref_not_chosen [Fintype N] [Nonempty N] [Fintype A] (f : VotingRule N A) (hU : Unanimity f) (_hM : Monotonicity f) (P : Profile N A) {a b : A} (hab : \u2200 i : N, Prefers P i a b) : b \u2209 f P"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Unanimity",
+      "Monotonicity",
+      "Profile",
+      "zProfile_prefers_inside_outside",
+      "zProfile_prefers_inside",
+      "StrictlyPreferred.asymm",
+      "BallotPrefers.asymm",
+      "Prefers.asymm",
+      "Prefers",
+      "IsTotal",
+      "Resolute",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "SWF",
+      "BallotPrefers.total_of_ne",
+      "Prefers.total_of_ne",
+      "IIA"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "zProfile_choice_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 194
+      },
+      "start": {
+        "column": 1,
+        "line": 194
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem zProfile_choice_mem [Fintype N] [Nonempty N] [Fintype A] (f : VotingRule N A) (hU : Unanimity f) (_hM : Monotonicity f) (P Q : Profile N A) (R : Set A) [\u2200 a : A, Decidable (a \u2208 R)] (hR : R.Nonempty) {a : A} (ha : a \u2208 f (zProfile P Q R)) : a \u2208 R"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "IsTotal",
+      "Resolute",
+      "Unanimity",
+      "Monotonicity",
+      "Dictatorial",
+      "SWF",
+      "arrow_impossibility",
+      "Prefers",
+      "topChoice_topRank",
+      "monotonic_zProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "muller_satterthwaite",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 447
+      },
+      "start": {
+        "column": 1,
+        "line": 447
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem muller_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A] (hA : Fintype.card A \u2265 3) (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f) (hU : Unanimity f) (hM : Monotonicity f) : Dictatorial f"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Resolute",
+      "ResoluteStrategyproofness",
+      "Monotonicity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "strategyproof_monotonic",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 476
+      },
+      "start": {
+        "column": 1,
+        "line": 476
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem strategyproof_monotonic [Fintype N] [Fintype A] (f : VotingRule N A) (hf_res : Resolute f) (hSP : ResoluteStrategyproofness f hf_res) : Monotonicity f"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "IsTotal",
+      "Resolute",
+      "Unanimity",
+      "ResoluteStrategyproofness",
+      "Dictatorial",
+      "muller_satterthwaite",
+      "strategyproof_monotonic"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.GibbardSatterthwaite",
+    "name": "gibbard_satterthwaite",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 496
+      },
+      "start": {
+        "column": 1,
+        "line": 496
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/GibbardSatterthwaite.lean",
+    "type": "theorem gibbard_satterthwaite [Fintype N] [Nonempty N] [Fintype A] [Nonempty A] (hA : Fintype.card A \u2265 3) (f : VotingRule N A) (hf_total : IsTotal f) (hf_res : Resolute f) (hU : Unanimity f) (hSP : ResoluteStrategyproofness f hf_res) : Dictatorial f"
+  }
+]

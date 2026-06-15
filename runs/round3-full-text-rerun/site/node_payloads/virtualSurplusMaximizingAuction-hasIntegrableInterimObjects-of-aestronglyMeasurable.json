@@ -1,0 +1,42 @@
+{
+  "id": "virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-aestronglyMeasurable",
+  "title": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/virtualSurplusMaximizingAuction-hasIntegrableInterimObjects-of-aestronglyMeasurable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) (halloc_meas : ∀ i z_i, AEStronglyMeasurable (fun t =&gt; A.virtualSurplusMaximizingAuction.interimAllocationIntegrand i z_i t) (A.opponentPrior i)) (hpay_meas : ∀ i z_i, AEStronglyMeasurable (fun t =&gt; A.virtualSurplusMaximizingAuction.interimPaymentIntegrand i z_i t) (A.opponentPrior i)) : A.virtualSurplusMaximizingAuction.HasIntegrableInterimObjects</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasIntegrableInterimObjects</li>\n<li>hasIntegrableInterimObjects_of_aestronglyMeasurable_of_bound</li>\n<li>virtualSurplusMaximizingAuction_isFeasible</li>\n<li>virtualSurplusMaximizingAuction_interimPaymentIntegrand_bound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasIntegrableInterimObjects",
+      "title": "HasIntegrableInterimObjects",
+      "href": "misc/HasIntegrableInterimObjects.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+      "display_name": "virtualSurplusMaximizingAuction_hasIntegrableInterimObjects_of_aestronglyMeasurable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

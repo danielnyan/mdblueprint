@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "IsNashEquilibrium",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "IsNashEquilibrium",
+    "target": "IsWeaklyDominant.isBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "IsNashEquilibrium",
+    "target": "IsBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "IsWeaklyDominant.isBestResponse"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "source": "of_dominant",
+    "target": "IsBestResponse"
+  }
+]

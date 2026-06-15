@@ -1,0 +1,660 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envies",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 108
+      },
+      "start": {
+        "column": 1,
+        "line": 108
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "def envies (v : Valuation N G) (A : Allocation N G) (i j : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envies_irrefl",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 112
+      },
+      "start": {
+        "column": 1,
+        "line": 112
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma envies_irrefl (v : Valuation N G) (A : Allocation N G) (i : N) : \u00ac envies v A i i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envies_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 117
+      },
+      "start": {
+        "column": 1,
+        "line": 117
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma envies_ne (v : Valuation N G) (A : Allocation N G) {i j : N} (h : envies v A i j) : i \u2260 j"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "isSource",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 129
+      },
+      "start": {
+        "column": 1,
+        "line": 129
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "def isSource (v : Valuation N G) (A : Allocation N G) (i : N) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree",
+      "isSource"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "IsEnvyFree.isSource_all",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 133
+      },
+      "start": {
+        "column": 1,
+        "line": 133
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma IsEnvyFree.isSource_all (v : Valuation N G) (A : Allocation N G) (hef : IsEnvyFree v A) (i : N) : isSource v A i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "isEnvyCycle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 147
+      },
+      "start": {
+        "column": 1,
+        "line": 147
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "def isEnvyCycle (v : Valuation N G) (A : Allocation N G) (l : List N) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isEnvyCycle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "hasEnvyCycle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 156
+      },
+      "start": {
+        "column": 1,
+        "line": 156
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "def hasEnvyCycle (v : Valuation N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isEnvyCycle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "isEnvyCycle_length_ge_two",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 161
+      },
+      "start": {
+        "column": 1,
+        "line": 161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma isEnvyCycle_length_ge_two (v : Valuation N G) (A : Allocation N G) (l : List N) (hcyc : isEnvyCycle v A l) : 2 \u2264 l.length"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isSource",
+      "isEnvyCycle",
+      "Profile.ext",
+      "IsZeroSum.head",
+      "Subtree.head"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "isSource_not_mem_envyCycle",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 174
+      },
+      "start": {
+        "column": 1,
+        "line": 174
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma isSource_not_mem_envyCycle (v : Valuation N G) (A : Allocation N G) (i : N) (hs : isSource v A i) (l : List N) (hcyc : isEnvyCycle v A l) : i \u2209 l"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_not_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 235
+      },
+      "start": {
+        "column": 1,
+        "line": 235
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_not_mem (A : Allocation N G) (l : List N) (i : N) (h : i \u2209 l) : rotateBundles A l i = A i"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "Pos",
+      "IsZeroSum.head",
+      "Subtree.head"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_mem",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 274
+      },
+      "start": {
+        "column": 1,
+        "line": 274
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_mem (A : Allocation N G) (l : List N) (i : N) (h : i \u2208 l) : \u2203 k : Fin l.length, l.get k = i \u2227 \u2203 k' : Fin l.length, (k'.val = (k.val + 1) % l.length) \u2227 rotateBundles A l i = A (l.get k')"
+  },
+  {
+    "dependencies": [
+      "Allocation",
+      "rotateBundles_not_mem",
+      "rotateBundles_mem",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "Profile.ext",
+      "mem_biUnion"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_isAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 319
+      },
+      "start": {
+        "column": 1,
+        "line": 319
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_isAllocation [Fintype N] {allGoods : Finset G} {A : Allocation N G} (hA : IsAllocation allGoods A) (l : List N) (hnd : l.Nodup) : IsAllocation allGoods (rotateBundles A l)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isEnvyCycle",
+      "rotateBundles_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_improves",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 374
+      },
+      "start": {
+        "column": 1,
+        "line": 374
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_improves (v : Valuation N G) (A : Allocation N G) (l : List N) (hcyc : isEnvyCycle v A l) (i : N) (hi : i \u2208 l) : v.val i (A i) < v.val i (rotateBundles A l i)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isEnvyCycle",
+      "rotateBundles_improves",
+      "rotateBundles_not_mem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_nondecreasing",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 389
+      },
+      "start": {
+        "column": 1,
+        "line": 389
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_nondecreasing (v : Valuation N G) (A : Allocation N G) (l : List N) (hcyc : isEnvyCycle v A l) (i : N) : v.val i (A i) \u2264 v.val i (rotateBundles A l i)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "paretoDomSet_subset",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 415
+      },
+      "start": {
+        "column": 1,
+        "line": 415
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma paretoDomSet_subset [Fintype N] [Fintype G] (v : Valuation N G) (A A' : Allocation N G) (h : \u2200 i : N, v.val i (A i) \u2264 v.val i (A' i)) : Finset.univ.filter (fun B : N \u2192 Finset G => \u2200 i : N, v.val i (A' i) \u2264 v.val i (B i)) \u2286 Finset.univ.filter (fun B : N \u2192 Finset G => \u2200 i : N, v.val i (A i) \u2264 v.val i (B i))"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "self_mem_paretoDomSet",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 425
+      },
+      "start": {
+        "column": 1,
+        "line": 425
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma self_mem_paretoDomSet [Fintype N] [Fintype G] (v : Valuation N G) (A : Allocation N G) : A \u2208 Finset.univ.filter (fun B : N \u2192 Finset G => \u2200 i : N, v.val i (A i) \u2264 v.val i (B i))"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "not_mem_paretoDomSet_of_strict",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 436
+      },
+      "start": {
+        "column": 1,
+        "line": 436
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma not_mem_paretoDomSet_of_strict [Fintype N] [Fintype G] (v : Valuation N G) (A A' : Allocation N G) (_hweak : \u2200 i : N, v.val i (A i) \u2264 v.val i (A' i)) (hstrict : \u2203 j : N, v.val j (A j) < v.val j (A' j)) : A \u2209 Finset.univ.filter (fun B : N \u2192 Finset G => \u2200 i : N, v.val i (A' i) \u2264 v.val i (B i))"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "isEnvyCycle",
+      "paretoDomSet_subset",
+      "rotateBundles_nondecreasing",
+      "self_mem_paretoDomSet",
+      "not_mem_paretoDomSet_of_strict",
+      "rotateBundles_improves",
+      "hasEnvyCycle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "rotateBundles_paretoDomCount_lt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 448
+      },
+      "start": {
+        "column": 1,
+        "line": 448
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma rotateBundles_paretoDomCount_lt [Fintype N] [Fintype G] [DecidableEq N] (v : Valuation N G) (A : Allocation N G) (l : List N) (hcyc : isEnvyCycle v A l) : paretoDomCount v (rotateBundles A l) < paretoDomCount v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "eliminateAllCycles_unfold",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 493
+      },
+      "start": {
+        "column": 1,
+        "line": 493
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma eliminateAllCycles_unfold [Fintype N] [Fintype G] [DecidableEq N] (v : Valuation N G) (A : Allocation N G) : eliminateAllCycles v A = if h : hasEnvyCycle v A then eliminateAllCycles v (rotateBundles A (Classical.choose h)) else A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle",
+      "eliminateAllCycles_unfold",
+      "rotateBundles_paretoDomCount_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "eliminateAllCycles_acyclic",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 512
+      },
+      "start": {
+        "column": 1,
+        "line": 512
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma eliminateAllCycles_acyclic (v : Valuation N G) (A : Allocation N G) : \u00ac hasEnvyCycle v (eliminateAllCycles v A)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle",
+      "eliminateAllCycles_unfold",
+      "rotateBundles_isAllocation",
+      "rotateBundles_paretoDomCount_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "eliminateAllCycles_isAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 528
+      },
+      "start": {
+        "column": 1,
+        "line": 528
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma eliminateAllCycles_isAllocation [DecidableEq G] (v : Valuation N G) {allGoods : Finset G} {A : Allocation N G} (hA : IsAllocation allGoods A) : IsAllocation allGoods (eliminateAllCycles v A)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "eliminateAllCycles_unfold",
+      "rotateBundles_nondecreasing",
+      "rotateBundles_paretoDomCount_lt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "eliminateAllCycles_nondecreasing",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 550
+      },
+      "start": {
+        "column": 1,
+        "line": 550
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma eliminateAllCycles_nondecreasing [DecidableEq G] (v : Valuation N G) (A : Allocation N G) (i : N) : v.val i (A i) \u2264 v.val i (eliminateAllCycles v A i)"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle",
+      "eliminateAllCycles_unfold"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "eliminateAllCycles_eq_of_acyclic",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 569
+      },
+      "start": {
+        "column": 1,
+        "line": 569
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma eliminateAllCycles_eq_of_acyclic (v : Valuation N G) (A : Allocation N G) (h : \u00ac hasEnvyCycle v A) : eliminateAllCycles v A = A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle",
+      "isSource",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "isEnvyCycle"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "acyclic_has_source",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 591
+      },
+      "start": {
+        "column": 1,
+        "line": 591
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma acyclic_has_source [Fintype N] [Nonempty N] (v : Valuation N G) (A : Allocation N G) (hdag : \u00ac hasEnvyCycle v A) : \u2203 i : N, isSource v A i"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "hasEnvyCycle",
+      "isSource",
+      "acyclic_has_source",
+      "eliminateAllCycles_acyclic",
+      "toValuation",
+      "isEnvyCycle",
+      "toFinset",
+      "Profile.ext",
+      "eliminateAllCycles_isAllocation",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "rotateBundles_mem",
+      "rotateBundles_not_mem",
+      "eliminateAllCycles_unfold",
+      "rotateBundles_paretoDomCount_lt",
+      "IsEFX.isEF1",
+      "IsEF1",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "eliminateAllCycles_nondecreasing"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "findSource_isSource",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 649
+      },
+      "start": {
+        "column": 1,
+        "line": 649
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "lemma findSource_isSource [Fintype N] [Nonempty N] (v : Valuation N G) (A : Allocation N G) (hdag : \u00ac hasEnvyCycle v A) : isSource v A (findSource v A hdag)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envyCycleAllocation_isAllocation",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 943
+      },
+      "start": {
+        "column": 1,
+        "line": 943
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "theorem envyCycleAllocation_isAllocation [Fintype N] [Fintype G] [Nonempty N] [DecidableEq N] [DecidableEq G] (I : AdditiveInstance N G) : IsAllocation I.allGoods (envyCycleAllocation I)"
+  },
+  {
+    "dependencies": [
+      "IsEFX.isEF1",
+      "IsEF1",
+      "toValuation",
+      "toAdditiveValuation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envyCycleAllocation_isEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 950
+      },
+      "start": {
+        "column": 1,
+        "line": 950
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "theorem envyCycleAllocation_isEF1 [Fintype N] [Fintype G] [Nonempty N] [DecidableEq N] [DecidableEq G] (I : AdditiveInstance N G) (hnn : \u2200 (i : N) (g : G), 0 \u2264 I.weight i g) : I.IsEF1 (envyCycleAllocation I)"
+  },
+  {
+    "dependencies": [
+      "IsEFX.isEF1",
+      "IsEF1",
+      "envyCycleAllocation_isEF1"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.EnvyCycle",
+    "name": "envyCycleRule_isEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 961
+      },
+      "start": {
+        "column": 1,
+        "line": 961
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/EnvyCycle.lean",
+    "type": "theorem envyCycleRule_isEF1 [Fintype N] [Fintype G] [Nonempty N] [DecidableEq N] [DecidableEq G] (I : AdditiveInstance N G) (hnn : \u2200 (i : N) (g : G), 0 \u2264 I.weight i g) : I.IsEF1 (envyCycleRule I).1"
+  }
+]

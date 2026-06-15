@@ -1,0 +1,520 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsMixedNashEq",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 64
+      },
+      "start": {
+        "column": 1,
+        "line": 64
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def IsMixedNashEq {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (xx : stdSimplex \ud835\udd5c I) (yy : stdSimplex \ud835\udd5c J) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsMixedNashEq"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsSaddlePoint",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 74
+      },
+      "start": {
+        "column": 1,
+        "line": 74
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "abbrev IsSaddlePoint {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (xx : stdSimplex \ud835\udd5c I) (yy : stdSimplex \ud835\udd5c J) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsMixedNashEq",
+      "IsSaddlePoint"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "isMixedNashEq_iff_isSaddlePoint",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem isMixedNashEq_iff_isSaddlePoint {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (xx : stdSimplex \ud835\udd5c I) (yy : stdSimplex \ud835\udd5c J) : A.IsMixedNashEq xx yy \u2194 A.IsSaddlePoint xx yy"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "value_eq_maximin",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 96
+      },
+      "start": {
+        "column": 1,
+        "line": 96
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem value_eq_maximin {\ud835\udd5c : Type} [Field \ud835\udd5c] [ConditionallyCompleteLinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) : A.value = A.maximin"
+  },
+  {
+    "dependencies": [
+      "minimax_theorem"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "value_eq_minimax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem value_eq_minimax : A.value = A.minimax"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "optimalRowStrategies",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 113
+      },
+      "start": {
+        "column": 1,
+        "line": 113
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def optimalRowStrategies {\ud835\udd5c : Type} [Field \ud835\udd5c] [ConditionallyCompleteLinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) : Set (stdSimplex \ud835\udd5c I)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "optimalColumnStrategies",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 120
+      },
+      "start": {
+        "column": 1,
+        "line": 120
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def optimalColumnStrategies {\ud835\udd5c : Type} [Field \ud835\udd5c] [ConditionallyCompleteLinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) : Set (stdSimplex \ud835\udd5c J)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsEpsilonOptimalRow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 126
+      },
+      "start": {
+        "column": 1,
+        "line": 126
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def IsEpsilonOptimalRow {\ud835\udd5c : Type} [Field \ud835\udd5c] [ConditionallyCompleteLinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (\u03b5 : \ud835\udd5c) (xx : stdSimplex \ud835\udd5c I) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsEpsilonOptimalColumn",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 132
+      },
+      "start": {
+        "column": 1,
+        "line": 132
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def IsEpsilonOptimalColumn {\ud835\udd5c : Type} [Field \ud835\udd5c] [ConditionallyCompleteLinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (\u03b5 : \ud835\udd5c) (yy : stdSimplex \ud835\udd5c J) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsPlayerIGuarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 139
+      },
+      "start": {
+        "column": 1,
+        "line": 139
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def IsPlayerIGuarantee {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (w : \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "IsPlayerIIGuarantee",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 145
+      },
+      "start": {
+        "column": 1,
+        "line": 145
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "def IsPlayerIIGuarantee {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (w : \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "wsum_wsum_comm",
+      "ge_iff_simplex_ge",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove",
+      "value_eq_maximin"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "mem_optimalRowStrategies_iff_E_ge",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 158
+      },
+      "start": {
+        "column": 1,
+        "line": 158
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem mem_optimalRowStrategies_iff_E_ge (xx : stdSimplex \u211d I) : xx \u2208 A.optimalRowStrategies \u2194 \u2200 y' : stdSimplex \u211d J, A.value \u2264 A.E xx y'"
+  },
+  {
+    "dependencies": [
+      "optimalColumnStrategies",
+      "le_iff_simplex_le",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "value_eq_minimax",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "mem_optimalColumnStrategies_iff_E_le",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 200
+      },
+      "start": {
+        "column": 1,
+        "line": 200
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem mem_optimalColumnStrategies_iff_E_le (yy : stdSimplex \u211d J) : yy \u2208 A.optimalColumnStrategies \u2194 \u2200 x' : stdSimplex \u211d I, A.E x' yy \u2264 A.value"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "support_complementarity_row",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 238
+      },
+      "start": {
+        "column": 1,
+        "line": 238
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem support_complementarity_row [DecidableEq I] (xx : stdSimplex \u211d I) (yy : stdSimplex \u211d J) (hxx : xx \u2208 A.optimalRowStrategies) (hyy : yy \u2208 A.optimalColumnStrategies) {i : I} (hi : 0 < xx.val i) : A.Ei i yy = A.value"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "wsum_wsum_comm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "support_complementarity_column",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 275
+      },
+      "start": {
+        "column": 1,
+        "line": 275
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem support_complementarity_column [DecidableEq J] (xx : stdSimplex \u211d I) (yy : stdSimplex \u211d J) (hxx : xx \u2208 A.optimalRowStrategies) (hyy : yy \u2208 A.optimalColumnStrategies) {j : J} (hj : 0 < yy.val j) : A.Ej xx j = A.value"
+  },
+  {
+    "dependencies": [
+      "IsPlayerIGuarantee",
+      "IsPlayerIIGuarantee",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow",
+      "minimax_theorem",
+      "value_eq_maximin"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "common_guarantee_eq_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 318
+      },
+      "start": {
+        "column": 1,
+        "line": 318
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem common_guarantee_eq_value (w : \u211d) (h1 : A.IsPlayerIGuarantee w) (h2 : A.IsPlayerIIGuarantee w) : w = A.value"
+  },
+  {
+    "dependencies": [
+      "optimalRowStrategies",
+      "optimalColumnStrategies",
+      "IsSaddlePoint",
+      "mem_optimalRowStrategies_iff_E_ge",
+      "mem_optimalColumnStrategies_iff_E_le",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "stdSimplex.pure",
+      "Lottery.pure",
+      "wsum_pure_apply",
+      "lamB.aux.bddAbove",
+      "lam.aux.bddAbove",
+      "value_eq_minimax",
+      "muB.aux.bddBelow",
+      "mu.aux.bddBelow",
+      "wsum_wsum_comm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "optimal_pairs_iff_saddle_point",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 343
+      },
+      "start": {
+        "column": 1,
+        "line": 343
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem optimal_pairs_iff_saddle_point (xx : stdSimplex \u211d I) (yy : stdSimplex \u211d J) : (xx \u2208 A.optimalRowStrategies \u2227 yy \u2208 A.optimalColumnStrategies) \u2194 A.IsSaddlePoint xx yy"
+  },
+  {
+    "dependencies": [
+      "IsMixedNashEq",
+      "wsum_le_wsum",
+      "wsum_const",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "isMixedNashEq_of_pure",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 421
+      },
+      "start": {
+        "column": 1,
+        "line": 421
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem isMixedNashEq_of_pure {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) {xx : stdSimplex \ud835\udd5c I} {yy : stdSimplex \ud835\udd5c J} {v : \ud835\udd5c} (Hxx : \u2200 j, v \u2264 wsum xx (fun i => A.g i j)) (Hyy : \u2200 i, wsum yy (A.g i) \u2264 v) : A.IsMixedNashEq xx yy"
+  },
+  {
+    "dependencies": [
+      "IsMixedNashEq",
+      "isMixedNashEq_of_pure",
+      "toStrategicGame",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "exists_mixed_nash_equilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 458
+      },
+      "start": {
+        "column": 1,
+        "line": 458
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem exists_mixed_nash_equilibrium {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) : \u2203 (xx : stdSimplex \ud835\udd5c I) (yy : stdSimplex \ud835\udd5c J), A.IsMixedNashEq xx yy"
+  },
+  {
+    "dependencies": [
+      "IsZeroSum",
+      "toStrategicGame",
+      "Strategy",
+      "MixedProfile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "toStrategicGame_isZeroSum",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 499
+      },
+      "start": {
+        "column": 1,
+        "line": 499
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem toStrategicGame_isZeroSum {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) : StrategicGame.IsZeroSum A.toStrategicGame"
+  },
+  {
+    "dependencies": [
+      "MixedProfile",
+      "toStrategicGame",
+      "expectedPayoff",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "expectedPayoff_toStrategicGame_zero",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 559
+      },
+      "start": {
+        "column": 1,
+        "line": 559
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem expectedPayoff_toStrategicGame_zero {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (p : StrategicGame.MixedProfile A.toStrategicGame) : StrategicGame.expectedPayoff A.toStrategicGame p 0 = A.E (p 0) (p 1)"
+  },
+  {
+    "dependencies": [
+      "MixedProfile",
+      "toStrategicGame",
+      "expectedPayoff",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "expectedPayoff_toStrategicGame_one",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 585
+      },
+      "start": {
+        "column": 1,
+        "line": 585
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem expectedPayoff_toStrategicGame_one {\ud835\udd5c : Type} [Field \ud835\udd5c] [LinearOrder \ud835\udd5c] [IsStrictOrderedRing \ud835\udd5c] (A : MatrixGame I J \ud835\udd5c) (p : StrategicGame.MixedProfile A.toStrategicGame) : StrategicGame.expectedPayoff A.toStrategicGame p 1 = -(A.E (p 0) (p 1))"
+  },
+  {
+    "dependencies": [
+      "MixedProfile",
+      "toStrategicGame",
+      "IsMixedNashEq",
+      "exists_mixed_nash_equilibrium",
+      "expectedPayoff_toStrategicGame_zero",
+      "deviateMixed",
+      "pureToMixed",
+      "expectedPayoff_toStrategicGame_one"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGameNash",
+    "name": "exists_strategic_game_nash_equilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 619
+      },
+      "start": {
+        "column": 1,
+        "line": 619
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGameNash.lean",
+    "type": "theorem exists_strategic_game_nash_equilibrium : \u2203 p : StrategicGame.MixedProfile A.toStrategicGame, StrategicGame.IsMixedNashEq A.toStrategicGame p"
+  }
+]

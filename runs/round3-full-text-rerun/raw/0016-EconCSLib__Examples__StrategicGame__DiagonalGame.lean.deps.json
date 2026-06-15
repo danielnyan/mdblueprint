@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame",
+    "target": "diagonalGame_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGameValue_pos",
+    "target": "diagonalGame_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_column_guarantee",
+    "target": "diagonalGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_column_guarantee",
+    "target": "diagonalGame_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "diagonalGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "common_guarantee_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "diagonalGame_row_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_value",
+    "target": "diagonalGame_column_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_row_guarantee",
+    "target": "diagonalGame_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "source": "diagonalGame_row_guarantee",
+    "target": "diagonalGame"
+  }
+]

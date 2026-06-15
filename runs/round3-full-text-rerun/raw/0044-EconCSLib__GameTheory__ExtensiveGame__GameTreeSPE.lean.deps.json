@@ -1,0 +1,218 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "Strategy",
+    "target": "size_mem_children_lt"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "strong_induction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "outcome_Leaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "outcome_Node"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "outcome_optStrategy_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "value_Node_ge"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "value_optStrategy_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "optStrategy_isSubgamePerfect",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "Kuhn_exists_SPE",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "Kuhn_exists_SPE",
+    "target": "IsSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "Kuhn_exists_SPE",
+    "target": "optStrategy_isSubgamePerfect"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "strong_induction"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "outcome_Leaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "value\u2080_Leaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "value_Leaf"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "Arena.Reachable.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "CPState.step"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "outcome_Node"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_optStrategy_eq_value",
+    "target": "value_optStrategy_eq"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "value_optStrategy_eq",
+    "target": "value_Node_eq_some_child_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "value_optStrategy_eq",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "value_optStrategy_eq",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "IsSubgamePerfect",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "IsSubgamePerfect",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "IVariant.refl",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "IVariant.refl",
+    "target": "IVariant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "IVariant",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_Node",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_Node",
+    "target": "value_Node_eq_some_child_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "source": "outcome_Leaf",
+    "target": "Strategy"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "toStrategicGame",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "quasiLinearUtility_eq_transferQuasiLinearUtility",
+    "target": "quasiLinearUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "quasiLinearUtility",
+    "target": "quasiLinearValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "valueOfAllocation",
+    "target": "Valuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isQuasiLinearExPostIR",
+    "target": "IsExPostIR"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isQuasiLinearExPostIR",
+    "target": "isExPostIR"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "toQuasiLinearGame",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isQuasiLinearDSIC",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isQuasiLinearDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "IsDSIC",
+    "target": "isDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isDSIC",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isDSIC",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "isDSIC",
+    "target": "toStrategicGame"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "IsImplementable",
+    "target": "IsDSIC"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.MechanismDesign.Auction.Transfer",
+    "source": "IsImplementable",
+    "target": "isDSIC"
+  }
+]

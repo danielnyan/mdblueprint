@@ -1,0 +1,58 @@
+{
+  "id": "ValueOracle",
+  "title": "ValueOracle",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/ValueOracle.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>ValueOracle</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef ValueOracle {G : Type*} [DecidableEq G] {M : Finset G} (v : SubmodularBundleValuation M) (S : BundleAllocation M) : ℝ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BundleAllocation</li>\n<li>valueOfAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BundleAllocation",
+      "title": "BundleAllocation",
+      "href": "misc/BundleAllocation.html"
+    },
+    {
+      "id": "valueOfAllocation",
+      "title": "valueOfAllocation",
+      "href": "misc/valueOfAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BundleDemandUtility",
+      "title": "BundleDemandUtility",
+      "href": "misc/BundleDemandUtility.html"
+    },
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "ValueOracle",
+      "display_name": "ValueOracle",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

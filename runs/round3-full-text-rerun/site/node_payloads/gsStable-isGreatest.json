@@ -1,0 +1,42 @@
+{
+  "id": "gsStable-isGreatest",
+  "title": "gsStable_isGreatest",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/gsStable-isGreatest.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>gsStable_isGreatest</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem gsStable_isGreatest [NeZero n] : IsGreatest (Set.univ : Set (StableMatching w m)) (gsStable w m)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>StableMatching</li>\n<li>gsStable_greatest</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "StableMatching",
+      "title": "StableMatching",
+      "href": "misc/StableMatching.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "gsStable_isGreatest",
+      "display_name": "gsStable_isGreatest",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

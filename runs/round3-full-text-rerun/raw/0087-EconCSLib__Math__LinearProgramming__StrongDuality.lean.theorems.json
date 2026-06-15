@@ -1,0 +1,171 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "PrimalFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 51
+      },
+      "start": {
+        "column": 1,
+        "line": 51
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "def PrimalFeasible (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "DualFeasible",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "def DualFeasible (A : I \u2192 Fin n \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (u : I \u2192 \ud835\udd5c) : Prop"
+  },
+  {
+    "dependencies": [
+      "DualFeasible"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "lp_weak_duality",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "theorem lp_weak_duality (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) {x : Fin n \u2192 \ud835\udd5c} (hxA : \u2200 i, b i \u2264 \u2211 j, A i j * x j) (hxnn : \u2200 j, 0 \u2264 x j) {u : I \u2192 \ud835\udd5c} (hu_du : DualFeasible A c u) : \u2211 i, u i * b i \u2264 \u2211 j, c j * x j"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "DualAugRow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "abbrev DualAugRow (I : Type*) (n : \u2115) : Type _"
+  },
+  {
+    "dependencies": [
+      "DualAugRow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "dualAugA",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "def dualAugA (A : I \u2192 Fin n \u2192 \ud835\udd5c) : DualAugRow I n \u2192 Fin n \u2192 \ud835\udd5c | Sum.inl i, j => A i j | Sum.inr j', j => if j = j' then 1 else 0 /-- Augmented RHS. -/"
+  },
+  {
+    "dependencies": [
+      "DualAugRow",
+      "dualAugA"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "dualAugB",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 107
+      },
+      "start": {
+        "column": 1,
+        "line": 107
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "def dualAugB (b : I \u2192 \ud835\udd5c) : DualAugRow I n \u2192 \ud835\udd5c | Sum.inl i => b i | Sum.inr _ => 0 @[simp] theorem dualAugA_inl (A : I \u2192 Fin n \u2192 \ud835\udd5c) (i : I) (j : Fin n) : dualAugA A (Sum.inl i) j = A i j"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "dualAugA",
+      "dualAugB",
+      "PrimalFeasible",
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "isFeasible_dualAug_iff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 124
+      },
+      "start": {
+        "column": 1,
+        "line": 124
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "theorem isFeasible_dualAug_iff (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) : IsFeasible (dualAugA A) (dualAugB b) \u2194 PrimalFeasible A b"
+  },
+  {
+    "dependencies": [
+      "PrimalFeasible",
+      "DualFeasible",
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "dualAugA",
+      "dualAugB",
+      "isFeasible_dualAug_iff",
+      "farkas_lemma",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearProgramming.StrongDuality",
+    "name": "lp_strong_duality",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 154
+      },
+      "start": {
+        "column": 1,
+        "line": 154
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearProgramming/StrongDuality.lean",
+    "type": "theorem lp_strong_duality (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (d : \ud835\udd5c) (hP_feas : PrimalFeasible A b) (hP_bound : \u2200 x : Fin n \u2192 \ud835\udd5c, (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2192 (\u2200 j, 0 \u2264 x j) \u2192 d \u2264 \u2211 j, c j * x j) : \u2203 u : I \u2192 \ud835\udd5c, DualFeasible A c u \u2227 d \u2264 \u2211 i, u i * b i"
+  }
+]

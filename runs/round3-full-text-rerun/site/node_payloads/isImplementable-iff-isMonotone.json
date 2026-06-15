@@ -1,0 +1,47 @@
+{
+  "id": "isImplementable-iff-isMonotone",
+  "title": "isImplementable_iff_isMonotone",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isImplementable-iff-isMonotone.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isImplementable_iff_isMonotone</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isImplementable_iff_isMonotone [DecidableEq I] (x : (I → ℝ) → I → ℝ) : IsImplementable x ↔ IsMonotone ({ allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsImplementable</li>\n<li>IsMonotone</li>\n<li>isMonotone_of_isDSIC</li>\n<li>isImplementable_of_isMonotone</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsImplementable",
+      "title": "IsImplementable",
+      "href": "misc/IsImplementable.html"
+    },
+    {
+      "id": "IsMonotone",
+      "title": "IsMonotone",
+      "href": "misc/IsMonotone.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isImplementable_iff_isMonotone",
+      "display_name": "isImplementable_iff_isMonotone",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

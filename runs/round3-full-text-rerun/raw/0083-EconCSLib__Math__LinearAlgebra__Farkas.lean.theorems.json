@@ -1,0 +1,90 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "name": "FarkasAugRow",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 66
+      },
+      "start": {
+        "column": 1,
+        "line": 66
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/Farkas.lean",
+    "type": "abbrev FarkasAugRow (I : Type*) : Type _"
+  },
+  {
+    "dependencies": [
+      "FarkasAugRow"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "name": "farkasAugA",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 69
+      },
+      "start": {
+        "column": 1,
+        "line": 69
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/Farkas.lean",
+    "type": "def farkasAugA (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (d : \ud835\udd5c) : FarkasAugRow I \u2192 Fin (n+1) \u2192 \ud835\udd5c | Sum.inl i, j => Fin.lastCases (-b i) (fun j' => A i j') j | Sum.inr false, j => Fin.lastCases 1 (fun _ => (0 : \ud835\udd5c)) j | Sum.inr true, j => Fin.lastCases d (fun j' => -c j') j /-- Augmented RHS `b_aug : FarkasAugRow I \u2192 \ud835\udd5c`. -/"
+  },
+  {
+    "dependencies": [
+      "FarkasAugRow",
+      "farkasAugA",
+      "rowEval"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "name": "farkasAugB",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/Farkas.lean",
+    "type": "def farkasAugB (b : I \u2192 \ud835\udd5c) : FarkasAugRow I \u2192 \ud835\udd5c | Sum.inl _ => 0 | Sum.inr false => 0 | Sum.inr true => 1 /-! ### Simp lemmas for `farkasAugA` and `farkasAugB` -/ @[simp] theorem farkasAugA_inl_castSucc (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (d : \ud835\udd5c) (i : I) (j' : Fin n) : farkasAugA A b c d (Sum.inl i) j'.castSucc = A i j'"
+  },
+  {
+    "dependencies": [
+      "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "IsFeasible",
+      "farkasAugA",
+      "farkasAugB",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "rowEval",
+      "HasCertificate",
+      "theorem_of_alternative"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Math.LinearAlgebra.Farkas",
+    "name": "farkas_lemma",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 164
+      },
+      "start": {
+        "column": 1,
+        "line": 164
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/Farkas.lean",
+    "type": "theorem farkas_lemma (A : I \u2192 Fin n \u2192 \ud835\udd5c) (b : I \u2192 \ud835\udd5c) (c : Fin n \u2192 \ud835\udd5c) (d : \ud835\udd5c) (hS : IsFeasible A b) : (\u2200 x : Fin n \u2192 \ud835\udd5c, (\u2200 i, b i \u2264 \u2211 j, A i j * x j) \u2192 d \u2264 \u2211 j, c j * x j) \u2194 (\u2203 u : I \u2192 \ud835\udd5c, (\u2200 i, 0 \u2264 u i) \u2227 (\u2200 j, \u2211 i, u i * A i j = c j) \u2227 d \u2264 \u2211 i, u i * b i)"
+  }
+]

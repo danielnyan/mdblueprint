@@ -1,0 +1,62 @@
+{
+  "id": "sample-zero-sum",
+  "title": "sample_zero_sum",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/sample-zero-sum.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>sample_zero_sum</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem sample_zero_sum : IsZeroSum sample</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsZeroSum</li>\n<li>zeroSumLeaf</li>\n<li>Strategy</li>\n<li>IsCompletelyMixedProfile.player</li>\n<li>IsCompletelyMixed.player</li>\n<li>Player</li>\n<li>IsSubgamePerfect</li>\n<li>Kuhn_exists_SPE</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "zeroSumLeaf",
+      "title": "zeroSumLeaf",
+      "href": "misc/zeroSumLeaf.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "Player",
+      "title": "Player",
+      "href": "misc/Player.html"
+    },
+    {
+      "id": "IsSubgamePerfect",
+      "title": "IsSubgamePerfect",
+      "href": "misc/IsSubgamePerfect.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "sample_zero_sum",
+      "display_name": "sample_zero_sum",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

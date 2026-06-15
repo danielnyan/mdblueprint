@@ -1,0 +1,58 @@
+{
+  "id": "InfoWellFormed",
+  "title": "InfoWellFormed",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/InfoWellFormed.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>InfoWellFormed</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef InfoWellFormed : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>SameMoverOnInfo</li>\n<li>SameActionsOnInfo</li>\n<li>NoChanceOnDecisionInfo</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "SameMoverOnInfo",
+      "title": "SameMoverOnInfo",
+      "href": "misc/SameMoverOnInfo.html"
+    },
+    {
+      "id": "SameActionsOnInfo",
+      "title": "SameActionsOnInfo",
+      "href": "misc/SameActionsOnInfo.html"
+    },
+    {
+      "id": "NoChanceOnDecisionInfo",
+      "title": "NoChanceOnDecisionInfo",
+      "href": "misc/NoChanceOnDecisionInfo.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "subgameAt-infoWellFormed",
+      "title": "subgameAt_infoWellFormed",
+      "href": "misc/subgameAt-infoWellFormed.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "InfoWellFormed",
+      "display_name": "InfoWellFormed",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

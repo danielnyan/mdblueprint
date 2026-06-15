@@ -1,0 +1,105 @@
+[
+  {
+    "dependencies": [
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+    "name": "Profile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+    "type": "abbrev Profile (G : StrategicGame N U)"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+    "name": "deviate",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 53
+      },
+      "start": {
+        "column": 1,
+        "line": 53
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+    "type": "abbrev deviate {G : StrategicGame N U} [DecidableEq N] (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) : G.Profile"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+    "name": "deviate_self",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 65
+      },
+      "start": {
+        "column": 1,
+        "line": 65
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+    "type": "@[simp] theorem deviate_self (\u03c3 : G.Profile) (i : N) : deviate \u03c3 i (\u03c3 i) = \u03c3"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+    "name": "deviate_same",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+    "type": "@[simp] theorem deviate_same (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) : deviate \u03c3 i s' i = s'"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Strategy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.Basic",
+    "name": "deviate_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/Basic.lean",
+    "type": "@[simp] theorem deviate_of_ne (\u03c3 : G.Profile) (i : N) (s' : G.strategy i) {j : N} (h : j \u2260 i) : deviate \u03c3 i s' j = \u03c3 j"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "wPartner-stableJoin",
+  "title": "wPartner_stableJoin",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/wPartner-stableJoin.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>wPartner_stableJoin</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma wPartner_stableJoin (j : Fin n) : wPartner (stableJoin μ ν hμ hν) (stableJoin_isStable μ ν hμ hν) j = joinWoman μ ν hμ hν j</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>stableJoin_isStable</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "wPartner_stableJoin",
+      "display_name": "wPartner_stableJoin",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

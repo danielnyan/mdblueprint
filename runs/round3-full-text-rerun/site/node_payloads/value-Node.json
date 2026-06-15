@@ -1,0 +1,42 @@
+{
+  "id": "value-Node",
+  "title": "value_Node",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value-Node.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value_Node</h1>\n<h2>Lean type</h2>\n<p><code>lean\n@[simp] theorem value_Node (m : N) (h : GameTree N U) (t : List (GameTree N U)) : value (Node m h t) = List.argMaxOn (fun v =&gt; v m) (value h) (valueList t)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>argMaxOn</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "argMaxOn",
+      "title": "argMaxOn",
+      "href": "misc/argMaxOn.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value_Node",
+      "display_name": "value_Node",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

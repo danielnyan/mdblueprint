@@ -1,0 +1,168 @@
+{
+  "id": "OpponentTypeProfile",
+  "title": "OpponentTypeProfile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/OpponentTypeProfile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>OpponentTypeProfile</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev OpponentTypeProfile (I : Type*) (i : I)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>OpponentProfile</li>\n<li>Profile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "OpponentProfile",
+      "title": "OpponentProfile",
+      "href": "misc/OpponentProfile.html"
+    },
+    {
+      "id": "Profile",
+      "title": "Profile",
+      "href": "misc/Profile.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsFeasible-isSingleItemAllocationRule",
+      "title": "IsFeasible.isSingleItemAllocationRule",
+      "href": "misc/IsFeasible-isSingleItemAllocationRule.html"
+    },
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "integrable-comp-eval-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integrable_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integrable-comp-eval-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integrable-comp-eval-opponentProductPrior",
+      "title": "integrable_comp_eval_opponentProductPrior",
+      "href": "misc/integrable-comp-eval-opponentProductPrior.html"
+    },
+    {
+      "id": "integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors",
+      "title": "integrable_prior_of_integrable_profileSplit_of_hasIndependentTypePriors",
+      "href": "misc/integrable-prior-of-integrable-profileSplit-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integrable-productPrior-of-integrable-profileSplit",
+      "title": "integrable_productPrior_of_integrable_profileSplit",
+      "href": "misc/integrable-productPrior-of-integrable-profileSplit.html"
+    },
+    {
+      "id": "integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors",
+      "title": "integrableVirtualSurplus_of_profileSplit_integrable_of_hasIndependentTypePriors",
+      "href": "misc/integrableVirtualSurplus-of-profileSplit-integrable-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-comp-eval-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integral_comp_eval_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-comp-eval-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-comp-eval-opponentProductPrior",
+      "title": "integral_comp_eval_opponentProductPrior",
+      "href": "misc/integral-comp-eval-opponentProductPrior.html"
+    },
+    {
+      "id": "integral-comp-profileSplitMeasurableEquiv-productPrior",
+      "title": "integral_comp_profileSplitMeasurableEquiv_productPrior",
+      "href": "misc/integral-comp-profileSplitMeasurableEquiv-productPrior.html"
+    },
+    {
+      "id": "integral-prior-eq-integral-typeMeasure-opponentPrior-of-hasIndependentTypePriors",
+      "title": "integral_prior_eq_integral_typeMeasure_opponentPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-prior-eq-integral-typeMeasure-opponentPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-prior-eq-integral-typeMeasure-opponentProductPrior-of-hasIndependentTypePriors",
+      "title": "integral_prior_eq_integral_typeMeasure_opponentProductPrior_of_hasIndependentTypePriors",
+      "href": "misc/integral-prior-eq-integral-typeMeasure-opponentProductPrior-of-hasIndependentTypePriors.html"
+    },
+    {
+      "id": "integral-productPrior-eq-integral-typeMeasure-opponentProductPrior",
+      "title": "integral_productPrior_eq_integral_typeMeasure_opponentProductPrior",
+      "href": "misc/integral-productPrior-eq-integral-typeMeasure-opponentProductPrior.html"
+    },
+    {
+      "id": "integral-typeMeasure-eq-intervalIntegral-mul",
+      "title": "integral_typeMeasure_eq_intervalIntegral_mul",
+      "href": "misc/integral-typeMeasure-eq-intervalIntegral-mul.html"
+    },
+    {
+      "id": "interimAllocProb-le-one-of-isFeasible",
+      "title": "interimAllocProb_le_one_of_isFeasible",
+      "href": "misc/interimAllocProb-le-one-of-isFeasible.html"
+    },
+    {
+      "id": "interimExpectedPayment-zero-of-isZeroNormalized",
+      "title": "interimExpectedPayment_zero_of_isZeroNormalized",
+      "href": "misc/interimExpectedPayment-zero-of-isZeroNormalized.html"
+    },
+    {
+      "id": "interimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "interimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/interimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "interimQuasiLinearUtilityIntegrand-le-of-isDSIC",
+      "title": "interimQuasiLinearUtilityIntegrand_le_of_isDSIC",
+      "href": "misc/interimQuasiLinearUtilityIntegrand-le-of-isDSIC.html"
+    },
+    {
+      "id": "intervalIntegrable-interimAllocProb-mul-virtualValue-mul-typeDensity-of-profileSplit-integrable",
+      "title": "intervalIntegrable_interimAllocProb_mul_virtualValue_mul_typeDensity_of_profileSplit_integrable",
+      "href": "misc/intervalIntegrable-interimAllocProb-mul-virtualValue-mul-typeDensity-of-profileSplit-integrable.html"
+    },
+    {
+      "id": "intervalIntegrable-interimExpectedPayment-mul-typeDensity-of-profileSplit-integrable",
+      "title": "intervalIntegrable_interimExpectedPayment_mul_typeDensity_of_profileSplit_integrable",
+      "href": "misc/intervalIntegrable-interimExpectedPayment-mul-typeDensity-of-profileSplit-integrable.html"
+    },
+    {
+      "id": "measurePreserving-profileSplitMeasurableEquiv-productPrior",
+      "title": "measurePreserving_profileSplitMeasurableEquiv_productPrior",
+      "href": "misc/measurePreserving-profileSplitMeasurableEquiv-productPrior.html"
+    },
+    {
+      "id": "paymentInterimFubiniAssumptions-of-independentTypePriors",
+      "title": "paymentInterimFubiniAssumptions_of_independentTypePriors",
+      "href": "misc/paymentInterimFubiniAssumptions-of-independentTypePriors.html"
+    },
+    {
+      "id": "typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors",
+      "title": "typeMeasureInterimFubiniAnalyticAssumptions_of_independentTypePriors",
+      "href": "misc/typeMeasureInterimFubiniAnalyticAssumptions-of-independentTypePriors.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "OpponentTypeProfile",
+      "display_name": "OpponentTypeProfile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

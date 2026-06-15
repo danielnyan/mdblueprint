@@ -1,0 +1,93 @@
+{
+  "id": "IsStable",
+  "title": "IsStable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsStable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsStable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsStable (market : MatchingMarket M W) (μ : Matching M W) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsBlocking</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsBlocking",
+      "title": "IsBlocking",
+      "href": "misc/IsBlocking.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsAchievable",
+      "title": "IsAchievable",
+      "href": "misc/IsAchievable.html"
+    },
+    {
+      "id": "StableMatching",
+      "title": "StableMatching",
+      "href": "misc/StableMatching.html"
+    },
+    {
+      "id": "galeShapley-isProposingOptimal",
+      "title": "galeShapley_isProposingOptimal",
+      "href": "misc/galeShapley-isProposingOptimal.html"
+    },
+    {
+      "id": "galeShapley-isStable",
+      "title": "galeShapley_isStable",
+      "href": "misc/galeShapley-isStable.html"
+    },
+    {
+      "id": "opposed-preferences",
+      "title": "opposed_preferences",
+      "href": "misc/opposed-preferences.html"
+    },
+    {
+      "id": "opposed-preferences-women",
+      "title": "opposed_preferences_women",
+      "href": "misc/opposed-preferences-women.html"
+    },
+    {
+      "id": "stable-matching-perfect",
+      "title": "stable_matching_perfect",
+      "href": "misc/stable-matching-perfect.html"
+    },
+    {
+      "id": "stableJoin-isStable",
+      "title": "stableJoin_isStable",
+      "href": "misc/stableJoin-isStable.html"
+    },
+    {
+      "id": "stableMeet-isStable",
+      "title": "stableMeet_isStable",
+      "href": "misc/stableMeet-isStable.html"
+    },
+    {
+      "id": "wPartner-eq-iff",
+      "title": "wPartner_eq_iff",
+      "href": "misc/wPartner-eq-iff.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsStable",
+      "display_name": "IsStable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

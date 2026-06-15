@@ -1,0 +1,52 @@
+{
+  "id": "RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable",
+  "title": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] {A : BayesianSingleItemAuction I} (h : A.RegularMyersonICIRAnalyticAssumptions) (B : BayesianSingleItemAuction I) (_hfeas : B.IsFeasible) (hIC : B.IsIncentiveCompatible) (_hIR : B.IsIndividuallyRationalOnSupport) : ∀ i : I, IntervalIntegrable (fun v =&gt; B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v)) volume 0 (A.typeData.omega i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIncentiveCompatible</li>\n<li>IsIncentiveCompatible</li>\n<li>IsRegularMyersonOptimalICIRAuction.isIndividuallyRationalOnSupport</li>\n<li>IsIndividuallyRationalOnSupport</li>\n<li>hasIntervalIntegrableInterimAllocation_of_isIncentiveCompatible</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsIncentiveCompatible",
+      "title": "IsIncentiveCompatible",
+      "href": "misc/IsIncentiveCompatible.html"
+    },
+    {
+      "id": "IsIndividuallyRationalOnSupport",
+      "title": "IsIndividuallyRationalOnSupport",
+      "href": "misc/IsIndividuallyRationalOnSupport.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+      "display_name": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

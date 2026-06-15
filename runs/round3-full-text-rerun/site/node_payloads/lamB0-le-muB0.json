@@ -1,0 +1,42 @@
+{
+  "id": "lamB0-le-muB0",
+  "title": "lamB0_le_muB0",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lamB0-le-muB0.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lamB0_le_muB0</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem lamB0_le_muB0 (A B : I → J → ℝ) (hB : IsPositive B) : lamB0 A B ≤ muB0 A B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositive</li>\n<li>exists_xx_lamB0</li>\n<li>exists_yy_muB0</li>\n<li>xBy_pos</li>\n<li>wsum_wsum_comm</li>\n<li>wsum_le_wsum</li>\n<li>IsPositiveAffineOf.trans</li>\n<li>StrictlyPreferred.trans</li>\n<li>Arena.Reachable.trans</li>\n<li>Indifferent.trans</li>\n<li>Subtree.trans</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsPositive",
+      "title": "IsPositive",
+      "href": "misc/IsPositive.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lamB0_le_muB0",
+      "display_name": "lamB0_le_muB0",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

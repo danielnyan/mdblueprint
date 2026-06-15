@@ -1,0 +1,533 @@
+{
+  "id": "Profile",
+  "title": "Profile",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/Profile.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>Profile</h1>\n<h2>Lean type</h2>\n<p><code>lean\nabbrev Profile (G : StrategicGame N U)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "Anonymity",
+      "title": "Anonymity",
+      "href": "misc/Anonymity.html"
+    },
+    {
+      "id": "BallotBottom",
+      "title": "BallotBottom",
+      "href": "misc/BallotBottom.html"
+    },
+    {
+      "id": "BottomRank",
+      "title": "BottomRank",
+      "href": "misc/BottomRank.html"
+    },
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    },
+    {
+      "id": "CondorcetConsistency",
+      "title": "CondorcetConsistency",
+      "href": "misc/CondorcetConsistency.html"
+    },
+    {
+      "id": "CondorcetWinner",
+      "title": "CondorcetWinner",
+      "href": "misc/CondorcetWinner.html"
+    },
+    {
+      "id": "Dictatorial",
+      "title": "Dictatorial",
+      "href": "misc/Dictatorial.html"
+    },
+    {
+      "id": "HasCondorcetWinner",
+      "title": "HasCondorcetWinner",
+      "href": "misc/HasCondorcetWinner.html"
+    },
+    {
+      "id": "IIA",
+      "title": "IIA",
+      "href": "misc/IIA.html"
+    },
+    {
+      "id": "IsBestResponse",
+      "title": "IsBestResponse",
+      "href": "misc/IsBestResponse.html"
+    },
+    {
+      "id": "IsConstantSum",
+      "title": "IsConstantSum",
+      "href": "misc/IsConstantSum.html"
+    },
+    {
+      "id": "IsConstantSum-nash-payoff-eq",
+      "title": "IsConstantSum.nash_payoff_eq",
+      "href": "misc/IsConstantSum-nash-payoff-eq.html"
+    },
+    {
+      "id": "IsConstantSum-nash-payoff-eq-p1",
+      "title": "IsConstantSum.nash_payoff_eq_p1",
+      "href": "misc/IsConstantSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "IsConstantSum-neg",
+      "title": "IsConstantSum.neg",
+      "href": "misc/IsConstantSum-neg.html"
+    },
+    {
+      "id": "IsConstantSum-welfare-eq",
+      "title": "IsConstantSum.welfare_eq",
+      "href": "misc/IsConstantSum-welfare-eq.html"
+    },
+    {
+      "id": "IsDecisiveFor",
+      "title": "IsDecisiveFor",
+      "href": "misc/IsDecisiveFor.html"
+    },
+    {
+      "id": "IsDegenerateCorrelatedEq",
+      "title": "IsDegenerateCorrelatedEq",
+      "href": "misc/IsDegenerateCorrelatedEq.html"
+    },
+    {
+      "id": "IsDominanceSolvable",
+      "title": "IsDominanceSolvable",
+      "href": "misc/IsDominanceSolvable.html"
+    },
+    {
+      "id": "IsExactPotential",
+      "title": "IsExactPotential",
+      "href": "misc/IsExactPotential.html"
+    },
+    {
+      "id": "IsExactPotential-maximizer-is-nash",
+      "title": "IsExactPotential.maximizer_is_nash",
+      "href": "misc/IsExactPotential-maximizer-is-nash.html"
+    },
+    {
+      "id": "IsNashEquilibrium",
+      "title": "IsNashEquilibrium",
+      "href": "misc/IsNashEquilibrium.html"
+    },
+    {
+      "id": "IsNashEquilibrium-isRationalizable",
+      "title": "IsNashEquilibrium.isRationalizable",
+      "href": "misc/IsNashEquilibrium-isRationalizable.html"
+    },
+    {
+      "id": "IsNashEquilibrium-survives",
+      "title": "IsNashEquilibrium.survives",
+      "href": "misc/IsNashEquilibrium-survives.html"
+    },
+    {
+      "id": "IsOrdinalPotential",
+      "title": "IsOrdinalPotential",
+      "href": "misc/IsOrdinalPotential.html"
+    },
+    {
+      "id": "IsOrdinalPotential-isNash-iff-localMax",
+      "title": "IsOrdinalPotential.isNash_iff_localMax",
+      "href": "misc/IsOrdinalPotential-isNash-iff-localMax.html"
+    },
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "IsWeaklyDecisiveFor",
+      "title": "IsWeaklyDecisiveFor",
+      "href": "misc/IsWeaklyDecisiveFor.html"
+    },
+    {
+      "id": "IsWeaklyDominant-isBestResponse",
+      "title": "IsWeaklyDominant.isBestResponse",
+      "href": "misc/IsWeaklyDominant-isBestResponse.html"
+    },
+    {
+      "id": "IsZeroSum",
+      "title": "IsZeroSum",
+      "href": "misc/IsZeroSum.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq",
+      "title": "IsZeroSum.nash_payoff_eq",
+      "href": "misc/IsZeroSum-nash-payoff-eq.html"
+    },
+    {
+      "id": "IsZeroSum-nash-payoff-eq-p1",
+      "title": "IsZeroSum.nash_payoff_eq_p1",
+      "href": "misc/IsZeroSum-nash-payoff-eq-p1.html"
+    },
+    {
+      "id": "IsZeroSum-neg",
+      "title": "IsZeroSum.neg",
+      "href": "misc/IsZeroSum-neg.html"
+    },
+    {
+      "id": "IsZeroSum-welfare-eq-zero",
+      "title": "IsZeroSum.welfare_eq_zero",
+      "href": "misc/IsZeroSum-welfare-eq-zero.html"
+    },
+    {
+      "id": "MajorityPrefers",
+      "title": "MajorityPrefers",
+      "href": "misc/MajorityPrefers.html"
+    },
+    {
+      "id": "Monotonicity",
+      "title": "Monotonicity",
+      "href": "misc/Monotonicity.html"
+    },
+    {
+      "id": "Neutrality",
+      "title": "Neutrality",
+      "href": "misc/Neutrality.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    },
+    {
+      "id": "OptimistStrategyproofness",
+      "title": "OptimistStrategyproofness",
+      "href": "misc/OptimistStrategyproofness.html"
+    },
+    {
+      "id": "PessimistStrategyproofness",
+      "title": "PessimistStrategyproofness",
+      "href": "misc/PessimistStrategyproofness.html"
+    },
+    {
+      "id": "Prefers",
+      "title": "Prefers",
+      "href": "misc/Prefers.html"
+    },
+    {
+      "id": "Prefers-asymm",
+      "title": "Prefers.asymm",
+      "href": "misc/Prefers-asymm.html"
+    },
+    {
+      "id": "Prefers-total-of-ne",
+      "title": "Prefers.total_of_ne",
+      "href": "misc/Prefers-total-of-ne.html"
+    },
+    {
+      "id": "Profile-ext",
+      "title": "Profile.ext",
+      "href": "misc/Profile-ext.html"
+    },
+    {
+      "id": "RandomizedSubmodularWelfareAlgorithm-IsPolynomial",
+      "title": "RandomizedSubmodularWelfareAlgorithm.IsPolynomial",
+      "href": "misc/RandomizedSubmodularWelfareAlgorithm-IsPolynomial.html"
+    },
+    {
+      "id": "Resolute",
+      "title": "Resolute",
+      "href": "misc/Resolute.html"
+    },
+    {
+      "id": "ResoluteStrategyproofness",
+      "title": "ResoluteStrategyproofness",
+      "href": "misc/ResoluteStrategyproofness.html"
+    },
+    {
+      "id": "SWF",
+      "title": "SWF",
+      "href": "misc/SWF.html"
+    },
+    {
+      "id": "SimpleLift",
+      "title": "SimpleLift",
+      "href": "misc/SimpleLift.html"
+    },
+    {
+      "id": "StrictlyDominates",
+      "title": "StrictlyDominates",
+      "href": "misc/StrictlyDominates.html"
+    },
+    {
+      "id": "Survives",
+      "title": "Survives",
+      "href": "misc/Survives.html"
+    },
+    {
+      "id": "TopRank",
+      "title": "TopRank",
+      "href": "misc/TopRank.html"
+    },
+    {
+      "id": "Unanimity",
+      "title": "Unanimity",
+      "href": "misc/Unanimity.html"
+    },
+    {
+      "id": "VotingRule",
+      "title": "VotingRule",
+      "href": "misc/VotingRule.html"
+    },
+    {
+      "id": "WeaklyDominates",
+      "title": "WeaklyDominates",
+      "href": "misc/WeaklyDominates.html"
+    },
+    {
+      "id": "condorcet-paradox-possible",
+      "title": "condorcet_paradox_possible",
+      "href": "misc/condorcet-paradox-possible.html"
+    },
+    {
+      "id": "congr-payoff",
+      "title": "congr_payoff",
+      "href": "misc/congr-payoff.html"
+    },
+    {
+      "id": "constantProfile",
+      "title": "constantProfile",
+      "href": "misc/constantProfile.html"
+    },
+    {
+      "id": "copeland-isTotal",
+      "title": "copeland_isTotal",
+      "href": "misc/copeland-isTotal.html"
+    },
+    {
+      "id": "deviate",
+      "title": "deviate",
+      "href": "misc/deviate.html"
+    },
+    {
+      "id": "deviate",
+      "title": "deviate",
+      "href": "misc/deviate.html"
+    },
+    {
+      "id": "deviate-of-ne",
+      "title": "deviate_of_ne",
+      "href": "misc/deviate-of-ne.html"
+    },
+    {
+      "id": "deviate-of-ne",
+      "title": "deviate_of_ne",
+      "href": "misc/deviate-of-ne.html"
+    },
+    {
+      "id": "deviate-same",
+      "title": "deviate_same",
+      "href": "misc/deviate-same.html"
+    },
+    {
+      "id": "deviate-same",
+      "title": "deviate_same",
+      "href": "misc/deviate-same.html"
+    },
+    {
+      "id": "deviate-self",
+      "title": "deviate_self",
+      "href": "misc/deviate-self.html"
+    },
+    {
+      "id": "deviate-self",
+      "title": "deviate_self",
+      "href": "misc/deviate-self.html"
+    },
+    {
+      "id": "evaluate-at-mixed",
+      "title": "evaluate_at_mixed",
+      "href": "misc/evaluate-at-mixed.html"
+    },
+    {
+      "id": "exists-minimal-decisive-coalition",
+      "title": "exists_minimal_decisive_coalition",
+      "href": "misc/exists-minimal-decisive-coalition.html"
+    },
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "iia-strict",
+      "title": "iia_strict",
+      "href": "misc/iia-strict.html"
+    },
+    {
+      "id": "isNashEq",
+      "title": "isNashEq",
+      "href": "misc/isNashEq.html"
+    },
+    {
+      "id": "isNashEq-iff",
+      "title": "isNashEq_iff",
+      "href": "misc/isNashEq-iff.html"
+    },
+    {
+      "id": "margin-pos",
+      "title": "margin_pos",
+      "href": "misc/margin-pos.html"
+    },
+    {
+      "id": "margin-self",
+      "title": "margin_self",
+      "href": "misc/margin-self.html"
+    },
+    {
+      "id": "margin-skew",
+      "title": "margin_skew",
+      "href": "misc/margin-skew.html"
+    },
+    {
+      "id": "mixed-g",
+      "title": "mixed_g",
+      "href": "misc/mixed-g.html"
+    },
+    {
+      "id": "monotonic-zProfile",
+      "title": "monotonic_zProfile",
+      "href": "misc/monotonic-zProfile.html"
+    },
+    {
+      "id": "nash-iff-degenerate-ce",
+      "title": "nash_iff_degenerate_ce",
+      "href": "misc/nash-iff-degenerate-ce.html"
+    },
+    {
+      "id": "of-dominant",
+      "title": "of_dominant",
+      "href": "misc/of-dominant.html"
+    },
+    {
+      "id": "pd-nash-unique",
+      "title": "pd_nash_unique",
+      "href": "misc/pd-nash-unique.html"
+    },
+    {
+      "id": "permuteVoters",
+      "title": "permuteVoters",
+      "href": "misc/permuteVoters.html"
+    },
+    {
+      "id": "pureProfileToMixed",
+      "title": "pureProfileToMixed",
+      "href": "misc/pureProfileToMixed.html"
+    },
+    {
+      "id": "rank-injective",
+      "title": "rank_injective",
+      "href": "misc/rank-injective.html"
+    },
+    {
+      "id": "rps-no-pure-nash",
+      "title": "rps_no_pure_nash",
+      "href": "misc/rps-no-pure-nash.html"
+    },
+    {
+      "id": "rps-zero-sum",
+      "title": "rps_zero_sum",
+      "href": "misc/rps-zero-sum.html"
+    },
+    {
+      "id": "sample-strategic-form-has-nash",
+      "title": "sample_strategic_form_has_nash",
+      "href": "misc/sample-strategic-form-has-nash.html"
+    },
+    {
+      "id": "scoringWinners-nonempty",
+      "title": "scoringWinners_nonempty",
+      "href": "misc/scoringWinners-nonempty.html"
+    },
+    {
+      "id": "toStrategicGame-nash-iff-isNashAt",
+      "title": "toStrategicGame_nash_iff_isNashAt",
+      "href": "misc/toStrategicGame-nash-iff-isNashAt.html"
+    },
+    {
+      "id": "top-unanimity-of-unanimity",
+      "title": "top_unanimity_of_unanimity",
+      "href": "misc/top-unanimity-of-unanimity.html"
+    },
+    {
+      "id": "topChoice-topRank",
+      "title": "topChoice_topRank",
+      "href": "misc/topChoice-topRank.html"
+    },
+    {
+      "id": "topRank-eq-topChoice",
+      "title": "topRank_eq_topChoice",
+      "href": "misc/topRank-eq-topChoice.html"
+    },
+    {
+      "id": "unanimous-strict-pref-not-chosen",
+      "title": "unanimous_strict_pref_not_chosen",
+      "href": "misc/unanimous-strict-pref-not-chosen.html"
+    },
+    {
+      "id": "veto-isTotal",
+      "title": "veto_isTotal",
+      "href": "misc/veto-isTotal.html"
+    },
+    {
+      "id": "zProfile-apply",
+      "title": "zProfile_apply",
+      "href": "misc/zProfile-apply.html"
+    },
+    {
+      "id": "zProfile-choice-mem",
+      "title": "zProfile_choice_mem",
+      "href": "misc/zProfile-choice-mem.html"
+    },
+    {
+      "id": "zProfile-prefers-inside",
+      "title": "zProfile_prefers_inside",
+      "href": "misc/zProfile-prefers-inside.html"
+    },
+    {
+      "id": "zProfile-prefers-inside-outside",
+      "title": "zProfile_prefers_inside_outside",
+      "href": "misc/zProfile-prefers-inside-outside.html"
+    },
+    {
+      "id": "zProfile-prefers-outside",
+      "title": "zProfile_prefers_outside",
+      "href": "misc/zProfile-prefers-outside.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "Profile",
+      "display_name": "Profile",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

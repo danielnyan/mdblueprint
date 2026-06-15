@@ -1,0 +1,36 @@
+{
+  "id": "value₀",
+  "title": "value₀",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/value₀.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>value₀</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef value₀ (g : GameTree (Fin 2) ℚ) : ℚ</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>none</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "value₀",
+      "display_name": "value₀",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

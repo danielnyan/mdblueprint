@@ -1,0 +1,47 @@
+{
+  "id": "natBinaryLoad-eq-add-of-true",
+  "title": "natBinaryLoad_eq_add_of_true",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/natBinaryLoad-eq-add-of-true.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>natBinaryLoad_eq_add_of_true</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma natBinaryLoad_eq_add_of_true (w : I → Nat) {x : BinaryAllocation I} {i : I} (hxi : x i = true) : natBinaryLoad w x = w i + natBinaryLoad w (Function.update x i false)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>natBinaryLoad</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "natBinaryLoad",
+      "title": "natBinaryLoad",
+      "href": "misc/natBinaryLoad.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "natBinaryLoad_eq_add_of_true",
+      "display_name": "natBinaryLoad_eq_add_of_true",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

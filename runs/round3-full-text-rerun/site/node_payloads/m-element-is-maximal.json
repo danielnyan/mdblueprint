@@ -1,0 +1,42 @@
+{
+  "id": "m-element-is-maximal",
+  "title": "m_element_is_maximal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/m-element-is-maximal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>m_element_is_maximal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem m_element_is_maximal [Fintype T] (τ : Finset T) (D : Finset I) (i : I) (h_nonempty : τ.Nonempty) (h : (M_set τ D i h_nonempty).Nonempty) : is_maximal_in_M_set τ D i h_nonempty (m_element τ D i h_nonempty h)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>M_set</li>\n<li>is_maximal_in_M_set</li>\n<li>toFinset</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "m_element_is_maximal",
+      "display_name": "m_element_is_maximal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

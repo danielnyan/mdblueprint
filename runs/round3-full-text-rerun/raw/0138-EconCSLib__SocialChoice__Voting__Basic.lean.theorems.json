@@ -1,0 +1,792 @@
+[
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "constantProfile",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 40
+      },
+      "start": {
+        "column": 1,
+        "line": 40
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def constantProfile [Fintype N] [Fintype A] (r : LinearOrder A) : Profile N A"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Profile.ext",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 43
+      },
+      "start": {
+        "column": 1,
+        "line": 43
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "@[ext] theorem Profile.ext [Fintype N] [Fintype A] {P Q : Profile N A} (h : \u2200 i : N, P.pref i = Q.pref i) : P = Q"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "ballotLE",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 52
+      },
+      "start": {
+        "column": 1,
+        "line": 52
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "abbrev ballotLE (r : LinearOrder A) : LE A"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "ballotLT",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "abbrev ballotLT (r : LinearOrder A) : LT A"
+  },
+  {
+    "dependencies": [
+      "ballotLT",
+      "ballotLE"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotPrefers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def BallotPrefers (r : LinearOrder A) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers",
+      "ballotLT"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotPrefers_ballotFromInjective",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "@[simp] theorem BallotPrefers_ballotFromInjective {B : Type*} (rB : LinearOrder B) (f : A \u2192 B) (hf : Function.Injective f) (a b : A) : BallotPrefers (ballotFromInjective rB f hf) a b \u2194 @LT.lt B (ballotLT rB) (f a) (f b)"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotPrefers.asymm",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem BallotPrefers.asymm (r : LinearOrder A) {a b : A} : BallotPrefers r a b \u2192 \u00ac BallotPrefers r b a"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers",
+      "ballotLT"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotPrefers.total_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 109
+      },
+      "start": {
+        "column": 1,
+        "line": 109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem BallotPrefers.total_of_ne (r : LinearOrder A) {a b : A} (hne : a \u2260 b) : BallotPrefers r a b \u2228 BallotPrefers r b a"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Prefers",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 119
+      },
+      "start": {
+        "column": 1,
+        "line": 119
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Prefers [Fintype N] [Fintype A] (P : Profile N A) (i : N) (a b : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers",
+      "StrictlyPreferred.asymm",
+      "BallotPrefers.asymm",
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Prefers.asymm",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 122
+      },
+      "start": {
+        "column": 1,
+        "line": 122
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem Prefers.asymm [Fintype N] [Fintype A] (P : Profile N A) (i : N) {a b : A} : Prefers P i a b \u2192 \u00ac Prefers P i b a"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers",
+      "BallotPrefers.total_of_ne",
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Prefers.total_of_ne",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 126
+      },
+      "start": {
+        "column": 1,
+        "line": 126
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem Prefers.total_of_ne [Fintype N] [Fintype A] (P : Profile N A) (i : N) {a b : A} (hne : a \u2260 b) : Prefers P i a b \u2228 Prefers P i b a"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "TopRank",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 131
+      },
+      "start": {
+        "column": 1,
+        "line": 131
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def TopRank [Fintype N] [Fintype A] (P : Profile N A) (i : N) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BottomRank",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 135
+      },
+      "start": {
+        "column": 1,
+        "line": 135
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def BottomRank [Fintype N] [Fintype A] (P : Profile N A) (i : N) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotTop",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 139
+      },
+      "start": {
+        "column": 1,
+        "line": 139
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def BallotTop (r : LinearOrder A) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "BallotPrefers",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "BallotBottom",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 143
+      },
+      "start": {
+        "column": 1,
+        "line": 143
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def BallotBottom (r : LinearOrder A) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "TopRank",
+      "Prefers",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "topChoice_topRank",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 153
+      },
+      "start": {
+        "column": 1,
+        "line": 153
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem topChoice_topRank [Fintype N] [Fintype A] [Nonempty A] (P : Profile N A) (i : N) : TopRank P i (topChoice P i)"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "TopRank",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "topChoice_topRank"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "topRank_eq_topChoice",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 161
+      },
+      "start": {
+        "column": 1,
+        "line": 161
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem topRank_eq_topChoice [Fintype N] [Fintype A] [Nonempty A] (P : Profile N A) (i : N) (a : A) (ha : TopRank P i a) : a = topChoice P i"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "permuteVoters",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 180
+      },
+      "start": {
+        "column": 1,
+        "line": 180
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def permuteVoters [Fintype N] [Fintype A] (P : Profile N A) (\u03c3 : Equiv.Perm N) : Profile N A"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "VotingRule",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 208
+      },
+      "start": {
+        "column": 1,
+        "line": 208
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "abbrev VotingRule (N A : Type*) [Fintype N] [Fintype A]"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "IsTotal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 212
+      },
+      "start": {
+        "column": 1,
+        "line": 212
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def IsTotal [Fintype N] [Fintype A] (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Resolute",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 216
+      },
+      "start": {
+        "column": 1,
+        "line": 216
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Resolute [Fintype N] [Fintype A] (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "SWF",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 220
+      },
+      "start": {
+        "column": 1,
+        "line": 220
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "abbrev SWF (N A : Type*) [Fintype N] [Fintype A]"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Unanimity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 229
+      },
+      "start": {
+        "column": 1,
+        "line": 229
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Unanimity (F : SWF N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "IIA",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 234
+      },
+      "start": {
+        "column": 1,
+        "line": 234
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def IIA (F : SWF N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Dictatorial",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 241
+      },
+      "start": {
+        "column": 1,
+        "line": 241
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Dictatorial (F : SWF N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "SWF",
+      "Dictatorial"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "NonDictatorial",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 246
+      },
+      "start": {
+        "column": 1,
+        "line": 246
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def NonDictatorial (F : SWF N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Unanimity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 259
+      },
+      "start": {
+        "column": 1,
+        "line": 259
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Unanimity (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Unanimity"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "ParetoEfficiency",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 263
+      },
+      "start": {
+        "column": 1,
+        "line": 263
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "abbrev ParetoEfficiency (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "IsTotal",
+      "Unanimity",
+      "Profile",
+      "TopRank"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "top_unanimity_of_unanimity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 268
+      },
+      "start": {
+        "column": 1,
+        "line": 268
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "theorem top_unanimity_of_unanimity [Nonempty A] {f : VotingRule N A} (hf : IsTotal f) (hU : Unanimity f) : \u2200 (P : Profile N A) (a : A), (\u2200 i : N, TopRank P i a) \u2192 f P = {a}"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "permuteVoters"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Anonymity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 285
+      },
+      "start": {
+        "column": 1,
+        "line": 285
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Anonymity (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Neutrality",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 294
+      },
+      "start": {
+        "column": 1,
+        "line": 294
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Neutrality (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "SimpleLift",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 301
+      },
+      "start": {
+        "column": 1,
+        "line": 301
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def SimpleLift (Q P : Profile N A) (a : A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "SimpleLift"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Monotonicity",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 306
+      },
+      "start": {
+        "column": 1,
+        "line": 306
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Monotonicity (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Resolute",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "ResoluteStrategyproofness",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 311
+      },
+      "start": {
+        "column": 1,
+        "line": 311
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def ResoluteStrategyproofness (f : VotingRule N A) (_hf : Resolute f) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "OptimistStrategyproofness",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 318
+      },
+      "start": {
+        "column": 1,
+        "line": 318
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def OptimistStrategyproofness (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile",
+      "Prefers"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "PessimistStrategyproofness",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 323
+      },
+      "start": {
+        "column": 1,
+        "line": 323
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def PessimistStrategyproofness (f : VotingRule N A) : Prop"
+  },
+  {
+    "dependencies": [
+      "VotingRule",
+      "Profile"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.Voting.Basic",
+    "name": "Dictatorial",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 329
+      },
+      "start": {
+        "column": 1,
+        "line": 329
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/Voting/Basic.lean",
+    "type": "def Dictatorial [Nonempty A] (f : VotingRule N A) : Prop"
+  }
+]

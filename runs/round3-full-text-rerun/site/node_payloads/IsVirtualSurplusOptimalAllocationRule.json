@@ -1,0 +1,78 @@
+{
+  "id": "IsVirtualSurplusOptimalAllocationRule",
+  "title": "IsVirtualSurplusOptimalAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsVirtualSurplusOptimalAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsVirtualSurplusOptimalAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsVirtualSurplusOptimalAllocationRule [Fintype I] (A : BayesianSingleItemAuction I) (x : (I → ℝ) → I → ℝ) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsFeasible.isSingleItemAllocationRule</li>\n<li>IsSingleItemAllocationRule</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsSingleItemAllocationRule",
+      "title": "IsSingleItemAllocationRule",
+      "href": "misc/IsSingleItemAllocationRule.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction-isVirtualSurplusOptimalAllocationRule",
+      "title": "IsRegularMyersonOptimalICIRAuction.isVirtualSurplusOptimalAllocationRule",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction-isVirtualSurplusOptimalAllocationRule.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAllocationRule-isVirtualSurplusOptimalAllocationRule",
+      "title": "virtualSurplusMaximizingAllocationRule_isVirtualSurplusOptimalAllocationRule",
+      "href": "misc/virtualSurplusMaximizingAllocationRule-isVirtualSurplusOptimalAllocationRule.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-allocationRule-isVirtualSurplusOptimal",
+      "title": "virtualSurplusMaximizingAuction_allocationRule_isVirtualSurplusOptimal",
+      "href": "misc/virtualSurplusMaximizingAuction-allocationRule-isVirtualSurplusOptimal.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-allocationRule-isVirtualSurplusOptimal",
+      "title": "virtualSurplusMaximizingMechanism_allocationRule_isVirtualSurplusOptimal",
+      "href": "misc/virtualSurplusMaximizingMechanism-allocationRule-isVirtualSurplusOptimal.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingMechanism_isVirtualSurplusOptimal_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingMechanism-isVirtualSurplusOptimal-and-isDSIC-of-isRegular.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsVirtualSurplusOptimalAllocationRule",
+      "display_name": "IsVirtualSurplusOptimalAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

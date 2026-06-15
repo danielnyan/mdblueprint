@@ -1,0 +1,542 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Independence",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Independence",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Independence",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Continuity",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Continuity",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "Continuity",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "sure_thing_principle",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "completeness_independent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "transitivity_independent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "independence_independent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "VNM.axioms_independent",
+    "target": "continuity_independent"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "continuity_independent",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "transitivity_independent",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "independence_independent",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Completeness"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Transitivity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Independence"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Continuity"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "colRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "lamB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "rowRatio.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "lam.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "muB.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "mu.aux.continuous"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.VNMAxioms",
+    "source": "completeness_independent",
+    "target": "Lottery.pure"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "rotateBundles-nondecreasing",
+  "title": "rotateBundles_nondecreasing",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/rotateBundles-nondecreasing.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>rotateBundles_nondecreasing</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma rotateBundles_nondecreasing (v : Valuation N G) (A : Allocation N G) (l : List N) (hcyc : isEnvyCycle v A l) (i : N) : v.val i (A i) ≤ v.val i (rotateBundles A l i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>isEnvyCycle</li>\n<li>rotateBundles_improves</li>\n<li>rotateBundles_not_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "isEnvyCycle",
+      "title": "isEnvyCycle",
+      "href": "misc/isEnvyCycle.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "rotateBundles_nondecreasing",
+      "display_name": "rotateBundles_nondecreasing",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

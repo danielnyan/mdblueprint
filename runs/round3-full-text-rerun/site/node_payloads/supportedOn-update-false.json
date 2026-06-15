@@ -1,0 +1,47 @@
+{
+  "id": "supportedOn-update-false",
+  "title": "supportedOn_update_false",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/supportedOn-update-false.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>supportedOn_update_false</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma supportedOn_update_false {i : I} {items : List I} {x : BinaryAllocation I} (hsupp : supportedOn (i :: items) x) : supportedOn items (Function.update x i false)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>supportedOn</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "supportedOn",
+      "title": "supportedOn",
+      "href": "misc/supportedOn.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "supportedOn_update_false",
+      "display_name": "supportedOn_update_false",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

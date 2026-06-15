@@ -1,0 +1,42 @@
+{
+  "id": "opposed-preferences-women",
+  "title": "opposed_preferences_women",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/opposed-preferences-women.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>opposed_preferences_women</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem opposed_preferences_women (candidate : Matching (Fin n) (Fin n)) (hcandidate : Matching.IsStable (MatchingMarket.ofEquivData w m) candidate) {i mi mi' j' : Fin n} (hcandidate_i : candidate.matchM i = some mi') (hpref : (w.prefs i).idxOf mi &lt; (w.prefs i).idxOf mi') (hcandidate_m : candidate.matchW mi = some j') : (m.prefs mi).idxOf j' &lt; (m.prefs mi).idxOf i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>pref_list_mem</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "opposed_preferences_women",
+      "display_name": "opposed_preferences_women",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

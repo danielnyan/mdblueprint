@@ -1,0 +1,67 @@
+{
+  "id": "doors-of-NCroom",
+  "title": "doors_of_NCroom",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/doors-of-NCroom.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>doors_of_NCroom</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma doors_of_NCroom [DecidableEq T] (h_room : isRoom σ C) (h_nc : isNearlyColorful c σ C) : ∃ door1 door2, door1 ≠ door2 ∧ NCdoors c σ C = {door1, door2}</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isRoom</li>\n<li>isNearlyColorful</li>\n<li>NCdoors</li>\n<li>card_of_NCcell</li>\n<li>isCell</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n<li>Profile.ext</li>\n<li>image_erase_eq_erase_image_of_unique</li>\n<li>Dominant_of_subset</li>\n<li>isDominant</li>\n<li>Dominant_of_supset</li>\n<li>injOn_sdiff</li>\n<li>three_collision_card_bound</li>\n<li>collision_door_valid</li>\n<li>image_erase_collision_preserves</li>\n<li>Transitivity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isNearlyColorful",
+      "title": "isNearlyColorful",
+      "href": "misc/isNearlyColorful.html"
+    },
+    {
+      "id": "NCdoors",
+      "title": "NCdoors",
+      "href": "misc/NCdoors.html"
+    },
+    {
+      "id": "isCell",
+      "title": "isCell",
+      "href": "misc/isCell.html"
+    },
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    },
+    {
+      "id": "Transitivity",
+      "title": "Transitivity",
+      "href": "misc/Transitivity.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "doors_of_NCroom",
+      "display_name": "doors_of_NCroom",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

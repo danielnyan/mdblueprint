@@ -1,0 +1,42 @@
+{
+  "id": "lcs",
+  "title": "lcs",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/lcs.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>lcs</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef lcs : List A → List A → CostM (Visited (ℕ × ℕ)) ℕ | [], ys =&gt; do CostM.tick (Visited.singleton (0, ys.length)) pure 0 | x :: xs, [] =&gt; do CostM.tick (Visited.singleton (xs.length + 1, 0)) pure 0 | x :: xs, y :: ys =&gt; if x = y then do CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1)) let r ← lcs xs ys pure (r + 1) else do CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1)) let r1 ← lcs xs (y :: ys) let r2 ← lcs (x :: xs) ys pure (max r1 r2) /-- Monotonicity helper: enlarging both arguments of `Finset.range` preserves the `×ˢ` containment. -/ private lemma range_prod_mono {a a' b b' : ℕ} (ha : a ≤ a') (hb : b ≤ b') : Finset.range a ×ˢ Finset.range b ⊆ Finset.range a' ×ˢ Finset.range b'</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Visited</li>\n<li>stdSimplex.pure</li>\n<li>Lottery.pure</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Visited",
+      "title": "Visited",
+      "href": "misc/Visited.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "lcs",
+      "display_name": "lcs",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

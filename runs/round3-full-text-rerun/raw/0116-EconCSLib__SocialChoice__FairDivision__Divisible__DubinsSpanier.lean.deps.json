@@ -1,0 +1,152 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanier_exists_proportional_allocation",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanier_exists_proportional_allocation",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanier_exists_proportional_allocation",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanier_exists_proportional_allocation",
+    "target": "dubinsSpanierProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Profile.ext"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "IsSingleItemAllocationRule.le_one"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "MeasureValuation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "IsPositiveAffineOf.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "StrictlyPreferred.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Arena.Reachable.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Indifferent.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "Subtree.trans"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "cut_exists",
+    "target": "mem_iUnion"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierRule_isProportional",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierRule_isProportional",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierRule_isProportional",
+    "target": "dubinsSpanier_exists_proportional_allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierProportional",
+    "target": "Allocation"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierProportional",
+    "target": "IsEnvyFree.isProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierProportional",
+    "target": "IsProportional"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.SocialChoice.FairDivision.Divisible.DubinsSpanier",
+    "source": "dubinsSpanierProportional",
+    "target": "MeasureValuation"
+  }
+]

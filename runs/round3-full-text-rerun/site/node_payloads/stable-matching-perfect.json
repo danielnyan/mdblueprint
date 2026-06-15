@@ -1,0 +1,42 @@
+{
+  "id": "stable-matching-perfect",
+  "title": "stable_matching_perfect",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/stable-matching-perfect.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>stable_matching_perfect</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem stable_matching_perfect (μ : Matching (Fin n) (Fin n)) (hμ : Matching.IsStable (MatchingMarket.ofEquivData w m) μ) : (∀ i : Fin n, (μ.matchM i).isSome) ∧ (∀ j : Fin n, (μ.matchW j).isSome)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsStable</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsStable",
+      "title": "IsStable",
+      "href": "misc/IsStable.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "stable_matching_perfect",
+      "display_name": "stable_matching_perfect",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

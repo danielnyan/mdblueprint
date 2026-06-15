@@ -1,0 +1,42 @@
+{
+  "id": "outcome",
+  "title": "outcome",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/outcome.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>outcome</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef outcome (SA SB : Strategy) : GameTree → ℚ | Leaf r =&gt; r | Pnode p L R =&gt; match p with | .A =&gt; match SA L R with | .l =&gt; outcome SA SB L | .r =&gt; outcome SA SB R | .B =&gt; match SB L R with | .l =&gt; outcome SA SB L | .r =&gt; outcome SA SB R | Nnode prob L R =&gt; prob * outcome SA SB L + (1 - prob) * outcome SA SB R /-! ### Main theorem -/ /-- **Soundness of `DStrategy`**: the backward-induction value is a lower bound on the outcome A achieves by following `DStrategy`, regardless of how B plays. Formally: for every B-strategy `SB` and game tree `t`, `t.value ≤ t.outcome DStrategy SB`. -/</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "outcome",
+      "display_name": "outcome",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

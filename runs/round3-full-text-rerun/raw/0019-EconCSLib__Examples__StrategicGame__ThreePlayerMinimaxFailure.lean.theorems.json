@@ -1,0 +1,250 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "G",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 42
+      },
+      "start": {
+        "column": 1,
+        "line": 42
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "def G (x y z : \u211d) : \u211d"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "G_pure_E",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 45
+      },
+      "start": {
+        "column": 1,
+        "line": 45
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem G_pure_E (x y : \u211d) : G x y 0 = (1 - x) * (1 - y)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "G_pure_W",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem G_pure_W (x y : \u211d) : G x y 1 = x * y"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "min_over_z",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 54
+      },
+      "start": {
+        "column": 1,
+        "line": 54
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem min_over_z (x y : \u211d) (hx0 : 0 \u2264 x) (hx1 : x \u2264 1) (hy0 : 0 \u2264 y) (hy1 : y \u2264 1) : \u2200 z, 0 \u2264 z \u2192 z \u2264 1 \u2192 min (x * y) ((1 - x) * (1 - y)) \u2264 G x y z"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "min_at_half",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 73
+      },
+      "start": {
+        "column": 1,
+        "line": 73
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem min_at_half : min ((1/2 : \u211d) * (1/2)) ((1 - 1/2) * (1 - 1/2)) = 1/4"
+  },
+  {
+    "dependencies": [
+      "min_over_z",
+      "min_at_half"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "maximin_lower_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem maximin_lower_bound : \u2200 z, 0 \u2264 z \u2192 z \u2264 1 \u2192 (1 / 4 : \u211d) \u2264 G (1/2) (1/2) z"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "maximin_upper_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 88
+      },
+      "start": {
+        "column": 1,
+        "line": 88
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem maximin_upper_bound (x y : \u211d) (hx0 : 0 \u2264 x) (hx1 : x \u2264 1) (hy0 : 0 \u2264 y) (hy1 : y \u2264 1) : min (x * y) ((1 - x) * (1 - y)) \u2264 (1 / 4 : \u211d)"
+  },
+  {
+    "dependencies": [
+      "maximin_lower_bound",
+      "maximin_upper_bound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "maximin_eq_one_quarter",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 135
+      },
+      "start": {
+        "column": 1,
+        "line": 135
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem maximin_eq_one_quarter : -- Witness x = y = 1/2 achieves at least 1/4 against every z. (\u2200 z, 0 \u2264 z \u2192 z \u2264 1 \u2192 (1 / 4 : \u211d) \u2264 G (1/2) (1/2) z) \u2227 -- Upper bound: every (x,y) \u2208 [0,1]\u00b2 has min_z G(x,y,z) \u2264 1/4. (\u2200 x y, 0 \u2264 x \u2192 x \u2264 1 \u2192 0 \u2264 y \u2192 y \u2264 1 \u2192 min (x * y) ((1 - x) * (1 - y)) \u2264 (1 / 4 : \u211d))"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "max_over_xy",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 146
+      },
+      "start": {
+        "column": 1,
+        "line": 146
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem max_over_xy (z : \u211d) (hz0 : 0 \u2264 z) (hz1 : z \u2264 1) : max z (1 - z) \u2264 max (G 1 1 z) (G 0 0 z)"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "minimax_upper_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 153
+      },
+      "start": {
+        "column": 1,
+        "line": 153
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem minimax_upper_bound (x y : \u211d) (hx0 : 0 \u2264 x) (hx1 : x \u2264 1) (hy0 : 0 \u2264 y) (hy1 : y \u2264 1) : G x y (1/2) \u2264 (1 / 2 : \u211d)"
+  },
+  {
+    "dependencies": [
+      "max_over_xy"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "minimax_lower_bound",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 166
+      },
+      "start": {
+        "column": 1,
+        "line": 166
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem minimax_lower_bound (z : \u211d) (hz0 : 0 \u2264 z) (hz1 : z \u2264 1) : (1 / 2 : \u211d) \u2264 max (G 1 1 z) (G 0 0 z)"
+  },
+  {
+    "dependencies": [
+      "minimax_upper_bound",
+      "minimax_lower_bound"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "minimax_eq_one_half",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 175
+      },
+      "start": {
+        "column": 1,
+        "line": 175
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem minimax_eq_one_half : -- Witness z = 1/2 caps every (x,y) at 1/2. (\u2200 x y, 0 \u2264 x \u2192 x \u2264 1 \u2192 0 \u2264 y \u2192 y \u2264 1 \u2192 G x y (1/2) \u2264 (1 / 2 : \u211d)) \u2227 -- Lower bound: every z \u2208 [0,1] has max_{x,y} G(x,y,z) \u2265 1/2. (\u2200 z, 0 \u2264 z \u2192 z \u2264 1 \u2192 (1 / 2 : \u211d) \u2264 max (G 1 1 z) (G 0 0 z))"
+  },
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.StrategicGame.ThreePlayerMinimaxFailure",
+    "name": "maximin_lt_minimax",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 184
+      },
+      "start": {
+        "column": 1,
+        "line": 184
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreePlayerMinimaxFailure.lean",
+    "type": "theorem maximin_lt_minimax : (1 / 4 : \u211d) < 1 / 2"
+  }
+]

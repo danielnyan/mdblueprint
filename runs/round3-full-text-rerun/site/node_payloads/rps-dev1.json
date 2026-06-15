@@ -1,0 +1,52 @@
+{
+  "id": "rps-dev1",
+  "title": "rps_dev1",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/rps-dev1.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>rps_dev1</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem rps_dev1 (s₁ : RPSMove) : expectedPayoff RPS (deviateMixed RPS uniformProfile 1 s₁) 1 = 0</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>expectedPayoff</li>\n<li>deviateMixed</li>\n<li>uniformProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "expectedPayoff",
+      "title": "expectedPayoff",
+      "href": "misc/expectedPayoff.html"
+    },
+    {
+      "id": "deviateMixed",
+      "title": "deviateMixed",
+      "href": "misc/deviateMixed.html"
+    },
+    {
+      "id": "uniformProfile",
+      "title": "uniformProfile",
+      "href": "misc/uniformProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "rps_dev1",
+      "display_name": "rps_dev1",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

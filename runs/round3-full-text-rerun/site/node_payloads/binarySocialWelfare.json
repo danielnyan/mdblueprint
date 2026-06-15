@@ -1,0 +1,73 @@
+{
+  "id": "binarySocialWelfare",
+  "title": "binarySocialWelfare",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/binarySocialWelfare.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>binarySocialWelfare</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef binarySocialWelfare (b : I → U) (x : BinaryAllocation I) : U</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BinaryAllocation</li>\n<li>binaryToAllocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BinaryAllocation",
+      "title": "BinaryAllocation",
+      "href": "misc/BinaryAllocation.html"
+    },
+    {
+      "id": "binaryToAllocation",
+      "title": "binaryToAllocation",
+      "href": "misc/binaryToAllocation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "binarySocialWelfare-update",
+      "title": "binarySocialWelfare_update",
+      "href": "misc/binarySocialWelfare-update.html"
+    },
+    {
+      "id": "exists-welfareMaximizer",
+      "title": "exists_welfareMaximizer",
+      "href": "misc/exists-welfareMaximizer.html"
+    },
+    {
+      "id": "fractionalGreedyWelfare-ge-zeroOneWelfare-of-optimal",
+      "title": "fractionalGreedyWelfare_ge_zeroOneWelfare_of_optimal",
+      "href": "misc/fractionalGreedyWelfare-ge-zeroOneWelfare-of-optimal.html"
+    },
+    {
+      "id": "welfareMaximizer-ge",
+      "title": "welfareMaximizer_ge",
+      "href": "misc/welfareMaximizer-ge.html"
+    },
+    {
+      "id": "welfareMaximizingAllocationRule-isMonotone",
+      "title": "welfareMaximizingAllocationRule_isMonotone",
+      "href": "misc/welfareMaximizingAllocationRule-isMonotone.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "binarySocialWelfare",
+      "display_name": "binarySocialWelfare",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

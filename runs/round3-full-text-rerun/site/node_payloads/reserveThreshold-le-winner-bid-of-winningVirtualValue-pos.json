@@ -1,0 +1,42 @@
+{
+  "id": "reserveThreshold-le-winner-bid-of-winningVirtualValue-pos",
+  "title": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/reserveThreshold-le-winner-bid-of-winningVirtualValue-pos.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>reserveThreshold_le_winner_bid_of_winningVirtualValue_pos</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem reserveThreshold_le_winner_bid_of_winningVirtualValue_pos [Fintype I] [Nontrivial I] [DecidableEq I] [LinearOrder I] (A : BayesianSingleItemAuction I) {reserve b : I → ℝ} (hreserve : ∀ i, A.IsReserveThreshold i (reserve i)) (hpos : 0 &lt; A.winningVirtualValue b) : reserve (A.virtualSurplusMaximizingWinner b) ≤ b (A.virtualSurplusMaximizingWinner b)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsReserveThreshold</li>\n<li>reserveThreshold_le_bid_of_virtualSurplusMaximizingAllocationRule_eq_one</li>\n<li>virtualSurplusMaximizingAllocationRule_winner_eq_one_of_winningVirtualValue_pos</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsReserveThreshold",
+      "title": "IsReserveThreshold",
+      "href": "misc/IsReserveThreshold.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+      "display_name": "reserveThreshold_le_winner_bid_of_winningVirtualValue_pos",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

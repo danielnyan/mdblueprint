@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "twoByTwo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "common_guarantee_eq_value"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "twoByTwo_row_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_value",
+    "target": "twoByTwo_column_guarantee"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_column_guarantee",
+    "target": "twoByTwo"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.StrategicGame.TwoByTwo",
+    "source": "twoByTwo_row_guarantee",
+    "target": "twoByTwo"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "IsFeasible-isSingleItemAllocationRule",
+  "title": "IsFeasible.isSingleItemAllocationRule",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsFeasible-isSingleItemAllocationRule.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsFeasible.isSingleItemAllocationRule</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem IsFeasible.isSingleItemAllocationRule [Fintype I] {B : BayesianSingleItemAuction I} (hB : B.IsFeasible) : IsSingleItemAllocationRule B.allocationRule</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>IsSingleItemAllocationRule</li>\n<li>Profile.ext</li>\n<li>virtualSurplusMaximizingWinner_eq_iff_forall_virtualScore_le</li>\n<li>winningVirtualValue_pos_iff_exists_virtualValue_pos</li>\n<li>OpponentTypeProfile</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IsSingleItemAllocationRule",
+      "title": "IsSingleItemAllocationRule",
+      "href": "misc/IsSingleItemAllocationRule.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "IsFeasible.isSingleItemAllocationRule",
+      "display_name": "IsFeasible.isSingleItemAllocationRule",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

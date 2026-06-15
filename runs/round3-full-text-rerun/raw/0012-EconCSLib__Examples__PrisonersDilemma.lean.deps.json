@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_nash",
+    "target": "IsNashEquilibrium"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_nash",
+    "target": "PD"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_nash",
+    "target": "of_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_nash",
+    "target": "pd_defect_weakly_dominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_weakly_dominant",
+    "target": "IsStrictlyDominant.isWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_weakly_dominant",
+    "target": "IsWeaklyDominant"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_defect_weakly_dominant",
+    "target": "PD"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_pareto_suboptimal",
+    "target": "PD"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "PD",
+    "target": "Strategy"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_nash_unique",
+    "target": "Profile"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_nash_unique",
+    "target": "PD"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "source": "pd_nash_unique",
+    "target": "IsNashEquilibrium"
+  }
+]

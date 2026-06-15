@@ -1,0 +1,58 @@
+{
+  "id": "DemandOracle",
+  "title": "DemandOracle",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/DemandOracle.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>DemandOracle</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef DemandOracle {G : Type*} [DecidableEq G] {M : Finset G} (v : SubmodularBundleValuation M) (p : BundlePriceVector M) : Type _</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>BundlePriceVector</li>\n<li>BundleAllocation</li>\n<li>BundleDemandUtility</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "BundlePriceVector",
+      "title": "BundlePriceVector",
+      "href": "misc/BundlePriceVector.html"
+    },
+    {
+      "id": "BundleAllocation",
+      "title": "BundleAllocation",
+      "href": "misc/BundleAllocation.html"
+    },
+    {
+      "id": "BundleDemandUtility",
+      "title": "BundleDemandUtility",
+      "href": "misc/BundleDemandUtility.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "BundlePartitionSocialWelfare",
+      "title": "BundlePartitionSocialWelfare",
+      "href": "misc/BundlePartitionSocialWelfare.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "DemandOracle",
+      "display_name": "DemandOracle",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

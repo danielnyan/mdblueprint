@@ -1,0 +1,83 @@
+{
+  "id": "IsRevenueUpperBounded",
+  "title": "IsRevenueUpperBounded",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsRevenueUpperBounded.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsRevenueUpperBounded</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsRevenueUpperBounded [Fintype I] (A B : BayesianSingleItemAuction I) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasSameSellingEnvironment</li>\n<li>IsRegularMyersonOptimalICIRAuction.isFeasible</li>\n<li>IsFeasible</li>\n<li>InterimFubiniAnalyticAssumptions.integrableVirtualSurplus</li>\n<li>IntegrableVirtualSurplus</li>\n<li>HasExpectedRevenueVirtualSurplusUpperBound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasSameSellingEnvironment",
+      "title": "HasSameSellingEnvironment",
+      "href": "misc/HasSameSellingEnvironment.html"
+    },
+    {
+      "id": "IsFeasible",
+      "title": "IsFeasible",
+      "href": "misc/IsFeasible.html"
+    },
+    {
+      "id": "IntegrableVirtualSurplus",
+      "title": "IntegrableVirtualSurplus",
+      "href": "misc/IntegrableVirtualSurplus.html"
+    },
+    {
+      "id": "HasExpectedRevenueVirtualSurplusUpperBound",
+      "title": "HasExpectedRevenueVirtualSurplusUpperBound",
+      "href": "misc/HasExpectedRevenueVirtualSurplusUpperBound.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction-of-revenueUpperBounded",
+      "title": "expectedSellerRevenueInEnvironment_le_virtualSurplusMaximizingAuction_of_revenueUpperBounded",
+      "href": "misc/expectedSellerRevenueInEnvironment-le-virtualSurplusMaximizingAuction-of-revenueUpperBounded.html"
+    },
+    {
+      "id": "isRevenueUpperBounded-of-ic-ir-upper",
+      "title": "isRevenueUpperBounded_of_ic_ir_upper",
+      "href": "misc/isRevenueUpperBounded-of-ic-ir-upper.html"
+    },
+    {
+      "id": "isRevenueUpperBounded-of-isRevenueComparable",
+      "title": "isRevenueUpperBounded_of_isRevenueComparable",
+      "href": "misc/isRevenueUpperBounded-of-isRevenueComparable.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+      "title": "virtualSurplusMaximizingAuction_isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded",
+      "href": "misc/virtualSurplusMaximizingAuction-isExpectedSellerRevenueOptimalInEnvironmentAmongRevenueUpperBounded.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isRevenueUpperBounded",
+      "title": "virtualSurplusMaximizingAuction_isRevenueUpperBounded",
+      "href": "misc/virtualSurplusMaximizingAuction-isRevenueUpperBounded.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsRevenueUpperBounded",
+      "display_name": "IsRevenueUpperBounded",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

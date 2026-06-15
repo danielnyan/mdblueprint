@@ -1,0 +1,42 @@
+{
+  "id": "rotateBundles-not-mem",
+  "title": "rotateBundles_not_mem",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/rotateBundles-not-mem.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>rotateBundles_not_mem</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma rotateBundles_not_mem (A : Allocation N G) (l : List N) (i : N) (h : i ∉ l) : rotateBundles A l i = A i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "rotateBundles_not_mem",
+      "display_name": "rotateBundles_not_mem",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

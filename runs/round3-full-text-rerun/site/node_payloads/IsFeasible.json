@@ -1,0 +1,268 @@
+{
+  "id": "IsFeasible",
+  "title": "IsFeasible",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsFeasible.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsFeasible</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsFeasible [Fintype I] (A : KnapsackAuction I U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>rowEval</li>\n<li>Valuation</li>\n<li>CombinatorialAllocation</li>\n<li>MultiItemBundle</li>\n<li>toFinset</li>\n<li>IsAllocFeasible</li>\n<li>RespectsSingleItemCapacity</li>\n<li>OpponentTypeProfile</li>\n<li>IsAllocFeasible</li>\n<li>RespectsCapacity</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "rowEval",
+      "title": "rowEval",
+      "href": "misc/rowEval.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "CombinatorialAllocation",
+      "title": "CombinatorialAllocation",
+      "href": "misc/CombinatorialAllocation.html"
+    },
+    {
+      "id": "MultiItemBundle",
+      "title": "MultiItemBundle",
+      "href": "misc/MultiItemBundle.html"
+    },
+    {
+      "id": "toFinset",
+      "title": "toFinset",
+      "href": "misc/toFinset.html"
+    },
+    {
+      "id": "IsAllocFeasible",
+      "title": "IsAllocFeasible",
+      "href": "misc/IsAllocFeasible.html"
+    },
+    {
+      "id": "RespectsSingleItemCapacity",
+      "title": "RespectsSingleItemCapacity",
+      "href": "misc/RespectsSingleItemCapacity.html"
+    },
+    {
+      "id": "OpponentTypeProfile",
+      "title": "OpponentTypeProfile",
+      "href": "misc/OpponentTypeProfile.html"
+    },
+    {
+      "id": "IsAllocFeasible",
+      "title": "IsAllocFeasible",
+      "href": "misc/IsAllocFeasible.html"
+    },
+    {
+      "id": "RespectsCapacity",
+      "title": "RespectsCapacity",
+      "href": "misc/RespectsCapacity.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsFeasible-isSingleItemAllocationRule",
+      "title": "IsFeasible.isSingleItemAllocationRule",
+      "href": "misc/IsFeasible-isSingleItemAllocationRule.html"
+    },
+    {
+      "id": "IsFeasibleICIRIntegrable",
+      "title": "IsFeasibleICIRIntegrable",
+      "href": "misc/IsFeasibleICIRIntegrable.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction",
+      "title": "IsRegularMyersonOptimalICIRAuction",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction.html"
+    },
+    {
+      "id": "IsRegularMyersonOptimalICIRAuction-isFeasible",
+      "title": "IsRegularMyersonOptimalICIRAuction.isFeasible",
+      "href": "misc/IsRegularMyersonOptimalICIRAuction-isFeasible.html"
+    },
+    {
+      "id": "IsRevenueComparable",
+      "title": "IsRevenueComparable",
+      "href": "misc/IsRevenueComparable.html"
+    },
+    {
+      "id": "IsRevenueUpperBounded",
+      "title": "IsRevenueUpperBounded",
+      "href": "misc/IsRevenueUpperBounded.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_allocation_survival_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-allocation-survival-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_envelope_analytic",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-envelope-analytic.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_integrableVirtualSurplus",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-integrableVirtualSurplus.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-interim-virtual-surplus-density-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_interim_virtual_surplus_density_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-interim-virtual-surplus-density-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_density_integrable",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-payment-density-integrable.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-payment-envelope-upper",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_payment_envelope_upper",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-payment-envelope-upper.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_revenue_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-revenue-interim-identity.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_typeMeasure_interim_fubini",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-typeMeasure-interim-fubini.html"
+    },
+    {
+      "id": "RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity",
+      "title": "RegularMyersonICIRAnalyticAssumptions.candidate_virtual_surplus_interim_identity",
+      "href": "misc/RegularMyersonICIRAnalyticAssumptions-candidate-virtual-surplus-interim-identity.html"
+    },
+    {
+      "id": "exists-col-strict-pair",
+      "title": "exists_col_strict_pair",
+      "href": "misc/exists-col-strict-pair.html"
+    },
+    {
+      "id": "exists-row-strict-pair",
+      "title": "exists_row_strict_pair",
+      "href": "misc/exists-row-strict-pair.html"
+    },
+    {
+      "id": "expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible",
+      "title": "expectedVirtualSurplus_le_virtualSurplusMaximizingAuction_of_isFeasible",
+      "href": "misc/expectedVirtualSurplus-le-virtualSurplusMaximizingAuction-of-isFeasible.html"
+    },
+    {
+      "id": "farkas-lemma",
+      "title": "farkas_lemma",
+      "href": "misc/farkas-lemma.html"
+    },
+    {
+      "id": "feas-cert-disjoint",
+      "title": "feas_cert_disjoint",
+      "href": "misc/feas-cert-disjoint.html"
+    },
+    {
+      "id": "feasible-of-fm-feasible",
+      "title": "feasible_of_fm_feasible",
+      "href": "misc/feasible-of-fm-feasible.html"
+    },
+    {
+      "id": "fm-cert-lift",
+      "title": "fm_cert_lift",
+      "href": "misc/fm-cert-lift.html"
+    },
+    {
+      "id": "fm-feasible-of-feasible",
+      "title": "fm_feasible_of_feasible",
+      "href": "misc/fm-feasible-of-feasible.html"
+    },
+    {
+      "id": "hasIntegrableInterimAllocation-of-isFeasible-of-aestronglyMeasurable",
+      "title": "hasIntegrableInterimAllocation_of_isFeasible_of_aestronglyMeasurable",
+      "href": "misc/hasIntegrableInterimAllocation-of-isFeasible-of-aestronglyMeasurable.html"
+    },
+    {
+      "id": "hasNonnegativeInterimAllocationIntegralOnSupport-of-isFeasible",
+      "title": "hasNonnegativeInterimAllocationIntegralOnSupport_of_isFeasible",
+      "href": "misc/hasNonnegativeInterimAllocationIntegralOnSupport-of-isFeasible.html"
+    },
+    {
+      "id": "interimAllocProb-le-one-of-isFeasible",
+      "title": "interimAllocProb_le_one_of_isFeasible",
+      "href": "misc/interimAllocProb-le-one-of-isFeasible.html"
+    },
+    {
+      "id": "interimAllocProb-mem-Icc-of-isFeasible",
+      "title": "interimAllocProb_mem_Icc_of_isFeasible",
+      "href": "misc/interimAllocProb-mem-Icc-of-isFeasible.html"
+    },
+    {
+      "id": "interimAllocProb-nonneg-of-isFeasible",
+      "title": "interimAllocProb_nonneg_of_isFeasible",
+      "href": "misc/interimAllocProb-nonneg-of-isFeasible.html"
+    },
+    {
+      "id": "isFeasible-dualAug-iff",
+      "title": "isFeasible_dualAug_iff",
+      "href": "misc/isFeasible-dualAug-iff.html"
+    },
+    {
+      "id": "isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized",
+      "title": "isRevenueComparable_of_myersonPaymentIdentity_of_isDSIC_of_isZeroNormalized",
+      "href": "misc/isRevenueComparable-of-myersonPaymentIdentity-of-isDSIC-of-isZeroNormalized.html"
+    },
+    {
+      "id": "lp-strong-duality",
+      "title": "lp_strong_duality",
+      "href": "misc/lp-strong-duality.html"
+    },
+    {
+      "id": "optimal",
+      "title": "optimal",
+      "href": "misc/optimal.html"
+    },
+    {
+      "id": "theorem-of-alternative",
+      "title": "theorem_of_alternative",
+      "href": "misc/theorem-of-alternative.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isFeasible",
+      "title": "virtualSurplusMaximizingAuction_isFeasible",
+      "href": "misc/virtualSurplusMaximizingAuction-isFeasible.html"
+    },
+    {
+      "id": "virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular",
+      "title": "virtualSurplusMaximizingAuction_isVirtualSurplusOptimal_and_isFeasible_and_isDSIC_of_isRegular",
+      "href": "misc/virtualSurplusMaximizingAuction-isVirtualSurplusOptimal-and-isFeasible-and-isDSIC-of-isRegular.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsFeasible",
+      "display_name": "IsFeasible",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

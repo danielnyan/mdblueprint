@@ -1,0 +1,47 @@
+{
+  "id": "borda-isTotal",
+  "title": "borda_isTotal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/borda-isTotal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>borda_isTotal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem borda_isTotal [Fintype N] [Fintype A] [Nonempty A] : IsTotal (N</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsTotal</li>\n<li>scoringRule_isTotal</li>\n<li>bordaScore</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "IsTotal",
+      "title": "IsTotal",
+      "href": "misc/IsTotal.html"
+    },
+    {
+      "id": "bordaScore",
+      "title": "bordaScore",
+      "href": "misc/bordaScore.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "borda_isTotal",
+      "display_name": "borda_isTotal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

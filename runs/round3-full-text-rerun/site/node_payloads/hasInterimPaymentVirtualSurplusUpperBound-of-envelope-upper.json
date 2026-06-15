@@ -1,0 +1,52 @@
+{
+  "id": "hasInterimPaymentVirtualSurplusUpperBound-of-envelope-upper",
+  "title": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/hasInterimPaymentVirtualSurplusUpperBound-of-envelope-upper.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper [Fintype I] (A B : BayesianSingleItemAuction I) (hpay : A.HasInterimPaymentEnvelopeUpperBound B) (henv : A.HasEnvelopeVirtualSurplusUpperBound B) : A.HasInterimPaymentVirtualSurplusUpperBound B</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>HasInterimPaymentEnvelopeUpperBound</li>\n<li>HasEnvelopeVirtualSurplusUpperBound</li>\n<li>HasInterimPaymentVirtualSurplusUpperBound</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "HasInterimPaymentEnvelopeUpperBound",
+      "title": "HasInterimPaymentEnvelopeUpperBound",
+      "href": "misc/HasInterimPaymentEnvelopeUpperBound.html"
+    },
+    {
+      "id": "HasEnvelopeVirtualSurplusUpperBound",
+      "title": "HasEnvelopeVirtualSurplusUpperBound",
+      "href": "misc/HasEnvelopeVirtualSurplusUpperBound.html"
+    },
+    {
+      "id": "HasInterimPaymentVirtualSurplusUpperBound",
+      "title": "HasInterimPaymentVirtualSurplusUpperBound",
+      "href": "misc/HasInterimPaymentVirtualSurplusUpperBound.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+      "display_name": "hasInterimPaymentVirtualSurplusUpperBound_of_envelope_upper",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

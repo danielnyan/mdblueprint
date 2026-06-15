@@ -1,0 +1,52 @@
+{
+  "id": "idoor-determines-element",
+  "title": "idoor_determines_element",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/idoor-determines-element.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>idoor_determines_element</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma idoor_determines_element [Fintype T] (τ : Finset T) (D : Finset I) (a b : I) (h_door : IST.isDoor τ D) (h_nonempty : τ.Nonempty) (ha_mem : a ∈ D) (hb_mem : b ∈ D) (hab : a ≠ b) (h_eq_mini : mini h_nonempty a = mini h_nonempty b) (h_Ma_nonempty : (M_set τ D a h_nonempty).Nonempty) (h_Mb_nonempty : (M_set τ D b h_nonempty).Nonempty) (x : T) (h_room : IST.isRoom (insert x τ) D) (hx_not_mem : x ∉ τ) : x = m_element τ D a h_nonempty h_Ma_nonempty ∨ x = m_element τ D b h_nonempty h_Mb_nonempty</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isDoor</li>\n<li>M_set</li>\n<li>isRoom</li>\n<li>isDominant</li>\n<li>is_maximal_in_M_set</li>\n<li>sublemma_3_2</li>\n<li>maximal_element_unique</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    },
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "idoor_determines_element",
+      "display_name": "idoor_determines_element",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

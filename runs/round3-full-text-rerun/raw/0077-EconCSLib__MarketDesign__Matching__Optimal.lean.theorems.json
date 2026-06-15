@@ -1,0 +1,198 @@
+[
+  {
+    "dependencies": [
+      "IsStable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "IsAchievable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 78
+      },
+      "start": {
+        "column": 1,
+        "line": 78
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "def IsAchievable (j wj : Fin n) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsAchievable",
+      "gs_bijective",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "galeShapley_isStable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "gs_partner_isAchievable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 83
+      },
+      "start": {
+        "column": 1,
+        "line": 83
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "lemma gs_partner_isAchievable (j : Fin n) : IsAchievable w m j ((Equiv.ofBijective (gs w m) (gs_bijective w m)).symm j)"
+  },
+  {
+    "dependencies": [
+      "IsAchievable"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "NoAchievableRejection",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 95
+      },
+      "start": {
+        "column": 1,
+        "line": 95
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "def NoAchievableRejection (s : DAState n) : Prop"
+  },
+  {
+    "dependencies": [
+      "NoAchievableRejection",
+      "initState"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "initState_NoAchievableRejection",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 100
+      },
+      "start": {
+        "column": 1,
+        "line": 100
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "lemma initState_NoAchievableRejection : NoAchievableRejection w m (initState n)"
+  },
+  {
+    "dependencies": [
+      "HoldInv",
+      "NoAchievableRejection",
+      "IsAchievable",
+      "isFree",
+      "propTarget",
+      "pref_list_mem",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "isFree_iff",
+      "daStep_holding",
+      "daStep_nc_free",
+      "daStep_nc_held"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "daStep_NoAchievableRejection",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 125
+      },
+      "start": {
+        "column": 1,
+        "line": 125
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "lemma daStep_NoAchievableRejection (s : DAState n) (hhold : HoldInv m s) (hinj : \u2200 j1 j2 i : Fin n, s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) (hinv : NoAchievableRejection w m s) : NoAchievableRejection w m (daStep w m s)"
+  },
+  {
+    "dependencies": [
+      "HoldInv",
+      "NoAchievableRejection",
+      "holdinv_step",
+      "holding_injective_step",
+      "daStep_NoAchievableRejection"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "daRun_NoAchievableRejection",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 288
+      },
+      "start": {
+        "column": 1,
+        "line": 288
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "lemma daRun_NoAchievableRejection (fuel : \u2115) (s : DAState n) (hhold : HoldInv m s) (hinj : \u2200 j1 j2 i : Fin n, s.holding j1 = some i \u2192 s.holding j2 = some i \u2192 j1 = j2) (hinv : NoAchievableRejection w m s) : NoAchievableRejection w m (daRun w m fuel s)"
+  },
+  {
+    "dependencies": [
+      "NoAchievableRejection",
+      "finalState",
+      "daRun_NoAchievableRejection",
+      "initState",
+      "holdinv_init",
+      "initState_injective",
+      "initState_NoAchievableRejection"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "finalState_NoAchievableRejection",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 303
+      },
+      "start": {
+        "column": 1,
+        "line": 303
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "lemma finalState_NoAchievableRejection : NoAchievableRejection w m (finalState w m)"
+  },
+  {
+    "dependencies": [
+      "IsStable",
+      "gs_bijective",
+      "IsPositiveAffineOf.symm",
+      "Indifferent.symm",
+      "IsAchievable",
+      "finalState",
+      "final_all_women_hold",
+      "pref_list_mem",
+      "holdinv_finalState",
+      "finalState_NoAchievableRejection",
+      "final_holding_injective"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.MarketDesign.Matching.Optimal",
+    "name": "galeShapley_isProposingOptimal",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 318
+      },
+      "start": {
+        "column": 1,
+        "line": 318
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/MarketDesign/Matching/Optimal.lean",
+    "type": "theorem galeShapley_isProposingOptimal (\u03bc : Matching (Fin n) (Fin n)) (h\u03bc : Matching.IsStable (MatchingMarket.ofEquivData w m) \u03bc) : \u2200 (j wj : Fin n), \u03bc.matchW j = some wj \u2192 (m.prefs j).idxOf ((Equiv.ofBijective (gs w m) (gs_bijective w m)).symm j) \u2264 (m.prefs j).idxOf wj"
+  }
+]

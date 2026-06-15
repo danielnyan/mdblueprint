@@ -1,0 +1,36 @@
+{
+  "id": "EnvelopeVirtualSurplusAnalyticAssumptions-survivalIntegral-eq-accumulatedDensity",
+  "title": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/EnvelopeVirtualSurplusAnalyticAssumptions-survivalIntegral-eq-accumulatedDensity.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity {A B : BayesianSingleItemAuction I} (h : A.EnvelopeVirtualSurplusAnalyticAssumptions B) (i : I) : (∫ v in 0..A.typeData.omega i, B.interimAllocProb i v * (1 - (A.typeData.cdf i).cdf v)) = ∫ v in 0..A.typeData.omega i, (∫ z in 0..v, B.interimAllocProb i z) * A.typeDensity i v</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>survivalIntegral_eq_intervalIntegral_mul_deriv</li>\n<li>EnvelopeVirtualSurplusAnalyticAssumptions.interim_allocation_intervalIntegrableOnSupport</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+      "display_name": "EnvelopeVirtualSurplusAnalyticAssumptions.survivalIntegral_eq_accumulatedDensity",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

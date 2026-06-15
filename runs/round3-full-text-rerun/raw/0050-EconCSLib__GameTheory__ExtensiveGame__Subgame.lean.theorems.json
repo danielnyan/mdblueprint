@@ -1,0 +1,280 @@
+[
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "subgameAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 35
+      },
+      "start": {
+        "column": 1,
+        "line": 35
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "def subgameAt (G : ExtensiveGame N U) (s : G.State) : ExtensiveGame N U"
+  },
+  {
+    "dependencies": [
+      "subgameAt",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "IsReachable.next"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "subgameAt_arena",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 39
+      },
+      "start": {
+        "column": 1,
+        "line": 39
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "theorem subgameAt_arena (G : ExtensiveGame N U) (s : G.State) : (G.subgameAt s).toArena = G.toArena"
+  },
+  {
+    "dependencies": [
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl",
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "Arena.Reachable.trans",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 49
+      },
+      "start": {
+        "column": 1,
+        "line": 49
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "theorem Arena.Reachable.trans {A : Arena} {s t u : A.State} (h1 : Arena.Reachable A s t) (h2 : Arena.Reachable A t u) : Arena.Reachable A s u"
+  },
+  {
+    "dependencies": [
+      "CPState.step",
+      "IsReachable.next",
+      "IsPositiveAffineOf.trans",
+      "StrictlyPreferred.trans",
+      "Arena.Reachable.trans",
+      "Indifferent.trans",
+      "Subtree.trans",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "Arena.Reachable.step",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 57
+      },
+      "start": {
+        "column": 1,
+        "line": 57
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "theorem Arena.Reachable.step' {A : Arena} {s t : A.State} (h : Arena.Reachable A s t) (a : A.Action t) : Arena.Reachable A s (A.next t a)"
+  },
+  {
+    "dependencies": [
+      "IsReachable.next",
+      "Arena.Reachable.step",
+      "CPState.step",
+      "ReachedSubgamePayoffTransfer.init",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "reachableSubgameAt",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 68
+      },
+      "start": {
+        "column": 1,
+        "line": 68
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "def reachableSubgameAt (G : ExtensiveGame iota U) (root : G.State) : ExtensiveGame iota U"
+  },
+  {
+    "dependencies": [
+      "reachableSubgameAt",
+      "ReachedSubgamePayoffTransfer.init",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "reachableSubgameAt_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 77
+      },
+      "start": {
+        "column": 1,
+        "line": 77
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "@[simp] theorem reachableSubgameAt_init (G : ExtensiveGame iota U) (root : G.State) : (G.reachableSubgameAt root).init = \u27e8root, Arena.Reachable.refl _\u27e9"
+  },
+  {
+    "dependencies": [
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "reachableSubgameAt_mover",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 81
+      },
+      "start": {
+        "column": 1,
+        "line": 81
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "@[simp] theorem reachableSubgameAt_mover (G : ExtensiveGame iota U) (root : G.State) (s : (G.reachableSubgameAt root).State) : (G.reachableSubgameAt root).mover s = G.mover s.1"
+  },
+  {
+    "dependencies": [
+      "reachableSubgameAt"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "reachableSubgameAt_payoff",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 86
+      },
+      "start": {
+        "column": 1,
+        "line": 86
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "@[simp] theorem reachableSubgameAt_payoff (G : ExtensiveGame iota U) (root : G.State) (s : (G.reachableSubgameAt root).State) (i : iota) : (G.reachableSubgameAt root).payoff s i = G.payoff s.1 i"
+  },
+  {
+    "dependencies": [
+      "reachableSubgameAt",
+      "IsReachable.next",
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "reachableSubgameAt_next",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "@[simp] theorem reachableSubgameAt_next (G : ExtensiveGame iota U) (root : G.State) (s : (G.reachableSubgameAt root).State) (a : (G.reachableSubgameAt root).Action s) : (G.reachableSubgameAt root).next s a = \u27e8G.next s.1 a, s.2.step' a\u27e9"
+  },
+  {
+    "dependencies": [
+      "ReachedSubgamePayoffTransfer.init"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "IsReachable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 98
+      },
+      "start": {
+        "column": 1,
+        "line": 98
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "def IsReachable (G : ExtensiveGame N U) (s : G.State) : Prop"
+  },
+  {
+    "dependencies": [
+      "IsReachable",
+      "ReachedSubgamePayoffTransfer.init",
+      "IsPositiveAffineOf.refl",
+      "Indifferent.refl",
+      "IVariant.refl"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "isReachable_init",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 102
+      },
+      "start": {
+        "column": 1,
+        "line": 102
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "theorem isReachable_init (G : ExtensiveGame N U) : G.IsReachable G.init"
+  },
+  {
+    "dependencies": [
+      "IsReachable",
+      "Arena.Reachable.step",
+      "CPState.step"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Subgame",
+    "name": "IsReachable.next",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 106
+      },
+      "start": {
+        "column": 1,
+        "line": 106
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Subgame.lean",
+    "type": "theorem IsReachable.next {G : ExtensiveGame N U} {s : G.State} (h : G.IsReachable s) (a : G.Action s) : G.IsReachable (G.next s a)"
+  }
+]

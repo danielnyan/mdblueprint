@@ -1,0 +1,47 @@
+{
+  "id": "nash-map-cert",
+  "title": "nash_map_cert",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/nash-map-cert.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>nash_map_cert</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma nash_map_cert (σ : MixedS G) (i : N) : nash_map_aux G σ i ∈ stdSimplex ℝ (G.strategy i)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>MixedS</li>\n<li>Strategy</li>\n<li>g_function</li>\n<li>one_le_sum_g</li>\n<li>g_function_nonneg</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    },
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "nash_map_cert",
+      "display_name": "nash_map_cert",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

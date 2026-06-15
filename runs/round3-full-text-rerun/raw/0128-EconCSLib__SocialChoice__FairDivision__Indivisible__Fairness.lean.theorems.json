@@ -1,0 +1,175 @@
+[
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEnvyFree",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 58
+      },
+      "start": {
+        "column": 1,
+        "line": 58
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "abbrev IsEnvyFree (v : Valuation N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 71
+      },
+      "start": {
+        "column": 1,
+        "line": 71
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "def IsEF1 [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEFX",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 85
+      },
+      "start": {
+        "column": 1,
+        "line": 85
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "def IsEFX [DecidableEq G] (v : Valuation N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree.isProportional"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsProportional",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 97
+      },
+      "start": {
+        "column": 1,
+        "line": 97
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "abbrev IsProportional (n : \u2115) (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEFX",
+      "IsEF1"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEFX.isEF1",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 109
+      },
+      "start": {
+        "column": 1,
+        "line": 109
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "theorem IsEFX.isEF1 (v : Valuation N G) (A : Allocation N G) (h : IsEFX v A) : IsEF1 v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation",
+      "IsEnvyFree",
+      "IsEFX"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEnvyFree.isEFX_of_mono",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 118
+      },
+      "start": {
+        "column": 1,
+        "line": 118
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "theorem IsEnvyFree.isEFX_of_mono (v : Valuation N G) (A : Allocation N G) (hmono : \u2200 i S T, T \u2286 S \u2192 v.val i T \u2264 v.val i S) (hef : IsEnvyFree v A) : IsEFX v A"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsEquitable",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 149
+      },
+      "start": {
+        "column": 1,
+        "line": 149
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "abbrev IsEquitable (v : Valuation N G) (A : Allocation N G) : Prop"
+  },
+  {
+    "dependencies": [
+      "Valuation",
+      "Allocation"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.SocialChoice.FairDivision.Indivisible.Fairness",
+    "name": "IsMaxminShare",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 179
+      },
+      "start": {
+        "column": 1,
+        "line": 179
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/SocialChoice/FairDivision/Indivisible/Fairness.lean",
+    "type": "def IsMaxminShare [Fintype N] [DecidableEq G] (v : Valuation N G) (allGoods : Finset G) (A : Allocation N G) : Prop"
+  }
+]

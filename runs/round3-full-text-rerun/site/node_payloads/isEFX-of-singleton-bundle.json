@@ -1,0 +1,47 @@
+{
+  "id": "isEFX-of-singleton-bundle",
+  "title": "isEFX_of_singleton_bundle",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isEFX-of-singleton-bundle.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isEFX_of_singleton_bundle</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma isEFX_of_singleton_bundle [DecidableEq G] (v : Valuation (Fin 2) G) (A : Allocation (Fin 2) G) (i j : Fin 2) {g : G} (hAi : A i = {g}) (h_empty_le : v.val j ∅ ≤ v.val j (A j)) : ∀ h ∈ A i, v.val j (A i \\ {h}) ≤ v.val j (A j)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Valuation</li>\n<li>Allocation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isEFX_of_singleton_bundle",
+      "display_name": "isEFX_of_singleton_bundle",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

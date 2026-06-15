@@ -1,0 +1,42 @@
+{
+  "id": "naiveReverse-cost-le",
+  "title": "naiveReverse_cost_le",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/naiveReverse-cost-le.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>naiveReverse_cost_le</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem naiveReverse_cost_le {A : Type} (l : List A) : (naiveReverse l).cost ≤ l.length * l.length</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>naiveReverse</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "naiveReverse",
+      "title": "naiveReverse",
+      "href": "misc/naiveReverse.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "naiveReverse_cost_le",
+      "display_name": "naiveReverse_cost_le",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

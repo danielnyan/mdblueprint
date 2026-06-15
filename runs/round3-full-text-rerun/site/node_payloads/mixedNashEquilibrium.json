@@ -1,0 +1,53 @@
+{
+  "id": "mixedNashEquilibrium",
+  "title": "mixedNashEquilibrium",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/mixedNashEquilibrium.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>mixedNashEquilibrium</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef mixedNashEquilibrium (G : StrategicGame N ℝ) [Fintype N] [∀ i, Fintype (G.strategy i)] : MixedS G → Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedS</li>\n<li>evaluate_at_mixed</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedS",
+      "title": "MixedS",
+      "href": "misc/MixedS.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "exists-mixed-nash-equilibrium-finite",
+      "title": "exists_mixed_nash_equilibrium_finite",
+      "href": "misc/exists-mixed-nash-equilibrium-finite.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "mixedNashEquilibrium",
+      "display_name": "mixedNashEquilibrium",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

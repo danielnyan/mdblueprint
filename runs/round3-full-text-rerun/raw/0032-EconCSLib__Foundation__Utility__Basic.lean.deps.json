@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "IsAffineUtility.isRiskNeutral"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "IsRiskNeutral"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "IsAffineUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "stdSimplex.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery.mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "stdSimplex.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery.pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery.expectedValue"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery.expectedValue_mix"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Lottery.expectedValue_pure"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "IsPositiveAffineOf.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsRiskNeutral.isAffine",
+    "target": "Indifferent.symm"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsAffineUtility.isRiskNeutral",
+    "target": "IsAffineUtility"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsAffineUtility.isRiskNeutral",
+    "target": "IsRiskNeutral"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsAffineUtility.isRiskNeutral",
+    "target": "wsum_add"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsAffineUtility.isRiskNeutral",
+    "target": "wsum_smul"
+  },
+  {
+    "kind": "hard",
+    "module": "EconCSLib.Foundation.Utility.Basic",
+    "source": "IsAffineUtility.isRiskNeutral",
+    "target": "wsum_const"
+  }
+]

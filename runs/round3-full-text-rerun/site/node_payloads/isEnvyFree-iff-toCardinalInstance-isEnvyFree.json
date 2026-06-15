@@ -1,0 +1,47 @@
+{
+  "id": "isEnvyFree-iff-toCardinalInstance-isEnvyFree",
+  "title": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/isEnvyFree-iff-toCardinalInstance-isEnvyFree.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>isEnvyFree_iff_toCardinalInstance_isEnvyFree</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem isEnvyFree_iff_toCardinalInstance_isEnvyFree {N Ω : Type*} [MeasurableSpace Ω] [Fintype N] (I : MeasureInstance N Ω) [∀ i, IsFiniteMeasure (I.measure i)] (A : Allocation N Ω) : I.IsEnvyFree A ↔ I.toCardinalInstance.IsEnvyFree A</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>IsEnvyFree</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "IsEnvyFree",
+      "title": "IsEnvyFree",
+      "href": "misc/IsEnvyFree.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "display_name": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

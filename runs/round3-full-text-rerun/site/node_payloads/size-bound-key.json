@@ -1,0 +1,47 @@
+{
+  "id": "size-bound-key",
+  "title": "size_bound_key",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/size-bound-key.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>size_bound_key</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma size_bound_key (σ : Finset (TT n l)) (C : Finset (Fin n)) (h : TT.ILO.isDominant σ C) (h2 : σ.Nonempty): l &lt; ∑ k ∈ C, (σ.image (fun x =&gt; (x k : ℕ))).min' (h2.image _) + C.card</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>TT</li>\n<li>isDominant</li>\n<li>TT.Ilt_keyprop</li>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "TT",
+      "title": "TT",
+      "href": "misc/TT.html"
+    },
+    {
+      "id": "isDominant",
+      "title": "isDominant",
+      "href": "misc/isDominant.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "size_bound_key",
+      "display_name": "size_bound_key",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

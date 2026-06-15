@@ -1,0 +1,42 @@
+{
+  "id": "optimalRowStrategies-image-isPolytope",
+  "title": "optimalRowStrategies_image_isPolytope",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/optimalRowStrategies-image-isPolytope.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>optimalRowStrategies_image_isPolytope</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem optimalRowStrategies_image_isPolytope : Convex ℝ (Subtype.val '' A.optimalRowStrategies) ∧ IsClosed (Subtype.val '' A.optimalRowStrategies) ∧ IsCompact (Subtype.val '' A.optimalRowStrategies) ∧ (Subtype.val '' A.optimalRowStrategies).Nonempty</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>optimalRowStrategies</li>\n<li>image_optimalRowStrategies_eq</li>\n<li>optimalRowSet_convex</li>\n<li>optimalRowSet_isClosed</li>\n<li>optimalRowSet_isCompact</li>\n<li>optimalRowSet_nonempty</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "optimalRowStrategies",
+      "title": "optimalRowStrategies",
+      "href": "misc/optimalRowStrategies.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "optimalRowStrategies_image_isPolytope",
+      "display_name": "optimalRowStrategies_image_isPolytope",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

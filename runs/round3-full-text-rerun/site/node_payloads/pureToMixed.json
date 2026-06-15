@@ -1,0 +1,68 @@
+{
+  "id": "pureToMixed",
+  "title": "pureToMixed",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/pureToMixed.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>pureToMixed</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef pureToMixed {G : StrategicGame N U} {i : N} [Fintype (G.strategy i)] [DecidableEq (G.strategy i)] (s₀ : G.strategy i) : MixedStrategy G i</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>MixedStrategy</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "MixedStrategy",
+      "title": "MixedStrategy",
+      "href": "misc/MixedStrategy.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "deviateMixed",
+      "title": "deviateMixed",
+      "href": "misc/deviateMixed.html"
+    },
+    {
+      "id": "exists-strategic-game-nash-equilibrium",
+      "title": "exists_strategic_game_nash_equilibrium",
+      "href": "misc/exists-strategic-game-nash-equilibrium.html"
+    },
+    {
+      "id": "pureProfileToMixed",
+      "title": "pureProfileToMixed",
+      "href": "misc/pureProfileToMixed.html"
+    },
+    {
+      "id": "pureToMixed-not-isCompletelyMixed-of-ne",
+      "title": "pureToMixed_not_isCompletelyMixed_of_ne",
+      "href": "misc/pureToMixed-not-isCompletelyMixed-of-ne.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "pureToMixed",
+      "display_name": "pureToMixed",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

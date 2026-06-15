@@ -1,0 +1,36 @@
+{
+  "id": "skew-optimal",
+  "title": "skew_optimal",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/skew-optimal.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>skew_optimal</h1>\n<h2>Lean type</h2>\n<p><code>lean\ntheorem skew_optimal {K : Type*} [Fintype K] [DecidableEq K] [Nonempty K] (S : K → K → 𝕜) (hS : ∀ k l, S k l = - S l k) : ∃ z : K → 𝕜, (∀ k, 0 ≤ z k) ∧ (∑ k, z k = 1) ∧ (∀ l, 0 ≤ ∑ k, z k * S k l)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>IsPositiveAffineOf.symm</li>\n<li>Indifferent.symm</li>\n</ul>",
+  "proof_html": null,
+  "deps": [],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "skew_optimal",
+      "display_name": "skew_optimal",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

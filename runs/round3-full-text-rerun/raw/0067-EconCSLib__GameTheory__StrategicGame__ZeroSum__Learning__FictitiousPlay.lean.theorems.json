@@ -1,0 +1,20 @@
+[
+  {
+    "dependencies": [],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.Learning.FictitiousPlay",
+    "name": "IsFictitiousPlay",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 93
+      },
+      "start": {
+        "column": 1,
+        "line": 93
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/Learning/FictitiousPlay.lean",
+    "type": "def IsFictitiousPlay (A : MatrixGame I J \u211d) (iSeq : \u2115 \u2192 I) (jSeq : \u2115 \u2192 J) : Prop"
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "id": "IsSubgamePerfectOn",
+  "title": "IsSubgamePerfectOn",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsSubgamePerfectOn.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsSubgamePerfectOn</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsSubgamePerfectOn (σ : Strategy N U) (g : GameTree N U) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Strategy</li>\n<li>IVariant</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Strategy",
+      "title": "Strategy",
+      "href": "misc/Strategy.html"
+    },
+    {
+      "id": "IVariant",
+      "title": "IVariant",
+      "href": "misc/IVariant.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "ExtractsGameTree-spe-on-to-nash-at",
+      "title": "ExtractsGameTree.spe_on_to_nash_at",
+      "href": "misc/ExtractsGameTree-spe-on-to-nash-at.html"
+    },
+    {
+      "id": "IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames",
+      "title": "IsNashAt.toSubgamePerfectOn_of_hasOnlyRootSubgames",
+      "href": "misc/IsNashAt-toSubgamePerfectOn-of-hasOnlyRootSubgames.html"
+    },
+    {
+      "id": "IsSubgamePerfect-toSubgamePerfectOn",
+      "title": "IsSubgamePerfect.toSubgamePerfectOn",
+      "href": "misc/IsSubgamePerfect-toSubgamePerfectOn.html"
+    },
+    {
+      "id": "IsSubgamePerfectOn-toNashAt",
+      "title": "IsSubgamePerfectOn.toNashAt",
+      "href": "misc/IsSubgamePerfectOn-toNashAt.html"
+    },
+    {
+      "id": "Kuhn-exists-SPE-on",
+      "title": "Kuhn_exists_SPE_on",
+      "href": "misc/Kuhn-exists-SPE-on.html"
+    },
+    {
+      "id": "centipedePrefix-has-spe-on",
+      "title": "centipedePrefix_has_spe_on",
+      "href": "misc/centipedePrefix-has-spe-on.html"
+    },
+    {
+      "id": "isSubgamePerfectOn-iff-forall-subtree-isNashAt",
+      "title": "isSubgamePerfectOn_iff_forall_subtree_isNashAt",
+      "href": "misc/isSubgamePerfectOn-iff-forall-subtree-isNashAt.html"
+    },
+    {
+      "id": "leaf-nash-to-spe-on",
+      "title": "leaf_nash_to_spe_on",
+      "href": "misc/leaf-nash-to-spe-on.html"
+    },
+    {
+      "id": "sample-optStrategy-spe-on",
+      "title": "sample_optStrategy_spe_on",
+      "href": "misc/sample-optStrategy-spe-on.html"
+    },
+    {
+      "id": "sample-zermelo-spe",
+      "title": "sample_zermelo_spe",
+      "href": "misc/sample-zermelo-spe.html"
+    },
+    {
+      "id": "zermelo-exists-pure-SPE",
+      "title": "zermelo_exists_pure_SPE",
+      "href": "misc/zermelo-exists-pure-SPE.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsSubgamePerfectOn",
+      "display_name": "IsSubgamePerfectOn",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,178 @@
+{
+  "id": "IsEnvyFree",
+  "title": "IsEnvyFree",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/IsEnvyFree.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>IsEnvyFree</h1>\n<h2>Lean type</h2>\n<p><code>lean\ndef IsEnvyFree {N G : Type*} (I : AdditiveInstance N G) (A : Allocation N G) : Prop</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>toCakeValuation</li>\n<li>Allocation</li>\n<li>Valuation</li>\n<li>Allocation</li>\n<li>Allocation</li>\n<li>toValuation</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toCakeValuation",
+      "title": "toCakeValuation",
+      "href": "misc/toCakeValuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Valuation",
+      "title": "Valuation",
+      "href": "misc/Valuation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "Allocation",
+      "title": "Allocation",
+      "href": "misc/Allocation.html"
+    },
+    {
+      "id": "toValuation",
+      "title": "toValuation",
+      "href": "misc/toValuation.html"
+    }
+  ],
+  "dependents": [
+    {
+      "id": "IsEFX-of-noEnvy-mono",
+      "title": "IsEFX.of_noEnvy_mono",
+      "href": "misc/IsEFX-of-noEnvy-mono.html"
+    },
+    {
+      "id": "IsEnvyFree-isEFX-of-mono",
+      "title": "IsEnvyFree.isEFX_of_mono",
+      "href": "misc/IsEnvyFree-isEFX-of-mono.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional",
+      "title": "IsEnvyFree.isProportional",
+      "href": "misc/IsEnvyFree-isProportional.html"
+    },
+    {
+      "id": "IsEnvyFree-isProportional-additive",
+      "title": "IsEnvyFree.isProportional_additive",
+      "href": "misc/IsEnvyFree-isProportional-additive.html"
+    },
+    {
+      "id": "IsEnvyFree-isSource-all",
+      "title": "IsEnvyFree.isSource_all",
+      "href": "misc/IsEnvyFree-isSource-all.html"
+    },
+    {
+      "id": "MeasureInstance-envyFree-and-proportional-exists",
+      "title": "MeasureInstance.envyFree_and_proportional_exists",
+      "href": "misc/MeasureInstance-envyFree-and-proportional-exists.html"
+    },
+    {
+      "id": "MeasureInstance-envyFree-exists",
+      "title": "MeasureInstance.envyFree_exists",
+      "href": "misc/MeasureInstance-envyFree-exists.html"
+    },
+    {
+      "id": "cutAndChoose-ef-exists",
+      "title": "cutAndChoose_ef_exists",
+      "href": "misc/cutAndChoose-ef-exists.html"
+    },
+    {
+      "id": "cutAndChoose-exists-envyFree-allocation",
+      "title": "cutAndChoose_exists_envyFree_allocation",
+      "href": "misc/cutAndChoose-exists-envyFree-allocation.html"
+    },
+    {
+      "id": "cutAndChoose-isEnvyFree",
+      "title": "cutAndChoose_isEnvyFree",
+      "href": "misc/cutAndChoose-isEnvyFree.html"
+    },
+    {
+      "id": "cutAndChooseRule-isEnvyFree",
+      "title": "cutAndChooseRule_isEnvyFree",
+      "href": "misc/cutAndChooseRule-isEnvyFree.html"
+    },
+    {
+      "id": "ef-exists",
+      "title": "ef_exists",
+      "href": "misc/ef-exists.html"
+    },
+    {
+      "id": "ef-exists-and-proportional",
+      "title": "ef_exists_and_proportional",
+      "href": "misc/ef-exists-and-proportional.html"
+    },
+    {
+      "id": "ef-exists-two-agents",
+      "title": "ef_exists_two_agents",
+      "href": "misc/ef-exists-two-agents.html"
+    },
+    {
+      "id": "ef-impossible-two-agents-one-good",
+      "title": "ef_impossible_two_agents_one_good",
+      "href": "misc/ef-impossible-two-agents-one-good.html"
+    },
+    {
+      "id": "isEnvyFree-iff",
+      "title": "isEnvyFree_iff",
+      "href": "misc/isEnvyFree-iff.html"
+    },
+    {
+      "id": "isEnvyFree-iff-toCardinalInstance-isEnvyFree",
+      "title": "isEnvyFree_iff_toCardinalInstance_isEnvyFree",
+      "href": "misc/isEnvyFree-iff-toCardinalInstance-isEnvyFree.html"
+    },
+    {
+      "id": "strom-value-continuous",
+      "title": "strom_value_continuous",
+      "href": "misc/strom-value-continuous.html"
+    }
+  ],
+  "lean_refs": [
+    {
+      "name": "IsEnvyFree",
+      "display_name": "IsEnvyFree",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

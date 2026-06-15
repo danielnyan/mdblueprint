@@ -1,0 +1,47 @@
+{
+  "id": "room-is-not-door",
+  "title": "room_is_not_door",
+  "kind": "theorem",
+  "status": "staged",
+  "href": "misc/room-is-not-door.html",
+  "primary_topic": "misc",
+  "topics": [
+    "misc"
+  ],
+  "body_html": "<h1>room_is_not_door</h1>\n<h2>Lean type</h2>\n<p><code>lean\nlemma room_is_not_door (h1 : IST.isRoom σ C) : ∀ τ D, ¬ (isDoorof σ C τ D)</code></p>\n<h2>Dependencies</h2>\n<ul>\n<li>isRoom</li>\n<li>isDoor</li>\n</ul>",
+  "proof_html": null,
+  "deps": [
+    {
+      "id": "isRoom",
+      "title": "isRoom",
+      "href": "misc/isRoom.html"
+    },
+    {
+      "id": "isDoor",
+      "title": "isDoor",
+      "href": "misc/isDoor.html"
+    }
+  ],
+  "dependents": [],
+  "lean_refs": [
+    {
+      "name": "room_is_not_door",
+      "display_name": "room_is_not_door",
+      "qualified_name": null,
+      "module": null,
+      "kind": null,
+      "signature": null,
+      "docstring": null,
+      "repository_title": null,
+      "revision": null,
+      "short_revision": null,
+      "source_url": null,
+      "doc_url": null,
+      "has_sorry": false,
+      "status": "raw",
+      "reason": null,
+      "suggestions": []
+    }
+  ],
+  "lean_modules": []
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "dependencies": [
+      "Visited",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fibAux",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 47
+      },
+      "start": {
+        "column": 1,
+        "line": 47
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "def fibAux : \u2115 \u2192 CostM (Visited \u2115) (\u2115 \u00d7 \u2115) | 0 => do \u2713[singleton 0] pure (0, 1) | k + 1 => do let p \u2190 fibAux k \u2713[singleton (k + 1)] pure (p.2, p.1 + p.2) /-- Bottom-up Fibonacci. Visits each sub-problem in `{0, \u2026, n}` exactly once. -/"
+  },
+  {
+    "dependencies": [
+      "Visited",
+      "fibAux",
+      "stdSimplex.pure",
+      "Lottery.pure"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fib",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 55
+      },
+      "start": {
+        "column": 1,
+        "line": 55
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "def fib (n : \u2115) : CostM (Visited \u2115) \u2115"
+  },
+  {
+    "dependencies": [
+      "fibAux"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fibAux_ret",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 61
+      },
+      "start": {
+        "column": 1,
+        "line": 61
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "theorem fibAux_ret (n : \u2115) : (fibAux n).ret = (Nat.fib n, Nat.fib (n + 1))"
+  },
+  {
+    "dependencies": [
+      "fibAux",
+      "fibAux_ret"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fib_value",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 70
+      },
+      "start": {
+        "column": 1,
+        "line": 70
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "theorem fib_value (n : \u2115) : (fib n).ret = Nat.fib n"
+  },
+  {
+    "dependencies": [
+      "fibAux",
+      "toFinset",
+      "Visited",
+      "Profile.ext"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fibAux_cost",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 76
+      },
+      "start": {
+        "column": 1,
+        "line": 76
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "theorem fibAux_cost (n : \u2115) : (fibAux n).cost.toFinset = Finset.range (n + 1)"
+  },
+  {
+    "dependencies": [
+      "toFinset",
+      "fibAux",
+      "Visited",
+      "fibAux_cost"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fib_cost",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 91
+      },
+      "start": {
+        "column": 1,
+        "line": 91
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "theorem fib_cost (n : \u2115) : (fib n).cost.toFinset = Finset.range (n + 1)"
+  },
+  {
+    "dependencies": [
+      "fib_cost"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "name": "fib_cost_card",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 99
+      },
+      "start": {
+        "column": 1,
+        "line": 99
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "type": "theorem fib_cost_card (n : \u2115) : (fib n).cost.toFinset.card = n + 1"
+  }
+]

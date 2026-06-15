@@ -1,0 +1,49 @@
+[
+  {
+    "dependencies": [
+      "Profile",
+      "IsWeaklyDominant.isBestResponse",
+      "IsBestResponse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "name": "IsNashEquilibrium",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 28
+      },
+      "start": {
+        "column": 1,
+        "line": 28
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+    "type": "def IsNashEquilibrium (G : StrategicGame N U) (\u03c3 : G.Profile) : Prop"
+  },
+  {
+    "dependencies": [
+      "Profile",
+      "IsStrictlyDominant.isWeaklyDominant",
+      "IsWeaklyDominant",
+      "IsNashEquilibrium",
+      "IsWeaklyDominant.isBestResponse",
+      "IsBestResponse"
+    ],
+    "kind": "theorem",
+    "module": "EconCSLib.GameTheory.StrategicGame.NashEquilibrium",
+    "name": "of_dominant",
+    "range": {
+      "end": {
+        "column": 1,
+        "line": 35
+      },
+      "start": {
+        "column": 1,
+        "line": 35
+      }
+    },
+    "sourcePath": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/NashEquilibrium.lean",
+    "type": "theorem of_dominant {G : StrategicGame N U} {\u03c3 : G.Profile} (h : \u2200 i : N, IsWeaklyDominant G i (\u03c3 i)) : IsNashEquilibrium G \u03c3"
+  }
+]
