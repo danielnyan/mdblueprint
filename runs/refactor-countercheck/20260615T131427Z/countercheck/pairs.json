@@ -1,0 +1,383 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.exists_strong_complementary_pair"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/core/strong_complementarity.md",
+    "node_id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.exists_strong_complementary_pair"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/math/minimax/strong_complementarity.md",
+    "node_id": "math.minimax.strong_complementarity",
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001",
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate",
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "BoyerMoore.majority",
+      "BoyerMoore.loop_cost",
+      "BoyerMoore.majority_peak_le"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+    "module": "EconCSLib.Examples.CostM.BoyerMoore",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/boyer_moore.md",
+    "node_id": "foundation.cost.examples.boyer_moore",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "GCD.gcd",
+      "GCD.gcd_cost_le",
+      "GCD.gcd_cost_log_le"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+    "module": "EconCSLib.Examples.CostM.GCD",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/gcd.md",
+    "node_id": "foundation.cost.examples.gcd",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "LCS.lcs",
+      "LCS.lcs_cost_subset",
+      "LCS.lcs_cost_card_le"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+    "module": "EconCSLib.Examples.CostM.LCS",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/lcs.md",
+    "node_id": "foundation.cost.examples.lcs",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MemoFib.fibAux",
+      "MemoFib.fib",
+      "MemoFib.fibAux_ret",
+      "MemoFib.fib_value",
+      "MemoFib.fibAux_cost",
+      "MemoFib.fib_cost",
+      "MemoFib.fib_cost_card"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+    "module": "EconCSLib.Examples.CostM.MemoFib",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/memo_fib.md",
+    "node_id": "foundation.cost.examples.memo_fib",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "ParAll.parMap_unit_cost_le"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParAll.lean",
+    "module": "EconCSLib.Examples.CostM.ParAll",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/par_all.md",
+    "node_id": "foundation.cost.examples.par_all",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "ParSum.parSum",
+      "ParSum.parSum_cost_le_clog",
+      "ParSum.parSum_cost_le_length"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+    "module": "EconCSLib.Examples.CostM.ParSum",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/par_sum.md",
+    "node_id": "foundation.cost.examples.par_sum",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "ReverseSpace.naiveReverse",
+      "ReverseSpace.naiveReverse_cost_le"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+    "module": "EconCSLib.Examples.CostM.ReverseSpace",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/reverse_space.md",
+    "node_id": "foundation.cost.examples.reverse_space",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "Examples.SimpleGameTree.sample",
+      "Examples.SimpleGameTree.sample_zero_sum",
+      "Examples.SimpleGameTree.sample_zermelo_spe",
+      "Examples.SimpleGameTree.sample_zermelo_ne",
+      "Examples.SimpleGameTree.sample_value_zero_sum"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/SimpleGameTree.lean",
+    "module": "EconCSLib.Examples.SimpleGameTree",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/simple_perfect_information_game.md",
+    "node_id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "PrisonersDilemma.PD",
+      "PrisonersDilemma.pd_defect_weakly_dominant",
+      "PrisonersDilemma.pd_defect_nash",
+      "PrisonersDilemma.pd_nash_unique",
+      "PrisonersDilemma.pd_pareto_suboptimal"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+    "module": "EconCSLib.Examples.PrisonersDilemma",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/strategic_game/prisoners_dilemma.md",
+    "node_id": "game_theory.strategic_game.prisoners_dilemma",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "EconCSLib.LinearAlgebra.perron_frobenius"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/PerronFrobenius.lean",
+    "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/applications/perron_frobenius_positive_matrix.md",
+    "node_id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "expectedPayoffMatrix"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Math/Simplex.lean",
+    "module": "EconCSLib.Math.Simplex",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/core/mixed_extension.md",
+    "node_id": "game_theory.strategic_game.zero_sum.core.mixed_extension",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "stdSimplex.pure",
+      "wsum"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Math/Simplex.lean",
+    "module": "EconCSLib.Math.Simplex",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/core/mixed_strategy_simplex.md",
+    "node_id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "EconCSLib.StrategicGame.Examples.threeByTwoExample",
+      "EconCSLib.StrategicGame.Examples.threeByTwoRowOpt",
+      "EconCSLib.StrategicGame.Examples.threeByTwoColOpt",
+      "EconCSLib.StrategicGame.Examples.threeByTwoExample_value"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+    "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/computation_three_by_two_example.md",
+    "node_id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "EconCSLib.StrategicGame.Examples.diagonalGame_value"
+    ],
+    "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+    "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+    "node_file": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/diagonal_matrix_game_value.md",
+    "node_id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

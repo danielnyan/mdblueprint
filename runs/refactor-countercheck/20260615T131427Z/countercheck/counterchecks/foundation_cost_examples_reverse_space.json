@@ -1,0 +1,66 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.ReverseSpace",
+      "source": "naiveReverse_cost_le",
+      "target": "naiveReverse"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Quadratic Naive List Reversal\n\nThe append-at-the-end naive list reversal, instrumented in `CostM \u2115` to\nexhibit a **quadratic** cost. Each of the `length` recursive steps performs an\nappend whose cost is proportional to the accumulated length, giving\n$$\n  (\\operatorname{naiveReverse}\\,l).\\mathrm{cost} \\;\\le\\; |l|^2,\n$$\nproved as `naiveReverse_cost_le`. This is the counterpoint to the linear and\nlogarithmic `CostM \u2115` examples ([[node:foundation.cost.examples.gcd]]): a\nworse algorithm shows up directly as a worse bound on `.cost`, with no change\nto the monad or to the correctness of the reversed result on `.ret`.\n\n## Lean declarations\n\n- `ReverseSpace.naiveReverse : List \u03b1 \u2192 CostM \u2115 (List \u03b1)`.\n- `ReverseSpace.naiveReverse_cost_le` \u2014 the `|l|\u00b2` cost bound.\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost-annotated\n  functional algorithms ([[node:foundation.cost.costm]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/reverse_space.md",
+    "id": "foundation.cost.examples.reverse_space",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "ReverseSpace.naiveReverse",
+        "ReverseSpace.naiveReverse_cost_le"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.ReverseSpace"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "time-complexity"
+    ],
+    "title": "Worked Example: Quadratic Naive List Reversal",
+    "uses": [
+      "foundation.cost.costm"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def naiveReverse {A : Type} : List A \u2192 CostM \u2115 (List A)\n  | []      => pure []\n  | a :: as => do\n    \u2713[as.length + 1] do\n      let rest \u2190 naiveReverse as\n      pure (rest ++ [a])\n\n/-- Cumulative `++` allocation is quadratic in input length. -/\n",
+      "column": 1,
+      "end": 1671,
+      "kind": "def",
+      "line": 42,
+      "module": "EconCSLib.Examples.CostM.ReverseSpace",
+      "name": "naiveReverse",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+      "start": 1427
+    },
+    {
+      "body": "theorem naiveReverse_cost_le {A : Type} (l : List A) :\n    (naiveReverse l).cost \u2264 l.length * l.length := by\n  induction l with\n  | nil =>\n    simp [naiveReverse]\n  | cons a as ih =>\n    unfold naiveReverse\n    simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n               List.length_cons, Nat.add_zero]\n    have hsq : (as.length + 1) * (as.length + 1) =\n               as.length * as.length + (2 * as.length + 1) := by ring\n    rw [hsq]\n    omega\n\nend ReverseSpace\n",
+      "column": 1,
+      "end": 2153,
+      "kind": "theorem",
+      "line": 50,
+      "module": "EconCSLib.Examples.CostM.ReverseSpace",
+      "name": "naiveReverse_cost_le",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ReverseSpace.lean",
+      "start": 1671
+    }
+  ]
+}

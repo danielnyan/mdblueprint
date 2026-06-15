@@ -1,0 +1,167 @@
+---
+agent: lean-countercheck
+node_id: game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Three-By-Two Matrix Game Computation
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/computation_three_by_two_example.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `EconCSLib.StrategicGame.Examples.threeByTwoExample`
+- `EconCSLib.StrategicGame.Examples.threeByTwoRowOpt`
+- `EconCSLib.StrategicGame.Examples.threeByTwoColOpt`
+- `EconCSLib.StrategicGame.Examples.threeByTwoExample_value`
+
+## Extra Declarations
+
+- `threeByTwoExample`
+- `threeByTwo_row_guarantee`
+- `threeByTwo_column_guarantee`
+- `threeByTwoExample_value`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `game_theory.strategic_game.zero_sum.core.optimal_strategy_sets`
+- missing uses: `game_theory.strategic_game.zero_sum.core.optimal_strategy_sets`
+- extra uses: `threeByTwoExample`, `threeByTwo_column_guarantee`, `threeByTwo_row_guarantee`
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "source": "threeByTwo_row_guarantee",
+      "target": "threeByTwoExample"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "source": "threeByTwo_column_guarantee",
+      "target": "threeByTwoExample"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "source": "threeByTwoExample_value",
+      "target": "threeByTwo_column_guarantee"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "source": "threeByTwoExample_value",
+      "target": "threeByTwo_row_guarantee"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "source": "threeByTwoExample_value",
+      "target": "threeByTwoExample"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Three-By-Two Matrix Game Computation\n\nMFoGT Exercise 2.8.5 asks for the value and optimal strategies of\n$$\n  A=\n  \\begin{pmatrix}\n    3 & -1\\\\\n    0 & 0\\\\\n    -2 & 1\n  \\end{pmatrix}.\n$$\n\nThe middle row is strictly dominated by the mixed row\n$0.49\\,a_1+0.51\\,a_3$, so the computation reduces to the two-row game using\nrows $a_1$ and $a_3$:\n$$\n  \\begin{pmatrix}\n    3 & -1\\\\\n    -2 & 1\n  \\end{pmatrix}.\n$$\n\nThe value is\n$$\n  \\operatorname{val}(A)=\\frac17.\n$$\nAn optimal strategy for player 1 plays rows $(a_1,a_2,a_3)$ with probabilities\n$$\n  \\left(\\frac37,0,\\frac47\\right),\n$$\nand an optimal strategy for player 2 plays columns $(b_1,b_2)$ with\nprobabilities\n$$\n  \\left(\\frac27,\\frac57\\right).\n$$\n\nThis example is a useful small test case for dominance elimination,\nequalizing-strategy computations, and matrix-game value formulas.\n\n## References\n\n- [MFoGT, Section 2.8, Exercise 5] Laraki, Renault, and Sorin, *Mathematical Foundations of Game Theory*. Compute the value and optimal strategies of a displayed 3 by 2 matrix game.\n- [MFoGT, Section 9.2, Exercise 5 hints] Laraki, Renault, and Sorin, *Mathematical Foundations of Game Theory*. Gives the reduced game and the optimal strategies.",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/computation_three_by_two_example.md",
+    "id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "EconCSLib.StrategicGame.Examples.threeByTwoExample",
+        "EconCSLib.StrategicGame.Examples.threeByTwoRowOpt",
+        "EconCSLib.StrategicGame.Examples.threeByTwoColOpt",
+        "EconCSLib.StrategicGame.Examples.threeByTwoExample_value"
+      ],
+      "modules": [
+        "EconCSLib.Examples.StrategicGame.ThreeByTwo"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "zero-sum",
+      "matrix-game",
+      "computation",
+      "example"
+    ],
+    "title": "Three-By-Two Matrix Game Computation",
+    "uses": [
+      "game_theory.strategic_game.zero_sum.core.optimal_strategy_sets"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def threeByTwoExample : MatrixGame (Fin 3) (Fin 2) \u211d where\n  g := !![3, -1; 0, 0; -2, 1]\n\n@[simp] theorem threeByTwoExample_g_00 : threeByTwoExample.g 0 0 = 3 := by\n  simp [threeByTwoExample]\n@[simp] theorem threeByTwoExample_g_01 : threeByTwoExample.g 0 1 = -1 := by\n  simp [threeByTwoExample]\n@[simp] theorem threeByTwoExample_g_10 : threeByTwoExample.g 1 0 = 0 := by\n  simp [threeByTwoExample]\n@[simp] theorem threeByTwoExample_g_11 : threeByTwoExample.g 1 1 = 0 := by\n  simp [threeByTwoExample]\n@[simp] theorem threeByTwoExample_g_20 : threeByTwoExample.g 2 0 = -2 := by\n  simp [threeByTwoExample]\n@[simp] theorem threeByTwoExample_g_21 : threeByTwoExample.g 2 1 = 1 := by\n  simp [threeByTwoExample]\n\n/-- Row player's optimal strategy `(3/7, 0, 4/7)`. -/\nnoncomputable def threeByTwoRowOpt : stdSimplex \u211d (Fin 3) :=\n  \u27e8![3 / 7, 0, 4 / 7],\n    fun i => by fin_cases i <;> norm_num,\n    by rw [Fin.sum_univ_three]; show (3 : \u211d) / 7 + 0 + 4 / 7 = 1; norm_num\u27e9\n\n@[simp] theorem threeByTwoRowOpt_val_0 : threeByTwoRowOpt.val 0 = 3 / 7 := by\n  simp [threeByTwoRowOpt]\n@[simp] theorem threeByTwoRowOpt_val_1 : threeByTwoRowOpt.val 1 = 0 := by\n  simp [threeByTwoRowOpt]\n@[simp] theorem threeByTwoRowOpt_val_2 : threeByTwoRowOpt.val 2 = 4 / 7 := by\n  simp [threeByTwoRowOpt]\n\n/-- Column player's optimal strategy `(2/7, 5/7)`. -/\nnoncomputable def threeByTwoColOpt : stdSimplex \u211d (Fin 2) :=\n  \u27e8![2 / 7, 5 / 7],\n    fun j => by fin_cases j <;> norm_num,\n    by rw [Fin.sum_univ_two]; show (2 : \u211d) / 7 + 5 / 7 = 1; norm_num\u27e9\n\n@[simp] theorem threeByTwoColOpt_val_0 : threeByTwoColOpt.val 0 = 2 / 7 := by\n  simp [threeByTwoColOpt]\n@[simp] theorem threeByTwoColOpt_val_1 : threeByTwoColOpt.val 1 = 5 / 7 := by\n  simp [threeByTwoColOpt]\n\n/-- Player 1's optimal strategy guarantees `1/7` against either column. -/\n",
+      "column": 1,
+      "end": 2542,
+      "kind": "def",
+      "line": 32,
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "name": "threeByTwoExample",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+      "start": 739
+    },
+    {
+      "body": "theorem threeByTwo_row_guarantee :\n    \u2200 j, (1 : \u211d) / 7 \u2264 threeByTwoExample.Ej threeByTwoRowOpt j := by\n  intro j\n  show (1 : \u211d) / 7 \u2264 \u2211 i, threeByTwoRowOpt.val i * threeByTwoExample.g i j\n  rw [Fin.sum_univ_three]\n  fin_cases j\n  \u00b7 show (1 : \u211d) / 7 \u2264 threeByTwoRowOpt.val 0 * threeByTwoExample.g 0 0\n                      + threeByTwoRowOpt.val 1 * threeByTwoExample.g 1 0\n                      + threeByTwoRowOpt.val 2 * threeByTwoExample.g 2 0\n    simp; try norm_num\n  \u00b7 show (1 : \u211d) / 7 \u2264 threeByTwoRowOpt.val 0 * threeByTwoExample.g 0 1\n                      + threeByTwoRowOpt.val 1 * threeByTwoExample.g 1 1\n                      + threeByTwoRowOpt.val 2 * threeByTwoExample.g 2 1\n    simp; try norm_num\n\n/-- Player 2's optimal strategy caps payoff at `1/7` against every pure row. -/\n",
+      "column": 1,
+      "end": 3334,
+      "kind": "theorem",
+      "line": 73,
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "name": "threeByTwo_row_guarantee",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+      "start": 2542
+    },
+    {
+      "body": "theorem threeByTwo_column_guarantee :\n    \u2200 i, threeByTwoExample.Ei i threeByTwoColOpt \u2264 (1 : \u211d) / 7 := by\n  intro i\n  show \u2211 j, threeByTwoColOpt.val j * threeByTwoExample.g i j \u2264 (1 : \u211d) / 7\n  rw [Fin.sum_univ_two]\n  fin_cases i\n  \u00b7 show threeByTwoColOpt.val 0 * threeByTwoExample.g 0 0\n        + threeByTwoColOpt.val 1 * threeByTwoExample.g 0 1 \u2264 (1 : \u211d) / 7\n    simp; try norm_num\n  \u00b7 show threeByTwoColOpt.val 0 * threeByTwoExample.g 1 0\n        + threeByTwoColOpt.val 1 * threeByTwoExample.g 1 1 \u2264 (1 : \u211d) / 7\n    simp; try norm_num\n  \u00b7 show threeByTwoColOpt.val 0 * threeByTwoExample.g 2 0\n        + threeByTwoColOpt.val 1 * threeByTwoExample.g 2 1 \u2264 (1 : \u211d) / 7\n    simp; try norm_num\n\n/-- **Three-by-two example value** [MFoGT \u00a72.8, Exercise 5]. -/\n",
+      "column": 1,
+      "end": 4091,
+      "kind": "theorem",
+      "line": 89,
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "name": "threeByTwo_column_guarantee",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+      "start": 3334
+    },
+    {
+      "body": "theorem threeByTwoExample_value : threeByTwoExample.value = 1 / 7 := by\n  symm\n  apply threeByTwoExample.common_guarantee_eq_value\n  \u00b7 exact \u27e8threeByTwoRowOpt, threeByTwo_row_guarantee\u27e9\n  \u00b7 exact \u27e8threeByTwoColOpt, threeByTwo_column_guarantee\u27e9\n\nend EconCSLib.StrategicGame.Examples\n",
+      "column": 1,
+      "end": 4373,
+      "kind": "theorem",
+      "line": 106,
+      "module": "EconCSLib.Examples.StrategicGame.ThreeByTwo",
+      "name": "threeByTwoExample_value",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/ThreeByTwo.lean",
+      "start": 4091
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

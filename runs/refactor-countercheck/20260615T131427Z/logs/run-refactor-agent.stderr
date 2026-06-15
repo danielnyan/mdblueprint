@@ -1,0 +1,1 @@
+2026-06-15T13:20:13.285297Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to read file to update /home/azureuser/mdblueprint-clean/runs/refactor-countercheck/20260615T131427Z/reports/refactor-report.md: fs sandbox helper failed with status exit status: 1: bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted

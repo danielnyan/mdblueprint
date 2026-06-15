@@ -1,0 +1,121 @@
+---
+agent: lean-countercheck
+node_id: foundation.cost.examples.gcd
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Worked Example: Euclidean GCD Step Count
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/gcd.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `GCD.gcd`
+- `GCD.gcd_cost_le`
+- `GCD.gcd_cost_log_le`
+
+## Extra Declarations
+
+- `gcd`
+- `gcd_cost_le`
+- `gcd_cost_log_le`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `foundation.cost.costm`
+- missing uses: (none)
+- extra uses: (none)
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Euclidean GCD Step Count\n\nThe simplest `CostM` instance: `gcd` in `CostM \u2115`, charging one unit per\nmodulus operation. Two bounds are proved:\n\n- `gcd_cost_le`  \u2014  `(gcd a b).cost \u2264 b` (a trivial linear bound), and\n- `gcd_cost_log_le`  \u2014  `(gcd a b).cost \u2264 2 \u00b7 \\log_2 b + 1`, the textbook\n  logarithmic bound following from the fact that two consecutive remainders\n  at least halve the modulus.\n\nThis is the canonical \"`C = \u2115`, additive, counts one resource\" use of the\nmonad ([[node:foundation.cost.costm]]): the cost field accumulates the number\nof `mod` steps, and the bound lives purely on `.cost` while the returned gcd\nvalue lives on `.ret`.\n\n## Lean declarations\n\n- `GCD.gcd : \u2115 \u2192 \u2115 \u2192 CostM \u2115 \u2115` \u2014 the instrumented algorithm.\n- `GCD.gcd_cost_le`, `GCD.gcd_cost_log_le` \u2014 the linear and logarithmic step\n  bounds (the latter via a private `mod_halves` halving lemma).\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost-annotated\n  functional algorithms ([[node:foundation.cost.costm]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/gcd.md",
+    "id": "foundation.cost.examples.gcd",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "GCD.gcd",
+        "GCD.gcd_cost_le",
+        "GCD.gcd_cost_log_le"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.GCD"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "time-complexity"
+    ],
+    "title": "Worked Example: Euclidean GCD Step Count",
+    "uses": [
+      "foundation.cost.costm"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def gcd : \u2115 \u2192 \u2115 \u2192 CostM \u2115 \u2115\n  | a, 0     => pure a\n  | a, b + 1 => do\n    \u2713 gcd (b + 1) (a % (b + 1))\ntermination_by _ b => b\ndecreasing_by exact Nat.mod_lt _ (Nat.succ_pos _)\n\n/-- Linear cost bound: `gcd a b` performs at most `b` `mod` operations. -/\n",
+      "column": 1,
+      "end": 1431,
+      "kind": "def",
+      "line": 39,
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "name": "gcd",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+      "start": 1179
+    },
+    {
+      "body": "theorem gcd_cost_le (a b : \u2115) : (gcd a b).cost \u2264 b := by\n  induction b using Nat.strong_induction_on generalizing a with\n  | _ b ih =>\n    match b with\n    | 0 => simp [gcd]\n    | b' + 1 =>\n      unfold gcd\n      simp only [CostM.cost_bind, CostM.cost_tick]\n      have hmod : a % (b' + 1) < b' + 1 := Nat.mod_lt _ (Nat.succ_pos _)\n      have := ih (a % (b' + 1)) hmod (b' + 1)\n      omega\n\n/-! ### Tight `O(log b)` bound -/\n\n/-- Halving lemma for the Euclidean recursion: if `0 < r < b`, then\n`b mod r \u2264 b / 2`. This is the algebraic core of the `O(log b)` bound:\ntwo consecutive Euclidean steps cause the second argument to halve.\n\nProof by case analysis on whether `2 * r \u2264 b`. If yes, `b mod r < r \u2264 b/2`.\nIf no, then `b / r = 1` (since `r > b/2`), so `b mod r = b - r < b/2`. -/\nprivate lemma mod_halves {b r : \u2115} (hr : 0 < r) (hrb : r < b) :\n    b % r \u2264 b / 2 := by\n  by_cases h : 2 * r \u2264 b\n  \u00b7 have hmod_lt : b % r < r := Nat.mod_lt b hr\n    omega\n  \u00b7 push_neg at h\n    have hge1 : 1 \u2264 b / r := (Nat.one_le_div_iff hr).mpr hrb.le\n    have hlt2 : b / r < 2 := by\n      rw [Nat.div_lt_iff_lt_mul hr]; omega\n    have hdiv : b / r = 1 := by omega\n    have heq : b = r + b % r := by\n      have hdm := Nat.div_add_mod b r\n      rw [hdiv] at hdm\n      omega\n    omega\n\n/-- Tight cost bound up to a factor of 2: `gcd a b` performs at most\n`2 * log\u2082(b) + 1` `mod` operations. -/\n",
+      "column": 1,
+      "end": 2807,
+      "kind": "theorem",
+      "line": 47,
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "name": "gcd_cost_le",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+      "start": 1431
+    },
+    {
+      "body": "theorem gcd_cost_log_le (a b : \u2115) :\n    (gcd a b).cost \u2264 2 * Nat.log 2 b + 1 := by\n  induction b using Nat.strong_induction_on generalizing a with\n  | _ b ih =>\n    match b with\n    | 0 => simp [gcd]\n    | b' + 1 =>\n      have hb_pos : 0 < b' + 1 := Nat.succ_pos _\n      unfold gcd\n      simp only [CostM.cost_bind, CostM.cost_tick]\n      by_cases hr : a % (b' + 1) = 0\n      \u00b7 -- a % b = 0: gcd b 0 = pure b, cost = 0, total = 1\n        rw [hr]\n        unfold gcd\n        simp only [CostM.cost_pure]\n        omega\n      \u00b7 -- a % b > 0: peel two more levels to apply the halving lemma\n        have hr_pos : 0 < a % (b' + 1) := Nat.pos_of_ne_zero hr\n        have hr_lt : a % (b' + 1) < b' + 1 := Nat.mod_lt _ hb_pos\n        -- b \u2265 2 because b = 1 would force a % 1 = 0\n        have hb_ge_2 : 2 \u2264 b' + 1 := by\n          rcases Nat.eq_zero_or_pos b' with hb' | hb'\n          \u00b7 subst hb'; simp [Nat.mod_one] at hr\n          \u00b7 omega\n        rcases Nat.exists_eq_succ_of_ne_zero hr with \u27e8r', hr'\u27e9\n        rw [hr']\n        unfold gcd\n        simp only [CostM.cost_bind, CostM.cost_tick]\n        have hs_lt_b : (b' + 1) % (r' + 1) < b' + 1 := by\n          have : (b' + 1) % (r' + 1) < r' + 1 := Nat.mod_lt _ (Nat.succ_pos _)\n          omega\n        have ihs := ih ((b' + 1) % (r' + 1)) hs_lt_b (r' + 1)\n        have hhalve : (b' + 1) % (r' + 1) \u2264 (b' + 1) / 2 := by\n          apply mod_halves (Nat.succ_pos _)\n          rw [\u2190 hr']; exact hr_lt\n        have hlog_mono :\n            Nat.log 2 ((b' + 1) % (r' + 1)) \u2264 Nat.log 2 ((b' + 1) / 2) :=\n          Nat.log_mono_right hhalve\n        have hlog_rec :\n            Nat.log 2 (b' + 1) = Nat.log 2 ((b' + 1) / 2) + 1 :=\n          Nat.log_of_one_lt_of_le (by omega : (1 : \u2115) < 2) hb_ge_2\n        omega\n\nend GCD\n",
+      "column": 1,
+      "end": 4557,
+      "kind": "theorem",
+      "line": 85,
+      "module": "EconCSLib.Examples.CostM.GCD",
+      "name": "gcd_cost_log_le",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/GCD.lean",
+      "start": 2807
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

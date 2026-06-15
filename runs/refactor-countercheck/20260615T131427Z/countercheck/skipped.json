@@ -1,0 +1,20 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "reason": "max-countercheck-pairs limit reached",
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

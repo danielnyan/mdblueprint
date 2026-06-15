@@ -1,0 +1,169 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib",
+      "target": "fibAux"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fibAux_ret",
+      "target": "fibAux"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib_value",
+      "target": "fibAux_ret"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib_value",
+      "target": "fibAux"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fibAux_cost",
+      "target": "fibAux"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib_cost",
+      "target": "fibAux_cost"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib_cost",
+      "target": "fibAux"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "source": "fib_cost_card",
+      "target": "fib_cost"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Memoized Fibonacci Footprint\n\nFibonacci instrumented in `CostM (Visited \u2115)` ([[node:foundation.cost.visited]]),\nso the cost field records the **set of indices** the recursion touches rather\nthan a call count. Because the `Visited` monoid is idempotent, the footprint\ncollapses to the distinct subproblems:\n$$\n  (\\operatorname{fib} n).\\mathrm{cost}.\\mathrm{toFinset}\n    \\;=\\; \\{0, 1, \\dots, n\\} \\;=\\; \\operatorname{range}(n+1),\n$$\nhence `fib_cost_card : (fib n).cost.toFinset.card = n + 1` \u2014 exactly `n+1`\ndistinct subproblems, the hallmark of an `O(n)` memoized DP.\n\nCorrectness and cost are proved independently: `fib_value : (fib n).ret =\nNat.fib n` lives on `.ret`, while `fib_cost` lives on `.cost`. This is the\nintended `CostM` separation ([[node:foundation.cost.costm]]).\n\n## Lean declarations\n\n- `MemoFib.fibAux`, `MemoFib.fib` \u2014 the instrumented recursion and its wrapper.\n- `MemoFib.fibAux_ret`, `MemoFib.fib_value` \u2014 correctness (`= Nat.fib`).\n- `MemoFib.fibAux_cost`, `MemoFib.fib_cost`, `MemoFib.fib_cost_card` \u2014 the\n  footprint equals `range (n+1)`, of cardinality `n+1`.\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. Memoization as an\n  idempotent cost monoid ([[node:foundation.cost.visited]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/memo_fib.md",
+    "id": "foundation.cost.examples.memo_fib",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "MemoFib.fibAux",
+        "MemoFib.fib",
+        "MemoFib.fibAux_ret",
+        "MemoFib.fib_value",
+        "MemoFib.fibAux_cost",
+        "MemoFib.fib_cost",
+        "MemoFib.fib_cost_card"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.MemoFib"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "memoization"
+    ],
+    "title": "Worked Example: Memoized Fibonacci Footprint",
+    "uses": [
+      "foundation.cost.costm",
+      "foundation.cost.visited"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def fibAux : \u2115 \u2192 CostM (Visited \u2115) (\u2115 \u00d7 \u2115)\n  | 0     => do \u2713[singleton 0] pure (0, 1)\n  | k + 1 => do\n    let p \u2190 fibAux k\n    \u2713[singleton (k + 1)] pure (p.2, p.1 + p.2)\n\n/-- Bottom-up Fibonacci. Visits each sub-problem in `{0, \u2026, n}` exactly\nonce. -/\n",
+      "column": 1,
+      "end": 1865,
+      "kind": "def",
+      "line": 47,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fibAux",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 1613
+    },
+    {
+      "body": "def fib (n : \u2115) : CostM (Visited \u2115) \u2115 := do\n  let p \u2190 fibAux n\n  pure p.1\n\n/-! ### Functional correctness -/\n\n",
+      "column": 1,
+      "end": 1975,
+      "kind": "def",
+      "line": 55,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fib",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 1865
+    },
+    {
+      "body": "theorem fibAux_ret (n : \u2115) :\n    (fibAux n).ret = (Nat.fib n, Nat.fib (n + 1)) := by\n  induction n with\n  | zero => rfl\n  | succ k ih =>\n    show ((fibAux k) >>= _).ret = _\n    simp [CostM.ret_bind, ih, Nat.fib_add_two]\n\n/-- The value computed by `fib n` is the `n`-th Fibonacci number. -/\n",
+      "column": 1,
+      "end": 2265,
+      "kind": "theorem",
+      "line": 61,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fibAux_ret",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 1975
+    },
+    {
+      "body": "theorem fib_value (n : \u2115) : (fib n).ret = Nat.fib n := by\n  show ((fibAux n) >>= _).ret = _\n  simp [fibAux_ret]\n\n/-! ### Cost analysis -/\n\n",
+      "column": 1,
+      "end": 2404,
+      "kind": "theorem",
+      "line": 70,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fib_value",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 2265
+    },
+    {
+      "body": "theorem fibAux_cost (n : \u2115) :\n    (fibAux n).cost.toFinset = Finset.range (n + 1) := by\n  induction n with\n  | zero => simp [fibAux]\n  | succ k ih =>\n    show ((fibAux k) >>= _).cost.toFinset = _\n    simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n      Visited.toFinset_add, Visited.toFinset_singleton, Visited.toFinset_zero,\n      Finset.union_empty]\n    rw [ih]\n    ext x\n    simp only [Finset.mem_union, Finset.mem_range, Finset.mem_singleton]\n    omega\n\n/-- The set of sub-problems touched by `fib n` is exactly `{0, \u2026, n}`. -/\n",
+      "column": 1,
+      "end": 2951,
+      "kind": "theorem",
+      "line": 76,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fibAux_cost",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 2404
+    },
+    {
+      "body": "theorem fib_cost (n : \u2115) :\n    (fib n).cost.toFinset = Finset.range (n + 1) := by\n  show ((fibAux n) >>= _).cost.toFinset = _\n  simp only [CostM.cost_bind, CostM.cost_pure,\n    Visited.toFinset_add, Visited.toFinset_zero, Finset.union_empty]\n  exact fibAux_cost n\n\n/-- Exactly `n + 1` distinct sub-problems are touched by `fib n`. -/\n",
+      "column": 1,
+      "end": 3285,
+      "kind": "theorem",
+      "line": 91,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fib_cost",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 2951
+    },
+    {
+      "body": "theorem fib_cost_card (n : \u2115) : (fib n).cost.toFinset.card = n + 1 := by\n  rw [fib_cost, Finset.card_range]\n\nend MemoFib\n",
+      "column": 1,
+      "end": 3406,
+      "kind": "theorem",
+      "line": 99,
+      "module": "EconCSLib.Examples.CostM.MemoFib",
+      "name": "fib_cost_card",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/MemoFib.lean",
+      "start": 3285
+    }
+  ]
+}

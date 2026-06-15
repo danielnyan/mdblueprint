@@ -1,0 +1,514 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+    "operations": [],
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.strong_complementarity",
+    "operations": [],
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001",
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate",
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.boyer_moore",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.gcd",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.lcs",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.memo_fib",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.par_all",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.par_sum",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "foundation.cost.examples.reverse_space",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.simple_perfect_information_game",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.prisoners_dilemma",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.core.mixed_extension",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.core.mixed_strategy_simplex",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.computation_three_by_two_example",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.matching_pennies",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.three_player_minimax_failure",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.examples.two_by_two_value_formula",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.lam_mu_existence",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.antisymmetric_matrix_game_value",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.common_guarantee_value",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.value_predicates",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.zero_sum_nash_saddle",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "social_choice.preference",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "social_choice.preference_profile",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "social_choice.strict_preference",
+    "operations": [],
+    "priority": 35,
+    "proposal_ids": [
+      "refactor-003"
+    ],
+    "proposal_kinds": [
+      "mark-lean-topic-divergent"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.imperfect_information.spe_imperfect_information",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_with_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

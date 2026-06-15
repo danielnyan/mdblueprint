@@ -1,0 +1,93 @@
+---
+agent: lean-countercheck
+node_id: game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Perron-Frobenius For Positive Matrices
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/applications/perron_frobenius_positive_matrix.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/PerronFrobenius.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `EconCSLib.LinearAlgebra.perron_frobenius`
+
+## Extra Declarations
+
+- `perron_frobenius`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `math.minimax.loomis_theorem`
+- missing uses: (none)
+- extra uses: (none)
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/PerronFrobenius.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Perron-Frobenius For Positive Matrices\n\n## Statement\n\nLet $M \\in \\mathbb{R}^{n \\times n}$ be a square matrix whose entries are\nstrictly positive: $M_{ij} > 0$ for every $i, j$. Then there exist\n$x \\in \\Delta(\\mathrm{Fin}\\,n)$, $y \\in \\Delta(\\mathrm{Fin}\\,n)$, and\n$\\lambda > 0$ such that\n\n- $x$ and $y$ have **strictly positive components**;\n- $xM = \\lambda\\, x$ (so $x$ is a left eigenvector of $M$ with eigenvalue $\\lambda$);\n- $My = \\lambda\\, y$ (so $y$ is a right eigenvector of $M$ with eigenvalue $\\lambda$).\n\nThe Loomis value $v$ of the pair $(I, M)$ (identity matrix vs. $M$)\nprovides $\\lambda = 1/v$.\n\n## Proof\n\nApply the general-$B$ Loomis theorem\n([[node:math.minimax.loomis_theorem]]) with $A := I$ (the $n \\times n$\nidentity matrix) and $B := M$. Since $M_{ij} > 0$, the hypothesis\n`IsPositive M` is satisfied. Loomis produces\n$x \\in \\Delta(\\mathrm{Fin}\\,n)$, $y \\in \\Delta(\\mathrm{Fin}\\,n)$, and\n$v \\in \\mathbb{R}$ such that\n\n- $(1)\\quad \\forall j,\\quad v \\cdot (xM)_j \\le x_j$  (from $xI \\ge v \\cdot xM$,\n  using $xI = x$);\n- $(2)\\quad \\forall i,\\quad y_i \\le v \\cdot (My)_i$  (from $Iy \\le v \\cdot My$,\n  using $Iy = y$).\n\n**Step 1: $v > 0$.** Pick $i_0$ with $y_{i_0} > 0$ (which exists because\n$\\sum y_i = 1$). Inequality (2) at $i_0$ gives\n$y_{i_0} \\le v \\cdot (My)_{i_0}$. Since $M > 0$ entrywise and $y \\ge 0$ has\n$y_{i_0} > 0$ (hence $\\sum y_j M_{i_0, j} > 0$), $(My)_{i_0} > 0$.\nTherefore $0 < y_{i_0} \\le v \\cdot (My)_{i_0}$ forces $v > 0$.\n\n**Step 2: $x$ and $y$ are strictly positive.** For every $j$,\n$(xM)_j = \\sum_i x_i M_{ij} > 0$ because $x \\in \\Delta$ has at least one\npositive entry and $M > 0$ entrywise. Combined with (1), $x_j \\ge v \\cdot\n(xM)_j > 0$. So $x_j > 0$ for all $j$. By the same argument applied to (2)\nand $y$, $(My)_i > 0$ and $y_i > 0$ for all $i$.\n\n**Step 3: Tight inner-product sandwich.** Compute\n$$\n  \\langle x, y\\rangle - v\\cdot \\langle xM, y\\rangle\n  = \\sum_j (x_j - v \\cdot (xM)_j) \\cdot y_j \\ge 0\n$$\n(each summand is nonneg by (1) and $y_j \\ge 0$). And by\n$\\langle xM, y\\rangle = \\sum_j \\sum_i x_i M_{ij} y_j = \\langle x, My\\rangle$,\n$$\n  v \\cdot \\langle x, My\\rangle - \\langle x, y\\rangle\n  = v \\cdot \\langle x, My\\rangle - \\langle x, y\\rangle.\n$$\nWeighting (2) by $x \\ge 0$ and summing,\n$\\langle x, y\\rangle \\le v \\cdot \\langle x, My\\rangle$. Therefore\n$$\n  \\langle x, y\\rangle \\;\\ge\\; v \\cdot \\langle xM, y\\rangle \\;=\\; v \\cdot \\langle x, My\\rangle \\;\\ge\\; \\langle x, y\\rangle,\n$$\nso both inequalities are tight.\n\n**Step 4: Componentwise equality.** From Step 3,\n$\\sum_j (x_j - v \\cdot (xM)_j) \\cdot y_j = 0$. Each summand is nonneg (by\n(1)) and $y_j > 0$ strict (by Step 2). For the nonneg sum to vanish, each\nsummand must vanish, so $x_j - v \\cdot (xM)_j = 0$, i.e., $x_j = v \\cdot\n(xM)_j$ for every $j$. As a row-vector identity, $xM = (1/v) \\cdot x$.\n\nDually, $\\sum_i (v \\cdot (My)_i - y_i) \\cdot x_i = 0$ with each summand\nnonneg and $x_i > 0$ strict, so $y_i = v \\cdot (My)_i$, i.e.,\n$My = (1/v) \\cdot y$.\n\nSetting $\\lambda := 1/v > 0$, we have $xM = \\lambda \\cdot x$ (left\neigenvector) and $My = \\lambda \\cdot y$ (right eigenvector), both with\n$x, y$ strictly positive. $\\square$\n\n## Remarks\n\n- The argument is purely algebraic and works over $\\mathbb{R}$ (where\n  general-$B$ Loomis is formalised in `EconCSLib.StrategicGame.Loomis`).\n- Strict positivity of $x$ and $y$ is automatic given strict positivity of\n  $M$, **without** needing a separate \"irreducibility\" argument.\n- The same Loomis instance simultaneously produces the **left** eigenvector\n  $x$ and the **right** eigenvector $y$ at the same eigenvalue $\\lambda\n  = 1/v$. This eigenvalue is the **Perron-Frobenius eigenvalue** of $M$.\n\n## References\n\n- [MFoGT, Section 2.8, Exercise 1(2)] Laraki, Renault, and Sorin,\n  *Mathematical Foundations of Game Theory*. Application of Loomis theorem\n  to positive matrices.",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/applications/perron_frobenius_positive_matrix.md",
+    "id": "game_theory.strategic_game.zero_sum.applications.perron_frobenius_positive_matrix",
+    "kind": "theorem",
+    "lean": {
+      "declarations": [
+        "EconCSLib.LinearAlgebra.perron_frobenius"
+      ],
+      "modules": [
+        "EconCSLib.Math.LinearAlgebra.PerronFrobenius"
+      ],
+      "repository": null
+    },
+    "status": "proved",
+    "tags": [
+      "linear-algebra",
+      "perron-frobenius",
+      "zero-sum"
+    ],
+    "title": "Perron-Frobenius For Positive Matrices",
+    "uses": [
+      "math.minimax.loomis_theorem"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "theorem perron_frobenius (M : Fin n \u2192 Fin n \u2192 \u211d) (hM_pos : \u2200 i j, 0 < M i j) :\n    \u2203 (x y : stdSimplex \u211d (Fin n)) (lam : \u211d),\n      0 < lam \u2227\n      (\u2200 i, 0 < x.val i) \u2227\n      (\u2200 i, 0 < y.val i) \u2227\n      (\u2200 j, wsum x (fun i => M i j) = lam * x.val j) \u2227\n      (\u2200 i, wsum y (M i) = lam * y.val i) := by\n  classical\n  haveI : Nonempty (Fin n) := \u27e8\u27e80, Nat.pos_of_ne_zero (NeZero.ne n)\u27e9\u27e9\n  -- Apply Loomis with A = identity, B = M.\n  have hM_isPos : Loomis.IsPositive M := hM_pos\n  obtain \u27e8x, y, v, hx_raw, hy_raw\u27e9 :=\n    Loomis.loomis_theorem idMat M hM_isPos\n  -- Substitute the identity-matrix wsum values.\n  have hx_ineq : \u2200 j, v * Loomis.xB M x j \u2264 x.val j := by\n    intro j\n    have h := hx_raw j\n    rw [xA_idMat] at h\n    exact h\n  have hy_ineq : \u2200 i, y.val i \u2264 v * Loomis.By M y i := by\n    intro i\n    have h := hy_raw i\n    rw [Ay_idMat] at h\n    exact h\n  -- Step 1: v > 0.\n  have hy_sum : (\u2211 i, y.val i) = 1 := y.property.2\n  obtain \u27e8i\u2080, hi\u2080\u27e9 : \u2203 i\u2080, 0 < y.val i\u2080 := by\n    by_contra hall\n    push_neg at hall\n    have hzero : \u2200 i, y.val i = 0 := fun i => le_antisymm (hall i) (y.property.1 i)\n    have hsum : (\u2211 i, y.val i) = 0 := by simp_rw [hzero]; simp\n    linarith\n  have hBy_pos\u2080 : 0 < Loomis.By M y i\u2080 := Loomis.By_pos hM_isPos y i\u2080\n  have hv_pos : 0 < v := by\n    have h := hy_ineq i\u2080\n    by_contra hv_neg\n    push_neg at hv_neg\n    have : v * Loomis.By M y i\u2080 \u2264 0 :=\n      mul_nonpos_of_nonpos_of_nonneg hv_neg hBy_pos\u2080.le\n    linarith\n  -- Step 2: x is strictly positive.\n  have hx_strict : \u2200 j, 0 < x.val j := by\n    intro j\n    have hxB : 0 < Loomis.xB M x j := Loomis.xB_pos hM_isPos x j\n    calc 0 < v * Loomis.xB M x j := mul_pos hv_pos hxB\n      _ \u2264 x.val j := hx_ineq j\n  -- Step 3: Tight inner product. Weight (1) by y and (2) by x; bilinearity\n  -- of M makes the bounds match exactly.\n  have hcomm : (\u2211 j, Loomis.xB M x j * y.val j)\n      = \u2211 i, x.val i * Loomis.By M y i := by\n    -- \u2211_j (xM)_j \u00b7 y_j = \u2211_j \u2211_i x_i M_ij y_j = \u2211_i \u2211_j x_i M_ij y_j\n    --                  = \u2211_i x_i \u00b7 (My)_i\n    show (\u2211 j, (\u2211 i, x.val i * M i j) * y.val j)\n        = \u2211 i, x.val i * (\u2211 j, y.val j * M i j)\n    have h1 : (\u2211 j, (\u2211 i, x.val i * M i j) * y.val j)\n        = \u2211 j, \u2211 i, x.val i * M i j * y.val j := by\n      refine Finset.sum_congr rfl (fun j _ => ?_)\n      rw [Finset.sum_mul]\n    have h2 : (\u2211 j, \u2211 i, x.val i * M i j * y.val j)\n        = \u2211 i, \u2211 j, x.val i * M i j * y.val j := Finset.sum_comm\n    have h3 : (\u2211 i, \u2211 j, x.val i * M i j * y.val j)\n        = \u2211 i, x.val i * (\u2211 j, y.val j * M i j) := by\n      refine Finset.sum_congr rfl (fun i _ => ?_)\n      rw [Finset.mul_sum]\n      refine Finset.sum_congr rfl (fun j _ => ?_)\n      ring\n    rw [h1, h2, h3]\n  -- Lower bound on \u27e8x, y\u27e9 via (1):\n  have hxy_lower : v * (\u2211 j, Loomis.xB M x j * y.val j) \u2264 \u2211 j, x.val j * y.val j := by\n    rw [show v * (\u2211 j, Loomis.xB M x j * y.val j)\n        = \u2211 j, v * (Loomis.xB M x j * y.val j) from Finset.mul_sum _ _ _]\n    apply Finset.sum_le_sum\n    intro j _\n    have : v * Loomis.xB M x j \u2264 x.val j := hx_ineq j\n    have hyj : 0 \u2264 y.val j := y.property.1 j\n    nlinarith\n  -- Upper bound on \u27e8x, y\u27e9 via (2) (weighted by x):\n  have hxy_upper : (\u2211 i, x.val i * y.val i) \u2264 v * (\u2211 i, x.val i * Loomis.By M y i) := by\n    rw [show v * (\u2211 i, x.val i * Loomis.By M y i)\n        = \u2211 i, v * (x.val i * Loomis.By M y i) from Finset.mul_sum _ _ _]\n    apply Finset.sum_le_sum\n    intro i _\n    have : y.val i \u2264 v * Loomis.By M y i := hy_ineq i\n    have hxi : 0 \u2264 x.val i := x.property.1 i\n    nlinarith\n  -- \u27e8x, y\u27e9 symmetry\n  have hxy_swap : (\u2211 j, x.val j * y.val j) = \u2211 i, x.val i * y.val i := rfl\n  -- Combine: \u27e8x, y\u27e9 \u2265 v \u00b7 \u27e8xM, y\u27e9 = v \u00b7 \u27e8x, My\u27e9 \u2265 \u27e8x, y\u27e9.\n  have hxy_tight : (\u2211 i, x.val i * y.val i)\n      = v * (\u2211 j, Loomis.xB M x j * y.val j) := by\n    have hcomm_mul : v * (\u2211 j, Loomis.xB M x j * y.val j)\n        = v * (\u2211 i, x.val i * Loomis.By M y i) := by rw [hcomm]\n    -- hxy_lower : v \u00b7 \u27e8xM, y\u27e9 \u2264 \u27e8x, y\u27e9\n    -- hxy_upper : \u27e8x, y\u27e9 \u2264 v \u00b7 \u27e8x, My\u27e9 = v \u00b7 \u27e8xM, y\u27e9\n    linarith [hxy_lower, hxy_upper, hcomm_mul]\n  -- Step 4: y_i = v * (My)_i for all i (from x > 0 strictness on (2)).\n  have hy_eq : \u2200 i, y.val i = v * Loomis.By M y i := by\n    intro i\n    -- \u2211_i x_i \u00b7 ((v \u00b7 By y)_i - y_i) \u2265 0 per term, sum = 0, x_i > 0, so each = 0.\n    have hsum_zero :\n        (\u2211 i, x.val i * (v * Loomis.By M y i - y.val i)) = 0 := by\n      have hrw : (\u2211 i, x.val i * (v * Loomis.By M y i - y.val i))\n          = (v * \u2211 i, x.val i * Loomis.By M y i)\n            - (\u2211 i, x.val i * y.val i) := by\n        rw [Finset.mul_sum, \u2190 Finset.sum_sub_distrib]\n        refine Finset.sum_congr rfl (fun i _ => ?_)\n        ring\n      rw [hrw]\n      -- v \u00b7 \u27e8x, My\u27e9 = \u27e8x, y\u27e9 (= \u27e8x, y\u27e9 as above)\n      have : v * (\u2211 i, x.val i * Loomis.By M y i)\n          = \u2211 i, x.val i * y.val i := by\n        rw [\u2190 hcomm]; linarith\n      linarith\n    -- Each summand is nonneg, x_i > 0, so each (v \u00b7 By y i - y_i) = 0.\n    have hnn : \u2200 i \u2208 Finset.univ,\n        0 \u2264 x.val i * (v * Loomis.By M y i - y.val i) := by\n      intro i _\n      have h_diff : 0 \u2264 v * Loomis.By M y i - y.val i := by linarith [hy_ineq i]\n      exact mul_nonneg (hx_strict i).le h_diff\n    have h_each : \u2200 i \u2208 Finset.univ,\n        x.val i * (v * Loomis.By M y i - y.val i) = 0 := by\n      intro i hi\n      exact (Finset.sum_eq_zero_iff_of_nonneg hnn).mp hsum_zero i hi\n    have hi_term := h_each i (Finset.mem_univ _)\n    -- x_i > 0 forces v \u00b7 By y i - y_i = 0\n    have hx_i_ne : x.val i \u2260 0 := (hx_strict i).ne'\n    have : v * Loomis.By M y i - y.val i = 0 := by\n      have := hi_term\n      rcases mul_eq_zero.mp this with h | h\n      \u00b7 exact absurd h hx_i_ne\n      \u00b7 linarith\n    linarith\n  -- Step 5: y > 0 strict (from y_i = v * (My)_i > 0).\n  have hy_strict : \u2200 i, 0 < y.val i := by\n    intro i\n    rw [hy_eq i]\n    exact mul_pos hv_pos (Loomis.By_pos hM_isPos y i)\n  -- Step 6: x_j = v * (xM)_j for all j (from y > 0 strictness on (1)).\n  have hx_eq : \u2200 j, x.val j = v * Loomis.xB M x j := by\n    intro j\n    -- Same argument as Step 4, dual.\n    have hsum_zero :\n        (\u2211 j, y.val j * (x.val j - v * Loomis.xB M x j)) = 0 := by\n      have hrw : (\u2211 j, y.val j * (x.val j - v * Loomis.xB M x j))\n          = (\u2211 j, y.val j * x.val j)\n            - (v * \u2211 j, Loomis.xB M x j * y.val j) := by\n        rw [Finset.mul_sum, \u2190 Finset.sum_sub_distrib]\n        refine Finset.sum_congr rfl (fun j _ => ?_)\n        ring\n      rw [hrw]\n      have hcomm_xy : (\u2211 j, y.val j * x.val j) = \u2211 i, x.val i * y.val i := by\n        refine Finset.sum_congr rfl (fun j _ => ?_)\n        ring\n      rw [hcomm_xy]\n      linarith\n    have hnn : \u2200 j \u2208 Finset.univ,\n        0 \u2264 y.val j * (x.val j - v * Loomis.xB M x j) := by\n      intro j _\n      have h_diff : 0 \u2264 x.val j - v * Loomis.xB M x j := by linarith [hx_ineq j]\n      exact mul_nonneg (hy_strict j).le h_diff\n    have h_each : \u2200 j \u2208 Finset.univ,\n        y.val j * (x.val j - v * Loomis.xB M x j) = 0 := by\n      intro j hj\n      exact (Finset.sum_eq_zero_iff_of_nonneg hnn).mp hsum_zero j hj\n    have hi_term := h_each j (Finset.mem_univ _)\n    have hy_j_ne : y.val j \u2260 0 := (hy_strict j).ne'\n    have : x.val j - v * Loomis.xB M x j = 0 := by\n      rcases mul_eq_zero.mp hi_term with h | h\n      \u00b7 exact absurd h hy_j_ne\n      \u00b7 linarith\n    linarith\n  -- Package: lam := 1/v.\n  refine \u27e8x, y, 1/v, ?_, hx_strict, hy_strict, ?_, ?_\u27e9\n  \u00b7 exact one_div_pos.mpr hv_pos\n  \u00b7 intro j\n    have h := hx_eq j\n    -- xM j = (1/v) * x_j follows from x_j = v * xM_j\n    show Loomis.xB M x j = 1/v * x.val j\n    have hv_ne : v \u2260 0 := hv_pos.ne'\n    field_simp\n    linarith\n  \u00b7 intro i\n    have h := hy_eq i\n    show Loomis.By M y i = 1/v * y.val i\n    have hv_ne : v \u2260 0 := hv_pos.ne'\n    field_simp\n    linarith\n\nend EconCSLib.LinearAlgebra\n",
+      "column": 1,
+      "end": 10414,
+      "kind": "theorem",
+      "line": 75,
+      "module": "EconCSLib.Math.LinearAlgebra.PerronFrobenius",
+      "name": "perron_frobenius",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Math/LinearAlgebra/PerronFrobenius.lean",
+      "start": 2721
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

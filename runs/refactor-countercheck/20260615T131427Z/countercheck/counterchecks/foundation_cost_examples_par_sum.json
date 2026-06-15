@@ -1,0 +1,85 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "source": "parSum_cost_le_clog",
+      "target": "parSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "source": "parSum_cost_le_length",
+      "target": "parSum"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Balanced Parallel Sum Depth\n\nA divide-and-conquer list sum built from `par` ([[node:foundation.cost.parallel]]),\nwhere cost is combined by `\u2294` so that `.cost` measures parallel **depth**, not\ntotal work. Splitting the list in half and summing the halves in parallel\ngives a logarithmic depth,\n$$\n  (\\operatorname{parSum}\\,xs).\\mathrm{cost} \\;\\le\\; \\lceil \\log_2 |xs| \\rceil,\n$$\ni.e. `parSum_cost_le_clog` (`Nat.clog 2 xs.length`). The coarser linear bound\n`parSum_cost_le_length` is also provided. This is the depth-side counterpart of\nthe additive-work examples: the same algorithm under `+` would cost `O(n)`, but\nunder `\u2294` the independent branches overlap and only the tree height counts.\n\n## Lean declarations\n\n- `ParSum.parSum : List \u2115 \u2192 CostM \u2115 \u2115` \u2014 the balanced parallel sum.\n- `ParSum.parSum_cost_le_clog` \u2014 the `\u2308log\u2082 n\u2309` depth bound.\n- `ParSum.parSum_cost_le_length` \u2014 the coarser linear bound.\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. The underlying cost\n  monad ([[node:foundation.cost.costm]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/par_sum.md",
+    "id": "foundation.cost.examples.par_sum",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "ParSum.parSum",
+        "ParSum.parSum_cost_le_clog",
+        "ParSum.parSum_cost_le_length"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.ParSum"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "parallel"
+    ],
+    "title": "Worked Example: Balanced Parallel Sum Depth",
+    "uses": [
+      "foundation.cost.costm",
+      "foundation.cost.parallel"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def parSum (xs : List \u2115) : CostM \u2115 \u2115 :=\n  if _h : 2 \u2264 xs.length then do\n    let (sl, sr) \u2190 CostM.par\n                    (parSum (xs.take (xs.length / 2)))\n                    (parSum (xs.drop (xs.length / 2)))\n    \u2713 pure (sl + sr)\n  else\n    pure (xs.head?.getD 0)\ntermination_by xs.length\ndecreasing_by\n  all_goals (simp only [List.length_take, List.length_drop]; omega)\n\n/-- **Tight depth bound**: parallel-sum depth is at most `\u2308log\u2082 n\u2309`.\n\nThe recurrence is `T(n) = 1 + max(T(\u230an/2\u230b), T(\u2308n/2\u2309))` with `T(0) = T(1) = 0`.\nBoth halves are bounded above by `\u2308n/2\u2309 = (n+1)/2`, and\n`Nat.clog_of_one_lt` gives `clog 2 n = clog 2 \u2308n/2\u2309 + 1` for `n \u2265 2`, so\n`T(n) \u2264 clog 2 \u2308n/2\u2309 + 1 = clog 2 n`. -/\n",
+      "column": 1,
+      "end": 3006,
+      "kind": "def",
+      "line": 62,
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "name": "parSum",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+      "start": 2313
+    },
+    {
+      "body": "theorem parSum_cost_le_clog (xs : List \u2115) :\n    (parSum xs).cost \u2264 Nat.clog 2 xs.length := by\n  induction hn : xs.length using Nat.strong_induction_on generalizing xs with\n  | _ n ih =>\n    unfold parSum\n    by_cases hge : 2 \u2264 xs.length\n    \u00b7 simp only [hge, dite_true]\n      simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n                 CostM.cost_par, CostM.ret_par]\n      have hLlt : (xs.take (xs.length / 2)).length < xs.length := by\n        simp [List.length_take]; omega\n      have hRlt : (xs.drop (xs.length / 2)).length < xs.length := by\n        simp [List.length_drop]; omega\n      have hLlen : (xs.take (xs.length / 2)).length = xs.length / 2 := by\n        simp [List.length_take]; omega\n      have hRlen : (xs.drop (xs.length / 2)).length = xs.length - xs.length / 2 := by\n        simp [List.length_drop]\n      have ihL := ih _ (hn \u25b8 hLlt) (xs.take (xs.length / 2)) rfl\n      have ihR := ih _ (hn \u25b8 hRlt) (xs.drop (xs.length / 2)) rfl\n      rw [hLlen] at ihL\n      rw [hRlen] at ihR\n      -- Key identity: clog 2 n = clog 2 ((n+1)/2) + 1 for n > 1\n      have h_clog_step :\n          Nat.clog 2 xs.length = Nat.clog 2 ((xs.length + 1) / 2) + 1 := by\n        have h := Nat.clog_of_one_lt (b := 2) (n := xs.length) (by decide) hge\n        have heq : (xs.length + 2 - 1) / 2 = (xs.length + 1) / 2 := by omega\n        rw [heq] at h\n        exact h\n      -- xs.length - xs.length / 2 = (xs.length + 1) / 2\n      have h_ceil_eq : xs.length - xs.length / 2 = (xs.length + 1) / 2 := by omega\n      rw [h_ceil_eq] at ihR\n      -- clog of \u230an/2\u230b \u2264 clog of \u2308n/2\u2309\n      have ihL' : (parSum (xs.take (xs.length / 2))).cost\n                \u2264 Nat.clog 2 ((xs.length + 1) / 2) :=\n        ihL.trans (Nat.clog_mono_right _ (by omega))\n      -- Goal is in terms of `Nat.clog 2 n`; rewrite to `xs.length` then unfold.\n      rw [\u2190 hn, h_clog_step]\n      omega\n    \u00b7 simp only [hge, dite_false, CostM.cost_pure]\n      omega\n\n/-- Loose linear upper bound on parallel-sum depth. -/\n",
+      "column": 1,
+      "end": 4990,
+      "kind": "theorem",
+      "line": 80,
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "name": "parSum_cost_le_clog",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+      "start": 3006
+    },
+    {
+      "body": "theorem parSum_cost_le_length (xs : List \u2115) :\n    (parSum xs).cost \u2264 xs.length := by\n  induction hn : xs.length using Nat.strong_induction_on generalizing xs with\n  | _ n ih =>\n    unfold parSum\n    by_cases hge : 2 \u2264 xs.length\n    \u00b7 -- Recursive branch\n      simp only [hge, dite_true]\n      simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure, CostM.cost_par,\n                 CostM.ret_par]\n      have hLlt : (xs.take (xs.length / 2)).length < xs.length := by\n        simp [List.length_take]; omega\n      have hRlt : (xs.drop (xs.length / 2)).length < xs.length := by\n        simp [List.length_drop]; omega\n      have ihL := ih (xs.take (xs.length / 2)).length (hn \u25b8 hLlt)\n                     (xs.take (xs.length / 2)) rfl\n      have ihR := ih (xs.drop (xs.length / 2)).length (hn \u25b8 hRlt)\n                     (xs.drop (xs.length / 2)) rfl\n      have hLlen : (xs.take (xs.length / 2)).length \u2264 xs.length / 2 := by\n        simp [List.length_take]\n      have hRlen : (xs.drop (xs.length / 2)).length = xs.length - xs.length / 2 := by\n        simp [List.length_drop]\n      omega\n    \u00b7 -- Base branch: pure (xs.head?.getD 0), cost = 0\n      simp only [hge, dite_false, CostM.cost_pure]\n      omega\n\nend ParSum\n",
+      "column": 1,
+      "end": 6209,
+      "kind": "theorem",
+      "line": 122,
+      "module": "EconCSLib.Examples.CostM.ParSum",
+      "name": "parSum_cost_le_length",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/ParSum.lean",
+      "start": 4990
+    }
+  ]
+}

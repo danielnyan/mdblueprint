@@ -1,0 +1,129 @@
+---
+agent: lean-countercheck
+node_id: foundation.cost.examples.lcs
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Worked Example: Longest Common Subsequence DP Grid
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/lcs.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `LCS.lcs`
+- `LCS.lcs_cost_subset`
+- `LCS.lcs_cost_card_le`
+
+## Extra Declarations
+
+- `lcs`
+- `lcs_cost_subset`
+- `lcs_cost_card_le`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `foundation.cost.costm`, `foundation.cost.visited`
+- missing uses: `foundation.cost.costm`, `foundation.cost.visited`
+- extra uses: `lcs_cost_subset`
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "source": "lcs_cost_card_le",
+      "target": "lcs_cost_subset"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Longest Common Subsequence DP Grid\n\nLongest common subsequence in `CostM (Visited (\u2115 \u00d7 \u2115))`: the cost footprint is\nnow a set of **2-D grid cells** `(i, j)`, one per `(prefix of xs, prefix of\nys)` subproblem. The memoization footprint is contained in the full DP grid,\n$$\n  (\\operatorname{lcs}\\,xs\\,ys).\\mathrm{cost} \\;\\subseteq\\;\n    \\{0,\\dots,|xs|\\} \\times \\{0,\\dots,|ys|\\},\n$$\nwhich is `lcs_cost_subset`; taking cardinalities gives the polynomial-space\nbound\n$$\n  (\\operatorname{lcs}\\,xs\\,ys).\\mathrm{cost}.\\mathrm{toFinset}.\\mathrm{card}\n    \\;\\le\\; (|xs|+1)\\,(|ys|+1),\n$$\ni.e. `lcs_cost_card_le`. This is the canonical polynomial-space DP example \u2014\nthe 2-D analogue of [[node:foundation.cost.examples.memo_fib]].\n\n`lcs` uses the bare `CostM.tick` form (rather than the `\u2713` macro) at its\nfootprint-recording points, since each tick records a specific grid cell\n`Visited.singleton (i, j)` rather than a unit cost.\n\n## Lean declarations\n\n- `LCS.lcs : List \u03b1 \u2192 List \u03b1 \u2192 CostM (Visited (\u2115 \u00d7 \u2115)) \u2115`.\n- `LCS.lcs_cost_subset` \u2014 footprint `\u2286` the DP grid (via a private\n  `range_prod_mono` monotonicity lemma).\n- `LCS.lcs_cost_card_le` \u2014 the `(|xs|+1)(|ys|+1)` cell-count bound.\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. Footprint cost monoids\n  ([[node:foundation.cost.visited]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/lcs.md",
+    "id": "foundation.cost.examples.lcs",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "LCS.lcs",
+        "LCS.lcs_cost_subset",
+        "LCS.lcs_cost_card_le"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.LCS"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "dynamic-programming"
+    ],
+    "title": "Worked Example: Longest Common Subsequence DP Grid",
+    "uses": [
+      "foundation.cost.costm",
+      "foundation.cost.visited"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def lcs : List A \u2192 List A \u2192 CostM (Visited (\u2115 \u00d7 \u2115)) \u2115\n  | [],      ys      => do\n    CostM.tick (Visited.singleton (0, ys.length))\n    pure 0\n  | x :: xs, []      => do\n    CostM.tick (Visited.singleton (xs.length + 1, 0))\n    pure 0\n  | x :: xs, y :: ys =>\n    if x = y then do\n      CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1))\n      let r \u2190 lcs xs ys\n      pure (r + 1)\n    else do\n      CostM.tick (Visited.singleton (xs.length + 1, ys.length + 1))\n      let r1 \u2190 lcs xs (y :: ys)\n      let r2 \u2190 lcs (x :: xs) ys\n      pure (max r1 r2)\n\n/-- Monotonicity helper: enlarging both arguments of `Finset.range`\npreserves the `\u00d7\u02e2` containment. -/\nprivate lemma range_prod_mono {a a' b b' : \u2115} (ha : a \u2264 a') (hb : b \u2264 b') :\n    Finset.range a \u00d7\u02e2 Finset.range b \u2286 Finset.range a' \u00d7\u02e2 Finset.range b' :=\n  Finset.product_subset_product\n    (Finset.range_subset_range.mpr ha)\n    (Finset.range_subset_range.mpr hb)\n\n/-- Containment of `(lcs xs ys).cost` in the natural DP grid\n`[0, |xs|] \u00d7 [0, |ys|]`. -/\n",
+      "column": 1,
+      "end": 3119,
+      "kind": "def",
+      "line": 62,
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "name": "lcs",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+      "start": 2105
+    },
+    {
+      "body": "theorem lcs_cost_subset (xs : List A) : \u2200 (ys : List A),\n    (lcs xs ys).cost.toFinset \u2286\n      Finset.range (xs.length + 1) \u00d7\u02e2 Finset.range (ys.length + 1) := by\n  induction xs with\n  | nil =>\n    intro ys\n    simp only [lcs, CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n               Visited.toFinset_add, Visited.toFinset_singleton, Visited.toFinset_zero,\n               Finset.union_empty, List.length_nil]\n    simp [Finset.singleton_subset_iff, Finset.mem_range]\n  | cons x xs ihX =>\n    intro ys\n    induction ys with\n    | nil =>\n      simp only [lcs, CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n                 Visited.toFinset_add, Visited.toFinset_singleton, Visited.toFinset_zero,\n                 Finset.union_empty, List.length_cons, List.length_nil]\n      simp [Finset.singleton_subset_iff, Finset.mem_range]\n    | cons y ys ihY =>\n      unfold lcs\n      split_ifs with hxy\n      \u00b7 -- match case: tick \u222a recursion on (xs, ys)\n        simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n                   Visited.toFinset_add, Visited.toFinset_singleton, Visited.toFinset_zero,\n                   Finset.union_empty, List.length_cons]\n        refine Finset.union_subset ?_ ?_\n        \u00b7 simp [Finset.singleton_subset_iff, Finset.mem_range]\n        \u00b7 exact (ihX ys).trans (range_prod_mono (Nat.le_succ _) (Nat.le_succ _))\n      \u00b7 -- mismatch case: tick \u222a recursion on (xs, y::ys) \u222a recursion on (x::xs, ys)\n        simp only [CostM.cost_bind, CostM.cost_tick, CostM.cost_pure,\n                   Visited.toFinset_add, Visited.toFinset_singleton, Visited.toFinset_zero,\n                   Finset.union_empty, List.length_cons]\n        refine Finset.union_subset ?_ (Finset.union_subset ?_ ?_)\n        \u00b7 simp [Finset.singleton_subset_iff, Finset.mem_range]\n        \u00b7 exact (ihX (y :: ys)).trans\n            (range_prod_mono (Nat.le_succ _) (by simp))\n        \u00b7 exact ihY.trans\n            (range_prod_mono (by simp) (Nat.le_succ _))\n\n/-- **Polynomial cardinality bound**: at most `(|xs|+1) * (|ys|+1)` distinct\nsub-problems are touched, regardless of how often each is hit. -/\n",
+      "column": 1,
+      "end": 5230,
+      "kind": "theorem",
+      "line": 90,
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "name": "lcs_cost_subset",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+      "start": 3119
+    },
+    {
+      "body": "theorem lcs_cost_card_le (xs ys : List A) :\n    (lcs xs ys).cost.toFinset.card \u2264 (xs.length + 1) * (ys.length + 1) := by\n  calc (lcs xs ys).cost.toFinset.card\n      \u2264 (Finset.range (xs.length + 1) \u00d7\u02e2 Finset.range (ys.length + 1)).card :=\n        Finset.card_le_card (lcs_cost_subset xs ys)\n    _ = (xs.length + 1) * (ys.length + 1) := by\n        rw [Finset.card_product, Finset.card_range, Finset.card_range]\n\nend LCS\n",
+      "column": 1,
+      "end": 5648,
+      "kind": "theorem",
+      "line": 131,
+      "module": "EconCSLib.Examples.CostM.LCS",
+      "name": "lcs_cost_card_le",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/LCS.lean",
+      "start": 5230
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

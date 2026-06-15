@@ -1,0 +1,172 @@
+---
+agent: lean-countercheck
+node_id: game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Diagonal Matrix Game Value
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/diagonal_matrix_game_value.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `EconCSLib.StrategicGame.Examples.diagonalGame_value`
+
+## Extra Declarations
+
+- `diagonalGame`
+- `diagonalGameValue_pos`
+- `diagonalGame_row_guarantee`
+- `diagonalGame_column_guarantee`
+- `diagonalGame_value`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `game_theory.strategic_game.zero_sum.core.value`
+- missing uses: `game_theory.strategic_game.zero_sum.core.value`
+- extra uses: `diagonalGame`, `diagonalGame_column_guarantee`, `diagonalGame_row_guarantee`
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "source": "diagonalGame_row_guarantee",
+      "target": "diagonalGame"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "source": "diagonalGame_column_guarantee",
+      "target": "diagonalGame"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "source": "diagonalGame_value",
+      "target": "diagonalGame_column_guarantee"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "source": "diagonalGame_value",
+      "target": "diagonalGame_row_guarantee"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "source": "diagonalGame_value",
+      "target": "diagonalGame"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Diagonal Matrix Game Value\n\nLet $A$ be the diagonal $n\\times n$ matrix with diagonal entries\n$a_i>0$. Then\n$$\n  \\operatorname{val}(A)=\n  \\left(\\sum_{i=1}^n a_i^{-1}\\right)^{-1}.\n$$\nBoth players have the same optimal mixed strategy $p\\in\\Delta(\\{1,\\ldots,n\\})$\ngiven by\n$$\n  p_i=\n  \\frac{a_i^{-1}}{\\sum_{k=1}^n a_k^{-1}}.\n$$\n\n*Proof.* Let\n$$\n  c=\\left(\\sum_{k=1}^n a_k^{-1}\\right)^{-1}\n  \\quad\\text{and}\\quad\n  p_i=ca_i^{-1}.\n$$\nThen $p$ is a probability vector. Against any pure column $j$, the row player's\npayoff from $p$ is $p_ja_j=c$, so $p$ guarantees $c$. Against any pure row $i$,\nthe column player's mixed strategy $p$ gives payoff $a_ip_i=c$, so $p$ holds the\nrow player to $c$. By weak duality, the value is $c$ and $p$ is optimal for both\nplayers.\n\n## References\n\n- [MFoGT, Section 2.8, Exercise 6] Laraki, Renault, and Sorin, *Mathematical Foundations of Game Theory*. Compute value and optimal strategies for a positive diagonal matrix game.",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/zero_sum/examples/diagonal_matrix_game_value.md",
+    "id": "game_theory.strategic_game.zero_sum.examples.diagonal_matrix_game_value",
+    "kind": "proposition",
+    "lean": {
+      "declarations": [
+        "EconCSLib.StrategicGame.Examples.diagonalGame_value"
+      ],
+      "modules": [
+        "EconCSLib.Examples.StrategicGame.DiagonalGame"
+      ],
+      "repository": null
+    },
+    "status": "proved",
+    "tags": [
+      "zero-sum",
+      "matrix-game",
+      "example"
+    ],
+    "title": "Diagonal Matrix Game Value",
+    "uses": [
+      "game_theory.strategic_game.zero_sum.core.value"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def diagonalGame (a : I \u2192 \u211d) : MatrixGame I I \u211d where\n  g i j := if i = j then a i else 0\n\n@[simp] theorem diagonalGame_g_diag (a : I \u2192 \u211d) (i : I) :\n    (diagonalGame a).g i i = a i := by simp [diagonalGame]\n\n@[simp] theorem diagonalGame_g_off (a : I \u2192 \u211d) {i j : I} (h : i \u2260 j) :\n    (diagonalGame a).g i j = 0 := by simp [diagonalGame, h]\n\n/-- The reciprocal-sum constant `c = (\u2211 a_k\u207b\u00b9)\u207b\u00b9`. -/\nnoncomputable def diagonalGameValue (a : I \u2192 \u211d) : \u211d := (\u2211 k, (a k)\u207b\u00b9)\u207b\u00b9\n\nprivate theorem sum_inv_pos (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) :\n    0 < \u2211 k, (a k)\u207b\u00b9 := by\n  obtain \u27e8i\u2080\u27e9 := \u2039Nonempty I\u203a\n  apply Finset.sum_pos' (fun k _ => inv_nonneg.mpr (hpos k).le)\n  exact \u27e8i\u2080, Finset.mem_univ _, inv_pos.mpr (hpos i\u2080)\u27e9\n\n",
+      "column": 1,
+      "end": 1466,
+      "kind": "def",
+      "line": 31,
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "name": "diagonalGame",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+      "start": 757
+    },
+    {
+      "body": "theorem diagonalGameValue_pos (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) :\n    0 < diagonalGameValue a :=\n  inv_pos.mpr (sum_inv_pos a hpos)\n\n/-- Optimal mixed strategy `p_i = a_i\u207b\u00b9 / (\u2211 a_k\u207b\u00b9)`. -/\nnoncomputable def diagonalGameStrategy\n    (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) : stdSimplex \u211d I :=\n  \u27e8fun i => (a i)\u207b\u00b9 / (\u2211 k, (a k)\u207b\u00b9),\n    fun i => div_nonneg (inv_nonneg.mpr (hpos i).le) (sum_inv_pos a hpos).le,\n    by rw [\u2190 Finset.sum_div]; exact div_self (sum_inv_pos a hpos).ne'\u27e9\n\n@[simp] theorem diagonalGameStrategy_val (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) (i : I) :\n    (diagonalGameStrategy a hpos).val i = (a i)\u207b\u00b9 / (\u2211 k, (a k)\u207b\u00b9) := rfl\n\n/-- Player 1 playing `p` guarantees value `c` against every pure column. -/\n",
+      "column": 1,
+      "end": 2177,
+      "kind": "theorem",
+      "line": 49,
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "name": "diagonalGameValue_pos",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+      "start": 1466
+    },
+    {
+      "body": "theorem diagonalGame_row_guarantee (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) :\n    \u2200 j, diagonalGameValue a\n        \u2264 (diagonalGame a).Ej (diagonalGameStrategy a hpos) j := by\n  intro j\n  show diagonalGameValue a \u2264 \u2211 i, (diagonalGameStrategy a hpos).val i * (diagonalGame a).g i j\n  have hcollapse : (\u2211 i, (diagonalGameStrategy a hpos).val i * (diagonalGame a).g i j)\n      = (diagonalGameStrategy a hpos).val j * a j := by\n    have hsum_eq : \u2200 i,\n        (diagonalGameStrategy a hpos).val i * (diagonalGame a).g i j\n          = if i = j then (diagonalGameStrategy a hpos).val j * a j else 0 := by\n      intro i\n      by_cases h : i = j\n      \u00b7 subst h; simp\n      \u00b7 rw [diagonalGame_g_off a h, mul_zero, if_neg h]\n    rw [Finset.sum_congr rfl (fun i _ => hsum_eq i), Fintype.sum_ite_eq']\n  rw [hcollapse]\n  show (\u2211 k, (a k)\u207b\u00b9)\u207b\u00b9 \u2264 ((a j)\u207b\u00b9 / (\u2211 k, (a k)\u207b\u00b9)) * a j\n  rw [div_mul_eq_mul_div, inv_mul_cancel\u2080 (hpos j).ne', one_div]\n\n/-- Player 2 playing `p` caps payoff at `c` against every pure row. -/\n",
+      "column": 1,
+      "end": 3171,
+      "kind": "theorem",
+      "line": 64,
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "name": "diagonalGame_row_guarantee",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+      "start": 2177
+    },
+    {
+      "body": "theorem diagonalGame_column_guarantee (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) :\n    \u2200 i, (diagonalGame a).Ei i (diagonalGameStrategy a hpos)\n        \u2264 diagonalGameValue a := by\n  intro i\n  show \u2211 j, (diagonalGameStrategy a hpos).val j * (diagonalGame a).g i j\n    \u2264 diagonalGameValue a\n  have hcollapse : (\u2211 j, (diagonalGameStrategy a hpos).val j * (diagonalGame a).g i j)\n      = (diagonalGameStrategy a hpos).val i * a i := by\n    have hsum_eq : \u2200 j,\n        (diagonalGameStrategy a hpos).val j * (diagonalGame a).g i j\n          = if i = j then (diagonalGameStrategy a hpos).val i * a i else 0 := by\n      intro j\n      by_cases h : i = j\n      \u00b7 subst h; simp\n      \u00b7 rw [diagonalGame_g_off a h, mul_zero, if_neg h]\n    rw [Finset.sum_congr rfl (fun j _ => hsum_eq j), Fintype.sum_ite_eq]\n  rw [hcollapse]\n  show ((a i)\u207b\u00b9 / (\u2211 k, (a k)\u207b\u00b9)) * a i \u2264 (\u2211 k, (a k)\u207b\u00b9)\u207b\u00b9\n  rw [div_mul_eq_mul_div, inv_mul_cancel\u2080 (hpos i).ne', one_div]\n\n/-- **Diagonal matrix game value** [MFoGT Ex. 2.8.6]. -/\n",
+      "column": 1,
+      "end": 4157,
+      "kind": "theorem",
+      "line": 84,
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "name": "diagonalGame_column_guarantee",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+      "start": 3171
+    },
+    {
+      "body": "theorem diagonalGame_value (a : I \u2192 \u211d) (hpos : \u2200 i, 0 < a i) :\n    (diagonalGame a).value = diagonalGameValue a := by\n  symm\n  apply (diagonalGame a).common_guarantee_eq_value\n  \u00b7 exact \u27e8diagonalGameStrategy a hpos, diagonalGame_row_guarantee a hpos\u27e9\n  \u00b7 exact \u27e8diagonalGameStrategy a hpos, diagonalGame_column_guarantee a hpos\u27e9\n\nend EconCSLib.StrategicGame.Examples\n",
+      "column": 1,
+      "end": 4524,
+      "kind": "theorem",
+      "line": 105,
+      "module": "EconCSLib.Examples.StrategicGame.DiagonalGame",
+      "name": "diagonalGame_value",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/StrategicGame/DiagonalGame.lean",
+      "start": 4157
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

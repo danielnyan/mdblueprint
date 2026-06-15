@@ -1,0 +1,79 @@
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "source": "majority_peak_le",
+      "target": "loop_cost"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Worked Example: Constant-Space Boyer\u2013Moore Majority\n\nThe Boyer\u2013Moore majority vote in `CostM Cells` ([[node:foundation.cost.cells]]),\nproving a **constant** peak-memory bound: regardless of input length, the peak\nworking set is two cells \u2014 one candidate and one counter,\n$$\n  (\\operatorname{majority}\\,xs).\\mathrm{cost}.\\mathrm{peak} \\;\\le\\; 2,\n$$\nwhich is `majority_peak_le`. The mechanism is that the single-pass `loop`\nallocates nothing \u2014 `loop_cost : (majority.loop \\ldots).cost = 0` \u2014 so the only\ncontributions to the peak come from one `alloc 2` / `free 2` pair bracketing\nthe pass. Because peak (not sum) is the resource, the tropical `Cells` monoid\nis essential here; an additive `\u2115` cost cannot state this bound.\n\nThis example deliberately **does not** prove functional correctness (that\n`majority` returns the true majority when one exists). That omission is the\npoint: in `CostM` the complexity bound lives on `.cost` and is provable in\ncomplete isolation from the `.ret` value, demonstrating the\ncorrectness/complexity decoupling described in [[node:foundation.cost.costm]].\n\n## Lean declarations\n\n- `BoyerMoore.majority : List \u03b1 \u2192 CostM Cells (Option \u03b1)` with its single-pass\n  `where loop` carrying the candidate and counter.\n- `BoyerMoore.loop_cost` \u2014 the loop contributes zero cost.\n- `BoyerMoore.majority_peak_le` \u2014 the constant `peak \u2264 2` bound.\n\n## References\n\n- [Danielsson 2008] Nils Anders Danielsson, POPL 2008. Cost monoids for\n  resource analysis ([[node:foundation.cost.cells]]).",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/foundation/cost/examples/boyer_moore.md",
+    "id": "foundation.cost.examples.boyer_moore",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "BoyerMoore.majority",
+        "BoyerMoore.loop_cost",
+        "BoyerMoore.majority_peak_le"
+      ],
+      "modules": [
+        "EconCSLib.Examples.CostM.BoyerMoore"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "cost",
+      "example",
+      "peak-memory"
+    ],
+    "title": "Worked Example: Constant-Space Boyer\u2013Moore Majority",
+    "uses": [
+      "foundation.cost.costm",
+      "foundation.cost.cells"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def majority : List A \u2192 CostM Cells (Option A)\n  | []      => pure none\n  | x :: xs => do\n    \u2713[Cells.alloc 2] do\n      let result \u2190 loop x 1 xs\n      \u2713[Cells.free 2] pure result\nwhere\n  /-- Single-pass loop carrying the current candidate and counter as\n  parameters \u2014 no allocation, no ticks. -/\n  loop (cand : A) (cnt : \u2115) : List A \u2192 CostM Cells (Option A)\n    | []      => pure (some cand)\n    | y :: ys =>\n      if y = cand then loop cand (cnt + 1) ys\n      else if cnt = 0 then loop y 1 ys\n      else loop cand (cnt - 1) ys\n\n/-- The loop has zero cost: it overwrites the two slots without allocating. -/\n",
+      "column": 1,
+      "end": 2427,
+      "kind": "def",
+      "line": 54,
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "name": "majority",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+      "start": 1818
+    },
+    {
+      "body": "theorem loop_cost (cand : A) (cnt : \u2115) (xs : List A) :\n    (majority.loop cand cnt xs).cost = 0 := by\n  induction xs generalizing cand cnt with\n  | nil => simp [majority.loop]\n  | cons y ys ih =>\n    simp only [majority.loop]\n    split_ifs\n    \u00b7 exact ih cand (cnt + 1)\n    \u00b7 exact ih y 1\n    \u00b7 exact ih cand (cnt - 1)\n\n/-- **Constant-space bound**: the peak working set of `majority` is at most\ntwo cells, regardless of input length. -/\n",
+      "column": 1,
+      "end": 2865,
+      "kind": "theorem",
+      "line": 71,
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "name": "loop_cost",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+      "start": 2427
+    },
+    {
+      "body": "theorem majority_peak_le (xs : List A) : (majority xs).cost.peak \u2264 2 := by\n  cases xs with\n  | nil => simp [majority]\n  | cons x xs =>\n    simp only [majority, CostM.cost_bind, CostM.cost_tick, CostM.cost_pure]\n    rw [loop_cost]\n    simp\n\nend BoyerMoore\n",
+      "column": 1,
+      "end": 3120,
+      "kind": "theorem",
+      "line": 84,
+      "module": "EconCSLib.Examples.CostM.BoyerMoore",
+      "name": "majority_peak_le",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/CostM/BoyerMoore.lean",
+      "start": 2865
+    }
+  ]
+}

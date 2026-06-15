@@ -1,0 +1,181 @@
+---
+agent: lean-countercheck
+node_id: game_theory.strategic_game.prisoners_dilemma
+created_at: "2026-06-15T13:22:21+00:00"
+---
+
+# Lean Countercheck: Prisoner's Dilemma
+
+## Inputs
+
+- node file: `/home/azureuser/EconCSLib/docs/knowledge/nodes/strategic_game/prisoners_dilemma.md`
+- lean file: `/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean`
+- corpus root: `/home/azureuser/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `PrisonersDilemma.PD`
+- `PrisonersDilemma.pd_defect_weakly_dominant`
+- `PrisonersDilemma.pd_defect_nash`
+- `PrisonersDilemma.pd_nash_unique`
+- `PrisonersDilemma.pd_pareto_suboptimal`
+
+## Extra Declarations
+
+- `PD`
+- `pd_defect_weakly_dominant`
+- `pd_defect_nash`
+- `pd_nash_unique`
+- `pd_pareto_suboptimal`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `game_theory.strategic_game.nash_equilibrium`, `game_theory.strategic_game.weakly_dominant_strategy`
+- missing uses: `game_theory.strategic_game.nash_equilibrium`, `game_theory.strategic_game.weakly_dominant_strategy`
+- extra uses: `PD`, `pd_defect_weakly_dominant`
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/azureuser/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "source": "pd_defect_weakly_dominant",
+      "target": "PD"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "source": "pd_defect_nash",
+      "target": "pd_defect_weakly_dominant"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "source": "pd_defect_nash",
+      "target": "PD"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "source": "pd_nash_unique",
+      "target": "PD"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "source": "pd_pareto_suboptimal",
+      "target": "PD"
+    }
+  ],
+  "lean_file": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Prisoner's Dilemma\n\nThe Prisoner's Dilemma is a two-player strategic game where each player can\nCooperate ($C$) or Defect ($D$). The Lean example uses this normalized payoff\nmatrix:\n\n|       | $C$    | $D$    |\n|-------|--------|--------|\n| $C$   | (3, 3) | (0, 5) |\n| $D$   | (5, 0) | (1, 1) |\n\nDefecting is a weakly dominant strategy for each player. The unique Nash\nequilibrium is $(D, D)$ with payoff $(1, 1)$, which is Pareto-dominated by\n$(C, C)$ with payoff $(3, 3)$.\n\n## References\n\n- [MSZ, Chapter 4] Maschler, Solan, and Zamir, *Game Theory*. Prisoner's Dilemma in utility units.",
+    "file_path": "/home/azureuser/EconCSLib/docs/knowledge/nodes/strategic_game/prisoners_dilemma.md",
+    "id": "game_theory.strategic_game.prisoners_dilemma",
+    "kind": "example",
+    "lean": {
+      "declarations": [
+        "PrisonersDilemma.PD",
+        "PrisonersDilemma.pd_defect_weakly_dominant",
+        "PrisonersDilemma.pd_defect_nash",
+        "PrisonersDilemma.pd_nash_unique",
+        "PrisonersDilemma.pd_pareto_suboptimal"
+      ],
+      "modules": [
+        "EconCSLib.Examples.PrisonersDilemma"
+      ],
+      "repository": null
+    },
+    "status": "admitted",
+    "tags": [
+      "strategic-game",
+      "example",
+      "classic"
+    ],
+    "title": "Prisoner's Dilemma",
+    "uses": [
+      "game_theory.strategic_game.nash_equilibrium",
+      "game_theory.strategic_game.weakly_dominant_strategy"
+    ]
+  },
+  "source_root": "/home/azureuser/EconCSLib",
+  "theorems": [
+    {
+      "body": "def PD : StrategicGame (Fin 2) \u2115 where\n  strategy := fun _ => PDMove\n  payoff \u03c3 i :=\n    match \u03c3 0, \u03c3 1 with\n    | Cooperate, Cooperate => 3\n    | Cooperate, Defect    => if i = 0 then 0 else 5\n    | Defect,    Cooperate => if i = 0 then 5 else 0\n    | Defect,    Defect    => 1\n\n/-- T4a: Defect is weakly dominant for both players.\n    Proof: expose concrete types via `show`, then decide by exhaustive computation. -/\n",
+      "column": 1,
+      "end": 2600,
+      "kind": "def",
+      "line": 60,
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "name": "PD",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "start": 2180
+    },
+    {
+      "body": "theorem pd_defect_weakly_dominant : \u2200 i : Fin 2, IsWeaklyDominant PD i Defect := by\n  show \u2200 (i : Fin 2) (s' : PDMove) (\u03c3 : Fin 2 \u2192 PDMove),\n    PD.payoff (deviate \u03c3 i s') i \u2264 PD.payoff (deviate \u03c3 i PDMove.Defect) i\n  native_decide\n\n/-- T4b: (Defect, Defect) is a Nash equilibrium, by T3 (dominant profile \u2192 Nash). -/\n",
+      "column": 1,
+      "end": 2918,
+      "kind": "theorem",
+      "line": 71,
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "name": "pd_defect_weakly_dominant",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "start": 2600
+    },
+    {
+      "body": "theorem pd_defect_nash : IsNashEquilibrium PD (fun _ => Defect) :=\n  IsNashEquilibrium.of_dominant (fun i => pd_defect_weakly_dominant i)\n\n/-- T4c: (Defect, Defect) is the *unique* pure Nash equilibrium. -/\n",
+      "column": 1,
+      "end": 3125,
+      "kind": "theorem",
+      "line": 77,
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "name": "pd_defect_nash",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "start": 2918
+    },
+    {
+      "body": "theorem pd_nash_unique : \u2200 \u03c3 : PD.Profile,\n    IsNashEquilibrium PD \u03c3 \u2192 \u03c3 = fun _ => Defect := by\n  show \u2200 (\u03c3 : Fin 2 \u2192 PDMove),\n    (\u2200 (i : Fin 2) (s' : PDMove), PD.payoff (deviate \u03c3 i s') i \u2264 PD.payoff \u03c3 i) \u2192\n    \u03c3 = fun _ => PDMove.Defect\n  native_decide\n\n/-- The social optimum (Cooperate, Cooperate) is Pareto-superior to the Nash outcome. -/\n",
+      "column": 1,
+      "end": 3473,
+      "kind": "theorem",
+      "line": 81,
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "name": "pd_nash_unique",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "start": 3125
+    },
+    {
+      "body": "theorem pd_pareto_suboptimal :\n    PD.payoff (fun _ => Cooperate) 0 > PD.payoff (fun _ => Defect) 0 := by decide\n\nend PrisonersDilemma\n",
+      "column": 1,
+      "end": 3608,
+      "kind": "theorem",
+      "line": 89,
+      "module": "EconCSLib.Examples.PrisonersDilemma",
+      "name": "pd_pareto_suboptimal",
+      "source_path": "/home/azureuser/EconCSLib/EconCSLib/Examples/PrisonersDilemma.lean",
+      "start": 3473
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.
