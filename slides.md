@@ -482,47 +482,7 @@ Candidate labels include:
 
 The mapping is intentionally many-to-one.
 
-A single authored node can cover a cluster of definitions, helper lemmas, and theorems.
-
----
-
-# Countercheck Inventory
-
-Round3 source-text run:
-
-- authored EconCSLib docs in `nodes/` and `staged/`: `535`
-- authored docs with `lean.declarations`: `322`
-- extracted declaration records: `1,590`
-- extracted dependency edges in the fresh rerun: `4,761`
-- authored nodes matched to at least one record: `249`
-- declaration records matched to authored nodes: `719`
-- declaration records left unmapped: `871`
-
-At graph level:
-
-- round3 graph nodes: `1,464`
-- additional graph nodes beyond authored inventory: `929`
-
----
-
-# Edge-Level Comparison
-
-Earlier projection baseline against the published blueprint graph:
-
-- projected node set: `254`
-- blueprint node set: `535`
-- projected edges: `963`
-- blueprint edges: `840`
-- overlapping edges: `154`
-- projected-only edges: `809`
-- blueprint-only edges: `686`
-
-Measured alignment:
-
-- precision: `0.1599`
-- recall: `0.1833`
-
-Low precision and recall are expected when the graphs have different granularity.
+A single authored node can cover a cluster of definitions, helper lemmas, and theorems. 
 
 ---
 
@@ -578,23 +538,6 @@ This supports an internal split or proof-plan follow-up without claiming the aut
 
 ---
 
-# What Can Go Wrong
-
-The matcher can attach theorem-level proof detail to the wrong authored node.
-
-That can be legitimate when the node is a conceptual wrapper.
-
-It becomes suspect when:
-
-- the theorem is unrelated to the definition node
-- the title and declaration disagree semantically
-- the mapping only works through a weak basename match
-- the projected edge changes intended graph meaning
-
-This is why counterchecking needs an adjudicator.
-
----
-
 # Countercheck Limitations
 
 The source-text method is cheap and reproducible, but limited.
@@ -605,7 +548,7 @@ The source-text method is cheap and reproducible, but limited.
 - it depends on string normalization and naming conventions
 - catalog and summary nodes need special treatment
 
-The next target is a better adjudicator, not a denser raw graph.
+We have considered methods relying on Lean compilation paths. However, decisions to simplify nodes are human judgments which could not be captured in a rigid rule-based approach. The solution would be to finetune the prompt of the adjudicator to suit the specific use case of EconCSLib. 
 
 ---
 
@@ -685,44 +628,3 @@ After:
 - countercheck proposals and authored graph against Lean-derived signals
 
 The workflow stays review-first throughout.
-
----
-
-# Suggested Narrative for the PR
-
-This branch documents and supports an improvement workflow for Lean-backed mathematical KBs.
-
-The central claim:
-
-> `mdblueprint` should not try to replace authored mathematical judgment with Lean extraction. It should use agents and deterministic tools to generate, simulate, and countercheck reviewable graph improvements.
-
-The refactor agent supplies the proposal side.
-
-The Lean countercheck workflow supplies the validation side.
-
----
-
-# Immediate Next Uses
-
-The deck can be finalized by:
-
-- replacing this draft file into the `slidev-presentation` branch
-- trimming or expanding case studies based on audience time
-- adding screenshots only if the presentation needs visual evidence
-- deciding whether to keep detailed numerical slides or move them to backup
-- updating artifact paths if the PR branch changes during review
-
-The core structure is already ready for branch integration.
-
----
-
-# Takeaway
-
-The project now has a coherent review loop:
-
-1. use natural-language agents to find mathematically meaningful refactor candidates
-2. use deterministic tools to bound, validate, and simulate those candidates
-3. use Lean-derived counterchecks to test the authored graph against formalization evidence
-4. keep human review as the authority for durable mathematical truth
-
-This is the right shape for improving an informal knowledge graph under formalization pressure.
