@@ -628,3 +628,74 @@ After:
 - countercheck proposals and authored graph against Lean-derived signals
 
 The workflow stays review-first throughout.
+
+---
+
+# Holistic Outcome
+
+The useful result is not any single tool, but the way the stages sharpen one
+another.
+
+- the refactor stage found a bounded proposal that was actually worth making
+- the dry-run stage confirmed the proposal was mechanically safe
+- the Lean countercheck stage showed where the wrapper family is structurally
+  clean and where normalization still needs work
+- the adjudication layer separates true discrepancies from false abends instead
+  of treating every mismatch as an error
+
+In the fair-division integration run:
+
+- proposal pack scope: `social_choice.fair_division.divisible.cardinal_instance`
+  and `social_choice.fair_division.indivisible.cardinal_instance`
+- accepted edits: explicit allocation ancestry for both wrapper nodes
+- dry-run effect: `840 -> 842` edges, no errors introduced
+- Lean countercheck: `2` nodes checked against a single precomputed corpus
+- review outcome: the wrapper family is semantically meaningful, but the
+  current matcher still over-collects helper artifacts
+
+That is the value add of the full pipeline when it works together:
+
+1. it proposes small graph improvements instead of forcing broad rewrites
+2. it validates that the proposal is structurally safe before any edit
+3. it exposes where Lean evidence supports the proposal and where the
+   normalization layer still needs refinement
+4. it leaves the final judgment with a human or adjudicator, not a rule
+
+---
+
+# What Improved
+
+The combined workflow improved four things at once:
+
+- proposal quality: bounded evidence packs made the first-stage suggestion
+  concrete instead of speculative
+- structural safety: dry-run simulation prevented accidental graph damage
+- formal review quality: the countercheck surfaced declaration-cluster and
+  helper-lemma noise explicitly
+- judgment quality: adjudication distinguishes true discrepancies from false
+  abends, so the review loop can focus on real issues
+
+The headline outcome is simple:
+
+- `mdblueprint` now has a repeatable path from graph idea -> dry-run -> Lean
+  countercheck -> final judgment
+- the pipeline is still review-first
+- the pipeline is now better at showing *why* a change should or should not be
+  accepted
+
+---
+
+# Remaining Gaps
+
+The integrated run also exposed what still needs attention.
+
+- wrapper-family normalization is still too coarse in the counterchecker
+- helper lemmas and accessors still leak into the extracted evidence set
+- some legitimate conceptual anchors are finer-grained than the authored node
+- the final adjudication step remains necessary because Lean evidence is not
+  the same thing as authored graph truth
+
+These are not failures of the workflow.
+
+They are exactly the kind of refinement targets the workflow is supposed to
+surface.
